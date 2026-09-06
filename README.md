@@ -1,7 +1,31 @@
-# ChakuChaku
+<p align="center">
+  <img src="assets/branding/logo.png" width="180" alt="ChakuChaku">
+</p>
 
-A minimal browser app for working through JLPT N5 grammar, conjugation,
-Hiragana, Katakana, Kanji, and vocabulary exercises. Grammar lessons reveal prompts character by character, display
+<h1 align="center">ChakuChaku · JLPT N5</h1>
+
+<p align="center"><strong>Build Japanese step by step with focused, adaptive JLPT N5 practice.</strong></p>
+
+<p align="center">
+  <a href="https://kivutar.github.io/jlptn5/"><strong>Try the web app →</strong></a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://apps.apple.com/app/id6803144387"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" height="40" alt="Download on the App Store"></a>
+</p>
+
+ChakuChaku brings Hiragana, Katakana, Kanji, vocabulary, grammar, and
+conjugation into one calm daily practice loop. Adaptive FSRS reviews focus on
+what is due, progress stays on your device, and the app works in English or
+French with optional audio and offline access. No account is required.
+
+<p align="center">
+  <img src="assets/store/google-play/phone/store-phone-1.jpg" width="31%" alt="ChakuChaku grammar lesson">
+  <img src="assets/store/google-play/phone/store-phone-2.jpg" width="31%" alt="ChakuChaku Hiragana exercise">
+  <img src="assets/store/google-play/phone/store-phone-3.jpg" width="31%" alt="ChakuChaku Katakana exercise">
+</p>
+
+## Learning coverage
+
+Grammar lessons reveal prompts character by character, display
 furigana and token details, and accept translations in either direction.
 Hiragana lessons use complete N5 vocabulary words in both Hiragana-to-rōmaji
 and rōmaji-to-Hiragana directions, then grade every kana mechanically. Katakana
