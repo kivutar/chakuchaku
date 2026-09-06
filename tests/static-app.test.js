@@ -931,6 +931,8 @@ test("statistics UI combines SRS progress, outcomes, and exposure coverage", asy
   assert.match(styles, /data-progress-state="learning"/);
   assert.match(styles, /rgb\(77 130 96 \/ 30%\)/);
   assert.match(styles, /@media \(max-width: 32rem\) \{[\s\S]*\.app-dialog \{[\s\S]*width: 100%;[\s\S]*max-width: 100%/);
+  assert.match(styles, /\.stat-kind-control button \{[\s\S]*flex-direction: column;/);
+  assert.match(styles, /\.stat-kind-label \{[\s\S]*text-overflow: ellipsis;[\s\S]*white-space: nowrap;/);
   assert.match(styles, /\.stat-kind-label \{\s+display: none;/);
   assert.match(styles, /\.dialog-header \{[\s\S]*flex: 0 0 auto;/);
 });

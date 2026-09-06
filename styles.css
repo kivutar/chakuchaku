@@ -515,12 +515,13 @@ html[data-native-platform] .loading-screen {
 .stat-kind-control button {
   display: flex;
   min-width: 0;
-  min-height: 2rem;
+  min-height: 3.25rem;
   flex: 1 1 0;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
-  padding: 0.25rem 0.75rem;
+  gap: 0.2rem;
+  padding: 0.35rem 0.2rem;
   border: 0;
   border-radius: 4px;
   background: transparent;
@@ -543,6 +544,12 @@ html[data-native-platform] .loading-screen {
 
 .stat-kind-label {
   min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 0.74rem;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .stat-kind-control button[aria-pressed="true"] {
