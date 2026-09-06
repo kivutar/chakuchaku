@@ -168,12 +168,6 @@ html[data-native-platform] .loading-screen {
   outline: 0;
 }
 
-.app-store-menu-item {
-  display: flex;
-  justify-content: center;
-  padding-block: 0.5rem;
-}
-
 .app-store-badge {
   display: block;
   width: auto;

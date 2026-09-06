@@ -763,7 +763,7 @@ test("user menu exposes accessible navigation placeholders", async () => {
   assert.match(html, />Settings<[^>]*>/);
   assert.match(html, />Statistics<[^>]*>/);
   assert.match(html, /id="history-menu-item"/);
-  assert.equal((html.match(/href="https:\/\/apps\.apple\.com\/app\/id6803144387"/gu) || []).length, 2);
+  assert.equal((html.match(/href="https:\/\/apps\.apple\.com\/app\/id6803144387"/gu) || []).length, 1);
   assert.match(html, /id="app-store-welcome-link"[^>]*web-app-store-only[^>]*hidden/);
   assert.match(html, /developer\.apple\.com\/assets\/elements\/badges\/download-on-the-app-store\.svg/);
   assert.match(html, /href="https:\/\/github\.com\/kivutar\/chakuchaku"/);
