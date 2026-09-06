@@ -54,6 +54,10 @@ test("PWA registration is disabled inside native Capacitor shells", async () => 
 
   assert.match(html, /rel="manifest" href="manifest\.webmanifest"/);
   assert.match(html, /rel="apple-touch-icon"/);
+  assert.match(
+    html,
+    /name="apple-itunes-app"\s+content="app-id=6803144387, app-argument=https:\/\/kivutar\.github\.io\/jlptn5\/"/u
+  );
   assert.match(html, /name="color-scheme" content="light dark"/);
   assert.match(html, /name="theme-color" content="#fafafa" media="\(prefers-color-scheme: light\)"/);
   assert.match(html, /name="theme-color" content="#101412" media="\(prefers-color-scheme: dark\)"/);
