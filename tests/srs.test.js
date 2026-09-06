@@ -10,6 +10,7 @@ const {
   pickNextKana,
   pickNextVocabulary,
   pickNextKanji,
+  pickNextConjugationPoint,
   filterNewOrDueVocabulary,
   getRetrievability,
   readSrsData,
@@ -17,6 +18,7 @@ const {
   recordKanaReviews,
   recordVocabularyReviews,
   recordKanjiReviews,
+  recordConjugationReviews,
   storageKey
 } = globalThis.JlptN5Srs;
 
@@ -241,6 +243,33 @@ test("kanji cards are scheduled independently from other knowledge units", () =>
   );
 });
 
+test("conjugation points have an independent SRS schedule", () => {
+  const storage = new MemoryStorage();
+  const reviewedAt = "2026-08-09T15:00:00.000Z";
+  const data = recordConjugationReviews([
+    { conjugationPointId: "ichidan-polite-past", outcome: "good" },
+    { conjugationPointId: "godan-u-tsu-ru-te-form", outcome: "again" }
+  ], { storage, now: reviewedAt });
+
+  assert.ok(data.conjugationCards["ichidan-polite-past"]);
+  assert.ok(data.conjugationCards["godan-u-tsu-ru-te-form"]);
+  assert.deepEqual(data.cards, {});
+  assert.deepEqual(data.kanaCards, {});
+  assert.deepEqual(data.vocabularyCards, {});
+  assert.deepEqual(data.kanjiCards, {});
+  assert.equal(
+    pickNextConjugationPoint([
+      "ichidan-polite-past",
+      "godan-u-tsu-ru-te-form"
+    ], {
+      storage,
+      now: "2026-08-09T15:02:00.000Z",
+      random: () => 0
+    }),
+    "godan-u-tsu-ru-te-form"
+  );
+});
+
 test("invalid or unavailable storage falls back to empty SRS data", () => {
   const storage = new MemoryStorage();
   const unavailableStorage = {
@@ -260,7 +289,8 @@ test("invalid or unavailable storage falls back to empty SRS data", () => {
     cards: {},
     kanaCards: {},
     vocabularyCards: {},
-    kanjiCards: {}
+    kanjiCards: {},
+    conjugationCards: {}
   });
   assert.doesNotThrow(() => recordReviews(
     [{ grammarPointId: "te-kara", outcome: "good" }],

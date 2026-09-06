@@ -1386,7 +1386,8 @@ main {
 
 .kana-guidance,
 .kanji-guidance,
-.vocabulary-guidance {
+.vocabulary-guidance,
+.conjugation-guidance {
   display: flex;
   visibility: hidden;
   max-width: min(32rem, 100%);
@@ -1407,13 +1408,15 @@ main {
 
 .kana-guidance[hidden],
 .kanji-guidance[hidden],
-.vocabulary-guidance[hidden] {
+.vocabulary-guidance[hidden],
+.conjugation-guidance[hidden] {
   display: none;
 }
 
 .lesson.controls-visible .kana-guidance:not([hidden]),
 .lesson.controls-visible .kanji-guidance:not([hidden]),
-.lesson.controls-visible .vocabulary-guidance:not([hidden]) {
+.lesson.controls-visible .vocabulary-guidance:not([hidden]),
+.lesson.controls-visible .conjugation-guidance:not([hidden]) {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
@@ -1428,11 +1431,18 @@ main {
 
 .kana-guidance-divider,
 .kanji-guidance-divider,
-.vocabulary-guidance-divider {
+.vocabulary-guidance-divider,
+.conjugation-guidance-divider {
   color: #aaa;
 }
 
 .vocabulary-reading {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.conjugation-reading {
   color: #333;
   font-size: 1rem;
   font-weight: 600;
@@ -2024,6 +2034,16 @@ main {
   color: #743b31;
 }
 
+.solution-conjugation-item {
+  width: min(24rem, 100%);
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.solution-conjugation-item > span:last-child {
+  grid-column: 2;
+  font-size: 0.76rem;
+}
+
 .solution-kana-item strong {
   font-size: 1rem;
   line-height: 1.1;
@@ -2360,6 +2380,16 @@ html[data-furigana="false"] rt {
   }
 }
 
+@media (max-width: 50rem) {
+  .stat-kind-control button {
+    padding-inline: 0.25rem;
+  }
+
+  .stat-kind-label {
+    display: none;
+  }
+}
+
 @media (max-width: 32rem) {
   .app-dialog {
     inset: 0;
@@ -2558,6 +2588,7 @@ html[data-furigana="false"] rt {
   .kana-guidance,
   .kanji-guidance,
   .vocabulary-guidance,
+  .conjugation-guidance,
   .katakana-meaning-hint,
   .katakana-meaning-hint-content,
   .history-day-chevron {
@@ -2922,19 +2953,22 @@ html[data-furigana="false"] rt {
 
   .kana-guidance,
   .kanji-guidance,
-  .vocabulary-guidance {
+  .vocabulary-guidance,
+  .conjugation-guidance {
     color: #aeb9b1;
   }
 
   .kana-written-form,
   .kanji-reading,
-  .vocabulary-reading {
+  .vocabulary-reading,
+  .conjugation-reading {
     color: #e3e9e4;
   }
 
   .kana-guidance-divider,
   .kanji-guidance-divider,
-  .vocabulary-guidance-divider {
+  .vocabulary-guidance-divider,
+  .conjugation-guidance-divider {
     color: #69746c;
   }
 

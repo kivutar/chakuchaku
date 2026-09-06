@@ -405,19 +405,41 @@ test("the main menu links every implemented study route", async () => {
   assert.match(html, /data-study-section="kanji"/);
   assert.match(html, /data-study-section="vocabulary"/);
   assert.match(html, /data-study-section="grammar"/);
+  assert.match(html, /data-study-section="conjugation"/);
   assert.match(html, /id="current-study-label"/);
   assert.ok(html.indexOf('src="hiragana.js"') < html.indexOf('src="app.js"'));
   assert.ok(html.indexOf('src="katakana.js"') < html.indexOf('src="app.js"'));
   assert.ok(html.indexOf('src="kanji.js"') < html.indexOf('src="app.js"'));
   assert.ok(html.indexOf('src="vocabulary.js"') < html.indexOf('src="app.js"'));
+  assert.ok(html.indexOf('src="conjugation.js"') < html.indexOf('src="app.js"'));
   assert.match(browserCode, /currentStudySection/);
   assert.match(browserCode, /pickNextHiraganaExercise/);
   assert.match(browserCode, /pickNextKatakanaExercise/);
   assert.match(browserCode, /pickNextKanjiExercise/);
   assert.match(browserCode, /pickNextVocabularyExercise/);
+  assert.match(browserCode, /pickNextConjugationExercise/);
   assert.match(browserCode, /recordKanaReviews/);
   assert.match(browserCode, /recordKanaAttempt/);
   assert.match(browserCode, /solution-kana-item/);
+});
+
+test("Conjugation uses reusable deterministic SRS points", async () => {
+  const [html, browserCode, conjugationCode, srsCode, statsCode] = await Promise.all([
+    readFile(join(rootDirectory, "index.html"), "utf8"),
+    readFile(join(rootDirectory, "app.js"), "utf8"),
+    readFile(join(rootDirectory, "conjugation.js"), "utf8"),
+    readFile(join(rootDirectory, "srs.js"), "utf8"),
+    readFile(join(rootDirectory, "learning-stats.js"), "utf8")
+  ]);
+
+  assert.match(html, /id="conjugation-guidance"/);
+  assert.match(conjugationCode, /function gradeAnswer\(exercise, answer, converter\)/);
+  assert.match(conjugationCode, /conjugationPointIds: \[conjugationPointId\]/);
+  assert.match(browserCode, /recordConjugationEncounter\(lesson\)/);
+  assert.match(browserCode, /recordConjugationReviews\(result\.ratings\)/);
+  assert.match(browserCode, /recordConjugationAttempt/);
+  assert.match(srsCode, /conjugationCards/);
+  assert.match(statsCode, /section: "conjugation"/);
 });
 
 test("Vocabulary alternates deterministic translation directions and reviews one word", async () => {
@@ -699,11 +721,12 @@ test("global statistics count every study section", async () => {
   assert.match(browserCode, /overview\.exerciseCounts\.katakana/);
   assert.match(browserCode, /overview\.exerciseCounts\.kanji/);
   assert.match(browserCode, /overview\.exerciseCounts\.vocabulary/);
+  assert.match(browserCode, /overview\.exerciseCounts\.conjugation/);
   assert.match(statisticsCode, /function countCompletedExercises\(exerciseHistory\)/);
   assert.match(statisticsCode, /kana: counts\.hiragana \+ counts\.katakana/);
   assert.match(
     statisticsCode,
-    /const globalReviewEvents = \[\.\.\.events, \.\.\.kanaEvents, \.\.\.vocabularyEvents, \.\.\.kanjiEvents\]/
+    /const globalReviewEvents = \[[\s\S]*\.\.\.events,[\s\S]*\.\.\.kanaEvents,[\s\S]*\.\.\.vocabularyEvents,[\s\S]*\.\.\.kanjiEvents,[\s\S]*\.\.\.conjugationEvents[\s\S]*\]/
   );
   assert.match(statisticsCode, /createReviewDays\(globalReviewEvents, currentTime\)/);
 });
@@ -861,11 +884,13 @@ test("statistics UI combines SRS progress, outcomes, and exposure coverage", asy
   assert.doesNotMatch(html, /role="tab"/);
   assert.match(html, /data-stat-kind="overview"/);
   assert.match(html, /data-stat-kind="grammar"/);
+  assert.match(html, /data-stat-kind="conjugation"/);
   assert.match(html, /data-stat-kind="vocabulary"/);
   assert.match(html, /data-stat-kind="kanji"/);
   assert.match(html, /data-stat-kind="hiragana"[\s\S]*aria-label="Hiragana"[\s\S]*>あ</);
   assert.match(html, /data-stat-kind="katakana"[\s\S]*aria-label="Katakana"[\s\S]*>ア</);
   assert.match(html, /data-stat-kind="grammar"[\s\S]*aria-label="Grammar"[\s\S]*>文</);
+  assert.match(html, /data-stat-kind="conjugation"[\s\S]*aria-label="Conjugation"[\s\S]*>活</);
   assert.match(html, /data-stat-kind="vocabulary"[\s\S]*aria-label="Vocabulary"[\s\S]*>語</);
   assert.match(html, /data-stat-kind="kanji"[\s\S]*aria-label="Kanji"[\s\S]*>漢</);
   assert.ok(html.indexOf('src="statistics.js"') < html.indexOf('src="app.js"'));
@@ -1067,6 +1092,7 @@ test("preview serves the committed static application", async () => {
     ["/", "text/html"],
     ["/privacy.html", "text/html"],
     ["/grammar", "text/html"],
+    ["/conjugation", "text/html"],
     ["/hiragana", "text/html"],
     ["/katakana", "text/html"],
     ["/kanji", "text/html"],
@@ -1084,6 +1110,7 @@ test("preview serves the committed static application", async () => {
     ["/katakana.js", "text/javascript"],
     ["/kanji.js", "text/javascript"],
     ["/vocabulary.js", "text/javascript"],
+    ["/conjugation.js", "text/javascript"],
     ["/vendor/ts-fsrs.js", "text/javascript"],
     ["/vendor/wanakana.js", "text/javascript"],
     ["/vendor/capacitor.js", "text/javascript"],
@@ -1119,7 +1146,8 @@ test("preview serves the committed static application", async () => {
     ["/data/locales/fr/kanji-contexts.json", "application/json"],
     ["/data/locales/fr/vocabulary-examples.json", "application/json"],
     ["/data/jlpt-n5-vocabulary.json", "application/json"],
-    ["/data/jlpt-n5-grammar.json", "application/json"]
+    ["/data/jlpt-n5-grammar.json", "application/json"],
+    ["/data/jlpt-n5-conjugation.json", "application/json"]
   ]);
 
   for (const [path, contentType] of expectedTypes) {

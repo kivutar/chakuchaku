@@ -75,6 +75,7 @@ test("service worker pre-caches the app shell but loads voices on demand", async
 
   for (const requiredPath of [
     "grammar",
+    "conjugation",
     "hiragana",
     "katakana",
     "kanji",
@@ -91,6 +92,7 @@ test("service worker pre-caches the app shell but loads voices on demand", async
     "progress.js",
     "history.js",
     "kanji.js",
+    "conjugation.js",
     "i18n.js",
     "locales/en.json",
     "locales/fr.json"

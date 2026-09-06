@@ -51,6 +51,16 @@ Writing systems, vocabulary, and kanji are excluded because this file is the
 grammar curriculum. Grammar-dependent counting, time, and question systems are
 included.
 
+## JLPT N5 conjugation curriculum
+
+`jlpt-n5-conjugation.json` assigns 43 verbs from the shared vocabulary inventory
+to the godan, ichidan, `する`, or `来る` class. It also records the `行く`
+て-form exception. The browser combines those verbs with the rules defined in
+`conjugation.js`, producing exercises for 25 stable SRS points rather than one
+card per word-and-form pair: 16 polite form/class combinations and nine て-form
+families. The list is deliberately limited to beginner forms; compound grammar
+such as `～てくれる` remains in the Grammar section for now.
+
 ## JLPT N5 vocabulary inventory
 
 `jlpt-n5-vocabulary.json` is a flat synthetic vocabulary inventory. There is no

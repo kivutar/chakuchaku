@@ -198,7 +198,7 @@ test("statistics combine SRS scheduling with recent grammar outcomes", () => {
     new: 5,
     reviewed: 3,
     total: 8,
-    masteredByKind: { grammar: 0, kana: 0, vocabulary: 0, kanji: 0 }
+    masteredByKind: { grammar: 0, kana: 0, vocabulary: 0, kanji: 0, conjugation: 0 }
   });
   assert.deepEqual(model.overview.recentResults, { good: 2, again: 2 });
   assert.equal(model.overview.recentResultCount, 4);
@@ -208,6 +208,7 @@ test("statistics combine SRS scheduling with recent grammar outcomes", () => {
     katakana: 0,
     kanji: 0,
     vocabulary: 0,
+    conjugation: 0,
     kana: 0,
     total: 3
   });
@@ -285,7 +286,7 @@ test("global mastery counts shared kana once across script views", () => {
     new: 0,
     reviewed: 3,
     total: 3,
-    masteredByKind: { grammar: 1, kana: 1, vocabulary: 0, kanji: 0 }
+    masteredByKind: { grammar: 1, kana: 1, vocabulary: 0, kanji: 0, conjugation: 0 }
   });
 });
 
@@ -376,6 +377,7 @@ test("global exercise counts include kana and vocabulary sections", () => {
     katakana: 1,
     kanji: 1,
     vocabulary: 1,
+    conjugation: 0,
     kana: 3,
     total: 7
   });
@@ -437,6 +439,41 @@ test("global result activity includes grammar, kana, vocabulary, and kanji ratin
   );
 });
 
+test("conjugation statistics combine reusable point cards, encounters, and outcomes", () => {
+  const point = {
+    id: "godan-u-tsu-ru-te-form",
+    pattern: "～う・つ・る → ～って",
+    name: "て-form · godan verbs",
+    meaning: "Practice this sound change."
+  };
+  const model = createStatisticsModel({
+    conjugation: [point],
+    now: "2026-08-09T12:00:00.000Z",
+    learningStats: {
+      conjugationPoints: {
+        [point.id]: { encounterCount: 3 }
+      },
+      exerciseHistory: [{
+        section: "conjugation",
+        submittedAt: "2026-08-09T11:00:00.000Z",
+        conjugationRatings: [{ conjugationPointId: point.id, outcome: "good" }]
+      }]
+    },
+    srsData: {
+      conjugationCards: {
+        [point.id]: createCard({ due: "2026-08-12T12:00:00.000Z" })
+      }
+    }
+  });
+
+  assert.equal(model.conjugation.length, 1);
+  assert.equal(model.conjugation[0].encounterCount, 3);
+  assert.equal(model.conjugation[0].results.good, 1);
+  assert.equal(model.conjugation[0].status.key, "review");
+  assert.equal(model.overview.exerciseCounts.conjugation, 1);
+  assert.deepEqual(model.overview.recentResults, { good: 1, again: 0 });
+});
+
 test("vocabulary statistics combine SRS, encounters, and graded outcomes", () => {
   const model = createStatisticsModel({
     vocabulary: [
@@ -485,6 +522,7 @@ test("vocabulary statistics combine SRS, encounters, and graded outcomes", () =>
     katakana: 0,
     kanji: 0,
     vocabulary: 2,
+    conjugation: 0,
     kana: 0,
     total: 2
   });
@@ -551,6 +589,7 @@ test("kanji statistics combine SRS, encounters, and mechanical outcomes", () => 
     katakana: 0,
     kanji: 2,
     vocabulary: 0,
+    conjugation: 0,
     kana: 0,
     total: 2
   });

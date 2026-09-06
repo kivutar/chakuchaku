@@ -12,6 +12,7 @@
       kana: {},
       vocabulary: {},
       kanji: {},
+      conjugationPoints: {},
       exerciseHistory: []
     };
   }
@@ -83,6 +84,30 @@
         );
       })
       .map((attempt) => {
+        if (attempt.section === "conjugation") {
+          return {
+            section: "conjugation",
+            exerciseId: attempt.exerciseId,
+            conjugationPointId: typeof attempt.conjugationPointId === "string"
+              ? attempt.conjugationPointId
+              : "",
+            vocabularyId: typeof attempt.vocabularyId === "string"
+              ? attempt.vocabularyId
+              : "",
+            text: attempt.text,
+            solution: typeof attempt.solution === "string" ? attempt.solution : "",
+            term: typeof attempt.term === "string" ? attempt.term : "",
+            reading: typeof attempt.reading === "string" ? attempt.reading : "",
+            meaning: typeof attempt.meaning === "string" ? attempt.meaning : "",
+            verbClass: typeof attempt.verbClass === "string" ? attempt.verbClass : "",
+            form: typeof attempt.form === "string" ? attempt.form : "",
+            ...getLocaleProperty(attempt.locale),
+            answer: attempt.answer,
+            submittedAt: attempt.submittedAt,
+            conjugationRatings: normalizeConjugationRatings(attempt.conjugationRatings)
+          };
+        }
+
         if (attempt.section === "kanji") {
           return {
             section: "kanji",
@@ -221,6 +246,29 @@
     return [...normalized].map(([kanjiId, outcome]) => ({ kanjiId, outcome }));
   }
 
+  function normalizeConjugationRatings(conjugationRatings) {
+    const normalized = new Map();
+
+    if (!Array.isArray(conjugationRatings)) {
+      return [];
+    }
+
+    for (const rating of conjugationRatings) {
+      if (
+        typeof rating?.conjugationPointId === "string" &&
+        rating.conjugationPointId &&
+        ["again", "good"].includes(rating.outcome)
+      ) {
+        normalized.set(rating.conjugationPointId, rating.outcome);
+      }
+    }
+
+    return [...normalized].map(([conjugationPointId, outcome]) => ({
+      conjugationPointId,
+      outcome
+    }));
+  }
+
   function readLearningStats({ storage } = {}) {
     const resolvedStorage = getStorage(storage);
 
@@ -248,6 +296,7 @@
         kana: normalizeBucket(parsed.kana),
         vocabulary: normalizeBucket(parsed.vocabulary),
         kanji: normalizeBucket(parsed.kanji),
+        conjugationPoints: normalizeBucket(parsed.conjugationPoints),
         exerciseHistory: normalizeExerciseHistory(parsed.exerciseHistory)
       };
     } catch {
@@ -635,6 +684,72 @@
     return stats;
   }
 
+  function recordConjugationEncounter(exercise, { storage, now = new Date() } = {}) {
+    const resolvedStorage = getStorage(storage);
+    const stats = readLearningStats({ storage: resolvedStorage });
+
+    if (
+      exercise?.section !== "conjugation" ||
+      !Array.isArray(exercise.conjugationPointIds) ||
+      exercise.conjugationPointIds.length === 0
+    ) {
+      return stats;
+    }
+
+    const encounteredAt = new Date(now).toISOString();
+
+    incrementBucket(stats.conjugationPoints, exercise.conjugationPointIds, encounteredAt);
+    stats.updatedAt = encounteredAt;
+    writeLearningStats(stats, resolvedStorage);
+    return stats;
+  }
+
+  function recordConjugationAttempt(
+    exercise,
+    answer,
+    conjugationRatings,
+    { storage, now = new Date() } = {}
+  ) {
+    const resolvedStorage = getStorage(storage);
+    const stats = readLearningStats({ storage: resolvedStorage });
+    const normalizedRatings = normalizeConjugationRatings(conjugationRatings);
+
+    if (
+      exercise?.section !== "conjugation" ||
+      typeof exercise.id !== "string" ||
+      typeof exercise.conjugationPointId !== "string" ||
+      typeof exercise.term !== "string" ||
+      typeof exercise.solution !== "string" ||
+      typeof answer !== "string" ||
+      normalizedRatings.length === 0
+    ) {
+      return stats;
+    }
+
+    const submittedAt = new Date(now).toISOString();
+
+    stats.exerciseHistory.push({
+      section: "conjugation",
+      exerciseId: exercise.id,
+      conjugationPointId: exercise.conjugationPointId,
+      vocabularyId: exercise.vocabularyId,
+      text: exercise.term,
+      solution: exercise.solution,
+      term: exercise.term,
+      reading: exercise.reading,
+      meaning: exercise.meaning,
+      verbClass: exercise.verbClass,
+      form: exercise.form,
+      ...getLocaleProperty(exercise.locale),
+      answer,
+      submittedAt,
+      conjugationRatings: normalizedRatings
+    });
+    stats.updatedAt = submittedAt;
+    writeLearningStats(stats, resolvedStorage);
+    return stats;
+  }
+
   function recordExerciseGrammarRatings(
     exerciseId,
     submittedAt,
@@ -682,6 +797,8 @@
     recordKanjiEncounter,
     recordKanjiAttempt,
     recordKanjiAttemptOutcome,
+    recordConjugationEncounter,
+    recordConjugationAttempt,
     recordHiraganaEncounter: recordKanaEncounter,
     recordHiraganaAttempt: recordKanaAttempt
   });

@@ -71,6 +71,7 @@
     <script src="katakana.js" defer></script>
     <script src="kanji.js" defer></script>
     <script src="vocabulary.js" defer></script>
+    <script src="conjugation.js" defer></script>
     <script src="exercise-selection.js" defer></script>
     <script src="statistics.js" defer></script>
     <script src="history.js" defer></script>
@@ -170,6 +171,15 @@
           data-study-section="grammar"
           data-i18n="section.grammar"
         >Grammar</a>
+        <a
+          id="conjugation-menu-item"
+          class="profile-menu-item profile-menu-study-item"
+          href="conjugation"
+          role="menuitem"
+          tabindex="-1"
+          data-study-section="conjugation"
+          data-i18n="section.conjugation"
+        >Conjugation</a>
         <span class="profile-menu-separator" role="separator"></span>
         <button
           id="settings-menu-item"
@@ -465,6 +475,16 @@
             </button>
             <button
               type="button"
+              data-stat-kind="conjugation"
+              aria-label="Conjugation"
+              data-i18n-aria-label="section.conjugation"
+              aria-pressed="false"
+            >
+              <span class="stat-kind-icon" lang="ja" aria-hidden="true">活</span>
+              <span class="stat-kind-label" data-i18n="section.conjugation">Conjugation</span>
+            </button>
+            <button
+              type="button"
               data-stat-kind="vocabulary"
               aria-label="Vocabulary"
               data-i18n-aria-label="section.vocabulary"
@@ -584,6 +604,16 @@
               aria-hidden="true"
             >·</span>
             <span id="vocabulary-part-of-speech"></span>
+          </div>
+          <div
+            id="conjugation-guidance"
+            class="conjugation-guidance"
+            data-user-language
+            hidden
+          >
+            <span id="conjugation-reading" class="conjugation-reading" lang="ja"></span>
+            <span class="conjugation-guidance-divider" aria-hidden="true">·</span>
+            <span id="conjugation-meaning"></span>
           </div>
           <div
             id="production-guidance"

@@ -33,6 +33,9 @@ test("progress backups round-trip learning data without session secrets", () => 
   globalThis.JlptN5Srs.recordReviews([
     { grammarPointId: "te-kara", outcome: "good" }
   ], { storage: sourceStorage, now: reviewedAt });
+  globalThis.JlptN5Srs.recordConjugationReviews([
+    { conjugationPointId: "godan-mu-bu-nu-te-form", outcome: "good" }
+  ], { storage: sourceStorage, now: reviewedAt });
   globalThis.JlptN5Stats.recordExerciseAttempt({
     id: "coffee-before-work",
     text: "毎朝、コーヒーを飲んでから仕事に行きます。"
@@ -55,9 +58,13 @@ test("progress backups round-trip learning data without session secrets", () => 
     storage: destinationStorage
   });
 
-  assert.equal(result.cardCount, 1);
+  assert.equal(result.cardCount, 2);
   assert.equal(result.historyCount, 1);
   assert.ok(globalThis.JlptN5Srs.readSrsData({ storage: destinationStorage }).cards["te-kara"]);
+  assert.ok(
+    globalThis.JlptN5Srs.readSrsData({ storage: destinationStorage })
+      .conjugationCards["godan-mu-bu-nu-te-form"]
+  );
   assert.equal(
     globalThis.JlptN5Stats.readLearningStats({ storage: destinationStorage })
       .exerciseHistory[0].answer,

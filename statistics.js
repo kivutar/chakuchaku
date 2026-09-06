@@ -125,6 +125,35 @@
     });
   }
 
+  function createConjugationReviewEvents(exerciseHistory) {
+    const events = [];
+
+    for (const attempt of exerciseHistory) {
+      const reviewedAt = Date.parse(attempt.submittedAt);
+
+      if (Number.isNaN(reviewedAt) || !Array.isArray(attempt.conjugationRatings)) {
+        continue;
+      }
+
+      for (const rating of attempt.conjugationRatings) {
+        if (
+          typeof rating?.conjugationPointId === "string" &&
+          ["again", "good"].includes(rating.outcome)
+        ) {
+          events.push({
+            itemId: rating.conjugationPointId,
+            outcome: rating.outcome,
+            reviewedAt: attempt.submittedAt
+          });
+        }
+      }
+    }
+
+    return events.sort((left, right) => {
+      return Date.parse(left.reviewedAt) - Date.parse(right.reviewedAt);
+    });
+  }
+
   function createResultIndex(events) {
     const results = new Map();
 
@@ -223,14 +252,24 @@
   }
 
   function countCompletedExercises(exerciseHistory) {
-    const counts = { grammar: 0, hiragana: 0, katakana: 0, kanji: 0, vocabulary: 0 };
+    const counts = {
+      grammar: 0,
+      hiragana: 0,
+      katakana: 0,
+      kanji: 0,
+      vocabulary: 0,
+      conjugation: 0
+    };
 
     for (const attempt of exerciseHistory) {
       if (Number.isNaN(Date.parse(attempt?.submittedAt))) {
         continue;
       }
 
-      if (["hiragana", "katakana", "kanji", "vocabulary"].includes(attempt.section)) {
+      if (
+        ["hiragana", "katakana", "kanji", "vocabulary", "conjugation"]
+          .includes(attempt.section)
+      ) {
         counts[attempt.section] += 1;
       } else if (attempt.section === undefined || attempt.section === "grammar") {
         counts.grammar += 1;
@@ -240,7 +279,8 @@
     return {
       ...counts,
       kana: counts.hiragana + counts.katakana,
-      total: counts.grammar + counts.hiragana + counts.katakana + counts.kanji + counts.vocabulary
+      total: counts.grammar + counts.hiragana + counts.katakana + counts.kanji +
+        counts.vocabulary + counts.conjugation
     };
   }
 
@@ -347,6 +387,7 @@
     katakana = [],
     vocabulary = [],
     kanji = [],
+    conjugation = [],
     activeKanjiIds,
     learningStats = {},
     srsData = {},
@@ -370,7 +411,14 @@
     const kanaEvents = createKanaReviewEvents(exerciseHistory);
     const vocabularyEvents = createVocabularyReviewEvents(exerciseHistory);
     const kanjiEvents = createKanjiReviewEvents(exerciseHistory);
-    const globalReviewEvents = [...events, ...kanaEvents, ...vocabularyEvents, ...kanjiEvents]
+    const conjugationEvents = createConjugationReviewEvents(exerciseHistory);
+    const globalReviewEvents = [
+      ...events,
+      ...kanaEvents,
+      ...vocabularyEvents,
+      ...kanjiEvents,
+      ...conjugationEvents
+    ]
       .sort((left, right) => {
         return Date.parse(left.reviewedAt) - Date.parse(right.reviewedAt);
       });
@@ -378,6 +426,7 @@
     const resultsByKana = createResultIndex(kanaEvents);
     const resultsByVocabulary = createResultIndex(vocabularyEvents);
     const resultsByKanji = createResultIndex(kanjiEvents);
+    const resultsByConjugationPoint = createResultIndex(conjugationEvents);
     const grammarEntries = grammarPoints.map((metadata) => {
       const card = cards[metadata.id];
       const results = resultsByGrammarPoint.get(metadata.id) || {
@@ -402,6 +451,50 @@
     const statusOrder = { due: 0, relearning: 1, learning: 2, review: 3, new: 4 };
 
     grammarEntries.sort((left, right) => {
+      const statusDifference = statusOrder[left.status.key] - statusOrder[right.status.key];
+
+      if (statusDifference !== 0) {
+        return statusDifference;
+      }
+
+      if (left.card && right.card) {
+        const dueDifference = Date.parse(left.card.due) - Date.parse(right.card.due);
+
+        if (dueDifference !== 0) {
+          return dueDifference;
+        }
+      }
+
+      return left.metadata.pattern.localeCompare(right.metadata.pattern, "ja");
+    });
+
+    const conjugationCards = srsData.conjugationCards &&
+      typeof srsData.conjugationCards === "object"
+      ? srsData.conjugationCards
+      : {};
+    const conjugationEntries = conjugation.map((metadata) => {
+      const card = conjugationCards[metadata.id];
+      const results = resultsByConjugationPoint.get(metadata.id) || {
+        good: 0,
+        again: 0,
+        lastOutcome: undefined,
+        lastReviewedAt: undefined
+      };
+      const encounter = learningStats.conjugationPoints?.[metadata.id];
+
+      return {
+        id: metadata.id,
+        metadata,
+        card,
+        status: getCardStatus(card, currentTime.getTime()),
+        knowledge: getKnowledgeLevel(card, currentTime, getRetrievability),
+        results,
+        encounterCount: encounter?.encounterCount || 0,
+        lastReviewedAt: card?.last_review || results.lastReviewedAt
+      };
+    });
+
+    conjugationEntries.sort((left, right) => {
       const statusDifference = statusOrder[left.status.key] - statusOrder[right.status.key];
 
       if (statusDifference !== 0) {
@@ -570,7 +663,8 @@
       ...grammarEntries,
       ...uniqueKanaEntries,
       ...vocabularyEntries,
-      ...activeKanjiEntries
+      ...activeKanjiEntries,
+      ...conjugationEntries
     ];
     const reviewedEntries = knowledgeEntries.filter(({ card }) => card);
     const dueEntries = reviewedEntries.filter(({ card }) => {
@@ -584,7 +678,7 @@
       (counts, event) => ({ ...counts, [event.outcome]: counts[event.outcome] + 1 }),
       { good: 0, again: 0 }
     );
-    const needsAttention = grammarEntries
+    const needsAttention = [...grammarEntries, ...conjugationEntries]
       .filter(({ status, results }) => status.key === "due" || results.lastOutcome === "again")
       .sort((left, right) => {
         if (left.status.key !== right.status.key) {
@@ -601,7 +695,10 @@
       grammar: grammarEntries.filter(({ knowledge }) => knowledge.key === "mastered").length,
       kana: uniqueKanaEntries.filter(({ knowledge }) => knowledge.key === "mastered").length,
       vocabulary: vocabularyEntries.filter(({ knowledge }) => knowledge.key === "mastered").length,
-      kanji: activeKanjiEntries.filter(({ knowledge }) => knowledge.key === "mastered").length
+      kanji: activeKanjiEntries.filter(({ knowledge }) => knowledge.key === "mastered").length,
+      conjugation: conjugationEntries.filter(({ knowledge }) => {
+        return knowledge.key === "mastered";
+      }).length
     };
     const knowledgeCounts = knowledgeEntries.reduce(
       (counts, { knowledge }) => ({
@@ -635,6 +732,7 @@
       grammar: grammarEntries,
       hiragana: hiraganaEntries,
       katakana: katakanaEntries,
+      conjugation: conjugationEntries,
       vocabulary: {
         ...vocabularyExposure,
         progressEntries: vocabularyEntries

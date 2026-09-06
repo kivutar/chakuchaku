@@ -15,6 +15,8 @@ const {
   recordKanjiEncounter,
   recordKanjiAttempt,
   recordKanjiAttemptOutcome,
+  recordConjugationEncounter,
+  recordConjugationAttempt,
   recordHiraganaEncounter,
   recordHiraganaAttempt,
   storageKey
@@ -99,7 +101,7 @@ test("new items receive their own first encounter timestamp", () => {
   assert.equal(stats.kanji["kanji-two"].firstEncounteredAt, "2026-08-10T12:00:00.000Z");
 });
 
-test("existing version-one statistics gain an empty kanji bucket", () => {
+test("existing version-one statistics gain empty newer knowledge buckets", () => {
   const storage = new MemoryStorage();
 
   storage.setItem(storageKey, JSON.stringify({
@@ -111,6 +113,61 @@ test("existing version-one statistics gain an empty kanji bucket", () => {
   }));
 
   assert.deepEqual(readLearningStats({ storage }).kanji, {});
+  assert.deepEqual(readLearningStats({ storage }).conjugationPoints, {});
+});
+
+test("conjugation encounters and deterministic ratings are retained", () => {
+  const storage = new MemoryStorage();
+  const exercise = {
+    id: "conjugation-godan-u-tsu-ru-te-form-toru",
+    section: "conjugation",
+    conjugationPointId: "godan-u-tsu-ru-te-form",
+    conjugationPointIds: ["godan-u-tsu-ru-te-form"],
+    vocabularyId: "take-photo",
+    term: "撮る",
+    reading: "とる",
+    meaning: "prendre une photo",
+    verbClass: "godan",
+    form: "te-form",
+    solution: "撮って",
+    locale: "fr"
+  };
+
+  recordConjugationEncounter(exercise, {
+    storage,
+    now: "2026-08-23T10:00:00.000Z"
+  });
+  recordConjugationAttempt(exercise, "とりて", [{
+    conjugationPointId: "godan-u-tsu-ru-te-form",
+    outcome: "again"
+  }], {
+    storage,
+    now: "2026-08-23T10:01:00.000Z"
+  });
+
+  const stats = readLearningStats({ storage });
+
+  assert.equal(stats.conjugationPoints["godan-u-tsu-ru-te-form"].encounterCount, 1);
+  assert.deepEqual(stats.exerciseHistory[0], {
+    section: "conjugation",
+    exerciseId: exercise.id,
+    conjugationPointId: "godan-u-tsu-ru-te-form",
+    vocabularyId: "take-photo",
+    text: "撮る",
+    solution: "撮って",
+    term: "撮る",
+    reading: "とる",
+    meaning: "prendre une photo",
+    verbClass: "godan",
+    form: "te-form",
+    locale: "fr",
+    answer: "とりて",
+    submittedAt: "2026-08-23T10:01:00.000Z",
+    conjugationRatings: [{
+      conjugationPointId: "godan-u-tsu-ru-te-form",
+      outcome: "again"
+    }]
+  });
 });
 
 test("submitted exercise answers are retained in chronological history", () => {
@@ -624,6 +681,7 @@ test("lessons without exercise metadata are not recorded", () => {
     kana: {},
     vocabulary: {},
     kanji: {},
+    conjugationPoints: {},
     exerciseHistory: []
   });
 });

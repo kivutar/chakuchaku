@@ -29,6 +29,7 @@ const staticFiles = [
   "katakana.js",
   "kanji.js",
   "vocabulary.js",
+  "conjugation.js",
   "exercise-selection.js",
   "statistics.js",
   "history.js",
@@ -50,6 +51,7 @@ const staticFiles = [
   "data/jlpt-n5-grammar.json",
   "data/jlpt-n5-kanji.json",
   "data/jlpt-n5-vocabulary.json",
+  "data/jlpt-n5-conjugation.json",
   "locales/en.json",
   "locales/fr.json",
   "data/locales/fr/exercises.json",
@@ -106,7 +108,14 @@ for (const [sourcePath, destinationPath] of dependencyFiles) {
 const routeHtml = (await readFile(join(rootDirectory, "index.html"), "utf8"))
   .replace("<head>", "<head>\n    <base href=\"../\">");
 
-for (const route of ["grammar", "hiragana", "katakana", "kanji", "vocabulary"]) {
+for (const route of [
+  "grammar",
+  "conjugation",
+  "hiragana",
+  "katakana",
+  "kanji",
+  "vocabulary"
+]) {
   const routeDirectory = join(outputDirectory, route);
 
   await mkdir(routeDirectory, { recursive: true });

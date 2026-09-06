@@ -56,6 +56,9 @@ test("a failed part makes the whole history attempt unsuccessful", () => {
   assert.equal(getAttemptOutcome({
     kanjiRatings: [{ kanjiId: "kanji-日", outcome: "good" }]
   }), "good");
+  assert.equal(getAttemptOutcome({
+    conjugationRatings: [{ conjugationPointId: "ichidan-te-form", outcome: "good" }]
+  }), "good");
 });
 
 test("history pages remain bounded and replace older ranges", () => {

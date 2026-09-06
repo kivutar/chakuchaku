@@ -1,7 +1,7 @@
 # ChakuChaku
 
-A minimal browser app for working through JLPT N5 grammar, Hiragana, Katakana,
-Kanji, and vocabulary exercises. Grammar lessons reveal prompts character by character, display
+A minimal browser app for working through JLPT N5 grammar, conjugation,
+Hiragana, Katakana, Kanji, and vocabulary exercises. Grammar lessons reveal prompts character by character, display
 furigana and token details, and accept translations in either direction.
 Hiragana lessons use complete N5 vocabulary words in both Hiragana-to-rōmaji
 and rōmaji-to-Hiragana directions, then grade every kana mechanically. Katakana
@@ -18,6 +18,10 @@ Kanji exercises use complete beginner words in alternating word-to-reading and
 reading-to-missing-character directions. All 209 characters in the B6-B4
 curriculum are active and have their own FSRS cards. Kanji-only example words
 fill the few gaps in the N5 vocabulary inventory without entering its SRS.
+Conjugation exercises reuse 43 beginner verbs across 25 independently scheduled
+rules: four polite forms for each verb class, plus the nine て-form families and
+the 行く exception. Answers accept Japanese writing, hiragana, or rōmaji and are
+graded locally.
 A single top menu switches study sections and provides settings, SRS progress
 statistics, exercise history, and a project link.
 
@@ -44,6 +48,7 @@ Development-time generation is split from the browser runtime:
 | `data/source/introduction.json` | Authored introduction and optional ambiguity overrides | Committed |
 | `data/source/exercises.json` | Authored exercises, solutions, grammar references, and optional ambiguity overrides | Committed |
 | `data/jlpt-n5-grammar.json` | Canonical flat JLPT N5 grammar inventory | Committed |
+| `data/jlpt-n5-conjugation.json` | Curated N5 verbs and their conjugation classes | Committed |
 | `data/grammar-coverage.md` | Generated checklist of grammar points covered by exercises | Committed |
 | `data/jlpt-n5-vocabulary.json` | Synthetic N5 vocabulary core plus labeled learner favorites | Committed |
 | `data/source/rikkyo-n5-kanji.json` | Rikkyo's staged 209-character N5-equivalent curriculum | Committed |
@@ -59,6 +64,7 @@ Development-time generation is split from the browser runtime:
 | `katakana.js` | Katakana selection, IME-safe romanization, and deterministic grading | Committed |
 | `kanji.js` | Contextual Kanji selection, reading normalization, and deterministic grading | Committed |
 | `vocabulary.js` | Bidirectional vocabulary selection, normalization, and deterministic grading | Committed |
+| `conjugation.js` | Polite/て-form generation, reusable point mapping, and deterministic grading | Committed |
 | `assets/voices/{grammar,vocab}/*.m4a` | Generated AAC narration used directly by the browser | Committed when available |
 
 `scripts/prepare-content.js` runs Lindera with IPADIC during development. It
@@ -205,6 +211,7 @@ also have direct URLs:
 
 ```text
 http://127.0.0.1:4173/grammar
+http://127.0.0.1:4173/conjugation
 http://127.0.0.1:4173/hiragana
 http://127.0.0.1:4173/katakana
 http://127.0.0.1:4173/vocabulary
@@ -279,6 +286,20 @@ included in the build. The same recording is reused by matching Kana word
 exercises. Translation-to-Japanese prompts keep audio hidden until submission,
 then show a compact speaker beside the revealed Japanese answer.
 
+## Conjugation exercises
+
+The Conjugation section asks for one inflected form of a complete N5 verb. Its
+initial curriculum contains the four common polite forms (`～ます`, `～ました`,
+`～ません`, and `～ませんでした`) for godan, ichidan, `する`, and `来る`
+verbs, plus every regular て-form sound-change family and irregular `行く`.
+
+Progress belongs to the reusable rule, not the particular verb. For example,
+correctly forming either `飲んで` or `遊んで` reviews the same
+`～む・ぶ・ぬ → ～んで` card. The deterministic grader accepts the written
+form, its hiragana reading, and rōmaji converted through WanaKana. Conjugation
+has its own FSRS bucket, Statistics tab, history ratings, and global activity
+counts.
+
 ## Kanji exercises
 
 The Kanji section covers Rikkyo's complete 209-character B6-B4 curriculum. Each
@@ -299,11 +320,12 @@ solution is revealed, where it can play automatically according to Settings.
 
 ## Learning statistics
 
-Displaying an exercise records one encounter for every assessed grammar point
-and every unique vocabulary and curriculum kanji ID referenced by that
-exercise. Submitting records the exercise, answer, and submission timestamp in
-history; advancing after self-assessment adds the grammar outcomes to that same
-attempt. The introduction, character reveal, solution rendering, and audio
+Displaying an exercise records one encounter for every assessed grammar or
+conjugation point and every unique vocabulary and curriculum kanji ID referenced
+by that exercise. Submitting records the exercise, answer, and submission
+timestamp in history; advancing after self-assessment adds editable grammar
+outcomes to that same attempt, while mechanical results are recorded on submit.
+The introduction, character reveal, solution rendering, and audio
 playback do not add encounters. Repeating an exercise later adds another
 encounter.
 
@@ -336,6 +358,7 @@ The data is stored under `jlpt-n5.learning-stats.v1` in browser local storage:
   "kana": {},
   "vocabulary": {},
   "kanji": {},
+  "conjugationPoints": {},
   "exerciseHistory": [
     {
       "exerciseId": "coffee-before-work",
@@ -362,9 +385,9 @@ may eventually warrant migration from local storage to IndexedDB.
 
 Statistics derives its Overview and section views from both local stores. The
 Overview shows mastered knowledge units, all due SRS cards, reviewed curriculum
-coverage, the last 30 results across grammar, kana, Kanji, and vocabulary, the current
+coverage, the last 30 results across grammar, conjugation, kana, Kanji, and vocabulary, the current
 study streak, a 14-day success/failure chart, and the most urgent due or
-recently failed grammar points. A card is Mature when it is in FSRS Review with
+recently failed grammar or conjugation points. A card is Mature when it is in FSRS Review with
 at least 30 days of stability. It is Mastered at 90 days of stability while its
 current FSRS retrievability remains at least 80%. Shared kana cards count once
 in the global total even when they appear in both script views.
@@ -386,7 +409,7 @@ viewing a solution, the learner marks every listed point as `できなかった`
 the learner presses `次へ`.
 
 Cards are stored separately under `jlpt-n5.srs.v1` in browser local storage.
-Grammar, kana, and vocabulary use distinct card buckets, so their schedules
+Grammar, conjugation, kana, kanji, and vocabulary use distinct card buckets, so their schedules
 never collide. Hiragana selection targets the most urgent kana and then chooses
 a complete N5 word containing it. Vocabulary selection targets the most urgent
 word and alternates the requested translation direction after each completed
@@ -464,13 +487,14 @@ For a browser check, run `npm start` and verify:
 6. With `?type=production`, every exercise shows an English prompt, accepts a Japanese answer, and reveals the Japanese reference solution with furigana and a compact speaker button. The furigana setting applies to the answer, and the speaker is disabled when its local recording is missing.
 7. With AI autocorrect disabled, the browser makes no OpenAI request. With a session key and autocorrect enabled, one request selects the grammar ratings; they remain editable, and any request failure falls back to manual rating.
 8. Displaying an exercise adds one entry to `jlpt-n5.learning-stats.v1`; submitting it does not increment the counts again.
-9. The top menu switches between `/grammar`, `/hiragana`, `/katakana`, `/kanji`, and `/vocabulary`; Statistics and History open their corresponding views, arrow keys move through the entries, and Escape or an outside click closes it.
+9. The top menu switches between `/grammar`, `/conjugation`, `/hiragana`, `/katakana`, `/kanji`, and `/vocabulary`; Statistics and History open their corresponding views, arrow keys move through the entries, and Escape or an outside click closes it.
 10. Settings opens a modal. Display and audio toggles survive reloads; the OpenAI key survives only reloads in the same tab and autocorrect cannot be enabled without it.
-11. Statistics opens on the current section, counts completed Grammar, Hiragana, Katakana, Kanji, and Vocabulary exercises in the global overview, and includes every grammar-point, kana, Kanji, and vocabulary rating in its recent results and 14-day chart. Every scheduled section has status filters. History groups attempts by local calendar day, shows seven days at a time, and lazily expands one day with at most 50 attempts per page. Each attempt shows its answer plus green successful and red failed item tags.
+11. Statistics opens on the current section, counts completed Grammar, Conjugation, Hiragana, Katakana, Kanji, and Vocabulary exercises in the global overview, and includes every scheduled-item rating in its recent results and 14-day chart. Every scheduled section has status filters. History groups attempts by local calendar day, shows seven days at a time, and lazily expands one day with at most 50 attempts per page. Each attempt shows its answer plus green successful and red failed item tags.
 12. In Katakana, the seven-prompt cadence includes one Hiragana-to-Katakana exercise; its result grades each aligned pair and updates both scripts in SRS and Statistics.
 13. One Katakana recognition slot shows a single learning item and asks for rōmaji. Contracted and foreign-sound units stay together, while context-only `ッ` and `ー` remain word-only.
 14. In Vocabulary, consecutive completed prompts alternate Japanese-to-English and English-to-Japanese. Correct and incorrect answers each update one word card, and pressing Enter submits then advances from the result.
 15. In Kanji, consecutive completed prompts alternate complete-word reading and missing-character recall. The hidden meaning hint never reveals the answer, audio appears only with the solution, and changing the self-assessment changes the one Kanji card saved on advance.
+16. In Conjugation, enter written Japanese, hiragana, or rōmaji for the requested form. The result advances with Enter and updates exactly one reusable conjugation-point card.
 
 ## Editing lessons
 

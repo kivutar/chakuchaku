@@ -11,6 +11,7 @@ const publicFiles = new Map([
   ["/index.html", ["index.html", "text/html; charset=utf-8"]],
   ["/privacy.html", ["privacy.html", "text/html; charset=utf-8"]],
   ["/grammar", ["index.html", "text/html; charset=utf-8"]],
+  ["/conjugation", ["index.html", "text/html; charset=utf-8"]],
   ["/hiragana", ["index.html", "text/html; charset=utf-8"]],
   ["/katakana", ["index.html", "text/html; charset=utf-8"]],
   ["/kanji", ["index.html", "text/html; charset=utf-8"]],
@@ -31,6 +32,7 @@ const publicFiles = new Map([
   ["/katakana.js", ["katakana.js", "text/javascript; charset=utf-8"]],
   ["/kanji.js", ["kanji.js", "text/javascript; charset=utf-8"]],
   ["/vocabulary.js", ["vocabulary.js", "text/javascript; charset=utf-8"]],
+  ["/conjugation.js", ["conjugation.js", "text/javascript; charset=utf-8"]],
   ["/exercise-selection.js", ["exercise-selection.js", "text/javascript; charset=utf-8"]],
   ["/statistics.js", ["statistics.js", "text/javascript; charset=utf-8"]],
   ["/history.js", ["history.js", "text/javascript; charset=utf-8"]],
@@ -151,6 +153,10 @@ const publicFiles = new Map([
   [
     "/data/jlpt-n5-grammar.json",
     ["data/jlpt-n5-grammar.json", "application/json; charset=utf-8"]
+  ],
+  [
+    "/data/jlpt-n5-conjugation.json",
+    ["data/jlpt-n5-conjugation.json", "application/json; charset=utf-8"]
   ]
 ]);
 
@@ -179,7 +185,14 @@ export async function handleStaticRequest(request, response) {
     return;
   }
 
-  if (["/grammar/", "/hiragana/", "/katakana/", "/kanji/", "/vocabulary/"].includes(pathname)) {
+  if ([
+    "/grammar/",
+    "/conjugation/",
+    "/hiragana/",
+    "/katakana/",
+    "/kanji/",
+    "/vocabulary/"
+  ].includes(pathname)) {
     response.writeHead(308, { Location: pathname.slice(0, -1) });
     response.end();
     return;
