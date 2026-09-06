@@ -172,7 +172,7 @@ certificate/profile and their three signing secrets before then.
 ## Privacy and store forms
 
 The public and in-app policy URL is
-`https://kivutar.github.io/jlptn5/privacy.html`. Apple requires a privacy-policy
+`https://kivutar.github.io/chakuchaku/privacy.html`. Apple requires a privacy-policy
 link both in App Store Connect and inside the app.
 
 Baseline declarations, to be confirmed against the final binary:

@@ -235,7 +235,7 @@ function configureStudyNavigation() {
 
   currentStudyLabel.textContent = label;
   document.title = `${label} · ${t("app.title")}`;
-  privacyMenuItem.href = `https://kivutar.github.io/jlptn5/privacy.html?lang=${getUserLocale()}`;
+  privacyMenuItem.href = `https://kivutar.github.io/chakuchaku/privacy.html?lang=${getUserLocale()}`;
 
   for (const menuItem of studyMenuItems) {
     const isCurrent = menuItem.dataset.studySection === currentStudySection;

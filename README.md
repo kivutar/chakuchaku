@@ -7,7 +7,7 @@
 <p align="center"><strong>Build Japanese step by step with focused, adaptive JLPT N5 practice.</strong></p>
 
 <p align="center">
-  <a href="https://kivutar.github.io/jlptn5/"><strong>Try the web app →</strong></a>
+  <a href="https://kivutar.github.io/chakuchaku/"><strong>Try the web app →</strong></a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://apps.apple.com/app/id6803144387"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" height="40" alt="Download on the App Store"></a>
 </p>

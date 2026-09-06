@@ -244,7 +244,7 @@ test("native release metadata minimizes permissions and includes Apple privacy r
   assert.match(privacyManifest, /NSPrivacyCollectedDataTypeOtherUserContent/u);
   assert.match(privacyManifest, /NSPrivacyCollectedDataTypePurposeAppFunctionality/u);
   assert.match(iosProject, /PrivacyInfo\.xcprivacy in Resources/u);
-  assert.match(html, /href="https:\/\/kivutar\.github\.io\/jlptn5\/privacy\.html"/u);
+  assert.match(html, /href="https:\/\/kivutar\.github\.io\/chakuchaku\/privacy\.html"/u);
   assert.match(html, /target="_blank"[\s\S]*?rel="noopener noreferrer"/u);
   assert.ok(html.indexOf("capacitor-synapse.js") < html.indexOf("capacitor-filesystem.js"));
   assert.ok(html.indexOf("native-synapse.js") < html.indexOf("capacitor-filesystem.js"));
