@@ -53,13 +53,19 @@ included.
 
 ## JLPT N5 conjugation curriculum
 
-`jlpt-n5-conjugation.json` assigns 43 verbs from the shared vocabulary inventory
-to the godan, ichidan, `する`, or `来る` class. It also records the `行く`
-て-form exception. The browser combines those verbs with the rules defined in
-`conjugation.js`, producing exercises for 25 stable SRS points rather than one
-card per word-and-form pair: 16 polite form/class combinations and nine て-form
-families. The list is deliberately limited to beginner forms; compound grammar
-such as `～てくれる` remains in the Grammar section for now.
+`jlpt-n5-conjugation.json` assigns 43 verbs and 79 adjectives from the shared
+vocabulary inventory to an inflection class. Verbs use godan, ichidan, `する`,
+or `来る`, with the `行く` て-form exception. Adjectives use regular い,
+irregular `いい` (including compounds), or な. `いかが` is not treated as an
+inflecting adjective, while `ない` is omitted because requesting its negative
+would create an unnatural double-negative drill.
+
+The browser combines these entries with the rules in `conjugation.js`, producing
+exercises for 39 stable SRS points rather than one card per word-and-form pair:
+the original 25 verb rules, ten regular adjective class/form combinations, and
+four irregular `いい` transformations. The affirmative `いいです` shares the
+regular `～いです` point. The list remains deliberately limited to beginner
+forms; compound grammar such as `～てくれる` stays in Grammar for now.
 
 ## JLPT N5 vocabulary inventory
 

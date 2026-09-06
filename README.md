@@ -18,10 +18,10 @@ Kanji exercises use complete beginner words in alternating word-to-reading and
 reading-to-missing-character directions. All 209 characters in the B6-B4
 curriculum are active and have their own FSRS cards. Kanji-only example words
 fill the few gaps in the N5 vocabulary inventory without entering its SRS.
-Conjugation exercises reuse 43 beginner verbs across 25 independently scheduled
-rules: four polite forms for each verb class, plus the nine て-form families and
-the 行く exception. Answers accept Japanese writing, hiragana, or rōmaji and are
-graded locally.
+Conjugation exercises reuse 43 beginner verbs and 79 adjectives across 39
+independently scheduled rules: four polite forms for each verb or adjective
+class, their beginner て-forms, and the `行く` and `いい` exceptions.
+Answers accept Japanese writing, hiragana, or rōmaji and are graded locally.
 A single top menu switches study sections and provides settings, SRS progress
 statistics, exercise history, and a project link.
 
@@ -48,7 +48,7 @@ Development-time generation is split from the browser runtime:
 | `data/source/introduction.json` | Authored introduction and optional ambiguity overrides | Committed |
 | `data/source/exercises.json` | Authored exercises, solutions, grammar references, and optional ambiguity overrides | Committed |
 | `data/jlpt-n5-grammar.json` | Canonical flat JLPT N5 grammar inventory | Committed |
-| `data/jlpt-n5-conjugation.json` | Curated N5 verbs and their conjugation classes | Committed |
+| `data/jlpt-n5-conjugation.json` | Curated N5 verbs/adjectives and their inflection classes | Committed |
 | `data/grammar-coverage.md` | Generated checklist of grammar points covered by exercises | Committed |
 | `data/jlpt-n5-vocabulary.json` | Synthetic N5 vocabulary core plus labeled learner favorites | Committed |
 | `data/source/rikkyo-n5-kanji.json` | Rikkyo's staged 209-character N5-equivalent curriculum | Committed |
@@ -288,17 +288,21 @@ then show a compact speaker beside the revealed Japanese answer.
 
 ## Conjugation exercises
 
-The Conjugation section asks for one inflected form of a complete N5 verb. Its
-initial curriculum contains the four common polite forms (`～ます`, `～ました`,
-`～ません`, and `～ませんでした`) for godan, ichidan, `する`, and `来る`
-verbs, plus every regular て-form sound-change family and irregular `行く`.
+The Conjugation section asks for one inflected form of a complete N5 verb or
+adjective. Its verb curriculum contains the four common polite forms (`～ます`,
+`～ました`, `～ません`, and `～ませんでした`) for godan, ichidan, `する`,
+and `来る` verbs, plus every regular て-form sound-change family and irregular
+`行く`. Adjectives in い and な use the corresponding four polite forms and
+their `～くて` / `～で` connective forms, with the irregular `いい → よ…`
+transformations tracked separately.
 
 Progress belongs to the reusable rule, not the particular verb. For example,
 correctly forming either `飲んで` or `遊んで` reviews the same
 `～む・ぶ・ぬ → ～んで` card. The deterministic grader accepts the written
 form, its hiragana reading, and rōmaji converted through WanaKana. Conjugation
 has its own FSRS bucket, Statistics tab, history ratings, and global activity
-counts.
+counts. Equivalent polite negatives are accepted, such as `高くないです` and
+`高くありません`, or `静かではありません` and `静かじゃないです`.
 
 ## Kanji exercises
 

@@ -99,7 +99,11 @@
             term: typeof attempt.term === "string" ? attempt.term : "",
             reading: typeof attempt.reading === "string" ? attempt.reading : "",
             meaning: typeof attempt.meaning === "string" ? attempt.meaning : "",
-            verbClass: typeof attempt.verbClass === "string" ? attempt.verbClass : "",
+            conjugationClass: typeof attempt.conjugationClass === "string"
+              ? attempt.conjugationClass
+              : typeof attempt.verbClass === "string"
+                ? attempt.verbClass
+                : "",
             form: typeof attempt.form === "string" ? attempt.form : "",
             ...getLocaleProperty(attempt.locale),
             answer: attempt.answer,
@@ -738,7 +742,7 @@
       term: exercise.term,
       reading: exercise.reading,
       meaning: exercise.meaning,
-      verbClass: exercise.verbClass,
+      conjugationClass: exercise.conjugationClass,
       form: exercise.form,
       ...getLocaleProperty(exercise.locale),
       answer,

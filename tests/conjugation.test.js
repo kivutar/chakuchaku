@@ -10,6 +10,7 @@ const {
   forms,
   points,
   conjugateVerb,
+  conjugateAdjective,
   getPointIdForVerb,
   createExercisePool,
   chooseExercise,
@@ -20,12 +21,78 @@ function verb(term, reading, verbClass, teException) {
   return { term, reading, class: verbClass, teException };
 }
 
-test("the initial curriculum exposes 25 reusable conjugation points", () => {
-  assert.equal(points.length, 25);
-  assert.equal(new Set(points.map(({ id }) => id)).size, 25);
+test("the initial curriculum exposes 39 reusable conjugation points", () => {
+  assert.equal(points.length, 39);
+  assert.equal(new Set(points.map(({ id }) => id)).size, 39);
   assert.ok(points.some(({ id }) => id === "ichidan-polite-past"));
   assert.ok(points.some(({ id }) => id === "godan-u-tsu-ru-te-form"));
   assert.ok(points.some(({ id }) => id === "iku-te-form"));
+  assert.ok(points.some(({ id }) => id === "i-adjective-polite-past"));
+  assert.ok(points.some(({ id }) => id === "na-adjective-polite-negative"));
+  assert.ok(points.some(({ id }) => id === "ii-adjective-polite-past"));
+  assert.ok(points.some(({ id }) => id === "i-adjective-te-form"));
+  assert.ok(points.some(({ id }) => id === "na-adjective-te-form"));
+  assert.ok(points.some(({ id }) => id === "ii-adjective-te-form"));
+  assert.ok(!points.some(({ id }) => id === "ii-adjective-polite-present"));
+});
+
+test("い, な, and irregular いい adjectives use their beginner polite forms", () => {
+  const cases = [
+    [
+      verb("高い", "たかい", "i-adjective"),
+      forms.politePresent,
+      { surface: "高いです", reading: "たかいです" }
+    ],
+    [
+      verb("高い", "たかい", "i-adjective"),
+      forms.politePast,
+      { surface: "高かったです", reading: "たかかったです" }
+    ],
+    [
+      verb("高い", "たかい", "i-adjective"),
+      forms.politeNegative,
+      { surface: "高くないです", reading: "たかくないです" }
+    ],
+    [
+      verb("高い", "たかい", "i-adjective"),
+      forms.politePastNegative,
+      { surface: "高くなかったです", reading: "たかくなかったです" }
+    ],
+    [
+      verb("静か", "しずか", "na-adjective"),
+      forms.politeNegative,
+      { surface: "静かではありません", reading: "しずかではありません" }
+    ],
+    [
+      verb("いい", "いい", "ii-adjective"),
+      forms.politePast,
+      { surface: "よかったです", reading: "よかったです" }
+    ],
+    [
+      verb("高い", "たかい", "i-adjective"),
+      forms.te,
+      { surface: "高くて", reading: "たかくて" }
+    ],
+    [
+      verb("静か", "しずか", "na-adjective"),
+      forms.te,
+      { surface: "静かで", reading: "しずかで" }
+    ],
+    [
+      verb("いい", "いい", "ii-adjective"),
+      forms.te,
+      { surface: "よくて", reading: "よくて" }
+    ],
+    [
+      verb("かっこいい", "かっこいい", "ii-adjective"),
+      forms.politePastNegative,
+      { surface: "かっこよくなかったです", reading: "かっこよくなかったです" }
+    ]
+  ];
+
+  for (const [entry, form, expected] of cases) {
+    assert.deepEqual(conjugateAdjective(entry, form), expected);
+  }
 });
 
 test("polite forms preserve the correct stem for each verb class", () => {
@@ -78,9 +145,12 @@ test("the curated vocabulary supplies exercises for every point", async () => {
   const pool = createExercisePool(vocabulary, curriculum);
   const coveredPointIds = new Set(pool.map(({ conjugationPointId }) => conjugationPointId));
 
-  assert.equal(curriculum.length, 43);
-  assert.equal(new Set(curriculum.map(({ vocabularyId }) => vocabularyId)).size, 43);
-  assert.equal(pool.length, curriculum.length * 5);
+  assert.equal(curriculum.length, 122);
+  assert.equal(new Set(curriculum.map(({ vocabularyId }) => vocabularyId)).size, 122);
+  assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "i-adjective").length, 59);
+  assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "ii-adjective").length, 2);
+  assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "na-adjective").length, 18);
+  assert.equal(pool.length, 610);
   assert.deepEqual(coveredPointIds, new Set(points.map(({ id }) => id)));
   assert.ok(pool.every(({ section }) => section === "conjugation"));
   assert.ok(pool.every(({ meaning }) => typeof meaning === "string" && meaning));
@@ -94,6 +164,22 @@ test("the curated vocabulary supplies exercises for every point", async () => {
       exercise.id
     );
   }
+
+
+  const highNegative = pool.find(({ term, form }) => {
+    return term === "高い" && form === forms.politeNegative;
+  });
+  const quietNegative = pool.find(({ term, form }) => {
+    return term === "静か" && form === forms.politeNegative;
+  });
+  const goodPresent = pool.find(({ term, form }) => {
+    return term === "いい" && form === forms.politePresent;
+  });
+
+  assert.equal(gradeAnswer(highNegative, "takaku arimasen", wanakana).correct, true);
+  assert.equal(gradeAnswer(quietNegative, "shizuka ja nai desu", wanakana).correct, true);
+  assert.equal(gradeAnswer(goodPresent, "yoi desu", wanakana).correct, true);
+  assert.equal(goodPresent.conjugationPointId, "i-adjective-polite-present");
 });
 
 test("grading accepts the written form, kana, and converted romaji", () => {

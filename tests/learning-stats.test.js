@@ -127,7 +127,7 @@ test("conjugation encounters and deterministic ratings are retained", () => {
     term: "撮る",
     reading: "とる",
     meaning: "prendre une photo",
-    verbClass: "godan",
+    conjugationClass: "godan",
     form: "te-form",
     solution: "撮って",
     locale: "fr"
@@ -158,7 +158,7 @@ test("conjugation encounters and deterministic ratings are retained", () => {
     term: "撮る",
     reading: "とる",
     meaning: "prendre une photo",
-    verbClass: "godan",
+    conjugationClass: "godan",
     form: "te-form",
     locale: "fr",
     answer: "とりて",

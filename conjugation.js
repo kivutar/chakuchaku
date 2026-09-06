@@ -14,6 +14,11 @@
     suru: "suru",
     kuru: "kuru"
   });
+  const adjectiveClasses = Object.freeze({
+    i: "i-adjective",
+    ii: "ii-adjective",
+    na: "na-adjective"
+  });
   const politeSuffixes = Object.freeze({
     [forms.politePresent]: "ます",
     [forms.politePast]: "ました",
@@ -54,6 +59,12 @@
     forms.politeNegative,
     forms.politePastNegative
   ];
+  const adjectiveForms = [...politeForms, forms.te];
+  const adjectivePointForms = Object.freeze({
+    [adjectiveClasses.i]: adjectiveForms,
+    [adjectiveClasses.ii]: adjectiveForms.filter((form) => form !== forms.politePresent),
+    [adjectiveClasses.na]: adjectiveForms
+  });
   const teGroups = [
     "godan-u-tsu-ru",
     "godan-mu-bu-nu",
@@ -74,7 +85,21 @@
     "ichidan-te-form": "～る → ～て",
     "suru-te-form": "する → して",
     "kuru-te-form": "来る → 来て",
-    "iku-te-form": "行く → 行って"
+    "iku-te-form": "行く → 行って",
+    "i-adjective-polite-present": "～い → ～いです",
+    "i-adjective-polite-past": "～い → ～かったです",
+    "i-adjective-polite-negative": "～い → ～くないです",
+    "i-adjective-polite-past-negative": "～い → ～くなかったです",
+    "i-adjective-te-form": "～い → ～くて",
+    "ii-adjective-polite-past": "いい → よかったです",
+    "ii-adjective-polite-negative": "いい → よくないです",
+    "ii-adjective-polite-past-negative": "いい → よくなかったです",
+    "ii-adjective-te-form": "いい → よくて",
+    "na-adjective-polite-present": "～（な） → ～です",
+    "na-adjective-polite-past": "～（な） → ～でした",
+    "na-adjective-polite-negative": "～（な） → ～ではありません",
+    "na-adjective-polite-past-negative": "～（な） → ～ではありませんでした",
+    "na-adjective-te-form": "～（な） → ～で"
   });
 
   function createPointId(group, form) {
@@ -96,7 +121,10 @@
       godan: "う-verbs",
       ichidan: "る-verbs",
       suru: "する",
-      kuru: "来る"
+      kuru: "来る",
+      [adjectiveClasses.i]: "い-adjectives",
+      [adjectiveClasses.ii]: "いい",
+      [adjectiveClasses.na]: "な-adjectives"
     }[group];
 
     return Object.freeze({
@@ -113,7 +141,10 @@
     ...politeClasses.flatMap((verbClass) => {
       return politeForms.map((form) => createPoint(verbClass, form));
     }),
-    ...teGroups.map((group) => createPoint(group, forms.te))
+    ...teGroups.map((group) => createPoint(group, forms.te)),
+    ...Object.entries(adjectivePointForms).flatMap(([adjectiveClass, adjectiveForms]) => {
+      return adjectiveForms.map((form) => createPoint(adjectiveClass, form));
+    })
   ]);
 
   function getConverter(converter) {
@@ -233,6 +264,117 @@
     };
   }
 
+  function conjugateAdjectiveValue(value, adjectiveClass, form, useAlternativeNegative = false) {
+    if (adjectiveClass === adjectiveClasses.na) {
+      const suffix = {
+        [forms.politePresent]: "です",
+        [forms.politePast]: "でした",
+        [forms.politeNegative]: useAlternativeNegative ? "じゃありません" : "ではありません",
+        [forms.politePastNegative]: useAlternativeNegative
+          ? "じゃありませんでした"
+          : "ではありませんでした",
+        [forms.te]: "で"
+      }[form];
+
+      if (!suffix) {
+        throw new TypeError(`Unsupported な-adjective form: ${form}`);
+      }
+
+      return `${value}${suffix}`;
+    }
+
+    const isIiAdjective = adjectiveClass === adjectiveClasses.ii;
+
+    if (adjectiveClass !== adjectiveClasses.i && !isIiAdjective) {
+      throw new TypeError(`Unsupported adjective class: ${adjectiveClass}`);
+    }
+
+    if (form === forms.politePresent) {
+      return `${value}です`;
+    }
+
+    const ending = isIiAdjective ? "いい" : "い";
+
+    if (!value.endsWith(ending)) {
+      throw new TypeError(`${value} does not end in ${ending}.`);
+    }
+
+    const stem = replaceEnding(value, ending.length, isIiAdjective ? "よ" : "");
+    const suffix = {
+      [forms.politePast]: "かったです",
+      [forms.politeNegative]: useAlternativeNegative ? "くありません" : "くないです",
+      [forms.politePastNegative]: useAlternativeNegative
+        ? "くありませんでした"
+        : "くなかったです",
+      [forms.te]: "くて"
+    }[form];
+
+    if (!suffix) {
+      throw new TypeError(`Unsupported い-adjective form: ${form}`);
+    }
+
+    return `${stem}${suffix}`;
+  }
+
+  function conjugateAdjective(adjective, form) {
+    if (
+      !adjective ||
+      typeof adjective.term !== "string" ||
+      typeof adjective.reading !== "string"
+    ) {
+      throw new TypeError("A conjugatable adjective needs a written form and reading.");
+    }
+
+    return {
+      surface: conjugateAdjectiveValue(adjective.term, adjective.class, form),
+      reading: conjugateAdjectiveValue(adjective.reading, adjective.class, form)
+    };
+  }
+
+  function createAdjectiveAlternatives(adjective, form) {
+    const alternatives = [];
+
+    if ([forms.politeNegative, forms.politePastNegative].includes(form)) {
+      alternatives.push({
+        surface: conjugateAdjectiveValue(adjective.term, adjective.class, form, true),
+        reading: conjugateAdjectiveValue(adjective.reading, adjective.class, form, true)
+      });
+
+      if (adjective.class === adjectiveClasses.na) {
+        const plainPoliteSuffixes = form === forms.politeNegative
+          ? ["ではないです", "じゃないです"]
+          : ["ではなかったです", "じゃなかったです"];
+
+        alternatives.push(...plainPoliteSuffixes.map((suffix) => ({
+          surface: `${adjective.term}${suffix}`,
+          reading: `${adjective.reading}${suffix}`
+        })));
+      }
+    }
+
+    if (adjective.class === adjectiveClasses.ii && form === forms.politePresent) {
+      for (const variant of adjective.variants || []) {
+        if (typeof variant === "string" && variant.endsWith("い")) {
+          alternatives.push({ surface: `${variant}です`, reading: `${variant}です` });
+        }
+      }
+    }
+
+    return alternatives;
+  }
+
+  function getPointIdForItem(item, form) {
+    if (Object.values(adjectiveClasses).includes(item.class)) {
+      const pointClass = item.class === adjectiveClasses.ii && form === forms.politePresent
+        ? adjectiveClasses.i
+        : item.class;
+
+      return createPointId(pointClass, form);
+    }
+
+    return getPointIdForVerb(item, form);
+  }
+
   function createExercisePool(vocabulary, curriculum) {
     const entriesById = vocabulary instanceof Map
       ? vocabulary
@@ -245,39 +387,49 @@
     return curriculum.flatMap((curriculumEntry) => {
       const vocabularyEntry = entriesById.get(curriculumEntry?.vocabularyId);
 
+      const isVerb = Object.values(verbClasses).includes(curriculumEntry?.class);
+      const isAdjective = Object.values(adjectiveClasses).includes(curriculumEntry?.class);
+
       if (
         !vocabularyEntry ||
-        !Object.values(verbClasses).includes(curriculumEntry.class) ||
+        (!isVerb && !isAdjective) ||
+        (isVerb && vocabularyEntry.partOfSpeech !== "verb") ||
+        (isAdjective && vocabularyEntry.partOfSpeech !== "adjective") ||
         typeof vocabularyEntry.term !== "string" ||
         typeof vocabularyEntry.reading !== "string"
       ) {
         return [];
       }
 
-      const verb = {
+      const item = {
         ...vocabularyEntry,
         class: curriculumEntry.class,
         teException: curriculumEntry.teException
       };
+      const itemForms = isVerb ? [...politeForms, forms.te] : adjectiveForms;
 
-      return [...politeForms, forms.te].map((form) => {
-        const answer = conjugateVerb(verb, form);
-        const conjugationPointId = getPointIdForVerb(verb, form);
+      return itemForms.map((form) => {
+        const answer = isVerb
+          ? conjugateVerb(item, form)
+          : conjugateAdjective(item, form);
+        const alternatives = isAdjective ? createAdjectiveAlternatives(item, form) : [];
+        const conjugationPointId = getPointIdForItem(item, form);
 
         return {
-          id: `conjugation-${conjugationPointId}-${verb.id}`,
+          id: `conjugation-${conjugationPointId}-${item.id}`,
           section: "conjugation",
-          vocabularyId: verb.id,
-          term: verb.term,
-          reading: verb.reading,
-          meaning: verb.meaning,
-          verbClass: verb.class,
+          vocabularyId: item.id,
+          term: item.term,
+          reading: item.reading,
+          meaning: item.meaning,
+          conjugationClass: item.class,
           form,
           conjugationPointId,
           conjugationPointIds: [conjugationPointId],
           answerSurface: answer.surface,
           answerReading: answer.reading,
-          text: verb.term,
+          acceptedAnswers: alternatives.flatMap(({ surface, reading }) => [surface, reading]),
+          text: item.term,
           solution: answer.surface
         };
       });
@@ -311,8 +463,14 @@
 
   function gradeAnswer(exercise, answer, converter) {
     const normalized = normalizeJapanese(answer, converter);
-    const correct = normalized.surface === exercise.answerSurface ||
-      normalized.reading === exercise.answerReading;
+    const acceptedAnswers = [
+      exercise.answerSurface,
+      exercise.answerReading,
+      ...(Array.isArray(exercise.acceptedAnswers) ? exercise.acceptedAnswers : [])
+    ].map((candidate) => normalizeJapanese(candidate, converter));
+    const correct = acceptedAnswers.some((candidate) => {
+      return normalized.surface === candidate.surface || normalized.reading === candidate.reading;
+    });
 
     return {
       correct,
@@ -330,8 +488,10 @@
   global.JlptN5Conjugation = Object.freeze({
     forms,
     verbClasses,
+    adjectiveClasses,
     points,
     conjugateVerb,
+    conjugateAdjective,
     getPointIdForVerb,
     createExercisePool,
     chooseExercise,
