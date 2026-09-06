@@ -752,9 +752,10 @@ test("touch devices activate one sentence token at a time", async () => {
 });
 
 test("user menu exposes accessible navigation placeholders", async () => {
-  const [html, browserCode] = await Promise.all([
+  const [html, browserCode, styles] = await Promise.all([
     readFile(join(rootDirectory, "index.html"), "utf8"),
-    readFile(join(rootDirectory, "app.js"), "utf8")
+    readFile(join(rootDirectory, "app.js"), "utf8"),
+    readFile(join(rootDirectory, "styles.css"), "utf8")
   ]);
 
   assert.match(html, /id="profile-menu-button"/);
@@ -763,12 +764,17 @@ test("user menu exposes accessible navigation placeholders", async () => {
   assert.match(html, />Settings<[^>]*>/);
   assert.match(html, />Statistics<[^>]*>/);
   assert.match(html, /id="history-menu-item"/);
+  assert.equal((html.match(/href="https:\/\/apps\.apple\.com\/app\/id6803144387"/gu) || []).length, 2);
+  assert.match(html, /id="app-store-welcome-link"[^>]*web-app-store-only[^>]*hidden/);
+  assert.match(html, /developer\.apple\.com\/assets\/elements\/badges\/download-on-the-app-store\.svg/);
   assert.match(html, /href="https:\/\/github\.com\/kivutar\/jlptn5"/);
   assert.match(html, /data-i18n="menu\.about">About<\/span> <span aria-hidden="true">↗<\/span>/);
   assert.match(browserCode, /event\.key === "Escape"/);
   assert.match(browserCode, /event\.key === "ArrowDown"/);
   assert.match(browserCode, /handleOutsideProfileMenuClick/);
   assert.match(browserCode, /openActivity\("history"\)/);
+  assert.match(browserCode, /appStoreWelcomeLink\.hidden = lesson\.id !== introductionId/);
+  assert.match(styles, /html\[data-native-platform\] \.web-app-store-only \{\s+display: none !important;/);
 });
 
 test("settings layer loads before the app and exposes every initial control", async () => {

@@ -13,6 +13,7 @@
   "menu.history": "History",
   "menu.privacy": "Privacy",
   "menu.about": "About",
+  "menu.appStoreNewTab": "Download ChakuChaku on the App Store (opens in a new tab)",
   "menu.privacyNewTab": "Privacy (opens in a new tab)",
   "menu.aboutNewTab": "About (opens in a new tab)",
   "menu.opensNewTab": "{label} (opens in a new tab)",

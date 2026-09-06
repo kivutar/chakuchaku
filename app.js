@@ -83,6 +83,7 @@ const productionGuidance = document.querySelector("#production-guidance");
 const productionGrammarTargets = document.querySelector("#production-grammar-targets");
 const speakButton = document.querySelector("#speak-button");
 const actionButton = document.querySelector("#action-button");
+const appStoreWelcomeLink = document.querySelector("#app-store-welcome-link");
 const translationInput = document.querySelector("#translation-input");
 const kanjiChoiceGrid = document.querySelector("#kanji-choice-grid");
 const solutionElement = document.querySelector("#solution");
@@ -3333,6 +3334,7 @@ function displayLesson(lesson) {
   actionButton.textContent = lesson.id === introductionId
     ? t("common.next")
     : t("common.submit");
+  appStoreWelcomeLink.hidden = lesson.id !== introductionId;
   setKanaInputMode(
     isKanjiToReading
       ? "hiragana"
