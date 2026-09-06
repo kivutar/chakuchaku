@@ -84,6 +84,7 @@ const productionGrammarTargets = document.querySelector("#production-grammar-tar
 const speakButton = document.querySelector("#speak-button");
 const actionButton = document.querySelector("#action-button");
 const appStoreWelcomeLink = document.querySelector("#app-store-welcome-link");
+const webMarketingSummary = document.querySelector("#web-marketing-summary");
 const translationInput = document.querySelector("#translation-input");
 const kanjiChoiceGrid = document.querySelector("#kanji-choice-grid");
 const solutionElement = document.querySelector("#solution");
@@ -233,7 +234,7 @@ function configureStudyNavigation() {
   }[currentStudySection];
 
   currentStudyLabel.textContent = label;
-  document.title = `${label} · ChakuChaku`;
+  document.title = `${label} · ${t("app.title")}`;
   privacyMenuItem.href = `https://kivutar.github.io/jlptn5/privacy.html?lang=${getUserLocale()}`;
 
   for (const menuItem of studyMenuItems) {
@@ -3335,6 +3336,7 @@ function displayLesson(lesson) {
     ? t("common.next")
     : t("common.submit");
   appStoreWelcomeLink.hidden = lesson.id !== introductionId;
+  webMarketingSummary.hidden = lesson.id !== introductionId;
   setKanaInputMode(
     isKanjiToReading
       ? "hiragana"

@@ -279,7 +279,6 @@ test("the learning interface opts out of browser translation", async () => {
 
   assert.match(html, /<html class="notranslate" lang="en" translate="no">/);
   assert.match(html, /<meta name="google" content="notranslate">/);
-  assert.match(html, /<meta name="robots" content="notranslate">/);
 });
 
 test("grammar coverage checklist matches authored exercises", async () => {
@@ -773,7 +772,11 @@ test("user menu exposes accessible navigation placeholders", async () => {
   assert.match(browserCode, /event\.key === "ArrowDown"/);
   assert.match(browserCode, /handleOutsideProfileMenuClick/);
   assert.match(browserCode, /openActivity\("history"\)/);
+  assert.match(browserCode, /document\.title = `\$\{label\} · \$\{t\("app\.title"\)\}`/);
   assert.match(browserCode, /appStoreWelcomeLink\.hidden = lesson\.id !== introductionId/);
+  assert.match(html, /id="web-marketing-summary"[^>]*web-app-store-only[^>]*hidden/);
+  assert.match(html, /data-i18n="marketing\.title"/);
+  assert.match(browserCode, /webMarketingSummary\.hidden = lesson\.id !== introductionId/);
   assert.match(styles, /html\[data-native-platform\] \.web-app-store-only \{\s+display: none !important;/);
 });
 

@@ -44,6 +44,7 @@ const staticFiles = [
   "assets/branding/icon-512.png",
   "assets/branding/icon-maskable-512.png",
   "assets/branding/apple-touch-icon.png",
+  "assets/store/google-play/feature-graphic.png",
   "data/introduction.json",
   "data/exercises.json",
   "data/vocabulary-examples.json",

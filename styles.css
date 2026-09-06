@@ -1699,6 +1699,36 @@ main {
   outline-offset: 3px;
 }
 
+.web-marketing-summary {
+  max-width: 42rem;
+  margin-top: 1.25rem;
+  color: #666;
+  text-align: center;
+}
+
+.web-marketing-summary[hidden] {
+  display: none;
+}
+
+.web-marketing-summary h1 {
+  margin: 0;
+  color: #315d3c;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.web-marketing-summary p {
+  margin: 0.3rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 32rem), (max-height: 42rem) {
+  .web-marketing-summary {
+    display: none;
+  }
+}
+
 .translation-input {
   visibility: hidden;
   box-sizing: border-box;
@@ -2979,6 +3009,14 @@ html[data-furigana="false"] rt {
   }
 
   .policy-content a {
+    color: #8fd09b;
+  }
+
+  .web-marketing-summary {
+    color: #aeb9b1;
+  }
+
+  .web-marketing-summary h1 {
     color: #8fd09b;
   }
 

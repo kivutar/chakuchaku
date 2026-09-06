@@ -54,6 +54,13 @@ test("PWA registration is disabled inside native Capacitor shells", async () => 
 
   assert.match(html, /rel="manifest" href="manifest\.webmanifest"/);
   assert.match(html, /rel="apple-touch-icon"/);
+  assert.match(html, /name="robots" content="index, follow"/);
+  assert.match(html, /name="description"/);
+  assert.match(html, /rel="canonical" href="https:\/\/kivutar\.github\.io\/jlptn5\/"/);
+  assert.match(html, /property="og:image"/);
+  assert.match(html, /name="twitter:card" content="summary_large_image"/);
+  assert.match(html, /type="application\/ld\+json"/);
+  assert.match(html, /"@type": "SoftwareApplication"/);
   assert.match(
     html,
     /name="apple-itunes-app"\s+content="app-id=6803144387, app-argument=https:\/\/kivutar\.github\.io\/jlptn5\/"/u
@@ -109,6 +116,7 @@ test("service worker pre-caches the app shell but loads voices on demand", async
   assert.match(source, /request\.headers\.has\("range"\)/);
   assert.match(source, /request\.method === "HEAD"/);
   assert.match(buildSource, /"available-voices\.json"/);
+  assert.match(buildSource, /"assets\/store\/google-play\/feature-graphic\.png"/);
   assert.match(buildSource, /getVocabularyVoicePath\(entry, wanakana\)/);
   assert.match(buildSource, /JSON\.stringify\(copiedVoicePaths\.sort\(\), null, 2\)/);
 });

@@ -33,6 +33,8 @@
   "common.revealMeaning": "Reveal meaning",
   "common.hideMeaning": "Hide meaning: {meaning}",
   "common.hint": "Hint",
+  "marketing.title": "Japanese practice for JLPT N5",
+  "marketing.summary": "Study Hiragana, Katakana, Kanji, vocabulary, grammar, and conjugation with adaptive spaced repetition, audio, and progress stored on your device.",
   "settings.title": "Settings",
   "settings.userLanguage": "App language",
   "settings.language.auto": "System default",
