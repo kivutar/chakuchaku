@@ -21,10 +21,14 @@ function verb(term, reading, verbClass, teException) {
   return { term, reading, class: verbClass, teException };
 }
 
-test("the initial curriculum exposes 39 reusable conjugation points", () => {
-  assert.equal(points.length, 39);
-  assert.equal(new Set(points.map(({ id }) => id)).size, 39);
+test("the initial curriculum exposes 46 reusable conjugation points", () => {
+  assert.equal(points.length, 46);
+  assert.equal(new Set(points.map(({ id }) => id)).size, 46);
   assert.ok(points.some(({ id }) => id === "ichidan-polite-past"));
+  assert.ok(points.some(({ id }) => id === "godan-polite-volitional"));
+  assert.ok(points.some(({ id }) => id === "ichidan-polite-volitional"));
+  assert.ok(points.some(({ id }) => id === "suru-polite-volitional"));
+  assert.ok(points.some(({ id }) => id === "kuru-polite-volitional"));
   assert.ok(points.some(({ id }) => id === "godan-u-tsu-ru-te-form"));
   assert.ok(points.some(({ id }) => id === "iku-te-form"));
   assert.ok(points.some(({ id }) => id === "i-adjective-polite-past"));
@@ -33,6 +37,9 @@ test("the initial curriculum exposes 39 reusable conjugation points", () => {
   assert.ok(points.some(({ id }) => id === "i-adjective-te-form"));
   assert.ok(points.some(({ id }) => id === "na-adjective-te-form"));
   assert.ok(points.some(({ id }) => id === "ii-adjective-te-form"));
+  assert.ok(points.some(({ id }) => id === "i-adjective-adverbial"));
+  assert.ok(points.some(({ id }) => id === "ii-adjective-adverbial"));
+  assert.ok(points.some(({ id }) => id === "na-adjective-adverbial"));
   assert.ok(!points.some(({ id }) => id === "ii-adjective-polite-present"));
 });
 
@@ -87,6 +94,21 @@ test("い, な, and irregular いい adjectives use their beginner polite forms"
       verb("かっこいい", "かっこいい", "ii-adjective"),
       forms.politePastNegative,
       { surface: "かっこよくなかったです", reading: "かっこよくなかったです" }
+    ],
+    [
+      verb("高い", "たかい", "i-adjective"),
+      forms.adverbial,
+      { surface: "高く", reading: "たかく" }
+    ],
+    [
+      verb("静か", "しずか", "na-adjective"),
+      forms.adverbial,
+      { surface: "静かに", reading: "しずかに" }
+    ],
+    [
+      verb("いい", "いい", "ii-adjective"),
+      forms.adverbial,
+      { surface: "よく", reading: "よく" }
     ]
   ];
 
@@ -112,6 +134,23 @@ test("polite forms preserve the correct stem for each verb class", () => {
     conjugateVerb(verb("来る", "くる", "kuru"), forms.politePastNegative),
     { surface: "来ませんでした", reading: "きませんでした" }
   );
+});
+
+test("polite volitional forms preserve the correct stem for each verb class", () => {
+  const cases = [
+    [verb("洗う", "あらう", "godan"), "洗いましょう", "あらいましょう"],
+    [verb("食べる", "たべる", "ichidan"), "食べましょう", "たべましょう"],
+    [verb("勉強する", "べんきょうする", "suru"), "勉強しましょう", "べんきょうしましょう"],
+    [verb("来る", "くる", "kuru"), "来ましょう", "きましょう"]
+  ];
+
+  for (const [entry, surface, reading] of cases) {
+    assert.deepEqual(conjugateVerb(entry, forms.politeVolitional), { surface, reading });
+    assert.equal(
+      getPointIdForVerb(entry, forms.politeVolitional),
+      `${entry.class}-polite-volitional`
+    );
+  }
 });
 
 test("te-forms cover every godan sound change and the core irregulars", () => {
@@ -150,7 +189,7 @@ test("the curated vocabulary supplies exercises for every point", async () => {
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "i-adjective").length, 59);
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "ii-adjective").length, 2);
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "na-adjective").length, 18);
-  assert.equal(pool.length, 610);
+  assert.equal(pool.length, 732);
   assert.deepEqual(coveredPointIds, new Set(points.map(({ id }) => id)));
   assert.ok(pool.every(({ section }) => section === "conjugation"));
   assert.ok(pool.every(({ meaning }) => typeof meaning === "string" && meaning));

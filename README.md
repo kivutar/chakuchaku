@@ -18,9 +18,10 @@ Kanji exercises use complete beginner words in alternating word-to-reading and
 reading-to-missing-character directions. All 209 characters in the B6-B4
 curriculum are active and have their own FSRS cards. Kanji-only example words
 fill the few gaps in the N5 vocabulary inventory without entering its SRS.
-Conjugation exercises reuse 43 beginner verbs and 79 adjectives across 39
+Conjugation exercises reuse 43 beginner verbs and 79 adjectives across 46
 independently scheduled rules: four polite forms for each verb or adjective
-class, their beginner て-forms, and the `行く` and `いい` exceptions.
+class, polite volitional verbs, beginner て-forms, adjective adverbial forms,
+and the `行く` and `いい` exceptions.
 Answers accept Japanese writing, hiragana, or rōmaji and are graded locally.
 A single top menu switches study sections and provides settings, SRS progress
 statistics, exercise history, and a project link.
@@ -292,8 +293,9 @@ The Conjugation section asks for one inflected form of a complete N5 verb or
 adjective. Its verb curriculum contains the four common polite forms (`～ます`,
 `～ました`, `～ません`, and `～ませんでした`) for godan, ichidan, `する`,
 and `来る` verbs, plus every regular て-form sound-change family and irregular
-`行く`. Adjectives in い and な use the corresponding four polite forms and
-their `～くて` / `～で` connective forms, with the irregular `いい → よ…`
+`行く`, plus polite volitional `～ましょう`. Adjectives in い and な use the
+corresponding four polite forms, their `～くて` / `～で` connective forms, and
+their `～く` / `～に` adverbial forms, with the irregular `いい → よ…`
 transformations tracked separately.
 
 Progress belongs to the reusable rule, not the particular verb. For example,

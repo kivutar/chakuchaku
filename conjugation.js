@@ -6,6 +6,8 @@
     politePast: "polite-past",
     politeNegative: "polite-negative",
     politePastNegative: "polite-past-negative",
+    politeVolitional: "polite-volitional",
+    adverbial: "adverbial",
     te: "te-form"
   });
   const verbClasses = Object.freeze({
@@ -23,7 +25,8 @@
     [forms.politePresent]: "ます",
     [forms.politePast]: "ました",
     [forms.politeNegative]: "ません",
-    [forms.politePastNegative]: "ませんでした"
+    [forms.politePastNegative]: "ませんでした",
+    [forms.politeVolitional]: "ましょう"
   });
   const godanIEndings = Object.freeze({
     "う": "い",
@@ -59,7 +62,7 @@
     forms.politeNegative,
     forms.politePastNegative
   ];
-  const adjectiveForms = [...politeForms, forms.te];
+  const adjectiveForms = [...politeForms, forms.te, forms.adverbial];
   const adjectivePointForms = Object.freeze({
     [adjectiveClasses.i]: adjectiveForms,
     [adjectiveClasses.ii]: adjectiveForms.filter((form) => form !== forms.politePresent),
@@ -91,15 +94,18 @@
     "i-adjective-polite-negative": "～い → ～くないです",
     "i-adjective-polite-past-negative": "～い → ～くなかったです",
     "i-adjective-te-form": "～い → ～くて",
+    "i-adjective-adverbial": "～い → ～く",
     "ii-adjective-polite-past": "いい → よかったです",
     "ii-adjective-polite-negative": "いい → よくないです",
     "ii-adjective-polite-past-negative": "いい → よくなかったです",
     "ii-adjective-te-form": "いい → よくて",
+    "ii-adjective-adverbial": "いい → よく",
     "na-adjective-polite-present": "～（な） → ～です",
     "na-adjective-polite-past": "～（な） → ～でした",
     "na-adjective-polite-negative": "～（な） → ～ではありません",
     "na-adjective-polite-past-negative": "～（な） → ～ではありませんでした",
-    "na-adjective-te-form": "～（な） → ～で"
+    "na-adjective-te-form": "～（な） → ～で",
+    "na-adjective-adverbial": "～（な） → ～に"
   });
 
   function createPointId(group, form) {
@@ -141,6 +147,7 @@
     ...politeClasses.flatMap((verbClass) => {
       return politeForms.map((form) => createPoint(verbClass, form));
     }),
+    ...politeClasses.map((verbClass) => createPoint(verbClass, forms.politeVolitional)),
     ...teGroups.map((group) => createPoint(group, forms.te)),
     ...Object.entries(adjectivePointForms).flatMap(([adjectiveClass, adjectiveForms]) => {
       return adjectiveForms.map((form) => createPoint(adjectiveClass, form));
@@ -273,7 +280,8 @@
         [forms.politePastNegative]: useAlternativeNegative
           ? "じゃありませんでした"
           : "ではありませんでした",
-        [forms.te]: "で"
+        [forms.te]: "で",
+        [forms.adverbial]: "に"
       }[form];
 
       if (!suffix) {
@@ -306,7 +314,8 @@
       [forms.politePastNegative]: useAlternativeNegative
         ? "くありませんでした"
         : "くなかったです",
-      [forms.te]: "くて"
+      [forms.te]: "くて",
+      [forms.adverbial]: "く"
     }[form];
 
     if (!suffix) {
@@ -406,7 +415,9 @@
         class: curriculumEntry.class,
         teException: curriculumEntry.teException
       };
-      const itemForms = isVerb ? [...politeForms, forms.te] : adjectiveForms;
+      const itemForms = isVerb
+        ? [...politeForms, forms.politeVolitional, forms.te]
+        : adjectiveForms;
 
       return itemForms.map((form) => {
         const answer = isVerb
