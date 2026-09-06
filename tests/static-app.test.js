@@ -851,11 +851,14 @@ test("speaker checks local narration availability before playback", async () => 
   assert.match(styles, /\.speak-button\[hidden\] \{\s+display: none/);
 });
 
-test("Hiragana-to-Romaji audio waits until the answer is submitted", async () => {
+test("Kana-to-Romaji audio waits until the answer is submitted", async () => {
   const browserCode = await readFile(join(rootDirectory, "app.js"), "utf8");
 
   assert.match(browserCode, /function shouldDelayKanaPromptAudio\(lesson\)/);
   assert.match(browserCode, /lesson\?\.section === "hiragana"/);
+  assert.match(browserCode, /lesson\?\.section === "katakana"/);
+  assert.match(browserCode, /globalThis\.JlptN5Hiragana/);
+  assert.match(browserCode, /globalThis\.JlptN5Katakana/);
   assert.match(browserCode, /directions\.kanaToRomaji/);
   assert.match(
     browserCode,

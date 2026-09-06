@@ -3223,8 +3223,13 @@ async function updateSolutionSpeech(lesson, button) {
 }
 
 function shouldDelayKanaPromptAudio(lesson) {
-  return lesson?.section === "hiragana" && lesson.direction ===
-    globalThis.JlptN5Hiragana.directions.kanaToRomaji;
+  const kanaApi = lesson?.section === "hiragana"
+    ? globalThis.JlptN5Hiragana
+    : lesson?.section === "katakana"
+      ? globalThis.JlptN5Katakana
+      : undefined;
+
+  return lesson?.direction === kanaApi?.directions.kanaToRomaji;
 }
 
 function hideControls() {
