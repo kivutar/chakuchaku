@@ -415,10 +415,13 @@ test("the main menu links every implemented study route", async () => {
   assert.ok(html.indexOf('src="conjugation.js"') < html.indexOf('src="app.js"'));
   assert.ok(html.indexOf('src="review.js"') < html.indexOf('src="app.js"'));
   assert.match(html, /id="review-progress"/);
+  assert.match(html, /id="review-section-badge"/);
   assert.match(html, /id="review-complete"/);
   assert.match(html, /id="review-complete"[\s\S]*?aria-live="polite"/);
   assert.match(browserCode, /reviewContinueButton\.focus\(\{ preventScroll: true \}\)/);
   assert.match(browserCode, /await refreshDailyReviewSession\(\)/);
+  assert.match(browserCode, /reviewSectionBadge\.dataset\.section = section/);
+  assert.match(browserCode, /renderReviewSectionBadge\(lesson\.section\)/);
   assert.match(
     browserCode,
     /async function loadEligibleDailyReviewItems\(\)[\s\S]*?vocabularyById \|\|= entriesById;[\s\S]*?kanjiById \|\|= kanjiEntriesById;/

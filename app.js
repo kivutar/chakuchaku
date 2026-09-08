@@ -63,6 +63,9 @@ const reviewProgress = document.querySelector("#review-progress");
 const reviewProgressTrack = document.querySelector("#review-progress-track");
 const reviewProgressCount = document.querySelector("#review-progress-count");
 const reviewProgressFill = document.querySelector("#review-progress-fill");
+const reviewSectionBadge = document.querySelector("#review-section-badge");
+const reviewSectionBadgeIcon = document.querySelector("#review-section-badge-icon");
+const reviewSectionBadgeLabel = document.querySelector("#review-section-badge-label");
 const reviewComplete = document.querySelector("#review-complete");
 const reviewContinueButton = document.querySelector("#review-continue-button");
 const reviewChooseSectionButton = document.querySelector("#review-choose-section-button");
@@ -3304,6 +3307,31 @@ function renderReviewProgress() {
   reviewProgressFill.style.width = `${percentage}%`;
 }
 
+function renderReviewSectionBadge(section) {
+  const details = {
+    grammar: { icon: "文", label: t("section.grammar") },
+    conjugation: { icon: "活", label: t("section.conjugation") },
+    hiragana: { icon: "あ", label: t("section.hiragana") },
+    katakana: { icon: "ア", label: t("section.katakana") },
+    kanji: { icon: "漢", label: t("section.kanji") },
+    vocabulary: { icon: "語", label: t("section.vocabulary") }
+  }[section];
+  const shouldShow = currentStudySection === "review" && Boolean(details);
+
+  reviewSectionBadge.hidden = !shouldShow;
+
+  if (!shouldShow) {
+    delete reviewSectionBadge.dataset.section;
+    reviewSectionBadgeIcon.textContent = "";
+    reviewSectionBadgeLabel.textContent = "";
+    return;
+  }
+
+  reviewSectionBadge.dataset.section = section;
+  reviewSectionBadgeIcon.textContent = details.icon;
+  reviewSectionBadgeLabel.textContent = details.label;
+}
+
 function completeCurrentReviewExercise() {
   if (currentStudySection !== "review" || !reviewSession) {
     return;
@@ -3538,6 +3566,7 @@ function displayLesson(lesson) {
   hideControls();
   resetSpeechAudio();
   currentLesson = lesson;
+  renderReviewSectionBadge(lesson.section);
   currentReviewOutcomes = [];
   speechAvailable = false;
   autoPlayedLesson = undefined;
@@ -3892,6 +3921,7 @@ function displayReviewComplete() {
   resetSpeechAudio();
   setKanaInputMode(undefined);
   currentLesson = { id: "review-complete", section: "review" };
+  renderReviewSectionBadge();
   currentReviewOutcomes = [];
   exerciseSubmitted = true;
   speechAvailable = false;
