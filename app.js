@@ -2209,10 +2209,27 @@ function handleProfileMenuFocusOut(event) {
   }
 }
 
+function getCharacterRevealDelay(index, includeRevealDuration = false) {
+  if (currentStudySection === "review") {
+    return 0;
+  }
+
+  return index * characterDelay + (includeRevealDuration ? characterRevealDuration : 0);
+}
+
+function getSentenceDrawDuration() {
+  return characterIndex === 0
+    ? 0
+    : getCharacterRevealDelay(characterIndex - 1, true);
+}
+
 function createCharacterElement(character) {
   const characterElement = document.createElement("span");
   characterElement.className = "character";
-  characterElement.style.setProperty("--delay", `${characterIndex * characterDelay}ms`);
+  characterElement.style.setProperty(
+    "--delay",
+    `${getCharacterRevealDelay(characterIndex)}ms`
+  );
   characterElement.textContent = character;
   characterIndex += 1;
   return characterElement;
@@ -2220,7 +2237,7 @@ function createCharacterElement(character) {
 
 function createTokenElement(token, newGrammarPointIds = []) {
   const tokenElement = document.createElement("span");
-  const vocabularyEntry = vocabularyById.get(token.vocabularyId);
+  const vocabularyEntry = vocabularyById?.get(token.vocabularyId);
   let exposesVocabularyMeaning = false;
   tokenElement.className = "token";
 
@@ -2266,7 +2283,7 @@ function createTokenElement(token, newGrammarPointIds = []) {
     annotation.textContent = token.reading;
     annotation.style.setProperty(
       "--delay",
-      `${(characterIndex - 1) * characterDelay + characterRevealDuration}ms`
+      `${getCharacterRevealDelay(characterIndex - 1, true)}ms`
     );
     ruby.append(annotation);
     tokenElement.append(ruby);
@@ -2278,7 +2295,7 @@ function createTokenElement(token, newGrammarPointIds = []) {
 
   tokenElement.style.setProperty(
     "--token-delay",
-    `${(characterIndex - 1) * characterDelay + characterRevealDuration}ms`
+    `${getCharacterRevealDelay(characterIndex - 1, true)}ms`
   );
 
   return tokenElement;
@@ -2323,9 +2340,7 @@ function renderSentence(text, tokens, grammarHighlights = []) {
     sentenceElement.append(phraseElement);
   }
 
-  return characterIndex === 0
-    ? 0
-    : (characterIndex - 1) * characterDelay + characterRevealDuration;
+  return getSentenceDrawDuration();
 }
 
 function getVisibleGrammarHighlights(lesson) {
@@ -2393,7 +2408,7 @@ function renderFuriganaText(element, text, tokens, options = {}) {
 
 function formatVocabularyHint(vocabularyIds) {
   return vocabularyIds.map((vocabularyId) => {
-    const entry = vocabularyById.get(vocabularyId);
+    const entry = vocabularyById?.get(vocabularyId);
 
     if (!entry) {
       return "";
@@ -2489,7 +2504,7 @@ function renderPlainSentence(text, vocabularyHints = []) {
     if (hint) {
       contentElement.style.setProperty(
         "--token-delay",
-        `${(characterIndex - 1) * characterDelay + characterRevealDuration}ms`
+        `${getCharacterRevealDelay(characterIndex - 1, true)}ms`
       );
       phraseElement.append(contentElement);
     }
@@ -2497,9 +2512,7 @@ function renderPlainSentence(text, vocabularyHints = []) {
     sentenceElement.append(phraseElement);
   }
 
-  return characterIndex === 0
-    ? 0
-    : (characterIndex - 1) * characterDelay + characterRevealDuration;
+  return getSentenceDrawDuration();
 }
 
 async function fetchJson(url) {
@@ -3189,6 +3202,13 @@ async function loadEligibleDailyReviewItems() {
     kanjiContextDataPromise,
     conjugationDataPromise
   ]);
+
+  // Grammar renderers resolve vocabulary hints and token metadata through
+  // these shared maps. Unlike the grammar route, Review has no introduction
+  // screen that would initialize them before its first exercise.
+  vocabularyById ||= entriesById;
+  kanjiById ||= kanjiEntriesById;
+
   const hiraganaPool = prepareHiraganaWords(entriesById);
   const katakanaPool = prepareKatakanaWords(entriesById);
   const vocabularyPool = prepareVocabularyItems(entriesById);

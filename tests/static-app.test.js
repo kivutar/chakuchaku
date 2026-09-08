@@ -419,6 +419,16 @@ test("the main menu links every implemented study route", async () => {
   assert.match(html, /id="review-complete"[\s\S]*?aria-live="polite"/);
   assert.match(browserCode, /reviewContinueButton\.focus\(\{ preventScroll: true \}\)/);
   assert.match(browserCode, /await refreshDailyReviewSession\(\)/);
+  assert.match(
+    browserCode,
+    /async function loadEligibleDailyReviewItems\(\)[\s\S]*?vocabularyById \|\|= entriesById;[\s\S]*?kanjiById \|\|= kanjiEntriesById;/
+  );
+  assert.match(browserCode, /vocabularyById\?\.get\(token\.vocabularyId\)/);
+  assert.match(browserCode, /vocabularyById\?\.get\(vocabularyId\)/);
+  assert.match(
+    browserCode,
+    /function getCharacterRevealDelay[\s\S]*?currentStudySection === "review"[\s\S]*?return 0;/
+  );
   assert.match(browserCode, /currentStudySection/);
   assert.match(browserCode, /pickNextHiraganaExercise/);
   assert.match(browserCode, /pickNextKatakanaExercise/);
