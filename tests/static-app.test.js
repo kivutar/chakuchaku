@@ -424,6 +424,10 @@ test("the main menu links every implemented study route", async () => {
   assert.match(browserCode, /renderReviewSectionBadge\(lesson\.section\)/);
   assert.match(
     browserCode,
+    /async function pickNextExercise[\s\S]*?return \{ \.\.\.exercise, section: "grammar" \};/
+  );
+  assert.match(
+    browserCode,
     /async function loadEligibleDailyReviewItems\(\)[\s\S]*?vocabularyById \|\|= entriesById;[\s\S]*?kanjiById \|\|= kanjiEntriesById;/
   );
   assert.match(browserCode, /vocabularyById\?\.get\(token\.vocabularyId\)/);

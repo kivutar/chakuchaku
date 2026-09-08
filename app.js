@@ -2953,7 +2953,7 @@ async function pickNextExercise(requestedGrammarPointId) {
   const exercise = exercisePool[Math.floor(Math.random() * exercisePool.length)];
 
   previousExerciseId = exercise.id;
-  return exercise;
+  return { ...exercise, section: "grammar" };
 }
 
 async function pickNextHiraganaExercise(requestedKana) {
