@@ -1334,6 +1334,49 @@ main {
   align-items: center;
 }
 
+.review-progress {
+  width: min(32rem, 100%);
+  margin: 0 0 1.5rem;
+}
+
+.review-progress[hidden] {
+  display: none;
+}
+
+.review-progress-summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-size: 0.76rem;
+}
+
+.review-progress-summary strong {
+  color: #3e5944;
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.review-progress-track {
+  width: 100%;
+  height: 0.5rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e3e8e4;
+}
+
+.review-progress-fill {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: #5f9369;
+  transition: width 220ms ease-out;
+}
+
 .lesson-control {
   visibility: hidden;
   opacity: 0;
@@ -1367,6 +1410,81 @@ main {
 
 .lesson-stage.is-leaving {
   opacity: 0;
+}
+
+.review-complete {
+  display: grid;
+  max-width: 30rem;
+  justify-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.review-complete[hidden] {
+  display: none;
+}
+
+.review-complete-mark {
+  display: grid;
+  width: 3.25rem;
+  height: 3.25rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #dcecdf;
+  color: #315d39;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.review-complete h1 {
+  margin: 0;
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
+
+.review-complete p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.review-complete-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 0.35rem;
+}
+
+.review-complete-actions button {
+  min-height: 2.75rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid #181818;
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.88rem;
+}
+
+.review-complete-primary {
+  background: #181818;
+  color: #fff;
+}
+
+.review-complete-secondary {
+  background: transparent;
+  color: #333;
+}
+
+.review-complete-actions button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.review-complete-actions button:focus-visible {
+  outline: 2px solid #181818;
+  outline-offset: 3px;
 }
 
 .lesson-sentence {
@@ -2510,6 +2628,19 @@ html[data-furigana="false"] rt {
     font-size: 1.625rem;
   }
 
+  .review-progress {
+    margin-bottom: 1.1rem;
+  }
+
+  .review-complete-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .review-complete-actions button {
+    width: 100%;
+  }
+
   .solution-grammar-item {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -2653,6 +2784,7 @@ html[data-furigana="false"] rt {
   .conjugation-guidance,
   .katakana-meaning-hint,
   .katakana-meaning-hint-content,
+  .review-progress-fill,
   .history-day-chevron {
     transform: none;
     transition: none;
@@ -2767,6 +2899,43 @@ html[data-furigana="false"] rt {
   .exercise-kind-label,
   .production-guidance-label {
     color: #929d95;
+  }
+
+  .review-progress-summary,
+  .review-complete p {
+    color: #929d95;
+  }
+
+  .review-progress-summary strong {
+    color: #b9dfc1;
+  }
+
+  .review-progress-track {
+    background: #303933;
+  }
+
+  .review-progress-fill {
+    background: #75b982;
+  }
+
+  .review-complete-mark {
+    background: #203d28;
+    color: #c2e7c9;
+  }
+
+  .review-complete-actions button {
+    border-color: #82c48e;
+  }
+
+  .review-complete-primary,
+  .review-complete-actions button:hover {
+    background: #82c48e;
+    color: #101412;
+  }
+
+  .review-complete-secondary {
+    background: transparent;
+    color: #edf3ee;
   }
 
   .profile-menu-separator {
@@ -2887,6 +3056,7 @@ html[data-furigana="false"] rt {
   .history-day-toggle:focus-visible,
   .history-pagination button:focus-visible,
   .speak-button:focus-visible,
+  .review-complete-actions button:focus-visible,
   .action-button:focus-visible {
     outline-color: #8dca98;
   }

@@ -10,6 +10,7 @@ const publicFiles = new Map([
   ["/", ["index.html", "text/html; charset=utf-8"]],
   ["/index.html", ["index.html", "text/html; charset=utf-8"]],
   ["/privacy.html", ["privacy.html", "text/html; charset=utf-8"]],
+  ["/review", ["index.html", "text/html; charset=utf-8"]],
   ["/grammar", ["index.html", "text/html; charset=utf-8"]],
   ["/conjugation", ["index.html", "text/html; charset=utf-8"]],
   ["/hiragana", ["index.html", "text/html; charset=utf-8"]],
@@ -34,6 +35,7 @@ const publicFiles = new Map([
   ["/vocabulary.js", ["vocabulary.js", "text/javascript; charset=utf-8"]],
   ["/conjugation.js", ["conjugation.js", "text/javascript; charset=utf-8"]],
   ["/exercise-selection.js", ["exercise-selection.js", "text/javascript; charset=utf-8"]],
+  ["/review.js", ["review.js", "text/javascript; charset=utf-8"]],
   ["/statistics.js", ["statistics.js", "text/javascript; charset=utf-8"]],
   ["/history.js", ["history.js", "text/javascript; charset=utf-8"]],
   ["/settings.js", ["settings.js", "text/javascript; charset=utf-8"]],
@@ -186,6 +188,7 @@ export async function handleStaticRequest(request, response) {
   }
 
   if ([
+    "/review/",
     "/grammar/",
     "/conjugation/",
     "/hiragana/",

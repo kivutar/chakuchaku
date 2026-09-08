@@ -1,5 +1,6 @@
 const introductionId = "introduction";
 const studySections = new Set([
+  "review",
   "grammar",
   "conjugation",
   "hiragana",
@@ -58,6 +59,13 @@ const statisticsContent = document.querySelector("#statistics-content");
 const historyList = document.querySelector("#history-list");
 const historyEmpty = document.querySelector("#history-empty");
 const lessonElement = document.querySelector(".lesson");
+const reviewProgress = document.querySelector("#review-progress");
+const reviewProgressTrack = document.querySelector("#review-progress-track");
+const reviewProgressCount = document.querySelector("#review-progress-count");
+const reviewProgressFill = document.querySelector("#review-progress-fill");
+const reviewComplete = document.querySelector("#review-complete");
+const reviewContinueButton = document.querySelector("#review-continue-button");
+const reviewChooseSectionButton = document.querySelector("#review-choose-section-button");
 const sentenceElement = document.querySelector("#lesson-sentence");
 const lessonStage = document.querySelector("#lesson-stage");
 const exerciseKindLabel = document.querySelector("#exercise-kind-label");
@@ -129,6 +137,10 @@ let selectedKanjiAnswer;
 let currentAttemptSubmittedAt;
 let contextualVocabularyReviewIds = [];
 let revealedVocabularyIds = new Set();
+let reviewSession;
+let reviewFreePractice = false;
+let currentReviewOutcomes = [];
+let previousReviewPracticeSection;
 let settings = { ...globalThis.JlptN5Settings.defaults };
 let openAiApiKey = globalThis.JlptN5Settings.readOpenAiApiKey();
 let autoCorrectController;
@@ -209,9 +221,9 @@ async function giveAnswerHaptic(succeeded) {
 function getStudyUrl(section) {
   const pathname = window.location.pathname;
 
-  if (/\/(?:grammar|conjugation|hiragana|katakana|kanji|vocabulary)\/?$/u.test(pathname)) {
+  if (/\/(?:review|grammar|conjugation|hiragana|katakana|kanji|vocabulary)\/?$/u.test(pathname)) {
     return pathname.replace(
-      /\/(?:grammar|conjugation|hiragana|katakana|kanji|vocabulary)\/?$/u,
+      /\/(?:review|grammar|conjugation|hiragana|katakana|kanji|vocabulary)\/?$/u,
       `/${section}`
     );
   }
@@ -225,6 +237,7 @@ function getStudyUrl(section) {
 
 function configureStudyNavigation() {
   const label = {
+    review: t("section.review"),
     grammar: t("section.grammar"),
     conjugation: t("section.conjugation"),
     hiragana: t("section.hiragana"),
@@ -2872,7 +2885,7 @@ async function loadExerciseData() {
   return validExercises;
 }
 
-async function pickNextExercise() {
+async function pickNextExercise(requestedGrammarPointId) {
   const exercises = await exerciseDataPromise;
   const exerciseHistory = globalThis.JlptN5Stats.readLearningStats().exerciseHistory;
   const typeExercises = forcedExerciseType
@@ -2885,8 +2898,18 @@ async function pickNextExercise() {
     throw new Error(`No exercises are available for ${forcedExerciseType}.`);
   }
 
-  const choices = typeExercises.filter(({ id }) => id !== previousExerciseId);
-  const availableExercises = choices.length > 0 ? choices : typeExercises;
+  const targetedExercises = requestedGrammarPointId
+    ? typeExercises.filter(({ grammarPointIds }) => {
+      return grammarPointIds.includes(requestedGrammarPointId);
+    })
+    : typeExercises;
+
+  if (targetedExercises.length === 0) {
+    throw new Error(`No exercise is available for ${requestedGrammarPointId}.`);
+  }
+
+  const choices = targetedExercises.filter(({ id }) => id !== previousExerciseId);
+  const availableExercises = choices.length > 0 ? choices : targetedExercises;
   const selectedTypePool = globalThis.JlptN5ExerciseSelection.selectExercisePool({
     exercises,
     candidates: availableExercises,
@@ -2901,9 +2924,8 @@ async function pickNextExercise() {
   const availableGrammarPointIds = [
     ...new Set(selectedTypePool.flatMap(({ grammarPointIds }) => grammarPointIds))
   ];
-  const targetGrammarPointId = globalThis.JlptN5Srs.pickNextGrammarPoint(
-    availableGrammarPointIds
-  );
+  const targetGrammarPointId = requestedGrammarPointId ||
+    globalThis.JlptN5Srs.pickNextGrammarPoint(availableGrammarPointIds);
   const exercisePool = selectedTypePool.filter(({ grammarPointIds }) => {
     return grammarPointIds.includes(targetGrammarPointId);
   });
@@ -2918,7 +2940,7 @@ async function pickNextExercise() {
   return exercise;
 }
 
-async function pickNextHiraganaExercise() {
+async function pickNextHiraganaExercise(requestedKana) {
   const [entriesById, kanjiEntriesById] = await Promise.all([
     vocabularyDataPromise,
     kanjiDataPromise
@@ -2926,7 +2948,7 @@ async function pickNextHiraganaExercise() {
   const words = prepareHiraganaWords(entriesById);
   const exerciseHistory = globalThis.JlptN5Stats.readLearningStats().exerciseHistory;
   const direction = globalThis.JlptN5Hiragana.getNextDirection(exerciseHistory);
-  const targetKana = globalThis.JlptN5Srs.pickNextKana(
+  const targetKana = requestedKana || globalThis.JlptN5Srs.pickNextKana(
     hiraganaMetadata.map(({ id }) => id)
   );
   const exercise = globalThis.JlptN5Hiragana.chooseExercise(
@@ -2955,15 +2977,35 @@ async function pickNextHiraganaExercise() {
   return exercise;
 }
 
-async function pickNextKatakanaExercise() {
+async function pickNextKatakanaExercise(requestedKana) {
   const [entriesById, kanjiEntriesById] = await Promise.all([
     vocabularyDataPromise,
     kanjiDataPromise
   ]);
   const words = prepareKatakanaWords(entriesById);
   const exerciseHistory = globalThis.JlptN5Stats.readLearningStats().exerciseHistory;
-  const { direction, exerciseKind } = globalThis.JlptN5Katakana
+  let { direction, exerciseKind } = globalThis.JlptN5Katakana
     .getNextExerciseMode(exerciseHistory);
+  const preferredModeSupportsTarget = !requestedKana || (
+    exerciseKind === globalThis.JlptN5Katakana.exerciseKinds.singleKana
+      ? katakanaSingleItems.some(({ katakana }) => katakana === requestedKana)
+      : direction === globalThis.JlptN5Katakana.directions.hiraganaToKatakana
+        ? katakanaPairInventory.some(({ hiragana, katakana }) => {
+          return hiragana === requestedKana || katakana === requestedKana;
+        })
+        : katakanaMetadata.some(({ id }) => id === requestedKana)
+  );
+
+  if (!preferredModeSupportsTarget) {
+    const needsPairedExercise = katakanaPairInventory.some(({ hiragana }) => {
+      return hiragana === requestedKana;
+    });
+
+    direction = needsPairedExercise
+      ? globalThis.JlptN5Katakana.directions.hiraganaToKatakana
+      : globalThis.JlptN5Katakana.directions.kanaToRomaji;
+    exerciseKind = globalThis.JlptN5Katakana.exerciseKinds.word;
+  }
   const isSingleKana = exerciseKind ===
     globalThis.JlptN5Katakana.exerciseKinds.singleKana;
   const targetInventory = isSingleKana
@@ -2971,7 +3013,7 @@ async function pickNextKatakanaExercise() {
     : direction === globalThis.JlptN5Katakana.directions.hiraganaToKatakana
       ? katakanaPairInventory.flatMap(({ hiragana, katakana }) => [hiragana, katakana])
       : katakanaMetadata.map(({ id }) => id);
-  const targetKana = globalThis.JlptN5Srs.pickNextKana(
+  const targetKana = requestedKana || globalThis.JlptN5Srs.pickNextKana(
     [...new Set(targetInventory)]
   );
   const exercise = isSingleKana
@@ -2999,7 +3041,7 @@ async function pickNextKatakanaExercise() {
   return exercise;
 }
 
-async function pickNextVocabularyExercise() {
+async function pickNextVocabularyExercise(requestedVocabularyId) {
   const [entriesById, kanjiEntriesById, examplesByVocabularyId] = await Promise.all([
     vocabularyDataPromise,
     kanjiDataPromise,
@@ -3008,9 +3050,10 @@ async function pickNextVocabularyExercise() {
   const items = prepareVocabularyItems(entriesById);
   const exerciseHistory = globalThis.JlptN5Stats.readLearningStats().exerciseHistory;
   const direction = globalThis.JlptN5Vocabulary.getNextDirection(exerciseHistory);
-  const targetVocabularyId = globalThis.JlptN5Srs.pickNextVocabulary(
-    items.map(({ vocabularyId }) => vocabularyId)
-  );
+  const targetVocabularyId = requestedVocabularyId ||
+    globalThis.JlptN5Srs.pickNextVocabulary(
+      items.map(({ vocabularyId }) => vocabularyId)
+    );
   const exercise = globalThis.JlptN5Vocabulary.chooseExercise(
     items,
     targetVocabularyId,
@@ -3043,7 +3086,7 @@ async function pickNextVocabularyExercise() {
   return exercise;
 }
 
-async function pickNextKanjiExercise() {
+async function pickNextKanjiExercise(requestedKanjiId) {
   const [
     entriesById,
     kanjiEntriesById,
@@ -3059,7 +3102,7 @@ async function pickNextKanjiExercise() {
   const exerciseHistory = globalThis.JlptN5Stats.readLearningStats().exerciseHistory;
   const direction = globalThis.JlptN5Kanji.getNextDirection(exerciseHistory);
   const inventory = globalThis.JlptN5Kanji.getKanjiInventory(pool);
-  const targetKanjiId = globalThis.JlptN5Srs.pickNextKanji(
+  const targetKanjiId = requestedKanjiId || globalThis.JlptN5Srs.pickNextKanji(
     inventory.map(({ id }) => id)
   );
   const exercise = globalThis.JlptN5Kanji.chooseExercise(
@@ -3087,11 +3130,12 @@ async function pickNextKanjiExercise() {
   return exercise;
 }
 
-async function pickNextConjugationExercise() {
+async function pickNextConjugationExercise(requestedPointId) {
   const pool = await conjugationDataPromise;
-  const targetPointId = globalThis.JlptN5Srs.pickNextConjugationPoint(
-    [...conjugationPointById.keys()]
-  );
+  const targetPointId = requestedPointId ||
+    globalThis.JlptN5Srs.pickNextConjugationPoint(
+      [...conjugationPointById.keys()]
+    );
   const exercise = globalThis.JlptN5Conjugation.chooseExercise(
     pool,
     targetPointId,
@@ -3107,28 +3151,179 @@ async function pickNextConjugationExercise() {
   return exercise;
 }
 
+function pickExerciseForSection(section, targetId) {
+  if (section === "conjugation") {
+    return pickNextConjugationExercise(targetId);
+  }
+
+  if (section === "hiragana") {
+    return pickNextHiraganaExercise(targetId);
+  }
+
+  if (section === "katakana") {
+    return pickNextKatakanaExercise(targetId);
+  }
+
+  if (section === "vocabulary") {
+    return pickNextVocabularyExercise(targetId);
+  }
+
+  if (section === "kanji") {
+    return pickNextKanjiExercise(targetId);
+  }
+
+  return pickNextExercise(targetId);
+}
+
+async function loadEligibleDailyReviewItems() {
+  const [
+    exercises,
+    entriesById,
+    kanjiEntriesById,
+    kanjiContexts,
+    conjugationPool
+  ] = await Promise.all([
+    exerciseDataPromise,
+    vocabularyDataPromise,
+    kanjiDataPromise,
+    kanjiContextDataPromise,
+    conjugationDataPromise
+  ]);
+  const hiraganaPool = prepareHiraganaWords(entriesById);
+  const katakanaPool = prepareKatakanaWords(entriesById);
+  const vocabularyPool = prepareVocabularyItems(entriesById);
+  const kanjiPool = prepareKanjiExercises(entriesById, kanjiEntriesById, kanjiContexts);
+  const eligibleGrammarIds = new Set(exercises.flatMap(({ grammarPointIds }) => {
+    return grammarPointIds;
+  }));
+  const eligibleHiraganaIds = new Set(
+    globalThis.JlptN5Hiragana.createKanaInventory(hiraganaPool)
+  );
+  const eligibleKatakanaIds = new Set(
+    globalThis.JlptN5Katakana.createKanaInventory(katakanaPool)
+  );
+  const pairedHiraganaIds = new Set(
+    katakanaPairInventory.map(({ hiragana }) => hiragana)
+  );
+  const eligibleVocabularyIds = new Set(
+    vocabularyPool.map(({ vocabularyId }) => vocabularyId)
+  );
+  const eligibleConjugationIds = new Set(
+    conjugationPool.flatMap(({ conjugationPointIds }) => conjugationPointIds)
+  );
+  const eligibleKanjiIds = new Set(
+    globalThis.JlptN5Kanji.getKanjiInventory(kanjiPool).map(({ id }) => id)
+  );
+  const dueItems = globalThis.JlptN5Review.createDailyItems(
+    globalThis.JlptN5Srs.readSrsData(),
+    { now: new Date() }
+  );
+  const eligibleItems = dueItems.flatMap((item) => {
+    let section;
+
+    if (item.kind === "grammar" && eligibleGrammarIds.has(item.itemId)) {
+      section = "grammar";
+    } else if (
+      item.kind === "conjugation" && eligibleConjugationIds.has(item.itemId)
+    ) {
+      section = "conjugation";
+    } else if (
+      item.kind === "vocabulary" && eligibleVocabularyIds.has(item.itemId)
+    ) {
+      section = "vocabulary";
+    } else if (item.kind === "kanji" && eligibleKanjiIds.has(item.itemId)) {
+      section = "kanji";
+    } else if (item.kind === "kana" && eligibleHiraganaIds.has(item.itemId)) {
+      section = "hiragana";
+    } else if (
+      item.kind === "kana" &&
+      (eligibleKatakanaIds.has(item.itemId) || pairedHiraganaIds.has(item.itemId))
+    ) {
+      section = "katakana";
+    }
+
+    return section ? [{ ...item, section }] : [];
+  });
+
+  return eligibleItems;
+}
+
+async function createDailyReviewSession() {
+  return globalThis.JlptN5Review.createSession(
+    await loadEligibleDailyReviewItems()
+  );
+}
+
+async function refreshDailyReviewSession() {
+  if (!reviewSession) {
+    return;
+  }
+
+  reviewSession.addItems(await loadEligibleDailyReviewItems());
+  renderReviewProgress();
+}
+
+function renderReviewProgress() {
+  const isReview = currentStudySection === "review" && reviewSession;
+
+  reviewProgress.hidden = !isReview;
+
+  if (!isReview) {
+    return;
+  }
+
+  const { completed, total } = reviewSession.getProgress();
+  const accessibleTotal = Math.max(1, total);
+  const accessibleCompleted = total === 0 ? 1 : completed;
+  const percentage = total === 0 ? 100 : completed / total * 100;
+
+  reviewProgressCount.textContent = `${completed} / ${total}`;
+  reviewProgressTrack.setAttribute("aria-valuemax", String(accessibleTotal));
+  reviewProgressTrack.setAttribute("aria-valuenow", String(accessibleCompleted));
+  reviewProgressTrack.setAttribute("aria-label", t("review.progress", { completed, total }));
+  reviewProgressFill.style.width = `${percentage}%`;
+}
+
+function completeCurrentReviewExercise() {
+  if (currentStudySection !== "review" || !reviewSession) {
+    return;
+  }
+
+  reviewSession.recordOutcomes(currentReviewOutcomes);
+  renderReviewProgress();
+}
+
+function pickNextReviewPracticeExercise() {
+  const sections = [...studySections].filter((section) => {
+    return section !== "review" && section !== previousReviewPracticeSection;
+  });
+  const section = sections[Math.floor(Math.random() * sections.length)];
+
+  previousReviewPracticeSection = section;
+  return pickExerciseForSection(section);
+}
+
+async function pickNextReviewExercise({ refreshWhenEmpty = true } = {}) {
+  let target = reviewSession?.pickNext();
+
+  if (!target && !reviewFreePractice && refreshWhenEmpty) {
+    await refreshDailyReviewSession();
+    target = reviewSession?.pickNext();
+  }
+
+  if (target) {
+    return pickExerciseForSection(target.section, target.itemId);
+  }
+
+  return reviewFreePractice ? pickNextReviewPracticeExercise() : undefined;
+}
+
 function pickNextStudyExercise() {
-  if (currentStudySection === "conjugation") {
-    return pickNextConjugationExercise();
+  if (currentStudySection === "review") {
+    return pickNextReviewExercise();
   }
 
-  if (currentStudySection === "hiragana") {
-    return pickNextHiraganaExercise();
-  }
-
-  if (currentStudySection === "katakana") {
-    return pickNextKatakanaExercise();
-  }
-
-  if (currentStudySection === "vocabulary") {
-    return pickNextVocabularyExercise();
-  }
-
-  if (currentStudySection === "kanji") {
-    return pickNextKanjiExercise();
-  }
-
-  return pickNextExercise();
+  return pickExerciseForSection(currentStudySection);
 }
 
 function resetSpeechAudio() {
@@ -3323,6 +3518,7 @@ function displayLesson(lesson) {
   hideControls();
   resetSpeechAudio();
   currentLesson = lesson;
+  currentReviewOutcomes = [];
   speechAvailable = false;
   autoPlayedLesson = undefined;
   exerciseSubmitted = false;
@@ -3334,6 +3530,9 @@ function displayLesson(lesson) {
   contextualVocabularyReviewIds = [];
   revealedVocabularyIds = new Set();
   translationInput.disabled = false;
+  sentenceElement.hidden = false;
+  reviewComplete.hidden = true;
+  actionButton.hidden = false;
   solutionElement.classList.remove("is-visible");
   solutionElement.textContent = "";
   sentenceElement.classList.toggle("is-single-kana", isSingleKatakana);
@@ -3667,6 +3866,71 @@ async function displayInitialConjugationExercise() {
   }
 }
 
+function displayReviewComplete() {
+  cancelAutoCorrect();
+  hideControls();
+  resetSpeechAudio();
+  setKanaInputMode(undefined);
+  currentLesson = { id: "review-complete", section: "review" };
+  currentReviewOutcomes = [];
+  exerciseSubmitted = true;
+  speechAvailable = false;
+  sentenceElement.hidden = true;
+  reviewComplete.hidden = false;
+  exerciseKindLabel.hidden = true;
+  kanaGuidance.hidden = true;
+  kanjiGuidance.hidden = true;
+  vocabularyGuidance.hidden = true;
+  conjugationGuidance.hidden = true;
+  productionGuidance.hidden = true;
+  translationInput.hidden = true;
+  kanjiChoiceGrid.hidden = true;
+  speakButton.hidden = true;
+  actionButton.hidden = true;
+  solutionElement.classList.remove("is-visible");
+  solutionElement.replaceChildren();
+  setSpeakButtonState("unavailable");
+  renderReviewProgress();
+  lessonElement.classList.add("controls-visible");
+  reviewContinueButton.focus({ preventScroll: true });
+}
+
+async function displayInitialReviewExercise() {
+  const requestId = ++lessonRequestId;
+
+  try {
+    reviewSession = await createDailyReviewSession();
+    renderReviewProgress();
+    const exercise = await pickNextReviewExercise({ refreshWhenEmpty: false });
+
+    if (requestId !== lessonRequestId) {
+      return;
+    }
+
+    if (!exercise) {
+      displayReviewComplete();
+      return;
+    }
+
+    displayLesson(exercise);
+    clearTranslationInput();
+    configureAnswerControls(exercise);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+function handleReviewContinueClick() {
+  reviewFreePractice = true;
+  void showNextExercise();
+}
+
+function handleReviewChooseSectionClick() {
+  openProfileMenu(studyMenuItems.find(({ dataset }) => {
+    return dataset.studySection !== "review";
+  }));
+}
+
 function waitForFadeOut() {
   const delay = window.matchMedia("(prefers-reduced-motion: reduce)").matches
     ? 0
@@ -3688,6 +3952,16 @@ async function showNextExercise() {
 
     if (requestId !== lessonRequestId) {
       return;
+    }
+
+    if (!exercise && currentStudySection === "review") {
+      displayReviewComplete();
+      lessonStage.classList.remove("is-leaving");
+      return;
+    }
+
+    if (!exercise) {
+      throw new Error("No exercise is available.");
     }
 
     displayLesson(exercise);
@@ -3731,6 +4005,11 @@ function revealKanaSolution() {
   const expectsKana = isRomajiToKana || isHiraganaToKatakana;
 
   globalThis.JlptN5Srs.recordKanaReviews(srsKanaRatings);
+  currentReviewOutcomes = srsKanaRatings.map(({ kana, outcome }) => ({
+    kind: "kana",
+    itemId: kana,
+    outcome
+  }));
   globalThis.JlptN5Stats.recordKanaAttempt(
     currentLesson,
     translationInput.value,
@@ -3810,6 +4089,11 @@ function revealConjugationSolution() {
   const name = document.createElement("span");
 
   globalThis.JlptN5Srs.recordConjugationReviews(result.ratings);
+  currentReviewOutcomes = result.ratings.map(({ conjugationPointId, outcome }) => ({
+    kind: "conjugation",
+    itemId: conjugationPointId,
+    outcome
+  }));
   globalThis.JlptN5Stats.recordConjugationAttempt(
     currentLesson,
     translationInput.value,
@@ -4024,6 +4308,11 @@ function recordCurrentVocabularyReview() {
     vocabularyId: currentLesson.vocabularyId,
     outcome: vocabularyRating
   }]);
+  currentReviewOutcomes = [{
+    kind: "vocabulary",
+    itemId: currentLesson.vocabularyId,
+    outcome: vocabularyRating
+  }];
   globalThis.JlptN5Stats.recordVocabularyAttemptOutcome(
     currentLesson.id,
     currentAttemptSubmittedAt,
@@ -4199,6 +4488,11 @@ function recordCurrentKanjiReview() {
     kanjiId: currentLesson.kanjiId,
     outcome: kanjiRating
   }]);
+  currentReviewOutcomes = [{
+    kind: "kanji",
+    itemId: currentLesson.kanjiId,
+    outcome: kanjiRating
+  }];
   globalThis.JlptN5Stats.recordKanjiAttemptOutcome(
     currentLesson.id,
     currentAttemptSubmittedAt,
@@ -4217,6 +4511,11 @@ function recordCurrentKanjiReview() {
     ]).length > 0
   ) {
     globalThis.JlptN5Srs.recordVocabularyReviews([positiveVocabularyRating]);
+    currentReviewOutcomes.push({
+      kind: "vocabulary",
+      itemId: positiveVocabularyRating.vocabularyId,
+      outcome: positiveVocabularyRating.outcome
+    });
   }
 }
 
@@ -4458,6 +4757,11 @@ function recordCurrentGrammarReviews() {
   }));
 
   globalThis.JlptN5Srs.recordReviews(reviews);
+  currentReviewOutcomes = reviews.map(({ grammarPointId, outcome }) => ({
+    kind: "grammar",
+    itemId: grammarPointId,
+    outcome
+  }));
   globalThis.JlptN5Stats.recordExerciseGrammarRatings(
     currentLesson.id,
     currentAttemptSubmittedAt,
@@ -4472,16 +4776,30 @@ function recordCurrentGrammarReviews() {
     vocabularyId,
     outcome: "good"
   })));
+  currentReviewOutcomes.push(...vocabularyIds.map((vocabularyId) => ({
+    kind: "vocabulary",
+    itemId: vocabularyId,
+    outcome: "good"
+  })));
+}
+
+function advanceToNextExercise() {
+  completeCurrentReviewExercise();
+  void showNextExercise();
 }
 
 function handleAction() {
+  if (currentLesson.section === "review") {
+    return;
+  }
+
   if (!exerciseSubmitted) {
     commitPendingKanaInput();
   }
 
   if (currentLesson.section === "conjugation") {
     if (exerciseSubmitted) {
-      showNextExercise();
+      advanceToNextExercise();
     } else {
       revealConjugationSolution();
     }
@@ -4491,7 +4809,7 @@ function handleAction() {
   if (currentLesson.section === "vocabulary") {
     if (exerciseSubmitted) {
       recordCurrentVocabularyReview();
-      showNextExercise();
+      advanceToNextExercise();
     } else {
       revealVocabularySolution();
     }
@@ -4501,7 +4819,7 @@ function handleAction() {
   if (currentLesson.section === "kanji") {
     if (exerciseSubmitted) {
       recordCurrentKanjiReview();
-      showNextExercise();
+      advanceToNextExercise();
     } else {
       revealKanjiSolution();
     }
@@ -4510,7 +4828,7 @@ function handleAction() {
 
   if (["hiragana", "katakana"].includes(currentLesson.section)) {
     if (exerciseSubmitted) {
-      showNextExercise();
+      advanceToNextExercise();
     } else {
       revealKanaSolution();
     }
@@ -4518,13 +4836,13 @@ function handleAction() {
   }
 
   if (currentLesson.id === introductionId) {
-    showNextExercise();
+    void showNextExercise();
     return;
   }
 
   if (exerciseSubmitted) {
     recordCurrentGrammarReviews();
-    showNextExercise();
+    advanceToNextExercise();
     return;
   }
 
@@ -4549,6 +4867,7 @@ function handleResultKeydown(event) {
     event.key !== "Enter" ||
     event.isComposing ||
     (!exerciseSubmitted && !canSubmitKanjiChoice) ||
+    actionButton.hidden ||
     actionButton.disabled ||
     settingsDialog.open ||
     activityDialog.open ||
@@ -4653,6 +4972,8 @@ activityDialog.querySelector(".stat-kind-control").addEventListener("click", han
 statisticsContent.addEventListener("click", handleStatisticsContentClick);
 historyList.addEventListener("click", handleHistoryListClick);
 actionButton.addEventListener("click", handleAction);
+reviewContinueButton.addEventListener("click", handleReviewContinueClick);
+reviewChooseSectionButton.addEventListener("click", handleReviewChooseSectionClick);
 translationInput.addEventListener("keydown", handleTranslationInputKeydown);
 translationInput.addEventListener("input", handleTranslationInputResize);
 kanjiChoiceGrid.addEventListener("click", handleKanjiChoiceClick);
@@ -4803,7 +5124,9 @@ async function startApp() {
       void synchronizeReviewReminder();
     }
 
-    if (currentStudySection === "hiragana") {
+    if (currentStudySection === "review") {
+      await displayInitialReviewExercise();
+    } else if (currentStudySection === "hiragana") {
       await displayInitialHiraganaExercise();
     } else if (currentStudySection === "katakana") {
       await displayInitialKatakanaExercise();

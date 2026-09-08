@@ -366,6 +366,7 @@ test("browser code has no application backend or embedded API key", async () => 
     readFile(join(rootDirectory, "kanji.js"), "utf8"),
     readFile(join(rootDirectory, "vocabulary.js"), "utf8"),
     readFile(join(rootDirectory, "exercise-selection.js"), "utf8"),
+    readFile(join(rootDirectory, "review.js"), "utf8"),
     readFile(join(rootDirectory, "statistics.js"), "utf8"),
     readFile(join(rootDirectory, "settings.js"), "utf8")
   ]).then((files) => files.join("\n"));
@@ -400,6 +401,7 @@ test("the main menu links every implemented study route", async () => {
   ]);
 
   assert.match(html, /data-study-section="hiragana"/);
+  assert.match(html, /data-study-section="review"/);
   assert.match(html, /data-study-section="katakana"/);
   assert.match(html, /data-study-section="kanji"/);
   assert.match(html, /data-study-section="vocabulary"/);
@@ -411,6 +413,12 @@ test("the main menu links every implemented study route", async () => {
   assert.ok(html.indexOf('src="kanji.js"') < html.indexOf('src="app.js"'));
   assert.ok(html.indexOf('src="vocabulary.js"') < html.indexOf('src="app.js"'));
   assert.ok(html.indexOf('src="conjugation.js"') < html.indexOf('src="app.js"'));
+  assert.ok(html.indexOf('src="review.js"') < html.indexOf('src="app.js"'));
+  assert.match(html, /id="review-progress"/);
+  assert.match(html, /id="review-complete"/);
+  assert.match(html, /id="review-complete"[\s\S]*?aria-live="polite"/);
+  assert.match(browserCode, /reviewContinueButton\.focus\(\{ preventScroll: true \}\)/);
+  assert.match(browserCode, /await refreshDailyReviewSession\(\)/);
   assert.match(browserCode, /currentStudySection/);
   assert.match(browserCode, /pickNextHiraganaExercise/);
   assert.match(browserCode, /pickNextKatakanaExercise/);
@@ -1105,6 +1113,7 @@ test("preview serves the committed static application", async () => {
   const expectedTypes = new Map([
     ["/", "text/html"],
     ["/privacy.html", "text/html"],
+    ["/review", "text/html"],
     ["/grammar", "text/html"],
     ["/conjugation", "text/html"],
     ["/hiragana", "text/html"],
@@ -1140,6 +1149,7 @@ test("preview serves the committed static application", async () => {
     ["/vendor/capacitor-share.js", "text/javascript"],
     ["/learning-stats.js", "text/javascript"],
     ["/exercise-selection.js", "text/javascript"],
+    ["/review.js", "text/javascript"],
     ["/statistics.js", "text/javascript"],
     ["/history.js", "text/javascript"],
     ["/settings.js", "text/javascript"],

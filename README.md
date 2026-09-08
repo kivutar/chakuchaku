@@ -17,6 +17,11 @@ conjugation into one calm daily practice loop. Adaptive FSRS reviews focus on
 what is due, progress stays on your device, and the app works in English or
 French with optional audio and offline access. No account is required.
 
+The `/review` route gathers every previously encountered card due that day
+across all six study sections. Its progress bar counts individual SRS knowledge
+units, so one word or sentence can clear several units; failed units are mixed
+back into the same session until answered successfully.
+
 <p align="center">
   <img src="assets/store/google-play/phone/store-phone-1.jpg" width="31%" alt="ChakuChaku grammar lesson">
   <img src="assets/store/google-play/phone/store-phone-2.jpg" width="31%" alt="ChakuChaku Hiragana exercise">
@@ -235,6 +240,7 @@ Open http://127.0.0.1:4173. Set `PORT` to use another port. The study sections
 also have direct URLs:
 
 ```text
+http://127.0.0.1:4173/review
 http://127.0.0.1:4173/grammar
 http://127.0.0.1:4173/conjugation
 http://127.0.0.1:4173/hiragana

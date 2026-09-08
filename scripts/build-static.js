@@ -31,6 +31,7 @@ const staticFiles = [
   "vocabulary.js",
   "conjugation.js",
   "exercise-selection.js",
+  "review.js",
   "statistics.js",
   "history.js",
   "settings.js",
@@ -110,6 +111,7 @@ const routeHtml = (await readFile(join(rootDirectory, "index.html"), "utf8"))
   .replace("<head>", "<head>\n    <base href=\"../\">");
 
 for (const route of [
+  "review",
   "grammar",
   "conjugation",
   "hiragana",

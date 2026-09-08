@@ -127,6 +127,7 @@
     <script src="vocabulary.js" defer></script>
     <script src="conjugation.js" defer></script>
     <script src="exercise-selection.js" defer></script>
+    <script src="review.js" defer></script>
     <script src="statistics.js" defer></script>
     <script src="history.js" defer></script>
     <script src="settings.js" defer></script>
@@ -180,6 +181,15 @@
       </button>
       <div id="profile-menu" class="profile-menu" role="menu" data-user-language hidden>
         <span class="profile-menu-heading" data-i18n="menu.study">Study</span>
+        <a
+          id="review-menu-item"
+          class="profile-menu-item profile-menu-study-item"
+          href="review"
+          role="menuitem"
+          tabindex="-1"
+          data-study-section="review"
+          data-i18n="section.review"
+        >Reviews</a>
         <a
           id="hiragana-menu-item"
           class="profile-menu-item profile-menu-study-item"
@@ -568,6 +578,27 @@
     </dialog>
     <main>
       <div class="lesson">
+        <section
+          id="review-progress"
+          class="review-progress"
+          aria-labelledby="review-progress-label"
+          hidden
+        >
+          <div class="review-progress-summary">
+            <span id="review-progress-label" data-i18n="review.today">Today's reviews</span>
+            <strong id="review-progress-count">0 / 0</strong>
+          </div>
+          <div
+            id="review-progress-track"
+            class="review-progress-track"
+            role="progressbar"
+            aria-valuemin="0"
+            aria-valuemax="1"
+            aria-valuenow="0"
+          >
+            <span id="review-progress-fill" class="review-progress-fill"></span>
+          </div>
+        </section>
         <button
           id="speak-button"
           class="speak-button lesson-control"
@@ -592,6 +623,34 @@
           </svg>
         </button>
         <div id="lesson-stage" class="lesson-stage">
+          <section
+            id="review-complete"
+            class="review-complete"
+            aria-labelledby="review-complete-title"
+            aria-live="polite"
+            aria-atomic="true"
+            data-user-language
+            hidden
+          >
+            <span class="review-complete-mark" aria-hidden="true">✓</span>
+            <h1 id="review-complete-title" data-i18n="review.completeTitle">Today's reviews are complete</h1>
+            <p id="review-complete-message" data-i18n="review.completeMessage">You have cleared every card that was due.</p>
+            <div class="review-complete-actions">
+              <button
+                id="review-continue-button"
+                class="review-complete-primary"
+                type="button"
+                aria-describedby="review-complete-message"
+                data-i18n="review.continue"
+              >Keep practicing</button>
+              <button
+                id="review-choose-section-button"
+                class="review-complete-secondary"
+                type="button"
+                data-i18n="review.chooseSection"
+              >Choose a section</button>
+            </div>
+          </section>
           <p id="exercise-kind-label" class="exercise-kind-label" data-user-language hidden></p>
           <p
             id="lesson-sentence"
