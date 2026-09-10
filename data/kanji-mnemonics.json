@@ -1912,8 +1912,13 @@
     "readings": [
       {
         "reading": "あか",
-        "story": "A car needs bright headlights: “a car” leads into あか, as in 明るい（あかるい）.",
+        "story": "At dawn, the sun is red — 赤い（あかい）— as its light makes the sky bright — 明るい（あかるい）. Red and brightness share あか.",
         "anchorId": "vocab-f8249679701c"
+      },
+      {
+        "reading": "めい",
+        "story": "MEIJI（明治） was named for rule toward a bright, enlightened direction: MEI gives めい, the light in 明.",
+        "anchorId": "kanji-context-setsumei"
       }
     ]
   },
@@ -3926,19 +3931,15 @@
     "kanjiId": "kanji-6587",
     "components": [
       {
-        "symbol": "亠",
-        "meaning": "lid"
-      },
-      {
-        "symbol": "乂",
-        "meaning": "crossed strokes"
+        "symbol": "文",
+        "meaning": "tattooed figure"
       }
     ],
-    "meaningStory": "Crossed lines under a heading create a written pattern: a sentence or text.",
+    "meaningStory": "The ancient form depicts a person with a pattern tattooed on their chest. That pattern became a written sign, then writing and a sentence.",
     "readings": [
       {
         "reading": "ぶん",
-        "story": "A bundle of words makes a sentence: bundle begins like ぶん.",
+        "story": "At the BUN SHOW, every bun bears a written sentence: BUN SHOW gives ぶんしょう.",
         "anchorId": "vocab-1a0c68cc98ca"
       }
     ]

@@ -1828,8 +1828,13 @@
     "readings": [
       {
         "reading": "あか",
-        "story": "Accrochez le son あか au mot 明るい（あかるい）, puis replacez ce mot dans la scène du sens.",
+        "story": "Au lever du jour, le soleil est rouge — 赤い（あかい）— et répand sa lumière jusqu’à rendre le ciel lumineux — 明るい（あかるい）. Le rouge et la lumière partagent あか.",
         "anchorId": "vocab-f8249679701c"
+      },
+      {
+        "reading": "めい",
+        "story": "L’ère MEIJI（明治） devait conduire le pays vers une direction éclairée : MEI donne めい, la lumière de 明.",
+        "anchorId": "kanji-context-setsumei"
       }
     ]
   },
@@ -3750,19 +3755,15 @@
   "kanji-6587": {
     "components": [
       {
-        "symbol": "亠",
-        "meaning": "couvercle"
-      },
-      {
-        "symbol": "乂",
-        "meaning": "traits croisés"
+        "symbol": "文",
+        "meaning": "personne tatouée"
       }
     ],
-    "meaningStory": "Des lignes croisées sous un en-tête forment un motif écrit : une phrase ou un texte.",
+    "meaningStory": "L’ancienne forme représente une personne portant un motif tatoué sur la poitrine. Ce motif est devenu un signe écrit, puis un texte et une phrase.",
     "readings": [
       {
         "reading": "ぶん",
-        "story": "Accrochez le son ぶん au mot 文章（ぶんしょう）, puis replacez ce mot dans la scène du sens.",
+        "story": "Le boulanger imprime une phrase sur un BUN CHAUD : BUN-CHAUD fait entendre ぶんしょう.",
         "anchorId": "vocab-1a0c68cc98ca"
       }
     ]
