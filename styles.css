@@ -2379,6 +2379,101 @@ main {
   line-height: 1.35;
 }
 
+.kanji-mnemonic {
+  margin-top: 0.75rem;
+  padding: 0.78rem 0.82rem;
+  border: 1px solid rgb(93 111 75 / 28%);
+  border-radius: 0.72rem;
+  background: rgb(239 244 229 / 72%);
+  color: #30372a;
+}
+
+.kanji-mnemonic-heading,
+.kanji-mnemonic-keyword,
+.kanji-mnemonic-story,
+.kanji-mnemonic-reading,
+.kanji-mnemonic-anchor {
+  margin: 0;
+}
+
+.kanji-mnemonic-heading {
+  color: #526044;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.kanji-mnemonic-keyword {
+  margin-top: 0.34rem;
+  color: #526044;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.kanji-mnemonic-keyword span {
+  color: #354129;
+  font-size: 1.15rem;
+}
+
+.kanji-mnemonic-components {
+  display: flex;
+  margin: 0.52rem 0 0;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+  list-style: none;
+}
+
+.kanji-mnemonic-components li {
+  display: inline-flex;
+  min-height: 1.9rem;
+  align-items: center;
+  gap: 0.34rem;
+  padding: 0.2rem 0.52rem 0.2rem 0.3rem;
+  border: 1px solid rgb(93 111 75 / 25%);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 64%);
+  color: #59614f;
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
+.kanji-mnemonic-component-symbol {
+  display: grid;
+  width: 1.35rem;
+  height: 1.35rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #dce8c9;
+  color: #354129;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.kanji-mnemonic-story {
+  margin-top: 0.62rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.kanji-mnemonic-reading,
+.kanji-mnemonic-anchor {
+  margin-top: 0.46rem;
+  color: #5d6554;
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.kanji-mnemonic-reading strong,
+.kanji-mnemonic-anchor strong {
+  color: #46523a;
+  font-weight: 750;
+}
+
 .phrase {
   display: inline-block;
 }
@@ -3462,6 +3557,39 @@ html[data-furigana="false"] rt {
 
   .kanji-solution-target {
     color: #d9b85a;
+  }
+
+  .kanji-mnemonic {
+    border-color: rgb(153 174 122 / 30%);
+    background: rgb(50 61 39 / 72%);
+    color: #e6edda;
+  }
+
+  .kanji-mnemonic-heading,
+  .kanji-mnemonic-keyword,
+  .kanji-mnemonic-reading strong,
+  .kanji-mnemonic-anchor strong {
+    color: #c8d8ae;
+  }
+
+  .kanji-mnemonic-keyword span {
+    color: #eef4e5;
+  }
+
+  .kanji-mnemonic-components li {
+    border-color: rgb(176 197 143 / 25%);
+    background: rgb(255 255 255 / 7%);
+    color: #c8d0bc;
+  }
+
+  .kanji-mnemonic-component-symbol {
+    background: #465737;
+    color: #eef4e5;
+  }
+
+  .kanji-mnemonic-reading,
+  .kanji-mnemonic-anchor {
+    color: #bdc8ae;
   }
 
   :is(

@@ -899,10 +899,228 @@ function createGrammarCoverage(grammarPoints, exercises) {
   return lines.join("\n");
 }
 
+function foldReadingSound(value) {
+  return value
+    .normalize("NFD")
+    .replace(/[\u3099\u309a]/gu, "")
+    .normalize("NFC")
+    .replaceAll("っ", "つ");
+}
+
+function anchorCarriesReading(anchor, character, reading) {
+  const term = anchor.term.replace(/[～〜]/gu, "");
+  const wordReading = foldReadingSound(anchor.reading.replace(/[～〜]/gu, ""));
+  const targetReading = foldReadingSound(reading);
+  const han = [...term].filter((candidate) => /\p{Script=Han}/u.test(candidate));
+  const characterIndex = han.indexOf(character);
+
+  if (
+    characterIndex === -1 ||
+    [...term].filter((candidate) => candidate === character).length !== 1
+  ) {
+    return false;
+  }
+
+  if (han.length === 1) {
+    if (term === character) {
+      return wordReading === targetReading;
+    }
+
+    if (term.startsWith(character)) {
+      return wordReading.startsWith(targetReading);
+    }
+
+    if (term.endsWith(character)) {
+      return wordReading.endsWith(targetReading);
+    }
+
+    return targetReading.length >= 2 && wordReading.includes(targetReading);
+  }
+
+  if (characterIndex === 0) {
+    return wordReading.startsWith(targetReading);
+  }
+
+  if (characterIndex === han.length - 1) {
+    return wordReading.endsWith(targetReading);
+  }
+
+  return targetReading.length >= 2 && wordReading.includes(targetReading);
+}
+
+function validateKanjiComponents(components) {
+  if (
+    !components ||
+    Array.isArray(components) ||
+    typeof components !== "object"
+  ) {
+    return ["Kanji components must be an object keyed by symbol."];
+  }
+
+  const entries = Object.entries(components);
+
+  if (
+    entries.length === 0 ||
+    entries.some(([symbol, meaning]) => (
+      typeof symbol !== "string" || !symbol.trim() ||
+      typeof meaning !== "string" || !meaning.trim()
+    ))
+  ) {
+    return ["Kanji component symbols and meanings must be non-empty strings."];
+  }
+
+  return [];
+}
+
+function validateKanjiMnemonics(
+  mnemonics,
+  components,
+  kanji,
+  vocabulary,
+  kanjiContexts
+) {
+  const errors = [];
+  const kanjiById = new Map(kanji.map((entry) => [entry.id, entry]));
+  const anchorsById = new Map(
+    [...vocabulary, ...kanjiContexts].map((entry) => [entry.id, entry])
+  );
+  const seenIds = new Set();
+  const usedComponents = new Set();
+
+  if (!Array.isArray(mnemonics)) {
+    return ["Kanji mnemonics must be an array."];
+  }
+
+  if (mnemonics.length !== kanji.length) {
+    errors.push(`Kanji mnemonics must cover all ${kanji.length} kanji.`);
+  }
+
+  for (const mnemonic of mnemonics) {
+    const kanjiEntry = kanjiById.get(mnemonic?.kanjiId);
+
+    if (!kanjiEntry) {
+      errors.push(`${mnemonic?.kanjiId || "unknown mnemonic"}: unknown kanji id.`);
+      continue;
+    }
+
+    if (seenIds.has(mnemonic.kanjiId)) {
+      errors.push(`${mnemonic.kanjiId}: duplicate kanji mnemonic.`);
+    }
+    seenIds.add(mnemonic.kanjiId);
+
+    if (
+      !Array.isArray(mnemonic.components) ||
+      mnemonic.components.length === 0 ||
+      mnemonic.components.some((symbol) => (
+        typeof symbol !== "string" || !symbol.trim() || !Object.hasOwn(components, symbol)
+      ))
+    ) {
+      errors.push(`${mnemonic.kanjiId}: invalid mnemonic components.`);
+    } else {
+      mnemonic.components.forEach((symbol) => usedComponents.add(symbol));
+    }
+
+    if (typeof mnemonic.meaningStory !== "string" || !mnemonic.meaningStory.trim()) {
+      errors.push(`${mnemonic.kanjiId}: meaning mnemonic is required.`);
+    }
+
+    const acceptedReadings = new Set([
+      ...kanjiEntry.onReadings,
+      ...kanjiEntry.kunReadings
+    ]);
+
+    const readings = Array.isArray(mnemonic.readings) ? mnemonic.readings : [];
+
+    if (readings.length === 0) {
+      errors.push(`${mnemonic.kanjiId}: invalid reading mnemonics.`);
+    }
+
+    for (const readingMnemonic of readings) {
+      const { reading, story, anchorId, anchorReading } = readingMnemonic || {};
+      const surfaceReading = anchorReading || reading;
+      const anchor = anchorsById.get(anchorId);
+
+      if (
+        !acceptedReadings.has(reading) ||
+        typeof story !== "string" ||
+        !story.trim() ||
+        !story.includes(reading)
+      ) {
+        errors.push(`${mnemonic.kanjiId}: invalid reading mnemonic for ${reading || "unknown"}.`);
+        continue;
+      }
+
+      if (
+        anchorReading !== undefined &&
+        (
+          typeof anchorReading !== "string" ||
+          !/^[ぁ-ゖ]+$/u.test(anchorReading) ||
+          ![
+            foldReadingSound(reading),
+            `${foldReadingSound(reading)}つ`
+          ].includes(foldReadingSound(anchorReading)) ||
+          !story.includes(anchorReading)
+        )
+      ) {
+        errors.push(`${mnemonic.kanjiId}: invalid anchor reading for ${reading}.`);
+      }
+
+      if (
+        !anchor ||
+        !anchorCarriesReading(anchor, kanjiEntry.character, surfaceReading)
+      ) {
+        errors.push(
+          `${mnemonic.kanjiId}: ${anchorId || "missing anchor"} does not carry ${surfaceReading}.`
+        );
+      }
+    }
+  }
+
+  for (const symbol of Object.keys(components)) {
+    if (!usedComponents.has(symbol)) {
+      errors.push(`Kanji component ${symbol} is not used by any mnemonic.`);
+    }
+  }
+
+  return errors;
+}
+
+function prepareKanjiMnemonics(sources, components) {
+  return sources.map((source) => ({
+    ...source,
+    components: source.components.map((symbol) => ({
+      symbol,
+      meaning: components[symbol]
+    }))
+  }));
+}
+
+function prepareKanjiMnemonicLocalizations(sources, localizations, components) {
+  const sourcesById = new Map(sources.map((source) => [source.kanjiId, source]));
+
+  return Object.fromEntries(Object.entries(localizations).map(([id, localized]) => {
+    const source = sourcesById.get(id);
+
+    return [id, {
+      components: source.components.map((symbol) => ({
+        symbol,
+        meaning: components[symbol]
+      })),
+      meaningStory: localized.meaningStory,
+      readings: source.readings.map((reading, index) => ({
+        ...reading,
+        story: localized.readings[index]
+      }))
+    }];
+  }));
+}
+
 const [
   introductionSource,
   exerciseSources,
   vocabularyExampleSources,
+  kanjiComponentSources,
+  kanjiMnemonicSources,
   grammarPoints,
   vocabulary,
   kanjiContexts,
@@ -913,6 +1131,8 @@ const [
   readJson(join(sourceDirectory, "introduction.json")),
   readJson(join(sourceDirectory, "exercises.json")),
   readJson(join(sourceDirectory, "vocabulary-examples.json")),
+  readJson(join(sourceDirectory, "kanji-components.json")),
+  readJson(join(sourceDirectory, "kanji-mnemonics.json")),
   readJson(join(rootDirectory, "data", "jlpt-n5-grammar.json")),
   readJson(join(rootDirectory, "data", "jlpt-n5-vocabulary.json")),
   readJson(join(rootDirectory, "data", "kanji-contexts.json")),
@@ -922,7 +1142,15 @@ const [
     locale,
     ui: await readJson(join(rootDirectory, "locales", `${locale}.json`)),
     localizations: Object.fromEntries(await Promise.all(
-      ["exercises", "grammar", "vocabulary", "kanji", "vocabulary-examples"].map(async (kind) => [
+      [
+        "exercises",
+        "grammar",
+        "vocabulary",
+        "kanji",
+        "kanji-components",
+        "kanji-mnemonics",
+        "vocabulary-examples"
+      ].map(async (kind) => [
         kind,
         await readJson(join(sourceDirectory, "locales", locale, `${kind}.json`))
       ])
@@ -933,13 +1161,17 @@ const [
 if (
   !Array.isArray(exerciseSources) ||
   !Array.isArray(vocabularyExampleSources) ||
+  !kanjiComponentSources ||
+  Array.isArray(kanjiComponentSources) ||
+  typeof kanjiComponentSources !== "object" ||
+  !Array.isArray(kanjiMnemonicSources) ||
   !Array.isArray(grammarPoints) ||
   !Array.isArray(vocabulary) ||
   !Array.isArray(kanjiContexts) ||
   !Array.isArray(kanji)
 ) {
   throw new Error(
-    "Exercise, vocabulary example, grammar, vocabulary, kanji context, and kanji data must be arrays."
+    "Exercise, vocabulary example, kanji mnemonic, grammar, vocabulary, kanji context, and kanji data have invalid shapes."
   );
 }
 
@@ -968,10 +1200,20 @@ const errors = localizedCatalogs.flatMap(({ locale, ui, localizations }) => [
     grammar: grammarPoints,
     vocabulary,
     kanji,
+    kanjiComponents: kanjiComponentSources,
+    kanjiMnemonics: kanjiMnemonicSources,
     vocabularyExamples: vocabularyExampleSources,
     localizations
   })
 ]);
+errors.push(...validateKanjiComponents(kanjiComponentSources));
+errors.push(...validateKanjiMnemonics(
+  kanjiMnemonicSources,
+  kanjiComponentSources,
+  kanji,
+  vocabulary,
+  kanjiContexts
+));
 let introduction;
 const exercises = [];
 const vocabularyExamples = [];
@@ -1043,11 +1285,23 @@ await Promise.all([
     join(rootDirectory, "data", "vocabulary-examples.json"),
     vocabularyExamples
   ),
+  writeOrCheckJson(
+    join(rootDirectory, "data", "kanji-mnemonics.json"),
+    prepareKanjiMnemonics(kanjiMnemonicSources, kanjiComponentSources)
+  ),
   ...localizedCatalogs.flatMap(({ locale, localizations }) => (
-    Object.entries(localizations).map(([kind, localization]) => (
+    Object.entries(localizations)
+      .filter(([kind]) => kind !== "kanji-components")
+      .map(([kind, localization]) => (
       writeOrCheckJson(
         join(rootDirectory, "data", "locales", locale, `${kind}.json`),
-        localization
+        kind === "kanji-mnemonics"
+          ? prepareKanjiMnemonicLocalizations(
+            kanjiMnemonicSources,
+            localization,
+            localizations["kanji-components"]
+          )
+          : localization
       )
     ))
   )),

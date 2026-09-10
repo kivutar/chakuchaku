@@ -169,6 +169,71 @@ function validateKanji(sources, localizations, errors, locale) {
   }
 }
 
+function validateKanjiComponents(sources, localizations, errors, locale) {
+  const language = getLanguageName(locale);
+  const sourceSymbols = Object.keys(sources || {});
+  const localizedSymbols = Object.keys(localizations || {});
+
+  if (
+    sourceSymbols.length !== localizedSymbols.length ||
+    sourceSymbols.some((symbol) => !Object.hasOwn(localizations || {}, symbol))
+  ) {
+    errors.push(`kanji components: ${language} must cover every source symbol.`);
+  }
+
+  for (const [symbol, meaning] of Object.entries(localizations || {})) {
+    if (!Object.hasOwn(sources || {}, symbol)) {
+      errors.push(`kanji components: unknown ${symbol}.`);
+    } else if (!isNonemptyString(meaning)) {
+      errors.push(`kanji components: ${language} meaning for ${symbol} is required.`);
+    }
+  }
+}
+
+function validateKanjiMnemonics(sources, localizations, errors, locale) {
+  const language = getLanguageName(locale);
+  const sourcesById = new Map(sources.map((source) => [source.kanjiId, source]));
+
+  if (Object.keys(localizations || {}).length !== sources.length) {
+    errors.push(`kanji mnemonics: ${language} must cover every source entry.`);
+  }
+
+  for (const id of Object.keys(localizations || {})) {
+    if (!sourcesById.has(id)) {
+      errors.push(`kanji mnemonics: unknown ${id}.`);
+    }
+  }
+
+  for (const [id, localized] of Object.entries(localizations || {})) {
+    const source = sourcesById.get(id);
+
+    if (!source) {
+      continue;
+    }
+
+    if (!isNonemptyString(localized.meaningStory)) {
+      errors.push(`${id}: ${language} meaning mnemonic is required.`);
+    }
+
+    if (
+      !Array.isArray(localized.readings) ||
+      localized.readings.length !== source.readings.length
+    ) {
+      errors.push(`${id}: ${language} reading mnemonic count changed.`);
+    } else if (localized.readings.some((story, index) => (
+      !isNonemptyString(story) || !story.includes(source.readings[index].reading)
+    ))) {
+      errors.push(`${id}: ${language} reading mnemonics are invalid.`);
+    }
+
+    for (const key of Object.keys(localized)) {
+      if (!["meaningStory", "readings"].includes(key)) {
+        errors.push(`${id}: ${language} mnemonic has unknown field ${key}.`);
+      }
+    }
+  }
+}
+
 function validateVocabularyExamples(sources, localizations, errors, locale) {
   const language = getLanguageName(locale);
   const keyedSources = sources.map(({ vocabularyId }) => ({ id: vocabularyId }));
@@ -239,6 +304,8 @@ export function validateLocalizedContent({
   grammar,
   vocabulary,
   kanji,
+  kanjiComponents = {},
+  kanjiMnemonics = [],
   vocabularyExamples = [],
   localizations
 }) {
@@ -248,6 +315,18 @@ export function validateLocalizedContent({
   validateGrammar(grammar, localizations.grammar, errors, locale);
   validateVocabulary(vocabulary, localizations.vocabulary, errors, locale);
   validateKanji(kanji, localizations.kanji, errors, locale);
+  validateKanjiComponents(
+    kanjiComponents,
+    localizations["kanji-components"],
+    errors,
+    locale
+  );
+  validateKanjiMnemonics(
+    kanjiMnemonics,
+    localizations["kanji-mnemonics"],
+    errors,
+    locale
+  );
   if (vocabularyExamples.length > 0) {
     validateVocabularyExamples(
       vocabularyExamples,

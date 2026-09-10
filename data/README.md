@@ -149,6 +149,30 @@ all B6-B4 characters exercisable but remain separate from the vocabulary
 curriculum and its SRS. French display meanings live in
 `locales/fr/kanji-contexts.json`.
 
+`source/kanji-mnemonics.json` provides an original memory aid for every one of
+the 209 kanji. Each entry combines a learner-facing visual decomposition, a
+short story linking those components to the meaning, one or more useful N5
+reading mnemonics, and an anchor ID per reading from the vocabulary or
+kanji-context inventory. `source/kanji-components.json` assigns one stable
+English keyword to every component symbol, so a symbol never changes meaning
+between cards. Reading mnemonics prioritize the reading used by their anchor
+and add a second family only when it has clear beginner value; they are not intended as
+an exhaustive dictionary reading list. When a compound changes the sound by
+contraction or voicing, the reading story must explicitly connect the canonical
+reading to the anchor's surface reading. These are visual learning stories, not
+claims about historical character etymology.
+
+French mnemonic prose lives in
+`source/locales/fr/kanji-mnemonics.json`, while the stable French component
+keywords live in `source/locales/fr/kanji-components.json`. The compact mnemonic
+localization contains only independently authored stories. The preparation step
+inherits component symbols, kana readings, and per-reading anchor IDs from the
+canonical English source, then writes the complete browser-ready structures to
+`kanji-mnemonics.json` and
+`locales/fr/kanji-mnemonics.json`. Content validation requires exact 209-kanji
+coverage, exact component-key coverage, valid anchor pronunciation placement,
+and matching reading counts.
+
 `source/vocabulary-examples.json` provides one short contextual sentence for
 every core vocabulary item and kanji-only context. The prepared version adds
 tokenization and furigana metadata, and is shown after both vocabulary and
@@ -158,14 +182,19 @@ kanji answers. French translations live in
 Run `npm run kanji:update` to download current KANJIDIC2 data and regenerate the
 flat inventory. For an already downloaded XML or XML.GZ file, run
 `npm run kanji:update -- --source /path/to/kanjidic2.xml.gz`.
+The corresponding reproducibility check is
+`npm run kanji:update -- --check --source /path/to/kanjidic2.xml.gz`.
 
 Sources and licences:
 
 - https://www.jlpt.jp/e/faq/ (no official post-2010 kanji specification)
 - https://cjle.rikkyo.ac.jp/SitePages/pdf/kanji1.pdf (B6-B4 curriculum)
 - https://www.edrdg.org/wiki/KANJIDIC_Project.html (meanings and readings)
+- https://kanjivg.tagaini.net/ (reference for visual component boundaries)
 - `../licenses/KANJIDIC2-NOTICE.txt` and
   `../licenses/KANJIDIC2-CC-BY-SA-4.0.txt`
+- `../licenses/KanjiVG-NOTICE.txt` and
+  `../licenses/KanjiVG-CC-BY-SA-3.0.txt`
 
 ## Static lesson assets
 

@@ -6,6 +6,7 @@
     "stage": "B6",
     "onReadings": [],
     "kunReadings": [
+      "なに",
       "なん"
     ]
   },
@@ -146,8 +147,7 @@
       "じゅう"
     ],
     "kunReadings": [
-      "とお",
-      "と"
+      "とお"
     ]
   },
   {
@@ -293,10 +293,10 @@
     "character": "田",
     "meaning": "rice field",
     "stage": "B6",
-    "onReadings": [
-      "でん"
-    ],
-    "kunReadings": []
+    "onReadings": [],
+    "kunReadings": [
+      "た"
+    ]
   },
   {
     "id": "kanji-8a9e",
@@ -319,8 +319,7 @@
     ],
     "kunReadings": [
       "ひと",
-      "り",
-      "と"
+      "り"
     ]
   },
   {
@@ -342,7 +341,7 @@
       "にち"
     ],
     "kunReadings": [
-      "び",
+      "ひ",
       "か"
     ]
   },
@@ -386,8 +385,7 @@
     "stage": "B6",
     "onReadings": [],
     "kunReadings": [
-      "ちい",
-      "さ"
+      "ちい"
     ]
   },
   {
@@ -770,7 +768,6 @@
     ],
     "kunReadings": [
       "か",
-      "が",
       "がき"
     ]
   },
@@ -796,8 +793,7 @@
     ],
     "kunReadings": [
       "そと",
-      "ほか",
-      "と"
+      "ほか"
     ]
   },
   {
@@ -910,9 +906,7 @@
     "onReadings": [
       "か"
     ],
-    "kunReadings": [
-      "び"
-    ]
+    "kunReadings": []
   },
   {
     "id": "kanji-6c34",
@@ -943,7 +937,9 @@
     "character": "明",
     "meaning": "bright",
     "stage": "B5",
-    "onReadings": [],
+    "onReadings": [
+      "めい"
+    ],
     "kunReadings": [
       "あ",
       "あか"
@@ -986,7 +982,6 @@
     "stage": "B5",
     "onReadings": [],
     "kunReadings": [
-      "よ",
       "よる"
     ]
   },
@@ -1019,8 +1014,7 @@
       "じ"
     ],
     "kunReadings": [
-      "とき",
-      "どき"
+      "とき"
     ]
   },
   {
@@ -1162,8 +1156,7 @@
     "stage": "B5",
     "onReadings": [],
     "kunReadings": [
-      "おとこ",
-      "お"
+      "おとこ"
     ]
   },
   {
@@ -1636,10 +1629,10 @@
     "character": "事",
     "meaning": "matter",
     "stage": "B4",
-    "onReadings": [
-      "じ"
-    ],
-    "kunReadings": []
+    "onReadings": [],
+    "kunReadings": [
+      "こと"
+    ]
   },
   {
     "id": "kanji-6559",
@@ -1967,8 +1960,7 @@
     "meaning": "make",
     "stage": "B4",
     "onReadings": [
-      "さく",
-      "さ"
+      "さく"
     ],
     "kunReadings": [
       "つく"
@@ -1989,7 +1981,9 @@
     "character": "要",
     "meaning": "need",
     "stage": "B4",
-    "onReadings": [],
+    "onReadings": [
+      "よう"
+    ],
     "kunReadings": [
       "い"
     ]

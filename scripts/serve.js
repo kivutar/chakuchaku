@@ -118,6 +118,10 @@ const publicFiles = new Map([
     "/data/kanji-contexts.json",
     ["data/kanji-contexts.json", "application/json; charset=utf-8"]
   ],
+  [
+    "/data/kanji-mnemonics.json",
+    ["data/kanji-mnemonics.json", "application/json; charset=utf-8"]
+  ],
   ["/locales/en.json", ["locales/en.json", "application/json; charset=utf-8"]],
   ["/locales/fr.json", ["locales/fr.json", "application/json; charset=utf-8"]],
   [
@@ -135,6 +139,10 @@ const publicFiles = new Map([
   [
     "/data/locales/fr/kanji-contexts.json",
     ["data/locales/fr/kanji-contexts.json", "application/json; charset=utf-8"]
+  ],
+  [
+    "/data/locales/fr/kanji-mnemonics.json",
+    ["data/locales/fr/kanji-mnemonics.json", "application/json; charset=utf-8"]
   ],
   [
     "/data/locales/fr/vocabulary.json",

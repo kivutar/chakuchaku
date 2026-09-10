@@ -10,6 +10,7 @@ const vocabularyPath = join(rootDirectory, "data", "jlpt-n5-vocabulary.json");
 const contextPath = join(rootDirectory, "data", "kanji-contexts.json");
 const outputPath = join(rootDirectory, "data", "jlpt-n5-kanji.json");
 const kanjidicUrl = "https://www.edrdg.org/kanjidic/kanjidic2.xml.gz";
+const checkOnly = process.argv.includes("--check");
 const sourceArgumentIndex = process.argv.indexOf("--source");
 const sourcePath = sourceArgumentIndex === -1
   ? undefined
@@ -35,6 +36,33 @@ function katakanaToHiragana(text) {
 
 function unique(values) {
   return [...new Set(values)];
+}
+
+function uniqueByReading(values, foldVoicing = false) {
+  const seen = new Set();
+
+  return values.filter((value) => {
+    const normalized = normalizeForComparison(value, foldVoicing);
+
+    if (seen.has(normalized)) {
+      return false;
+    }
+
+    seen.add(normalized);
+    return true;
+  });
+}
+
+function removeReadingPrefixes(readings, foldVoicing = false) {
+  return readings.filter((reading) => {
+    const normalized = normalizeForComparison(reading, foldVoicing);
+
+    return !readings.some((candidate) => {
+      const normalizedCandidate = normalizeForComparison(candidate, foldVoicing);
+      return normalizedCandidate.length > normalized.length &&
+        normalizedCandidate.startsWith(normalized);
+    });
+  });
 }
 
 function getNodeText(node) {
@@ -83,29 +111,49 @@ function hasReadingEvidence(
 
     const wordReading = normalizeForComparison(form.reading, foldVoicing);
 
-    if (normalizedFullKunReading && wordReading.includes(normalizedFullKunReading)) {
-      return true;
-    }
-
     const wordKanji = [...form.surface].filter((candidate) => /\p{Script=Han}/u.test(candidate));
     const characterIndex = wordKanji.indexOf(character);
 
-    if (wordKanji.length === 1 && form.surface === character) {
-      return wordReading === normalizedReading;
+    if (characterIndex === -1 || wordKanji.filter((value) => value === character).length > 1) {
+      return false;
     }
 
-    if (characterIndex === 0 && wordReading.startsWith(normalizedReading)) {
-      return true;
-    }
+    const matchesPosition = (candidate) => {
+      if (!candidate) {
+        return false;
+      }
 
-    if (
-      characterIndex === wordKanji.length - 1 &&
-      wordReading.endsWith(normalizedReading)
-    ) {
-      return true;
-    }
+      if (wordKanji.length === 1) {
+        const surface = form.surface.replace(/[～〜]/gu, "");
+        const normalizedWordReading = wordReading.replace(/[～〜]/gu, "");
 
-    return normalizedReading.length >= 2 && wordReading.includes(normalizedReading);
+        if (surface === character) {
+          return normalizedWordReading === candidate;
+        }
+
+        if (surface.startsWith(character)) {
+          return normalizedWordReading.startsWith(candidate);
+        }
+
+        if (surface.endsWith(character)) {
+          return normalizedWordReading.endsWith(candidate);
+        }
+
+        return candidate.length >= 2 && wordReading.includes(candidate);
+      }
+
+      if (characterIndex === 0) {
+        return wordReading.startsWith(candidate);
+      }
+
+      if (characterIndex === wordKanji.length - 1) {
+        return wordReading.endsWith(candidate);
+      }
+
+      return candidate.length >= 2 && wordReading.includes(candidate);
+    };
+
+    return matchesPosition(normalizedFullKunReading) || matchesPosition(normalizedReading);
   });
 }
 
@@ -172,17 +220,39 @@ for (const stage of curriculum) {
       .filter((reading) => reading?.["@_r_type"] === "ja_kun")
       .map(getNodeText)
       .filter(Boolean);
-    const allKunReadings = unique(kunReadingCandidates.map(normalizeKunReading));
-    let onReadings = allOnReadings.filter((reading) => {
+    const allKunReadings = uniqueByReading(
+      kunReadingCandidates.map(normalizeKunReading),
+      true
+    );
+    let onReadings = removeReadingPrefixes(allOnReadings.filter((reading) => {
       return hasReadingEvidence(character, reading, undefined, vocabularyForms, true);
-    });
-    let kunReadings = unique(kunReadingCandidates
+    }), true);
+    let kunReadings = uniqueByReading(kunReadingCandidates
       .filter((reading) => {
         const normalized = normalizeKunReading(reading);
         const fullReading = reading.replaceAll(".", "").replaceAll("-", "");
-        return hasReadingEvidence(character, normalized, fullReading, vocabularyForms);
+        return hasReadingEvidence(character, normalized, fullReading, vocabularyForms, true);
       })
-      .map(normalizeKunReading));
+      .map(normalizeKunReading), true);
+    kunReadings = kunReadings.filter((reading) => {
+      const normalized = normalizeForComparison(reading, true);
+
+      if ([...reading].length !== 1) {
+        return true;
+      }
+
+      return !vocabularyForms.some((form) => {
+        const surface = form.surface.replace(/[～〜]/gu, "");
+        const wordReading = normalizeForComparison(
+          form.reading.replace(/[～〜]/gu, ""),
+          true
+        );
+
+        return surface === character &&
+          wordReading !== normalized &&
+          wordReading.startsWith(normalized);
+      });
+    });
     const codePoint = character.codePointAt(0).toString(16).padStart(4, "0");
 
     if (onReadings.length + kunReadings.length === 0) {
@@ -209,7 +279,20 @@ for (const stage of curriculum) {
   }
 }
 
-await writeFile(outputPath, `${JSON.stringify(result, null, 2)}\n`);
+const serialized = `${JSON.stringify(result, null, 2)}\n`;
+
+if (checkOnly) {
+  const current = await readFile(outputPath, "utf8");
+
+  if (current !== serialized) {
+    throw new Error(
+      "Kanji metadata is stale. Run npm run kanji:update with the same KANJIDIC2 source."
+    );
+  }
+} else {
+  await writeFile(outputPath, serialized);
+}
+
 console.log(
-  `Updated ${result.length} kanji from KANJIDIC2 ${kanjidic.header.date_of_creation}.`
+  `${checkOnly ? "Checked" : "Updated"} ${result.length} kanji from KANJIDIC2 ${kanjidic.header.date_of_creation}.`
 );

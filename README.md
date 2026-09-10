@@ -45,7 +45,8 @@ Vocabulary alternates Japanese-to-English and English-to-Japanese prompts,
 grades curated answer forms locally, and schedules one shared card per word.
 Kanji exercises use complete beginner words in alternating word-to-reading and
 reading-to-missing-character directions. All 209 characters in the B6-B4
-curriculum are active and have their own FSRS cards. Kanji-only example words
+curriculum are active, have their own FSRS cards, and reveal original visual
+meaning and reading mnemonics in English or French. Kanji-only example words
 fill the few gaps in the N5 vocabulary inventory without entering its SRS.
 Conjugation exercises reuse 43 beginner verbs and 79 adjectives across 46
 independently scheduled rules: four polite forms for each verb or adjective
@@ -84,6 +85,12 @@ Development-time generation is split from the browser runtime:
 | `data/source/rikkyo-n5-kanji.json` | Rikkyo's staged 209-character N5-equivalent curriculum | Committed |
 | `data/jlpt-n5-kanji.json` | Generated kanji metadata used by lessons and Statistics | Committed |
 | `data/kanji-contexts.json` | Kanji-only example words for curriculum coverage gaps | Committed |
+| `data/source/kanji-components.json` | Stable English keyword for every visual mnemonic component | Committed |
+| `data/source/kanji-mnemonics.json` | Original visual, meaning, reading, and anchor-word memory aids | Committed |
+| `data/source/locales/fr/kanji-components.json` | Stable French component keywords | Committed |
+| `data/source/locales/fr/kanji-mnemonics.json` | Compact French mnemonic prose | Committed |
+| `data/kanji-mnemonics.json` | Generated browser-ready English mnemonic catalogue | Committed |
+| `data/locales/fr/kanji-mnemonics.json` | Generated browser-ready French mnemonic catalogue | Committed |
 | `data/introduction.json` | Generated browser-ready introduction with tokens | Committed |
 | `data/exercises.json` | Generated browser-ready exercises with tokens | Committed |
 | `srs.js` | Local FSRS card persistence and grammar-point scheduling | Committed |
@@ -353,6 +360,10 @@ The result starts as `Got it` or `Not yet` and remains manually overridable. Onl
 the target Kanji updates its FSRS card, while every Kanji present in the context
 is counted as encountered. Packaged vocabulary audio stays hidden until the
 solution is revealed, where it can play automatically according to Settings.
+The result also reveals the target's visual components, an original story that
+connects them to its meaning, useful N5 reading mnemonics, and one localized
+anchor word for each reading. These are learner-facing visual associations, not
+historical etymologies.
 
 ## Learning statistics
 
@@ -428,13 +439,11 @@ at least 30 days of stability. It is Mastered at 90 days of stability while its
 current FSRS retrievability remains at least 80%. Shared kana cards count once
 in the global total even when they appear in both script views.
 
-Grammar, kana, and Vocabulary rows expose FSRS state, stability, result counts,
+Grammar, kana, Kanji, and Vocabulary rows expose FSRS state, stability, result counts,
 next review, and last review, with filters for mastered, mature, due, learning,
 and new items. Their progress bars separate Mastered, Mature, learning/due,
 encountered-only, and new items instead of treating every graduated Review card
 as durable knowledge.
-Kanji remains exposure-only and shows coverage, total encounters, last
-encounter, and sorting by recency or frequency.
 
 ## Spaced repetition
 
@@ -529,7 +538,7 @@ For a browser check, run `npm start` and verify:
 12. In Katakana, the seven-prompt cadence includes one Hiragana-to-Katakana exercise; its result grades each aligned pair and updates both scripts in SRS and Statistics.
 13. One Katakana recognition slot shows a single learning item and asks for rōmaji. Contracted and foreign-sound units stay together, while context-only `ッ` and `ー` remain word-only.
 14. In Vocabulary, consecutive completed prompts alternate Japanese-to-English and English-to-Japanese. Correct and incorrect answers each update one word card, and pressing Enter submits then advances from the result.
-15. In Kanji, consecutive completed prompts alternate complete-word reading and missing-character recall. The hidden meaning hint never reveals the answer, audio appears only with the solution, and changing the self-assessment changes the one Kanji card saved on advance.
+15. In Kanji, consecutive completed prompts alternate complete-word reading and missing-character recall. The hidden meaning hint never reveals the answer, audio appears only with the solution, and changing the self-assessment changes the one Kanji card saved on advance. Every result shows a localized mnemonic card with components, a meaning story, reading aids, and an anchor word; verify it in light and dark mode on a narrow viewport.
 16. In Conjugation, enter written Japanese, hiragana, or rōmaji for the requested form. The result advances with Enter and updates exactly one reusable conjugation-point card.
 
 ## Editing lessons

@@ -61,6 +61,7 @@ const shellPaths = [
   "data/exercises.json",
   "data/vocabulary-examples.json",
   "data/kanji-contexts.json",
+  "data/kanji-mnemonics.json",
   "data/jlpt-n5-grammar.json",
   "data/jlpt-n5-kanji.json",
   "data/jlpt-n5-vocabulary.json",
@@ -71,6 +72,7 @@ const shellPaths = [
   "data/locales/fr/vocabulary-examples.json",
   "data/locales/fr/grammar.json",
   "data/locales/fr/kanji-contexts.json",
+  "data/locales/fr/kanji-mnemonics.json",
   "data/locales/fr/vocabulary.json",
   "data/locales/fr/kanji.json"
 ];

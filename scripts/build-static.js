@@ -46,10 +46,15 @@ const staticFiles = [
   "assets/branding/icon-maskable-512.png",
   "assets/branding/apple-touch-icon.png",
   "assets/store/google-play/feature-graphic.png",
+  "licenses/KANJIDIC2-CC-BY-SA-4.0.txt",
+  "licenses/KANJIDIC2-NOTICE.txt",
+  "licenses/KanjiVG-CC-BY-SA-3.0.txt",
+  "licenses/KanjiVG-NOTICE.txt",
   "data/introduction.json",
   "data/exercises.json",
   "data/vocabulary-examples.json",
   "data/kanji-contexts.json",
+  "data/kanji-mnemonics.json",
   "data/jlpt-n5-grammar.json",
   "data/jlpt-n5-kanji.json",
   "data/jlpt-n5-vocabulary.json",
@@ -60,6 +65,7 @@ const staticFiles = [
   "data/locales/fr/vocabulary-examples.json",
   "data/locales/fr/grammar.json",
   "data/locales/fr/kanji-contexts.json",
+  "data/locales/fr/kanji-mnemonics.json",
   "data/locales/fr/vocabulary.json",
   "data/locales/fr/kanji.json"
 ];

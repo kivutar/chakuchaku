@@ -1,0 +1,4673 @@
+[
+  {
+    "kanjiId": "kanji-4f55",
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "person"
+      },
+      {
+        "symbol": "可",
+        "meaning": "possible"
+      }
+    ],
+    "meaningStory": "A person points at every possibility and asks: what is it?",
+    "readings": [
+      {
+        "reading": "なに",
+        "story": "Nani points at the unknown thing and asks what it is: Nani gives なに.",
+        "anchorId": "vocab-3b010d61ddd5"
+      },
+      {
+        "reading": "なん",
+        "story": "Nan is the person who always asks what: Nan gives you なん.",
+        "anchorId": "vocab-074acfd9fb0c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5186",
+    "components": [
+      {
+        "symbol": "冂",
+        "meaning": "enclosure"
+      },
+      {
+        "symbol": "丨",
+        "meaning": "center line"
+      }
+    ],
+    "meaningStory": "A curved enclosure around a center line looks like a round coin: a circle worth yen.",
+    "readings": [
+      {
+        "reading": "えん",
+        "story": "The ENclosed round coin starts with えん.",
+        "anchorId": "vocab-ed7e1b01883d"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e00",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      }
+    ],
+    "meaningStory": "One unbroken line is the simplest possible picture of one.",
+    "readings": [
+      {
+        "reading": "いち",
+        "story": "Each single line is one: “each” points to いち.",
+        "anchorId": "vocab-5d8047464c5d"
+      },
+      {
+        "reading": "ひと",
+        "story": "One person is ひとり, so one thing begins with ひと.",
+        "anchorId": "vocab-277587e6fa07"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e8c",
+    "components": [
+      {
+        "symbol": "二",
+        "meaning": "two lines"
+      }
+    ],
+    "meaningStory": "Add a second line and the count becomes two.",
+    "readings": [
+      {
+        "reading": "に",
+        "story": "You have two knees; knee sounds like に.",
+        "anchorId": "vocab-7fc81b0ddd17"
+      },
+      {
+        "reading": "ふた",
+        "story": "Two things need two lids: ふた means lid and recalls ふたつ.",
+        "anchorId": "vocab-bb85f028d944"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e09",
+    "components": [
+      {
+        "symbol": "三",
+        "meaning": "three lines"
+      }
+    ],
+    "meaningStory": "Three parallel lines give you the number three at a glance.",
+    "readings": [
+      {
+        "reading": "さん",
+        "story": "The sun rises over three lines; sun sounds like さん.",
+        "anchorId": "vocab-1bedf722c04a"
+      },
+      {
+        "reading": "み",
+        "story": "In 三つ（みっつ）, み tightens to みっ before つ: picture three lines packed tightly together.",
+        "anchorId": "vocab-8b887bc8af0c",
+        "anchorReading": "みっ"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-56db",
+    "components": [
+      {
+        "symbol": "囗",
+        "meaning": "enclosure"
+      },
+      {
+        "symbol": "儿",
+        "meaning": "legs"
+      }
+    ],
+    "meaningStory": "Four little legs are tucked inside an enclosure: count every corner to get four.",
+    "readings": [
+      {
+        "reading": "し",
+        "story": "She counts four corners: she sounds like し.",
+        "anchorId": "vocab-dc8d0860b963"
+      },
+      {
+        "reading": "よ",
+        "story": "In 四つ（よっつ）, よ tightens to よっ before つ: four corners snap into place.",
+        "anchorId": "vocab-947395f42397",
+        "anchorReading": "よっ"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e94",
+    "components": [
+      {
+        "symbol": "二",
+        "meaning": "two lines"
+      },
+      {
+        "symbol": "乂",
+        "meaning": "crossed strokes"
+      }
+    ],
+    "meaningStory": "Crossing strokes between two bars make a five-mark tally.",
+    "readings": [
+      {
+        "reading": "ご",
+        "story": "Go count the five marks: go sounds like ご.",
+        "anchorId": "vocab-d4473f87e438"
+      },
+      {
+        "reading": "いつ",
+        "story": "Eat two of five treats: “eat two” recalls いつ.",
+        "anchorId": "vocab-a02edbda9f4c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-516d",
+    "components": [
+      {
+        "symbol": "亠",
+        "meaning": "lid"
+      },
+      {
+        "symbol": "八",
+        "meaning": "split"
+      }
+    ],
+    "meaningStory": "Lift the lid and six pieces split outward underneath it.",
+    "readings": [
+      {
+        "reading": "ろく",
+        "story": "A lock has six pins; lock sounds like ろく.",
+        "anchorId": "vocab-06ef406f5569"
+      },
+      {
+        "reading": "む",
+        "story": "In 六つ（むっつ）, む tightens to むっ before つ: six pieces lock together.",
+        "anchorId": "vocab-df70a01acaec",
+        "anchorReading": "むっ"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e03",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "乚",
+        "meaning": "hook"
+      }
+    ],
+    "meaningStory": "A line cut by a sharp hook leaves a shape for seven.",
+    "readings": [
+      {
+        "reading": "しち",
+        "story": "She cheers for lucky seven: she cheers starts like しち.",
+        "anchorId": "vocab-651603322794"
+      },
+      {
+        "reading": "なな",
+        "story": "Nana always chooses number seven: Nana gives なな.",
+        "anchorId": "vocab-f6bc974a7405"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-516b",
+    "components": [
+      {
+        "symbol": "八",
+        "meaning": "split"
+      }
+    ],
+    "meaningStory": "Two strokes spread apart like a pie divided into eight slices.",
+    "readings": [
+      {
+        "reading": "はち",
+        "story": "Eight chicks hatch; hatch points to はち.",
+        "anchorId": "vocab-f6ed7c17c0d5"
+      },
+      {
+        "reading": "や",
+        "story": "In 八つ（やっつ）, や tightens to やっ before つ: eight strokes spread, then stop sharply.",
+        "anchorId": "vocab-6c9351ae67e6",
+        "anchorReading": "やっ"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e5d",
+    "components": [
+      {
+        "symbol": "丿",
+        "meaning": "slash"
+      },
+      {
+        "symbol": "乙",
+        "meaning": "bent hook"
+      }
+    ],
+    "meaningStory": "A slash and a bent hook curl into the last single digit: nine.",
+    "readings": [
+      {
+        "reading": "きゅう",
+        "story": "Nine people wait in a queue; queue sounds like きゅう.",
+        "anchorId": "vocab-d33ed6be2a48"
+      },
+      {
+        "reading": "ここの",
+        "story": "Coco owns nine coconuts: Coco points to ここの.",
+        "anchorId": "vocab-9acbf1542642"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5341",
+    "components": [
+      {
+        "symbol": "十",
+        "meaning": "cross"
+      }
+    ],
+    "meaningStory": "A vertical tally crosses a horizontal row after the tenth mark.",
+    "readings": [
+      {
+        "reading": "じゅう",
+        "story": "Ten boxes of juice: juice starts like じゅう.",
+        "anchorId": "vocab-877b9ba07a47"
+      },
+      {
+        "reading": "とお",
+        "story": "Ten toes make とお easy to recall.",
+        "anchorId": "vocab-e527c2381833"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-767e",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "白",
+        "meaning": "white"
+      }
+    ],
+    "meaningStory": "One white sheet is covered with a hundred tiny tally marks.",
+    "readings": [
+      {
+        "reading": "ひゃく",
+        "story": "A hundred yaks shout “hyaku!”: yak helps you hear ひゃく.",
+        "anchorId": "vocab-96a032e15dda"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5343",
+    "components": [
+      {
+        "symbol": "丿",
+        "meaning": "slash"
+      },
+      {
+        "symbol": "十",
+        "meaning": "cross"
+      }
+    ],
+    "meaningStory": "A slanted multiplier over ten sends the count soaring to one thousand.",
+    "readings": [
+      {
+        "reading": "せん",
+        "story": "Send one thousand coins: send begins like せん.",
+        "anchorId": "vocab-86ef0852f80f"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e07",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "力",
+        "meaning": "strength"
+      }
+    ],
+    "meaningStory": "Give one number enormous power and it grows to ten thousand.",
+    "readings": [
+      {
+        "reading": "まん",
+        "story": "One man counts ten thousand coins: man sounds like まん.",
+        "anchorId": "vocab-1807218bf360"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-56fd",
+    "components": [
+      {
+        "symbol": "囗",
+        "meaning": "enclosure"
+      },
+      {
+        "symbol": "玉",
+        "meaning": "jewel"
+      }
+    ],
+    "meaningStory": "A treasured jewel protected inside a border represents a country.",
+    "readings": [
+      {
+        "reading": "くに",
+        "story": "Kuni guards the jewel and the whole country: Kuni gives くに.",
+        "anchorId": "vocab-ee158182835b"
+      },
+      {
+        "reading": "こく",
+        "story": "Every country ships its own Coke: Coke points to こく.",
+        "anchorId": "vocab-8aa646a4debc"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-540d",
+    "components": [
+      {
+        "symbol": "夕",
+        "meaning": "evening"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "At evening roll call, each mouth speaks its name.",
+    "readings": [
+      {
+        "reading": "な",
+        "story": "Nana says the first part of her name: な.",
+        "anchorId": "vocab-09558b341dc0"
+      },
+      {
+        "reading": "めい",
+        "story": "May announces her name in May: May sounds like めい.",
+        "anchorId": "vocab-7c3179147b51"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-524d",
+    "components": [
+      {
+        "symbol": "䒑",
+        "meaning": "grass tips"
+      },
+      {
+        "symbol": "⺼",
+        "meaning": "body"
+      },
+      {
+        "symbol": "刂",
+        "meaning": "blade"
+      }
+    ],
+    "meaningStory": "Clear the grass with a blade before the body can move to the front.",
+    "readings": [
+      {
+        "reading": "まえ",
+        "story": "Mae always walks in front; Mae sounds like まえ.",
+        "anchorId": "vocab-07f353ef981c"
+      },
+      {
+        "reading": "ぜん",
+        "story": "A zen leader sits at the front: zen sounds like ぜん.",
+        "anchorId": "vocab-da5a33de5a30"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5b66",
+    "components": [
+      {
+        "symbol": "⺍",
+        "meaning": "knowledge sparks"
+      },
+      {
+        "symbol": "冖",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "子",
+        "meaning": "child"
+      }
+    ],
+    "meaningStory": "A child under a school roof catches falling sparks of knowledge and learns to study.",
+    "readings": [
+      {
+        "reading": "がく",
+        "story": "Gaku studies under the roof; his name gives you がく.",
+        "anchorId": "vocab-9567eaf8fe9b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-751f",
+    "components": [
+      {
+        "symbol": "生",
+        "meaning": "growing sprout"
+      }
+    ],
+    "meaningStory": "A fresh sprout pushes through the soil: a picture of birth and life.",
+    "readings": [
+      {
+        "reading": "せい",
+        "story": "Say that the student is full of life: say sounds like せい.",
+        "anchorId": "vocab-9567eaf8fe9b"
+      },
+      {
+        "reading": "うま",
+        "story": "A new life is born with うま, as in 生まれる（うまれる）.",
+        "anchorId": "vocab-3db312786ce8"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5927",
+    "components": [
+      {
+        "symbol": "大",
+        "meaning": "large person"
+      }
+    ],
+    "meaningStory": "A person stretches both arms as wide as possible to show something large.",
+    "readings": [
+      {
+        "reading": "おお",
+        "story": "“Oh! Oh!” you shout at something very large: おお.",
+        "anchorId": "vocab-f6377dcbb564"
+      },
+      {
+        "reading": "だい",
+        "story": "A giant die looks large; die sounds like だい.",
+        "anchorId": "vocab-9910372c1964"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-53cb",
+    "components": [
+      {
+        "symbol": "𠂇",
+        "meaning": "hand"
+      },
+      {
+        "symbol": "又",
+        "meaning": "hand"
+      }
+    ],
+    "meaningStory": "Two hands reach toward one another in friendship.",
+    "readings": [
+      {
+        "reading": "とも",
+        "story": "Tom offers his hand to a friend: Tom points to とも.",
+        "anchorId": "vocab-d9898f8a95b6"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5c71",
+    "components": [
+      {
+        "symbol": "山",
+        "meaning": "three peaks"
+      }
+    ],
+    "meaningStory": "Three pointed peaks rise from the ground to form a mountain range.",
+    "readings": [
+      {
+        "reading": "やま",
+        "story": "A yak marches up the mountain: yak plus march starts you toward やま.",
+        "anchorId": "vocab-ddd9dca106e2"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5ddd",
+    "components": [
+      {
+        "symbol": "川",
+        "meaning": "flowing channels"
+      }
+    ],
+    "meaningStory": "Three winding channels show water flowing down a river.",
+    "readings": [
+      {
+        "reading": "かわ",
+        "story": "A cow drinks from the river; cow sounds like かわ.",
+        "anchorId": "vocab-82dcbecaf875"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7530",
+    "components": [
+      {
+        "symbol": "田",
+        "meaning": "field"
+      }
+    ],
+    "meaningStory": "Irrigation lines divide a square plot into four rice fields.",
+    "readings": [
+      {
+        "reading": "た",
+        "story": "A rice field is a patch of terrain: terrain starts with た.",
+        "anchorId": "vocab-0da81020c173"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8a9e",
+    "components": [
+      {
+        "symbol": "言",
+        "meaning": "words"
+      },
+      {
+        "symbol": "五",
+        "meaning": "five"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "Five mouths exchange words; together they create a language.",
+    "readings": [
+      {
+        "reading": "ご",
+        "story": "Five is 五（ご）. That same ご sound gives 語 its main N5 reading.",
+        "anchorId": "vocab-0f7ce836ef7a"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4eba",
+    "components": [
+      {
+        "symbol": "人",
+        "meaning": "person"
+      }
+    ],
+    "meaningStory": "Two legs support a walking person.",
+    "readings": [
+      {
+        "reading": "ひと",
+        "story": "He told one person; “he told” begins like ひと.",
+        "anchorId": "vocab-ad7167347a2a"
+      },
+      {
+        "reading": "じん",
+        "story": "Jim is a person; Jim points to じん.",
+        "anchorId": "vocab-7bd8d7286ac2"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-82f1",
+    "components": [
+      {
+        "symbol": "艹",
+        "meaning": "plant"
+      },
+      {
+        "symbol": "央",
+        "meaning": "center"
+      }
+    ],
+    "meaningStory": "A flower at the center becomes an emblem of England.",
+    "readings": [
+      {
+        "reading": "えい",
+        "story": "Eight English books surround the central flower; “eight” starts with the long A sound of えい.",
+        "anchorId": "vocab-0f7ce836ef7a"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-65e5",
+    "components": [
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      }
+    ],
+    "meaningStory": "A framed sun crosses the sky once each day.",
+    "readings": [
+      {
+        "reading": "にち",
+        "story": "Each day needs a daily check; “needs check” starts like にち.",
+        "anchorId": "vocab-a759a7d58008"
+      },
+      {
+        "reading": "か",
+        "story": "Calendar days often end in か, as in 五日（いつか）.",
+        "anchorId": "vocab-a02edbda9f4c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-672c",
+    "components": [
+      {
+        "symbol": "木",
+        "meaning": "tree"
+      },
+      {
+        "symbol": "一",
+        "meaning": "line"
+      }
+    ],
+    "meaningStory": "Mark the root of a tree: it is the source, and also the spine of a book.",
+    "readings": [
+      {
+        "reading": "ほん",
+        "story": "Hon opens a book; her name gives you ほん.",
+        "anchorId": "vocab-0ac038632611"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-79c1",
+    "components": [
+      {
+        "symbol": "禾",
+        "meaning": "grain"
+      },
+      {
+        "symbol": "厶",
+        "meaning": "private space"
+      }
+    ],
+    "meaningStory": "I pull the grain toward my private side and say it is mine.",
+    "readings": [
+      {
+        "reading": "わたし",
+        "story": "Watashi simply introduces myself: 私（わたし）, “I.”",
+        "anchorId": "vocab-b6944a5fe271"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5148",
+    "components": [
+      {
+        "symbol": "⺧",
+        "meaning": "footstep"
+      },
+      {
+        "symbol": "儿",
+        "meaning": "legs"
+      }
+    ],
+    "meaningStory": "Legs taking the first step move ahead of everyone else.",
+    "readings": [
+      {
+        "reading": "さき",
+        "story": "Saki takes the first step and goes ahead: Saki gives さき.",
+        "anchorId": "vocab-317542d02c5e"
+      },
+      {
+        "reading": "せん",
+        "story": "The sensei stands ahead of the class; sensei begins with せん.",
+        "anchorId": "vocab-65da1512acab"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5c0f",
+    "components": [
+      {
+        "symbol": "小",
+        "meaning": "small"
+      }
+    ],
+    "meaningStory": "Three tiny drops gather around a narrow center: all of them are small.",
+    "readings": [
+      {
+        "reading": "ちい",
+        "story": "A tiny chick says “chee”; chee sounds like ちい.",
+        "anchorId": "vocab-769a80524957"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-591a",
+    "components": [
+      {
+        "symbol": "夕",
+        "meaning": "evening"
+      },
+      {
+        "symbol": "夕",
+        "meaning": "evening"
+      }
+    ],
+    "meaningStory": "One evening followed by another gives you many evenings.",
+    "readings": [
+      {
+        "reading": "おお",
+        "story": "“Oh, oh!” you exclaim when there are so many: おお.",
+        "anchorId": "vocab-a249b72fa923"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5c11",
+    "components": [
+      {
+        "symbol": "小",
+        "meaning": "small"
+      },
+      {
+        "symbol": "丿",
+        "meaning": "slash"
+      }
+    ],
+    "meaningStory": "Sweep away part of something small and only a few remain.",
+    "readings": [
+      {
+        "reading": "すこ",
+        "story": "Scoop only a little: scoop starts like すこ.",
+        "anchorId": "vocab-8814378ebfc2"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9ad8",
+    "components": [
+      {
+        "symbol": "亠",
+        "meaning": "lid"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "冂",
+        "meaning": "enclosure"
+      }
+    ],
+    "meaningStory": "Stack a roof, windows, and walls into a tall tower.",
+    "readings": [
+      {
+        "reading": "たか",
+        "story": "Taka climbs the tall tower: Taka gives たか.",
+        "anchorId": "vocab-775979a197ea"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5b89",
+    "components": [
+      {
+        "symbol": "宀",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "女",
+        "meaning": "woman"
+      }
+    ],
+    "meaningStory": "Under a roof, a woman relaxes in a safe home with inexpensive rent.",
+    "readings": [
+      {
+        "reading": "やす",
+        "story": "Yasu relaxes because the price is low: Yasu gives やす.",
+        "anchorId": "vocab-0513945a1ef5"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-65b0",
+    "components": [
+      {
+        "symbol": "立",
+        "meaning": "stand"
+      },
+      {
+        "symbol": "木",
+        "meaning": "tree"
+      },
+      {
+        "symbol": "斤",
+        "meaning": "axe"
+      }
+    ],
+    "meaningStory": "Stand by a tree with an axe and cut fresh wood for something new.",
+    "readings": [
+      {
+        "reading": "あたら",
+        "story": "At a raw new plank: “at a raw” recalls あたら.",
+        "anchorId": "vocab-288a95a40d95"
+      },
+      {
+        "reading": "しん",
+        "story": "A shiny new object begins with shin, like しん.",
+        "anchorId": "vocab-f906b238c9c2"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-53e4",
+    "components": [
+      {
+        "symbol": "十",
+        "meaning": "cross"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "A mouth tells a story passed down through ten generations: it is old.",
+    "readings": [
+      {
+        "reading": "ふる",
+        "story": "A room full of old things: full points to ふる.",
+        "anchorId": "vocab-e5fd15d61360"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-597d",
+    "components": [
+      {
+        "symbol": "女",
+        "meaning": "woman"
+      },
+      {
+        "symbol": "子",
+        "meaning": "child"
+      }
+    ],
+    "meaningStory": "A woman and child happily share something they both like.",
+    "readings": [
+      {
+        "reading": "す",
+        "story": "Sue likes it: Sue begins with す.",
+        "anchorId": "vocab-32a5e8698306"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5fd9",
+    "components": [
+      {
+        "symbol": "忄",
+        "meaning": "heart"
+      },
+      {
+        "symbol": "亡",
+        "meaning": "lost"
+      }
+    ],
+    "meaningStory": "When your heart loses track of everything, you are too busy.",
+    "readings": [
+      {
+        "reading": "いそが",
+        "story": "“I so gotta hurry!” is what a busy person says: いそが.",
+        "anchorId": "vocab-5ee54e973899"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5e83",
+    "components": [
+      {
+        "symbol": "广",
+        "meaning": "shelter"
+      },
+      {
+        "symbol": "厶",
+        "meaning": "private space"
+      }
+    ],
+    "meaningStory": "A large building gives everyone a private space because it is so wide.",
+    "readings": [
+      {
+        "reading": "ひろ",
+        "story": "A hero needs a wide stage: hero sounds like ひろ.",
+        "anchorId": "vocab-bb8fc62cf23d"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8fd1",
+    "components": [
+      {
+        "symbol": "斤",
+        "meaning": "axe"
+      },
+      {
+        "symbol": "⻌",
+        "meaning": "road"
+      }
+    ],
+    "meaningStory": "Follow the road until the axe is close enough to reach: now it is near.",
+    "readings": [
+      {
+        "reading": "ちか",
+        "story": "Chika comes close: Chika gives ちか.",
+        "anchorId": "vocab-d72e08381953"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9577",
+    "components": [
+      {
+        "symbol": "長",
+        "meaning": "long-haired elder"
+      }
+    ],
+    "meaningStory": "An elder's hair trails far behind, making a long shape.",
+    "readings": [
+      {
+        "reading": "なが",
+        "story": "Naga wears a long scarf: Naga gives なが.",
+        "anchorId": "vocab-11b5462fa3a4"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5e97",
+    "components": [
+      {
+        "symbol": "广",
+        "meaning": "shelter"
+      },
+      {
+        "symbol": "占",
+        "meaning": "sign"
+      }
+    ],
+    "meaningStory": "A sign under a street canopy marks a store or shop.",
+    "readings": [
+      {
+        "reading": "みせ",
+        "story": "“Me, see that shop?” gives the sounds みせ.",
+        "anchorId": "vocab-e70f9243d4c7"
+      },
+      {
+        "reading": "てん",
+        "story": "Ten stores line the street: ten sounds like てん.",
+        "anchorId": "vocab-caa3749b479b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6771",
+    "components": [
+      {
+        "symbol": "木",
+        "meaning": "tree"
+      },
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      }
+    ],
+    "meaningStory": "The sun rises through a tree's branches in the east.",
+    "readings": [
+      {
+        "reading": "ひがし",
+        "story": "He got up to see the eastern sun: “he got” starts you toward ひがし.",
+        "anchorId": "vocab-b89224decc1b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-897f",
+    "components": [
+      {
+        "symbol": "西",
+        "meaning": "bird settling in a nest"
+      }
+    ],
+    "meaningStory": "A bird settles into its nest where the sun sets: in the west.",
+    "readings": [
+      {
+        "reading": "にし",
+        "story": "Nishi watches the sunset in the west: Nishi gives にし.",
+        "anchorId": "vocab-6f2e359ff6c8"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5357",
+    "components": [
+      {
+        "symbol": "十",
+        "meaning": "cross"
+      },
+      {
+        "symbol": "冂",
+        "meaning": "enclosure"
+      },
+      {
+        "symbol": "羊",
+        "meaning": "sheep"
+      }
+    ],
+    "meaningStory": "At a crossroads inside the border, a signpost points south.",
+    "readings": [
+      {
+        "reading": "みなみ",
+        "story": "Mina studies the map and points south: Mina leads into みなみ.",
+        "anchorId": "vocab-e1461a487e42"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5317",
+    "components": [
+      {
+        "symbol": "匕",
+        "meaning": "person facing away"
+      },
+      {
+        "symbol": "匕",
+        "meaning": "person facing away"
+      }
+    ],
+    "meaningStory": "Two people turn their backs against the cold wind from the north.",
+    "readings": [
+      {
+        "reading": "きた",
+        "story": "The cold wind came from the north; “came” is きた too.",
+        "anchorId": "vocab-b0a03cee753b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-753a",
+    "components": [
+      {
+        "symbol": "田",
+        "meaning": "field"
+      },
+      {
+        "symbol": "丁",
+        "meaning": "street"
+      }
+    ],
+    "meaningStory": "A street beside the fields grows into a town.",
+    "readings": [
+      {
+        "reading": "まち",
+        "story": "Match each street on the town map: match starts like まち.",
+        "anchorId": "vocab-09d74d630a45"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8336",
+    "components": [
+      {
+        "symbol": "艹",
+        "meaning": "plant"
+      },
+      {
+        "symbol": "人",
+        "meaning": "person"
+      },
+      {
+        "symbol": "木",
+        "meaning": "tree"
+      }
+    ],
+    "meaningStory": "A person picks young leaves from a tree to make tea.",
+    "readings": [
+      {
+        "reading": "ちゃ",
+        "story": "Cha is the familiar sound of tea across many languages: ちゃ.",
+        "anchorId": "vocab-60e55817f5ca"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9152",
+    "components": [
+      {
+        "symbol": "氵",
+        "meaning": "water"
+      },
+      {
+        "symbol": "酉",
+        "meaning": "wine jar"
+      }
+    ],
+    "meaningStory": "Liquid poured from a wine jar is sake or alcohol.",
+    "readings": [
+      {
+        "reading": "さけ",
+        "story": "The Japanese drink sake already carries its reading: さけ.",
+        "anchorId": "vocab-b4ce03cd6090"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9b5a",
+    "components": [
+      {
+        "symbol": "𠂊",
+        "meaning": "cover"
+      },
+      {
+        "symbol": "田",
+        "meaning": "field"
+      },
+      {
+        "symbol": "灬",
+        "meaning": "fire"
+      }
+    ],
+    "meaningStory": "A head, scaly body, and sweeping tail form a fish.",
+    "readings": [
+      {
+        "reading": "さかな",
+        "story": "Sakana casts a net for fish: her name gives さかな.",
+        "anchorId": "vocab-5c1c2120b516"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8089",
+    "components": [
+      {
+        "symbol": "冂",
+        "meaning": "enclosure"
+      },
+      {
+        "symbol": "人",
+        "meaning": "person"
+      }
+    ],
+    "meaningStory": "Two slices laid inside a cutting board represent meat.",
+    "readings": [
+      {
+        "reading": "にく",
+        "story": "Nick cooks the meat: Nick sounds like にく.",
+        "anchorId": "vocab-b639fedc63ec"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-82b1",
+    "components": [
+      {
+        "symbol": "艹",
+        "meaning": "plant"
+      },
+      {
+        "symbol": "化",
+        "meaning": "change"
+      }
+    ],
+    "meaningStory": "A plant changes and opens into a flower.",
+    "readings": [
+      {
+        "reading": "はな",
+        "story": "Hannah carries a flower: Hannah gives はな.",
+        "anchorId": "vocab-fa6a4c8f27b4"
+      },
+      {
+        "reading": "か",
+        "story": "A flower in a vase uses か, as in 花瓶（かびん）.",
+        "anchorId": "vocab-f61a0a482634"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5c4b",
+    "components": [
+      {
+        "symbol": "尸",
+        "meaning": "canopy"
+      },
+      {
+        "symbol": "至",
+        "meaning": "arrival"
+      }
+    ],
+    "meaningStory": "Arrive beneath a roof and you have reached a building or shop.",
+    "readings": [
+      {
+        "reading": "や",
+        "story": "A yard outside the shop starts with the sound や.",
+        "anchorId": "vocab-1c0ba08d7f15"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-99c5",
+    "components": [
+      {
+        "symbol": "馬",
+        "meaning": "horse"
+      },
+      {
+        "symbol": "尺",
+        "meaning": "ruler"
+      }
+    ],
+    "meaningStory": "Horses stop at measured intervals along the route, each one a station.",
+    "readings": [
+      {
+        "reading": "えき",
+        "story": "Each station marks a stop; each sounds like えき.",
+        "anchorId": "vocab-d29031265cf4"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-96fb",
+    "components": [
+      {
+        "symbol": "雨",
+        "meaning": "storm cloud"
+      },
+      {
+        "symbol": "田",
+        "meaning": "field"
+      },
+      {
+        "symbol": "乚",
+        "meaning": "hook"
+      }
+    ],
+    "meaningStory": "A lightning bolt drops from a storm cloud over the fields: electricity.",
+    "readings": [
+      {
+        "reading": "でん",
+        "story": "Den sees electric lightning: Den gives でん.",
+        "anchorId": "vocab-a24e73630479"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8eca",
+    "components": [
+      {
+        "symbol": "車",
+        "meaning": "cart with wheels"
+      }
+    ],
+    "meaningStory": "Viewed from above, an axle joins the wheels of a cart or vehicle.",
+    "readings": [
+      {
+        "reading": "くるま",
+        "story": "The crew marks its car: crew plus mark starts you toward くるま.",
+        "anchorId": "vocab-f71f9de56223"
+      },
+      {
+        "reading": "しゃ",
+        "story": "A shiny vehicle begins with sha, like しゃ.",
+        "anchorId": "vocab-dc7f5fc156cf"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-884c",
+    "components": [
+      {
+        "symbol": "彳",
+        "meaning": "footsteps"
+      },
+      {
+        "symbol": "亍",
+        "meaning": "street"
+      }
+    ],
+    "meaningStory": "Take one step after another along the street to go somewhere.",
+    "readings": [
+      {
+        "reading": "い",
+        "story": "Eager feet go immediately: eager begins with the sound い.",
+        "anchorId": "vocab-ec22142c23d3"
+      },
+      {
+        "reading": "こう",
+        "story": "Go on a course: course begins like こう.",
+        "anchorId": "vocab-d425b056fb0b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6765",
+    "components": [
+      {
+        "symbol": "木",
+        "meaning": "tree"
+      },
+      {
+        "symbol": "人",
+        "meaning": "person"
+      }
+    ],
+    "meaningStory": "People approach from both sides and come together beneath a tree.",
+    "readings": [
+      {
+        "reading": "く",
+        "story": "The crew comes over: crew begins with く.",
+        "anchorId": "vocab-bc01756b4d89"
+      },
+      {
+        "reading": "らい",
+        "story": "A rider is coming next week: ride starts like らい.",
+        "anchorId": "vocab-55fef51b0694"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5e30",
+    "components": [
+      {
+        "symbol": "刂",
+        "meaning": "blade"
+      },
+      {
+        "symbol": "帚",
+        "meaning": "broom"
+      }
+    ],
+    "meaningStory": "Pick up the broom when you return home and sweep the floor.",
+    "readings": [
+      {
+        "reading": "かえ",
+        "story": "Kaede returns home; the start of Kaede gives かえ.",
+        "anchorId": "vocab-944f21154c78"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8cb7",
+    "components": [
+      {
+        "symbol": "罒",
+        "meaning": "net"
+      },
+      {
+        "symbol": "貝",
+        "meaning": "shell money"
+      }
+    ],
+    "meaningStory": "Catch shell money in a net, then spend it to buy something.",
+    "readings": [
+      {
+        "reading": "か",
+        "story": "Pay cash when you buy: cash begins with か.",
+        "anchorId": "vocab-1b65a0cb82d2"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-898b",
+    "components": [
+      {
+        "symbol": "目",
+        "meaning": "eye"
+      },
+      {
+        "symbol": "儿",
+        "meaning": "legs"
+      }
+    ],
+    "meaningStory": "An eye stands on legs so it can move around and see everything.",
+    "readings": [
+      {
+        "reading": "み",
+        "story": "“Me? I see it!” Me sounds like み.",
+        "anchorId": "vocab-385cc0d9ee98"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-98df",
+    "components": [
+      {
+        "symbol": "𠆢",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "良",
+        "meaning": "good food"
+      }
+    ],
+    "meaningStory": "Lift the lid from a tray of good food and eat.",
+    "readings": [
+      {
+        "reading": "た",
+        "story": "A table is where you eat: table begins with た.",
+        "anchorId": "vocab-ec4fa4315542"
+      },
+      {
+        "reading": "しょく",
+        "story": "A chef shocks you with a great meal: shock sounds like しょく.",
+        "anchorId": "vocab-3f0d257a083a"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8aad",
+    "components": [
+      {
+        "symbol": "言",
+        "meaning": "words"
+      },
+      {
+        "symbol": "売",
+        "meaning": "sell"
+      }
+    ],
+    "meaningStory": "Read the words on every book offered for sale.",
+    "readings": [
+      {
+        "reading": "よ",
+        "story": "Yo reads every word aloud: Yo gives よ.",
+        "anchorId": "vocab-24f188a06d2c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-98f2",
+    "components": [
+      {
+        "symbol": "飠",
+        "meaning": "food"
+      },
+      {
+        "symbol": "欠",
+        "meaning": "open mouth"
+      }
+    ],
+    "meaningStory": "An open mouth beside food is ready to drink.",
+    "readings": [
+      {
+        "reading": "の",
+        "story": "No more dry mouth: drink! No sounds like の.",
+        "anchorId": "vocab-dcd3acd6b659"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8a71",
+    "components": [
+      {
+        "symbol": "言",
+        "meaning": "words"
+      },
+      {
+        "symbol": "舌",
+        "meaning": "tongue"
+      }
+    ],
+    "meaningStory": "Words leave the tongue when you talk and tell a story.",
+    "readings": [
+      {
+        "reading": "はな",
+        "story": "Hannah uses her tongue to talk: Hannah gives はな, as in 話す（はなす）.",
+        "anchorId": "vocab-0b969a8c0944"
+      },
+      {
+        "reading": "わ",
+        "story": "One telephone ring says “wah!”: wah points to わ.",
+        "anchorId": "vocab-24df87472770"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-66f8",
+    "components": [
+      {
+        "symbol": "聿",
+        "meaning": "writing brush"
+      },
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      }
+    ],
+    "meaningStory": "A brush moves across a page to write words.",
+    "readings": [
+      {
+        "reading": "か",
+        "story": "Carve each mark as you write: carve begins with か.",
+        "anchorId": "vocab-d34997e828cb"
+      },
+      {
+        "reading": "しょ",
+        "story": "Show what you wrote: show sounds like しょ.",
+        "anchorId": "vocab-67ab907b4d96"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-805e",
+    "components": [
+      {
+        "symbol": "門",
+        "meaning": "gate"
+      },
+      {
+        "symbol": "耳",
+        "meaning": "ear"
+      }
+    ],
+    "meaningStory": "Press an ear to the gate to hear what is happening beyond it.",
+    "readings": [
+      {
+        "reading": "き",
+        "story": "Keep your ear at the gate: keep starts like き, as in 聞く（きく）.",
+        "anchorId": "vocab-d8a0261581dc"
+      },
+      {
+        "reading": "ぶん",
+        "story": "A newspaper bundle brings news to hear about: bundle begins like ぶん.",
+        "anchorId": "vocab-f906b238c9c2"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5916",
+    "components": [
+      {
+        "symbol": "夕",
+        "meaning": "evening"
+      },
+      {
+        "symbol": "卜",
+        "meaning": "direction sign"
+      }
+    ],
+    "meaningStory": "At evening, follow the direction sign that points outside.",
+    "readings": [
+      {
+        "reading": "そと",
+        "story": "So Tom waits outside: “so Tom” begins like そと.",
+        "anchorId": "vocab-6109638dac53"
+      },
+      {
+        "reading": "がい",
+        "story": "A guide leads you outside: guide begins like がい.",
+        "anchorId": "vocab-8aa646a4debc"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5929",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "大",
+        "meaning": "large person"
+      }
+    ],
+    "meaningStory": "The sky stretches above even the largest person: the heavens.",
+    "readings": [
+      {
+        "reading": "てん",
+        "story": "Ten stars fill the heavens: ten sounds like てん.",
+        "anchorId": "vocab-2850b5703e8b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-96e8",
+    "components": [
+      {
+        "symbol": "冂",
+        "meaning": "enclosure"
+      },
+      {
+        "symbol": "丶",
+        "meaning": "dot"
+      }
+    ],
+    "meaningStory": "Drops fall from a cloud-filled window: rain.",
+    "readings": [
+      {
+        "reading": "あめ",
+        "story": "A meadow needs rain: “a meadow” begins like あめ.",
+        "anchorId": "vocab-7e87850c448d"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-52c9",
+    "components": [
+      {
+        "symbol": "免",
+        "meaning": "escape"
+      },
+      {
+        "symbol": "力",
+        "meaning": "strength"
+      }
+    ],
+    "meaningStory": "Do not escape the effort: exert your strength and study hard.",
+    "readings": [
+      {
+        "reading": "べん",
+        "story": "Ben bends over his books to study: Ben gives べん.",
+        "anchorId": "vocab-15863d9e899d"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5f37",
+    "components": [
+      {
+        "symbol": "弓",
+        "meaning": "bow"
+      },
+      {
+        "symbol": "虫",
+        "meaning": "insect"
+      }
+    ],
+    "meaningStory": "A tiny insect pulls a heavy bow, proving it is amazingly strong.",
+    "readings": [
+      {
+        "reading": "つよ",
+        "story": "Two yo-yos pull against each other strongly: “two yo” recalls つよ.",
+        "anchorId": "vocab-e71d7d160f29"
+      },
+      {
+        "reading": "きょう",
+        "story": "Kyō trains every day to grow strong: Kyō gives きょう.",
+        "anchorId": "vocab-15863d9e899d"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-91d1",
+    "components": [
+      {
+        "symbol": "𠆢",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "王",
+        "meaning": "treasure"
+      },
+      {
+        "symbol": "丷",
+        "meaning": "horns"
+      }
+    ],
+    "meaningStory": "Gold nuggets and royal treasure are stored safely under a roof.",
+    "readings": [
+      {
+        "reading": "かね",
+        "story": "Can a gold coin buy it? “Can a” sounds like かね.",
+        "anchorId": "vocab-d242b38667c8"
+      },
+      {
+        "reading": "きん",
+        "story": "A king guards the gold: king begins like きん.",
+        "anchorId": "vocab-8f0a38919b77"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-571f",
+    "components": [
+      {
+        "symbol": "十",
+        "meaning": "cross"
+      },
+      {
+        "symbol": "一",
+        "meaning": "line"
+      }
+    ],
+    "meaningStory": "A plant rises from a line of ground and reveals the soil beneath it.",
+    "readings": [
+      {
+        "reading": "ど",
+        "story": "Dough dropped on the soil begins with ど.",
+        "anchorId": "vocab-440290628fd6"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4eca",
+    "components": [
+      {
+        "symbol": "𠆢",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "𠃌",
+        "meaning": "clock hand"
+      }
+    ],
+    "meaningStory": "A clock hand sits under a cover and points to this exact moment: now.",
+    "readings": [
+      {
+        "reading": "いま",
+        "story": "Emma wants it now: Emma sounds like いま.",
+        "anchorId": "vocab-89beba69de5a"
+      },
+      {
+        "reading": "こん",
+        "story": "Concentrate on the current moment: concentrate begins with こん.",
+        "anchorId": "vocab-309cfedd227d"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6708",
+    "components": [
+      {
+        "symbol": "月",
+        "meaning": "moon"
+      }
+    ],
+    "meaningStory": "The crescent moon completes a cycle that once marked each month.",
+    "readings": [
+      {
+        "reading": "つき",
+        "story": "Two keys shine in the moonlight: “two keys” sounds like つき.",
+        "anchorId": "vocab-14435050c0df"
+      },
+      {
+        "reading": "げつ",
+        "story": "Get the calendar for this month: get starts like げつ.",
+        "anchorId": "vocab-309cfedd227d"
+      },
+      {
+        "reading": "がつ",
+        "story": "Gather all twelve months: gather starts like がつ.",
+        "anchorId": "vocab-0086f8da1a0e"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5e74",
+    "components": [
+      {
+        "symbol": "禾",
+        "meaning": "grain"
+      },
+      {
+        "symbol": "干",
+        "meaning": "rack"
+      }
+    ],
+    "meaningStory": "Hang a harvested grain stalk on the calendar rack to mark one year.",
+    "readings": [
+      {
+        "reading": "とし",
+        "story": "Toshi celebrates another year: Toshi gives とし.",
+        "anchorId": "vocab-8438eda3cfc0"
+      },
+      {
+        "reading": "ねん",
+        "story": "Name each new year; name begins like ねん.",
+        "anchorId": "vocab-e7ce924c4696"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-706b",
+    "components": [
+      {
+        "symbol": "火",
+        "meaning": "dancing flames"
+      }
+    ],
+    "meaningStory": "Two sparks rise from a pair of dancing flames: fire.",
+    "readings": [
+      {
+        "reading": "か",
+        "story": "A car catches fire: car begins with か.",
+        "anchorId": "vocab-9ba01fdc9897"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6c34",
+    "components": [
+      {
+        "symbol": "水",
+        "meaning": "flowing water"
+      }
+    ],
+    "meaningStory": "A central stream splashes droplets to both sides: water.",
+    "readings": [
+      {
+        "reading": "みず",
+        "story": "Me at the zoo needs water: “me zoo” sounds like みず.",
+        "anchorId": "vocab-28ddfdc9290c"
+      },
+      {
+        "reading": "すい",
+        "story": "Sweet water starts with sui, like すい.",
+        "anchorId": "vocab-2c216f915116"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6728",
+    "components": [
+      {
+        "symbol": "木",
+        "meaning": "tree"
+      }
+    ],
+    "meaningStory": "A trunk, roots, and spreading branches form a tree and its wood.",
+    "readings": [
+      {
+        "reading": "き",
+        "story": "A key hangs from the tree: key sounds like き.",
+        "anchorId": "vocab-a5d390dc4805"
+      },
+      {
+        "reading": "もく",
+        "story": "Moss covers the wood: moss begins like もく.",
+        "anchorId": "vocab-8b1ba4846f97"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-660e",
+    "components": [
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      },
+      {
+        "symbol": "月",
+        "meaning": "moon"
+      }
+    ],
+    "meaningStory": "When the sun and moon shine together, everything becomes bright.",
+    "readings": [
+      {
+        "reading": "あか",
+        "story": "A car needs bright headlights: “a car” leads into あか, as in 明るい（あかるい）.",
+        "anchorId": "vocab-f8249679701c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6bce",
+    "components": [
+      {
+        "symbol": "𠂉",
+        "meaning": "person"
+      },
+      {
+        "symbol": "毋",
+        "meaning": "calendar grid"
+      }
+    ],
+    "meaningStory": "A person checks every square on the calendar, without missing one.",
+    "readings": [
+      {
+        "reading": "まい",
+        "story": "My calendar has something every day: my sounds like まい.",
+        "anchorId": "vocab-1b6483e173f3"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-671d",
+    "components": [
+      {
+        "symbol": "十",
+        "meaning": "cross"
+      },
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      },
+      {
+        "symbol": "月",
+        "meaning": "moon"
+      }
+    ],
+    "meaningStory": "At the crossroads, the sun replaces the moon and morning begins.",
+    "readings": [
+      {
+        "reading": "あさ",
+        "story": "A sunny morning begins with “a su-,” like あさ.",
+        "anchorId": "vocab-40ae6dddb10a"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-663c",
+    "components": [
+      {
+        "symbol": "尺",
+        "meaning": "ruler"
+      },
+      {
+        "symbol": "旦",
+        "meaning": "sun over horizon"
+      }
+    ],
+    "meaningStory": "A measuring stick tracks the sun above the horizon until noon and daytime.",
+    "readings": [
+      {
+        "reading": "ひる",
+        "story": "He will eat at noon: “he'll” sounds like ひる.",
+        "anchorId": "vocab-4a9566e87de1"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-591c",
+    "components": [
+      {
+        "symbol": "亠",
+        "meaning": "lid"
+      },
+      {
+        "symbol": "人",
+        "meaning": "person"
+      },
+      {
+        "symbol": "夕",
+        "meaning": "evening"
+      }
+    ],
+    "meaningStory": "A person takes shelter under a roof as evening deepens into night.",
+    "readings": [
+      {
+        "reading": "よる",
+        "story": "Your night is quiet: your sounds like よる.",
+        "anchorId": "vocab-ba0c8a160c33"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6669",
+    "components": [
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      },
+      {
+        "symbol": "免",
+        "meaning": "escape"
+      }
+    ],
+    "meaningStory": "The sun escapes below the horizon and the evening begins.",
+    "readings": [
+      {
+        "reading": "ばん",
+        "story": "A band starts playing in the evening: band begins like ばん.",
+        "anchorId": "vocab-42964aea18cf"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5915",
+    "components": [
+      {
+        "symbol": "夕",
+        "meaning": "evening"
+      }
+    ],
+    "meaningStory": "A crescent appears when daylight fades into evening.",
+    "readings": [
+      {
+        "reading": "ゆう",
+        "story": "You watch the evening sky: you sounds like ゆう.",
+        "anchorId": "vocab-3534dd7d07d1"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6642",
+    "components": [
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      },
+      {
+        "symbol": "寺",
+        "meaning": "temple"
+      }
+    ],
+    "meaningStory": "A temple bell follows the sun and announces the time.",
+    "readings": [
+      {
+        "reading": "とき",
+        "story": "A talking clock tells the time: talky points to とき.",
+        "anchorId": "vocab-f6481b840edb"
+      },
+      {
+        "reading": "じ",
+        "story": "Gee, look at the time! Gee sounds like じ.",
+        "anchorId": "vocab-e267b19a680f"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-534a",
+    "components": [
+      {
+        "symbol": "丷",
+        "meaning": "horns"
+      },
+      {
+        "symbol": "二",
+        "meaning": "two lines"
+      },
+      {
+        "symbol": "十",
+        "meaning": "cross"
+      }
+    ],
+    "meaningStory": "Split ten into two equal groups and each group is half.",
+    "readings": [
+      {
+        "reading": "はん",
+        "story": "A hand breaks the loaf in half: hand begins like はん.",
+        "anchorId": "vocab-d605986c3af4"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5348",
+    "components": [
+      {
+        "symbol": "𠂉",
+        "meaning": "person"
+      },
+      {
+        "symbol": "干",
+        "meaning": "rack"
+      }
+    ],
+    "meaningStory": "A marker reaches the top of the meridian when the sun is at noon.",
+    "readings": [
+      {
+        "reading": "ご",
+        "story": "Go to lunch at noon: go sounds like ご.",
+        "anchorId": "vocab-3e1bdafed48a"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5f8c",
+    "components": [
+      {
+        "symbol": "彳",
+        "meaning": "footsteps"
+      },
+      {
+        "symbol": "幺",
+        "meaning": "thread"
+      },
+      {
+        "symbol": "夂",
+        "meaning": "following legs"
+      }
+    ],
+    "meaningStory": "Following footsteps trail behind on a thread, always coming after.",
+    "readings": [
+      {
+        "reading": "あと",
+        "story": "Add to what comes after: “add to” sounds like あと.",
+        "anchorId": "vocab-415439a1dbb6"
+      },
+      {
+        "reading": "うしろ",
+        "story": "You see a row behind you: “you see row” recalls うしろ.",
+        "anchorId": "vocab-4125c1bacf52"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9031",
+    "components": [
+      {
+        "symbol": "周",
+        "meaning": "circuit"
+      },
+      {
+        "symbol": "⻌",
+        "meaning": "road"
+      }
+    ],
+    "meaningStory": "Travel one complete lap around the road and another week has passed.",
+    "readings": [
+      {
+        "reading": "しゅう",
+        "story": "Your shoe walks the weekly circuit: shoe sounds like しゅう.",
+        "anchorId": "vocab-b86d4b5ce53c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-66dc",
+    "components": [
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      },
+      {
+        "symbol": "翟",
+        "meaning": "feathered bird"
+      }
+    ],
+    "meaningStory": "A bright feathered bird assigns a different color to every weekday.",
+    "readings": [
+      {
+        "reading": "よう",
+        "story": "Yo, which weekday is it? Yo sounds like よう.",
+        "anchorId": "vocab-7e729f30e68e"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5206",
+    "components": [
+      {
+        "symbol": "八",
+        "meaning": "split"
+      },
+      {
+        "symbol": "刀",
+        "meaning": "knife"
+      }
+    ],
+    "meaningStory": "A knife divides something into separate parts.",
+    "readings": [
+      {
+        "reading": "ぶん",
+        "story": "Divide a bun into parts: bun sounds like ぶん.",
+        "anchorId": "vocab-81e708aba22f"
+      },
+      {
+        "reading": "ふん",
+        "story": "Minutes are fine divisions of an hour: fine begins like ふん.",
+        "anchorId": "vocab-662d45b892eb"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-53bb",
+    "components": [
+      {
+        "symbol": "土",
+        "meaning": "earth"
+      },
+      {
+        "symbol": "厶",
+        "meaning": "private space"
+      }
+    ],
+    "meaningStory": "Turn away from the ground you knew and leave it behind: gone.",
+    "readings": [
+      {
+        "reading": "きょ",
+        "story": "Kyoto was last year's trip: Kyoto begins with きょ.",
+        "anchorId": "vocab-e7ce924c4696"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5bb6",
+    "components": [
+      {
+        "symbol": "宀",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "豕",
+        "meaning": "pig"
+      }
+    ],
+    "meaningStory": "A pig kept safely under a roof shows a settled and prosperous home.",
+    "readings": [
+      {
+        "reading": "いえ",
+        "story": "“Yeah, this is my house!” Yeah sounds like いえ.",
+        "anchorId": "vocab-8af58778f14e"
+      },
+      {
+        "reading": "か",
+        "story": "A family gathers at home; family starts with the sound か.",
+        "anchorId": "vocab-a16373e2426c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-65cf",
+    "components": [
+      {
+        "symbol": "方",
+        "meaning": "direction"
+      },
+      {
+        "symbol": "矢",
+        "meaning": "arrow"
+      }
+    ],
+    "meaningStory": "A clan gathers behind one flag and follows the same arrow.",
+    "readings": [
+      {
+        "reading": "ぞく",
+        "story": "A whole family visits the zoo: zoo starts like ぞく.",
+        "anchorId": "vocab-a16373e2426c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7236",
+    "components": [
+      {
+        "symbol": "乂",
+        "meaning": "crossed strokes"
+      },
+      {
+        "symbol": "八",
+        "meaning": "split"
+      }
+    ],
+    "meaningStory": "A father holds two crossed tools in steady hands to fix the house.",
+    "readings": [
+      {
+        "reading": "ちち",
+        "story": "Children cheer twice for their father: cheer-cheer points to ちち.",
+        "anchorId": "vocab-d15ca6ea1179"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6bcd",
+    "components": [
+      {
+        "symbol": "母",
+        "meaning": "mother holding a child"
+      }
+    ],
+    "meaningStory": "The two marks inside show a mother nourishing and holding her child.",
+    "readings": [
+      {
+        "reading": "はは",
+        "story": "A mother laughs “ha-ha”: はは.",
+        "anchorId": "vocab-7fa86c660a00"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5b50",
+    "components": [
+      {
+        "symbol": "子",
+        "meaning": "child"
+      }
+    ],
+    "meaningStory": "A baby with outstretched arms and wrapped legs forms the shape of a child.",
+    "readings": [
+      {
+        "reading": "こ",
+        "story": "A child coos; coo begins with こ.",
+        "anchorId": "vocab-5fd1d3759699"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7537",
+    "components": [
+      {
+        "symbol": "田",
+        "meaning": "field"
+      },
+      {
+        "symbol": "力",
+        "meaning": "strength"
+      }
+    ],
+    "meaningStory": "A man uses his strength to work the field.",
+    "readings": [
+      {
+        "reading": "おとこ",
+        "story": "Oh, Tom works with the man in the field: “oh Tom” leads into おとこ.",
+        "anchorId": "vocab-4b9dfeafcab4"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5973",
+    "components": [
+      {
+        "symbol": "女",
+        "meaning": "woman"
+      }
+    ],
+    "meaningStory": "The flowing shape pictures a woman kneeling with folded arms.",
+    "readings": [
+      {
+        "reading": "おんな",
+        "story": "Anna is the woman in the picture: Anna sounds like おんな.",
+        "anchorId": "vocab-4d9423288cb2"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9593",
+    "components": [
+      {
+        "symbol": "門",
+        "meaning": "gate"
+      },
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      }
+    ],
+    "meaningStory": "Sunlight visible through a gate marks the interval between its doors.",
+    "readings": [
+      {
+        "reading": "かん",
+        "story": "A can fits in the gap between the doors: can sounds like かん.",
+        "anchorId": "vocab-f6a8c4a23b51"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e21",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "冂",
+        "meaning": "enclosure"
+      },
+      {
+        "symbol": "山",
+        "meaning": "three peaks"
+      }
+    ],
+    "meaningStory": "A cart carries matching loads on both sides of its balance beam.",
+    "readings": [
+      {
+        "reading": "りょう",
+        "story": "Rio holds both handles: Rio sounds like りょう.",
+        "anchorId": "vocab-9389f18983d3"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-89aa",
+    "components": [
+      {
+        "symbol": "立",
+        "meaning": "stand"
+      },
+      {
+        "symbol": "木",
+        "meaning": "tree"
+      },
+      {
+        "symbol": "見",
+        "meaning": "see"
+      }
+    ],
+    "meaningStory": "A parent stands beside a tree and watches over the children.",
+    "readings": [
+      {
+        "reading": "しん",
+        "story": "Shin's parents watch over him: Shin gives しん.",
+        "anchorId": "vocab-9389f18983d3"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-53f3",
+    "components": [
+      {
+        "symbol": "𠂇",
+        "meaning": "hand"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "The right hand brings food to the mouth.",
+    "readings": [
+      {
+        "reading": "みぎ",
+        "story": "Mickey raises his right hand: Mickey starts like みぎ.",
+        "anchorId": "vocab-ed6bd4d73b76"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5de6",
+    "components": [
+      {
+        "symbol": "𠂇",
+        "meaning": "hand"
+      },
+      {
+        "symbol": "工",
+        "meaning": "tool"
+      }
+    ],
+    "meaningStory": "The left hand steadies a tool while the right hand works.",
+    "readings": [
+      {
+        "reading": "ひだり",
+        "story": "He dares to write with his left hand: “he dares” recalls ひだり.",
+        "anchorId": "vocab-14be5202d5b3"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e0a",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "卜",
+        "meaning": "direction sign"
+      }
+    ],
+    "meaningStory": "A mark sits above the reference line: up, over, and on top.",
+    "readings": [
+      {
+        "reading": "うえ",
+        "story": "Way up above: way sounds like うえ.",
+        "anchorId": "vocab-c0f58bfab324"
+      },
+      {
+        "reading": "じょう",
+        "story": "Joe stands on top: Joe sounds like じょう.",
+        "anchorId": "vocab-f78f531c55a5"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e0b",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "卜",
+        "meaning": "direction sign"
+      }
+    ],
+    "meaningStory": "A mark hangs below the reference line: under and beneath.",
+    "readings": [
+      {
+        "reading": "した",
+        "story": "She sat down below: “she sat” recalls した.",
+        "anchorId": "vocab-520308b3c3b4"
+      },
+      {
+        "reading": "か",
+        "story": "The corridor goes down to the floor below; down can use か.",
+        "anchorId": "vocab-26adc630f7fe"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e2d",
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "丨",
+        "meaning": "center line"
+      }
+    ],
+    "meaningStory": "A line pierces the exact middle of a box: inside and center.",
+    "readings": [
+      {
+        "reading": "なか",
+        "story": "Naka stands in the middle: Naka gives なか.",
+        "anchorId": "vocab-5849925b131d"
+      },
+      {
+        "reading": "ちゅう",
+        "story": "Choose the center: choose sounds like ちゅう.",
+        "anchorId": "vocab-672a58e30389"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5144",
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "儿",
+        "meaning": "legs"
+      }
+    ],
+    "meaningStory": "The older brother stands tall on long legs and speaks for the younger children.",
+    "readings": [
+      {
+        "reading": "あに",
+        "story": "Annie asks her older brother: Annie begins like あに.",
+        "anchorId": "vocab-cda9169e9fa2"
+      },
+      {
+        "reading": "きょう",
+        "story": "Kyō gathers all the siblings: Kyō gives きょう.",
+        "anchorId": "vocab-2e7b28af830b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-59c9",
+    "components": [
+      {
+        "symbol": "女",
+        "meaning": "woman"
+      },
+      {
+        "symbol": "市",
+        "meaning": "market"
+      }
+    ],
+    "meaningStory": "The older sister leads the way through the busy market.",
+    "readings": [
+      {
+        "reading": "あね",
+        "story": "Ann is the older sister: Ann sounds like あね.",
+        "anchorId": "vocab-e3507900ad06"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5f1f",
+    "components": [
+      {
+        "symbol": "丷",
+        "meaning": "horns"
+      },
+      {
+        "symbol": "弓",
+        "meaning": "bow"
+      }
+    ],
+    "meaningStory": "The younger brother proudly carries his little practice bow.",
+    "readings": [
+      {
+        "reading": "おとうと",
+        "story": "“Oh, Toto!” calls the younger brother: “oh Toto” recalls おとうと.",
+        "anchorId": "vocab-7e8dc4d63e82"
+      },
+      {
+        "reading": "だい",
+        "story": "The siblings share the sound dai, as in 兄弟（きょうだい）.",
+        "anchorId": "vocab-2e7b28af830b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-59b9",
+    "components": [
+      {
+        "symbol": "女",
+        "meaning": "woman"
+      },
+      {
+        "symbol": "未",
+        "meaning": "not yet"
+      }
+    ],
+    "meaningStory": "The younger sister is the woman who has not yet caught up in age.",
+    "readings": [
+      {
+        "reading": "いもうと",
+        "story": "Emo Toto is the younger sister's nickname: it recalls いもうと.",
+        "anchorId": "vocab-735d35e5b1be"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-624b",
+    "components": [
+      {
+        "symbol": "手",
+        "meaning": "palm and fingers"
+      }
+    ],
+    "meaningStory": "Fingers branch from a palm and wrist to form a hand.",
+    "readings": [
+      {
+        "reading": "て",
+        "story": "Ten fingers belong to your hands: ten starts with て.",
+        "anchorId": "vocab-b1ff052549ed"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8db3",
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "龰",
+        "meaning": "foot"
+      }
+    ],
+    "meaningStory": "A leg runs from its kneecap down to a planted foot.",
+    "readings": [
+      {
+        "reading": "あし",
+        "story": "Ash sticks to a bare foot: ash sounds like あし.",
+        "anchorId": "vocab-dc84a84458e5"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-548c",
+    "components": [
+      {
+        "symbol": "禾",
+        "meaning": "grain"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "Sharing grain so every mouth is fed creates harmony.",
+    "readings": [
+      {
+        "reading": "わ",
+        "story": "“Wow, what harmony!” Wow begins with わ.",
+        "anchorId": "kanji-context-washitsu"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6d0b",
+    "components": [
+      {
+        "symbol": "氵",
+        "meaning": "water"
+      },
+      {
+        "symbol": "羊",
+        "meaning": "sheep"
+      }
+    ],
+    "meaningStory": "A sheep crosses a vast stretch of water toward the ocean and the West.",
+    "readings": [
+      {
+        "reading": "よう",
+        "story": "Yo, that sheep crossed the ocean! Yo sounds like よう.",
+        "anchorId": "vocab-60452785e7a1"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-670d",
+    "components": [
+      {
+        "symbol": "⺼",
+        "meaning": "body"
+      },
+      {
+        "symbol": "又",
+        "meaning": "hand"
+      }
+    ],
+    "meaningStory": "A hand pulls fabric snugly over the body: clothes.",
+    "readings": [
+      {
+        "reading": "ふく",
+        "story": "A full suitcase is packed with clothes: full begins like ふく.",
+        "anchorId": "vocab-ff1cb3f79233"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9759",
+    "components": [
+      {
+        "symbol": "青",
+        "meaning": "blue"
+      },
+      {
+        "symbol": "争",
+        "meaning": "conflict"
+      }
+    ],
+    "meaningStory": "Cool blue settles a conflict until everything becomes quiet and calm.",
+    "readings": [
+      {
+        "reading": "しず",
+        "story": "Shizu whispers for everyone to be quiet: Shizu gives しず.",
+        "anchorId": "vocab-61b57e2d4702"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4f11",
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "person"
+      },
+      {
+        "symbol": "木",
+        "meaning": "tree"
+      }
+    ],
+    "meaningStory": "A person leans against a tree to rest in its shade.",
+    "readings": [
+      {
+        "reading": "やす",
+        "story": "Yasu rests against the tree: やす, as in 休む（やすむ）.",
+        "anchorId": "vocab-acc3dd26ba1e"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-75c5",
+    "components": [
+      {
+        "symbol": "疒",
+        "meaning": "sickbed"
+      },
+      {
+        "symbol": "丙",
+        "meaning": "person inside"
+      }
+    ],
+    "meaningStory": "A person confined inside a sickbed is ill.",
+    "readings": [
+      {
+        "reading": "びょう",
+        "story": "Be your own nurse when ill: “be your” starts like びょう.",
+        "anchorId": "vocab-f1d4ccc1ebeb"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9662",
+    "components": [
+      {
+        "symbol": "⻖",
+        "meaning": "hill"
+      },
+      {
+        "symbol": "完",
+        "meaning": "complete building"
+      }
+    ],
+    "meaningStory": "A complete building on a hill becomes a large institution such as a hospital.",
+    "readings": [
+      {
+        "reading": "いん",
+        "story": "Go in the institution: in sounds like いん.",
+        "anchorId": "vocab-152ea0d72dc5"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6c17",
+    "components": [
+      {
+        "symbol": "气",
+        "meaning": "rising vapor"
+      },
+      {
+        "symbol": "乂",
+        "meaning": "crossed strokes"
+      }
+    ],
+    "meaningStory": "Vapor and a spark swirl into invisible energy, spirit, and mood.",
+    "readings": [
+      {
+        "reading": "き",
+        "story": "A key turns on the energy: key sounds like き.",
+        "anchorId": "vocab-12f44a1311d1"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-75db",
+    "components": [
+      {
+        "symbol": "疒",
+        "meaning": "sickbed"
+      },
+      {
+        "symbol": "甬",
+        "meaning": "passage"
+      }
+    ],
+    "meaningStory": "Pain travels through the body like a passage beneath a sickbed.",
+    "readings": [
+      {
+        "reading": "いた",
+        "story": "“Eek, it hurts!” starts with a sound like いた.",
+        "anchorId": "vocab-64170b1798cb"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5143",
+    "components": [
+      {
+        "symbol": "二",
+        "meaning": "two lines"
+      },
+      {
+        "symbol": "儿",
+        "meaning": "legs"
+      }
+    ],
+    "meaningStory": "Legs stand on two starting lines, ready at the beginning.",
+    "readings": [
+      {
+        "reading": "げん",
+        "story": "Begin again: again ends with a sound like げん.",
+        "anchorId": "vocab-12f44a1311d1"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-533b",
+    "components": [
+      {
+        "symbol": "匸",
+        "meaning": "medical case"
+      },
+      {
+        "symbol": "矢",
+        "meaning": "arrow"
+      }
+    ],
+    "meaningStory": "A sharp tool stored in a medical case belongs to a doctor.",
+    "readings": [
+      {
+        "reading": "い",
+        "story": "“E! Call the doctor!” The first cry gives い.",
+        "anchorId": "vocab-60e888b69674"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8005",
+    "components": [
+      {
+        "symbol": "耂",
+        "meaning": "elder"
+      },
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      }
+    ],
+    "meaningStory": "An elder standing in the sun represents a person, someone known by their role.",
+    "readings": [
+      {
+        "reading": "しゃ",
+        "story": "A shy person starts with sha, like しゃ.",
+        "anchorId": "vocab-60e888b69674"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5f85",
+    "components": [
+      {
+        "symbol": "彳",
+        "meaning": "footsteps"
+      },
+      {
+        "symbol": "寺",
+        "meaning": "temple"
+      }
+    ],
+    "meaningStory": "Your footsteps stop at the temple gate, where you must wait.",
+    "readings": [
+      {
+        "reading": "ま",
+        "story": "Ma waits at the gate: Ma gives ま.",
+        "anchorId": "vocab-6f30c5c5938f"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5ba4",
+    "components": [
+      {
+        "symbol": "宀",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "至",
+        "meaning": "arrival"
+      }
+    ],
+    "meaningStory": "Once you arrive under the roof, you are inside a room.",
+    "readings": [
+      {
+        "reading": "しつ",
+        "story": "Sheets fill the room: sheets sounds like しつ.",
+        "anchorId": "vocab-fbb71c77ac0e"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-982d",
+    "components": [
+      {
+        "symbol": "豆",
+        "meaning": "bean"
+      },
+      {
+        "symbol": "頁",
+        "meaning": "head"
+      }
+    ],
+    "meaningStory": "A bean bounces off the top of a head.",
+    "readings": [
+      {
+        "reading": "あたま",
+        "story": "A tomato hits your head: “a tomato” starts like あたま.",
+        "anchorId": "vocab-2110de97e73d"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-85ac",
+    "components": [
+      {
+        "symbol": "艹",
+        "meaning": "plant"
+      },
+      {
+        "symbol": "楽",
+        "meaning": "comfort"
+      }
+    ],
+    "meaningStory": "Herbs bring comfort when prepared as medicine.",
+    "readings": [
+      {
+        "reading": "くすり",
+        "story": "Cook Sue's remedy: “cook Sue re-” recalls くすり.",
+        "anchorId": "vocab-87bbe3de9902"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-77e5",
+    "components": [
+      {
+        "symbol": "矢",
+        "meaning": "arrow"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "Words from a mouth fly straight like an arrow when you truly know the answer.",
+    "readings": [
+      {
+        "reading": "し",
+        "story": "She knows the answer: she sounds like し.",
+        "anchorId": "vocab-531b240786ce"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5ea7",
+    "components": [
+      {
+        "symbol": "广",
+        "meaning": "shelter"
+      },
+      {
+        "symbol": "坐",
+        "meaning": "two seated people"
+      }
+    ],
+    "meaningStory": "Two people sit on the ground inside a shelter.",
+    "readings": [
+      {
+        "reading": "すわ",
+        "story": "Sue watches everyone sit: “Sue wa-” recalls すわ.",
+        "anchorId": "vocab-1920bee7857b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7acb",
+    "components": [
+      {
+        "symbol": "亠",
+        "meaning": "lid"
+      },
+      {
+        "symbol": "䒑",
+        "meaning": "grass tips"
+      },
+      {
+        "symbol": "一",
+        "meaning": "line"
+      }
+    ],
+    "meaningStory": "A person's head and shoulders rise upright from the ground: stand up.",
+    "readings": [
+      {
+        "reading": "た",
+        "story": "A tall person stands up: tall begins with た.",
+        "anchorId": "vocab-17e3177c62d5"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-592a",
+    "components": [
+      {
+        "symbol": "大",
+        "meaning": "large person"
+      },
+      {
+        "symbol": "丶",
+        "meaning": "dot"
+      }
+    ],
+    "meaningStory": "Add a round belly dot to a large body and it becomes plump and thick.",
+    "readings": [
+      {
+        "reading": "ふと",
+        "story": "A full tummy makes you plump: “full tummy” starts like ふと.",
+        "anchorId": "vocab-b7ea6f7eb013"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-66f2",
+    "components": [
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      },
+      {
+        "symbol": "廾",
+        "meaning": "bent path"
+      }
+    ],
+    "meaningStory": "A path bends and turns as it crosses a boxed field.",
+    "readings": [
+      {
+        "reading": "ま",
+        "story": "A map shows where the road bends: map begins with ま.",
+        "anchorId": "vocab-9b9a58f11bf9"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4f4f",
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "person"
+      },
+      {
+        "symbol": "主",
+        "meaning": "main place"
+      }
+    ],
+    "meaningStory": "A person chooses one main place in which to dwell and live.",
+    "readings": [
+      {
+        "reading": "す",
+        "story": "Sue lives here: Sue begins with す.",
+        "anchorId": "vocab-405805427b97"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-51fa",
+    "components": [
+      {
+        "symbol": "山",
+        "meaning": "three peaks"
+      },
+      {
+        "symbol": "凵",
+        "meaning": "open container"
+      }
+    ],
+    "meaningStory": "Something emerges from an open container and exits.",
+    "readings": [
+      {
+        "reading": "で",
+        "story": "Depart through the exit: depart begins with で.",
+        "anchorId": "vocab-b2a9df4d0301"
+      },
+      {
+        "reading": "だ",
+        "story": "Dad takes something out: Dad begins with だ.",
+        "anchorId": "vocab-a001b24baf12"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5165",
+    "components": [
+      {
+        "symbol": "入",
+        "meaning": "two converging strokes"
+      }
+    ],
+    "meaningStory": "Two strokes converge toward an opening as they enter.",
+    "readings": [
+      {
+        "reading": "はい",
+        "story": "Hike into the entrance: hike begins like はい.",
+        "anchorId": "vocab-82a114897d9c"
+      },
+      {
+        "reading": "い",
+        "story": "Ease the object in: ease begins with い.",
+        "anchorId": "vocab-2277be030602"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7740",
+    "components": [
+      {
+        "symbol": "羊",
+        "meaning": "sheep"
+      },
+      {
+        "symbol": "目",
+        "meaning": "eye"
+      }
+    ],
+    "meaningStory": "Your eye checks a wool garment as you put it on and arrive dressed.",
+    "readings": [
+      {
+        "reading": "き",
+        "story": "The key is in the coat you wear: key sounds like き.",
+        "anchorId": "vocab-8298c6a732a7"
+      },
+      {
+        "reading": "つ",
+        "story": "Two trains arrive: two begins with つ.",
+        "anchorId": "vocab-f024ec5e9eea"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8131",
+    "components": [
+      {
+        "symbol": "⺼",
+        "meaning": "body"
+      },
+      {
+        "symbol": "兌",
+        "meaning": "exchange"
+      }
+    ],
+    "meaningStory": "Release fabric from the body to undress and take it off.",
+    "readings": [
+      {
+        "reading": "ぬ",
+        "story": "You become nearly nude after taking clothes off: nude begins with ぬ.",
+        "anchorId": "vocab-0954522e1764"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-50cd",
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "person"
+      },
+      {
+        "symbol": "動",
+        "meaning": "movement"
+      }
+    ],
+    "meaningStory": "A person in constant movement is hard at work.",
+    "readings": [
+      {
+        "reading": "はたら",
+        "story": "Hata labors all day: Hata plus labor starts you toward はたら.",
+        "anchorId": "vocab-49f91d135f05"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-601d",
+    "components": [
+      {
+        "symbol": "田",
+        "meaning": "field"
+      },
+      {
+        "symbol": "心",
+        "meaning": "heart"
+      }
+    ],
+    "meaningStory": "Thoughts grow in the heart like crops filling a field.",
+    "readings": [
+      {
+        "reading": "おも",
+        "story": "Oh, Moe is thinking again: “oh Moe” sounds like おも.",
+        "anchorId": "vocab-c64ca071011e"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4ed5",
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "person"
+      },
+      {
+        "symbol": "士",
+        "meaning": "professional"
+      }
+    ],
+    "meaningStory": "A person attends to their duties like a disciplined professional: this is work.",
+    "readings": [
+      {
+        "reading": "し",
+        "story": "She attends to the job: she sounds like し.",
+        "anchorId": "vocab-cdf28ddaf837"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e8b",
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "⺕",
+        "meaning": "hand"
+      },
+      {
+        "symbol": "亅",
+        "meaning": "hook"
+      }
+    ],
+    "meaningStory": "A hand hooks a spoken task from the mouth: a matter that must be handled.",
+    "readings": [
+      {
+        "reading": "こと",
+        "story": "In 仕事（しごと）, こと voices to ごと: every job is a matter to handle.",
+        "anchorId": "vocab-cdf28ddaf837",
+        "anchorReading": "ごと"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6559",
+    "components": [
+      {
+        "symbol": "孝",
+        "meaning": "child learning from an elder"
+      },
+      {
+        "symbol": "攵",
+        "meaning": "guiding hand"
+      }
+    ],
+    "meaningStory": "A guiding hand helps a child learn from an elder: to teach.",
+    "readings": [
+      {
+        "reading": "おし",
+        "story": "“Oh, she can teach!” starts with おし.",
+        "anchorId": "vocab-de83de37aff5"
+      },
+      {
+        "reading": "きょう",
+        "story": "Kyō teaches in the classroom: Kyō gives きょう.",
+        "anchorId": "vocab-fbb71c77ac0e"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4f1a",
+    "components": [
+      {
+        "symbol": "人",
+        "meaning": "person"
+      },
+      {
+        "symbol": "云",
+        "meaning": "speech cloud"
+      }
+    ],
+    "meaningStory": "People gather under one cloud of conversation for a meeting.",
+    "readings": [
+      {
+        "reading": "あ",
+        "story": "“Ow!” Two people bump into each other when they meet: ow sounds like あ.",
+        "anchorId": "vocab-40179481fcf6"
+      },
+      {
+        "reading": "かい",
+        "story": "A crowd comes together for a meeting: crowd begins like かい.",
+        "anchorId": "vocab-c506bd7fb201"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5408",
+    "components": [
+      {
+        "symbol": "亼",
+        "meaning": "lid"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "A lid fits perfectly over its container.",
+    "readings": [
+      {
+        "reading": "あ",
+        "story": "“Ah, it fits!” Ah gives the reading あ.",
+        "anchorId": "kanji-context-au-fit"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-58f2",
+    "components": [
+      {
+        "symbol": "士",
+        "meaning": "professional"
+      },
+      {
+        "symbol": "冖",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "儿",
+        "meaning": "legs"
+      }
+    ],
+    "meaningStory": "A merchant under a stall roof waits for customers so they can sell goods.",
+    "readings": [
+      {
+        "reading": "う",
+        "story": "Ooh, that item sold quickly! Ooh sounds like う.",
+        "anchorId": "vocab-5e42ab61b84c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8a00",
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "一",
+        "meaning": "line"
+      }
+    ],
+    "meaningStory": "Sound waves stack above a mouth as someone says words.",
+    "readings": [
+      {
+        "reading": "い",
+        "story": "“E!” is the first thing you say: E sounds like い.",
+        "anchorId": "vocab-4fa253e10946"
+      },
+      {
+        "reading": "こと",
+        "story": "Quote the words someone said: quote starts you toward こと.",
+        "anchorId": "vocab-cef4a2049ff3"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-77ed",
+    "components": [
+      {
+        "symbol": "矢",
+        "meaning": "arrow"
+      },
+      {
+        "symbol": "豆",
+        "meaning": "bean"
+      }
+    ],
+    "meaningStory": "An arrow no longer than a bean is remarkably short.",
+    "readings": [
+      {
+        "reading": "みじか",
+        "story": "A midge can fit on the short arrow: “midge can” recalls みじか.",
+        "anchorId": "vocab-456eae34da34"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-793e",
+    "components": [
+      {
+        "symbol": "礻",
+        "meaning": "altar"
+      },
+      {
+        "symbol": "土",
+        "meaning": "earth"
+      }
+    ],
+    "meaningStory": "People gather at an altar on shared land, like members of a company or society.",
+    "readings": [
+      {
+        "reading": "しゃ",
+        "story": "Shares belong to a company: shares begins like しゃ.",
+        "anchorId": "vocab-c506bd7fb201"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7720",
+    "components": [
+      {
+        "symbol": "目",
+        "meaning": "eye"
+      },
+      {
+        "symbol": "民",
+        "meaning": "people"
+      }
+    ],
+    "meaningStory": "The eyes of the people close when everyone goes to sleep.",
+    "readings": [
+      {
+        "reading": "ねむ",
+        "story": "Never move while asleep: “never move” starts like ねむ.",
+        "anchorId": "kanji-context-nemui"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8272",
+    "components": [
+      {
+        "symbol": "𠂊",
+        "meaning": "cover"
+      },
+      {
+        "symbol": "巴",
+        "meaning": "swirl"
+      }
+    ],
+    "meaningStory": "Lift the cover to reveal a swirling palette of color.",
+    "readings": [
+      {
+        "reading": "いろ",
+        "story": "An easel rolls out every color: “easel roll” starts like いろ.",
+        "anchorId": "vocab-921d54ba31ef"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8d64",
+    "components": [
+      {
+        "symbol": "土",
+        "meaning": "earth"
+      },
+      {
+        "symbol": "灬",
+        "meaning": "fire"
+      }
+    ],
+    "meaningStory": "Earth glows above a hot fire until it turns red.",
+    "readings": [
+      {
+        "reading": "あか",
+        "story": "A car painted red: “a car” sounds like あか.",
+        "anchorId": "vocab-3144539c83d3"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9752",
+    "components": [
+      {
+        "symbol": "龶",
+        "meaning": "sprout"
+      },
+      {
+        "symbol": "月",
+        "meaning": "moon"
+      }
+    ],
+    "meaningStory": "A fresh plant under cool moonlight takes on a blue-green color.",
+    "readings": [
+      {
+        "reading": "あお",
+        "story": "“Ow!” A blue bruise makes you cry あお.",
+        "anchorId": "vocab-ba729c7107d1"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-767d",
+    "components": [
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      },
+      {
+        "symbol": "丶",
+        "meaning": "dot"
+      }
+    ],
+    "meaningStory": "One brilliant ray makes the sun appear pure white.",
+    "readings": [
+      {
+        "reading": "しろ",
+        "story": "She wrote on a white sheet: “she wrote” starts like しろ.",
+        "anchorId": "vocab-cbda72b9dd04"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9ed2",
+    "components": [
+      {
+        "symbol": "里",
+        "meaning": "village"
+      },
+      {
+        "symbol": "灬",
+        "meaning": "fire"
+      }
+    ],
+    "meaningStory": "A fire leaves the whole village covered in black soot.",
+    "readings": [
+      {
+        "reading": "くろ",
+        "story": "A crow is black: crow sounds like くろ.",
+        "anchorId": "vocab-d0ff33617d6b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-968e",
+    "components": [
+      {
+        "symbol": "⻖",
+        "meaning": "hill"
+      },
+      {
+        "symbol": "皆",
+        "meaning": "everyone"
+      }
+    ],
+    "meaningStory": "Everyone climbs a hill one level at a time, like the storeys of a building.",
+    "readings": [
+      {
+        "reading": "かい",
+        "story": "Climb sky-high, one floor at a time: high ends like かい.",
+        "anchorId": "vocab-9848df70e3ed"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-56de",
+    "components": [
+      {
+        "symbol": "囗",
+        "meaning": "enclosure"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "One circuit turns around another, marking a complete round or occurrence.",
+    "readings": [
+      {
+        "reading": "かい",
+        "story": "Count each circuit: count starts with the sound かい.",
+        "anchorId": "vocab-c5f621b979db"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-958b",
+    "components": [
+      {
+        "symbol": "門",
+        "meaning": "gate"
+      },
+      {
+        "symbol": "开",
+        "meaning": "open gate"
+      }
+    ],
+    "meaningStory": "Two hands lift the bars inside a gate and open it.",
+    "readings": [
+      {
+        "reading": "あ",
+        "story": "“Ah!” Fresh air enters when the gate opens: ah gives あ.",
+        "anchorId": "vocab-56dc4d647d8b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9589",
+    "components": [
+      {
+        "symbol": "門",
+        "meaning": "gate"
+      },
+      {
+        "symbol": "才",
+        "meaning": "wooden bar"
+      }
+    ],
+    "meaningStory": "Drop a wooden bar across the gate and it is closed.",
+    "readings": [
+      {
+        "reading": "し",
+        "story": "She shuts the gate: she sounds like し.",
+        "anchorId": "vocab-47246131f042"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-65e9",
+    "components": [
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      },
+      {
+        "symbol": "十",
+        "meaning": "cross"
+      }
+    ],
+    "meaningStory": "The sun is already up before the clock reaches ten: early.",
+    "readings": [
+      {
+        "reading": "はや",
+        "story": "Hurry if you want to be early: hurry sounds like はや.",
+        "anchorId": "vocab-72460e05df01"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6b69",
+    "components": [
+      {
+        "symbol": "止",
+        "meaning": "footprint"
+      },
+      {
+        "symbol": "少",
+        "meaning": "small steps"
+      }
+    ],
+    "meaningStory": "A trail of footprints records many small steps: walking.",
+    "readings": [
+      {
+        "reading": "ある",
+        "story": "I'll walk the whole route: “I'll” sounds like ある.",
+        "anchorId": "vocab-a76603aae6e4"
+      },
+      {
+        "reading": "ほ",
+        "story": "In 散歩（さんぽ）, ほ voices to ぽ: imagine footsteps popping along on a walk.",
+        "anchorId": "vocab-739ad06f157c",
+        "anchorReading": "ぽ"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8d70",
+    "components": [
+      {
+        "symbol": "土",
+        "meaning": "earth"
+      },
+      {
+        "symbol": "龰",
+        "meaning": "foot"
+      }
+    ],
+    "meaningStory": "A foot races so quickly that it barely touches the ground: run.",
+    "readings": [
+      {
+        "reading": "はし",
+        "story": "Hashi runs across the bridge: Hashi gives はし.",
+        "anchorId": "vocab-97526e11c703"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9280",
+    "components": [
+      {
+        "symbol": "金",
+        "meaning": "metal"
+      },
+      {
+        "symbol": "艮",
+        "meaning": "lasting shine"
+      }
+    ],
+    "meaningStory": "A metal with a lasting pale shine is silver.",
+    "readings": [
+      {
+        "reading": "ぎん",
+        "story": "Gin gleams in a silver flask: gin sounds like ぎん.",
+        "anchorId": "vocab-d425b056fb0b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5c40",
+    "components": [
+      {
+        "symbol": "尸",
+        "meaning": "canopy"
+      },
+      {
+        "symbol": "句",
+        "meaning": "service counter"
+      }
+    ],
+    "meaningStory": "A building divided around a service counter becomes a bureau or post office.",
+    "readings": [
+      {
+        "reading": "きょく",
+        "story": "Kyoko works at the bureau: Kyoko begins like きょく.",
+        "anchorId": "vocab-e40b7fecf36c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4f7f",
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "person"
+      },
+      {
+        "symbol": "吏",
+        "meaning": "official tool"
+      }
+    ],
+    "meaningStory": "A person takes an official tool and puts it to use.",
+    "readings": [
+      {
+        "reading": "つか",
+        "story": "Two carpenters use the tool: “two ca-” recalls つか.",
+        "anchorId": "vocab-9af9c5ffb30e"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6599",
+    "components": [
+      {
+        "symbol": "米",
+        "meaning": "rice"
+      },
+      {
+        "symbol": "斗",
+        "meaning": "measuring scoop"
+      }
+    ],
+    "meaningStory": "A scoop measures rice to calculate the amount, ingredients, or fee.",
+    "readings": [
+      {
+        "reading": "りょう",
+        "story": "Rio measures the fee with a scoop: Rio sounds like りょう.",
+        "anchorId": "vocab-6ab8f730431c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6255",
+    "components": [
+      {
+        "symbol": "扌",
+        "meaning": "hand"
+      },
+      {
+        "symbol": "厶",
+        "meaning": "private space"
+      }
+    ],
+    "meaningStory": "A hand gives up a private coin to pay.",
+    "readings": [
+      {
+        "reading": "はら",
+        "story": "Hand over hard cash to pay: hand plus cash starts you toward はら.",
+        "anchorId": "kanji-context-harau"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6301",
+    "components": [
+      {
+        "symbol": "扌",
+        "meaning": "hand"
+      },
+      {
+        "symbol": "寺",
+        "meaning": "temple"
+      }
+    ],
+    "meaningStory": "A hand holds a precious object steady all the way to the temple.",
+    "readings": [
+      {
+        "reading": "も",
+        "story": "Moe holds the bag: Moe sounds like も.",
+        "anchorId": "vocab-516ad1128c71"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6587",
+    "components": [
+      {
+        "symbol": "亠",
+        "meaning": "lid"
+      },
+      {
+        "symbol": "乂",
+        "meaning": "crossed strokes"
+      }
+    ],
+    "meaningStory": "Crossed lines under a heading create a written pattern: a sentence or text.",
+    "readings": [
+      {
+        "reading": "ぶん",
+        "story": "A bundle of words makes a sentence: bundle begins like ぶん.",
+        "anchorId": "vocab-1a0c68cc98ca"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5b57",
+    "components": [
+      {
+        "symbol": "宀",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "子",
+        "meaning": "child"
+      }
+    ],
+    "meaningStory": "A child under a school roof learns each written character.",
+    "readings": [
+      {
+        "reading": "じ",
+        "story": "Gee, that character is complex! Gee sounds like じ.",
+        "anchorId": "vocab-535c688e8bf9"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7269",
+    "components": [
+      {
+        "symbol": "牛",
+        "meaning": "cow"
+      },
+      {
+        "symbol": "勿",
+        "meaning": "tag"
+      }
+    ],
+    "meaningStory": "Put a tag on a cow and it becomes one concrete thing in the inventory.",
+    "readings": [
+      {
+        "reading": "もの",
+        "story": "Mono means one; point to one thing and remember もの.",
+        "anchorId": "vocab-012e69e925d7"
+      },
+      {
+        "reading": "ぶつ",
+        "story": "Boots are concrete objects: boots sounds like ぶつ.",
+        "anchorId": "vocab-a3374580d856"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-54c1",
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "Three stacked boxes are full of goods and products.",
+    "readings": [
+      {
+        "reading": "しな",
+        "story": "She names every item of goods: “she names” starts like しな.",
+        "anchorId": "kanji-context-shinamono"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8ab0",
+    "components": [
+      {
+        "symbol": "言",
+        "meaning": "words"
+      },
+      {
+        "symbol": "隹",
+        "meaning": "bird"
+      }
+    ],
+    "meaningStory": "A bird speaks human words, so everyone asks: who said that?",
+    "readings": [
+      {
+        "reading": "だれ",
+        "story": "Dare to ask who: dare sounds like だれ.",
+        "anchorId": "vocab-f3f74ef8bc9a"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4f5c",
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "person"
+      },
+      {
+        "symbol": "乍",
+        "meaning": "sudden action"
+      }
+    ],
+    "meaningStory": "A person takes sudden action and makes something new.",
+    "readings": [
+      {
+        "reading": "つく",
+        "story": "Two cooks make the meal: “two cooks” sounds like つく.",
+        "anchorId": "vocab-a4ccf0b7bace"
+      },
+      {
+        "reading": "さく",
+        "story": "Sack the materials together to make a work: sack sounds like さく.",
+        "anchorId": "vocab-4b9574b8d3b9"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5fc5",
+    "components": [
+      {
+        "symbol": "心",
+        "meaning": "heart"
+      },
+      {
+        "symbol": "丿",
+        "meaning": "slash"
+      }
+    ],
+    "meaningStory": "A stroke of resolve pierces the heart: something that must invariably be done.",
+    "readings": [
+      {
+        "reading": "ひつ",
+        "story": "He'd sue if this necessary task is skipped: “he'd sue” recalls ひつ.",
+        "anchorId": "vocab-884e78e7d501"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8981",
+    "components": [
+      {
+        "symbol": "覀",
+        "meaning": "net"
+      },
+      {
+        "symbol": "女",
+        "meaning": "woman"
+      }
+    ],
+    "meaningStory": "A person trapped beneath a net needs help.",
+    "readings": [
+      {
+        "reading": "い",
+        "story": "“E! I need help!” The first cry gives い.",
+        "anchorId": "vocab-663506ac051d"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-65c5",
+    "components": [
+      {
+        "symbol": "方",
+        "meaning": "direction"
+      },
+      {
+        "symbol": "𠂉",
+        "meaning": "person"
+      },
+      {
+        "symbol": "衣",
+        "meaning": "clothes"
+      }
+    ],
+    "meaningStory": "A traveler follows a flag with packed clothes for a trip.",
+    "readings": [
+      {
+        "reading": "りょ",
+        "story": "Rio packs for a trip: Rio sounds like りょ.",
+        "anchorId": "vocab-2e3ba98d2367"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8cbb",
+    "components": [
+      {
+        "symbol": "弗",
+        "meaning": "bills"
+      },
+      {
+        "symbol": "貝",
+        "meaning": "shell money"
+      }
+    ],
+    "meaningStory": "Bills pile on top of shell money: every trip has an expense.",
+    "readings": [
+      {
+        "reading": "ひ",
+        "story": "He pays the expense: he sounds like ひ.",
+        "anchorId": "kanji-context-ryohi"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9001",
+    "components": [
+      {
+        "symbol": "关",
+        "meaning": "parcel"
+      },
+      {
+        "symbol": "⻌",
+        "meaning": "road"
+      }
+    ],
+    "meaningStory": "Carry a parcel along the road to send or escort it.",
+    "readings": [
+      {
+        "reading": "おく",
+        "story": "Send the parcel past the oak: oak sounds like おく.",
+        "anchorId": "kanji-context-okuru"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8cea",
+    "components": [
+      {
+        "symbol": "斤",
+        "meaning": "axe"
+      },
+      {
+        "symbol": "斤",
+        "meaning": "axe"
+      },
+      {
+        "symbol": "貝",
+        "meaning": "shell money"
+      }
+    ],
+    "meaningStory": "Two axes inspect shell money closely to judge its quality and substance.",
+    "readings": [
+      {
+        "reading": "しつ",
+        "story": "Sheets are checked for fabric quality: sheets sounds like しつ.",
+        "anchorId": "vocab-f5d831590911"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-554f",
+    "components": [
+      {
+        "symbol": "門",
+        "meaning": "gate"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "A mouth at the gate calls out a question before entering.",
+    "readings": [
+      {
+        "reading": "もん",
+        "story": "A monster at the gate asks a question: monster begins with もん.",
+        "anchorId": "vocab-f5d831590911"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-56f3",
+    "components": [
+      {
+        "symbol": "囗",
+        "meaning": "enclosure"
+      },
+      {
+        "symbol": "⺍",
+        "meaning": "knowledge sparks"
+      },
+      {
+        "symbol": "乂",
+        "meaning": "crossed strokes"
+      }
+    ],
+    "meaningStory": "Landmarks and crossed routes drawn inside a border make a map or diagram.",
+    "readings": [
+      {
+        "reading": "ず",
+        "story": "Zoom into the map: zoom begins with ず.",
+        "anchorId": "vocab-3c687e40b035"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9928",
+    "components": [
+      {
+        "symbol": "飠",
+        "meaning": "food"
+      },
+      {
+        "symbol": "官",
+        "meaning": "official building"
+      }
+    ],
+    "meaningStory": "An official building large enough to serve food becomes a public hall or venue.",
+    "readings": [
+      {
+        "reading": "かん",
+        "story": "A canteen belongs in a large building: canteen begins with かん.",
+        "anchorId": "vocab-ca8d0efe19a3"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5e2d",
+    "components": [
+      {
+        "symbol": "广",
+        "meaning": "shelter"
+      },
+      {
+        "symbol": "巾",
+        "meaning": "cloth mat"
+      }
+    ],
+    "meaningStory": "A cloth mat under a shelter marks your seat.",
+    "readings": [
+      {
+        "reading": "せき",
+        "story": "Secure your seat: secure begins with せき.",
+        "anchorId": "kanji-context-kesseki"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8abf",
+    "components": [
+      {
+        "symbol": "言",
+        "meaning": "words"
+      },
+      {
+        "symbol": "周",
+        "meaning": "circuit"
+      }
+    ],
+    "meaningStory": "Circle a subject with words to investigate, check, and fine-tune every detail.",
+    "readings": [
+      {
+        "reading": "しら",
+        "story": "She writes a report after checking: “she writes” starts like しら.",
+        "anchorId": "kanji-context-shiraberu"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8aac",
+    "components": [
+      {
+        "symbol": "言",
+        "meaning": "words"
+      },
+      {
+        "symbol": "兌",
+        "meaning": "exchange"
+      }
+    ],
+    "meaningStory": "Exchange clear words until an opinion becomes an explanation.",
+    "readings": [
+      {
+        "reading": "せつ",
+        "story": "Set out the explanation step by step: set sounds like せつ.",
+        "anchorId": "kanji-context-setsumei"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-899a",
+    "components": [
+      {
+        "symbol": "⺍",
+        "meaning": "knowledge sparks"
+      },
+      {
+        "symbol": "冖",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "見",
+        "meaning": "see"
+      }
+    ],
+    "meaningStory": "See the learning sparks under the roof and fix them in memory.",
+    "readings": [
+      {
+        "reading": "おぼ",
+        "story": "“Oh boy, remember this!” Oh boy starts like おぼ.",
+        "anchorId": "vocab-0ec838cc07ea"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5fd8",
+    "components": [
+      {
+        "symbol": "亡",
+        "meaning": "lost"
+      },
+      {
+        "symbol": "心",
+        "meaning": "heart"
+      }
+    ],
+    "meaningStory": "When something is lost from the heart, you forget it.",
+    "readings": [
+      {
+        "reading": "わす",
+        "story": "Was it forgotten? “Was” points to わす.",
+        "anchorId": "vocab-53c63c8d3e25"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7b54",
+    "components": [
+      {
+        "symbol": "竹",
+        "meaning": "bamboo slips"
+      },
+      {
+        "symbol": "合",
+        "meaning": "fit"
+      }
+    ],
+    "meaningStory": "Arrange bamboo slips until the right pieces fit: that is the answer.",
+    "readings": [
+      {
+        "reading": "こた",
+        "story": "The coat answers the weather problem: coat starts like こた.",
+        "anchorId": "vocab-b4624c258f50"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5bbf",
+    "components": [
+      {
+        "symbol": "宀",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "佰",
+        "meaning": "hundred people"
+      }
+    ],
+    "meaningStory": "A roof that can shelter a hundred people is an inn or lodging.",
+    "readings": [
+      {
+        "reading": "しゅく",
+        "story": "A shoe queue forms outside the inn: “shoe queue” recalls しゅく.",
+        "anchorId": "vocab-f26f501fa1c2"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-984c",
+    "components": [
+      {
+        "symbol": "是",
+        "meaning": "correct statement"
+      },
+      {
+        "symbol": "頁",
+        "meaning": "head"
+      }
+    ],
+    "meaningStory": "Keep the correct statement at the head of the page as its topic or title.",
+    "readings": [
+      {
+        "reading": "だい",
+        "story": "A diagram presents the topic: diagram begins with だい.",
+        "anchorId": "vocab-f26f501fa1c2"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6b20",
+    "components": [
+      {
+        "symbol": "人",
+        "meaning": "person"
+      },
+      {
+        "symbol": "乛",
+        "meaning": "missing piece"
+      }
+    ],
+    "meaningStory": "A person reaches toward a missing piece and feels its lack.",
+    "readings": [
+      {
+        "reading": "けつ",
+        "story": "In 欠席（けっせき）, けつ contracts to けっ: the missing seat cuts the sound short.",
+        "anchorId": "kanji-context-kesseki",
+        "anchorReading": "けっ"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-697d",
+    "components": [
+      {
+        "symbol": "幺",
+        "meaning": "thread"
+      },
+      {
+        "symbol": "木",
+        "meaning": "tree"
+      }
+    ],
+    "meaningStory": "Strings stretched over wood make music that brings comfort and fun.",
+    "readings": [
+      {
+        "reading": "がく",
+        "story": "Gaku plays music: Gaku gives がく.",
+        "anchorId": "vocab-83b219893eca"
+      },
+      {
+        "reading": "たの",
+        "story": "Ta-da! The music is fun: ta-da points to たの.",
+        "anchorId": "vocab-9cc2d4a9bbe1"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-60b2",
+    "components": [
+      {
+        "symbol": "非",
+        "meaning": "everything wrong"
+      },
+      {
+        "symbol": "心",
+        "meaning": "heart"
+      }
+    ],
+    "meaningStory": "When everything feels wrong above the heart, it becomes sad and grieves.",
+    "readings": [
+      {
+        "reading": "かな",
+        "story": "Can a heart bear this sadness? “Can a” sounds like かな.",
+        "anchorId": "kanji-context-kanashii"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-610f",
+    "components": [
+      {
+        "symbol": "音",
+        "meaning": "sound"
+      },
+      {
+        "symbol": "心",
+        "meaning": "heart"
+      }
+    ],
+    "meaningStory": "A sound reaches the heart and becomes an idea, intention, or meaning.",
+    "readings": [
+      {
+        "reading": "い",
+        "story": "“E!” is the sound of a sudden idea: E sounds like い.",
+        "anchorId": "vocab-b549323b238f"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-767a",
+    "components": [
+      {
+        "symbol": "癶",
+        "meaning": "two departing feet"
+      },
+      {
+        "symbol": "开",
+        "meaning": "open gate"
+      }
+    ],
+    "meaningStory": "Two feet spring from a launch platform at the moment of departure.",
+    "readings": [
+      {
+        "reading": "はつ",
+        "story": "In 発表（はっぴょう）, はつ contracts to はっ: the announcement bursts out and cuts the sound short.",
+        "anchorId": "kanji-context-happyou",
+        "anchorReading": "はっ"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8868",
+    "components": [
+      {
+        "symbol": "龶",
+        "meaning": "sprout"
+      },
+      {
+        "symbol": "衣",
+        "meaning": "clothes"
+      }
+    ],
+    "meaningStory": "A sign displayed on the outside of clothes presents information on the surface.",
+    "readings": [
+      {
+        "reading": "ひょう",
+        "story": "In 発表（はっぴょう）, ひょう voices to ぴょう: the displayed announcement makes the sound pop.",
+        "anchorId": "kanji-context-happyou",
+        "anchorReading": "ぴょう"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5473",
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "未",
+        "meaning": "not yet"
+      }
+    ],
+    "meaningStory": "The mouth tests food that is not yet ripe and discovers its flavor.",
+    "readings": [
+      {
+        "reading": "み",
+        "story": "Me? I taste the flavor: me sounds like み.",
+        "anchorId": "vocab-b549323b238f"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-81ea",
+    "components": [
+      {
+        "symbol": "自",
+        "meaning": "pointing at one's nose"
+      }
+    ],
+    "meaningStory": "Pointing at your own nose means oneself or self.",
+    "readings": [
+      {
+        "reading": "じ",
+        "story": "Gee, that is me myself! Gee sounds like じ.",
+        "anchorId": "vocab-7cc10603c197"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5b9a",
+    "components": [
+      {
+        "symbol": "宀",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "疋",
+        "meaning": "correct path"
+      }
+    ],
+    "meaningStory": "Under a roof, choose the correct path and determine a fixed plan.",
+    "readings": [
+      {
+        "reading": "てい",
+        "story": "They determine the plan: they sounds like てい.",
+        "anchorId": "kanji-context-yotei"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8cc7",
+    "components": [
+      {
+        "symbol": "次",
+        "meaning": "next in line"
+      },
+      {
+        "symbol": "貝",
+        "meaning": "shell money"
+      }
+    ],
+    "meaningStory": "Shell money saved for what comes next becomes a useful asset or resource.",
+    "readings": [
+      {
+        "reading": "し",
+        "story": "She owns the assets: she sounds like し.",
+        "anchorId": "kanji-context-shiryou"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6821",
+    "components": [
+      {
+        "symbol": "木",
+        "meaning": "tree"
+      },
+      {
+        "symbol": "交",
+        "meaning": "exchange"
+      }
+    ],
+    "meaningStory": "At school, people exchange ideas beside a tree before an exam.",
+    "readings": [
+      {
+        "reading": "こう",
+        "story": "A cohort studies at school: cohort begins with こう.",
+        "anchorId": "vocab-42edc1b83779"
+      }
+    ]
+  }
+]

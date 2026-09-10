@@ -136,6 +136,7 @@
           kanjiMeaning: metadata.meaning,
           onReadings: Array.isArray(metadata.onReadings) ? metadata.onReadings : [],
           kunReadings: Array.isArray(metadata.kunReadings) ? metadata.kunReadings : [],
+          ...(metadata.mnemonic ? { mnemonic: metadata.mnemonic } : {}),
           ...(word.scope === "kanji-context"
             ? { kanjiContextId: word.id }
             : { vocabularyId: word.id }),

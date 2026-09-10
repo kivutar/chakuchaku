@@ -84,6 +84,8 @@ test("committed French catalogs completely cover canonical content", async () =>
     grammar,
     vocabulary,
     kanji,
+    kanjiComponents,
+    kanjiMnemonics,
     vocabularyExamples,
     englishUi,
     frenchUi,
@@ -91,12 +93,16 @@ test("committed French catalogs completely cover canonical content", async () =>
     localizedGrammar,
     localizedVocabulary,
     localizedKanji,
+    localizedKanjiComponents,
+    localizedKanjiMnemonics,
     localizedVocabularyExamples
   ] = await Promise.all([
     readJson("data/source/exercises.json"),
     readJson("data/jlpt-n5-grammar.json"),
     readJson("data/jlpt-n5-vocabulary.json"),
     readJson("data/jlpt-n5-kanji.json"),
+    readJson("data/source/kanji-components.json"),
+    readJson("data/source/kanji-mnemonics.json"),
     readJson("data/source/vocabulary-examples.json"),
     readJson("locales/en.json"),
     readJson("locales/fr.json"),
@@ -104,6 +110,8 @@ test("committed French catalogs completely cover canonical content", async () =>
     readJson("data/source/locales/fr/grammar.json"),
     readJson("data/source/locales/fr/vocabulary.json"),
     readJson("data/source/locales/fr/kanji.json"),
+    readJson("data/source/locales/fr/kanji-components.json"),
+    readJson("data/source/locales/fr/kanji-mnemonics.json"),
     readJson("data/source/locales/fr/vocabulary-examples.json")
   ]);
 
@@ -113,12 +121,16 @@ test("committed French catalogs completely cover canonical content", async () =>
     grammar,
     vocabulary,
     kanji,
+    kanjiComponents,
+    kanjiMnemonics,
     vocabularyExamples,
     localizations: {
       exercises: localizedExercises,
       grammar: localizedGrammar,
       vocabulary: localizedVocabulary,
       kanji: localizedKanji,
+      "kanji-components": localizedKanjiComponents,
+      "kanji-mnemonics": localizedKanjiMnemonics,
       "vocabulary-examples": localizedVocabularyExamples
     }
   }), []);

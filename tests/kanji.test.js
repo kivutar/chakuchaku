@@ -62,13 +62,18 @@ function createFixturePool() {
 }
 
 test("the complete kanji curriculum exposes all 209 characters through word contexts", async () => {
-  const [kanji, vocabulary, contexts, examples] = await Promise.all([
+  const [kanji, mnemonics, vocabulary, contexts, examples] = await Promise.all([
     readFile(new URL("../data/jlpt-n5-kanji.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../data/kanji-mnemonics.json", import.meta.url), "utf8").then(JSON.parse),
     readFile(new URL("../data/jlpt-n5-vocabulary.json", import.meta.url), "utf8").then(JSON.parse),
     readFile(new URL("../data/kanji-contexts.json", import.meta.url), "utf8").then(JSON.parse),
     readFile(new URL("../data/vocabulary-examples.json", import.meta.url), "utf8").then(JSON.parse)
   ]);
-  const pool = createExercisePool(kanji, [...vocabulary, ...contexts]);
+  const mnemonicsById = new Map(mnemonics.map((entry) => [entry.kanjiId, entry]));
+  const pool = createExercisePool(kanji.map((entry) => ({
+    ...entry,
+    ...(mnemonicsById.has(entry.id) ? { mnemonic: mnemonicsById.get(entry.id) } : {})
+  })), [...vocabulary, ...contexts]);
   const inventory = getKanjiInventory(pool);
   const exampleIds = new Set(examples.map(({ vocabularyId }) => vocabularyId));
 
@@ -95,6 +100,11 @@ test("the complete kanji curriculum exposes all 209 characters through word cont
     ...seven,
     direction: directions.kanjiToReading
   }, "nana").correct, true);
+
+  const talk = pool.find(({ character, term }) => character === "話" && term === "話す");
+
+  assert.equal(talk.mnemonic.readings[0].anchorId, "vocab-0b969a8c0944");
+  assert.equal(talk.mnemonic.components[1].symbol, "舌");
 });
 
 test("kanji-only contexts do not create vocabulary SRS ratings", async () => {

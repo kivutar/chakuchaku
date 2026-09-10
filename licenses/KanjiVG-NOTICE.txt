@@ -1,0 +1,11 @@
+KanjiVG: Kanji Vector Graphics
+
+Copyright Ulrich Apel.
+https://kanjivg.tagaini.net/
+
+KanjiVG component metadata was used as a reference when authoring the visual
+decompositions in data/source/kanji-mnemonics.json. The mnemonic stories and
+reading associations were newly authored for ChakuChaku.
+
+KanjiVG is distributed under the Creative Commons Attribution-ShareAlike 3.0
+license. A copy is included in KanjiVG-CC-BY-SA-3.0.txt.
