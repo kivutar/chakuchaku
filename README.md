@@ -81,7 +81,7 @@ Development-time generation is split from the browser runtime:
 | `data/jlpt-n5-grammar.json` | Canonical flat JLPT N5 grammar inventory | Committed |
 | `data/jlpt-n5-conjugation.json` | Curated N5 verbs/adjectives and their inflection classes | Committed |
 | `data/grammar-coverage.md` | Generated checklist of grammar points covered by exercises | Committed |
-| `data/jlpt-n5-vocabulary.json` | Synthetic N5 vocabulary core plus labeled learner favorites | Committed |
+| `data/jlpt-n5-vocabulary.json` | Synthetic N5 vocabulary core, learner favorites, and reading-level whole-word exceptions | Committed |
 | `data/source/rikkyo-n5-kanji.json` | Rikkyo's staged 209-character N5-equivalent curriculum | Committed |
 | `data/jlpt-n5-kanji.json` | Generated kanji metadata used by lessons and Statistics | Committed |
 | `data/kanji-contexts.json` | Kanji-only example words for curriculum coverage gaps | Committed |
@@ -365,6 +365,12 @@ connects them to its meaning, useful N5 reading mnemonics, and one localized
 anchor word for each reading. These are learner-facing visual associations, not
 historical etymologies.
 
+Readings marked `type: "whole-word"` on a vocabulary entry are never treated as
+evidence for an individual character and never enter the Kanji exercise pool.
+Their vocabulary result instead shows one hybrid card: the meaning and visual
+composition of every constituent Kanji, followed by the indivisible reading and
+its word-level mnemonic. Its review updates the vocabulary card only.
+
 ## Learning statistics
 
 Displaying an exercise records one encounter for every assessed grammar or
@@ -537,7 +543,7 @@ For a browser check, run `npm start` and verify:
 11. Statistics opens on the current section, counts completed Grammar, Conjugation, Hiragana, Katakana, Kanji, and Vocabulary exercises in the global overview, and includes every scheduled-item rating in its recent results and 14-day chart. Every scheduled section has status filters. History groups attempts by local calendar day, shows seven days at a time, and lazily expands one day with at most 50 attempts per page. Each attempt shows its answer plus green successful and red failed item tags.
 12. In Katakana, the seven-prompt cadence includes one Hiragana-to-Katakana exercise; its result grades each aligned pair and updates both scripts in SRS and Statistics.
 13. One Katakana recognition slot shows a single learning item and asks for rōmaji. Contracted and foreign-sound units stay together, while context-only `ッ` and `ー` remain word-only.
-14. In Vocabulary, consecutive completed prompts alternate Japanese-to-English and English-to-Japanese. Correct and incorrect answers each update one word card, and pressing Enter submits then advances from the result.
+14. In Vocabulary, consecutive completed prompts alternate Japanese-to-English and English-to-Japanese. Correct and incorrect answers each update one word card, and pressing Enter submits then advances from the result. For 明日 and 明後日, verify that the result identifies the 熟字訓, explains that the reading cannot be split, and shows each Kanji's compact composition in English and French.
 15. In Kanji, consecutive completed prompts alternate complete-word reading and missing-character recall. The hidden meaning hint never reveals the answer, audio appears only with the solution, and changing the self-assessment changes the one Kanji card saved on advance. Every result shows a localized mnemonic card with components, a meaning story, reading aids, and an anchor word; verify it in light and dark mode on a narrow viewport.
 16. In Conjugation, enter written Japanese, hiragana, or rōmaji for the requested form. The result advances with Enter and updates exactly one reusable conjugation-point card.
 

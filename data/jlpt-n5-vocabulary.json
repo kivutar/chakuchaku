@@ -136,6 +136,15 @@
     "term": "明後日",
     "reading": "あさって",
     "meaning": "day after tomorrow",
+    "specialReadings": [
+      {
+        "reading": "あさって",
+        "type": "whole-word",
+        "category": "jukujikun",
+        "meaningStory": "Read the spelling as 明日, tomorrow, with 後, after: the day after tomorrow.",
+        "readingStory": "The day after tomorrow, ASA turns the calendar twice. ASA plus the sharp T in turns cues あさって."
+      }
+    ],
     "scope": "core",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
@@ -163,6 +172,15 @@
     "term": "明日",
     "reading": "あした",
     "meaning": "tomorrow",
+    "specialReadings": [
+      {
+        "reading": "あした",
+        "type": "whole-word",
+        "category": "jukujikun",
+        "meaningStory": "The spelling combines 明, bright, and 日, day: picture tomorrow as the bright day ahead.",
+        "readingStory": "Tomorrow, ASH will TAP at the window: ASH plus TA points to あした."
+      }
+    ],
     "scope": "core",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"

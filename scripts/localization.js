@@ -155,6 +155,59 @@ function validateVocabulary(sources, localizations, errors, locale) {
     ) {
       errors.push(`${source.id}: ${language} accepted answers must be unique.`);
     }
+
+    const specialReadings = source.specialReadings;
+    const localizedSpecialReadings = localized.specialReadings;
+
+    if (specialReadings === undefined) {
+      if (localizedSpecialReadings !== undefined) {
+        errors.push(`${source.id}: ${language} has unexpected special readings.`);
+      }
+      continue;
+    }
+
+    if (
+      !Array.isArray(specialReadings) ||
+      specialReadings.length === 0 ||
+      specialReadings.some((note) => (
+        !isNonemptyString(note?.reading) ||
+        note.type !== "whole-word" ||
+        !isNonemptyString(note.category) ||
+        !isNonemptyString(note.meaningStory) ||
+        !isNonemptyString(note.readingStory)
+      )) ||
+      new Set(specialReadings.map(({ reading }) => reading)).size !== specialReadings.length
+    ) {
+      errors.push(`${source.id}: canonical special readings are invalid.`);
+      continue;
+    }
+
+    const expectedReadings = new Set(specialReadings.map(({ reading }) => reading));
+    const localizedReadings = localizedSpecialReadings &&
+      typeof localizedSpecialReadings === "object" &&
+      !Array.isArray(localizedSpecialReadings)
+      ? Object.keys(localizedSpecialReadings)
+      : [];
+
+    if (
+      localizedReadings.length !== expectedReadings.size ||
+      localizedReadings.some((reading) => !expectedReadings.has(reading))
+    ) {
+      errors.push(`${source.id}: ${language} special readings do not match.`);
+      continue;
+    }
+
+    for (const [reading, note] of Object.entries(localizedSpecialReadings)) {
+      if (!isNonemptyString(note?.meaningStory) || !isNonemptyString(note?.readingStory)) {
+        errors.push(`${source.id}:${reading}: ${language} special-reading stories are required.`);
+      }
+
+      for (const key of Object.keys(note || {})) {
+        if (!["meaningStory", "readingStory"].includes(key)) {
+          errors.push(`${source.id}:${reading}: ${language} special reading has unknown field ${key}.`);
+        }
+      }
+    }
   }
 }
 

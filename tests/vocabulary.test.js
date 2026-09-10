@@ -322,6 +322,30 @@ test("the vocabulary pool carries only packaged M4A narration paths", () => {
   assert.equal(legacyWav.audio, undefined);
 });
 
+test("the vocabulary pool retains reading-level whole-word notes", () => {
+  const specialReadings = [{
+    reading: "あした",
+    type: "whole-word",
+    category: "jukujikun",
+    meaningStory: "The bright day ahead.",
+    readingStory: "ASH plus TA."
+  }];
+  const [entry] = createVocabularyPool([{
+    id: "tomorrow",
+    term: "明日",
+    reading: "あした",
+    meaning: "tomorrow",
+    scope: "core",
+    specialReadings
+  }]);
+
+  assert.deepEqual(entry.specialReadings, specialReadings);
+  assert.deepEqual(
+    chooseExercise([entry], "tomorrow", directions.japaneseToEnglish).specialReadings,
+    specialReadings
+  );
+});
+
 test("curated English gloss alternatives are accepted mechanically", () => {
   assert.deepEqual(createEnglishAnswers("to meet, to see"), [
     "to meet to see",

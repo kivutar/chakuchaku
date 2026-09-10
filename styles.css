@@ -2474,6 +2474,104 @@ main {
   font-weight: 750;
 }
 
+.whole-word-reading-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.whole-word-reading-category {
+  padding: 0.16rem 0.4rem;
+  border: 1px solid rgb(93 111 75 / 25%);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 55%);
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.whole-word-reading-keyword span {
+  font-size: 1.05rem;
+}
+
+.whole-word-reading-explanation,
+.whole-word-reading-subheading,
+.whole-word-kanji-keyword,
+.whole-word-kanji-story {
+  margin: 0;
+}
+
+.whole-word-reading-explanation {
+  margin-top: 0.52rem;
+  color: #5d6554;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.whole-word-reading-subheading {
+  margin-top: 0.72rem;
+  color: #46523a;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.whole-word-kanji-list {
+  display: grid;
+  margin-top: 0.42rem;
+  gap: 0.45rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 8.5rem), 1fr));
+}
+
+.whole-word-kanji {
+  padding: 0.58rem;
+  border: 1px solid rgb(93 111 75 / 22%);
+  border-radius: 0.58rem;
+  background: rgb(255 255 255 / 42%);
+}
+
+.whole-word-kanji-keyword {
+  color: #526044;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.whole-word-kanji-keyword span {
+  color: #354129;
+  font-size: 1.08rem;
+}
+
+.whole-word-kanji-components {
+  margin-top: 0.38rem;
+}
+
+.whole-word-kanji-components li {
+  min-height: 1.65rem;
+  padding-right: 0.42rem;
+  font-size: 0.66rem;
+}
+
+.whole-word-kanji-components .kanji-mnemonic-component-symbol {
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 0.8rem;
+}
+
+.whole-word-kanji-story {
+  margin-top: 0.42rem;
+  color: #5d6554;
+  font-size: 0.7rem;
+  line-height: 1.42;
+}
+
+.whole-word-reading-story strong {
+  color: #46523a;
+  font-weight: 750;
+}
+
 .phrase {
   display: inline-block;
 }
@@ -3590,6 +3688,27 @@ html[data-furigana="false"] rt {
   .kanji-mnemonic-reading,
   .kanji-mnemonic-anchor {
     color: #bdc8ae;
+  }
+
+  .whole-word-reading-category,
+  .whole-word-kanji {
+    border-color: rgb(176 197 143 / 25%);
+    background: rgb(255 255 255 / 7%);
+  }
+
+  .whole-word-reading-explanation,
+  .whole-word-kanji-story {
+    color: #bdc8ae;
+  }
+
+  .whole-word-reading-subheading,
+  .whole-word-kanji-keyword,
+  .whole-word-reading-story strong {
+    color: #c8d8ae;
+  }
+
+  .whole-word-kanji-keyword span {
+    color: #eef4e5;
   }
 
   :is(

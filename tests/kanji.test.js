@@ -11,6 +11,7 @@ const {
   directions,
   normalizeReading,
   normalizeKanjiAnswer,
+  isWholeWordReading,
   createExercisePool,
   getKanjiInventory,
   getNextDirection,
@@ -83,6 +84,8 @@ test("the complete kanji curriculum exposes all 209 characters through word cont
   assert.ok(pool.some(({ character, term }) => character === "田" && term === "田んぼ"));
   assert.ok(pool.some(({ character, term }) => character === "和" && term === "和室"));
   assert.ok(pool.some(({ character, term }) => character === "資" && term === "資料"));
+  assert.equal(pool.some(({ term }) => term === "明日"), false);
+  assert.equal(pool.some(({ term }) => term === "明後日"), false);
   assert.ok(pool.every(({ vocabularyId, kanjiContextId }) => {
     return exampleIds.has(vocabularyId || kanjiContextId);
   }));
@@ -152,6 +155,42 @@ test("kanji pools retain word context and mask only the scheduled character", ()
     audio: "assets/voices/vocab/gakkou.m4a",
     kanjiIds: ["kanji-study", "kanji-school"]
   });
+});
+
+test("whole-word readings do not become individual kanji exercises", () => {
+  const kanji = [{
+    id: "kanji-bright",
+    character: "明",
+    stage: "B6",
+    meaning: "bright",
+    onReadings: ["めい"],
+    kunReadings: ["あか"]
+  }, {
+    id: "kanji-day",
+    character: "日",
+    stage: "B6",
+    meaning: "day",
+    onReadings: ["にち"],
+    kunReadings: ["ひ"]
+  }];
+  const tomorrow = {
+    id: "vocabulary-tomorrow",
+    term: "明日",
+    reading: "あした",
+    meaning: "tomorrow",
+    scope: "core",
+    partOfSpeech: "noun",
+    specialReadings: [{
+      reading: "あした",
+      type: "whole-word",
+      category: "jukujikun",
+      meaningStory: "Bright day ahead.",
+      readingStory: "ASH plus TA."
+    }]
+  };
+
+  assert.equal(isWholeWordReading(tomorrow), true);
+  assert.deepEqual(createExercisePool(kanji, [tomorrow]), []);
 });
 
 test("a successful full-word reading can reinforce its vocabulary positively", () => {

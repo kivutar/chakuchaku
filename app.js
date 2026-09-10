@@ -2573,6 +2573,17 @@ async function loadVocabularyData() {
       return translation ? [[locale, translation]] : [];
     }));
     const localized = translations[activeLocale] || translations[defaultLocale];
+    const localizedSpecialReadings = localized.specialReadings &&
+      typeof localized.specialReadings === "object" &&
+      !Array.isArray(localized.specialReadings)
+      ? localized.specialReadings
+      : {};
+    const specialReadings = Array.isArray(entry.specialReadings)
+      ? entry.specialReadings.map((specialReading) => ({
+          ...specialReading,
+          ...(localizedSpecialReadings[specialReading.reading] || {})
+        }))
+      : [];
 
     return {
       ...entry,
@@ -2580,7 +2591,8 @@ async function loadVocabularyData() {
       canonicalMeaning: entry.meaning,
       translations,
       meaning: localized.meaning,
-      acceptedTranslationAnswers: localized.acceptedAnswers
+      acceptedTranslationAnswers: localized.acceptedAnswers,
+      specialReadings
     };
   });
   const entriesById = new Map(localizedVocabulary.map((entry) => [entry.id, entry]));
@@ -3103,9 +3115,27 @@ async function pickNextVocabularyExercise(requestedVocabularyId) {
       .map((character) => kanjiIdByCharacter.get(character))
       .filter(Boolean)
   )];
+  const specialReading = currentSpecialReading(exercise);
+
+  if (specialReading?.type === "whole-word") {
+    exercise.wholeWordReading = {
+      ...specialReading,
+      kanji: [...new Set([...exercise.term])]
+        .map((character) => kanjiEntriesById.get(
+          kanjiIdByCharacter.get(character)
+        ))
+        .filter(Boolean)
+    };
+  }
   vocabularyById ||= entriesById;
   kanjiById ||= kanjiEntriesById;
   return exercise;
+}
+
+function currentSpecialReading(entry) {
+  return Array.isArray(entry?.specialReadings)
+    ? entry.specialReadings.find(({ reading }) => reading === entry.reading)
+    : undefined;
 }
 
 async function pickNextKanjiExercise(requestedKanjiId) {
@@ -4233,6 +4263,129 @@ function createVocabularyExampleElement(example) {
   return section;
 }
 
+function createWholeWordKanjiElement(kanji) {
+  const item = document.createElement("article");
+  const keyword = document.createElement("p");
+  const character = document.createElement("span");
+
+  item.className = "whole-word-kanji";
+  keyword.className = "whole-word-kanji-keyword";
+  character.lang = "ja";
+  character.textContent = kanji.character;
+  keyword.append(character, ` — ${kanji.meaning}`);
+  item.append(keyword);
+
+  if (Array.isArray(kanji.mnemonic?.components) && kanji.mnemonic.components.length > 0) {
+    item.append(createKanjiComponentsElement(
+      kanji.mnemonic.components,
+      "whole-word-kanji-components"
+    ));
+  }
+
+  if (kanji.mnemonic?.meaningStory) {
+    const story = document.createElement("p");
+
+    story.className = "whole-word-kanji-story";
+    story.textContent = kanji.mnemonic.meaningStory;
+    item.append(story);
+  }
+
+  return item;
+}
+
+function createWholeWordReadingElement(exercise) {
+  const specialReading = exercise?.wholeWordReading;
+
+  if (!specialReading?.meaningStory || !specialReading?.readingStory) {
+    return undefined;
+  }
+
+  const card = document.createElement("section");
+  const heading = document.createElement("h3");
+  const category = document.createElement("span");
+  const keyword = document.createElement("p");
+  const word = document.createElement("span");
+  const explanation = document.createElement("p");
+  const compositionHeading = document.createElement("h4");
+  const composition = document.createElement("div");
+  const meaningStory = document.createElement("p");
+  const readingStory = document.createElement("p");
+  const meaningLabel = document.createElement("strong");
+  const readingLabel = document.createElement("strong");
+
+  card.className = "kanji-mnemonic whole-word-reading";
+  card.lang = getUserLocale();
+  heading.className = "kanji-mnemonic-heading whole-word-reading-heading";
+  heading.textContent = t("exercise.wholeWordReading");
+  category.className = "whole-word-reading-category";
+  const categoryKey = `exercise.readingCategory.${specialReading.category}`;
+  const categoryLabel = t(categoryKey);
+
+  category.textContent = categoryLabel === categoryKey
+    ? specialReading.category
+    : categoryLabel;
+  heading.setAttribute(
+    "aria-label",
+    `${t("exercise.wholeWordReading")}: ${category.textContent}`
+  );
+  heading.append(category);
+  keyword.className = "kanji-mnemonic-keyword whole-word-reading-keyword";
+  word.lang = "ja";
+  word.textContent = `${exercise.term}（${specialReading.reading}）`;
+  keyword.append(word, ` — ${exercise.meaning}`);
+  explanation.className = "whole-word-reading-explanation";
+  explanation.textContent = t("exercise.wholeWordReadingExplanation", {
+    reading: specialReading.reading,
+    term: exercise.term
+  });
+  compositionHeading.className = "whole-word-reading-subheading";
+  compositionHeading.textContent = t("exercise.wordComposition");
+  composition.className = "whole-word-kanji-list";
+
+  for (const kanji of specialReading.kanji || []) {
+    composition.append(createWholeWordKanjiElement(kanji));
+  }
+
+  meaningStory.className = "kanji-mnemonic-story whole-word-reading-story";
+  meaningLabel.textContent = `${t("exercise.wordMeaningMnemonic")} `;
+  meaningStory.append(meaningLabel, specialReading.meaningStory);
+  readingStory.className = "kanji-mnemonic-reading whole-word-reading-story";
+  readingLabel.textContent = `${t("exercise.wordReadingMnemonic")} `;
+  readingStory.append(readingLabel, specialReading.readingStory);
+  card.append(heading, keyword, explanation);
+
+  if (composition.childElementCount > 0) {
+    card.append(compositionHeading, composition);
+  }
+
+  card.append(meaningStory, readingStory);
+  return card;
+}
+
+function createKanjiComponentsElement(componentEntries, extraClass = "") {
+  const components = document.createElement("ul");
+
+  components.className = ["kanji-mnemonic-components", extraClass]
+    .filter(Boolean)
+    .join(" ");
+  components.setAttribute("aria-label", t("exercise.components"));
+
+  for (const component of componentEntries) {
+    const item = document.createElement("li");
+    const symbol = document.createElement("span");
+    const meaning = document.createElement("span");
+
+    symbol.className = "kanji-mnemonic-component-symbol";
+    symbol.lang = "ja";
+    symbol.textContent = component.symbol;
+    meaning.textContent = component.meaning;
+    item.append(symbol, meaning);
+    components.append(item);
+  }
+
+  return components;
+}
+
 function revealVocabularySolution() {
   const result = globalThis.JlptN5Vocabulary.gradeAnswer(
     currentLesson,
@@ -4316,11 +4469,14 @@ function revealVocabularySolution() {
     ratingControl.append(ratingButton);
   }
 
+  const wholeWordReading = createWholeWordReadingElement(currentLesson);
+
   solutionElement.replaceChildren(
     answerRow,
-    createVocabularyExampleElement(currentLesson.example),
     summary,
-    ratingControl
+    ratingControl,
+    ...(wholeWordReading ? [wholeWordReading] : []),
+    createVocabularyExampleElement(currentLesson.example)
   );
   selectVocabularyRating(result.outcome, false);
   actionButton.textContent = t("common.next");
@@ -4408,7 +4564,6 @@ function createKanjiMnemonicElement(mnemonic, character, kanjiMeaning) {
   const heading = document.createElement("h3");
   const keyword = document.createElement("p");
   const target = document.createElement("span");
-  const components = document.createElement("ul");
   const meaningStory = document.createElement("p");
 
   card.className = "kanji-mnemonic";
@@ -4419,25 +4574,14 @@ function createKanjiMnemonicElement(mnemonic, character, kanjiMeaning) {
   target.lang = "ja";
   target.textContent = character;
   keyword.append(target, ` — ${kanjiMeaning}`);
-  components.className = "kanji-mnemonic-components";
-  components.setAttribute("aria-label", t("exercise.components"));
-
-  for (const component of mnemonic.components) {
-    const item = document.createElement("li");
-    const symbol = document.createElement("span");
-    const componentMeaning = document.createElement("span");
-
-    symbol.className = "kanji-mnemonic-component-symbol";
-    symbol.lang = "ja";
-    symbol.textContent = component.symbol;
-    componentMeaning.textContent = component.meaning;
-    item.append(symbol, componentMeaning);
-    components.append(item);
-  }
-
   meaningStory.className = "kanji-mnemonic-story";
   meaningStory.textContent = mnemonic.meaningStory;
-  card.append(heading, keyword, components, meaningStory);
+  card.append(
+    heading,
+    keyword,
+    createKanjiComponentsElement(mnemonic.components),
+    meaningStory
+  );
 
   for (const readingMnemonic of mnemonic.readings || []) {
     const readingStory = document.createElement("p");

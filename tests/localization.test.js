@@ -66,6 +66,50 @@ test("content localization validates exact ids, hints, and accepted answers", ()
   assert.match(validateFrenchContent({ ...sources, localizations }).join("\n"), /not a prompt token/);
 });
 
+test("localized whole-word reading stories mirror canonical readings", () => {
+  const sources = {
+    exercises: [],
+    grammar: [],
+    vocabulary: [{
+      id: "tomorrow",
+      specialReadings: [{
+        reading: "あした",
+        type: "whole-word",
+        category: "jukujikun",
+        meaningStory: "Bright day ahead.",
+        readingStory: "ASH plus TA."
+      }]
+    }],
+    kanji: [],
+    vocabularyExamples: []
+  };
+  const localizations = {
+    exercises: {},
+    grammar: {},
+    vocabulary: {
+      tomorrow: {
+        meaning: "demain",
+        acceptedAnswers: ["demain"],
+        specialReadings: {
+          "あした": {
+            meaningStory: "Le jour clair qui vient.",
+            readingStory: "ACHÈTE À manger."
+          }
+        }
+      }
+    },
+    kanji: {},
+    "vocabulary-examples": {}
+  };
+
+  assert.deepEqual(validateFrenchContent({ ...sources, localizations }), []);
+  delete localizations.vocabulary.tomorrow.specialReadings["あした"].readingStory;
+  assert.match(
+    validateFrenchContent({ ...sources, localizations }).join("\n"),
+    /special-reading stories are required/
+  );
+});
+
 test("UI catalog validation requires matching keys, plurals, and placeholders", () => {
   assert.deepEqual(validateUiCatalogs(
     { greeting: "Hello {name}", count: { one: "{count} item", other: "{count} items" } },

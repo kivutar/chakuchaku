@@ -666,6 +666,9 @@
             ? entry.alternateReadings
             : [],
           variants: Array.isArray(entry.variants) ? entry.variants : [],
+          specialReadings: Array.isArray(entry.specialReadings)
+            ? entry.specialReadings
+            : [],
           canonicalMeaning,
           acceptedTranslationAnswers: createTranslationAnswers(entry, locale),
           acceptedAnswersByLocale: createAcceptedAnswersByLocale(entry, locale),

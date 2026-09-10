@@ -90,7 +90,13 @@
     "meaning": "après-demain",
     "acceptedAnswers": [
       "après-demain"
-    ]
+    ],
+    "specialReadings": {
+      "あさって": {
+        "meaningStory": "Lisez l’écriture comme 明日, « demain », auquel s’ajoute 後, « après » : le jour après demain.",
+        "readingStory": "Après-demain, il A SA TÊTE déjà ailleurs : A SA TÊTE fait entendre あさって."
+      }
+    }
   },
   "vocab-dc84a84458e5": {
     "meaning": "pied; jambe",
@@ -103,7 +109,13 @@
     "meaning": "demain",
     "acceptedAnswers": [
       "demain"
-    ]
+    ],
+    "specialReadings": {
+      "あした": {
+        "meaningStory": "L’écriture réunit 明, « clair », et 日, « jour » : imaginez demain comme le jour clair qui vous attend.",
+        "readingStory": "Demain, ACHÈTE À manger : ACHÈTE À fait entendre あした."
+      }
+    }
   },
   "vocab-5b274f581a57": {
     "meaning": "là-bas; là",

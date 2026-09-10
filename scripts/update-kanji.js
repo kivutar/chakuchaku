@@ -84,12 +84,24 @@ function normalizeForComparison(text, foldVoicing) {
     .normalize("NFC");
 }
 
+function isWholeWordReading(entry, reading = entry?.reading) {
+  return Array.isArray(entry?.specialReadings) && entry.specialReadings.some((note) => {
+    return note?.type === "whole-word" && note.reading === reading;
+  });
+}
+
 function createVocabularyForms(vocabulary) {
-  return vocabulary.flatMap((entry) => [
-    { surface: entry.term, reading: entry.reading },
-    ...(entry.variants || []).map((surface) => ({ surface, reading: entry.reading })),
-    ...(entry.inflections || [])
-  ]);
+  return vocabulary.flatMap((entry) => {
+    if (isWholeWordReading(entry)) {
+      return [];
+    }
+
+    return [
+      { surface: entry.term, reading: entry.reading },
+      ...(entry.variants || []).map((surface) => ({ surface, reading: entry.reading })),
+      ...(entry.inflections || [])
+    ];
+  });
 }
 
 function hasReadingEvidence(

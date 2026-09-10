@@ -32,6 +32,18 @@
       .replace(/[\s・･、。！？!?]+/gu, "");
   }
 
+  function isWholeWordReading(entry, reading = entry?.reading) {
+    const normalizedReading = typeof reading === "string"
+      ? reading.replace(/[～〜]/gu, "")
+      : "";
+
+    return Array.isArray(entry?.specialReadings) && entry.specialReadings.some((note) => {
+      return note?.type === "whole-word" &&
+        typeof note.reading === "string" &&
+        note.reading.replace(/[～〜]/gu, "") === normalizedReading;
+    });
+  }
+
   function createExercisePool(
     kanji,
     vocabulary,
@@ -73,6 +85,7 @@
         ...(Array.isArray(word.alternateReadings) ? word.alternateReadings : [])
       ]
         .filter((reading) => typeof reading === "string" && reading)
+        .filter((reading) => !isWholeWordReading(word, reading))
         .map((reading) => reading.replace(/[～〜]/gu, ""));
 
       if (!term || readings.length === 0) {
@@ -105,7 +118,7 @@
       const term = word.term.replace(/[～〜]/gu, "");
       const reading = word.reading.replace(/[～〜]/gu, "");
 
-      if (!term || !reading) {
+      if (!term || !reading || isWholeWordReading(word, word.reading)) {
         continue;
       }
 
@@ -324,6 +337,7 @@
     activeStages,
     normalizeReading,
     normalizeKanjiAnswer,
+    isWholeWordReading,
     createExercisePool,
     getKanjiInventory,
     getNextDirection,
