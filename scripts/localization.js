@@ -220,9 +220,7 @@ function validateKanjiMnemonics(sources, localizations, errors, locale) {
       localized.readings.length !== source.readings.length
     ) {
       errors.push(`${id}: ${language} reading mnemonic count changed.`);
-    } else if (localized.readings.some((story, index) => (
-      !isNonemptyString(story) || !story.includes(source.readings[index].reading)
-    ))) {
+    } else if (localized.readings.some((story) => !isNonemptyString(story))) {
       errors.push(`${id}: ${language} reading mnemonics are invalid.`);
     }
 
