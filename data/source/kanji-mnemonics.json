@@ -1360,9 +1360,9 @@
     "kanjiId": "kanji-5e74",
     "components": [
       "禾",
-      "干"
+      "人"
     ],
-    "meaningStory": "Hang a harvested grain stalk on the calendar rack to mark one year.",
+    "meaningStory": "In the ancient form, a person carries the grain harvest. From one harvest to the next, the seasons complete a cycle: one year has passed.",
     "readings": [
       {
         "reading": "とし",
@@ -1576,7 +1576,7 @@
       "𠂉",
       "干"
     ],
-    "meaningStory": "A marker reaches the top of the meridian when the sun is at noon.",
+    "meaningStory": "A person plants a sign at noon: before this marker is 午前, and after it is 午後.",
     "readings": [
       {
         "reading": "ご",
@@ -2336,7 +2336,7 @@
       "亻",
       "主"
     ],
-    "meaningStory": "A person chooses one main place in which to dwell and live.",
+    "meaningStory": "A person stops in one place, stays there, and eventually makes it home.",
     "readings": [
       {
         "reading": "す",
@@ -2773,11 +2773,11 @@
       "止",
       "少"
     ],
-    "meaningStory": "A trail of footprints records many small steps: walking.",
+    "meaningStory": "The older form 步 shows one foot following another. In modern 歩, the lower foot is distorted, but the pair still walks step by step.",
     "readings": [
       {
         "reading": "ある",
-        "story": "I'll walk the whole route: “I'll” sounds like ある.",
+        "story": "The two feet walk along a route: “a route” starts like ある.",
         "anchorId": "vocab-a76603aae6e4"
       },
       {

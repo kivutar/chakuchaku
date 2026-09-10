@@ -1737,20 +1737,20 @@
         "meaning": "céréale"
       },
       {
-        "symbol": "干",
-        "meaning": "support"
+        "symbol": "人",
+        "meaning": "personne"
       }
     ],
-    "meaningStory": "Suspendez une tige récoltée au calendrier pour marquer une année.",
+    "meaningStory": "Dans l’ancienne forme, une personne porte la récolte de céréales. D’une récolte à la suivante, les saisons accomplissent un cycle : une année s’est écoulée.",
     "readings": [
       {
         "reading": "とし",
-        "story": "Accrochez le son とし au mot 年（とし）, puis replacez ce mot dans la scène du sens.",
+        "story": "Cette année, la récolte arrive TÔT, SI tôt qu’elle surprend tout le village : TÔT-SI fait entendre とし.",
         "anchorId": "vocab-8438eda3cfc0"
       },
       {
         "reading": "ねん",
-        "story": "Accrochez le son ねん au mot 去年（きょねん）, puis replacez ce mot dans la scène du sens.",
+        "story": "La récolte de cette année est si abondante que la personne portant l’énorme gerbe de céréales paraît NAINE dessous : NAINE fait entendre ねん.",
         "anchorId": "vocab-e7ce924c4696"
       }
     ]
@@ -2017,7 +2017,7 @@
         "meaning": "support"
       }
     ],
-    "meaningStory": "Le marqueur atteint le sommet du méridien lorsque le soleil est à midi.",
+    "meaningStory": "Une personne plante un panneau comme repère de midi : avant ce repère, c’est 午前 ; après, c’est 午後.",
     "readings": [
       {
         "reading": "ご",
@@ -3014,14 +3014,14 @@
       },
       {
         "symbol": "主",
-        "meaning": "lieu principal"
+        "meaning": "maître, principal"
       }
     ],
-    "meaningStory": "Une personne choisit un lieu principal où habiter et vivre.",
+    "meaningStory": "Une personne s’arrête à un endroit, y reste, puis finit par y habiter.",
     "readings": [
       {
         "reading": "す",
-        "story": "Accrochez le son す au mot 住む（すむ）, puis replacez ce mot dans la scène du sens.",
+        "story": "J’habite chez moi et je suis le maître SOUS mon toit. SOUS donne す.",
         "anchorId": "vocab-405805427b97"
       }
     ]
@@ -3585,23 +3585,23 @@
     "components": [
       {
         "symbol": "止",
-        "meaning": "empreinte de pied"
+        "meaning": "pied"
       },
       {
         "symbol": "少",
-        "meaning": "petits pas"
+        "meaning": "second pied déformé"
       }
     ],
-    "meaningStory": "Une piste d’empreintes enregistre de nombreux petits pas : la marche.",
+    "meaningStory": "L’ancienne forme 步 montre un pied qui en suit un autre. Dans 歩, le pied du bas s’est déformé, mais les deux avancent toujours pas à pas.",
     "readings": [
       {
         "reading": "ある",
-        "story": "Accrochez le son ある au mot 歩く（あるく）, puis replacez ce mot dans la scène du sens.",
+        "story": "Je marche avec mes deux pieds — dont un déformé — dans la rue : « la rue » fait entendre ある.",
         "anchorId": "vocab-a76603aae6e4"
       },
       {
         "reading": "ほ",
-        "story": "Dans 散歩（さんぽ）, ほ devient ぽ : rattachez cette variation à la scène du sens.",
+        "story": "À force de marcher, ses pieds finissent SANS PEAU : SANS-PEAU fait entendre さんぽ. Dans 散歩, ほ devient ぽ.",
         "anchorId": "vocab-739ad06f157c",
         "anchorReading": "ぽ"
       }
@@ -4068,7 +4068,7 @@
     "readings": [
       {
         "reading": "かん",
-        "story": "Accrochez le son かん au mot 図書館（としょかん）, puis replacez ce mot dans la scène du sens.",
+        "story": "Gengis KHAN envahit ce grand bâtiment officiel… uniquement parce qu’on y sert un buffet : KHAN donne かん.",
         "anchorId": "vocab-ca8d0efe19a3"
       }
     ]
