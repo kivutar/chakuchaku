@@ -116,11 +116,15 @@
           return {
             section: "kanji",
             exerciseId: attempt.exerciseId,
-            kanjiId: typeof attempt.kanjiId === "string" ? attempt.kanjiId : "",
-            targetCharacter: typeof attempt.targetCharacter === "string"
-              ? attempt.targetCharacter
-              : "",
-            stage: typeof attempt.stage === "string" ? attempt.stage : "",
+            ...(typeof attempt.kanjiId === "string" && attempt.kanjiId
+              ? { kanjiId: attempt.kanjiId }
+              : {}),
+            ...(typeof attempt.targetCharacter === "string" && attempt.targetCharacter
+              ? { targetCharacter: attempt.targetCharacter }
+              : {}),
+            ...(typeof attempt.stage === "string" && attempt.stage
+              ? { stage: attempt.stage }
+              : {}),
             vocabularyId: typeof attempt.vocabularyId === "string"
               ? attempt.vocabularyId
               : "",
@@ -131,6 +135,14 @@
             meaning: typeof attempt.meaning === "string" ? attempt.meaning : "",
             ...getLocaleProperty(attempt.locale),
             direction: typeof attempt.direction === "string" ? attempt.direction : "",
+            ...(attempt.assessmentKind === "vocabulary"
+              ? {
+                assessmentKind: "vocabulary",
+                outcome: ["again", "good"].includes(attempt.outcome)
+                  ? attempt.outcome
+                  : ""
+              }
+              : {}),
             answer: attempt.answer,
             submittedAt: attempt.submittedAt,
             kanjiRatings: normalizeKanjiRatings(attempt.kanjiRatings)
@@ -580,8 +592,11 @@
 
     if (
       exercise?.section !== "kanji" ||
-      typeof exercise.kanjiId !== "string" ||
-      !exercise.kanjiId
+      (
+        exercise.assessmentKind === "vocabulary"
+          ? !Array.isArray(exercise.kanjiIds) || exercise.kanjiIds.length === 0
+          : typeof exercise.kanjiId !== "string" || !exercise.kanjiId
+      )
     ) {
       return stats;
     }
@@ -614,8 +629,17 @@
     if (
       exercise?.section !== "kanji" ||
       typeof exercise.id !== "string" ||
-      typeof exercise.kanjiId !== "string" ||
-      typeof exercise.character !== "string" ||
+      (
+        exercise.assessmentKind !== "vocabulary" &&
+        (
+          typeof exercise.kanjiId !== "string" ||
+          typeof exercise.character !== "string"
+        )
+      ) ||
+      (
+        exercise.assessmentKind === "vocabulary" &&
+        (typeof exercise.vocabularyId !== "string" || !exercise.vocabularyId)
+      ) ||
       typeof exercise.prompt !== "string" ||
       typeof exercise.solution !== "string" ||
       typeof answer !== "string" ||
@@ -629,9 +653,13 @@
     stats.exerciseHistory.push({
       section: "kanji",
       exerciseId: exercise.id,
-      kanjiId: exercise.kanjiId,
-      targetCharacter: exercise.character,
-      stage: exercise.stage,
+      ...(exercise.assessmentKind === "vocabulary"
+        ? {}
+        : {
+          kanjiId: exercise.kanjiId,
+          targetCharacter: exercise.character,
+          stage: exercise.stage
+        }),
       vocabularyId: exercise.vocabularyId,
       text: exercise.prompt,
       solution: exercise.solution,
@@ -640,9 +668,14 @@
       meaning: exercise.meaning,
       ...getLocaleProperty(exercise.locale),
       direction: exercise.direction,
+      ...(exercise.assessmentKind === "vocabulary"
+        ? { assessmentKind: "vocabulary", outcome }
+        : {}),
       answer,
       submittedAt,
-      kanjiRatings: [{ kanjiId: exercise.kanjiId, outcome }]
+      kanjiRatings: exercise.assessmentKind === "vocabulary"
+        ? []
+        : [{ kanjiId: exercise.kanjiId, outcome }]
     });
     stats.updatedAt = submittedAt;
     writeLearningStats(stats, resolvedStorage);
@@ -676,13 +709,20 @@
       }
     }
 
-    if (!attempt?.kanjiId) {
+    if (!attempt) {
       return stats;
     }
 
     const updatedAt = new Date(now).toISOString();
 
-    attempt.kanjiRatings = [{ kanjiId: attempt.kanjiId, outcome }];
+    if (attempt.assessmentKind === "vocabulary") {
+      attempt.outcome = outcome;
+      attempt.kanjiRatings = [];
+    } else if (attempt.kanjiId) {
+      attempt.kanjiRatings = [{ kanjiId: attempt.kanjiId, outcome }];
+    } else {
+      return stats;
+    }
     stats.updatedAt = updatedAt;
     writeLearningStats(stats, resolvedStorage);
     return stats;

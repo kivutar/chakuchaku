@@ -17,6 +17,8 @@ const {
   getNextDirection,
   createAnswerChoices,
   chooseExercise,
+  chooseWholeWordReadingExercise,
+  shouldUseWholeWordReading,
   gradeAnswer,
   createKanjiRating,
   createPositiveVocabularyRating
@@ -81,11 +83,14 @@ test("the complete kanji curriculum exposes all 209 characters through word cont
   assert.deepEqual(activeStages, ["B6", "B5", "B4"]);
   assert.equal(inventory.length, 209);
   assert.deepEqual(new Set(inventory.map(({ stage }) => stage)), new Set(activeStages));
+  assert.equal(inventory.every(({ id }) => {
+    return Boolean(chooseExercise(pool, id, directions.kanjiToReading));
+  }), true);
   assert.ok(pool.some(({ character, term }) => character === "田" && term === "田んぼ"));
   assert.ok(pool.some(({ character, term }) => character === "和" && term === "和室"));
   assert.ok(pool.some(({ character, term }) => character === "資" && term === "資料"));
-  assert.equal(pool.some(({ term }) => term === "明日"), false);
-  assert.equal(pool.some(({ term }) => term === "明後日"), false);
+  assert.ok(pool.some(({ term, wholeWordReading }) => term === "明日" && wholeWordReading));
+  assert.ok(pool.some(({ term, wholeWordReading }) => term === "明後日" && wholeWordReading));
   assert.ok(pool.every(({ vocabularyId, kanjiContextId }) => {
     return exampleIds.has(vocabularyId || kanjiContextId);
   }));
@@ -157,7 +162,7 @@ test("kanji pools retain word context and mask only the scheduled character", ()
   });
 });
 
-test("whole-word readings do not become individual kanji exercises", () => {
+test("whole-word readings support orthography without masquerading as individual readings", () => {
   const kanji = [{
     id: "kanji-bright",
     character: "明",
@@ -190,7 +195,50 @@ test("whole-word readings do not become individual kanji exercises", () => {
   };
 
   assert.equal(isWholeWordReading(tomorrow), true);
-  assert.deepEqual(createExercisePool(kanji, [tomorrow]), []);
+  const pool = createExercisePool(kanji, [tomorrow]);
+
+  assert.equal(pool.length, 2);
+  assert.equal(pool.every(({ wholeWordReading }) => wholeWordReading.reading === "あした"), true);
+  assert.equal(
+    chooseExercise(pool, "kanji-bright", directions.kanjiToReading),
+    undefined
+  );
+
+  const orthography = chooseExercise(
+    pool,
+    "kanji-bright",
+    directions.readingToKanji,
+    { random: () => 0 }
+  );
+
+  assert.equal(orthography.prompt, "□日");
+  assert.equal(orthography.solution, "明");
+
+  const reading = chooseWholeWordReadingExercise(
+    pool,
+    "vocabulary-tomorrow"
+  );
+
+  assert.equal(reading.prompt, "明日");
+  assert.equal(reading.solution, "あした");
+  assert.equal(reading.assessmentKind, "vocabulary");
+  assert.equal(reading.kanjiId, undefined);
+  assert.deepEqual(reading.kanjiIds, ["kanji-bright", "kanji-day"]);
+});
+
+test("whole-word readings use a sparse cadence among kanji reading prompts", () => {
+  const completedReading = {
+    section: "kanji",
+    direction: directions.kanjiToReading,
+    kanjiRatings: [{ kanjiId: "kanji-study", outcome: "good" }]
+  };
+
+  assert.equal(shouldUseWholeWordReading([]), false);
+  assert.equal(shouldUseWholeWordReading(Array(3).fill(completedReading)), false);
+  assert.equal(shouldUseWholeWordReading(Array(4).fill(completedReading)), true);
+  assert.equal(shouldUseWholeWordReading(Array(4).fill(completedReading), {
+    interval: 0
+  }), false);
 });
 
 test("a successful full-word reading can reinforce its vocabulary positively", () => {
@@ -208,6 +256,14 @@ test("a successful full-word reading can reinforce its vocabulary positively", (
     ...exercise,
     direction: directions.readingToKanji
   }, "good"), undefined);
+  assert.deepEqual(createPositiveVocabularyRating({
+    ...exercise,
+    direction: directions.readingToKanji,
+    wholeWordReading: { reading: "あした" }
+  }, "good"), {
+    vocabularyId: "vocabulary-school",
+    outcome: "good"
+  });
 });
 
 test("missing-kanji prompts exclude words that would need the same answer twice", () => {

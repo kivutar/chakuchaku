@@ -529,6 +529,34 @@ test("vocabulary statistics combine SRS, encounters, and graded outcomes", () =>
   assert.deepEqual(model.overview.recentResults, { good: 1, again: 1 });
 });
 
+test("whole-word readings shown in Kanji feed vocabulary result statistics", () => {
+  const model = createStatisticsModel({
+    vocabulary: [{ id: "tomorrow", term: "明日", reading: "あした", meaning: "tomorrow" }],
+    now: "2026-08-09T12:00:00.000Z",
+    learningStats: {
+      vocabulary: { tomorrow: { encounterCount: 1 } },
+      exerciseHistory: [{
+        section: "kanji",
+        assessmentKind: "vocabulary",
+        vocabularyId: "tomorrow",
+        submittedAt: "2026-08-09T11:00:00.000Z",
+        outcome: "good",
+        kanjiRatings: []
+      }]
+    },
+    srsData: {
+      vocabularyCards: {
+        tomorrow: createCard({ due: "2026-08-12T12:00:00.000Z" })
+      }
+    }
+  });
+
+  assert.equal(model.vocabulary.progressEntries[0].results.good, 1);
+  assert.equal(model.kanji.progressEntries.length, 0);
+  assert.deepEqual(model.overview.recentResults, { good: 1, again: 0 });
+  assert.equal(model.overview.exerciseCounts.kanji, 1);
+});
+
 test("kanji statistics combine SRS, encounters, and mechanical outcomes", () => {
   const model = createStatisticsModel({
     kanji: [

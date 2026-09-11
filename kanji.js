@@ -32,16 +32,24 @@
       .replace(/[\s・･、。！？!?]+/gu, "");
   }
 
-  function isWholeWordReading(entry, reading = entry?.reading) {
+  function getSpecialReading(entry, reading = entry?.reading) {
     const normalizedReading = typeof reading === "string"
       ? reading.replace(/[～〜]/gu, "")
       : "";
 
-    return Array.isArray(entry?.specialReadings) && entry.specialReadings.some((note) => {
-      return note?.type === "whole-word" &&
-        typeof note.reading === "string" &&
-        note.reading.replace(/[～〜]/gu, "") === normalizedReading;
-    });
+    return Array.isArray(entry?.specialReadings)
+      ? entry.specialReadings.find((note) => {
+        return (
+          note?.type === "whole-word" &&
+          typeof note.reading === "string" &&
+          note.reading.replace(/[～〜]/gu, "") === normalizedReading
+        );
+      })
+      : undefined;
+  }
+
+  function isWholeWordReading(entry, reading = entry?.reading) {
+    return Boolean(getSpecialReading(entry, reading));
   }
 
   function createExercisePool(
@@ -118,9 +126,11 @@
       const term = word.term.replace(/[～〜]/gu, "");
       const reading = word.reading.replace(/[～〜]/gu, "");
 
-      if (!term || !reading || isWholeWordReading(word, word.reading)) {
+      if (!term || !reading) {
         continue;
       }
+
+      const wholeWordReading = getSpecialReading(word, word.reading);
 
       const targetCharacters = [...new Set(
         [...term].filter((character) => metadataByCharacter.has(character))
@@ -150,6 +160,7 @@
           onReadings: Array.isArray(metadata.onReadings) ? metadata.onReadings : [],
           kunReadings: Array.isArray(metadata.kunReadings) ? metadata.kunReadings : [],
           ...(metadata.mnemonic ? { mnemonic: metadata.mnemonic } : {}),
+          ...(wholeWordReading ? { wholeWordReading } : {}),
           ...(word.scope === "kanji-context"
             ? { kanjiContextId: word.id }
             : { vocabularyId: word.id }),
@@ -239,9 +250,15 @@
       return undefined;
     }
 
-    const targeted = Array.isArray(pool)
+    let targeted = Array.isArray(pool)
       ? pool.filter(({ kanjiId }) => kanjiId === targetKanjiId)
       : [];
+
+    if (direction === directions.kanjiToReading) {
+      // An indivisible word reading cannot assess the targeted character. It
+      // is scheduled separately as a vocabulary-rated Kanji-section prompt.
+      targeted = targeted.filter(({ wholeWordReading }) => !wholeWordReading);
+    }
     const alternatives = targeted.filter(({ vocabularyId, kanjiContextId }) => {
       return (vocabularyId || kanjiContextId) !== previousVocabularyId;
     });
@@ -270,6 +287,57 @@
         ? { choices: createAnswerChoices(pool, selected.kanjiId, { random }) }
         : {})
     };
+  }
+
+  function chooseWholeWordReadingExercise(
+    pool,
+    targetVocabularyId
+  ) {
+    const selected = (Array.isArray(pool) ? pool : []).find(({
+      vocabularyId,
+      wholeWordReading
+    }) => vocabularyId === targetVocabularyId && Boolean(wholeWordReading));
+
+    if (!selected) {
+      return undefined;
+    }
+
+    return {
+      id: `kanji-whole-word-${selected.vocabularyId}-${directions.kanjiToReading}`,
+      section: "kanji",
+      assessmentKind: "vocabulary",
+      direction: directions.kanjiToReading,
+      vocabularyId: selected.vocabularyId,
+      term: selected.term,
+      reading: selected.reading,
+      alternateReadings: selected.alternateReadings,
+      meaning: selected.meaning,
+      partOfSpeech: selected.partOfSpeech,
+      audio: selected.audio,
+      kanjiIds: selected.kanjiIds,
+      wholeWordReading: selected.wholeWordReading,
+      prompt: selected.term,
+      solution: selected.reading
+    };
+  }
+
+  function shouldUseWholeWordReading(exerciseHistory, { interval = 5 } = {}) {
+    if (!Number.isInteger(interval) || interval < 1) {
+      return false;
+    }
+
+    const completedReadingExercises = Array.isArray(exerciseHistory)
+      ? exerciseHistory.filter(({ section, direction, outcome, kanjiRatings }) => {
+        return section === "kanji" &&
+          direction === directions.kanjiToReading &&
+          (
+            ["again", "good"].includes(outcome) ||
+            (Array.isArray(kanjiRatings) && kanjiRatings.length > 0)
+          );
+      }).length
+      : 0;
+
+    return (completedReadingExercises + 1) % interval === 0;
   }
 
   function gradeAnswer(exercise, answer, converter) {
@@ -317,10 +385,16 @@
 
   function createPositiveVocabularyRating(exercise, outcome) {
     if (
-      exercise?.direction !== directions.kanjiToReading ||
       outcome !== "good" ||
       typeof exercise.vocabularyId !== "string" ||
-      !exercise.vocabularyId
+      !exercise.vocabularyId ||
+      !(
+        exercise.direction === directions.kanjiToReading ||
+        (
+          exercise.direction === directions.readingToKanji &&
+          exercise.wholeWordReading
+        )
+      )
     ) {
       return undefined;
     }
@@ -337,12 +411,15 @@
     activeStages,
     normalizeReading,
     normalizeKanjiAnswer,
+    getSpecialReading,
     isWholeWordReading,
     createExercisePool,
     getKanjiInventory,
     getNextDirection,
     createAnswerChoices,
     chooseExercise,
+    chooseWholeWordReadingExercise,
+    shouldUseWholeWordReading,
     gradeAnswer,
     createKanjiRating,
     createPositiveVocabularyRating

@@ -80,7 +80,13 @@
     return exerciseHistory
       .filter((attempt) => {
         return (
-          attempt?.section === "vocabulary" &&
+          (
+            attempt?.section === "vocabulary" ||
+            (
+              attempt?.section === "kanji" &&
+              attempt.assessmentKind === "vocabulary"
+            )
+          ) &&
           typeof attempt.vocabularyId === "string" &&
           ["again", "good"].includes(attempt.outcome) &&
           !Number.isNaN(Date.parse(attempt.submittedAt))

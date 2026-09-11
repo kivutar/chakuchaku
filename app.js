@@ -340,6 +340,12 @@ function isKanjiChoiceExercise(lesson) {
     globalThis.JlptN5Kanji.directions.readingToKanji;
 }
 
+function isWholeWordVocabularyExercise(lesson) {
+  return lesson?.section === "kanji" &&
+    lesson.assessmentKind === "vocabulary" &&
+    Boolean(lesson.wholeWordReading);
+}
+
 function configureAnswerControls(lesson) {
   const usesKanjiChoices = isKanjiChoiceExercise(lesson);
 
@@ -1630,6 +1636,8 @@ function createHistoryAttemptItem(attempt, timeFormatter) {
   const isKanaAttempt = ["hiragana", "katakana"].includes(attempt.section);
   const isVocabularyAttempt = attempt.section === "vocabulary";
   const isKanjiAttempt = attempt.section === "kanji";
+  const assessesVocabulary = isVocabularyAttempt ||
+    (isKanjiAttempt && attempt.assessmentKind === "vocabulary");
   const isConjugationAttempt = attempt.section === "conjugation";
   const attemptLocale = attempt.locale || "en";
 
@@ -1777,7 +1785,7 @@ function createHistoryAttemptItem(attempt, timeFormatter) {
     ratingList.append(tag);
   }
 
-  if (isVocabularyAttempt && ["again", "good"].includes(attempt.outcome)) {
+  if (assessesVocabulary && ["again", "good"].includes(attempt.outcome)) {
     const metadata = vocabularyById.get(attempt.vocabularyId);
     const tag = document.createElement("li");
     const mark = document.createElement("span");
@@ -3154,21 +3162,52 @@ async function pickNextKanjiExercise(requestedKanjiId) {
   const exerciseHistory = globalThis.JlptN5Stats.readLearningStats().exerciseHistory;
   const direction = globalThis.JlptN5Kanji.getNextDirection(exerciseHistory);
   const inventory = globalThis.JlptN5Kanji.getKanjiInventory(pool);
-  const targetKanjiId = requestedKanjiId || globalThis.JlptN5Srs.pickNextKanji(
-    inventory.map(({ id }) => id)
-  );
-  const exercise = globalThis.JlptN5Kanji.chooseExercise(
-    pool,
-    targetKanjiId,
-    direction,
-    { previousVocabularyId: previousKanjiVocabularyId }
-  );
+  let exercise;
+
+  if (
+    !requestedKanjiId &&
+    direction === globalThis.JlptN5Kanji.directions.kanjiToReading &&
+    globalThis.JlptN5Kanji.shouldUseWholeWordReading(exerciseHistory)
+  ) {
+    // Explicit daily-review Kanji targets always receive a Kanji-rated prompt.
+    // Free Kanji study can occasionally teach a due whole-word reading instead.
+    const wholeWordVocabularyIds = [...new Set(pool
+      .filter(({ vocabularyId, wholeWordReading }) => vocabularyId && wholeWordReading)
+      .map(({ vocabularyId }) => vocabularyId))];
+    const eligibleVocabularyIds = globalThis.JlptN5Srs.filterNewOrDueVocabulary(
+      wholeWordVocabularyIds
+    );
+    const targetVocabularyId = eligibleVocabularyIds.length > 0
+      ? globalThis.JlptN5Srs.pickNextVocabulary(eligibleVocabularyIds)
+      : undefined;
+
+    if (targetVocabularyId) {
+      exercise = globalThis.JlptN5Kanji.chooseWholeWordReadingExercise(
+        pool,
+        targetVocabularyId
+      );
+    }
+  }
+
+  let targetKanjiId;
+
+  if (!exercise) {
+    targetKanjiId = requestedKanjiId || globalThis.JlptN5Srs.pickNextKanji(
+      inventory.map(({ id }) => id)
+    );
+    exercise = globalThis.JlptN5Kanji.chooseExercise(
+      pool,
+      targetKanjiId,
+      direction,
+      { previousVocabularyId: previousKanjiVocabularyId }
+    );
+  }
 
   if (!exercise) {
     throw new Error(`No kanji exercise is available for ${targetKanjiId}.`);
   }
 
-  if (exercise.mnemonic) {
+  if (exercise.mnemonic && !exercise.wholeWordReading) {
     exercise.mnemonic = {
       ...exercise.mnemonic,
       readings: exercise.mnemonic.readings.map((readingMnemonic) => {
@@ -3183,6 +3222,19 @@ async function pickNextKanjiExercise(requestedKanjiId) {
 
         return { ...readingMnemonic, anchor };
       })
+    };
+  }
+
+  if (exercise.wholeWordReading) {
+    const kanjiIdByCharacter = new Map(
+      [...kanjiEntriesById.values()].map((entry) => [entry.character, entry.id])
+    );
+
+    exercise.wholeWordReading = {
+      ...exercise.wholeWordReading,
+      kanji: [...new Set([...exercise.term])]
+        .map((character) => kanjiEntriesById.get(kanjiIdByCharacter.get(character)))
+        .filter(Boolean)
     };
   }
 
@@ -4658,7 +4710,10 @@ function revealKanjiSolution() {
   term.className = "kanji-solution-term";
 
   for (const character of currentLesson.term) {
-    if (character === currentLesson.character) {
+    if (
+      !isWholeWordVocabularyExercise(currentLesson) &&
+      character === currentLesson.character
+    ) {
       const target = document.createElement("strong");
 
       target.className = "kanji-solution-target";
@@ -4698,7 +4753,11 @@ function revealKanjiSolution() {
   ratingControl.setAttribute("role", "group");
   ratingControl.setAttribute(
     "aria-label",
-    t("exercise.selfAssessment", { name: currentLesson.character })
+    t("exercise.selfAssessment", {
+      name: isWholeWordVocabularyExercise(currentLesson)
+        ? currentLesson.term
+        : currentLesson.character
+    })
   );
 
   for (const [outcome, label] of [
@@ -4715,11 +4774,13 @@ function revealKanjiSolution() {
     ratingControl.append(ratingButton);
   }
 
-  const mnemonic = createKanjiMnemonicElement(
-    currentLesson.mnemonic,
-    currentLesson.character,
-    currentLesson.kanjiMeaning
-  );
+  const mnemonic = currentLesson.wholeWordReading
+    ? createWholeWordReadingElement(currentLesson)
+    : createKanjiMnemonicElement(
+      currentLesson.mnemonic,
+      currentLesson.character,
+      currentLesson.kanjiMeaning
+    );
 
   solutionElement.replaceChildren(
     answerRow,
@@ -4785,6 +4846,24 @@ function handleKanjiRating(event) {
 
 function recordCurrentKanjiReview() {
   if (!["again", "good"].includes(kanjiRating)) {
+    return;
+  }
+
+  if (isWholeWordVocabularyExercise(currentLesson)) {
+    globalThis.JlptN5Srs.recordVocabularyReviews([{
+      vocabularyId: currentLesson.vocabularyId,
+      outcome: kanjiRating
+    }]);
+    currentReviewOutcomes = [{
+      kind: "vocabulary",
+      itemId: currentLesson.vocabularyId,
+      outcome: kanjiRating
+    }];
+    globalThis.JlptN5Stats.recordKanjiAttemptOutcome(
+      currentLesson.id,
+      currentAttemptSubmittedAt,
+      kanjiRating
+    );
     return;
   }
 

@@ -633,6 +633,62 @@ test("kanji encounters and overridable target ratings are retained", () => {
   });
 });
 
+test("whole-word reading attempts retain vocabulary outcomes without kanji ratings", () => {
+  const storage = new MemoryStorage();
+  const exercise = {
+    id: "kanji-whole-word-tomorrow-kanji-to-reading",
+    section: "kanji",
+    assessmentKind: "vocabulary",
+    vocabularyId: "tomorrow",
+    prompt: "明日",
+    solution: "あした",
+    term: "明日",
+    reading: "あした",
+    meaning: "demain",
+    locale: "fr",
+    direction: "kanji-to-reading",
+    kanjiIds: ["kanji-bright", "kanji-day"]
+  };
+
+  recordKanjiEncounter(exercise, {
+    storage,
+    now: "2026-08-22T10:59:00.000Z"
+  });
+  const recorded = recordKanjiAttempt(exercise, "asita", "again", {
+    storage,
+    now: "2026-08-22T11:00:00.000Z"
+  });
+  const submittedAt = recorded.exerciseHistory[0].submittedAt;
+
+  recordKanjiAttemptOutcome(exercise.id, submittedAt, "good", {
+    storage,
+    now: "2026-08-22T11:01:00.000Z"
+  });
+
+  const stats = readLearningStats({ storage });
+
+  assert.equal(stats.kanji["kanji-bright"].encounterCount, 1);
+  assert.equal(stats.kanji["kanji-day"].encounterCount, 1);
+  assert.equal(stats.vocabulary.tomorrow.encounterCount, 1);
+  assert.deepEqual(stats.exerciseHistory[0], {
+    section: "kanji",
+    exerciseId: exercise.id,
+    vocabularyId: "tomorrow",
+    text: "明日",
+    solution: "あした",
+    term: "明日",
+    reading: "あした",
+    meaning: "demain",
+    locale: "fr",
+    direction: "kanji-to-reading",
+    assessmentKind: "vocabulary",
+    outcome: "good",
+    answer: "asita",
+    submittedAt,
+    kanjiRatings: []
+  });
+});
+
 test("invalid data and unavailable storage do not break lessons", () => {
   const storage = new MemoryStorage();
   storage.setItem(storageKey, "not json");

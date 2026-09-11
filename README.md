@@ -366,10 +366,12 @@ anchor word for each reading. These are learner-facing visual associations, not
 historical etymologies.
 
 Readings marked `type: "whole-word"` on a vocabulary entry are never treated as
-evidence for an individual character and never enter the Kanji exercise pool.
-Their vocabulary result instead shows one hybrid card: the meaning and visual
-composition of every constituent Kanji, followed by the indivisible reading and
-its word-level mnemonic. Its review updates the vocabulary card only.
+evidence for an individual character, but remain useful Kanji contexts. A
+missing-character prompt assesses the target Kanji and can reinforce the word
+positively. At a sparse cadence, a complete-word reading prompt assesses only
+the vocabulary card. Both it and the ordinary vocabulary result show one hybrid
+card: the meaning and visual composition of every constituent Kanji, followed
+by the indivisible reading and its word-level mnemonic.
 
 ## Learning statistics
 
@@ -544,7 +546,7 @@ For a browser check, run `npm start` and verify:
 12. In Katakana, the seven-prompt cadence includes one Hiragana-to-Katakana exercise; its result grades each aligned pair and updates both scripts in SRS and Statistics.
 13. One Katakana recognition slot shows a single learning item and asks for rōmaji. Contracted and foreign-sound units stay together, while context-only `ッ` and `ー` remain word-only.
 14. In Vocabulary, consecutive completed prompts alternate Japanese-to-English and English-to-Japanese. Correct and incorrect answers each update one word card, and pressing Enter submits then advances from the result. For 明日 and 明後日, verify that the result identifies the 熟字訓, explains that the reading cannot be split, and shows each Kanji's compact composition in English and French.
-15. In Kanji, consecutive completed prompts alternate complete-word reading and missing-character recall. The hidden meaning hint never reveals the answer, audio appears only with the solution, and changing the self-assessment changes the one Kanji card saved on advance. Every result shows a localized mnemonic card with components, a meaning story, reading aids, and an anchor word; verify it in light and dark mode on a narrow viewport.
+15. In Kanji, consecutive completed prompts alternate complete-word reading and missing-character recall. The hidden meaning hint never reveals the answer, audio appears only with the solution, and changing the self-assessment changes the assessed card saved on advance. Whole-word readings such as 明日 appear as occasional vocabulary-rated reading prompts and as valid missing-character contexts, without becoming evidence for a single Kanji reading. Every result shows a localized mnemonic card; verify both regular and whole-word cards in light and dark mode on a narrow viewport.
 16. In Conjugation, enter written Japanese, hiragana, or rōmaji for the requested form. The result advances with Enter and updates exactly one reusable conjugation-point card.
 
 ## Editing lessons
