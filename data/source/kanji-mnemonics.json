@@ -9,7 +9,7 @@
     "readings": [
       {
         "reading": "なに",
-        "story": "Nani points at the unknown thing and asks what it is: Nani gives なに.",
+        "story": "A NANNY opens a mystery box and asks ‘What is it?’: nanny sounds like なに.",
         "anchorId": "vocab-3b010d61ddd5"
       },
       {
@@ -119,11 +119,12 @@
       "二",
       "乂"
     ],
-    "meaningStory": "Crossing strokes between two bars make a five-mark tally.",
+    "componentLabels": { "二": "horizontal strokes (visual)" },
+    "meaningStory": "Crossed lines originally pictured things interweaving. The sign was later borrowed for the number five; it is not a tally of five objects.",
     "readings": [
       {
         "reading": "ご",
-        "story": "Go count the five marks: go sounds like ご.",
+        "story": "At the count of five, shout ‘Go!’: go sounds like ご.",
         "anchorId": "vocab-d4473f87e438"
       },
       {
@@ -169,7 +170,7 @@
       },
       {
         "reading": "なな",
-        "story": "Nana always chooses number seven: Nana gives なな.",
+        "story": "NANA, your grandma, lines up the Seven Dwarfs and counts them: nana sounds like なな.",
         "anchorId": "vocab-f6bc974a7405"
       }
     ]
@@ -288,7 +289,7 @@
     "readings": [
       {
         "reading": "くに",
-        "story": "Kuni guards the jewel and the whole country: Kuni gives くに.",
+        "story": "A dove COOs on your KNEE as you guard the country's border: COO-KNEE cues くに.",
         "anchorId": "vocab-ee158182835b"
       },
       {
@@ -350,7 +351,7 @@
     "readings": [
       {
         "reading": "がく",
-        "story": "Gaku studies under the roof; his name gives you がく.",
+        "story": "A GAlloping CUCKoo studies under the school roof: GA-CU cues がく.",
         "anchorId": "vocab-9567eaf8fe9b"
       }
     ]
@@ -369,7 +370,7 @@
       },
       {
         "reading": "うま",
-        "story": "A new life is born with うま, as in 生まれる（うまれる）.",
+        "story": "A newborn cries ‘OOH, MA!’ as soon as it sees its mother: OOH-MA cues うま in 生まれる（うまれる）.",
         "anchorId": "vocab-3db312786ce8"
       }
     ]
@@ -441,11 +442,11 @@
     "components": [
       "田"
     ],
-    "meaningStory": "Irrigation lines divide a square plot into four rice fields.",
+    "meaningStory": "Seen from above, the lines are paths dividing one cultivated field into plots.",
     "readings": [
       {
         "reading": "た",
-        "story": "A rice field is a patch of terrain: terrain starts with た.",
+        "story": "After tending every plot, the farmer rewards himself with a TAco: TAco starts like た in 田んぼ（たんぼ）.",
         "anchorId": "vocab-0da81020c173"
       }
     ]
@@ -457,11 +458,11 @@
       "五",
       "口"
     ],
-    "meaningStory": "Five mouths exchange words; together they create a language.",
+    "meaningStory": "言 means words. On the right, 五 above 口 makes 吾: it is a sound clue, not five mouths talking. Put them together for words and language.",
     "readings": [
       {
         "reading": "ご",
-        "story": "Five is 五（ご）. That same ご sound gives 語 its main N5 reading.",
+        "story": "Five is 五（ご）; hidden inside 吾, it gives you the sound ご in 英語（えいご）.",
         "anchorId": "vocab-0f7ce836ef7a"
       }
     ]
@@ -480,7 +481,7 @@
       },
       {
         "reading": "じん",
-        "story": "Jim is a person; Jim points to じん.",
+        "story": "One adult orders GIN at the party: gin sounds like じん in ～人（じん）.",
         "anchorId": "vocab-7bd8d7286ac2"
       }
     ]
@@ -491,7 +492,8 @@
       "艹",
       "央"
     ],
-    "meaningStory": "A flower at the center becomes an emblem of England.",
+    "componentLabels": { "央": "historical sound clue" },
+    "meaningStory": "The plant element 艹 and phonetic 央 originally pointed to a beautiful flower, then something outstanding. 英 for England is merely short for 英吉利（イギリス）, not an English flower emblem.",
     "readings": [
       {
         "reading": "えい",
@@ -529,7 +531,7 @@
     "readings": [
       {
         "reading": "ほん",
-        "story": "Hon opens a book; her name gives you ほん.",
+        "story": "A car HONKs at a book whose roots have grown into the road: HONK cues ほん.",
         "anchorId": "vocab-0ac038632611"
       }
     ]
@@ -559,7 +561,7 @@
     "readings": [
       {
         "reading": "さき",
-        "story": "Saki takes the first step and goes ahead: Saki gives さき.",
+        "story": "The leader carries a SACK of KEYs at the front of the line: SACK-KEY cues さき.",
         "anchorId": "vocab-317542d02c5e"
       },
       {
@@ -624,7 +626,7 @@
     "readings": [
       {
         "reading": "たか",
-        "story": "Taka climbs the tall tower: Taka gives たか.",
+        "story": "A TAll CAt climbs the highest tower: TA-CA cues たか.",
         "anchorId": "vocab-775979a197ea"
       }
     ]
@@ -639,7 +641,7 @@
     "readings": [
       {
         "reading": "やす",
-        "story": "Yasu relaxes because the price is low: Yasu gives やす.",
+        "story": "A YAk buys a SUper-cheap house and rests under its roof: YA-SU cues やす.",
         "anchorId": "vocab-0513945a1ef5"
       }
     ]
@@ -735,7 +737,7 @@
     "readings": [
       {
         "reading": "ちか",
-        "story": "Chika comes close: Chika gives ちか.",
+        "story": "A CHICKadee lands dangerously close to the axe: CHICK-a cues ちか.",
         "anchorId": "vocab-d72e08381953"
       }
     ]
@@ -749,7 +751,7 @@
     "readings": [
       {
         "reading": "なが",
-        "story": "Naga wears a long scarf: Naga gives なが.",
+        "story": "NAna's GArden hose is so long it wraps around the house: NA-GA cues なが.",
         "anchorId": "vocab-11b5462fa3a4"
       }
     ]
@@ -798,7 +800,7 @@
     "readings": [
       {
         "reading": "にし",
-        "story": "Nishi watches the sunset in the west: Nishi gives にし.",
+        "story": "Walking west to the sunset, you hurt your KNEE and hiss ‘SHH!’: KNEE-SHH cues にし.",
         "anchorId": "vocab-6f2e359ff6c8"
       }
     ]
@@ -810,11 +812,16 @@
       "冂",
       "羊"
     ],
-    "meaningStory": "At a crossroads inside the border, a signpost points south.",
+    "componentLabels": {
+      "十": "branch and hanger shape",
+      "冂": "bell outline",
+      "羊": "inner bell strokes, not a sheep"
+    },
+    "meaningStory": "The ancient graph pictured a bell-like instrument hanging from a branch. Because it was associated with people to the south, the sign came to mean south.",
     "readings": [
       {
         "reading": "みなみ",
-        "story": "Mina studies the map and points south: Mina leads into みなみ.",
+        "story": "MIAMI lies in the south: slip an N into MI-A-MI to make MI-NA-MI, みなみ.",
         "anchorId": "vocab-e1461a487e42"
       }
     ]
@@ -856,11 +863,11 @@
       "人",
       "木"
     ],
-    "meaningStory": "A person picks young leaves from a tree to make tea.",
+    "meaningStory": "茶 is an old shortened form of 荼. To remember its present shape, picture a person 人 picking fresh shoots 艹 from a tea tree 木.",
     "readings": [
       {
         "reading": "ちゃ",
-        "story": "Cha is the familiar sound of tea across many languages: ちゃ.",
+        "story": "Pour CHAI tea into the cup: CHAI begins like ちゃ in 紅茶（こうちゃ）.",
         "anchorId": "vocab-60e55817f5ca"
       }
     ]
@@ -891,7 +898,7 @@
     "readings": [
       {
         "reading": "さかな",
-        "story": "Sakana casts a net for fish: her name gives さかな.",
+        "story": "A SACK of NACHOs falls into the river and fish swarm to it: SACK-A-NA cues さかな.",
         "anchorId": "vocab-5c1c2120b516"
       }
     ]
@@ -926,7 +933,7 @@
       },
       {
         "reading": "か",
-        "story": "A flower in a vase uses か, as in 花瓶（かびん）.",
+        "story": "A CAt peeks out of the flower vase: CA(t) cues か in 花瓶（かびん）.",
         "anchorId": "vocab-f61a0a482634"
       }
     ]
@@ -972,7 +979,7 @@
     "readings": [
       {
         "reading": "でん",
-        "story": "Den sees electric lightning: Den gives でん.",
+        "story": "Electric light suddenly fills a dark DEN: den sounds like でん.",
         "anchorId": "vocab-a24e73630479"
       }
     ]
@@ -1022,7 +1029,11 @@
       "木",
       "人"
     ],
-    "meaningStory": "People approach from both sides and come together beneath a tree.",
+    "componentLabels": {
+      "木": "wheat-ear silhouette",
+      "人": "side awns, not people"
+    },
+    "meaningStory": "The ancient shape pictured an ear of wheat, not people under a tree. To remember 'come', imagine the new wheat arriving each season.",
     "readings": [
       {
         "reading": "く",
@@ -1046,7 +1057,7 @@
     "readings": [
       {
         "reading": "かえ",
-        "story": "Kaede returns home; the start of Kaede gives かえ.",
+        "story": "A CAt returns home carrying an EGG: CA(t)-E(gg) cues かえ.",
         "anchorId": "vocab-944f21154c78"
       }
     ]
@@ -1072,11 +1083,11 @@
       "目",
       "儿"
     ],
-    "meaningStory": "An eye stands on legs so it can move around and see everything.",
+    "meaningStory": "An enormous eye 目 on a person’s legs 儿 is wide open: the whole person is intent on seeing.",
     "readings": [
       {
         "reading": "み",
-        "story": "“Me? I see it!” Me sounds like み.",
+        "story": "The huge eye looks in a mirror and spots ME: ME sounds like み in 見る（みる）.",
         "anchorId": "vocab-385cc0d9ee98"
       }
     ]
@@ -1087,7 +1098,11 @@
       "𠆢",
       "良"
     ],
-    "meaningStory": "Lift the lid from a tray of good food and eat.",
+    "componentLabels": {
+      "𠆢": "lid shape",
+      "良": "filled vessel shape"
+    },
+    "meaningStory": "The old shape pictured a vessel full of food closed with a lid: open it to eat.",
     "readings": [
       {
         "reading": "た",
@@ -1107,7 +1122,7 @@
       "言",
       "売"
     ],
-    "meaningStory": "Read the words on every book offered for sale.",
+    "meaningStory": "For the modern shape, imagine a seller 売 reading the words 言 in each book aloud. This is a visual memory cue, not the character's etymology.",
     "readings": [
       {
         "reading": "よ",
@@ -1122,11 +1137,11 @@
       "飠",
       "欠"
     ],
-    "meaningStory": "An open mouth beside food is ready to drink.",
+    "meaningStory": "The older form showed a mouth opened wide to drink wine. In today’s shape, food 飠 stands beside that open mouth 欠: it is time to drink.",
     "readings": [
       {
         "reading": "の",
-        "story": "No more dry mouth: drink! No sounds like の.",
+        "story": "On the ark, NOah opens his mouth to drink the rain: NOah begins like の in 飲む（のむ）.",
         "anchorId": "vocab-dcd3acd6b659"
       }
     ]
@@ -1197,7 +1212,8 @@
       "夕",
       "卜"
     ],
-    "meaningStory": "At evening, follow the direction sign that points outside.",
+    "componentLabels": { "卜": "divination mark" },
+    "meaningStory": "Divination 卜 performed in the evening 夕, rather than at the usual daytime hour, was outside the norm. From that ‘outside’ came the sense of out or beyond.",
     "readings": [
       {
         "reading": "そと",
@@ -1217,7 +1233,7 @@
       "一",
       "大"
     ],
-    "meaningStory": "The sky stretches above even the largest person: the heavens.",
+    "meaningStory": "The ancient shape enlarged the head of a standing person; what is above the head came to mean the sky.",
     "readings": [
       {
         "reading": "てん",
@@ -1271,7 +1287,7 @@
       },
       {
         "reading": "きょう",
-        "story": "Kyō trains every day to grow strong: Kyō gives きょう.",
+        "story": "In KYOTO, a sumo wrestler lifts a boulder without strain: KYO in Kyoto cues きょう.",
         "anchorId": "vocab-15863d9e899d"
       }
     ]
@@ -1283,7 +1299,12 @@
       "王",
       "丷"
     ],
-    "meaningStory": "Gold nuggets and royal treasure are stored safely under a roof.",
+    "componentLabels": {
+      "𠆢": "upper strokes, not a roof",
+      "王": "earth and mineral strokes",
+      "丷": "ore dots, not horns"
+    },
+    "meaningStory": "In the old shape, small mineral deposits appear in the earth: precious metal later also came to mean money.",
     "readings": [
       {
         "reading": "かね",
@@ -1303,7 +1324,11 @@
       "十",
       "一"
     ],
-    "meaningStory": "A plant rises from a line of ground and reveals the soil beneath it.",
+    "componentLabels": {
+      "十": "earth mound shape",
+      "一": "ground line"
+    },
+    "meaningStory": "The ancient graph pictured a mound of earth raised for the god of the land. Remember the sacred mound, then the soil it is made of.",
     "readings": [
       {
         "reading": "ど",
@@ -1322,7 +1347,7 @@
     "readings": [
       {
         "reading": "いま",
-        "story": "Emma wants it now: Emma sounds like いま.",
+        "story": "An EEL eats a MANGO right now: EE-MA cues いま.",
         "anchorId": "vocab-89beba69de5a"
       },
       {
@@ -1366,12 +1391,12 @@
     "readings": [
       {
         "reading": "とし",
-        "story": "Toshi celebrates another year: Toshi gives とし.",
+        "story": "At year's end, your TOE kicks a SHEaf of harvested grain: TOE-SHEaf cues とし.",
         "anchorId": "vocab-8438eda3cfc0"
       },
       {
         "reading": "ねん",
-        "story": "Name each new year; name begins like ねん.",
+        "story": "A HEN lays an egg on New Year's Day: HEN rhymes with ねん.",
         "anchorId": "vocab-e7ce924c4696"
       }
     ]
@@ -1474,7 +1499,7 @@
     "readings": [
       {
         "reading": "あさ",
-        "story": "A sunny morning begins with “a su-,” like あさ.",
+        "story": "A SAlmon leaps at sunrise: A-SA(lmon) cues あさ.",
         "anchorId": "vocab-40ae6dddb10a"
       }
     ]
@@ -1691,7 +1716,7 @@
       },
       {
         "reading": "か",
-        "story": "A family gathers at home; family starts with the sound か.",
+        "story": "A CAr pulls into the family's garage: CA(r) cues か in 家族（かぞく）.",
         "anchorId": "vocab-a16373e2426c"
       }
     ]
@@ -1706,7 +1731,7 @@
     "readings": [
       {
         "reading": "ぞく",
-        "story": "A whole family visits the zoo: zoo starts like ぞく.",
+        "story": "A ZOmbie CUlt moves in together like one strange family: ZO-CU cues ぞく.",
         "anchorId": "vocab-a16373e2426c"
       }
     ]
@@ -1717,7 +1742,11 @@
       "乂",
       "八"
     ],
-    "meaningStory": "A father holds two crossed tools in steady hands to fix the house.",
+    "componentLabels": {
+      "乂": "axe and hand strokes",
+      "八": "spread hand strokes"
+    },
+    "meaningStory": "The old shape showed a hand holding an axe, a sign of family authority: the father.",
     "readings": [
       {
         "reading": "ちち",
@@ -1821,11 +1850,16 @@
       "木",
       "見"
     ],
-    "meaningStory": "A parent stands beside a tree and watches over the children.",
+    "componentLabels": {
+      "立": "shortened phonetic 辛 (SHIN)",
+      "木": "wood for an ancestral tablet",
+      "見": "looking with respect"
+    },
+    "meaningStory": "Wood 木 marked with a needle became an ancestral memorial tablet, looked up to 見 with respect: a link to one's parents. The old sound clue 辛 (SHIN) survives in shortened form as 立.",
     "readings": [
       {
         "reading": "しん",
-        "story": "Shin's parents watch over him: Shin gives しん.",
+        "story": "A child bumps into their parents' SHINs during a hug: SHIN sounds like しん.",
         "anchorId": "vocab-9389f18983d3"
       }
     ]
@@ -1895,7 +1929,7 @@
       },
       {
         "reading": "か",
-        "story": "The corridor goes down to the floor below; down can use か.",
+        "story": "A CAr is parked below the corridor: CA(r) cues か in 廊下（ろうか）.",
         "anchorId": "vocab-26adc630f7fe"
       }
     ]
@@ -1910,7 +1944,7 @@
     "readings": [
       {
         "reading": "なか",
-        "story": "Naka stands in the middle: Naka gives なか.",
+        "story": "A loud KNOCK comes from the middle of the box: KNOCK-A cues なか.",
         "anchorId": "vocab-5849925b131d"
       },
       {
@@ -1935,7 +1969,7 @@
       },
       {
         "reading": "きょう",
-        "story": "Kyō gathers all the siblings: Kyō gives きょう.",
+        "story": "In KYOTO, an older brother gathers all his siblings: KYO in Kyoto cues きょう.",
         "anchorId": "vocab-2e7b28af830b"
       }
     ]
@@ -1970,7 +2004,7 @@
       },
       {
         "reading": "だい",
-        "story": "The siblings share the sound dai, as in 兄弟（きょうだい）.",
+        "story": "A giant DIE decides which of the two brothers goes first: DIE sounds like だい in 兄弟（きょうだい）.",
         "anchorId": "vocab-2e7b28af830b"
       }
     ]
@@ -2074,7 +2108,7 @@
     "readings": [
       {
         "reading": "しず",
-        "story": "Shizu whispers for everyone to be quiet: Shizu gives しず.",
+        "story": "A SHEep at the ZOO falls silent, and even the lions hush: SHE-ZOO cues しず.",
         "anchorId": "vocab-61b57e2d4702"
       }
     ]
@@ -2356,7 +2390,11 @@
       "山",
       "凵"
     ],
-    "meaningStory": "Something emerges from an open container and exits.",
+    "componentLabels": {
+      "山": "foot emerging, not mountains",
+      "凵": "enclosure"
+    },
+    "meaningStory": "The ancient shape showed a foot crossing an enclosure: it goes out.",
     "readings": [
       {
         "reading": "で",
@@ -2501,7 +2539,7 @@
       },
       {
         "reading": "きょう",
-        "story": "Kyō teaches in the classroom: Kyō gives きょう.",
+        "story": "A teacher in KYOTO fills the classroom with lessons: KYO in Kyoto cues きょう.",
         "anchorId": "vocab-fbb71c77ac0e"
       }
     ]
@@ -2521,7 +2559,7 @@
       },
       {
         "reading": "かい",
-        "story": "A crowd comes together for a meeting: crowd begins like かい.",
+        "story": "A KITE draws a crowd together for a meeting: KITE begins like かい.",
         "anchorId": "vocab-c506bd7fb201"
       }
     ]
@@ -2563,7 +2601,7 @@
       "口",
       "一"
     ],
-    "meaningStory": "Sound waves stack above a mouth as someone says words.",
+    "meaningStory": "The ancient shape showed a tongue extending from a mouth: someone speaks words.",
     "readings": [
       {
         "reading": "い",
@@ -2572,7 +2610,7 @@
       },
       {
         "reading": "こと",
-        "story": "Quote the words someone said: quote starts you toward こと.",
+        "story": "A talking COAT lectures your TOE: COA(t)-TOE cues こと in 言葉（ことば）.",
         "anchorId": "vocab-cef4a2049ff3"
       }
     ]
@@ -2628,7 +2666,11 @@
       "𠂊",
       "巴"
     ],
-    "meaningStory": "Lift the cover to reveal a swirling palette of color.",
+    "componentLabels": {
+      "𠂊": "upper figure shape",
+      "巴": "lower figure shape"
+    },
+    "meaningStory": "The old shape layered two human figures; through appearance and complexion, the meaning extended to colors.",
     "readings": [
       {
         "reading": "いろ",
@@ -2658,7 +2700,8 @@
       "龶",
       "月"
     ],
-    "meaningStory": "A fresh plant under cool moonlight takes on a blue-green color.",
+    "componentLabels": { "月": "lower pigment shape, not the moon" },
+    "meaningStory": "The old shape joined a sprout to a mineral pigment drawn from a well: blue-green. The lower part looks like 月 now, but it was not the moon.",
     "readings": [
       {
         "reading": "あお",
@@ -2722,7 +2765,7 @@
     "readings": [
       {
         "reading": "かい",
-        "story": "Count each circuit: count starts with the sound かい.",
+        "story": "A KAYAK makes one full circuit of the lake: KAYAK starts like かい.",
         "anchorId": "vocab-c5f621b979db"
       }
     ]
@@ -2767,7 +2810,7 @@
     "readings": [
       {
         "reading": "はや",
-        "story": "Hurry if you want to be early: hurry sounds like はや.",
+        "story": "A HAt on a YAK waits for the earliest sunrise: HA-YA cues はや.",
         "anchorId": "vocab-72460e05df01"
       }
     ]
@@ -2803,7 +2846,7 @@
     "readings": [
       {
         "reading": "はし",
-        "story": "Hashi runs across the bridge: Hashi gives はし.",
+        "story": "Your HAt SHIfts as you run across the bridge: HA-SHI cues はし.",
         "anchorId": "vocab-97526e11c703"
       }
     ]
@@ -2833,7 +2876,7 @@
     "readings": [
       {
         "reading": "きょく",
-        "story": "Kyoko works at the bureau: Kyoko begins like きょく.",
+        "story": "At KYOTO's post office, a COOK sorts the mail: KYO-COO(k) cues きょく.",
         "anchorId": "vocab-e40b7fecf36c"
       }
     ]
@@ -2918,7 +2961,7 @@
       "宀",
       "子"
     ],
-    "meaningStory": "A child under a school roof learns each written character.",
+    "meaningStory": "A child 子 grows up beneath a roof 宀. Likewise, complex written characters 字 developed from simpler signs 文: a character grows from a basic one.",
     "readings": [
       {
         "reading": "じ",
@@ -3004,7 +3047,11 @@
       "心",
       "丿"
     ],
-    "meaningStory": "A stroke of resolve pierces the heart: something that must invariably be done.",
+    "componentLabels": {
+      "心": "looped cord shape",
+      "丿": "stake stroke"
+    },
+    "meaningStory": "The old form showed a cord tightening a stake so it would hold fast; the meaning 'necessary' was borrowed later.",
     "readings": [
       {
         "reading": "ひつ",
@@ -3019,7 +3066,11 @@
       "覀",
       "女"
     ],
-    "meaningStory": "A person trapped beneath a net needs help.",
+    "componentLabels": {
+      "覀": "hands at the waist",
+      "女": "body and waist shape"
+    },
+    "meaningStory": "The old form pictured someone holding their waist with both hands; the waist is a vital point, leading to 'important' and then 'necessary'.",
     "readings": [
       {
         "reading": "い",
@@ -3081,7 +3132,7 @@
       "斤",
       "貝"
     ],
-    "meaningStory": "Two axes inspect shell money closely to judge its quality and substance.",
+    "meaningStory": "In the old form, two axes engraved an inscription on a valuable vessel: a pledge, then the quality of what is promised.",
     "readings": [
       {
         "reading": "しつ",
@@ -3263,7 +3314,7 @@
       "人",
       "乛"
     ],
-    "meaningStory": "A person reaches toward a missing piece and feels its lack.",
+    "meaningStory": "Beware: 欠 'lack' simplifies older 缺, a chipped vessel. The shape 欠 also existed for an open mouth yawning: two origins merged into one spelling.",
     "readings": [
       {
         "reading": "けつ",
@@ -3283,7 +3334,7 @@
     "readings": [
       {
         "reading": "がく",
-        "story": "Gaku plays music: Gaku gives がく.",
+        "story": "A GAlloping CUCKoo joins the band on drums: GA-CU cues がく.",
         "anchorId": "vocab-83b219893eca"
       },
       {
@@ -3361,7 +3412,8 @@
       "口",
       "未"
     ],
-    "meaningStory": "The mouth tests food that is not yet ripe and discovers its flavor.",
+    "componentLabels": { "未": "phonetic MI, not 'not yet'" },
+    "meaningStory": "The mouth 口 indicates taste; 未 historically supplies the sound MI and does not mean 'not yet ripe' here.",
     "readings": [
       {
         "reading": "み",
@@ -3405,7 +3457,8 @@
       "次",
       "貝"
     ],
-    "meaningStory": "Shell money saved for what comes next becomes a useful asset or resource.",
+    "componentLabels": { "次": "historical phonetic SHI" },
+    "meaningStory": "The money-shell 貝 suggests resources; 次 on the left historically supplied the sound SHI.",
     "readings": [
       {
         "reading": "し",
@@ -3420,7 +3473,8 @@
       "木",
       "交"
     ],
-    "meaningStory": "At school, people exchange ideas beside a tree before an exam.",
+    "componentLabels": { "交": "historical phonetic KŌ" },
+    "meaningStory": "木 recalls wood; 交 historically supplies the sound KŌ. The meaning 'school' came later.",
     "readings": [
       {
         "reading": "こう",

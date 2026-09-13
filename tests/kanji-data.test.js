@@ -119,10 +119,17 @@ test("kanji mnemonics cover the full curriculum in English and French", async ()
     join(rootDirectory, "data", "locales", "fr", "kanji-mnemonics.json"),
     "utf8"
   ).then(JSON.parse);
+  const sourceMnemonics = await readFile(
+    join(rootDirectory, "data", "source", "kanji-mnemonics.json"),
+    "utf8"
+  ).then(JSON.parse);
+  const frenchSourceMnemonics = await readFile(
+    join(rootDirectory, "data", "source", "locales", "fr", "kanji-mnemonics.json"),
+    "utf8"
+  ).then(JSON.parse);
 
   const mnemonicById = new Map(mnemonics.map((entry) => [entry.kanjiId, entry]));
-  const englishMeaningBySymbol = new Map();
-  const frenchMeaningBySymbol = new Map();
+  const sourceById = new Map(sourceMnemonics.map((entry) => [entry.kanjiId, entry]));
 
   assert.equal(mnemonics.length, kanji.length);
   assert.deepEqual(
@@ -135,6 +142,9 @@ test("kanji mnemonics cover the full curriculum in English and French", async ()
   );
 
   for (const mnemonic of mnemonics) {
+    const source = sourceById.get(mnemonic.kanjiId);
+
+    assert.ok(source);
     assert.ok(Array.isArray(mnemonic.components));
     assert.ok(mnemonic.components.length >= 1);
     assert.ok(mnemonic.components.every(({ symbol, meaning }) => symbol && meaning));
@@ -145,9 +155,7 @@ test("kanji mnemonics cover the full curriculum in English and French", async ()
     assert.ok(mnemonic.readings.every(({ anchorId }) => anchorId.length > 0));
 
     for (const { symbol, meaning } of mnemonic.components) {
-      assert.equal(meaning, englishComponents[symbol]);
-      assert.equal(englishMeaningBySymbol.get(symbol) || meaning, meaning);
-      englishMeaningBySymbol.set(symbol, meaning);
+      assert.equal(meaning, source.componentLabels?.[symbol] || englishComponents[symbol]);
     }
   }
 
@@ -167,13 +175,58 @@ test("kanji mnemonics cover the full curriculum in English and French", async ()
       localized.readings.map(({ anchorId, anchorReading }) => ({ anchorId, anchorReading })),
       mnemonic.readings.map(({ anchorId, anchorReading }) => ({ anchorId, anchorReading }))
     );
+    for (const { story } of localized.readings) {
+      assert.ok(story.length > 20, `${kanjiId} needs a substantial French story`);
+      assert.doesNotMatch(
+        story,
+        /Accrochez le son|rattachez cette variation/u,
+        `${kanjiId} still has a template French story`
+      );
+    }
     for (const { symbol, meaning } of localized.components) {
-      assert.equal(meaning, frenchComponents[symbol]);
-      assert.equal(frenchMeaningBySymbol.get(symbol) || meaning, meaning);
-      frenchMeaningBySymbol.set(symbol, meaning);
+      assert.equal(
+        meaning,
+        frenchSourceMnemonics[kanjiId].componentLabels?.[symbol] || frenchComponents[symbol]
+      );
     }
     assert.ok(french[kanjiId].meaning.length > 0);
   }
+
+  const component = (mnemonic, symbol) => mnemonic.components
+    .find((entry) => entry.symbol === symbol)?.meaning;
+  const english = (id) => mnemonicById.get(`kanji-${id}`);
+  const frenchMnemonic = (id) => frenchMnemonics[`kanji-${id}`];
+
+  assert.match(component(english("9752"), "月"), /not the moon/u);
+  assert.match(component(frenchMnemonic("9752"), "月"), /pas la lune/u);
+  assert.match(component(english("5357"), "羊"), /not a sheep/u);
+  assert.match(component(frenchMnemonic("5357"), "羊"), /pas un mouton/u);
+  assert.match(component(english("91d1"), "王"), /mineral/u);
+  assert.match(component(frenchMnemonic("91d1"), "王"), /minerai/u);
+  assert.match(component(english("5473"), "未"), /phonetic MI/u);
+  assert.match(component(frenchMnemonic("5473"), "未"), /indice sonore MI/u);
+  assert.equal(component(english("4e0a"), "卜"), "vertical mark");
+  assert.equal(component(frenchMnemonic("4e0b"), "卜"), "trait vertical");
+  assert.equal(component(english("5916"), "卜"), "divination mark");
+  assert.equal(component(frenchMnemonic("5916"), "卜"), "trait de divination");
+
+  for (const [id, name] of [
+    ["4f55", "Nani"], ["56fd", "Kuni"], ["897f", "Nishi"],
+    ["9759", "Shizu"], ["697d", "Gaku"], ["5148", "Saki"],
+    ["9ad8", "Taka"], ["5b89", "Yasu"], ["8fd1", "Chika"],
+    ["9577", "Naga"], ["5e30", "Kaede"], ["5e74", "Toshi"],
+    ["4e2d", "Naka"], ["8d70", "Hashi"], ["5357", "Mina"]
+  ]) {
+    assert.ok(
+      english(id).readings.every(({ story }) => !story.includes(`${name} gives`)),
+      `${id} must not use its romanized reading as the only English cue`
+    );
+  }
+  assert.doesNotMatch(
+    mnemonics.flatMap(({ readings }) => readings.map(({ story }) => story)).join("\n"),
+    /(?:his|her) name gives|Kyō gives|family starts with the sound か|zoo starts like ぞく|crowd begins like かい/u
+  );
+  assert.match(frenchMnemonic("9759").readings[0].story, /CHI-ZOU/u);
 
   const fire = mnemonicById.get("kanji-706b");
   const matter = mnemonicById.get("kanji-4e8b");

@@ -2429,6 +2429,8 @@ main {
 
 .kanji-mnemonic-components li {
   display: inline-flex;
+  max-width: 100%;
+  min-width: 0;
   min-height: 1.9rem;
   align-items: center;
   gap: 0.34rem;
@@ -2441,8 +2443,14 @@ main {
   line-height: 1.2;
 }
 
+.kanji-mnemonic-components li span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .kanji-mnemonic-component-symbol {
   display: grid;
+  flex: none;
   width: 1.35rem;
   height: 1.35rem;
   place-items: center;

@@ -2,443 +2,458 @@
   "kanji-4f55": {
     "meaningStory": "Une personne pointe chaque possibilité et demande : qu’est-ce que c’est ?",
     "readings": [
-      "Accrochez le son なに au mot 何（なに）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son なん au mot 何～（なん）, puis replacez ce mot dans la scène du sens."
+      "La NANNY anglaise pointe un objet inconnu et demande : « Qu’est-ce que c’est ? » NANNY, prononcé à l’anglaise, rappelle なに.",
+      "« NAN, c’est quoi ? » Devant une question suivie d’un autre mot, le même 何 commence par なん."
     ]
   },
   "kanji-5186": {
     "meaningStory": "Une enceinte courbe autour d’une ligne centrale ressemble à une pièce ronde : un cercle qui vaut des yens.",
     "readings": [
-      "Accrochez le son えん au mot ～円（えん）, puis replacez ce mot dans la scène du sens."
+      "Une pièce ronde : le mot YEN contient le son えん de ～円（えん）."
     ]
   },
   "kanji-4e00": {
     "meaningStory": "Une seule ligne continue est l’image la plus simple du nombre un.",
     "readings": [
-      "Accrochez le son いち au mot 一（いち）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son ひと au mot 一つ（ひとつ）, puis replacez ce mot dans la scène du sens."
+      "Une seule ligne, un seul personnage : ITCHY des Simpson saute par-dessus ce trait et crie « ICHI ! ».",
+      "Montrez du doigt une seule personne : « HI, TOI ! » Le salut HI-TOI rappelle ひと dans 一つ（ひとつ）."
     ]
   },
   "kanji-4e8c": {
     "meaningStory": "Ajoutez une seconde ligne et le compte passe à deux.",
     "readings": [
-      "Accrochez le son に au mot 二（に）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son ふた au mot 二つ（ふたつ）, puis replacez ce mot dans la scène du sens."
+      "Deux oiseaux se posent sur les deux lignes d’un NID : NI rappelle に.",
+      "« FOU, T’AS deux lignes pour deux ? » FOU-T’AS fait entendre ふた dans 二つ（ふたつ）."
     ]
   },
   "kanji-4e09": {
     "meaningStory": "Trois lignes parallèles permettent de reconnaître immédiatement le nombre trois.",
     "readings": [
-      "Accrochez le son さん au mot 三（さん）, puis replacez ce mot dans la scène du sens.",
-      "Dans 三つ（みっつ）, み devient みっ : rattachez cette variation à la scène du sens."
+      "Trois gouttes de SANG tombent sur les trois traits : SANG rappelle さん.",
+      "Chantez trois notes de MI sur les trois traits : MI devient みっ dans 三つ（みっつ）."
     ]
   },
   "kanji-56db": {
     "meaningStory": "Quatre petites jambes sont repliées dans une enceinte : comptez aussi ses quatre coins.",
     "readings": [
-      "Accrochez le son し au mot 四（し）, puis replacez ce mot dans la scène du sens.",
-      "Dans 四つ（よっつ）, よ devient よっ : rattachez cette variation à la scène du sens."
+      "Quatre épingles retiennent un CHIgnon : CHI rappelle し.",
+      "« YO ! » Comptez les quatre coins du cadre en criant YO : le son se resserre en よっ dans 四つ（よっつ）."
     ]
   },
   "kanji-4e94": {
-    "meaningStory": "Des traits croisés entre deux barres forment un décompte de cinq marques.",
+    "componentLabels": { "二": "traits horizontaux (forme visuelle)" },
+    "meaningStory": "Les lignes croisées figuraient d’abord des choses qui s’entrecroisent. Le signe a ensuite été emprunté pour le nombre cinq : ce n’est pas un dessin de cinq objets.",
     "readings": [
-      "Accrochez le son ご au mot 五（ご）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son いつ au mot 五日（いつか）, puis replacez ce mot dans la scène du sens."
+      "Compte à rebours de cinq secondes, puis « GO ! » : GO donne ご.",
+      "Au cinquième jour, annoncez en anglais « IT’S day five ! » : IT’S rappelle いつ dans 五日（いつか）."
     ]
   },
   "kanji-516d": {
     "meaningStory": "Soulevez le couvercle : six morceaux se séparent en dessous.",
     "readings": [
-      "Accrochez le son ろく au mot 六（ろく）, puis replacez ce mot dans la scène du sens.",
-      "Dans 六つ（むっつ）, む devient むっ : rattachez cette variation à la scène du sens."
+      "Une guitare de ROCK a six cordes : ROCK rappelle ろく.",
+      "Six MOUtons se serrent sous le toit : MOU devient むっ dans 六つ（むっつ）."
     ]
   },
   "kanji-4e03": {
     "meaningStory": "Une ligne coupée par un crochet aigu laisse la forme du nombre sept.",
     "readings": [
-      "Accrochez le son しち au mot 七（しち）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son なな au mot 七つ（ななつ）, puis replacez ce mot dans la scène du sens."
+      "Le shichimi japonais mêle sept épices : son début SHICHI est justement 七（しち）.",
+      "NANA compte les sept nains un par un : son prénom fixe なな dans 七つ（ななつ）."
     ]
   },
   "kanji-516b": {
     "meaningStory": "Deux traits s’écartent comme une tarte partagée en huit parts.",
     "readings": [
-      "Accrochez le son はち au mot 八（はち）, puis replacez ce mot dans la scène du sens.",
-      "Dans 八つ（やっつ）, や devient やっ : rattachez cette variation à la scène du sens."
+      "HACHI rejoint un second chien : à deux, ils ont huit pattes. HACHI fixe はち.",
+      "« Y’A huit parts ! » Chaque trait ouvre quatre parts de tarte : Y’A se resserre en やっ dans 八つ（やっつ）."
     ]
   },
   "kanji-4e5d": {
     "meaningStory": "Une barre et un crochet recourbé forment le dernier chiffre simple : neuf.",
     "readings": [
-      "Accrochez le son きゅう au mot 九（きゅう）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son ここの au mot 九日（ここのか）, puis replacez ce mot dans la scène du sens."
+      "Neuf personnes font la QUEUE ; en anglais QUEUE se prononce « kyou », comme きゅう.",
+      "« COCO, NON ! » Ne prends pas la dixième part : on est neuf. COCO-NON rappelle ここの dans 九日（ここのか）."
     ]
   },
   "kanji-5341": {
     "meaningStory": "Le dixième trait vertical croise la rangée horizontale et forme dix.",
     "readings": [
-      "Accrochez le son じゅう au mot 十（じゅう）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son とお au mot 十（とお）, puis replacez ce mot dans la scène du sens."
+      "Un judoka lève ses dix doigts après la victoire : JU de JUDO rappelle じゅう.",
+      "TÔT le matin, comptez les dix doigts des deux mains : TÔT rappelle とお."
     ]
   },
   "kanji-767e": {
     "meaningStory": "Une feuille blanche est couverte de cent petits traits de comptage.",
     "readings": [
-      "Accrochez le son ひゃく au mot 百（ひゃく）, puis replacez ce mot dans la scène du sens."
+      "Cent coups de karaté contre la feuille blanche : « HIYA ! COUP ! » fait entendre HYA-KU, ひゃく."
     ]
   },
   "kanji-5343": {
     "meaningStory": "Un multiplicateur oblique au-dessus de dix propulse le compte jusqu’à mille.",
     "readings": [
-      "Accrochez le son せん au mot 千（せん）, puis replacez ce mot dans la scène du sens."
+      "Mille bateaux couvrent la SEINE : SEINE fait entendre せん."
     ]
   },
   "kanji-4e07": {
     "meaningStory": "Donnez une force énorme à un nombre et il grandit jusqu’à dix mille.",
     "readings": [
-      "Accrochez le son まん au mot 万（まん）, puis replacez ce mot dans la scène du sens."
+      "Dix mille MANnequins remplissent un stade : MAN donne まん."
     ]
   },
   "kanji-56fd": {
     "meaningStory": "Un joyau précieux protégé à l’intérieur d’une frontière représente un pays.",
     "readings": [
-      "Accrochez le son くに au mot 国（くに）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son こく au mot 外国（がいこく）, puis replacez ce mot dans la scène du sens."
+      "Je passe le COU par-dessus la frontière, NI vu NI connu : COU-NI rappelle くに, le pays.",
+      "Un COQ franchit la frontière vers un autre pays : COQ rappelle こく dans 外国（がいこく）."
     ]
   },
   "kanji-540d": {
     "meaningStory": "À l’appel du soir, chaque bouche prononce son nom.",
     "readings": [
-      "Accrochez le son な au mot 名前（なまえ）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son めい au mot 有名（ゆうめい）, puis replacez ce mot dans la scène du sens."
+      "À la NAissance, on inscrit votre nom : NA donne な dans 名前（なまえ）.",
+      "Une célébrité reçoit le prix du MEILLEUR nom de scène : MEI rappelle めい dans 有名（ゆうめい）."
     ]
   },
   "kanji-524d": {
     "meaningStory": "Coupez l’herbe avec une lame avant que le corps puisse avancer au premier plan.",
     "readings": [
-      "Accrochez le son まえ au mot 前（まえ）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son ぜん au mot 午前（ごぜん）, puis replacez ce mot dans la scène du sens."
+      "MAËL se place devant tout le monde dans la file : MAËL commence comme まえ.",
+      "Avant de commencer la journée, méditez ZEN : ZEN donne ぜん dans 午前（ごぜん）."
     ]
   },
   "kanji-5b66": {
     "meaningStory": "Sous le toit de l’école, un enfant attrape les étincelles de savoir et étudie.",
     "readings": [
-      "Accrochez le son がく au mot 学生（がくせい）, puis replacez ce mot dans la scène du sens."
+      "Un GAmIN prend des COUrs sous le toit de l’école : GA-COU rappelle がく dans 学生（がくせい）."
     ]
   },
   "kanji-751f": {
     "meaningStory": "Une jeune pousse traverse le sol : c’est l’image de la naissance et de la vie.",
     "readings": [
-      "Accrochez le son せい au mot 学生（がくせい）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son うま au mot 生まれる（うまれる）, puis replacez ce mot dans la scène du sens."
+      "La pousse perce la terre : « C’EST la vie ! » C’EST rappelle せい dans 学生（がくせい）.",
+      "OUMAR naît au moment où la première pousse sort du sol : OUMAR commence comme うま dans 生まれる（うまれる）."
     ]
   },
   "kanji-5927": {
     "meaningStory": "Une personne écarte les bras autant que possible pour montrer quelque chose de grand.",
     "readings": [
-      "Accrochez le son おお au mot 大きい（おおきい）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son だい au mot 大学（だいがく）, puis replacez ce mot dans la scène du sens."
+      "Devant cette personne aux bras immenses, lâchez deux « OH ! OH ! » : おお dans 大きい（おおきい）.",
+      "Un DAIquiri aussi grand qu’un amphithéâtre : DAI rappelle だい dans 大学（だいがく）."
     ]
   },
   "kanji-53cb": {
     "meaningStory": "Deux mains se tendent l’une vers l’autre en signe d’amitié.",
     "readings": [
-      "Accrochez le son とも au mot 友達（ともだち）, puis replacez ce mot dans la scène du sens."
+      "TOM, MON ami, me tend la main : TO-MO rappelle とも dans 友達（ともだち）."
     ]
   },
   "kanji-5c71": {
     "meaningStory": "Trois sommets pointus surgissent du sol et forment une chaîne de montagnes.",
     "readings": [
-      "Accrochez le son やま au mot 山（やま）, puis replacez ce mot dans la scène du sens."
+      "Une YAMAHA rugit au pied des trois sommets : YA-MA rappelle やま."
     ]
   },
   "kanji-5ddd": {
     "meaningStory": "Trois courants sinueux montrent l’eau qui descend dans une rivière.",
     "readings": [
-      "Accrochez le son かわ au mot 川（かわ）, puis replacez ce mot dans la scène du sens."
+      "Une KAWASAKI tente de traverser la rivière : KAWA rappelle かわ."
     ]
   },
   "kanji-7530": {
-    "meaningStory": "Des canaux d’irrigation partagent une parcelle carrée en quatre rizières.",
+    "meaningStory": "Vue d’en haut, la forme montre les chemins qui découpent un champ cultivé en parcelles.",
     "readings": [
-      "Accrochez le son た au mot 田んぼ（たんぼ）, puis replacez ce mot dans la scène du sens."
+      "Dans chaque parcelle, un TAS de riz récolté : TAS fait entendre た dans 田んぼ（たんぼ）."
     ]
   },
   "kanji-8a9e": {
-    "meaningStory": "Cinq bouches échangent des paroles : ensemble, elles créent une langue.",
+    "meaningStory": "言 évoque les paroles ; 吾, où l’on reconnaît 五 sur 口, fournit le son GO. Ce n’est pas cinq bouches qui parlent : ensemble, ces éléments désignent les mots et la langue.",
     "readings": [
-      "Accrochez le son ご au mot 英語（えいご）, puis replacez ce mot dans la scène du sens."
+      "Cinq se lit 五（ご） : caché dans 吾, il donne le son ご de 英語（えいご）."
     ]
   },
   "kanji-4eba": {
     "meaningStory": "Deux jambes soutiennent une personne en train de marcher.",
     "readings": [
-      "Accrochez le son ひと au mot 人（ひと）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son じん au mot ～人（じん）, puis replacez ce mot dans la scène du sens."
+      "Parmi la foule, montrez une seule personne : « HI, TOI ! » HI-TOI rappelle ひと.",
+      "Comptez les personnes en JEAN dans la rue : JEAN fait entendre じん dans ～人（じん）."
     ]
   },
   "kanji-82f1": {
-    "meaningStory": "Une fleur placée au centre devient un emblème de l’Angleterre.",
+    "componentLabels": { "央": "indice sonore historique" },
+    "meaningStory": "À l’origine, 艹 évoque la plante et 央 sert d’indice sonore : une belle fleur, puis ce qui se distingue. Pour l’Angleterre, 英 n’est que l’abréviation d’英吉利（イギリス）.",
     "readings": [
-      "Accrochez le son えい au mot 英語（えいご）, puis replacez ce mot dans la scène du sens."
+      "Devant le drapeau anglais, criez « HEY ! » à l’anglaise : HEY sonne comme えい dans 英語（えいご）."
     ]
   },
   "kanji-65e5": {
     "meaningStory": "Un soleil encadré traverse le ciel une fois par jour.",
     "readings": [
-      "Accrochez le son にち au mot ～日（にち）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son か au mot 五日（いつか）, puis replacez ce mot dans la scène du sens."
+      "NIna CHIffre les jours sur le calendrier : NI-CHI rappelle にち dans ～日（にち）.",
+      "Tournez cinq pages du CAhier-calendrier : CA rappelle le か final de 五日（いつか）."
     ]
   },
   "kanji-672c": {
     "meaningStory": "Marquez la racine d’un arbre : c’est son origine, mais aussi le dos d’un livre.",
     "readings": [
-      "Accrochez le son ほん au mot 本（ほん）, puis replacez ce mot dans la scène du sens."
+      "J’ai HONTE : mon livre prend racine dans l’étagère, je ne l’ai jamais ouvert. HONTE rappelle ほん."
     ]
   },
   "kanji-79c1": {
     "meaningStory": "Je ramène la céréale de mon côté privé et dis qu’elle est à moi.",
     "readings": [
-      "Accrochez le son わたし au mot 私（わたし）, puis replacez ce mot dans la scène du sens."
+      "Tirez la céréale vers vous, frappez-vous la poitrine et proclamez « WATASHI ! » : elle est à moi."
     ]
   },
   "kanji-5148": {
     "meaningStory": "Des jambes qui font le premier pas avancent devant tout le monde.",
     "readings": [
-      "Accrochez le son さき au mot 先（さき）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son せん au mot 先月（せんげつ）, puis replacez ce mot dans la scène du sens."
+      "Le premier de la file prend le SAC. QUI passe ensuite ? SAC-QUI rappelle さき.",
+      "La SÉNatrice était déjà là le mois précédent : SÉN rappelle せん dans 先月（せんげつ）."
     ]
   },
   "kanji-5c0f": {
     "meaningStory": "Trois gouttes minuscules se rassemblent autour d’un centre étroit : tout est petit.",
     "readings": [
-      "Accrochez le son ちい au mot 小さい（ちいさい）, puis replacez ce mot dans la scène du sens."
+      "Un CHIHUAHUA minuscule tient dans une main : CHI rappelle ちい dans 小さい（ちいさい）."
     ]
   },
   "kanji-591a": {
     "meaningStory": "Un soir suivi d’un autre donne de nombreux soirs.",
     "readings": [
-      "Accrochez le son おお au mot 多い（おおい）, puis replacez ce mot dans la scène du sens."
+      "Le ciel se remplit de tant d’étoiles que vous dites « OH ! OH ! » : おお dans 多い（おおい）."
     ]
   },
   "kanji-5c11": {
     "meaningStory": "Balayez une partie de quelque chose de petit : il n’en reste que peu.",
     "readings": [
-      "Accrochez le son すこ au mot 少し（すこし）, puis replacez ce mot dans la scène du sens."
+      "« Un SOU pour un COQ ? C’est bien peu ! » SOU-COQ rappelle すこ dans 少し（すこし）."
     ]
   },
   "kanji-9ad8": {
     "meaningStory": "Empilez un toit, des fenêtres et des murs pour former une tour haute.",
     "readings": [
-      "Accrochez le son たか au mot 高い（たかい）, puis replacez ce mot dans la scène du sens."
+      "« T’AS QU’À monter tout en haut ! » T’AS QU’À fait entendre たか dans 高い（たかい）."
     ]
   },
   "kanji-5b89": {
     "meaningStory": "Sous un toit, une femme se détend dans un logement sûr au loyer peu cher.",
     "readings": [
-      "Accrochez le son やす au mot 安い（やすい）, puis replacez ce mot dans la scène du sens."
+      "« Y’A SOUS ce toit un loyer minuscule ! » Y’A SOUS rappelle やす dans 安い（やすい）."
     ]
   },
   "kanji-65b0": {
     "meaningStory": "Placez-vous près d’un arbre avec une hache et coupez du bois frais pour faire du neuf.",
     "readings": [
-      "Accrochez le son あたら au mot 新しい（あたらしい）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son しん au mot 新聞（しんぶん）, puis replacez ce mot dans la scène du sens."
+      "« AH, T’AS LA nouvelle hache ! » AH-T’AS-LA rappelle あたら dans 新しい（あたらしい）.",
+      "Le journal annonce une découverte venue de CHINE : CHINE rappelle しん dans 新聞（しんぶん）."
     ]
   },
   "kanji-53e4": {
     "meaningStory": "Une bouche raconte une histoire transmise durant dix générations : elle est ancienne.",
     "readings": [
-      "Accrochez le son ふる au mot 古い（ふるい）, puis replacez ce mot dans la scène du sens."
+      "Une vieille FOURRURE passe de génération en génération : FOURRU rappelle ふる dans 古い（ふるい）."
     ]
   },
   "kanji-597d": {
     "meaningStory": "Une femme et un enfant partagent avec joie quelque chose qu’ils aiment tous les deux.",
     "readings": [
-      "Accrochez le son す au mot 好き（すき）, puis replacez ce mot dans la scène du sens."
+      "L’enfant serre sa petite SOUris : il l’aime tant ! SOU rappelle す dans 好き（すき）."
     ]
   },
   "kanji-5fd9": {
     "meaningStory": "Quand votre cœur perd le fil de tout, vous êtes trop occupé.",
     "readings": [
-      "Accrochez le son いそが au mot 忙しい（いそがしい）, puis replacez ce mot dans la scène du sens."
+      "IL SAUT du train à la GAre, débordé et en retard : IL-SAUT-GA rappelle いそが dans 忙しい（いそがしい）."
     ]
   },
   "kanji-5e83": {
     "meaningStory": "Un grand bâtiment offre à chacun un espace privé parce qu’il est très large.",
     "readings": [
-      "Accrochez le son ひろ au mot 広い（ひろい）, puis replacez ce mot dans la scène du sens."
+      "HIRO étend les bras sans toucher les murs de cette immense salle : HIRO rappelle ひろ."
     ]
   },
   "kanji-8fd1": {
     "meaningStory": "Suivez le chemin jusqu’à ce que la hache soit assez proche pour être saisie.",
     "readings": [
-      "Accrochez le son ちか au mot 近い（ちかい）, puis replacez ce mot dans la scène du sens."
+      "La CHICA espagnole est si près de la hache qu’elle peut la toucher : CHICA rappelle ちか."
     ]
   },
   "kanji-9577": {
     "meaningStory": "Les cheveux d’un ancien traînent loin derrière lui et dessinent une forme longue.",
     "readings": [
-      "Accrochez le son なが au mot 長い（ながい）, puis replacez ce mot dans la scène du sens."
+      "Un NAGA, serpent légendaire, étire son corps interminable : NAGA rappelle なが."
     ]
   },
   "kanji-5e97": {
     "meaningStory": "Une enseigne sous un auvent signale un magasin ou une boutique.",
     "readings": [
-      "Accrochez le son みせ au mot 店（みせ）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son てん au mot 喫茶店（きっさてん）, puis replacez ce mot dans la scène du sens."
+      "Dans le magasin de musique, « MI, C’EST la première note ! » MI-C’EST rappelle みせ.",
+      "Un café ouvre près du club de TENnis : TEN rappelle てん dans 喫茶店（きっさてん）."
     ]
   },
   "kanji-6771": {
     "meaningStory": "Le soleil se lève à travers les branches d’un arbre, à l’est.",
     "readings": [
-      "Accrochez le son ひがし au mot 東（ひがし）, puis replacez ce mot dans la scène du sens."
+      "IL GÂCHE ICI le lever du soleil en regardant vers l’ouest : IL-GÂCHE-ICI rappelle ひがし, l’est."
     ]
   },
   "kanji-897f": {
     "meaningStory": "Un oiseau se pose dans son nid là où le soleil se couche : à l’ouest.",
     "readings": [
-      "Accrochez le son にし au mot 西（にし）, puis replacez ce mot dans la scène du sens."
+      "Au couchant, l’oiseau regagne sa NICHE à l’ouest : NICHE rappelle にし."
     ]
   },
   "kanji-5357": {
-    "meaningStory": "À un carrefour dans la frontière, un panneau indique le sud.",
+    "componentLabels": {
+      "十": "branche et attache (forme visuelle)",
+      "冂": "contour de cloche",
+      "羊": "traits internes de la cloche, pas un mouton"
+    },
+    "meaningStory": "L’ancien dessin figurait une cloche suspendue à une branche. Associé aux peuples du sud qui utilisaient cet instrument, le signe a fini par désigner le sud.",
     "readings": [
-      "Accrochez le son みなみ au mot 南（みなみ）, puis replacez ce mot dans la scène du sens."
+      "MIAMI est au sud : glissez un N dans MIAMI pour obtenir MI-NA-MI, みなみ."
     ]
   },
   "kanji-5317": {
     "meaningStory": "Deux personnes tournent le dos au vent froid venu du nord.",
     "readings": [
-      "Accrochez le son きた au mot 北（きた）, puis replacez ce mot dans la scène du sens."
+      "Pour fuir le vent du nord, il QUITTA son abri : QUITTA fait entendre きた."
     ]
   },
   "kanji-753a": {
     "meaningStory": "Une rue tracée près des champs devient peu à peu une ville.",
     "readings": [
-      "Accrochez le son まち au mot 町（まち）, puis replacez ce mot dans la scène du sens."
+      "Toute la ville se rassemble pour le MATCH : MATCH rappelle まち."
     ]
   },
   "kanji-8336": {
-    "meaningStory": "Une personne cueille les jeunes feuilles d’un arbre pour préparer du thé.",
+    "meaningStory": "茶 est une ancienne forme abrégée de 荼. Pour retenir sa forme actuelle, imaginez une personne 人 cueillant les jeunes pousses 艹 d’un théier 木.",
     "readings": [
-      "Accrochez le son ちゃ au mot 紅茶（こうちゃ）, puis replacez ce mot dans la scène du sens."
+      "Une tasse de TCHAÏ fumant : TCHAÏ commence comme ちゃ dans 紅茶（こうちゃ）."
     ]
   },
   "kanji-9152": {
     "meaningStory": "Le liquide versé depuis une jarre à vin est du saké ou de l’alcool.",
     "readings": [
-      "Accrochez le son さけ au mot お酒（おさけ）, puis replacez ce mot dans la scène du sens."
+      "Le mot français SAKÉ donne déjà le son さけ : regardez la jarre de 酒 se remplir."
     ]
   },
   "kanji-9b5a": {
     "meaningStory": "Une tête, un corps couvert d’écailles et une queue dessinent un poisson.",
     "readings": [
-      "Accrochez le son さかな au mot 魚（さかな）, puis replacez ce mot dans la scène du sens."
+      "SA CArpe NAge entre les trois parties du dessin : SA-CA-NA rappelle さかな."
     ]
   },
   "kanji-8089": {
     "meaningStory": "Deux tranches posées sur une planche à découper représentent la viande.",
     "readings": [
-      "Accrochez le son にく au mot 肉（にく）, puis replacez ce mot dans la scène du sens."
+      "Une tranche de viande parfaitement NIQUEL sur la planche : NIC rappelle にく."
     ]
   },
   "kanji-82b1": {
     "meaningStory": "Une plante se transforme et s’ouvre en fleur.",
     "readings": [
-      "Accrochez le son はな au mot 花（はな）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son か au mot 花瓶（かびん）, puis replacez ce mot dans la scène du sens."
+      "Au HANAMI, on contemple les fleurs de cerisier : HANA dans HANAMI donne はな.",
+      "Un CAmélia s’ouvre dans le vase : CA rappelle か dans 花瓶（かびん）."
     ]
   },
   "kanji-5c4b": {
     "meaningStory": "Arrivez sous un toit et vous avez atteint un bâtiment ou une boutique.",
     "readings": [
-      "Accrochez le son や au mot ～屋（や）, puis replacez ce mot dans la scène du sens."
+      "Sous ce toit, une boutique vend des YAourts : YA rappelle や dans ～屋（や）."
     ]
   },
   "kanji-99c5": {
     "meaningStory": "Les chevaux s’arrêtent à intervalles mesurés le long de la route, à chaque station.",
     "readings": [
-      "Accrochez le son えき au mot 駅（えき）, puis replacez ce mot dans la scène du sens."
+      "Une ÉQUIpe attend le train à la gare : ÉQUI fait entendre えき."
     ]
   },
   "kanji-96fb": {
     "meaningStory": "Un éclair tombe d’un nuage d’orage au-dessus des champs : l’électricité.",
     "readings": [
-      "Accrochez le son でん au mot 電気（でんき）, puis replacez ce mot dans la scène du sens."
+      "Chez le DENtiste, la fraise électrique me fait claquer des dents : DEN rappelle でん dans 電気（でんき）."
     ]
   },
   "kanji-8eca": {
     "meaningStory": "Vue du dessus, une charrette montre son essieu reliant les roues : un véhicule.",
     "readings": [
-      "Accrochez le son くるま au mot 車（くるま）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son しゃ au mot 電車（でんしゃ）, puis replacez ce mot dans la scène du sens."
+      "« COURS, MA voiture démarre ! » COURS-MA rappelle くるま.",
+      "Un CHAT conduit un train électrique : CHAT rappelle しゃ dans 電車（でんしゃ）."
     ]
   },
   "kanji-884c": {
     "meaningStory": "Faites un pas après l’autre dans la rue pour aller quelque part.",
     "readings": [
-      "Accrochez le son い au mot 行く（いく）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son こう au mot 銀行（ぎんこう）, puis replacez ce mot dans la scène du sens."
+      "Tracez la rue et dites « J’Y vais » : le Y prononcé I donne い dans 行く（いく）.",
+      "Je passe du CÔTÉ de la banque : CÔ rappelle こう dans 銀行（ぎんこう）."
     ]
   },
   "kanji-6765": {
-    "meaningStory": "Des personnes approchent des deux côtés et viennent se réunir sous un arbre.",
+    "componentLabels": {
+      "木": "silhouette d’épi de blé",
+      "人": "barbes latérales, pas des personnes"
+    },
+    "meaningStory": "À l’origine, ce dessin représentait un épi de blé, pas des personnes sous un arbre. Pour « venir », imaginez le blé nouveau qui arrive chaque saison.",
     "readings": [
-      "Accrochez le son く au mot 来る（くる）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son らい au mot 来月（らいげつ）, puis replacez ce mot dans la scène du sens."
+      "Quand la récolte arrive, venez vous jeter à mon COU : COU donne く dans 来る（くる）.",
+      "Le blé de la saison prochaine arrive sur des RAILS : RAIL rappelle らい dans 来月（らいげつ）."
     ]
   },
   "kanji-5e30": {
     "meaningStory": "Prenez le balai en rentrant à la maison et balayez le sol.",
     "readings": [
-      "Accrochez le son かえ au mot 帰る（かえる）, puis replacez ce mot dans la scène du sens."
+      "Je rentre en CAR ET je reprends le balai : CAR-ET rappelle かえ dans 帰る（かえる）."
     ]
   },
   "kanji-8cb7": {
     "meaningStory": "Quand les coquillages 貝 servaient de monnaie, un filet 网 rassemblait cette richesse. Rassemblez la monnaie, puis échangez-la pour acheter.",
     "readings": [
-      "À la CAisse, je sors ma CArte pour acheter : CAisse et CArte font entendre か dans 買う（かう）."
+      "À la caisse, je sors ma CArte pour acheter : CA de CArte fait entendre か dans 買う（かう）."
     ]
   },
   "kanji-898b": {
-    "meaningStory": "Un œil monté sur des jambes se déplace pour tout voir.",
+    "meaningStory": "Un œil 目 démesuré sur les jambes 儿 d’une personne s’ouvre grand : elle ne pense qu’à voir.",
     "readings": [
-      "Accrochez le son み au mot 見る（みる）, puis replacez ce mot dans la scène du sens."
+      "Cet œil géant se précipite devant un MIroir : MI fait entendre み dans 見る（みる）."
     ]
   },
   "kanji-98df": {
-    "meaningStory": "Soulevez le couvercle d’un plateau contenant un bon repas et mangez.",
+    "componentLabels": {
+      "𠆢": "forme de couvercle",
+      "良": "forme de récipient rempli"
+    },
+    "meaningStory": "Le dessin ancien montre un récipient plein de nourriture refermé par un couvercle : on l’ouvre pour manger.",
     "readings": [
-      "Accrochez le son た au mot 食べる（たべる）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son しょく au mot 食堂（しょくどう）, puis replacez ce mot dans la scène du sens."
+      "Soulevez le couvercle et passez à TAble : TA donne た dans 食べる（たべる）.",
+      "À la cantine, CHOC : le cuisinier a renversé tout le repas ! CHOC rappelle しょく dans 食堂（しょくどう）."
     ]
   },
   "kanji-8aad": {
-    "meaningStory": "Lisez les mots de chaque livre proposé à la vente.",
+    "meaningStory": "Pour retenir la forme actuelle, imaginez un vendeur 売 qui lit à voix haute les mots 言 de ses livres. C’est une image de mémoire, pas l’étymologie du caractère.",
     "readings": [
-      "Accrochez le son よ au mot 読む（よむ）, puis replacez ce mot dans la scène du sens."
+      "Le vendeur crie « YO ! Lis l’étiquette avant d’acheter ! » YO donne よ dans 読む（よむ）."
     ]
   },
   "kanji-98f2": {
-    "meaningStory": "Une bouche ouverte près de la nourriture est prête à boire.",
+    "meaningStory": "L’ancienne forme montrait une bouche grande ouverte pour boire du vin. Dans la forme actuelle, la nourriture 飠 côtoie cette bouche ouverte 欠 : il est temps de boire.",
     "readings": [
-      "Accrochez le son の au mot 飲む（のむ）, puis replacez ce mot dans la scène du sens."
+      "Sur son arche, NOÉ ouvre grand la bouche pour boire la pluie du déluge : NOÉ rappelle の dans 飲む（のむ）."
     ]
   },
   "kanji-8a71": {
     "meaningStory": "Les paroles quittent la langue lorsque l’on parle et raconte une histoire.",
     "readings": [
-      "Accrochez le son はな au mot 話す（はなす）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son わ au mot 電話（でんわ）, puis replacez ce mot dans la scène du sens."
+      "« HA ! NArre-nous ton histoire ! » HA-NA rappelle はな dans 話す（はなす）.",
+      "« WAOUH, c’est toi au téléphone ? » WA rappelle わ dans 電話（でんわ）."
     ]
   },
   "kanji-66f8": {
     "meaningStory": "Un pinceau se déplace sur une page pour écrire des mots.",
     "readings": [
-      "Accrochez le son か au mot 書く（かく）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son しょ au mot 辞書（じしょ）, puis replacez ce mot dans la scène du sens."
+      "La pointe du pinceau court sur mon CAhier : CA donne か dans 書く（かく）.",
+      "Un SHOW de calligraphie fait la une du dictionnaire : SHOW rappelle しょ dans 辞書（じしょ）."
     ]
   },
   "kanji-805e": {
@@ -449,63 +464,73 @@
     ]
   },
   "kanji-5916": {
-    "meaningStory": "Le soir, suivez le panneau qui indique l’extérieur.",
+    "componentLabels": { "卜": "trait de divination" },
+    "meaningStory": "Une divination 卜 pratiquée le soir 夕, alors qu’on la faisait normalement de jour, sort de l’ordinaire : de là l’idée de « dehors » et d’« à l’écart ».",
     "readings": [
-      "Accrochez le son そと au mot 外（そと）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son がい au mot 外国（がいこく）, puis replacez ce mot dans la scène du sens."
+      "« SOT, TOI ! La porte est dehors ! » SOT-TOI rappelle そと.",
+      "GAÏA porte tous les pays au-delà de nos frontières : GAÏA rappelle がい dans 外国（がいこく）."
     ]
   },
   "kanji-5929": {
-    "meaningStory": "Le ciel s’étend au-dessus de la plus grande personne : les cieux.",
+    "meaningStory": "L’ancienne forme grossissait la tête d’une personne debout : ce qui est au-dessus de la tête est devenu le ciel.",
     "readings": [
-      "Accrochez le son てん au mot 天気（てんき）, puis replacez ce mot dans la scène du sens."
+      "Une balle de TENnis monte si haut qu’elle touche le ciel : TEN rappelle てん dans 天気（てんき）."
     ]
   },
   "kanji-96e8": {
     "meaningStory": "Des gouttes tombent d’une fenêtre remplie de nuages : la pluie.",
     "readings": [
-      "Accrochez le son あめ au mot 雨（あめ）, puis replacez ce mot dans la scène du sens."
+      "AMÉLIE voit les gouttes tomber du nuage et ouvre son parapluie : AMÉ rappelle あめ."
     ]
   },
   "kanji-52c9": {
     "meaningStory": "N’échappez pas à l’effort : employez votre force et étudiez sérieusement.",
     "readings": [
-      "Accrochez le son べん au mot 勉強（べんきょう）, puis replacez ce mot dans la scène du sens."
+      "BEN veut fuir ses devoirs, mais se force à étudier : BEN donne べん dans 勉強（べんきょう）."
     ]
   },
   "kanji-5f37": {
     "meaningStory": "Un insecte minuscule tend un arc lourd et prouve qu’il est incroyablement fort.",
     "readings": [
-      "Accrochez le son つよ au mot 強い（つよい）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son きょう au mot 勉強（べんきょう）, puis replacez ce mot dans la scène du sens."
+      "L’insecte retient un TSUnami avec son arc : « YO ! » TSU-YO rappelle つよ dans 強い（つよい）.",
+      "À KYOTO, cet insecte étudie pour devenir fort : KYO rappelle きょう dans 勉強（べんきょう）."
     ]
   },
   "kanji-91d1": {
-    "meaningStory": "Des pépites d’or et un trésor royal sont conservés en sécurité sous un toit.",
+    "componentLabels": {
+      "𠆢": "traits supérieurs, pas un toit",
+      "王": "traits de terre et de minerai",
+      "丷": "points de minerai, pas des cornes"
+    },
+    "meaningStory": "Dans l’ancienne forme, de petits minerais apparaissent dans la terre : ce métal précieux devient aussi de l’argent.",
     "readings": [
-      "Accrochez le son かね au mot お金（おかね）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son きん au mot 金曜日（きんようび）, puis replacez ce mot dans la scène du sens."
+      "Une CAnette en or vaut une fortune : CANE rappelle かね dans お金（おかね）.",
+      "Le KING garde tout l’or du royaume : KING rappelle きん dans 金曜日（きんようび）."
     ]
   },
   "kanji-571f": {
-    "meaningStory": "Une plante s’élève depuis une ligne qui représente le sol et la terre.",
+    "componentLabels": {
+      "十": "forme de monticule de terre",
+      "一": "ligne du sol"
+    },
+    "meaningStory": "L’ancienne forme dessinait un petit monticule de terre élevé pour honorer le dieu du sol. Du tertre sacré, retenez la terre elle-même.",
     "readings": [
-      "Accrochez le son ど au mot 土曜日（どようび）, puis replacez ce mot dans la scène du sens."
+      "Je tombe dans la terre et me retrouve sur le DOS : DOS donne ど dans 土曜日（どようび）."
     ]
   },
   "kanji-4eca": {
     "meaningStory": "Sous un couvercle, une aiguille indique cet instant précis : maintenant.",
     "readings": [
-      "Accrochez le son いま au mot 今（いま）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son こん au mot 今月（こんげつ）, puis replacez ce mot dans la scène du sens."
+      "Une IMAGE fige l’instant présent : IMA d’IMAGE rappelle いま.",
+      "Ce mois-ci, l’aiguille de l’horloge traverse un CÔNE : CÔNE rappelle こん dans 今月（こんげつ）."
     ]
   },
   "kanji-6708": {
     "meaningStory": "Le croissant de lune accomplit un cycle qui marquait autrefois chaque mois.",
     "readings": [
-      "Accrochez le son つき au mot 一月（ひとつき）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son げつ au mot 今月（こんげつ）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son がつ au mot ～月（がつ）, puis replacez ce mot dans la scène du sens."
+      "Au TSUKIMI, on contemple la lune : TSUKI donne つき dans 一月（ひとつき）.",
+      "« GUETTE CE croissant chaque mois » : GUETTE-CE rappelle げつ dans 今月（こんげつ）.",
+      "Chaque nouveau mois, GATSBY organise une fête sous la lune : GATS rappelle がつ dans ～月（がつ）."
     ]
   },
   "kanji-5e74": {
@@ -518,21 +543,21 @@
   "kanji-706b": {
     "meaningStory": "Deux étincelles s’élèvent de flammes qui dansent : le feu.",
     "readings": [
-      "Accrochez le son か au mot 火曜日（かようび）, puis replacez ce mot dans la scène du sens."
+      "La CAserne des pompiers prend feu un mardi : CA donne か dans 火曜日（かようび）."
     ]
   },
   "kanji-6c34": {
     "meaningStory": "Un courant central projette des gouttes de chaque côté : l’eau.",
     "readings": [
-      "Accrochez le son みず au mot 水（みず）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son すい au mot 水曜日（すいようび）, puis replacez ce mot dans la scène du sens."
+      "La MISE à l’eau du bateau fait jaillir des gouttes : MISE rappelle みず.",
+      "Je SUIS le courant de l’eau chaque mercredi : SUIS rappelle すい dans 水曜日（すいようび）."
     ]
   },
   "kanji-6728": {
     "meaningStory": "Un tronc, des racines et des branches étendues forment un arbre et son bois.",
     "readings": [
-      "Accrochez le son き au mot 木（き）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son もく au mot 木曜日（もくようび）, puis replacez ce mot dans la scène du sens."
+      "« QUI se cache derrière cet arbre ? » QUI donne き.",
+      "L’arbre se MOQUE du bûcheron : sa hache se casse. MOQUE rappelle もく dans 木曜日（もくようび）."
     ]
   },
   "kanji-660e": {
@@ -545,346 +570,355 @@
   "kanji-6bce": {
     "meaningStory": "Une personne vérifie chaque case du calendrier sans en manquer une seule.",
     "readings": [
-      "Accrochez le son まい au mot 毎日（まいにち）, puis replacez ce mot dans la scène du sens."
+      "Chaque jour, un nouveau MAIL m’attend : MAIL, prononcé à l’anglaise, rappelle まい dans 毎日（まいにち）."
     ]
   },
   "kanji-671d": {
     "meaningStory": "Au carrefour, le soleil remplace la lune et le matin commence.",
     "readings": [
-      "Accrochez le son あさ au mot 朝（あさ）, puis replacez ce mot dans la scène du sens."
+      "À SA fenêtre, le soleil du matin remplace la lune : À-SA rappelle あさ."
     ]
   },
   "kanji-663c": {
     "meaningStory": "Une règle suit le soleil au-dessus de l’horizon jusqu’à midi, en pleine journée.",
     "readings": [
-      "Accrochez le son ひる au mot 昼（ひる）, puis replacez ce mot dans la scène du sens."
+      "À midi, IL ROULE sa nappe de pique-nique sous le soleil : IL-ROU rappelle ひる."
     ]
   },
   "kanji-591c": {
     "meaningStory": "Une personne s’abrite sous un toit tandis que le soir s’assombrit et devient la nuit.",
     "readings": [
-      "Accrochez le son よる au mot 夜（よる）, puis replacez ce mot dans la scène du sens."
+      "À New YORK, la ville s’allume dès la tombée de la nuit : YORK rappelle よる."
     ]
   },
   "kanji-6669": {
     "meaningStory": "Le soleil s’échappe sous l’horizon et le soir commence.",
     "readings": [
-      "Accrochez le son ばん au mot 晩（ばん）, puis replacez ce mot dans la scène du sens."
+      "Le soleil se fait BANNIR sous l’horizon : BAN rappelle ばん, le soir."
     ]
   },
   "kanji-5915": {
     "meaningStory": "Un croissant apparaît quand la lumière du jour s’efface dans le soir.",
     "readings": [
-      "Accrochez le son ゆう au mot 夕方（ゆうがた）, puis replacez ce mot dans la scène du sens."
+      "« YOUPI, c’est le soir ! » YOU rappelle ゆう dans 夕方（ゆうがた）."
     ]
   },
   "kanji-6642": {
     "meaningStory": "La cloche d’un temple suit le soleil et annonce l’heure.",
     "readings": [
-      "Accrochez le son とき au mot ～時（とき）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son じ au mot ～時（じ）, puis replacez ce mot dans la scène du sens."
+      "« TÔT, QUI a sonné la cloche ? » TÔT-QUI rappelle とき, le temps qui passe.",
+      "« J’Y serai à trois heures » : J’Y rappelle じ dans 三時（さんじ）."
     ]
   },
   "kanji-534a": {
     "meaningStory": "Séparez dix en deux groupes égaux : chaque groupe représente la moitié.",
     "readings": [
-      "Accrochez le son はん au mot 半（はん）, puis replacez ce mot dans la scène du sens."
+      "Un HANDBALL coupé en deux moitiés égales : HAN rappelle はん."
     ]
   },
   "kanji-5348": {
     "meaningStory": "Une personne plante un panneau comme repère de midi : avant ce repère, c’est 午前 ; après, c’est 午後.",
     "readings": [
-      "Accrochez le son ご au mot 午後（ごご）, puis replacez ce mot dans la scène du sens."
+      "À midi, le panneau passe au vert : « GO ! » C’est l’après-midi, 午後（ごご）."
     ]
   },
   "kanji-5f8c": {
     "meaningStory": "Des pas suivent derrière, attachés comme par un fil : ils viennent toujours après.",
     "readings": [
-      "Accrochez le son あと au mot 後（あと）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son うしろ au mot 後ろ（うしろ）, puis replacez ce mot dans la scène du sens."
+      "Après les cours, je te dis « À TÔT ! » À-TÔT rappelle あと.",
+      "« OÙ le CHIrurgien ROnchonne-t-il ? » Derrière toi ! OÙ-CHI-RO rappelle うしろ."
     ]
   },
   "kanji-9031": {
     "meaningStory": "Parcourez un tour complet du chemin : une nouvelle semaine s’est écoulée.",
     "readings": [
-      "Accrochez le son しゅう au mot 今週（こんしゅう）, puis replacez ce mot dans la scène du sens."
+      "Chaque semaine, un CHOU fait le tour du potager : CHOU rappelle しゅう dans 今週（こんしゅう）."
     ]
   },
   "kanji-66dc": {
     "meaningStory": "Un oiseau aux plumes brillantes attribue une couleur à chaque jour de la semaine.",
     "readings": [
-      "Accrochez le son よう au mot 曜日（ようび）, puis replacez ce mot dans la scène du sens."
+      "Les jours reviennent comme un YO-YO : YO rappelle よう dans 曜日（ようび）."
     ]
   },
   "kanji-5206": {
     "meaningStory": "Un couteau divise quelque chose en plusieurs parties.",
     "readings": [
-      "Accrochez le son ぶん au mot 半分（はんぶん）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son ふん au compteur ～分（～ふん）, puis replacez ce mot dans la scène du sens."
+      "Un BUN de hamburger coupé en deux moitiés : BUN rappelle ぶん dans 半分（はんぶん）.",
+      "Une minute de pause FUN avant de reprendre le travail : FUN rappelle ふん dans ～分（～ふん）."
     ]
   },
   "kanji-53bb": {
     "meaningStory": "Tournez-vous et laissez derrière vous le sol que vous connaissiez : il est passé.",
     "readings": [
-      "Accrochez le son きょ au mot 去年（きょねん）, puis replacez ce mot dans la scène du sens."
+      "J’ai quitté KYOTO l’année dernière : KYO rappelle きょ dans 去年（きょねん）."
     ]
   },
   "kanji-5bb6": {
     "meaningStory": "Un cochon gardé sous un toit montre une maison prospère où l’on s’est installé.",
     "readings": [
-      "Accrochez le son いえ au mot 家（いえ）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son か au mot 家族（かぞく）, puis replacez ce mot dans la scène du sens."
+      "Je retrouve enfin ma maison : « YEAH ! » YEAH rappelle いえ.",
+      "CASA veut dire maison en espagnol : CA donne か dans 家族（かぞく）."
     ]
   },
   "kanji-65cf": {
     "meaningStory": "Un clan se rassemble sous un seul drapeau et suit la même flèche.",
     "readings": [
-      "Accrochez le son ぞく au mot 家族（かぞく）, puis replacez ce mot dans la scène du sens."
+      "Toute la famille arrive au ZOO en criant « COUrez ! » : ZOO-COU rappelle ぞく dans 家族（かぞく）."
     ]
   },
   "kanji-7236": {
-    "meaningStory": "Un père tient deux outils croisés dans des mains stables pour réparer la maison.",
+    "componentLabels": {
+      "乂": "traits de la hache et de la main",
+      "八": "traits de la main écartée"
+    },
+    "meaningStory": "À l’origine, une main tenait une hache, symbole de l’autorité familiale : le père.",
     "readings": [
-      "Accrochez le son ちち au mot 父（ちち）, puis replacez ce mot dans la scène du sens."
+      "Le père donne deux coups de hache : « TCHI ! TCHI ! » Ces deux coups rappellent ちち."
     ]
   },
   "kanji-6bcd": {
     "meaningStory": "Les deux marques intérieures montrent une mère qui nourrit et tient son enfant.",
     "readings": [
-      "Accrochez le son はは au mot 母（はは）, puis replacez ce mot dans la scène du sens."
+      "La mère rit « HA-HA » avec son enfant : ce rire donne はは."
     ]
   },
   "kanji-5b50": {
     "meaningStory": "Un bébé aux bras écartés et aux jambes enveloppées dessine la forme d’un enfant.",
     "readings": [
-      "Accrochez le son こ au mot 子供（こども）, puis replacez ce mot dans la scène du sens."
+      "Un enfant réclame un CÔlin, bras écartés : CÔ donne こ dans 子供（こども）."
     ]
   },
   "kanji-7537": {
     "meaningStory": "Un homme emploie sa force pour travailler le champ.",
     "readings": [
-      "Accrochez le son おとこ au mot 男（おとこ）, puis replacez ce mot dans la scène du sens."
+      "Un homme conduit son AUTO vers un COin du champ : AUTO-CO rappelle おとこ."
     ]
   },
   "kanji-5973": {
     "meaningStory": "La forme fluide représente une femme agenouillée, les bras repliés.",
     "readings": [
-      "Accrochez le son おんな au mot 女（おんな）, puis replacez ce mot dans la scène du sens."
+      "« ON N’A jamais vu une silhouette pareille » : ON-N’A rappelle おんな."
     ]
   },
   "kanji-9593": {
     "meaningStory": "La lumière visible entre les battants marque l’intervalle de la porte.",
     "readings": [
-      "Accrochez le son かん au mot 時間（じかん）, puis replacez ce mot dans la scène du sens."
+      "Une CANNE se coince dans l’intervalle entre les deux battants : CANNE rappelle かん dans 時間（じかん）."
     ]
   },
   "kanji-4e21": {
     "meaningStory": "Une charrette porte des charges identiques des deux côtés de son balancier.",
     "readings": [
-      "Accrochez le son りょう au mot 両親（りょうしん）, puis replacez ce mot dans la scène du sens."
+      "À RIO, mes deux parents portent chacun une valise identique : RIO rappelle りょう dans 両親（りょうしん）."
     ]
   },
   "kanji-89aa": {
-    "meaningStory": "Un parent se tient près d’un arbre et veille sur les enfants.",
+    "componentLabels": {
+      "立": "vestige de l’indice sonore 辛 (SHIN)",
+      "木": "bois d’une tablette ancestrale",
+      "見": "regard respectueux"
+    },
+    "meaningStory": "Un bois 木 marqué par une pointe devient une tablette ancestrale qu’on regarde 見 avec respect : le lien avec ses parents. L’ancien indice sonore 辛 (SHIN) subsiste, abrégé en 立.",
     "readings": [
-      "Accrochez le son しん au mot 両親（りょうしん）, puis replacez ce mot dans la scène du sens."
+      "La partie gauche gardait jadis 辛, indice sonore SHIN : ce しん se retrouve dans 両親（りょうしん）."
     ]
   },
   "kanji-53f3": {
     "meaningStory": "La main droite apporte la nourriture à la bouche.",
     "readings": [
-      "Accrochez le son みぎ au mot 右（みぎ）, puis replacez ce mot dans la scène du sens."
+      "La main droite accroche du GUI en fredonnant MI : MI-GUI rappelle みぎ."
     ]
   },
   "kanji-5de6": {
     "meaningStory": "La main gauche stabilise l’outil pendant que la droite travaille.",
     "readings": [
-      "Accrochez le son ひだり au mot 左（ひだり）, puis replacez ce mot dans la scène du sens."
+      "« HI, DALÍ ! » Le peintre salue de sa main gauche et sa moustache pointe à gauche : HI-DA-LÍ rappelle ひだり."
     ]
   },
   "kanji-4e0a": {
     "meaningStory": "Une marque se trouve au-dessus de la ligne de référence : en haut, sur et par-dessus.",
     "readings": [
-      "Accrochez le son うえ au mot 上（うえ）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son じょう au mot 上手（じょうず）, puis replacez ce mot dans la scène du sens."
+      "Pointez au-dessus de la ligne : « OÙ ? EH, là-haut ! » OÙ-EH rappelle うえ.",
+      "Le JOKER est si habile qu’il se hisse au-dessus des autres : JO rappelle じょう dans 上手（じょうず）."
     ]
   },
   "kanji-4e0b": {
     "meaningStory": "Une marque pend sous la ligne de référence : en bas et au-dessous.",
     "readings": [
-      "Accrochez le son した au mot 下（した）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son か au mot 廊下（ろうか）, puis replacez ce mot dans la scène du sens."
+      "CHITA, le chimpanzé de Tarzan, se cache sous la ligne : CHITA fait entendre した.",
+      "Sous le couloir se trouve une CAve : CA rappelle か dans 廊下（ろうか）."
     ]
   },
   "kanji-4e2d": {
     "meaningStory": "Une ligne traverse exactement le milieu d’une boîte : à l’intérieur et au centre.",
     "readings": [
-      "Accrochez le son なか au mot 中（なか）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son ちゅう au mot ～中（ちゅう）, puis replacez ce mot dans la scène du sens."
+      "Une perle de NACRE brille au milieu de la boîte : NACRE rappelle なか.",
+      "« TCHOU-TCHOU ! » Le train traverse le centre du cadre : TCHOU rappelle ちゅう dans ～中（ちゅう）."
     ]
   },
   "kanji-5144": {
     "meaningStory": "Le grand frère se tient sur de longues jambes et parle au nom des plus jeunes.",
     "readings": [
-      "Accrochez le son あに au mot 兄（あに）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son きょう au mot 兄弟（きょうだい）, puis replacez ce mot dans la scène du sens."
+      "ANNIE lève les yeux vers son grand frère : ANNIE rappelle あに.",
+      "À KYOTO, les deux frères se retrouvent : KYO rappelle きょう dans 兄弟（きょうだい）."
     ]
   },
   "kanji-59c9": {
     "meaningStory": "La grande sœur ouvre la voie dans le marché animé.",
     "readings": [
-      "Accrochez le son あね au mot 姉（あね）, puis replacez ce mot dans la scène du sens."
+      "Ma grande sœur a une ANNÉE de plus que moi : ANNÉE rappelle あね."
     ]
   },
   "kanji-5f1f": {
     "meaningStory": "Le petit frère porte fièrement son petit arc d’entraînement.",
     "readings": [
-      "Accrochez le son おとうと au mot 弟（おとうと）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son だい au mot 兄弟（きょうだい）, puis replacez ce mot dans la scène du sens."
+      "Mon petit frère réclame deux petites AUTO, AUTO ! Ce double appel rappelle おとうと.",
+      "Les deux frères devenus adultes partagent un DAIquiri : DAI rappelle だい dans 兄弟（きょうだい）."
     ]
   },
   "kanji-59b9": {
     "meaningStory": "La petite sœur est la femme qui n’a pas encore rattrapé les autres en âge.",
     "readings": [
-      "Accrochez le son いもうと au mot 妹（いもうと）, puis replacez ce mot dans la scène du sens."
+      "La petite sœur trace un I sur sa MOTO miniature : I-MOTO rappelle いもうと."
     ]
   },
   "kanji-624b": {
     "meaningStory": "Les doigts partent d’une paume et d’un poignet pour former une main.",
     "readings": [
-      "Accrochez le son て au mot 手（て）, puis replacez ce mot dans la scène du sens."
+      "Tenez une tasse de THÉ dans la main : THÉ donne て."
     ]
   },
   "kanji-8db3": {
     "meaningStory": "Une jambe descend de la rotule jusqu’à un pied posé au sol.",
     "readings": [
-      "Accrochez le son あし au mot 足（あし）, puis replacez ce mot dans la scène du sens."
+      "Le talon d’ACHILLE est au pied : ACHI rappelle あし."
     ]
   },
   "kanji-548c": {
     "meaningStory": "Partager les céréales afin de nourrir chaque bouche crée l’harmonie.",
     "readings": [
-      "Accrochez le son わ au mot 和室（わしつ）, puis replacez ce mot dans la scène du sens."
+      "« WAOUH, quelle paix dans cette pièce ! » WA rappelle わ dans 和室（わしつ）."
     ]
   },
   "kanji-6d0b": {
     "meaningStory": "Un mouton traverse une immense étendue d’eau vers l’océan et l’Occident.",
     "readings": [
-      "Accrochez le son よう au mot 洋服（ようふく）, puis replacez ce mot dans la scène du sens."
+      "Un YO-YO flotte sur l’océan jusqu’à l’Occident : YO rappelle よう dans 洋服（ようふく）."
     ]
   },
   "kanji-670d": {
     "meaningStory": "Une main ajuste un tissu contre le corps : un vêtement.",
     "readings": [
-      "Accrochez le son ふく au mot 服（ふく）, puis replacez ce mot dans la scène du sens."
+      "Un FOUlard entoure mon COU : FOU-COU rappelle ふく, le vêtement."
     ]
   },
   "kanji-9759": {
     "meaningStory": "Un bleu apaisant calme le conflit jusqu’à ce que tout devienne silencieux.",
     "readings": [
-      "Accrochez le son しず au mot 静か（しずか）, puis replacez ce mot dans la scène du sens."
+      "Le CHIrurgien ordonne : « ZOU, silence au bloc ! » CHI-ZOU fait entendre しず dans 静か（しずか）."
     ]
   },
   "kanji-4f11": {
     "meaningStory": "Une personne s’appuie contre un arbre pour se reposer à l’ombre.",
     "readings": [
-      "Accrochez le son やす au mot 休む（やすむ）, puis replacez ce mot dans la scène du sens."
+      "« Y’A SOUS cet arbre assez d’ombre pour me reposer » : Y’A-SOUS rappelle やす dans 休む（やすむ）."
     ]
   },
   "kanji-75c5": {
     "meaningStory": "Une personne confinée dans un lit de malade est souffrante.",
     "readings": [
-      "Accrochez le son びょう au mot 病気（びょうき）, puis replacez ce mot dans la scène du sens."
+      "Un BIOlogiste tombe malade et reste au lit : BIO rappelle びょう dans 病気（びょうき）."
     ]
   },
   "kanji-9662": {
     "meaningStory": "Un bâtiment complet sur une colline devient un grand établissement, comme un hôpital.",
     "readings": [
-      "Accrochez le son いん au mot 病院（びょういん）, puis replacez ce mot dans la scène du sens."
+      "L’INfirmière entre dans le grand hôpital : IN rappelle いん dans 病院（びょういん）."
     ]
   },
   "kanji-6c17": {
     "meaningStory": "La vapeur et une étincelle tourbillonnent en énergie invisible, esprit et humeur.",
     "readings": [
-      "Accrochez le son き au mot 元気（げんき）, puis replacez ce mot dans la scène du sens."
+      "« QUI a encore de l’énergie ? » QUI donne き dans 元気（げんき）."
     ]
   },
   "kanji-75db": {
     "meaningStory": "La douleur traverse le corps comme un passage sous un lit de malade.",
     "readings": [
-      "Accrochez le son いた au mot 痛い（いたい）, puis replacez ce mot dans la scène du sens."
+      "« IL T’A pincé ? Ça fait mal ! » IL-T’A rappelle いた dans 痛い（いたい）."
     ]
   },
   "kanji-5143": {
     "meaningStory": "Des jambes se placent sur deux lignes de départ, prêtes au commencement.",
     "readings": [
-      "Accrochez le son げん au mot 元気（げんき）, puis replacez ce mot dans la scène du sens."
+      "Une GAINE protège le câble d’énergie à sa source : GAINE rappelle げん dans 元気（げんき）."
     ]
   },
   "kanji-533b": {
     "meaningStory": "Un outil pointu rangé dans une trousse médicale appartient à un médecin.",
     "readings": [
-      "Accrochez le son い au mot 医者（いしゃ）, puis replacez ce mot dans la scène du sens."
+      "Le médecin glisse une aiguille en forme de I dans sa trousse : I donne い dans 医者（いしゃ）."
     ]
   },
   "kanji-8005": {
     "meaningStory": "Un ancien debout au soleil représente quelqu’un, une personne définie par son rôle.",
     "readings": [
-      "Accrochez le son しゃ au mot 医者（いしゃ）, puis replacez ce mot dans la scène du sens."
+      "Le CHAT du médecin devient son patient : CHAT rappelle しゃ dans 医者（いしゃ）."
     ]
   },
   "kanji-5f85": {
     "meaningStory": "Vos pas s’arrêtent à la porte du temple, où il faut attendre.",
     "readings": [
-      "Accrochez le son ま au mot 待つ（まつ）, puis replacez ce mot dans la scène du sens."
+      "MAMAn attend à la porte du temple : MA donne ま dans 待つ（まつ）."
     ]
   },
   "kanji-5ba4": {
     "meaningStory": "Une fois arrivé sous le toit, vous êtes à l’intérieur d’une pièce.",
     "readings": [
-      "Accrochez le son しつ au mot 教室（きょうしつ）, puis replacez ce mot dans la scène du sens."
+      "« SI TU entres dans la salle de classe, frappe d’abord ! » SI-TU rappelle しつ dans 教室（きょうしつ）."
     ]
   },
   "kanji-982d": {
     "meaningStory": "Un haricot rebondit sur le sommet d’une tête.",
     "readings": [
-      "Accrochez le son あたま au mot 頭（あたま）, puis replacez ce mot dans la scène du sens."
+      "« À TA MAnière, dessine une tête géante ! » À-TA-MA rappelle あたま."
     ]
   },
   "kanji-85ac": {
     "meaningStory": "Des herbes apportent du soulagement lorsqu’elles sont préparées comme médicament.",
     "readings": [
-      "Accrochez le son くすり au mot 薬（くすり）, puis replacez ce mot dans la scène du sens."
+      "Une SOURIS grimpe au COU du pharmacien et vole le médicament : COU-SOURIS rappelle くすり."
     ]
   },
   "kanji-77e5": {
     "meaningStory": "Les mots d’une bouche volent droit comme une flèche quand on connaît vraiment la réponse.",
     "readings": [
-      "Accrochez le son し au mot 知る（しる）, puis replacez ce mot dans la scène du sens."
+      "Je CHIFFRE la bonne réponse avec certitude : CHI rappelle し dans 知る（しる）."
     ]
   },
   "kanji-5ea7": {
     "meaningStory": "Deux personnes s’assoient par terre à l’intérieur d’un abri.",
     "readings": [
-      "Accrochez le son すわ au mot 座る（すわる）, puis replacez ce mot dans la scène du sens."
+      "Asseyez-vous sur un coussin de SOIE : SOIE rappelle すわ dans 座る（すわる）."
     ]
   },
   "kanji-7acb": {
     "meaningStory": "La tête et les épaules d’une personne se dressent verticalement depuis le sol.",
     "readings": [
-      "Accrochez le son た au mot 立つ（たつ）, puis replacez ce mot dans la scène du sens."
+      "Un magicien se lève d’un bond : « TA-DA ! » TA donne た dans 立つ（たつ）."
     ]
   },
   "kanji-592a": {
     "meaningStory": "Ajoutez un ventre rond à un grand corps : il devient gros et épais.",
     "readings": [
-      "Accrochez le son ふと au mot 太い（ふとい）, puis replacez ce mot dans la scène du sens."
+      "Une PHOTO grand-angle me fait paraître plus gros : PHOTO rappelle ふと dans 太い（ふとい）."
     ]
   },
   "kanji-66f2": {
     "meaningStory": "Un chemin tourne et se courbe en traversant un champ encadré.",
     "readings": [
-      "Accrochez le son ま au mot 曲る（まがる）, puis replacez ce mot dans la scène du sens."
+      "Le MANÈGE se courbe dans le virage : MA rappelle ま dans 曲がる（まがる）."
     ]
   },
   "kanji-4f4f": {
@@ -894,165 +928,174 @@
     ]
   },
   "kanji-51fa": {
-    "meaningStory": "Quelque chose émerge d’un récipient ouvert et en sort.",
+    "componentLabels": {
+      "山": "pied qui sort, pas des montagnes",
+      "凵": "enceinte"
+    },
+    "meaningStory": "L’ancien dessin montre un pied qui franchit une enceinte : il sort.",
     "readings": [
-      "Accrochez le son で au mot 出る（でる）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son だ au mot 出す（だす）, puis replacez ce mot dans la scène du sens."
+      "Un DÉ roule hors de la boîte : DÉ donne で dans 出る（でる）.",
+      "Une DAME pousse le dé hors de la boîte : DAME donne だ dans 出す（だす）."
     ]
   },
   "kanji-5165": {
     "meaningStory": "Deux traits convergent vers une ouverture lorsqu’ils entrent.",
     "readings": [
-      "Accrochez le son はい au mot 入る（はいる）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son い au mot 入口（いりぐち）, puis replacez ce mot dans la scène du sens."
+      "J’entre en disant « HI ! » à l’anglaise : HI se prononce comme はい dans 入る（はいる）.",
+      "Un grand I marque l’entrée : I donne い dans 入口（いりぐち）."
     ]
   },
   "kanji-7740": {
     "meaningStory": "Votre œil vérifie un vêtement de laine pendant que vous le mettez avant d’arriver habillé.",
     "readings": [
-      "Accrochez le son き au mot 着る（きる）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son つ au mot 着く（つく）, puis replacez ce mot dans la scène du sens."
+      "« QUI met ce vêtement ? » QUI donne き dans 着る（きる）.",
+      "Le TSUnami arrive au port : TSU rappelle つ dans 着く（つく）."
     ]
   },
   "kanji-8131": {
     "meaningStory": "Libérez le tissu du corps pour vous déshabiller et l’enlever.",
     "readings": [
-      "Accrochez le son ぬ au mot 脱ぐ（ぬぐ）, puis replacez ce mot dans la scène du sens."
+      "Je déNOUe mes lacets avant d’enlever mes chaussures : NOU rappelle ぬ dans 脱ぐ（ぬぐ）."
     ]
   },
   "kanji-50cd": {
     "meaningStory": "Une personne en mouvement constant est en plein travail.",
     "readings": [
-      "Accrochez le son はたら au mot 働く（はたらく）, puis replacez ce mot dans la scène du sens."
+      "« J’ai HÂTE À LA fin de cette journée de travail ! » HÂTE-À-LA rappelle はたら dans 働く（はたらく）."
     ]
   },
   "kanji-601d": {
     "meaningStory": "Les pensées poussent dans le cœur comme des cultures qui remplissent un champ.",
     "readings": [
-      "Accrochez le son おも au mot 思う（おもう）, puis replacez ce mot dans la scène du sens."
+      "« OH, MON idée ! » La pensée remplit mon cœur : OH-MON rappelle おも dans 思う（おもう）."
     ]
   },
   "kanji-4ed5": {
     "meaningStory": "Une personne s’occupe de ses tâches comme un professionnel discipliné : c’est le travail.",
     "readings": [
-      "Accrochez le son し au mot 仕事（しごと）, puis replacez ce mot dans la scène du sens."
+      "Au travail, je CHIFFRE les tâches accomplies : CHI rappelle し dans 仕事（しごと）."
     ]
   },
   "kanji-4e8b": {
     "meaningStory": "Une main accroche une tâche énoncée par la bouche : une affaire dont il faut s’occuper.",
     "readings": [
-      "Dans 仕事（しごと）, こと devient ごと : rattachez cette variation à la scène du sens."
+      "Un KOTO encombre mon bureau : KOTO rappelle こと, qui se sonorise en ごと dans 仕事（しごと）."
     ]
   },
   "kanji-6559": {
     "meaningStory": "Une main guide un enfant qui apprend auprès d’un ancien : enseigner.",
     "readings": [
-      "Accrochez le son おし au mot 教える（おしえる）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son きょう au mot 教室（きょうしつ）, puis replacez ce mot dans la scène du sens."
+      "« OH, CHIFFRE la bonne réponse ! » dit l’enseignant : OH-CHI rappelle おし dans 教える（おしえる）.",
+      "À KYOTO, le professeur ouvre sa salle de classe : KYO rappelle きょう dans 教室（きょうしつ）."
     ]
   },
   "kanji-4f1a": {
     "meaningStory": "Des personnes se réunissent sous un même nuage de conversation pour une rencontre.",
     "readings": [
-      "Accrochez le son あ au mot 会う（あう）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son かい au mot 会社（かいしゃ）, puis replacez ce mot dans la scène du sens."
+      "« AH, te voilà ! » Deux personnes se rencontrent : AH donne あ dans 会う（あう）.",
+      "Une CAILLE assiste à la réunion de l’entreprise : CAILLE rappelle かい dans 会社（かいしゃ）."
     ]
   },
   "kanji-5408": {
     "meaningStory": "Un couvercle s’ajuste parfaitement à son récipient.",
     "readings": [
-      "Accrochez le son あ au mot 合う（あう）, puis replacez ce mot dans la scène du sens."
+      "Le couvercle s’emboîte parfaitement : « AH, ça va ! » AH donne あ dans 合う（あう）."
     ]
   },
   "kanji-58f2": {
     "meaningStory": "Sous le toit de son étal, un marchand attend les clients pour vendre ses produits.",
     "readings": [
-      "Accrochez le son う au mot 売る（うる）, puis replacez ce mot dans la scène du sens."
+      "Le marchand appelle : « OÙ sont mes clients ? » OÙ donne う dans 売る（うる）."
     ]
   },
   "kanji-8a00": {
-    "meaningStory": "Des ondes sonores s’empilent au-dessus d’une bouche qui dit des mots.",
+    "meaningStory": "L’ancien dessin montre une langue sortant d’une bouche : quelqu’un dit des mots.",
     "readings": [
-      "Accrochez le son い au mot 言う（いう）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son こと au mot 言葉（ことば）, puis replacez ce mot dans la scène du sens."
+      "Un immense I sort de la bouche comme un mot prononcé : I donne い dans 言う（いう）.",
+      "Des paroles douces comme du COTON : COTON rappelle こと dans 言葉（ことば）."
     ]
   },
   "kanji-77ed": {
     "meaningStory": "Une flèche à peine plus longue qu’un haricot est remarquablement courte.",
     "readings": [
-      "Accrochez le son みじか au mot 短い（みじかい）, puis replacez ce mot dans la scène du sens."
+      "La flèche est trop courte pour écrire MI : J’Y CAsse la pointe. MI-J’Y-CA rappelle みじか."
     ]
   },
   "kanji-793e": {
     "meaningStory": "Des personnes se rassemblent autour d’un autel sur un terrain commun, comme une société.",
     "readings": [
-      "Accrochez le son しゃ au mot 会社（かいしゃ）, puis replacez ce mot dans la scène du sens."
+      "La société engage un CHAT comme dirigeant : CHAT rappelle しゃ dans 会社（かいしゃ）."
     ]
   },
   "kanji-7720": {
     "meaningStory": "Les yeux du peuple se ferment lorsque tout le monde s’endort.",
     "readings": [
-      "Accrochez le son ねむ au mot 眠い（ねむい）, puis replacez ce mot dans la scène du sens."
+      "NÉMO ferme enfin les yeux et s’endort : NÉMO rappelle ねむ dans 眠い（ねむい）."
     ]
   },
   "kanji-8272": {
-    "meaningStory": "Soulevez le couvercle et découvrez une palette où tourbillonnent les couleurs.",
+    "componentLabels": {
+      "𠂊": "forme de silhouette supérieure",
+      "巴": "forme de silhouette inférieure"
+    },
+    "meaningStory": "L’ancienne forme superposait deux silhouettes ; de l’apparence et du teint, le sens est passé aux couleurs.",
     "readings": [
-      "Accrochez le son いろ au mot 色（いろ）, puis replacez ce mot dans la scène du sens."
+      "Je repeins les silhouettes : I pour indigo, RO pour rose. Deux couleurs en un seul I-RO, いろ."
     ]
   },
   "kanji-8d64": {
     "meaningStory": "La terre rougit au-dessus d’un feu ardent jusqu’à devenir rouge.",
     "readings": [
-      "Accrochez le son あか au mot 赤（あか）, puis replacez ce mot dans la scène du sens."
+      "« AH, CArmin ! » Le feu colore la terre en rouge : AH-CA rappelle あか."
     ]
   },
   "kanji-9752": {
-    "meaningStory": "Une jeune plante sous la froide lumière de la lune prend une couleur bleu-vert.",
+    "componentLabels": { "月": "forme inférieure du pigment, pas la lune" },
+    "meaningStory": "Dans l’ancienne forme, une jeune pousse et un pigment tiré d’un puits évoquaient le bleu-vert ; la partie basse actuelle ressemble à 月, mais n’est pas la lune.",
     "readings": [
-      "Accrochez le son あお au mot 青（あお）, puis replacez ce mot dans la scène du sens."
+      "« AH, OH ! » La jeune pousse se teinte de bleu-vert : AH-OH rappelle あお."
     ]
   },
   "kanji-767d": {
     "meaningStory": "Un rayon éclatant rend le soleil parfaitement blanc.",
     "readings": [
-      "Accrochez le son しろ au mot 白（しろ）, puis replacez ce mot dans la scène du sens."
+      "Le CHIrurgien ROnchonne : sa blouse blanche vient d’être tachée. CHI-RO rappelle しろ."
     ]
   },
   "kanji-9ed2": {
     "meaningStory": "Un incendie couvre tout le village de suie noire.",
     "readings": [
-      "Accrochez le son くろ au mot 黒（くろ）, puis replacez ce mot dans la scène du sens."
+      "Une ROse noire tombe sur mon COU : COU-RO rappelle くろ."
     ]
   },
   "kanji-968e": {
     "meaningStory": "Tout le monde gravit une colline niveau après niveau, comme les étages d’un bâtiment.",
     "readings": [
-      "Accrochez le son かい au mot ～階（かい）, puis replacez ce mot dans la scène du sens."
+      "Une CAILLE grimpe les étages marche par marche : CAILLE rappelle かい dans ～階（かい）."
     ]
   },
   "kanji-56de": {
     "meaningStory": "Un circuit tourne autour d’un autre et marque un tour complet ou une occurrence.",
     "readings": [
-      "Accrochez le son かい au mot ～回（かい）, puis replacez ce mot dans la scène du sens."
+      "Un KAYAK fait un tour complet du lac : KAYAK rappelle かい dans ～回（かい）."
     ]
   },
   "kanji-958b": {
     "meaningStory": "Deux mains soulèvent les barres de la porte et l’ouvrent.",
     "readings": [
-      "Accrochez le son あ au mot 開く（あく）, puis replacez ce mot dans la scène du sens."
+      "La porte s’ouvre enfin : « AH ! » AH donne あ dans 開く（あく）."
     ]
   },
   "kanji-9589": {
     "meaningStory": "Posez une barre de bois en travers de la porte et elle est fermée.",
     "readings": [
-      "Accrochez le son し au mot 閉まる（しまる）, puis replacez ce mot dans la scène du sens."
+      "« CHUT ! » Fermez la porte pour ne réveiller personne : CHI rappelle し dans 閉まる（しまる）."
     ]
   },
   "kanji-65e9": {
     "meaningStory": "Le soleil est déjà levé avant que l’horloge n’indique dix heures : il est tôt.",
     "readings": [
-      "Accrochez le son はや au mot 早い（はやい）, puis replacez ce mot dans la scène du sens."
+      "« HA, Y’A déjà du soleil ! » HA-Y’A rappelle はや dans 早い（はやい）."
     ]
   },
   "kanji-6b69": {
@@ -1065,43 +1108,43 @@
   "kanji-8d70": {
     "meaningStory": "Un pied file si vite qu’il touche à peine le sol : courir.",
     "readings": [
-      "Accrochez le son はし au mot 走る（はしる）, puis replacez ce mot dans la scène du sens."
+      "Je cours pour sauver mon HACHIS du chien : HACHIS rappelle はし dans 走る（はしる）."
     ]
   },
   "kanji-9280": {
     "meaningStory": "Un métal à l’éclat pâle et durable est de l’argent.",
     "readings": [
-      "Accrochez le son ぎん au mot 銀行（ぎんこう）, puis replacez ce mot dans la scène du sens."
+      "Un lingot d’argent arrive de GUINÉE : GUIN rappelle ぎん dans 銀行（ぎんこう）."
     ]
   },
   "kanji-5c40": {
     "meaningStory": "Un bâtiment organisé autour d’un guichet devient un bureau ou une poste.",
     "readings": [
-      "Accrochez le son きょく au mot 郵便局（ゆうびんきょく）, puis replacez ce mot dans la scène du sens."
+      "À KYOTO, un COURSIER livre le courrier au bureau de poste : KYO-COU rappelle きょく dans 郵便局（ゆうびんきょく）."
     ]
   },
   "kanji-4f7f": {
     "meaningStory": "Une personne prend un outil officiel et l’utilise.",
     "readings": [
-      "Accrochez le son つか au mot 使う（つかう）, puis replacez ce mot dans la scène du sens."
+      "J’utilise une CANNE contre un TSUnami : TSU-CA rappelle つか dans 使う（つかう）."
     ]
   },
   "kanji-6599": {
     "meaningStory": "Une mesure dose le riz pour calculer la quantité, les ingrédients ou le tarif.",
     "readings": [
-      "Accrochez le son りょう au mot 料理（りょうり）, puis replacez ce mot dans la scène du sens."
+      "À RIO, on mesure le riz avant de cuisiner : RIO rappelle りょう dans 料理（りょうり）."
     ]
   },
   "kanji-6255": {
     "meaningStory": "Une main abandonne une pièce personnelle pour payer.",
     "readings": [
-      "Accrochez le son はら au mot 払う（はらう）, puis replacez ce mot dans la scène du sens."
+      "Je paie l’entrée du HARAS avant d’approcher les chevaux : HARAS rappelle はら dans 払う（はらう）."
     ]
   },
   "kanji-6301": {
     "meaningStory": "Une main tient fermement un objet précieux jusqu’au temple.",
     "readings": [
-      "Accrochez le son も au mot 持つ（もつ）, puis replacez ce mot dans la scène du sens."
+      "Je tiens une carte où est gravé un MOT : MOT donne も dans 持つ（もつ）."
     ]
   },
   "kanji-6587": {
@@ -1111,83 +1154,91 @@
     ]
   },
   "kanji-5b57": {
-    "meaningStory": "Sous le toit de l’école, un enfant apprend chaque caractère écrit.",
+    "meaningStory": "Un enfant 子 grandit sous un toit 宀. De même, les caractères complexes 字 se sont développés à partir de signes simples 文 : c’est un « caractère » écrit.",
     "readings": [
-      "Accrochez le son じ au mot 漢字（かんじ）, puis replacez ce mot dans la scène du sens."
+      "« J’Y écris un caractère ! » dit l’enfant sous le toit : J’Y rappelle じ dans 漢字（かんじ）."
     ]
   },
   "kanji-7269": {
     "meaningStory": "Posez une étiquette sur une vache : elle devient une chose concrète de l’inventaire.",
     "readings": [
-      "Accrochez le son もの au mot 物（もの）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son ぶつ au mot 動物（どうぶつ）, puis replacez ce mot dans la scène du sens."
+      "Je fais un MONOlogue en montrant chaque objet : MONO rappelle もの.",
+      "L’animal porte des BOOTS de cowboy : BOOTS, à l’anglaise, rappelle ぶつ dans 動物（どうぶつ）."
     ]
   },
   "kanji-54c1": {
     "meaningStory": "Trois boîtes empilées sont pleines de marchandises et de produits.",
     "readings": [
-      "Accrochez le son しな au mot 品物（しなもの）, puis replacez ce mot dans la scène du sens."
+      "Les marchandises arrivent de CHINE À la boutique : CHINE-À rappelle しな dans 品物（しなもの）."
     ]
   },
   "kanji-8ab0": {
     "meaningStory": "Un oiseau prononce des paroles humaines : tout le monde demande qui a parlé.",
     "readings": [
-      "Accrochez le son だれ au mot 誰（だれ）, puis replacez ce mot dans la scène du sens."
+      "« Qui a tiré le signal D’ARRÊT ? » D’ARRÊT rappelle だれ."
     ]
   },
   "kanji-4f5c": {
     "meaningStory": "Une personne agit soudainement et fabrique quelque chose de nouveau.",
     "readings": [
-      "Accrochez le son つく au mot 作る（つくる）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son さく au mot 作文（さくぶん）, puis replacez ce mot dans la scène du sens."
+      "L’artiste fabrique un TSUnami de COUleurs sur sa toile : TSU-COU rappelle つく dans 作る（つくる）.",
+      "J’écris ma rédaction sur un SAC en papier : SAC rappelle さく dans 作文（さくぶん）."
     ]
   },
   "kanji-5fc5": {
-    "meaningStory": "Un trait de résolution traverse le cœur : la chose doit absolument être faite.",
+    "componentLabels": {
+      "心": "forme de corde nouée",
+      "丿": "trait du pieu"
+    },
+    "meaningStory": "L’ancienne forme montrait une corde serrant un pieu pour qu’il tienne absolument ; le sens « nécessaire » a ensuite été emprunté.",
     "readings": [
-      "Accrochez le son ひつ au mot 必要（ひつよう）, puis replacez ce mot dans la scène du sens."
+      "Pour enregistrer ce HIT, il faut absolument des SOUS : HIT-SOUS rappelle ひつ dans 必要（ひつよう）."
     ]
   },
   "kanji-8981": {
-    "meaningStory": "Une personne piégée sous un filet a besoin d’aide.",
+    "componentLabels": {
+      "覀": "mains à la taille",
+      "女": "forme du corps et de la taille"
+    },
+    "meaningStory": "L’ancienne forme dessinait une personne tenant sa taille des deux mains ; la taille est un point essentiel, d’où « important » puis « nécessaire ».",
     "readings": [
-      "Accrochez le son い au mot 要る（いる）, puis replacez ce mot dans la scène du sens."
+      "Je serre ma ceinture autour de la taille et crie « I ! » : elle est indispensable. I donne い dans 要る（いる）."
     ]
   },
   "kanji-65c5": {
     "meaningStory": "Un voyageur suit un drapeau avec ses vêtements emballés pour partir en voyage.",
     "readings": [
-      "Accrochez le son りょ au mot 旅行（りょこう）, puis replacez ce mot dans la scène du sens."
+      "Je pars en voyage à RIO avec mes vêtements emballés : RIO rappelle りょ dans 旅行（りょこう）."
     ]
   },
   "kanji-8cbb": {
     "meaningStory": "Les factures s’empilent sur la monnaie : chaque voyage entraîne des frais.",
     "readings": [
-      "Accrochez le son ひ au mot 旅費（りょひ）, puis replacez ce mot dans la scène du sens."
+      "Un HIBOU lit la facture de voyage : HI rappelle ひ dans 旅費（りょひ）."
     ]
   },
   "kanji-9001": {
     "meaningStory": "Portez un colis le long du chemin pour l’envoyer ou l’accompagner.",
     "readings": [
-      "Accrochez le son おく au mot 送る（おくる）, puis replacez ce mot dans la scène du sens."
+      "Le facteur porte le petit colis AU COU pour l’envoyer : AU-COU rappelle おく dans 送る（おくる）."
     ]
   },
   "kanji-8cea": {
-    "meaningStory": "Deux haches inspectent la monnaie de près pour juger sa qualité et sa substance.",
+    "meaningStory": "Dans l’ancienne forme, deux haches gravaient une inscription sur un vase précieux : une garantie, puis la qualité de ce qu’on promet.",
     "readings": [
-      "Accrochez le son しつ au mot 質問（しつもん）, puis replacez ce mot dans la scène du sens."
+      "« SI TU veux garantir la qualité, pose des questions ! » SI-TU rappelle しつ dans 質問（しつもん）."
     ]
   },
   "kanji-554f": {
     "meaningStory": "Une bouche devant la porte pose une question avant d’entrer.",
     "readings": [
-      "Accrochez le son もん au mot 質問（しつもん）, puis replacez ce mot dans la scène du sens."
+      "MON voisin pose une question à travers la porte : MON rappelle もん dans 質問（しつもん）."
     ]
   },
   "kanji-56f3": {
     "meaningStory": "Des repères et des routes croisées tracés dans une frontière forment une carte ou un schéma.",
     "readings": [
-      "Accrochez le son ず au mot 地図（ちず）, puis replacez ce mot dans la scène du sens."
+      "« ZOU, on déplie la carte ! » ZOU donne ず dans 地図（ちず）."
     ]
   },
   "kanji-9928": {
@@ -1199,116 +1250,119 @@
   "kanji-5e2d": {
     "meaningStory": "Un tapis de tissu sous un abri marque votre siège ou votre place.",
     "readings": [
-      "Accrochez le son せき au mot 欠席（けっせき）, puis replacez ce mot dans la scène du sens."
+      "Devant la place vide : « C’EST QUI l’absent ? » C’EST-QUI rappelle せき dans 欠席（けっせき）."
     ]
   },
   "kanji-8abf": {
     "meaningStory": "Entourez un sujet de questions pour l’examiner, le vérifier et en ajuster chaque détail.",
     "readings": [
-      "Accrochez le son しら au mot 調べる（しらべる）, puis replacez ce mot dans la scène du sens."
+      "CHIRAC vérifie chaque détail à la loupe : CHIRA rappelle しら dans 調べる（しらべる）."
     ]
   },
   "kanji-8aac": {
     "meaningStory": "Échangez des paroles claires jusqu’à transformer une opinion en explication.",
     "readings": [
-      "Accrochez le son せつ au mot 説明（せつめい）, puis replacez ce mot dans la scène du sens."
+      "Sur le SET de tournage, on explique la scène à toute l’équipe : SET rappelle せつ dans 説明（せつめい）."
     ]
   },
   "kanji-899a": {
     "meaningStory": "Voyez les étincelles d’apprentissage sous le toit et fixez-les dans la mémoire.",
     "readings": [
-      "Accrochez le son おぼ au mot 覚える（おぼえる）, puis replacez ce mot dans la scène du sens."
+      "« OH, BEAU souvenir ! » La scène se fixe dans ma mémoire : OH-BEAU rappelle おぼ dans 覚える（おぼえる）."
     ]
   },
   "kanji-5fd8": {
     "meaningStory": "Quand quelque chose se perd hors du cœur, on l’oublie.",
     "readings": [
-      "Accrochez le son わす au mot 忘れる（わすれる）, puis replacez ce mot dans la scène du sens."
+      "« WAOUH, ce SOUvenir a disparu ! » WA-SOU rappelle わす dans 忘れる（わすれる）."
     ]
   },
   "kanji-7b54": {
     "meaningStory": "Disposez les lamelles de bambou jusqu’à ce que les bonnes pièces s’ajustent : voici la réponse.",
     "readings": [
-      "Accrochez le son こた au mot 答える（こたえる）, puis replacez ce mot dans la scène du sens."
+      "Les deux pièces s’emboîtent CÔTE À CÔTE : voilà la réponse. CÔTE-À rappelle こた dans 答える（こたえる）."
     ]
   },
   "kanji-5bbf": {
     "meaningStory": "Un toit capable d’abriter cent personnes est une auberge ou un logement.",
     "readings": [
-      "Accrochez le son しゅく au mot 宿題（しゅくだい）, puis replacez ce mot dans la scène du sens."
+      "À l’auberge, un CHOU me tombe sur le COU pendant mes devoirs : CHOU-COU rappelle しゅく dans 宿題（しゅくだい）."
     ]
   },
   "kanji-984c": {
     "meaningStory": "Placez l’affirmation correcte en tête de page pour en faire le sujet ou le titre.",
     "readings": [
-      "Accrochez le son だい au mot 宿題（しゅくだい）, puis replacez ce mot dans la scène du sens."
+      "Le sujet de mon devoir de cuisine : inventer un DAIquiri. DAI rappelle だい dans 宿題（しゅくだい）."
     ]
   },
   "kanji-6b20": {
-    "meaningStory": "Une personne tend la main vers une pièce manquante et ressent son absence.",
+    "meaningStory": "Attention : 欠 « manquer » simplifie l’ancien 缺, une jarre ébréchée. La forme 欠 existait aussi pour une bouche ouverte qui bâille : deux origines réunies sous la même écriture.",
     "readings": [
-      "Dans 欠席（けっせき）, けつ devient けっ : rattachez cette variation à la scène du sens."
+      "Je pars en QUÊTE de l’élève manquant : QUÊTE rappelle けつ, qui se resserre en けっ dans 欠席（けっせき）."
     ]
   },
   "kanji-697d": {
     "meaningStory": "Des cordes tendues sur du bois produisent une musique agréable et amusante.",
     "readings": [
-      "Accrochez le son がく au mot 音楽（おんがく）, puis replacez ce mot dans la scène du sens.",
-      "Accrochez le son たの au mot 楽しい（たのしい）, puis replacez ce mot dans la scène du sens."
+      "Le GAmIN des COUrs joue maintenant de la musique : GA-COU rappelle がく, comme dans 学.",
+      "TA NOte préférée rend la journée joyeuse : TA-NO rappelle たの dans 楽しい（たのしい）."
     ]
   },
   "kanji-60b2": {
     "meaningStory": "Quand tout va mal au-dessus du cœur, celui-ci devient triste et chagriné.",
     "readings": [
-      "Accrochez le son かな au mot 悲しい（かなしい）, puis replacez ce mot dans la scène du sens."
+      "Un CANArd pleure, le cœur brisé : CANA rappelle かな dans 悲しい（かなしい）."
     ]
   },
   "kanji-610f": {
     "meaningStory": "Un son atteint le cœur et devient une idée, une intention ou un sens.",
     "readings": [
-      "Accrochez le son い au mot 意味（いみ）, puis replacez ce mot dans la scène du sens."
+      "Une ampoule en forme de I s’allume au-dessus du cœur : I donne い dans 意味（いみ）."
     ]
   },
   "kanji-767a": {
     "meaningStory": "Deux pieds bondissent d’une plateforme au moment du départ.",
     "readings": [
-      "Dans 発表（はっぴょう）, はつ devient はっ : rattachez cette variation à la scène du sens."
+      "J’ai HÂTE, je SOUffle et bondis au départ : HÂTE-SOU rappelle はつ, qui devient はっ dans 発表（はっぴょう）."
     ]
   },
   "kanji-8868": {
     "meaningStory": "Un panneau fixé à l’extérieur d’un vêtement présente une information à sa surface.",
     "readings": [
-      "Dans 発表（はっぴょう）, ひょう devient ぴょう : rattachez cette variation à la scène du sens."
+      "Le PION annonce les résultats devant la classe : PION rappelle ぴょう dans 発表（はっぴょう）, où ひょう devient ぴょう."
     ]
   },
   "kanji-5473": {
-    "meaningStory": "La bouche goûte un aliment pas encore mûr et en découvre la saveur.",
+    "componentLabels": { "未": "indice sonore MI, pas « pas encore »" },
+    "meaningStory": "La bouche 口 indique le goût ; 未 fournit historiquement le son MI, sans signifier ici « pas encore mûr ».",
     "readings": [
-      "Accrochez le son み au mot 意味（いみ）, puis replacez ce mot dans la scène du sens."
+      "Une goutte de MIEL touche la bouche : MI rappelle み dans 意味（いみ）, comme l’indice 未 du caractère."
     ]
   },
   "kanji-81ea": {
     "meaningStory": "Pointer son propre nez signifie soi-même.",
     "readings": [
-      "Accrochez le son じ au mot 自分（じぶん）, puis replacez ce mot dans la scène du sens."
+      "Pointez votre propre nez : « J’Y touche moi-même ! » J’Y rappelle じ dans 自分（じぶん）."
     ]
   },
   "kanji-5b9a": {
     "meaningStory": "Sous un toit, choisissez le bon chemin et déterminez un plan fixe.",
     "readings": [
-      "Accrochez le son てい au mot 予定（よてい）, puis replacez ce mot dans la scène du sens."
+      "« C’est décidé : THÉ ICI tous les matins ! » THÉ-I rappelle てい dans 予定（よてい）."
     ]
   },
   "kanji-8cc7": {
-    "meaningStory": "La monnaie mise de côté pour la suite devient un actif ou une ressource utile.",
+    "componentLabels": { "次": "indice sonore historique SHI" },
+    "meaningStory": "Le coquillage-monnaie 貝 figure les ressources ; 次, à gauche, servait d’indice sonore SHI.",
     "readings": [
-      "Accrochez le son し au mot 資料（しりょう）, puis replacez ce mot dans la scène du sens."
+      "次 peut se lire SHI : il donne し dans 資料（しりょう）, pendant que 貝 rappelle les ressources."
     ]
   },
   "kanji-6821": {
-    "meaningStory": "À l’école, des personnes échangent des idées près d’un arbre avant un examen.",
+    "componentLabels": { "交": "indice sonore historique KŌ" },
+    "meaningStory": "木 rappelle le bois ; 交 fournit historiquement le son KŌ. Le sens « école » est venu plus tard.",
     "readings": [
-      "Accrochez le son こう au mot 学校（がっこう）, puis replacez ce mot dans la scène du sens."
+      "交 se lit KŌ : c’est l’indice direct de こう dans 学校（がっこう）."
     ]
   }
 }

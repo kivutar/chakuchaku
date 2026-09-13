@@ -277,8 +277,26 @@ function validateKanjiMnemonics(sources, localizations, errors, locale) {
       errors.push(`${id}: ${language} reading mnemonics are invalid.`);
     }
 
+    const sourceLabels = source.componentLabels || {};
+    const localizedLabels = localized.componentLabels || {};
+
+    if (
+      localized.componentLabels !== undefined &&
+      (!localized.componentLabels || typeof localized.componentLabels !== "object" ||
+        Array.isArray(localized.componentLabels))
+    ) {
+      errors.push(`${id}: ${language} component labels must be an object.`);
+    } else if (
+      Object.keys(sourceLabels).length !== Object.keys(localizedLabels).length ||
+      Object.entries(localizedLabels).some(([symbol, label]) => (
+        !Object.hasOwn(sourceLabels, symbol) || !isNonemptyString(label)
+      ))
+    ) {
+      errors.push(`${id}: ${language} component labels must match the source.`);
+    }
+
     for (const key of Object.keys(localized)) {
-      if (!["meaningStory", "readings"].includes(key)) {
+      if (!["meaningStory", "readings", "componentLabels"].includes(key)) {
         errors.push(`${id}: ${language} mnemonic has unknown field ${key}.`);
       }
     }

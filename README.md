@@ -85,10 +85,10 @@ Development-time generation is split from the browser runtime:
 | `data/source/rikkyo-n5-kanji.json` | Rikkyo's staged 209-character N5-equivalent curriculum | Committed |
 | `data/jlpt-n5-kanji.json` | Generated kanji metadata used by lessons and Statistics | Committed |
 | `data/kanji-contexts.json` | Kanji-only example words for curriculum coverage gaps | Committed |
-| `data/source/kanji-components.json` | Stable English keyword for every visual mnemonic component | Committed |
-| `data/source/kanji-mnemonics.json` | Original visual, meaning, reading, and anchor-word memory aids | Committed |
-| `data/source/locales/fr/kanji-components.json` | Stable French component keywords | Committed |
-| `data/source/locales/fr/kanji-mnemonics.json` | Compact French mnemonic prose | Committed |
+| `data/source/kanji-components.json` | Default English keyword for every visual mnemonic component | Committed |
+| `data/source/kanji-mnemonics.json` | Original visual, meaning, reading, and anchor-word memory aids, with optional per-kanji `componentLabels` | Committed |
+| `data/source/locales/fr/kanji-components.json` | Default French component keywords | Committed |
+| `data/source/locales/fr/kanji-mnemonics.json` | French mnemonic prose and matching per-kanji component labels | Committed |
 | `data/kanji-mnemonics.json` | Generated browser-ready English mnemonic catalogue | Committed |
 | `data/locales/fr/kanji-mnemonics.json` | Generated browser-ready French mnemonic catalogue | Committed |
 | `data/introduction.json` | Generated browser-ready introduction with tokens | Committed |
@@ -103,6 +103,12 @@ Development-time generation is split from the browser runtime:
 | `vocabulary.js` | Bidirectional vocabulary selection, normalization, and deterministic grading | Committed |
 | `conjugation.js` | Polite/て-form generation, reusable point mapping, and deterministic grading | Committed |
 | `assets/voices/{grammar,vocab}/*.m4a` | Generated AAC narration used directly by the browser | Committed when available |
+
+Kanji component keywords are defaults, not automatic etymologies. When a shape
+has a different role in a particular character (for example 月 in 青), add
+`componentLabels` for that entry in both the English source and its French
+localization, using the same component keys. Distinguish a visual resemblance
+from a historical meaning or sound clue in the label and story.
 
 `scripts/prepare-content.js` runs Lindera with IPADIC during development. It
 tokenizes each sentence, searches the complete vocabulary dictionary, narrows

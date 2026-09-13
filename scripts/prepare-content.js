@@ -1020,6 +1020,19 @@ function validateKanjiMnemonics(
       mnemonic.components.forEach((symbol) => usedComponents.add(symbol));
     }
 
+    if (mnemonic.componentLabels !== undefined && (
+      !mnemonic.componentLabels ||
+      typeof mnemonic.componentLabels !== "object" ||
+      Array.isArray(mnemonic.componentLabels) ||
+      Object.entries(mnemonic.componentLabels).some(([symbol, label]) => (
+        !Array.isArray(mnemonic.components) || !mnemonic.components.includes(symbol) ||
+        typeof label !== "string" ||
+        !label.trim()
+      ))
+    )) {
+      errors.push(`${mnemonic.kanjiId}: invalid component labels.`);
+    }
+
     if (typeof mnemonic.meaningStory !== "string" || !mnemonic.meaningStory.trim()) {
       errors.push(`${mnemonic.kanjiId}: meaning mnemonic is required.`);
     }
@@ -1086,11 +1099,11 @@ function validateKanjiMnemonics(
 }
 
 function prepareKanjiMnemonics(sources, components) {
-  return sources.map((source) => ({
+  return sources.map(({ componentLabels, ...source }) => ({
     ...source,
     components: source.components.map((symbol) => ({
       symbol,
-      meaning: components[symbol]
+      meaning: componentLabels?.[symbol] || components[symbol]
     }))
   }));
 }
@@ -1104,7 +1117,7 @@ function prepareKanjiMnemonicLocalizations(sources, localizations, components) {
     return [id, {
       components: source.components.map((symbol) => ({
         symbol,
-        meaning: components[symbol]
+        meaning: localized.componentLabels?.[symbol] || components[symbol]
       })),
       meaningStory: localized.meaningStory,
       readings: source.readings.map((reading, index) => ({

@@ -110,6 +110,40 @@ test("localized whole-word reading stories mirror canonical readings", () => {
   );
 });
 
+test("kanji component label overrides must be translated for the same symbols", () => {
+  const sources = {
+    exercises: [], grammar: [], vocabulary: [], vocabularyExamples: [],
+    kanji: [{ id: "kanji-test" }],
+    kanjiComponents: { "月": "moon" },
+    kanjiMnemonics: [{
+      kanjiId: "kanji-test",
+      components: ["月"],
+      componentLabels: { "月": "shape, not moon" },
+      meaningStory: "A visual memory cue.",
+      readings: [{ reading: "つき", story: "Moon sounds like つき." }]
+    }]
+  };
+  const localizations = {
+    exercises: {}, grammar: {}, vocabulary: {},
+    kanji: { "kanji-test": { meaning: "test" } },
+    "kanji-components": { "月": "lune" },
+    "kanji-mnemonics": {
+      "kanji-test": {
+        meaningStory: "Une image visuelle.",
+        readings: ["La lune rappelle つき."],
+        componentLabels: { "月": "forme, pas la lune" }
+      }
+    }
+  };
+
+  assert.deepEqual(validateFrenchContent({ ...sources, localizations }), []);
+  delete localizations["kanji-mnemonics"]["kanji-test"].componentLabels;
+  assert.match(
+    validateFrenchContent({ ...sources, localizations }).join("\n"),
+    /component labels must match the source/u
+  );
+});
+
 test("UI catalog validation requires matching keys, plurals, and placeholders", () => {
   assert.deepEqual(validateUiCatalogs(
     { greeting: "Hello {name}", count: { one: "{count} item", other: "{count} items" } },
