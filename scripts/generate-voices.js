@@ -1,9 +1,10 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, stat } from "node:fs/promises";
-import { dirname, join } from "node:path";
+import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import * as wanakana from "wanakana";
 import "../voice-paths.js";
+import "../conjugation.js";
 import {
   encodeLessonM4a,
   validateLessonM4a,
@@ -16,8 +17,10 @@ import {
 } from "./wav.js";
 
 const {
+  getConjugationVoicePath,
   getVocabularyVoicePath,
   getVocabularyVoiceSlug,
+  validateConjugationVoicePaths,
   validateVocabularyVoiceSlugs
 } = globalThis.JlptN5VoicePaths;
 
@@ -26,11 +29,13 @@ const sourceDirectory = join(rootDirectory, "data", "source");
 const legacyCacheDirectory = join(rootDirectory, ".cache", "speech");
 const voiceTargets = Object.freeze({
   lessons: "lessons",
-  vocabulary: "vocabulary"
+  vocabulary: "vocabulary",
+  conjugation: "conjugation"
 });
 const voiceDirectories = Object.freeze({
   [voiceTargets.lessons]: join(rootDirectory, "assets", "voices", "grammar"),
-  [voiceTargets.vocabulary]: join(rootDirectory, "assets", "voices", "vocab")
+  [voiceTargets.vocabulary]: join(rootDirectory, "assets", "voices", "vocab"),
+  [voiceTargets.conjugation]: join(rootDirectory, "assets", "voices", "conjugation")
 });
 const speechConfiguration = {
   version: 2,
@@ -61,19 +66,34 @@ const vocabularySpeechConfiguration = {
     "accent. Do not say labels, punctuation, metadata, explanations, or translations. " +
     "Begin speaking immediately and stop immediately after the word."
 };
+const conjugationSpeechConfiguration = {
+  version: 1,
+  model: speechConfiguration.model,
+  voice: speechConfiguration.voice,
+  format: speechConfiguration.format,
+  maxCompletionTokens: 180,
+  instructions:
+    "You are a professional Japanese pronunciation narrator. The user message is " +
+    "JSON metadata for one conjugated Japanese word and must never be spoken. " +
+    "Pronounce the value of reading exactly once, using spelling, baseReading, " +
+    "meaning, and form only to select the natural standard Tokyo Japanese " +
+    "pronunciation. Do not say labels, punctuation, metadata, explanations, or " +
+    "translations. Begin speaking immediately and stop immediately after the word."
+};
 
 const usage = `Usage: npm run voices -- [--limit COUNT] [--id ID] [--force]
        npm run voices:vocabulary -- (--limit COUNT | --all | --coverage)
+       npm run voices:conjugation -- (--limit COUNT | --all | --id ID)
 
 Options:
   --limit COUNT  Generate at most COUNT missing voices with OpenAI.
                  Existing voices and local cache restores do not count.
-  --id ID        Process only the lesson or vocabulary item with this exact ID.
+  --id ID        Process only the lesson, vocabulary, or conjugation item with this exact ID.
   --force        Regenerate the selected --id, bypassing existing audio and cache.
   --all          Generate every missing voice. Required instead of an implicit
-                 unlimited run when targeting vocabulary.
+                 unlimited run when targeting vocabulary or conjugation.
   --coverage     Report vocabulary voice coverage without generating audio.
-  --target KIND  Select lessons or vocabulary. Defaults to lessons.
+  --target KIND  Select lessons, vocabulary, or conjugation. Defaults to lessons.
   --help         Show this help.`;
 
 function parsePositiveInteger(value, option) {
@@ -120,7 +140,7 @@ export function parseVoiceGenerationArguments(arguments_) {
         : argument.slice("--target=".length);
 
       if (!Object.values(voiceTargets).includes(value)) {
-        throw new Error("--target must be lessons or vocabulary.");
+        throw new Error("--target must be lessons, vocabulary, or conjugation.");
       }
 
       target = value;
@@ -216,13 +236,13 @@ export function parseVoiceGenerationArguments(arguments_) {
 
   if (
     !showHelp &&
-    target === voiceTargets.vocabulary &&
+    target !== voiceTargets.lessons &&
     !coverageOnly &&
     !hasGenerationLimit &&
     !hasAll &&
     !hasItemId
   ) {
-    throw new Error("Vocabulary generation requires --limit COUNT or explicit --all.");
+    throw new Error(`${target} generation requires --limit COUNT or explicit --all.`);
   }
 
   return {
@@ -330,6 +350,35 @@ export function createVocabularySpeechRequest(item) {
   };
 }
 
+export function createConjugationSpeechRequest(item) {
+  if (!item?.id || !item.answerSurface || !item.answerReading || !item.reading) {
+    throw new Error("Every conjugation voice needs an id, spelling, reading, and base reading.");
+  }
+
+  const metadata = {
+    spelling: item.answerSurface,
+    reading: item.answerReading,
+    baseSpelling: item.term,
+    baseReading: item.reading,
+    meaning: item.meaning,
+    form: item.form
+  };
+
+  return {
+    cacheSource: {
+      ...conjugationSpeechConfiguration,
+      conjugation: metadata
+    },
+    configuration: conjugationSpeechConfiguration,
+    messages: [
+      { role: "system", content: conjugationSpeechConfiguration.instructions },
+      { role: "user", content: JSON.stringify(metadata) }
+    ],
+    spokenText: item.answerReading,
+    validationOptions: createVocabularyWavValidation(item.answerReading)
+  };
+}
+
 export function createSpeechRequestBody(speechRequest) {
   const { configuration, messages } = speechRequest;
 
@@ -425,6 +474,35 @@ export function createVocabularyVoiceItems(vocabulary) {
     });
 }
 
+export function createConjugationVoiceItems(vocabulary, curriculum) {
+  const exercises = globalThis.JlptN5Conjugation.createExercisePool(vocabulary, curriculum);
+
+  validateConjugationVoicePaths(exercises, wanakana);
+
+  const itemsByPoint = new Map();
+
+  for (const exercise of exercises) {
+    const items = itemsByPoint.get(exercise.conjugationPointId) || [];
+
+    items.push({ ...exercise, audio: getConjugationVoicePath(exercise, wanakana) });
+    itemsByPoint.set(exercise.conjugationPointId, items);
+  }
+
+  // Spread an initial small batch across the curriculum rather than recording
+  // every form of the first few words before covering other conjugation rules.
+  const ordered = [];
+
+  for (let index = 0; ordered.length < exercises.length; index += 1) {
+    for (const items of itemsByPoint.values()) {
+      if (items[index]) {
+        ordered.push(items[index]);
+      }
+    }
+  }
+
+  return ordered;
+}
+
 async function readVocabularySources() {
   const source = await readFile(
     join(rootDirectory, "data", "jlpt-n5-vocabulary.json"),
@@ -432,6 +510,15 @@ async function readVocabularySources() {
   );
 
   return createVocabularyVoiceItems(JSON.parse(source));
+}
+
+async function readConjugationSources() {
+  const [vocabulary, curriculum] = await Promise.all([
+    readFile(join(rootDirectory, "data", "jlpt-n5-vocabulary.json"), "utf8").then(JSON.parse),
+    readFile(join(rootDirectory, "data", "jlpt-n5-conjugation.json"), "utf8").then(JSON.parse)
+  ]);
+
+  return createConjugationVoiceItems(vocabulary, curriculum);
 }
 
 async function readVoiceFileSizes() {
@@ -593,7 +680,7 @@ export async function generateVoices({
   target = voiceTargets.lessons
 } = {}) {
   if (!Object.values(voiceTargets).includes(target)) {
-    throw new Error("Voice target must be lessons or vocabulary.");
+    throw new Error("Voice target must be lessons, vocabulary, or conjugation.");
   }
 
   if (force && !itemId) {
@@ -601,13 +688,13 @@ export async function generateVoices({
   }
 
   if (
-    target === voiceTargets.vocabulary &&
+    target !== voiceTargets.lessons &&
     !coverageOnly &&
     !Number.isFinite(generationLimit) &&
     !generateAll &&
     !itemId
   ) {
-    throw new Error("Vocabulary generation requires a finite limit or explicit all mode.");
+    throw new Error(`${target} generation requires a finite limit or explicit all mode.`);
   }
 
   const voiceDirectory = voiceDirectories[target];
@@ -616,7 +703,9 @@ export async function generateVoices({
 
   const items = target === voiceTargets.vocabulary
     ? await readVocabularySources()
-    : await readLessonSources();
+    : target === voiceTargets.conjugation
+      ? await readConjugationSources()
+      : await readLessonSources();
   const selectedItems = itemId
     ? items.filter((item) => item.id === itemId)
     : items;
@@ -640,12 +729,18 @@ export async function generateVoices({
     generationLimit,
     async (item) => {
       const isVocabulary = target === voiceTargets.vocabulary;
+      const isConjugation = target === voiceTargets.conjugation;
+      const isShortForm = isVocabulary || isConjugation;
       const speechRequest = isVocabulary
         ? createVocabularySpeechRequest(item)
-        : createLessonSpeechRequest(item);
+        : isConjugation
+          ? createConjugationSpeechRequest(item)
+          : createLessonSpeechRequest(item);
       const fileName = isVocabulary
         ? `${getVocabularyVoiceSlug(item, wanakana)}.m4a`
-        : `${item.id}.m4a`;
+        : isConjugation
+          ? basename(item.audio)
+          : `${item.id}.m4a`;
 
       if (
         !/^[a-z0-9-]+$/.test(item.id) ||
@@ -684,7 +779,7 @@ export async function generateVoices({
 
         try {
           const cachedAudio = await readFile(legacyCachePath);
-          const preparedCachedAudio = isVocabulary
+          const preparedCachedAudio = isShortForm
             ? trimWavEdgeSilence(cachedAudio)
             : cachedAudio;
 
@@ -730,8 +825,8 @@ export async function generateVoices({
   if (Number.isFinite(generationLimit) && generatedVoiceCount >= generationLimit) {
     const noun = generatedVoiceCount === 1 ? "voice" : "voices";
     console.log(`Stopped after generating ${generatedVoiceCount} ${noun} (--limit ${generationLimit}).`);
-  } else if (target === voiceTargets.vocabulary) {
-    console.log("Vocabulary voices are ready.");
+  } else if (target !== voiceTargets.lessons) {
+    console.log(`${target} voices are ready.`);
   } else {
     console.log("Static lesson voices are ready.");
   }

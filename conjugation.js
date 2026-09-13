@@ -432,6 +432,7 @@
           vocabularyId: item.id,
           term: item.term,
           reading: item.reading,
+          voiceSlug: item.voiceSlug,
           meaning: item.meaning,
           conjugationClass: item.class,
           form,

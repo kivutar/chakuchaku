@@ -4,9 +4,12 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import * as wanakana from "wanakana";
 import "../voice-paths.js";
+import "../conjugation.js";
 
 const {
+  getConjugationVoicePath,
   getVocabularyVoicePath,
+  validateConjugationVoicePaths,
   validateVocabularyVoiceSlugs
 } = globalThis.JlptN5VoicePaths;
 
@@ -131,17 +134,24 @@ for (const route of [
   await writeFile(join(routeDirectory, "index.html"), routeHtml);
 }
 
-const [introduction, exercises, vocabulary] = await Promise.all([
+const [introduction, exercises, vocabulary, conjugationCurriculum] = await Promise.all([
   readFile(join(rootDirectory, "data", "introduction.json"), "utf8").then(JSON.parse),
   readFile(join(rootDirectory, "data", "exercises.json"), "utf8").then(JSON.parse),
-  readFile(join(rootDirectory, "data", "jlpt-n5-vocabulary.json"), "utf8").then(JSON.parse)
+  readFile(join(rootDirectory, "data", "jlpt-n5-vocabulary.json"), "utf8").then(JSON.parse),
+  readFile(join(rootDirectory, "data", "jlpt-n5-conjugation.json"), "utf8").then(JSON.parse)
 ]);
 
 validateVocabularyVoiceSlugs(vocabulary, wanakana);
+const conjugationExercises = globalThis.JlptN5Conjugation.createExercisePool(
+  vocabulary,
+  conjugationCurriculum
+);
+validateConjugationVoicePaths(conjugationExercises, wanakana);
 
 const voicePaths = [...new Set([
   ...[introduction, ...exercises].map(({ audio }) => audio),
-  ...vocabulary.map((entry) => getVocabularyVoicePath(entry, wanakana))
+  ...vocabulary.map((entry) => getVocabularyVoicePath(entry, wanakana)),
+  ...conjugationExercises.map((exercise) => getConjugationVoicePath(exercise, wanakana))
 ])];
 const copiedVoicePaths = [];
 let copiedVoiceCount = 0;

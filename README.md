@@ -150,15 +150,15 @@ overrides, redundant overrides, and unresolved ambiguities are reported during
 `npm run content`. The `#2` suffix targets one occurrence when a written form
 appears more than once.
 
-`scripts/generate-voices.js` creates stable M4A filenames for lessons and
-vocabulary. It keeps a valid existing voice, restores a valid matching WAV from
+`scripts/generate-voices.js` creates stable M4A filenames for lessons,
+vocabulary, and conjugated solutions. It keeps a valid existing voice, restores a valid matching WAV from
 the legacy `.cache/speech/` directory, or calls OpenAI when the file is missing,
 silent, or implausibly long. Every generated WAV is validated before being
 compressed to mono AAC-LC. Vocabulary requests explicitly provide the intended
 reading plus the spelling, English meaning, and part of speech, so homographs
 use the requested pronunciation with enough lexical context. Word clips use a
 stricter duration profile and reject excessive leading, internal, or trailing
-silence. Harmless silence at the outer edges is trimmed to a 100 ms margin
+silence. Harmless silence at the outer edges is trimmed with safety margins
 before those strict checks, preventing a clean pronunciation from wasting an
 API request. The current speech configurations are kept in that script so each
 item produces a consistent cache identity.
@@ -222,6 +222,18 @@ the command can take longer as coverage grows:
 
 ```sh
 npm run voices:vocabulary -- --coverage
+```
+
+Conjugation generation uses the same short-clip checks and requires an explicit
+limit or `--all`. Each file is named from its conjugated reading and base-word
+slug, so homophones remain distinct. A small batch is spread across the
+conjugation points before filling in further words. Solution audio is offered
+only after an answer is submitted; unavailable recordings have no speaker.
+
+```sh
+npm run voices:conjugation -- --limit 1
+npm run voices:conjugation -- --limit 100
+npm run voices:conjugation -- --id conjugation-godan-polite-present-vocab-40179481fcf6 --force
 ```
 
 Voice generation reads `OPENAI_API_KEY` first and otherwise reads `.key` in the
@@ -595,7 +607,8 @@ meanings always come from the shared vocabulary inventory.
 A deployment needs only `index.html`, the browser JavaScript and CSS, the
 generated JSON under `data/`, and the referenced files under `assets/voices/`.
 Lesson recordings live under `assets/voices/grammar/`; reusable word
-recordings live under `assets/voices/vocab/`.
+recordings live under `assets/voices/vocab/`; conjugated solution recordings
+live under `assets/voices/conjugation/`.
 The build copies the pinned `ts-fsrs` and WanaKana browser bundles and MIT
 licenses into the artifact. No Node process, CDN, or API key is required for
 the default manual workflow.

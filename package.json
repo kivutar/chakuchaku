@@ -15,6 +15,7 @@
     "voices:convert": "node scripts/convert-voices.js",
     "voices": "node scripts/generate-voices.js",
     "voices:vocabulary": "node scripts/generate-voices.js --target vocabulary",
+    "voices:conjugation": "node scripts/generate-voices.js --target conjugation",
     "translate:fr": "node scripts/translate-french.js",
     "examples:vocabulary": "node scripts/generate-vocabulary-examples.js",
     "generate": "npm run content && npm run voices",

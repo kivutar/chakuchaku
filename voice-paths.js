@@ -51,6 +51,34 @@
     return `assets/voices/vocab/${getVocabularyVoiceSlug(entry, converter)}.m4a`;
   }
 
+  function getConjugationVoicePath(exercise, converter) {
+    const answerSlug = createVocabularyReadingSlug(exercise?.answerReading, converter);
+    const baseSlug = getVocabularyVoiceSlug(exercise, converter);
+
+    return `assets/voices/conjugation/${answerSlug}-${baseSlug}.m4a`;
+  }
+
+  function validateConjugationVoicePaths(exercises, converter) {
+    if (!Array.isArray(exercises)) {
+      throw new Error("Conjugation voice paths need an array.");
+    }
+
+    const exercisesByPath = new Map();
+
+    for (const exercise of exercises) {
+      const path = getConjugationVoicePath(exercise, converter);
+      const existingExercise = exercisesByPath.get(path);
+
+      if (existingExercise) {
+        throw new Error(`${exercise.id}: conjugation voice path ${path} is already used by ${existingExercise.id}.`);
+      }
+
+      exercisesByPath.set(path, exercise);
+    }
+
+    return exercisesByPath;
+  }
+
   function validateVocabularyVoiceSlugs(vocabulary, converter) {
     if (!Array.isArray(vocabulary)) {
       throw new Error("Vocabulary voice paths need an array.");
@@ -104,6 +132,8 @@
     createVocabularyReadingSlug,
     getVocabularyVoiceSlug,
     getVocabularyVoicePath,
+    getConjugationVoicePath,
+    validateConjugationVoicePaths,
     validateVocabularyVoiceSlugs
   });
 })(globalThis);

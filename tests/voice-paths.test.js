@@ -7,7 +7,9 @@ await import("../voice-paths.js");
 
 const {
   createVocabularyReadingSlug,
+  getConjugationVoicePath,
   getVocabularyVoicePath,
+  validateConjugationVoicePaths,
   validateVocabularyVoiceSlugs
 } = globalThis.JlptN5VoicePaths;
 
@@ -58,6 +60,33 @@ test("voice slugs reject unsafe and unnecessary overrides", () => {
       { id: "rain", reading: "あめ", voiceSlug: "ame-rain" }
     ], wanakana),
     /unnecessary/u
+  );
+});
+
+test("conjugation voice paths stay readable and distinguish homophones", () => {
+  const hot = {
+    id: "hot",
+    reading: "あつい",
+    voiceSlug: "atsui-hot",
+    answerReading: "あつかったです"
+  };
+  const thick = {
+    id: "thick",
+    reading: "あつい",
+    voiceSlug: "atsui-thick",
+    answerReading: "あつかったです"
+  };
+
+  assert.equal(getConjugationVoicePath(hot, wanakana), (
+    "assets/voices/conjugation/atsukattadesu-atsui-hot.m4a"
+  ));
+  assert.notEqual(getConjugationVoicePath(hot, wanakana), (
+    getConjugationVoicePath(thick, wanakana)
+  ));
+  assert.equal(validateConjugationVoicePaths([hot, thick], wanakana).size, 2);
+  assert.throws(
+    () => validateConjugationVoicePaths([hot, { ...hot, id: "duplicate" }], wanakana),
+    /already used/u
   );
 });
 

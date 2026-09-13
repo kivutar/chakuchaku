@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 import {
+  createConjugationSpeechRequest,
+  createConjugationVoiceItems,
   createSpeechRequestBody,
   createVocabularySpeechRequest,
   createVocabularyVoiceItems,
@@ -84,6 +87,75 @@ test("vocabulary voice generation requires an explicit spending boundary", () =>
       target: "vocabulary"
     }
   );
+});
+
+test("conjugation voice generation requires a limit and accepts exact item selection", () => {
+  assert.throws(
+    () => parseVoiceGenerationArguments(["--target", "conjugation"]),
+    /requires --limit COUNT or explicit --all/u
+  );
+  assert.deepEqual(
+    parseVoiceGenerationArguments(["--target=conjugation", "--limit", "100"]),
+    {
+      coverageOnly: false,
+      generateAll: false,
+      generationLimit: 100,
+      showHelp: false,
+      target: "conjugation"
+    }
+  );
+  assert.equal(
+    parseVoiceGenerationArguments(["--target", "conjugation", "--id", "conjugation-example"])
+      .itemId,
+    "conjugation-example"
+  );
+});
+
+test("conjugation voice items and requests use the actual inflected reading", () => {
+  const vocabulary = [
+    { id: "meet", term: "会う", reading: "あう", meaning: "to meet", partOfSpeech: "verb" },
+    { id: "high", term: "高い", reading: "たかい", meaning: "high", partOfSpeech: "adjective" }
+  ];
+  const curriculum = [
+    { vocabularyId: "meet", class: "godan" },
+    { vocabularyId: "high", class: "i-adjective" }
+  ];
+  const items = createConjugationVoiceItems(vocabulary, curriculum);
+  const past = items.find(({ answerSurface }) => answerSurface === "会いました");
+  const request = createConjugationSpeechRequest(past);
+
+  assert.equal(items.length, 12);
+  assert.equal(new Set(items.map(({ audio }) => audio)).size, items.length);
+  assert.equal(items[0].answerSurface, "会います");
+  assert.equal(items[6].answerSurface, "高いです");
+  assert.equal(past.audio, "assets/voices/conjugation/aimashita-au.m4a");
+  assert.equal(request.spokenText, "あいました");
+  assert.deepEqual(JSON.parse(request.messages[1].content), {
+    spelling: "会いました",
+    reading: "あいました",
+    baseSpelling: "会う",
+    baseReading: "あう",
+    meaning: "to meet",
+    form: "polite-past"
+  });
+  assert.equal(createSpeechRequestBody(request).audio.format, "wav");
+  assert.ok(request.validationOptions.maximumTrailingSilence < 0.5);
+});
+
+test("the curated conjugation voices cover every point without path collisions", async () => {
+  const [vocabulary, curriculum] = await Promise.all([
+    readFile(new URL("../data/jlpt-n5-vocabulary.json", import.meta.url), "utf8")
+      .then(JSON.parse),
+    readFile(new URL("../data/jlpt-n5-conjugation.json", import.meta.url), "utf8")
+      .then(JSON.parse)
+  ]);
+  const items = createConjugationVoiceItems(vocabulary, curriculum);
+
+  assert.equal(items.length, 732);
+  assert.equal(new Set(items.map(({ audio }) => audio)).size, 732);
+  assert.equal(new Set(items.slice(0, 46).map(({ conjugationPointId }) => (
+    conjugationPointId
+  ))).size, 46);
 });
 
 test("voice generation rejects unsafe limits and unknown options", () => {

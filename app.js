@@ -2807,7 +2807,11 @@ async function loadConjugationData() {
   conjugationExercisePool = globalThis.JlptN5Conjugation.createExercisePool(
     entriesById,
     curriculum
-  ).map((exercise) => ({ ...exercise, locale: getUserLocale() }));
+  ).map((exercise) => ({
+    ...exercise,
+    audio: globalThis.JlptN5VoicePaths.getConjugationVoicePath(exercise),
+    locale: getUserLocale()
+  }));
 
   const coveredPointIds = new Set(conjugationExercisePool.flatMap((exercise) => {
     return exercise.conjugationPointIds;
@@ -3550,7 +3554,7 @@ function maybeAutoPlaySpeech() {
   }
 }
 
-async function updateSolutionSpeech(lesson, button) {
+async function updateSolutionSpeech(lesson, button, hideWhenUnavailable = false) {
   const shouldAutoPlay = settings.autoPlayAudio;
 
   if (shouldAutoPlay) {
@@ -3560,6 +3564,14 @@ async function updateSolutionSpeech(lesson, button) {
   }
 
   await updateSpeechAvailability(lesson, button, false);
+
+  if (currentLesson !== lesson) {
+    return;
+  }
+
+  if (hideWhenUnavailable) {
+    button.hidden = !speechAvailable;
+  }
 
   if (
     shouldAutoPlay &&
@@ -4263,6 +4275,18 @@ function revealConjugationSolution() {
   answer.lang = "ja";
   answer.append(createFuriganaContent(result.expectedAnswer, result.expectedReading));
   answerRow.append(answer);
+  if (currentLesson.audio) {
+    const answerSpeakButton = speakButton.cloneNode(true);
+
+    answerSpeakButton.removeAttribute("id");
+    answerSpeakButton.hidden = true;
+    answerSpeakButton.className = "speak-button solution-speak-button";
+    answerSpeakButton.addEventListener("click", () => {
+      void speakSentence(answerSpeakButton);
+    });
+    answerRow.append(answerSpeakButton);
+    void updateSolutionSpeech(currentLesson, answerSpeakButton, true);
+  }
   pointSection.className = "solution-kana solution-conjugation";
   summary.className = "solution-kana-summary";
   summary.dataset.outcome = result.outcome;
