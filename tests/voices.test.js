@@ -4,7 +4,11 @@ import { dirname, join } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import * as wanakana from "wanakana";
-import { createVocabularySpeechRequest } from "../scripts/generate-voices.js";
+import {
+  createConjugationSpeechRequest,
+  createConjugationVoiceItems,
+  createVocabularySpeechRequest
+} from "../scripts/generate-voices.js";
 import { validateLessonM4a } from "../scripts/m4a.js";
 
 const { getVocabularyVoicePath } = globalThis.JlptN5VoicePaths;
@@ -34,10 +38,11 @@ async function listM4aFiles(directory, relativeDirectory) {
 }
 
 test("every available AAC/M4A voice is referenced and valid", async () => {
-  const [introduction, exercises, vocabulary] = await Promise.all([
+  const [introduction, exercises, vocabulary, conjugationCurriculum] = await Promise.all([
     readJson("data/introduction.json"),
     readJson("data/exercises.json"),
-    readJson("data/jlpt-n5-vocabulary.json")
+    readJson("data/jlpt-n5-vocabulary.json"),
+    readJson("data/jlpt-n5-conjugation.json")
   ]);
 
   const lessons = [introduction, ...exercises];
@@ -86,6 +91,31 @@ test("every available AAC/M4A voice is referenced and valid", async () => {
       relativePath
     );
     availableVoicePaths.push(relativePath);
+  }
+
+  for (const exercise of createConjugationVoiceItems(vocabulary, conjugationCurriculum)) {
+    const path = join(rootDirectory, exercise.audio);
+    const speechRequest = createConjugationSpeechRequest(exercise);
+
+    try {
+      await access(path);
+    } catch (error) {
+      if (error.code === "ENOENT") {
+        continue;
+      }
+
+      throw error;
+    }
+
+    await assert.doesNotReject(
+      () => validateLessonM4a(
+        path,
+        speechRequest.spokenText,
+        speechRequest.validationOptions
+      ),
+      exercise.audio
+    );
+    availableVoicePaths.push(exercise.audio);
   }
 
   const voiceFiles = (await listM4aFiles(

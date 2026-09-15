@@ -373,7 +373,6 @@
   },
   {
     "id": "spring-gets-warmer",
-    "skipVoiceGeneration": true,
     "text": "春になりました。そして、段々暖かくなりました。",
     "solution": "Spring arrived, and it gradually became warmer.",
     "grammarPointIds": [
@@ -596,7 +595,6 @@
   },
   {
     "id": "buy-umbrella-despite-rain",
-    "skipVoiceGeneration": true,
     "text": "今日は雨です。でも、傘を買いに行きます。",
     "solution": "It is raining today. However, I will go and buy an umbrella.",
     "grammarPointIds": [
@@ -828,7 +826,6 @@
   },
   {
     "id": "explain-missed-call",
-    "skipVoiceGeneration": true,
     "text": "なぜ昨日、電話に出なかったの？勉強中だったんです。",
     "solution": "Why did you not answer the phone yesterday? I was studying.",
     "grammarPointIds": [
@@ -853,7 +850,6 @@
   },
   {
     "id": "cook-for-busy-sister",
-    "skipVoiceGeneration": true,
     "text": "妹は忙しかったし、おにぎりやスープなどを作ってあげました。",
     "solution": "My younger sister was busy, so I made rice balls, soup, and other food for her.",
     "grammarPointIds": [
@@ -981,7 +977,6 @@
   },
   {
     "id": "sugar-or-salt",
-    "skipVoiceGeneration": true,
     "text": "これは砂糖ですか、塩ですか。砂糖ではありません。塩です。",
     "solution": "Is this sugar or salt? It is not sugar; it is salt.",
     "grammarPointIds": [
@@ -1003,7 +998,6 @@
   },
   {
     "id": "childhood-town-change",
-    "skipVoiceGeneration": true,
     "text": "子供のとき、この町は静かでしたが、今は静かではありません。",
     "solution": "When I was a child, this town was quiet, but now it is not.",
     "grammarPointIds": [
@@ -1128,7 +1122,6 @@
   },
   {
     "id": "autumn-favorite-season",
-    "skipVoiceGeneration": true,
     "text": "春と夏と秋と冬の中で、秋が一番好きです。",
     "solution": "Of spring, summer, autumn, and winter, I like autumn best.",
     "grammarPointIds": [
@@ -1139,7 +1132,6 @@
   },
   {
     "id": "father-has-two-watches",
-    "skipVoiceGeneration": true,
     "text": "父には古い時計が二つあります。",
     "solution": "My father has two old watches.",
     "grammarPointIds": [
@@ -1309,7 +1301,6 @@
   },
   {
     "id": "leave-and-arrive-every-morning",
-    "skipVoiceGeneration": true,
     "text": "毎朝七時に家を出て、八時に会社に着きます。",
     "solution": "Every morning, I leave home at seven and arrive at work at eight.",
     "grammarPointIds": [
@@ -1381,7 +1372,6 @@
   },
   {
     "id": "busy-and-tired-going-home",
-    "skipVoiceGeneration": true,
     "text": "今日は仕事が多いし、少し疲れているし、早く帰ります。",
     "solution": "I have a lot of work today, and I am a little tired, so I am going home early.",
     "grammarPointIds": [
@@ -2716,7 +2706,6 @@
     "id": "how-to-station-by-subway",
     "text": "駅までどうやって行きますか。地下鉄で行きます。",
     "solution": "How do you get to the station? I go by subway.",
-    "skipVoiceGeneration": true,
     "grammarPointIds": [
       "dou-yatte",
       "de-means",
@@ -3059,6 +3048,7 @@
   },
   {
     "id": "stomachache-skip-dinner",
+    "skipVoiceGeneration": true,
     "text": "お腹が痛いので、今晩は夕飯を食べません。",
     "solution": "My stomach hurts, so I will not eat dinner tonight.",
     "grammarPointIds": [
@@ -4553,7 +4543,6 @@
   },
   {
     "id": "production-cook-for-busy-sister",
-    "skipVoiceGeneration": true,
     "text": "My younger sister was busy, so I made rice balls, soup, and other food for her.",
     "solution": "妹は忙しかったし、おにぎりやスープなどを作ってあげました。",
     "type": "production",
