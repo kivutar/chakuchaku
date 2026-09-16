@@ -4093,8 +4093,8 @@
   },
   {
     "vocabularyId": "vocab-0609e7997541",
-    "text": "ゆっくりと歩く。",
-    "targetSurface": "ゆっくりと",
+    "text": "ゆっくり歩く。",
+    "targetSurface": "ゆっくり",
     "translation": "I walk slowly."
   },
   {
@@ -4954,6 +4954,84 @@
     "text": "モノレールにのります。",
     "targetSurface": "モノレール",
     "translation": "I ride the monorail."
+  },
+  {
+    "vocabularyId": "vocab-ad9975e17a50",
+    "text": "こんにちは！",
+    "targetSurface": "こんにちは",
+    "translation": "Hello!"
+  },
+  {
+    "vocabularyId": "vocab-e92fbf0ed627",
+    "text": "おはようございます。",
+    "targetSurface": "おはようございます",
+    "translation": "Good morning."
+  },
+  {
+    "vocabularyId": "vocab-2798a7949600",
+    "text": "こんばんは。",
+    "targetSurface": "こんばんは",
+    "translation": "Good evening."
+  },
+  {
+    "vocabularyId": "vocab-aa8a24f49c4d",
+    "text": "ありがとう！",
+    "targetSurface": "ありがとう",
+    "translation": "Thank you!"
+  },
+  {
+    "vocabularyId": "vocab-a92a3a630fed",
+    "text": "これをお願いします。",
+    "targetSurface": "お願いします",
+    "translation": "This one, please."
+  },
+  {
+    "vocabularyId": "vocab-cb7c6271c2a9",
+    "text": "はじめまして。",
+    "targetSurface": "はじめまして",
+    "translation": "How do you do?"
+  },
+  {
+    "vocabularyId": "vocab-04ebcec4eac8",
+    "text": "よろしくお願いします。",
+    "targetSurface": "よろしくお願いします",
+    "translation": "I look forward to working with you."
+  },
+  {
+    "vocabularyId": "vocab-f1bf682f18cd",
+    "text": "おやすみなさい。",
+    "targetSurface": "おやすみなさい",
+    "translation": "Good night."
+  },
+  {
+    "vocabularyId": "vocab-4058f15cc5b8",
+    "text": "ごめん！",
+    "targetSurface": "ごめん",
+    "translation": "Sorry!"
+  },
+  {
+    "vocabularyId": "vocab-7fd7463f51b7",
+    "text": "いただきます。",
+    "targetSurface": "いただきます",
+    "translation": "Thank you for the food."
+  },
+  {
+    "vocabularyId": "vocab-fcdd7a903190",
+    "text": "住所を書きます。",
+    "targetSurface": "住所",
+    "translation": "I write my address."
+  },
+  {
+    "vocabularyId": "vocab-eefac8830079",
+    "text": "日本出身です。",
+    "targetSurface": "出身",
+    "translation": "I am from Japan."
+  },
+  {
+    "vocabularyId": "vocab-c316760df288",
+    "text": "髪を洗います。",
+    "targetSurface": "髪",
+    "translation": "I wash my hair."
   },
   {
     "vocabularyId": "kanji-context-washitsu",

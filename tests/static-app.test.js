@@ -130,6 +130,7 @@ test("generated lessons match their authored sources", async () => {
     assert.equal(exercise.solution, source.solution);
     assert.equal(exercise.type, source.type);
     assert.deepEqual(exercise.promptVocabularyHints, source.promptVocabularyHints);
+    assert.deepEqual(exercise.attribution, source.attribution);
     assert.deepEqual(exercise.grammarPointIds, source.grammarPointIds);
     assert.equal(source.grammarHighlights, undefined);
     assert.equal(source.vocabularyIds, undefined);
@@ -1079,7 +1080,8 @@ test("vocabulary inventory has a substantial core and labeled learner favorites"
         "curated-learner-favorites",
         "curated-lesson-vocabulary",
         "former-jlpt-level-4",
-        "curated-katakana-curriculum"
+        "curated-katakana-curriculum",
+        "curated-beginner-vocabulary"
       ].includes(entry.source)
     );
 

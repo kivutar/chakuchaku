@@ -652,6 +652,22 @@ function prepareExercise(exercise, grammarPointById, vocabularyIndex, kanjiIndex
     throw new Error(`${exercise.id}: invalid solution or grammar points.`);
   }
 
+  if (
+    exercise.attribution !== undefined &&
+    (
+      !exercise.attribution ||
+      typeof exercise.attribution !== "object" ||
+      Array.isArray(exercise.attribution) ||
+      !["provider", "url", "creator", "license"].every((key) => (
+        typeof exercise.attribution[key] === "string" &&
+        Boolean(exercise.attribution[key].trim())
+      )) ||
+      !/^https:\/\//u.test(exercise.attribution.url)
+    )
+  ) {
+    throw new Error(`${exercise.id}: invalid source attribution.`);
+  }
+
   const japaneseText = type === "production" ? exercise.solution : exercise.text;
   const lesson = prepareLesson(
     { ...exercise, text: japaneseText },
@@ -699,6 +715,7 @@ function prepareExercise(exercise, grammarPointById, vocabularyIndex, kanjiIndex
     ...(exercise.promptVocabularyHints
       ? { promptVocabularyHints: exercise.promptVocabularyHints }
       : {}),
+    ...(exercise.attribution ? { attribution: exercise.attribution } : {}),
     grammarPointIds: exercise.grammarPointIds,
     grammarHighlights: createGrammarHighlights(
       japaneseText,

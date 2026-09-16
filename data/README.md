@@ -32,7 +32,12 @@ authored links handle ambiguous words such as `take` without duplicating
 Japanese terms or readings in exercise data. The UI shows dictionary forms on
 hover and leaves conjugation to the learner.
 
-Each entry contains only scalar fields:
+Exercises adapted from an external corpus carry an `attribution` object with
+the provider, sentence URL, creator, and licence. Sourced Japanese sentences
+currently come from Tatoeba under CC BY 2.0 FR. Their English and French answers
+are independently authored for ChakuChaku.
+
+Each grammar-point entry contains only scalar fields:
 
 - `category`: a filterable curriculum area.
 - `kind`: concept, form, particle, pattern, expression, structure, or system.
@@ -76,7 +81,7 @@ publishing vocabulary, kanji, and grammar specifications after the 2010 revision
 because the test is intended to measure communicative use rather than memorized
 lists.
 
-The inventory currently contains 826 entries:
+The inventory currently contains 839 entries:
 
 - 718 `core` entries adapted from the MIT-licensed Open Anki JLPT N5 deck at
   commit `1ad66734417aca9dbcca6b2d5ee440cb13ab3ba0`.
@@ -84,10 +89,11 @@ The inventory currently contains 826 entries:
   vocabulary specification: `グラス`, `コピー`, and `スリッパ`.
 - 1 contextual core entry, `田んぼ`, added to give the initial Kanji curriculum
   a natural complete-word exercise for `田`.
-- 104 `supplemental` entries: 38 recognizable and motivating beginner words,
-  29 words needed by the current lessons, and 37 words curated for practical
-  Katakana coverage. These include `ラーメン`, `寿司`, `アニメ`, `漫画`,
-  food, travel, culture, modern technology, and everyday loanwords.
+- 117 `supplemental` entries: 38 recognizable and motivating beginner words,
+  29 words needed by the current lessons, 37 words curated for practical
+  Katakana coverage, and 13 essential A1 expressions and everyday words. These
+  include `ラーメン`, `寿司`, `アニメ`, `漫画`, greetings, food, travel, culture,
+  modern technology, and everyday loanwords.
 
 The `core` label means "exam-oriented consensus candidate," not "officially
 required." The `supplemental` label keeps useful lesson vocabulary without
@@ -100,6 +106,8 @@ Each entry contains:
 - `term`: the preferred Japanese written form.
 - `reading`: the kana reading, normalized to hiragana where applicable.
 - `alternateReadings`: optional additional readings accepted by vocabulary recall.
+- `acceptedJapaneseAnswers`: optional equivalent Japanese expressions accepted
+  during recall without treating them as alternate written forms.
 - `meaning`: a concise English gloss.
 - `partOfSpeech`: a broad app-friendly grammatical category.
 - `scope`: `core` or `supplemental`.

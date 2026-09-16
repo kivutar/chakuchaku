@@ -874,6 +874,1102 @@
     ]
   },
   {
+    "id": "come-again-permission",
+    "text": "また来てもいい？",
+    "audio": "assets/voices/grammar/come-again-permission.m4a",
+    "vocabularyIds": [
+      "vocab-a72e26bc8cb2",
+      "vocab-bc01756b4d89",
+      "vocab-ef4cce00951f"
+    ],
+    "kanjiIds": [
+      "kanji-6765"
+    ],
+    "tokens": [
+      {
+        "surface": "また",
+        "category": "conjunction",
+        "reading": "また",
+        "vocabularyId": "vocab-a72e26bc8cb2"
+      },
+      {
+        "surface": "来",
+        "category": "verb",
+        "reading": "き",
+        "vocabularyId": "vocab-bc01756b4d89"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "いい",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "？",
+        "reading": "？"
+      }
+    ],
+    "solution": "Can I come again?",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/3559172",
+      "creator": "tommy_san",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "te-mo-ii",
+      "plain-polite-register"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-mo-ii",
+        "tokenStart": 2,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "no-beer-before-bed",
+    "text": "寝る前に、ビールを飲まないでください。",
+    "audio": "assets/voices/grammar/no-beer-before-bed.m4a",
+    "vocabularyIds": [
+      "vocab-50eb0e80c367",
+      "vocab-07f353ef981c",
+      "vocab-83b2f5767389",
+      "vocab-dcd3acd6b659"
+    ],
+    "kanjiIds": [
+      "kanji-524d",
+      "kanji-98f2"
+    ],
+    "tokens": [
+      {
+        "surface": "寝る",
+        "category": "verb",
+        "reading": "ねる",
+        "vocabularyId": "vocab-50eb0e80c367"
+      },
+      {
+        "surface": "前",
+        "category": "noun",
+        "reading": "まえ",
+        "vocabularyId": "vocab-07f353ef981c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "ビール",
+        "category": "noun",
+        "reading": "びーる",
+        "vocabularyId": "vocab-83b2f5767389"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "飲ま",
+        "category": "verb",
+        "reading": "のま",
+        "vocabularyId": "vocab-dcd3acd6b659"
+      },
+      {
+        "surface": "ない",
+        "category": "auxiliary",
+        "reading": "ない"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "ください",
+        "category": "auxiliary",
+        "reading": "ください"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Please don't drink beer before going to bed.",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/1324948",
+      "creator": "bluwy",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "mae-ni",
+      "naide-kudasai"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mae-ni",
+        "tokenStart": 1,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "naide-kudasai",
+        "tokenStart": 7,
+        "tokenEnd": 10
+      }
+    ]
+  },
+  {
+    "id": "study-here-ability",
+    "text": "ここで勉強することができます。",
+    "audio": "assets/voices/grammar/study-here-ability.m4a",
+    "vocabularyIds": [
+      "vocab-f4ee05460d54",
+      "vocab-15863d9e899d",
+      "vocab-dfb6d8ba613b",
+      "vocab-2ab01f1ec07e",
+      "vocab-581d18f92555"
+    ],
+    "kanjiIds": [
+      "kanji-52c9",
+      "kanji-5f37"
+    ],
+    "tokens": [
+      {
+        "surface": "ここ",
+        "category": "noun",
+        "reading": "ここ",
+        "vocabularyId": "vocab-f4ee05460d54"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "勉強",
+        "category": "noun",
+        "reading": "べんきょう",
+        "vocabularyId": "vocab-15863d9e899d"
+      },
+      {
+        "surface": "する",
+        "category": "verb",
+        "reading": "する",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "こと",
+        "category": "noun",
+        "reading": "こと",
+        "vocabularyId": "vocab-2ab01f1ec07e"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "でき",
+        "category": "verb",
+        "reading": "でき",
+        "vocabularyId": "vocab-581d18f92555"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "You can study here.",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11013888",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "koto-ga-dekiru",
+      "de-action-location",
+      "kosoado-places"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "koto-ga-dekiru",
+        "tokenStart": 4,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "kosoado-places",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      }
+    ]
+  },
+  {
+    "id": "fuji-highest-mountain",
+    "text": "富士山は日本で一番高い山です。",
+    "audio": "assets/voices/grammar/fuji-highest-mountain.m4a",
+    "vocabularyIds": [
+      "vocab-0930f6cc246f",
+      "vocab-cf2abf0c5be3",
+      "vocab-8a98a8e471f7",
+      "vocab-775979a197ea",
+      "vocab-ddd9dca106e2"
+    ],
+    "kanjiIds": [
+      "kanji-5c71",
+      "kanji-65e5",
+      "kanji-672c",
+      "kanji-4e00",
+      "kanji-9ad8"
+    ],
+    "tokens": [
+      {
+        "surface": "富士山",
+        "category": "noun",
+        "reading": "ふじさん",
+        "vocabularyId": "vocab-0930f6cc246f"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "日本",
+        "category": "noun",
+        "reading": "にほん",
+        "vocabularyId": "vocab-cf2abf0c5be3"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "一番",
+        "category": "noun",
+        "reading": "いちばん",
+        "vocabularyId": "vocab-8a98a8e471f7"
+      },
+      {
+        "surface": "高い",
+        "category": "adjective",
+        "reading": "たかい",
+        "vocabularyId": "vocab-775979a197ea"
+      },
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Mount Fuji is the highest mountain in Japan.",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/84930",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "ichiban-superlative",
+      "i-adjective-attributive",
+      "copula-da-desu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ichiban-superlative",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "copula-da-desu",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "price-per-person",
+    "text": "一人いくらですか？",
+    "audio": "assets/voices/grammar/price-per-person.m4a",
+    "vocabularyIds": [
+      "vocab-5d8047464c5d",
+      "vocab-ad7167347a2a",
+      "vocab-61b1348fd56a"
+    ],
+    "kanjiIds": [
+      "kanji-4e00",
+      "kanji-4eba"
+    ],
+    "tokens": [
+      {
+        "surface": "一",
+        "category": "noun",
+        "reading": "いち",
+        "vocabularyId": "vocab-5d8047464c5d"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "にん",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "いくら",
+        "category": "noun",
+        "reading": "いくら",
+        "vocabularyId": "vocab-61b1348fd56a"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "？",
+        "reading": "？"
+      }
+    ],
+    "solution": "How much is it per person?",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/3024513",
+      "creator": "tommy_san",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "ikura",
+      "common-counters",
+      "ka-question"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ikura",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "common-counters",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ka-question",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "must-study-more",
+    "text": "もっと勉強しなければなりません。",
+    "audio": "assets/voices/grammar/must-study-more.m4a",
+    "vocabularyIds": [
+      "vocab-b87d435fd7f9",
+      "vocab-15863d9e899d",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-52c9",
+      "kanji-5f37"
+    ],
+    "tokens": [
+      {
+        "surface": "もっと",
+        "category": "adverb",
+        "reading": "もっと",
+        "vocabularyId": "vocab-b87d435fd7f9"
+      },
+      {
+        "surface": "勉強",
+        "category": "noun",
+        "reading": "べんきょう",
+        "vocabularyId": "vocab-15863d9e899d"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "なけれ",
+        "category": "auxiliary",
+        "reading": "なけれ"
+      },
+      {
+        "surface": "ば",
+        "category": "particle",
+        "reading": "ば"
+      },
+      {
+        "surface": "なり",
+        "category": "auxiliary",
+        "reading": "なり"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I need to study more.",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/985101",
+      "creator": "riccioberto",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "nakereba-naranai",
+      "irregular-verbs"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "irregular-verbs",
+        "tokenStart": 2,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "sleep-early-to-get-well",
+    "text": "元気になるように、早く寝ます。",
+    "audio": "assets/voices/grammar/sleep-early-to-get-well.m4a",
+    "vocabularyIds": [
+      "vocab-12f44a1311d1",
+      "vocab-3653e718a1a5",
+      "vocab-72460e05df01",
+      "vocab-50eb0e80c367"
+    ],
+    "kanjiIds": [
+      "kanji-5143",
+      "kanji-6c17",
+      "kanji-65e9"
+    ],
+    "tokens": [
+      {
+        "surface": "元気",
+        "category": "adjective",
+        "reading": "げんき",
+        "vocabularyId": "vocab-12f44a1311d1"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "なる",
+        "category": "verb",
+        "reading": "なる",
+        "vocabularyId": "vocab-3653e718a1a5"
+      },
+      {
+        "surface": "よう",
+        "category": "auxiliary",
+        "reading": "よう"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "早く",
+        "category": "adjective",
+        "reading": "はやく",
+        "vocabularyId": "vocab-72460e05df01"
+      },
+      {
+        "surface": "寝",
+        "category": "verb",
+        "reading": "ね",
+        "vocabularyId": "vocab-50eb0e80c367"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I go to bed early so that I can get well.",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/8869444",
+      "creator": "mochico",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "you-ni-purpose",
+      "naru-change",
+      "i-adjective-adverb"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-ni-purpose",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "naru-change",
+        "tokenStart": 1,
+        "tokenEnd": 3
+      }
+    ]
+  },
+  {
+    "id": "exam-looks-difficult",
+    "text": "試験は難しそうですね。",
+    "audio": "assets/voices/grammar/exam-looks-difficult.m4a",
+    "vocabularyIds": [
+      "vocab-0c4d68e2ec4d",
+      "vocab-6ed0b6d4c374"
+    ],
+    "kanjiIds": [],
+    "tokens": [
+      {
+        "surface": "試験",
+        "category": "noun",
+        "reading": "しけん",
+        "vocabularyId": "vocab-0c4d68e2ec4d"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "難し",
+        "category": "adjective",
+        "reading": "むずかし",
+        "vocabularyId": "vocab-6ed0b6d4c374"
+      },
+      {
+        "surface": "そう",
+        "category": "auxiliary",
+        "reading": "そう"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "ね",
+        "category": "particle",
+        "reading": "ね"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "The exam looks difficult, doesn't it?",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/13643489",
+      "creator": "ninefi",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "sou-appearance",
+      "ne-confirmation",
+      "wa-topic"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ne-confirmation",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "how-use-this-casual",
+    "text": "これ、どうやって使うの？",
+    "audio": "assets/voices/grammar/how-use-this-casual.m4a",
+    "vocabularyIds": [
+      "vocab-fb33e3a6798b",
+      "vocab-99b783690b64",
+      "vocab-9af9c5ffb30e"
+    ],
+    "kanjiIds": [
+      "kanji-4f7f"
+    ],
+    "tokens": [
+      {
+        "surface": "これ",
+        "category": "noun",
+        "reading": "これ",
+        "vocabularyId": "vocab-fb33e3a6798b"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "どう",
+        "category": "adverb",
+        "reading": "どう",
+        "vocabularyId": "vocab-99b783690b64"
+      },
+      {
+        "surface": "やっ",
+        "category": "auxiliary",
+        "reading": "やっ"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "使う",
+        "category": "verb",
+        "reading": "つかう",
+        "vocabularyId": "vocab-9af9c5ffb30e"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "？",
+        "reading": "？"
+      }
+    ],
+    "solution": "How do you use this?",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/10914887",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "dou-yatte",
+      "no-question",
+      "kosoado-pronouns"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "dou-yatte",
+        "tokenStart": 2,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "no-question",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "kosoado-pronouns",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      }
+    ]
+  },
+  {
+    "id": "tea-or-something-invitation",
+    "text": "お茶でも飲みませんか？",
+    "audio": "assets/voices/grammar/tea-or-something-invitation.m4a",
+    "vocabularyIds": [
+      "vocab-d18ca13aa386",
+      "vocab-dcd3acd6b659"
+    ],
+    "kanjiIds": [
+      "kanji-8336",
+      "kanji-98f2"
+    ],
+    "tokens": [
+      {
+        "surface": "お茶",
+        "category": "noun",
+        "reading": "おちゃ",
+        "vocabularyId": "vocab-d18ca13aa386"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "飲み",
+        "category": "verb",
+        "reading": "のみ",
+        "vocabularyId": "vocab-dcd3acd6b659"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "？",
+        "reading": "？"
+      }
+    ],
+    "solution": "Would you like to have tea or something?",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/1771703",
+      "creator": "Scott",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "demo-particle",
+      "masen-ka-invitation"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "demo-particle",
+        "tokenStart": 1,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "masen-ka-invitation",
+        "tokenStart": 4,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "lovely-weather-reflection",
+    "text": "いい天気だなあ。",
+    "audio": "assets/voices/grammar/lovely-weather-reflection.m4a",
+    "vocabularyIds": [
+      "vocab-ef4cce00951f",
+      "vocab-2850b5703e8b"
+    ],
+    "kanjiIds": [
+      "kanji-5929",
+      "kanji-6c17"
+    ],
+    "tokens": [
+      {
+        "surface": "いい",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "天気",
+        "category": "noun",
+        "reading": "てんき",
+        "vocabularyId": "vocab-2850b5703e8b"
+      },
+      {
+        "surface": "だ",
+        "category": "auxiliary",
+        "reading": "だ"
+      },
+      {
+        "surface": "なあ",
+        "category": "particle",
+        "reading": "なあ"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "What lovely weather.",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/229334",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "naa-reflection",
+      "i-adjective-attributive"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "naa-reflection",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "new-student-next-month-hearsay",
+    "text": "来月から新しい生徒が来るそうです。",
+    "audio": "assets/voices/grammar/new-student-next-month-hearsay.m4a",
+    "vocabularyIds": [
+      "vocab-55fef51b0694",
+      "vocab-288a95a40d95",
+      "vocab-5d786dbb29fc",
+      "vocab-bc01756b4d89"
+    ],
+    "kanjiIds": [
+      "kanji-6765",
+      "kanji-6708",
+      "kanji-65b0",
+      "kanji-751f"
+    ],
+    "tokens": [
+      {
+        "surface": "来月",
+        "category": "noun",
+        "reading": "らいげつ",
+        "vocabularyId": "vocab-55fef51b0694"
+      },
+      {
+        "surface": "から",
+        "category": "particle",
+        "reading": "から"
+      },
+      {
+        "surface": "新しい",
+        "category": "adjective",
+        "reading": "あたらしい",
+        "vocabularyId": "vocab-288a95a40d95"
+      },
+      {
+        "surface": "生徒",
+        "category": "noun",
+        "reading": "せいと",
+        "vocabularyId": "vocab-5d786dbb29fc"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "来る",
+        "category": "verb",
+        "reading": "くる",
+        "vocabularyId": "vocab-bc01756b4d89"
+      },
+      {
+        "surface": "そう",
+        "category": "auxiliary",
+        "reading": "そう"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I hear that a new student is coming next month.",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/10983222",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "sou-hearsay",
+      "kara-start",
+      "i-adjective-attributive",
+      "ga-subject"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "kara-start",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ga-subject",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "nobody-came-today",
+    "text": "今日は誰も来ませんでした。",
+    "audio": "assets/voices/grammar/nobody-came-today.m4a",
+    "vocabularyIds": [
+      "vocab-6b9362de88a7",
+      "vocab-f3f74ef8bc9a",
+      "vocab-bc01756b4d89"
+    ],
+    "kanjiIds": [
+      "kanji-4eca",
+      "kanji-65e5",
+      "kanji-8ab0",
+      "kanji-6765"
+    ],
+    "tokens": [
+      {
+        "surface": "今日",
+        "category": "noun",
+        "reading": "きょう",
+        "vocabularyId": "vocab-6b9362de88a7"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "誰",
+        "category": "noun",
+        "reading": "だれ",
+        "vocabularyId": "vocab-f3f74ef8bc9a"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "来",
+        "category": "verb",
+        "reading": "き",
+        "vocabularyId": "vocab-bc01756b4d89"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "でし",
+        "category": "auxiliary",
+        "reading": "でし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Nobody came today.",
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11005158",
+      "creator": "KK_kaku_",
+      "license": "CC BY 2.0 FR"
+    },
+    "grammarPointIds": [
+      "verb-masen-deshita",
+      "dare",
+      "question-word-mo",
+      "wa-topic"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "verb-masen-deshita",
+        "tokenStart": 5,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "dare",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "question-word-mo",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
     "id": "show-teacher-kyoto-photo",
     "text": "先生に京都の写真を見せました。",
     "audio": "assets/voices/grammar/show-teacher-kyoto-photo.m4a",

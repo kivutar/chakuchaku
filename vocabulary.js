@@ -621,7 +621,10 @@
       entry.term,
       entry.reading,
       ...(Array.isArray(entry.alternateReadings) ? entry.alternateReadings : []),
-      ...(Array.isArray(entry.variants) ? entry.variants : [])
+      ...(Array.isArray(entry.variants) ? entry.variants : []),
+      ...(Array.isArray(entry.acceptedJapaneseAnswers)
+        ? entry.acceptedJapaneseAnswers
+        : [])
     ].map(normalizeJapanese).filter(Boolean))];
   }
 

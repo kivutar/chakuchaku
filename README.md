@@ -595,6 +595,10 @@ authors. Run `npm run kanji:update` to refresh meanings and readings from
 KANJIDIC2, then run `npm run content` to regenerate lesson `kanjiIds`. KANJIDIC2
 attribution and licence copies are under `licenses/`.
 
+Selected grammar sentences come from [Tatoeba](https://tatoeba.org/) under
+[CC BY 2.0 FR](https://creativecommons.org/licenses/by/2.0/fr/). Each sourced
+exercise keeps its sentence URL and creator in the generated exercise data.
+
 Word tooltips are intentionally limited to nouns, verbs, adjectives, adverbs,
 and interjections. Grammar elements such as particles and auxiliary endings
 receive hover colors but no ordinary translation tooltip. The one exception is

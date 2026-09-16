@@ -4488,8 +4488,12 @@
     ]
   },
   "vocab-a72e26bc8cb2": {
-    "meaning": "et",
+    "meaning": "encore ; de nouveau ; aussi",
     "acceptedAnswers": [
+      "encore",
+      "de nouveau",
+      "à nouveau",
+      "aussi",
       "et",
       "de plus"
     ]
@@ -4900,11 +4904,12 @@
     ]
   },
   "vocab-0609e7997541": {
-    "meaning": "lentement",
+    "meaning": "lentement ; tranquillement",
     "acceptedAnswers": [
       "lentement",
       "posément",
-      "tranquillement"
+      "tranquillement",
+      "sans se presser"
     ]
   },
   "vocab-f50fcf40e898": {
@@ -5928,6 +5933,104 @@
     "acceptedAnswers": [
       "rizière",
       "champ de riz"
+    ]
+  },
+  "vocab-ad9975e17a50": {
+    "meaning": "bonjour (dans la journée)",
+    "acceptedAnswers": [
+      "bonjour",
+      "salut"
+    ]
+  },
+  "vocab-e92fbf0ed627": {
+    "meaning": "bonjour (le matin)",
+    "acceptedAnswers": [
+      "bonjour",
+      "bonjour le matin"
+    ]
+  },
+  "vocab-2798a7949600": {
+    "meaning": "bonsoir",
+    "acceptedAnswers": [
+      "bonsoir"
+    ]
+  },
+  "vocab-aa8a24f49c4d": {
+    "meaning": "merci",
+    "acceptedAnswers": [
+      "merci",
+      "merci beaucoup"
+    ]
+  },
+  "vocab-a92a3a630fed": {
+    "meaning": "s'il vous plaît (pour demander quelque chose)",
+    "acceptedAnswers": [
+      "s'il vous plaît",
+      "s'il te plaît"
+    ]
+  },
+  "vocab-cb7c6271c2a9": {
+    "meaning": "enchanté (lors d'une première rencontre)",
+    "acceptedAnswers": [
+      "enchanté",
+      "enchantée",
+      "ravi de vous rencontrer",
+      "ravie de vous rencontrer"
+    ]
+  },
+  "vocab-04ebcec4eac8": {
+    "meaning": "je compte sur vous",
+    "acceptedAnswers": [
+      "je compte sur vous",
+      "je compte sur toi",
+      "enchanté",
+      "enchantée"
+    ]
+  },
+  "vocab-f1bf682f18cd": {
+    "meaning": "bonne nuit",
+    "acceptedAnswers": [
+      "bonne nuit"
+    ]
+  },
+  "vocab-4058f15cc5b8": {
+    "meaning": "désolé (familier)",
+    "acceptedAnswers": [
+      "désolé",
+      "désolée",
+      "pardon"
+    ]
+  },
+  "vocab-7fd7463f51b7": {
+    "meaning": "formule de remerciement avant de manger",
+    "acceptedAnswers": [
+      "merci pour le repas",
+      "bon appétit",
+      "je reçois humblement"
+    ]
+  },
+  "vocab-fcdd7a903190": {
+    "meaning": "adresse (du domicile)",
+    "acceptedAnswers": [
+      "adresse",
+      "adresse du domicile",
+      "adresse postale"
+    ]
+  },
+  "vocab-eefac8830079": {
+    "meaning": "origine ; lieu d'origine",
+    "acceptedAnswers": [
+      "origine",
+      "lieu d'origine",
+      "ville d'origine",
+      "pays d'origine"
+    ]
+  },
+  "vocab-c316760df288": {
+    "meaning": "cheveux",
+    "acceptedAnswers": [
+      "cheveux",
+      "cheveu"
     ]
   }
 }

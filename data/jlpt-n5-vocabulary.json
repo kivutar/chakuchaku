@@ -1891,6 +1891,7 @@
     "term": "紙",
     "reading": "かみ",
     "meaning": "paper",
+    "voiceSlug": "kami-paper",
     "scope": "core",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
@@ -6405,7 +6406,10 @@
     "id": "vocab-a72e26bc8cb2",
     "term": "また",
     "reading": "また",
-    "meaning": "and; furthermore",
+    "meaning": "again; also; furthermore",
+    "acceptedAnswers": [
+      "and"
+    ],
     "scope": "core",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "conjunction"
@@ -6982,18 +6986,19 @@
   },
   {
     "id": "vocab-0609e7997541",
-    "term": "ゆっくりと",
-    "reading": "ゆっくりと",
-    "meaning": "slowly, at ease",
+    "term": "ゆっくり",
+    "reading": "ゆっくり",
+    "meaning": "slowly; at leisure",
+    "acceptedAnswers": [
+      "unhurriedly",
+      "leisurely"
+    ],
+    "acceptedJapaneseAnswers": [
+      "ゆっくりと"
+    ],
     "scope": "core",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "adverb",
-    "inflections": [
-      {
-        "surface": "ゆっくり",
-        "reading": "ゆっくり"
-      }
-    ]
+    "partOfSpeech": "adverb"
   },
   {
     "id": "vocab-f50fcf40e898",
@@ -8576,5 +8581,195 @@
     "topic": "transportation",
     "scope": "supplemental",
     "source": "curated-katakana-curriculum"
+  },
+  {
+    "id": "vocab-ad9975e17a50",
+    "term": "こんにちは",
+    "reading": "こんにちは",
+    "meaning": "hello; good afternoon",
+    "acceptedAnswers": [
+      "hello",
+      "good afternoon"
+    ],
+    "partOfSpeech": "interjection",
+    "topic": "expressions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-e92fbf0ed627",
+    "term": "おはようございます",
+    "reading": "おはようございます",
+    "meaning": "good morning",
+    "acceptedAnswers": [
+      "morning"
+    ],
+    "acceptedJapaneseAnswers": [
+      "おはよう"
+    ],
+    "partOfSpeech": "interjection",
+    "topic": "expressions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-2798a7949600",
+    "term": "こんばんは",
+    "reading": "こんばんは",
+    "meaning": "good evening",
+    "partOfSpeech": "interjection",
+    "topic": "expressions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-aa8a24f49c4d",
+    "term": "ありがとう",
+    "reading": "ありがとう",
+    "meaning": "thank you",
+    "acceptedAnswers": [
+      "thanks",
+      "thank you very much"
+    ],
+    "acceptedJapaneseAnswers": [
+      "ありがとうございます"
+    ],
+    "partOfSpeech": "interjection",
+    "topic": "expressions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-a92a3a630fed",
+    "term": "お願いします",
+    "reading": "おねがいします",
+    "meaning": "please (when making a request)",
+    "acceptedAnswers": [
+      "please",
+      "if you please"
+    ],
+    "partOfSpeech": "interjection",
+    "topic": "expressions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-cb7c6271c2a9",
+    "term": "はじめまして",
+    "reading": "はじめまして",
+    "meaning": "how do you do? (said when meeting for the first time)",
+    "acceptedAnswers": [
+      "nice to meet you",
+      "pleased to meet you",
+      "how do you do"
+    ],
+    "partOfSpeech": "interjection",
+    "topic": "expressions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-04ebcec4eac8",
+    "term": "よろしくお願いします",
+    "reading": "よろしくおねがいします",
+    "meaning": "please treat me favorably",
+    "acceptedAnswers": [
+      "I look forward to working with you",
+      "please take care of me",
+      "nice to meet you"
+    ],
+    "partOfSpeech": "interjection",
+    "topic": "expressions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-f1bf682f18cd",
+    "term": "おやすみなさい",
+    "reading": "おやすみなさい",
+    "meaning": "good night",
+    "acceptedJapaneseAnswers": [
+      "おやすみ"
+    ],
+    "partOfSpeech": "interjection",
+    "topic": "expressions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-4058f15cc5b8",
+    "term": "ごめん",
+    "reading": "ごめん",
+    "meaning": "sorry (informal)",
+    "acceptedAnswers": [
+      "sorry",
+      "my bad"
+    ],
+    "acceptedJapaneseAnswers": [
+      "ごめんなさい"
+    ],
+    "partOfSpeech": "interjection",
+    "topic": "expressions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-7fd7463f51b7",
+    "term": "いただきます",
+    "reading": "いただきます",
+    "meaning": "expression of thanks before eating",
+    "acceptedAnswers": [
+      "thank you for the food",
+      "let's eat",
+      "I humbly receive"
+    ],
+    "partOfSpeech": "interjection",
+    "topic": "expressions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-fcdd7a903190",
+    "term": "住所",
+    "reading": "じゅうしょ",
+    "meaning": "address (place of residence)",
+    "acceptedAnswers": [
+      "address",
+      "home address",
+      "residential address"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily-life",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-eefac8830079",
+    "term": "出身",
+    "reading": "しゅっしん",
+    "meaning": "place of origin; hometown",
+    "acceptedAnswers": [
+      "origin",
+      "where one is from",
+      "place of birth"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "people",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-c316760df288",
+    "term": "髪",
+    "reading": "かみ",
+    "meaning": "hair (on the head)",
+    "acceptedAnswers": [
+      "hair"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "body",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary",
+    "voiceSlug": "kami-hair"
   }
 ]

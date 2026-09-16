@@ -89,6 +89,216 @@
     ]
   },
   {
+    "id": "come-again-permission",
+    "text": "また来てもいい？",
+    "solution": "Can I come again?",
+    "grammarPointIds": [
+      "te-mo-ii",
+      "plain-polite-register"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/3559172",
+      "creator": "tommy_san",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "no-beer-before-bed",
+    "text": "寝る前に、ビールを飲まないでください。",
+    "solution": "Please don't drink beer before going to bed.",
+    "grammarPointIds": [
+      "mae-ni",
+      "naide-kudasai"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/1324948",
+      "creator": "bluwy",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "study-here-ability",
+    "text": "ここで勉強することができます。",
+    "solution": "You can study here.",
+    "grammarPointIds": [
+      "koto-ga-dekiru",
+      "de-action-location",
+      "kosoado-places"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11013888",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "fuji-highest-mountain",
+    "text": "富士山は日本で一番高い山です。",
+    "solution": "Mount Fuji is the highest mountain in Japan.",
+    "grammarPointIds": [
+      "ichiban-superlative",
+      "i-adjective-attributive",
+      "copula-da-desu"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/84930",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "price-per-person",
+    "text": "一人いくらですか？",
+    "solution": "How much is it per person?",
+    "grammarPointIds": [
+      "ikura",
+      "common-counters",
+      "ka-question"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/3024513",
+      "creator": "tommy_san",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "must-study-more",
+    "text": "もっと勉強しなければなりません。",
+    "solution": "I need to study more.",
+    "grammarPointIds": [
+      "nakereba-naranai",
+      "irregular-verbs"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/985101",
+      "creator": "riccioberto",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "sleep-early-to-get-well",
+    "text": "元気になるように、早く寝ます。",
+    "solution": "I go to bed early so that I can get well.",
+    "grammarPointIds": [
+      "you-ni-purpose",
+      "naru-change",
+      "i-adjective-adverb"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/8869444",
+      "creator": "mochico",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "exam-looks-difficult",
+    "text": "試験は難しそうですね。",
+    "solution": "The exam looks difficult, doesn't it?",
+    "grammarPointIds": [
+      "sou-appearance",
+      "ne-confirmation",
+      "wa-topic"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/13643489",
+      "creator": "ninefi",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "how-use-this-casual",
+    "text": "これ、どうやって使うの？",
+    "solution": "How do you use this?",
+    "tokenOverrides": {
+      "やっ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "dou-yatte",
+      "no-question",
+      "kosoado-pronouns"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/10914887",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "tea-or-something-invitation",
+    "text": "お茶でも飲みませんか？",
+    "solution": "Would you like to have tea or something?",
+    "grammarPointIds": [
+      "demo-particle",
+      "masen-ka-invitation"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/1771703",
+      "creator": "Scott",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "lovely-weather-reflection",
+    "text": "いい天気だなあ。",
+    "solution": "What lovely weather.",
+    "grammarPointIds": [
+      "naa-reflection",
+      "i-adjective-attributive"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/229334",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "new-student-next-month-hearsay",
+    "text": "来月から新しい生徒が来るそうです。",
+    "solution": "I hear that a new student is coming next month.",
+    "grammarPointIds": [
+      "sou-hearsay",
+      "kara-start",
+      "i-adjective-attributive",
+      "ga-subject"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/10983222",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "nobody-came-today",
+    "text": "今日は誰も来ませんでした。",
+    "solution": "Nobody came today.",
+    "grammarPointIds": [
+      "verb-masen-deshita",
+      "dare",
+      "question-word-mo",
+      "wa-topic"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11005158",
+      "creator": "KK_kaku_",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
     "id": "show-teacher-kyoto-photo",
     "text": "先生に京都の写真を見せました。",
     "solution": "I showed my teacher a photo of Kyoto.",

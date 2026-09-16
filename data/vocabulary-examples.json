@@ -23913,8 +23913,8 @@
   },
   {
     "vocabularyId": "vocab-0609e7997541",
-    "text": "ゆっくりと歩く。",
-    "targetSurface": "ゆっくりと",
+    "text": "ゆっくり歩く。",
+    "targetSurface": "ゆっくり",
     "targetReading": "ゆっくり",
     "targetTokenStart": 0,
     "targetTokenEnd": 1,
@@ -23925,11 +23925,6 @@
         "category": "adverb",
         "reading": "ゆっくり",
         "vocabularyId": "vocab-0609e7997541"
-      },
-      {
-        "surface": "と",
-        "category": "particle",
-        "reading": "と"
       },
       {
         "surface": "歩く",
@@ -28780,6 +28775,371 @@
         "category": "verb",
         "reading": "のる",
         "vocabularyId": "vocab-9e0eeba39759"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-ad9975e17a50",
+    "text": "こんにちは！",
+    "targetSurface": "こんにちは",
+    "targetReading": "こんにちは",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "Hello!",
+    "tokens": [
+      {
+        "surface": "こんにちは",
+        "category": "interjection",
+        "reading": "こんにちは",
+        "vocabularyId": "vocab-ad9975e17a50"
+      },
+      {
+        "surface": "！",
+        "reading": "！"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-e92fbf0ed627",
+    "text": "おはようございます。",
+    "targetSurface": "おはようございます",
+    "targetReading": "おはようございます",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 3,
+    "translation": "Good morning.",
+    "tokens": [
+      {
+        "surface": "おはよう",
+        "category": "interjection",
+        "reading": "おはよう"
+      },
+      {
+        "surface": "ござい",
+        "category": "auxiliary",
+        "reading": "ござい"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-2798a7949600",
+    "text": "こんばんは。",
+    "targetSurface": "こんばんは",
+    "targetReading": "こんばんは",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "Good evening.",
+    "tokens": [
+      {
+        "surface": "こんばんは",
+        "category": "interjection",
+        "reading": "こんばんは",
+        "vocabularyId": "vocab-2798a7949600"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-aa8a24f49c4d",
+    "text": "ありがとう！",
+    "targetSurface": "ありがとう",
+    "targetReading": "ありがとう",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "Thank you!",
+    "tokens": [
+      {
+        "surface": "ありがとう",
+        "category": "interjection",
+        "reading": "ありがとう",
+        "vocabularyId": "vocab-aa8a24f49c4d"
+      },
+      {
+        "surface": "！",
+        "reading": "！"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-a92a3a630fed",
+    "text": "これをお願いします。",
+    "targetSurface": "お願いします",
+    "targetReading": "おねがいします",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 5,
+    "translation": "This one, please.",
+    "tokens": [
+      {
+        "surface": "これ",
+        "category": "noun",
+        "reading": "これ",
+        "vocabularyId": "vocab-fb33e3a6798b"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "お願い",
+        "category": "noun",
+        "reading": "おねがい"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-cb7c6271c2a9",
+    "text": "はじめまして。",
+    "targetSurface": "はじめまして",
+    "targetReading": "はじめまして",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "How do you do?",
+    "tokens": [
+      {
+        "surface": "はじめまして",
+        "category": "interjection",
+        "reading": "はじめまして",
+        "vocabularyId": "vocab-cb7c6271c2a9"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-04ebcec4eac8",
+    "text": "よろしくお願いします。",
+    "targetSurface": "よろしくお願いします",
+    "targetReading": "よろしくおねがいします",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 4,
+    "translation": "I look forward to working with you.",
+    "tokens": [
+      {
+        "surface": "よろしく",
+        "category": "adverb",
+        "reading": "よろしく"
+      },
+      {
+        "surface": "お願い",
+        "category": "noun",
+        "reading": "おねがい"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-f1bf682f18cd",
+    "text": "おやすみなさい。",
+    "targetSurface": "おやすみなさい",
+    "targetReading": "おやすみなさい",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "Good night.",
+    "tokens": [
+      {
+        "surface": "おやすみなさい",
+        "category": "interjection",
+        "reading": "おやすみなさい",
+        "vocabularyId": "vocab-f1bf682f18cd"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-4058f15cc5b8",
+    "text": "ごめん！",
+    "targetSurface": "ごめん",
+    "targetReading": "ごめん",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "Sorry!",
+    "tokens": [
+      {
+        "surface": "ごめん",
+        "category": "interjection",
+        "reading": "ごめん",
+        "vocabularyId": "vocab-4058f15cc5b8"
+      },
+      {
+        "surface": "！",
+        "reading": "！"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-7fd7463f51b7",
+    "text": "いただきます。",
+    "targetSurface": "いただきます",
+    "targetReading": "いただきます",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 2,
+    "translation": "Thank you for the food.",
+    "tokens": [
+      {
+        "surface": "いただき",
+        "category": "verb",
+        "reading": "いただき"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-fcdd7a903190",
+    "text": "住所を書きます。",
+    "targetSurface": "住所",
+    "targetReading": "じゅうしょ",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I write my address.",
+    "tokens": [
+      {
+        "surface": "住所",
+        "category": "noun",
+        "reading": "じゅうしょ",
+        "vocabularyId": "vocab-fcdd7a903190"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "書き",
+        "category": "verb",
+        "reading": "かき",
+        "vocabularyId": "vocab-d34997e828cb"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-eefac8830079",
+    "text": "日本出身です。",
+    "targetSurface": "出身",
+    "targetReading": "しゅっしん",
+    "targetTokenStart": 1,
+    "targetTokenEnd": 2,
+    "translation": "I am from Japan.",
+    "tokens": [
+      {
+        "surface": "日本",
+        "category": "noun",
+        "reading": "にほん",
+        "vocabularyId": "vocab-cf2abf0c5be3"
+      },
+      {
+        "surface": "出身",
+        "category": "noun",
+        "reading": "しゅっしん",
+        "vocabularyId": "vocab-eefac8830079"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-c316760df288",
+    "text": "髪を洗います。",
+    "targetSurface": "髪",
+    "targetReading": "かみ",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I wash my hair.",
+    "tokens": [
+      {
+        "surface": "髪",
+        "category": "noun",
+        "reading": "かみ",
+        "vocabularyId": "vocab-c316760df288"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "洗い",
+        "category": "verb",
+        "reading": "あらい",
+        "vocabularyId": "vocab-84e555b3292a"
       },
       {
         "surface": "ます",

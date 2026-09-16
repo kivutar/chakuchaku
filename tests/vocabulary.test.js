@@ -528,13 +528,22 @@ test("the vocabulary pool contains the complete curated inventory", async () => 
   ));
   const pool = createVocabularyPool(vocabulary);
 
-  assert.equal(pool.length, 826);
-  assert.equal(new Set(pool.map(({ vocabularyId }) => vocabularyId)).size, 826);
+  assert.equal(pool.length, 839);
+  assert.equal(new Set(pool.map(({ vocabularyId }) => vocabularyId)).size, 839);
   assert.equal(pool.some(({ term }) => term === "N"), false);
   assert.equal(pool.every(({ acceptedAnswersByLocale }) => {
     return acceptedAnswersByLocale.en.length > 0;
   }), true);
   assert.equal(pool.every(({ acceptedJapaneseAnswers }) => acceptedJapaneseAnswers.length > 0), true);
+
+  const goodMorning = pool.find(({ term }) => term === "おはようございます");
+  const goodMorningRecall = chooseExercise(
+    pool,
+    goodMorning.vocabularyId,
+    directions.englishToJapanese
+  );
+
+  assert.equal(gradeAnswer(goodMorningRecall, "おはよう").correct, true);
 
   const dayCounter = pool.find(({ vocabularyId }) => {
     return vocabularyId === "vocab-a759a7d58008";
