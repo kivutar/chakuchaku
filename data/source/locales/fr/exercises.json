@@ -62,6 +62,345 @@
   "nobody-came-today": {
     "translation": "Personne n’est venu aujourd’hui."
   },
+  "seen-it-before": {
+    "translation": "Je l’ai déjà vu."
+  },
+  "work-and-play": {
+    "translation": "Je travaille, je m’amuse et je fais d’autres choses de ce genre."
+  },
+  "dinner-while-watching-tv": {
+    "translation": "J’ai dîné en regardant la télévision."
+  },
+  "better-open-window": {
+    "translation": "Je devrais ouvrir les fenêtres ?"
+  },
+  "try-reading-book-tomorrow": {
+    "translation": "Demain, je vais essayer de lire ce livre."
+  },
+  "not-written-yet": {
+    "translation": "Non, je ne l’ai pas encore écrit."
+  },
+  "study-after-coming-home": {
+    "translation": "J’étudierai après être rentré."
+  },
+  "know-only-this": {
+    "translation": "Je ne sais que cela."
+  },
+  "intend-write-letter": {
+    "translation": "J’ai l’intention d’écrire une lettre."
+  },
+  "like-reading-books": {
+    "translation": "J’aime lire des livres."
+  },
+  "quiet-that-night": {
+    "translation": "Cette nuit-là était très calme."
+  },
+  "saw-that-movie-right": {
+    "translation": "Tu as vu ce film, n’est-ce pas ?"
+  },
+  "where-photo-taken": {
+    "translation": "Où est-ce qu’on t’a pris en photo ?"
+  },
+  "father-may-be-home": {
+    "translation": "Mon père est peut-être chez lui maintenant."
+  },
+  "call-when-finished": {
+    "translation": "Appelle-moi quand tu auras terminé."
+  },
+  "whether-rain-tomorrow": {
+    "translation": "Sais-tu s’il va pleuvoir demain ?"
+  },
+  "no-need-to-eat": {
+    "translation": "Tu n’as pas besoin de le manger."
+  },
+  "walk-to-station-without-bus": {
+    "translation": "Je suis allé à pied jusqu’à la gare sans prendre le bus."
+  },
+  "tv-big-and-expensive": {
+    "translation": "Ce téléviseur est grand et cher."
+  },
+  "which-one-want": {
+    "translation": "Lequel veux-tu ?"
+  },
+  "shall-i-come": {
+    "translation": "Veux-tu que je vienne ?"
+  },
+  "newspaper-cheaper-than-book": {
+    "translation": "Le journal coûte moins cher que le livre."
+  },
+  "spring-rain-automatic": {
+    "translation": "Au printemps, il pleut souvent ici."
+  },
+  "lost-key-yesterday": {
+    "translation": "J’ai malheureusement perdu ma clé hier."
+  },
+  "car-left-outside": {
+    "translation": "Une voiture est garée dehors."
+  },
+  "father-bought-me-books": {
+    "translation": "Mon père m’a acheté des livres."
+  },
+  "lent-brother-money": {
+    "translation": "J’ai prêté de l’argent à mon petit frère."
+  },
+  "call-friend-after-homework": {
+    "translation": "J’ai appelé mon ami après avoir fait mes devoirs."
+  },
+  "wash-face-before-school": {
+    "translation": "Lave-toi le visage avant d’aller à l’école."
+  },
+  "already-ate": {
+    "translation": "J’ai déjà mangé."
+  },
+  "ate-only-one-sweet": {
+    "translation": "Je n’ai mangé qu’un seul bonbon."
+  },
+  "look-happy-today": {
+    "translation": "Tu as l’air heureux aujourd’hui."
+  },
+  "why-bought-flowers": {
+    "translation": "Pourquoi as-tu acheté des fleurs ?"
+  },
+  "cold-tomorrow-probably": {
+    "translation": "Il fera probablement froid demain, alors mets un manteau."
+  },
+  "father-home-late-hearsay": {
+    "translation": "D’après ma mère, mon père rentrera tard ce soir."
+  },
+  "kanji-difficult-but-fun": {
+    "translation": "Les kanji sont difficiles, mais les étudier est amusant."
+  },
+  "rain-but-walk-dog": {
+    "translation": "Il pleut aujourd’hui. Pourtant, je vais marcher dans le parc avec mon chien."
+  },
+  "old-room-but-clean": {
+    "translation": "Cette pièce est vieille. Cependant, elle est très propre."
+  },
+  "leave-station-turn-right": {
+    "translation": "Je suis sorti de la gare, puis j’ai tourné à droite."
+  },
+  "medicine-then-sleep": {
+    "translation": "J’ai pris un médicament. Ensuite, j’ai dormi un peu."
+  },
+  "test-tomorrow-no-tv": {
+    "translation": "J’ai un examen demain, donc je ne regarderai pas la télévision ce soir."
+  },
+  "rain-close-window": {
+    "translation": "Comme il pleut, ferme la fenêtre, s’il te plaît."
+  },
+  "wash-hands-avoid-cold": {
+    "translation": "Je me lave bien les mains pour ne pas attraper froid."
+  },
+  "homework-finished-game": {
+    "translation": "Quand tu auras fini tes devoirs, tu pourras jouer à un jeu vidéo."
+  },
+  "kyoto-autumn-advice": {
+    "translation": "J’ai l’intention d’aller à Kyoto en automne."
+  },
+  "medicine-makes-well": {
+    "translation": "Ce médicament me remet en forme quand je le prends."
+  },
+  "swam-here-as-child": {
+    "translation": "Quand j’étais enfant, je nageais souvent dans cette rivière."
+  },
+  "ran-during-summer-break": {
+    "translation": "Pendant les vacances d’été, il m’arrive de courir dans le parc le matin."
+  },
+  "breakfast-while-reading-newspaper": {
+    "translation": "Je prends mon petit-déjeuner en lisant le journal."
+  },
+  "shower-then-breakfast": {
+    "translation": "Je prends mon petit-déjeuner après avoir pris une douche."
+  },
+  "check-weather-before-bed": {
+    "translation": "Avant de me coucher, je regarde la météo de demain."
+  },
+  "dinner-after-movie": {
+    "translation": "Après le film, j’ai dîné avec mon ami."
+  },
+  "station-school-ten-minutes": {
+    "translation": "Il faut cinq minutes à pied de la gare à l’école."
+  },
+  "may-see-trip-photos": {
+    "translation": "Puis-je regarder les photos du voyage ?"
+  },
+  "do-not-take-book-outside": {
+    "translation": "Il ne faut pas emporter ce livre dehors."
+  },
+  "do-not-use-my-key": {
+    "translation": "N’utilisez pas ma clé, s’il vous plaît."
+  },
+  "composition-by-monday": {
+    "translation": "Je dois rédiger la composition pour lundi."
+  },
+  "must-buy-ticket-station": {
+    "translation": "Il faut acheter un billet à la gare."
+  },
+  "no-milk-must-buy": {
+    "translation": "Il n’y a plus de lait, alors il faut que j’aille en acheter."
+  },
+  "offer-close-window": {
+    "translation": "Voulez-vous que je ferme la fenêtre ?"
+  },
+  "swim-together-saturday": {
+    "translation": "Veux-tu qu’on nage ensemble samedi ?"
+  },
+  "write-address-on-paper": {
+    "translation": "Écrivez cette adresse sur le papier, s’il vous plaît."
+  },
+  "tired-rest-together": {
+    "translation": "Nous sommes fatigués, alors reposons-nous un peu."
+  },
+  "seven-students-classroom": {
+    "translation": "Il y a sept élèves dans la salle de classe."
+  },
+  "three-eggs-fridge": {
+    "translation": "Il y a trois œufs dans le réfrigérateur."
+  },
+  "two-red-pens-desk": {
+    "translation": "Il y a deux stylos rouges sur le bureau."
+  },
+  "no-time-today": {
+    "translation": "Je n’ai pas le temps aujourd’hui."
+  },
+  "subway-faster-than-train": {
+    "translation": "Le métro est plus rapide que le train."
+  },
+  "coffee-or-tea-preference": {
+    "translation": "Que préfères-tu, le café ou le thé ?"
+  },
+  "mothers-cooking-best": {
+    "translation": "Dans ma famille, la cuisine de ma mère est la meilleure."
+  },
+  "siblings-same-school": {
+    "translation": "Mon grand frère et moi allons dans la même école."
+  },
+  "buy-three-books-two-notebooks": {
+    "translation": "J’ai acheté trois livres et deux cahiers."
+  },
+  "fruit-in-box": {
+    "translation": "La boîte contient des pommes, des bananes et d’autres choses."
+  },
+  "teacher-taught-me-japanese": {
+    "translation": "Mon professeur m’a appris le japonais."
+  },
+  "make-cake-for-sister": {
+    "translation": "Je vais préparer un gâteau pour ma petite sœur."
+  },
+  "friend-carried-luggage": {
+    "translation": "Mon ami a porté mes bagages pour moi."
+  },
+  "received-watch-birthday": {
+    "translation": "J’ai reçu une montre de mon ami pour mon anniversaire."
+  },
+  "gave-brother-old-bicycle": {
+    "translation": "J’ai donné un vieux vélo à mon petit frère."
+  },
+  "father-gave-dictionary": {
+    "translation": "Mon père m’a donné ce dictionnaire."
+  },
+  "father-can-write-english-letter": {
+    "translation": "Mon père peut écrire une lettre en anglais."
+  },
+  "swum-in-sea": {
+    "translation": "J’ai déjà nagé dans la mer."
+  },
+  "want-write-letter-japanese": {
+    "translation": "J’aimerais essayer d’écrire une lettre en japonais."
+  },
+  "weekend-music-photos": {
+    "translation": "Le week-end, j’écoute de la musique, je prends des photos et je fais d’autres choses de ce genre."
+  },
+  "quiet-convenient-hotel": {
+    "translation": "Cet hôtel est calme et pratique."
+  },
+  "park-not-quiet-yesterday": {
+    "translation": "Le parc n’était pas calme hier."
+  },
+  "luggage-not-heavy": {
+    "translation": "Ce bagage n’est pas lourd."
+  },
+  "very-busy-last-week": {
+    "translation": "J’étais très occupé la semaine dernière."
+  },
+  "narrow-dark-road": {
+    "translation": "Cette route est étroite et sombre."
+  },
+  "write-kanji-large": {
+    "translation": "Écrivez le kanji en gros, s’il vous plaît."
+  },
+  "child-greeted-cheerfully": {
+    "translation": "L’enfant est allé à l’école de bonne humeur."
+  },
+  "red-hat-is-mothers": {
+    "translation": "Ce chapeau rouge est celui de ma mère."
+  },
+  "blue-bicycle-brothers": {
+    "translation": "Le vélo bleu est-il à ton grand frère ?"
+  },
+  "what-music-often": {
+    "translation": "Quel genre de musique écoutes-tu souvent ?"
+  },
+  "someone-at-entrance": {
+    "translation": "Quelqu’un est venu à l’entrée."
+  },
+  "go-nowhere-sunday": {
+    "translation": "Le dimanche, je ne vais nulle part."
+  },
+  "want-something-warm": {
+    "translation": "Je veux manger quelque chose."
+  },
+  "nobody-in-classroom": {
+    "translation": "Il n’y a personne dans la salle de classe."
+  },
+  "which-bag-lightest": {
+    "translation": "Quel sac est le plus léger ?"
+  },
+  "how-make-this-dish": {
+    "translation": "Comment prépare-t-on ce plat ?"
+  },
+  "how-is-this-soup": {
+    "translation": "Comment est cette soupe ?"
+  },
+  "when-is-birthday": {
+    "translation": "Quand est ton anniversaire ?"
+  },
+  "how-many-eggs-fridge": {
+    "translation": "Combien y a-t-il d’œufs dans le réfrigérateur ?"
+  },
+  "three-apples-how-much": {
+    "translation": "Combien cela coûtera-t-il si j’achète trois pommes ?"
+  },
+  "father-said-home-early": {
+    "translation": "Mon père a dit : « Je rentrerai tôt aujourd’hui. »"
+  },
+  "brother-tokyo-next-week": {
+    "translation": "Il paraît que mon grand frère va à Kyoto la semaine prochaine."
+  },
+  "coffee-before-going-home": {
+    "translation": "Veux-tu prendre un café ou quelque chose avant de rentrer ?"
+  },
+  "do-not-want-coffee": {
+    "translation": "Je n’ai pas envie de boire un truc comme du café."
+  },
+  "only-water-morning": {
+    "translation": "Le matin, je ne bois que de l’eau."
+  },
+  "only-want-read-this-book": {
+    "translation": "Pour l’instant, je veux seulement lire ce livre."
+  },
+  "watch-about-five-thousand-yen": {
+    "translation": "Cette montre coûte environ cinq mille yens."
+  },
+  "shop-closes-around-nine": {
+    "translation": "Le magasin ferme vers neuf heures."
+  },
+  "why-window-open": {
+    "translation": "Pourquoi la fenêtre est-elle ouverte ?"
+  },
+  "letter-not-read-yet": {
+    "translation": "Je n’ai pas encore lu cette lettre."
+  },
   "show-teacher-kyoto-photo": {
     "translation": "J'ai montré une photo de Kyoto à mon professeur."
   },

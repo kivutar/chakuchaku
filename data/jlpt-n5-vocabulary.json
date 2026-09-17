@@ -1502,7 +1502,10 @@
     ],
     "scope": "core",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "variants": [
+      "終わる"
+    ]
   },
   {
     "id": "vocab-83b219893eca",
@@ -2814,7 +2817,8 @@
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "variants": [
-      "ご飯"
+      "ご飯",
+      "ごはん"
     ]
   },
   {
@@ -2994,6 +2998,9 @@
     "meaning": "counter for books",
     "scope": "core",
     "source": "open-anki-jlpt-decks",
+    "variants": [
+      "冊"
+    ],
     "partOfSpeech": "counter"
   },
   {
@@ -4978,7 +4985,10 @@
     "meaning": "to lose something",
     "scope": "core",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "variants": [
+      "なくす"
+    ]
   },
   {
     "id": "vocab-9e5230f0f541",
@@ -7318,7 +7328,10 @@
     "meaning": "I, myself",
     "scope": "core",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "pronoun"
+    "partOfSpeech": "pronoun",
+    "variants": [
+      "わたし"
+    ]
   },
   {
     "id": "vocab-e4a0829403e3",

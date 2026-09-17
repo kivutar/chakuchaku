@@ -9706,8 +9706,8 @@
     "vocabularyId": "vocab-bf2d9a061fe3",
     "text": "二冊買います。",
     "targetSurface": "二冊",
-    "targetReading": "にさつ",
-    "targetTokenStart": 0,
+    "targetReading": "～さつ",
+    "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "I buy two books.",
     "tokens": [
@@ -9720,7 +9720,8 @@
       {
         "surface": "冊",
         "category": "noun",
-        "reading": "さつ"
+        "reading": "～さつ",
+        "vocabularyId": "vocab-bf2d9a061fe3"
       },
       {
         "surface": "買い",

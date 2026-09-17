@@ -299,6 +299,1375 @@
     }
   },
   {
+    "id": "seen-it-before",
+    "text": "見たことがあります。",
+    "solution": "I've seen it before.",
+    "grammarPointIds": [
+      "ta-koto-ga-aru",
+      "argument-omission"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/2374996",
+      "creator": "wakatyann630",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "work-and-play",
+    "text": "仕事したり遊んだりします。",
+    "solution": "I do things like work and play.",
+    "grammarPointIds": [
+      "tari-tari-suru",
+      "irregular-verbs"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11029284",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "dinner-while-watching-tv",
+    "text": "テレビを見ながらごはんを食べました。",
+    "solution": "I ate dinner while watching TV.",
+    "grammarPointIds": [
+      "nagara",
+      "verb-mashita"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/10899744",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "better-open-window",
+    "text": "窓は開けた方がいい？",
+    "solution": "Should I open the windows?",
+    "grammarPointIds": [
+      "hou-ga-ii-advice",
+      "wa-topic"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11683195",
+      "creator": "bunbuku",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "try-reading-book-tomorrow",
+    "text": "明日この本を読んでみるよ。",
+    "solution": "I'll try reading this book tomorrow.",
+    "grammarPointIds": [
+      "te-miru",
+      "yo-emphasis",
+      "kosoado-determiners",
+      "clock-calendar-time"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11445879",
+      "creator": "bunbuku",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "not-written-yet",
+    "text": "いいえ、まだ書いていません。",
+    "solution": "No, I haven't written it yet.",
+    "grammarPointIds": [
+      "mada-te-inai",
+      "te-inai",
+      "mada",
+      "argument-omission"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/229446",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "study-after-coming-home",
+    "text": "帰ってから勉強するよ。",
+    "solution": "I'll study after I come home.",
+    "grammarPointIds": [
+      "te-kara",
+      "yo-emphasis",
+      "irregular-verbs"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11017844",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "know-only-this",
+    "text": "私はこれだけしか知りません。",
+    "solution": "I know nothing but this.",
+    "grammarPointIds": [
+      "dake-limitation",
+      "shika-nai-limitation",
+      "kosoado-pronouns",
+      "verb-masen",
+      "wa-topic"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/160740",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "intend-write-letter",
+    "text": "手紙を書くつもりです。",
+    "solution": "I intend to write a letter.",
+    "grammarPointIds": [
+      "tsumori",
+      "verb-dictionary-nonpast"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/156072",
+      "creator": "bunbuku",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "like-reading-books",
+    "text": "本を読むのが好きです。",
+    "solution": "I like reading books.",
+    "grammarPointIds": [
+      "no-nominalizer",
+      "no-ga-suki"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/10883885",
+      "creator": "KK_kaku_",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "quiet-that-night",
+    "text": "その夜は大変静かでした。",
+    "solution": "That night was very quiet.",
+    "grammarPointIds": [
+      "na-adjective-past",
+      "copula-past",
+      "na-adjective-class",
+      "kosoado-determiners",
+      "wa-topic"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/2128256",
+      "creator": "Blanka_Meduzo",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "saw-that-movie-right",
+    "text": "その映画を見たよね？",
+    "solution": "You saw that movie, right?",
+    "grammarPointIds": [
+      "verb-ta-past",
+      "yone-confirmation",
+      "kosoado-determiners"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/8576265",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "where-photo-taken",
+    "text": "どこで写真を撮ってもらいましたか。",
+    "solution": "Where did you have your picture taken?",
+    "grammarPointIds": [
+      "te-morau",
+      "verb-mashita",
+      "ka-question",
+      "kosoado-places",
+      "de-action-location"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/200962",
+      "creator": "Blanka_Meduzo",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "father-may-be-home",
+    "text": "父は今家にいるかもしれません。",
+    "solution": "My father may be at home now.",
+    "grammarPointIds": [
+      "kamoshirenai",
+      "wa-topic",
+      "ni-existence-location",
+      "iru-existence"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/2363874",
+      "creator": "bunbuku",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "call-when-finished",
+    "text": "終わったら、電話して。",
+    "solution": "Call me when you're done.",
+    "grammarPointIds": [
+      "tara-conditional",
+      "verb-te-form"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11284358",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "whether-rain-tomorrow",
+    "text": "明日雨かどうか分かりますか。",
+    "solution": "Do you know whether it will rain tomorrow?",
+    "tokenOverrides": {
+      "どうか": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "ka-dou-ka",
+      "ka-question",
+      "clock-calendar-time"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/80358",
+      "creator": "bunbuku",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "no-need-to-eat",
+    "text": "食べなくてもいいよ。",
+    "solution": "You don't have to eat it.",
+    "grammarPointIds": [
+      "nakute-mo-ii",
+      "verb-nai",
+      "yo-emphasis"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/8969396",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "walk-to-station-without-bus",
+    "text": "バスに乗らないで、駅まで歩きました。",
+    "solution": "I walked to the station without taking the bus.",
+    "grammarPointIds": [
+      "naide-without",
+      "verb-nai",
+      "verb-mashita",
+      "made-end"
+    ]
+  },
+  {
+    "id": "tv-big-and-expensive",
+    "text": "このテレビ、大きいし高いよ。",
+    "solution": "This TV is big and expensive.",
+    "grammarPointIds": [
+      "shi-additive-reason",
+      "i-adjective-predicate",
+      "i-adjective-class",
+      "kosoado-determiners",
+      "yo-emphasis"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/10212512",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "which-one-want",
+    "text": "どれが欲しいですか？",
+    "solution": "Which one do you want?",
+    "grammarPointIds": [
+      "hoshii",
+      "dore-dono",
+      "ga-subject",
+      "ka-question"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11013712",
+      "creator": "KK_kaku_",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "shall-i-come",
+    "text": "私が来ましょうか？",
+    "solution": "Do you want me to come?",
+    "grammarPointIds": [
+      "mashou-ka",
+      "ga-subject",
+      "irregular-verbs"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/4272406",
+      "creator": "verbum",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "newspaper-cheaper-than-book",
+    "text": "新聞は本より安い。",
+    "solution": "The newspaper costs less than the book.",
+    "grammarPointIds": [
+      "yori-comparison",
+      "i-adjective-predicate",
+      "wa-topic"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11062069",
+      "creator": "KK_kaku_",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "spring-rain-automatic",
+    "text": "ここは、春になるとよく雨が降ります。",
+    "solution": "It often rains here in spring.",
+    "grammarPointIds": [
+      "to-conditional",
+      "frequency-adverbs",
+      "naru-change",
+      "kosoado-places",
+      "ga-subject"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11756046",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "lost-key-yesterday",
+    "text": "昨日、鍵をなくしてしまいました。",
+    "solution": "I accidentally lost my key yesterday.",
+    "grammarPointIds": [
+      "te-shimau",
+      "verb-mashita",
+      "clock-calendar-time"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/10899609",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "car-left-outside",
+    "text": "外には車が置いてあります。",
+    "solution": "A car has been parked outside.",
+    "grammarPointIds": [
+      "te-aru-result-state",
+      "ni-existence-location",
+      "ga-subject"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11571574",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "father-bought-me-books",
+    "text": "父は私に本を買ってくれました。",
+    "solution": "My father bought me some books.",
+    "grammarPointIds": [
+      "te-kureru",
+      "ni-target-recipient",
+      "verb-mashita",
+      "wa-topic"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/84499",
+      "creator": "mookeee",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "lent-brother-money",
+    "text": "わたしは弟にお金を貸してあげました。",
+    "solution": "I lent my younger brother some money.",
+    "grammarPointIds": [
+      "te-ageru",
+      "ni-target-recipient",
+      "verb-mashita",
+      "wa-topic"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/10899787",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "call-friend-after-homework",
+    "text": "宿題の後で、友達に電話しました。",
+    "solution": "I called my friend after doing my homework.",
+    "grammarPointIds": [
+      "ato-de",
+      "ni-target-recipient",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "wash-face-before-school",
+    "text": "学校へ行く前に顔を洗いなさい。",
+    "solution": "Wash your face before you go to school.",
+    "grammarPointIds": [
+      "mae-ni",
+      "e-direction"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/184374",
+      "creator": "tommy__san",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "already-ate",
+    "text": "もう食べました。",
+    "solution": "I already ate.",
+    "grammarPointIds": [
+      "mou",
+      "verb-mashita"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/2969830",
+      "creator": "Zaghawa",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "ate-only-one-sweet",
+    "text": "お菓子を一つだけ食べました。",
+    "solution": "I ate only one piece of candy.",
+    "grammarPointIds": [
+      "dake-limitation",
+      "tsu-counter",
+      "quantity-position",
+      "verb-mashita"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/11038986",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "look-happy-today",
+    "text": "今日は楽しそうですね。",
+    "solution": "You look happy today.",
+    "grammarPointIds": [
+      "sou-appearance",
+      "ne-confirmation",
+      "wa-topic",
+      "clock-calendar-time"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/171820",
+      "creator": "small_snow",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "why-bought-flowers",
+    "text": "どうして花を買ったんですか？",
+    "solution": "Why did you buy flowers?",
+    "grammarPointIds": [
+      "no-desu",
+      "naze-doushite-nande",
+      "verb-ta-past",
+      "ka-question"
+    ],
+    "attribution": {
+      "provider": "Tatoeba",
+      "url": "https://tatoeba.org/en/sentences/show/980708",
+      "creator": "bunbuku",
+      "license": "CC BY 2.0 FR"
+    }
+  },
+  {
+    "id": "cold-tomorrow-probably",
+    "text": "明日は寒いでしょうから、コートを着てください。",
+    "solution": "It will probably be cold tomorrow, so please wear a coat.",
+    "grammarPointIds": [
+      "deshou-darou",
+      "kara-reason",
+      "te-kudasai",
+      "i-adjective-predicate"
+    ]
+  },
+  {
+    "id": "father-home-late-hearsay",
+    "text": "母の話では、父は今晩遅く帰るそうです。",
+    "solution": "According to my mother, my father will come home late tonight.",
+    "grammarPointIds": [
+      "sou-hearsay",
+      "wa-topic",
+      "i-adjective-adverb",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "kanji-difficult-but-fun",
+    "text": "漢字は難しいけど、勉強するのは楽しいです。",
+    "solution": "Kanji is difficult, but studying it is fun.",
+    "grammarPointIds": [
+      "kedo-contrast",
+      "no-nominalizer",
+      "i-adjective-predicate",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "rain-but-walk-dog",
+    "text": "今日は雨です。でも、犬と公園を歩きます。",
+    "solution": "It is raining today. However, I will walk through the park with my dog.",
+    "grammarPointIds": [
+      "demo-connector",
+      "to-companion",
+      "o-route",
+      "copula-da-desu",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "old-room-but-clean",
+    "text": "この部屋は古いです。しかし、とてもきれいです。",
+    "solution": "This room is old. However, it is very clean.",
+    "grammarPointIds": [
+      "shikashi-connector",
+      "i-adjective-predicate",
+      "na-adjective-predicate",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "leave-station-turn-right",
+    "text": "駅を出ました。そして、右に曲がりました。",
+    "solution": "I left the station and then turned right.",
+    "grammarPointIds": [
+      "soshite-connector",
+      "verb-mashita",
+      "o-route"
+    ]
+  },
+  {
+    "id": "medicine-then-sleep",
+    "text": "薬を飲みました。それから、少し寝ました。",
+    "solution": "I took some medicine. After that, I slept for a while.",
+    "grammarPointIds": [
+      "sorekara-connector",
+      "verb-mashita",
+      "degree-adverbs"
+    ]
+  },
+  {
+    "id": "test-tomorrow-no-tv",
+    "text": "明日は試験だから、今晩はテレビを見ません。",
+    "solution": "I have a test tomorrow, so I won't watch TV tonight.",
+    "grammarPointIds": [
+      "kara-reason",
+      "verb-masen",
+      "wa-contrast",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "rain-close-window",
+    "text": "雨なので、窓を閉めてください。",
+    "solution": "Because it is raining, please close the window.",
+    "grammarPointIds": [
+      "node-reason",
+      "te-kudasai",
+      "o-object"
+    ]
+  },
+  {
+    "id": "wash-hands-avoid-cold",
+    "text": "風邪を引かないように、手をよく洗います。",
+    "solution": "I wash my hands well so that I do not catch a cold.",
+    "grammarPointIds": [
+      "you-ni-purpose",
+      "verb-nai",
+      "o-object"
+    ]
+  },
+  {
+    "id": "homework-finished-game",
+    "text": "宿題が終わったら、ゲームをしてもいいです。",
+    "solution": "When you finish your homework, you may play a game.",
+    "grammarPointIds": [
+      "tara-conditional",
+      "te-mo-ii",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "kyoto-autumn-advice",
+    "text": "秋に京都へ行くつもりです。",
+    "solution": "I plan to go to Kyoto in autumn.",
+    "grammarPointIds": [
+      "tsumori",
+      "e-direction",
+      "ni-time",
+      "verb-dictionary-nonpast"
+    ]
+  },
+  {
+    "id": "medicine-makes-well",
+    "text": "この薬を飲むと、元気になります。",
+    "solution": "This medicine makes me feel better when I take it.",
+    "grammarPointIds": [
+      "to-conditional",
+      "naru-change",
+      "na-adjective-adverb",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "swam-here-as-child",
+    "text": "子供の時、よくこの川で泳ぎました。",
+    "solution": "When I was a child, I often swam in this river.",
+    "grammarPointIds": [
+      "toki",
+      "frequency-adverbs",
+      "de-action-location",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "ran-during-summer-break",
+    "text": "夏休みには、朝、公園を走ることがあります。",
+    "solution": "During summer vacation, I sometimes run through the park in the morning.",
+    "grammarPointIds": [
+      "ru-koto-ga-aru",
+      "o-route",
+      "ni-time",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "breakfast-while-reading-newspaper",
+    "text": "新聞を読みながら、朝ご飯を食べます。",
+    "solution": "I eat breakfast while reading the newspaper.",
+    "grammarPointIds": [
+      "nagara",
+      "o-object",
+      "verb-masu"
+    ]
+  },
+  {
+    "id": "shower-then-breakfast",
+    "text": "シャワーを浴びてから、朝ご飯を食べます。",
+    "solution": "I eat breakfast after taking a shower.",
+    "grammarPointIds": [
+      "te-kara",
+      "o-object",
+      "verb-masu"
+    ]
+  },
+  {
+    "id": "check-weather-before-bed",
+    "text": "寝る前に、明日の天気を見ます。",
+    "solution": "Before going to bed, I check tomorrow's weather.",
+    "grammarPointIds": [
+      "mae-ni",
+      "verb-dictionary-nonpast",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "dinner-after-movie",
+    "text": "映画の後で、友達と夕飯を食べました。",
+    "solution": "After the movie, I ate dinner with my friend.",
+    "grammarPointIds": [
+      "ato-de",
+      "to-companion",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "station-school-ten-minutes",
+    "text": "駅から学校まで歩いて五分かかります。",
+    "solution": "It takes five minutes to walk from the station to the school.",
+    "grammarPointIds": [
+      "kara-start",
+      "made-end",
+      "duration-no-particle",
+      "te-action-link"
+    ]
+  },
+  {
+    "id": "may-see-trip-photos",
+    "text": "旅行の写真を見てもいいですか。",
+    "solution": "May I look at the photos from the trip?",
+    "grammarPointIds": [
+      "te-mo-ii",
+      "ka-question",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "do-not-take-book-outside",
+    "text": "この本を外に持って行ってはいけません。",
+    "solution": "You must not take this book outside.",
+    "grammarPointIds": [
+      "te-wa-ikenai",
+      "kosoado-determiners",
+      "o-object"
+    ]
+  },
+  {
+    "id": "do-not-use-my-key",
+    "text": "私の鍵を使わないでください。",
+    "solution": "Please do not use my key.",
+    "grammarPointIds": [
+      "naide-kudasai",
+      "no-possession",
+      "o-object"
+    ]
+  },
+  {
+    "id": "composition-by-monday",
+    "text": "月曜日までに作文を書かなければなりません。",
+    "solution": "I have to write the composition by Monday.",
+    "grammarPointIds": [
+      "nakereba-naranai",
+      "made-end",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "must-buy-ticket-station",
+    "text": "駅で切符を買わなくてはいけません。",
+    "solution": "You have to buy a ticket at the station.",
+    "grammarPointIds": [
+      "nakute-wa-ikenai",
+      "de-action-location",
+      "o-object"
+    ]
+  },
+  {
+    "id": "no-milk-must-buy",
+    "text": "牛乳がないから、買いに行かなきゃ。",
+    "solution": "We are out of milk, so I have to go buy some.",
+    "grammarPointIds": [
+      "nakya-nakucha",
+      "kara-reason",
+      "movement-purpose"
+    ]
+  },
+  {
+    "id": "offer-close-window",
+    "text": "窓を閉めましょうか。",
+    "solution": "Shall I close the window?",
+    "grammarPointIds": [
+      "mashou-ka",
+      "o-object"
+    ]
+  },
+  {
+    "id": "swim-together-saturday",
+    "text": "土曜日に一緒に泳ぎませんか。",
+    "solution": "Would you like to swim together on Saturday?",
+    "grammarPointIds": [
+      "masen-ka-invitation",
+      "ni-time",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "write-address-on-paper",
+    "text": "この住所を紙に書いてください。",
+    "solution": "Please write this address on the paper.",
+    "grammarPointIds": [
+      "te-kudasai",
+      "ni-target-recipient",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "tired-rest-together",
+    "text": "疲れたので、少し休みましょう。",
+    "solution": "We are tired, so let's rest for a while.",
+    "grammarPointIds": [
+      "mashou",
+      "node-reason",
+      "verb-ta-past"
+    ]
+  },
+  {
+    "id": "seven-students-classroom",
+    "text": "教室に学生が七人います。",
+    "solution": "There are seven students in the classroom.",
+    "grammarPointIds": [
+      "existence-location",
+      "ni-existence-location",
+      "iru-existence",
+      "common-counters"
+    ]
+  },
+  {
+    "id": "three-eggs-fridge",
+    "text": "冷蔵庫に卵が三つあります。",
+    "solution": "There are three eggs in the refrigerator.",
+    "grammarPointIds": [
+      "existence-location",
+      "ni-existence-location",
+      "aru-existence",
+      "tsu-counter"
+    ]
+  },
+  {
+    "id": "two-red-pens-desk",
+    "text": "机の上に赤いペンが二本あります。",
+    "solution": "There are two red pens on the desk.",
+    "grammarPointIds": [
+      "positional-nouns",
+      "common-counters",
+      "quantity-position",
+      "aru-existence"
+    ]
+  },
+  {
+    "id": "no-time-today",
+    "text": "今日は私には時間がありません。",
+    "solution": "I do not have time today.",
+    "grammarPointIds": [
+      "aru-possession",
+      "aru-existence",
+      "wa-topic",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "subway-faster-than-train",
+    "text": "電車より地下鉄のほうが速いです。",
+    "solution": "The subway is faster than the train.",
+    "grammarPointIds": [
+      "yori-comparison",
+      "hou-ga-comparison",
+      "i-adjective-predicate"
+    ]
+  },
+  {
+    "id": "coffee-or-tea-preference",
+    "text": "コーヒーとお茶とどちらが好きですか。",
+    "solution": "Which do you prefer, coffee or tea?",
+    "grammarPointIds": [
+      "dochira-comparison",
+      "suki-kirai",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "mothers-cooking-best",
+    "text": "家族の中で、母の料理が一番おいしいです。",
+    "solution": "In my family, my mother's cooking is the most delicious.",
+    "grammarPointIds": [
+      "ichiban-superlative",
+      "no-possession",
+      "i-adjective-predicate"
+    ]
+  },
+  {
+    "id": "siblings-same-school",
+    "text": "兄と私は同じ学校に行っています。",
+    "solution": "My older brother and I attend the same school.",
+    "grammarPointIds": [
+      "onaji",
+      "to-complete-list",
+      "te-iru-result-state"
+    ]
+  },
+  {
+    "id": "buy-three-books-two-notebooks",
+    "text": "本を三冊とノートを二冊買いました。",
+    "solution": "I bought three books and two notebooks.",
+    "grammarPointIds": [
+      "common-counters",
+      "quantity-position",
+      "to-complete-list",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "fruit-in-box",
+    "text": "箱にりんごやバナナなどが入っています。",
+    "solution": "The box contains apples, bananas, and other things.",
+    "grammarPointIds": [
+      "ya-incomplete-list",
+      "nado-examples",
+      "te-iru-result-state",
+      "ni-existence-location"
+    ]
+  },
+  {
+    "id": "teacher-taught-me-japanese",
+    "text": "先生に日本語を教えてもらいました。",
+    "solution": "My teacher taught me Japanese.",
+    "grammarPointIds": [
+      "te-morau",
+      "ni-target-recipient",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "make-cake-for-sister",
+    "text": "妹にケーキを作ってあげます。",
+    "solution": "I will make a cake for my younger sister.",
+    "grammarPointIds": [
+      "te-ageru",
+      "ni-target-recipient",
+      "o-object"
+    ]
+  },
+  {
+    "id": "friend-carried-luggage",
+    "text": "友達が荷物を持ってくれました。",
+    "solution": "My friend carried my luggage for me.",
+    "grammarPointIds": [
+      "te-kureru",
+      "ga-subject",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "received-watch-birthday",
+    "text": "誕生日に友達から時計をもらいました。",
+    "solution": "I received a watch from my friend for my birthday.",
+    "grammarPointIds": [
+      "morau",
+      "kara-start",
+      "ni-time",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "gave-brother-old-bicycle",
+    "text": "弟に古い自転車をあげました。",
+    "solution": "I gave my younger brother an old bicycle.",
+    "grammarPointIds": [
+      "ageru",
+      "ni-target-recipient",
+      "i-adjective-attributive",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "father-gave-dictionary",
+    "text": "父が私にこの辞書をくれました。",
+    "solution": "My father gave me this dictionary.",
+    "grammarPointIds": [
+      "kureru",
+      "ga-subject",
+      "ni-target-recipient",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "father-can-write-english-letter",
+    "text": "父は英語で手紙を書くことができます。",
+    "solution": "My father can write a letter in English.",
+    "grammarPointIds": [
+      "koto-ga-dekiru",
+      "koto-nominalizer",
+      "de-means",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "swum-in-sea",
+    "text": "海で泳いだことがあります。",
+    "solution": "I have swum in the sea.",
+    "grammarPointIds": [
+      "ta-koto-ga-aru",
+      "verb-ta-past",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "want-write-letter-japanese",
+    "text": "日本語で手紙を書いてみたいです。",
+    "solution": "I would like to try writing a letter in Japanese.",
+    "tokenOverrides": {
+      "みたい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "te-miru",
+      "tai-desire",
+      "de-means"
+    ]
+  },
+  {
+    "id": "weekend-music-photos",
+    "text": "週末は音楽を聞いたり、写真を撮ったりします。",
+    "solution": "On weekends, I do things like listen to music and take photos.",
+    "grammarPointIds": [
+      "tari-tari-suru",
+      "o-object",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "quiet-convenient-hotel",
+    "text": "このホテルは静かで便利です。",
+    "solution": "This hotel is quiet and convenient.",
+    "grammarPointIds": [
+      "adjective-connective",
+      "na-adjective-predicate",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "park-not-quiet-yesterday",
+    "text": "昨日の公園は静かではありませんでした。",
+    "solution": "The park was not quiet yesterday.",
+    "grammarPointIds": [
+      "na-adjective-past-negative",
+      "copula-past-negative",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "luggage-not-heavy",
+    "text": "この荷物は重くないです。",
+    "solution": "This luggage is not heavy.",
+    "grammarPointIds": [
+      "i-adjective-negative",
+      "i-adjective-class",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "very-busy-last-week",
+    "text": "先週はとても忙しかったです。",
+    "solution": "I was very busy last week.",
+    "grammarPointIds": [
+      "i-adjective-past",
+      "degree-adverbs",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "narrow-dark-road",
+    "text": "この道は狭くて暗いです。",
+    "solution": "This road is narrow and dark.",
+    "grammarPointIds": [
+      "adjective-connective",
+      "i-adjective-predicate",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "write-kanji-large",
+    "text": "漢字を大きく書いてください。",
+    "solution": "Please write the kanji in large characters.",
+    "grammarPointIds": [
+      "i-adjective-adverb",
+      "te-kudasai",
+      "o-object"
+    ]
+  },
+  {
+    "id": "child-greeted-cheerfully",
+    "text": "子供は元気に学校へ行きました。",
+    "solution": "The child went to school in good spirits.",
+    "grammarPointIds": [
+      "na-adjective-adverb",
+      "verb-mashita",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "red-hat-is-mothers",
+    "text": "その赤い帽子は母のです。",
+    "solution": "That red hat is my mother's.",
+    "grammarPointIds": [
+      "no-noun-omission",
+      "i-adjective-attributive",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "blue-bicycle-brothers",
+    "text": "青い自転車は兄のですか。",
+    "solution": "Is the blue bicycle your older brother's?",
+    "grammarPointIds": [
+      "no-noun-omission",
+      "i-adjective-attributive",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "what-music-often",
+    "text": "どんな音楽をよく聞きますか。",
+    "solution": "What kind of music do you often listen to?",
+    "grammarPointIds": [
+      "donna",
+      "frequency-adverbs",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "someone-at-entrance",
+    "text": "誰かが玄関に来ました。",
+    "solution": "Someone came to the entrance.",
+    "grammarPointIds": [
+      "question-word-ka",
+      "dare",
+      "ga-subject",
+      "ni-destination"
+    ]
+  },
+  {
+    "id": "go-nowhere-sunday",
+    "text": "日曜日はどこにも行きません。",
+    "solution": "I do not go anywhere on Sundays.",
+    "grammarPointIds": [
+      "question-word-mo",
+      "kosoado-places",
+      "verb-masen",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "want-something-warm",
+    "text": "何か食べたいです。",
+    "solution": "I want to eat something.",
+    "grammarPointIds": [
+      "question-word-ka",
+      "nani",
+      "tai-desire"
+    ]
+  },
+  {
+    "id": "nobody-in-classroom",
+    "text": "教室には誰もいません。",
+    "solution": "There is nobody in the classroom.",
+    "grammarPointIds": [
+      "question-word-mo",
+      "dare",
+      "iru-existence",
+      "ni-existence-location"
+    ]
+  },
+  {
+    "id": "which-bag-lightest",
+    "text": "どのかばんが一番軽いですか。",
+    "solution": "Which bag is the lightest?",
+    "grammarPointIds": [
+      "dore-dono",
+      "ichiban-superlative",
+      "ga-subject",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "how-make-this-dish",
+    "text": "この料理はどうやって作りますか。",
+    "solution": "How do you make this dish?",
+    "grammarPointIds": [
+      "dou-yatte",
+      "kosoado-determiners",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "how-is-this-soup",
+    "text": "このスープはどうですか。",
+    "solution": "How is this soup?",
+    "grammarPointIds": [
+      "dou",
+      "kosoado-determiners",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "when-is-birthday",
+    "text": "誕生日はいつですか。",
+    "solution": "When is your birthday?",
+    "grammarPointIds": [
+      "itsu",
+      "wa-topic",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "how-many-eggs-fridge",
+    "text": "冷蔵庫に卵はいくつありますか。",
+    "solution": "How many eggs are there in the refrigerator?",
+    "grammarPointIds": [
+      "ikutsu",
+      "aru-existence",
+      "ni-existence-location",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "three-apples-how-much",
+    "text": "りんごを三つ買うと、いくらになりますか。",
+    "solution": "How much will it cost if I buy three apples?",
+    "grammarPointIds": [
+      "ikura",
+      "tsu-counter",
+      "to-conditional",
+      "naru-change",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "father-said-home-early",
+    "text": "父は「今日は早く帰る」と言いました。",
+    "solution": "My father said he would come home early today.",
+    "grammarPointIds": [
+      "to-quotation",
+      "verb-mashita",
+      "i-adjective-adverb",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "brother-tokyo-next-week",
+    "text": "兄は来週京都へ行くんだって。",
+    "solution": "I hear that my older brother is going to Kyoto next week.",
+    "grammarPointIds": [
+      "tte-casual-quotation",
+      "no-desu",
+      "e-direction",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "coffee-before-going-home",
+    "text": "帰る前に、コーヒーでも飲みませんか。",
+    "solution": "Would you like to have coffee or something before going home?",
+    "grammarPointIds": [
+      "demo-particle",
+      "masen-ka-invitation",
+      "mae-ni"
+    ]
+  },
+  {
+    "id": "do-not-want-coffee",
+    "text": "コーヒーなんか飲みたくないです。",
+    "solution": "I do not want to drink something like coffee.",
+    "grammarPointIds": [
+      "nanka-nante-examples",
+      "tai-desire",
+      "o-object"
+    ]
+  },
+  {
+    "id": "only-water-morning",
+    "text": "朝は水しか飲みません。",
+    "solution": "In the morning, I drink nothing but water.",
+    "grammarPointIds": [
+      "shika-nai-limitation",
+      "verb-masen",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "only-want-read-this-book",
+    "text": "今はこの本だけ読みたいです。",
+    "solution": "For now, I only want to read this book.",
+    "grammarPointIds": [
+      "dake-limitation",
+      "tai-desire",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "watch-about-five-thousand-yen",
+    "text": "この時計は五千円ぐらいです。",
+    "solution": "This watch costs about five thousand yen.",
+    "grammarPointIds": [
+      "kurai-approximation",
+      "numbers-and-counters",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "shop-closes-around-nine",
+    "text": "店は九時ごろ閉まります。",
+    "solution": "The shop closes around nine o'clock.",
+    "grammarPointIds": [
+      "goro-approximate-time",
+      "clock-calendar-time",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "why-window-open",
+    "text": "どうして窓が開いているんですか。",
+    "solution": "Why is the window open?",
+    "grammarPointIds": [
+      "no-desu",
+      "naze-doushite-nande",
+      "te-iru-result-state",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "letter-not-read-yet",
+    "text": "その手紙はまだ読んでいません。",
+    "solution": "I have not read that letter yet.",
+    "grammarPointIds": [
+      "mada-te-inai",
+      "te-inai",
+      "mada",
+      "kosoado-determiners"
+    ]
+  },
+  {
     "id": "show-teacher-kyoto-photo",
     "text": "先生に京都の写真を見せました。",
     "solution": "I showed my teacher a photo of Kyoto.",
