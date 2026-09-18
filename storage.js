@@ -288,9 +288,6 @@
       }
     });
 
-    if (typeof global.navigator?.storage?.persist === "function") {
-      void global.navigator.storage.persist().catch(() => false);
-    }
   }
 
   global.JlptN5Storage = Object.freeze({
