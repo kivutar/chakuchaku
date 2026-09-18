@@ -33,11 +33,13 @@ test("web builds leave native integrations disabled", () => {
   assert.equal(context.JlptN5Native.platform, "web");
 });
 
-test("native builds bind Preferences to all durable learner keys", async () => {
+test("native builds move large learner keys to redundant files", async () => {
   const calls = [];
   let configuredDriver;
   let configuredKeys;
   let configuredOptions;
+  let fileDriverOptions;
+  let migratingDriverOptions;
   const preferences = {
     async get({ key }) {
       calls.push(["get", key]);
@@ -50,17 +52,45 @@ test("native builds bind Preferences to all durable learner keys", async () => {
       calls.push(["remove", key]);
     }
   };
+  const filesystem = {};
+  const migratingDriver = {
+    async getItem(key) {
+      calls.push(["driver-get", key]);
+      return `file:${key}`;
+    },
+    async setItem(key, value) {
+      calls.push(["driver-set", key, value]);
+    },
+    async removeItem(key) {
+      calls.push(["driver-remove", key]);
+    }
+  };
   const context = {
     Capacitor: {
       isNativePlatform: () => true,
       getPlatform: () => "android"
     },
     capacitorPreferences: { Preferences: preferences },
+    capacitorFilesystemPluginCapacitor: {
+      Filesystem: filesystem,
+      Directory: { Library: "LIBRARY" },
+      Encoding: { UTF8: "utf8" }
+    },
     capacitorHaptics: { Haptics: {} },
     document: { documentElement: { dataset: {} } },
     JlptN5Srs: { storageKey: "srs" },
     JlptN5Stats: { storageKey: "stats" },
     JlptN5Settings: { storageKey: "settings" },
+    JlptN5NativeStorage: {
+      createRedundantFileDriver(options) {
+        fileDriverOptions = options;
+        return { kind: "files" };
+      },
+      createMigratingNativeDriver(options) {
+        migratingDriverOptions = options;
+        return migratingDriver;
+      }
+    },
     JlptN5Storage: {
       configurePersistentDriver(driver, keys, options) {
         configuredDriver = driver;
@@ -75,19 +105,30 @@ test("native builds bind Preferences to all durable learner keys", async () => {
 
   assert.equal(context.JlptN5Native.isNative, true);
   assert.equal(context.JlptN5Native.platform, "android");
+  assert.equal(context.JlptN5Native.storageBackend, "redundant-files");
   assert.equal(context.document.documentElement.dataset.nativePlatform, "android");
   assert.deepEqual([...configuredKeys], ["srs", "stats", "settings"]);
   assert.deepEqual({ ...configuredOptions }, {
     mirrorBrowser: false,
     removeBrowserAfterMigration: true
   });
-  assert.equal(await configuredDriver.getItem("srs"), "saved:srs");
+  assert.equal(fileDriverOptions.filesystem, filesystem);
+  assert.equal(fileDriverOptions.directory, "LIBRARY");
+  assert.equal(fileDriverOptions.encoding, "utf8");
+  assert.deepEqual({ ...fileDriverOptions.fileNames }, {
+    srs: "srs",
+    stats: "learning-stats"
+  });
+  assert.equal(migratingDriverOptions.preferences, preferences);
+  assert.deepEqual([...migratingDriverOptions.largeKeys], ["srs", "stats"]);
+  assert.equal(configuredDriver, migratingDriver);
+  assert.equal(await configuredDriver.getItem("srs"), "file:srs");
   await configuredDriver.setItem("srs", "value");
   await configuredDriver.removeItem("stats");
   assert.deepEqual(calls, [
-    ["get", "srs"],
-    ["set", "srs", "value"],
-    ["remove", "stats"]
+    ["driver-get", "srs"],
+    ["driver-set", "srs", "value"],
+    ["driver-remove", "stats"]
   ]);
 });
 
@@ -254,6 +295,7 @@ test("native release metadata minimizes permissions and includes Apple privacy r
   assert.match(html, /target="_blank"[\s\S]*?rel="noopener noreferrer"/u);
   assert.ok(html.indexOf("capacitor-synapse.js") < html.indexOf("capacitor-filesystem.js"));
   assert.ok(html.indexOf("native-synapse.js") < html.indexOf("capacitor-filesystem.js"));
+  assert.ok(html.indexOf("native-storage.js") < html.indexOf("native.js"));
 });
 
 test("native packages advertise English and French application locales", async () => {

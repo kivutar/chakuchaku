@@ -18,6 +18,7 @@ const publicFiles = new Map([
   ["/kanji", ["index.html", "text/html; charset=utf-8"]],
   ["/vocabulary", ["index.html", "text/html; charset=utf-8"]],
   ["/app.js", ["app.js", "text/javascript; charset=utf-8"]],
+  ["/native-storage.js", ["native-storage.js", "text/javascript; charset=utf-8"]],
   ["/native.js", ["native.js", "text/javascript; charset=utf-8"]],
   ["/native-synapse.js", ["native-synapse.js", "text/javascript; charset=utf-8"]],
   ["/pwa.js", ["pwa.js", "text/javascript; charset=utf-8"]],

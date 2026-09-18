@@ -104,6 +104,7 @@ test("service worker pre-caches the app shell but loads voices on demand", async
     "data/locales/fr/kanji-mnemonics.json",
     "data/locales/fr/vocabulary-examples.json",
     "progress.js",
+    "native-storage.js",
     "history.js",
     "kanji.js",
     "conjugation.js",

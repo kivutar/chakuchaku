@@ -1146,6 +1146,7 @@ test("preview serves the committed static application", async () => {
     ["/kanji", "text/html"],
     ["/vocabulary", "text/html"],
     ["/app.js", "text/javascript"],
+    ["/native-storage.js", "text/javascript"],
     ["/native.js", "text/javascript"],
     ["/native-synapse.js", "text/javascript"],
     ["/pwa.js", "text/javascript"],
