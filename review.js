@@ -1,8 +1,6 @@
 (function initializeReview(global) {
   "use strict";
 
-  const storageKey = "jlpt-n5.review-session.v1";
-  const schemaVersion = 1;
   const cardBuckets = Object.freeze({
     grammar: "cards",
     kana: "kanaCards",
@@ -13,90 +11,6 @@
 
   function createReviewKey(kind, itemId) {
     return `${kind}\u0000${itemId}`;
-  }
-
-  function getStorage(storage) {
-    if (storage !== undefined) {
-      return storage;
-    }
-
-    try {
-      return global.JlptN5Storage?.storage || global.localStorage;
-    } catch {
-      return undefined;
-    }
-  }
-
-  function getLocalDayKey(value) {
-    const date = new Date(value);
-
-    if (Number.isNaN(date.getTime())) {
-      return undefined;
-    }
-
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, "0");
-    const day = String(date.getDate()).padStart(2, "0");
-
-    return `${year}-${month}-${day}`;
-  }
-
-  function readSessionState({ storage, now = new Date() } = {}) {
-    const dayKey = getLocalDayKey(now);
-
-    if (!dayKey) {
-      return undefined;
-    }
-
-    try {
-      const parsed = JSON.parse(getStorage(storage)?.getItem(storageKey));
-
-      if (
-        parsed?.version !== schemaVersion ||
-        parsed.dayKey !== dayKey ||
-        !Array.isArray(parsed.items) ||
-        !Array.isArray(parsed.completedKeys)
-      ) {
-        return undefined;
-      }
-
-      return {
-        dayKey: parsed.dayKey,
-        items: parsed.items,
-        completedKeys: parsed.completedKeys.filter((key) => typeof key === "string")
-      };
-    } catch {
-      return undefined;
-    }
-  }
-
-  function writeSessionState(session, { storage, now = new Date() } = {}) {
-    const dayKey = typeof session?.getDayKey === "function"
-      ? session.getDayKey()
-      : getLocalDayKey(now);
-    const resolvedStorage = getStorage(storage);
-
-    if (!dayKey || !resolvedStorage || typeof session?.getState !== "function") {
-      return;
-    }
-
-    try {
-      resolvedStorage.setItem(storageKey, JSON.stringify({
-        version: schemaVersion,
-        dayKey,
-        ...session.getState()
-      }));
-    } catch {
-      // The in-memory review session remains usable when storage is unavailable.
-    }
-  }
-
-  function clearSessionState({ storage } = {}) {
-    try {
-      getStorage(storage)?.removeItem(storageKey);
-    } catch {
-      // Nothing else needs to be cleared when storage is unavailable.
-    }
   }
 
   function createDueItems(srsData, { dueBefore = new Date() } = {}) {
@@ -149,18 +63,8 @@
     });
   }
 
-  function createSession(
-    items,
-    {
-      random = Math.random,
-      completedKeys = [],
-      dayKey = getLocalDayKey(new Date())
-    } = {}
-  ) {
+  function createSession(items, { random = Math.random } = {}) {
     const pending = new Map();
-    const sessionDayKey = typeof dayKey === "string" && dayKey
-      ? dayKey
-      : getLocalDayKey(new Date());
     let previousKey;
     let previousSection;
 
@@ -194,18 +98,6 @@
     }
 
     const sessionItems = new Map(pending);
-    const restoredCompletedKeys = new Set(
-      Array.isArray(completedKeys)
-        ? completedKeys.filter((key) => typeof key === "string")
-        : []
-    );
-
-    for (const key of restoredCompletedKeys) {
-      if (sessionItems.has(key)) {
-        pending.delete(key);
-      }
-    }
-
     let total = sessionItems.size;
 
     function getProgress() {
@@ -213,17 +105,6 @@
         completed: total - pending.size,
         remaining: pending.size,
         total
-      };
-    }
-
-    function getDayKey() {
-      return sessionDayKey;
-    }
-
-    function getState() {
-      return {
-        items: [...sessionItems.values()].map(({ key, ...item }) => item),
-        completedKeys: [...sessionItems.keys()].filter((key) => !pending.has(key))
       };
     }
 
@@ -259,7 +140,7 @@
       return getProgress();
     }
 
-    function addItems(itemsToAdd, { reviveCompleted = true } = {}) {
+    function addItems(itemsToAdd) {
       for (const item of Array.isArray(itemsToAdd) ? itemsToAdd : []) {
         const preparedItem = prepareItem(item);
 
@@ -270,10 +151,6 @@
         const previousItem = sessionItems.get(preparedItem.key);
 
         if (previousItem) {
-          if (!reviveCompleted) {
-            continue;
-          }
-
           // A completed item only becomes pending again when the SRS assigned it
           // a genuinely new due date during this session.
           if (!preparedItem.due || preparedItem.due === previousItem.due) {
@@ -318,59 +195,18 @@
     }
 
     return Object.freeze({
-      getDayKey,
       getProgress,
-      getState,
       recordOutcomes,
       addItems,
       pickNext
     });
   }
 
-  function restoreSession(
-    savedState,
-    dueItems,
-    {
-      random = Math.random,
-      isEligible = () => true,
-      dayKey = savedState?.dayKey || getLocalDayKey(new Date())
-    } = {}
-  ) {
-    if (!savedState) {
-      return createSession(dueItems, { random, dayKey });
-    }
-
-    const session = createSession(
-      savedState.items.filter((item) => isEligible(item)),
-      {
-        random,
-        completedKeys: savedState.completedKeys,
-        dayKey
-      }
-    );
-    const wasInterrupted = session.getProgress().remaining > 0;
-
-    session.addItems(dueItems, { reviveCompleted: !wasInterrupted });
-    return session;
-  }
-
-  function isSessionCurrent(session, { now = new Date() } = {}) {
-    return typeof session?.getDayKey === "function" &&
-      session.getDayKey() === getLocalDayKey(now);
-  }
-
   global.JlptN5Review = Object.freeze({
-    storageKey,
-    schemaVersion,
     cardBuckets,
     createReviewKey,
     createDueItems,
     createDailyItems,
-    createSession,
-    restoreSession,
-    isSessionCurrent,
-    readSessionState,
-    writeSessionState,
-    clearSessionState
+    createSession
   });
 })(globalThis);

@@ -147,7 +147,6 @@
       [global.JlptN5Stats.storageKey, data.learningStats],
       [global.JlptN5Settings.storageKey, data.settings]
     ]);
-    global.JlptN5Review?.clearSessionState({ storage: resolvedStorage });
 
     return {
       exportedAt: backup.exportedAt,
@@ -166,7 +165,6 @@
 
     resolvedStorage.removeItem(global.JlptN5Srs.storageKey);
     resolvedStorage.removeItem(global.JlptN5Stats.storageKey);
-    global.JlptN5Review?.clearSessionState({ storage: resolvedStorage });
   }
 
   global.JlptN5Progress = Object.freeze({

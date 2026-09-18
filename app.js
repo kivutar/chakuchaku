@@ -2114,7 +2114,13 @@ function handleProfileMenuClick(event) {
     void openActivity("statistics");
   } else if (menuItem === historyMenuItem) {
     void openActivity("history");
-  } else if (menuItem?.dataset.studySection && globalThis.JlptN5Native?.isNative) {
+  } else if (
+    menuItem?.dataset.studySection &&
+    (
+      globalThis.JlptN5Native?.isNative ||
+      (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey)
+    )
+  ) {
     event.preventDefault();
     closeProfileMenu();
     void navigateToStudyMenuItem(menuItem);
@@ -3310,11 +3316,7 @@ function pickExerciseForSection(section, targetId) {
   return pickNextExercise(targetId);
 }
 
-function createReviewTargetKey({ kind, itemId, section }) {
-  return `${section}\u0000${kind}\u0000${itemId}`;
-}
-
-async function loadDailyReviewContext() {
+async function loadEligibleDailyReviewItems() {
   const [
     exercises,
     entriesById,
@@ -3360,25 +3362,6 @@ async function loadDailyReviewContext() {
   const eligibleKanjiIds = new Set(
     globalThis.JlptN5Kanji.getKanjiInventory(kanjiPool).map(({ id }) => id)
   );
-  const eligibleTargetKeys = new Set();
-
-  for (const [section, kind, itemIds] of [
-    ["grammar", "grammar", eligibleGrammarIds],
-    ["conjugation", "conjugation", eligibleConjugationIds],
-    ["vocabulary", "vocabulary", eligibleVocabularyIds],
-    ["kanji", "kanji", eligibleKanjiIds],
-    ["hiragana", "kana", eligibleHiraganaIds],
-    [
-      "katakana",
-      "kana",
-      new Set([...eligibleKatakanaIds, ...pairedHiraganaIds])
-    ]
-  ]) {
-    for (const itemId of itemIds) {
-      eligibleTargetKeys.add(createReviewTargetKey({ section, kind, itemId }));
-    }
-  }
-
   const dueItems = globalThis.JlptN5Review.createDailyItems(
     globalThis.JlptN5Srs.readSrsData(),
     { now: new Date() }
@@ -3410,30 +3393,13 @@ async function loadDailyReviewContext() {
     return section ? [{ ...item, section }] : [];
   });
 
-  return { dueItems: eligibleItems, eligibleTargetKeys };
+  return eligibleItems;
 }
 
 async function createDailyReviewSession() {
-  const { dueItems, eligibleTargetKeys } = await loadDailyReviewContext();
-  const savedState = globalThis.JlptN5Review.readSessionState();
-  const session = globalThis.JlptN5Review.restoreSession(savedState, dueItems, {
-    isEligible(item) {
-      return eligibleTargetKeys.has(createReviewTargetKey(item));
-    }
-  });
-
-  globalThis.JlptN5Review.writeSessionState(session);
-  return session;
-}
-
-async function ensureCurrentDailyReviewSession() {
-  if (!reviewSession || globalThis.JlptN5Review.isSessionCurrent(reviewSession)) {
-    return;
-  }
-
-  reviewSession = await createDailyReviewSession();
-  reviewFreePractice = false;
-  renderReviewProgress();
+  return globalThis.JlptN5Review.createSession(
+    await loadEligibleDailyReviewItems()
+  );
 }
 
 async function refreshDailyReviewSession() {
@@ -3441,10 +3407,7 @@ async function refreshDailyReviewSession() {
     return;
   }
 
-  const { dueItems } = await loadDailyReviewContext();
-
-  reviewSession.addItems(dueItems);
-  globalThis.JlptN5Review.writeSessionState(reviewSession);
+  reviewSession.addItems(await loadEligibleDailyReviewItems());
   renderReviewProgress();
 }
 
@@ -3500,7 +3463,6 @@ function completeCurrentReviewExercise() {
   }
 
   reviewSession.recordOutcomes(currentReviewOutcomes);
-  globalThis.JlptN5Review.writeSessionState(reviewSession);
   renderReviewProgress();
 }
 
@@ -3515,7 +3477,6 @@ function pickNextReviewPracticeExercise() {
 }
 
 async function pickNextReviewExercise({ refreshWhenEmpty = true } = {}) {
-  await ensureCurrentDailyReviewSession();
   let target = reviewSession?.pickNext();
 
   if (!target && !reviewFreePractice && refreshWhenEmpty) {

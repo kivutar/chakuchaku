@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.0",
+    "fake-indexeddb": "^6.2.5",
     "fast-xml-parser": "5.10.1",
     "lindera-wasm-ipadic-nodejs": "2.3.4"
   },

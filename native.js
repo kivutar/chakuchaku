@@ -30,9 +30,11 @@
   }, [
     global.JlptN5Srs.storageKey,
     global.JlptN5Stats.storageKey,
-    global.JlptN5Settings.storageKey,
-    global.JlptN5Review.storageKey
-  ]);
+    global.JlptN5Settings.storageKey
+  ], {
+    mirrorBrowser: false,
+    removeBrowserAfterMigration: true
+  });
 
   global.JlptN5Native = Object.freeze({
     isNative: true,

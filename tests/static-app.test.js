@@ -429,10 +429,8 @@ test("the main menu links every implemented study route", async () => {
   );
   assert.match(
     browserCode,
-    /async function loadDailyReviewContext\(\)[\s\S]*?vocabularyById \|\|= entriesById;[\s\S]*?kanjiById \|\|= kanjiEntriesById;/
+    /async function loadEligibleDailyReviewItems\(\)[\s\S]*?vocabularyById \|\|= entriesById;[\s\S]*?kanjiById \|\|= kanjiEntriesById;/
   );
-  assert.match(browserCode, /restoreSession\(savedState, dueItems/);
-  assert.match(browserCode, /isSessionCurrent\(reviewSession\)/);
   assert.match(
     browserCode,
     /await globalThis\.JlptN5Storage\.flush\(\);[\s\S]*?window\.location\.assign/

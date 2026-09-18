@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { IDBFactory } from "fake-indexeddb";
 import { readFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import test from "node:test";
@@ -26,8 +27,8 @@ class MemoryStorage {
   }
 }
 
-function loadStorageApi(localStorage) {
-  const context = { localStorage };
+function loadStorageApi(localStorage, additions = {}) {
+  const context = { localStorage, ...additions };
 
   context.globalThis = context;
   vm.runInNewContext(storageCode, context);
@@ -75,4 +76,132 @@ test("persistent drivers hydrate native values and migrate browser values", asyn
 
   assert.equal(nativeStorage.getItem("native-wins"), "after-write");
   assert.equal(nativeStorage.getItem("browser-migrates"), null);
+});
+
+test("non-mirrored drivers move large web values out of localStorage", async () => {
+  const browserStorage = new MemoryStorage([
+    ["srs", "large-srs"],
+    ["settings", "small-settings"]
+  ]);
+  const durableStorage = new MemoryStorage();
+  const driver = {
+    async getItem(key) {
+      return durableStorage.getItem(key);
+    },
+    async setItem(key, value) {
+      durableStorage.setItem(key, value);
+    },
+    async removeItem(key) {
+      durableStorage.removeItem(key);
+    }
+  };
+  const api = loadStorageApi(browserStorage);
+
+  await api.configurePersistentDriver(driver, ["srs"], {
+    mirrorBrowser: false,
+    removeBrowserAfterMigration: true
+  });
+
+  assert.equal(api.storage.getItem("srs"), "large-srs");
+  assert.equal(durableStorage.getItem("srs"), "large-srs");
+  assert.equal(browserStorage.getItem("srs"), null);
+  assert.equal(browserStorage.getItem("settings"), "small-settings");
+
+  api.storage.setItem("srs", "updated-srs");
+  api.storage.setItem("settings", "updated-settings");
+  await api.flush();
+
+  assert.equal(durableStorage.getItem("srs"), "updated-srs");
+  assert.equal(browserStorage.getItem("srs"), null);
+  assert.equal(browserStorage.getItem("settings"), "updated-settings");
+});
+
+test("web migration prefers a newer local fallback over an existing durable value", async () => {
+  const browserStorage = new MemoryStorage([["srs", "newer-browser-value"]]);
+  const durableStorage = new MemoryStorage([["srs", "older-durable-value"]]);
+  const driver = {
+    async getItem(key) {
+      return durableStorage.getItem(key);
+    },
+    async setItem(key, value) {
+      durableStorage.setItem(key, value);
+    },
+    async removeItem(key) {
+      durableStorage.removeItem(key);
+    }
+  };
+  const api = loadStorageApi(browserStorage);
+
+  await api.configurePersistentDriver(driver, ["srs"], {
+    mirrorBrowser: false,
+    removeBrowserAfterMigration: true,
+    preferBrowserWhenPresent: true
+  });
+
+  assert.equal(api.storage.getItem("srs"), "newer-browser-value");
+  assert.equal(durableStorage.getItem("srs"), "newer-browser-value");
+  assert.equal(browserStorage.getItem("srs"), null);
+});
+
+test("persistent writes coalesce repeated updates to the same key", async () => {
+  const browserStorage = new MemoryStorage();
+  const durableStorage = new MemoryStorage();
+  const writes = [];
+  const driver = {
+    async getItem(key) {
+      return durableStorage.getItem(key);
+    },
+    async setItem(key, value) {
+      writes.push([key, value]);
+      durableStorage.setItem(key, value);
+    },
+    async removeItem(key) {
+      durableStorage.removeItem(key);
+    }
+  };
+  const api = loadStorageApi(browserStorage);
+
+  await api.configurePersistentDriver(driver, ["stats"], { mirrorBrowser: false });
+  api.storage.setItem("stats", "first");
+  api.storage.setItem("stats", "second");
+  api.storage.setItem("stats", "latest");
+  await api.flush();
+
+  assert.deepEqual(writes, [["stats", "latest"]]);
+  assert.equal(durableStorage.getItem("stats"), "latest");
+});
+
+test("web startup migrates SRS and statistics to IndexedDB exactly once", async () => {
+  const indexedDB = new IDBFactory();
+  const browserStorage = new MemoryStorage([
+    ["jlpt-n5.srs.v1", "srs-before-migration"],
+    ["jlpt-n5.learning-stats.v1", "stats-before-migration"],
+    ["jlpt-n5.settings.v1", "settings-stay-local"],
+    ["jlpt-n5.review-session.v1", "obsolete-session"]
+  ]);
+  const firstLoad = loadStorageApi(browserStorage, { indexedDB, console });
+
+  await firstLoad.ready();
+
+  assert.equal(firstLoad.storage.getItem("jlpt-n5.srs.v1"), "srs-before-migration");
+  assert.equal(
+    firstLoad.storage.getItem("jlpt-n5.learning-stats.v1"),
+    "stats-before-migration"
+  );
+  assert.equal(browserStorage.getItem("jlpt-n5.srs.v1"), null);
+  assert.equal(browserStorage.getItem("jlpt-n5.learning-stats.v1"), null);
+  assert.equal(browserStorage.getItem("jlpt-n5.settings.v1"), "settings-stay-local");
+  assert.equal(browserStorage.getItem("jlpt-n5.review-session.v1"), null);
+
+  firstLoad.storage.setItem("jlpt-n5.srs.v1", "srs-after-migration");
+  await firstLoad.flush();
+
+  const secondLoad = loadStorageApi(new MemoryStorage(), { indexedDB, console });
+
+  await secondLoad.ready();
+  assert.equal(secondLoad.storage.getItem("jlpt-n5.srs.v1"), "srs-after-migration");
+  assert.equal(
+    secondLoad.storage.getItem("jlpt-n5.learning-stats.v1"),
+    "stats-before-migration"
+  );
 });

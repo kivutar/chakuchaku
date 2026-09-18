@@ -37,6 +37,7 @@ test("native builds bind Preferences to all durable learner keys", async () => {
   const calls = [];
   let configuredDriver;
   let configuredKeys;
+  let configuredOptions;
   const preferences = {
     async get({ key }) {
       calls.push(["get", key]);
@@ -60,11 +61,11 @@ test("native builds bind Preferences to all durable learner keys", async () => {
     JlptN5Srs: { storageKey: "srs" },
     JlptN5Stats: { storageKey: "stats" },
     JlptN5Settings: { storageKey: "settings" },
-    JlptN5Review: { storageKey: "review-session" },
     JlptN5Storage: {
-      configurePersistentDriver(driver, keys) {
+      configurePersistentDriver(driver, keys, options) {
         configuredDriver = driver;
         configuredKeys = keys;
+        configuredOptions = options;
       }
     }
   };
@@ -75,10 +76,11 @@ test("native builds bind Preferences to all durable learner keys", async () => {
   assert.equal(context.JlptN5Native.isNative, true);
   assert.equal(context.JlptN5Native.platform, "android");
   assert.equal(context.document.documentElement.dataset.nativePlatform, "android");
-  assert.deepEqual(
-    [...configuredKeys],
-    ["srs", "stats", "settings", "review-session"]
-  );
+  assert.deepEqual([...configuredKeys], ["srs", "stats", "settings"]);
+  assert.deepEqual({ ...configuredOptions }, {
+    mirrorBrowser: false,
+    removeBrowserAfterMigration: true
+  });
   assert.equal(await configuredDriver.getItem("srs"), "saved:srs");
   await configuredDriver.setItem("srs", "value");
   await configuredDriver.removeItem("stats");
