@@ -567,7 +567,9 @@ test("the vocabulary pool contains the complete curated inventory", async () => 
     ["vocab-5e5184c8d19e", "that way; over there (near the listener; casual)"],
     ["vocab-bffa6c2157d5", "test; quiz"],
     ["vocab-64a7f6bc77c9", "who (polite)"],
-    ["vocab-0c4d68e2ec4d", "exam; examination"]
+    ["vocab-0c4d68e2ec4d", "exam; examination"],
+    ["vocab-95c68043ed38", "about (a quantity or duration)"],
+    ["vocab-6d49d0cfb7ad", "around (a point in time)"]
   ]);
 
   for (const [vocabularyId, prompt] of expectedReversePrompts) {
@@ -703,7 +705,9 @@ test("every curated French vocabulary alias is unique and accepted", async () =>
     ["vocab-5400f9f54134", "quel ~ (choix parmi plusieurs)"],
     ["vocab-89335bcfbc88", "quel genre de ~ ; de quelle nature"],
     ["vocab-3b010d61ddd5", "quoi ; que"],
-    ["vocab-074acfd9fb0c", "quel ~ / combien de ~ (préfixe interrogatif)"]
+    ["vocab-074acfd9fb0c", "quel ~ / combien de ~ (préfixe interrogatif)"],
+    ["vocab-95c68043ed38", "environ (une quantité ou une durée)"],
+    ["vocab-6d49d0cfb7ad", "vers (une heure ou un moment)"]
   ]);
 
   assert.ok(
@@ -713,6 +717,22 @@ test("every curated French vocabulary alias is unique and accepted", async () =>
   assert.ok(
     frenchCatalog["vocab-c5f621b979db"].acceptedAnswers.includes("compteur d'occurences"),
     "～回 should accept the common compteur d'occurences spelling"
+  );
+  assert.ok(
+    frenchCatalog["vocab-e7ce924c4696"].acceptedAnswers.includes("l'an dernier"),
+    "去年 should accept l'an dernier"
+  );
+  assert.ok(
+    frenchCatalog["vocab-fd63d3fc7c86"].acceptedAnswers.includes("compteur de semaines"),
+    "～週間 should accept compteur de semaines"
+  );
+  assert.ok(
+    frenchCatalog["vocab-fd63d3fc7c86"].acceptedAnswers.includes("nombre de semaines"),
+    "～週間 should accept nombre de semaines"
+  );
+  assert.ok(
+    frenchCatalog["vocab-1e9c76154fae"].acceptedAnswers.includes("à côté"),
+    "隣 should accept à côté"
   );
 
   const numericThingAnswers = new Map([

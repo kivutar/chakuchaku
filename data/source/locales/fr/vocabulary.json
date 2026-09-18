@@ -1485,7 +1485,8 @@
     "meaning": "année dernière",
     "acceptedAnswers": [
       "année dernière",
-      "l'année dernière"
+      "l'année dernière",
+      "l'an dernier"
     ]
   },
   "vocab-2903a777a6c7": {
@@ -1631,7 +1632,7 @@
     ]
   },
   "vocab-95c68043ed38": {
-    "meaning": "environ",
+    "meaning": "environ (une quantité ou une durée)",
     "acceptedAnswers": [
       "environ",
       "à peu près"
@@ -1935,10 +1936,10 @@
     ]
   },
   "vocab-6d49d0cfb7ad": {
-    "meaning": "environ, vers (temps)",
+    "meaning": "vers (une heure ou un moment)",
     "acceptedAnswers": [
       "environ",
-      "vers (temps)",
+      "vers",
       "à peu près"
     ]
   },
@@ -2266,7 +2267,9 @@
   "vocab-fd63d3fc7c86": {
     "meaning": "~ semaines",
     "acceptedAnswers": [
-      "~ semaines"
+      "~ semaines",
+      "compteur de semaines",
+      "nombre de semaines"
     ]
   },
   "vocab-4c99b14fe21c": {
@@ -3375,6 +3378,7 @@
     "meaning": "à côté de, voisin",
     "acceptedAnswers": [
       "à côté de",
+      "à côté",
       "voisin",
       "voisine"
     ]
@@ -4153,6 +4157,7 @@
     "meaning": "vêtements",
     "acceptedAnswers": [
       "vêtements",
+      "vêtement",
       "habits",
       "habillement",
       "tenue"

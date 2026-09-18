@@ -2424,7 +2424,12 @@
     "voiceSlug": "kurai-approximately",
     "term": "～くらい",
     "reading": "～くらい",
-    "meaning": "approximate (quantity)",
+    "meaning": "about (a quantity or duration)",
+    "acceptedAnswers": [
+      "about",
+      "approximately",
+      "around"
+    ],
     "scope": "core",
     "source": "open-anki-jlpt-decks",
     "variants": [
@@ -2865,7 +2870,12 @@
     "id": "vocab-6d49d0cfb7ad",
     "term": "～ころ",
     "reading": "～ころ",
-    "meaning": "about, toward, approximately (time)",
+    "meaning": "around (a point in time)",
+    "acceptedAnswers": [
+      "around",
+      "about",
+      "approximately"
+    ],
     "scope": "core",
     "source": "open-anki-jlpt-decks",
     "variants": [
