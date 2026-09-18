@@ -3,7 +3,34 @@ import test from "node:test";
 
 await import("../review.js");
 
-const { createDailyItems, createDueItems, createSession } = globalThis.JlptN5Review;
+const {
+  createDailyItems,
+  createDueItems,
+  createSession,
+  isSessionCurrent,
+  readSessionState,
+  restoreSession,
+  storageKey,
+  writeSessionState
+} = globalThis.JlptN5Review;
+
+class MemoryStorage {
+  constructor() {
+    this.values = new Map();
+  }
+
+  getItem(key) {
+    return this.values.get(key) ?? null;
+  }
+
+  setItem(key, value) {
+    this.values.set(key, value);
+  }
+
+  removeItem(key) {
+    this.values.delete(key);
+  }
+}
 
 test("daily reviews contain only existing cards due when the session starts", () => {
   const due = "2026-09-08T08:00:00.000Z";
@@ -128,4 +155,112 @@ test("refreshing a session adds newly due items without reviving unchanged compl
     due: "2026-09-08T10:10:00.000Z"
   }]), { completed: 1, remaining: 1, total: 2 });
   assert.equal(session.pickNext().itemId, "completed");
+});
+
+test("an interrupted daily session resumes its completed and pending items", () => {
+  const storage = new MemoryStorage();
+  const now = "2026-09-18T09:00:00.000Z";
+  const items = [
+    { kind: "grammar", itemId: "done", section: "grammar", due: now },
+    { kind: "vocabulary", itemId: "pending", section: "vocabulary", due: now }
+  ];
+  const firstSession = createSession(items);
+
+  firstSession.recordOutcomes([
+    { kind: "grammar", itemId: "done", outcome: "good" }
+  ]);
+  writeSessionState(firstSession, { storage, now });
+
+  const savedState = readSessionState({ storage, now: "2026-09-18T16:00:00.000Z" });
+  const resumedSession = createSession(savedState.items, {
+    completedKeys: savedState.completedKeys,
+    random: () => 0
+  });
+
+  assert.deepEqual(
+    resumedSession.getProgress(),
+    { completed: 1, remaining: 1, total: 2 }
+  );
+  assert.equal(resumedSession.pickNext().itemId, "pending");
+});
+
+test("resuming an interrupted session does not immediately revive learning steps", () => {
+  const due = "2026-09-18T09:00:00.000Z";
+  const session = createSession([
+    { kind: "grammar", itemId: "done", section: "grammar", due },
+    { kind: "grammar", itemId: "pending", section: "grammar", due }
+  ]);
+
+  session.recordOutcomes([{ kind: "grammar", itemId: "done", outcome: "good" }]);
+  session.addItems([{
+    kind: "grammar",
+    itemId: "done",
+    section: "grammar",
+    due: "2026-09-18T09:10:00.000Z"
+  }], { reviveCompleted: false });
+
+  assert.deepEqual(session.getProgress(), { completed: 1, remaining: 1, total: 2 });
+
+  session.recordOutcomes([{ kind: "grammar", itemId: "pending", outcome: "good" }]);
+  session.addItems([{
+    kind: "grammar",
+    itemId: "done",
+    section: "grammar",
+    due: "2026-09-18T09:10:00.000Z"
+  }]);
+
+  assert.deepEqual(session.getProgress(), { completed: 1, remaining: 1, total: 2 });
+  assert.equal(session.pickNext().itemId, "done");
+});
+
+test("saved daily sessions expire at the next local day", () => {
+  const storage = new MemoryStorage();
+  const session = createSession([{
+    kind: "kanji",
+    itemId: "日",
+    section: "kanji",
+    due: "2026-09-18T09:00:00.000Z"
+  }]);
+
+  writeSessionState(session, { storage, now: "2026-09-18T20:00:00" });
+
+  assert.ok(storage.getItem(storageKey));
+  assert.ok(readSessionState({ storage, now: "2026-09-18T23:00:00" }));
+  assert.equal(
+    readSessionState({ storage, now: "2026-09-19T09:00:00" }),
+    undefined
+  );
+});
+
+test("a session keeps its original day when saved after midnight", () => {
+  const storage = new MemoryStorage();
+  const session = createSession([], { dayKey: "2026-09-18" });
+
+  writeSessionState(session, { storage, now: "2026-09-19T00:05:00" });
+
+  const serialized = JSON.parse(storage.getItem(storageKey));
+
+  assert.equal(serialized.dayKey, "2026-09-18");
+  assert.equal(isSessionCurrent(session, { now: "2026-09-18T23:59:00" }), true);
+  assert.equal(isSessionCurrent(session, { now: "2026-09-19T00:01:00" }), false);
+});
+
+test("restoring a session drops targets removed by a content update", () => {
+  const due = "2026-09-18T09:00:00.000Z";
+  const savedState = {
+    dayKey: "2026-09-18",
+    items: [
+      { kind: "grammar", itemId: "removed", section: "grammar", due },
+      { kind: "vocabulary", itemId: "kept", section: "vocabulary", due }
+    ],
+    completedKeys: []
+  };
+  const session = restoreSession(savedState, [], {
+    dayKey: savedState.dayKey,
+    isEligible: ({ itemId }) => itemId === "kept",
+    random: () => 0
+  });
+
+  assert.deepEqual(session.getProgress(), { completed: 0, remaining: 1, total: 1 });
+  assert.equal(session.pickNext().itemId, "kept");
 });

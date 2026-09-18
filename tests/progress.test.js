@@ -6,6 +6,7 @@ globalThis.FSRS = FSRS;
 await import("../srs.js");
 await import("../learning-stats.js");
 await import("../settings.js");
+await import("../review.js");
 await import("../progress.js");
 
 class MemoryStorage {
@@ -54,6 +55,7 @@ test("progress backups round-trip learning data without session secrets", () => 
   assert.equal(serialized.includes("openai"), false);
 
   const destinationStorage = new MemoryStorage();
+  destinationStorage.setItem(globalThis.JlptN5Review.storageKey, "stale-session");
   const result = globalThis.JlptN5Progress.importBackup(serialized, {
     storage: destinationStorage
   });
@@ -74,6 +76,7 @@ test("progress backups round-trip learning data without session secrets", () => 
     globalThis.JlptN5Settings.readSettings({ storage: destinationStorage }).furigana,
     false
   );
+  assert.equal(destinationStorage.getItem(globalThis.JlptN5Review.storageKey), null);
 });
 test("invalid progress is rejected before stored values change", () => {
   const storage = new MemoryStorage();
@@ -118,9 +121,11 @@ test("reset removes study data while retaining preferences", () => {
   storage.setItem(globalThis.JlptN5Srs.storageKey, "srs");
   storage.setItem(globalThis.JlptN5Stats.storageKey, "stats");
   storage.setItem(globalThis.JlptN5Settings.storageKey, "settings");
+  storage.setItem(globalThis.JlptN5Review.storageKey, "review-session");
   globalThis.JlptN5Progress.clearProgress({ storage });
 
   assert.equal(storage.getItem(globalThis.JlptN5Srs.storageKey), null);
   assert.equal(storage.getItem(globalThis.JlptN5Stats.storageKey), null);
   assert.equal(storage.getItem(globalThis.JlptN5Settings.storageKey), "settings");
+  assert.equal(storage.getItem(globalThis.JlptN5Review.storageKey), null);
 });

@@ -2100,6 +2100,11 @@ function handleSettingsBackdropClick(event) {
   }
 }
 
+async function navigateToStudyMenuItem(menuItem) {
+  await globalThis.JlptN5Storage.flush();
+  window.location.assign(menuItem.href);
+}
+
 function handleProfileMenuClick(event) {
   const menuItem = event.target.closest('[role="menuitem"]');
 
@@ -2109,6 +2114,10 @@ function handleProfileMenuClick(event) {
     void openActivity("statistics");
   } else if (menuItem === historyMenuItem) {
     void openActivity("history");
+  } else if (menuItem?.dataset.studySection && globalThis.JlptN5Native?.isNative) {
+    event.preventDefault();
+    closeProfileMenu();
+    void navigateToStudyMenuItem(menuItem);
   } else if (menuItem) {
     closeProfileMenu();
   }
@@ -3301,7 +3310,11 @@ function pickExerciseForSection(section, targetId) {
   return pickNextExercise(targetId);
 }
 
-async function loadEligibleDailyReviewItems() {
+function createReviewTargetKey({ kind, itemId, section }) {
+  return `${section}\u0000${kind}\u0000${itemId}`;
+}
+
+async function loadDailyReviewContext() {
   const [
     exercises,
     entriesById,
@@ -3347,6 +3360,25 @@ async function loadEligibleDailyReviewItems() {
   const eligibleKanjiIds = new Set(
     globalThis.JlptN5Kanji.getKanjiInventory(kanjiPool).map(({ id }) => id)
   );
+  const eligibleTargetKeys = new Set();
+
+  for (const [section, kind, itemIds] of [
+    ["grammar", "grammar", eligibleGrammarIds],
+    ["conjugation", "conjugation", eligibleConjugationIds],
+    ["vocabulary", "vocabulary", eligibleVocabularyIds],
+    ["kanji", "kanji", eligibleKanjiIds],
+    ["hiragana", "kana", eligibleHiraganaIds],
+    [
+      "katakana",
+      "kana",
+      new Set([...eligibleKatakanaIds, ...pairedHiraganaIds])
+    ]
+  ]) {
+    for (const itemId of itemIds) {
+      eligibleTargetKeys.add(createReviewTargetKey({ section, kind, itemId }));
+    }
+  }
+
   const dueItems = globalThis.JlptN5Review.createDailyItems(
     globalThis.JlptN5Srs.readSrsData(),
     { now: new Date() }
@@ -3378,13 +3410,30 @@ async function loadEligibleDailyReviewItems() {
     return section ? [{ ...item, section }] : [];
   });
 
-  return eligibleItems;
+  return { dueItems: eligibleItems, eligibleTargetKeys };
 }
 
 async function createDailyReviewSession() {
-  return globalThis.JlptN5Review.createSession(
-    await loadEligibleDailyReviewItems()
-  );
+  const { dueItems, eligibleTargetKeys } = await loadDailyReviewContext();
+  const savedState = globalThis.JlptN5Review.readSessionState();
+  const session = globalThis.JlptN5Review.restoreSession(savedState, dueItems, {
+    isEligible(item) {
+      return eligibleTargetKeys.has(createReviewTargetKey(item));
+    }
+  });
+
+  globalThis.JlptN5Review.writeSessionState(session);
+  return session;
+}
+
+async function ensureCurrentDailyReviewSession() {
+  if (!reviewSession || globalThis.JlptN5Review.isSessionCurrent(reviewSession)) {
+    return;
+  }
+
+  reviewSession = await createDailyReviewSession();
+  reviewFreePractice = false;
+  renderReviewProgress();
 }
 
 async function refreshDailyReviewSession() {
@@ -3392,7 +3441,10 @@ async function refreshDailyReviewSession() {
     return;
   }
 
-  reviewSession.addItems(await loadEligibleDailyReviewItems());
+  const { dueItems } = await loadDailyReviewContext();
+
+  reviewSession.addItems(dueItems);
+  globalThis.JlptN5Review.writeSessionState(reviewSession);
   renderReviewProgress();
 }
 
@@ -3448,6 +3500,7 @@ function completeCurrentReviewExercise() {
   }
 
   reviewSession.recordOutcomes(currentReviewOutcomes);
+  globalThis.JlptN5Review.writeSessionState(reviewSession);
   renderReviewProgress();
 }
 
@@ -3462,6 +3515,7 @@ function pickNextReviewPracticeExercise() {
 }
 
 async function pickNextReviewExercise({ refreshWhenEmpty = true } = {}) {
+  await ensureCurrentDailyReviewSession();
   let target = reviewSession?.pickNext();
 
   if (!target && !reviewFreePractice && refreshWhenEmpty) {
@@ -5453,8 +5507,10 @@ async function configureNativeBehavior() {
     }
 
     if (canGoBack) {
+      await globalThis.JlptN5Storage.flush();
       window.history.back();
     } else {
+      await globalThis.JlptN5Storage.flush();
       await app.exitApp();
     }
   });
