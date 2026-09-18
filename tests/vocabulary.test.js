@@ -569,7 +569,12 @@ test("the vocabulary pool contains the complete curated inventory", async () => 
     ["vocab-64a7f6bc77c9", "who (polite)"],
     ["vocab-0c4d68e2ec4d", "exam; examination"],
     ["vocab-95c68043ed38", "about (a quantity or duration)"],
-    ["vocab-6d49d0cfb7ad", "around (a point in time)"]
+    ["vocab-6d49d0cfb7ad", "around (a point in time)"],
+    [
+      "vocab-42964aea18cf",
+      "evening (especially in expressions such as tonight or every evening)"
+    ],
+    ["vocab-ba0c8a160c33", "night; evening (the nighttime period)"]
   ]);
 
   for (const [vocabularyId, prompt] of expectedReversePrompts) {
@@ -707,7 +712,12 @@ test("every curated French vocabulary alias is unique and accepted", async () =>
     ["vocab-3b010d61ddd5", "quoi ; que"],
     ["vocab-074acfd9fb0c", "quel ~ / combien de ~ (préfixe interrogatif)"],
     ["vocab-95c68043ed38", "environ (une quantité ou une durée)"],
-    ["vocab-6d49d0cfb7ad", "vers (une heure ou un moment)"]
+    ["vocab-6d49d0cfb7ad", "vers (une heure ou un moment)"],
+    [
+      "vocab-42964aea18cf",
+      "soir (notamment dans « ce soir » ou « tous les soirs »)"
+    ],
+    ["vocab-ba0c8a160c33", "nuit ; soir (période nocturne)"]
   ]);
 
   assert.ok(

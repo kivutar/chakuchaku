@@ -4759,6 +4759,1076 @@
     ]
   },
   {
+    "id": "no-loud-phone-calls-in-library",
+    "text": "図書館では、大きな声で電話しちゃいけないよ。",
+    "solution": "You must not talk loudly on the phone in the library.",
+    "grammarPointIds": [
+      "cha-ikenai",
+      "de-action-location",
+      "yo-emphasis"
+    ]
+  },
+  {
+    "id": "building-is-hospital-not-hotel",
+    "text": "その建物はホテルではありません。病院です。",
+    "solution": "That building is not a hotel. It is a hospital.",
+    "grammarPointIds": [
+      "copula-negative-polite",
+      "copula-da-desu",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "sea-was-not-very-blue",
+    "text": "昨日の海はあまり青くありませんでした。",
+    "solution": "The sea was not very blue yesterday.",
+    "grammarPointIds": [
+      "i-adjective-past-negative",
+      "degree-adverbs",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "homework-together-after-class",
+    "text": "授業の後で、一緒に宿題をしませんか。",
+    "solution": "Would you like to do homework together after class?",
+    "grammarPointIds": [
+      "ato-de",
+      "issho-ni",
+      "masen-ka-invitation"
+    ]
+  },
+  {
+    "id": "choose-udon-or-soba-for-lunch",
+    "text": "昼ご飯はうどんかそばにします。",
+    "solution": "For lunch, I will have udon or soba.",
+    "grammarPointIds": [
+      "ka-alternatives",
+      "wa-topic",
+      "verb-masu"
+    ]
+  },
+  {
+    "id": "feet-hurt-after-hour-walk",
+    "text": "駅まで一時間も歩いたので、足が痛いです。",
+    "solution": "My feet hurt because I walked for a whole hour to the station.",
+    "grammarPointIds": [
+      "mo-emphasis",
+      "duration-no-particle",
+      "made-end",
+      "node-reason",
+      "i-adjective-predicate"
+    ]
+  },
+  {
+    "id": "buy-three-stamps-at-post-office",
+    "text": "切手を買いに郵便局へ行って、三枚買いました。",
+    "solution": "I went to the post office to buy three stamps.",
+    "grammarPointIds": [
+      "ni-purpose",
+      "movement-purpose",
+      "common-counters",
+      "e-direction",
+      "te-action-link",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "tidy-room-before-friend-arrives",
+    "text": "友達が来る前に、部屋をきれいにしました。",
+    "solution": "I tidied the room before my friend arrived.",
+    "grammarPointIds": [
+      "mae-ni",
+      "suru-change",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "father-cooking-in-kitchen-now",
+    "text": "父は今、台所で料理中です。",
+    "solution": "My father is cooking in the kitchen right now.",
+    "grammarPointIds": [
+      "chuu",
+      "de-action-location",
+      "topic-comment-structure"
+    ]
+  },
+  {
+    "id": "student-sister-studies-at-university",
+    "text": "姉は学生で、毎日勉強しています。",
+    "solution": "My older sister is a student and studies every day.",
+    "grammarPointIds": [
+      "noun-connective-de",
+      "te-iru-progressive",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "this-is-fish-not-meat",
+    "text": "これは肉じゃない。魚だ。",
+    "solution": "This is not meat. It is fish.",
+    "grammarPointIds": [
+      "copula-negative-plain",
+      "copula-da-desu",
+      "kosoado-pronouns"
+    ]
+  },
+  {
+    "id": "rain-cancelled-sunday-mountain-trip",
+    "text": "雨だったので、先週の日曜日は山へ行きませんでした。",
+    "solution": "Because it was raining, I did not go to the mountain last Sunday.",
+    "grammarPointIds": [
+      "copula-past",
+      "node-reason",
+      "verb-masen-deshita",
+      "e-direction",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "juice-suggestion-on-hot-day",
+    "text": "暑いですね。ジュースでも飲みましょう。",
+    "solution": "It is hot, isn't it? Let's have some juice or something.",
+    "grammarPointIds": [
+      "demo-particle",
+      "mashou",
+      "ne-confirmation",
+      "i-adjective-predicate"
+    ]
+  },
+  {
+    "id": "warm-delicious-bread-reflection",
+    "text": "このパンは甘くて、美味しいなあ。",
+    "solution": "This bread is sweet and delicious!",
+    "grammarPointIds": [
+      "naa-reflection",
+      "adjective-connective",
+      "i-adjective-predicate",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "ask-how-many-people-in-family",
+    "text": "家族は何人ですか。",
+    "solution": "How many people are in your family?",
+    "grammarPointIds": [
+      "nan-counter",
+      "common-counters",
+      "numbers-and-counters",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "show-family-photo-politely",
+    "text": "ご家族の写真を見せてください。",
+    "solution": "Please show me a photo of your family.",
+    "grammarPointIds": [
+      "o-go-honorific-prefix",
+      "te-kudasai",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "ask-about-new-job",
+    "text": "新しい仕事はどうですか。面白いですか。",
+    "solution": "How is your new job? Is it interesting?",
+    "grammarPointIds": [
+      "wa-dou-desu-ka",
+      "i-adjective-predicate",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "ask-what-kind-of-city-kyoto-is",
+    "text": "京都はどんな町ですか。古い建物が多いです。",
+    "solution": "What kind of city is Kyoto? It has many old buildings.",
+    "grammarPointIds": [
+      "donna",
+      "kosoado-kind",
+      "i-adjective-attributive",
+      "i-adjective-predicate"
+    ]
+  },
+  {
+    "id": "want-quiet-place-with-family",
+    "text": "家族とどこか静かな所へ行きたいです。",
+    "solution": "I want to go somewhere quiet with my family.",
+    "grammarPointIds": [
+      "question-word-ka",
+      "na-adjective-attributive",
+      "to-companion",
+      "e-direction",
+      "tai-desire"
+    ]
+  },
+  {
+    "id": "empty-fridge-prompts-shopping",
+    "text": "冷蔵庫には何もありませんから、買い物に行きます。",
+    "solution": "There is nothing in the refrigerator, so I am going shopping.",
+    "grammarPointIds": [
+      "question-word-mo",
+      "aru-existence",
+      "kara-reason",
+      "ni-purpose"
+    ]
+  },
+  {
+    "id": "no-playing-on-dangerous-road",
+    "text": "道が危ないから、ここで遊んじゃいけないよ。",
+    "solution": "The road is dangerous, so you must not play here.",
+    "grammarPointIds": [
+      "cha-ikenai",
+      "kara-reason",
+      "de-action-location",
+      "yo-emphasis"
+    ]
+  },
+  {
+    "id": "medicine-three-times-not-four",
+    "text": "この薬は一日に三回飲んでください。四回飲んではいけません。",
+    "solution": "Please take this medicine three times a day. You must not take it four times.",
+    "grammarPointIds": [
+      "ni-frequency",
+      "common-counters",
+      "te-kudasai",
+      "te-wa-ikenai",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "do-not-enter-while-brother-sleeps",
+    "text": "弟はまだ寝ているので、部屋に入らないでください。",
+    "solution": "My younger brother is still sleeping, so please do not enter the room.",
+    "grammarPointIds": [
+      "te-iru-progressive",
+      "node-reason",
+      "naide-kudasai",
+      "ni-destination",
+      "mada"
+    ]
+  },
+  {
+    "id": "do-not-put-hand-in-train-door",
+    "text": "電車のドアに手を入れるな。",
+    "solution": "Do not put your hand in the train door.",
+    "grammarPointIds": [
+      "na-prohibitive",
+      "ni-destination",
+      "o-object",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "permission-take-dictionary-home",
+    "text": "この辞書を家に持って帰ってもいいですか。",
+    "solution": "May I take this dictionary home?",
+    "grammarPointIds": [
+      "te-mo-ii",
+      "ni-destination",
+      "ka-question",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "need-not-read-whole-book",
+    "text": "この本は全部読まなくてもいいです。",
+    "solution": "You do not have to read this entire book.",
+    "grammarPointIds": [
+      "nakute-mo-ii",
+      "wa-topic",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "return-library-book-in-two-weeks",
+    "text": "図書館の本は二週間で返さなくてはいけません。",
+    "solution": "You have to return the library book within two weeks.",
+    "grammarPointIds": [
+      "nakute-wa-ikenai",
+      "common-counters",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "buy-bread-before-shop-closes",
+    "text": "店がもう閉まるから、パンを買わなきゃ。",
+    "solution": "The shop is about to close, so I have to buy bread.",
+    "grammarPointIds": [
+      "nakya-nakucha",
+      "kara-reason",
+      "mou"
+    ]
+  },
+  {
+    "id": "bring-chair-near-window",
+    "text": "窓の近くの椅子をこちらへ持ってきてください。",
+    "solution": "Please bring the chair near the window over here.",
+    "grammarPointIds": [
+      "te-kudasai",
+      "positional-nouns",
+      "no-possession",
+      "kosoado-directions",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "offer-to-carry-heavy-bag",
+    "text": "そのかばんは重そうですね。持ちましょうか。",
+    "solution": "That bag looks heavy. Shall I carry it?",
+    "grammarPointIds": [
+      "sou-appearance",
+      "ne-confirmation",
+      "mashou-ka",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "coat-hung-on-chair",
+    "text": "椅子にコートが掛けてあります。",
+    "solution": "A coat has been hung on the chair.",
+    "grammarPointIds": [
+      "te-aru-result-state",
+      "ni-existence-location",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "new-convenience-store-at-station",
+    "text": "駅の前に新しいコンビニができています。",
+    "solution": "A new convenience store has opened in front of the station.",
+    "grammarPointIds": [
+      "te-iru-result-state",
+      "ni-existence-location",
+      "positional-nouns",
+      "i-adjective-attributive"
+    ]
+  },
+  {
+    "id": "spoken-to-nobody-today",
+    "text": "今日はまだ誰とも話していません。",
+    "solution": "I have not spoken to anyone yet today.",
+    "grammarPointIds": [
+      "te-inai",
+      "question-word-mo",
+      "mada",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "not-read-one-page-of-bought-book",
+    "text": "買った本はまだ一ページも読んでいません。",
+    "solution": "I have not read even one page of the book I bought yet.",
+    "grammarPointIds": [
+      "mada-te-inai",
+      "te-inai",
+      "relative-clause",
+      "mo-emphasis",
+      "common-counters"
+    ]
+  },
+  {
+    "id": "rest-after-taking-medicine",
+    "text": "薬を飲んでから、少し休んでください。",
+    "solution": "Please rest for a while after taking your medicine.",
+    "grammarPointIds": [
+      "te-kara",
+      "te-kudasai",
+      "o-object"
+    ]
+  },
+  {
+    "id": "too-much-sugar-in-coffee",
+    "text": "コーヒーに砂糖を入れすぎてしまいました。",
+    "solution": "I accidentally put too much sugar in my coffee.",
+    "grammarPointIds": [
+      "sugiru",
+      "te-shimau",
+      "ni-target-recipient",
+      "o-object"
+    ]
+  },
+  {
+    "id": "walked-to-hotel-without-map",
+    "text": "地図を見ないでホテルまで歩きました。",
+    "solution": "I walked to the hotel without looking at a map.",
+    "grammarPointIds": [
+      "naide-without",
+      "made-end",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "try-different-road-to-station",
+    "text": "今日は駅まで違う道を歩いてみます。",
+    "solution": "Today, I will try walking a different route to the station.",
+    "grammarPointIds": [
+      "te-miru",
+      "o-route",
+      "made-end",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "draw-and-listen-on-rainy-days",
+    "text": "雨の日は、家で絵を描いたり、音楽を聞いたりします。",
+    "solution": "On rainy days, I do things like draw pictures and listen to music at home.",
+    "grammarPointIds": [
+      "tari-tari-suru",
+      "de-action-location",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "sometimes-tennis-with-father-on-sunday",
+    "text": "日曜日に父と公園でテニスをすることがあります。",
+    "solution": "I sometimes play tennis with my father in the park on Sundays.",
+    "grammarPointIds": [
+      "ru-koto-ga-aru",
+      "to-companion",
+      "de-action-location",
+      "ni-time"
+    ]
+  },
+  {
+    "id": "sleep-until-around-ten-on-saturday",
+    "text": "土曜日は十時ごろまで寝ています。",
+    "solution": "On Saturdays, I sleep until around ten o'clock.",
+    "grammarPointIds": [
+      "goro-approximate-time",
+      "made-end",
+      "te-iru-result-state",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "fifteen-minute-walk-to-station",
+    "text": "駅まで歩いて十五分くらいです。",
+    "solution": "It is about a fifteen-minute walk to the station.",
+    "grammarPointIds": [
+      "kurai-approximation",
+      "common-counters",
+      "made-end"
+    ]
+  },
+  {
+    "id": "bank-open-nine-to-three",
+    "text": "銀行は九時から三時までです。",
+    "solution": "The bank is open from nine until three.",
+    "grammarPointIds": [
+      "kara-made-range",
+      "kara-start",
+      "made-end",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "bread-cheap-only-on-sunday",
+    "text": "この店では、日曜日だけパンが安いです。",
+    "solution": "Bread is cheap only on Sundays at this shop.",
+    "grammarPointIds": [
+      "dake-limitation",
+      "clock-calendar-time",
+      "i-adjective-predicate",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "only-small-bag-for-trip",
+    "text": "旅行には小さいかばんしか持って行きません。",
+    "solution": "I will take only a small bag on the trip.",
+    "grammarPointIds": [
+      "shika-nai-limitation",
+      "i-adjective-attributive",
+      "te-action-link"
+    ]
+  },
+  {
+    "id": "seven-pencils-and-three-notebooks",
+    "text": "机の上に鉛筆が七本とノートが三冊あります。",
+    "solution": "There are seven pencils and three notebooks on the desk.",
+    "grammarPointIds": [
+      "common-counters",
+      "numbers-and-counters",
+      "quantity-position",
+      "ni-existence-location",
+      "positional-nouns"
+    ]
+  },
+  {
+    "id": "family-restaurant-every-two-weeks",
+    "text": "家族で二週間に一回レストランへ行きます。",
+    "solution": "My family goes to a restaurant once every two weeks.",
+    "grammarPointIds": [
+      "ni-frequency",
+      "common-counters",
+      "e-direction",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "summer-hottest-time-of-year",
+    "text": "夏が一年で一番暑いです。",
+    "solution": "Summer is the hottest time of the year.",
+    "grammarPointIds": [
+      "ichiban-superlative",
+      "ga-identification",
+      "i-adjective-predicate",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "other-road-closer-to-station",
+    "text": "こちらの道より、そちらの道のほうが駅に近いです。",
+    "solution": "The road over there is closer to the station than this one.",
+    "grammarPointIds": [
+      "yori-comparison",
+      "hou-ga-comparison",
+      "i-adjective-predicate",
+      "kosoado-directions"
+    ]
+  },
+  {
+    "id": "bought-same-book-as-friend",
+    "text": "友達と同じ本を買いました。",
+    "solution": "I bought the same book as my friend.",
+    "grammarPointIds": [
+      "onaji",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "hotel-bicycle-rental-available",
+    "text": "このホテルでは自転車を借りることができます。",
+    "solution": "You can rent a bicycle at this hotel.",
+    "grammarPointIds": [
+      "koto-ga-dekiru",
+      "de-action-location",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "sister-likes-taking-animal-photos",
+    "text": "妹は動物の写真を撮るのが好きです。",
+    "solution": "My younger sister likes taking pictures of animals.",
+    "grammarPointIds": [
+      "no-ga-suki",
+      "no-nominalizer",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "teacher-skilled-at-teaching-kanji",
+    "text": "先生は子供に漢字を教えるのが上手です。",
+    "solution": "The teacher is good at teaching kanji to children.",
+    "grammarPointIds": [
+      "no-ga-jouzu-heta",
+      "no-nominalizer",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "want-small-fridge-in-room",
+    "text": "部屋に小さい冷蔵庫が欲しいです。",
+    "solution": "I want a small refrigerator in my room.",
+    "grammarPointIds": [
+      "hoshii",
+      "i-adjective-attributive"
+    ]
+  },
+  {
+    "id": "want-to-see-mountain-snow-in-winter",
+    "text": "冬は山の雪を見に行きたいです。",
+    "solution": "In winter, I want to go see the snow in the mountains.",
+    "grammarPointIds": [
+      "tai-desire",
+      "ni-purpose",
+      "movement-purpose",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "intend-study-japanese-daily-this-year",
+    "text": "今年は毎日、日本語を勉強するつもりです。",
+    "solution": "I intend to study Japanese every day this year.",
+    "grammarPointIds": [
+      "tsumori",
+      "verb-dictionary-nonpast",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "think-problem-is-not-difficult",
+    "text": "この問題は難しくないと思います。",
+    "solution": "I think this problem is not difficult.",
+    "skipVoiceGeneration": true,
+    "grammarPointIds": [
+      "to-omou",
+      "to-quotation",
+      "i-adjective-negative",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "avoid-walking-home-alone-in-dark",
+    "text": "道が暗いですから、一人で帰らないほうがいいですよ。",
+    "solution": "The road is dark, so you should not walk home alone.",
+    "grammarPointIds": [
+      "hou-ga-ii-advice",
+      "kara-reason",
+      "i-adjective-predicate",
+      "verb-nai",
+      "yo-emphasis"
+    ]
+  },
+  {
+    "id": "key-may-be-inside-bag",
+    "text": "鍵はかばんの中かもしれません。",
+    "solution": "The key might be inside the bag.",
+    "grammarPointIds": [
+      "kamoshirenai",
+      "positional-nouns",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "station-hotel-probably-convenient",
+    "text": "駅の近くのホテルは便利でしょう。",
+    "solution": "The hotel near the station is probably convenient.",
+    "grammarPointIds": [
+      "deshou-darou",
+      "na-adjective-predicate",
+      "positional-nouns"
+    ]
+  },
+  {
+    "id": "cycle-near-river-if-sunny",
+    "text": "明日晴れたら、川の近くを自転車で走ります。",
+    "solution": "If it is sunny tomorrow, I will ride my bicycle near the river.",
+    "grammarPointIds": [
+      "tara-conditional",
+      "o-route",
+      "de-means",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "bank-on-right-after-straight-road",
+    "text": "この道をまっすぐ行くと、右に銀行があります。",
+    "solution": "If you go straight along this road, there is a bank on the right.",
+    "grammarPointIds": [
+      "to-conditional",
+      "o-route",
+      "ni-existence-location",
+      "aru-existence",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "friend-lent-money-when-wallet-forgotten",
+    "text": "財布を忘れた時、友達がお金を貸してくれました。",
+    "solution": "When I forgot my wallet, my friend lent me some money.",
+    "grammarPointIds": [
+      "toki",
+      "te-kureru",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "laundry-tomorrow-because-busy",
+    "text": "今日は忙しいので、洗濯は明日します。",
+    "solution": "I am busy today, so I will do the laundry tomorrow.",
+    "grammarPointIds": [
+      "node-reason",
+      "wa-contrast",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "cheap-shoes-slightly-small",
+    "text": "この靴は安いけど、少し小さいです。",
+    "solution": "These shoes are cheap, but they are a little small.",
+    "grammarPointIds": [
+      "kedo-contrast",
+      "i-adjective-predicate",
+      "degree-adverbs",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "spacious-room-without-window",
+    "text": "この部屋は広いですが、窓がありません。",
+    "solution": "This room is spacious, but it has no window.",
+    "grammarPointIds": [
+      "ga-contrast",
+      "i-adjective-predicate",
+      "aru-existence",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "large-dog-looks-strong",
+    "text": "その犬は大きくて、強そうです。",
+    "solution": "That dog is large and looks strong.",
+    "grammarPointIds": [
+      "sou-appearance",
+      "adjective-connective",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "teacher-says-test-next-week",
+    "text": "先生の話では、来週テストがあるそうです。",
+    "solution": "According to the teacher, there will apparently be a test next week.",
+    "grammarPointIds": [
+      "sou-hearsay",
+      "aru-existence",
+      "clock-calendar-time",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "turned-off-tv-for-sleeping-child",
+    "text": "子供が寝ているので、テレビを消しました。",
+    "solution": "I turned off the television because the child was sleeping.",
+    "grammarPointIds": [
+      "te-iru-progressive",
+      "node-reason",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "coffee-delicious-cake-cheap-at-cafe",
+    "text": "この喫茶店はコーヒーも美味しいし、ケーキも安いです。",
+    "solution": "At this cafe, the coffee is delicious, and the cake is inexpensive too.",
+    "grammarPointIds": [
+      "shi-additive-reason",
+      "mo-addition",
+      "i-adjective-predicate",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "gave-red-hat-for-sisters-birthday",
+    "text": "妹の誕生日に赤い帽子をあげました。",
+    "solution": "I gave my younger sister a red hat for her birthday.",
+    "grammarPointIds": [
+      "ageru",
+      "ni-time",
+      "i-adjective-attributive",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "friend-came-along-to-station",
+    "text": "友達が駅まで一緒に来てくれました。",
+    "solution": "My friend came with me as far as the station.",
+    "grammarPointIds": [
+      "te-kureru",
+      "issho-ni",
+      "made-end"
+    ]
+  },
+  {
+    "id": "received-trip-photos-from-friend",
+    "text": "旅行の写真を友達からもらいました。",
+    "solution": "I received some photos of the trip from my friend.",
+    "grammarPointIds": [
+      "morau",
+      "kara-start",
+      "no-possession",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "lent-easy-book-to-japanese-learner",
+    "text": "友達が日本語を勉強しているので、易しい本を貸してあげました。",
+    "solution": "My friend is studying Japanese, so I lent them an easy book.",
+    "grammarPointIds": [
+      "te-ageru",
+      "te-iru-progressive",
+      "node-reason",
+      "i-adjective-attributive"
+    ]
+  },
+  {
+    "id": "sister-bought-train-ticket-for-me",
+    "text": "姉が駅で切符を買ってくれました。",
+    "solution": "My older sister bought a train ticket for me at the station.",
+    "grammarPointIds": [
+      "te-kureru",
+      "de-action-location",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "mother-cut-my-hair-short",
+    "text": "母に髪を短く切ってもらいました。",
+    "solution": "I had my mother cut my hair short.",
+    "grammarPointIds": [
+      "te-morau",
+      "i-adjective-adverb",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "showed-father-new-watch",
+    "text": "父に新しい時計を見せました。",
+    "solution": "I showed my new watch to my father.",
+    "grammarPointIds": [
+      "ni-target-recipient",
+      "i-adjective-attributive",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "taught-japanese-cooking-to-foreign-friend",
+    "text": "外国から来た友達に日本の料理を教えました。",
+    "solution": "I taught Japanese cooking to a friend who came from abroad.",
+    "grammarPointIds": [
+      "relative-clause",
+      "ni-target-recipient",
+      "kara-start",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "grandmother-showed-old-photos",
+    "text": "おばあさんが古い写真を見せてくれました。",
+    "solution": "My grandmother showed me some old photos.",
+    "grammarPointIds": [
+      "te-kureru",
+      "i-adjective-attributive",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "friend-explained-way-to-station",
+    "text": "友達に駅までの道を教えてもらいました。",
+    "solution": "I had my friend show me the way to the station.",
+    "grammarPointIds": [
+      "te-morau",
+      "made-end",
+      "no-possession",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "often-use-word-thank-you",
+    "text": "「ありがとう」という言葉をよく使います。",
+    "solution": "I often use the word 'thank you.'",
+    "grammarPointIds": [
+      "to-iu",
+      "to-quotation",
+      "frequency-adverbs"
+    ]
+  },
+  {
+    "id": "brother-said-he-would-be-late",
+    "text": "兄は「今日は遅くなる」って言いました。",
+    "solution": "My older brother said, 'I will be late today.'",
+    "grammarPointIds": [
+      "tte-casual-quotation",
+      "naru-change",
+      "i-adjective-adverb",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "window-opened-because-hot",
+    "text": "どうして窓を開けたんですか。暑かったんです。",
+    "solution": "Why did you open the window? Because it was hot.",
+    "grammarPointIds": [
+      "no-desu",
+      "naze-doushite-nande",
+      "i-adjective-past",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "casual-question-book-read-already",
+    "text": "その本、もう読んだの？",
+    "solution": "Have you read that book already?",
+    "grammarPointIds": [
+      "no-question",
+      "verb-ta-past",
+      "mou",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "unsure-whether-train-goes-to-kyoto",
+    "text": "この電車が京都へ行くかどうか、分かりません。",
+    "solution": "I do not know whether this train goes to Kyoto.",
+    "grammarPointIds": [
+      "ka-dou-ka",
+      "e-direction",
+      "verb-masen",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "someone-waiting-outside",
+    "text": "誰かが外で待っています。",
+    "solution": "Someone is waiting outside.",
+    "grammarPointIds": [
+      "question-word-ka",
+      "te-iru-progressive",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "rested-home-without-going-anywhere",
+    "text": "日曜日はどこにも行かないで、家で休みました。",
+    "solution": "On Sunday, I stayed home and rested without going anywhere.",
+    "grammarPointIds": [
+      "question-word-mo",
+      "naide-without",
+      "de-action-location",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "which-bus-goes-to-hospital",
+    "text": "どのバスが病院へ行きますか。",
+    "solution": "Which bus goes to the hospital?",
+    "grammarPointIds": [
+      "dore-dono",
+      "ga-identification",
+      "e-direction",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "ask-how-to-eat-this-fish",
+    "text": "この魚はどうやって食べますか。",
+    "solution": "How do you eat this fish?",
+    "grammarPointIds": [
+      "dou-yatte",
+      "wa-topic",
+      "ka-question",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "ask-what-making-for-dinner",
+    "text": "晩御飯に何を作るんですか。",
+    "solution": "What are you making for dinner?",
+    "grammarPointIds": [
+      "nani",
+      "no-desu",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "juice-but-no-cake-at-party",
+    "text": "パーティーでジュースは飲みましたが、ケーキは食べませんでした。",
+    "solution": "At the party, I drank juice but did not eat any cake.",
+    "grammarPointIds": [
+      "verb-masen-deshita",
+      "ga-contrast",
+      "wa-contrast",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "unclean-hotel-spacious-room",
+    "text": "昨日のホテルは綺麗ではありませんでしたが、部屋は広かったです。",
+    "solution": "Yesterday's hotel was not clean, but the room was spacious.",
+    "grammarPointIds": [
+      "na-adjective-past-negative",
+      "ga-contrast",
+      "i-adjective-past",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "quiet-music-after-family-sleeps",
+    "text": "家族が寝てから、音楽を静かに聞きます。",
+    "solution": "After my family goes to sleep, I listen to music quietly.",
+    "grammarPointIds": [
+      "te-kara",
+      "na-adjective-adverb",
+      "o-object"
+    ]
+  },
+  {
+    "id": "cold-morning-warmer-afternoon",
+    "text": "朝は寒かったですが、午後は暖かくなりました。",
+    "solution": "It was cold in the morning, but it became warmer in the afternoon.",
+    "grammarPointIds": [
+      "i-adjective-past",
+      "ga-contrast",
+      "naru-change",
+      "wa-contrast"
+    ]
+  },
+  {
+    "id": "person-was-student-not-teacher",
+    "text": "その人は先生じゃなかった。学生だった。",
+    "solution": "That person was not a teacher. They were a student.",
+    "grammarPointIds": [
+      "copula-past-negative",
+      "copula-past",
+      "plain-polite-register",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "bus-cheap-train-faster",
+    "text": "バスは安いです。しかし、電車のほうが速いです。",
+    "solution": "The bus is inexpensive. However, the train is faster.",
+    "grammarPointIds": [
+      "shikashi-connector",
+      "hou-ga-comparison",
+      "i-adjective-predicate"
+    ]
+  },
+  {
+    "id": "bank-errand-then-met-friend",
+    "text": "朝、銀行へ行きました。そして、駅で友達に会いました。",
+    "solution": "In the morning, I went to the bank. Then I met my friend at the station.",
+    "skipVoiceGeneration": true,
+    "grammarPointIds": [
+      "soshite-connector",
+      "e-direction",
+      "de-action-location",
+      "ni-target-recipient",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "wash-vegetables-then-cut-them",
+    "text": "野菜を洗います。それから、切ります。",
+    "solution": "I wash the vegetables. After that, I cut them.",
+    "grammarPointIds": [
+      "sorekara-connector",
+      "argument-omission",
+      "verb-masu"
+    ]
+  },
+  {
+    "id": "wallet-keys-and-more-in-bag",
+    "text": "かばんの中に財布や鍵などが入っています。",
+    "solution": "There are a wallet, keys, and other things inside the bag.",
+    "grammarPointIds": [
+      "ya-incomplete-list",
+      "nado-examples",
+      "te-iru-result-state",
+      "positional-nouns"
+    ]
+  },
+  {
+    "id": "dismissively-easy-homework",
+    "text": "この宿題なんて易しいよ。",
+    "solution": "Homework like this is easy!",
+    "grammarPointIds": [
+      "nanka-nante-examples",
+      "i-adjective-predicate",
+      "yo-emphasis",
+      "kosoado-determiners"
+    ]
+  },
+  {
     "id": "production-leave-home-at-seven",
     "text": "I leave home at seven every morning.",
     "solution": "毎朝七時に家を出ます。",

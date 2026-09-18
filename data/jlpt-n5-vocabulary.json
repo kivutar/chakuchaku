@@ -5652,7 +5652,7 @@
     "voiceSlug": "ban-evening",
     "term": "晩",
     "reading": "ばん",
-    "meaning": "evening",
+    "meaning": "evening (especially in expressions such as tonight or every evening)",
     "scope": "core",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
@@ -7100,7 +7100,7 @@
     "id": "vocab-ba0c8a160c33",
     "term": "夜",
     "reading": "よる",
-    "meaning": "evening, night",
+    "meaning": "night; evening (the nighttime period)",
     "scope": "core",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
