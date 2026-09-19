@@ -101,9 +101,10 @@
     if (
       !filesystem ||
       typeof filesystem.readFile !== "function" ||
-      typeof filesystem.writeFile !== "function"
+      typeof filesystem.writeFile !== "function" ||
+      typeof filesystem.deleteFile !== "function"
     ) {
-      throw new TypeError("Native file storage needs readFile and writeFile.");
+      throw new TypeError("Native file storage needs readFile, writeFile, and deleteFile.");
     }
   }
 
@@ -175,6 +176,16 @@
       }
     }
 
+    async function deletePath(path) {
+      try {
+        await filesystem.deleteFile({ path, directory });
+      } catch (error) {
+        if (!isMissingFileError(error)) {
+          throw error;
+        }
+      }
+    }
+
     async function loadState(key) {
       const results = await Promise.all([
         readPath(key, getSlotPath(key, "a"), "a"),
@@ -188,7 +199,16 @@
         return valid[0];
       }
 
-      if (results.some(({ status }) => status === "invalid")) {
+      const backup = await readPath(key, getBackupPath(key), "backup");
+
+      if (backup.status === "valid") {
+        return backup;
+      }
+
+      if (
+        backup.status === "invalid" ||
+        results.some(({ status }) => status === "invalid")
+      ) {
         throw new Error(`Both native storage copies for ${key} are unavailable or invalid.`);
       }
 
@@ -241,7 +261,28 @@
         data: JSON.stringify(record)
       });
 
-      statePromises.set(key, Promise.resolve({ status: "valid", path, slot, record }));
+      const written = { status: "valid", path, slot, record };
+
+      statePromises.set(key, Promise.resolve(written));
+      return written;
+    }
+
+    async function verifyValue(key, value) {
+      const latest = await getState(key);
+
+      if (!latest) {
+        return false;
+      }
+
+      const stored = await readPath(key, latest.path, latest.slot);
+      const expectedValue = value === null ? null : String(value);
+
+      return Boolean(
+        stored.status === "valid" &&
+        stored.record.generation === latest.record.generation &&
+        stored.record.deleted === (value === null) &&
+        stored.record.value === expectedValue
+      );
     }
 
     return Object.freeze({
@@ -256,25 +297,22 @@
       },
 
       async removeItem(key) {
-        await writeValue(key, null);
+        const tombstone = await writeValue(key, null);
+
+        if (!await verifyValue(key, null)) {
+          throw new Error(`Native storage deletion verification failed for ${key}.`);
+        }
+
+        await Promise.all([
+          deletePath(getBackupPath(key)),
+          ...["a", "b"]
+            .filter((slot) => slot !== tombstone.slot)
+            .map((slot) => deletePath(getSlotPath(key, slot)))
+        ]);
       },
 
       async verifyItem(key, value) {
-        const latest = await getState(key);
-
-        if (!latest) {
-          return false;
-        }
-
-        const stored = await readPath(key, latest.path, latest.slot);
-        const expectedValue = value === null ? null : String(value);
-
-        return Boolean(
-          stored.status === "valid" &&
-          stored.record.generation === latest.record.generation &&
-          stored.record.deleted === (value === null) &&
-          stored.record.value === expectedValue
-        );
+        return verifyValue(key, value);
       },
 
       async ensureMigrationBackup(key, value) {
@@ -390,6 +428,17 @@
           await preferences.remove({ key: deletionMarker(key) });
           logger?.error?.("Native file storage failed; kept learner data in Preferences.", error);
         }
+      },
+
+      async migrateItem(key, value) {
+        const normalizedValue = String(value);
+
+        if (!fileKeys.has(key)) {
+          await preferences.set({ key, value: normalizedValue });
+          return;
+        }
+
+        await finishMigration(key, normalizedValue);
       },
 
       async removeItem(key) {

@@ -585,6 +585,17 @@ function setProgressTransferStatus(message, isError = false) {
   progressTransferStatus.classList.toggle("is-error", isError);
 }
 
+async function flushLearnerData() {
+  try {
+    await globalThis.JlptN5Storage.flush();
+    return true;
+  } catch (error) {
+    console.error(error);
+    window.alert(t("progress.saveFailed"));
+    return false;
+  }
+}
+
 function getProgressBackupFilename(now = new Date()) {
   const date = [
     now.getFullYear(),
@@ -682,9 +693,16 @@ async function resetProgress() {
   }
 
   progressResetButton.disabled = true;
-  globalThis.JlptN5Progress.clearProgress();
-  await globalThis.JlptN5Storage.flush();
-  window.location.reload();
+
+  try {
+    globalThis.JlptN5Progress.clearProgress();
+    await globalThis.JlptN5Storage.flush();
+    window.location.reload();
+  } catch (error) {
+    console.error(error);
+    setProgressTransferStatus(t("progress.saveFailed"), true);
+    progressResetButton.disabled = false;
+  }
 }
 
 function formatShortDate(value) {
@@ -2101,8 +2119,9 @@ function handleSettingsBackdropClick(event) {
 }
 
 async function navigateToStudyMenuItem(menuItem) {
-  await globalThis.JlptN5Storage.flush();
-  window.location.assign(menuItem.href);
+  if (await flushLearnerData()) {
+    window.location.assign(menuItem.href);
+  }
 }
 
 function handleProfileMenuClick(event) {
@@ -5468,11 +5487,13 @@ async function configureNativeBehavior() {
     }
 
     if (canGoBack) {
-      await globalThis.JlptN5Storage.flush();
-      window.history.back();
+      if (await flushLearnerData()) {
+        window.history.back();
+      }
     } else {
-      await globalThis.JlptN5Storage.flush();
-      await app.exitApp();
+      if (await flushLearnerData()) {
+        await app.exitApp();
+      }
     }
   });
 }

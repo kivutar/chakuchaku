@@ -22,6 +22,32 @@
   const srsKey = global.JlptN5Srs.storageKey;
   const statsKey = global.JlptN5Stats.storageKey;
   const settingsKey = global.JlptN5Settings.storageKey;
+  const learnerDataKeys = new Set([srsKey, statsKey]);
+
+  function getLearnerDataUpdateTime(value) {
+    try {
+      const updatedAt = JSON.parse(value)?.updatedAt;
+      const time = typeof updatedAt === "string" ? Date.parse(updatedAt) : NaN;
+
+      return Number.isNaN(time) ? undefined : time;
+    } catch {
+      return undefined;
+    }
+  }
+
+  function preferNewerBrowserValue({ key, browserValue, persistentValue }) {
+    if (!learnerDataKeys.has(key)) {
+      return false;
+    }
+
+    const browserTime = getLearnerDataUpdateTime(browserValue);
+    const persistentTime = getLearnerDataUpdateTime(persistentValue);
+
+    return browserTime !== undefined && (
+      persistentTime === undefined || browserTime > persistentTime
+    );
+  }
+
   const preferenceDriver = {
     async getItem(key) {
       return (await preferences.get({ key })).value;
@@ -64,7 +90,8 @@
     settingsKey
   ], {
     mirrorBrowser: false,
-    removeBrowserAfterMigration: true
+    removeBrowserAfterMigration: true,
+    preferBrowserWhenPresent: preferNewerBrowserValue
   });
 
   global.JlptN5Native = Object.freeze({

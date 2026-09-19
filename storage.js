@@ -20,6 +20,7 @@
   let pendingWrite = Promise.resolve();
   let writeScheduled = false;
   const pendingMutations = new Map();
+  const persistentErrors = new Map();
 
   try {
     browserStorage = global.localStorage;
@@ -65,14 +66,28 @@
           const mutations = [...pendingMutations.entries()];
 
           pendingMutations.clear();
-          await Promise.all(mutations.map(([mutationKey, pending]) => {
-            return pending.type === "remove"
-              ? persistentDriver.removeItem(mutationKey)
-              : persistentDriver.setItem(mutationKey, pending.value);
+          await Promise.all(mutations.map(async ([mutationKey, pending]) => {
+            try {
+              if (pending.type === "remove") {
+                await persistentDriver.removeItem(mutationKey);
+              } else {
+                await persistentDriver.setItem(mutationKey, pending.value);
+              }
+
+              persistentErrors.delete(mutationKey);
+            } catch (error) {
+              persistentErrors.set(mutationKey, error);
+              console.error(`Could not persist learner data for ${mutationKey}.`, error);
+            }
           }));
         }
+
+        persistentErrors.delete("*");
       })
-      .catch((error) => console.error("Could not persist learner data.", error))
+      .catch((error) => {
+        persistentErrors.set("*", error);
+        console.error("Could not persist learner data.", error);
+      })
       .finally(() => {
         writeScheduled = false;
 
@@ -158,12 +173,20 @@
       for (const key of persistentKeys) {
         const persistentValue = await driver.getItem(key);
         const browserValue = readBrowserValue(key);
+        const preferBrowser = typeof preferBrowserWhenPresent === "function"
+          ? preferBrowserWhenPresent({ key, browserValue, persistentValue })
+          : preferBrowserWhenPresent;
 
         if (typeof browserValue === "string" && (
-          typeof persistentValue !== "string" || preferBrowserWhenPresent
+          typeof persistentValue !== "string" || preferBrowser
         )) {
           cache.set(key, browserValue);
-          await driver.setItem(key, browserValue);
+
+          if (typeof driver.migrateItem === "function") {
+            await driver.migrateItem(key, browserValue);
+          } else {
+            await driver.setItem(key, browserValue);
+          }
 
           if (removeBrowserAfterMigration) {
             mirrorBrowserValue(key, null);
@@ -257,6 +280,14 @@
 
     while (writeScheduled || pendingMutations.size > 0) {
       await pendingWrite;
+    }
+
+    if (persistentErrors.size > 0) {
+      const error = new Error("Learner data could not be saved.");
+
+      error.code = "save-failed";
+      error.keys = [...persistentErrors.keys()];
+      throw error;
     }
   }
 

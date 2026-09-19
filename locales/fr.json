@@ -77,6 +77,7 @@
   "progress.backupDialog": "Enregistrer ou partager la sauvegarde",
   "progress.exported": "Sauvegarde exportée. Conservez-la en lieu sûr.",
   "progress.exportFailed": "La progression n’a pas pu être exportée.",
+  "progress.saveFailed": "La progression n’a pas pu être enregistrée. Réessayez avant de quitter cet écran.",
   "progress.checking": "Vérification de la sauvegarde…",
   "progress.tooLarge": "La sauvegarde sélectionnée est trop volumineuse.",
   "progress.imported": "{cards} cartes SRS et {history} entrées d’historique importées. Rechargement…",

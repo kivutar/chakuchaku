@@ -143,6 +143,42 @@ test("web migration prefers a newer local fallback over an existing durable valu
   assert.equal(browserStorage.getItem("srs"), null);
 });
 
+test("migration selectors preserve the freshest native copy and verify browser migrations", async () => {
+  const browserStorage = new MemoryStorage([["srs", "newer-browser-value"]]);
+  const durableStorage = new MemoryStorage([["srs", "older-native-value"]]);
+  const migrations = [];
+  const driver = {
+    async getItem(key) {
+      return durableStorage.getItem(key);
+    },
+    async setItem(key, value) {
+      durableStorage.setItem(key, value);
+    },
+    async migrateItem(key, value) {
+      migrations.push([key, value]);
+      durableStorage.setItem(key, value);
+    },
+    async removeItem(key) {
+      durableStorage.removeItem(key);
+    }
+  };
+  const api = loadStorageApi(browserStorage);
+
+  await api.configurePersistentDriver(driver, ["srs"], {
+    mirrorBrowser: false,
+    removeBrowserAfterMigration: true,
+    preferBrowserWhenPresent({ browserValue, persistentValue }) {
+      return browserValue === "newer-browser-value" &&
+        persistentValue === "older-native-value";
+    }
+  });
+
+  assert.deepEqual(migrations, [["srs", "newer-browser-value"]]);
+  assert.equal(api.storage.getItem("srs"), "newer-browser-value");
+  assert.equal(durableStorage.getItem("srs"), "newer-browser-value");
+  assert.equal(browserStorage.getItem("srs"), null);
+});
+
 test("persistent writes coalesce repeated updates to the same key", async () => {
   const browserStorage = new MemoryStorage();
   const durableStorage = new MemoryStorage();
@@ -169,6 +205,42 @@ test("persistent writes coalesce repeated updates to the same key", async () => 
 
   assert.deepEqual(writes, [["stats", "latest"]]);
   assert.equal(durableStorage.getItem("stats"), "latest");
+});
+
+test("flush reports failed durable writes and clears the error after a successful retry", async () => {
+  const browserStorage = new MemoryStorage();
+  const durableStorage = new MemoryStorage();
+  let failWrites = true;
+  const driver = {
+    async getItem(key) {
+      return durableStorage.getItem(key);
+    },
+    async setItem(key, value) {
+      if (failWrites) {
+        throw new Error("Simulated durable write failure.");
+      }
+
+      durableStorage.setItem(key, value);
+    },
+    async removeItem(key) {
+      durableStorage.removeItem(key);
+    }
+  };
+  const api = loadStorageApi(browserStorage, { console });
+
+  await api.configurePersistentDriver(driver, ["stats"], { mirrorBrowser: false });
+  api.storage.setItem("stats", "not-saved");
+
+  await assert.rejects(api.flush(), (error) => {
+    assert.equal(error.code, "save-failed");
+    assert.deepEqual([...error.keys], ["stats"]);
+    return true;
+  });
+
+  failWrites = false;
+  api.storage.setItem("stats", "saved");
+  await api.flush();
+  assert.equal(durableStorage.getItem("stats"), "saved");
 });
 
 test("web startup migrates SRS and statistics to IndexedDB exactly once", async () => {

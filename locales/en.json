@@ -77,6 +77,7 @@
   "progress.backupDialog": "Save or share progress backup",
   "progress.exported": "Progress backup exported. Keep it somewhere safe.",
   "progress.exportFailed": "Progress could not be exported.",
+  "progress.saveFailed": "Progress could not be saved. Please try again before leaving this screen.",
   "progress.checking": "Checking progress backup…",
   "progress.tooLarge": "The selected progress backup is too large.",
   "progress.imported": "Imported {cards} SRS cards and {history} history entries. Reloading…",

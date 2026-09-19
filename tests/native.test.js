@@ -108,10 +108,24 @@ test("native builds move large learner keys to redundant files", async () => {
   assert.equal(context.JlptN5Native.storageBackend, "redundant-files");
   assert.equal(context.document.documentElement.dataset.nativePlatform, "android");
   assert.deepEqual([...configuredKeys], ["srs", "stats", "settings"]);
-  assert.deepEqual({ ...configuredOptions }, {
-    mirrorBrowser: false,
-    removeBrowserAfterMigration: true
-  });
+  assert.equal(configuredOptions.mirrorBrowser, false);
+  assert.equal(configuredOptions.removeBrowserAfterMigration, true);
+  assert.equal(typeof configuredOptions.preferBrowserWhenPresent, "function");
+  assert.equal(configuredOptions.preferBrowserWhenPresent({
+    key: "srs",
+    browserValue: JSON.stringify({ updatedAt: "2026-09-19T10:00:00.000Z" }),
+    persistentValue: JSON.stringify({ updatedAt: "2026-09-18T10:00:00.000Z" })
+  }), true);
+  assert.equal(configuredOptions.preferBrowserWhenPresent({
+    key: "stats",
+    browserValue: JSON.stringify({ updatedAt: "2026-09-17T10:00:00.000Z" }),
+    persistentValue: JSON.stringify({ updatedAt: "2026-09-18T10:00:00.000Z" })
+  }), false);
+  assert.equal(configuredOptions.preferBrowserWhenPresent({
+    key: "settings",
+    browserValue: JSON.stringify({ userLanguage: "fr" }),
+    persistentValue: JSON.stringify({ userLanguage: "en" })
+  }), false);
   assert.equal(fileDriverOptions.filesystem, filesystem);
   assert.equal(fileDriverOptions.directory, "LIBRARY");
   assert.equal(fileDriverOptions.encoding, "utf8");

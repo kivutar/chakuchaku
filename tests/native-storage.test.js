@@ -48,6 +48,15 @@ class MemoryFilesystem {
     this.writePaths.push(path);
     return { uri: path };
   }
+
+  async deleteFile({ path }) {
+    if (!this.files.delete(path)) {
+      const error = new Error(`File at ${path} does not exist.`);
+
+      error.code = "OS-PLUG-FILE-0008";
+      throw error;
+    }
+  }
 }
 
 class MemoryPreferences {
@@ -102,12 +111,19 @@ test("native file deletion is a durable tombstone", async () => {
   const filesystem = new MemoryFilesystem();
   const driver = createFileDriver(api, filesystem);
 
+  await driver.ensureMigrationBackup("srs", "progress");
   await driver.setItem("srs", "progress");
   await driver.removeItem("srs");
 
   const afterRestart = createFileDriver(api, filesystem);
 
   assert.equal(await afterRestart.getItem("srs"), null);
+  assert.equal(
+    filesystem.files.has("chakuchaku/learner-data/srs-migration-backup.json"),
+    false
+  );
+  assert.equal(filesystem.files.size, 1);
+  assert.match([...filesystem.files.keys()][0], /srs-[ab]\.json$/u);
 });
 
 test("native migration backs up Preferences before moving large learner data", async () => {
@@ -141,6 +157,23 @@ test("native migration backs up Preferences before moving large learner data", a
   });
 
   assert.equal(await afterRestart.getItem("srs"), "legacy-progress");
+});
+
+test("native storage recovers from the verified migration backup", async () => {
+  const api = loadNativeStorage();
+  const filesystem = new MemoryFilesystem();
+  const driver = createFileDriver(api, filesystem);
+
+  await driver.ensureMigrationBackup("stats", "recoverable-progress");
+  await driver.setItem("stats", "recoverable-progress");
+  filesystem.files.set(
+    "chakuchaku/learner-data/learning-stats-a.json",
+    "truncated"
+  );
+
+  const afterCorruption = createFileDriver(api, filesystem);
+
+  assert.equal(await afterCorruption.getItem("stats"), "recoverable-progress");
 });
 
 test("native migration preserves learner documents larger than the browser quota", async () => {
