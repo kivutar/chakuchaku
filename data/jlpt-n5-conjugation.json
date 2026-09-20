@@ -120,5 +120,6 @@
   { "vocabularyId": "vocab-c23e5bea4108", "class": "i-adjective" },
   { "vocabularyId": "vocab-04d486e7201c", "class": "i-adjective" },
   { "vocabularyId": "vocab-a5eb54903a68", "class": "ii-adjective" },
-  { "vocabularyId": "vocab-884e78e7d501", "class": "na-adjective" }
+  { "vocabularyId": "vocab-884e78e7d501", "class": "na-adjective" },
+  { "vocabularyId": "vocab-c79c9d356804", "class": "i-adjective" }
 ]

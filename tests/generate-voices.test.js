@@ -151,8 +151,8 @@ test("the curated conjugation voices cover every point without path collisions",
   ]);
   const items = createConjugationVoiceItems(vocabulary, curriculum);
 
-  assert.equal(items.length, 732);
-  assert.equal(new Set(items.map(({ audio }) => audio)).size, 732);
+  assert.equal(items.length, 738);
+  assert.equal(new Set(items.map(({ audio }) => audio)).size, 738);
   assert.equal(new Set(items.slice(0, 46).map(({ conjugationPointId }) => (
     conjugationPointId
   ))).size, 46);

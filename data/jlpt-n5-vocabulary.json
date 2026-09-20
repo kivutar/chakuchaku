@@ -8794,5 +8794,21 @@
     "scope": "supplemental",
     "source": "curated-beginner-vocabulary",
     "voiceSlug": "kami-hair"
+  },
+  {
+    "id": "vocab-c79c9d356804",
+    "term": "怖い",
+    "reading": "こわい",
+    "meaning": "scary, frightening; afraid",
+    "acceptedAnswers": [
+      "scary",
+      "frightening",
+      "afraid",
+      "frightened"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "feelings",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
   }
 ]

@@ -29154,6 +29154,49 @@
     ]
   },
   {
+    "vocabularyId": "vocab-c79c9d356804",
+    "text": "この映画は怖いです。",
+    "targetSurface": "怖い",
+    "targetReading": "こわい",
+    "targetTokenStart": 3,
+    "targetTokenEnd": 4,
+    "translation": "This movie is scary.",
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "映画",
+        "category": "noun",
+        "reading": "えいが",
+        "vocabularyId": "vocab-7b9d866e6dc2"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "怖い",
+        "category": "adjective",
+        "reading": "こわい",
+        "vocabularyId": "vocab-c79c9d356804"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

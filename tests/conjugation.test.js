@@ -184,12 +184,12 @@ test("the curated vocabulary supplies exercises for every point", async () => {
   const pool = createExercisePool(vocabulary, curriculum);
   const coveredPointIds = new Set(pool.map(({ conjugationPointId }) => conjugationPointId));
 
-  assert.equal(curriculum.length, 122);
-  assert.equal(new Set(curriculum.map(({ vocabularyId }) => vocabularyId)).size, 122);
-  assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "i-adjective").length, 59);
+  assert.equal(curriculum.length, 123);
+  assert.equal(new Set(curriculum.map(({ vocabularyId }) => vocabularyId)).size, 123);
+  assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "i-adjective").length, 60);
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "ii-adjective").length, 2);
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "na-adjective").length, 18);
-  assert.equal(pool.length, 732);
+  assert.equal(pool.length, 738);
   assert.deepEqual(coveredPointIds, new Set(points.map(({ id }) => id)));
   assert.ok(pool.every(({ section }) => section === "conjugation"));
   assert.ok(pool.every(({ meaning }) => typeof meaning === "string" && meaning));

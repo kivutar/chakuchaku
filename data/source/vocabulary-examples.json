@@ -5034,6 +5034,12 @@
     "translation": "I wash my hair."
   },
   {
+    "vocabularyId": "vocab-c79c9d356804",
+    "text": "この映画は怖いです。",
+    "targetSurface": "怖い",
+    "translation": "This movie is scary."
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

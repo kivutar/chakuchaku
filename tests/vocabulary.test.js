@@ -528,8 +528,8 @@ test("the vocabulary pool contains the complete curated inventory", async () => 
   ));
   const pool = createVocabularyPool(vocabulary);
 
-  assert.equal(pool.length, 839);
-  assert.equal(new Set(pool.map(({ vocabularyId }) => vocabularyId)).size, 839);
+  assert.equal(pool.length, 840);
+  assert.equal(new Set(pool.map(({ vocabularyId }) => vocabularyId)).size, 840);
   assert.equal(pool.some(({ term }) => term === "N"), false);
   assert.equal(pool.every(({ acceptedAnswersByLocale }) => {
     return acceptedAnswersByLocale.en.length > 0;
