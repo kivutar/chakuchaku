@@ -7,6 +7,9 @@ import { fileURLToPath } from "node:url";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
 const selectionCode = await readFile(join(rootDirectory, "exercise-selection.js"), "utf8");
+const curriculumExercises = JSON.parse(
+  await readFile(join(rootDirectory, "data", "exercises.json"), "utf8")
+);
 
 function loadSelectionApi() {
   const context = {};
@@ -36,8 +39,8 @@ function completedAttempt(exerciseId, grammarPointIds = ["point-a", "point-b"]) 
   };
 }
 
-function select(exerciseHistory, overrides = {}) {
-  return loadSelectionApi().selectExercisePool({
+function selectType(exerciseHistory, overrides = {}) {
+  return loadSelectionApi().selectExerciseTypePool({
     exercises,
     candidates: exercises,
     exerciseHistory,
@@ -45,9 +48,18 @@ function select(exerciseHistory, overrides = {}) {
   }).map(({ id }) => id);
 }
 
+function selectTarget(exerciseHistory, targetGrammarPointId, overrides = {}) {
+  return loadSelectionApi().selectTargetExercisePool({
+    candidates: exercises,
+    exerciseHistory,
+    targetGrammarPointId,
+    ...overrides
+  }).map(({ id }) => id);
+}
+
 test("ordinary exercise positions use recognition exercises", () => {
-  assert.deepEqual(select([]), ["recognition-a", "recognition-b"]);
-  assert.deepEqual(select([
+  assert.deepEqual(selectType([]), ["recognition-a", "recognition-b"]);
+  assert.deepEqual(selectType([
     completedAttempt("recognition-a"),
     completedAttempt("recognition-b")
   ]), ["recognition-a", "recognition-b"]);
@@ -67,22 +79,68 @@ test("recognition exercises introduce at most one new grammar point when possibl
     ]
   }];
 
-  assert.deepEqual(select(history, {
-    exercises: mixedExercises,
+  assert.deepEqual(selectTarget(history, "known-a", {
     candidates: mixedExercises
   }), ["known", "one-new"]);
 });
 
-test("recognition selection falls back to the fewest new points for a fresh learner", () => {
+test("target selection prefers the fewest new points for a fresh learner", () => {
   const freshExercises = [
-    { id: "two-new", grammarPointIds: ["new-a", "new-b"] },
-    { id: "three-new", grammarPointIds: ["new-c", "new-d", "new-e"] }
+    { id: "one-new", grammarPointIds: ["target"] },
+    { id: "two-new", grammarPointIds: ["target", "new-a"] }
   ];
 
-  assert.deepEqual(select([], {
-    exercises: freshExercises,
+  assert.deepEqual(selectTarget([], "target", {
     candidates: freshExercises
+  }), ["one-new"]);
+});
+
+test("target selection allows the smallest unavoidable bundle of new points", () => {
+  const bundledExercises = [
+    { id: "two-new", grammarPointIds: ["target", "new-a"] },
+    { id: "three-new", grammarPointIds: ["target", "new-b", "new-c"] }
+  ];
+
+  assert.deepEqual(selectTarget([], "target", {
+    candidates: bundledExercises
   }), ["two-new"]);
+});
+
+test("a point that only appears in a three-point bundle remains selectable", () => {
+  const bundledExercise = {
+    id: "verb-groups",
+    grammarPointIds: ["verb-groups", "ichidan-conjugation", "godan-conjugation"]
+  };
+
+  assert.deepEqual(selectTarget([], "verb-groups", {
+    candidates: [bundledExercise]
+  }), ["verb-groups"]);
+});
+
+test("the bundled verb-group curriculum points can all be introduced", () => {
+  const selectionApi = loadSelectionApi();
+  const recognitionPool = selectionApi.selectExerciseTypePool({
+    exercises: curriculumExercises,
+    candidates: curriculumExercises,
+    exerciseHistory: []
+  });
+
+  for (const targetGrammarPointId of [
+    "verb-groups",
+    "ichidan-conjugation",
+    "godan-conjugation"
+  ]) {
+    const targetPool = selectionApi.selectTargetExercisePool({
+      candidates: recognitionPool,
+      exerciseHistory: [],
+      targetGrammarPointId
+    });
+
+    assert.ok(
+      targetPool.length > 0,
+      `${targetGrammarPointId} should have a selectable introduction exercise`
+    );
+  }
 });
 
 test("every fifth completed exercise prefers an eligible production exercise", () => {
@@ -93,7 +151,7 @@ test("every fifth completed exercise prefers an eligible production exercise", (
     completedAttempt("recognition-b")
   ];
 
-  assert.deepEqual(select(history), ["production-a"]);
+  assert.deepEqual(selectType(history), ["production-a"]);
 });
 
 test("production cadence considers every ready grammar point before SRS targeting", () => {
@@ -108,7 +166,7 @@ test("production cadence considers every ready grammar point before SRS targetin
     completedAttempt("recognition-b")
   ];
 
-  assert.deepEqual(select(history, {
+  assert.deepEqual(selectType(history, {
     exercises: mixedExercises,
     candidates: mixedExercises
   }), ["production-a"]);
@@ -122,13 +180,13 @@ test("production falls back when any assessed grammar point lacks recognition", 
     completedAttempt("recognition-b", ["point-a"])
   ];
 
-  assert.deepEqual(select(history), ["recognition-a", "recognition-b"]);
+  assert.deepEqual(selectType(history), ["recognition-a", "recognition-b"]);
 });
 
 test("repeating one recognition sentence does not satisfy the threshold", () => {
   const repeatedAttempt = completedAttempt("recognition-a");
 
-  assert.deepEqual(select([
+  assert.deepEqual(selectType([
     repeatedAttempt,
     repeatedAttempt,
     repeatedAttempt,
@@ -139,7 +197,7 @@ test("repeating one recognition sentence does not satisfy the threshold", () => 
 test("unfinished attempts do not affect cadence or readiness", () => {
   const unfinishedAttempt = { exerciseId: "recognition-a", grammarRatings: [] };
 
-  assert.deepEqual(select([
+  assert.deepEqual(selectType([
     completedAttempt("recognition-a"),
     completedAttempt("recognition-b"),
     completedAttempt("recognition-a"),
@@ -148,5 +206,17 @@ test("unfinished attempts do not affect cadence or readiness", () => {
 });
 
 test("the forced production mode bypasses cadence and readiness", () => {
-  assert.deepEqual(select([], { forcedExerciseType: "production" }), ["production-a"]);
+  assert.deepEqual(selectType([], { forcedExerciseType: "production" }), ["production-a"]);
+});
+
+test("forced exercise modes also bypass the new-point limiter", () => {
+  const bundledExercise = {
+    id: "forced-bundle",
+    grammarPointIds: ["target", "new-a", "new-b"]
+  };
+
+  assert.deepEqual(selectTarget([], "target", {
+    candidates: [bundledExercise],
+    forcedExerciseType: "recognition"
+  }), ["forced-bundle"]);
 });

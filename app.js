@@ -2990,7 +2990,7 @@ async function pickNextExercise(requestedGrammarPointId) {
 
   const choices = targetedExercises.filter(({ id }) => id !== previousExerciseId);
   const availableExercises = choices.length > 0 ? choices : targetedExercises;
-  const selectedTypePool = globalThis.JlptN5ExerciseSelection.selectExercisePool({
+  const selectedTypePool = globalThis.JlptN5ExerciseSelection.selectExerciseTypePool({
     exercises,
     candidates: availableExercises,
     exerciseHistory,
@@ -3006,8 +3006,11 @@ async function pickNextExercise(requestedGrammarPointId) {
   ];
   const targetGrammarPointId = requestedGrammarPointId ||
     globalThis.JlptN5Srs.pickNextGrammarPoint(availableGrammarPointIds);
-  const exercisePool = selectedTypePool.filter(({ grammarPointIds }) => {
-    return grammarPointIds.includes(targetGrammarPointId);
+  const exercisePool = globalThis.JlptN5ExerciseSelection.selectTargetExercisePool({
+    candidates: selectedTypePool,
+    exerciseHistory,
+    targetGrammarPointId,
+    forcedExerciseType
   });
 
   if (exercisePool.length === 0) {

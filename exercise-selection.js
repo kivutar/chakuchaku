@@ -68,7 +68,7 @@
       .map(({ exercise }) => exercise);
   }
 
-  function selectExercisePool({
+  function selectExerciseTypePool({
     exercises,
     candidates,
     exerciseHistory,
@@ -87,7 +87,7 @@
     const shouldUseProduction = (completedExerciseCount + 1) % productionInterval === 0;
 
     if (!shouldUseProduction) {
-      return limitNewGrammarPoints(recognitionExercises, exerciseHistory);
+      return recognitionExercises;
     }
 
     const recognitionIndex = createRecognitionIndex(exercises, exerciseHistory);
@@ -100,15 +100,37 @@
       );
     });
 
-    return productionExercises.length > 0
-      ? productionExercises
-      : limitNewGrammarPoints(recognitionExercises, exerciseHistory);
+    return productionExercises.length > 0 ? productionExercises : recognitionExercises;
+  }
+
+  function selectTargetExercisePool({
+    candidates,
+    exerciseHistory,
+    targetGrammarPointId,
+    forcedExerciseType
+  }) {
+    const targetedExercises = candidates.filter(({ grammarPointIds }) => {
+      return grammarPointIds.includes(targetGrammarPointId);
+    });
+
+    if (
+      targetedExercises.length === 0 ||
+      forcedExerciseType ||
+      targetedExercises.every((exercise) => getExerciseType(exercise) === "production")
+    ) {
+      return targetedExercises;
+    }
+
+    // Limit introductions only after the SRS target is known. This keeps the
+    // one-new-point preference without hiding points that only occur together.
+    return limitNewGrammarPoints(targetedExercises, exerciseHistory);
   }
 
   global.JlptN5ExerciseSelection = Object.freeze({
     newGrammarPointLimit,
     productionInterval,
     recognitionThreshold,
-    selectExercisePool
+    selectExerciseTypePool,
+    selectTargetExercisePool
   });
 })(globalThis);
