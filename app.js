@@ -2786,9 +2786,15 @@ function prepareKanjiExercises(entriesById, kanjiEntriesById, kanjiContexts) {
     return kanjiExercisePool;
   }
 
+  const vocabulary = [...entriesById.values()];
+  const contextsWithAudio = globalThis.JlptN5Kanji.linkVocabularyAudio(
+    vocabulary,
+    kanjiContexts
+  );
+
   kanjiExercisePool = globalThis.JlptN5Kanji.createExercisePool(
     [...kanjiEntriesById.values()],
-    [...entriesById.values(), ...kanjiContexts]
+    [...vocabulary, ...contextsWithAudio]
   );
   const inventory = globalThis.JlptN5Kanji.getKanjiInventory(kanjiExercisePool);
   const activeStages = new Set(globalThis.JlptN5Kanji.activeStages);

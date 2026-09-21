@@ -52,6 +52,25 @@
     return Boolean(getSpecialReading(entry, reading));
   }
 
+  function linkVocabularyAudio(vocabulary, contexts) {
+    const audioByWord = new Map((Array.isArray(vocabulary) ? vocabulary : [])
+      .filter(({ term, reading, audio }) => {
+        return (
+          typeof term === "string" &&
+          typeof reading === "string" &&
+          typeof audio === "string" &&
+          audio
+        );
+      })
+      .map(({ term, reading, audio }) => [`${term}\u0000${reading}`, audio]));
+
+    return (Array.isArray(contexts) ? contexts : []).map((context) => {
+      const audio = audioByWord.get(`${context?.term}\u0000${context?.reading}`);
+
+      return audio ? { ...context, audio } : context;
+    });
+  }
+
   function createExercisePool(
     kanji,
     vocabulary,
@@ -413,6 +432,7 @@
     normalizeKanjiAnswer,
     getSpecialReading,
     isWholeWordReading,
+    linkVocabularyAudio,
     createExercisePool,
     getKanjiInventory,
     getNextDirection,

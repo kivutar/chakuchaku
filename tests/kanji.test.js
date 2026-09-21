@@ -5,6 +5,7 @@ import * as wanakana from "wanakana";
 
 globalThis.wanakana = wanakana;
 await import("../kanji.js");
+await import("../voice-paths.js");
 
 const {
   activeStages,
@@ -12,6 +13,7 @@ const {
   normalizeReading,
   normalizeKanjiAnswer,
   isWholeWordReading,
+  linkVocabularyAudio,
   createExercisePool,
   getKanjiInventory,
   getNextDirection,
@@ -23,6 +25,33 @@ const {
   createKanjiRating,
   createPositiveVocabularyRating
 } = globalThis.JlptN5Kanji;
+
+test("kanji-only contexts reuse audio from an exact vocabulary match", () => {
+  const contexts = [{
+    id: "kanji-context-omou",
+    term: "思う",
+    reading: "おもう"
+  }, {
+    id: "kanji-context-other-reading",
+    term: "思う",
+    reading: "おもい"
+  }, {
+    id: "kanji-context-unmatched",
+    term: "和室",
+    reading: "わしつ"
+  }];
+  const linked = linkVocabularyAudio([{
+    term: "思う",
+    reading: "おもう",
+    audio: "assets/voices/vocab/omou.m4a"
+  }], contexts);
+
+  assert.equal(linked[0].audio, "assets/voices/vocab/omou.m4a");
+  assert.equal(linked[1].audio, undefined);
+  assert.equal(linked[2].audio, undefined);
+  assert.equal(linked[1], contexts[1]);
+  assert.equal(linked[2], contexts[2]);
+});
 
 function createFixturePool() {
   return createExercisePool([
@@ -73,10 +102,15 @@ test("the complete kanji curriculum exposes all 209 characters through word cont
     readFile(new URL("../data/vocabulary-examples.json", import.meta.url), "utf8").then(JSON.parse)
   ]);
   const mnemonicsById = new Map(mnemonics.map((entry) => [entry.kanjiId, entry]));
+  const vocabularyWithAudio = vocabulary.map((entry) => ({
+    ...entry,
+    audio: globalThis.JlptN5VoicePaths.getVocabularyVoicePath(entry, wanakana)
+  }));
+  const contextsWithAudio = linkVocabularyAudio(vocabularyWithAudio, contexts);
   const pool = createExercisePool(kanji.map((entry) => ({
     ...entry,
     ...(mnemonicsById.has(entry.id) ? { mnemonic: mnemonicsById.get(entry.id) } : {})
-  })), [...vocabulary, ...contexts]);
+  })), [...vocabularyWithAudio, ...contextsWithAudio]);
   const inventory = getKanjiInventory(pool);
   const exampleIds = new Set(examples.map(({ vocabularyId }) => vocabularyId));
 
@@ -91,6 +125,14 @@ test("the complete kanji curriculum exposes all 209 characters through word cont
   assert.ok(pool.some(({ character, term }) => character === "資" && term === "資料"));
   assert.ok(pool.some(({ term, wholeWordReading }) => term === "明日" && wholeWordReading));
   assert.ok(pool.some(({ term, wholeWordReading }) => term === "明後日" && wholeWordReading));
+  assert.equal(
+    pool.find(({ kanjiContextId }) => kanjiContextId === "kanji-context-omou").audio,
+    "assets/voices/vocab/omou.m4a"
+  );
+  assert.equal(
+    pool.find(({ kanjiContextId }) => kanjiContextId === "kanji-context-hitsuyou").audio,
+    "assets/voices/vocab/hitsuyou.m4a"
+  );
   assert.ok(pool.every(({ vocabularyId, kanjiContextId }) => {
     return exampleIds.has(vocabularyId || kanjiContextId);
   }));
