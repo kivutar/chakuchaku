@@ -58,7 +58,7 @@ included.
 
 ## JLPT N5 conjugation curriculum
 
-`jlpt-n5-conjugation.json` assigns 43 verbs and 79 adjectives from the shared
+`jlpt-n5-conjugation.json` assigns 48 verbs and 80 adjectives from the shared
 vocabulary inventory to an inflection class. Verbs use godan, ichidan, `する`,
 or `来る`, with the `行く` て-form exception. Adjectives use regular い,
 irregular `いい` (including compounds), or な. `いかが` is not treated as an
@@ -66,12 +66,12 @@ inflecting adjective, while `ない` is omitted because requesting its negative
 would create an unnatural double-negative drill.
 
 The browser combines these entries with the rules in `conjugation.js`, producing
-exercises for 46 stable SRS points rather than one card per word-and-form pair:
-29 verb rules, including four class-specific polite volitional rules, and 17
-adjective rules, including regular and irregular adverbial transformations. The
-affirmative `いいです` shares the regular `～いです` point. The list remains
-deliberately limited to beginner forms; compound grammar such as `～てくれる`
-stays in Grammar for now.
+exercises for 76 stable SRS points rather than one card per word-and-form pair:
+50 verb rules, including plain forms, `～ば`, and four class-specific polite
+volitional rules, and 26 adjective rules, including plain, regular, irregular,
+and adverbial transformations. The affirmative `いいです` shares the regular
+`～いです` point. The list remains deliberately limited to beginner forms;
+compound grammar such as `～てくれる` stays in Grammar for now.
 
 ## JLPT N5 vocabulary inventory
 
@@ -81,7 +81,7 @@ publishing vocabulary, kanji, and grammar specifications after the 2010 revision
 because the test is intended to measure communicative use rather than memorized
 lists.
 
-The inventory currently contains 857 entries:
+The inventory currently contains 867 entries:
 
 - 718 `core` entries adapted from the MIT-licensed Open Anki JLPT N5 deck at
   commit `1ad66734417aca9dbcca6b2d5ee440cb13ab3ba0`.
@@ -89,10 +89,11 @@ The inventory currently contains 857 entries:
   vocabulary specification: `グラス`, `コピー`, and `スリッパ`.
 - 1 contextual core entry, `田んぼ`, added to give the initial Kanji curriculum
   a natural complete-word exercise for `田`.
-- 135 `supplemental` entries: 42 recognizable and motivating beginner words,
+- 145 `supplemental` entries: 42 recognizable and motivating beginner words,
   29 words needed by the current lessons, 37 words curated for practical
   Katakana coverage, 13 essential A1 expressions and everyday words, and 14
-  useful words promoted from the Kanji exercise contexts. These
+  useful words promoted from the Kanji exercise contexts, plus 10 practical
+  gaps identified through mock-test review. These
   include `ラーメン`, `寿司`, `アニメ`, `漫画`, greetings, food, travel, culture,
   modern technology, and everyday loanwords.
 

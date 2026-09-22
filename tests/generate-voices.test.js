@@ -131,10 +131,10 @@ test("conjugation voice items and requests use the actual inflected reading", ()
   const past = items.find(({ answerSurface }) => answerSurface === "会いました");
   const request = createConjugationSpeechRequest(past);
 
-  assert.equal(items.length, 12);
+  assert.equal(items.length, 19);
   assert.equal(new Set(items.map(({ audio }) => audio)).size, items.length);
   assert.equal(items[0].answerSurface, "会います");
-  assert.equal(items[6].answerSurface, "高いです");
+  assert.equal(items[10].answerSurface, "高いです");
   assert.equal(past.audio, "assets/voices/conjugation/aimashita-au-meet.m4a");
   assert.equal(request.spokenText, "あいました");
   assert.deepEqual(JSON.parse(request.messages[1].content), {
@@ -158,11 +158,11 @@ test("the curated conjugation voices cover every point without path collisions",
   ]);
   const items = createConjugationVoiceItems(vocabulary, curriculum);
 
-  assert.equal(items.length, 738);
-  assert.equal(new Set(items.map(({ audio }) => audio)).size, 738);
-  assert.equal(new Set(items.slice(0, 46).map(({ conjugationPointId }) => (
+  assert.equal(items.length, 1200);
+  assert.equal(new Set(items.map(({ audio }) => audio)).size, 1200);
+  assert.equal(new Set(items.map(({ conjugationPointId }) => (
     conjugationPointId
-  ))).size, 46);
+  ))).size, 76);
 });
 
 test("voice generation rejects unsafe limits and unknown options", () => {

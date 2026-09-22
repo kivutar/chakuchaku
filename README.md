@@ -48,10 +48,10 @@ reading-to-missing-character directions. All 209 characters in the B6-B4
 curriculum are active, have their own FSRS cards, and reveal original visual
 meaning and reading mnemonics in English or French. Kanji-only example words
 fill the few gaps in the N5 vocabulary inventory without entering its SRS.
-Conjugation exercises reuse 43 beginner verbs and 79 adjectives across 46
-independently scheduled rules: four polite forms for each verb or adjective
-class, polite volitional verbs, beginner て-forms, adjective adverbial forms,
-and the `行く` and `いい` exceptions.
+Conjugation exercises reuse 48 beginner verbs and 80 adjectives across 76
+independently scheduled rules: polite and plain forms, the `～ば` conditional,
+polite volitional verbs, beginner て-forms, adjective adverbial forms, and the
+`行く` and `いい` exceptions.
 Answers accept Japanese writing, hiragana, or rōmaji and are graded locally.
 A single top menu switches study sections and provides settings, SRS progress
 statistics, exercise history, and a project link.
@@ -348,10 +348,11 @@ The Conjugation section asks for one inflected form of a complete N5 verb or
 adjective. Its verb curriculum contains the four common polite forms (`～ます`,
 `～ました`, `～ません`, and `～ませんでした`) for godan, ichidan, `する`,
 and `来る` verbs, plus every regular て-form sound-change family and irregular
-`行く`, plus polite volitional `～ましょう`. Adjectives in い and な use the
-corresponding four polite forms, their `～くて` / `～で` connective forms, and
-their `～く` / `～に` adverbial forms, with the irregular `いい → よ…`
-transformations tracked separately.
+`行く`, plus polite volitional `～ましょう`. It also drills the plain negative,
+plain past, plain past-negative, and `～ば` conditional forms. Adjectives in い
+and な use the corresponding polite forms, plain past and negative forms, their
+`～くて` / `～で` connective forms, and their `～く` / `～に` adverbial forms,
+with the irregular `いい → よ…` transformations tracked separately.
 
 Progress belongs to the reusable rule, not the particular verb. For example,
 correctly forming either `飲んで` or `遊んで` reviews the same

@@ -7,6 +7,10 @@
     politeNegative: "polite-negative",
     politePastNegative: "polite-past-negative",
     politeVolitional: "polite-volitional",
+    plainPast: "plain-past",
+    plainNegative: "plain-negative",
+    plainPastNegative: "plain-past-negative",
+    conditionalBa: "conditional-ba",
     adverbial: "adverbial",
     te: "te-form"
   });
@@ -39,6 +43,28 @@
     "む": "み",
     "る": "り"
   });
+  const godanAEndings = Object.freeze({
+    "う": "わ",
+    "く": "か",
+    "ぐ": "が",
+    "す": "さ",
+    "つ": "た",
+    "ぬ": "な",
+    "ぶ": "ば",
+    "む": "ま",
+    "る": "ら"
+  });
+  const godanEEndings = Object.freeze({
+    "う": "え",
+    "く": "け",
+    "ぐ": "げ",
+    "す": "せ",
+    "つ": "て",
+    "ぬ": "ね",
+    "ぶ": "べ",
+    "む": "め",
+    "る": "れ"
+  });
   const teEndings = Object.freeze({
     "う": { suffix: "って", group: "godan-u-tsu-ru" },
     "つ": { suffix: "って", group: "godan-u-tsu-ru" },
@@ -62,7 +88,23 @@
     forms.politeNegative,
     forms.politePastNegative
   ];
-  const adjectiveForms = [...politeForms, forms.te, forms.adverbial];
+  const verbPlainForms = [
+    forms.plainPast,
+    forms.plainNegative,
+    forms.plainPastNegative,
+    forms.conditionalBa
+  ];
+  const adjectivePlainForms = [
+    forms.plainPast,
+    forms.plainNegative,
+    forms.plainPastNegative
+  ];
+  const adjectiveForms = [
+    ...politeForms,
+    ...adjectivePlainForms,
+    forms.te,
+    forms.adverbial
+  ];
   const adjectivePointForms = Object.freeze({
     [adjectiveClasses.i]: adjectiveForms,
     [adjectiveClasses.ii]: adjectiveForms.filter((form) => form !== forms.politePresent),
@@ -89,21 +131,51 @@
     "suru-te-form": "する → して",
     "kuru-te-form": "来る → 来て",
     "iku-te-form": "行く → 行って",
+    "godan-u-tsu-ru-plain-past": "～う・つ・る → ～った",
+    "godan-mu-bu-nu-plain-past": "～む・ぶ・ぬ → ～んだ",
+    "godan-ku-plain-past": "～く → ～いた",
+    "godan-gu-plain-past": "～ぐ → ～いだ",
+    "godan-su-plain-past": "～す → ～した",
+    "ichidan-plain-past": "～る → ～た",
+    "suru-plain-past": "する → した",
+    "kuru-plain-past": "来る → 来た",
+    "iku-plain-past": "行く → 行った",
+    "godan-plain-negative": "う段 → あ段 + ない",
+    "ichidan-plain-negative": "～る → ～ない",
+    "suru-plain-negative": "する → しない",
+    "kuru-plain-negative": "来る → 来ない",
+    "godan-plain-past-negative": "う段 → あ段 + なかった",
+    "ichidan-plain-past-negative": "～る → ～なかった",
+    "suru-plain-past-negative": "する → しなかった",
+    "kuru-plain-past-negative": "来る → 来なかった",
+    "godan-conditional-ba": "う段 → え段 + ば",
+    "ichidan-conditional-ba": "～る → ～れば",
+    "suru-conditional-ba": "する → すれば",
+    "kuru-conditional-ba": "来る → 来れば",
     "i-adjective-polite-present": "～い → ～いです",
     "i-adjective-polite-past": "～い → ～かったです",
     "i-adjective-polite-negative": "～い → ～くないです",
     "i-adjective-polite-past-negative": "～い → ～くなかったです",
+    "i-adjective-plain-past": "～い → ～かった",
+    "i-adjective-plain-negative": "～い → ～くない",
+    "i-adjective-plain-past-negative": "～い → ～くなかった",
     "i-adjective-te-form": "～い → ～くて",
     "i-adjective-adverbial": "～い → ～く",
     "ii-adjective-polite-past": "いい → よかったです",
     "ii-adjective-polite-negative": "いい → よくないです",
     "ii-adjective-polite-past-negative": "いい → よくなかったです",
+    "ii-adjective-plain-past": "いい → よかった",
+    "ii-adjective-plain-negative": "いい → よくない",
+    "ii-adjective-plain-past-negative": "いい → よくなかった",
     "ii-adjective-te-form": "いい → よくて",
     "ii-adjective-adverbial": "いい → よく",
     "na-adjective-polite-present": "～（な） → ～です",
     "na-adjective-polite-past": "～（な） → ～でした",
     "na-adjective-polite-negative": "～（な） → ～ではありません",
     "na-adjective-polite-past-negative": "～（な） → ～ではありませんでした",
+    "na-adjective-plain-past": "～（な） → ～だった",
+    "na-adjective-plain-negative": "～（な） → ～ではない",
+    "na-adjective-plain-past-negative": "～（な） → ～ではなかった",
     "na-adjective-te-form": "～（な） → ～で",
     "na-adjective-adverbial": "～（な） → ～に"
   });
@@ -149,6 +221,14 @@
     }),
     ...politeClasses.map((verbClass) => createPoint(verbClass, forms.politeVolitional)),
     ...teGroups.map((group) => createPoint(group, forms.te)),
+    ...teGroups.map((group) => createPoint(group, forms.plainPast)),
+    ...politeClasses.flatMap((verbClass) => {
+      return [
+        forms.plainNegative,
+        forms.plainPastNegative,
+        forms.conditionalBa
+      ].map((form) => createPoint(verbClass, form));
+    }),
     ...Object.entries(adjectivePointForms).flatMap(([adjectiveClass, adjectiveForms]) => {
       return adjectiveForms.map((form) => createPoint(adjectiveClass, form));
     })
@@ -225,8 +305,68 @@
     throw new TypeError(`Unsupported verb class: ${verb.class}`);
   }
 
+  function createPlainPast(value, verb) {
+    return createTeForm(value, verb)
+      .replace(/て$/u, "た")
+      .replace(/で$/u, "だ");
+  }
+
+  function createPlainNegative(value, verb, past = false) {
+    const suffix = past ? "なかった" : "ない";
+
+    if (verb.class === verbClasses.godan) {
+      const replacement = godanAEndings[verb.reading.at(-1)];
+
+      if (!replacement) {
+        throw new TypeError(`Unsupported godan ending: ${verb.reading.at(-1)}`);
+      }
+
+      return `${replaceEnding(value, 1, replacement)}${suffix}`;
+    }
+
+    if (verb.class === verbClasses.ichidan) {
+      return `${replaceEnding(value, 1, "")}${suffix}`;
+    }
+
+    if (verb.class === verbClasses.suru) {
+      return `${replaceEnding(value, 2, "し")}${suffix}`;
+    }
+
+    if (verb.class === verbClasses.kuru) {
+      return `${value === "来る" ? "来" : "こ"}${suffix}`;
+    }
+
+    throw new TypeError(`Unsupported verb class: ${verb.class}`);
+  }
+
+  function createConditionalBa(value, verb) {
+    if (verb.class === verbClasses.godan) {
+      const replacement = godanEEndings[verb.reading.at(-1)];
+
+      if (!replacement) {
+        throw new TypeError(`Unsupported godan ending: ${verb.reading.at(-1)}`);
+      }
+
+      return `${replaceEnding(value, 1, replacement)}ば`;
+    }
+
+    if (verb.class === verbClasses.ichidan) {
+      return `${replaceEnding(value, 1, "")}れば`;
+    }
+
+    if (verb.class === verbClasses.suru) {
+      return `${replaceEnding(value, 2, "")}すれば`;
+    }
+
+    if (verb.class === verbClasses.kuru) {
+      return value === "来る" ? "来れば" : "くれば";
+    }
+
+    throw new TypeError(`Unsupported verb class: ${verb.class}`);
+  }
+
   function getPointIdForVerb(verb, form) {
-    if (form !== forms.te) {
+    if (![forms.te, forms.plainPast].includes(form)) {
       return createPointId(verb.class, form);
     }
 
@@ -259,6 +399,29 @@
       };
     }
 
+    if (form === forms.plainPast) {
+      return {
+        surface: createPlainPast(verb.term, verb),
+        reading: createPlainPast(verb.reading, verb)
+      };
+    }
+
+    if ([forms.plainNegative, forms.plainPastNegative].includes(form)) {
+      const past = form === forms.plainPastNegative;
+
+      return {
+        surface: createPlainNegative(verb.term, verb, past),
+        reading: createPlainNegative(verb.reading, verb, past)
+      };
+    }
+
+    if (form === forms.conditionalBa) {
+      return {
+        surface: createConditionalBa(verb.term, verb),
+        reading: createConditionalBa(verb.reading, verb)
+      };
+    }
+
     const suffix = politeSuffixes[form];
 
     if (!suffix) {
@@ -280,6 +443,9 @@
         [forms.politePastNegative]: useAlternativeNegative
           ? "じゃありませんでした"
           : "ではありませんでした",
+        [forms.plainPast]: "だった",
+        [forms.plainNegative]: useAlternativeNegative ? "じゃない" : "ではない",
+        [forms.plainPastNegative]: useAlternativeNegative ? "じゃなかった" : "ではなかった",
         [forms.te]: "で",
         [forms.adverbial]: "に"
       }[form];
@@ -314,6 +480,9 @@
       [forms.politePastNegative]: useAlternativeNegative
         ? "くありませんでした"
         : "くなかったです",
+      [forms.plainPast]: "かった",
+      [forms.plainNegative]: "くない",
+      [forms.plainPastNegative]: "くなかった",
       [forms.te]: "くて",
       [forms.adverbial]: "く"
     }[form];
@@ -343,13 +512,24 @@
   function createAdjectiveAlternatives(adjective, form) {
     const alternatives = [];
 
-    if ([forms.politeNegative, forms.politePastNegative].includes(form)) {
+    const hasAlternativeNegative = [
+      forms.politeNegative,
+      forms.politePastNegative
+    ].includes(form) || (
+      adjective.class === adjectiveClasses.na &&
+      [forms.plainNegative, forms.plainPastNegative].includes(form)
+    );
+
+    if (hasAlternativeNegative) {
       alternatives.push({
         surface: conjugateAdjectiveValue(adjective.term, adjective.class, form, true),
         reading: conjugateAdjectiveValue(adjective.reading, adjective.class, form, true)
       });
 
-      if (adjective.class === adjectiveClasses.na) {
+      if (
+        adjective.class === adjectiveClasses.na &&
+        [forms.politeNegative, forms.politePastNegative].includes(form)
+      ) {
         const plainPoliteSuffixes = form === forms.politeNegative
           ? ["ではないです", "じゃないです"]
           : ["ではなかったです", "じゃなかったです"];
@@ -416,7 +596,7 @@
         teException: curriculumEntry.teException
       };
       const itemForms = isVerb
-        ? [...politeForms, forms.politeVolitional, forms.te]
+        ? [...politeForms, forms.politeVolitional, ...verbPlainForms, forms.te]
         : adjectiveForms;
 
       return itemForms.map((form) => {
@@ -466,10 +646,13 @@
     const compact = String(value || "")
       .normalize("NFKC")
       .replace(/[\s~～・･、。！？!?]+/gu, "");
+    const resolvedConverter = getConverter(converter);
 
     return {
       surface: compact,
-      reading: getConverter(converter).toHiragana(compact)
+      reading: resolvedConverter.toHiragana(compact),
+      romaji: resolvedConverter.toRomaji(compact).toLowerCase(),
+      isRomaji: /^[a-zāīūēō'’-]+$/iu.test(compact)
     };
   }
 
@@ -481,7 +664,9 @@
       ...(Array.isArray(exercise.acceptedAnswers) ? exercise.acceptedAnswers : [])
     ].map((candidate) => normalizeJapanese(candidate, converter));
     const correct = acceptedAnswers.some((candidate) => {
-      return normalized.surface === candidate.surface || normalized.reading === candidate.reading;
+      return normalized.surface === candidate.surface ||
+        normalized.reading === candidate.reading ||
+        (normalized.isRomaji && normalized.romaji === candidate.romaji);
     });
 
     return {

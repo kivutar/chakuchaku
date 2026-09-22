@@ -21,9 +21,9 @@ function verb(term, reading, verbClass, teException) {
   return { term, reading, class: verbClass, teException };
 }
 
-test("the initial curriculum exposes 46 reusable conjugation points", () => {
-  assert.equal(points.length, 46);
-  assert.equal(new Set(points.map(({ id }) => id)).size, 46);
+test("the curriculum exposes 76 reusable conjugation points", () => {
+  assert.equal(points.length, 76);
+  assert.equal(new Set(points.map(({ id }) => id)).size, 76);
   assert.ok(points.some(({ id }) => id === "ichidan-polite-past"));
   assert.ok(points.some(({ id }) => id === "godan-polite-volitional"));
   assert.ok(points.some(({ id }) => id === "ichidan-polite-volitional"));
@@ -31,6 +31,11 @@ test("the initial curriculum exposes 46 reusable conjugation points", () => {
   assert.ok(points.some(({ id }) => id === "kuru-polite-volitional"));
   assert.ok(points.some(({ id }) => id === "godan-u-tsu-ru-te-form"));
   assert.ok(points.some(({ id }) => id === "iku-te-form"));
+  assert.ok(points.some(({ id }) => id === "godan-u-tsu-ru-plain-past"));
+  assert.ok(points.some(({ id }) => id === "iku-plain-past"));
+  assert.ok(points.some(({ id }) => id === "godan-plain-negative"));
+  assert.ok(points.some(({ id }) => id === "kuru-plain-past-negative"));
+  assert.ok(points.some(({ id }) => id === "ichidan-conditional-ba"));
   assert.ok(points.some(({ id }) => id === "i-adjective-polite-past"));
   assert.ok(points.some(({ id }) => id === "na-adjective-polite-negative"));
   assert.ok(points.some(({ id }) => id === "ii-adjective-polite-past"));
@@ -40,6 +45,9 @@ test("the initial curriculum exposes 46 reusable conjugation points", () => {
   assert.ok(points.some(({ id }) => id === "i-adjective-adverbial"));
   assert.ok(points.some(({ id }) => id === "ii-adjective-adverbial"));
   assert.ok(points.some(({ id }) => id === "na-adjective-adverbial"));
+  assert.ok(points.some(({ id }) => id === "i-adjective-plain-past-negative"));
+  assert.ok(points.some(({ id }) => id === "ii-adjective-plain-negative"));
+  assert.ok(points.some(({ id }) => id === "na-adjective-plain-past"));
   assert.ok(!points.some(({ id }) => id === "ii-adjective-polite-present"));
 });
 
@@ -74,6 +82,21 @@ test("い, な, and irregular いい adjectives use their beginner polite forms"
       verb("いい", "いい", "ii-adjective"),
       forms.politePast,
       { surface: "よかったです", reading: "よかったです" }
+    ],
+    [
+      verb("暑い", "あつい", "i-adjective"),
+      forms.plainPastNegative,
+      { surface: "暑くなかった", reading: "あつくなかった" }
+    ],
+    [
+      verb("いい", "いい", "ii-adjective"),
+      forms.plainNegative,
+      { surface: "よくない", reading: "よくない" }
+    ],
+    [
+      verb("静か", "しずか", "na-adjective"),
+      forms.plainPast,
+      { surface: "静かだった", reading: "しずかだった" }
     ],
     [
       verb("高い", "たかい", "i-adjective"),
@@ -176,6 +199,73 @@ test("te-forms cover every godan sound change and the core irregulars", () => {
   }
 });
 
+test("plain past follows the て-form sound families", () => {
+  const cases = [
+    [verb("買う", "かう", "godan"), "買った", "かった", "godan-u-tsu-ru-plain-past"],
+    [verb("飲む", "のむ", "godan"), "飲んだ", "のんだ", "godan-mu-bu-nu-plain-past"],
+    [verb("書く", "かく", "godan"), "書いた", "かいた", "godan-ku-plain-past"],
+    [verb("泳ぐ", "およぐ", "godan"), "泳いだ", "およいだ", "godan-gu-plain-past"],
+    [verb("話す", "はなす", "godan"), "話した", "はなした", "godan-su-plain-past"],
+    [verb("食べる", "たべる", "ichidan"), "食べた", "たべた", "ichidan-plain-past"],
+    [verb("する", "する", "suru"), "した", "した", "suru-plain-past"],
+    [verb("来る", "くる", "kuru"), "来た", "きた", "kuru-plain-past"],
+    [verb("行く", "いく", "godan", "iku"), "行った", "いった", "iku-plain-past"]
+  ];
+
+  for (const [entry, surface, reading, pointId] of cases) {
+    assert.deepEqual(conjugateVerb(entry, forms.plainPast), { surface, reading });
+    assert.equal(getPointIdForVerb(entry, forms.plainPast), pointId);
+  }
+});
+
+test("plain negatives and ～ば cover every godan ending", () => {
+  const cases = [
+    ["会う", "あう", "会わない", "あわない", "会わなかった", "あわなかった", "会えば", "あえば"],
+    ["書く", "かく", "書かない", "かかない", "書かなかった", "かかなかった", "書けば", "かけば"],
+    ["泳ぐ", "およぐ", "泳がない", "およがない", "泳がなかった", "およがなかった", "泳げば", "およげば"],
+    ["話す", "はなす", "話さない", "はなさない", "話さなかった", "はなさなかった", "話せば", "はなせば"],
+    ["待つ", "まつ", "待たない", "またない", "待たなかった", "またなかった", "待てば", "まてば"],
+    ["死ぬ", "しぬ", "死なない", "しなない", "死ななかった", "しななかった", "死ねば", "しねば"],
+    ["遊ぶ", "あそぶ", "遊ばない", "あそばない", "遊ばなかった", "あそばなかった", "遊べば", "あそべば"],
+    ["飲む", "のむ", "飲まない", "のまない", "飲まなかった", "のまなかった", "飲めば", "のめば"],
+    ["乗る", "のる", "乗らない", "のらない", "乗らなかった", "のらなかった", "乗れば", "のれば"]
+  ];
+
+  for (const [term, reading, negative, negativeReading, pastNegative,
+    pastNegativeReading, conditional, conditionalReading] of cases) {
+    const entry = verb(term, reading, "godan");
+
+    assert.deepEqual(conjugateVerb(entry, forms.plainNegative), {
+      surface: negative,
+      reading: negativeReading
+    });
+    assert.deepEqual(conjugateVerb(entry, forms.plainPastNegative), {
+      surface: pastNegative,
+      reading: pastNegativeReading
+    });
+    assert.deepEqual(conjugateVerb(entry, forms.conditionalBa), {
+      surface: conditional,
+      reading: conditionalReading
+    });
+  }
+});
+
+test("plain negatives and ～ば preserve the ichidan and irregular classes", () => {
+  const cases = [
+    [verb("食べる", "たべる", "ichidan"), forms.plainPastNegative, "食べなかった", "たべなかった"],
+    [verb("勉強する", "べんきょうする", "suru"), forms.plainNegative, "勉強しない", "べんきょうしない"],
+    [verb("来る", "くる", "kuru"), forms.plainPastNegative, "来なかった", "こなかった"],
+    [verb("見る", "みる", "ichidan"), forms.conditionalBa, "見れば", "みれば"],
+    [verb("する", "する", "suru"), forms.conditionalBa, "すれば", "すれば"],
+    [verb("来る", "くる", "kuru"), forms.conditionalBa, "来れば", "くれば"]
+  ];
+
+  for (const [entry, form, surface, reading] of cases) {
+    assert.deepEqual(conjugateVerb(entry, form), { surface, reading });
+    assert.equal(getPointIdForVerb(entry, form), `${entry.class}-${form}`);
+  }
+});
+
 test("the curated vocabulary supplies exercises for every point", async () => {
   const [vocabulary, curriculum] = await Promise.all([
     readFile(new URL("../data/jlpt-n5-vocabulary.json", import.meta.url), "utf8").then(JSON.parse),
@@ -184,12 +274,12 @@ test("the curated vocabulary supplies exercises for every point", async () => {
   const pool = createExercisePool(vocabulary, curriculum);
   const coveredPointIds = new Set(pool.map(({ conjugationPointId }) => conjugationPointId));
 
-  assert.equal(curriculum.length, 123);
-  assert.equal(new Set(curriculum.map(({ vocabularyId }) => vocabularyId)).size, 123);
+  assert.equal(curriculum.length, 128);
+  assert.equal(new Set(curriculum.map(({ vocabularyId }) => vocabularyId)).size, 128);
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "i-adjective").length, 60);
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "ii-adjective").length, 2);
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "na-adjective").length, 18);
-  assert.equal(pool.length, 738);
+  assert.equal(pool.length, 1200);
   assert.deepEqual(coveredPointIds, new Set(points.map(({ id }) => id)));
   assert.ok(pool.every(({ section }) => section === "conjugation"));
   assert.ok(pool.every(({ meaning }) => typeof meaning === "string" && meaning));
@@ -242,6 +332,15 @@ test("grading accepts the written form, kana, and converted romaji", () => {
     conjugationPointId: "godan-u-tsu-ru-te-form",
     outcome: "again"
   }]);
+
+  const tidyPolite = {
+    answerSurface: "片付けます",
+    answerReading: "かたづけます",
+    conjugationPointIds: ["ichidan-polite-present"]
+  };
+
+  assert.equal(gradeAnswer(tidyPolite, "katazukemasu", wanakana).correct, true);
+  assert.equal(gradeAnswer(tidyPolite, "かたずけます", wanakana).correct, false);
 });
 
 test("selection targets the scheduled point without immediately repeating an exercise", () => {
