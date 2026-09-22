@@ -6108,5 +6108,34 @@
         ]
       }
     ]
+  },
+  "brother-probably-home-early-plain": {
+    "translation": "Mon grand frère rentrera probablement tôt aujourd'hui."
+  },
+  "tomorrows-test-probably-difficult-plain": {
+    "translation": "Le test de demain sera probablement difficile."
+  },
+  "production-rain-probable-day-after-tomorrow-plain": {
+    "translation": "Il pleuvra probablement après-demain.",
+    "promptVocabularyHints": [
+      {
+        "word": "probablement",
+        "vocabularyIds": [
+          "vocab-25611a347757"
+        ]
+      },
+      {
+        "word": "pleuvra",
+        "vocabularyIds": [
+          "vocab-7e87850c448d"
+        ]
+      },
+      {
+        "word": "après-demain",
+        "vocabularyIds": [
+          "vocab-3a318cc61aa9"
+        ]
+      }
+    ]
   }
 }

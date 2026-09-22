@@ -1957,7 +1957,8 @@
     "grammarPointIds": [
       "soshite-connector",
       "i-adjective-adverb",
-      "naru-change"
+      "naru-change",
+      "naru-ku-change"
     ]
   },
   {
@@ -5628,7 +5629,7 @@
     "solution": "My older brother said, 'I will be late today.'",
     "grammarPointIds": [
       "tte-casual-quotation",
-      "naru-change",
+      "naru-ku-change",
       "i-adjective-adverb",
       "verb-mashita"
     ]
@@ -5758,7 +5759,7 @@
     "grammarPointIds": [
       "i-adjective-past",
       "ga-contrast",
-      "naru-change",
+      "naru-ku-change",
       "wa-contrast"
     ]
   },
@@ -6247,7 +6248,8 @@
     "grammarPointIds": [
       "soshite-connector",
       "i-adjective-adverb",
-      "naru-change"
+      "naru-change",
+      "naru-ku-change"
     ]
   },
   {
@@ -10574,6 +10576,52 @@
       "dore-dono",
       "suki-kirai",
       "ka-question"
+    ]
+  },
+  {
+    "id": "brother-probably-home-early-plain",
+    "text": "兄は今日早く帰るだろう。",
+    "solution": "My older brother will probably come home early today.",
+    "grammarPointIds": [
+      "darou",
+      "wa-topic",
+      "i-adjective-adverb",
+      "verb-dictionary-nonpast",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "tomorrows-test-probably-difficult-plain",
+    "text": "明日のテストは難しいだろう。",
+    "solution": "Tomorrow's test will probably be difficult.",
+    "grammarPointIds": [
+      "darou",
+      "wa-topic",
+      "i-adjective-predicate"
+    ]
+  },
+  {
+    "id": "production-rain-probable-day-after-tomorrow-plain",
+    "text": "It will probably rain the day after tomorrow.",
+    "solution": "明後日は多分雨だろう。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "probably",
+        "vocabularyIds": ["vocab-25611a347757"]
+      },
+      {
+        "word": "rain",
+        "vocabularyIds": ["vocab-7e87850c448d"]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": ["vocab-3a318cc61aa9"]
+      }
+    ],
+    "grammarPointIds": [
+      "darou",
+      "clock-calendar-time"
     ]
   }
 ]

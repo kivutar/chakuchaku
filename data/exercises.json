@@ -15313,7 +15313,8 @@
     "grammarPointIds": [
       "soshite-connector",
       "i-adjective-adverb",
-      "naru-change"
+      "naru-change",
+      "naru-ku-change"
     ],
     "grammarHighlights": [
       {
@@ -51832,7 +51833,7 @@
     "solution": "My older brother said, 'I will be late today.'",
     "grammarPointIds": [
       "tte-casual-quotation",
-      "naru-change",
+      "naru-ku-change",
       "i-adjective-adverb",
       "verb-mashita"
     ],
@@ -53153,7 +53154,7 @@
     "grammarPointIds": [
       "i-adjective-past",
       "ga-contrast",
-      "naru-change",
+      "naru-ku-change",
       "wa-contrast"
     ],
     "grammarHighlights": [
@@ -55668,7 +55669,8 @@
     "grammarPointIds": [
       "soshite-connector",
       "i-adjective-adverb",
-      "naru-change"
+      "naru-change",
+      "naru-ku-change"
     ],
     "grammarHighlights": [
       {
@@ -76251,6 +76253,255 @@
       {
         "grammarPointId": "ka-question",
         "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "brother-probably-home-early-plain",
+    "text": "兄は今日早く帰るだろう。",
+    "audio": "assets/voices/grammar/brother-probably-home-early-plain.m4a",
+    "vocabularyIds": [
+      "vocab-cda9169e9fa2",
+      "vocab-6b9362de88a7",
+      "vocab-72460e05df01",
+      "vocab-944f21154c78"
+    ],
+    "kanjiIds": [
+      "kanji-5144",
+      "kanji-4eca",
+      "kanji-65e5",
+      "kanji-65e9",
+      "kanji-5e30"
+    ],
+    "tokens": [
+      {
+        "surface": "兄",
+        "category": "noun",
+        "reading": "あに",
+        "vocabularyId": "vocab-cda9169e9fa2"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "今日",
+        "category": "noun",
+        "reading": "きょう",
+        "vocabularyId": "vocab-6b9362de88a7"
+      },
+      {
+        "surface": "早く",
+        "category": "adjective",
+        "reading": "はやく",
+        "vocabularyId": "vocab-72460e05df01"
+      },
+      {
+        "surface": "帰る",
+        "category": "verb",
+        "reading": "かえる",
+        "vocabularyId": "vocab-944f21154c78"
+      },
+      {
+        "surface": "だろ",
+        "category": "auxiliary",
+        "reading": "だろ"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "My older brother will probably come home early today.",
+    "grammarPointIds": [
+      "darou",
+      "wa-topic",
+      "i-adjective-adverb",
+      "verb-dictionary-nonpast",
+      "clock-calendar-time"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "darou",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "tomorrows-test-probably-difficult-plain",
+    "text": "明日のテストは難しいだろう。",
+    "audio": "assets/voices/grammar/tomorrows-test-probably-difficult-plain.m4a",
+    "vocabularyIds": [
+      "vocab-bec9ce9d08c8",
+      "vocab-bffa6c2157d5",
+      "vocab-6ed0b6d4c374"
+    ],
+    "kanjiIds": [
+      "kanji-660e",
+      "kanji-65e5"
+    ],
+    "tokens": [
+      {
+        "surface": "明日",
+        "category": "noun",
+        "reading": "あした",
+        "vocabularyId": "vocab-bec9ce9d08c8"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "テスト",
+        "category": "noun",
+        "reading": "てすと",
+        "vocabularyId": "vocab-bffa6c2157d5"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "難しい",
+        "category": "adjective",
+        "reading": "むずかしい",
+        "vocabularyId": "vocab-6ed0b6d4c374"
+      },
+      {
+        "surface": "だろ",
+        "category": "auxiliary",
+        "reading": "だろ"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Tomorrow's test will probably be difficult.",
+    "grammarPointIds": [
+      "darou",
+      "wa-topic",
+      "i-adjective-predicate"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "darou",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "production-rain-probable-day-after-tomorrow-plain",
+    "text": "It will probably rain the day after tomorrow.",
+    "audio": "assets/voices/grammar/production-rain-probable-day-after-tomorrow-plain.m4a",
+    "vocabularyIds": [
+      "vocab-3a318cc61aa9",
+      "vocab-25611a347757",
+      "vocab-7e87850c448d"
+    ],
+    "kanjiIds": [
+      "kanji-660e",
+      "kanji-5f8c",
+      "kanji-65e5",
+      "kanji-591a",
+      "kanji-5206",
+      "kanji-96e8"
+    ],
+    "tokens": [
+      {
+        "surface": "明後日",
+        "category": "noun",
+        "reading": "あさって",
+        "vocabularyId": "vocab-3a318cc61aa9"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "多分",
+        "category": "adverb",
+        "reading": "たぶん",
+        "vocabularyId": "vocab-25611a347757"
+      },
+      {
+        "surface": "雨",
+        "category": "noun",
+        "reading": "あめ",
+        "vocabularyId": "vocab-7e87850c448d"
+      },
+      {
+        "surface": "だろ",
+        "category": "auxiliary",
+        "reading": "だろ"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "明後日は多分雨だろう。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "probably",
+        "vocabularyIds": [
+          "vocab-25611a347757"
+        ]
+      },
+      {
+        "word": "rain",
+        "vocabularyIds": [
+          "vocab-7e87850c448d"
+        ]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-3a318cc61aa9"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "darou",
+      "clock-calendar-time"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "darou",
+        "tokenStart": 4,
         "tokenEnd": 6
       }
     ]

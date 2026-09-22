@@ -468,8 +468,12 @@
     "meaning": "Exprimer que quelque chose pourrait être ou se produire."
   },
   "deshou-darou": {
-    "name": "Probabilité et confirmation",
-    "meaning": "Exprimer une probabilité ou chercher une confirmation avec probablement ou n'est-ce pas."
+    "name": "Probabilité et confirmation polies",
+    "meaning": "Exprimer une probabilité ou chercher une confirmation avec la forme polie でしょう."
+  },
+  "darou": {
+    "name": "Probabilité et confirmation en style simple",
+    "meaning": "Exprimer une probabilité ou chercher une confirmation avec la forme simple だろう."
   },
   "sou-appearance": {
     "name": "Apparence",
@@ -552,8 +556,12 @@
     "meaning": "Reliez des descriptions d'adjectifs en -i, d'adjectifs en -na et de noms."
   },
   "naru-change": {
-    "name": "Devenir",
-    "meaning": "Exprimez un changement vers une nouvelle qualité, un état, un rôle ou une catégorie."
+    "name": "Devenir avec になる",
+    "meaning": "Exprimez le changement d'un nom ou d'un adjectif en -na vers un nouvel état, un rôle ou une catégorie."
+  },
+  "naru-ku-change": {
+    "name": "Devenir avec くなる",
+    "meaning": "Exprimez le changement de degré ou d'état d'un adjectif en -i."
   },
   "suru-change": {
     "name": "Faire ou choisir",
