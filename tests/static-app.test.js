@@ -1091,7 +1091,8 @@ test("vocabulary inventory has a substantial core and labeled learner favorites"
         "former-jlpt-level-4",
         "curated-katakana-curriculum",
         "curated-beginner-vocabulary",
-        "curated-kanji-vocabulary"
+        "curated-kanji-vocabulary",
+        "curated-migii-vocabulary"
       ].includes(entry.source)
     );
 

@@ -5142,6 +5142,66 @@
     "translation": "I read this document."
   },
   {
+    "vocabularyId": "vocab-71072742a1c5",
+    "text": "今日は用事があります。",
+    "targetSurface": "用事",
+    "translation": "I have something to do today."
+  },
+  {
+    "vocabularyId": "vocab-bdd8330bae6d",
+    "text": "先生から本をいただきました。",
+    "targetSurface": "いただきました",
+    "translation": "I received a book from my teacher."
+  },
+  {
+    "vocabularyId": "vocab-da5d571e18b3",
+    "text": "ちゃんと宿題をしました。",
+    "targetSurface": "ちゃんと",
+    "translation": "I did my homework properly."
+  },
+  {
+    "vocabularyId": "vocab-521820030457",
+    "text": "この漢字はなかなか難しいです。",
+    "targetSurface": "なかなか",
+    "translation": "This kanji is quite difficult."
+  },
+  {
+    "vocabularyId": "vocab-ae4dcbc971a5",
+    "text": "旅行の準備をします。",
+    "targetSurface": "準備",
+    "translation": "I prepare for the trip."
+  },
+  {
+    "vocabularyId": "vocab-7b5e58c274e7",
+    "text": "眼鏡は六階の売り場にあります。",
+    "targetSurface": "売り場",
+    "translation": "The glasses are in the sales department on the sixth floor."
+  },
+  {
+    "vocabularyId": "vocab-2ca110c8da0e",
+    "text": "このかばんの値段は三千円です。",
+    "targetSurface": "値段",
+    "translation": "The price of this bag is three thousand yen."
+  },
+  {
+    "vocabularyId": "vocab-cbc35d59bc3b",
+    "text": "同じ形のかばんがあります。",
+    "targetSurface": "形",
+    "translation": "There is a bag of the same shape."
+  },
+  {
+    "vocabularyId": "vocab-60057b2d177c",
+    "text": "部屋を片付けます。",
+    "targetSurface": "片付けます",
+    "translation": "I tidy up the room."
+  },
+  {
+    "vocabularyId": "vocab-861717738347",
+    "text": "父は家を建てました。",
+    "targetSurface": "建てました",
+    "translation": "My father built a house."
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

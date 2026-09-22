@@ -9073,5 +9073,170 @@
     "topic": "work",
     "scope": "supplemental",
     "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-71072742a1c5",
+    "term": "用事",
+    "reading": "ようじ",
+    "meaning": "errand; business; something to do",
+    "acceptedAnswers": [
+      "errand",
+      "errands",
+      "business",
+      "something to do",
+      "things to do"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily-life",
+    "scope": "supplemental",
+    "source": "curated-migii-vocabulary"
+  },
+  {
+    "id": "vocab-bdd8330bae6d",
+    "term": "いただく",
+    "reading": "いただく",
+    "meaning": "to receive (humble); to eat or drink (humble)",
+    "acceptedAnswers": [
+      "receive",
+      "to receive",
+      "receive humbly",
+      "eat",
+      "to eat",
+      "drink",
+      "to drink"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "politeness",
+    "scope": "supplemental",
+    "source": "curated-migii-vocabulary"
+  },
+  {
+    "id": "vocab-da5d571e18b3",
+    "term": "ちゃんと",
+    "reading": "ちゃんと",
+    "meaning": "properly; correctly",
+    "acceptedAnswers": [
+      "properly",
+      "correctly",
+      "neatly",
+      "as one should"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "degree",
+    "scope": "supplemental",
+    "source": "curated-migii-vocabulary"
+  },
+  {
+    "id": "vocab-521820030457",
+    "term": "なかなか",
+    "reading": "なかなか",
+    "meaning": "quite; rather; not easily (with a negative)",
+    "acceptedAnswers": [
+      "quite",
+      "rather",
+      "considerably",
+      "not easily",
+      "not readily"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "degree",
+    "scope": "supplemental",
+    "source": "curated-migii-vocabulary"
+  },
+  {
+    "id": "vocab-ae4dcbc971a5",
+    "term": "準備",
+    "reading": "じゅんび",
+    "meaning": "preparation; to prepare",
+    "acceptedAnswers": [
+      "preparation",
+      "preparations",
+      "prepare",
+      "to prepare",
+      "get ready",
+      "to get ready"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily-life",
+    "scope": "supplemental",
+    "source": "curated-migii-vocabulary"
+  },
+  {
+    "id": "vocab-7b5e58c274e7",
+    "term": "売り場",
+    "reading": "うりば",
+    "meaning": "sales floor; department; counter",
+    "acceptedAnswers": [
+      "sales floor",
+      "sales area",
+      "department",
+      "counter"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "shopping",
+    "scope": "supplemental",
+    "source": "curated-migii-vocabulary"
+  },
+  {
+    "id": "vocab-2ca110c8da0e",
+    "term": "値段",
+    "reading": "ねだん",
+    "meaning": "price",
+    "acceptedAnswers": [
+      "price",
+      "cost"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "shopping",
+    "scope": "supplemental",
+    "source": "curated-migii-vocabulary"
+  },
+  {
+    "id": "vocab-cbc35d59bc3b",
+    "term": "形",
+    "reading": "かたち",
+    "meaning": "shape; form",
+    "acceptedAnswers": [
+      "shape",
+      "form"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "descriptions",
+    "scope": "supplemental",
+    "source": "curated-migii-vocabulary"
+  },
+  {
+    "id": "vocab-60057b2d177c",
+    "term": "片付ける",
+    "reading": "かたづける",
+    "meaning": "to tidy up; to put away",
+    "acceptedAnswers": [
+      "tidy up",
+      "to tidy up",
+      "clean up",
+      "to clean up",
+      "put away",
+      "to put away"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "daily-life",
+    "scope": "supplemental",
+    "source": "curated-migii-vocabulary"
+  },
+  {
+    "id": "vocab-861717738347",
+    "term": "建てる",
+    "reading": "たてる",
+    "meaning": "to build",
+    "acceptedAnswers": [
+      "build",
+      "to build",
+      "construct",
+      "to construct"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "actions",
+    "scope": "supplemental",
+    "source": "curated-migii-vocabulary"
   }
 ]

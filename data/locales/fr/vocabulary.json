@@ -6194,5 +6194,90 @@
       "matériel",
       "données"
     ]
+  },
+  "vocab-71072742a1c5": {
+    "meaning": "affaire à régler ; chose à faire",
+    "acceptedAnswers": [
+      "affaire",
+      "affaire à régler",
+      "chose à faire",
+      "quelque chose à faire",
+      "course",
+      "courses"
+    ]
+  },
+  "vocab-bdd8330bae6d": {
+    "meaning": "recevoir (humble) ; manger ou boire (humble)",
+    "acceptedAnswers": [
+      "recevoir",
+      "recevoir humblement",
+      "manger",
+      "boire"
+    ]
+  },
+  "vocab-da5d571e18b3": {
+    "meaning": "correctement ; convenablement",
+    "acceptedAnswers": [
+      "correctement",
+      "convenablement",
+      "comme il faut",
+      "proprement"
+    ]
+  },
+  "vocab-521820030457": {
+    "meaning": "assez ; plutôt ; pas facilement (avec une négation)",
+    "acceptedAnswers": [
+      "assez",
+      "plutôt",
+      "considérablement",
+      "pas facilement"
+    ]
+  },
+  "vocab-ae4dcbc971a5": {
+    "meaning": "préparation ; préparer",
+    "acceptedAnswers": [
+      "préparation",
+      "préparatifs",
+      "préparer",
+      "se préparer"
+    ]
+  },
+  "vocab-7b5e58c274e7": {
+    "meaning": "rayon ; espace de vente ; comptoir",
+    "acceptedAnswers": [
+      "rayon",
+      "espace de vente",
+      "comptoir",
+      "service"
+    ]
+  },
+  "vocab-2ca110c8da0e": {
+    "meaning": "prix",
+    "acceptedAnswers": [
+      "prix",
+      "coût"
+    ]
+  },
+  "vocab-cbc35d59bc3b": {
+    "meaning": "forme",
+    "acceptedAnswers": [
+      "forme"
+    ]
+  },
+  "vocab-60057b2d177c": {
+    "meaning": "ranger ; mettre en ordre",
+    "acceptedAnswers": [
+      "ranger",
+      "mettre en ordre",
+      "nettoyer",
+      "débarrasser"
+    ]
+  },
+  "vocab-861717738347": {
+    "meaning": "construire",
+    "acceptedAnswers": [
+      "construire",
+      "bâtir"
+    ]
   }
 }

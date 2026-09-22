@@ -29034,7 +29034,8 @@
       {
         "surface": "いただき",
         "category": "verb",
-        "reading": "いただき"
+        "reading": "いただき",
+        "vocabularyId": "vocab-bdd8330bae6d"
       },
       {
         "surface": "ます",
@@ -29902,6 +29903,527 @@
         "surface": "ます",
         "category": "auxiliary",
         "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-71072742a1c5",
+    "text": "今日は用事があります。",
+    "targetSurface": "用事",
+    "targetReading": "ようじ",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I have something to do today.",
+    "tokens": [
+      {
+        "surface": "今日",
+        "category": "noun",
+        "reading": "きょう",
+        "vocabularyId": "vocab-6b9362de88a7"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "用事",
+        "category": "noun",
+        "reading": "ようじ",
+        "vocabularyId": "vocab-71072742a1c5"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-bdd8330bae6d",
+    "text": "先生から本をいただきました。",
+    "targetSurface": "いただきました",
+    "targetReading": "いただき",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I received a book from my teacher.",
+    "tokens": [
+      {
+        "surface": "先生",
+        "category": "noun",
+        "reading": "せんせい",
+        "vocabularyId": "vocab-497356cf0646"
+      },
+      {
+        "surface": "から",
+        "category": "particle",
+        "reading": "から"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "いただき",
+        "category": "verb",
+        "reading": "いただき",
+        "vocabularyId": "vocab-bdd8330bae6d"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-da5d571e18b3",
+    "text": "ちゃんと宿題をしました。",
+    "targetSurface": "ちゃんと",
+    "targetReading": "ちゃんと",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I did my homework properly.",
+    "tokens": [
+      {
+        "surface": "ちゃんと",
+        "category": "adverb",
+        "reading": "ちゃんと",
+        "vocabularyId": "vocab-da5d571e18b3"
+      },
+      {
+        "surface": "宿題",
+        "category": "noun",
+        "reading": "しゅくだい",
+        "vocabularyId": "vocab-f26f501fa1c2"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-521820030457",
+    "text": "この漢字はなかなか難しいです。",
+    "targetSurface": "なかなか",
+    "targetReading": "なかなか",
+    "targetTokenStart": 3,
+    "targetTokenEnd": 4,
+    "translation": "This kanji is quite difficult.",
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "漢字",
+        "category": "noun",
+        "reading": "かんじ",
+        "vocabularyId": "vocab-535c688e8bf9"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "なかなか",
+        "category": "adverb",
+        "reading": "なかなか",
+        "vocabularyId": "vocab-521820030457"
+      },
+      {
+        "surface": "難しい",
+        "category": "adjective",
+        "reading": "むずかしい",
+        "vocabularyId": "vocab-6ed0b6d4c374"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-ae4dcbc971a5",
+    "text": "旅行の準備をします。",
+    "targetSurface": "準備",
+    "targetReading": "じゅんび",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I prepare for the trip.",
+    "tokens": [
+      {
+        "surface": "旅行",
+        "category": "noun",
+        "reading": "りょこう",
+        "vocabularyId": "vocab-2e3ba98d2367"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "準備",
+        "category": "noun",
+        "reading": "じゅんび",
+        "vocabularyId": "vocab-ae4dcbc971a5"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-7b5e58c274e7",
+    "text": "眼鏡は六階の売り場にあります。",
+    "targetSurface": "売り場",
+    "targetReading": "うりば",
+    "targetTokenStart": 5,
+    "targetTokenEnd": 6,
+    "translation": "The glasses are in the sales department on the sixth floor.",
+    "tokens": [
+      {
+        "surface": "眼鏡",
+        "category": "noun",
+        "reading": "めがね",
+        "vocabularyId": "vocab-91c48fa2fe6d"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "六",
+        "category": "noun",
+        "reading": "ろく",
+        "vocabularyId": "vocab-06ef406f5569"
+      },
+      {
+        "surface": "階",
+        "category": "noun",
+        "reading": "かい",
+        "vocabularyId": "vocab-9848df70e3ed"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "売り場",
+        "category": "noun",
+        "reading": "うりば",
+        "vocabularyId": "vocab-7b5e58c274e7"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-2ca110c8da0e",
+    "text": "このかばんの値段は三千円です。",
+    "targetSurface": "値段",
+    "targetReading": "ねだん",
+    "targetTokenStart": 3,
+    "targetTokenEnd": 4,
+    "translation": "The price of this bag is three thousand yen.",
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "かばん",
+        "category": "noun",
+        "reading": "かばん",
+        "vocabularyId": "vocab-704870bca266"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "値段",
+        "category": "noun",
+        "reading": "ねだん",
+        "vocabularyId": "vocab-2ca110c8da0e"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "三",
+        "category": "noun",
+        "reading": "さん",
+        "vocabularyId": "vocab-1bedf722c04a"
+      },
+      {
+        "surface": "千",
+        "category": "noun",
+        "reading": "せん",
+        "vocabularyId": "vocab-86ef0852f80f"
+      },
+      {
+        "surface": "円",
+        "category": "noun",
+        "reading": "えん",
+        "vocabularyId": "vocab-ed7e1b01883d"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-cbc35d59bc3b",
+    "text": "同じ形のかばんがあります。",
+    "targetSurface": "形",
+    "targetReading": "かたち",
+    "targetTokenStart": 1,
+    "targetTokenEnd": 2,
+    "translation": "There is a bag of the same shape.",
+    "tokens": [
+      {
+        "surface": "同じ",
+        "category": "determiner",
+        "reading": "おなじ",
+        "vocabularyId": "vocab-9ff4f40a3428"
+      },
+      {
+        "surface": "形",
+        "category": "noun",
+        "reading": "かたち",
+        "vocabularyId": "vocab-cbc35d59bc3b"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "かばん",
+        "category": "noun",
+        "reading": "かばん",
+        "vocabularyId": "vocab-704870bca266"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-60057b2d177c",
+    "text": "部屋を片付けます。",
+    "targetSurface": "片付けます",
+    "targetReading": "かたづけ",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I tidy up the room.",
+    "tokens": [
+      {
+        "surface": "部屋",
+        "category": "noun",
+        "reading": "へや",
+        "vocabularyId": "vocab-23523bbf8d9c"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "片付け",
+        "category": "verb",
+        "reading": "かたづけ",
+        "vocabularyId": "vocab-60057b2d177c"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-861717738347",
+    "text": "父は家を建てました。",
+    "targetSurface": "建てました",
+    "targetReading": "たて",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "My father built a house.",
+    "tokens": [
+      {
+        "surface": "父",
+        "category": "noun",
+        "reading": "ちち",
+        "vocabularyId": "vocab-d15ca6ea1179"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "建て",
+        "category": "verb",
+        "reading": "たて",
+        "vocabularyId": "vocab-861717738347"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
       },
       {
         "surface": "。",
