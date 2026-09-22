@@ -5040,6 +5040,108 @@
     "translation": "This movie is scary."
   },
   {
+    "vocabularyId": "vocab-efc517ea492c",
+    "text": "パンはほとんど食べました。",
+    "targetSurface": "ほとんど",
+    "translation": "I ate most of the bread."
+  },
+  {
+    "vocabularyId": "vocab-77ac88ee840e",
+    "text": "この本はぜんぜん難しくないです。",
+    "targetSurface": "ぜんぜん",
+    "translation": "This book is not difficult at all."
+  },
+  {
+    "vocabularyId": "vocab-90157b5f7665",
+    "text": "コーヒーですか、それともお茶ですか。",
+    "targetSurface": "それとも",
+    "translation": "Is it coffee or tea?"
+  },
+  {
+    "vocabularyId": "vocab-87b235b16101",
+    "text": "和室で休みます。",
+    "targetSurface": "和室",
+    "translation": "I rest in the Japanese-style room."
+  },
+  {
+    "vocabularyId": "vocab-4aec6a18e905",
+    "text": "この服は私に合う。",
+    "targetSurface": "合う",
+    "translation": "These clothes suit me."
+  },
+  {
+    "vocabularyId": "vocab-6eff6abc9f08",
+    "text": "今日は眠いです。",
+    "targetSurface": "眠い",
+    "translation": "I am sleepy today."
+  },
+  {
+    "vocabularyId": "vocab-45988c6cec92",
+    "text": "店でお金を払う。",
+    "targetSurface": "払う",
+    "translation": "I pay at the store."
+  },
+  {
+    "vocabularyId": "vocab-df2e03178318",
+    "text": "この品物は安いです。",
+    "targetSurface": "品物",
+    "translation": "This item is cheap."
+  },
+  {
+    "vocabularyId": "vocab-e870160f04f7",
+    "text": "旅費は高いです。",
+    "targetSurface": "旅費",
+    "translation": "Travel expenses are high."
+  },
+  {
+    "vocabularyId": "vocab-d4cd95d9b9a5",
+    "text": "手紙を送る。",
+    "targetSurface": "送る",
+    "translation": "I send a letter."
+  },
+  {
+    "vocabularyId": "vocab-80497d75f04b",
+    "text": "学校を欠席します。",
+    "targetSurface": "欠席",
+    "translation": "I am absent from school."
+  },
+  {
+    "vocabularyId": "vocab-162459c6ef3e",
+    "text": "辞書で言葉を調べる。",
+    "targetSurface": "調べる",
+    "translation": "I look up a word in the dictionary."
+  },
+  {
+    "vocabularyId": "vocab-9683551a843c",
+    "text": "先生が説明します。",
+    "targetSurface": "説明",
+    "translation": "The teacher explains."
+  },
+  {
+    "vocabularyId": "vocab-a48ae393fb13",
+    "text": "悲しい映画です。",
+    "targetSurface": "悲しい",
+    "translation": "It is a sad movie."
+  },
+  {
+    "vocabularyId": "vocab-f5cce0d3149f",
+    "text": "学校で発表します。",
+    "targetSurface": "発表",
+    "translation": "I give a presentation at school."
+  },
+  {
+    "vocabularyId": "vocab-1b1b5806b28b",
+    "text": "明日の予定を聞く。",
+    "targetSurface": "予定",
+    "translation": "I ask about tomorrow's plans."
+  },
+  {
+    "vocabularyId": "vocab-58e891bce783",
+    "text": "この資料を読みます。",
+    "targetSurface": "資料",
+    "translation": "I read this document."
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

@@ -29197,6 +29197,719 @@
     ]
   },
   {
+    "vocabularyId": "vocab-efc517ea492c",
+    "text": "パンはほとんど食べました。",
+    "targetSurface": "ほとんど",
+    "targetReading": "ほとんど",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I ate most of the bread.",
+    "tokens": [
+      {
+        "surface": "パン",
+        "category": "noun",
+        "reading": "ぱん",
+        "vocabularyId": "vocab-3ad79496437d"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "ほとんど",
+        "category": "adverb",
+        "reading": "ほとんど",
+        "vocabularyId": "vocab-efc517ea492c"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-77ac88ee840e",
+    "text": "この本はぜんぜん難しくないです。",
+    "targetSurface": "ぜんぜん",
+    "targetReading": "ぜんぜん",
+    "targetTokenStart": 3,
+    "targetTokenEnd": 4,
+    "translation": "This book is not difficult at all.",
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "ぜんぜん",
+        "category": "adverb",
+        "reading": "ぜんぜん",
+        "vocabularyId": "vocab-77ac88ee840e"
+      },
+      {
+        "surface": "難しく",
+        "category": "adjective",
+        "reading": "むずかしく",
+        "vocabularyId": "vocab-6ed0b6d4c374"
+      },
+      {
+        "surface": "ない",
+        "category": "auxiliary",
+        "reading": "ない"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-90157b5f7665",
+    "text": "コーヒーですか、それともお茶ですか。",
+    "targetSurface": "それとも",
+    "targetReading": "それとも",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "Is it coffee or tea?",
+    "tokens": [
+      {
+        "surface": "コーヒー",
+        "category": "noun",
+        "reading": "こーひー",
+        "vocabularyId": "vocab-f5f2c2dca175"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "それとも",
+        "category": "conjunction",
+        "reading": "それとも",
+        "vocabularyId": "vocab-90157b5f7665"
+      },
+      {
+        "surface": "お茶",
+        "category": "noun",
+        "reading": "おちゃ",
+        "vocabularyId": "vocab-d18ca13aa386"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-87b235b16101",
+    "text": "和室で休みます。",
+    "targetSurface": "和室",
+    "targetReading": "わしつ",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I rest in the Japanese-style room.",
+    "tokens": [
+      {
+        "surface": "和室",
+        "category": "noun",
+        "reading": "わしつ"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "休み",
+        "category": "verb",
+        "reading": "やすみ",
+        "vocabularyId": "vocab-acc3dd26ba1e"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-4aec6a18e905",
+    "text": "この服は私に合う。",
+    "targetSurface": "合う",
+    "targetReading": "あう",
+    "targetTokenStart": 5,
+    "targetTokenEnd": 6,
+    "translation": "These clothes suit me.",
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "服",
+        "category": "noun",
+        "reading": "ふく",
+        "vocabularyId": "vocab-ff1cb3f79233"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "合う",
+        "category": "verb",
+        "reading": "あう"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-6eff6abc9f08",
+    "text": "今日は眠いです。",
+    "targetSurface": "眠い",
+    "targetReading": "ねむい",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I am sleepy today.",
+    "tokens": [
+      {
+        "surface": "今日",
+        "category": "noun",
+        "reading": "きょう",
+        "vocabularyId": "vocab-6b9362de88a7"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "眠い",
+        "category": "adjective",
+        "reading": "ねむい"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-45988c6cec92",
+    "text": "店でお金を払う。",
+    "targetSurface": "払う",
+    "targetReading": "はらう",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I pay at the store.",
+    "tokens": [
+      {
+        "surface": "店",
+        "category": "noun",
+        "reading": "みせ",
+        "vocabularyId": "vocab-e70f9243d4c7"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "お金",
+        "category": "noun",
+        "reading": "おかね",
+        "vocabularyId": "vocab-d242b38667c8"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "払う",
+        "category": "verb",
+        "reading": "はらう"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-df2e03178318",
+    "text": "この品物は安いです。",
+    "targetSurface": "品物",
+    "targetReading": "しなもの",
+    "targetTokenStart": 1,
+    "targetTokenEnd": 2,
+    "translation": "This item is cheap.",
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "品物",
+        "category": "noun",
+        "reading": "しなもの"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "安い",
+        "category": "adjective",
+        "reading": "やすい",
+        "vocabularyId": "vocab-0513945a1ef5"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-e870160f04f7",
+    "text": "旅費は高いです。",
+    "targetSurface": "旅費",
+    "targetReading": "りょひ",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "Travel expenses are high.",
+    "tokens": [
+      {
+        "surface": "旅費",
+        "category": "noun",
+        "reading": "りょひ"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "高い",
+        "category": "adjective",
+        "reading": "たかい",
+        "vocabularyId": "vocab-775979a197ea"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-d4cd95d9b9a5",
+    "text": "手紙を送る。",
+    "targetSurface": "送る",
+    "targetReading": "おくる",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I send a letter.",
+    "tokens": [
+      {
+        "surface": "手紙",
+        "category": "noun",
+        "reading": "てがみ",
+        "vocabularyId": "vocab-8e7233a38df0"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "送る",
+        "category": "verb",
+        "reading": "おくる"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-80497d75f04b",
+    "text": "学校を欠席します。",
+    "targetSurface": "欠席",
+    "targetReading": "けっせき",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I am absent from school.",
+    "tokens": [
+      {
+        "surface": "学校",
+        "category": "noun",
+        "reading": "がっこう",
+        "vocabularyId": "vocab-42edc1b83779"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "欠席",
+        "category": "noun",
+        "reading": "けっせき"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-162459c6ef3e",
+    "text": "辞書で言葉を調べる。",
+    "targetSurface": "調べる",
+    "targetReading": "しらべる",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I look up a word in the dictionary.",
+    "tokens": [
+      {
+        "surface": "辞書",
+        "category": "noun",
+        "reading": "じしょ",
+        "vocabularyId": "vocab-67ab907b4d96"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "言葉",
+        "category": "noun",
+        "reading": "ことば",
+        "vocabularyId": "vocab-cef4a2049ff3"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "調べる",
+        "category": "verb",
+        "reading": "しらべる"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-9683551a843c",
+    "text": "先生が説明します。",
+    "targetSurface": "説明",
+    "targetReading": "せつめい",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "The teacher explains.",
+    "tokens": [
+      {
+        "surface": "先生",
+        "category": "noun",
+        "reading": "せんせい",
+        "vocabularyId": "vocab-497356cf0646"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "説明",
+        "category": "noun",
+        "reading": "せつめい"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-a48ae393fb13",
+    "text": "悲しい映画です。",
+    "targetSurface": "悲しい",
+    "targetReading": "かなしい",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "It is a sad movie.",
+    "tokens": [
+      {
+        "surface": "悲しい",
+        "category": "adjective",
+        "reading": "かなしい"
+      },
+      {
+        "surface": "映画",
+        "category": "noun",
+        "reading": "えいが",
+        "vocabularyId": "vocab-7b9d866e6dc2"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-f5cce0d3149f",
+    "text": "学校で発表します。",
+    "targetSurface": "発表",
+    "targetReading": "はっぴょう",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I give a presentation at school.",
+    "tokens": [
+      {
+        "surface": "学校",
+        "category": "noun",
+        "reading": "がっこう",
+        "vocabularyId": "vocab-42edc1b83779"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "発表",
+        "category": "noun",
+        "reading": "はっぴょう"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-1b1b5806b28b",
+    "text": "明日の予定を聞く。",
+    "targetSurface": "予定",
+    "targetReading": "よてい",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I ask about tomorrow's plans.",
+    "tokens": [
+      {
+        "surface": "明日",
+        "category": "noun",
+        "reading": "あした",
+        "vocabularyId": "vocab-bec9ce9d08c8"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "予定",
+        "category": "noun",
+        "reading": "よてい"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "聞く",
+        "category": "verb",
+        "reading": "きく",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-58e891bce783",
+    "text": "この資料を読みます。",
+    "targetSurface": "資料",
+    "targetReading": "しりょう",
+    "targetTokenStart": 1,
+    "targetTokenEnd": 2,
+    "translation": "I read this document.",
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "資料",
+        "category": "noun",
+        "reading": "しりょう"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読み",
+        "category": "verb",
+        "reading": "よみ",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",
@@ -29208,8 +29921,7 @@
       {
         "surface": "和室",
         "category": "noun",
-        "reading": "わしつ",
-        "vocabularyId": "kanji-context-washitsu"
+        "reading": "わしつ"
       },
       {
         "surface": "で",
@@ -29310,8 +30022,7 @@
       {
         "surface": "合う",
         "category": "verb",
-        "reading": "あう",
-        "vocabularyId": "kanji-context-au-fit"
+        "reading": "あう"
       },
       {
         "surface": "。",
@@ -29342,8 +30053,7 @@
       {
         "surface": "眠い",
         "category": "adjective",
-        "reading": "ねむい",
-        "vocabularyId": "kanji-context-nemui"
+        "reading": "ねむい"
       },
       {
         "surface": "です",
@@ -29390,8 +30100,7 @@
       {
         "surface": "払う",
         "category": "verb",
-        "reading": "はらう",
-        "vocabularyId": "kanji-context-harau"
+        "reading": "はらう"
       },
       {
         "surface": "。",
@@ -29417,8 +30126,7 @@
       {
         "surface": "品物",
         "category": "noun",
-        "reading": "しなもの",
-        "vocabularyId": "kanji-context-shinamono"
+        "reading": "しなもの"
       },
       {
         "surface": "は",
@@ -29490,8 +30198,7 @@
       {
         "surface": "旅費",
         "category": "noun",
-        "reading": "りょひ",
-        "vocabularyId": "kanji-context-ryohi"
+        "reading": "りょひ"
       },
       {
         "surface": "は",
@@ -29538,8 +30245,7 @@
       {
         "surface": "送る",
         "category": "verb",
-        "reading": "おくる",
-        "vocabularyId": "kanji-context-okuru"
+        "reading": "おくる"
       },
       {
         "surface": "。",
@@ -29570,8 +30276,7 @@
       {
         "surface": "欠席",
         "category": "noun",
-        "reading": "けっせき",
-        "vocabularyId": "kanji-context-kesseki"
+        "reading": "けっせき"
       },
       {
         "surface": "し",
@@ -29624,8 +30329,7 @@
       {
         "surface": "調べる",
         "category": "verb",
-        "reading": "しらべる",
-        "vocabularyId": "kanji-context-shiraberu"
+        "reading": "しらべる"
       },
       {
         "surface": "。",
@@ -29656,8 +30360,7 @@
       {
         "surface": "説明",
         "category": "noun",
-        "reading": "せつめい",
-        "vocabularyId": "kanji-context-setsumei"
+        "reading": "せつめい"
       },
       {
         "surface": "し",
@@ -29688,8 +30391,7 @@
       {
         "surface": "悲しい",
         "category": "adjective",
-        "reading": "かなしい",
-        "vocabularyId": "kanji-context-kanashii"
+        "reading": "かなしい"
       },
       {
         "surface": "映画",
@@ -29731,8 +30433,7 @@
       {
         "surface": "発表",
         "category": "noun",
-        "reading": "はっぴょう",
-        "vocabularyId": "kanji-context-happyou"
+        "reading": "はっぴょう"
       },
       {
         "surface": "し",
@@ -29774,8 +30475,7 @@
       {
         "surface": "予定",
         "category": "noun",
-        "reading": "よてい",
-        "vocabularyId": "kanji-context-yotei"
+        "reading": "よてい"
       },
       {
         "surface": "を",
@@ -29812,8 +30512,7 @@
       {
         "surface": "資料",
         "category": "noun",
-        "reading": "しりょう",
-        "vocabularyId": "kanji-context-shiryou"
+        "reading": "しりょう"
       },
       {
         "surface": "を",

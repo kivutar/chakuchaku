@@ -1090,7 +1090,8 @@ test("vocabulary inventory has a substantial core and labeled learner favorites"
         "curated-lesson-vocabulary",
         "former-jlpt-level-4",
         "curated-katakana-curriculum",
-        "curated-beginner-vocabulary"
+        "curated-beginner-vocabulary",
+        "curated-kanji-vocabulary"
       ].includes(entry.source)
     );
 

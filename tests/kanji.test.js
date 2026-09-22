@@ -13,7 +13,7 @@ const {
   normalizeReading,
   normalizeKanjiAnswer,
   isWholeWordReading,
-  linkVocabularyAudio,
+  linkVocabularyEntries,
   createExercisePool,
   getKanjiInventory,
   getNextDirection,
@@ -26,7 +26,7 @@ const {
   createPositiveVocabularyRating
 } = globalThis.JlptN5Kanji;
 
-test("kanji-only contexts reuse audio from an exact vocabulary match", () => {
+test("kanji contexts link to an exact vocabulary match", () => {
   const contexts = [{
     id: "kanji-context-omou",
     term: "思う",
@@ -40,12 +40,14 @@ test("kanji-only contexts reuse audio from an exact vocabulary match", () => {
     term: "和室",
     reading: "わしつ"
   }];
-  const linked = linkVocabularyAudio([{
+  const linked = linkVocabularyEntries([{
+    id: "vocabulary-omou",
     term: "思う",
     reading: "おもう",
     audio: "assets/voices/vocab/omou.m4a"
   }], contexts);
 
+  assert.equal(linked[0].vocabularyId, "vocabulary-omou");
   assert.equal(linked[0].audio, "assets/voices/vocab/omou.m4a");
   assert.equal(linked[1].audio, undefined);
   assert.equal(linked[2].audio, undefined);
@@ -106,11 +108,11 @@ test("the complete kanji curriculum exposes all 209 characters through word cont
     ...entry,
     audio: globalThis.JlptN5VoicePaths.getVocabularyVoicePath(entry, wanakana)
   }));
-  const contextsWithAudio = linkVocabularyAudio(vocabularyWithAudio, contexts);
+  const linkedContexts = linkVocabularyEntries(vocabularyWithAudio, contexts);
   const pool = createExercisePool(kanji.map((entry) => ({
     ...entry,
     ...(mnemonicsById.has(entry.id) ? { mnemonic: mnemonicsById.get(entry.id) } : {})
-  })), [...vocabularyWithAudio, ...contextsWithAudio]);
+  })), [...vocabularyWithAudio, ...linkedContexts]);
   const inventory = getKanjiInventory(pool);
   const exampleIds = new Set(examples.map(({ vocabularyId }) => vocabularyId));
 
@@ -128,6 +130,11 @@ test("the complete kanji curriculum exposes all 209 characters through word cont
   assert.equal(
     pool.find(({ kanjiContextId }) => kanjiContextId === "kanji-context-omou").audio,
     "assets/voices/vocab/omou.m4a"
+  );
+  assert.equal(
+    pool.find(({ kanjiContextId }) => kanjiContextId === "kanji-context-omou")
+      .vocabularyId,
+    "vocab-c64ca071011e"
   );
   assert.equal(
     pool.find(({ kanjiContextId }) => kanjiContextId === "kanji-context-hitsuyou").audio,

@@ -52,22 +52,32 @@
     return Boolean(getSpecialReading(entry, reading));
   }
 
-  function linkVocabularyAudio(vocabulary, contexts) {
-    const audioByWord = new Map((Array.isArray(vocabulary) ? vocabulary : [])
-      .filter(({ term, reading, audio }) => {
+  function linkVocabularyEntries(vocabulary, contexts) {
+    const vocabularyByWord = new Map((Array.isArray(vocabulary) ? vocabulary : [])
+      .filter(({ id, term, reading }) => {
         return (
+          typeof id === "string" &&
+          id &&
           typeof term === "string" &&
-          typeof reading === "string" &&
-          typeof audio === "string" &&
-          audio
+          typeof reading === "string"
         );
       })
-      .map(({ term, reading, audio }) => [`${term}\u0000${reading}`, audio]));
+      .map((entry) => [`${entry.term}\u0000${entry.reading}`, entry]));
 
     return (Array.isArray(contexts) ? contexts : []).map((context) => {
-      const audio = audioByWord.get(`${context?.term}\u0000${context?.reading}`);
+      const vocabularyEntry = vocabularyByWord.get(
+        `${context?.term}\u0000${context?.reading}`
+      );
 
-      return audio ? { ...context, audio } : context;
+      return vocabularyEntry
+        ? {
+            ...context,
+            vocabularyId: vocabularyEntry.id,
+            ...(typeof vocabularyEntry.audio === "string" && vocabularyEntry.audio
+              ? { audio: vocabularyEntry.audio }
+              : {})
+          }
+        : context;
     });
   }
 
@@ -181,7 +191,10 @@
           ...(metadata.mnemonic ? { mnemonic: metadata.mnemonic } : {}),
           ...(wholeWordReading ? { wholeWordReading } : {}),
           ...(word.scope === "kanji-context"
-            ? { kanjiContextId: word.id }
+            ? {
+                kanjiContextId: word.id,
+                ...(word.vocabularyId ? { vocabularyId: word.vocabularyId } : {})
+              }
             : { vocabularyId: word.id }),
           term,
           maskedTerm: term.replaceAll(character, "□"),
@@ -432,7 +445,7 @@
     normalizeKanjiAnswer,
     getSpecialReading,
     isWholeWordReading,
-    linkVocabularyAudio,
+    linkVocabularyEntries,
     createExercisePool,
     getKanjiInventory,
     getNextDirection,

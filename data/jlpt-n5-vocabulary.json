@@ -10,6 +10,7 @@
   },
   {
     "id": "vocab-40179481fcf6",
+    "voiceSlug": "au-meet",
     "term": "会う",
     "reading": "あう",
     "meaning": "to meet, to see",
@@ -8810,5 +8811,267 @@
     "topic": "feelings",
     "scope": "supplemental",
     "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-efc517ea492c",
+    "term": "ほとんど",
+    "reading": "ほとんど",
+    "meaning": "almost; nearly; mostly",
+    "acceptedAnswers": [
+      "almost all",
+      "most",
+      "for the most part",
+      "hardly"
+    ],
+    "acceptedJapaneseAnswers": [
+      "殆ど"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "descriptions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-77ac88ee840e",
+    "term": "ぜんぜん",
+    "reading": "ぜんぜん",
+    "meaning": "not at all (with a negative verb)",
+    "acceptedAnswers": [
+      "not at all",
+      "not in the least",
+      "absolutely not"
+    ],
+    "acceptedJapaneseAnswers": [
+      "全然"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "descriptions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-90157b5f7665",
+    "term": "それとも",
+    "reading": "それとも",
+    "meaning": "or; or else (between alternatives in a question)",
+    "acceptedAnswers": [
+      "or",
+      "or else"
+    ],
+    "partOfSpeech": "conjunction",
+    "topic": "questions",
+    "scope": "supplemental",
+    "source": "curated-beginner-vocabulary"
+  },
+  {
+    "id": "vocab-87b235b16101",
+    "term": "和室",
+    "reading": "わしつ",
+    "meaning": "Japanese-style room",
+    "acceptedAnswers": [
+      "Japanese room",
+      "tatami room"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "home",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-4aec6a18e905",
+    "term": "合う",
+    "reading": "あう",
+    "meaning": "to fit; to suit",
+    "acceptedAnswers": [
+      "fit",
+      "suit",
+      "to match",
+      "match"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "descriptions",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary",
+    "voiceSlug": "au-fit"
+  },
+  {
+    "id": "vocab-6eff6abc9f08",
+    "term": "眠い",
+    "reading": "ねむい",
+    "meaning": "sleepy",
+    "acceptedAnswers": [
+      "drowsy"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "feelings",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-45988c6cec92",
+    "term": "払う",
+    "reading": "はらう",
+    "meaning": "to pay",
+    "acceptedAnswers": [
+      "pay"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "daily-life",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-df2e03178318",
+    "term": "品物",
+    "reading": "しなもの",
+    "meaning": "goods; item",
+    "acceptedAnswers": [
+      "goods",
+      "item",
+      "article",
+      "merchandise"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "objects",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-e870160f04f7",
+    "term": "旅費",
+    "reading": "りょひ",
+    "meaning": "travel expenses",
+    "acceptedAnswers": [
+      "travel costs",
+      "travel expense"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "travel",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-d4cd95d9b9a5",
+    "term": "送る",
+    "reading": "おくる",
+    "meaning": "to send",
+    "acceptedAnswers": [
+      "send",
+      "to mail",
+      "mail"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "communication",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-80497d75f04b",
+    "term": "欠席",
+    "reading": "けっせき",
+    "meaning": "absence; to be absent",
+    "acceptedAnswers": [
+      "absence",
+      "absent",
+      "to be absent"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily-life",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-162459c6ef3e",
+    "term": "調べる",
+    "reading": "しらべる",
+    "meaning": "to check; to look up",
+    "acceptedAnswers": [
+      "check",
+      "look up",
+      "to investigate",
+      "investigate",
+      "to examine",
+      "examine"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "actions",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-9683551a843c",
+    "term": "説明",
+    "reading": "せつめい",
+    "meaning": "explanation; to explain",
+    "acceptedAnswers": [
+      "explanation",
+      "explain",
+      "to explain"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "communication",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-a48ae393fb13",
+    "term": "悲しい",
+    "reading": "かなしい",
+    "meaning": "sad",
+    "acceptedAnswers": [
+      "sorrowful",
+      "unhappy"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "feelings",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-f5cce0d3149f",
+    "term": "発表",
+    "reading": "はっぴょう",
+    "meaning": "presentation; announcement",
+    "acceptedAnswers": [
+      "presentation",
+      "announcement",
+      "to present",
+      "to announce"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "communication",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-1b1b5806b28b",
+    "term": "予定",
+    "reading": "よてい",
+    "meaning": "plan; schedule",
+    "acceptedAnswers": [
+      "plan",
+      "plans",
+      "schedule"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "time",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
+  },
+  {
+    "id": "vocab-58e891bce783",
+    "term": "資料",
+    "reading": "しりょう",
+    "meaning": "materials; documents",
+    "acceptedAnswers": [
+      "materials",
+      "documents",
+      "reference materials",
+      "data"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "work",
+    "scope": "supplemental",
+    "source": "curated-kanji-vocabulary"
   }
 ]

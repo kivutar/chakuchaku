@@ -97,8 +97,8 @@ test("the curated vocabulary has one stable readable voice path per entry", asyn
   ));
   const voiceSlugs = validateVocabularyVoiceSlugs(vocabulary, wanakana);
 
-  assert.equal(voiceSlugs.size, 840);
-  assert.equal(vocabulary.filter(({ voiceSlug }) => voiceSlug).length, 59);
+  assert.equal(voiceSlugs.size, 857);
+  assert.equal(vocabulary.filter(({ voiceSlug }) => voiceSlug).length, 61);
   assert.equal(
     getVocabularyVoicePath(vocabulary.find(({ term }) => term === "青い"), wanakana),
     "assets/voices/vocab/aoi.m4a"

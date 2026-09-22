@@ -6050,5 +6050,149 @@
       "apeuré",
       "apeurée"
     ]
+  },
+  "vocab-efc517ea492c": {
+    "meaning": "presque ; en grande partie",
+    "acceptedAnswers": [
+      "presque",
+      "presque tout",
+      "la plupart",
+      "en grande partie",
+      "pratiquement",
+      "quasiment",
+      "presque pas"
+    ]
+  },
+  "vocab-77ac88ee840e": {
+    "meaning": "pas du tout (avec une forme négative)",
+    "acceptedAnswers": [
+      "pas du tout",
+      "absolument pas"
+    ]
+  },
+  "vocab-90157b5f7665": {
+    "meaning": "ou bien (entre deux choix dans une question)",
+    "acceptedAnswers": [
+      "ou",
+      "ou bien"
+    ]
+  },
+  "vocab-87b235b16101": {
+    "meaning": "pièce de style japonais",
+    "acceptedAnswers": [
+      "pièce japonaise",
+      "pièce de style japonais",
+      "pièce avec tatamis"
+    ]
+  },
+  "vocab-4aec6a18e905": {
+    "meaning": "convenir ; aller",
+    "acceptedAnswers": [
+      "convenir",
+      "aller",
+      "correspondre",
+      "être assorti"
+    ]
+  },
+  "vocab-6eff6abc9f08": {
+    "meaning": "avoir sommeil",
+    "acceptedAnswers": [
+      "avoir sommeil",
+      "somnolent",
+      "somnolente"
+    ]
+  },
+  "vocab-45988c6cec92": {
+    "meaning": "payer",
+    "acceptedAnswers": [
+      "payer",
+      "régler"
+    ]
+  },
+  "vocab-df2e03178318": {
+    "meaning": "article ; marchandise",
+    "acceptedAnswers": [
+      "article",
+      "objet",
+      "marchandise",
+      "marchandises"
+    ]
+  },
+  "vocab-e870160f04f7": {
+    "meaning": "frais de voyage",
+    "acceptedAnswers": [
+      "frais de voyage",
+      "frais de déplacement"
+    ]
+  },
+  "vocab-d4cd95d9b9a5": {
+    "meaning": "envoyer",
+    "acceptedAnswers": [
+      "envoyer",
+      "expédier"
+    ]
+  },
+  "vocab-80497d75f04b": {
+    "meaning": "absence ; être absent",
+    "acceptedAnswers": [
+      "absence",
+      "être absent",
+      "s'absenter"
+    ]
+  },
+  "vocab-162459c6ef3e": {
+    "meaning": "vérifier ; rechercher",
+    "acceptedAnswers": [
+      "vérifier",
+      "rechercher",
+      "chercher",
+      "consulter",
+      "examiner"
+    ]
+  },
+  "vocab-9683551a843c": {
+    "meaning": "explication ; expliquer",
+    "acceptedAnswers": [
+      "explication",
+      "expliquer"
+    ]
+  },
+  "vocab-a48ae393fb13": {
+    "meaning": "triste",
+    "acceptedAnswers": [
+      "triste",
+      "malheureux",
+      "malheureuse"
+    ]
+  },
+  "vocab-f5cce0d3149f": {
+    "meaning": "présentation ; annonce",
+    "acceptedAnswers": [
+      "présentation",
+      "annonce",
+      "présenter",
+      "annoncer"
+    ]
+  },
+  "vocab-1b1b5806b28b": {
+    "meaning": "projet ; programme",
+    "acceptedAnswers": [
+      "projet",
+      "projets",
+      "programme",
+      "planning",
+      "prévu"
+    ]
+  },
+  "vocab-58e891bce783": {
+    "meaning": "documents ; ressources",
+    "acceptedAnswers": [
+      "document",
+      "documents",
+      "ressource",
+      "ressources",
+      "matériel",
+      "données"
+    ]
   }
 }

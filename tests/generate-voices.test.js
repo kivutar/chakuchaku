@@ -113,7 +113,14 @@ test("conjugation voice generation requires a limit and accepts exact item selec
 
 test("conjugation voice items and requests use the actual inflected reading", () => {
   const vocabulary = [
-    { id: "meet", term: "会う", reading: "あう", meaning: "to meet", partOfSpeech: "verb" },
+    {
+      id: "meet",
+      term: "会う",
+      reading: "あう",
+      meaning: "to meet",
+      partOfSpeech: "verb",
+      voiceSlug: "au-meet"
+    },
     { id: "high", term: "高い", reading: "たかい", meaning: "high", partOfSpeech: "adjective" }
   ];
   const curriculum = [
@@ -128,7 +135,7 @@ test("conjugation voice items and requests use the actual inflected reading", ()
   assert.equal(new Set(items.map(({ audio }) => audio)).size, items.length);
   assert.equal(items[0].answerSurface, "会います");
   assert.equal(items[6].answerSurface, "高いです");
-  assert.equal(past.audio, "assets/voices/conjugation/aimashita-au.m4a");
+  assert.equal(past.audio, "assets/voices/conjugation/aimashita-au-meet.m4a");
   assert.equal(request.spokenText, "あいました");
   assert.deepEqual(JSON.parse(request.messages[1].content), {
     spelling: "会いました",
