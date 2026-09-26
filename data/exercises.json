@@ -132,6 +132,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Yesterday, I went to Kyoto by train with my Japanese friend and ate delicious ramen.",
     "grammarPointIds": [
       "ichidan-conjugation",
@@ -236,6 +237,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Every morning, I go to work after drinking coffee.",
     "grammarPointIds": [
       "predicate-final-order",
@@ -352,6 +354,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It is hot today, so would you like to eat ice cream in the park?",
     "grammarPointIds": [
       "verb-masen",
@@ -461,6 +464,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I want to go see a movie with my friend on Sunday.",
     "grammarPointIds": [
       "verb-stem",
@@ -549,6 +553,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The cat is under the table.",
     "grammarPointIds": [
       "wa-topic",
@@ -650,6 +655,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I bought two apples at the store.",
     "grammarPointIds": [
       "o-object",
@@ -754,6 +760,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please read quietly in the library.",
     "grammarPointIds": [
       "verb-te-form",
@@ -849,6 +856,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "May I take pictures in this room?",
     "grammarPointIds": [
       "de-action-location",
@@ -919,6 +927,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Can I come again?",
     "attribution": {
       "provider": "Tatoeba",
@@ -1011,6 +1020,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please don't drink beer before going to bed.",
     "attribution": {
       "provider": "Tatoeba",
@@ -1101,6 +1111,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You can study here.",
     "attribution": {
       "provider": "Tatoeba",
@@ -1200,6 +1211,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Mount Fuji is the highest mountain in Japan.",
     "attribution": {
       "provider": "Tatoeba",
@@ -1272,6 +1284,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How much is it per person?",
     "attribution": {
       "provider": "Tatoeba",
@@ -1364,6 +1377,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I need to study more.",
     "attribution": {
       "provider": "Tatoeba",
@@ -1452,6 +1466,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I go to bed early so that I can get well.",
     "attribution": {
       "provider": "Tatoeba",
@@ -1524,6 +1539,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The exam looks difficult, doesn't it?",
     "attribution": {
       "provider": "Tatoeba",
@@ -1604,6 +1620,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How do you use this?",
     "attribution": {
       "provider": "Tatoeba",
@@ -1689,6 +1706,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Would you like to have tea or something?",
     "attribution": {
       "provider": "Tatoeba",
@@ -1753,6 +1771,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What lovely weather.",
     "attribution": {
       "provider": "Tatoeba",
@@ -1838,6 +1857,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I hear that a new student is coming next month.",
     "attribution": {
       "provider": "Tatoeba",
@@ -1933,6 +1953,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Nobody came today.",
     "attribution": {
       "provider": "Tatoeba",
@@ -2020,6 +2041,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I've seen it before.",
     "attribution": {
       "provider": "Tatoeba",
@@ -2097,6 +2119,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I do things like work and play.",
     "attribution": {
       "provider": "Tatoeba",
@@ -2185,6 +2208,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I ate dinner while watching TV.",
     "attribution": {
       "provider": "Tatoeba",
@@ -2267,6 +2291,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Should I open the windows?",
     "attribution": {
       "provider": "Tatoeba",
@@ -2352,6 +2377,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I'll try reading this book tomorrow.",
     "attribution": {
       "provider": "Tatoeba",
@@ -2438,6 +2464,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "No, I haven't written it yet.",
     "attribution": {
       "provider": "Tatoeba",
@@ -2522,6 +2549,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I'll study after I come home.",
     "attribution": {
       "provider": "Tatoeba",
@@ -2614,6 +2642,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I know nothing but this.",
     "attribution": {
       "provider": "Tatoeba",
@@ -2703,6 +2732,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I intend to write a letter.",
     "attribution": {
       "provider": "Tatoeba",
@@ -2774,6 +2804,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I like reading books.",
     "attribution": {
       "provider": "Tatoeba",
@@ -2858,6 +2889,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "That night was very quiet.",
     "attribution": {
       "provider": "Tatoeba",
@@ -2951,6 +2983,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You saw that movie, right?",
     "attribution": {
       "provider": "Tatoeba",
@@ -3050,6 +3083,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Where did you have your picture taken?",
     "attribution": {
       "provider": "Tatoeba",
@@ -3167,6 +3201,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My father may be at home now.",
     "attribution": {
       "provider": "Tatoeba",
@@ -3244,6 +3279,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Call me when you're done.",
     "attribution": {
       "provider": "Tatoeba",
@@ -3327,6 +3363,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Do you know whether it will rain tomorrow?",
     "attribution": {
       "provider": "Tatoeba",
@@ -3396,6 +3433,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You don't have to eat it.",
     "attribution": {
       "provider": "Tatoeba",
@@ -3504,6 +3542,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I walked to the station without taking the bus.",
     "grammarPointIds": [
       "naide-without",
@@ -3592,6 +3631,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This TV is big and expensive.",
     "attribution": {
       "provider": "Tatoeba",
@@ -3666,6 +3706,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Which one do you want?",
     "attribution": {
       "provider": "Tatoeba",
@@ -3747,6 +3788,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Do you want me to come?",
     "attribution": {
       "provider": "Tatoeba",
@@ -3826,6 +3868,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The newspaper costs less than the book.",
     "attribution": {
       "provider": "Tatoeba",
@@ -3937,6 +3980,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It often rains here in spring.",
     "attribution": {
       "provider": "Tatoeba",
@@ -4044,6 +4088,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I accidentally lost my key yesterday.",
     "attribution": {
       "provider": "Tatoeba",
@@ -4136,6 +4181,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "A car has been parked outside.",
     "attribution": {
       "provider": "Tatoeba",
@@ -4247,6 +4293,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My father bought me some books.",
     "attribution": {
       "provider": "Tatoeba",
@@ -4362,6 +4409,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I lent my younger brother some money.",
     "attribution": {
       "provider": "Tatoeba",
@@ -4482,6 +4530,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I called my friend after doing my homework.",
     "grammarPointIds": [
       "ato-de",
@@ -4579,6 +4628,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Wash your face before you go to school.",
     "attribution": {
       "provider": "Tatoeba",
@@ -4642,6 +4692,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I already ate.",
     "attribution": {
       "provider": "Tatoeba",
@@ -4724,6 +4775,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I ate only one piece of candy.",
     "attribution": {
       "provider": "Tatoeba",
@@ -4811,6 +4863,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You look happy today.",
     "attribution": {
       "provider": "Tatoeba",
@@ -4899,6 +4952,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Why did you buy flowers?",
     "attribution": {
       "provider": "Tatoeba",
@@ -5019,6 +5073,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It will probably be cold tomorrow, so please wear a coat.",
     "grammarPointIds": [
       "deshou-darou",
@@ -5140,6 +5195,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "According to my mother, my father will come home late tonight.",
     "grammarPointIds": [
       "sou-hearsay",
@@ -5231,6 +5287,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Kanji is difficult, but studying it is fun.",
     "grammarPointIds": [
       "kedo-contrast",
@@ -5344,6 +5401,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It is raining today. However, I will walk through the park with my dog.",
     "grammarPointIds": [
       "demo-connector",
@@ -5456,6 +5514,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This room is old. However, it is very clean.",
     "grammarPointIds": [
       "shikashi-connector",
@@ -5567,6 +5626,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I left the station and then turned right.",
     "grammarPointIds": [
       "soshite-connector",
@@ -5671,6 +5731,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I took some medicine. After that, I slept for a while.",
     "grammarPointIds": [
       "sorekara-connector",
@@ -5778,6 +5839,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have a test tomorrow, so I won't watch TV tonight.",
     "grammarPointIds": [
       "kara-reason",
@@ -5864,6 +5926,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Because it is raining, please close the window.",
     "grammarPointIds": [
       "node-reason",
@@ -5972,6 +6035,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I wash my hands well so that I do not catch a cold.",
     "grammarPointIds": [
       "you-ni-purpose",
@@ -6076,6 +6140,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When you finish your homework, you may play a game.",
     "grammarPointIds": [
       "tara-conditional",
@@ -6158,6 +6223,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I plan to go to Kyoto in autumn.",
     "grammarPointIds": [
       "tsumori",
@@ -6255,6 +6321,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This medicine makes me feel better when I take it.",
     "grammarPointIds": [
       "to-conditional",
@@ -6368,6 +6435,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When I was a child, I often swam in this river.",
     "grammarPointIds": [
       "toki",
@@ -6485,6 +6553,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "During summer vacation, I sometimes run through the park in the morning.",
     "grammarPointIds": [
       "ru-koto-ga-aru",
@@ -6588,6 +6657,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I eat breakfast while reading the newspaper.",
     "grammarPointIds": [
       "nagara",
@@ -6687,6 +6757,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I eat breakfast after taking a shower.",
     "grammarPointIds": [
       "te-kara",
@@ -6785,6 +6856,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Before going to bed, I check tomorrow's weather.",
     "grammarPointIds": [
       "mae-ni",
@@ -6891,6 +6963,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "After the movie, I ate dinner with my friend.",
     "grammarPointIds": [
       "ato-de",
@@ -6997,6 +7070,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It takes five minutes to walk from the station to the school.",
     "grammarPointIds": [
       "kara-start",
@@ -7097,6 +7171,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "May I look at the photos from the trip?",
     "grammarPointIds": [
       "te-mo-ii",
@@ -7212,6 +7287,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You must not take this book outside.",
     "grammarPointIds": [
       "te-wa-ikenai",
@@ -7298,6 +7374,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please do not use my key.",
     "grammarPointIds": [
       "naide-kudasai",
@@ -7403,6 +7480,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have to write the composition by Monday.",
     "grammarPointIds": [
       "nakereba-naranai",
@@ -7494,6 +7572,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You have to buy a ticket at the station.",
     "grammarPointIds": [
       "nakute-wa-ikenai",
@@ -7581,6 +7660,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "We are out of milk, so I have to go buy some.",
     "grammarPointIds": [
       "nakya-nakucha",
@@ -7654,6 +7734,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Shall I close the window?",
     "grammarPointIds": [
       "mashou-ka",
@@ -7736,6 +7817,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Would you like to swim together on Saturday?",
     "grammarPointIds": [
       "masen-ka-invitation",
@@ -7814,6 +7896,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please write this address on the paper.",
     "grammarPointIds": [
       "te-kudasai",
@@ -7899,6 +7982,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "We are tired, so let's rest for a while.",
     "grammarPointIds": [
       "mashou",
@@ -7993,6 +8077,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There are seven students in the classroom.",
     "grammarPointIds": [
       "existence-location",
@@ -8081,6 +8166,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There are three eggs in the refrigerator.",
     "grammarPointIds": [
       "existence-location",
@@ -8193,6 +8279,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There are two red pens on the desk.",
     "grammarPointIds": [
       "positional-nouns",
@@ -8295,6 +8382,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I do not have time today.",
     "grammarPointIds": [
       "aru-possession",
@@ -8380,6 +8468,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The subway is faster than the train.",
     "grammarPointIds": [
       "yori-comparison",
@@ -8468,6 +8557,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Which do you prefer, coffee or tea?",
     "grammarPointIds": [
       "dochira-comparison",
@@ -8583,6 +8673,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "In my family, my mother's cooking is the most delicious.",
     "grammarPointIds": [
       "ichiban-superlative",
@@ -8681,6 +8772,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older brother and I attend the same school.",
     "grammarPointIds": [
       "onaji",
@@ -8796,6 +8888,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I bought three books and two notebooks.",
     "grammarPointIds": [
       "common-counters",
@@ -8899,6 +8992,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The box contains apples, bananas, and other things.",
     "grammarPointIds": [
       "ya-incomplete-list",
@@ -9000,6 +9094,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My teacher taught me Japanese.",
     "grammarPointIds": [
       "te-morau",
@@ -9086,6 +9181,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I will make a cake for my younger sister.",
     "grammarPointIds": [
       "te-ageru",
@@ -9178,6 +9274,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My friend carried my luggage for me.",
     "grammarPointIds": [
       "te-kureru",
@@ -9279,6 +9376,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I received a watch from my friend for my birthday.",
     "grammarPointIds": [
       "morau",
@@ -9375,6 +9473,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I gave my younger brother an old bicycle.",
     "grammarPointIds": [
       "ageru",
@@ -9477,6 +9576,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My father gave me this dictionary.",
     "grammarPointIds": [
       "kureru",
@@ -9593,6 +9693,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My father can write a letter in English.",
     "grammarPointIds": [
       "koto-ga-dekiru",
@@ -9684,6 +9785,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have swum in the sea.",
     "grammarPointIds": [
       "ta-koto-ga-aru",
@@ -9773,6 +9875,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I would like to try writing a letter in Japanese.",
     "grammarPointIds": [
       "te-miru",
@@ -9880,6 +9983,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On weekends, I do things like listen to music and take photos.",
     "grammarPointIds": [
       "tari-tari-suru",
@@ -9957,6 +10061,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This hotel is quiet and convenient.",
     "grammarPointIds": [
       "adjective-connective",
@@ -10065,6 +10170,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The park was not quiet yesterday.",
     "grammarPointIds": [
       "na-adjective-past-negative",
@@ -10135,6 +10241,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This luggage is not heavy.",
     "grammarPointIds": [
       "i-adjective-negative",
@@ -10202,6 +10309,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I was very busy last week.",
     "grammarPointIds": [
       "i-adjective-past",
@@ -10272,6 +10380,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This road is narrow and dark.",
     "grammarPointIds": [
       "adjective-connective",
@@ -10339,6 +10448,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please write the kanji in large characters.",
     "grammarPointIds": [
       "i-adjective-adverb",
@@ -10431,6 +10541,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The child went to school in good spirits.",
     "grammarPointIds": [
       "na-adjective-adverb",
@@ -10515,6 +10626,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "That red hat is my mother's.",
     "grammarPointIds": [
       "no-noun-omission",
@@ -10593,6 +10705,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Is the blue bicycle your older brother's?",
     "grammarPointIds": [
       "no-noun-omission",
@@ -10671,6 +10784,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What kind of music do you often listen to?",
     "grammarPointIds": [
       "donna",
@@ -10757,6 +10871,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Someone came to the entrance.",
     "grammarPointIds": [
       "question-word-ka",
@@ -10850,6 +10965,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I do not go anywhere on Sundays.",
     "grammarPointIds": [
       "question-word-mo",
@@ -10925,6 +11041,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I want to eat something.",
     "grammarPointIds": [
       "question-word-ka",
@@ -11012,6 +11129,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There is nobody in the classroom.",
     "grammarPointIds": [
       "question-word-mo",
@@ -11100,6 +11218,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Which bag is the lightest?",
     "grammarPointIds": [
       "dore-dono",
@@ -11201,6 +11320,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How do you make this dish?",
     "grammarPointIds": [
       "dou-yatte",
@@ -11274,6 +11394,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How is this soup?",
     "grammarPointIds": [
       "dou",
@@ -11354,6 +11475,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When is your birthday?",
     "grammarPointIds": [
       "itsu",
@@ -11439,6 +11561,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How many eggs are there in the refrigerator?",
     "grammarPointIds": [
       "ikutsu",
@@ -11549,6 +11672,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How much will it cost if I buy three apples?",
     "grammarPointIds": [
       "ikura",
@@ -11668,6 +11792,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My father said he would come home early today.",
     "grammarPointIds": [
       "to-quotation",
@@ -11759,6 +11884,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I hear that my older brother is going to Kyoto next week.",
     "grammarPointIds": [
       "tte-casual-quotation",
@@ -11858,6 +11984,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Would you like to have coffee or something before going home?",
     "grammarPointIds": [
       "demo-particle",
@@ -11931,6 +12058,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I do not want to drink something like coffee.",
     "grammarPointIds": [
       "nanka-nante-examples",
@@ -12008,6 +12136,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "In the morning, I drink nothing but water.",
     "grammarPointIds": [
       "shika-nai-limitation",
@@ -12097,6 +12226,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "For now, I only want to read this book.",
     "grammarPointIds": [
       "dake-limitation",
@@ -12189,6 +12319,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This watch costs about five thousand yen.",
     "grammarPointIds": [
       "kurai-approximation",
@@ -12269,6 +12400,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The shop closes around nine o'clock.",
     "grammarPointIds": [
       "goro-approximate-time",
@@ -12359,6 +12491,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Why is the window open?",
     "grammarPointIds": [
       "no-desu",
@@ -12458,6 +12591,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have not read that letter yet.",
     "grammarPointIds": [
       "mada-te-inai",
@@ -12553,6 +12687,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I showed my teacher a photo of Kyoto.",
     "grammarPointIds": [
       "argument-omission",
@@ -12679,6 +12814,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On Sundays, I do things like clean the house and cook.",
     "grammarPointIds": [
       "irregular-verbs",
@@ -12767,6 +12903,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger sister has not eaten anything yet.",
     "grammarPointIds": [
       "te-inai",
@@ -12891,6 +13028,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Which do you like better, dogs or cats? I prefer cats.",
     "grammarPointIds": [
       "ga-identification",
@@ -12986,6 +13124,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The library is open from Monday through Friday.",
     "grammarPointIds": [
       "te-iru-result-state",
@@ -13073,6 +13212,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have to get up early tomorrow.",
     "grammarPointIds": [
       "i-adjective-adverb",
@@ -13154,6 +13294,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I plan to go to Kyoto with my family next month.",
     "grammarPointIds": [
       "relative-clause",
@@ -13234,6 +13375,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I buy vegetables and fruit at the store.",
     "grammarPointIds": [
       "nonpast-tense",
@@ -13350,6 +13492,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Both my older brother and younger sister are studying English.",
     "grammarPointIds": [
       "mo-addition",
@@ -13449,6 +13592,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I swim at the pool three times a week.",
     "grammarPointIds": [
       "ni-frequency",
@@ -13532,6 +13676,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please do not take photos here.",
     "grammarPointIds": [
       "de-action-location",
@@ -13649,6 +13794,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Since you have a cold, you should go to bed early today.",
     "grammarPointIds": [
       "yo-emphasis",
@@ -13784,6 +13930,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Since there is no school tomorrow, you do not have to get up early.",
     "grammarPointIds": [
       "kara-reason",
@@ -13902,6 +14049,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "After doing my homework, I play video games with my friend.",
     "grammarPointIds": [
       "relative-clause",
@@ -13983,6 +14131,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I brush my teeth before going to bed.",
     "grammarPointIds": [
       "modifier-before-noun",
@@ -14067,6 +14216,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It is raining, isn't it? Shall I lend you an umbrella?",
     "grammarPointIds": [
       "copula-da-desu",
@@ -14161,6 +14311,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Have you ever been to Japan?",
     "grammarPointIds": [
       "e-direction",
@@ -14273,6 +14424,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My father can read Japanese newspapers.",
     "grammarPointIds": [
       "verb-dictionary-nonpast",
@@ -14377,6 +14529,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My friend gave me a new book for my birthday.",
     "grammarPointIds": [
       "ga-subject",
@@ -14486,6 +14639,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On weekends, I often watch movies with my friends.",
     "grammarPointIds": [
       "to-companion",
@@ -14606,6 +14760,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The teacher said, \"There will be a test tomorrow.\"",
     "grammarPointIds": [
       "ga-subject",
@@ -14715,6 +14870,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Of all Japanese foods, I like ramen best.",
     "grammarPointIds": [
       "ga-identification",
@@ -14794,6 +14950,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Excuse me, one hot tea, please.",
     "grammarPointIds": [
       "o-kudasai",
@@ -14887,6 +15044,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You must not swim here because it is dangerous.",
     "grammarPointIds": [
       "node-reason",
@@ -14963,6 +15121,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I went out without taking an umbrella.",
     "grammarPointIds": [
       "verb-nai",
@@ -15070,6 +15229,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I was busy yesterday, but I am not busy today.",
     "grammarPointIds": [
       "wa-contrast",
@@ -15196,6 +15356,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My previous apartment was quiet, but it was not convenient.",
     "grammarPointIds": [
       "copula-past",
@@ -15309,6 +15470,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Spring arrived, and it gradually became warmer.",
     "grammarPointIds": [
       "soshite-connector",
@@ -15421,6 +15583,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I like taking photos, and I want a new camera.",
     "grammarPointIds": [
       "no-nominalizer",
@@ -15511,6 +15674,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The bus is cheaper than the train.",
     "grammarPointIds": [
       "i-adjective-predicate",
@@ -15594,6 +15758,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Whose blue umbrella is this?",
     "grammarPointIds": [
       "no-possession",
@@ -15690,6 +15855,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Let us meet at the station around three o'clock.",
     "grammarPointIds": [
       "mashou",
@@ -15809,6 +15975,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This is not my umbrella. It is my younger sister's.",
     "grammarPointIds": [
       "copula-negative-polite",
@@ -15908,6 +16075,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older brother is a company employee, and my older sister is a student.",
     "grammarPointIds": [
       "topic-comment-structure",
@@ -16006,6 +16174,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Every morning, I listen to music while walking through the park.",
     "grammarPointIds": [
       "o-route",
@@ -16101,6 +16270,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This cake is too sweet, so I will eat only half.",
     "grammarPointIds": [
       "node-reason",
@@ -16211,6 +16381,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "If it rains, let's watch a movie at home.",
     "grammarPointIds": [
       "ga-subject",
@@ -16308,6 +16479,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have to wake up early tomorrow.",
     "grammarPointIds": [
       "verb-nai",
@@ -16402,6 +16574,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I had my mother teach me how to make a cake.",
     "grammarPointIds": [
       "verb-te-form",
@@ -16511,6 +16684,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This soup looks hot, but I will try drinking a little.",
     "grammarPointIds": [
       "kedo-contrast",
@@ -16633,6 +16807,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It might rain tomorrow, so I will take an umbrella.",
     "grammarPointIds": [
       "node-reason",
@@ -16725,6 +16900,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I accidentally left my umbrella on the train.",
     "grammarPointIds": [
       "verb-mashita",
@@ -16839,6 +17015,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It was not very cold yesterday, so I walked through the park.",
     "grammarPointIds": [
       "o-route",
@@ -16964,6 +17141,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There is only one apple in the refrigerator, so I will buy three more.",
     "grammarPointIds": [
       "node-reason",
@@ -17093,6 +17271,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Will you watch a movie or read a book on Sunday?",
     "grammarPointIds": [
       "ka-question",
@@ -17186,6 +17365,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I put my homework in my bag so that I would not forget it.",
     "grammarPointIds": [
       "ni-destination",
@@ -17275,6 +17455,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What kind of music do you like listening to?",
     "grammarPointIds": [
       "no-nominalizer",
@@ -17388,6 +17569,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This room is not quiet, but it is convenient, isn't it?",
     "grammarPointIds": [
       "copula-negative-plain",
@@ -17512,6 +17694,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It is raining today. However, I will go and buy an umbrella.",
     "grammarPointIds": [
       "ni-purpose",
@@ -17635,6 +17818,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I ate breakfast. After that, I went to school.",
     "grammarPointIds": [
       "e-direction",
@@ -17739,6 +17923,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I study Japanese for about one hour every evening.",
     "grammarPointIds": [
       "kurai-approximation",
@@ -17830,6 +18015,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older brother owns as many as three cars.",
     "grammarPointIds": [
       "ga-subject",
@@ -17931,6 +18117,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have to go to bed now because I am getting up early tomorrow.",
     "grammarPointIds": [
       "plain-polite-register",
@@ -18020,6 +18207,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You must not take photos here.",
     "grammarPointIds": [
       "yo-emphasis",
@@ -18099,6 +18287,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Danger! Do not press that button.",
     "grammarPointIds": [
       "na-prohibitive",
@@ -18175,6 +18364,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I heard that it will snow tomorrow.",
     "grammarPointIds": [
       "ga-subject",
@@ -18282,6 +18472,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When I ask about something I do not understand, my teacher explains it to me.",
     "grammarPointIds": [
       "relative-clause",
@@ -18372,6 +18563,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When will we have the Japanese test?",
     "grammarPointIds": [
       "no-possession",
@@ -18454,6 +18646,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How much is this red bag?",
     "grammarPointIds": [
       "i-adjective-attributive",
@@ -18579,6 +18772,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How many people are coming to the party? How many cakes will you buy?",
     "grammarPointIds": [
       "common-counters",
@@ -18665,6 +18859,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How do you get to the station?",
     "grammarPointIds": [
       "made-end",
@@ -18780,6 +18975,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I gave my younger sister a book and received flowers from her.",
     "grammarPointIds": [
       "ni-target-recipient",
@@ -18898,6 +19094,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The window had been left open, but nobody was there.",
     "grammarPointIds": [
       "kedo-contrast",
@@ -19034,6 +19231,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When I have time, I sometimes study at the library.",
     "grammarPointIds": [
       "de-action-location",
@@ -19170,6 +19368,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It will probably rain tomorrow. I think we will need an umbrella.",
     "grammarPointIds": [
       "to-quotation",
@@ -19263,6 +19462,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I chose the same cake as my older sister.",
     "grammarPointIds": [
       "suru-change",
@@ -19392,6 +19592,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger sister is good at drawing and makes beautiful cards.",
     "grammarPointIds": [
       "no-nominalizer",
@@ -19580,6 +19781,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger sister asked, 'Which cake do you like?' so I answered, 'Chocolate or something would be good.'",
     "grammarPointIds": [
       "node-reason",
@@ -19752,6 +19954,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I do not know yet whether someone will come to help me. However, I will start by myself.",
     "grammarPointIds": [
       "shikashi-connector",
@@ -19892,6 +20095,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Why did you not answer the phone yesterday? I was studying.",
     "grammarPointIds": [
       "verb-nakatta",
@@ -20060,6 +20264,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The sea is beautiful. How about this table? Shall we have coffee or something?",
     "grammarPointIds": [
       "naa-reflection",
@@ -20202,6 +20407,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger sister was busy, so I made rice balls, soup, and other food for her.",
     "grammarPointIds": [
       "ya-incomplete-list",
@@ -20308,6 +20514,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Where and what would you like to eat tonight?",
     "grammarPointIds": [
       "de-action-location",
@@ -20425,6 +20632,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Which is better, the red shirt or the blue shirt?",
     "grammarPointIds": [
       "to-complete-list",
@@ -20536,6 +20744,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Which of these three umbrellas is yours?",
     "grammarPointIds": [
       "no-noun-omission",
@@ -20650,6 +20859,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Why were you absent yesterday? Why didn't you even call?",
     "grammarPointIds": [
       "mo-addition",
@@ -20821,6 +21031,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Who is this person? They are the new Japanese teacher. How are the teacher's classes?",
     "grammarPointIds": [
       "kosoado-directions",
@@ -20985,6 +21196,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What day and time is my younger brother's birthday party? How old will he be?",
     "grammarPointIds": [
       "naru-change",
@@ -21079,6 +21291,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "About how long does it take from here to the station?",
     "grammarPointIds": [
       "kara-start",
@@ -21171,6 +21384,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please write your name here.",
     "grammarPointIds": [
       "o-go-honorific-prefix",
@@ -21299,6 +21513,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Every morning, I wash my face, take a shower, and study.",
     "grammarPointIds": [
       "verb-groups",
@@ -21407,6 +21622,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I did not go shopping last week because I was busy.",
     "grammarPointIds": [
       "verb-masen-deshita",
@@ -21541,6 +21757,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Is this sugar or salt? It is not sugar; it is salt.",
     "grammarPointIds": [
       "copula-negative-polite",
@@ -21618,6 +21835,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please take off your shoes at the entrance.",
     "grammarPointIds": [
       "de-action-location",
@@ -21757,6 +21975,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When I was a child, this town was quiet, but now it is not.",
     "grammarPointIds": [
       "ga-contrast",
@@ -21912,6 +22131,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Yesterday's work was not difficult, and I was able to finish everything.",
     "grammarPointIds": [
       "no-possession",
@@ -22050,6 +22270,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It was not very cold this morning, so I did not wear a thick coat.",
     "grammarPointIds": [
       "node-reason",
@@ -22146,6 +22367,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older brother is a police officer, and my older sister is a doctor.",
     "grammarPointIds": [
       "topic-comment-structure",
@@ -22229,6 +22451,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "That red wallet is not mine.",
     "grammarPointIds": [
       "copula-negative-plain",
@@ -22328,6 +22551,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger sister is playing the guitar in her room.",
     "grammarPointIds": [
       "de-action-location",
@@ -22452,6 +22676,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The bank is already closed. I will go tomorrow morning.",
     "grammarPointIds": [
       "te-iru-result-state",
@@ -22557,6 +22782,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "A vase and a glass have been placed on the table.",
     "grammarPointIds": [
       "to-complete-list",
@@ -22683,6 +22909,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have not done my homework yet, so I will not go out to play.",
     "grammarPointIds": [
       "node-reason",
@@ -22797,6 +23024,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please do not swim in this pond. The water is dirty.",
     "grammarPointIds": [
       "de-action-location",
@@ -22937,6 +23165,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The train is faster than the bicycle, but the bicycle is cheaper than the train.",
     "grammarPointIds": [
       "ga-contrast",
@@ -23057,6 +23286,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Of spring, summer, autumn, and winter, I like autumn best.",
     "grammarPointIds": [
       "to-complete-list",
@@ -23144,6 +23374,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My father has two old watches.",
     "grammarPointIds": [
       "i-adjective-attributive",
@@ -23234,6 +23465,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "An energetic child is playing outside.",
     "grammarPointIds": [
       "de-action-location",
@@ -23313,6 +23545,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The bank is next to the station.",
     "grammarPointIds": [
       "ni-existence-location",
@@ -23405,6 +23638,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older brother washed my bicycle for me.",
     "grammarPointIds": [
       "ni-target-recipient",
@@ -23526,6 +23760,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It may be cloudy tomorrow, so I will take a jacket with me.",
     "grammarPointIds": [
       "node-reason",
@@ -23620,6 +23855,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This curry looks spicy, but it also looks delicious.",
     "grammarPointIds": [
       "ga-contrast",
@@ -23711,6 +23947,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I hear that my father is going abroad next month.",
     "grammarPointIds": [
       "e-direction",
@@ -23799,6 +24036,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How did you learn this kanji?",
     "grammarPointIds": [
       "ka-question",
@@ -23966,6 +24204,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Tomorrow is a day off, so you do not have to wake up early. You should get some extra sleep.",
     "grammarPointIds": [
       "yo-emphasis",
@@ -24087,6 +24326,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have never played the guitar. I would like to try it.",
     "grammarPointIds": [
       "tai-desire",
@@ -24210,6 +24450,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Three times a week, I walk for an hour while listening to music.",
     "grammarPointIds": [
       "ni-frequency",
@@ -24335,6 +24576,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger sister was having trouble, so I helped her with her homework.",
     "grammarPointIds": [
       "node-reason",
@@ -24460,6 +24702,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I will ask by phone whether the store has those shoes.",
     "grammarPointIds": [
       "de-means",
@@ -24593,6 +24836,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This building was a school until last year, but now it is a hospital.",
     "grammarPointIds": [
       "predicate-final-order",
@@ -24735,6 +24979,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Yesterday was not a day off. But today is.",
     "grammarPointIds": [
       "copula-past-negative",
@@ -24874,6 +25119,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Every morning, I leave home at seven and arrive at work at eight.",
     "grammarPointIds": [
       "nonpast-tense",
@@ -24993,6 +25239,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Before going to school, I eat a light breakfast in the kitchen.",
     "grammarPointIds": [
       "modifier-before-noun",
@@ -25157,6 +25404,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I use the polite form of 'I don't understand' with my teacher, but the plain form with my friends.",
     "grammarPointIds": [
       "plain-polite-register",
@@ -25278,6 +25526,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The cafeteria is open from eight in the morning until two in the afternoon.",
     "grammarPointIds": [
       "kara-start",
@@ -25374,6 +25623,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older brother bought as many as five snacks.",
     "grammarPointIds": [
       "mo-emphasis",
@@ -25460,6 +25710,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There are only two eggs in the refrigerator.",
     "grammarPointIds": [
       "shika-nai-limitation",
@@ -25567,6 +25818,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger brother said, 'I don't like things like vegetables.'",
     "grammarPointIds": [
       "nanka-nante-examples",
@@ -25705,6 +25957,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have a lot of work today, and I am a little tired, so I am going home early.",
     "grammarPointIds": [
       "shi-additive-reason",
@@ -25760,6 +26013,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please give me this stamp.",
     "grammarPointIds": [
       "o-kudasai",
@@ -25846,6 +26100,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "May I use this pencil?",
     "grammarPointIds": [
       "te-mo-ii",
@@ -25948,6 +26203,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You must not smoke in this room.",
     "grammarPointIds": [
       "te-wa-ikenai",
@@ -26026,6 +26282,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You mustn't run here.",
     "grammarPointIds": [
       "cha-ikenai",
@@ -26155,6 +26412,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My father said, 'It's dangerous, so don't swim in the river.'",
     "grammarPointIds": [
       "na-prohibitive",
@@ -26277,6 +26535,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On Sunday, I am going to see a movie with a friend.",
     "grammarPointIds": [
       "ni-purpose",
@@ -26387,6 +26646,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I ended up leaving home without my key.",
     "grammarPointIds": [
       "naide-without",
@@ -26497,6 +26757,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Sometimes I eat lunch at a cafe.",
     "grammarPointIds": [
       "ru-koto-ga-aru",
@@ -26618,6 +26879,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On Sundays, I do things like laundry and cleaning my room.",
     "grammarPointIds": [
       "tari-tari-suru",
@@ -26758,6 +27020,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "After doing my homework, I will call a friend. Then I will watch television.",
     "grammarPointIds": [
       "te-kara",
@@ -26858,6 +27121,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I must take this medicine every day.",
     "grammarPointIds": [
       "nakereba-naranai",
@@ -26953,6 +27217,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You have to take off your shoes at the entrance.",
     "grammarPointIds": [
       "nakute-wa-ikenai",
@@ -27052,6 +27317,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have a test tomorrow, so I've got to study tonight.",
     "grammarPointIds": [
       "nakya-nakucha",
@@ -27189,6 +27455,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It will probably rain tomorrow. If it does, I will take a taxi home.",
     "grammarPointIds": [
       "deshou-darou",
@@ -27331,6 +27598,7 @@
         "reading": "」"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What happens when you press this button? The door opens.",
     "grammarPointIds": [
       "to-conditional",
@@ -27448,6 +27716,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This skirt is too big. I want a smaller one.",
     "grammarPointIds": [
       "sugiru",
@@ -27561,6 +27830,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older sister is good at singing, but I am bad at it.",
     "grammarPointIds": [
       "no-ga-jouzu-heta",
@@ -27671,6 +27941,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I intend to work abroad next year. I think it will be challenging.",
     "grammarPointIds": [
       "tsumori",
@@ -27802,6 +28073,7 @@
         "reading": "」"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I'm studying right now. Shall I make you some coffee?",
     "grammarPointIds": [
       "chuu",
@@ -27917,6 +28189,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I write the cake recipe in my notebook so that I do not forget it.",
     "grammarPointIds": [
       "you-ni-purpose",
@@ -28000,6 +28273,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There is only one hundred yen in my wallet.",
     "grammarPointIds": [
       "shika-nai-limitation",
@@ -28076,6 +28350,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My homework is already done.",
     "grammarPointIds": [
       "mou",
@@ -28143,6 +28418,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There is a cat in the garden.",
     "grammarPointIds": [
       "iru-existence",
@@ -28244,6 +28520,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There are only four snacks in the box.",
     "grammarPointIds": [
       "dake-limitation",
@@ -28338,6 +28615,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There are five students in the classroom.",
     "grammarPointIds": [
       "numbers-and-counters",
@@ -28415,6 +28693,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This tea is hot, isn't it?",
     "grammarPointIds": [
       "ne-confirmation",
@@ -28485,6 +28764,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Tomorrow is a day off, right?",
     "grammarPointIds": [
       "yone-confirmation",
@@ -28555,6 +28835,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What a beautiful mountain.",
     "grammarPointIds": [
       "naa-reflection",
@@ -28666,6 +28947,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This shop is inexpensive. However, it is far from the station.",
     "grammarPointIds": [
       "shikashi-connector",
@@ -28775,6 +29057,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Would you like to watch a movie or something on our day off?",
     "grammarPointIds": [
       "demo-particle",
@@ -28855,6 +29138,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I wake up around six every morning.",
     "grammarPointIds": [
       "goro-approximate-time",
@@ -28960,6 +29244,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There are dictionaries, notebooks, and other things on the desk.",
     "grammarPointIds": [
       "nado-examples",
@@ -29052,6 +29337,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I wrote a letter to my mother.",
     "grammarPointIds": [
       "o-go-honorific-prefix",
@@ -29187,6 +29473,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Every evening, I read a book, watch television, and cook.",
     "grammarPointIds": [
       "verb-groups",
@@ -29289,6 +29576,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I will not ride my bicycle today because it is raining.",
     "grammarPointIds": [
       "verb-masen",
@@ -29406,6 +29694,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger brother can ride a bicycle by himself.",
     "grammarPointIds": [
       "koto-ga-dekiru",
@@ -29531,6 +29820,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "After dinner, I walk through the park with my dog.",
     "grammarPointIds": [
       "ato-de",
@@ -29642,6 +29932,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This room is not spacious, but it is bright and pleasant.",
     "grammarPointIds": [
       "i-adjective-negative",
@@ -29733,6 +30024,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please speak quietly in the library.",
     "grammarPointIds": [
       "na-adjective-adverb",
@@ -29846,6 +30138,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The room is dark, so I turn on the light to make it brighter.",
     "grammarPointIds": [
       "suru-change",
@@ -29949,6 +30242,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My shoes and my younger sister's shoes are the same color.",
     "grammarPointIds": [
       "onaji",
@@ -30028,6 +30322,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My father is still working.",
     "grammarPointIds": [
       "mada",
@@ -30130,6 +30425,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I gave my younger sister a new hat.",
     "grammarPointIds": [
       "ageru",
@@ -30238,6 +30534,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "A friend gave me a photograph from their trip.",
     "grammarPointIds": [
       "kureru",
@@ -30339,6 +30636,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I received a dictionary from my teacher.",
     "grammarPointIds": [
       "morau",
@@ -30471,6 +30769,7 @@
         "reading": "」"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What kind of music do you like? I like quiet music like this.",
     "grammarPointIds": [
       "donna",
@@ -30549,6 +30848,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When does summer vacation begin?",
     "grammarPointIds": [
       "itsu",
@@ -30622,6 +30922,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How much is this ticket?",
     "grammarPointIds": [
       "ikura",
@@ -30721,6 +31022,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How many sweets are there in the box?",
     "grammarPointIds": [
       "ikutsu",
@@ -30826,6 +31128,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On my days off, I want to go somewhere.",
     "grammarPointIds": [
       "question-word-ka",
@@ -30921,6 +31224,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I go to university every Tuesday.",
     "grammarPointIds": [
       "ni-time",
@@ -31045,6 +31349,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I wait for my friend at the station, and then we go to school together.",
     "grammarPointIds": [
       "de-action-location",
@@ -31150,6 +31455,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I walk slowly through the park and cross the bridge.",
     "grammarPointIds": [
       "o-route",
@@ -31273,6 +31579,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I go to the library to borrow books twice a week.",
     "grammarPointIds": [
       "ni-frequency",
@@ -31388,6 +31695,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I must leave home at seven in the morning.",
     "grammarPointIds": [
       "nakereba-naranai",
@@ -31477,6 +31785,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "In the morning, I eat bread or eggs.",
     "grammarPointIds": [
       "ka-alternatives",
@@ -31594,6 +31903,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older sister speaks English. My older brother speaks it too.",
     "grammarPointIds": [
       "mo-addition",
@@ -31678,6 +31988,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger brother ate as many as five eggs.",
     "grammarPointIds": [
       "mo-emphasis",
@@ -31788,6 +32099,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I take shirts, trousers, and similar clothes on trips.",
     "grammarPointIds": [
       "ya-incomplete-list",
@@ -31890,6 +32202,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My mother said, 'Please come home early.'",
     "grammarPointIds": [
       "to-quotation",
@@ -31984,6 +32297,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have not eaten breakfast yet.",
     "grammarPointIds": [
       "mada-te-inai",
@@ -32057,6 +32371,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The window has been left open.",
     "grammarPointIds": [
       "te-aru-result-state",
@@ -32148,6 +32463,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I accidentally left my wallet at home.",
     "grammarPointIds": [
       "te-shimau",
@@ -32233,6 +32549,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Would you like to try this dish?",
     "grammarPointIds": [
       "te-miru",
@@ -32333,6 +32650,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I cleaned my room while listening to the radio.",
     "grammarPointIds": [
       "nagara",
@@ -32417,6 +32735,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This bag is not heavy, and it is sturdy.",
     "grammarPointIds": [
       "i-adjective-negative",
@@ -32506,6 +32825,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The area near the station has become lively.",
     "grammarPointIds": [
       "naru-change",
@@ -32607,6 +32927,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Which do you prefer, the red sweater or the blue sweater?",
     "grammarPointIds": [
       "dochira-comparison",
@@ -32709,6 +33030,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger brother is taller than my older brother.",
     "grammarPointIds": [
       "yori-comparison",
@@ -32804,6 +33126,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I like cats more than dogs.",
     "grammarPointIds": [
       "yori-comparison",
@@ -32921,6 +33244,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "If the wind is strong, you should stay home.",
     "grammarPointIds": [
       "tara-conditional",
@@ -33023,6 +33347,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The sky is dark, so it looks like it is going to rain.",
     "grammarPointIds": [
       "sou-appearance",
@@ -33103,6 +33428,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I plan to fly for the first time next month.",
     "grammarPointIds": [
       "tsumori",
@@ -33196,6 +33522,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It was rainy yesterday, but it is clear today.",
     "grammarPointIds": [
       "copula-past",
@@ -33304,6 +33631,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Last Saturday was not a day off.",
     "grammarPointIds": [
       "copula-past-negative",
@@ -33408,6 +33736,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This animal is not a dog. It is a cat.",
     "grammarPointIds": [
       "copula-negative-polite",
@@ -33497,6 +33826,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My father is a police officer, and my mother is a doctor.",
     "grammarPointIds": [
       "noun-connective-de",
@@ -33622,6 +33952,7 @@
         "reading": "」"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Who closed the door? My younger sister did.",
     "grammarPointIds": [
       "argument-omission",
@@ -33711,6 +34042,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I will travel to Kyoto with my parents next week.",
     "grammarPointIds": [
       "ni-destination",
@@ -33794,6 +34126,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This soup is a little spicy, isn't it?",
     "grammarPointIds": [
       "ne-confirmation",
@@ -33873,6 +34206,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This is your umbrella, right?",
     "grammarPointIds": [
       "yone-confirmation",
@@ -33943,6 +34277,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It is pleasantly cool today.",
     "grammarPointIds": [
       "naa-reflection",
@@ -34038,6 +34373,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I am busy today. However, I am free tomorrow.",
     "grammarPointIds": [
       "demo-connector",
@@ -34128,6 +34464,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This problem is difficult. However, it is interesting.",
     "grammarPointIds": [
       "shikashi-connector",
@@ -34257,6 +34594,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I eat breakfast around seven. Then I go to school.",
     "grammarPointIds": [
       "goro-approximate-time",
@@ -34376,6 +34714,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This hotel is near the station, and its rooms are spacious too.",
     "grammarPointIds": [
       "shi-additive-reason",
@@ -34467,6 +34806,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It is about five minutes from my home to the station.",
     "grammarPointIds": [
       "kurai-approximation",
@@ -34565,6 +34905,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My friend said, 'Studying is boring.'",
     "grammarPointIds": [
       "nanka-nante-examples",
@@ -34671,6 +35012,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I will not eat fish today. I will eat meat.",
     "grammarPointIds": [
       "verb-masen",
@@ -34786,6 +35128,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I did not watch television yesterday. I went to bed early.",
     "grammarPointIds": [
       "verb-masen-deshita",
@@ -34881,6 +35224,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I eat dinner after washing my hands.",
     "grammarPointIds": [
       "te-kara",
@@ -34939,6 +35283,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please give me that ballpoint pen.",
     "grammarPointIds": [
       "o-kudasai",
@@ -35041,6 +35386,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I went to school without eating breakfast.",
     "grammarPointIds": [
       "naide-without",
@@ -35126,6 +35472,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "May I sit here?",
     "grammarPointIds": [
       "te-mo-ii",
@@ -35220,6 +35567,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You do not have to wake up early today.",
     "grammarPointIds": [
       "nakute-mo-ii",
@@ -35301,6 +35649,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You must not enter this room.",
     "grammarPointIds": [
       "te-wa-ikenai",
@@ -35380,6 +35729,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You must not run in the corridor.",
     "grammarPointIds": [
       "cha-ikenai",
@@ -35489,6 +35839,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I must write the composition by tomorrow.",
     "grammarPointIds": [
       "nakute-wa-ikenai",
@@ -35569,6 +35920,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please do not put your luggage here.",
     "grammarPointIds": [
       "naide-kudasai",
@@ -35646,6 +35998,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Do not play in the street because it is dangerous.",
     "grammarPointIds": [
       "na-prohibitive",
@@ -35739,6 +36092,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Let's play sports in the park on Sunday.",
     "grammarPointIds": [
       "mashou",
@@ -35839,6 +36193,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Shall we eat lunch at that restaurant?",
     "grammarPointIds": [
       "mashou-ka",
@@ -35935,6 +36290,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger sister can read kanji.",
     "grammarPointIds": [
       "koto-ga-dekiru",
@@ -36068,6 +36424,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I sometimes eat dinner at a restaurant after work.",
     "grammarPointIds": [
       "ru-koto-ga-aru",
@@ -36150,6 +36507,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have been on an airplane before.",
     "grammarPointIds": [
       "ta-koto-ga-aru",
@@ -36263,6 +36621,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On Sundays, I do things like read magazines and listen to music.",
     "grammarPointIds": [
       "tari-tari-suru",
@@ -36347,6 +36706,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When I am sick, I take medicine.",
     "grammarPointIds": [
       "toki",
@@ -36491,6 +36851,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I wash my hands before dinner and brush my teeth after eating.",
     "grammarPointIds": [
       "mae-ni",
@@ -36582,6 +36943,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It might snow this afternoon.",
     "grammarPointIds": [
       "kamoshirenai",
@@ -36662,6 +37024,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Yesterday's test probably was not easy.",
     "grammarPointIds": [
       "deshou-darou",
@@ -36742,6 +37105,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "According to the news, it will be sunny tomorrow.",
     "grammarPointIds": [
       "sou-hearsay",
@@ -36837,6 +37201,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I write the things to buy on paper so that I do not forget.",
     "grammarPointIds": [
       "you-ni-purpose",
@@ -36971,6 +37336,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This town used to be quiet, but now it is not.",
     "grammarPointIds": [
       "na-adjective-past",
@@ -37065,6 +37431,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger sister likes singing songs.",
     "grammarPointIds": [
       "no-ga-suki",
@@ -37147,6 +37514,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older brother is good at swimming.",
     "grammarPointIds": [
       "no-ga-jouzu-heta",
@@ -37241,6 +37609,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older sister has a beautiful bicycle.",
     "grammarPointIds": [
       "aru-possession",
@@ -37328,6 +37697,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Of all fruits, I like bananas best.",
     "grammarPointIds": [
       "ichiban-superlative",
@@ -37418,6 +37788,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This bag and that bag are the same color.",
     "grammarPointIds": [
       "onaji",
@@ -37526,6 +37897,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I gave my younger brother a book and read it to him.",
     "grammarPointIds": [
       "ageru",
@@ -37648,6 +38020,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My mother gave me new clothes and also took a photo for me.",
     "grammarPointIds": [
       "kureru",
@@ -37795,6 +38168,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I received a cookbook from my older sister and had her teach me how to make curry.",
     "grammarPointIds": [
       "morau",
@@ -37915,6 +38289,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What do you want for your birthday? I want a new watch.",
     "grammarPointIds": [
       "hoshii",
@@ -38036,6 +38411,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Because this room was not clean, I cleaned it thoroughly.",
     "grammarPointIds": [
       "na-adjective-past-negative",
@@ -38133,6 +38509,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When does the next break begin?",
     "grammarPointIds": [
       "itsu",
@@ -38219,6 +38596,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Why is the train stopped?",
     "grammarPointIds": [
       "naze-doushite-nande",
@@ -38309,6 +38687,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What does this word mean?",
     "grammarPointIds": [
       "nani",
@@ -38424,6 +38803,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How do you get to the station? I go by subway.",
     "grammarPointIds": [
       "dou-yatte",
@@ -38524,6 +38904,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How is school in Japan? It is enjoyable.",
     "grammarPointIds": [
       "dou",
@@ -38630,6 +39011,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What kind of drink do you like? I like cold milk.",
     "grammarPointIds": [
       "donna",
@@ -38722,6 +39104,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Which umbrella is yours? It is the black umbrella.",
     "grammarPointIds": [
       "dore-dono",
@@ -38792,6 +39175,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How much are these socks?",
     "grammarPointIds": [
       "ikura",
@@ -38903,6 +39287,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How many chairs are there at home? There are six.",
     "grammarPointIds": [
       "ikutsu",
@@ -39042,6 +39427,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Someone is in front of the gate, but nobody knows their name.",
     "grammarPointIds": [
       "question-word-ka",
@@ -39133,6 +39519,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I think it will rain tomorrow.",
     "grammarPointIds": [
       "to-omou",
@@ -39245,6 +39632,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I do not know whether this store has beef.",
     "grammarPointIds": [
       "ka-dou-ka",
@@ -39344,6 +39732,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Whenever I am at home, I always listen to the radio.",
     "grammarPointIds": [
       "to-conditional",
@@ -39433,6 +39822,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The train is coming, so I have to go now.",
     "grammarPointIds": [
       "nakya-nakucha",
@@ -39521,6 +39911,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The post office is beyond the police box.",
     "grammarPointIds": [
       "location-of-topic",
@@ -39608,6 +39999,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Breakfast is only milk and bread.",
     "grammarPointIds": [
       "dake-limitation",
@@ -39711,6 +40103,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On our day off, let's watch a movie or something.",
     "grammarPointIds": [
       "demo-particle",
@@ -39794,6 +40187,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The restroom is on the second floor.",
     "grammarPointIds": [
       "o-go-honorific-prefix",
@@ -39928,6 +40322,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger sister puts on a hat and shoes, then leaves home.",
     "grammarPointIds": [
       "verb-groups",
@@ -40012,6 +40407,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This skirt is too long, so I will shorten it.",
     "grammarPointIds": [
       "sugiru",
@@ -40146,6 +40542,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How many international students are in this class? There are three.",
     "grammarPointIds": [
       "nan-counter",
@@ -40231,6 +40628,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I saw such a large dog for the first time.",
     "grammarPointIds": [
       "kosoado-kind",
@@ -40336,6 +40734,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On Wednesday evening, I will buy a blue tie at the department store.",
     "grammarPointIds": [
       "de-action-location",
@@ -40441,6 +40840,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I bought yellow bananas and green vegetables at the greengrocer's.",
     "grammarPointIds": [
       "to-complete-list",
@@ -40554,6 +40954,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When you turn right at the intersection, there is a cinema.",
     "grammarPointIds": [
       "to-conditional",
@@ -40656,6 +41057,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Where is the embassy on this map?",
     "grammarPointIds": [
       "kosoado-places",
@@ -40756,6 +41158,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There are stairs and an exit beside the elevator.",
     "grammarPointIds": [
       "existence-location",
@@ -40877,6 +41280,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Many foreigners live in the northern village.",
     "grammarPointIds": [
       "te-iru-result-state",
@@ -40984,6 +41388,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Turn left at the corner and walk straight, please.",
     "grammarPointIds": [
       "te-kudasai",
@@ -41076,6 +41481,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There is a large tree east of the station.",
     "grammarPointIds": [
       "existence-location",
@@ -41169,6 +41575,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "In the morning, I wash my face and body with soap.",
     "grammarPointIds": [
       "de-means",
@@ -41290,6 +41697,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I eat rice with chopsticks, but I drink soup with a spoon.",
     "grammarPointIds": [
       "de-means",
@@ -41370,6 +41778,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please set the knife and fork on the table.",
     "grammarPointIds": [
       "te-kudasai",
@@ -41483,6 +41892,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I put on a white shirt and brown shoes.",
     "grammarPointIds": [
       "te-action-link",
@@ -41582,6 +41992,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I put my glasses on the bookshelf beside the bed.",
     "grammarPointIds": [
       "positional-nouns",
@@ -41693,6 +42104,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My grandfather is hard of hearing, so please speak loudly.",
     "grammarPointIds": [
       "te-kudasai",
@@ -41802,6 +42214,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The boy says that his head hurts.",
     "grammarPointIds": [
       "to-quotation",
@@ -41914,6 +42327,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My stomach hurts, so I will not eat dinner tonight.",
     "grammarPointIds": [
       "node-reason",
@@ -42030,6 +42444,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "A young man is standing in front of the hospital.",
     "grammarPointIds": [
       "te-iru-progressive",
@@ -42118,6 +42533,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My grandmother walks through the park every morning.",
     "grammarPointIds": [
       "o-route",
@@ -42193,6 +42609,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It will probably rain the day after tomorrow.",
     "grammarPointIds": [
       "deshou-darou",
@@ -42319,6 +42736,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The wind was strong the night before last, and the wooden door opened.",
     "grammarPointIds": [
       "adjective-connective",
@@ -42397,6 +42815,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I spent too much money this month.",
     "grammarPointIds": [
       "sugiru",
@@ -42506,6 +42925,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I bought three postcards and two envelopes.",
     "grammarPointIds": [
       "common-counters",
@@ -42588,6 +43008,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I write a postcard and put it in the mailbox.",
     "grammarPointIds": [
       "te-action-link",
@@ -42682,6 +43103,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I wrote the important date on the calendar.",
     "grammarPointIds": [
       "na-adjective-attributive",
@@ -42801,6 +43223,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Anyone who has a question for the teacher, please line up here.",
     "grammarPointIds": [
       "relative-clause",
@@ -42897,6 +43320,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please copy this passage and give it to the teacher.",
     "grammarPointIds": [
       "te-action-link",
@@ -42989,6 +43413,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "A bird is flying over the park.",
     "grammarPointIds": [
       "te-iru-progressive",
@@ -43084,6 +43509,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Every year, when spring arrives, the flowers bloom.",
     "grammarPointIds": [
       "to-conditional",
@@ -43197,6 +43623,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You must not talk loudly on the phone in the library.",
     "grammarPointIds": [
       "cha-ikenai",
@@ -43302,6 +43729,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "That building is not a hotel. It is a hospital.",
     "grammarPointIds": [
       "copula-negative-polite",
@@ -43407,6 +43835,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The sea was not very blue yesterday.",
     "grammarPointIds": [
       "i-adjective-past-negative",
@@ -43518,6 +43947,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Would you like to do homework together after class?",
     "grammarPointIds": [
       "ato-de",
@@ -43607,6 +44037,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "For lunch, I will have udon or soba.",
     "grammarPointIds": [
       "ka-alternatives",
@@ -43728,6 +44159,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My feet hurt because I walked for a whole hour to the station.",
     "grammarPointIds": [
       "mo-emphasis",
@@ -43861,6 +44293,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I went to the post office to buy three stamps.",
     "grammarPointIds": [
       "ni-purpose",
@@ -43992,6 +44425,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I tidied the room before my friend arrived.",
     "grammarPointIds": [
       "mae-ni",
@@ -44086,6 +44520,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My father is cooking in the kitchen right now.",
     "grammarPointIds": [
       "chuu",
@@ -44195,6 +44630,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older sister is a student and studies every day.",
     "grammarPointIds": [
       "noun-connective-de",
@@ -44275,6 +44711,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This is not meat. It is fish.",
     "grammarPointIds": [
       "copula-negative-plain",
@@ -44409,6 +44846,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Because it was raining, I did not go to the mountain last Sunday.",
     "grammarPointIds": [
       "copula-past",
@@ -44510,6 +44948,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It is hot, isn't it? Let's have some juice or something.",
     "grammarPointIds": [
       "demo-particle",
@@ -44597,6 +45036,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This bread is sweet and delicious!",
     "grammarPointIds": [
       "naa-reflection",
@@ -44671,6 +45111,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How many people are in your family?",
     "grammarPointIds": [
       "nan-counter",
@@ -44758,6 +45199,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please show me a photo of your family.",
     "grammarPointIds": [
       "o-go-honorific-prefix",
@@ -44857,6 +45299,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How is your new job? Is it interesting?",
     "grammarPointIds": [
       "wa-dou-desu-ka",
@@ -44960,6 +45403,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What kind of city is Kyoto? It has many old buildings.",
     "grammarPointIds": [
       "donna",
@@ -45063,6 +45507,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I want to go somewhere quiet with my family.",
     "grammarPointIds": [
       "question-word-ka",
@@ -45196,6 +45641,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There is nothing in the refrigerator, so I am going shopping.",
     "grammarPointIds": [
       "question-word-mo",
@@ -45301,6 +45747,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The road is dangerous, so you must not play here.",
     "grammarPointIds": [
       "cha-ikenai",
@@ -45469,6 +45916,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please take this medicine three times a day. You must not take it four times.",
     "grammarPointIds": [
       "ni-frequency",
@@ -45586,6 +46034,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger brother is still sleeping, so please do not enter the room.",
     "grammarPointIds": [
       "te-iru-progressive",
@@ -45688,6 +46137,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Do not put your hand in the train door.",
     "grammarPointIds": [
       "na-prohibitive",
@@ -45813,6 +46263,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "May I take this dictionary home?",
     "grammarPointIds": [
       "te-mo-ii",
@@ -45919,6 +46370,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You do not have to read this entire book.",
     "grammarPointIds": [
       "nakute-mo-ii",
@@ -46044,6 +46496,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You have to return the library book within two weeks.",
     "grammarPointIds": [
       "nakute-wa-ikenai",
@@ -46139,6 +46592,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The shop is about to close, so I have to buy bread.",
     "grammarPointIds": [
       "nakya-nakucha",
@@ -46255,6 +46709,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please bring the chair near the window over here.",
     "grammarPointIds": [
       "te-kudasai",
@@ -46368,6 +46823,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "That bag looks heavy. Shall I carry it?",
     "grammarPointIds": [
       "sou-appearance",
@@ -46454,6 +46910,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "A coat has been hung on the chair.",
     "grammarPointIds": [
       "te-aru-result-state",
@@ -46560,6 +47017,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "A new convenience store has opened in front of the station.",
     "grammarPointIds": [
       "te-iru-result-state",
@@ -46671,6 +47129,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have not spoken to anyone yet today.",
     "grammarPointIds": [
       "te-inai",
@@ -46791,6 +47250,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I have not read even one page of the book I bought yet.",
     "grammarPointIds": [
       "mada-te-inai",
@@ -46892,6 +47352,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Please rest for a while after taking your medicine.",
     "grammarPointIds": [
       "te-kara",
@@ -46977,6 +47438,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I accidentally put too much sugar in my coffee.",
     "grammarPointIds": [
       "sugiru",
@@ -47082,6 +47544,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I walked to the hotel without looking at a map.",
     "grammarPointIds": [
       "naide-without",
@@ -47189,6 +47652,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Today, I will try walking a different route to the station.",
     "grammarPointIds": [
       "te-miru",
@@ -47337,6 +47801,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On rainy days, I do things like draw pictures and listen to music at home.",
     "grammarPointIds": [
       "tari-tari-suru",
@@ -47457,6 +47922,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I sometimes play tennis with my father in the park on Sundays.",
     "grammarPointIds": [
       "ru-koto-ga-aru",
@@ -47564,6 +48030,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On Saturdays, I sleep until around ten o'clock.",
     "grammarPointIds": [
       "goro-approximate-time",
@@ -47668,6 +48135,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It is about a fifteen-minute walk to the station.",
     "grammarPointIds": [
       "kurai-approximation",
@@ -47760,6 +48228,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The bank is open from nine until three.",
     "grammarPointIds": [
       "kara-made-range",
@@ -47867,6 +48336,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Bread is cheap only on Sundays at this shop.",
     "grammarPointIds": [
       "dake-limitation",
@@ -47968,6 +48438,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I will take only a small bag on the trip.",
     "grammarPointIds": [
       "shika-nai-limitation",
@@ -48098,6 +48569,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There are seven pencils and three notebooks on the desk.",
     "grammarPointIds": [
       "common-counters",
@@ -48215,6 +48687,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My family goes to a restaurant once every two weeks.",
     "grammarPointIds": [
       "ni-frequency",
@@ -48306,6 +48779,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Summer is the hottest time of the year.",
     "grammarPointIds": [
       "ichiban-superlative",
@@ -48434,6 +48908,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The road over there is closer to the station than this one.",
     "grammarPointIds": [
       "yori-comparison",
@@ -48524,6 +48999,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I bought the same book as my friend.",
     "grammarPointIds": [
       "onaji",
@@ -48625,6 +49101,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "You can rent a bicycle at this hotel.",
     "grammarPointIds": [
       "koto-ga-dekiru",
@@ -48731,6 +49208,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My younger sister likes taking pictures of animals.",
     "grammarPointIds": [
       "no-ga-suki",
@@ -48831,6 +49309,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The teacher is good at teaching kanji to children.",
     "grammarPointIds": [
       "no-ga-jouzu-heta",
@@ -48914,6 +49393,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I want a small refrigerator in my room.",
     "grammarPointIds": [
       "hoshii",
@@ -49003,6 +49483,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "In winter, I want to go see the snow in the mountains.",
     "grammarPointIds": [
       "tai-desire",
@@ -49111,6 +49592,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I intend to study Japanese every day this year.",
     "grammarPointIds": [
       "tsumori",
@@ -49184,6 +49666,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I think this problem is not difficult.",
     "grammarPointIds": [
       "to-omou",
@@ -49319,6 +49802,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The road is dark, so you should not walk home alone.",
     "grammarPointIds": [
       "hou-ga-ii-advice",
@@ -49416,6 +49900,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The key might be inside the bag.",
     "grammarPointIds": [
       "kamoshirenai",
@@ -49504,6 +49989,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The hotel near the station is probably convenient.",
     "grammarPointIds": [
       "deshou-darou",
@@ -49620,6 +50106,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "If it is sunny tomorrow, I will ride my bicycle near the river.",
     "grammarPointIds": [
       "tara-conditional",
@@ -49740,6 +50227,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "If you go straight along this road, there is a bank on the right.",
     "grammarPointIds": [
       "to-conditional",
@@ -49880,6 +50368,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "When I forgot my wallet, my friend lent me some money.",
     "grammarPointIds": [
       "toki",
@@ -49976,6 +50465,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I am busy today, so I will do the laundry tomorrow.",
     "grammarPointIds": [
       "node-reason",
@@ -50061,6 +50551,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "These shoes are cheap, but they are a little small.",
     "grammarPointIds": [
       "kedo-contrast",
@@ -50166,6 +50657,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "This room is spacious, but it has no window.",
     "grammarPointIds": [
       "ga-contrast",
@@ -50254,6 +50746,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "That dog is large and looks strong.",
     "grammarPointIds": [
       "sou-appearance",
@@ -50356,6 +50849,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "According to the teacher, there will apparently be a test next week.",
     "grammarPointIds": [
       "sou-hearsay",
@@ -50458,6 +50952,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I turned off the television because the child was sleeping.",
     "grammarPointIds": [
       "te-iru-progressive",
@@ -50571,6 +51066,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "At this cafe, the coffee is delicious, and the cake is inexpensive too.",
     "grammarPointIds": [
       "shi-additive-reason",
@@ -50676,6 +51172,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I gave my younger sister a red hat for her birthday.",
     "grammarPointIds": [
       "ageru",
@@ -50782,6 +51279,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My friend came with me as far as the station.",
     "grammarPointIds": [
       "te-kureru",
@@ -50871,6 +51369,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I received some photos of the trip from my friend.",
     "grammarPointIds": [
       "morau",
@@ -51024,6 +51523,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My friend is studying Japanese, so I lent them an easy book.",
     "grammarPointIds": [
       "te-ageru",
@@ -51129,6 +51629,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older sister bought a train ticket for me at the station.",
     "grammarPointIds": [
       "te-kureru",
@@ -51227,6 +51728,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I had my mother cut my hair short.",
     "grammarPointIds": [
       "te-morau",
@@ -51312,6 +51814,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I showed my new watch to my father.",
     "grammarPointIds": [
       "ni-target-recipient",
@@ -51430,6 +51933,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I taught Japanese cooking to a friend who came from abroad.",
     "grammarPointIds": [
       "relative-clause",
@@ -51529,6 +52033,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My grandmother showed me some old photos.",
     "grammarPointIds": [
       "te-kureru",
@@ -51633,6 +52138,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I had my friend show me the way to the station.",
     "grammarPointIds": [
       "te-morau",
@@ -51730,6 +52236,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I often use the word 'thank you.'",
     "grammarPointIds": [
       "to-iu",
@@ -51830,6 +52337,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older brother said, 'I will be late today.'",
     "grammarPointIds": [
       "tte-casual-quotation",
@@ -51937,6 +52445,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Why did you open the window? Because it was hot.",
     "grammarPointIds": [
       "no-desu",
@@ -52015,6 +52524,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Have you read that book already?",
     "grammarPointIds": [
       "no-question",
@@ -52139,6 +52649,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I do not know whether this train goes to Kyoto.",
     "grammarPointIds": [
       "ka-dou-ka",
@@ -52237,6 +52748,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Someone is waiting outside.",
     "grammarPointIds": [
       "question-word-ka",
@@ -52359,6 +52871,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "On Sunday, I stayed home and rested without going anywhere.",
     "grammarPointIds": [
       "question-word-mo",
@@ -52444,6 +52957,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Which bus goes to the hospital?",
     "grammarPointIds": [
       "dore-dono",
@@ -52545,6 +53059,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "How do you eat this fish?",
     "grammarPointIds": [
       "dou-yatte",
@@ -52645,6 +53160,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "What are you making for dinner?",
     "grammarPointIds": [
       "nani",
@@ -52774,6 +53290,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "At the party, I drank juice but did not eat any cake.",
     "grammarPointIds": [
       "verb-masen-deshita",
@@ -52922,6 +53439,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Yesterday's hotel was not clean, but the room was spacious.",
     "grammarPointIds": [
       "na-adjective-past-negative",
@@ -53035,6 +53553,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "After my family goes to sleep, I listen to music quietly.",
     "grammarPointIds": [
       "te-kara",
@@ -53150,6 +53669,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "It was cold in the morning, but it became warmer in the afternoon.",
     "grammarPointIds": [
       "i-adjective-past",
@@ -53245,6 +53765,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "That person was not a teacher. They were a student.",
     "grammarPointIds": [
       "copula-past-negative",
@@ -53362,6 +53883,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "The bus is inexpensive. However, the train is faster.",
     "grammarPointIds": [
       "shikashi-connector",
@@ -53497,6 +54019,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "In the morning, I went to the bank. Then I met my friend at the station.",
     "grammarPointIds": [
       "soshite-connector",
@@ -53592,6 +54115,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "I wash the vegetables. After that, I cut them.",
     "grammarPointIds": [
       "sorekara-connector",
@@ -53697,6 +54221,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "There are a wallet, keys, and other things inside the bag.",
     "grammarPointIds": [
       "ya-incomplete-list",
@@ -53774,6 +54299,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Homework like this is easy!",
     "grammarPointIds": [
       "nanka-nante-examples",
@@ -53869,6 +54395,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "毎朝七時に家を出ます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -54004,6 +54531,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この部屋では写真を撮ってはいけません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -54138,6 +54666,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "雨が降っているので、傘を持って行きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -54256,6 +54785,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "母は料理をするのが上手です。",
     "type": "production",
     "promptVocabularyHints": [
@@ -54370,6 +54900,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "宿題をしてから、友達と遊びます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -54500,6 +55031,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "兄は会社員で、姉は学生です。",
     "type": "production",
     "promptVocabularyHints": [
@@ -54663,6 +55195,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "これは砂糖ですか、塩ですか。砂糖ではありません。塩です。",
     "type": "production",
     "promptVocabularyHints": [
@@ -54761,6 +55294,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "猫はテーブルの下にいます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -54888,6 +55422,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "先生に京都の写真を見せました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -55013,6 +55548,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "来月、家族と京都に行くつもりです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -55144,6 +55680,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "昨日は忙しかったですが、今日は忙しくないです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -55291,6 +55828,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "前のアパートは静かでしたが、便利ではありませんでした。",
     "type": "production",
     "promptVocabularyHints": [
@@ -55409,6 +55947,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "電車よりバスのほうが安いです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -55512,6 +56051,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "姉と同じケーキにしました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -55638,6 +56178,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "春になりました。そして、段々暖かくなりました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -55763,6 +56304,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "図書館では静かに本を読んでください。",
     "type": "production",
     "promptVocabularyHints": [
@@ -55897,6 +56439,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "風邪ですから、今日は早く寝たほうがいいですよ。",
     "type": "production",
     "promptVocabularyHints": [
@@ -56060,6 +56603,7 @@
         "reading": "」"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "「今、勉強中なんです。」「コーヒーを入れましょうか。」",
     "type": "production",
     "promptVocabularyHints": [
@@ -56177,6 +56721,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "三時ごろ駅で会いましょう。",
     "type": "production",
     "promptVocabularyHints": [
@@ -56296,6 +56841,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "明日は早く起きなくてはいけません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -56399,6 +56945,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "ここから駅までどのくらいかかりますか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -56559,6 +57106,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "一週間に二回、図書館へ本を借りに行きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -56679,6 +57227,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "すみません、熱いお茶を一つください。",
     "type": "production",
     "promptVocabularyHints": [
@@ -56791,6 +57340,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "兄はお菓子を五つも買いました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -56937,6 +57487,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "パーティーには何人来ますか。ケーキはいくつ買いますか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -57098,6 +57649,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "毎朝、顔を洗って、シャワーを浴びて、勉強します。",
     "type": "production",
     "promptVocabularyHints": [
@@ -57232,6 +57784,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "窓が開けてあったけど、誰もいなかった。",
     "type": "production",
     "promptVocabularyHints": [
@@ -57364,6 +57917,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "妹はまだ何も食べていません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -57506,6 +58060,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "鍵を持たないで家を出てしまいました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -57631,6 +58186,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "図書館は月曜日から金曜日まで開いています。",
     "type": "production",
     "promptVocabularyHints": [
@@ -57768,6 +58324,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "ギターを弾いたことがありません。弾いてみたいです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -57889,6 +58446,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "写真を撮るのが好きで、新しいカメラが欲しいです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -58030,6 +58588,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "父は日本語の新聞を読むことができます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -58161,6 +58720,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "週末はよく友だちと一緒に映画を見ます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -58283,6 +58843,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "どんな音楽を聞くのが好きですか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -58424,6 +58985,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "弟に本をあげて、読んであげました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -58573,6 +59135,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "母が新しい服をくれて、写真も撮ってくれました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -58749,6 +59312,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "姉に料理の本をもらって、カレーの作り方を教えてもらいました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -58900,6 +59464,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "先生は「明日、テストがあります」と言いました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -59063,6 +59628,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "明日は雨が降るでしょう。傘が必要だと思います。",
     "type": "production",
     "promptVocabularyHints": [
@@ -59240,6 +59806,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "明日は雨が降るでしょう。雨が降ったら、タクシーで帰ります。",
     "type": "production",
     "promptVocabularyHints": [
@@ -59373,6 +59940,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "このケーキは甘すぎるので、半分だけ食べます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -59532,6 +60100,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "今朝はあまり寒くなかったので、厚いコートを着ませんでした。",
     "type": "production",
     "promptVocabularyHints": [
@@ -59657,6 +60226,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "明日は早く起きるから、もう寝なきゃ。",
     "type": "production",
     "promptVocabularyHints": [
@@ -59818,6 +60388,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "仕事の後で、レストランで晩御飯を食べることがあります。",
     "type": "production",
     "promptVocabularyHints": [
@@ -59958,6 +60529,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "今日は雨です。でも、傘を買いに行きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -60141,6 +60713,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "海がきれいだなあ。こちらのテーブルはどうですか。コーヒーでも飲みませんか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -60311,6 +60884,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "妹は忙しかったし、おにぎりやスープなどを作ってあげました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -60533,6 +61107,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "妹が「どのケーキが好きなの？」って聞いたので、「チョコレートなんかがいい」と答えました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -60697,6 +61272,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この部屋は静かじゃないけど、便利だよね。",
     "type": "production",
     "promptVocabularyHints": [
@@ -60817,6 +61393,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "財布には百円しかありません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -60924,6 +61501,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "寝る前に、歯を磨きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -61044,6 +61622,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "毎朝、コーヒーを飲んでから会社へ行きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -61228,6 +61807,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "誰かが来てくれるかどうか、まだ分かりません。しかし、自分で始めます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -61403,6 +61983,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "一週間に三回、音楽を聞きながら一時間歩きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -61557,6 +62138,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "犬と猫とどちらが好きですか。猫が好きです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -61663,6 +62245,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "姉にはきれいな自転車があります。",
     "type": "production",
     "promptVocabularyHints": [
@@ -61803,6 +62386,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "日曜日は家を掃除したり、料理を作ったりします。",
     "type": "production",
     "promptVocabularyHints": [
@@ -61957,6 +62541,7 @@
         "reading": "」"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "「このボタンを押すと、どうなりますか。」「ドアが開きます。」",
     "type": "production",
     "promptVocabularyHints": [
@@ -62072,6 +62657,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "駅までどうやって行きますか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -62170,6 +62756,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "病気のとき、薬を飲みます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -62284,6 +62871,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この部屋で写真を撮ってもいいですか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -62392,6 +62980,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "明日は早く起きなければなりません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -62480,6 +63069,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "ここで写真を撮らないでください。",
     "type": "production",
     "promptVocabularyHints": [
@@ -62585,6 +63175,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "雨ですね。傘を貸しましょうか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -62709,6 +63300,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "日本の食べ物で、ラーメンが一番好きです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -62841,6 +63433,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "このスープは熱そうだけど、少し飲んでみます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -62990,6 +63583,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "明日は雨が降るかもしれないので、傘を持って行きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -63128,6 +63722,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "忘れないように、宿題をかばんに入れました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -63273,6 +63868,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "朝ご飯を食べました。それから、学校へ行きました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -63373,6 +63969,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "ここで写真を撮っちゃいけないよ。",
     "type": "production",
     "promptVocabularyHints": [
@@ -63468,6 +64065,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "危ない！そのボタンを押すな。",
     "type": "production",
     "promptVocabularyHints": [
@@ -63560,6 +64158,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "明日は雪が降るそうです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -63655,6 +64254,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "いつ日本語のテストをしますか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -63758,6 +64358,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この赤いかばんはいくらですか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -63884,6 +64485,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "赤いシャツと青いシャツと、どっちがいいですか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -63987,6 +64589,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "こちらにお名前を書いてください。",
     "type": "production",
     "promptVocabularyHints": [
@@ -64152,6 +64755,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "毎朝七時に家を出て、八時に会社に着きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -64284,6 +64888,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "今日は雨なので、自転車に乗りません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -64400,6 +65005,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "今日は早く起きなくてもいいです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -64502,6 +65108,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "どうして電車が止まっているんですか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -64625,6 +65232,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "どの傘があなたのですか。黒い傘です。",
     "type": "production",
     "promptVocabularyHints": [
@@ -64706,6 +65314,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この切手をください。",
     "type": "production",
     "promptVocabularyHints": [
@@ -64835,6 +65444,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "日曜日は、洗濯をしたり、部屋を掃除したりします。",
     "type": "production",
     "promptVocabularyHints": [
@@ -64956,6 +65566,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "玄関で靴を脱がなくてはいけません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -65037,6 +65648,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "宿題はもうできました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -65147,6 +65759,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "私は先生から辞書をもらいました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -65271,6 +65884,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "旅行にはシャツやズボンなどを持って行きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -65384,6 +65998,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "財布を家に忘れてしまいました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -65462,6 +66077,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "そのボールペンをください。",
     "type": "production",
     "promptVocabularyHints": [
@@ -65552,6 +66168,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "飛行機に乗ったことがあります。",
     "type": "production",
     "promptVocabularyHints": [
@@ -65636,6 +66253,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "明後日は多分雨でしょう。",
     "type": "production",
     "promptVocabularyHints": [
@@ -65755,6 +66373,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "兄も妹も英語を勉強しています。",
     "type": "production",
     "promptVocabularyHints": [
@@ -65881,6 +66500,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "一週間に三回、プールで泳ぎます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -66026,6 +66646,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "宿題をした後で、友だちとゲームをします。",
     "type": "production",
     "promptVocabularyHints": [
@@ -66143,6 +66764,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "日本へ行ったことがありますか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -66267,6 +66889,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "誕生日に友だちが新しい本をくれました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -66392,6 +67015,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "危ないので、ここで泳いではいけません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -66489,6 +67113,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "傘を持たないで出かけました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -66612,6 +67237,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "毎朝、公園を歩きながら音楽を聞きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -66735,6 +67361,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "雨が降ったら、家で映画を見ましょう。",
     "type": "production",
     "promptVocabularyHints": [
@@ -66862,6 +67489,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "母にケーキの作り方を教えてもらいました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -66976,6 +67604,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "電車に傘を忘れてしまいました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -67114,6 +67743,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "日曜日は映画を見ますか、本を読みますか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -67230,6 +67860,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "毎晩、一時間ぐらい日本語を勉強します。",
     "type": "production",
     "promptVocabularyHints": [
@@ -67379,6 +68010,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "どうして昨日図書館へ行ったの？なんで本も借りなかったの？",
     "type": "production",
     "promptVocabularyHints": [
@@ -67516,6 +68148,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この靴は重すぎます。もっと軽いのが欲しいです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -67639,6 +68272,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "テーブルの上にコップが六つだけあります。",
     "type": "production",
     "promptVocabularyHints": [
@@ -67752,6 +68386,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "公園に子供が四人います。",
     "type": "production",
     "promptVocabularyHints": [
@@ -67882,6 +68517,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "このかばんは軽くないですが、丈夫でいいです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -68094,6 +68730,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "学校の旅行は何曜日の何時ですか。妹はそのとき何歳になりますか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -68282,6 +68919,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "あちらの方はどなたですか。新しい医者です。この病院はどうですか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -68420,6 +69058,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "土曜日に母と買い物をしに行きたいです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -68547,6 +69186,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "兄は忙しいです。でも、姉は暇です。",
     "type": "production",
     "promptVocabularyHints": [
@@ -68693,6 +69333,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この本が図書館にあるかどうか、電話で聞きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -68882,6 +69523,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "父が若いとき、この町は便利でしたが、今は便利ではありません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -69003,6 +69645,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "デパートでシャツや靴を買います。",
     "type": "production",
     "promptVocabularyHints": [
@@ -69136,6 +69779,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "学校の夏休みはいつから始まりますか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -69296,6 +69940,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "毎朝、新聞を読んで、朝御飯を食べて、仕事をします。",
     "type": "production",
     "promptVocabularyHints": [
@@ -69451,6 +70096,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "その建物は去年まで銀行でしたが、今は喫茶店です。",
     "type": "production",
     "promptVocabularyHints": [
@@ -69604,6 +70250,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "友だちは「魚なんか好きじゃない」って言いました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -69717,6 +70364,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "まだ手紙を書いていません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -69848,6 +70496,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "分からないことを母に聞くと、教えてくれます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -69963,6 +70612,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "それは先生の本ですよね。",
     "type": "production",
     "promptVocabularyHints": [
@@ -70131,6 +70781,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "喫茶店でコーヒーを飲んで、それから友だちと一緒に映画館へ行きます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -70264,6 +70915,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "父は医者で、母は先生です。",
     "type": "production",
     "promptVocabularyHints": [
@@ -70377,6 +71029,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "天気がいいですから、歩きませんか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -70532,6 +71185,7 @@
         "reading": "」"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "「どんな本が好きですか。」「こんな面白い本が好きです。」",
     "type": "production",
     "promptVocabularyHints": [
@@ -70702,6 +71356,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "兄は料理を作るのが上手で、有名なレストランで働いています。",
     "type": "production",
     "promptVocabularyHints": [
@@ -70864,6 +71519,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "来月、新しい自転車を買うつもりです。便利だと思います。",
     "type": "production",
     "promptVocabularyHints": [
@@ -71018,6 +71674,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "先生は「危ないから、廊下で走るな」と言いました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -71151,6 +71808,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "父には時計が五つもあります。",
     "type": "production",
     "promptVocabularyHints": [
@@ -71328,6 +71986,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "昨日の公園は静かではありませんでした。そして、早く帰りました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -71542,6 +72201,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "明日は日曜日ですから、学校へ行かなくてもいいです。よく休んだほうがいいですよ。",
     "type": "production",
     "promptVocabularyHints": [
@@ -71700,6 +72360,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "箱にはケーキが一つしかないので、もう二つ作ります。",
     "type": "production",
     "promptVocabularyHints": [
@@ -71873,6 +72534,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "昨日はあまり暑くなかったので、川の近くを走りました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -72033,6 +72695,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "どうして昨日、メールを読まなかったの？仕事中だったんです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -72211,6 +72874,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "夏より冬のほうが寒いですが、冬より夏のほうが暑いです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -72316,6 +72980,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "お店は駅の前にあります。",
     "type": "production",
     "promptVocabularyHints": [
@@ -72444,6 +73109,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "時々、公園で本を読むことがあります。",
     "type": "production",
     "promptVocabularyHints": [
@@ -72581,6 +73247,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "箱の中に何かありますが、何も分かりません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -72717,6 +73384,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "机の下にかばんと靴が置いてあります。",
     "type": "production",
     "promptVocabularyHints": [
@@ -72851,6 +73519,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "授業が始まるから、もう教室へ行かなきゃ。",
     "type": "production",
     "promptVocabularyHints": [
@@ -72999,6 +73668,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "それは兄の時計ではありません。父のです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -73115,6 +73785,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この部屋は暗すぎるので、明るくします。",
     "type": "production",
     "promptVocabularyHints": [
@@ -73244,6 +73915,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "テストは先週の月曜日ではありませんでした。",
     "type": "production",
     "promptVocabularyHints": [
@@ -73387,6 +74059,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この部屋は静かではなかったので、静かに話しました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -73542,6 +74215,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "図書館は午前九時から午後六時まで開いています。",
     "type": "production",
     "promptVocabularyHints": [
@@ -73715,6 +74389,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "六時ごろまで仕事をします。そして、家へ帰ります。",
     "type": "production",
     "promptVocabularyHints": [
@@ -73833,6 +74508,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "このカレーは少し熱いですね。",
     "type": "production",
     "promptVocabularyHints": [
@@ -73971,6 +74647,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "母に花をあげて、母から時計をもらいました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -74118,6 +74795,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "父の車と母の車は同じ色です。",
     "type": "production",
     "promptVocabularyHints": [
@@ -74251,6 +74929,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "机の上にりんごがいくつありますか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -74394,6 +75073,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この学校は家から近いです。しかし、少し古いです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -74522,6 +75202,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この公園は広いし、木も多いです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -74638,6 +75319,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "このカメラの使い方を教えてください。",
     "type": "production",
     "promptVocabularyHints": [
@@ -74743,6 +75425,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "この漢字の書き方を教えてください。",
     "type": "production",
     "promptVocabularyHints": [
@@ -74850,6 +75533,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "友達にかばんを持ってもらいました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -74955,6 +75639,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "姉に写真を撮ってもらいました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -75043,6 +75728,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "このかばんは重すぎます。",
     "type": "production",
     "promptVocabularyHints": [
@@ -75133,6 +75819,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "明日は雨かもしれません。",
     "type": "production",
     "promptVocabularyHints": [
@@ -75201,6 +75888,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "赤い傘が欲しいです。",
     "type": "production",
     "promptVocabularyHints": [
@@ -75290,6 +75978,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "音楽を聞きながら勉強します。",
     "type": "production",
     "promptVocabularyHints": [
@@ -75360,6 +76049,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "疲れたの？",
     "type": "production",
     "promptVocabularyHints": [
@@ -75439,6 +76129,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "朝ご飯を食べたの？",
     "type": "production",
     "promptVocabularyHints": [
@@ -75517,6 +76208,7 @@
         "reading": "？"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "何を買ったの？",
     "type": "production",
     "promptVocabularyHints": [
@@ -75622,6 +76314,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "友達が「楽しい」って言いました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -75742,6 +76435,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "母が「今日は休み」って言いました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -75868,6 +76562,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "父が「明日は雨」って言いました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -75958,6 +76653,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "お茶なんかどうですか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -76039,6 +76735,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "ラーメンなんかどうですか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -76128,6 +76825,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "果物なんかを買いました。",
     "type": "production",
     "promptVocabularyHints": [
@@ -76218,6 +76916,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "どのかばんが好きですか。",
     "type": "production",
     "promptVocabularyHints": [
@@ -76319,6 +77018,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "My older brother will probably come home early today.",
     "grammarPointIds": [
       "darou",
@@ -76397,6 +77097,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "Tomorrow's test will probably be difficult.",
     "grammarPointIds": [
       "darou",
@@ -76472,6 +77173,7 @@
         "reading": "。"
       }
     ],
+    "minimumLevel": "n5",
     "solution": "明後日は多分雨だろう。",
     "type": "production",
     "promptVocabularyHints": [

@@ -27,6 +27,7 @@ const publicFiles = new Map([
   ["/manifest-fr.webmanifest", ["manifest-fr.webmanifest", "application/manifest+json"]],
   ["/storage.js", ["storage.js", "text/javascript; charset=utf-8"]],
   ["/i18n.js", ["i18n.js", "text/javascript; charset=utf-8"]],
+  ["/curriculum.js", ["curriculum.js", "text/javascript; charset=utf-8"]],
   ["/voice-paths.js", ["voice-paths.js", "text/javascript; charset=utf-8"]],
   ["/srs.js", ["srs.js", "text/javascript; charset=utf-8"]],
   ["/learning-stats.js", ["learning-stats.js", "text/javascript; charset=utf-8"]],
@@ -110,6 +111,7 @@ const publicFiles = new Map([
     ["node_modules/@capacitor/share/dist/plugin.js", "text/javascript; charset=utf-8"]
   ],
   ["/data/introduction.json", ["data/introduction.json", "application/json; charset=utf-8"]],
+  ["/data/curriculum.json", ["data/curriculum.json", "application/json; charset=utf-8"]],
   ["/data/exercises.json", ["data/exercises.json", "application/json; charset=utf-8"]],
   [
     "/data/vocabulary-examples.json",

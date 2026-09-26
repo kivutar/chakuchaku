@@ -1,3 +1,22 @@
+# ChakuChaku curriculum levels
+
+`curriculum.json` defines the ordered curriculum levels understood by the app.
+Knowledge units use `introducedAt` for the first level at which they enter the
+curriculum. An N5 unit remains useful at N4 and above, so entries carry one
+introduction level rather than a repeated list of every later level.
+
+The content `scope` remains an independent editorial classification: for
+example, a `foundation` grammar point can still be introduced at `n5`, while
+Hiragana and Katakana knowledge units belong to the curriculum level
+`foundation`. Prepared grammar exercises declare a derived `minimumLevel`;
+authors may raise it for a structurally harder sentence, and content preparation
+rejects an explicit level below any grammar, vocabulary, or Kanji unit it
+references.
+
+The manifest currently enables content through N5. Level metadata and runtime
+filtering are deliberately in place before N4 content is added, so extending
+the manifest cannot change existing IDs or stored SRS cards.
+
 # JLPT N5 grammar inventory
 
 `jlpt-n5-grammar.json` is the canonical preliminary curriculum for the app. It

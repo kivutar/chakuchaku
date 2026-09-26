@@ -192,7 +192,7 @@
     return `conjugation.form.${form}`;
   }
 
-  function createPoint(group, form) {
+  function createPoint(group, form, introducedAt = "n5") {
     const id = createPointId(group, form);
     const suffix = politeSuffixes[form];
     const subject = {
@@ -207,6 +207,7 @@
 
     return Object.freeze({
       id,
+      introducedAt,
       group,
       form,
       groupKey: getGroupKey(group),
@@ -609,6 +610,9 @@
         return {
           id: `conjugation-${conjugationPointId}-${item.id}`,
           section: "conjugation",
+          ...(curriculumEntry.introducedAt
+            ? { introducedAt: curriculumEntry.introducedAt }
+            : {}),
           vocabularyId: item.id,
           term: item.term,
           reading: item.reading,

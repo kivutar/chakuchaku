@@ -5,6 +5,7 @@
     "reading": "ああ",
     "meaning": "Ah!, Oh!",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "interjection"
   },
@@ -15,6 +16,7 @@
     "reading": "あう",
     "meaning": "to meet, to see",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -24,6 +26,7 @@
     "reading": "あお",
     "meaning": "blue",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -33,6 +36,7 @@
     "reading": "あおい",
     "meaning": "blue",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -42,6 +46,7 @@
     "reading": "あか",
     "meaning": "red",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -51,6 +56,7 @@
     "reading": "あかい",
     "meaning": "red",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -64,6 +70,7 @@
       "lighthearted"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -73,6 +80,7 @@
     "reading": "あき",
     "meaning": "fall (season)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -82,6 +90,7 @@
     "reading": "あく",
     "meaning": "to open, to become open",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb",
     "inflections": [
@@ -101,6 +110,7 @@
     "reading": "あける",
     "meaning": "to open (v.t.)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -111,6 +121,7 @@
     "reading": "あげる",
     "meaning": "to raise, to lift",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -120,6 +131,7 @@
     "reading": "あさ",
     "meaning": "morning",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -129,6 +141,7 @@
     "reading": "あさごはん",
     "meaning": "breakfast",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -147,6 +160,7 @@
       }
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "inflections": [
@@ -162,6 +176,7 @@
     "reading": "あし",
     "meaning": "foot; leg",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "脚"
@@ -183,6 +198,7 @@
       }
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -192,6 +208,7 @@
     "reading": "あそこ",
     "meaning": "there, over there, that place",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -201,6 +218,7 @@
     "reading": "あそぶ",
     "meaning": "to play; to spend time pleasantly; to hang out",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb",
     "inflections": [
@@ -217,6 +235,7 @@
     "reading": "あたたかい",
     "meaning": "warm",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -226,6 +245,7 @@
     "reading": "あたま",
     "meaning": "head",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -235,6 +255,7 @@
     "reading": "あたらしい",
     "meaning": "new",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -247,6 +268,7 @@
       "that person"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -257,6 +279,7 @@
     "reading": "あつい",
     "meaning": "hot (in reference to weather), warm",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -267,6 +290,7 @@
     "reading": "あつい",
     "meaning": "hot (objects)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective",
     "inflections": [
@@ -284,6 +308,7 @@
     "reading": "あつい",
     "meaning": "kind, warm(hearted), thick, deep",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -293,6 +318,7 @@
     "reading": "あっち",
     "meaning": "over there (away from both people; casual)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -302,6 +328,7 @@
     "reading": "あと",
     "meaning": "afterwards (later); in the future; the rest; since then",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "inflections": [
@@ -317,6 +344,7 @@
     "reading": "あなた",
     "meaning": "you",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -326,6 +354,7 @@
     "reading": "あに",
     "meaning": "(my) older brother (humble)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -335,6 +364,7 @@
     "reading": "あね",
     "meaning": "(my) older sister (humble)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -347,6 +377,7 @@
       "flat"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -356,6 +387,7 @@
     "reading": "あの",
     "meaning": "that over there; like that, that way; um...",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "interjection"
   },
@@ -365,6 +397,7 @@
     "reading": "あびる",
     "meaning": "to bathe, to shower",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -378,6 +411,7 @@
       "risky"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -387,6 +421,7 @@
     "reading": "あまい",
     "meaning": "generous, sweet",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -396,6 +431,7 @@
     "reading": "あまり",
     "meaning": "not very; surplus",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb",
     "variants": [
@@ -409,6 +445,7 @@
     "reading": "あめ",
     "meaning": "rain",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -419,6 +456,7 @@
     "reading": "あめ",
     "meaning": "(hard) candy",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -428,6 +466,7 @@
     "reading": "あらう",
     "meaning": "to wash",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -438,6 +477,7 @@
     "reading": "ある",
     "meaning": "to be, to have",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -448,6 +488,7 @@
     "reading": "ある",
     "meaning": "to be, to have",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb",
     "variants": [
@@ -466,6 +507,7 @@
     "reading": "あるく",
     "meaning": "to walk",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -475,6 +517,7 @@
     "reading": "あれ",
     "meaning": "that one (over there)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "interjection"
   },
@@ -492,6 +535,7 @@
       "nice"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "よい"
@@ -504,6 +548,7 @@
     "reading": "いいえ",
     "meaning": "no, not at all",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "interjection"
   },
@@ -513,6 +558,7 @@
     "reading": "いう",
     "meaning": "to say",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -522,6 +568,7 @@
     "reading": "いえ",
     "meaning": "house, home",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -531,6 +578,7 @@
     "reading": "いかが",
     "meaning": "how (polite); in what way",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -540,6 +588,7 @@
     "reading": "いく",
     "meaning": "to go",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "inflections": [
       {
@@ -555,6 +604,7 @@
     "reading": "いくつ",
     "meaning": "how many, how old",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -564,6 +614,7 @@
     "reading": "いくら",
     "meaning": "how much, how many",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -573,6 +624,7 @@
     "reading": "いけ",
     "meaning": "pond",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -582,6 +634,7 @@
     "reading": "いしゃ",
     "meaning": "doctor; physician",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -591,6 +644,7 @@
     "reading": "いす",
     "meaning": "chair",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -600,6 +654,7 @@
     "reading": "いそがしい",
     "meaning": "busy (people, days)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -613,6 +668,7 @@
       "hurts"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -622,6 +678,7 @@
     "reading": "いち",
     "meaning": "one",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -631,6 +688,7 @@
     "reading": "いちにち",
     "meaning": "one day (duration)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -640,6 +698,7 @@
     "reading": "いちばん",
     "meaning": "best (most), first, number one",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -649,6 +708,7 @@
     "reading": "いつ",
     "meaning": "when",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -658,6 +718,7 @@
     "reading": "いつか",
     "meaning": "five days; fifth day of the month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -667,6 +728,7 @@
     "reading": "いっしょ",
     "meaning": "together",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -679,6 +741,7 @@
       "five"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -688,6 +751,7 @@
     "reading": "いつも",
     "meaning": "always, usually, every time, never (with neg. verb)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -697,6 +761,7 @@
     "reading": "いぬ",
     "meaning": "dog",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -706,6 +771,7 @@
     "reading": "いま",
     "meaning": "now",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -715,6 +781,7 @@
     "reading": "いみ",
     "meaning": "meaning, significance",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -727,6 +794,7 @@
       "little sister"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -736,6 +804,7 @@
     "reading": "いや",
     "meaning": "disagreeable, detestable, unpleasant",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -749,6 +818,7 @@
       "entryway"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -759,6 +829,7 @@
     "reading": "いる",
     "meaning": "to be (animate), to exist",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb",
     "variants": [
@@ -778,6 +849,7 @@
     "reading": "いる",
     "meaning": "to need",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -787,6 +859,7 @@
     "reading": "いれる",
     "meaning": "to put in",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -796,6 +869,7 @@
     "reading": "いろ",
     "meaning": "color",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -805,6 +879,7 @@
     "reading": "いろいろ",
     "meaning": "various",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -814,6 +889,7 @@
     "reading": "うえ",
     "meaning": "above (up, top, etc.), over, on top of",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -823,6 +899,7 @@
     "reading": "うしろ",
     "meaning": "back, behind, rear",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -832,6 +909,7 @@
     "reading": "うすい",
     "meaning": "thin, weak",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -841,6 +919,7 @@
     "reading": "うた",
     "meaning": "a song",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -850,6 +929,7 @@
     "reading": "うたう",
     "meaning": "to sing",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -859,6 +939,7 @@
     "reading": "うち",
     "meaning": "home; house; my place",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -868,6 +949,7 @@
     "reading": "うまれる",
     "meaning": "to be born",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -880,6 +962,7 @@
       "ocean"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -889,6 +972,7 @@
     "reading": "うる",
     "meaning": "to sell (v.t.)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -901,6 +985,7 @@
       "loud"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -910,6 +995,7 @@
     "reading": "うわぎ",
     "meaning": "coat, jacket",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -919,6 +1005,7 @@
     "reading": "え",
     "meaning": "a painting; a picture; a drawing",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -928,6 +1015,7 @@
     "reading": "えいが",
     "meaning": "movie, film",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -937,6 +1025,7 @@
     "reading": "えいがかん",
     "meaning": "movie theater, cinema",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "inflections": [
@@ -952,6 +1041,7 @@
     "reading": "えいご",
     "meaning": "English (language)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -961,6 +1051,7 @@
     "reading": "ええ",
     "meaning": "yes",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "interjection"
   },
@@ -974,6 +1065,7 @@
       "railway station"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -986,6 +1078,7 @@
       "lift"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -995,6 +1088,7 @@
     "reading": "～えん",
     "meaning": "Yen",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix",
     "inflections": [
@@ -1011,6 +1105,7 @@
     "reading": "えんぴつ",
     "meaning": "pencil",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1020,6 +1115,7 @@
     "reading": "お～",
     "meaning": "honorable ~ (honorific)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -1033,6 +1129,7 @@
       "good"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "おいしい"
@@ -1045,6 +1142,7 @@
     "reading": "おおい",
     "meaning": "many; there are a lot",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -1054,6 +1152,7 @@
     "reading": "おおきい",
     "meaning": "big, large",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -1063,6 +1162,7 @@
     "reading": "おおきな",
     "meaning": "big",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "determiner"
   },
@@ -1076,6 +1176,7 @@
       "a lot of people"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "inflections": [
@@ -1098,6 +1199,7 @@
       "mama"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1112,6 +1214,7 @@
       "treats"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1121,6 +1224,7 @@
     "reading": "おかね",
     "meaning": "money",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1134,6 +1238,7 @@
       "occur"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1143,6 +1248,7 @@
     "reading": "おく",
     "meaning": "to put; to lay; to place",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1152,6 +1258,7 @@
     "reading": "おくさん",
     "meaning": "(someone else's) wife (hon.)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1161,6 +1268,7 @@
     "reading": "おさけ",
     "meaning": "sake; alcohol",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -1170,6 +1278,7 @@
     "reading": "おさら",
     "meaning": "plate, dish",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -1179,6 +1288,7 @@
     "reading": "おじさん",
     "meaning": "uncle, middle-aged man",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "叔父さん"
@@ -1199,6 +1309,7 @@
       "older gentleman"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1208,6 +1319,7 @@
     "reading": "おしえる",
     "meaning": "to teach, to inform, to instruct",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1217,6 +1329,7 @@
     "reading": "おす",
     "meaning": "to push, to press, to stamp (e.g., a passport)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1226,6 +1339,7 @@
     "reading": "おそい",
     "meaning": "slow; (to be) late",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -1235,6 +1349,7 @@
     "reading": "おちゃ",
     "meaning": "(green) tea",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1249,6 +1364,7 @@
       "loo"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix",
     "inflections": [
@@ -1270,6 +1386,7 @@
       "papa"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1282,6 +1399,7 @@
       "little brother"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1291,6 +1409,7 @@
     "reading": "おとこ",
     "meaning": "man, male",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1300,6 +1419,7 @@
     "reading": "おとこのこ",
     "meaning": "boy",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1309,6 +1429,7 @@
     "reading": "おととい",
     "meaning": "the day before yesterday",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1318,6 +1439,7 @@
     "reading": "おととし",
     "meaning": "year before last",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1331,6 +1453,7 @@
       "grownup"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1345,6 +1468,7 @@
       "abdomen"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1354,6 +1478,7 @@
     "reading": "おなじ",
     "meaning": "same, identical",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "determiner"
   },
@@ -1363,6 +1488,7 @@
     "reading": "おにいさん",
     "meaning": "(someone else's) older brother (formal)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -1372,6 +1498,7 @@
     "reading": "おねえさん",
     "meaning": "older sister (formal)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -1384,6 +1511,7 @@
       "auntie"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "叔母さん"
@@ -1404,6 +1532,7 @@
       "older lady"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1413,6 +1542,7 @@
     "reading": "おふろ",
     "meaning": "a bath",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -1422,6 +1552,7 @@
     "reading": "おべんとう",
     "meaning": "a boxed lunch",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -1431,6 +1562,7 @@
     "reading": "おぼえる",
     "meaning": "to learn, to commit to memory, to remember, to memorize",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1444,6 +1576,7 @@
       "cop"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1453,6 +1586,7 @@
     "reading": "おもい",
     "meaning": "heavy; serious",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -1466,6 +1600,7 @@
       "entertaining"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -1475,6 +1610,7 @@
     "reading": "およぐ",
     "meaning": "to swim",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1489,6 +1625,7 @@
       "disembark"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1502,6 +1639,7 @@
       "be over"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb",
     "variants": [
@@ -1514,6 +1652,7 @@
     "reading": "おんがく",
     "meaning": "Music",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1523,6 +1662,7 @@
     "reading": "おんな",
     "meaning": "woman, female",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1532,6 +1672,7 @@
     "reading": "おんなのこ",
     "meaning": "girl",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1542,6 +1683,7 @@
     "reading": "～かい",
     "meaning": "counter for occurrences (~ times)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter",
     "inflections": [
@@ -1558,6 +1700,7 @@
     "reading": "～かい",
     "meaning": "counter for stories (floors) of a building",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter",
     "inflections": [
@@ -1574,6 +1717,7 @@
     "reading": "がいこく",
     "meaning": "foreign country; abroad",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1583,6 +1727,7 @@
     "reading": "がいこくじん",
     "meaning": "foreigner",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1592,6 +1737,7 @@
     "reading": "かいしゃ",
     "meaning": "company, corporation",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1606,6 +1752,7 @@
       "steps"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1615,6 +1762,7 @@
     "reading": "かいもの",
     "meaning": "shopping",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1624,6 +1772,7 @@
     "reading": "かう",
     "meaning": "to buy",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1637,6 +1786,7 @@
       "repay"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1650,6 +1800,7 @@
       "return home"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1659,6 +1810,7 @@
     "reading": "かお",
     "meaning": "face (body part)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1672,6 +1824,7 @@
       "cost"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1681,6 +1834,7 @@
     "reading": "かぎ",
     "meaning": "a lock; a key",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1690,6 +1844,7 @@
     "reading": "かく",
     "meaning": "to write",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1699,6 +1854,7 @@
     "reading": "がくせい",
     "meaning": "student (especially at college or university)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1708,6 +1864,7 @@
     "reading": "～かげつ",
     "meaning": "(number of) months",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -1719,6 +1876,7 @@
     "recognitionPrompt": "掛ける（眼鏡・壁）",
     "meaning": "to put on (e.g., glasses); to hang (e.g., on a wall)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1730,6 +1888,7 @@
     "recognitionPrompt": "掛ける（電話・腰）",
     "meaning": "to dial/call (e.g., phone); to sit down",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1739,6 +1898,7 @@
     "reading": "かさ",
     "meaning": "umbrella, parasol",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1748,6 +1908,7 @@
     "reading": "かす",
     "meaning": "to lend",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1758,6 +1919,7 @@
     "reading": "かぜ",
     "meaning": "wind, breeze",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1768,6 +1930,7 @@
     "reading": "かぜ",
     "meaning": "cold, flu",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1782,6 +1945,7 @@
       "method"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "inflections": [
@@ -1797,6 +1961,7 @@
     "reading": "かぞく",
     "meaning": "family, members of a family",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1806,6 +1971,7 @@
     "reading": "かたかな",
     "meaning": "katakana",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1815,6 +1981,7 @@
     "reading": "～がつ",
     "meaning": "month of year",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -1824,6 +1991,7 @@
     "reading": "がっこう",
     "meaning": "a school",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1833,6 +2001,7 @@
     "reading": "かっぷ",
     "meaning": "cup",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1842,6 +2011,7 @@
     "reading": "かてい",
     "meaning": "home; family",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1851,6 +2021,7 @@
     "reading": "かど",
     "meaning": "corner (e.g., desk, pavement)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "inflections": [
@@ -1869,6 +2040,7 @@
       "handbag"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1878,6 +2050,7 @@
     "reading": "かびん",
     "meaning": "(flower) vase",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1887,6 +2060,7 @@
     "reading": "かぶる",
     "meaning": "to wear, to put on (e.g., a hat on the head)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1897,6 +2071,7 @@
     "meaning": "paper",
     "voiceSlug": "kami-paper",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1906,6 +2081,7 @@
     "reading": "かめら",
     "meaning": "camera",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1915,6 +2091,7 @@
     "reading": "かようび",
     "meaning": "Tuesday",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1924,6 +2101,7 @@
     "reading": "からい",
     "meaning": "hot and spicy; salty",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -1933,6 +2111,7 @@
     "reading": "からだ",
     "meaning": "body; health",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1942,6 +2121,7 @@
     "reading": "かりる",
     "meaning": "to borrow, to owe",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -1955,6 +2135,7 @@
       "show signs of feeling"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -1964,6 +2145,7 @@
     "reading": "かるい",
     "meaning": "light, non-serious, minor",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -1973,6 +2155,7 @@
     "reading": "かれー",
     "meaning": "curry (abbr. for curry and rice)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1982,6 +2165,7 @@
     "reading": "かれんだー",
     "meaning": "calendar",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -1991,6 +2175,7 @@
     "reading": "かわ",
     "meaning": "river",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "河"
@@ -2003,6 +2188,7 @@
     "reading": "～がわ",
     "meaning": "~ side",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -2012,6 +2198,7 @@
     "reading": "かわいい",
     "meaning": "cute, adorable",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -2021,6 +2208,7 @@
     "reading": "かんじ",
     "meaning": "kanji; Chinese character",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2030,6 +2218,7 @@
     "reading": "き",
     "meaning": "tree, wood, timber",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2039,6 +2228,7 @@
     "reading": "きいろ",
     "meaning": "yellow",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2048,6 +2238,7 @@
     "reading": "きいろい",
     "meaning": "yellow",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -2057,6 +2248,7 @@
     "reading": "きえる",
     "meaning": "to vanish, to disappear",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2066,6 +2258,7 @@
     "reading": "きく",
     "meaning": "to hear, to listen, to ask",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2075,6 +2268,7 @@
     "reading": "きた",
     "meaning": "north",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2084,6 +2278,7 @@
     "reading": "ぎたー",
     "meaning": "guitar",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2093,6 +2288,7 @@
     "reading": "きたない",
     "meaning": "dirty, unclean, filthy",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -2106,6 +2302,7 @@
       "tea room"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2119,6 +2316,7 @@
       "postage stamp"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2128,6 +2326,7 @@
     "reading": "きっぷ",
     "meaning": "a ticket",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2137,6 +2336,7 @@
     "reading": "きのう",
     "meaning": "yesterday",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2146,6 +2346,7 @@
     "reading": "きゅう",
     "meaning": "nine",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -2155,6 +2356,7 @@
     "reading": "ぎゅうにく",
     "meaning": "beef",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2164,6 +2366,7 @@
     "reading": "ぎゅうにゅう",
     "meaning": "milk",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2173,6 +2376,7 @@
     "reading": "きょう",
     "meaning": "today, this day",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2182,6 +2386,7 @@
     "reading": "きょうしつ",
     "meaning": "classroom",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2194,6 +2399,7 @@
       "brothers"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2203,6 +2409,7 @@
     "reading": "きょねん",
     "meaning": "last year",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2212,6 +2419,7 @@
     "reading": "きらい",
     "meaning": "dislike",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2222,6 +2430,7 @@
     "reading": "きる",
     "meaning": "to cut; to hang up (a phone)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2232,6 +2441,7 @@
     "reading": "きる",
     "meaning": "to put on (clothes above your waist); to wear",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2245,6 +2455,7 @@
       "lovely"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective",
     "variants": [
@@ -2262,6 +2473,7 @@
       "kg"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "キログラム"
@@ -2280,6 +2492,7 @@
       "km"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "キロメートル"
@@ -2292,6 +2505,7 @@
     "reading": "ぎんこう",
     "meaning": "bank",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2301,6 +2515,7 @@
     "reading": "きんようび",
     "meaning": "Friday",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2310,6 +2525,7 @@
     "reading": "く",
     "meaning": "nine",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -2319,6 +2535,7 @@
     "reading": "くすり",
     "meaning": "medicine",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2328,6 +2545,7 @@
     "reading": "ください",
     "meaning": "(with te-form verb) please do for me",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb",
     "inflections": [
@@ -2343,6 +2561,7 @@
     "reading": "くだもの",
     "meaning": "fruit",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2352,6 +2571,7 @@
     "reading": "くち",
     "meaning": "job opening; mouth",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2364,6 +2584,7 @@
       "shoe"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2376,6 +2597,7 @@
       "sock"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2385,6 +2607,7 @@
     "reading": "くに",
     "meaning": "country; place of origin",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2398,6 +2621,7 @@
       "overcast"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2407,6 +2631,7 @@
     "reading": "くもる",
     "meaning": "to become cloudy, to become dim",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2417,6 +2642,7 @@
     "reading": "くらい",
     "meaning": "dark, gloomy",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -2432,6 +2658,7 @@
       "around"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "ぐらい"
@@ -2444,6 +2671,7 @@
     "reading": "くらす",
     "meaning": "a class",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2453,6 +2681,7 @@
     "reading": "ぐらむ",
     "meaning": "gram",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2462,6 +2691,7 @@
     "reading": "くる",
     "meaning": "to come",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2474,6 +2704,7 @@
       "automobile"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2483,6 +2714,7 @@
     "reading": "くろ",
     "meaning": "black",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2492,6 +2724,7 @@
     "reading": "くろい",
     "meaning": "black; dark",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -2505,6 +2738,7 @@
       "cop"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2514,6 +2748,7 @@
     "reading": "けさ",
     "meaning": "this morning",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2528,6 +2763,7 @@
       "extinguish"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2537,6 +2773,7 @@
     "reading": "けっこう",
     "meaning": "splendid; enough, tolerably",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -2550,6 +2787,7 @@
       "get married"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2559,6 +2797,7 @@
     "reading": "げつようび",
     "meaning": "Monday",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2572,6 +2811,7 @@
       "foyer"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2587,6 +2827,7 @@
       "in good health"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -2596,6 +2837,7 @@
     "reading": "～こ",
     "meaning": "counter for small items (e.g., fruits, cups)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter"
   },
@@ -2606,6 +2848,7 @@
     "reading": "ご",
     "meaning": "five",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "5"
@@ -2619,6 +2862,7 @@
     "reading": "～ご",
     "meaning": "word, language",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -2628,6 +2872,7 @@
     "reading": "こうえん",
     "meaning": "a park",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2641,6 +2886,7 @@
       "junction"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2650,6 +2896,7 @@
     "reading": "こうちゃ",
     "meaning": "black tea",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2662,6 +2909,7 @@
       "police station"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2671,6 +2919,7 @@
     "reading": "こえ",
     "meaning": "voice",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2680,6 +2929,7 @@
     "reading": "こーと",
     "meaning": "coat; court (e.g., tennis)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2689,6 +2939,7 @@
     "reading": "こーひー",
     "meaning": "coffee",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2698,6 +2949,7 @@
     "reading": "ここ",
     "meaning": "here, this place",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -2707,6 +2959,7 @@
     "reading": "ごご",
     "meaning": "afternoon, P.M.",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2716,6 +2969,7 @@
     "reading": "ここのか",
     "meaning": "nine days; ninth day of the month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -2725,6 +2979,7 @@
     "reading": "ここのつ",
     "meaning": "nine things",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2734,6 +2989,7 @@
     "reading": "ごぜん",
     "meaning": "morning, A.M.",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2743,6 +2999,7 @@
     "reading": "こたえる",
     "meaning": "to answer, to reply",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2752,6 +3009,7 @@
     "reading": "こちら",
     "meaning": "this person (polite); this way (polite)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -2761,6 +3019,7 @@
     "reading": "こっち",
     "meaning": "this person; this direction; this side",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -2770,6 +3029,7 @@
     "reading": "こっぷ",
     "meaning": "a tumbler; a glass",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2779,6 +3039,7 @@
     "reading": "ことし",
     "meaning": "this year",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2788,6 +3049,7 @@
     "reading": "ことば",
     "meaning": "language; word(s); expression(s)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2802,6 +3064,7 @@
       "kids"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2811,6 +3074,7 @@
     "reading": "この",
     "meaning": "this",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "determiner"
   },
@@ -2820,6 +3084,7 @@
     "reading": "ごはん",
     "meaning": "rice (cooked); meal",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "variants": [
@@ -2833,6 +3098,7 @@
     "reading": "こぴーする",
     "meaning": "to copy",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb",
     "inflections": [
@@ -2855,6 +3121,7 @@
       "troubled"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2864,6 +3131,7 @@
     "reading": "これ",
     "meaning": "this one",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -2878,6 +3146,7 @@
       "approximately"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "～ごろ"
@@ -2890,6 +3159,7 @@
     "reading": "こんげつ",
     "meaning": "this month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2899,6 +3169,7 @@
     "reading": "こんしゅう",
     "meaning": "this week",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2908,6 +3179,7 @@
     "reading": "こんな",
     "meaning": "such, like this",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "determiner"
   },
@@ -2917,6 +3189,7 @@
     "reading": "こんばん",
     "meaning": "tonight, this evening",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2926,6 +3199,7 @@
     "reading": "さあ",
     "meaning": "come now, well",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "interjection"
   },
@@ -2935,6 +3209,7 @@
     "reading": "～さい",
     "meaning": "~ years old",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix",
     "inflections": [
@@ -2954,6 +3229,7 @@
       "purse"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2963,6 +3239,7 @@
     "reading": "さかな",
     "meaning": "fish",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2972,6 +3249,7 @@
     "reading": "さき",
     "meaning": "future; recent, previous",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2981,6 +3259,7 @@
     "reading": "さく",
     "meaning": "to bloom",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -2990,6 +3269,7 @@
     "reading": "さくぶん",
     "meaning": "essay; composition",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -2999,6 +3279,7 @@
     "reading": "さす",
     "meaning": "to raise (stretch out) hands, to raise (e.g., umbrella)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -3008,6 +3289,7 @@
     "reading": "～さつ",
     "meaning": "counter for books",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "冊"
@@ -3020,6 +3302,7 @@
     "reading": "ざっし",
     "meaning": "magazine, journal",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3029,6 +3312,7 @@
     "reading": "さとう",
     "meaning": "sugar",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3038,6 +3322,7 @@
     "reading": "さむい",
     "meaning": "cold (in reference to weather)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3047,6 +3332,7 @@
     "reading": "さらいねん",
     "meaning": "year after next",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -3057,6 +3343,7 @@
     "reading": "～さん",
     "meaning": "Mr. ~, Ms. ~",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -3067,6 +3354,7 @@
     "reading": "さん",
     "meaning": "three",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -3080,6 +3368,7 @@
       "go for a walk"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -3092,6 +3381,7 @@
     ],
     "meaning": "four",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -3101,6 +3391,7 @@
     "reading": "～じ",
     "meaning": "~ o'clock (time)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter",
     "inflections": [
@@ -3116,6 +3407,7 @@
     "reading": "しお",
     "meaning": "salt",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3125,6 +3417,7 @@
     "reading": "しかし",
     "meaning": "however; but",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "conjunction"
   },
@@ -3135,6 +3428,7 @@
     "reading": "じかん",
     "meaning": "time",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3145,6 +3439,7 @@
     "reading": "～じかん",
     "meaning": "~ hours",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -3154,6 +3449,7 @@
     "reading": "しごと",
     "meaning": "work, job, occupation, employment",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3163,6 +3459,7 @@
     "reading": "じしょ",
     "meaning": "dictionary",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "skipVoiceGeneration": true
@@ -3173,6 +3470,7 @@
     "reading": "しずか",
     "meaning": "quiet, calm",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3182,6 +3480,7 @@
     "reading": "した",
     "meaning": "under, below, beneath",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3194,6 +3493,7 @@
     ],
     "meaning": "seven",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -3203,6 +3503,7 @@
     "reading": "しつもん",
     "meaning": "question, inquiry",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3215,6 +3516,7 @@
       "bike"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3227,6 +3529,7 @@
       "car"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3236,6 +3539,7 @@
     "reading": "しぬ",
     "meaning": "to die",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -3245,6 +3549,7 @@
     "reading": "じびき",
     "meaning": "dictionary",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3254,6 +3559,7 @@
     "reading": "じぶん",
     "meaning": "myself, oneself",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3263,6 +3569,7 @@
     "reading": "しまる",
     "meaning": "to close, to be closed",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -3273,6 +3580,7 @@
     "reading": "しめる",
     "meaning": "to close, to shut",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -3283,6 +3591,7 @@
     "reading": "しめる",
     "meaning": "to tie, to fasten, to tighten",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -3292,6 +3601,7 @@
     "reading": "じゃ",
     "meaning": "well, well then",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "じゃあ"
@@ -3308,6 +3618,7 @@
       "photo"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3317,6 +3628,7 @@
     "reading": "しゃつ",
     "meaning": "shirt",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3326,6 +3638,7 @@
     "reading": "しゃわー",
     "meaning": "shower",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3336,6 +3649,7 @@
     "reading": "じゅう",
     "meaning": "ten",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -3346,6 +3660,7 @@
     "reading": "～じゅう",
     "meaning": "during, while",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -3355,6 +3670,7 @@
     "reading": "～しゅうかん",
     "meaning": "~ weeks",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter",
     "inflections": [
@@ -3373,6 +3689,7 @@
       "lesson"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3382,6 +3699,7 @@
     "reading": "しゅくだい",
     "meaning": "homework",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3396,6 +3714,7 @@
       "proficient"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3410,6 +3729,7 @@
       "healthy"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3419,6 +3739,7 @@
     "reading": "しょうゆ",
     "meaning": "soy sauce",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3431,6 +3752,7 @@
       "canteen"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3440,6 +3762,7 @@
     "reading": "しる",
     "meaning": "to know, to understand",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -3449,6 +3772,7 @@
     "reading": "しろ",
     "meaning": "white",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3458,6 +3782,7 @@
     "reading": "しろい",
     "meaning": "white",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3467,6 +3792,7 @@
     "reading": "～じん",
     "meaning": "counter for people",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter"
   },
@@ -3476,6 +3802,7 @@
     "reading": "しんぶん",
     "meaning": "newspaper",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3485,6 +3812,7 @@
     "reading": "すいようび",
     "meaning": "Wednesday",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3494,6 +3822,7 @@
     "reading": "すう",
     "meaning": "to breathe in, to suck",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -3503,6 +3832,7 @@
     "reading": "すかーと",
     "meaning": "skirt",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3516,6 +3846,7 @@
       "fond of"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3525,6 +3856,7 @@
     "reading": "～すぎ",
     "meaning": "past; to exceed, ~ too much",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -3534,6 +3866,7 @@
     "reading": "すくない",
     "meaning": "a little; a few",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3547,6 +3880,7 @@
       "at once"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -3562,6 +3896,7 @@
       "some"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -3571,6 +3906,7 @@
     "reading": "すずしい",
     "meaning": "cool, refreshing (in reference to weather)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3580,6 +3916,7 @@
     "reading": "～ずつ",
     "meaning": "at a time",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -3589,6 +3926,7 @@
     "reading": "すとーぶ",
     "meaning": "heater (lit: stove)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3598,6 +3936,7 @@
     "reading": "すぷーん",
     "meaning": "spoon",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3607,6 +3946,7 @@
     "reading": "すぽーつ",
     "meaning": "sport(s)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3620,6 +3960,7 @@
       "slacks"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3629,6 +3970,7 @@
     "reading": "すむ",
     "meaning": "to reside, to live in",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -3638,6 +3980,7 @@
     "reading": "する",
     "meaning": "to do, to try; to wear small items (e.g., necktie, watch, etc.)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -3651,6 +3994,7 @@
       "take a seat"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -3660,6 +4004,7 @@
     "reading": "せい",
     "meaning": "(one's) height, stature",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3669,6 +4014,7 @@
     "reading": "せいと",
     "meaning": "pupil; school student",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3682,6 +4028,7 @@
       "pullover"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3691,6 +4038,7 @@
     "reading": "せっけん",
     "meaning": "soap",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3704,6 +4052,7 @@
       "business suit"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3713,6 +4062,7 @@
     "reading": "せまい",
     "meaning": "narrow; not spacious",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3722,6 +4072,7 @@
     "reading": "ぜろ",
     "meaning": "zero",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -3731,6 +4082,7 @@
     "reading": "せん",
     "meaning": "thousand",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -3740,6 +4092,7 @@
     "reading": "せんげつ",
     "meaning": "last month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3749,6 +4102,7 @@
     "reading": "せんしゅう",
     "meaning": "last week",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3758,6 +4112,7 @@
     "reading": "せんせい",
     "meaning": "teacher, professor; master; doctor",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3767,6 +4122,7 @@
     "reading": "せんたく",
     "meaning": "washing, laundry",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3776,6 +4132,7 @@
     "reading": "ぜんぶ",
     "meaning": "all, entire, whole",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3785,6 +4142,7 @@
     "reading": "そう",
     "meaning": "yes; appears, to be the case",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "そうです"
@@ -3797,6 +4155,7 @@
     "reading": "そうじ",
     "meaning": "cleaning, sweeping",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3806,6 +4165,7 @@
     "reading": "そうして",
     "meaning": "and, like that",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "そして"
@@ -3818,6 +4178,7 @@
     "reading": "そこ",
     "meaning": "that place, there; bottom, sole",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -3827,6 +4188,7 @@
     "reading": "そちら",
     "meaning": "that way; over there (near the listener; polite)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -3836,6 +4198,7 @@
     "reading": "そっち",
     "meaning": "that way; over there (near the listener; casual)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -3845,6 +4208,7 @@
     "reading": "そと",
     "meaning": "outside, exterior",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3854,6 +4218,7 @@
     "reading": "その",
     "meaning": "that",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "determiner"
   },
@@ -3863,6 +4228,7 @@
     "reading": "そば",
     "meaning": "near, close, beside; Japanese traditional buckwheat noodle",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3872,6 +4238,7 @@
     "reading": "そら",
     "meaning": "sky",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3881,6 +4248,7 @@
     "reading": "それ",
     "meaning": "that one",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -3890,6 +4258,7 @@
     "reading": "それから",
     "meaning": "and then, after that",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "conjunction"
   },
@@ -3899,6 +4268,7 @@
     "reading": "それでは",
     "meaning": "in that situation, well then...",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "conjunction"
   },
@@ -3908,6 +4278,7 @@
     "reading": "～だい",
     "meaning": "counter for vehicles; machines",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter",
     "inflections": [
@@ -3923,6 +4294,7 @@
     "reading": "だいがく",
     "meaning": "college; university",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3932,6 +4304,7 @@
     "reading": "たいしかん",
     "meaning": "embassy",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3949,6 +4322,7 @@
       "safe"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3962,6 +4336,7 @@
       "really like"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3971,6 +4346,7 @@
     "reading": "たいせつ",
     "meaning": "important",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3980,6 +4356,7 @@
     "reading": "だいどころ",
     "meaning": "kitchen",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -3989,6 +4366,7 @@
     "reading": "たいへん",
     "meaning": "very; difficult, hard",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -3998,6 +4376,7 @@
     "reading": "たかい",
     "meaning": "tall, high; expensive",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -4007,6 +4386,7 @@
     "reading": "～だけ",
     "meaning": "only ~, just ~, as ~",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -4021,6 +4401,7 @@
       "plenty"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4030,6 +4411,7 @@
     "reading": "たくしー",
     "meaning": "taxi",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4039,6 +4421,7 @@
     "reading": "だす",
     "meaning": "to take (something) out; to hand in (something)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4048,6 +4431,7 @@
     "reading": "～たち",
     "meaning": "plural suffix",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -4057,6 +4441,7 @@
     "reading": "たつ",
     "meaning": "to stand up",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4066,6 +4451,7 @@
     "reading": "たて",
     "meaning": "length, height",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4075,6 +4461,7 @@
     "reading": "たてもの",
     "meaning": "building",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4084,6 +4471,7 @@
     "reading": "たのしい",
     "meaning": "enjoyable, fun",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -4093,6 +4481,7 @@
     "reading": "たのむ",
     "meaning": "to request, to ask (a favor)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4105,6 +4494,7 @@
       "cigarette"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4114,6 +4504,7 @@
     "reading": "たぶん",
     "meaning": "perhaps, probably, maybe",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -4123,6 +4514,7 @@
     "reading": "たべもの",
     "meaning": "food",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4132,6 +4524,7 @@
     "reading": "たべる",
     "meaning": "to eat",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4141,6 +4534,7 @@
     "reading": "たまご",
     "meaning": "egg",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4150,6 +4544,7 @@
     "reading": "だれ",
     "meaning": "who",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -4159,6 +4554,7 @@
     "reading": "だれか",
     "meaning": "someone",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -4168,6 +4564,7 @@
     "reading": "たんじょうび",
     "meaning": "birthday",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "inflections": [
@@ -4187,6 +4584,7 @@
     "reading": "たんぼ",
     "meaning": "rice field",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary",
     "partOfSpeech": "noun"
   },
@@ -4196,6 +4594,7 @@
     "reading": "だんだん",
     "meaning": "gradually, by degrees",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -4205,6 +4604,7 @@
     "reading": "ちいさい",
     "meaning": "small, little",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -4214,6 +4614,7 @@
     "reading": "ちいさな",
     "meaning": "small, little",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "determiner"
   },
@@ -4223,6 +4624,7 @@
     "reading": "ちかい",
     "meaning": "near, close by, short",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -4232,6 +4634,7 @@
     "reading": "ちがう",
     "meaning": "to be different; to differ; wrong",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4241,6 +4644,7 @@
     "reading": "ちかく",
     "meaning": "nearby; in the neighborhood",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4254,6 +4658,7 @@
       "underground"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4263,6 +4668,7 @@
     "reading": "ちず",
     "meaning": "a map",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4272,6 +4678,7 @@
     "reading": "ちち",
     "meaning": "(my) father",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4281,6 +4688,7 @@
     "reading": "ちゃいろ",
     "meaning": "brown",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4290,6 +4698,7 @@
     "reading": "ちゃわん",
     "meaning": "rice bowl",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4299,6 +4708,7 @@
     "reading": "～ちゅう",
     "meaning": "during, while ~ing",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -4308,6 +4718,7 @@
     "reading": "ちょうど",
     "meaning": "just, right, exactly",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -4317,6 +4728,7 @@
     "reading": "ちょっと",
     "meaning": "a little, somewhat; just a little, somewhat",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -4326,6 +4738,7 @@
     "reading": "ついたち",
     "meaning": "one day; first day of the month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -4335,6 +4748,7 @@
     "reading": "つかう",
     "meaning": "to use",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4344,6 +4758,7 @@
     "reading": "つかれる",
     "meaning": "to get (become) tired; to become fatigued",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4353,6 +4768,7 @@
     "reading": "つぎ",
     "meaning": "next",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4362,6 +4778,7 @@
     "reading": "つく",
     "meaning": "to arrive at, to reach",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4371,6 +4788,7 @@
     "reading": "つくえ",
     "meaning": "desk",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4380,6 +4798,7 @@
     "reading": "つくる",
     "meaning": "to make, to create",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4389,6 +4808,7 @@
     "reading": "つける",
     "meaning": "to turn on (e.g., a light); to take",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4398,6 +4818,7 @@
     "reading": "つとめる",
     "meaning": "to work (for)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4407,6 +4828,7 @@
     "reading": "つまらない",
     "meaning": "boring, dull; insignificant",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -4416,6 +4838,7 @@
     "reading": "つめたい",
     "meaning": "cold (things, people)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -4425,6 +4848,7 @@
     "reading": "つよい",
     "meaning": "strong, powerful",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -4434,6 +4858,7 @@
     "reading": "て",
     "meaning": "hand",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4443,6 +4868,7 @@
     "reading": "てーぷ",
     "meaning": "tape",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4452,6 +4878,7 @@
     "reading": "てーぷれこーだー",
     "meaning": "tape recorder",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4461,6 +4888,7 @@
     "reading": "てーぶる",
     "meaning": "table",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4470,6 +4898,7 @@
     "reading": "でかける",
     "meaning": "to go out; to depart",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4479,6 +4908,7 @@
     "reading": "てがみ",
     "meaning": "letter",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4488,6 +4918,7 @@
     "reading": "できる",
     "meaning": "to be able to (to accomplish)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4497,6 +4928,7 @@
     "reading": "でぐち",
     "meaning": "an exit",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "inflections": [
@@ -4516,6 +4948,7 @@
       "examination"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4525,6 +4958,7 @@
     "reading": "では",
     "meaning": "then, well, so",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "conjunction"
   },
@@ -4534,6 +4968,7 @@
     "reading": "でぱーと",
     "meaning": "(abbr.) department store",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4543,6 +4978,7 @@
     "reading": "でも",
     "meaning": "but, however",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "conjunction"
   },
@@ -4552,6 +4988,7 @@
     "reading": "でる",
     "meaning": "to appear, to leave",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4561,6 +4998,7 @@
     "reading": "てれび",
     "meaning": "television, TV",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4570,6 +5008,7 @@
     "reading": "てんき",
     "meaning": "weather",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4582,6 +5021,7 @@
       "power"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4594,6 +5034,7 @@
       "train"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4606,6 +5047,7 @@
       "phone"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4615,6 +5057,7 @@
     "reading": "と",
     "meaning": "door (Japanese style)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4624,6 +5067,7 @@
     "reading": "～ど",
     "meaning": "counter for occurrences; ~ degree; ~ point",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter",
     "skipVoiceGeneration": true
@@ -4634,6 +5078,7 @@
     "reading": "どあ",
     "meaning": "door (Western style)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4649,6 +5094,7 @@
       "lavatory"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4658,6 +5104,7 @@
     "reading": "どう",
     "meaning": "how, in what way",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -4667,6 +5114,7 @@
     "reading": "どうして",
     "meaning": "why, for what reason",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -4676,6 +5124,7 @@
     "reading": "どうぞ",
     "meaning": "please, kindly, by all means",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "interjection"
   },
@@ -4685,6 +5134,7 @@
     "reading": "どうぶつ",
     "meaning": "animal",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4694,6 +5144,7 @@
     "reading": "どうも",
     "meaning": "Thank you; somehow; no matter how hard one may try",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -4703,6 +5154,7 @@
     "reading": "とお",
     "meaning": "ten (~)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -4712,6 +5164,7 @@
     "reading": "とおい",
     "meaning": "far (away), distant",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -4721,6 +5174,7 @@
     "reading": "とおか",
     "meaning": "ten days; tenth day of the month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -4731,6 +5185,7 @@
     "reading": "～とき",
     "meaning": "at the time of ~",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -4740,6 +5195,7 @@
     "reading": "ときどき",
     "meaning": "sometimes",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -4749,6 +5205,7 @@
     "reading": "とけい",
     "meaning": "a watch; a clock",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4758,6 +5215,7 @@
     "reading": "どこ",
     "meaning": "where, what place",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -4767,6 +5225,7 @@
     "reading": "ところ",
     "meaning": "place",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4776,6 +5235,7 @@
     "reading": "とし",
     "meaning": "year, age",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4785,6 +5245,7 @@
     "reading": "としょかん",
     "meaning": "library",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4794,6 +5255,7 @@
     "reading": "どちら",
     "meaning": "which (one) (way); where (polite)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -4803,6 +5265,7 @@
     "reading": "どっち",
     "meaning": "which one, which way",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -4812,6 +5275,7 @@
     "reading": "とても",
     "meaning": "very (much), greatly, exceedingly",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -4821,6 +5285,7 @@
     "reading": "どなた",
     "meaning": "who (polite)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -4834,6 +5299,7 @@
       "neighbour"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4843,6 +5309,7 @@
     "reading": "どの",
     "meaning": "which",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "determiner"
   },
@@ -4852,6 +5319,7 @@
     "reading": "とぶ",
     "meaning": "to fly, to hop",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4861,6 +5329,7 @@
     "reading": "とまる",
     "meaning": "to come to a halt",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4870,6 +5339,7 @@
     "reading": "ともだち",
     "meaning": "friend",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "友だち"
@@ -4882,6 +5352,7 @@
     "reading": "どようび",
     "meaning": "Saturday",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4894,6 +5365,7 @@
       "bird"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4903,6 +5375,7 @@
     "reading": "とりにく",
     "meaning": "chicken meat",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4913,6 +5386,7 @@
     "reading": "とる",
     "meaning": "to take (a class); to get (a grade)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4923,6 +5397,7 @@
     "reading": "とる",
     "meaning": "to take (a photo), to make (a film)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4932,6 +5407,7 @@
     "reading": "どれ",
     "meaning": "which one",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -4941,6 +5417,7 @@
     "reading": "どんな",
     "meaning": "what, what kind of",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "determiner"
   },
@@ -4950,6 +5427,7 @@
     "reading": "ない",
     "meaning": "there isn't, doesn't have",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -4959,6 +5437,7 @@
     "reading": "ないふ",
     "meaning": "knife",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4968,6 +5447,7 @@
     "reading": "なか",
     "meaning": "inside, middle, among",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -4977,6 +5457,7 @@
     "reading": "ながい",
     "meaning": "long, lengthy",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -4986,6 +5467,7 @@
     "reading": "なく",
     "meaning": "to make sound (animal)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -4995,6 +5477,7 @@
     "reading": "なくす",
     "meaning": "to lose something",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb",
     "variants": [
@@ -5007,6 +5490,7 @@
     "reading": "なぜ",
     "meaning": "why (same as どうして)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -5016,6 +5500,7 @@
     "reading": "なつ",
     "meaning": "summer",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5029,6 +5514,7 @@
       "summer holidays"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5038,6 +5524,7 @@
     "reading": "～など",
     "meaning": "et cetera",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -5047,6 +5534,7 @@
     "reading": "ななつ",
     "meaning": "seven things",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5056,6 +5544,7 @@
     "reading": "なに",
     "meaning": "what",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -5065,6 +5554,7 @@
     "reading": "なのか",
     "meaning": "seven days; seventh day (of the month)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -5074,6 +5564,7 @@
     "reading": "なまえ",
     "meaning": "name",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5083,6 +5574,7 @@
     "reading": "ならう",
     "meaning": "to learn",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5092,6 +5584,7 @@
     "reading": "ならぶ",
     "meaning": "to line up, to stand in a line (v.i.)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5101,6 +5594,7 @@
     "reading": "ならべる",
     "meaning": "to put (things) side by side; to line up",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5110,6 +5604,7 @@
     "reading": "なる",
     "meaning": "to become",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5119,6 +5614,7 @@
     "reading": "なん～",
     "meaning": "what sort of ~",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -5128,6 +5624,7 @@
     "reading": "に",
     "meaning": "two",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -5137,6 +5634,7 @@
     "reading": "にぎやか",
     "meaning": "bustling, busy",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -5146,6 +5644,7 @@
     "reading": "にく",
     "meaning": "meat",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5155,6 +5654,7 @@
     "reading": "にし",
     "meaning": "west",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5167,6 +5667,7 @@
     ],
     "meaning": "day counter for dates and durations",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -5176,6 +5677,7 @@
     "reading": "にちようび",
     "meaning": "Sunday",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5189,6 +5691,7 @@
       "belongings"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5198,6 +5701,7 @@
     "reading": "にゅーす",
     "meaning": "news",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5210,6 +5714,7 @@
       "yard"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5219,6 +5724,7 @@
     "reading": "～にん",
     "meaning": "counter for people",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter"
   },
@@ -5228,6 +5734,7 @@
     "reading": "ぬぐ",
     "meaning": "to take off (clothes)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5237,6 +5744,7 @@
     "reading": "ぬるい",
     "meaning": "lukewarm",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -5246,6 +5754,7 @@
     "reading": "ねくたい",
     "meaning": "tie, necktie",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5255,6 +5764,7 @@
     "reading": "ねこ",
     "meaning": "cat",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5264,6 +5774,7 @@
     "reading": "ねる",
     "meaning": "to sleep; to go to sleep; to go to bed",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5273,6 +5784,7 @@
     "reading": "～ねん",
     "meaning": "~ years",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -5282,6 +5794,7 @@
     "reading": "のーと",
     "meaning": "notebook",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5291,6 +5804,7 @@
     "reading": "のぼる",
     "meaning": "to climb",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5303,6 +5817,7 @@
       "something to drink"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5312,6 +5827,7 @@
     "reading": "のむ",
     "meaning": "to drink",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5321,6 +5837,7 @@
     "reading": "のる",
     "meaning": "to get on, to ride in, to board",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5333,6 +5850,7 @@
       "teeth"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5342,6 +5860,7 @@
     "reading": "ぱーてぃー",
     "meaning": "a party",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5352,6 +5871,7 @@
     "reading": "はい",
     "meaning": "yes",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "interjection"
   },
@@ -5362,6 +5882,7 @@
     "reading": "～はい",
     "meaning": "counter for cupfuls",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter"
   },
@@ -5371,6 +5892,7 @@
     "reading": "はいざら",
     "meaning": "ashtray",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5380,6 +5902,7 @@
     "reading": "はいる",
     "meaning": "to enter, to contain, to hold",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5392,6 +5915,7 @@
       "post card"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5401,6 +5925,7 @@
     "reading": "はく",
     "meaning": "to put on (items below your waist)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5410,6 +5935,7 @@
     "reading": "はこ",
     "meaning": "box",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5420,6 +5946,7 @@
     "reading": "はし",
     "meaning": "bridge",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5430,6 +5957,7 @@
     "reading": "はし",
     "meaning": "chopsticks",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5439,6 +5967,7 @@
     "reading": "はじまる",
     "meaning": "(something) begins",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5448,6 +5977,7 @@
     "reading": "はじめ",
     "meaning": "beginning, start",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "始め"
@@ -5460,6 +5990,7 @@
     "reading": "はじめて",
     "meaning": "for the first time",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -5469,6 +6000,7 @@
     "reading": "はしる",
     "meaning": "to run",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5478,6 +6010,7 @@
     "reading": "ばす",
     "meaning": "bus; bath; bass",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5487,6 +6020,7 @@
     "reading": "ばたー",
     "meaning": "butter",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5496,6 +6030,7 @@
     "reading": "はたち",
     "meaning": "20 years old",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -5505,6 +6040,7 @@
     "reading": "はたらく",
     "meaning": "to work",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5514,6 +6050,7 @@
     "reading": "はち",
     "meaning": "eight",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -5523,6 +6060,7 @@
     "reading": "はつか",
     "meaning": "twenty days, twentieth (day of the month)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -5533,6 +6071,7 @@
     "reading": "はな",
     "meaning": "flower",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5543,6 +6082,7 @@
     "reading": "はな",
     "meaning": "nose",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5555,6 +6095,7 @@
       "conversation"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5564,6 +6105,7 @@
     "reading": "はなす",
     "meaning": "to speak",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5578,6 +6120,7 @@
       "mama"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5588,6 +6131,7 @@
     "reading": "はやい",
     "meaning": "early",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -5598,6 +6142,7 @@
     "reading": "はやい",
     "meaning": "fast, quick",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -5608,6 +6153,7 @@
     "reading": "はる",
     "meaning": "spring",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5618,6 +6164,7 @@
     "reading": "はる",
     "meaning": "to post; to paste; to attach",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5627,6 +6174,7 @@
     "reading": "はれ",
     "meaning": "clear (sunny) weather",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5636,6 +6184,7 @@
     "reading": "はれる",
     "meaning": "to be sunny",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5645,6 +6194,7 @@
     "reading": "はん",
     "meaning": "half (e.g., にじはん | half-past two)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5655,6 +6205,7 @@
     "reading": "ばん",
     "meaning": "evening (especially in expressions such as tonight or every evening)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5665,6 +6216,7 @@
     "reading": "～ばん",
     "meaning": "~st; ~th best",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -5674,6 +6226,7 @@
     "reading": "ぱん",
     "meaning": "bread",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5686,6 +6239,7 @@
       "hanky"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5695,6 +6249,7 @@
     "reading": "ばんごう",
     "meaning": "number, series of digits",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5707,6 +6262,7 @@
       "supper"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5716,6 +6272,7 @@
     "reading": "はんぶん",
     "meaning": "half",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5725,6 +6282,7 @@
     "reading": "ひがし",
     "meaning": "east",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5734,6 +6292,7 @@
     "reading": "～ひき",
     "meaning": "counter for small animals",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter"
   },
@@ -5744,6 +6303,7 @@
     "reading": "ひく",
     "meaning": "to pull, to draw; subtract",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5754,6 +6314,7 @@
     "reading": "ひく",
     "meaning": "to play (a string instrument or piano)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5763,6 +6324,7 @@
     "reading": "ひくい",
     "meaning": "short, low",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -5777,6 +6339,7 @@
       "aircraft"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5790,6 +6353,7 @@
       "left side"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5799,6 +6363,7 @@
     "reading": "ひと",
     "meaning": "man, person",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5808,6 +6373,7 @@
     "reading": "ひとつ",
     "meaning": "one thing",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5817,6 +6383,7 @@
     "reading": "ひとつき",
     "meaning": "one month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5826,6 +6393,7 @@
     "reading": "ひとり",
     "meaning": "one person",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -5835,6 +6403,7 @@
     "reading": "ひま",
     "meaning": "free time, leisure",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -5844,6 +6413,7 @@
     "reading": "ひゃく",
     "meaning": "hundred",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -5853,6 +6423,7 @@
     "reading": "びょういん",
     "meaning": "hospital",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5865,6 +6436,7 @@
       "disease"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5874,6 +6446,7 @@
     "reading": "ひらがな",
     "meaning": "hiragana",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5886,6 +6459,7 @@
       "midday"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5895,6 +6469,7 @@
     "reading": "ひるごはん",
     "meaning": "lunch, midday meal",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5904,6 +6479,7 @@
     "reading": "ひろい",
     "meaning": "spacious; wide; broad",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -5913,6 +6489,7 @@
     "reading": "ふぃるむ",
     "meaning": "film (roll of)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5922,6 +6499,7 @@
     "reading": "ふうとう",
     "meaning": "envelope",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5934,6 +6512,7 @@
       "pool"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5943,6 +6522,7 @@
     "reading": "ふぉーく",
     "meaning": "fork",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5953,6 +6533,7 @@
     "reading": "ふく",
     "meaning": "to blow (wind, etc.)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -5969,6 +6550,7 @@
       "outfit"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5978,6 +6560,7 @@
     "reading": "ふたつ",
     "meaning": "two things",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5987,6 +6570,7 @@
     "reading": "ぶたにく",
     "meaning": "pork",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -5996,6 +6580,7 @@
     "reading": "ふたり",
     "meaning": "two people",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -6005,6 +6590,7 @@
     "reading": "ふつか",
     "meaning": "two days; second day of the month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -6014,6 +6600,7 @@
     "reading": "ふとい",
     "meaning": "fat, thick",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -6023,6 +6610,7 @@
     "reading": "ふゆ",
     "meaning": "winter",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6032,6 +6620,7 @@
     "reading": "ふる",
     "meaning": "to precipitate, to fall (e.g., rain, snow, etc.)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -6041,6 +6630,7 @@
     "reading": "ふるい",
     "meaning": "old (in reference to objects, not people), aged, ancient",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -6050,6 +6640,7 @@
     "reading": "～ふん",
     "meaning": "~ minutes",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix",
     "inflections": [
@@ -6066,6 +6657,7 @@
     "reading": "ぶんしょう",
     "meaning": "sentence, text",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6075,6 +6667,7 @@
     "reading": "ぺーじ",
     "meaning": "a page",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6088,6 +6681,7 @@
       "not good at"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -6097,6 +6691,7 @@
     "reading": "べっど",
     "meaning": "bed",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6106,6 +6701,7 @@
     "reading": "ぺっと",
     "meaning": "pet",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6115,6 +6711,7 @@
     "reading": "へや",
     "meaning": "a room",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6128,6 +6725,7 @@
       "neighbourhood"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6137,6 +6735,7 @@
     "reading": "ぺん",
     "meaning": "pen",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6150,6 +6749,7 @@
       "studies"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6162,6 +6762,7 @@
       "useful"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -6171,6 +6772,7 @@
     "reading": "ぼうし",
     "meaning": "hat; cap",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6184,6 +6786,7 @@
       "ballpoint"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6193,6 +6796,7 @@
     "reading": "ほか",
     "meaning": "other, the rest",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6202,6 +6806,7 @@
     "reading": "ぽけっと",
     "meaning": "pocket",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6214,6 +6819,7 @@
       "would like"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -6229,6 +6835,7 @@
       "letter box"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6238,6 +6845,7 @@
     "reading": "ほそい",
     "meaning": "thin, slender, fine",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -6247,6 +6855,7 @@
     "reading": "ぼたん",
     "meaning": "button",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6256,6 +6865,7 @@
     "reading": "ほてる",
     "meaning": "hotel",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6266,6 +6876,7 @@
     "reading": "ほん",
     "meaning": "book",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6276,6 +6887,7 @@
     "reading": "～ほん",
     "meaning": "counter for long cylindrical things",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter"
   },
@@ -6288,6 +6900,7 @@
       "bookcase"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6301,6 +6914,7 @@
       "really"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6310,6 +6924,7 @@
     "reading": "～まい",
     "meaning": "counter for flat things",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter",
     "inflections": [
@@ -6326,6 +6941,7 @@
     "reading": "まいあさ",
     "meaning": "every morning",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6335,6 +6951,7 @@
     "reading": "まいげつ",
     "meaning": "every month, monthly",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6344,6 +6961,7 @@
     "reading": "まいしゅう",
     "meaning": "every week",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6353,6 +6971,7 @@
     "reading": "まいにち",
     "meaning": "every day",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6362,6 +6981,7 @@
     "reading": "まいねん",
     "meaning": "every year, yearly, annually",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6371,6 +6991,7 @@
     "reading": "まいばん",
     "meaning": "every night",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6381,6 +7002,7 @@
     "reading": "まえ",
     "meaning": "before, in front",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6391,6 +7013,7 @@
     "reading": "～まえ",
     "meaning": "in front of ~",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -6400,6 +7023,7 @@
     "reading": "まがる",
     "meaning": "to turn, to bend",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb",
     "inflections": [
@@ -6420,6 +7044,7 @@
       "not tasty"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -6432,6 +7057,7 @@
       "and"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "conjunction"
   },
@@ -6441,6 +7067,7 @@
     "reading": "まだ",
     "meaning": "yet, still, besides",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -6450,6 +7077,7 @@
     "reading": "まち",
     "meaning": "town; city",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6459,6 +7087,7 @@
     "reading": "まつ",
     "meaning": "to wait",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -6468,6 +7097,7 @@
     "reading": "まっすぐ",
     "meaning": "straight (ahead), direct",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -6477,6 +7107,7 @@
     "reading": "まっち",
     "meaning": "match",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6486,6 +7117,7 @@
     "reading": "まど",
     "meaning": "window",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6495,6 +7127,7 @@
     "reading": "まるい",
     "meaning": "round, circular",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
       "円い"
@@ -6507,6 +7140,7 @@
     "reading": "まん",
     "meaning": "ten thousand",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -6516,6 +7150,7 @@
     "reading": "まんねんひつ",
     "meaning": "fountain pen",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6525,6 +7160,7 @@
     "reading": "みがく",
     "meaning": "to brush (teeth); to polish",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -6534,6 +7170,7 @@
     "reading": "みぎ",
     "meaning": "right hand side",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6543,6 +7180,7 @@
     "reading": "みじかい",
     "meaning": "short (length)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -6552,6 +7190,7 @@
     "reading": "みず",
     "meaning": "water",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6561,6 +7200,7 @@
     "reading": "みせ",
     "meaning": "store, shop",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6570,6 +7210,7 @@
     "reading": "みせる",
     "meaning": "to show, to display",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -6579,6 +7220,7 @@
     "reading": "みち",
     "meaning": "road, street; way, directions",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6588,6 +7230,7 @@
     "reading": "みっか",
     "meaning": "three days, third day of the month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -6597,6 +7240,7 @@
     "reading": "みっつ",
     "meaning": "three things",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6606,6 +7250,7 @@
     "reading": "みどり",
     "meaning": "green",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6615,6 +7260,7 @@
     "reading": "みなさん",
     "meaning": "all of you, everyone",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6624,6 +7270,7 @@
     "reading": "みなみ",
     "meaning": "South",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6633,6 +7280,7 @@
     "reading": "みみ",
     "meaning": "ear",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6646,6 +7294,7 @@
       "view"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -6655,6 +7304,7 @@
     "reading": "みんな",
     "meaning": "all, everyone, everybody",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -6664,6 +7314,7 @@
     "reading": "むいか",
     "meaning": "six days; sixth day of month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -6673,6 +7324,7 @@
     "reading": "むこう",
     "meaning": "beyond, over there",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6682,6 +7334,7 @@
     "reading": "むずかしい",
     "meaning": "difficult",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -6691,6 +7344,7 @@
     "reading": "むっつ",
     "meaning": "six things",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6700,6 +7354,7 @@
     "reading": "むら",
     "meaning": "village",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6709,6 +7364,7 @@
     "reading": "め",
     "meaning": "eye(s)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6721,6 +7377,7 @@
       "metre"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6735,6 +7392,7 @@
       "spectacles"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6744,6 +7402,7 @@
     "reading": "もう",
     "meaning": "already; again; more",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -6753,6 +7412,7 @@
     "reading": "もくようび",
     "meaning": "Thursday",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6762,6 +7422,7 @@
     "reading": "もしもし",
     "meaning": "Hello? (used on the phone)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "interjection"
   },
@@ -6776,6 +7437,7 @@
       "take"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -6785,6 +7447,7 @@
     "reading": "もっと",
     "meaning": "more",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -6798,6 +7461,7 @@
       "item"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6807,6 +7471,7 @@
     "reading": "もん",
     "meaning": "gate",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6820,6 +7485,7 @@
       "issue"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6829,6 +7495,7 @@
     "reading": "～や",
     "meaning": "~ shop",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "affix"
   },
@@ -6844,6 +7511,7 @@
       "greengrocery"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6856,6 +7524,7 @@
       "vegetables"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6865,6 +7534,7 @@
     "reading": "やさしい",
     "meaning": "easy, plain, simple",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -6878,6 +7548,7 @@
       "low priced"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -6891,6 +7562,7 @@
       "break"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6905,6 +7577,7 @@
       "miss"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -6914,6 +7587,7 @@
     "reading": "やっつ",
     "meaning": "eight things",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6923,6 +7597,7 @@
     "reading": "やま",
     "meaning": "mountain",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6932,6 +7607,7 @@
     "reading": "やる",
     "meaning": "to do; to give (to pets, parents, siblings, etc.)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -6944,6 +7620,7 @@
       "dusk"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6956,6 +7633,7 @@
       "supper"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6965,6 +7643,7 @@
     "reading": "ゆうびんきょく",
     "meaning": "post office",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "inflections": [
@@ -6984,6 +7663,7 @@
     "reading": "ゆうべ",
     "meaning": "last night",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -6993,6 +7673,7 @@
     "reading": "ゆうめい",
     "meaning": "famous",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -7002,6 +7683,7 @@
     "reading": "ゆき",
     "meaning": "snow",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7018,6 +7700,7 @@
       "ゆっくりと"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -7027,6 +7710,7 @@
     "reading": "ようか",
     "meaning": "eight days; eighth day of the month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -7040,6 +7724,7 @@
       "clothing"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7049,6 +7734,7 @@
     "reading": "よく",
     "meaning": "frequently, often (much); well, skillfully",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
   },
@@ -7058,6 +7744,7 @@
     "reading": "よこ",
     "meaning": "beside; side; width",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7067,6 +7754,7 @@
     "reading": "よっか",
     "meaning": "four days; fourth day of the month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -7076,6 +7764,7 @@
     "reading": "よっつ",
     "meaning": "four things",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7085,6 +7774,7 @@
     "reading": "よぶ",
     "meaning": "to call (one's name); to invite",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -7094,6 +7784,7 @@
     "reading": "よむ",
     "meaning": "to read",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -7103,6 +7794,7 @@
     "reading": "よる",
     "meaning": "night; evening (the nighttime period)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7112,6 +7804,7 @@
     "reading": "よわい",
     "meaning": "weak",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -7121,6 +7814,7 @@
     "reading": "らいげつ",
     "meaning": "next month",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7130,6 +7824,7 @@
     "reading": "らいしゅう",
     "meaning": "next week",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7139,6 +7834,7 @@
     "reading": "らいねん",
     "meaning": "next year",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7148,6 +7844,7 @@
     "reading": "らじお",
     "meaning": "radio",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7157,6 +7854,7 @@
     "reading": "らじかせ",
     "meaning": "radio cassette player",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun",
     "inflections": [
@@ -7172,6 +7870,7 @@
     "reading": "りっぱ",
     "meaning": "splendid, fine",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -7181,6 +7880,7 @@
     "reading": "りゅうがくせい",
     "meaning": "international student",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7190,6 +7890,7 @@
     "reading": "りょうしん",
     "meaning": "parents (lit., both parents)",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7204,6 +7905,7 @@
       "dishes"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7213,6 +7915,7 @@
     "reading": "りょこう",
     "meaning": "travel, trip",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7225,6 +7928,7 @@
       "nought"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -7237,6 +7941,7 @@
       "fridge"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7246,6 +7951,7 @@
     "reading": "れこーど",
     "meaning": "record",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7255,6 +7961,7 @@
     "reading": "れすとらん",
     "meaning": "restaurant",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7264,6 +7971,7 @@
     "reading": "れんしゅう",
     "meaning": "(to) practice",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -7276,6 +7984,7 @@
       "hallway"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7285,6 +7994,7 @@
     "reading": "ろく",
     "meaning": "six",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number"
   },
@@ -7297,6 +8007,7 @@
       "dress shirt"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "noun"
   },
@@ -7306,6 +8017,7 @@
     "reading": "わかい",
     "meaning": "young",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -7320,6 +8032,7 @@
       "comprehend"
     ],
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -7329,6 +8042,7 @@
     "reading": "わすれる",
     "meaning": "to forget",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -7338,6 +8052,7 @@
     "reading": "わたし",
     "meaning": "I, myself",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun",
     "variants": [
@@ -7350,6 +8065,7 @@
     "reading": "わたくし",
     "meaning": "I (formal), myself, private affairs",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "pronoun"
   },
@@ -7359,6 +8075,7 @@
     "reading": "わたす",
     "meaning": "to hand (something) over (v.t.); to get across",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -7368,6 +8085,7 @@
     "reading": "わたる",
     "meaning": "to cross over, to go across",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
   },
@@ -7377,6 +8095,7 @@
     "reading": "わるい",
     "meaning": "bad, sinful; inferior",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective"
   },
@@ -7388,6 +8107,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7398,6 +8118,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7408,6 +8129,7 @@
     "partOfSpeech": "noun",
     "topic": "culture",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7422,6 +8144,7 @@
     "partOfSpeech": "noun",
     "topic": "culture",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7432,6 +8155,7 @@
     "partOfSpeech": "noun",
     "topic": "leisure",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7442,6 +8166,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7455,6 +8180,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7465,6 +8191,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7475,6 +8202,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7485,6 +8213,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7495,6 +8224,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7505,6 +8235,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7515,6 +8246,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7525,6 +8257,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7538,6 +8271,7 @@
     "partOfSpeech": "noun",
     "topic": "daily-life",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7548,6 +8282,7 @@
     "partOfSpeech": "noun",
     "topic": "leisure",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7558,6 +8293,7 @@
     "partOfSpeech": "adjective",
     "topic": "description",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7568,6 +8304,7 @@
     "partOfSpeech": "noun",
     "topic": "nature",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7582,6 +8319,7 @@
     "partOfSpeech": "noun",
     "topic": "places",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7595,6 +8333,7 @@
     "partOfSpeech": "noun",
     "topic": "transport",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7608,6 +8347,7 @@
     "partOfSpeech": "noun",
     "topic": "places",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7621,6 +8361,7 @@
     "partOfSpeech": "noun",
     "topic": "places",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7634,6 +8375,7 @@
     "partOfSpeech": "noun",
     "topic": "places",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7647,6 +8389,7 @@
     "partOfSpeech": "noun",
     "topic": "culture",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7657,6 +8400,7 @@
     "partOfSpeech": "noun",
     "topic": "culture",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7667,6 +8411,7 @@
     "partOfSpeech": "noun",
     "topic": "culture",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7677,6 +8422,7 @@
     "partOfSpeech": "noun",
     "topic": "culture",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7693,6 +8439,7 @@
     "partOfSpeech": "noun",
     "topic": "technology",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7707,6 +8454,7 @@
     "partOfSpeech": "noun",
     "topic": "technology",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7717,6 +8465,7 @@
     "partOfSpeech": "noun",
     "topic": "technology",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7731,6 +8480,7 @@
     "partOfSpeech": "noun",
     "topic": "technology",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7741,6 +8491,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7751,6 +8502,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7761,6 +8513,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7771,6 +8524,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7781,6 +8535,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7791,6 +8546,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7801,6 +8557,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-learner-favorites"
   },
   {
@@ -7814,6 +8571,7 @@
     "partOfSpeech": "noun",
     "topic": "language-learning",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -7829,6 +8587,7 @@
     "partOfSpeech": "noun",
     "topic": "language-learning",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -7842,6 +8601,7 @@
     "partOfSpeech": "noun",
     "topic": "language-learning",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -7855,6 +8615,7 @@
     "partOfSpeech": "noun",
     "topic": "language-learning",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -7865,6 +8626,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -7875,6 +8637,7 @@
     "partOfSpeech": "verb",
     "topic": "actions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary",
     "inflections": [
       {
@@ -7894,6 +8657,7 @@
     "partOfSpeech": "noun",
     "topic": "people",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -7904,6 +8668,7 @@
     "partOfSpeech": "noun",
     "topic": "places",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -7914,6 +8679,7 @@
     "partOfSpeech": "noun",
     "topic": "intentions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -7924,6 +8690,7 @@
     "partOfSpeech": "noun",
     "topic": "comparison-and-advice",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary",
     "variants": [
       "ほう"
@@ -7937,6 +8704,7 @@
     "partOfSpeech": "noun",
     "topic": "places",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary",
     "inflections": [
       {
@@ -7953,6 +8721,7 @@
     "partOfSpeech": "noun",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -7963,6 +8732,7 @@
     "partOfSpeech": "verb",
     "topic": "giving-and-receiving",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary",
     "inflections": [
       {
@@ -7979,6 +8749,7 @@
     "partOfSpeech": "noun",
     "topic": "time",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -7993,6 +8764,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8003,6 +8775,7 @@
     "partOfSpeech": "noun",
     "topic": "work",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8013,6 +8786,7 @@
     "partOfSpeech": "noun",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8027,6 +8801,7 @@
     "partOfSpeech": "noun",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8040,6 +8815,7 @@
     "partOfSpeech": "noun",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8050,6 +8826,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8061,6 +8838,7 @@
     "partOfSpeech": "verb",
     "topic": "giving and receiving",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8075,6 +8853,7 @@
     "partOfSpeech": "verb",
     "topic": "giving and receiving",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8086,6 +8865,7 @@
     "partOfSpeech": "noun",
     "topic": "time",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8100,6 +8880,7 @@
     "partOfSpeech": "adjective",
     "topic": "descriptions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8114,6 +8895,7 @@
     "partOfSpeech": "verb",
     "topic": "communication",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8124,6 +8906,7 @@
     "partOfSpeech": "verb",
     "topic": "activities",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8134,6 +8917,7 @@
     "partOfSpeech": "noun",
     "topic": "objects",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8144,6 +8928,7 @@
     "partOfSpeech": "adverb",
     "topic": "questions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8154,6 +8939,7 @@
     "partOfSpeech": "noun",
     "topic": "time",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-lesson-vocabulary"
   },
   {
@@ -8166,6 +8952,7 @@
     ],
     "partOfSpeech": "noun",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "former-jlpt-level-4"
   },
   {
@@ -8175,6 +8962,7 @@
     "meaning": "copy; photocopy",
     "partOfSpeech": "noun",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "former-jlpt-level-4"
   },
   {
@@ -8187,6 +8975,7 @@
     ],
     "partOfSpeech": "noun",
     "scope": "core",
+    "introducedAt": "n5",
     "source": "former-jlpt-level-4"
   },
   {
@@ -8202,6 +8991,7 @@
     "partOfSpeech": "noun",
     "topic": "home",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8212,6 +9002,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8222,6 +9013,7 @@
     "partOfSpeech": "noun",
     "topic": "home",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8232,6 +9024,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8245,6 +9038,7 @@
     "partOfSpeech": "noun",
     "topic": "sports",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8255,6 +9049,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8265,6 +9060,7 @@
     "partOfSpeech": "noun",
     "topic": "clothing",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8275,6 +9071,7 @@
     "partOfSpeech": "noun",
     "topic": "home",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8288,6 +9085,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8301,6 +9099,7 @@
     "partOfSpeech": "noun",
     "topic": "sports",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8311,6 +9110,7 @@
     "partOfSpeech": "noun",
     "topic": "activities",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8324,6 +9124,7 @@
     "partOfSpeech": "noun",
     "topic": "places",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8334,6 +9135,7 @@
     "partOfSpeech": "noun",
     "topic": "objects",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8344,6 +9146,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8354,6 +9157,7 @@
     "partOfSpeech": "noun",
     "topic": "travel",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8364,6 +9168,7 @@
     "partOfSpeech": "noun",
     "topic": "sports",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8374,6 +9179,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8388,6 +9194,7 @@
     "partOfSpeech": "noun",
     "topic": "home",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8403,6 +9210,7 @@
     "partOfSpeech": "noun",
     "topic": "transportation",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8418,6 +9226,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8428,6 +9237,7 @@
     "partOfSpeech": "noun",
     "topic": "clothing",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8438,6 +9248,7 @@
     "partOfSpeech": "noun",
     "topic": "activities",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8448,6 +9259,7 @@
     "partOfSpeech": "noun",
     "topic": "objects",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8458,6 +9270,7 @@
     "partOfSpeech": "noun",
     "topic": "home",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8472,6 +9285,7 @@
     "partOfSpeech": "noun",
     "topic": "home",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8482,6 +9296,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8492,6 +9307,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8506,6 +9322,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8516,6 +9333,7 @@
     "partOfSpeech": "noun",
     "topic": "sports",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8526,6 +9344,7 @@
     "partOfSpeech": "noun",
     "topic": "sports",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8536,6 +9355,7 @@
     "partOfSpeech": "noun",
     "topic": "objects",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8546,6 +9366,7 @@
     "partOfSpeech": "noun",
     "topic": "clothing",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8560,6 +9381,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8570,6 +9392,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8580,6 +9403,7 @@
     "partOfSpeech": "noun",
     "topic": "food",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8594,6 +9418,7 @@
     "partOfSpeech": "noun",
     "topic": "objects",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8604,6 +9429,7 @@
     "partOfSpeech": "noun",
     "topic": "transportation",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-katakana-curriculum"
   },
   {
@@ -8618,6 +9444,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8634,6 +9461,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8644,6 +9472,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8661,6 +9490,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8675,6 +9505,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8690,6 +9521,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8705,6 +9537,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8718,6 +9551,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8735,6 +9569,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8750,6 +9585,7 @@
     "partOfSpeech": "interjection",
     "topic": "expressions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8765,6 +9601,7 @@
     "partOfSpeech": "noun",
     "topic": "daily-life",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8780,6 +9617,7 @@
     "partOfSpeech": "noun",
     "topic": "people",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8793,6 +9631,7 @@
     "partOfSpeech": "noun",
     "topic": "body",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary",
     "voiceSlug": "kami-hair"
   },
@@ -8810,6 +9649,7 @@
     "partOfSpeech": "adjective",
     "topic": "feelings",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8829,6 +9669,7 @@
     "partOfSpeech": "adverb",
     "topic": "descriptions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8847,6 +9688,7 @@
     "partOfSpeech": "adverb",
     "topic": "descriptions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8861,6 +9703,7 @@
     "partOfSpeech": "conjunction",
     "topic": "questions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-beginner-vocabulary"
   },
   {
@@ -8875,6 +9718,7 @@
     "partOfSpeech": "noun",
     "topic": "home",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -8891,6 +9735,7 @@
     "partOfSpeech": "verb",
     "topic": "descriptions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary",
     "voiceSlug": "au-fit"
   },
@@ -8905,6 +9750,7 @@
     "partOfSpeech": "adjective",
     "topic": "feelings",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -8918,6 +9764,7 @@
     "partOfSpeech": "verb",
     "topic": "daily-life",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -8934,6 +9781,7 @@
     "partOfSpeech": "noun",
     "topic": "objects",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -8948,6 +9796,7 @@
     "partOfSpeech": "noun",
     "topic": "travel",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -8963,6 +9812,7 @@
     "partOfSpeech": "verb",
     "topic": "communication",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -8978,6 +9828,7 @@
     "partOfSpeech": "noun",
     "topic": "daily-life",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -8996,6 +9847,7 @@
     "partOfSpeech": "verb",
     "topic": "actions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -9011,6 +9863,7 @@
     "partOfSpeech": "noun",
     "topic": "communication",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -9025,6 +9878,7 @@
     "partOfSpeech": "adjective",
     "topic": "feelings",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -9041,6 +9895,7 @@
     "partOfSpeech": "noun",
     "topic": "communication",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -9056,6 +9911,7 @@
     "partOfSpeech": "noun",
     "topic": "time",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -9072,6 +9928,7 @@
     "partOfSpeech": "noun",
     "topic": "work",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-kanji-vocabulary"
   },
   {
@@ -9089,6 +9946,7 @@
     "partOfSpeech": "noun",
     "topic": "daily-life",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-migii-vocabulary"
   },
   {
@@ -9108,6 +9966,7 @@
     "partOfSpeech": "verb",
     "topic": "politeness",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-migii-vocabulary"
   },
   {
@@ -9124,6 +9983,7 @@
     "partOfSpeech": "adverb",
     "topic": "degree",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-migii-vocabulary"
   },
   {
@@ -9141,6 +10001,7 @@
     "partOfSpeech": "adverb",
     "topic": "degree",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-migii-vocabulary"
   },
   {
@@ -9159,6 +10020,7 @@
     "partOfSpeech": "noun",
     "topic": "daily-life",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-migii-vocabulary"
   },
   {
@@ -9175,6 +10037,7 @@
     "partOfSpeech": "noun",
     "topic": "shopping",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-migii-vocabulary"
   },
   {
@@ -9189,6 +10052,7 @@
     "partOfSpeech": "noun",
     "topic": "shopping",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-migii-vocabulary"
   },
   {
@@ -9203,6 +10067,7 @@
     "partOfSpeech": "noun",
     "topic": "descriptions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-migii-vocabulary"
   },
   {
@@ -9221,6 +10086,7 @@
     "partOfSpeech": "verb",
     "topic": "daily-life",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-migii-vocabulary"
   },
   {
@@ -9237,6 +10103,7 @@
     "partOfSpeech": "verb",
     "topic": "actions",
     "scope": "supplemental",
+    "introducedAt": "n5",
     "source": "curated-migii-vocabulary"
   }
 ]

@@ -5,6 +5,7 @@
     "reading": "わしつ",
     "meaning": "Japanese-style room",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "noun"
   },
   {
@@ -13,6 +14,7 @@
     "reading": "おもう",
     "meaning": "to think",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "verb"
   },
   {
@@ -21,6 +23,7 @@
     "reading": "あう",
     "meaning": "to fit; to suit",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "verb"
   },
   {
@@ -29,6 +32,7 @@
     "reading": "ねむい",
     "meaning": "sleepy",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "adjective"
   },
   {
@@ -37,6 +41,7 @@
     "reading": "はらう",
     "meaning": "to pay",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "verb"
   },
   {
@@ -45,6 +50,7 @@
     "reading": "しなもの",
     "meaning": "goods; article",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "noun"
   },
   {
@@ -53,6 +59,7 @@
     "reading": "ひつよう",
     "meaning": "necessary; needed",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "adjective"
   },
   {
@@ -61,6 +68,7 @@
     "reading": "りょひ",
     "meaning": "travel expenses",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "noun"
   },
   {
@@ -69,6 +77,7 @@
     "reading": "おくる",
     "meaning": "to send",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "verb"
   },
   {
@@ -77,6 +86,7 @@
     "reading": "けっせき",
     "meaning": "absence",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "noun"
   },
   {
@@ -85,6 +95,7 @@
     "reading": "しらべる",
     "meaning": "to check; to look up",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "verb"
   },
   {
@@ -93,6 +104,7 @@
     "reading": "せつめい",
     "meaning": "explanation",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "noun"
   },
   {
@@ -101,6 +113,7 @@
     "reading": "かなしい",
     "meaning": "sad",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "adjective"
   },
   {
@@ -109,6 +122,7 @@
     "reading": "はっぴょう",
     "meaning": "presentation; announcement",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "noun"
   },
   {
@@ -117,6 +131,7 @@
     "reading": "よてい",
     "meaning": "plan; schedule",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "noun"
   },
   {
@@ -125,6 +140,7 @@
     "reading": "しりょう",
     "meaning": "materials; documents",
     "scope": "kanji-context",
+    "introducedAt": "n5",
     "partOfSpeech": "noun"
   }
 ]

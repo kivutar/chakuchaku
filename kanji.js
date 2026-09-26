@@ -183,6 +183,7 @@
 
         pool.push({
           kanjiId: metadata.id,
+          ...(metadata.introducedAt ? { introducedAt: metadata.introducedAt } : {}),
           character,
           stage: metadata.stage,
           kanjiMeaning: metadata.meaning,
@@ -218,6 +219,7 @@
 
     return [...new Map(pool.map((entry) => [entry.kanjiId, {
       id: entry.kanjiId,
+      ...(entry.introducedAt ? { introducedAt: entry.introducedAt } : {}),
       character: entry.character,
       stage: entry.stage,
       meaning: entry.kanjiMeaning,

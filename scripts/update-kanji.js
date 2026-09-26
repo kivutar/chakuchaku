@@ -285,6 +285,7 @@ for (const stage of curriculum) {
       character,
       meaning: vocabularyMeaning || meanings[0],
       stage: stage.stage,
+      introducedAt: "n5",
       onReadings,
       kunReadings
     });

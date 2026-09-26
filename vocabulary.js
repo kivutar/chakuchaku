@@ -654,6 +654,7 @@
 
         return {
           id: entry.id,
+          ...(entry.introducedAt ? { introducedAt: entry.introducedAt } : {}),
           vocabularyId: entry.id,
           term: entry.term,
           reading: entry.reading,

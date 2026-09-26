@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "defaultLevel": "n5",
+  "levels": [
+    {
+      "id": "foundation",
+      "rank": 0
+    },
+    {
+      "id": "n5",
+      "rank": 1
+    }
+  ]
+}

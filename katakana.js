@@ -424,6 +424,7 @@
       seenTerms.add(entry.term);
       words.push({
         id: `katakana-${entry.id}`,
+        ...(entry.introducedAt ? { introducedAt: entry.introducedAt } : {}),
         vocabularyId: entry.id,
         writtenForm: entry.term,
         katakana: entry.term,

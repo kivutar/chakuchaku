@@ -124,5 +124,6 @@
       "tokenStart": 13,
       "tokenEnd": 15
     }
-  ]
+  ],
+  "minimumLevel": "n5"
 }

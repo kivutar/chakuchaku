@@ -162,6 +162,7 @@ let historyDayPage = 0;
 let expandedHistoryDayKey;
 let historyAttemptPage = 0;
 let kanaInputMode;
+let curriculumDataPromise;
 let vocabularyDataPromise;
 let vocabularyExampleDataPromise;
 let kanjiDataPromise;
@@ -199,6 +200,7 @@ function formatAcceptedTranslationLanguages() {
 }
 
 function initializeDataPromises() {
+  curriculumDataPromise = loadCurriculumData();
   vocabularyDataPromise = loadVocabularyData();
   vocabularyExampleDataPromise = loadVocabularyExampleData();
   kanjiDataPromise = loadKanjiData();
@@ -2584,18 +2586,27 @@ async function fetchContentLocalizations(kind, locale = getUserLocale()) {
   return localizations;
 }
 
+async function loadCurriculumData() {
+  const manifest = await fetchJson("data/curriculum.json");
+
+  return globalThis.JlptN5Curriculum.createCurriculum(manifest);
+}
+
 async function loadVocabularyData() {
   const { defaultLocale, supportedLocales } = globalThis.JlptN5I18n;
   const { getVocabularyVoicePath, validateVocabularyVoiceSlugs } =
     globalThis.JlptN5VoicePaths;
   const localizedLocales = supportedLocales.filter((locale) => locale !== defaultLocale);
-  const [vocabulary, localizedCatalogEntries] = await Promise.all([
+  const [curriculum, allVocabulary, localizedCatalogEntries] = await Promise.all([
+    curriculumDataPromise,
     fetchJson("data/jlpt-n5-vocabulary.json"),
     Promise.all(localizedLocales.map(async (locale) => [
       locale,
       await fetchContentLocalizations("vocabulary", locale)
     ]))
   ]);
+
+  const vocabulary = curriculum.filterAvailable(allVocabulary);
 
   validateVocabularyVoiceSlugs(vocabulary);
 
@@ -2670,12 +2681,15 @@ async function loadVocabularyExampleData() {
 }
 
 async function loadKanjiData() {
-  const [kanji, localizations, mnemonics, mnemonicLocalizations] = await Promise.all([
-    fetchJson("data/jlpt-n5-kanji.json"),
-    fetchContentLocalizations("kanji"),
-    fetchJson("data/kanji-mnemonics.json"),
-    fetchContentLocalizations("kanji-mnemonics")
-  ]);
+  const [curriculum, allKanji, localizations, mnemonics, mnemonicLocalizations] =
+    await Promise.all([
+      curriculumDataPromise,
+      fetchJson("data/jlpt-n5-kanji.json"),
+      fetchContentLocalizations("kanji"),
+      fetchJson("data/kanji-mnemonics.json"),
+      fetchContentLocalizations("kanji-mnemonics")
+    ]);
+  const kanji = curriculum.filterAvailable(allKanji);
   const mnemonicsById = new Map(mnemonics.map((entry) => [entry.kanjiId, entry]));
   const localizedKanji = kanji.map((entry) => ({
     ...entry,
@@ -2694,10 +2708,12 @@ async function loadKanjiData() {
 }
 
 async function loadKanjiContextData() {
-  const [contexts, localizations] = await Promise.all([
+  const [curriculum, allContexts, localizations] = await Promise.all([
+    curriculumDataPromise,
     fetchJson("data/kanji-contexts.json"),
     fetchContentLocalizations("kanji-contexts")
   ]);
+  const contexts = curriculum.filterAvailable(allContexts);
 
   return contexts.map((entry) => ({
     ...entry,
@@ -2717,6 +2733,7 @@ function prepareHiraganaWords(entriesById) {
     .map((kana) => ({
       id: kana,
       kana,
+      introducedAt: "foundation",
       romaji: kana === "っ"
         ? t("exercise.consonantDoubling")
         : globalThis.JlptN5Hiragana.romanizeParts([kana])[0]
@@ -2733,6 +2750,7 @@ function createPairedHiraganaMetadata({ hiragana, katakana }) {
   return {
     id: hiragana,
     kana: hiragana,
+    introducedAt: "foundation",
     romaji: katakana === "ッ"
       ? t("exercise.consonantDoubling")
       : katakana === "ー"
@@ -2753,6 +2771,7 @@ function prepareKatakanaWords(entriesById) {
     .map((kana) => ({
       id: kana,
       kana,
+      introducedAt: "foundation",
       romaji: kana === "ッ"
         ? t("exercise.consonantDoubling")
         : kana === "ー"
@@ -2829,12 +2848,17 @@ function prepareVocabularyItems(entriesById) {
 }
 
 async function loadConjugationData() {
-  const [curriculum, entriesById] = await Promise.all([
+  const [curriculumModel, allCurriculumEntries, entriesById] = await Promise.all([
+    curriculumDataPromise,
     fetchJson("data/jlpt-n5-conjugation.json"),
     vocabularyDataPromise
   ]);
+  const curriculum = curriculumModel.filterAvailable(allCurriculumEntries);
+  const availablePoints = curriculumModel.filterAvailable(
+    globalThis.JlptN5Conjugation.points
+  );
 
-  conjugationPointById = new Map(globalThis.JlptN5Conjugation.points.map((point) => {
+  conjugationPointById = new Map(availablePoints.map((point) => {
     const form = t(point.formKey);
     const group = t(point.groupKey);
 
@@ -2870,8 +2894,10 @@ async function loadConjugationData() {
 async function loadExerciseData() {
   const { defaultLocale, supportedLocales } = globalThis.JlptN5I18n;
   const localizedLocales = supportedLocales.filter((locale) => locale !== defaultLocale);
-  const [baseGrammarPoints, baseExercises, grammarLocalizations, exerciseCatalogEntries,
+  const [curriculum, allGrammarPoints, allExercises, grammarLocalizations,
+    exerciseCatalogEntries,
     entriesById, kanjiEntriesById] = await Promise.all([
+    curriculumDataPromise,
     fetchJson("data/jlpt-n5-grammar.json"),
     fetchJson("data/exercises.json"),
     fetchContentLocalizations("grammar"),
@@ -2882,6 +2908,10 @@ async function loadExerciseData() {
     vocabularyDataPromise,
     kanjiDataPromise
   ]);
+  const baseGrammarPoints = curriculum.filterAvailable(allGrammarPoints);
+  const baseExercises = curriculum.filterAvailable(allExercises, {
+    levelField: "minimumLevel"
+  });
   const exerciseCatalogsByLocale = new Map(exerciseCatalogEntries);
   const exerciseLocalizations = exerciseCatalogsByLocale.get(getUserLocale()) || {};
   const grammarPoints = baseGrammarPoints.map((entry) => ({
@@ -3973,13 +4003,15 @@ async function displayInitialLesson() {
   const requestId = ++lessonRequestId;
 
   try {
-    const [introduction, entriesById] = await Promise.all([
+    const [curriculum, introduction, entriesById] = await Promise.all([
+      curriculumDataPromise,
       fetchJson("data/introduction.json"),
       vocabularyDataPromise,
       exerciseDataPromise
     ]);
 
     if (
+      !curriculum.isAvailable(introduction.minimumLevel) ||
       !Array.isArray(introduction.tokens) ||
       introduction.tokens.map(({ surface }) => surface).join("") !== introduction.text ||
       !Array.isArray(introduction.grammarHighlights)

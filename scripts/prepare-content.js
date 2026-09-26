@@ -7,6 +7,7 @@ import {
   validateLocalizedContent,
   validateUiCatalogs
 } from "./localization.js";
+import "../curriculum.js";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
 const sourceDirectory = join(rootDirectory, "data", "source");
@@ -599,13 +600,17 @@ function tokenizeLesson(lesson, vocabularyIndex, options = {}) {
   };
 }
 
-function validateLesson(lesson) {
+function validateLesson(lesson, curriculum) {
   if (!lesson || typeof lesson !== "object") {
     throw new Error("Every lesson must be an object.");
   }
 
   if (!/^[a-z0-9-]+$/.test(lesson.id) || typeof lesson.text !== "string" || !lesson.text) {
     throw new Error("Every lesson needs a safe id and non-empty text.");
+  }
+
+  if (lesson.minimumLevel !== undefined && !curriculum.hasLevel(lesson.minimumLevel)) {
+    throw new Error(`${lesson.id}: unknown minimum curriculum level.`);
   }
 
   if (lesson.vocabularyIds !== undefined) {
@@ -617,12 +622,13 @@ function validateLesson(lesson) {
   }
 }
 
-function prepareLesson(lesson, vocabularyIndex, kanjiIndex) {
-  validateLesson(lesson);
+function prepareLesson(lesson, vocabularyIndex, kanjiIndex, curriculum) {
+  validateLesson(lesson, curriculum);
   const { tokens, vocabularyIds } = tokenizeLesson(lesson, vocabularyIndex);
 
   return {
     id: lesson.id,
+    ...(lesson.minimumLevel ? { minimumLevel: lesson.minimumLevel } : {}),
     text: lesson.text,
     audio: `assets/voices/grammar/${lesson.id}.m4a`,
     vocabularyIds,
@@ -631,7 +637,34 @@ function prepareLesson(lesson, vocabularyIndex, kanjiIndex) {
   };
 }
 
-function prepareExercise(exercise, grammarPointById, vocabularyIndex, kanjiIndex) {
+function getRequiredLessonLevel(
+  lesson,
+  grammarPointById,
+  vocabularyIndex,
+  kanjiIndex,
+  curriculum,
+  additionalVocabularyIds = []
+) {
+  const kanjiById = new Map(
+    [...kanjiIndex.values()].map((entry) => [entry.id, entry])
+  );
+
+  return curriculum.highestLevel([
+    ...(lesson.grammarPointIds || []).map((id) => grammarPointById.get(id).introducedAt),
+    ...[...lesson.vocabularyIds, ...additionalVocabularyIds].map((id) => (
+      vocabularyIndex.entriesById.get(id).introducedAt
+    )),
+    ...lesson.kanjiIds.map((id) => kanjiById.get(id).introducedAt)
+  ]);
+}
+
+function prepareExercise(
+  exercise,
+  grammarPointById,
+  vocabularyIndex,
+  kanjiIndex,
+  curriculum
+) {
   const type = exercise.type || "recognition";
   const minimumGrammarPointCount = type === "production" ? 1 : 2;
   const uniqueGrammarPointIds = Array.isArray(exercise.grammarPointIds)
@@ -672,7 +705,8 @@ function prepareExercise(exercise, grammarPointById, vocabularyIndex, kanjiIndex
   const lesson = prepareLesson(
     { ...exercise, text: japaneseText },
     vocabularyIndex,
-    kanjiIndex
+    kanjiIndex,
+    curriculum
   );
   const promptWords = new Set(
     exercise.text.toLocaleLowerCase("en").split(/[^a-z]+/).filter(Boolean)
@@ -707,8 +741,27 @@ function prepareExercise(exercise, grammarPointById, vocabularyIndex, kanjiIndex
     throw new Error(`${exercise.id}: invalid prompt vocabulary hints.`);
   }
 
+  const hintedVocabularyIds = (exercise.promptVocabularyHints || [])
+    .flatMap(({ vocabularyIds }) => vocabularyIds);
+  const requiredLevel = getRequiredLessonLevel(
+    { ...lesson, grammarPointIds: exercise.grammarPointIds },
+    grammarPointById,
+    vocabularyIndex,
+    kanjiIndex,
+    curriculum,
+    hintedVocabularyIds
+  );
+  const minimumLevel = exercise.minimumLevel || requiredLevel;
+
+  if (curriculum.compareLevels(minimumLevel, requiredLevel) < 0) {
+    throw new Error(
+      `${exercise.id}: minimum level ${minimumLevel} is below ${requiredLevel}.`
+    );
+  }
+
   return {
     ...lesson,
+    minimumLevel,
     text: exercise.text,
     solution: exercise.solution,
     ...(exercise.type ? { type: exercise.type } : {}),
@@ -1146,6 +1199,7 @@ function prepareKanjiMnemonicLocalizations(sources, localizations, components) {
 }
 
 const [
+  curriculumManifest,
   introductionSource,
   exerciseSources,
   vocabularyExampleSources,
@@ -1155,9 +1209,11 @@ const [
   vocabulary,
   kanjiContexts,
   kanji,
+  conjugationCurriculum,
   englishUi,
   localizedCatalogs
 ] = await Promise.all([
+  readJson(join(rootDirectory, "data", "curriculum.json")),
   readJson(join(sourceDirectory, "introduction.json")),
   readJson(join(sourceDirectory, "exercises.json")),
   readJson(join(sourceDirectory, "vocabulary-examples.json")),
@@ -1167,6 +1223,7 @@ const [
   readJson(join(rootDirectory, "data", "jlpt-n5-vocabulary.json")),
   readJson(join(rootDirectory, "data", "kanji-contexts.json")),
   readJson(join(rootDirectory, "data", "jlpt-n5-kanji.json")),
+  readJson(join(rootDirectory, "data", "jlpt-n5-conjugation.json")),
   readJson(join(rootDirectory, "locales", "en.json")),
   Promise.all(supportedContentLocales.map(async (locale) => ({
     locale,
@@ -1188,6 +1245,8 @@ const [
   })))
 ]);
 
+const curriculum = globalThis.JlptN5Curriculum.createCurriculum(curriculumManifest);
+
 if (
   !Array.isArray(exerciseSources) ||
   !Array.isArray(vocabularyExampleSources) ||
@@ -1198,7 +1257,8 @@ if (
   !Array.isArray(grammarPoints) ||
   !Array.isArray(vocabulary) ||
   !Array.isArray(kanjiContexts) ||
-  !Array.isArray(kanji)
+  !Array.isArray(kanji) ||
+  !Array.isArray(conjugationCurriculum)
 ) {
   throw new Error(
     "Exercise, vocabulary example, kanji mnemonic, grammar, vocabulary, kanji context, and kanji data have invalid shapes."
@@ -1236,6 +1296,19 @@ const errors = localizedCatalogs.flatMap(({ locale, ui, localizations }) => [
     localizations
   })
 ]);
+for (const [label, entries] of [
+  ["grammar point", grammarPoints],
+  ["vocabulary entry", vocabulary],
+  ["kanji context", kanjiContexts],
+  ["kanji entry", kanji],
+  ["conjugation entry", conjugationCurriculum]
+]) {
+  for (const entry of entries) {
+    if (!curriculum.hasLevel(entry?.introducedAt)) {
+      errors.push(`${entry?.id || entry?.vocabularyId || label}: invalid introducedAt.`);
+    }
+  }
+}
 errors.push(...validateKanjiComponents(kanjiComponentSources));
 errors.push(...validateKanjiMnemonics(
   kanjiMnemonicSources,
@@ -1249,7 +1322,12 @@ const exercises = [];
 const vocabularyExamples = [];
 
 try {
-  introduction = prepareLesson(introductionSource, vocabularyIndex, kanjiIndex);
+  introduction = prepareLesson(
+    introductionSource,
+    vocabularyIndex,
+    kanjiIndex,
+    curriculum
+  );
 
   if (
     !Array.isArray(introductionSource.grammarPointIds) ||
@@ -1267,6 +1345,23 @@ try {
     grammarPointById
   );
 
+  const introductionRequiredLevel = getRequiredLessonLevel(
+    introduction,
+    grammarPointById,
+    vocabularyIndex,
+    kanjiIndex,
+    curriculum
+  );
+  introduction.minimumLevel ||= introductionRequiredLevel;
+
+  if (curriculum.compareLevels(introduction.minimumLevel, introductionRequiredLevel) < 0) {
+    throw new Error(
+      `introduction: minimum level ${introduction.minimumLevel} is below ${
+        introductionRequiredLevel
+      }.`
+    );
+  }
+
   if (introduction.grammarHighlights.length !== introduction.grammarPointIds.length) {
     throw new Error("introduction: every grammar point needs an unambiguous highlight.");
   }
@@ -1276,7 +1371,13 @@ try {
 
 for (const exercise of exerciseSources) {
   try {
-    exercises.push(prepareExercise(exercise, grammarPointById, vocabularyIndex, kanjiIndex));
+    exercises.push(prepareExercise(
+      exercise,
+      grammarPointById,
+      vocabularyIndex,
+      kanjiIndex,
+      curriculum
+    ));
   } catch (error) {
     errors.push(error.message);
   }

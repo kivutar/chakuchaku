@@ -270,6 +270,7 @@
 
       return [{
         id: `hiragana-${entry.id}`,
+        ...(entry.introducedAt ? { introducedAt: entry.introducedAt } : {}),
         vocabularyId: entry.id,
         writtenForm: entry.term,
         reading: entry.reading,
