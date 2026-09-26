@@ -39,7 +39,7 @@
       !backup.data ||
       backup.data.srs?.version !== global.JlptN5Srs.schemaVersion ||
       backup.data.learningStats?.version !== global.JlptN5Stats.schemaVersion ||
-      ![1, global.JlptN5Settings.schemaVersion].includes(backup.data.settings?.version)
+      ![1, 2, global.JlptN5Settings.schemaVersion].includes(backup.data.settings?.version)
     ) {
       throw createProgressError(
         "This is not a supported ChakuChaku progress backup.",

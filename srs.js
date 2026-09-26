@@ -54,6 +54,10 @@
   }
 
   function serializeCard(card) {
+    const introducedAt = card.introduced_at === undefined
+      ? undefined
+      : normalizeDate(card.introduced_at);
+
     return {
       due: card.due.toISOString(),
       stability: card.stability,
@@ -64,7 +68,8 @@
       lapses: card.lapses,
       learning_steps: card.learning_steps,
       state: card.state,
-      last_review: card.last_review?.toISOString()
+      last_review: card.last_review?.toISOString(),
+      ...(introducedAt ? { introduced_at: introducedAt.toISOString() } : {})
     };
   }
 
@@ -73,6 +78,9 @@
     const lastReview = card?.last_review === undefined
       ? undefined
       : normalizeDate(card.last_review);
+    const introducedAt = card?.introduced_at === undefined
+      ? undefined
+      : normalizeDate(card.introduced_at);
 
     if (
       !due ||
@@ -85,7 +93,8 @@
     return serializeCard({
       ...card,
       due,
-      last_review: lastReview
+      last_review: lastReview,
+      introduced_at: introducedAt
     });
   }
 
@@ -311,8 +320,9 @@
     }
 
     for (const [itemId, outcome] of uniqueReviews) {
-      const card = data[cardBucket][itemId]
-        ? hydrateCard(data[cardBucket][itemId])
+      const storedCard = data[cardBucket][itemId];
+      const card = storedCard
+        ? hydrateCard(storedCard)
         : global.FSRS.createEmptyCard(reviewedAt);
       const schedulingResult = scheduler.next(
         card,
@@ -320,7 +330,14 @@
         ratingByOutcome[outcome]
       );
 
-      data[cardBucket][itemId] = serializeCard(schedulingResult.card);
+      data[cardBucket][itemId] = serializeCard({
+        ...schedulingResult.card,
+        ...(storedCard
+          ? (storedCard.introduced_at
+            ? { introduced_at: storedCard.introduced_at }
+            : {})
+          : { introduced_at: reviewedAt })
+      });
     }
 
     if (uniqueReviews.size > 0) {

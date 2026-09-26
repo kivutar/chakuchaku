@@ -42,6 +42,7 @@ const privacyMenuItem = document.querySelector("#privacy-menu-item");
 const settingsDialog = document.querySelector("#settings-dialog");
 const settingInputs = [...settingsDialog.querySelectorAll("[data-setting]")];
 const settingStateElements = [...settingsDialog.querySelectorAll("[data-setting-state]")];
+const studyLevelInput = settingsDialog.querySelector('[data-setting="studyLevel"]');
 const openAiApiKeyInput = document.querySelector("#openai-api-key");
 const aiAutoCorrectInput = settingsDialog.querySelector('[data-setting="aiAutoCorrect"]');
 const progressExportButton = document.querySelector("#progress-export-button");
@@ -163,13 +164,28 @@ let expandedHistoryDayKey;
 let historyAttemptPage = 0;
 let kanaInputMode;
 let curriculumDataPromise;
+let curriculumModel;
 let vocabularyDataPromise;
 let vocabularyExampleDataPromise;
 let kanjiDataPromise;
 let kanjiContextDataPromise;
 let exerciseDataPromise;
 let conjugationDataPromise;
+let activeStatisticsLevel = settings.studyLevel;
 const reviewReminderNotificationId = 1905;
+
+const curriculumCardBuckets = Object.freeze({
+  grammar: "cards",
+  conjugation: "conjugationCards",
+  vocabulary: "vocabularyCards",
+  kanji: "kanjiCards"
+});
+const curriculumEncounterBuckets = Object.freeze({
+  grammar: "grammarPoints",
+  conjugation: "conjugationPoints",
+  vocabulary: "vocabulary",
+  kanji: "kanji"
+});
 
 function t(key, parameters) {
   return globalThis.JlptN5I18n.t(key, parameters);
@@ -186,6 +202,60 @@ function getAcceptedTranslationLocales() {
     activeLocale,
     ...globalThis.JlptN5I18n.supportedLocales.filter((locale) => locale !== activeLocale)
   ];
+}
+
+function getStudyLevel(curriculum = curriculumModel) {
+  return curriculum?.hasLevel(settings.studyLevel) && settings.studyLevel !== "foundation"
+    ? settings.studyLevel
+    : curriculum?.defaultLevel || "n5";
+}
+
+function selectProgressiveEntries(entries, kind, curriculum = curriculumModel) {
+  const srsData = globalThis.JlptN5Srs.readSrsData();
+  const learningStats = globalThis.JlptN5Stats.readLearningStats();
+  const cards = srsData[curriculumCardBuckets[kind]] || {};
+  const encounterBucket = learningStats[curriculumEncounterBuckets[kind]] || {};
+
+  return curriculum.selectStudyEntries(entries, {
+    through: getStudyLevel(curriculum),
+    cards,
+    encounteredIds: Object.keys(encounterBucket),
+    maxNew: curriculum.getNewItemLimit(settings.newContentPace, kind)
+  }).entries;
+}
+
+function filterVocabularyThroughStudyLevel(entriesById) {
+  if (!curriculumModel) {
+    return [...entriesById.values()];
+  }
+
+  return curriculumModel.filterAvailable([...entriesById.values()], {
+    through: getStudyLevel(curriculumModel)
+  });
+}
+
+function formatCurriculumLevel(level) {
+  return level.toLocaleUpperCase("en");
+}
+
+function configureCurriculumControls(curriculum) {
+  const studyLevels = curriculum.levels.filter(({ id }) => id !== "foundation");
+  const validStudyLevel = studyLevels.some(({ id }) => id === settings.studyLevel);
+
+  if (!validStudyLevel) {
+    settings = globalThis.JlptN5Settings.writeSettings({
+      studyLevel: curriculum.defaultLevel
+    });
+  }
+
+  studyLevelInput.replaceChildren(...studyLevels.map(({ id }) => {
+    const option = document.createElement("option");
+
+    option.value = id;
+    option.textContent = formatCurriculumLevel(id);
+    return option;
+  }));
+  activeStatisticsLevel = getStudyLevel(curriculum);
 }
 
 function formatAcceptedTranslationLanguages() {
@@ -556,7 +626,7 @@ function handleSettingChange(event) {
   });
   applySettings();
 
-  if (input.dataset.setting === "userLanguage") {
+  if (["userLanguage", "studyLevel", "newContentPace"].includes(input.dataset.setting)) {
     window.location.reload();
     return;
   }
@@ -1606,19 +1676,78 @@ function renderStatistics() {
   const learningStats = globalThis.JlptN5Stats.readLearningStats();
   const srsData = globalThis.JlptN5Srs.readSrsData();
   const activeKanjiStages = new Set(globalThis.JlptN5Kanji.activeStages);
+  const filterByStatisticsLevel = (entries) => {
+    if (activeStatisticsLevel === "all") {
+      return entries;
+    }
+
+    return entries.filter(({ introducedAt }) => {
+      return introducedAt === activeStatisticsLevel || (
+        activeStatisticsLevel === "n5" && introducedAt === "foundation"
+      );
+    });
+  };
+  const grammarPoints = filterByStatisticsLevel([...grammarPointById.values()]);
+  const conjugationPoints = filterByStatisticsLevel([...conjugationPointById.values()]);
+  const vocabulary = filterByStatisticsLevel([...vocabularyById.values()]);
+  const kanji = filterByStatisticsLevel([...kanjiById.values()]);
+  const includeFoundationStatistics =
+    ["all", "n5"].includes(activeStatisticsLevel) ||
+    ["hiragana", "katakana"].includes(activeStatKind);
+  const grammarIds = new Set(grammarPoints.map(({ id }) => id));
+  const conjugationIds = new Set(conjugationPoints.map(({ id }) => id));
+  const vocabularyIds = new Set(vocabulary.map(({ id }) => id));
+  const kanjiIds = new Set(kanji.map(({ id }) => id));
+  const filteredExerciseHistory = activeStatisticsLevel === "all"
+    ? learningStats.exerciseHistory
+    : learningStats.exerciseHistory.flatMap((attempt) => {
+      if (["hiragana", "katakana"].includes(attempt.section)) {
+        return includeFoundationStatistics ? [attempt] : [];
+      }
+
+      if (attempt.section === "vocabulary") {
+        return vocabularyIds.has(attempt.vocabularyId) ? [attempt] : [];
+      }
+
+      if (attempt.section === "kanji" && attempt.assessmentKind === "vocabulary") {
+        return vocabularyIds.has(attempt.vocabularyId) ? [attempt] : [];
+      }
+
+      const ratingConfiguration = attempt.section === "conjugation"
+        ? ["conjugationRatings", "conjugationPointId", conjugationIds]
+        : attempt.section === "kanji"
+          ? ["kanjiRatings", "kanjiId", kanjiIds]
+          : ["grammarRatings", "grammarPointId", grammarIds];
+      const [ratingField, idField, allowedIds] = ratingConfiguration;
+      const originalRatings = attempt[ratingField] || [];
+      const ratings = originalRatings.filter((rating) => {
+        return allowedIds.has(rating[idField]);
+      });
+
+      if (originalRatings.length === 0 && activeStatisticsLevel === "n5") {
+        return [attempt];
+      }
+
+      return ratings.length > 0 ? [{ ...attempt, [ratingField]: ratings }] : [];
+    });
+  const filteredLearningStats = activeStatisticsLevel === "all"
+    ? learningStats
+    : { ...learningStats, exerciseHistory: filteredExerciseHistory };
   const model = globalThis.JlptN5Statistics.createStatisticsModel({
-    grammarPoints: [...grammarPointById.values()],
-    conjugation: [...conjugationPointById.values()],
-    hiragana: [...new Map(
-      [...hiraganaMetadata, ...pairedHiraganaMetadata].map((entry) => [entry.id, entry])
-    ).values()],
-    katakana: katakanaMetadata,
-    vocabulary: [...vocabularyById.values()],
-    kanji: [...kanjiById.values()],
-    activeKanjiIds: [...kanjiById.values()]
+    grammarPoints,
+    conjugation: conjugationPoints,
+    hiragana: includeFoundationStatistics
+      ? [...new Map(
+        [...hiraganaMetadata, ...pairedHiraganaMetadata].map((entry) => [entry.id, entry])
+      ).values()]
+      : [],
+    katakana: includeFoundationStatistics ? katakanaMetadata : [],
+    vocabulary,
+    kanji,
+    activeKanjiIds: kanji
       .filter(({ stage }) => activeKanjiStages.has(stage))
       .map(({ id }) => id),
-    learningStats,
+    learningStats: filteredLearningStats,
     srsData
   });
 
@@ -1636,6 +1765,23 @@ function renderStatistics() {
     renderConjugationStatistics(model);
   } else {
     renderExposureStatistics(model, activeStatKind);
+  }
+
+  if (!["hiragana", "katakana"].includes(activeStatKind) && curriculumModel) {
+    const choices = curriculumModel.levels
+      .filter(({ id }) => id !== "foundation")
+      .map(({ id }) => [id, formatCurriculumLevel(id)]);
+
+    choices.push(["all", t("statistics.level.all")]);
+    const control = createChoiceControl(
+      choices,
+      activeStatisticsLevel,
+      "statisticsLevel",
+      t("statistics.level")
+    );
+
+    control.classList.add("statistics-level-control");
+    statisticsContent.prepend(control);
   }
 }
 
@@ -2096,11 +2242,14 @@ function handleStatKindClick(event) {
 function handleStatisticsContentClick(event) {
   const grammarFilterButton = event.target.closest("[data-grammar-filter]");
   const exposureSortButton = event.target.closest("[data-exposure-sort]");
+  const statisticsLevelButton = event.target.closest("[data-statistics-level]");
 
   if (grammarFilterButton) {
     activeGrammarFilter = grammarFilterButton.dataset.grammarFilter;
   } else if (exposureSortButton) {
     activeExposureSort = exposureSortButton.dataset.exposureSort;
+  } else if (statisticsLevelButton) {
+    activeStatisticsLevel = statisticsLevelButton.dataset.statisticsLevel;
   } else {
     return;
   }
@@ -2589,7 +2738,8 @@ async function fetchContentLocalizations(kind, locale = getUserLocale()) {
 async function loadCurriculumData() {
   const manifest = await fetchJson("data/curriculum.json");
 
-  return globalThis.JlptN5Curriculum.createCurriculum(manifest);
+  curriculumModel = globalThis.JlptN5Curriculum.createCurriculum(manifest);
+  return curriculumModel;
 }
 
 async function loadVocabularyData() {
@@ -2606,7 +2756,7 @@ async function loadVocabularyData() {
     ]))
   ]);
 
-  const vocabulary = curriculum.filterAvailable(allVocabulary);
+  const vocabulary = allVocabulary;
 
   validateVocabularyVoiceSlugs(vocabulary);
 
@@ -2689,7 +2839,7 @@ async function loadKanjiData() {
       fetchJson("data/kanji-mnemonics.json"),
       fetchContentLocalizations("kanji-mnemonics")
     ]);
-  const kanji = curriculum.filterAvailable(allKanji);
+  const kanji = allKanji;
   const mnemonicsById = new Map(mnemonics.map((entry) => [entry.kanjiId, entry]));
   const localizedKanji = kanji.map((entry) => ({
     ...entry,
@@ -2713,7 +2863,7 @@ async function loadKanjiContextData() {
     fetchJson("data/kanji-contexts.json"),
     fetchContentLocalizations("kanji-contexts")
   ]);
-  const contexts = curriculum.filterAvailable(allContexts);
+  const contexts = allContexts;
 
   return contexts.map((entry) => ({
     ...entry,
@@ -2726,9 +2876,9 @@ function prepareHiraganaWords(entriesById) {
     return hiraganaWords;
   }
 
-  hiraganaWords = globalThis.JlptN5Hiragana.createWordPool([
-    ...entriesById.values()
-  ]);
+  hiraganaWords = globalThis.JlptN5Hiragana.createWordPool(
+    filterVocabularyThroughStudyLevel(entriesById)
+  );
   hiraganaMetadata = globalThis.JlptN5Hiragana.createKanaInventory(hiraganaWords)
     .map((kana) => ({
       id: kana,
@@ -2764,9 +2914,9 @@ function prepareKatakanaWords(entriesById) {
     return katakanaWords;
   }
 
-  katakanaWords = globalThis.JlptN5Katakana.createWordPool([
-    ...entriesById.values()
-  ]);
+  katakanaWords = globalThis.JlptN5Katakana.createWordPool(
+    filterVocabularyThroughStudyLevel(entriesById)
+  );
   katakanaMetadata = globalThis.JlptN5Katakana.createKanaInventory(katakanaWords)
     .map((kana) => ({
       id: kana,
@@ -2853,10 +3003,8 @@ async function loadConjugationData() {
     fetchJson("data/jlpt-n5-conjugation.json"),
     vocabularyDataPromise
   ]);
-  const curriculum = curriculumModel.filterAvailable(allCurriculumEntries);
-  const availablePoints = curriculumModel.filterAvailable(
-    globalThis.JlptN5Conjugation.points
-  );
+  const curriculum = allCurriculumEntries;
+  const availablePoints = globalThis.JlptN5Conjugation.points;
 
   conjugationPointById = new Map(availablePoints.map((point) => {
     const form = t(point.formKey);
@@ -2873,6 +3021,11 @@ async function loadConjugationData() {
     curriculum
   ).map((exercise) => ({
     ...exercise,
+    minimumLevel: curriculumModel.highestLevel([
+      exercise.introducedAt,
+      entriesById.get(exercise.vocabularyId).introducedAt,
+      conjugationPointById.get(exercise.conjugationPointId).introducedAt
+    ]),
     audio: globalThis.JlptN5VoicePaths.getConjugationVoicePath(exercise),
     locale: getUserLocale()
   }));
@@ -2908,10 +3061,8 @@ async function loadExerciseData() {
     vocabularyDataPromise,
     kanjiDataPromise
   ]);
-  const baseGrammarPoints = curriculum.filterAvailable(allGrammarPoints);
-  const baseExercises = curriculum.filterAvailable(allExercises, {
-    levelField: "minimumLevel"
-  });
+  const baseGrammarPoints = allGrammarPoints;
+  const baseExercises = allExercises;
   const exerciseCatalogsByLocale = new Map(exerciseCatalogEntries);
   const exerciseLocalizations = exerciseCatalogsByLocale.get(getUserLocale()) || {};
   const grammarPoints = baseGrammarPoints.map((entry) => ({
@@ -3002,23 +3153,47 @@ async function loadExerciseData() {
 }
 
 async function pickNextExercise(requestedGrammarPointId) {
-  const exercises = await exerciseDataPromise;
+  const [exercises, curriculum] = await Promise.all([
+    exerciseDataPromise,
+    curriculumDataPromise
+  ]);
   const exerciseHistory = globalThis.JlptN5Stats.readLearningStats().exerciseHistory;
+  const eligibleGrammarPointIds = new Set(selectProgressiveEntries(
+    [...grammarPointById.values()],
+    "grammar",
+    curriculum
+  ).map(({ id }) => id));
+  const targetLevel = getStudyLevel(curriculum);
   const typeExercises = forcedExerciseType
     ? exercises.filter((exercise) => {
       return getExerciseType(exercise) === forcedExerciseType;
     })
     : exercises;
+  const studyExercises = typeExercises.filter((exercise) => {
+    const eligiblePointIds = exercise.grammarPointIds.filter((id) => {
+      return eligibleGrammarPointIds.has(id);
+    });
 
-  if (typeExercises.length === 0) {
+    return eligiblePointIds.length > 0 && (
+      curriculum.isAvailable(exercise.minimumLevel, targetLevel) ||
+      eligiblePointIds.some((id) => {
+        const point = grammarPointById.get(id);
+
+        return point &&
+          !curriculum.isAvailable(point.introducedAt, targetLevel);
+      })
+    );
+  });
+
+  if (studyExercises.length === 0) {
     throw new Error(`No exercises are available for ${forcedExerciseType}.`);
   }
 
   const targetedExercises = requestedGrammarPointId
-    ? typeExercises.filter(({ grammarPointIds }) => {
+    ? studyExercises.filter(({ grammarPointIds }) => {
       return grammarPointIds.includes(requestedGrammarPointId);
     })
-    : typeExercises;
+    : studyExercises;
 
   if (targetedExercises.length === 0) {
     throw new Error(`No exercise is available for ${requestedGrammarPointId}.`);
@@ -3027,7 +3202,7 @@ async function pickNextExercise(requestedGrammarPointId) {
   const choices = targetedExercises.filter(({ id }) => id !== previousExerciseId);
   const availableExercises = choices.length > 0 ? choices : targetedExercises;
   const selectedTypePool = globalThis.JlptN5ExerciseSelection.selectExerciseTypePool({
-    exercises,
+    exercises: studyExercises,
     candidates: availableExercises,
     exerciseHistory,
     forcedExerciseType
@@ -3039,7 +3214,7 @@ async function pickNextExercise(requestedGrammarPointId) {
 
   const availableGrammarPointIds = [
     ...new Set(selectedTypePool.flatMap(({ grammarPointIds }) => grammarPointIds))
-  ];
+  ].filter((id) => eligibleGrammarPointIds.has(id));
   const targetGrammarPointId = requestedGrammarPointId ||
     globalThis.JlptN5Srs.pickNextGrammarPoint(availableGrammarPointIds);
   const exercisePool = globalThis.JlptN5ExerciseSelection.selectTargetExercisePool({
@@ -3161,20 +3336,29 @@ async function pickNextKatakanaExercise(requestedKana) {
 }
 
 async function pickNextVocabularyExercise(requestedVocabularyId) {
-  const [entriesById, kanjiEntriesById, examplesByVocabularyId] = await Promise.all([
+  const [entriesById, kanjiEntriesById, examplesByVocabularyId, curriculum] = await Promise.all([
     vocabularyDataPromise,
     kanjiDataPromise,
-    vocabularyExampleDataPromise
+    vocabularyExampleDataPromise,
+    curriculumDataPromise
   ]);
   const items = prepareVocabularyItems(entriesById);
+  const eligibleVocabularyIds = new Set(selectProgressiveEntries(
+    [...entriesById.values()],
+    "vocabulary",
+    curriculum
+  ).map(({ id }) => id));
+  const studyItems = items.filter(({ vocabularyId }) => {
+    return eligibleVocabularyIds.has(vocabularyId);
+  });
   const exerciseHistory = globalThis.JlptN5Stats.readLearningStats().exerciseHistory;
   const direction = globalThis.JlptN5Vocabulary.getNextDirection(exerciseHistory);
   const targetVocabularyId = requestedVocabularyId ||
     globalThis.JlptN5Srs.pickNextVocabulary(
-      items.map(({ vocabularyId }) => vocabularyId)
+      studyItems.map(({ vocabularyId }) => vocabularyId)
     );
   const exercise = globalThis.JlptN5Vocabulary.chooseExercise(
-    items,
+    studyItems,
     targetVocabularyId,
     direction
   );
@@ -3228,17 +3412,29 @@ async function pickNextKanjiExercise(requestedKanjiId) {
     entriesById,
     kanjiEntriesById,
     kanjiContexts,
-    examplesByVocabularyId
+    examplesByVocabularyId,
+    curriculum
   ] = await Promise.all([
     vocabularyDataPromise,
     kanjiDataPromise,
     kanjiContextDataPromise,
-    vocabularyExampleDataPromise
+    vocabularyExampleDataPromise,
+    curriculumDataPromise
   ]);
   const pool = prepareKanjiExercises(entriesById, kanjiEntriesById, kanjiContexts);
   const exerciseHistory = globalThis.JlptN5Stats.readLearningStats().exerciseHistory;
   const direction = globalThis.JlptN5Kanji.getNextDirection(exerciseHistory);
   const inventory = globalThis.JlptN5Kanji.getKanjiInventory(pool);
+  const eligibleKanjiIds = new Set(selectProgressiveEntries(
+    [...kanjiEntriesById.values()],
+    "kanji",
+    curriculum
+  ).map(({ id }) => id));
+  const eligibleVocabularyIds = new Set(selectProgressiveEntries(
+    [...entriesById.values()],
+    "vocabulary",
+    curriculum
+  ).map(({ id }) => id));
   let exercise;
 
   if (
@@ -3249,13 +3445,15 @@ async function pickNextKanjiExercise(requestedKanjiId) {
     // Explicit daily-review Kanji targets always receive a Kanji-rated prompt.
     // Free Kanji study can occasionally teach a due whole-word reading instead.
     const wholeWordVocabularyIds = [...new Set(pool
-      .filter(({ vocabularyId, wholeWordReading }) => vocabularyId && wholeWordReading)
+      .filter(({ vocabularyId, wholeWordReading }) => {
+        return vocabularyId && wholeWordReading && eligibleVocabularyIds.has(vocabularyId);
+      })
       .map(({ vocabularyId }) => vocabularyId))];
-    const eligibleVocabularyIds = globalThis.JlptN5Srs.filterNewOrDueVocabulary(
+    const newOrDueVocabularyIds = globalThis.JlptN5Srs.filterNewOrDueVocabulary(
       wholeWordVocabularyIds
     );
-    const targetVocabularyId = eligibleVocabularyIds.length > 0
-      ? globalThis.JlptN5Srs.pickNextVocabulary(eligibleVocabularyIds)
+    const targetVocabularyId = newOrDueVocabularyIds.length > 0
+      ? globalThis.JlptN5Srs.pickNextVocabulary(newOrDueVocabularyIds)
       : undefined;
 
     if (targetVocabularyId) {
@@ -3270,7 +3468,7 @@ async function pickNextKanjiExercise(requestedKanjiId) {
 
   if (!exercise) {
     targetKanjiId = requestedKanjiId || globalThis.JlptN5Srs.pickNextKanji(
-      inventory.map(({ id }) => id)
+      inventory.map(({ id }) => id).filter((id) => eligibleKanjiIds.has(id))
     );
     exercise = globalThis.JlptN5Kanji.chooseExercise(
       pool,
@@ -3330,13 +3528,41 @@ async function pickNextKanjiExercise(requestedKanjiId) {
 }
 
 async function pickNextConjugationExercise(requestedPointId) {
-  const pool = await conjugationDataPromise;
+  const [pool, curriculum] = await Promise.all([
+    conjugationDataPromise,
+    curriculumDataPromise
+  ]);
+  const eligiblePointIds = new Set(selectProgressiveEntries(
+    [...conjugationPointById.values()],
+    "conjugation",
+    curriculum
+  ).map(({ id }) => id));
+  const targetLevel = getStudyLevel(curriculum);
+  const studyPool = pool.filter((exercise) => {
+    if (!exercise.conjugationPointIds.some((id) => eligiblePointIds.has(id))) {
+      return false;
+    }
+
+    if (curriculum.isAvailable(exercise.minimumLevel, targetLevel)) {
+      return true;
+    }
+
+    return exercise.conjugationPointIds.some((id) => {
+      const point = conjugationPointById.get(id);
+
+      return point &&
+        !curriculum.isAvailable(point.introducedAt, targetLevel);
+    });
+  });
+  const selectablePointIds = [...eligiblePointIds].filter((id) => {
+    return studyPool.some(({ conjugationPointIds }) => conjugationPointIds.includes(id));
+  });
   const targetPointId = requestedPointId ||
     globalThis.JlptN5Srs.pickNextConjugationPoint(
-      [...conjugationPointById.keys()]
+      selectablePointIds
     );
   const exercise = globalThis.JlptN5Conjugation.chooseExercise(
-    pool,
+    studyPool,
     targetPointId,
     { previousExerciseId: previousConjugationExerciseId }
   );
@@ -4011,7 +4237,7 @@ async function displayInitialLesson() {
     ]);
 
     if (
-      !curriculum.isAvailable(introduction.minimumLevel) ||
+      !curriculum.isAvailable(introduction.minimumLevel, getStudyLevel(curriculum)) ||
       !Array.isArray(introduction.tokens) ||
       introduction.tokens.map(({ surface }) => surface).join("") !== introduction.text ||
       !Array.isArray(introduction.grammarHighlights)
@@ -5597,6 +5823,7 @@ async function startApp() {
     await globalThis.JlptN5I18n.initialize(settings.userLanguage);
     globalThis.JlptN5I18n.applyDocument();
     initializeDataPromises();
+    configureCurriculumControls(await curriculumDataPromise);
     await configureNativeBehavior();
 
     if (!openAiApiKey && settings.aiAutoCorrect) {

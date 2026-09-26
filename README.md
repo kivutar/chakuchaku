@@ -482,7 +482,13 @@ the learner presses `次へ`.
 
 Cards are stored separately under `jlpt-n5.srs.v1` in browser local storage.
 Grammar, conjugation, kana, kanji, and vocabulary use distinct card buckets, so their schedules
-never collide. Hiragana selection targets the most urgent kana and then chooses
+never collide. Each card also keeps its original curriculum introduction time.
+Settings chooses the highest active curriculum level and a reviews-only,
+gentle, balanced, intensive, or unlimited daily new-card pace. Previously
+introduced cards remain eligible even after lowering the target level, while
+the authored content order makes the unseen cohort stable across reloads.
+Statistics defaults to the selected level and can switch to all bundled levels.
+Hiragana selection targets the most urgent kana and then chooses
 a complete N5 word containing it. Vocabulary selection targets the most urgent
 word and alternates the requested translation direction after each completed
 Vocabulary attempt.

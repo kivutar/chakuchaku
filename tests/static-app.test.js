@@ -826,6 +826,8 @@ test("settings layer loads before the app and exposes every initial control", as
 
   for (const settingName of [
     "userLanguage",
+    "studyLevel",
+    "newContentPace",
     "furigana",
     "autoPlayAudio",
     "tokenColoring",

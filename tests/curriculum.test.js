@@ -54,6 +54,85 @@ test("curriculum manifests reject gaps, duplicates, and unknown defaults", () =>
   }));
 });
 
+test("daily introduction paces expose a stable authored cohort", () => {
+  const curriculum = globalThis.JlptN5Curriculum.createCurriculum({
+    version: 1,
+    defaultLevel: "n5",
+    levels: [
+      { id: "foundation", rank: 0 },
+      { id: "n5", rank: 1 },
+      { id: "n4", rank: 2 }
+    ]
+  });
+  const entries = [
+    { id: "first", introducedAt: "n5" },
+    { id: "second", introducedAt: "n5" },
+    { id: "third", introducedAt: "n5" },
+    { id: "later", introducedAt: "n4" }
+  ];
+  const options = {
+    through: "n5",
+    cards: {},
+    maxNew: 2,
+    now: "2026-09-26T09:00:00.000Z"
+  };
+
+  assert.deepEqual(
+    curriculum.selectStudyEntries(entries, options).entries.map(({ id }) => id),
+    ["first", "second"]
+  );
+  assert.deepEqual(
+    curriculum.selectStudyEntries(entries, options).entries.map(({ id }) => id),
+    ["first", "second"]
+  );
+  assert.equal(curriculum.getNewItemLimit("balanced", "vocabulary"), 7);
+  assert.equal(curriculum.getNewItemLimit("reviews", "grammar"), 0);
+  assert.equal(
+    curriculum.getNewItemLimit("unlimited", "kanji"),
+    Number.POSITIVE_INFINITY
+  );
+});
+
+test("introduced cards consume today's quota without relocking prior material", () => {
+  const curriculum = globalThis.JlptN5Curriculum.createCurriculum({
+    version: 1,
+    defaultLevel: "n5",
+    levels: [
+      { id: "foundation", rank: 0 },
+      { id: "n5", rank: 1 },
+      { id: "n4", rank: 2 }
+    ]
+  });
+  const entries = [
+    { id: "legacy", introducedAt: "n5" },
+    { id: "today", introducedAt: "n5" },
+    { id: "next", introducedAt: "n5" },
+    { id: "locked-card", introducedAt: "n4" },
+    { id: "locked-encounter", introducedAt: "n4" },
+    { id: "locked-new", introducedAt: "n4" }
+  ];
+  const result = curriculum.selectStudyEntries(entries, {
+    through: "n5",
+    cards: {
+      legacy: { due: "2026-09-30T00:00:00.000Z" },
+      today: { introduced_at: "2026-09-26T07:00:00.000Z" },
+      "locked-card": { introduced_at: "2026-09-25T07:00:00.000Z" }
+    },
+    encounteredIds: ["locked-encounter"],
+    maxNew: 2,
+    now: "2026-09-26T09:00:00.000Z"
+  });
+
+  assert.equal(result.introducedToday, 1);
+  assert.deepEqual(result.entries.map(({ id }) => id), [
+    "legacy",
+    "today",
+    "next",
+    "locked-card",
+    "locked-encounter"
+  ]);
+});
+
 test("the current knowledge units are explicitly assigned to N5", async () => {
   const [manifest, grammar, vocabulary, kanji, contexts, conjugation] =
     await Promise.all([

@@ -963,6 +963,10 @@ html[data-native-platform] .loading-screen {
   outline-offset: 1px;
 }
 
+.statistics-level-control {
+  margin: 0 0 0.8rem;
+}
+
 .activity-empty {
   margin: 5rem 0;
   color: #777;

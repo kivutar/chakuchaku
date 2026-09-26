@@ -15,7 +15,17 @@ references.
 
 The manifest currently enables content through N5. Level metadata and runtime
 filtering are deliberately in place before N4 content is added, so extending
-the manifest cannot change existing IDs or stored SRS cards.
+the manifest cannot change existing IDs or stored SRS cards. The learner's
+selected target level controls which unseen units may enter study; cards that
+already exist in SRS, plus encountered material above a subsequently lowered
+target, remain available.
+
+New grammar, conjugation, vocabulary, and Kanji units enter in authored array
+order under a configurable daily pace. A card stores its first
+`introduced_at` timestamp separately from FSRS review dates, so reloads keep the
+same pending cohort and legacy cards do not retroactively consume today's
+quota. Kana stay in the `foundation` layer and use vocabulary through the
+selected target level without their own introduction quota.
 
 # JLPT N5 grammar inventory
 

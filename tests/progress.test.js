@@ -107,9 +107,35 @@ test("backups containing version-one settings migrate during import", () => {
   });
   const settings = globalThis.JlptN5Settings.readSettings({ storage: destinationStorage });
 
-  assert.equal(settings.version, 2);
+  assert.equal(settings.version, 3);
   assert.equal(settings.userLanguage, "en");
   assert.equal(settings.furigana, false);
+});
+
+test("backups containing version-two settings migrate during import", () => {
+  const sourceStorage = new MemoryStorage();
+  const backup = globalThis.JlptN5Progress.createBackup({
+    storage: sourceStorage,
+    now: "2026-08-19T10:00:00.000Z"
+  });
+
+  backup.data.settings = {
+    ...backup.data.settings,
+    version: 2,
+    userLanguage: "fr",
+    autoPlayAudio: true
+  };
+
+  const destinationStorage = new MemoryStorage();
+  globalThis.JlptN5Progress.importBackup(JSON.stringify(backup), {
+    storage: destinationStorage
+  });
+  const settings = globalThis.JlptN5Settings.readSettings({ storage: destinationStorage });
+
+  assert.equal(settings.version, 3);
+  assert.equal(settings.userLanguage, "fr");
+  assert.equal(settings.autoPlayAudio, true);
+  assert.equal(settings.studyLevel, "n5");
 });
 
 test("reset removes study data while retaining preferences", () => {

@@ -328,6 +328,28 @@
           </select>
         </div>
         <div class="setting-row">
+          <span class="setting-label">
+            <label for="setting-study-level" data-i18n="settings.studyLevel">Study level</label>
+            <small data-i18n="settings.studyLevelDescription">Introduce material up to this level.</small>
+          </span>
+          <select id="setting-study-level" data-setting="studyLevel">
+            <option value="n5">N5</option>
+          </select>
+        </div>
+        <div class="setting-row">
+          <span class="setting-label">
+            <label for="setting-new-content-pace" data-i18n="settings.newContentPace">New material</label>
+            <small data-i18n="settings.newContentPaceDescription">How quickly unseen cards are introduced.</small>
+          </span>
+          <select id="setting-new-content-pace" data-setting="newContentPace">
+            <option value="reviews" data-i18n="settings.pace.reviews">Reviews only</option>
+            <option value="gentle" data-i18n="settings.pace.gentle">Gentle</option>
+            <option value="balanced" data-i18n="settings.pace.balanced">Balanced</option>
+            <option value="intensive" data-i18n="settings.pace.intensive">Intensive</option>
+            <option value="unlimited" data-i18n="settings.pace.unlimited">Unlimited</option>
+          </select>
+        </div>
+        <div class="setting-row">
           <span id="furigana-label" data-i18n="settings.furigana">Furigana</span>
           <label class="setting-control">
             <input type="checkbox" data-setting="furigana" aria-labelledby="furigana-label">

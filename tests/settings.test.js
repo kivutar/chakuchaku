@@ -36,8 +36,10 @@ test("settings use learner-friendly defaults", () => {
   const settings = loadSettingsApi(createStorage()).readSettings();
 
   assert.deepEqual({ ...settings }, {
-    version: 2,
+    version: 3,
     userLanguage: "auto",
+    studyLevel: "n5",
+    newContentPace: "balanced",
     furigana: true,
     autoPlayAudio: false,
     tokenColoring: true,
@@ -53,11 +55,17 @@ test("settings persist and retain valid existing values", () => {
   const api = loadSettingsApi(storage);
 
   api.writeSettings({ furigana: false, tokenColoring: false });
-  const settings = api.writeSettings({ autoPlayAudio: true });
+  const settings = api.writeSettings({
+    autoPlayAudio: true,
+    studyLevel: "n4",
+    newContentPace: "gentle"
+  });
 
   assert.equal(settings.furigana, false);
   assert.equal(settings.tokenColoring, false);
   assert.equal(settings.autoPlayAudio, true);
+  assert.equal(settings.studyLevel, "n4");
+  assert.equal(settings.newContentPace, "gentle");
   assert.deepEqual({ ...api.readSettings() }, { ...settings });
 });
 
@@ -108,7 +116,7 @@ test("version one settings migrate without losing preferences", () => {
   }));
   const settings = loadSettingsApi(storage).readSettings();
 
-  assert.equal(settings.version, 2);
+  assert.equal(settings.version, 3);
   assert.equal(settings.userLanguage, "en");
   assert.equal(settings.furigana, false);
   assert.equal(settings.autoPlayAudio, true);
@@ -116,13 +124,26 @@ test("version one settings migrate without losing preferences", () => {
   assert.equal(settings.reviewReminderTime, "07:30");
 });
 
-test("invalid or future settings fall back to defaults", () => {
+test("version two settings gain curriculum defaults", () => {
   const storage = createStorage(JSON.stringify({
-    version: 3,
+    version: 2,
     furigana: false
   }));
   const settings = loadSettingsApi(storage).readSettings();
 
-  assert.equal(settings.version, 2);
+  assert.equal(settings.version, 3);
+  assert.equal(settings.furigana, false);
+  assert.equal(settings.studyLevel, "n5");
+  assert.equal(settings.newContentPace, "balanced");
+});
+
+test("invalid or future settings fall back to defaults", () => {
+  const storage = createStorage(JSON.stringify({
+    version: 4,
+    furigana: false
+  }));
+  const settings = loadSettingsApi(storage).readSettings();
+
+  assert.equal(settings.version, 3);
   assert.equal(settings.furigana, true);
 });

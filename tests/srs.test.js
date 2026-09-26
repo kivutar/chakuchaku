@@ -48,11 +48,60 @@ test("grammar reviews persist FSRS cards with serializable dates", () => {
   assert.equal(data.cards["te-kara"].reps, 1);
   assert.equal(data.cards["kara-reason"].reps, 1);
   assert.equal(data.cards["te-kara"].last_review, reviewedAt);
+  assert.equal(data.cards["te-kara"].introduced_at, reviewedAt);
   assert.ok(Date.parse(data.cards["te-kara"].due) > Date.parse(reviewedAt));
   assert.ok(
     Date.parse(data.cards["kara-reason"].due) < Date.parse(data.cards["te-kara"].due)
   );
   assert.deepEqual(readSrsData({ storage }), data);
+});
+
+test("a card keeps its original introduction time across later reviews", () => {
+  const storage = new MemoryStorage();
+  const introducedAt = "2026-08-09T10:00:00.000Z";
+
+  recordVocabularyReviews([
+    { vocabularyId: "coffee", outcome: "good" }
+  ], { storage, now: introducedAt });
+  const data = recordVocabularyReviews([
+    { vocabularyId: "coffee", outcome: "good" }
+  ], { storage, now: "2026-08-10T10:00:00.000Z" });
+
+  assert.equal(data.vocabularyCards.coffee.introduced_at, introducedAt);
+  assert.equal(data.vocabularyCards.coffee.last_review, "2026-08-10T10:00:00.000Z");
+});
+
+test("reviewing a legacy card does not misclassify it as newly introduced", () => {
+  const storage = new MemoryStorage();
+
+  recordReviews([
+    { grammarPointId: "legacy", outcome: "good" }
+  ], { storage, now: "2026-08-01T10:00:00.000Z" });
+  const stored = JSON.parse(storage.getItem(storageKey));
+
+  delete stored.cards.legacy.introduced_at;
+  storage.setItem(storageKey, JSON.stringify(stored));
+  const data = recordReviews([
+    { grammarPointId: "legacy", outcome: "good" }
+  ], { storage, now: "2026-08-10T10:00:00.000Z" });
+
+  assert.equal(data.cards.legacy.introduced_at, undefined);
+});
+
+test("invalid optional introduction metadata never discards a valid SRS card", () => {
+  const storage = new MemoryStorage();
+
+  recordReviews([
+    { grammarPointId: "safe", outcome: "good" }
+  ], { storage, now: "2026-08-01T10:00:00.000Z" });
+  const stored = JSON.parse(storage.getItem(storageKey));
+
+  stored.cards.safe.introduced_at = "not-a-date";
+  storage.setItem(storageKey, JSON.stringify(stored));
+  const card = readSrsData({ storage }).cards.safe;
+
+  assert.ok(card);
+  assert.equal(card.introduced_at, undefined);
 });
 
 test("retrievability is calculated from serialized FSRS cards", () => {
