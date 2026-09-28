@@ -1500,6 +1500,11 @@ main {
   font-weight: 700;
 }
 
+.study-empty-mark {
+  background: #e7e8e4;
+  color: #5c625b;
+}
+
 .review-complete h1 {
   margin: 0;
   font-size: 1.45rem;
@@ -3186,6 +3191,11 @@ html[data-furigana="false"] rt {
   .review-complete-mark {
     background: #203d28;
     color: #c2e7c9;
+  }
+
+  .study-empty-mark {
+    background: #303833;
+    color: #c7d0c9;
   }
 
   .review-complete-actions button {

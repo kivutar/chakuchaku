@@ -52,6 +52,43 @@ test("curriculum manifests reject gaps, duplicates, and unknown defaults", () =>
       { id: "n5", rank: 1 }
     ]
   }));
+  assert.throws(() => globalThis.JlptN5Curriculum.createCurriculum({
+    version: 1,
+    defaultLevel: "n5",
+    levels: [
+      { id: "foundation", rank: 0 },
+      { id: "n5", rank: 1 },
+      { id: "n5", rank: 2 }
+    ]
+  }));
+});
+
+test("curriculum manifests require foundation before selectable study levels", () => {
+  for (const manifest of [{
+    version: 1,
+    defaultLevel: "n5",
+    levels: [{ id: "n5", rank: 0 }]
+  }, {
+    version: 1,
+    defaultLevel: "n5",
+    levels: [
+      { id: "n5", rank: 0 },
+      { id: "foundation", rank: 1 }
+    ]
+  }, {
+    version: 1,
+    defaultLevel: "foundation",
+    levels: [{ id: "foundation", rank: 0 }]
+  }, {
+    version: 1,
+    defaultLevel: "foundation",
+    levels: [
+      { id: "foundation", rank: 0 },
+      { id: "n5", rank: 1 }
+    ]
+  }]) {
+    assert.throws(() => globalThis.JlptN5Curriculum.createCurriculum(manifest));
+  }
 });
 
 test("daily introduction paces expose a stable authored cohort", () => {
@@ -87,6 +124,13 @@ test("daily introduction paces expose a stable authored cohort", () => {
   );
   assert.equal(curriculum.getNewItemLimit("balanced", "vocabulary"), 7);
   assert.equal(curriculum.getNewItemLimit("reviews", "grammar"), 0);
+  assert.deepEqual(
+    curriculum.selectStudyEntries(entries, {
+      ...options,
+      maxNew: curriculum.getNewItemLimit("reviews", "grammar")
+    }).entries,
+    []
+  );
   assert.equal(
     curriculum.getNewItemLimit("unlimited", "kanji"),
     Number.POSITIVE_INFINITY

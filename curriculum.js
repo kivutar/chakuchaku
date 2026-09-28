@@ -56,10 +56,15 @@
     const rankByLevel = new Map(levels.map(({ id, rank }) => [id, rank]));
 
     if (
+      levels.length < 2 ||
+      levels[0].id !== "foundation" ||
       rankByLevel.size !== levels.length ||
-      !rankByLevel.has(manifest.defaultLevel)
+      !rankByLevel.has(manifest.defaultLevel) ||
+      manifest.defaultLevel === "foundation"
     ) {
-      throw new TypeError("Curriculum level ids and the default level must be valid.");
+      throw new TypeError(
+        "Curricula need foundation at rank zero and a selectable default study level."
+      );
     }
 
     function getRank(level) {

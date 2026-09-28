@@ -5,8 +5,12 @@
     kanjiToReading: "kanji-to-reading",
     readingToKanji: "reading-to-kanji"
   });
-  const stageOrder = Object.freeze(["B6", "B5", "B4"]);
-  const activeStages = stageOrder;
+
+  function getStageOrder(kanji) {
+    return [...new Set((Array.isArray(kanji) ? kanji : [])
+      .map((entry) => entry?.stage)
+      .filter((stage) => typeof stage === "string" && stage))];
+  }
 
   function getConverter(converter) {
     const resolvedConverter = converter || global.wanakana;
@@ -84,13 +88,15 @@
   function createExercisePool(
     kanji,
     vocabulary,
-    { stages = activeStages } = {}
+    { stages } = {}
   ) {
     if (!Array.isArray(kanji) || !Array.isArray(vocabulary)) {
       return [];
     }
 
-    const enabledStages = new Set(stages);
+    const enabledStages = new Set(
+      Array.isArray(stages) ? stages : getStageOrder(kanji)
+    );
     const metadataByCharacter = new Map(kanji
       .filter((entry) => {
         return (
@@ -441,8 +447,7 @@
 
   global.JlptN5Kanji = Object.freeze({
     directions,
-    stageOrder,
-    activeStages,
+    getStageOrder,
     normalizeReading,
     normalizeKanjiAnswer,
     getSpecialReading,

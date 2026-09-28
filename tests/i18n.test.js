@@ -48,6 +48,7 @@ test("French messages interpolate and pluralize with English fallback", async ()
 
   assert.equal(api.getLocale(), "fr");
   assert.equal(api.t("common.next"), "Suivant");
+  assert.equal(api.t("studyEmpty.changePace"), "Changer le rythme d’apprentissage");
   assert.equal(api.t("statistics.days", { count: 1 }), "1 jour");
   assert.equal(api.t("statistics.days", { count: 3 }), "3 jours");
   assert.equal(api.t("missing.key"), "missing.key");

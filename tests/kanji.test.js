@@ -8,8 +8,8 @@ await import("../kanji.js");
 await import("../voice-paths.js");
 
 const {
-  activeStages,
   directions,
+  getStageOrder,
   normalizeReading,
   normalizeKanjiAnswer,
   isWholeWordReading,
@@ -116,9 +116,12 @@ test("the complete kanji curriculum exposes all 209 characters through word cont
   const inventory = getKanjiInventory(pool);
   const exampleIds = new Set(examples.map(({ vocabularyId }) => vocabularyId));
 
-  assert.deepEqual(activeStages, ["B6", "B5", "B4"]);
+  assert.deepEqual(getStageOrder(kanji), ["B6", "B5", "B4"]);
   assert.equal(inventory.length, 209);
-  assert.deepEqual(new Set(inventory.map(({ stage }) => stage)), new Set(activeStages));
+  assert.deepEqual(
+    new Set(inventory.map(({ stage }) => stage)),
+    new Set(getStageOrder(kanji))
+  );
   assert.equal(inventory.every(({ id }) => {
     return Boolean(chooseExercise(pool, id, directions.kanjiToReading));
   }), true);
@@ -162,6 +165,29 @@ test("the complete kanji curriculum exposes all 209 characters through word cont
 
   assert.equal(talk.mnemonic.readings[0].anchorId, "vocab-0b969a8c0944");
   assert.equal(talk.mnemonic.components[1].symbol, "舌");
+});
+
+test("kanji stages are discovered from authored data", () => {
+  const kanji = [{
+    id: "kanji-new-stage",
+    character: "試",
+    stage: "N4-1",
+    meaning: "test",
+    onReadings: ["し"],
+    kunReadings: []
+  }];
+  const vocabulary = [{
+    id: "vocabulary-test",
+    term: "試験",
+    reading: "しけん",
+    meaning: "exam",
+    scope: "core",
+    partOfSpeech: "noun"
+  }];
+
+  assert.deepEqual(getStageOrder(kanji), ["N4-1"]);
+  assert.equal(createExercisePool(kanji, vocabulary).length, 1);
+  assert.equal(createExercisePool(kanji, vocabulary, { stages: [] }).length, 0);
 });
 
 test("kanji-only contexts do not create vocabulary SRS ratings", async () => {

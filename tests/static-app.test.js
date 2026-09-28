@@ -526,7 +526,8 @@ test("Kanji uses contextual bidirectional prompts and schedules one target chara
   assert.match(html, /id="kanji-choice-grid"[\s\S]*role="group"/);
   assert.match(kanjiCode, /kanjiToReading: "kanji-to-reading"/);
   assert.match(kanjiCode, /readingToKanji: "reading-to-kanji"/);
-  assert.match(kanjiCode, /const activeStages = stageOrder/);
+  assert.match(kanjiCode, /function getStageOrder\(kanji\)/);
+  assert.doesNotMatch(kanjiCode, /\["B6", "B5", "B4"\]/);
   assert.match(kanjiCode, /maskedTerm: term\.replaceAll\(character, "□"\)/);
   assert.match(kanjiCode, /function gradeAnswer\(exercise, answer, converter\)/);
   assert.match(kanjiCode, /function createAnswerChoices\(/);
@@ -838,11 +839,39 @@ test("settings layer loads before the app and exposes every initial control", as
   }
 
   assert.match(browserCode, /JlptN5Settings\.writeSettings/);
+  assert.match(browserCode, /async function handleSettingChange\(event\)/);
+  assert.match(
+    browserCode,
+    /if \(\["userLanguage", "studyLevel", "newContentPace"\]\.includes\(input\.dataset\.setting\)\) \{\s+if \(await flushLearnerData\(\)\) \{\s+window\.location\.reload\(\);/
+  );
   assert.match(browserCode, /settingsDialog\.showModal\(\)/);
   assert.match(html, /id="openai-api-key"[^>]*type="password"/);
   assert.match(html, /Stored only in this tab/);
   assert.match(browserCode, /readOpenAiApiKey/);
   assert.match(browserCode, /openAiApiKeyInput\.addEventListener\("input", handleSettingChange\)/);
+});
+
+test("review-only sections explain when no cards have been introduced", async () => {
+  const [html, browserCode, styles] = await Promise.all([
+    readFile(join(rootDirectory, "index.html"), "utf8"),
+    readFile(join(rootDirectory, "app.js"), "utf8"),
+    readFile(join(rootDirectory, "styles.css"), "utf8")
+  ]);
+
+  assert.match(html, /id="study-empty"[^>]*hidden/);
+  assert.match(html, /id="study-empty-settings-button"/);
+  assert.match(html, /data-i18n="studyEmpty\.message"/);
+  assert.match(browserCode, /function createEmptyStudyResult\(section\)/);
+  assert.match(browserCode, /function displayStudyEmpty\(section\)/);
+  assert.match(
+    browserCode,
+    /newContentPaceInput\.focus\(\{ preventScroll: true \}\)/
+  );
+  assert.match(
+    browserCode,
+    /studyEmptySettingsButton\.addEventListener\("click", handleStudyEmptySettingsClick\)/
+  );
+  assert.match(styles, /\.study-empty-mark/);
 });
 
 test("AI autocorrect uses one bounded structured classification request", async () => {

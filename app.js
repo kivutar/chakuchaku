@@ -43,6 +43,7 @@ const settingsDialog = document.querySelector("#settings-dialog");
 const settingInputs = [...settingsDialog.querySelectorAll("[data-setting]")];
 const settingStateElements = [...settingsDialog.querySelectorAll("[data-setting-state]")];
 const studyLevelInput = settingsDialog.querySelector('[data-setting="studyLevel"]');
+const newContentPaceInput = settingsDialog.querySelector('[data-setting="newContentPace"]');
 const openAiApiKeyInput = document.querySelector("#openai-api-key");
 const aiAutoCorrectInput = settingsDialog.querySelector('[data-setting="aiAutoCorrect"]');
 const progressExportButton = document.querySelector("#progress-export-button");
@@ -70,6 +71,8 @@ const reviewSectionBadgeLabel = document.querySelector("#review-section-badge-la
 const reviewComplete = document.querySelector("#review-complete");
 const reviewContinueButton = document.querySelector("#review-continue-button");
 const reviewChooseSectionButton = document.querySelector("#review-choose-section-button");
+const studyEmpty = document.querySelector("#study-empty");
+const studyEmptySettingsButton = document.querySelector("#study-empty-settings-button");
 const sentenceElement = document.querySelector("#lesson-sentence");
 const lessonStage = document.querySelector("#lesson-stage");
 const exerciseKindLabel = document.querySelector("#exercise-kind-label");
@@ -222,6 +225,14 @@ function selectProgressiveEntries(entries, kind, curriculum = curriculumModel) {
     encounteredIds: Object.keys(encounterBucket),
     maxNew: curriculum.getNewItemLimit(settings.newContentPace, kind)
   }).entries;
+}
+
+function createEmptyStudyResult(section) {
+  return Object.freeze({ status: "no-reviewed-cards", section });
+}
+
+function isEmptyStudyResult(result) {
+  return result?.status === "no-reviewed-cards";
 }
 
 function filterVocabularyThroughStudyLevel(entriesById) {
@@ -601,7 +612,7 @@ async function synchronizeReviewReminder({ requestPermission = false } = {}) {
   }
 }
 
-function handleSettingChange(event) {
+async function handleSettingChange(event) {
   const input = event.target;
 
   if (input === openAiApiKeyInput) {
@@ -627,7 +638,9 @@ function handleSettingChange(event) {
   applySettings();
 
   if (["userLanguage", "studyLevel", "newContentPace"].includes(input.dataset.setting)) {
-    window.location.reload();
+    if (await flushLearnerData()) {
+      window.location.reload();
+    }
     return;
   }
 
@@ -1675,7 +1688,6 @@ function renderExposureStatistics(model, kind) {
 function renderStatistics() {
   const learningStats = globalThis.JlptN5Stats.readLearningStats();
   const srsData = globalThis.JlptN5Srs.readSrsData();
-  const activeKanjiStages = new Set(globalThis.JlptN5Kanji.activeStages);
   const filterByStatisticsLevel = (entries) => {
     if (activeStatisticsLevel === "all") {
       return entries;
@@ -1744,9 +1756,7 @@ function renderStatistics() {
     katakana: includeFoundationStatistics ? katakanaMetadata : [],
     vocabulary,
     kanji,
-    activeKanjiIds: kanji
-      .filter(({ stage }) => activeKanjiStages.has(stage))
-      .map(({ id }) => id),
+    activeKanjiIds: kanji.map(({ id }) => id),
     learningStats: filteredLearningStats,
     srsData
   });
@@ -2966,10 +2976,7 @@ function prepareKanjiExercises(entriesById, kanjiEntriesById, kanjiContexts) {
     [...vocabulary, ...linkedContexts]
   );
   const inventory = globalThis.JlptN5Kanji.getKanjiInventory(kanjiExercisePool);
-  const activeStages = new Set(globalThis.JlptN5Kanji.activeStages);
-  const expectedInventoryCount = [...kanjiEntriesById.values()]
-    .filter(({ stage }) => activeStages.has(stage))
-    .length;
+  const expectedInventoryCount = kanjiEntriesById.size;
 
   if (inventory.length !== expectedInventoryCount) {
     throw new Error(
@@ -3163,6 +3170,11 @@ async function pickNextExercise(requestedGrammarPointId) {
     "grammar",
     curriculum
   ).map(({ id }) => id));
+
+  if (eligibleGrammarPointIds.size === 0 && settings.newContentPace === "reviews") {
+    return createEmptyStudyResult("grammar");
+  }
+
   const targetLevel = getStudyLevel(curriculum);
   const typeExercises = forcedExerciseType
     ? exercises.filter((exercise) => {
@@ -3348,6 +3360,11 @@ async function pickNextVocabularyExercise(requestedVocabularyId) {
     "vocabulary",
     curriculum
   ).map(({ id }) => id));
+
+  if (eligibleVocabularyIds.size === 0 && settings.newContentPace === "reviews") {
+    return createEmptyStudyResult("vocabulary");
+  }
+
   const studyItems = items.filter(({ vocabularyId }) => {
     return eligibleVocabularyIds.has(vocabularyId);
   });
@@ -3430,6 +3447,11 @@ async function pickNextKanjiExercise(requestedKanjiId) {
     "kanji",
     curriculum
   ).map(({ id }) => id));
+
+  if (eligibleKanjiIds.size === 0 && settings.newContentPace === "reviews") {
+    return createEmptyStudyResult("kanji");
+  }
+
   const eligibleVocabularyIds = new Set(selectProgressiveEntries(
     [...entriesById.values()],
     "vocabulary",
@@ -3537,6 +3559,11 @@ async function pickNextConjugationExercise(requestedPointId) {
     "conjugation",
     curriculum
   ).map(({ id }) => id));
+
+  if (eligiblePointIds.size === 0 && settings.newContentPace === "reviews") {
+    return createEmptyStudyResult("conjugation");
+  }
+
   const targetLevel = getStudyLevel(curriculum);
   const studyPool = pool.filter((exercise) => {
     if (!exercise.conjugationPointIds.some((id) => eligiblePointIds.has(id))) {
@@ -3750,14 +3777,23 @@ function completeCurrentReviewExercise() {
   renderReviewProgress();
 }
 
-function pickNextReviewPracticeExercise() {
+async function pickNextReviewPracticeExercise() {
   const sections = [...studySections].filter((section) => {
     return section !== "review" && section !== previousReviewPracticeSection;
   });
-  const section = sections[Math.floor(Math.random() * sections.length)];
 
-  previousReviewPracticeSection = section;
-  return pickExerciseForSection(section);
+  while (sections.length > 0) {
+    const index = Math.floor(Math.random() * sections.length);
+    const [section] = sections.splice(index, 1);
+    const exercise = await pickExerciseForSection(section);
+
+    if (!isEmptyStudyResult(exercise)) {
+      previousReviewPracticeSection = section;
+      return exercise;
+    }
+  }
+
+  return createEmptyStudyResult("review");
 }
 
 async function pickNextReviewExercise({ refreshWhenEmpty = true } = {}) {
@@ -3998,6 +4034,7 @@ function displayLesson(lesson) {
   translationInput.disabled = false;
   sentenceElement.hidden = false;
   reviewComplete.hidden = true;
+  studyEmpty.hidden = true;
   actionButton.hidden = false;
   solutionElement.classList.remove("is-visible");
   solutionElement.textContent = "";
@@ -4292,7 +4329,9 @@ async function displayInitialKanjiExercise() {
   try {
     const exercise = await pickNextKanjiExercise();
 
-    if (requestId === lessonRequestId) {
+    if (requestId === lessonRequestId && isEmptyStudyResult(exercise)) {
+      displayStudyEmpty(exercise.section);
+    } else if (requestId === lessonRequestId) {
       displayLesson(exercise);
       clearTranslationInput();
       configureAnswerControls(exercise);
@@ -4308,7 +4347,9 @@ async function displayInitialVocabularyExercise() {
   try {
     const exercise = await pickNextVocabularyExercise();
 
-    if (requestId === lessonRequestId) {
+    if (requestId === lessonRequestId && isEmptyStudyResult(exercise)) {
+      displayStudyEmpty(exercise.section);
+    } else if (requestId === lessonRequestId) {
       displayLesson(exercise);
       clearTranslationInput();
       configureAnswerControls(exercise);
@@ -4324,7 +4365,9 @@ async function displayInitialConjugationExercise() {
   try {
     const exercise = await pickNextConjugationExercise();
 
-    if (requestId === lessonRequestId) {
+    if (requestId === lessonRequestId && isEmptyStudyResult(exercise)) {
+      displayStudyEmpty(exercise.section);
+    } else if (requestId === lessonRequestId) {
       displayLesson(exercise);
       clearTranslationInput();
       configureAnswerControls(exercise);
@@ -4332,6 +4375,39 @@ async function displayInitialConjugationExercise() {
   } catch (error) {
     console.error(error);
   }
+}
+
+function displayStudyEmpty(section) {
+  cancelAutoCorrect();
+  hideControls();
+  resetSpeechAudio();
+  setKanaInputMode(undefined);
+  currentLesson = { id: "study-empty", section };
+  renderReviewSectionBadge();
+  currentReviewOutcomes = [];
+  exerciseSubmitted = true;
+  speechAvailable = false;
+  sentenceElement.hidden = true;
+  reviewComplete.hidden = true;
+  studyEmpty.hidden = false;
+  exerciseKindLabel.hidden = true;
+  kanaGuidance.hidden = true;
+  kanjiGuidance.hidden = true;
+  vocabularyGuidance.hidden = true;
+  conjugationGuidance.hidden = true;
+  productionGuidance.hidden = true;
+  translationInput.hidden = true;
+  kanjiChoiceGrid.hidden = true;
+  speakButton.hidden = true;
+  actionButton.hidden = true;
+  appStoreWelcomeLink.hidden = true;
+  webMarketingSummary.hidden = true;
+  solutionElement.classList.remove("is-visible");
+  solutionElement.replaceChildren();
+  setSpeakButtonState("unavailable");
+  lessonStage.classList.remove("is-leaving");
+  lessonElement.classList.add("controls-visible");
+  studyEmptySettingsButton.focus({ preventScroll: true });
 }
 
 function displayReviewComplete() {
@@ -4346,6 +4422,7 @@ function displayReviewComplete() {
   speechAvailable = false;
   sentenceElement.hidden = true;
   reviewComplete.hidden = false;
+  studyEmpty.hidden = true;
   exerciseKindLabel.hidden = true;
   kanaGuidance.hidden = true;
   kanjiGuidance.hidden = true;
@@ -4400,6 +4477,11 @@ function handleReviewChooseSectionClick() {
   }));
 }
 
+function handleStudyEmptySettingsClick() {
+  openSettings();
+  newContentPaceInput.focus({ preventScroll: true });
+}
+
 function waitForFadeOut() {
   const delay = window.matchMedia("(prefers-reduced-motion: reduce)").matches
     ? 0
@@ -4431,6 +4513,11 @@ async function showNextExercise() {
 
     if (!exercise) {
       throw new Error("No exercise is available.");
+    }
+
+    if (isEmptyStudyResult(exercise)) {
+      displayStudyEmpty(exercise.section);
+      return;
     }
 
     displayLesson(exercise);
@@ -5682,6 +5769,7 @@ historyList.addEventListener("click", handleHistoryListClick);
 actionButton.addEventListener("click", handleAction);
 reviewContinueButton.addEventListener("click", handleReviewContinueClick);
 reviewChooseSectionButton.addEventListener("click", handleReviewChooseSectionClick);
+studyEmptySettingsButton.addEventListener("click", handleStudyEmptySettingsClick);
 translationInput.addEventListener("keydown", handleTranslationInputKeydown);
 translationInput.addEventListener("input", handleTranslationInputResize);
 kanjiChoiceGrid.addEventListener("click", handleKanjiChoiceClick);
