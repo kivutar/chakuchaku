@@ -129,6 +129,22 @@ const entryOverrides = new Map([
   ["舟", { variants: ["船"] }],
   ["湯", { variants: ["お湯"] }]
 ]);
+const entryExpansions = new Map([
+  ["回る、回す", [
+    {
+      term: "回る",
+      reading: "まわる",
+      meaning: "to turn; to go around; to revolve",
+      partOfSpeech: "verb"
+    },
+    {
+      term: "回す",
+      reading: "まわす",
+      meaning: "to turn; to rotate (something)",
+      partOfSpeech: "verb"
+    }
+  ]]
+]);
 
 function parsePositiveInteger(value, option) {
   if (!/^[1-9]\d*$/u.test(value || "")) {
@@ -284,9 +300,9 @@ function tokenizerPartOfSpeech(tokens, term, meaning) {
   }[primary] || "expression";
 }
 
-function normalizeRow(row, sourceIndex, tokenizer) {
+function normalizeRow(row, sourceIndex, tokenizer, suppliedOverride) {
   const [rawTerm, rawReading, rawMeaning, tags, guid] = row;
-  const override = entryOverrides.get(rawTerm) || {};
+  const override = suppliedOverride || entryOverrides.get(rawTerm) || {};
   const terms = splitAlternatives(rawTerm);
   const readings = splitAlternatives(rawReading);
   let term = override.term || terms[0];
@@ -332,6 +348,14 @@ function normalizeRow(row, sourceIndex, tokenizer) {
     sourceGuid: guid,
     lesson: lessonNumber(tags)
   };
+}
+
+function normalizeRows(row, sourceIndex, tokenizer) {
+  const expansions = entryExpansions.get(row[0]);
+
+  return expansions
+    ? expansions.map((override) => normalizeRow(row, sourceIndex, tokenizer, override))
+    : [normalizeRow(row, sourceIndex, tokenizer)];
 }
 
 function publicEntry(entry) {
@@ -400,17 +424,18 @@ function prepareImport(rows, existing, tokenizer) {
       continue;
     }
 
-    const entry = normalizeRow(row, offset, tokenizer);
-    const key = vocabularyKey(entry.term, entry.reading);
+    for (const entry of normalizeRows(row, offset, tokenizer)) {
+      const key = vocabularyKey(entry.term, entry.reading);
 
-    if (existingKeys.has(key) || existingIds.has(entry.id)) {
-      duplicates.push(entry);
-      continue;
+      if (existingKeys.has(key) || existingIds.has(entry.id)) {
+        duplicates.push(entry);
+        continue;
+      }
+
+      existingKeys.add(key);
+      existingIds.add(entry.id);
+      candidates.push(entry);
     }
-
-    existingKeys.add(key);
-    existingIds.add(entry.id);
-    candidates.push(entry);
   }
 
   candidates.sort((left, right) => {
@@ -465,6 +490,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 }
 
 export {
+  entryExpansions,
   excludedGrammar,
   mergeVocabulary,
   mergedDuplicateTerms,

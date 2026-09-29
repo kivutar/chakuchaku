@@ -9999,12 +9999,22 @@
       "compagnie de journal"
     ]
   },
-  "vocab-bcde89c841b0": {
-    "meaning": "tourner, faire tourner",
+  "vocab-d31e008f6e8e": {
+    "meaning": "tourner ; faire le tour",
     "acceptedAnswers": [
       "tourner",
+      "faire le tour",
+      "faire le tour de",
+      "pivoter"
+    ]
+  },
+  "vocab-0846bf5cc739": {
+    "meaning": "faire tourner quelque chose",
+    "acceptedAnswers": [
       "faire tourner",
-      "faire le tour de"
+      "tourner",
+      "tourner quelque chose",
+      "faire pivoter"
     ]
   },
   "vocab-f775e1cedb21": {
@@ -10560,6 +10570,22 @@
     "acceptedAnswers": [
       "ballon",
       "balle"
+    ]
+  },
+  "vocab-59631e105136": {
+    "meaning": "retirer ; sortir",
+    "acceptedAnswers": [
+      "retirer",
+      "retirer de l’argent",
+      "sortir",
+      "extraire"
+    ]
+  },
+  "vocab-c4dcc34f811a": {
+    "meaning": "se mettre à pleuvoir",
+    "acceptedAnswers": [
+      "se mettre à pleuvoir",
+      "commencer à pleuvoir"
     ]
   }
 }

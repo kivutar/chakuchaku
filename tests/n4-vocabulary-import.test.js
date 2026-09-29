@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { TokenizerBuilder } from "lindera-wasm-ipadic-nodejs";
 import {
+  entryExpansions,
   excludedGrammar,
   mergeVocabulary,
   mergedDuplicateTerms,
@@ -71,18 +72,19 @@ test("the complete pinned N4 source is either imported, merged, or deliberately 
   assert.equal(excludedGrammar.size, 14);
   assert.equal(mergedDuplicateTerms.size, 4);
   assert.equal(mergedDuplicateTerms.get("～員"), "vocab-9958661a47af");
-  assert.equal(result.duplicates.length, 654);
+  assert.equal(entryExpansions.size, 1);
+  assert.equal(result.duplicates.length, 655);
   assert.equal(result.candidates.length, 0);
   assert.equal(freshImport.duplicates.length, 43);
-  assert.equal(freshImport.candidates.length, 611);
+  assert.equal(freshImport.candidates.length, 612);
   assert.ok(freshImport.candidates.some(({ term, reading }) => {
     return term === "月" && reading === "つき";
   }));
   assert.ok(freshImport.candidates.some(({ term, reading }) => {
     return term === "～月" && reading === "～つき";
   }));
-  assert.equal(vocabulary.length, 1480);
-  assert.equal(vocabulary.filter(({ introducedAt }) => introducedAt === "n4").length, 612);
+  assert.equal(vocabulary.length, 1483);
+  assert.equal(vocabulary.filter(({ introducedAt }) => introducedAt === "n4").length, 615);
 
   const byId = new Map(vocabulary.map((entry) => [entry.id, entry]));
   const importedFields = [
@@ -113,6 +115,11 @@ test("the complete pinned N4 source is either imported, merged, or deliberately 
   assert.equal(byId.get("vocab-f3881ce313e7").introducedAt, "n5");
   assert.equal(byId.get("vocab-f3881ce313e7").voiceSlug, "hi-day");
   assert.equal(byId.get("vocab-64caa70ef0a7").partOfSpeech, "noun");
+  assert.equal(byId.get("vocab-d31e008f6e8e").term, "回る");
+  assert.equal(byId.get("vocab-0846bf5cc739").term, "回す");
+  assert.equal(byId.has("vocab-bcde89c841b0"), false);
+  assert.equal(byId.get("vocab-59631e105136").term, "引き出す");
+  assert.equal(byId.get("vocab-c4dcc34f811a").term, "降り出す");
   for (const duplicateId of [
     "vocab-d3fd26035acb",
     "vocab-8cda46ae057c",

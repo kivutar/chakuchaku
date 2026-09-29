@@ -15550,10 +15550,20 @@
     "partOfSpeech": "noun"
   },
   {
-    "id": "vocab-bcde89c841b0",
-    "term": "回る、回す",
-    "reading": "まわる、まわす",
-    "meaning": "to go around, to revolve",
+    "id": "vocab-d31e008f6e8e",
+    "term": "回る",
+    "reading": "まわる",
+    "meaning": "to turn; to go around; to revolve",
+    "scope": "core",
+    "introducedAt": "n4",
+    "source": "open-anki-jlpt-decks",
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "vocab-0846bf5cc739",
+    "term": "回す",
+    "reading": "まわす",
+    "meaning": "to turn; to rotate (something)",
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
@@ -16366,6 +16376,26 @@
     "meaning": "ball",
     "partOfSpeech": "noun",
     "topic": "sports",
+    "scope": "core",
+    "introducedAt": "n4",
+    "source": "curated-n4-vocabulary"
+  },
+  {
+    "id": "vocab-59631e105136",
+    "term": "引き出す",
+    "reading": "ひきだす",
+    "meaning": "to withdraw; to pull out",
+    "partOfSpeech": "verb",
+    "scope": "core",
+    "introducedAt": "n4",
+    "source": "curated-n4-vocabulary"
+  },
+  {
+    "id": "vocab-c4dcc34f811a",
+    "term": "降り出す",
+    "reading": "ふりだす",
+    "meaning": "to start raining",
+    "partOfSpeech": "verb",
     "scope": "core",
     "introducedAt": "n4",
     "source": "curated-n4-vocabulary"

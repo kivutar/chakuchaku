@@ -219,7 +219,7 @@ test("knowledge units are explicitly assigned to an enabled curriculum level", a
 
   assert.ok(globalThis.JlptN5Conjugation.points.length > 0);
   assert.equal(grammar.filter(({ introducedAt }) => introducedAt === "n4").length, 15);
-  assert.equal(vocabulary.filter(({ introducedAt }) => introducedAt === "n4").length, 612);
+  assert.equal(vocabulary.filter(({ introducedAt }) => introducedAt === "n4").length, 615);
   assert.equal(
     globalThis.JlptN5Conjugation.points.filter(({ introducedAt }) => {
       return introducedAt === "n4";

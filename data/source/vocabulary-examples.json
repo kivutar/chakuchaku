@@ -8400,10 +8400,16 @@
     "translation": "I go to the newspaper company."
   },
   {
-    "vocabularyId": "vocab-bcde89c841b0",
-    "text": "時計が回る。",
+    "vocabularyId": "vocab-d31e008f6e8e",
+    "text": "鍵が回る。",
     "targetSurface": "回る",
-    "translation": "The clock turns."
+    "translation": "The key turns."
+  },
+  {
+    "vocabularyId": "vocab-0846bf5cc739",
+    "text": "鍵を回す。",
+    "targetSurface": "回す",
+    "translation": "I turn the key."
   },
   {
     "vocabularyId": "vocab-f775e1cedb21",
@@ -8878,6 +8884,18 @@
     "text": "ボールは丸いです。",
     "targetSurface": "ボール",
     "translation": "The ball is round."
+  },
+  {
+    "vocabularyId": "vocab-59631e105136",
+    "text": "銀行でお金を引き出す。",
+    "targetSurface": "引き出す",
+    "translation": "I withdraw money at the bank."
+  },
+  {
+    "vocabularyId": "vocab-c4dcc34f811a",
+    "text": "急に雨が降り出す。",
+    "targetSurface": "降り出す",
+    "translation": "It suddenly starts raining."
   },
   {
     "vocabularyId": "kanji-context-washitsu",

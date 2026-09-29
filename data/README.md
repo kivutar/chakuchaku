@@ -129,22 +129,24 @@ publishing vocabulary, kanji, and grammar specifications after the 2010 revision
 because the test is intended to measure communicative use rather than memorized
 lists.
 
-The inventory currently contains 1,480 entries: 868 introduced at N5 and 612
+The inventory currently contains 1,483 entries: 868 introduced at N5 and 615
 introduced at N4.
 
 - 719 N5 `core` entries adapted from the MIT-licensed Open Anki decks at commit
   `1ad66734417aca9dbcca6b2d5ee440cb13ab3ba0`. This includes `日（ひ）`, which
   the N4 source labels later but the existing N5 exercises already teach.
-- 610 N4 `core` entries imported from that commit's 668-row N4 snapshot. The
+- 611 N4 `core` entries imported from that commit's 668-row N4 snapshot. The
   importer merges 43 entries already represented in the app and excludes 14
   grammar constructions that belong in grammar or conjugation rather than the
-  vocabulary SRS.
+  vocabulary SRS. Its combined `回る、回す` row is deliberately expanded into
+  separate intransitive and transitive SRS units.
 - 3 `core` Katakana entries restored by comparison with the former JLPT Level 4
   vocabulary specification: `グラス`, `コピー`, and `スリッパ`.
 - 1 contextual core entry, `田んぼ`, added to give the initial Kanji curriculum
   a natural complete-word exercise for `田`.
-- 2 curated N4 core entries: `間`, required by the first N4 grammar exercises,
-  and practical Katakana word `ボール`.
+- 4 curated N4 core entries: `間`, required by the first N4 grammar exercises;
+  practical Katakana word `ボール`; and consensus-list gaps `引き出す` and
+  `降り出す`.
 - 145 `supplemental` entries: 42 recognizable and motivating beginner words,
   29 words needed by the current lessons, 37 words curated for practical
   Katakana coverage, 13 essential A1 expressions and everyday words, and 14
@@ -186,6 +188,18 @@ scope of the synthetic list:
 - https://github.com/jamsinclair/open-anki-jlpt-decks (open N5 and N4 datasets)
 - https://www.mlcjapanese.co.jp/n5_04_01.html (about 800 words; 802-item study list)
 - https://www.tanos.co.uk/jlpt/jlpt5/ (689-word N5 study list)
+
+The N4 layer was additionally cross-checked on 2026-09-29 against the 571-word
+JLPT Sensei list, the 640-word Hirakata list, the 629-word Kanzen list, and the
+broader 827-word Nihon Torii list. Hirakata and Kanzen both descend from older
+community/Tanos material, so agreement between them is not treated as fully
+independent evidence. The comparison motivated the separate `回る` / `回す`
+cards and the curated `引き出す` / `降り出す` additions.
+
+- https://jlptsensei.com/jlpt-n4-vocabulary-list/
+- https://hirakata.io/vocab/n4/
+- https://kanzenkanji.com/vocabulary/jlpt/n4
+- https://www.nihontorii.com/jlpt/n4/vocabulary
 
 `source/open-anki-jlpt-n4.csv` is the pinned N4 input. Run
 `npm run vocabulary:n4:check` to prove that every row is imported, merged, or

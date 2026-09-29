@@ -48991,19 +48991,19 @@
     ]
   },
   {
-    "vocabularyId": "vocab-bcde89c841b0",
-    "text": "時計が回る。",
+    "vocabularyId": "vocab-d31e008f6e8e",
+    "text": "鍵が回る。",
     "targetSurface": "回る",
     "targetReading": "まわる",
     "targetTokenStart": 2,
     "targetTokenEnd": 3,
-    "translation": "The clock turns.",
+    "translation": "The key turns.",
     "tokens": [
       {
-        "surface": "時計",
+        "surface": "鍵",
         "category": "noun",
-        "reading": "とけい",
-        "vocabularyId": "vocab-4754cbccd601"
+        "reading": "かぎ",
+        "vocabularyId": "vocab-dd7cf58e61fa"
       },
       {
         "surface": "が",
@@ -49013,7 +49013,40 @@
       {
         "surface": "回る",
         "category": "verb",
-        "reading": "まわる"
+        "reading": "まわる",
+        "vocabularyId": "vocab-d31e008f6e8e"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-0846bf5cc739",
+    "text": "鍵を回す。",
+    "targetSurface": "回す",
+    "targetReading": "まわす",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I turn the key.",
+    "tokens": [
+      {
+        "surface": "鍵",
+        "category": "noun",
+        "reading": "かぎ",
+        "vocabularyId": "vocab-dd7cf58e61fa"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "回す",
+        "category": "verb",
+        "reading": "まわす",
+        "vocabularyId": "vocab-0846bf5cc739"
       },
       {
         "surface": "。",
@@ -51880,6 +51913,92 @@
         "surface": "です",
         "category": "auxiliary",
         "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-59631e105136",
+    "text": "銀行でお金を引き出す。",
+    "targetSurface": "引き出す",
+    "targetReading": "ひきだす",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I withdraw money at the bank.",
+    "tokens": [
+      {
+        "surface": "銀行",
+        "category": "noun",
+        "reading": "ぎんこう",
+        "vocabularyId": "vocab-d425b056fb0b"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "お金",
+        "category": "noun",
+        "reading": "おかね",
+        "vocabularyId": "vocab-d242b38667c8"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "引き出す",
+        "category": "verb",
+        "reading": "ひきだす",
+        "vocabularyId": "vocab-59631e105136"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-c4dcc34f811a",
+    "text": "急に雨が降り出す。",
+    "targetSurface": "降り出す",
+    "targetReading": "ふりだす",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "It suddenly starts raining.",
+    "tokens": [
+      {
+        "surface": "急",
+        "category": "adjective",
+        "reading": "きゅう",
+        "vocabularyId": "vocab-f70852bf2310"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "雨",
+        "category": "noun",
+        "reading": "あめ",
+        "vocabularyId": "vocab-7e87850c448d"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "降り出す",
+        "category": "verb",
+        "reading": "ふりだす",
+        "vocabularyId": "vocab-c4dcc34f811a"
       },
       {
         "surface": "。",
