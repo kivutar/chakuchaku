@@ -157,14 +157,15 @@ test("UI catalog validation requires matching keys, plurals, and placeholders", 
 });
 
 test("committed French catalogs completely cover canonical content", async () => {
+  const kanjiCurriculumSources = await readJson("data/source/kanji-curricula.json");
+  const mnemonicFiles = kanjiCurriculumSources.map(({ mnemonicSource }) => mnemonicSource);
   const [
     exercises,
     grammar,
     vocabulary,
     kanji,
     kanjiComponents,
-    kanjiMnemonics,
-    n4KanjiMnemonics,
+    kanjiMnemonicGroups,
     vocabularyExamples,
     englishUi,
     frenchUi,
@@ -173,8 +174,7 @@ test("committed French catalogs completely cover canonical content", async () =>
     localizedVocabulary,
     localizedKanji,
     localizedKanjiComponents,
-    localizedKanjiMnemonics,
-    localizedN4KanjiMnemonics,
+    localizedKanjiMnemonicGroups,
     localizedVocabularyExamples
   ] = await Promise.all([
     readJson("data/source/exercises.json"),
@@ -182,8 +182,7 @@ test("committed French catalogs completely cover canonical content", async () =>
     readJson("data/jlpt-n5-vocabulary.json"),
     readJson("data/jlpt-n5-kanji.json"),
     readJson("data/source/kanji-components.json"),
-    readJson("data/source/kanji-mnemonics.json"),
-    readJson("data/source/n4-kanji-mnemonics.json"),
+    Promise.all(mnemonicFiles.map((filename) => readJson(`data/source/${filename}`))),
     readJson("data/source/vocabulary-examples.json"),
     readJson("locales/en.json"),
     readJson("locales/fr.json"),
@@ -192,8 +191,9 @@ test("committed French catalogs completely cover canonical content", async () =>
     readJson("data/source/locales/fr/vocabulary.json"),
     readJson("data/source/locales/fr/kanji.json"),
     readJson("data/source/locales/fr/kanji-components.json"),
-    readJson("data/source/locales/fr/kanji-mnemonics.json"),
-    readJson("data/source/locales/fr/n4-kanji-mnemonics.json"),
+    Promise.all(mnemonicFiles.map((filename) => (
+      readJson(`data/source/locales/fr/${filename}`)
+    ))),
     readJson("data/source/locales/fr/vocabulary-examples.json")
   ]);
 
@@ -204,7 +204,7 @@ test("committed French catalogs completely cover canonical content", async () =>
     vocabulary,
     kanji,
     kanjiComponents,
-    kanjiMnemonics: [...kanjiMnemonics, ...n4KanjiMnemonics],
+    kanjiMnemonics: kanjiMnemonicGroups.flat(),
     vocabularyExamples,
     localizations: {
       exercises: localizedExercises,
@@ -212,10 +212,7 @@ test("committed French catalogs completely cover canonical content", async () =>
       vocabulary: localizedVocabulary,
       kanji: localizedKanji,
       "kanji-components": localizedKanjiComponents,
-      "kanji-mnemonics": {
-        ...localizedKanjiMnemonics,
-        ...localizedN4KanjiMnemonics
-      },
+      "kanji-mnemonics": Object.assign({}, ...localizedKanjiMnemonicGroups),
       "vocabulary-examples": localizedVocabularyExamples
     }
   }), []);

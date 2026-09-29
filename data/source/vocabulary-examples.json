@@ -9016,5 +9016,11 @@
     "text": "出身は日本です。",
     "targetSurface": "出身",
     "translation": "I am from Japan."
+  },
+  {
+    "vocabularyId": "kanji-context-kanou",
+    "text": "明日は旅行が可能です。",
+    "targetSurface": "可能",
+    "translation": "Travel is possible tomorrow."
   }
 ]

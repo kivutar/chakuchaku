@@ -215,7 +215,9 @@ beginner layer cross-checked against Irodori and Marugoto A1 materials.
 
 ## Multi-level kanji inventory
 
-`jlpt-n5-kanji.json` retains its legacy filename but is now a flat cumulative
+`source/kanji-curricula.json` declares one curriculum and mnemonic source pair
+per active study level, so adding a later level does not require another
+hard-coded loader. `jlpt-n5-kanji.json` retains its legacy filename but is now a flat cumulative
 N5–N4 inventory. Its foundation is the exact 209-character curriculum that
 Rikkyo University describes as equivalent to JLPT N5: 73 `B6`, 68 `B5`, and 68
 `B4` characters. `source/jlpt-n4-kanji.json` pins Kanzen's 170-character N4

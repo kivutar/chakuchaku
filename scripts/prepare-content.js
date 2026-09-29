@@ -7,6 +7,7 @@ import {
   validateLocalizedContent,
   validateUiCatalogs
 } from "./localization.js";
+import { normalizeReading, surfaceCarriesReading } from "./kanji-reading-evidence.js";
 import "../curriculum.js";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -995,53 +996,28 @@ function createGrammarCoverage(grammarPoints, exercises) {
   return lines.join("\n");
 }
 
-function foldReadingSound(value) {
-  return value
-    .normalize("NFD")
-    .replace(/[\u3099\u309a]/gu, "")
-    .normalize("NFC")
-    .replaceAll("っ", "つ");
+function getAnchorForm(anchor, anchorSurface) {
+  const availableForms = [
+    { surface: anchor?.term, reading: anchor?.reading },
+    ...(anchor?.variants || []).map((surface) => ({ surface, reading: anchor.reading })),
+    ...(anchor?.inflections || [])
+  ].filter(({ surface, reading }) => (
+    typeof surface === "string" && surface && typeof reading === "string" && reading
+  ));
+
+  return availableForms.find(({ surface }) => surface === (anchorSurface || anchor?.term));
 }
 
-function anchorCarriesReading(anchor, character, reading) {
-  const term = anchor.term.replace(/[～〜]/gu, "");
-  const wordReading = foldReadingSound(anchor.reading.replace(/[～〜]/gu, ""));
-  const targetReading = foldReadingSound(reading);
-  const han = [...term].filter((candidate) => /\p{Script=Han}/u.test(candidate));
-  const characterIndex = han.indexOf(character);
+function anchorCarriesReading(anchor, character, reading, anchorSurface) {
+  const form = getAnchorForm(anchor, anchorSurface);
 
-  if (
-    characterIndex === -1 ||
-    [...term].filter((candidate) => candidate === character).length !== 1
-  ) {
-    return false;
-  }
-
-  if (han.length === 1) {
-    if (term === character) {
-      return wordReading === targetReading;
-    }
-
-    if (term.startsWith(character)) {
-      return wordReading.startsWith(targetReading);
-    }
-
-    if (term.endsWith(character)) {
-      return wordReading.endsWith(targetReading);
-    }
-
-    return targetReading.length >= 2 && wordReading.includes(targetReading);
-  }
-
-  if (characterIndex === 0) {
-    return wordReading.startsWith(targetReading);
-  }
-
-  if (characterIndex === han.length - 1) {
-    return wordReading.endsWith(targetReading);
-  }
-
-  return targetReading.length >= 2 && wordReading.includes(targetReading);
+  return Boolean(form && surfaceCarriesReading(
+    form.surface,
+    form.reading,
+    character,
+    reading,
+    { foldVoicing: true, foldSmallTsu: true }
+  ));
 }
 
 function validateKanjiComponents(components) {
@@ -1145,7 +1121,7 @@ function validateKanjiMnemonics(
     }
 
     for (const readingMnemonic of readings) {
-      const { reading, story, anchorId, anchorReading } = readingMnemonic || {};
+      const { reading, story, anchorId, anchorReading, anchorSurface } = readingMnemonic || {};
       const surfaceReading = anchorReading || reading;
       const anchor = anchorsById.get(anchorId);
 
@@ -1165,9 +1141,15 @@ function validateKanjiMnemonics(
           typeof anchorReading !== "string" ||
           !/^[ぁ-ゖ]+$/u.test(anchorReading) ||
           ![
-            foldReadingSound(reading),
-            `${foldReadingSound(reading)}つ`
-          ].includes(foldReadingSound(anchorReading)) ||
+            normalizeReading(reading, { foldVoicing: true, foldSmallTsu: true }),
+            `${normalizeReading(
+              reading,
+              { foldVoicing: true, foldSmallTsu: true }
+            )}つ`
+          ].includes(normalizeReading(
+            anchorReading,
+            { foldVoicing: true, foldSmallTsu: true }
+          )) ||
           !story.includes(anchorReading)
         )
       ) {
@@ -1176,10 +1158,10 @@ function validateKanjiMnemonics(
 
       if (
         !anchor ||
-        !anchorCarriesReading(anchor, kanjiEntry.character, surfaceReading)
+        !anchorCarriesReading(anchor, kanjiEntry.character, surfaceReading, anchorSurface)
       ) {
         errors.push(
-          `${mnemonic.kanjiId}: ${anchorId || "missing anchor"} does not carry ${surfaceReading}.`
+          `${mnemonic.kanjiId}: ${anchorSurface || anchorId || "missing anchor"} does not carry ${surfaceReading}.`
         );
       }
     }
@@ -1224,14 +1206,33 @@ function prepareKanjiMnemonicLocalizations(sources, localizations, components) {
   }));
 }
 
+const kanjiCurriculumSources = await readJson(
+  join(sourceDirectory, "kanji-curricula.json")
+);
+
+if (
+  !Array.isArray(kanjiCurriculumSources) ||
+  kanjiCurriculumSources.length === 0 ||
+  kanjiCurriculumSources.some(({ level, mnemonicSource }) => (
+    typeof level !== "string" || typeof mnemonicSource !== "string" || !mnemonicSource
+  ))
+) {
+  throw new Error("Kanji curriculum source descriptors are invalid.");
+}
+
+const mnemonicSourceFiles = kanjiCurriculumSources.map(({ mnemonicSource }) => mnemonicSource);
+
+if (new Set(mnemonicSourceFiles).size !== mnemonicSourceFiles.length) {
+  throw new Error("Kanji mnemonic source filenames must be unique.");
+}
+
 const [
   curriculumManifest,
   introductionSource,
   exerciseSources,
   vocabularyExampleSources,
   kanjiComponentSources,
-  n5KanjiMnemonicSources,
-  n4KanjiMnemonicSources,
+  kanjiMnemonicSourceGroups,
   grammarPoints,
   vocabulary,
   kanjiContexts,
@@ -1245,8 +1246,9 @@ const [
   readJson(join(sourceDirectory, "exercises.json")),
   readJson(join(sourceDirectory, "vocabulary-examples.json")),
   readJson(join(sourceDirectory, "kanji-components.json")),
-  readJson(join(sourceDirectory, "kanji-mnemonics.json")),
-  readJson(join(sourceDirectory, "n4-kanji-mnemonics.json")),
+  Promise.all(mnemonicSourceFiles.map((filename) => (
+    readJson(join(sourceDirectory, filename))
+  ))),
   readJson(join(rootDirectory, "data", "jlpt-n5-grammar.json")),
   readJson(join(rootDirectory, "data", "jlpt-n5-vocabulary.json")),
   readJson(join(rootDirectory, "data", "kanji-contexts.json")),
@@ -1261,21 +1263,17 @@ const [
         "vocabulary",
         "kanji",
         "kanji-components",
-        "kanji-mnemonics",
         "vocabulary-examples"
       ].map(async (kind) => [
         kind,
         await readJson(join(sourceDirectory, "locales", locale, `${kind}.json`))
       ])
     ));
-    const n4KanjiMnemonics = await readJson(
-      join(sourceDirectory, "locales", locale, "n4-kanji-mnemonics.json")
-    );
+    const mnemonicLocalizations = await Promise.all(mnemonicSourceFiles.map((filename) => (
+      readJson(join(sourceDirectory, "locales", locale, filename))
+    )));
 
-    localizations["kanji-mnemonics"] = {
-      ...localizations["kanji-mnemonics"],
-      ...n4KanjiMnemonics
-    };
+    localizations["kanji-mnemonics"] = Object.assign({}, ...mnemonicLocalizations);
 
     return {
       locale,
@@ -1284,12 +1282,21 @@ const [
     };
   }))
 ]);
-const kanjiMnemonicSources = [
-  ...n5KanjiMnemonicSources,
-  ...n4KanjiMnemonicSources
-];
+const kanjiMnemonicSources = kanjiMnemonicSourceGroups.flat();
 
 const curriculum = globalThis.JlptN5Curriculum.createCurriculum(curriculumManifest);
+const expectedKanjiSourceLevels = curriculum.levels
+  .filter(({ id }) => id !== "foundation")
+  .map(({ id }) => id);
+const declaredKanjiSourceLevels = kanjiCurriculumSources.map(({ level }) => level);
+
+if (
+  new Set(declaredKanjiSourceLevels).size !== declaredKanjiSourceLevels.length ||
+  expectedKanjiSourceLevels.some((level) => !declaredKanjiSourceLevels.includes(level)) ||
+  declaredKanjiSourceLevels.some((level) => !expectedKanjiSourceLevels.includes(level))
+) {
+  throw new Error("Every active study level needs exactly one kanji source descriptor.");
+}
 
 if (
   !Array.isArray(exerciseSources) ||
@@ -1297,8 +1304,7 @@ if (
   !kanjiComponentSources ||
   Array.isArray(kanjiComponentSources) ||
   typeof kanjiComponentSources !== "object" ||
-  !Array.isArray(n5KanjiMnemonicSources) ||
-  !Array.isArray(n4KanjiMnemonicSources) ||
+  kanjiMnemonicSourceGroups.some((group) => !Array.isArray(group)) ||
   !Array.isArray(grammarPoints) ||
   !Array.isArray(vocabulary) ||
   !Array.isArray(kanjiContexts) ||

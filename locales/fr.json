@@ -252,6 +252,7 @@
   "exercise.anchorWord": "Mot repère",
   "exercise.wholeWordReading": "Lecture globale",
   "exercise.readingCategory.jukujikun": "熟字訓 · jukujikun",
+  "exercise.readingCategory.ateji": "当て字 · ateji",
   "exercise.wholeWordReadingExplanation": "La lecture {reading} appartient au mot {term} entier : elle ne se découpe pas entre ses kanji.",
   "exercise.wordComposition": "Composition en kanji",
   "exercise.wordMeaningMnemonic": "Sens du mot",

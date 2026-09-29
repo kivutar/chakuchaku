@@ -456,8 +456,8 @@
         "anchorId": "vocab-9567eaf8fe9b"
       },
       {
-        "reading": "うま",
-        "story": "OUMAR naît au moment où la première pousse sort du sol : OUMAR commence comme うま dans 生まれる（うまれる）.",
+        "reading": "う",
+        "story": "À sa naissance, le bébé crie « OUH ! » : OUH rappelle う dans 生まれる（うまれる）.",
         "anchorId": "vocab-3db312786ce8"
       }
     ]
@@ -2054,8 +2054,8 @@
         "anchorId": "vocab-415439a1dbb6"
       },
       {
-        "reading": "うしろ",
-        "story": "« OÙ le CHIrurgien ROnchonne-t-il ? » Derrière toi ! OÙ-CHI-RO rappelle うしろ.",
+        "reading": "うし",
+        "story": "« OÙ est CHIhiro ? » Derrière toi ! OÙ-CHI rappelle うし dans 後ろ（うしろ）.",
         "anchorId": "vocab-4125c1bacf52"
       }
     ]
@@ -3007,7 +3007,8 @@
       {
         "reading": "ま",
         "story": "Le MANÈGE se courbe dans le virage : MA rappelle ま dans 曲がる（まがる）.",
-        "anchorId": "vocab-9b9a58f11bf9"
+        "anchorId": "vocab-9b9a58f11bf9",
+        "anchorSurface": "曲がる"
       }
     ]
   },
@@ -4656,11 +4657,6 @@
         "anchorId": "vocab-0d603029022b"
       },
       {
-        "reading": "かわ",
-        "story": "Le remplaçant se COUVRE : COUVA rappelle かわ. On retrouve かわ dans 代わり（かわり）.",
-        "anchorId": "vocab-14631d2b2029"
-      },
-      {
         "reading": "か",
         "story": "Un remplaçant prend le CAS : CA rappelle か. On retrouve か dans 代わり（かわり）.",
         "anchorId": "vocab-14631d2b2029"
@@ -5355,8 +5351,9 @@
     "readings": [
       {
         "reading": "お",
-        "story": "À la fin, le public dit « OH ! » : お. On retrouve お dans 終る（おわる）.",
-        "anchorId": "vocab-6393ca7aefde"
+        "story": "À la fin, le public dit « OH ! » : お. On retrouve お dans 終わる（おわる）.",
+        "anchorId": "vocab-6393ca7aefde",
+        "anchorSurface": "終わる"
       },
       {
         "reading": "おわ",
@@ -5411,6 +5408,11 @@
         "reading": "む",
         "story": "Le vide fait « MOU… » : MOU rappelle む. On retrouve む dans 無理（むり）.",
         "anchorId": "vocab-535d04fce7a1"
+      },
+      {
+        "reading": "な",
+        "story": "Il ne reste rien : « NA, c’est perdu ! » NA rappelle な dans 無くす（なくす）.",
+        "anchorId": "vocab-bfdcaa65f011"
       }
     ]
   },
@@ -5630,8 +5632,8 @@
     "readings": [
       {
         "reading": "か",
-        "story": "La bouche dit « CAPable ! » : CA donne か. On retrouve か dans 可愛い（かわいい）.",
-        "anchorId": "vocab-0a04072bf0cc"
+        "story": "La bouche dit « CAPable ! » : CA donne か. On retrouve か dans 可能（かのう）.",
+        "anchorId": "kanji-context-kanou"
       }
     ]
   },
@@ -5753,11 +5755,6 @@
         "reading": "お",
         "story": "En se levant, on dit « OH ! » : お. On retrouve お dans 起きる（おきる）.",
         "anchorId": "vocab-72c5b362c4f2"
-      },
-      {
-        "reading": "おこ",
-        "story": "On réveille OKO : O-KO donne おこ. On retrouve おこ dans 起こす（おこす）.",
-        "anchorId": "vocab-ebc949695b16"
       }
     ]
   },

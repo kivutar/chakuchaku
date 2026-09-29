@@ -252,6 +252,7 @@
   "exercise.anchorWord": "Anchor word",
   "exercise.wholeWordReading": "Whole-word reading",
   "exercise.readingCategory.jukujikun": "熟字訓 · jukujikun",
+  "exercise.readingCategory.ateji": "当て字 · ateji",
   "exercise.wholeWordReadingExplanation": "The reading {reading} belongs to {term} as a whole; do not split it into readings for the individual kanji.",
   "exercise.wordComposition": "Kanji composition",
   "exercise.wordMeaningMnemonic": "Meaning",

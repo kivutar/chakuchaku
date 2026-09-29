@@ -3,10 +3,12 @@ import { gunzipSync } from "node:zlib";
 import { dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { XMLParser } from "fast-xml-parser";
+import { normalizeReading, surfaceCarriesReading } from "./kanji-reading-evidence.js";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
-const n5CurriculumPath = join(rootDirectory, "data", "source", "rikkyo-n5-kanji.json");
-const n4CurriculumPath = join(rootDirectory, "data", "source", "jlpt-n4-kanji.json");
+const sourceDirectory = join(rootDirectory, "data", "source");
+const curriculumManifestPath = join(rootDirectory, "data", "curriculum.json");
+const curriculumSourcesPath = join(sourceDirectory, "kanji-curricula.json");
 const vocabularyPath = join(rootDirectory, "data", "jlpt-n5-vocabulary.json");
 const contextPath = join(rootDirectory, "data", "kanji-contexts.json");
 const outputPath = join(rootDirectory, "data", "jlpt-n5-kanji.json");
@@ -27,12 +29,6 @@ function asArray(value) {
   }
 
   return Array.isArray(value) ? value : [value];
-}
-
-function katakanaToHiragana(text) {
-  return text.replace(/[ァ-ヶ]/g, (character) => {
-    return String.fromCharCode(character.charCodeAt(0) - 0x60);
-  });
 }
 
 function unique(values) {
@@ -71,7 +67,7 @@ function getNodeText(node) {
 }
 
 function normalizeOnReading(reading) {
-  return katakanaToHiragana(reading.replaceAll("-", ""));
+  return normalizeReading(reading.replaceAll("-", ""));
 }
 
 function normalizeKunReading(reading) {
@@ -79,10 +75,7 @@ function normalizeKunReading(reading) {
 }
 
 function normalizeForComparison(text, foldVoicing) {
-  const normalized = katakanaToHiragana(text).normalize("NFD");
-
-  return (foldVoicing ? normalized.replace(/[\u3099\u309a]/g, "") : normalized)
-    .normalize("NFC");
+  return normalizeReading(text, { foldVoicing });
 }
 
 function isWholeWordReading(entry, reading = entry?.reading) {
@@ -108,67 +101,17 @@ function createVocabularyForms(vocabulary) {
 function hasReadingEvidence(
   character,
   reading,
-  fullKunReading,
   vocabularyForms,
-  foldVoicing = false,
-  allowKunStemFallback = true
+  foldVoicing = false
 ) {
-  const normalizedReading = normalizeForComparison(reading, foldVoicing);
-  const normalizedFullKunReading = fullKunReading
-    ? normalizeForComparison(fullKunReading, foldVoicing)
-    : undefined;
-
   return vocabularyForms.some((form) => {
-    if (!form.surface.includes(character)) {
-      return false;
-    }
-
-    const wordReading = normalizeForComparison(form.reading, foldVoicing);
-
-    const wordKanji = [...form.surface].filter((candidate) => /\p{Script=Han}/u.test(candidate));
-    const characterIndex = wordKanji.indexOf(character);
-
-    if (characterIndex === -1 || wordKanji.filter((value) => value === character).length > 1) {
-      return false;
-    }
-
-    const matchesPosition = (candidate) => {
-      if (!candidate) {
-        return false;
-      }
-
-      if (wordKanji.length === 1) {
-        const surface = form.surface.replace(/[～〜]/gu, "");
-        const normalizedWordReading = wordReading.replace(/[～〜]/gu, "");
-
-        if (surface === character) {
-          return normalizedWordReading === candidate;
-        }
-
-        if (surface.startsWith(character)) {
-          return normalizedWordReading.startsWith(candidate);
-        }
-
-        if (surface.endsWith(character)) {
-          return normalizedWordReading.endsWith(candidate);
-        }
-
-        return candidate.length >= 2 && wordReading.includes(candidate);
-      }
-
-      if (characterIndex === 0) {
-        return wordReading.startsWith(candidate);
-      }
-
-      if (characterIndex === wordKanji.length - 1) {
-        return wordReading.endsWith(candidate);
-      }
-
-      return candidate.length >= 2 && wordReading.includes(candidate);
-    };
-
-    return matchesPosition(normalizedFullKunReading) ||
-      (allowKunStemFallback && matchesPosition(normalizedReading));
+    return surfaceCarriesReading(
+      form.surface,
+      form.reading,
+      character,
+      reading,
+      { foldVoicing }
+    );
   });
 }
 
@@ -187,24 +130,85 @@ async function loadKanjidicXml() {
   return gunzipSync(Buffer.from(await response.arrayBuffer())).toString("utf8");
 }
 
-const [n5Curriculum, n4Curriculum, vocabulary, contexts, xml] = await Promise.all([
-  readFile(n5CurriculumPath, "utf8").then(JSON.parse),
-  readFile(n4CurriculumPath, "utf8").then(JSON.parse),
+const [curriculumManifest, curriculumSourceManifest, vocabulary, contexts, xml] = await Promise.all([
+  readFile(curriculumManifestPath, "utf8").then(JSON.parse),
+  readFile(curriculumSourcesPath, "utf8").then(JSON.parse),
   readFile(vocabularyPath, "utf8").then(JSON.parse),
   readFile(contextPath, "utf8").then(JSON.parse),
   loadKanjidicXml()
 ]);
-const curriculum = [
-  ...n5Curriculum.map((stage) => ({ ...stage, introducedAt: "n5" })),
-  {
-    stage: n4Curriculum.stage,
-    introducedAt: n4Curriculum.introducedAt,
-    meaningOverrides: n4Curriculum.meaningOverrides,
-    characters: [...n4Curriculum.characters]
-      .filter((character) => !n5Curriculum.some((stage) => stage.characters.includes(character)))
-      .join("")
+const rankByLevel = new Map(
+  curriculumManifest.levels.map(({ id, rank }) => [id, rank])
+);
+const expectedLevelIds = curriculumManifest.levels
+  .filter(({ id }) => id !== "foundation")
+  .map(({ id }) => id);
+const declaredLevelIds = Array.isArray(curriculumSourceManifest)
+  ? curriculumSourceManifest.map(({ level }) => level)
+  : [];
+
+if (
+  !Array.isArray(curriculumSourceManifest) ||
+  curriculumSourceManifest.length === 0 ||
+  curriculumSourceManifest.some(({ level, curriculumSource, curriculumFormat }) => (
+    !rankByLevel.has(level) ||
+    typeof curriculumSource !== "string" ||
+    !["stages", "reference"].includes(curriculumFormat)
+  )) ||
+  new Set(declaredLevelIds).size !== declaredLevelIds.length ||
+  expectedLevelIds.some((level) => !declaredLevelIds.includes(level)) ||
+  declaredLevelIds.some((level) => !expectedLevelIds.includes(level))
+) {
+  throw new Error("Kanji curriculum sources are invalid.");
+}
+
+const curriculumSources = await Promise.all(curriculumSourceManifest
+  .toSorted((left, right) => rankByLevel.get(left.level) - rankByLevel.get(right.level))
+  .map(async (descriptor) => ({
+    descriptor,
+    source: JSON.parse(await readFile(
+      join(sourceDirectory, descriptor.curriculumSource),
+      "utf8"
+    ))
+  })));
+const seenCurriculumCharacters = new Set();
+const curriculum = curriculumSources.flatMap(({ descriptor, source }) => {
+  const stages = descriptor.curriculumFormat === "stages"
+    ? source
+    : [{
+        stage: source.stage,
+        meaningOverrides: source.meaningOverrides,
+        characters: source.characters
+      }];
+
+  if (
+    !Array.isArray(stages) ||
+    stages.some(({ stage, characters }) => (
+      typeof stage !== "string" || typeof characters !== "string"
+    ))
+  ) {
+    throw new Error(`${descriptor.curriculumSource} has invalid kanji stages.`);
   }
-];
+
+  return stages.map((stage) => {
+    const characters = [...stage.characters]
+      .filter((character) => {
+        if (seenCurriculumCharacters.has(character)) {
+          return false;
+        }
+
+        seenCurriculumCharacters.add(character);
+        return true;
+      })
+      .join("");
+
+    return {
+      ...stage,
+      introducedAt: descriptor.level,
+      characters
+    };
+  });
+});
 const vocabularyEntries = [...vocabulary, ...contexts];
 const parser = new XMLParser({
   ignoreAttributes: false,
@@ -219,9 +223,13 @@ const result = [];
 const seenCharacters = new Set();
 
 for (const stage of curriculum) {
-  const vocabularyForms = createVocabularyForms(vocabularyEntries.filter((entry) => {
-    return stage.introducedAt === "n4" || entry.introducedAt === "n5";
-  }));
+  const availableVocabulary = vocabularyEntries.filter((entry) => {
+    const entryRank = rankByLevel.get(entry.introducedAt);
+    const stageRank = rankByLevel.get(stage.introducedAt);
+
+    return entryRank !== undefined && entryRank <= stageRank;
+  });
+  const vocabularyForms = createVocabularyForms(availableVocabulary);
 
   for (const character of stage.characters) {
     if (seenCharacters.has(character)) {
@@ -239,7 +247,7 @@ for (const stage of curriculum) {
     const meanings = readingGroups
       .flatMap((group) => asArray(group.meaning))
       .filter((meaning) => typeof meaning === "string");
-    const vocabularyMeaning = vocabulary.find((entry) => {
+    const vocabularyMeaning = availableVocabulary.find((entry) => {
       return entry.scope === "core" && entry.term === character;
     })?.meaning;
     const allOnReadings = unique(readings
@@ -260,7 +268,6 @@ for (const stage of curriculum) {
       return hasReadingEvidence(
         character,
         reading,
-        undefined,
         vocabularyForms,
         preserveLegacyVoicing
       );
@@ -268,13 +275,10 @@ for (const stage of curriculum) {
     let kunReadings = uniqueByReading(kunReadingCandidates
       .filter((reading) => {
         const normalized = normalizeKunReading(reading);
-        const fullReading = reading.replaceAll(".", "").replaceAll("-", "");
         return hasReadingEvidence(
           character,
           normalized,
-          fullReading,
           vocabularyForms,
-          preserveLegacyVoicing,
           preserveLegacyVoicing
         );
       })

@@ -54,7 +54,6 @@
     "meaningStory": "Une personne transmet un repère à la suivante : l’une remplace l’autre au fil d’une époque.",
     "readings": [
       "Chaque époque lance son DÉ : DÉ rappelle だい. On retrouve だい dans 時代（じだい）.",
-      "Le remplaçant se COUVRE : COUVA rappelle かわ. On retrouve かわ dans 代わり（かわり）.",
       "Un remplaçant prend le CAS : CA rappelle か. On retrouve か dans 代わり（かわり）."
     ]
   },
@@ -257,7 +256,7 @@
   "kanji-7d42": {
     "meaningStory": "Un fil atteint l’hiver et se noue : la suite prend fin.",
     "readings": [
-      "À la fin, le public dit « OH ! » : お. On retrouve お dans 終る（おわる）.",
+      "À la fin, le public dit « OH ! » : お. On retrouve お dans 終わる（おわる）.",
       "La fin fait dire « OH, WAOUH ! » : O-WA rappelle おわ. On retrouve おわ dans 終る（おわる）."
     ]
   },
@@ -271,7 +270,8 @@
   "kanji-7121": {
     "meaningStory": "Un ancien danseur paré au-dessus du feu a été emprunté pour exprimer l’absence : rien ou sans.",
     "readings": [
-      "Le vide fait « MOU… » : MOU rappelle む. On retrouve む dans 無理（むり）."
+      "Le vide fait « MOU… » : MOU rappelle む. On retrouve む dans 無理（むり）.",
+      "Il ne reste rien : « NA, c’est perdu ! » NA rappelle な dans 無くす（なくす）."
     ]
   },
   "kanji-771f": {
@@ -337,7 +337,7 @@
   "kanji-53ef": {
     "meaningStory": "Une bouche au coin de la rue donne son accord : oui, c’est possible.",
     "readings": [
-      "La bouche dit « CAPable ! » : CA donne か. On retrouve か dans 可愛い（かわいい）."
+      "La bouche dit « CAPable ! » : CA donne か. On retrouve か dans 可能（かのう）."
     ]
   },
   "kanji-8eab": {
@@ -374,8 +374,7 @@
   "kanji-8d77": {
     "meaningStory": "La personne se remet debout et part courir : elle se lève et commence.",
     "readings": [
-      "En se levant, on dit « OH ! » : お. On retrouve お dans 起きる（おきる）.",
-      "On réveille OKO : O-KO donne おこ. On retrouve おこ dans 起こす（おこす）."
+      "En se levant, on dit « OH ! » : お. On retrouve お dans 起きる（おきる）."
     ]
   },
   "kanji-8a66": {

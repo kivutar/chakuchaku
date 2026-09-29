@@ -3,11 +3,29 @@ import { readFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
+import { surfaceCarriesReading } from "../scripts/kanji-reading-evidence.js";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
 
+test("every active study level declares its kanji data and mnemonic sources", async () => {
+  const [curriculum, sources] = await Promise.all([
+    readFile(join(rootDirectory, "data", "curriculum.json"), "utf8").then(JSON.parse),
+    readFile(
+      join(rootDirectory, "data", "source", "kanji-curricula.json"),
+      "utf8"
+    ).then(JSON.parse)
+  ]);
+
+  assert.deepEqual(
+    sources.map(({ level }) => level),
+    curriculum.levels.filter(({ id }) => id !== "foundation").map(({ id }) => id)
+  );
+  assert.equal(new Set(sources.map(({ curriculumSource }) => curriculumSource)).size, sources.length);
+  assert.equal(new Set(sources.map(({ mnemonicSource }) => mnemonicSource)).size, sources.length);
+});
+
 test("kanji inventory combines the Rikkyo foundation with the pinned N4 delta", async () => {
-  const [kanji, curriculum, n4Curriculum] = await Promise.all([
+  const [kanji, curriculum, n4Curriculum, frenchKanji] = await Promise.all([
     readFile(join(rootDirectory, "data", "jlpt-n5-kanji.json"), "utf8").then(JSON.parse),
     readFile(
       join(rootDirectory, "data", "source", "rikkyo-n5-kanji.json"),
@@ -15,6 +33,10 @@ test("kanji inventory combines the Rikkyo foundation with the pinned N4 delta", 
     ).then(JSON.parse),
     readFile(
       join(rootDirectory, "data", "source", "jlpt-n4-kanji.json"),
+      "utf8"
+    ).then(JSON.parse),
+    readFile(
+      join(rootDirectory, "data", "source", "locales", "fr", "kanji.json"),
       "utf8"
     ).then(JSON.parse)
   ]);
@@ -90,6 +112,11 @@ test("kanji inventory combines the Rikkyo foundation with the pinned N4 delta", 
   assert.ok(!kanji.find(({ character }) => character === "道").onReadings.includes("とう"));
   assert.ok(!kanji.find(({ character }) => character === "験").onReadings.includes("げん"));
   assert.deepEqual(kanji.find(({ character }) => character === "写").onReadings, ["しゃ"]);
+  assert.equal(kanji.find(({ character }) => character === "月").meaning, "moon; month");
+  assert.equal(frenchKanji["kanji-6708"].meaning, "lune ; mois");
+  assert.deepEqual(kanji.find(({ character }) => character === "代").kunReadings, ["か"]);
+  assert.deepEqual(kanji.find(({ character }) => character === "終").kunReadings, ["お", "おわ"]);
+  assert.deepEqual(kanji.find(({ character }) => character === "起").kunReadings, ["お"]);
 
   for (const character of ["兄", "姉", "弟", "妹"]) {
     assert.equal(kanji.find((entry) => entry.character === character).stage, "B5");
@@ -106,7 +133,7 @@ test("kanji-only contexts have complete French display meanings", async () => {
   ]);
   const ids = contexts.map(({ id }) => id);
 
-  assert.equal(contexts.length, 20);
+  assert.equal(contexts.length, 21);
   assert.equal(new Set(ids).size, contexts.length);
   assert.deepEqual(Object.keys(french), ids);
 
@@ -123,9 +150,18 @@ test("kanji-only contexts have complete French display meanings", async () => {
       "kanji-context-shujin",
       "kanji-context-mokuteki",
       "kanji-context-kyouto",
-      "kanji-context-shusshin"
+      "kanji-context-shusshin",
+      "kanji-context-kanou"
     ]
   );
+});
+
+test("kanji reading evidence respects visible okurigana boundaries", () => {
+  assert.equal(surfaceCarriesReading("代わり", "かわり", "代", "か"), true);
+  assert.equal(surfaceCarriesReading("代わり", "かわり", "代", "かわ"), false);
+  assert.equal(surfaceCarriesReading("終る", "おわる", "終", "おわ"), true);
+  assert.equal(surfaceCarriesReading("終る", "おわる", "終", "お"), false);
+  assert.equal(surfaceCarriesReading("終わる", "おわる", "終", "お"), true);
 });
 
 test("kanji mnemonics cover the full curriculum in English and French", async () => {
@@ -150,26 +186,21 @@ test("kanji mnemonics cover the full curriculum in English and French", async ()
     join(rootDirectory, "data", "locales", "fr", "kanji-mnemonics.json"),
     "utf8"
   ).then(JSON.parse);
-  const sourceMnemonics = [
-    ...await readFile(
-      join(rootDirectory, "data", "source", "kanji-mnemonics.json"),
-      "utf8"
-    ).then(JSON.parse),
-    ...await readFile(
-      join(rootDirectory, "data", "source", "n4-kanji-mnemonics.json"),
-      "utf8"
-    ).then(JSON.parse)
-  ];
-  const frenchSourceMnemonics = {
-    ...await readFile(
-      join(rootDirectory, "data", "source", "locales", "fr", "kanji-mnemonics.json"),
-      "utf8"
-    ).then(JSON.parse),
-    ...await readFile(
-      join(rootDirectory, "data", "source", "locales", "fr", "n4-kanji-mnemonics.json"),
-      "utf8"
-    ).then(JSON.parse)
-  };
+  const sourceManifest = await readFile(
+    join(rootDirectory, "data", "source", "kanji-curricula.json"),
+    "utf8"
+  ).then(JSON.parse);
+  const sourceMnemonics = (await Promise.all(sourceManifest.map(({ mnemonicSource }) => (
+    readFile(join(rootDirectory, "data", "source", mnemonicSource), "utf8").then(JSON.parse)
+  )))).flat();
+  const frenchSourceMnemonics = Object.assign({}, ...await Promise.all(
+    sourceManifest.map(({ mnemonicSource }) => (
+      readFile(
+        join(rootDirectory, "data", "source", "locales", "fr", mnemonicSource),
+        "utf8"
+      ).then(JSON.parse)
+    ))
+  ));
 
   const mnemonicById = new Map(mnemonics.map((entry) => [entry.kanjiId, entry]));
   const sourceById = new Map(sourceMnemonics.map((entry) => [entry.kanjiId, entry]));
@@ -279,4 +310,8 @@ test("kanji mnemonics cover the full curriculum in English and French", async ()
   assert.deepEqual(matter.readings.map(({ reading }) => reading), ["こと", "じ"]);
   assert.equal(matter.readings[0].anchorReading, "ごと");
   assert.deepEqual(quality.components.map(({ symbol }) => symbol), ["斤", "斤", "貝"]);
+  assert.equal(
+    sourceById.get("kanji-7d42").readings.find(({ reading }) => reading === "お").anchorSurface,
+    "終わる"
+  );
 });

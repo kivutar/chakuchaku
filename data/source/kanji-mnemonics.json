@@ -369,8 +369,8 @@
         "anchorId": "vocab-9567eaf8fe9b"
       },
       {
-        "reading": "うま",
-        "story": "A newborn cries ‘OOH, MA!’ as soon as it sees its mother: OOH-MA cues うま in 生まれる（うまれる）.",
+        "reading": "う",
+        "story": "A newborn cries ‘OOH!’ as soon as it is born: OOH cues う in 生まれる（うまれる）.",
         "anchorId": "vocab-3db312786ce8"
       }
     ]
@@ -1630,8 +1630,8 @@
         "anchorId": "vocab-415439a1dbb6"
       },
       {
-        "reading": "うしろ",
-        "story": "You see a row behind you: “you see row” recalls うしろ.",
+        "reading": "うし",
+        "story": "You see someone behind you: ‘OOH, SHE!’ recalls うし in 後ろ（うしろ）.",
         "anchorId": "vocab-4125c1bacf52"
       }
     ]
@@ -2365,7 +2365,8 @@
       {
         "reading": "ま",
         "story": "A map shows where the road bends: map begins with ま.",
-        "anchorId": "vocab-9b9a58f11bf9"
+        "anchorId": "vocab-9b9a58f11bf9",
+        "anchorSurface": "曲がる"
       }
     ]
   },

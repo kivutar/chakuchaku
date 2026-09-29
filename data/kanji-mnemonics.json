@@ -476,8 +476,8 @@
         "anchorId": "vocab-9567eaf8fe9b"
       },
       {
-        "reading": "うま",
-        "story": "A newborn cries ‘OOH, MA!’ as soon as it sees its mother: OOH-MA cues うま in 生まれる（うまれる）.",
+        "reading": "う",
+        "story": "A newborn cries ‘OOH!’ as soon as it is born: OOH cues う in 生まれる（うまれる）.",
         "anchorId": "vocab-3db312786ce8"
       }
     ]
@@ -2148,8 +2148,8 @@
         "anchorId": "vocab-415439a1dbb6"
       },
       {
-        "reading": "うしろ",
-        "story": "You see a row behind you: “you see row” recalls うしろ.",
+        "reading": "うし",
+        "story": "You see someone behind you: ‘OOH, SHE!’ recalls うし in 後ろ（うしろ）.",
         "anchorId": "vocab-4125c1bacf52"
       }
     ]
@@ -3147,7 +3147,8 @@
       {
         "reading": "ま",
         "story": "A map shows where the road bends: map begins with ま.",
-        "anchorId": "vocab-9b9a58f11bf9"
+        "anchorId": "vocab-9b9a58f11bf9",
+        "anchorSurface": "曲がる"
       }
     ]
   },
@@ -4873,11 +4874,6 @@
         "anchorId": "vocab-0d603029022b"
       },
       {
-        "reading": "かわ",
-        "story": "The replacement arrives in a COVER; COVER begins like かわ. You meet かわ in 代わり（かわり）.",
-        "anchorId": "vocab-14631d2b2029"
-      },
-      {
         "reading": "か",
         "story": "A substitute CAT takes your place; its first sound is か. You meet か in 代わり（かわり）.",
         "anchorId": "vocab-14631d2b2029"
@@ -5603,8 +5599,9 @@
     "readings": [
       {
         "reading": "お",
-        "story": "At the end, the audience says ‘OH!’: お. You meet お in 終る（おわる）.",
-        "anchorId": "vocab-6393ca7aefde"
+        "story": "At the end, the audience says ‘OH!’: お. You meet お in 終わる（おわる）.",
+        "anchorId": "vocab-6393ca7aefde",
+        "anchorSurface": "終わる"
       },
       {
         "reading": "おわ",
@@ -5661,6 +5658,11 @@
         "reading": "む",
         "story": "The empty room echoes ‘MOO’; MOO gives む. You meet む in 無理（むり）.",
         "anchorId": "vocab-535d04fce7a1"
+      },
+      {
+        "reading": "な",
+        "story": "Nothing remains: ‘NAH, it is gone!’ NAH recalls な in 無くす（なくす）.",
+        "anchorId": "vocab-bfdcaa65f011"
       }
     ]
   },
@@ -5889,8 +5891,8 @@
     "readings": [
       {
         "reading": "か",
-        "story": "The mouth says ‘CAN!’; CAN begins with か. You meet か in 可愛い（かわいい）.",
-        "anchorId": "vocab-0a04072bf0cc"
+        "story": "The mouth says ‘CAN!’; CAN begins with か. You meet か in 可能（かのう）.",
+        "anchorId": "kanji-context-kanou"
       }
     ]
   },
@@ -6018,11 +6020,6 @@
         "reading": "お",
         "story": "On rising, say ‘OH!’; OH gives お. You meet お in 起きる（おきる）.",
         "anchorId": "vocab-72c5b362c4f2"
-      },
-      {
-        "reading": "おこ",
-        "story": "Wake OKO up; O-KO gives おこ. You meet おこ in 起こす（おこす）.",
-        "anchorId": "vocab-ebc949695b16"
       }
     ]
   },

@@ -83,6 +83,7 @@ Development-time generation is split from the browser runtime:
 | `data/grammar-coverage.md` | Generated checklist of grammar points covered by exercises | Committed |
 | `data/jlpt-n5-vocabulary.json` | Multi-level synthetic vocabulary inventory (legacy filename) | Committed |
 | `data/source/open-anki-jlpt-n4.csv` | Pinned upstream N4 vocabulary snapshot used by the importer | Committed |
+| `data/source/kanji-curricula.json` | Per-level kanji curriculum and mnemonic source manifest | Committed |
 | `data/source/rikkyo-n5-kanji.json` | Rikkyo's staged 209-character N5-equivalent curriculum | Committed |
 | `data/source/jlpt-n4-kanji.json` | Pinned 170-character N4 reference and the metadata used to derive its 79-character delta | Committed |
 | `data/jlpt-n5-kanji.json` | Generated kanji metadata used by lessons and Statistics | Committed |
@@ -610,10 +611,12 @@ snapshot can be checked or imported reproducibly with
 corrections, merged spellings, French localizations, and examples before
 committing a refreshed snapshot.
 
-Kanji curriculum membership comes from Rikkyo's B6-B4 list and the pinned N4
-reference rather than lesson authors. Run `npm run kanji:update` to refresh meanings and readings from
-KANJIDIC2, then run `npm run content` to regenerate lesson `kanjiIds`. KANJIDIC2
-attribution and licence copies are under `licenses/`.
+Kanji curriculum membership comes from the per-level sources declared in
+`data/source/kanji-curricula.json`, currently Rikkyo's B6-B4 list and the pinned
+N4 reference, rather than lesson authors. Run `npm run kanji:update` to refresh
+meanings and readings from KANJIDIC2, then run `npm run content` to regenerate
+lesson `kanjiIds`. KANJIDIC2 attribution and licence copies are under
+`licenses/`.
 
 Selected grammar sentences come from [Tatoeba](https://tatoeba.org/) under
 [CC BY 2.0 FR](https://creativecommons.org/licenses/by/2.0/fr/). Each sourced

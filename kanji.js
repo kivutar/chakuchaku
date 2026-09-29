@@ -56,6 +56,29 @@
     return Boolean(getSpecialReading(entry, reading));
   }
 
+  function resolveMnemonicAnchor(anchor, anchorSurface) {
+    if (!anchorSurface) {
+      return anchor;
+    }
+
+    const form = [
+      { surface: anchor?.term, reading: anchor?.reading },
+      ...(anchor?.variants || []).map((surface) => ({
+        surface,
+        reading: anchor.reading
+      })),
+      ...(anchor?.inflections || [])
+    ].find(({ surface, reading }) => (
+      surface === anchorSurface &&
+      typeof reading === "string" &&
+      reading
+    ));
+
+    return form
+      ? { ...anchor, term: form.surface, reading: form.reading }
+      : undefined;
+  }
+
   function linkVocabularyEntries(vocabulary, contexts) {
     const vocabularyByWord = new Map((Array.isArray(vocabulary) ? vocabulary : [])
       .filter(({ id, term, reading }) => {
@@ -452,6 +475,7 @@
     normalizeKanjiAnswer,
     getSpecialReading,
     isWholeWordReading,
+    resolveMnemonicAnchor,
     linkVocabularyEntries,
     createExercisePool,
     getKanjiInventory,

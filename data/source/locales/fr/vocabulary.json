@@ -1351,7 +1351,13 @@
     "acceptedAnswers": [
       "mignon",
       "adorable"
-    ]
+    ],
+    "specialReadings": {
+      "かわいい": {
+        "meaningStory": "L’écriture associe 可, possible ou acceptable, à 愛, amour : imaginez quelque chose de si adorable qu’il reçoit immédiatement votre approbation.",
+        "readingStory": "Lisez 可愛い comme un mot entier. Une caille crie « OUI, OUI ! » devant quelque chose de mignon : CAILLE-OUI-OUI rappelle かわいい."
+      }
+    }
   },
   "vocab-535c688e8bf9": {
     "meaning": "caractère chinois",

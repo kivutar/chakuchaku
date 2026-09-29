@@ -178,5 +178,14 @@
     "scope": "kanji-context",
     "introducedAt": "n4",
     "partOfSpeech": "noun"
+  },
+  {
+    "id": "kanji-context-kanou",
+    "term": "可能",
+    "reading": "かのう",
+    "meaning": "possible; possibility",
+    "scope": "kanji-context",
+    "introducedAt": "n4",
+    "partOfSpeech": "adjective"
   }
 ]

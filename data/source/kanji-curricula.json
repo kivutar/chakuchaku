@@ -1,0 +1,14 @@
+[
+  {
+    "level": "n5",
+    "curriculumSource": "rikkyo-n5-kanji.json",
+    "curriculumFormat": "stages",
+    "mnemonicSource": "kanji-mnemonics.json"
+  },
+  {
+    "level": "n4",
+    "curriculumSource": "jlpt-n4-kanji.json",
+    "curriculumFormat": "reference",
+    "mnemonicSource": "n4-kanji-mnemonics.json"
+  }
+]

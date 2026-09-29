@@ -3517,7 +3517,18 @@ async function pickNextKanjiExercise(requestedKanjiId) {
           );
         }
 
-        return { ...readingMnemonic, anchor };
+        const resolvedAnchor = globalThis.JlptN5Kanji.resolveMnemonicAnchor(
+          anchor,
+          readingMnemonic.anchorSurface
+        );
+
+        if (!resolvedAnchor) {
+          throw new Error(
+            `No mnemonic anchor form is available for ${exercise.kanjiId}:${readingMnemonic.reading}.`
+          );
+        }
+
+        return { ...readingMnemonic, anchor: resolvedAnchor };
       })
     };
   }

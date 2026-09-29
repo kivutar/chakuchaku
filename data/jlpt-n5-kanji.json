@@ -258,9 +258,7 @@
     ],
     "kunReadings": [
       "い",
-      "う",
-      "うま",
-      "うまれ"
+      "う"
     ]
   },
   {
@@ -954,7 +952,7 @@
   {
     "id": "kanji-6708",
     "character": "月",
-    "meaning": "moon",
+    "meaning": "moon; month",
     "stage": "B5",
     "introducedAt": "n5",
     "onReadings": [
@@ -1025,7 +1023,6 @@
       "めい"
     ],
     "kunReadings": [
-      "あ",
       "あか"
     ]
   },
@@ -1141,7 +1138,6 @@
     ],
     "kunReadings": [
       "うし",
-      "うしろ",
       "あと"
     ]
   },
@@ -1277,7 +1273,7 @@
   {
     "id": "kanji-9593",
     "character": "間",
-    "meaning": "interval; space; between",
+    "meaning": "interval",
     "stage": "B5",
     "introducedAt": "n5",
     "onReadings": [
@@ -1299,7 +1295,7 @@
   {
     "id": "kanji-89aa",
     "character": "親",
-    "meaning": "a parent",
+    "meaning": "parent",
     "stage": "B5",
     "introducedAt": "n5",
     "onReadings": [
@@ -1525,7 +1521,7 @@
   {
     "id": "kanji-6c17",
     "character": "気",
-    "meaning": "spirit, mood",
+    "meaning": "spirit",
     "stage": "B5",
     "introducedAt": "n5",
     "onReadings": [
@@ -1777,7 +1773,7 @@
   {
     "id": "kanji-4e8b",
     "character": "事",
-    "meaning": "thing(s), matter(s), fact",
+    "meaning": "matter",
     "stage": "B4",
     "introducedAt": "n5",
     "onReadings": [
@@ -2094,7 +2090,7 @@
   {
     "id": "kanji-5b57",
     "character": "字",
-    "meaning": "letter; character",
+    "meaning": "character",
     "stage": "B4",
     "introducedAt": "n5",
     "onReadings": [
@@ -2256,7 +2252,7 @@
   {
     "id": "kanji-5e2d",
     "character": "席",
-    "meaning": "a seat",
+    "meaning": "seat",
     "stage": "B4",
     "introducedAt": "n5",
     "onReadings": [
@@ -2311,7 +2307,7 @@
   {
     "id": "kanji-7b54",
     "character": "答",
-    "meaning": "answer, response",
+    "meaning": "solution",
     "stage": "B4",
     "introducedAt": "n5",
     "onReadings": [],
@@ -2401,7 +2397,7 @@
   {
     "id": "kanji-8868",
     "character": "表",
-    "meaning": "surface; front; outside",
+    "meaning": "surface",
     "stage": "B4",
     "introducedAt": "n5",
     "onReadings": [
@@ -2412,7 +2408,7 @@
   {
     "id": "kanji-5473",
     "character": "味",
-    "meaning": "flavor, taste",
+    "meaning": "flavor",
     "stage": "B4",
     "introducedAt": "n5",
     "onReadings": [
@@ -2560,7 +2556,6 @@
       "だい"
     ],
     "kunReadings": [
-      "かわ",
       "か"
     ]
   },
@@ -2950,7 +2945,9 @@
     "onReadings": [
       "む"
     ],
-    "kunReadings": []
+    "kunReadings": [
+      "な"
+    ]
   },
   {
     "id": "kanji-771f",
@@ -3130,8 +3127,7 @@
     "introducedAt": "n4",
     "onReadings": [],
     "kunReadings": [
-      "お",
-      "おこ"
+      "お"
     ]
   },
   {

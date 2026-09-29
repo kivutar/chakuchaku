@@ -2206,6 +2206,15 @@
     "term": "可愛い",
     "reading": "かわいい",
     "meaning": "cute, adorable",
+    "specialReadings": [
+      {
+        "reading": "かわいい",
+        "type": "whole-word",
+        "category": "ateji",
+        "meaningStory": "The spelling pairs 可, possible or acceptable, with 愛, love: picture something so lovable that it earns immediate approval.",
+        "readingStory": "Read 可愛い as one whole word. A COW says ‘E-E!’ when it sees something cute: COW-E-E recalls かわいい."
+      }
+    ],
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",

@@ -13,6 +13,7 @@ const {
   normalizeReading,
   normalizeKanjiAnswer,
   isWholeWordReading,
+  resolveMnemonicAnchor,
   linkVocabularyEntries,
   createExercisePool,
   getKanjiInventory,
@@ -25,6 +26,23 @@ const {
   createKanjiRating,
   createPositiveVocabularyRating
 } = globalThis.JlptN5Kanji;
+
+test("mnemonic anchor surfaces retain the matching form reading", () => {
+  const anchor = {
+    term: "行く",
+    reading: "いく",
+    variants: ["ゆく"],
+    inflections: [{ surface: "行った", reading: "いった" }]
+  };
+
+  assert.deepEqual(resolveMnemonicAnchor(anchor, "行った"), {
+    ...anchor,
+    term: "行った",
+    reading: "いった"
+  });
+  assert.equal(resolveMnemonicAnchor(anchor, "行かない"), undefined);
+  assert.equal(resolveMnemonicAnchor(anchor), anchor);
+});
 
 test("kanji contexts link to an exact vocabulary match", () => {
   const contexts = [{

@@ -52783,5 +52783,53 @@
         "reading": "。"
       }
     ]
+  },
+  {
+    "vocabularyId": "kanji-context-kanou",
+    "text": "明日は旅行が可能です。",
+    "targetSurface": "可能",
+    "targetReading": "かのう",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "Travel is possible tomorrow.",
+    "tokens": [
+      {
+        "surface": "明日",
+        "category": "noun",
+        "reading": "あした",
+        "vocabularyId": "vocab-bec9ce9d08c8"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "旅行",
+        "category": "noun",
+        "reading": "りょこう",
+        "vocabularyId": "vocab-2e3ba98d2367"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "可能",
+        "category": "adjective",
+        "reading": "かのう",
+        "vocabularyId": "kanji-context-kanou"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
   }
 ]
