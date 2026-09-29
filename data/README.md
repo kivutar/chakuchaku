@@ -120,23 +120,31 @@ audio file is safely shared. The affirmative `いいです` shares the regular
 `～いです` point. Per-word `excludedForms` prevent misleading mechanical drills;
 for example, 分かる does not receive the unrelated potential-looking form 分かれる.
 
-## JLPT N5 vocabulary inventory
+## Multi-level vocabulary inventory
 
-`jlpt-n5-vocabulary.json` is a flat synthetic vocabulary inventory. There is no
+`jlpt-n5-vocabulary.json` is a flat synthetic vocabulary inventory; its legacy
+filename is retained for stored-data and tooling compatibility. There is no
 official current word list: the JLPT organizers explain that they stopped
 publishing vocabulary, kanji, and grammar specifications after the 2010 revision
 because the test is intended to measure communicative use rather than memorized
 lists.
 
-The inventory currently contains 868 entries:
+The inventory currently contains 1,480 entries: 868 introduced at N5 and 612
+introduced at N4.
 
-- 718 `core` entries adapted from the MIT-licensed Open Anki JLPT N5 deck at
-  commit `1ad66734417aca9dbcca6b2d5ee440cb13ab3ba0`.
+- 719 N5 `core` entries adapted from the MIT-licensed Open Anki decks at commit
+  `1ad66734417aca9dbcca6b2d5ee440cb13ab3ba0`. This includes `日（ひ）`, which
+  the N4 source labels later but the existing N5 exercises already teach.
+- 610 N4 `core` entries imported from that commit's 668-row N4 snapshot. The
+  importer merges 43 entries already represented in the app and excludes 14
+  grammar constructions that belong in grammar or conjugation rather than the
+  vocabulary SRS.
 - 3 `core` Katakana entries restored by comparison with the former JLPT Level 4
   vocabulary specification: `グラス`, `コピー`, and `スリッパ`.
 - 1 contextual core entry, `田んぼ`, added to give the initial Kanji curriculum
   a natural complete-word exercise for `田`.
-- 1 N4 core entry, `間`, required by the first N4 grammar exercises.
+- 2 curated N4 core entries: `間`, required by the first N4 grammar exercises,
+  and practical Katakana word `ボール`.
 - 145 `supplemental` entries: 42 recognizable and motivating beginner words,
   29 words needed by the current lessons, 37 words curated for practical
   Katakana coverage, 13 essential A1 expressions and everyday words, and 14
@@ -163,8 +171,9 @@ Each entry contains:
 - `scope`: `core` or `supplemental`.
 - `source`: the origin of the entry.
 - `audio`: an optional `assets/voices/vocab/*.m4a` pronunciation used by kana exercises.
-- `voiceSlug`: required only when multiple entries have the same romanized reading;
-  it adds a stable semantic suffix such as `ame-rain` or `ame-candy`.
+- `voiceSlug`: a stable semantic suffix such as `ame-rain` or `ame-candy` for
+  colliding romanized readings. One pre-existing entry may retain its legacy
+  unsuffixed audio path while every newly colliding entry receives a suffix.
 - `variants`: optional alternative written forms.
 - `inflections`: optional surface/reading pairs for tokenizer ambiguity.
 - `topic`: an optional topic on curated supplemental entries.
@@ -174,13 +183,20 @@ The upstream MIT notice is retained in
 scope of the synthetic list:
 
 - https://www.jlpt.jp/e/faq/ (no official post-2010 vocabulary specification)
-- https://github.com/jamsinclair/open-anki-jlpt-decks (open N5 dataset)
+- https://github.com/jamsinclair/open-anki-jlpt-decks (open N5 and N4 datasets)
 - https://www.mlcjapanese.co.jp/n5_04_01.html (about 800 words; 802-item study list)
 - https://www.tanos.co.uk/jlpt/jlpt5/ (689-word N5 study list)
 
-`katakana-vocabulary.md` documents the 120-entry Katakana pool, its exact
-selection rules, additions, source comparisons, and kana coverage. It uses the
-former Level 4 Katakana subset as the exam-oriented baseline, then adds a small
+`source/open-anki-jlpt-n4.csv` is the pinned N4 input. Run
+`npm run vocabulary:n4:check` to prove that every row is imported, merged, or
+deliberately excluded, and `npm run vocabulary:n4:import` after replacing the
+snapshot. The importer preserves source ordering (with Genki-tagged rows first),
+normalizes readings, assigns stable content-derived IDs, resolves known source
+errors, and protects existing audio filenames when a new homophone appears.
+
+`katakana-vocabulary.md` documents the Katakana pool, its exact selection
+rules, additions, source comparisons, and kana coverage. It uses the former
+Level 4 Katakana subset as the exam-oriented baseline, then adds a small
 beginner layer cross-checked against Irodori and Marugoto A1 materials.
 
 ## JLPT N5 kanji inventory

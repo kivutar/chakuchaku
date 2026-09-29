@@ -122,9 +122,20 @@
       }
 
       if (entries.length > 1) {
+        const entriesWithoutOverride = entries.filter(({ voiceSlug }) => {
+          return voiceSlug === undefined;
+        });
+
+        if (entriesWithoutOverride.length > 1) {
+          throw new Error(
+            `${entriesWithoutOverride[1].id}: voice filename ${readingSlug}.m4a ` +
+            `is already used by ${entriesWithoutOverride[0].id}.`
+          );
+        }
+
         for (const entry of entries) {
           if (
-            typeof entry.voiceSlug !== "string" ||
+            entry.voiceSlug !== undefined &&
             !entry.voiceSlug.startsWith(`${readingSlug}-`)
           ) {
             throw new Error(

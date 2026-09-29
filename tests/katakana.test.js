@@ -169,12 +169,12 @@ test("the curated pool contains every unique all-Katakana vocabulary word", asyn
   ));
   const words = createWordPool(vocabulary);
 
-  assert.equal(words.length, 119);
-  assert.equal(new Set(words.map(({ katakana }) => katakana)).size, 119);
-  assert.equal(createKanaInventory(words).length, 86);
-  assert.equal(createSingleKanaPool(words).length, 84);
+  assert.equal(words.length, 158);
+  assert.equal(new Set(words.map(({ katakana }) => katakana)).size, 158);
+  assert.equal(createKanaInventory(words).length, 87);
+  assert.equal(createSingleKanaPool(words).length, 85);
   assert.equal(words.every(({ kanaPairs }) => kanaPairs.length > 0), true);
-  assert.equal(createKanaPairInventory(words).length, 86);
+  assert.equal(createKanaPairInventory(words).length, 87);
 
   for (const word of words) {
     assert.equal(wanakana.toKatakana(word.romaji), word.katakana, word.katakana);

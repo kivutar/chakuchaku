@@ -566,6 +566,12 @@ function tokenizeLesson(lesson, vocabularyIndex, options = {}) {
 
       if (readingMatches.length === 1) {
         [selectedMatch] = readingMatches;
+      } else {
+        const preferredMatches = candidates.filter(({ preferReading }) => preferReading);
+
+        if (preferredMatches.length === 1) {
+          [selectedMatch] = preferredMatches;
+        }
       }
     } else if (
       candidates.length === 0 &&

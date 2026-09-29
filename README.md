@@ -81,7 +81,8 @@ Development-time generation is split from the browser runtime:
 | `data/jlpt-n5-grammar.json` | Canonical flat grammar inventory, retaining its legacy filename | Committed |
 | `data/jlpt-n5-conjugation.json` | Curated verbs/adjectives and their inflection classes | Committed |
 | `data/grammar-coverage.md` | Generated checklist of grammar points covered by exercises | Committed |
-| `data/jlpt-n5-vocabulary.json` | Synthetic N5 vocabulary core, learner favorites, and reading-level whole-word exceptions | Committed |
+| `data/jlpt-n5-vocabulary.json` | Multi-level synthetic vocabulary inventory (legacy filename) | Committed |
+| `data/source/open-anki-jlpt-n4.csv` | Pinned upstream N4 vocabulary snapshot used by the importer | Committed |
 | `data/source/rikkyo-n5-kanji.json` | Rikkyo's staged 209-character N5-equivalent curriculum | Committed |
 | `data/jlpt-n5-kanji.json` | Generated kanji metadata used by lessons and Statistics | Committed |
 | `data/kanji-contexts.json` | Kanji-only example words for curriculum coverage gaps | Committed |
@@ -203,11 +204,12 @@ npm run voices -- --id left-home-without-key --force
 ```
 
 Vocabulary generation is a separate, explicitly bounded command. It processes
-the 721 core entries before the 105 supplemental entries and uses the stable
+the 1,335 core entries before the 145 supplemental entries and uses the stable
 path `assets/voices/vocab/<romaji>.m4a`. Homophones use curated semantic names
-such as `ame-rain.m4a` and `ame-candy.m4a`. Unsafe names, unresolved collisions,
-duplicate paths, and unnecessary overrides fail validation. Unlike lesson
-generation, it refuses an implicit unlimited run:
+such as `ame-rain.m4a` and `ame-candy.m4a`; one older unambiguous base filename
+may be retained when a newly added homophone receives the semantic suffix.
+Unsafe names, unresolved collisions, duplicate paths, and unnecessary overrides
+fail validation. Unlike lesson generation, it refuses an implicit unlimited run:
 
 ```sh
 npm run voices:vocabulary -- --limit 1
@@ -595,9 +597,14 @@ stale. A checked point means at least one exercise meaningfully assesses it; it
 does not claim mastery. One exercise may assess several points, and a point
 remains checked when it is reinforced by more than one exercise.
 
-The vocabulary inventory is curated directly in `data/jlpt-n5-vocabulary.json`.
-Keep exam-oriented additions as `core` and motivating beginner additions as
-`supplemental`; do not imply that either is an official JLPT item list.
+The vocabulary inventory lives in `data/jlpt-n5-vocabulary.json`; the filename
+is retained for compatibility even though it now spans N5 and N4. Keep
+exam-oriented additions as `core` and motivating additions as `supplemental`;
+do not imply that either is an official JLPT item list. The pinned Open Anki N4
+snapshot can be checked or imported reproducibly with
+`npm run vocabulary:n4:check` and `npm run vocabulary:n4:import`. Review source
+corrections, merged spellings, French localizations, and examples before
+committing a refreshed snapshot.
 
 Kanji curriculum membership comes from Rikkyo's B6-B4 list rather than lesson
 authors. Run `npm run kanji:update` to refresh meanings and readings from

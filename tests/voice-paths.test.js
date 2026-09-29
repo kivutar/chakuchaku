@@ -21,7 +21,7 @@ test("unique readings produce readable rōmaji voice paths", () => {
   ));
 });
 
-test("reading collisions require explicit unique semantic slugs", () => {
+test("reading collisions preserve one legacy path and require semantic slugs for the rest", () => {
   const rain = {
     id: "rain",
     reading: "あめ",
@@ -35,9 +35,18 @@ test("reading collisions require explicit unique semantic slugs", () => {
 
   assert.doesNotThrow(() => validateVocabularyVoiceSlugs([rain, candy], wanakana));
   assert.equal(getVocabularyVoicePath(rain, wanakana), "assets/voices/vocab/ame-rain.m4a");
+  const legacyPaths = validateVocabularyVoiceSlugs([
+    { id: "rain", reading: "あめ" }, candy
+  ], wanakana);
+
+  assert.equal(legacyPaths.get("ame").id, "rain");
+  assert.equal(legacyPaths.get("ame-candy").id, "candy");
   assert.throws(
-    () => validateVocabularyVoiceSlugs([rain, { id: "candy", reading: "あめ" }], wanakana),
-    /needs a semantic voiceSlug/u
+    () => validateVocabularyVoiceSlugs([
+      { id: "rain", reading: "あめ" },
+      { id: "candy", reading: "あめ" }
+    ], wanakana),
+    /already used/u
   );
   assert.throws(
     () => validateVocabularyVoiceSlugs([
@@ -116,8 +125,8 @@ test("the curated vocabulary has one stable readable voice path per entry", asyn
   ));
   const voiceSlugs = validateVocabularyVoiceSlugs(vocabulary, wanakana);
 
-  assert.equal(voiceSlugs.size, 868);
-  assert.equal(vocabulary.filter(({ voiceSlug }) => voiceSlug).length, 61);
+  assert.equal(voiceSlugs.size, 1480);
+  assert.equal(vocabulary.filter(({ voiceSlug }) => voiceSlug).length, 109);
   assert.equal(
     getVocabularyVoicePath(vocabulary.find(({ term }) => term === "青い"), wanakana),
     "assets/voices/vocab/aoi.m4a"

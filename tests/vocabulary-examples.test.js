@@ -1,9 +1,40 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { repairTargetSurface } from "../scripts/generate-vocabulary-examples.js";
 
 const readJson = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8")
   .then(JSON.parse);
+
+test("generated examples repair dictionary-form targets to their visible inflection", () => {
+  assert.deepEqual(
+    repairTargetSurface(
+      {
+        vocabularyId: "ganbaru",
+        japanese: "私は頑張ります。",
+        targetSurface: "頑張る",
+        english: "I will do my best.",
+        french: "Je ferai de mon mieux."
+      },
+      { vocabularyId: "ganbaru", term: "頑張る", reading: "がんばる" }
+    ),
+    {
+      vocabularyId: "ganbaru",
+      japanese: "私は頑張ります。",
+      targetSurface: "頑張り",
+      english: "I will do my best.",
+      french: "Je ferai de mon mieux."
+    }
+  );
+
+  assert.equal(
+    repairTargetSurface(
+      { japanese: "子供が泣きます。", targetSurface: "泣く" },
+      { term: "泣く", reading: "なく" }
+    ).targetSurface,
+    "泣き"
+  );
+});
 
 test("every vocabulary and kanji-context item has one short localized example", async () => {
   const [

@@ -5202,10 +5202,3682 @@
     "translation": "My father built a house."
   },
   {
+    "vocabularyId": "vocab-f3881ce313e7",
+    "text": "日が強いです。",
+    "targetSurface": "日",
+    "translation": "The sun is strong."
+  },
+  {
     "vocabularyId": "vocab-e2192acf21d2",
     "text": "休みの間、本を読みます。",
     "targetSurface": "間",
     "translation": "I read books during the vacation."
+  },
+  {
+    "vocabularyId": "vocab-4a1dc826a5bd",
+    "text": "僕は大学生です。",
+    "targetSurface": "大学生",
+    "translation": "I am a university student."
+  },
+  {
+    "vocabularyId": "vocab-5a651c3b2904",
+    "text": "科学が好きです。",
+    "targetSurface": "科学",
+    "translation": "I like science."
+  },
+  {
+    "vocabularyId": "vocab-19ccc2f9d429",
+    "text": "アメリカへ行く。",
+    "targetSurface": "アメリカ",
+    "translation": "I am going to America."
+  },
+  {
+    "vocabularyId": "vocab-4354d788c45c",
+    "text": "歴史を習います。",
+    "targetSurface": "歴史",
+    "translation": "I study history."
+  },
+  {
+    "vocabularyId": "vocab-ef10bf26926e",
+    "text": "専門は日本語です。",
+    "targetSurface": "専門",
+    "translation": "My major is Japanese."
+  },
+  {
+    "vocabularyId": "vocab-4239848dffa0",
+    "text": "政治はむずかしい。",
+    "targetSurface": "政治",
+    "translation": "Politics is difficult."
+  },
+  {
+    "vocabularyId": "vocab-0fb876dff5a7",
+    "text": "高校生ですか？",
+    "targetSurface": "高校生",
+    "translation": "Are you a high school student?"
+  },
+  {
+    "vocabularyId": "vocab-c2a7e49d3e08",
+    "text": "文学を読みます。",
+    "targetSurface": "文学",
+    "translation": "I read literature."
+  },
+  {
+    "vocabularyId": "vocab-467f35f47723",
+    "text": "大抵八時です。",
+    "targetSurface": "大抵",
+    "translation": "It is usually eight o'clock."
+  },
+  {
+    "vocabularyId": "vocab-f6b2bc587c44",
+    "text": "アルバイトをする。",
+    "targetSurface": "アルバイト",
+    "translation": "I do a part-time job."
+  },
+  {
+    "vocabularyId": "vocab-8a8d75ddf050",
+    "text": "だから、行きます。",
+    "targetSurface": "だから",
+    "translation": "So, I will go."
+  },
+  {
+    "vocabularyId": "vocab-46223139cb17",
+    "text": "さっき帰った。",
+    "targetSurface": "さっき",
+    "translation": "I came back a little while ago."
+  },
+  {
+    "vocabularyId": "vocab-02fadb938256",
+    "text": "お土産を買う。",
+    "targetSurface": "お土産",
+    "translation": "I buy a souvenir."
+  },
+  {
+    "vocabularyId": "vocab-1ab856befb29",
+    "text": "僕は学生です。",
+    "targetSurface": "僕",
+    "translation": "I am a student."
+  },
+  {
+    "vocabularyId": "vocab-f852ba3920a3",
+    "text": "先生は優しい。",
+    "targetSurface": "優しい",
+    "translation": "The teacher is kind."
+  },
+  {
+    "vocabularyId": "vocab-c2674f41fc44",
+    "text": "駅へ急ぐ。",
+    "targetSurface": "急ぐ",
+    "translation": "I hurry to the station."
+  },
+  {
+    "vocabularyId": "vocab-db78b5f16179",
+    "text": "少し痩せる。",
+    "targetSurface": "痩せる",
+    "translation": "I lose a little weight."
+  },
+  {
+    "vocabularyId": "vocab-0c360237fbab",
+    "text": "もちろん行く。",
+    "targetSurface": "もちろん",
+    "translation": "Of course I will go."
+  },
+  {
+    "vocabularyId": "vocab-75ac90da3b27",
+    "text": "食べすぎて太る。",
+    "targetSurface": "太る",
+    "translation": "I gain weight from eating too much."
+  },
+  {
+    "vocabularyId": "vocab-f64f1036d22a",
+    "text": "うん、いいよ。",
+    "targetSurface": "うん",
+    "translation": "Yeah, that's fine."
+  },
+  {
+    "vocabularyId": "vocab-d5a23463d010",
+    "text": "空気がきれい。",
+    "targetSurface": "空気",
+    "translation": "The air is clean."
+  },
+  {
+    "vocabularyId": "vocab-bf761b22ddcb",
+    "text": "天気予報をみる。",
+    "targetSurface": "天気予報",
+    "translation": "I check the weather forecast."
+  },
+  {
+    "vocabularyId": "vocab-5178598c5709",
+    "text": "今度、行こう。",
+    "targetSurface": "今度",
+    "translation": "Let's go next time."
+  },
+  {
+    "vocabularyId": "vocab-98d08dfe0a16",
+    "text": "みんなで踊る。",
+    "targetSurface": "踊る",
+    "translation": "Everyone dances together."
+  },
+  {
+    "vocabularyId": "vocab-095b33ccc743",
+    "text": "一人で寂しい。",
+    "targetSurface": "寂しい",
+    "translation": "I feel lonely by myself."
+  },
+  {
+    "vocabularyId": "vocab-feaae8188f52",
+    "text": "是非来てください。",
+    "targetSurface": "是非",
+    "translation": "Please come, by all means."
+  },
+  {
+    "vocabularyId": "vocab-f8ca7072e3f2",
+    "text": "コンサートへ行く。",
+    "targetSurface": "コンサート",
+    "translation": "I go to a concert."
+  },
+  {
+    "vocabularyId": "vocab-aabce87015af",
+    "text": "ピアノを弾く。",
+    "targetSurface": "ピアノ",
+    "translation": "I play the piano."
+  },
+  {
+    "vocabularyId": "vocab-ef4cdc0659e0",
+    "text": "床屋へ行く。",
+    "targetSurface": "床屋",
+    "translation": "I go to the barber."
+  },
+  {
+    "vocabularyId": "vocab-888b9aa03eb5",
+    "text": "秋はいい季節。",
+    "targetSurface": "季節",
+    "translation": "Autumn is a nice season."
+  },
+  {
+    "vocabularyId": "vocab-6eb4452fedae",
+    "text": "世界は広い。",
+    "targetSurface": "世界",
+    "translation": "The world is vast."
+  },
+  {
+    "vocabularyId": "vocab-07131acd8b99",
+    "text": "日曜日に決める。",
+    "targetSurface": "決める",
+    "translation": "I will decide on Sunday."
+  },
+  {
+    "vocabularyId": "vocab-20fc26e20fc1",
+    "text": "手袋を買う。",
+    "targetSurface": "手袋",
+    "translation": "I buy gloves."
+  },
+  {
+    "vocabularyId": "vocab-b7d9c4f1e563",
+    "text": "予約をします。",
+    "targetSurface": "予約",
+    "translation": "I make a reservation."
+  },
+  {
+    "vocabularyId": "vocab-c614c18b1bec",
+    "text": "この頃、暑い。",
+    "targetSurface": "この頃",
+    "translation": "These days, it is hot."
+  },
+  {
+    "vocabularyId": "vocab-5621763f634f",
+    "text": "社長は忙しい。",
+    "targetSurface": "社長",
+    "translation": "The company president is busy."
+  },
+  {
+    "vocabularyId": "vocab-66d5a1c32b63",
+    "text": "美術館へ行く。",
+    "targetSurface": "美術館",
+    "translation": "I go to the art museum."
+  },
+  {
+    "vocabularyId": "vocab-1fb48109e004",
+    "text": "おもちゃがほしい。",
+    "targetSurface": "おもちゃ",
+    "translation": "I want a toy."
+  },
+  {
+    "vocabularyId": "vocab-13804b9c251f",
+    "text": "夢をみる。",
+    "targetSurface": "夢",
+    "translation": "I have a dream."
+  },
+  {
+    "vocabularyId": "vocab-6e1805adea06",
+    "text": "久しぶりです。",
+    "targetSurface": "久しぶり",
+    "translation": "It has been a long time."
+  },
+  {
+    "vocabularyId": "vocab-5118dfe23709",
+    "text": "将来が楽しみです。",
+    "targetSurface": "将来",
+    "translation": "I’m looking forward to the future."
+  },
+  {
+    "vocabularyId": "vocab-213adba436b6",
+    "text": "湖が見えます。",
+    "targetSurface": "湖",
+    "translation": "I can see the lake."
+  },
+  {
+    "vocabularyId": "vocab-00773cf128bf",
+    "text": "彼は学生です。",
+    "targetSurface": "彼",
+    "translation": "He is a student."
+  },
+  {
+    "vocabularyId": "vocab-410b73381c41",
+    "text": "試合に勝ちました。",
+    "targetSurface": "試合",
+    "translation": "We won the match."
+  },
+  {
+    "vocabularyId": "vocab-d8efb8884948",
+    "text": "彼女は先生です。",
+    "targetSurface": "彼女",
+    "translation": "She is a teacher."
+  },
+  {
+    "vocabularyId": "vocab-7d35ef299db0",
+    "text": "もうすぐ来ます。",
+    "targetSurface": "もうすぐ",
+    "translation": "He will come very soon."
+  },
+  {
+    "vocabularyId": "vocab-b6b3f5d2ec09",
+    "text": "お宅はきれいです。",
+    "targetSurface": "お宅",
+    "translation": "Your home is nice."
+  },
+  {
+    "vocabularyId": "vocab-dd1a5d8063ce",
+    "text": "先生は厳しいです。",
+    "targetSurface": "厳しい",
+    "translation": "The teacher is strict."
+  },
+  {
+    "vocabularyId": "vocab-ab9eae2e05a3",
+    "text": "私は頑張ります。",
+    "targetSurface": "頑張り",
+    "translation": "I will do my best."
+  },
+  {
+    "vocabularyId": "vocab-3dbe0fa2abd1",
+    "text": "文法を習います。",
+    "targetSurface": "文法",
+    "translation": "I study grammar."
+  },
+  {
+    "vocabularyId": "vocab-fe32ad045449",
+    "text": "子供が泣きます。",
+    "targetSurface": "泣き",
+    "translation": "The child is crying."
+  },
+  {
+    "vocabularyId": "vocab-07ee67a72501",
+    "text": "着物を着ます。",
+    "targetSurface": "着物",
+    "translation": "I wear a kimono."
+  },
+  {
+    "vocabularyId": "vocab-c8b78a5bde6a",
+    "text": "約束を忘れません。",
+    "targetSurface": "約束",
+    "translation": "I won't forget my promise."
+  },
+  {
+    "vocabularyId": "vocab-58974357459a",
+    "text": "とても嬉しいです。",
+    "targetSurface": "嬉しい",
+    "translation": "I’m very happy."
+  },
+  {
+    "vocabularyId": "vocab-2d0169f5fc5e",
+    "text": "ご主人は会社です。",
+    "targetSurface": "ご主人",
+    "translation": "Her husband is at work."
+  },
+  {
+    "vocabularyId": "vocab-497569560cde",
+    "text": "指輪を買います。",
+    "targetSurface": "指輪",
+    "translation": "I will buy a ring."
+  },
+  {
+    "vocabularyId": "vocab-4bb5dd8a62e0",
+    "text": "地震がありました。",
+    "targetSurface": "地震",
+    "translation": "There was an earthquake."
+  },
+  {
+    "vocabularyId": "vocab-d4dc972ab510",
+    "text": "ごみを捨てます。",
+    "targetSurface": "捨て",
+    "translation": "I throw away the trash."
+  },
+  {
+    "vocabularyId": "vocab-291f4439ec65",
+    "text": "鍵を探します。",
+    "targetSurface": "探し",
+    "translation": "I’m looking for my keys."
+  },
+  {
+    "vocabularyId": "vocab-f6e600542563",
+    "text": "旅館に泊まります。",
+    "targetSurface": "旅館",
+    "translation": "I stay at a ryokan."
+  },
+  {
+    "vocabularyId": "vocab-127859f34798",
+    "text": "最近忙しいです。",
+    "targetSurface": "最近",
+    "translation": "I’ve been busy lately."
+  },
+  {
+    "vocabularyId": "vocab-e99feae5bc25",
+    "text": "山が見えます。",
+    "targetSurface": "見え",
+    "translation": "I can see the mountain."
+  },
+  {
+    "vocabularyId": "vocab-238d8325791a",
+    "text": "この番組は好きです。",
+    "targetSurface": "番組",
+    "translation": "I like this program."
+  },
+  {
+    "vocabularyId": "vocab-89dc1e02df64",
+    "text": "ごみを出します。",
+    "targetSurface": "ごみ",
+    "translation": "I take out the trash."
+  },
+  {
+    "vocabularyId": "vocab-f5e799449931",
+    "text": "台風が来ます。",
+    "targetSurface": "台風",
+    "translation": "A typhoon is coming."
+  },
+  {
+    "vocabularyId": "vocab-ebc949695b16",
+    "text": "母を起こします。",
+    "targetSurface": "起こし",
+    "translation": "I wake my mother up."
+  },
+  {
+    "vocabularyId": "vocab-a7fbfba88bfd",
+    "text": "親に会います。",
+    "targetSurface": "親",
+    "translation": "I meet my parent."
+  },
+  {
+    "vocabularyId": "vocab-26f8d7da9641",
+    "text": "花を集めます。",
+    "targetSurface": "集め",
+    "translation": "I gather flowers."
+  },
+  {
+    "vocabularyId": "vocab-a584cd8f1390",
+    "text": "字を直します。",
+    "targetSurface": "直し",
+    "translation": "I correct the writing."
+  },
+  {
+    "vocabularyId": "vocab-119d6aeb6484",
+    "text": "この間会いました。",
+    "targetSurface": "この間",
+    "translation": "I met him the other day."
+  },
+  {
+    "vocabularyId": "vocab-cdc7fbcaab99",
+    "text": "これで足ります。",
+    "targetSurface": "足り",
+    "translation": "This is enough."
+  },
+  {
+    "vocabularyId": "vocab-cbc44d67ceca",
+    "text": "色を選びます。",
+    "targetSurface": "選び",
+    "translation": "I choose a color."
+  },
+  {
+    "vocabularyId": "vocab-98016ab6456d",
+    "text": "例えばりんごです。",
+    "targetSurface": "例えば",
+    "translation": "For example, an apple."
+  },
+  {
+    "vocabularyId": "vocab-5d8087a22afd",
+    "text": "ひげがあります。",
+    "targetSurface": "ひげ",
+    "translation": "He has a beard."
+  },
+  {
+    "vocabularyId": "vocab-8b65db9c3fbf",
+    "text": "とても恥ずかしい。",
+    "targetSurface": "恥ずかしい",
+    "translation": "I am very embarrassed."
+  },
+  {
+    "vocabularyId": "vocab-5117b0f350f2",
+    "text": "まず手を洗います。",
+    "targetSurface": "まず",
+    "translation": "First, I wash my hands."
+  },
+  {
+    "vocabularyId": "vocab-b6df2b21dd5c",
+    "text": "毎日、日記を書きます。",
+    "targetSurface": "日記",
+    "translation": "I write in my diary every day."
+  },
+  {
+    "vocabularyId": "vocab-89c37e39c94d",
+    "text": "カーテンを開けます。",
+    "targetSurface": "カーテン",
+    "translation": "I open the curtain."
+  },
+  {
+    "vocabularyId": "vocab-4f9ae60eff62",
+    "text": "日本語を考えます。",
+    "targetSurface": "考え",
+    "translation": "I think about Japanese."
+  },
+  {
+    "vocabularyId": "vocab-cdf37b09dc6a",
+    "text": "母に怒る。",
+    "targetSurface": "怒る",
+    "translation": "I scold my mother."
+  },
+  {
+    "vocabularyId": "vocab-574d41ad949e",
+    "text": "先生がいらっしゃる。",
+    "targetSurface": "いらっしゃる",
+    "translation": "The teacher is here."
+  },
+  {
+    "vocabularyId": "vocab-df6dd25bbc07",
+    "text": "店に寄る。",
+    "targetSurface": "寄る",
+    "translation": "I stop by a shop."
+  },
+  {
+    "vocabularyId": "vocab-f9344c46e3a6",
+    "text": "部長がなさる。",
+    "targetSurface": "なさる",
+    "translation": "The manager does it."
+  },
+  {
+    "vocabularyId": "vocab-68ea919020d5",
+    "text": "お礼を言う。",
+    "targetSurface": "お礼",
+    "translation": "I say thank you."
+  },
+  {
+    "vocabularyId": "vocab-5b21d92a7eee",
+    "text": "先生がごらんになる。",
+    "targetSurface": "ごらんになる",
+    "translation": "The teacher looks at it."
+  },
+  {
+    "vocabularyId": "vocab-435c68c810fe",
+    "text": "部長は忙しい。",
+    "targetSurface": "部長",
+    "translation": "The department manager is busy."
+  },
+  {
+    "vocabularyId": "vocab-59e2e3a76319",
+    "text": "お子さんは元気。",
+    "targetSurface": "お子さん",
+    "translation": "Your child is fine."
+  },
+  {
+    "vocabularyId": "vocab-6762b46e5f55",
+    "text": "電車に遅れる。",
+    "targetSurface": "遅れる",
+    "translation": "I am late for the train."
+  },
+  {
+    "vocabularyId": "vocab-f6ffa4327b98",
+    "text": "部長はお茶を召し上がる。",
+    "targetSurface": "召し上がる",
+    "translation": "The manager drinks tea."
+  },
+  {
+    "vocabularyId": "vocab-ba5fab138253",
+    "text": "日本の文化。",
+    "targetSurface": "文化",
+    "translation": "Japanese culture."
+  },
+  {
+    "vocabularyId": "vocab-3cbee353040d",
+    "text": "先生がそうおっしゃる。",
+    "targetSurface": "おっしゃる",
+    "translation": "The teacher says so."
+  },
+  {
+    "vocabularyId": "vocab-e0bb1d02fee0",
+    "text": "月がきれい。",
+    "targetSurface": "月",
+    "translation": "The moon is beautiful."
+  },
+  {
+    "vocabularyId": "vocab-c914be1a03a3",
+    "text": "私がいたす。",
+    "targetSurface": "いたす",
+    "translation": "I will do it."
+  },
+  {
+    "vocabularyId": "vocab-3dd0bc872d1e",
+    "text": "この小説は長い。",
+    "targetSurface": "小説",
+    "translation": "This novel is long."
+  },
+  {
+    "vocabularyId": "vocab-cb04167d5187",
+    "text": "私は家におる。",
+    "targetSurface": "おる",
+    "translation": "I am at home."
+  },
+  {
+    "vocabularyId": "vocab-d76e957b268f",
+    "text": "私はそう申す。",
+    "targetSurface": "申す",
+    "translation": "I say so."
+  },
+  {
+    "vocabularyId": "vocab-3cc61f7bb083",
+    "text": "空港で会う。",
+    "targetSurface": "空港",
+    "translation": "I meet them at the airport."
+  },
+  {
+    "vocabularyId": "vocab-755c354dc8a8",
+    "text": "先生に花を差し上げる。",
+    "targetSurface": "差し上げる",
+    "translation": "I offer flowers to the teacher."
+  },
+  {
+    "vocabularyId": "vocab-b37750755344",
+    "text": "大きい音。",
+    "targetSurface": "音",
+    "translation": "A loud sound."
+  },
+  {
+    "vocabularyId": "vocab-0cc46aeaf124",
+    "text": "友達に伝える。",
+    "targetSurface": "伝える",
+    "translation": "I tell my friend."
+  },
+  {
+    "vocabularyId": "vocab-7930a252da9b",
+    "text": "字がきれい。",
+    "targetSurface": "字",
+    "translation": "The writing is neat."
+  },
+  {
+    "vocabularyId": "vocab-754eab0db7c4",
+    "text": "家に参る。",
+    "targetSurface": "参る",
+    "translation": "I go home."
+  },
+  {
+    "vocabularyId": "vocab-2793645cdcc0",
+    "text": "家に戻る。",
+    "targetSurface": "戻る",
+    "translation": "I return home."
+  },
+  {
+    "vocabularyId": "vocab-22872269cd56",
+    "text": "私の趣味は音楽。",
+    "targetSurface": "趣味",
+    "translation": "My hobby is music."
+  },
+  {
+    "vocabularyId": "vocab-969a24017d82",
+    "text": "お金を盗む。",
+    "targetSurface": "盗む",
+    "translation": "He steals money."
+  },
+  {
+    "vocabularyId": "vocab-92ea0758eaee",
+    "text": "車にガソリン。",
+    "targetSurface": "ガソリン",
+    "translation": "Gasoline for the car."
+  },
+  {
+    "vocabularyId": "vocab-13b0a5df30f4",
+    "text": "魚を焼く。",
+    "targetSurface": "焼く",
+    "translation": "I grill fish."
+  },
+  {
+    "vocabularyId": "vocab-2734b7b214e7",
+    "text": "泥棒が来る。",
+    "targetSurface": "泥棒",
+    "translation": "A thief comes."
+  },
+  {
+    "vocabularyId": "vocab-10791214b2c9",
+    "text": "赤ちゃんが笑う。",
+    "targetSurface": "赤ちゃん",
+    "translation": "The baby smiles."
+  },
+  {
+    "vocabularyId": "vocab-ac61ad41df92",
+    "text": "本を包む。",
+    "targetSurface": "包む",
+    "translation": "I wrap a book."
+  },
+  {
+    "vocabularyId": "vocab-2536adb89a00",
+    "text": "番号を間違える。",
+    "targetSurface": "間違える",
+    "translation": "I make a mistake with the number."
+  },
+  {
+    "vocabularyId": "vocab-5ce8c72581d4",
+    "text": "昔は静か。",
+    "targetSurface": "昔",
+    "translation": "The old days were quiet."
+  },
+  {
+    "vocabularyId": "vocab-823a82097d3a",
+    "text": "大事なこと。",
+    "targetSurface": "こと",
+    "translation": "An important matter."
+  },
+  {
+    "vocabularyId": "vocab-ba0581452a8f",
+    "text": "ひどい雨。",
+    "targetSurface": "ひどい",
+    "translation": "Terrible rain."
+  },
+  {
+    "vocabularyId": "vocab-3755b7ba1ef2",
+    "text": "それでびっくりする。",
+    "targetSurface": "びっくりする",
+    "translation": "I am surprised by that."
+  },
+  {
+    "vocabularyId": "vocab-0c68b34ca3d0",
+    "text": "鍵を見つける。",
+    "targetSurface": "見つける",
+    "translation": "I find the key."
+  },
+  {
+    "vocabularyId": "vocab-9493412fc88d",
+    "text": "今日は留守。",
+    "targetSurface": "留守",
+    "translation": "They are not home today."
+  },
+  {
+    "vocabularyId": "vocab-46d460451e75",
+    "text": "先生を褒める。",
+    "targetSurface": "褒める",
+    "translation": "I praise the teacher."
+  },
+  {
+    "vocabularyId": "vocab-536e42da8b84",
+    "text": "勉強を続ける。",
+    "targetSurface": "続ける",
+    "translation": "I keep studying."
+  },
+  {
+    "vocabularyId": "vocab-e5a213b2bee9",
+    "text": "子をいじめる。",
+    "targetSurface": "いじめる",
+    "translation": "He bullies a child."
+  },
+  {
+    "vocabularyId": "vocab-04ea77dcbf03",
+    "text": "工場で働く。",
+    "targetSurface": "工場",
+    "translation": "I work at a factory."
+  },
+  {
+    "vocabularyId": "vocab-558625e0258a",
+    "text": "警察へ行く。",
+    "targetSurface": "警察",
+    "translation": "I go to the police station."
+  },
+  {
+    "vocabularyId": "vocab-e47785e0c656",
+    "text": "会議がある。",
+    "targetSurface": "会議",
+    "translation": "There is a meeting."
+  },
+  {
+    "vocabularyId": "vocab-ab669e673cdd",
+    "text": "予習をする。",
+    "targetSurface": "予習",
+    "translation": "I do pre-class review."
+  },
+  {
+    "vocabularyId": "vocab-14246fa81e12",
+    "text": "鍵を拾う。",
+    "targetSurface": "拾う",
+    "translation": "I pick up a key."
+  },
+  {
+    "vocabularyId": "vocab-fb32fba0846c",
+    "text": "受付はここ。",
+    "targetSurface": "受付",
+    "translation": "The reception desk is here."
+  },
+  {
+    "vocabularyId": "vocab-365b67cf2e61",
+    "text": "お嬢さんは学生。",
+    "targetSurface": "お嬢さん",
+    "translation": "Your daughter is a student."
+  },
+  {
+    "vocabularyId": "vocab-6542feb4f8ea",
+    "text": "子を育てる。",
+    "targetSurface": "育てる",
+    "translation": "I raise a child."
+  },
+  {
+    "vocabularyId": "vocab-ac6ebe4452ce",
+    "text": "荷物を運ぶ。",
+    "targetSurface": "運ぶ",
+    "translation": "I carry the luggage."
+  },
+  {
+    "vocabularyId": "vocab-cbc21ac94ed5",
+    "text": "先輩に会う。",
+    "targetSurface": "先輩",
+    "translation": "I meet my senior."
+  },
+  {
+    "vocabularyId": "vocab-dcb3a295d7ca",
+    "text": "今日は自由。",
+    "targetSurface": "自由",
+    "translation": "I'm free today."
+  },
+  {
+    "vocabularyId": "vocab-1b07285ce1e0",
+    "text": "小学校へ行く。",
+    "targetSurface": "小学校",
+    "translation": "I go to elementary school."
+  },
+  {
+    "vocabularyId": "vocab-79b9f20fa351",
+    "text": "いい場所です。",
+    "targetSurface": "場所",
+    "translation": "It is a nice place."
+  },
+  {
+    "vocabularyId": "vocab-4b74bc1c1ee4",
+    "text": "足で踏む。",
+    "targetSurface": "踏む",
+    "translation": "I step on it with my foot."
+  },
+  {
+    "vocabularyId": "vocab-51a5525c40bb",
+    "text": "港区に住む。",
+    "targetSurface": "港区",
+    "translation": "I live in Minato Ward."
+  },
+  {
+    "vocabularyId": "vocab-a4517808475d",
+    "text": "道をすっと歩く。",
+    "targetSurface": "すっと",
+    "translation": "I walk straight ahead."
+  },
+  {
+    "vocabularyId": "vocab-e8569fdb6cc4",
+    "text": "とうとう着く。",
+    "targetSurface": "とうとう",
+    "translation": "I finally arrive."
+  },
+  {
+    "vocabularyId": "vocab-89aea2f63b8b",
+    "text": "ベルが鳴る。",
+    "targetSurface": "鳴る",
+    "translation": "The bell rings."
+  },
+  {
+    "vocabularyId": "vocab-ce141455df63",
+    "text": "しっかり持つ。",
+    "targetSurface": "しっかり",
+    "translation": "Hold it firmly."
+  },
+  {
+    "vocabularyId": "vocab-80b68bbbc870",
+    "text": "猫は生きる。",
+    "targetSurface": "生きる",
+    "translation": "Cats live."
+  },
+  {
+    "vocabularyId": "vocab-b264619d7291",
+    "text": "薬は苦い。",
+    "targetSurface": "苦い",
+    "translation": "The medicine is bitter."
+  },
+  {
+    "vocabularyId": "vocab-0a2c733eaeaf",
+    "text": "湯が沸く。",
+    "targetSurface": "沸く",
+    "translation": "The water boils."
+  },
+  {
+    "vocabularyId": "vocab-51b98063622b",
+    "text": "意見を言う。",
+    "targetSurface": "意見",
+    "translation": "I give my opinion."
+  },
+  {
+    "vocabularyId": "vocab-72ca288e6674",
+    "text": "やはり雨だ。",
+    "targetSurface": "やはり",
+    "translation": "It is rain after all."
+  },
+  {
+    "vocabularyId": "vocab-f65b3ffbf71d",
+    "text": "ステレオを買う。",
+    "targetSurface": "ステレオ",
+    "translation": "I buy a stereo."
+  },
+  {
+    "vocabularyId": "vocab-b5a308d8887d",
+    "text": "医学の本です。",
+    "targetSurface": "医学",
+    "translation": "It is a medical science book."
+  },
+  {
+    "vocabularyId": "vocab-7f18aa392c60",
+    "text": "テキストを読む。",
+    "targetSurface": "テキスト",
+    "translation": "I read the textbook."
+  },
+  {
+    "vocabularyId": "vocab-e006fa6d76c2",
+    "text": "ひと月休みます。",
+    "targetSurface": "ひと月",
+    "translation": "I will take a month off."
+  },
+  {
+    "vocabularyId": "vocab-52436504afb0",
+    "text": "枝を折る。",
+    "targetSurface": "折る",
+    "translation": "I break a branch."
+  },
+  {
+    "vocabularyId": "vocab-4b21d47558da",
+    "text": "読書会に行く。",
+    "targetSurface": "読書会",
+    "translation": "I go to the book club meeting."
+  },
+  {
+    "vocabularyId": "vocab-93f32940dba5",
+    "text": "先生にうかがう。",
+    "targetSurface": "うかがう",
+    "translation": "I ask the teacher."
+  },
+  {
+    "vocabularyId": "vocab-905b4023e5c3",
+    "text": "音が聞こえる。",
+    "targetSurface": "聞こえる",
+    "translation": "I can hear the sound."
+  },
+  {
+    "vocabularyId": "vocab-3599fe8f0a49",
+    "text": "必ず来る。",
+    "targetSurface": "必ず",
+    "translation": "I will surely come."
+  },
+  {
+    "vocabularyId": "vocab-cb5de8a2aae3",
+    "text": "皿を壊す。",
+    "targetSurface": "壊す",
+    "translation": "I break the plate."
+  },
+  {
+    "vocabularyId": "vocab-3440f8f2e4d0",
+    "text": "オートバイで行く。",
+    "targetSurface": "オートバイ",
+    "translation": "I go by motorcycle."
+  },
+  {
+    "vocabularyId": "vocab-8502a9e6483c",
+    "text": "毎日運動する。",
+    "targetSurface": "運動",
+    "translation": "I exercise every day."
+  },
+  {
+    "vocabularyId": "vocab-b1301209e235",
+    "text": "雨が止む。",
+    "targetSurface": "止む",
+    "translation": "The rain stops."
+  },
+  {
+    "vocabularyId": "vocab-e3643c9dfcee",
+    "text": "もし雨なら休む。",
+    "targetSurface": "もし",
+    "translation": "If it rains, I rest."
+  },
+  {
+    "vocabularyId": "vocab-5a9b70555134",
+    "text": "表に出る。",
+    "targetSurface": "表",
+    "translation": "I go outside."
+  },
+  {
+    "vocabularyId": "vocab-2a0de905a83a",
+    "text": "運転手です。",
+    "targetSurface": "運転手",
+    "translation": "I am a driver."
+  },
+  {
+    "vocabularyId": "vocab-a7095a66e0d8",
+    "text": "心配です。",
+    "targetSurface": "心配",
+    "translation": "I'm worried."
+  },
+  {
+    "vocabularyId": "vocab-87e8cf68e9cb",
+    "text": "別です。",
+    "targetSurface": "別",
+    "translation": "It is different."
+  },
+  {
+    "vocabularyId": "vocab-81edc004fee5",
+    "text": "非常に暑い。",
+    "targetSurface": "非常に",
+    "translation": "It is extremely hot."
+  },
+  {
+    "vocabularyId": "vocab-71eb5452a1d3",
+    "text": "ごはんが柔らかい。",
+    "targetSurface": "柔らかい",
+    "translation": "The rice is soft."
+  },
+  {
+    "vocabularyId": "vocab-1e808c7b4b4e",
+    "text": "気がいい。",
+    "targetSurface": "気",
+    "translation": "I feel good."
+  },
+  {
+    "vocabularyId": "vocab-64da6681bb73",
+    "text": "二つを比べる。",
+    "targetSurface": "比べる",
+    "translation": "I compare the two."
+  },
+  {
+    "vocabularyId": "vocab-786e1b164e0a",
+    "text": "郊外に住む。",
+    "targetSurface": "郊外",
+    "translation": "I live in the suburbs."
+  },
+  {
+    "vocabularyId": "vocab-7dda6e9ccb51",
+    "text": "それはだめ。",
+    "targetSurface": "だめ",
+    "translation": "That's no good."
+  },
+  {
+    "vocabularyId": "vocab-8f85dc2b0919",
+    "text": "正月に会う。",
+    "targetSurface": "正月",
+    "translation": "I meet them at New Year."
+  },
+  {
+    "vocabularyId": "vocab-6a1d12d0b6f7",
+    "text": "規則は大事です。",
+    "targetSurface": "規則",
+    "translation": "Rules are important."
+  },
+  {
+    "vocabularyId": "vocab-743925dd101f",
+    "text": "発音がいい。",
+    "targetSurface": "発音",
+    "translation": "Your pronunciation is good."
+  },
+  {
+    "vocabularyId": "vocab-720595617569",
+    "text": "屋上で見る。",
+    "targetSurface": "屋上",
+    "translation": "I look on the rooftop."
+  },
+  {
+    "vocabularyId": "vocab-74972ca1389f",
+    "text": "失礼します。",
+    "targetSurface": "失礼",
+    "translation": "Excuse me."
+  },
+  {
+    "vocabularyId": "vocab-aa655a83d9c9",
+    "text": "アフリカに行く。",
+    "targetSurface": "アフリカ",
+    "translation": "I go to Africa."
+  },
+  {
+    "vocabularyId": "vocab-1b0f2a3c8cc6",
+    "text": "三点です。",
+    "targetSurface": "点",
+    "translation": "It is three points."
+  },
+  {
+    "vocabularyId": "vocab-eb5958d6f783",
+    "text": "一生懸命する。",
+    "targetSurface": "一生懸命",
+    "translation": "I work very hard."
+  },
+  {
+    "vocabularyId": "vocab-a426f5da152d",
+    "text": "今が機会です。",
+    "targetSurface": "機会",
+    "translation": "Now is the chance."
+  },
+  {
+    "vocabularyId": "vocab-832eea6ee1e6",
+    "text": "話は複雑。",
+    "targetSurface": "複雑",
+    "translation": "The story is complicated."
+  },
+  {
+    "vocabularyId": "vocab-a36d5cbb506e",
+    "text": "布団で寝る。",
+    "targetSurface": "布団",
+    "translation": "I sleep on a futon."
+  },
+  {
+    "vocabularyId": "vocab-b98c225a97fd",
+    "text": "家族は大事。",
+    "targetSurface": "大事",
+    "translation": "Family is important."
+  },
+  {
+    "vocabularyId": "vocab-84e62df90449",
+    "text": "贈り物を買う。",
+    "targetSurface": "贈り物",
+    "translation": "I buy a gift."
+  },
+  {
+    "vocabularyId": "vocab-25c6e0d28265",
+    "text": "日本製です。",
+    "targetSurface": "日本製",
+    "translation": "It is made in Japan."
+  },
+  {
+    "vocabularyId": "vocab-1472a34fdb88",
+    "text": "車に注意。",
+    "targetSurface": "注意",
+    "translation": "Watch out for cars."
+  },
+  {
+    "vocabularyId": "vocab-33107873fa03",
+    "text": "家は三軒。",
+    "targetSurface": "三軒",
+    "translation": "There are three houses."
+  },
+  {
+    "vocabularyId": "vocab-0e61b7350e45",
+    "text": "橋を通る。",
+    "targetSurface": "通る",
+    "translation": "I pass over the bridge."
+  },
+  {
+    "vocabularyId": "vocab-61776abbc569",
+    "text": "もう時間過ぎる。",
+    "targetSurface": "過ぎる",
+    "translation": "It is already past time."
+  },
+  {
+    "vocabularyId": "vocab-f8a6da26620f",
+    "text": "レポートを書く。",
+    "targetSurface": "レポート",
+    "translation": "I write a report."
+  },
+  {
+    "vocabularyId": "vocab-829560cefa5a",
+    "text": "葉が青い。",
+    "targetSurface": "葉",
+    "translation": "The leaf is green."
+  },
+  {
+    "vocabularyId": "vocab-7aee0e75a2a5",
+    "text": "課長です。",
+    "targetSurface": "課長",
+    "translation": "I am the section manager."
+  },
+  {
+    "vocabularyId": "vocab-0595507689c9",
+    "text": "すると雨です。",
+    "targetSurface": "すると",
+    "translation": "Then it rains."
+  },
+  {
+    "vocabularyId": "vocab-f0298a2375dd",
+    "text": "たばこを止める。",
+    "targetSurface": "止める",
+    "translation": "I stop smoking."
+  },
+  {
+    "vocabularyId": "vocab-ac3b92bbb172",
+    "text": "ガラスが割れる。",
+    "targetSurface": "ガラス",
+    "translation": "The glass pane breaks."
+  },
+  {
+    "vocabularyId": "vocab-32e756c8aef2",
+    "text": "文学部です。",
+    "targetSurface": "文学部",
+    "translation": "It is the Faculty of Letters."
+  },
+  {
+    "vocabularyId": "vocab-cfc8f5a67e12",
+    "text": "エスカレーターに乗る。",
+    "targetSurface": "エスカレーター",
+    "translation": "I take the escalator."
+  },
+  {
+    "vocabularyId": "vocab-2ef4da30cf39",
+    "text": "人口が多い。",
+    "targetSurface": "人口",
+    "translation": "The population is large."
+  },
+  {
+    "vocabularyId": "vocab-6e38ee647b25",
+    "text": "絹のシャツ。",
+    "targetSurface": "絹",
+    "translation": "A silk shirt."
+  },
+  {
+    "vocabularyId": "vocab-8a24c21542c6",
+    "text": "ちっとも分からない。",
+    "targetSurface": "ちっとも",
+    "translation": "I don't understand at all."
+  },
+  {
+    "vocabularyId": "vocab-ca9763d00bd7",
+    "text": "深い池です。",
+    "targetSurface": "深い",
+    "translation": "It is a deep pond."
+  },
+  {
+    "vocabularyId": "vocab-9ce92c5239cf",
+    "text": "時計が壊れる。",
+    "targetSurface": "壊れる",
+    "translation": "The clock breaks."
+  },
+  {
+    "vocabularyId": "vocab-feadcb8e95e6",
+    "text": "木が揺れる。",
+    "targetSurface": "揺れる",
+    "translation": "The tree sways."
+  },
+  {
+    "vocabularyId": "vocab-ef6041e086e8",
+    "text": "葉が落ちる。",
+    "targetSurface": "落ちる",
+    "translation": "The leaf falls."
+  },
+  {
+    "vocabularyId": "vocab-35e593835cb7",
+    "text": "できるだけ急ぐ。",
+    "targetSurface": "できるだけ",
+    "translation": "I'll hurry as much as possible."
+  },
+  {
+    "vocabularyId": "vocab-f17d48142efb",
+    "text": "弟は中学校です。",
+    "targetSurface": "中学校",
+    "translation": "My younger brother is in junior high school."
+  },
+  {
+    "vocabularyId": "vocab-a9064f678b13",
+    "text": "ガスが出る。",
+    "targetSurface": "ガス",
+    "translation": "Gas is coming out."
+  },
+  {
+    "vocabularyId": "vocab-25b29135b27c",
+    "text": "神社で祈る。",
+    "targetSurface": "祈る",
+    "translation": "I pray at the shrine."
+  },
+  {
+    "vocabularyId": "vocab-5bb6199c5511",
+    "text": "この町は盛ん。",
+    "targetSurface": "盛ん",
+    "translation": "This town is thriving."
+  },
+  {
+    "vocabularyId": "vocab-4200d93286a8",
+    "text": "パンを噛む。",
+    "targetSurface": "噛む",
+    "translation": "I chew bread."
+  },
+  {
+    "vocabularyId": "vocab-d24688aa2c15",
+    "text": "この池は浅い。",
+    "targetSurface": "浅い",
+    "translation": "This pond is shallow."
+  },
+  {
+    "vocabularyId": "vocab-03335ddeaaae",
+    "text": "それは嘘です。",
+    "targetSurface": "嘘",
+    "translation": "That is a lie."
+  },
+  {
+    "vocabularyId": "vocab-e6c92761a83c",
+    "text": "雨です。それに寒い。",
+    "targetSurface": "それに",
+    "translation": "It's raining. Besides, it's cold."
+  },
+  {
+    "vocabularyId": "vocab-d2fba12a2ecd",
+    "text": "西洋の絵です。",
+    "targetSurface": "西洋",
+    "translation": "It's a Western painting."
+  },
+  {
+    "vocabularyId": "vocab-7e8f883ed04b",
+    "text": "母はパートです。",
+    "targetSurface": "パート",
+    "translation": "My mother works part-time."
+  },
+  {
+    "vocabularyId": "vocab-0d603029022b",
+    "text": "この時代は便利。",
+    "targetSurface": "時代",
+    "translation": "This era is convenient."
+  },
+  {
+    "vocabularyId": "vocab-b85d4bb9740e",
+    "text": "はいと申し上げる。",
+    "targetSurface": "申し上げる",
+    "translation": "I say yes politely."
+  },
+  {
+    "vocabularyId": "vocab-a805b52d7652",
+    "text": "結婚式です。",
+    "targetSurface": "結婚式",
+    "translation": "It's a wedding ceremony."
+  },
+  {
+    "vocabularyId": "vocab-3e101d9e890d",
+    "text": "今日は出席です。",
+    "targetSurface": "出席",
+    "translation": "I'm attending today."
+  },
+  {
+    "vocabularyId": "vocab-681a2a552870",
+    "text": "兄は画家です。",
+    "targetSurface": "画家",
+    "translation": "My older brother is a painter."
+  },
+  {
+    "vocabularyId": "vocab-8b059c70bef6",
+    "text": "駅で友達を迎える。",
+    "targetSurface": "迎える",
+    "translation": "I meet my friend at the station."
+  },
+  {
+    "vocabularyId": "vocab-eed7a9c3415c",
+    "text": "ここに触る。",
+    "targetSurface": "触る",
+    "translation": "I touch here."
+  },
+  {
+    "vocabularyId": "vocab-d5986434677e",
+    "text": "二階建ての家です。",
+    "targetSurface": "二階建て",
+    "translation": "It's a two-story house."
+  },
+  {
+    "vocabularyId": "vocab-c468e0cfe679",
+    "text": "動物園に行く。",
+    "targetSurface": "動物園",
+    "translation": "I go to the zoo."
+  },
+  {
+    "vocabularyId": "vocab-02c8a1e95598",
+    "text": "虫を捕まえる。",
+    "targetSurface": "捕まえる",
+    "translation": "I catch a bug."
+  },
+  {
+    "vocabularyId": "vocab-6c1bd8b09d2e",
+    "text": "予定が決まる。",
+    "targetSurface": "決まる",
+    "translation": "The plan is decided."
+  },
+  {
+    "vocabularyId": "vocab-42b124f369c4",
+    "text": "店が開く。",
+    "targetSurface": "開く",
+    "translation": "The shop opens."
+  },
+  {
+    "vocabularyId": "vocab-891c5d7618d7",
+    "text": "犬が逃げる。",
+    "targetSurface": "逃げる",
+    "translation": "The dog runs away."
+  },
+  {
+    "vocabularyId": "vocab-595a5c409704",
+    "text": "遅れて残念。",
+    "targetSurface": "残念",
+    "translation": "It's regrettable that I'm late."
+  },
+  {
+    "vocabularyId": "vocab-3dbf9677fc1f",
+    "text": "畳の部屋です。",
+    "targetSurface": "畳",
+    "translation": "It's a tatami room."
+  },
+  {
+    "vocabularyId": "vocab-5dd0300c588e",
+    "text": "丁寧に言う。",
+    "targetSurface": "丁寧",
+    "translation": "I speak politely."
+  },
+  {
+    "vocabularyId": "vocab-6b2d33b8549a",
+    "text": "地理を習う。",
+    "targetSurface": "地理",
+    "translation": "I study geography."
+  },
+  {
+    "vocabularyId": "vocab-4aca05a29ab9",
+    "text": "なるべく早く。",
+    "targetSurface": "なるべく",
+    "translation": "As quickly as possible."
+  },
+  {
+    "vocabularyId": "vocab-535d04fce7a1",
+    "text": "今は無理です。",
+    "targetSurface": "無理",
+    "translation": "It's impossible now."
+  },
+  {
+    "vocabularyId": "vocab-8e8c88c70129",
+    "text": "サンドイッチを食べる。",
+    "targetSurface": "サンドイッチ",
+    "translation": "I eat a sandwich."
+  },
+  {
+    "vocabularyId": "vocab-f39ec05e5a61",
+    "text": "会議室に入る。",
+    "targetSurface": "会議室",
+    "translation": "I enter the conference room."
+  },
+  {
+    "vocabularyId": "vocab-4b6b3e6fd427",
+    "text": "人形がある。",
+    "targetSurface": "人形",
+    "translation": "There is a doll."
+  },
+  {
+    "vocabularyId": "vocab-2b67dd27a9e9",
+    "text": "本の利用です。",
+    "targetSurface": "利用",
+    "translation": "It's for use with books."
+  },
+  {
+    "vocabularyId": "vocab-e555214f57b5",
+    "text": "花を飾る。",
+    "targetSurface": "飾る",
+    "translation": "I decorate with flowers."
+  },
+  {
+    "vocabularyId": "vocab-8b215c592588",
+    "text": "ここで止める。",
+    "targetSurface": "止める",
+    "translation": "I stop it here."
+  },
+  {
+    "vocabularyId": "vocab-cda3c96e8c0f",
+    "text": "新しいビルです。",
+    "targetSurface": "ビル",
+    "translation": "It's a new building."
+  },
+  {
+    "vocabularyId": "vocab-14251503786a",
+    "text": "弟とけんかする。",
+    "targetSurface": "けんかする",
+    "translation": "I quarrel with my brother."
+  },
+  {
+    "vocabularyId": "vocab-5ca5913441a0",
+    "text": "石を投げる。",
+    "targetSurface": "投げる",
+    "translation": "I throw a stone."
+  },
+  {
+    "vocabularyId": "vocab-4fff1c1f0559",
+    "text": "車が故障した。",
+    "targetSurface": "故障",
+    "translation": "The car broke down."
+  },
+  {
+    "vocabularyId": "vocab-33c00f4a1a8b",
+    "text": "力が足りない。",
+    "targetSurface": "力",
+    "translation": "I don't have enough strength."
+  },
+  {
+    "vocabularyId": "vocab-94be95dda967",
+    "text": "試験を受ける。",
+    "targetSurface": "受ける",
+    "translation": "I take the exam."
+  },
+  {
+    "vocabularyId": "vocab-b22e3a1982e5",
+    "text": "気分がいい。",
+    "targetSurface": "気分",
+    "translation": "I'm in a good mood."
+  },
+  {
+    "vocabularyId": "vocab-fece8082cc7a",
+    "text": "そんな話はない。",
+    "targetSurface": "そんな",
+    "translation": "There's no such story."
+  },
+  {
+    "vocabularyId": "vocab-b76e8f757083",
+    "text": "星が光る。",
+    "targetSurface": "星",
+    "translation": "The star shines."
+  },
+  {
+    "vocabularyId": "vocab-6ebb244781a5",
+    "text": "雨の場合は家。",
+    "targetSurface": "場合",
+    "translation": "In case of rain, stay home."
+  },
+  {
+    "vocabularyId": "vocab-f6cda93b2001",
+    "text": "やっと着く。",
+    "targetSurface": "やっと",
+    "translation": "I finally arrive."
+  },
+  {
+    "vocabularyId": "vocab-c89542082a8a",
+    "text": "会議を行う。",
+    "targetSurface": "行う",
+    "translation": "We hold a meeting."
+  },
+  {
+    "vocabularyId": "vocab-abe24306ec05",
+    "text": "ぶどうを食べる。",
+    "targetSurface": "ぶどう",
+    "translation": "I eat grapes."
+  },
+  {
+    "vocabularyId": "vocab-bb8e0b90c23d",
+    "text": "鍵が無くなる。",
+    "targetSurface": "無くなる",
+    "translation": "My key gets lost."
+  },
+  {
+    "vocabularyId": "vocab-925841cdfb47",
+    "text": "再来月は休み。",
+    "targetSurface": "再来月",
+    "translation": "I have time off the month after next."
+  },
+  {
+    "vocabularyId": "vocab-698044202165",
+    "text": "林を歩く。",
+    "targetSurface": "林",
+    "translation": "I walk through the woods."
+  },
+  {
+    "vocabularyId": "vocab-d5ec0d0afb70",
+    "text": "二倍は高い。",
+    "targetSurface": "倍",
+    "translation": "Twice as much is expensive."
+  },
+  {
+    "vocabularyId": "vocab-474250649f50",
+    "text": "線を引く。",
+    "targetSurface": "線",
+    "translation": "I draw a line."
+  },
+  {
+    "vocabularyId": "vocab-10bbb65aa613",
+    "text": "戦争はだめ。",
+    "targetSurface": "戦争",
+    "translation": "War is bad."
+  },
+  {
+    "vocabularyId": "vocab-dedac553ff95",
+    "text": "今朝は寝坊した。",
+    "targetSurface": "寝坊",
+    "translation": "I overslept this morning."
+  },
+  {
+    "vocabularyId": "vocab-a9c549b3b28c",
+    "text": "パパは家だ。",
+    "targetSurface": "パパ",
+    "translation": "Dad is at home."
+  },
+  {
+    "vocabularyId": "vocab-f5694f7c75ff",
+    "text": "星が光る。",
+    "targetSurface": "光る",
+    "translation": "The star shines."
+  },
+  {
+    "vocabularyId": "vocab-9220e0bb1b6c",
+    "text": "夫は会社。",
+    "targetSurface": "夫",
+    "translation": "My husband is at work."
+  },
+  {
+    "vocabularyId": "vocab-fab168174274",
+    "text": "雲が多い。",
+    "targetSurface": "雲",
+    "translation": "There are many clouds."
+  },
+  {
+    "vocabularyId": "vocab-65a2513f9aaa",
+    "text": "この坂は高い。",
+    "targetSurface": "坂",
+    "translation": "This slope is steep."
+  },
+  {
+    "vocabularyId": "vocab-b7b3c6fe86c4",
+    "text": "飛行場は遠い。",
+    "targetSurface": "飛行場",
+    "translation": "The airport is far."
+  },
+  {
+    "vocabularyId": "vocab-3bfea40cee04",
+    "text": "柔道を習う。",
+    "targetSurface": "柔道",
+    "translation": "I learn judo."
+  },
+  {
+    "vocabularyId": "vocab-3bd2b3ea92c7",
+    "text": "決して行かない。",
+    "targetSurface": "決して",
+    "translation": "I will never go."
+  },
+  {
+    "vocabularyId": "vocab-031d31c6b474",
+    "text": "事務所はここ。",
+    "targetSurface": "事務所",
+    "translation": "The office is here."
+  },
+  {
+    "vocabularyId": "vocab-e04a18cc6700",
+    "text": "母に連絡する。",
+    "targetSurface": "連絡",
+    "translation": "I contact my mother."
+  },
+  {
+    "vocabularyId": "vocab-9c6064a751f5",
+    "text": "客が多い。",
+    "targetSurface": "客",
+    "translation": "There are many customers."
+  },
+  {
+    "vocabularyId": "vocab-d0552a0707da",
+    "text": "美しい花だ。",
+    "targetSurface": "美しい",
+    "translation": "It is a beautiful flower."
+  },
+  {
+    "vocabularyId": "vocab-90bceb996408",
+    "text": "雨がどんどん降る。",
+    "targetSurface": "どんどん",
+    "translation": "The rain falls steadily."
+  },
+  {
+    "vocabularyId": "vocab-3f096d7e0a7b",
+    "text": "この本は適当だ。",
+    "targetSurface": "適当",
+    "translation": "This book is suitable."
+  },
+  {
+    "vocabularyId": "vocab-f39cb4918556",
+    "text": "この花は素晴らしい。",
+    "targetSurface": "素晴らしい",
+    "translation": "This flower is wonderful."
+  },
+  {
+    "vocabularyId": "vocab-7d00957ad135",
+    "text": "授業の終わり。",
+    "targetSurface": "終わり",
+    "translation": "The class is over."
+  },
+  {
+    "vocabularyId": "vocab-12b3aa7f9d18",
+    "text": "壁が白い。",
+    "targetSurface": "壁",
+    "translation": "The wall is white."
+  },
+  {
+    "vocabularyId": "vocab-78afa2b7edef",
+    "text": "一度行く。",
+    "targetSurface": "一度",
+    "translation": "I go once."
+  },
+  {
+    "vocabularyId": "vocab-c2cec306f5c4",
+    "text": "親切な人だ。",
+    "targetSurface": "親切",
+    "translation": "They are a kind person."
+  },
+  {
+    "vocabularyId": "vocab-d7cd17a83e55",
+    "text": "母に知らせる。",
+    "targetSurface": "知らせる",
+    "translation": "I inform my mother."
+  },
+  {
+    "vocabularyId": "vocab-accb87bd0f3e",
+    "text": "歯医者へ行く。",
+    "targetSurface": "歯医者",
+    "translation": "I go to the dentist."
+  },
+  {
+    "vocabularyId": "vocab-2a7ae957f536",
+    "text": "彼は熱心だ。",
+    "targetSurface": "熱心",
+    "translation": "He is enthusiastic."
+  },
+  {
+    "vocabularyId": "vocab-f172ae18fbf3",
+    "text": "熱はもう治る。",
+    "targetSurface": "治る",
+    "translation": "The fever will get better soon."
+  },
+  {
+    "vocabularyId": "vocab-5737cdeed6f7",
+    "text": "熱がある。",
+    "targetSurface": "熱",
+    "translation": "I have a fever."
+  },
+  {
+    "vocabularyId": "vocab-6ab6355f7f71",
+    "text": "お祭りに行く。",
+    "targetSurface": "お祭り",
+    "translation": "I’m going to the festival."
+  },
+  {
+    "vocabularyId": "vocab-393cdfe8498b",
+    "text": "水道がこわれた。",
+    "targetSurface": "水道",
+    "translation": "The water line broke."
+  },
+  {
+    "vocabularyId": "vocab-e05017b24480",
+    "text": "いい匂いです。",
+    "targetSurface": "匂い",
+    "translation": "It smells nice."
+  },
+  {
+    "vocabularyId": "vocab-c450c35ecb15",
+    "text": "ベルが鳴る。",
+    "targetSurface": "ベル",
+    "translation": "The bell rings."
+  },
+  {
+    "vocabularyId": "vocab-691fb5f54704",
+    "text": "赤ん坊が寝る。",
+    "targetSurface": "赤ん坊",
+    "translation": "The baby sleeps."
+  },
+  {
+    "vocabularyId": "vocab-0b6e6500104d",
+    "text": "それはおかしい。",
+    "targetSurface": "おかしい",
+    "translation": "That’s strange."
+  },
+  {
+    "vocabularyId": "vocab-ce352e4f7862",
+    "text": "事故があった。",
+    "targetSurface": "事故",
+    "translation": "There was an accident."
+  },
+  {
+    "vocabularyId": "vocab-d31a82461823",
+    "text": "この人は変。",
+    "targetSurface": "変",
+    "translation": "This person is odd."
+  },
+  {
+    "vocabularyId": "vocab-f45c71f6f3d7",
+    "text": "辞典を使う。",
+    "targetSurface": "辞典",
+    "translation": "I use a reference book."
+  },
+  {
+    "vocabularyId": "vocab-de6d33bc1dab",
+    "text": "ご飯が残る。",
+    "targetSurface": "残る",
+    "translation": "Food is left over."
+  },
+  {
+    "vocabularyId": "vocab-e9ad09158eb3",
+    "text": "本を立てる。",
+    "targetSurface": "立てる",
+    "translation": "I stand the book upright."
+  },
+  {
+    "vocabularyId": "vocab-eb290e404456",
+    "text": "原因は雨です。",
+    "targetSurface": "原因",
+    "translation": "The cause is rain."
+  },
+  {
+    "vocabularyId": "vocab-42b6a58ec034",
+    "text": "その音に驚く。",
+    "targetSurface": "驚く",
+    "translation": "I’m surprised by that sound."
+  },
+  {
+    "vocabularyId": "vocab-df957e0341aa",
+    "text": "祖母は元気。",
+    "targetSurface": "祖母",
+    "translation": "My grandmother is well."
+  },
+  {
+    "vocabularyId": "vocab-60091bff9249",
+    "text": "答はどれ。",
+    "targetSurface": "答",
+    "translation": "Which is the answer?"
+  },
+  {
+    "vocabularyId": "vocab-35a0e5ef96cc",
+    "text": "みそに漬ける。",
+    "targetSurface": "漬ける",
+    "translation": "I soak it in miso."
+  },
+  {
+    "vocabularyId": "vocab-6d365d4f9896",
+    "text": "家の内です。",
+    "targetSurface": "内",
+    "translation": "It’s inside the house."
+  },
+  {
+    "vocabularyId": "vocab-677d626b8761",
+    "text": "スクリーンが見える。",
+    "targetSurface": "スクリーン",
+    "translation": "I can see the screen."
+  },
+  {
+    "vocabularyId": "vocab-2c955930b5a4",
+    "text": "友達が増える。",
+    "targetSurface": "増える",
+    "translation": "My friends increase."
+  },
+  {
+    "vocabularyId": "vocab-41c229a6256d",
+    "text": "お茶または水。",
+    "targetSurface": "または",
+    "translation": "Tea or water."
+  },
+  {
+    "vocabularyId": "vocab-3b9582aaccbb",
+    "text": "自転車でけがする。",
+    "targetSurface": "けがする",
+    "translation": "I get hurt on my bike."
+  },
+  {
+    "vocabularyId": "vocab-075f4c445195",
+    "text": "十人以下です。",
+    "targetSurface": "以下",
+    "translation": "It is ten people or fewer."
+  },
+  {
+    "vocabularyId": "vocab-3601c285284c",
+    "text": "心が痛い。",
+    "targetSurface": "心",
+    "translation": "My heart hurts."
+  },
+  {
+    "vocabularyId": "vocab-e94096ca5160",
+    "text": "荷物を届ける。",
+    "targetSurface": "届ける",
+    "translation": "I deliver the package."
+  },
+  {
+    "vocabularyId": "vocab-e6539ec3b77e",
+    "text": "朝に挨拶する。",
+    "targetSurface": "挨拶",
+    "translation": "I greet people in the morning."
+  },
+  {
+    "vocabularyId": "vocab-756e74abdced",
+    "text": "景色がきれい。",
+    "targetSurface": "景色",
+    "translation": "The scenery is beautiful."
+  },
+  {
+    "vocabularyId": "vocab-9a283e1d10ef",
+    "text": "確かにそうです。",
+    "targetSurface": "確か",
+    "translation": "That is certainly true."
+  },
+  {
+    "vocabularyId": "vocab-54ad7f43e52d",
+    "text": "ステーキを食べる。",
+    "targetSurface": "ステーキ",
+    "translation": "I eat steak."
+  },
+  {
+    "vocabularyId": "vocab-23bd9279b21c",
+    "text": "食料品を買う。",
+    "targetSurface": "食料品",
+    "translation": "I buy groceries."
+  },
+  {
+    "vocabularyId": "vocab-df1a5854e12f",
+    "text": "森を歩く。",
+    "targetSurface": "森",
+    "translation": "I walk in the forest."
+  },
+  {
+    "vocabularyId": "vocab-f3b716eb4792",
+    "text": "三分以内です。",
+    "targetSurface": "以内",
+    "translation": "It is within three minutes."
+  },
+  {
+    "vocabularyId": "vocab-b7cdb098ad28",
+    "text": "今日はオーバー。",
+    "targetSurface": "オーバー",
+    "translation": "Today I’m wearing an overcoat."
+  },
+  {
+    "vocabularyId": "vocab-feea8faf61d6",
+    "text": "シャツが乾く。",
+    "targetSurface": "乾く",
+    "translation": "The shirt dries."
+  },
+  {
+    "vocabularyId": "vocab-2f734ba866d9",
+    "text": "石がある。",
+    "targetSurface": "石",
+    "translation": "There is a stone."
+  },
+  {
+    "vocabularyId": "vocab-df05e350ec4f",
+    "text": "名前を思い出す。",
+    "targetSurface": "思い出す",
+    "translation": "I remember the name."
+  },
+  {
+    "vocabularyId": "vocab-78dfe6560a21",
+    "text": "細かい字です。",
+    "targetSurface": "細かい",
+    "translation": "The letters are tiny."
+  },
+  {
+    "vocabularyId": "vocab-94c0123fb172",
+    "text": "壁に色を塗る。",
+    "targetSurface": "塗る",
+    "translation": "I paint the wall."
+  },
+  {
+    "vocabularyId": "vocab-077402970f63",
+    "text": "この花は珍しい。",
+    "targetSurface": "珍しい",
+    "translation": "This flower is rare."
+  },
+  {
+    "vocabularyId": "vocab-3aa47bb43d28",
+    "text": "ちょっと用がある。",
+    "targetSurface": "用",
+    "translation": "I have something to take care of."
+  },
+  {
+    "vocabularyId": "vocab-7e2aba3a4f7c",
+    "text": "兄は公務員です。",
+    "targetSurface": "公務員",
+    "translation": "My older brother is a public servant."
+  },
+  {
+    "vocabularyId": "vocab-aa510d1e8428",
+    "text": "用意はできた。",
+    "targetSurface": "用意",
+    "translation": "The preparations are done."
+  },
+  {
+    "vocabularyId": "vocab-bdb66ff4eed7",
+    "text": "父は運転が上手。",
+    "targetSurface": "運転",
+    "translation": "My father is good at driving."
+  },
+  {
+    "vocabularyId": "vocab-4dbdc23e28ba",
+    "text": "部屋がすっかり暗い。",
+    "targetSurface": "すっかり",
+    "translation": "The room is completely dark."
+  },
+  {
+    "vocabularyId": "vocab-1eede6355fcd",
+    "text": "彼はアナウンサー。",
+    "targetSurface": "アナウンサー",
+    "translation": "He is an announcer."
+  },
+  {
+    "vocabularyId": "vocab-4ab39ba744e4",
+    "text": "消しゴムを貸す。",
+    "targetSurface": "消しゴム",
+    "translation": "Please lend me an eraser."
+  },
+  {
+    "vocabularyId": "vocab-b9af11aa0741",
+    "text": "海岸を歩く。",
+    "targetSurface": "海岸",
+    "translation": "I walk along the coast."
+  },
+  {
+    "vocabularyId": "vocab-cf58c5cf08d9",
+    "text": "火を消す。",
+    "targetSurface": "火",
+    "translation": "Put out the fire."
+  },
+  {
+    "vocabularyId": "vocab-28643e9a2639",
+    "text": "味噌を入れる。",
+    "targetSurface": "味噌",
+    "translation": "Add miso."
+  },
+  {
+    "vocabularyId": "vocab-2b1a1ec2f8d6",
+    "text": "母にお祝いを送る。",
+    "targetSurface": "お祝い",
+    "translation": "I send my mother a congratulatory gift."
+  },
+  {
+    "vocabularyId": "vocab-260afafbe574",
+    "text": "この乗り物は速い。",
+    "targetSurface": "乗り物",
+    "translation": "This vehicle is fast."
+  },
+  {
+    "vocabularyId": "vocab-f9fe99b91dd5",
+    "text": "駅で案内を聞く。",
+    "targetSurface": "案内",
+    "translation": "I ask for information at the station."
+  },
+  {
+    "vocabularyId": "vocab-b0613715b46e",
+    "text": "毎日学校に通う。",
+    "targetSurface": "通う",
+    "translation": "I commute to school every day."
+  },
+  {
+    "vocabularyId": "vocab-f97da654d8fa",
+    "text": "弟を連れる。",
+    "targetSurface": "連れる",
+    "translation": "I take my younger brother with me."
+  },
+  {
+    "vocabularyId": "vocab-c0780a70018c",
+    "text": "この技術はすごい。",
+    "targetSurface": "技術",
+    "translation": "This technology is amazing."
+  },
+  {
+    "vocabularyId": "vocab-a56aa93332fa",
+    "text": "小鳥が鳴く。",
+    "targetSurface": "小鳥",
+    "translation": "A small bird is singing."
+  },
+  {
+    "vocabularyId": "vocab-eab42d5753f9",
+    "text": "兄は下宿に住む。",
+    "targetSurface": "下宿",
+    "translation": "My older brother lives in a boarding house."
+  },
+  {
+    "vocabularyId": "vocab-acb510b96f3a",
+    "text": "パンにジャムをぬる。",
+    "targetSurface": "ジャム",
+    "translation": "I spread jam on bread."
+  },
+  {
+    "vocabularyId": "vocab-5288a1e69b5f",
+    "text": "友達を招待する。",
+    "targetSurface": "招待",
+    "translation": "I invite a friend."
+  },
+  {
+    "vocabularyId": "vocab-93092d3909e4",
+    "text": "鏡で顔を見る。",
+    "targetSurface": "鏡",
+    "translation": "I look at my face in the mirror."
+  },
+  {
+    "vocabularyId": "vocab-8553997c1475",
+    "text": "来るはずです。",
+    "targetSurface": "はず",
+    "translation": "He should come."
+  },
+  {
+    "vocabularyId": "vocab-070303f7599d",
+    "text": "法律の本です。",
+    "targetSurface": "法律",
+    "translation": "It is a law book."
+  },
+  {
+    "vocabularyId": "vocab-7aaea21aab43",
+    "text": "船が進む。",
+    "targetSurface": "進む",
+    "translation": "The boat moves forward."
+  },
+  {
+    "vocabularyId": "vocab-da2a8ecbb53b",
+    "text": "今日は海を楽しむ。",
+    "targetSurface": "楽しむ",
+    "translation": "I enjoy the sea today."
+  },
+  {
+    "vocabularyId": "vocab-5f0e2bf0ea23",
+    "text": "日本は貿易が多い。",
+    "targetSurface": "貿易",
+    "translation": "Japan has a lot of trade."
+  },
+  {
+    "vocabularyId": "vocab-928b6baae836",
+    "text": "父は反対です。",
+    "targetSurface": "反対",
+    "translation": "My father is against it."
+  },
+  {
+    "vocabularyId": "vocab-28a4f6508a62",
+    "text": "兄は真面目です。",
+    "targetSurface": "真面目",
+    "translation": "My older brother is serious."
+  },
+  {
+    "vocabularyId": "vocab-2a1053878f8a",
+    "text": "店員に聞く。",
+    "targetSurface": "店員",
+    "translation": "I ask the clerk."
+  },
+  {
+    "vocabularyId": "vocab-6609da9af02c",
+    "text": "ホテルに泊まる。",
+    "targetSurface": "泊まる",
+    "translation": "I stay at a hotel."
+  },
+  {
+    "vocabularyId": "vocab-ab645ed42d67",
+    "text": "はい、よろしい。",
+    "targetSurface": "よろしい",
+    "translation": "Yes, that is fine."
+  },
+  {
+    "vocabularyId": "vocab-b733006acec6",
+    "text": "今夜は雨です。",
+    "targetSurface": "今夜",
+    "translation": "It will rain tonight."
+  },
+  {
+    "vocabularyId": "vocab-018d445bd63e",
+    "text": "おつりをもらう。",
+    "targetSurface": "おつり",
+    "translation": "I get my change back."
+  },
+  {
+    "vocabularyId": "vocab-a695b5b642a1",
+    "text": "地図をチェックする。",
+    "targetSurface": "チェックする",
+    "translation": "I check the map."
+  },
+  {
+    "vocabularyId": "vocab-d4b36a042116",
+    "text": "日本語で会話する。",
+    "targetSurface": "会話",
+    "translation": "I have a conversation in Japanese."
+  },
+  {
+    "vocabularyId": "vocab-043434e7da99",
+    "text": "交通が多い。",
+    "targetSurface": "交通",
+    "translation": "There is a lot of traffic."
+  },
+  {
+    "vocabularyId": "vocab-bf736dbd5687",
+    "text": "ワープロを使う。",
+    "targetSurface": "ワープロ",
+    "translation": "I use a word processor."
+  },
+  {
+    "vocabularyId": "vocab-06e8c70619b7",
+    "text": "母はとても喜ぶ。",
+    "targetSurface": "喜ぶ",
+    "translation": "My mother is very happy."
+  },
+  {
+    "vocabularyId": "vocab-144611cc2889",
+    "text": "急行に乗る。",
+    "targetSurface": "急行",
+    "translation": "I take the express train."
+  },
+  {
+    "vocabularyId": "vocab-13c936bf001c",
+    "text": "皆、来てください。",
+    "targetSurface": "皆",
+    "translation": "Everyone, please come."
+  },
+  {
+    "vocabularyId": "vocab-40977d83691d",
+    "text": "この味はいい。",
+    "targetSurface": "味",
+    "translation": "This flavor is good."
+  },
+  {
+    "vocabularyId": "vocab-34ce7b171b18",
+    "text": "校長は男です。",
+    "targetSurface": "校長",
+    "translation": "The principal is a man."
+  },
+  {
+    "vocabularyId": "vocab-ce0628d869ba",
+    "text": "ごちそうを食べます。",
+    "targetSurface": "ごちそう",
+    "translation": "I will eat the feast."
+  },
+  {
+    "vocabularyId": "vocab-f64f5e7c1bcc",
+    "text": "踊りが上手です。",
+    "targetSurface": "踊り",
+    "translation": "The dance is skillful."
+  },
+  {
+    "vocabularyId": "vocab-90302d4e2430",
+    "text": "音楽に興味があります。",
+    "targetSurface": "興味",
+    "translation": "I am interested in music."
+  },
+  {
+    "vocabularyId": "vocab-d2b59fda6f1a",
+    "text": "来月に引っ越す。",
+    "targetSurface": "引っ越す",
+    "translation": "I will move next month."
+  },
+  {
+    "vocabularyId": "vocab-af53c2c7b101",
+    "text": "冷房をつけます。",
+    "targetSurface": "冷房",
+    "translation": "I will turn on the air conditioning."
+  },
+  {
+    "vocabularyId": "vocab-7b97771af3dc",
+    "text": "都合はいいです。",
+    "targetSurface": "都合",
+    "translation": "The timing works for me."
+  },
+  {
+    "vocabularyId": "vocab-b13a6cff45d1",
+    "text": "遠慮しないで。",
+    "targetSurface": "遠慮",
+    "translation": "Please don't hesitate."
+  },
+  {
+    "vocabularyId": "vocab-0686b84e65eb",
+    "text": "祖父は亡くなった。",
+    "targetSurface": "亡くなっ",
+    "translation": "My grandfather passed away."
+  },
+  {
+    "vocabularyId": "vocab-f87e559add33",
+    "text": "名前をはっきり言う。",
+    "targetSurface": "はっきり",
+    "translation": "I say my name clearly."
+  },
+  {
+    "vocabularyId": "vocab-52eedb6d1b90",
+    "text": "気持ちがいい。",
+    "targetSurface": "気持ち",
+    "translation": "It feels good."
+  },
+  {
+    "vocabularyId": "vocab-3b05ac1772db",
+    "text": "祖父が来ます。",
+    "targetSurface": "祖父",
+    "translation": "My grandfather is coming."
+  },
+  {
+    "vocabularyId": "vocab-859362abc9a7",
+    "text": "港へ行きます。",
+    "targetSurface": "港",
+    "translation": "I will go to the harbor."
+  },
+  {
+    "vocabularyId": "vocab-126eab7f777a",
+    "text": "このケーキ、凄い。",
+    "targetSurface": "凄い",
+    "translation": "This cake is amazing."
+  },
+  {
+    "vocabularyId": "vocab-9fb793c875d7",
+    "text": "春に入学します。",
+    "targetSurface": "入学",
+    "translation": "I enter school in spring."
+  },
+  {
+    "vocabularyId": "vocab-eef9d372f5df",
+    "text": "友達の絵を写す。",
+    "targetSurface": "写す",
+    "translation": "I copy my friend's picture."
+  },
+  {
+    "vocabularyId": "vocab-8e4839d2e6de",
+    "text": "家で火事です。",
+    "targetSurface": "火事",
+    "translation": "There is a fire at home."
+  },
+  {
+    "vocabularyId": "vocab-5bf183e71692",
+    "text": "三に二を足す。",
+    "targetSurface": "足す",
+    "translation": "Add two to three."
+  },
+  {
+    "vocabularyId": "vocab-252f72480e40",
+    "text": "教会へ行く。",
+    "targetSurface": "教会",
+    "translation": "I go to church."
+  },
+  {
+    "vocabularyId": "vocab-85f2c5093206",
+    "text": "彼らは来た。",
+    "targetSurface": "彼ら",
+    "translation": "They came."
+  },
+  {
+    "vocabularyId": "vocab-2fe12f739abb",
+    "text": "部屋は一杯です。",
+    "targetSurface": "一杯",
+    "translation": "The room is full."
+  },
+  {
+    "vocabularyId": "vocab-c29248bd29e7",
+    "text": "男性が三人です。",
+    "targetSurface": "男性",
+    "translation": "There are three men."
+  },
+  {
+    "vocabularyId": "vocab-d96afe6fc743",
+    "text": "理由を聞く。",
+    "targetSurface": "理由",
+    "translation": "I ask the reason."
+  },
+  {
+    "vocabularyId": "vocab-6e5c33003e80",
+    "text": "米を生産する。",
+    "targetSurface": "生産",
+    "translation": "We produce rice."
+  },
+  {
+    "vocabularyId": "vocab-dfacd3e8745e",
+    "text": "六時に暮れる。",
+    "targetSurface": "暮れる",
+    "translation": "It gets dark at six."
+  },
+  {
+    "vocabularyId": "vocab-6792cf8c08ca",
+    "text": "川で釣る。",
+    "targetSurface": "釣る",
+    "translation": "I fish in the river."
+  },
+  {
+    "vocabularyId": "vocab-97100ab7e3a5",
+    "text": "花ちゃんは元気。",
+    "targetSurface": "花ちゃん",
+    "translation": "Hana-chan is fine."
+  },
+  {
+    "vocabularyId": "vocab-5fb1d5e308b6",
+    "text": "ボールを打つ。",
+    "targetSurface": "打つ",
+    "translation": "I hit the ball."
+  },
+  {
+    "vocabularyId": "vocab-50aebb20091d",
+    "text": "あんな家が好き。",
+    "targetSurface": "あんな",
+    "translation": "I like a house like that."
+  },
+  {
+    "vocabularyId": "vocab-d631eb282f64",
+    "text": "すぐに謝る。",
+    "targetSurface": "謝る",
+    "translation": "I apologize right away."
+  },
+  {
+    "vocabularyId": "vocab-c3b69b33f808",
+    "text": "昼間は暑い。",
+    "targetSurface": "昼間",
+    "translation": "It is hot during the day."
+  },
+  {
+    "vocabularyId": "vocab-6d16cb9c903d",
+    "text": "教育は大切。",
+    "targetSurface": "教育",
+    "translation": "Education is important."
+  },
+  {
+    "vocabularyId": "vocab-8072e2afcecd",
+    "text": "女性が来ます。",
+    "targetSurface": "女性",
+    "translation": "A woman is coming."
+  },
+  {
+    "vocabularyId": "vocab-0958f7553d9f",
+    "text": "米を食べる。",
+    "targetSurface": "米",
+    "translation": "I eat rice."
+  },
+  {
+    "vocabularyId": "vocab-c39743221dd3",
+    "text": "ここは邪魔です。",
+    "targetSurface": "邪魔",
+    "translation": "I am in the way here."
+  },
+  {
+    "vocabularyId": "vocab-16a0dff60b3a",
+    "text": "国際ニュースです。",
+    "targetSurface": "国際",
+    "translation": "It is international news."
+  },
+  {
+    "vocabularyId": "vocab-c76219e32179",
+    "text": "隅に犬がいる。",
+    "targetSurface": "隅",
+    "translation": "A dog is in the corner."
+  },
+  {
+    "vocabularyId": "vocab-5f3a8d4d0dd6",
+    "text": "先生に伺う。",
+    "targetSurface": "伺う",
+    "translation": "I politely ask the teacher."
+  },
+  {
+    "vocabularyId": "vocab-bc20caf6826e",
+    "text": "再来週は休みです。",
+    "targetSurface": "再来週",
+    "translation": "The week after next is a holiday."
+  },
+  {
+    "vocabularyId": "vocab-7976ab1d84ce",
+    "text": "喉が痛いです。",
+    "targetSurface": "喉",
+    "translation": "My throat hurts."
+  },
+  {
+    "vocabularyId": "vocab-6ff267d25764",
+    "text": "周りは静かです。",
+    "targetSurface": "周り",
+    "translation": "The surroundings are quiet."
+  },
+  {
+    "vocabularyId": "vocab-2a3a992197c7",
+    "text": "電車は不便です。",
+    "targetSurface": "不便",
+    "translation": "The train is inconvenient."
+  },
+  {
+    "vocabularyId": "vocab-657b6930290d",
+    "text": "血が出ました。",
+    "targetSurface": "血",
+    "translation": "Blood came out."
+  },
+  {
+    "vocabularyId": "vocab-a76119b3c712",
+    "text": "犬に毛があります。",
+    "targetSurface": "毛",
+    "translation": "The dog has fur."
+  },
+  {
+    "vocabularyId": "vocab-4992d80e6f22",
+    "text": "今日は随分寒い。",
+    "targetSurface": "随分",
+    "translation": "It is extremely cold today."
+  },
+  {
+    "vocabularyId": "vocab-2267fdbff2e9",
+    "text": "押し入れに入れる。",
+    "targetSurface": "押し入れ",
+    "translation": "I put it in the closet."
+  },
+  {
+    "vocabularyId": "vocab-61607c5a6ac7",
+    "text": "電灯が点きました。",
+    "targetSurface": "電灯",
+    "translation": "The light turned on."
+  },
+  {
+    "vocabularyId": "vocab-1afcc7ef8e83",
+    "text": "先生は僕を叱る。",
+    "targetSurface": "叱る",
+    "translation": "The teacher scolds me."
+  },
+  {
+    "vocabularyId": "vocab-7e15f6c865a4",
+    "text": "サンダルを買う。",
+    "targetSurface": "サンダル",
+    "translation": "I buy sandals."
+  },
+  {
+    "vocabularyId": "vocab-22ececd801b5",
+    "text": "このケーキはうまい。",
+    "targetSurface": "うまい",
+    "translation": "This cake is delicious."
+  },
+  {
+    "vocabularyId": "vocab-dcfa870c8a53",
+    "text": "時間を変える。",
+    "targetSurface": "変える",
+    "translation": "I change the time."
+  },
+  {
+    "vocabularyId": "vocab-56d15e2324d0",
+    "text": "講堂で話す。",
+    "targetSurface": "講堂",
+    "translation": "I speak in the auditorium."
+  },
+  {
+    "vocabularyId": "vocab-27d5744f36a2",
+    "text": "子が笑う。",
+    "targetSurface": "子",
+    "translation": "The child laughs."
+  },
+  {
+    "vocabularyId": "vocab-7368e1e9c171",
+    "text": "お湯を沸かす。",
+    "targetSurface": "沸かす",
+    "translation": "I boil water."
+  },
+  {
+    "vocabularyId": "vocab-0982a80352d8",
+    "text": "レジで払う。",
+    "targetSurface": "レジ",
+    "translation": "I pay at the register."
+  },
+  {
+    "vocabularyId": "vocab-f5635cfb88b4",
+    "text": "しばらく待つ。",
+    "targetSurface": "しばらく",
+    "translation": "Wait for a little while."
+  },
+  {
+    "vocabularyId": "vocab-e6674bacf655",
+    "text": "特に寒い。",
+    "targetSurface": "特に",
+    "translation": "It is especially cold."
+  },
+  {
+    "vocabularyId": "vocab-b650f84a486c",
+    "text": "窓が空く。",
+    "targetSurface": "空く",
+    "translation": "The window opens."
+  },
+  {
+    "vocabularyId": "vocab-f3534981adc8",
+    "text": "計画を立てる。",
+    "targetSurface": "計画",
+    "translation": "I make a plan."
+  },
+  {
+    "vocabularyId": "vocab-53e3381ca854",
+    "text": "この通りを行く。",
+    "targetSurface": "通り",
+    "translation": "I go down this street."
+  },
+  {
+    "vocabularyId": "vocab-5fe3e02a87b9",
+    "text": "下着を洗う。",
+    "targetSurface": "下着",
+    "translation": "I wash my underwear."
+  },
+  {
+    "vocabularyId": "vocab-b8d677266acf",
+    "text": "経済の本です。",
+    "targetSurface": "経済",
+    "translation": "It is an economics book."
+  },
+  {
+    "vocabularyId": "vocab-6e70affba493",
+    "text": "こう言います。",
+    "targetSurface": "こう",
+    "translation": "I say it like this."
+  },
+  {
+    "vocabularyId": "vocab-ba08fde088ef",
+    "text": "裏に書く。",
+    "targetSurface": "裏",
+    "translation": "I write on the back."
+  },
+  {
+    "vocabularyId": "vocab-ab1cb4918ea3",
+    "text": "勉強のため。",
+    "targetSurface": "ため",
+    "translation": "For study."
+  },
+  {
+    "vocabularyId": "vocab-32f470ce19e9",
+    "text": "部長がおいでになる。",
+    "targetSurface": "おいでになる",
+    "translation": "The manager is here."
+  },
+  {
+    "vocabularyId": "vocab-f073cc582272",
+    "text": "色が変わる。",
+    "targetSurface": "変わる",
+    "translation": "The color changes."
+  },
+  {
+    "vocabularyId": "vocab-b095aafacec8",
+    "text": "犬以外はだめ。",
+    "targetSurface": "以外",
+    "translation": "Nothing except the dog is okay."
+  },
+  {
+    "vocabularyId": "vocab-e657b2e7330e",
+    "text": "仕事はすむ。",
+    "targetSurface": "すむ",
+    "translation": "The work is finished."
+  },
+  {
+    "vocabularyId": "vocab-b9e99a64864f",
+    "text": "ハンバーグを食べる。",
+    "targetSurface": "ハンバーグ",
+    "translation": "I eat hamburger steak."
+  },
+  {
+    "vocabularyId": "vocab-887f569257fd",
+    "text": "この市は大きい。",
+    "targetSurface": "市",
+    "translation": "This city is big."
+  },
+  {
+    "vocabularyId": "vocab-960a1c151bf7",
+    "text": "引き出しを開く。",
+    "targetSurface": "引き出し",
+    "translation": "I open the drawer."
+  },
+  {
+    "vocabularyId": "vocab-a61dbc2d75b5",
+    "text": "遊びが好きです。",
+    "targetSurface": "遊び",
+    "translation": "I like play."
+  },
+  {
+    "vocabularyId": "vocab-81d17bdcb4bd",
+    "text": "支度は十分です。",
+    "targetSurface": "支度",
+    "translation": "The preparations are enough."
+  },
+  {
+    "vocabularyId": "vocab-9750a4fa3e37",
+    "text": "お金は十分です。",
+    "targetSurface": "十分",
+    "translation": "The money is enough."
+  },
+  {
+    "vocabularyId": "vocab-b1f4b1116c69",
+    "text": "きっと来ます。",
+    "targetSurface": "きっと",
+    "translation": "He will surely come."
+  },
+  {
+    "vocabularyId": "vocab-37de19811d79",
+    "text": "駅は遠くです。",
+    "targetSurface": "遠く",
+    "translation": "The station is far away."
+  },
+  {
+    "vocabularyId": "vocab-97dfa455ab7e",
+    "text": "だいたい三時です。",
+    "targetSurface": "だいたい",
+    "translation": "It's about three o'clock."
+  },
+  {
+    "vocabularyId": "vocab-910187201845",
+    "text": "枝が折れた。",
+    "targetSurface": "折れ",
+    "translation": "The branch broke."
+  },
+  {
+    "vocabularyId": "vocab-7003bbe10d0b",
+    "text": "これが正しい。",
+    "targetSurface": "正しい",
+    "translation": "This is correct."
+  },
+  {
+    "vocabularyId": "vocab-fe5a10ceb5e9",
+    "text": "日本は米を輸入する。",
+    "targetSurface": "輸入",
+    "translation": "Japan imports rice."
+  },
+  {
+    "vocabularyId": "vocab-495da4c70f97",
+    "text": "すぐ返事をください。",
+    "targetSurface": "返事",
+    "translation": "Please answer right away."
+  },
+  {
+    "vocabularyId": "vocab-df4a2eb4330c",
+    "text": "京都は昔の都です。",
+    "targetSurface": "都",
+    "translation": "Kyoto is an ancient capital."
+  },
+  {
+    "vocabularyId": "vocab-600a5527ee03",
+    "text": "産業が大切です。",
+    "targetSurface": "産業",
+    "translation": "Industry is important."
+  },
+  {
+    "vocabularyId": "vocab-c4a082e67773",
+    "text": "あの人はお金持ちです。",
+    "targetSurface": "お金持ち",
+    "translation": "That person is rich."
+  },
+  {
+    "vocabularyId": "vocab-0b8270c9bdf4",
+    "text": "この島は小さい。",
+    "targetSurface": "島",
+    "translation": "This island is small."
+  },
+  {
+    "vocabularyId": "vocab-878b1c1a6272",
+    "text": "この道具を使う。",
+    "targetSurface": "道具",
+    "translation": "I use this tool."
+  },
+  {
+    "vocabularyId": "vocab-169da5374ea0",
+    "text": "道ですべる。",
+    "targetSurface": "すべる",
+    "translation": "I slip on the road."
+  },
+  {
+    "vocabularyId": "vocab-21c8718d5853",
+    "text": "今日はそれほど寒い。",
+    "targetSurface": "それほど",
+    "translation": "Today isn't that cold."
+  },
+  {
+    "vocabularyId": "vocab-7edc058598c9",
+    "text": "九人以上います。",
+    "targetSurface": "以上",
+    "translation": "There are nine or more people."
+  },
+  {
+    "vocabularyId": "vocab-08a2cfca3418",
+    "text": "特急に乗ります。",
+    "targetSurface": "特急",
+    "translation": "I take the limited express."
+  },
+  {
+    "vocabularyId": "vocab-bde430445611",
+    "text": "妻は家にいる。",
+    "targetSurface": "妻",
+    "translation": "My wife is at home."
+  },
+  {
+    "vocabularyId": "vocab-64caa70ef0a7",
+    "text": "帰りはバスです。",
+    "targetSurface": "帰り",
+    "translation": "I go back by bus."
+  },
+  {
+    "vocabularyId": "vocab-0fd396d3d708",
+    "text": "具合が悪いです。",
+    "targetSurface": "具合",
+    "translation": "I'm feeling unwell."
+  },
+  {
+    "vocabularyId": "vocab-b85fc1b82240",
+    "text": "この机は固い。",
+    "targetSurface": "固い",
+    "translation": "This desk is hard."
+  },
+  {
+    "vocabularyId": "vocab-52e891db1cfc",
+    "text": "駐車場はあそこ。",
+    "targetSurface": "駐車場",
+    "translation": "The parking lot is over there."
+  },
+  {
+    "vocabularyId": "vocab-61cb6b5bc4df",
+    "text": "父はスーツです。",
+    "targetSurface": "スーツ",
+    "translation": "My father is in a suit."
+  },
+  {
+    "vocabularyId": "vocab-a11560da1a91",
+    "text": "ここは危険です。",
+    "targetSurface": "危険",
+    "translation": "This place is dangerous."
+  },
+  {
+    "vocabularyId": "vocab-2183db666af4",
+    "text": "春に卒業します。",
+    "targetSurface": "卒業",
+    "translation": "I graduate in spring."
+  },
+  {
+    "vocabularyId": "vocab-7ec50aeec001",
+    "text": "雨です。それで帰る。",
+    "targetSurface": "それで",
+    "translation": "It's raining, so I go home."
+  },
+  {
+    "vocabularyId": "vocab-a2ad8df0b113",
+    "text": "木に枝がある。",
+    "targetSurface": "枝",
+    "translation": "There is a branch on the tree."
+  },
+  {
+    "vocabularyId": "vocab-6e3e2cd2b5eb",
+    "text": "そろそろ帰ります。",
+    "targetSurface": "そろそろ",
+    "translation": "I'm going home soon."
+  },
+  {
+    "vocabularyId": "vocab-8e124799ea6c",
+    "text": "子供が騒ぐ。",
+    "targetSurface": "騒ぐ",
+    "translation": "The children make noise."
+  },
+  {
+    "vocabularyId": "vocab-d65080a0aaae",
+    "text": "先生に尋ねる。",
+    "targetSurface": "尋ねる",
+    "translation": "I ask the teacher."
+  },
+  {
+    "vocabularyId": "vocab-aa2bb59ac398",
+    "text": "今夜は放送がある。",
+    "targetSurface": "放送",
+    "translation": "There is a broadcast tonight."
+  },
+  {
+    "vocabularyId": "vocab-4f47b0dd29a1",
+    "text": "市民が集まる。",
+    "targetSurface": "市民",
+    "translation": "Citizens gather."
+  },
+  {
+    "vocabularyId": "vocab-2aa424834a1b",
+    "text": "ファックスを送る。",
+    "targetSurface": "ファックス",
+    "translation": "I send a fax."
+  },
+  {
+    "vocabularyId": "vocab-8c52920802b4",
+    "text": "試合で負ける。",
+    "targetSurface": "負ける",
+    "translation": "I lose the game."
+  },
+  {
+    "vocabularyId": "vocab-57b897862a80",
+    "text": "田舎は静かです。",
+    "targetSurface": "田舎",
+    "translation": "The countryside is quiet."
+  },
+  {
+    "vocabularyId": "vocab-fcb569060839",
+    "text": "先生の講義です。",
+    "targetSurface": "講義",
+    "translation": "It's the teacher's lecture."
+  },
+  {
+    "vocabularyId": "vocab-7ae1ee3a0309",
+    "text": "そんなに寒い？",
+    "targetSurface": "そんなに",
+    "translation": "Is it that cold?"
+  },
+  {
+    "vocabularyId": "vocab-385a4dbb8d14",
+    "text": "昼休みに食べる。",
+    "targetSurface": "昼休み",
+    "translation": "I eat during lunch break."
+  },
+  {
+    "vocabularyId": "vocab-1a16ba820f65",
+    "text": "忘れ物があります。",
+    "targetSurface": "忘れ物",
+    "translation": "There is something I forgot."
+  },
+  {
+    "vocabularyId": "vocab-cce8d1b13e83",
+    "text": "二階から下りる。",
+    "targetSurface": "下りる",
+    "translation": "I go down from the second floor."
+  },
+  {
+    "vocabularyId": "vocab-2f6116f4f545",
+    "text": "腕が痛いです。",
+    "targetSurface": "腕",
+    "translation": "My arm hurts."
+  },
+  {
+    "vocabularyId": "vocab-c165f58620c5",
+    "text": "その訳はない。",
+    "targetSurface": "訳",
+    "translation": "There is no reason for that."
+  },
+  {
+    "vocabularyId": "vocab-af01edbc4da3",
+    "text": "承知しました。",
+    "targetSurface": "承知",
+    "translation": "Understood."
+  },
+  {
+    "vocabularyId": "vocab-9345af96fcea",
+    "text": "高校に行きます。",
+    "targetSurface": "高校",
+    "translation": "I go to high school."
+  },
+  {
+    "vocabularyId": "vocab-118c92324105",
+    "text": "赤いのに似る。",
+    "targetSurface": "似る",
+    "translation": "It resembles a red one."
+  },
+  {
+    "vocabularyId": "vocab-1bc4c1ae4874",
+    "text": "暖房をつける。",
+    "targetSurface": "暖房",
+    "translation": "I turn on the heating."
+  },
+  {
+    "vocabularyId": "vocab-f61c8dbcebee",
+    "text": "割合は多い。",
+    "targetSurface": "割合",
+    "translation": "The proportion is high."
+  },
+  {
+    "vocabularyId": "vocab-5355ef79f00f",
+    "text": "寺へ行きます。",
+    "targetSurface": "寺",
+    "translation": "I go to the temple."
+  },
+  {
+    "vocabularyId": "vocab-fa496ae3e1d7",
+    "text": "日本語に慣れる。",
+    "targetSurface": "慣れる",
+    "translation": "I get used to Japanese."
+  },
+  {
+    "vocabularyId": "vocab-61138240865b",
+    "text": "今日は普通です。",
+    "targetSurface": "普通",
+    "translation": "Today is normal."
+  },
+  {
+    "vocabularyId": "vocab-19dc754d2746",
+    "text": "母を手伝う。",
+    "targetSurface": "手伝う",
+    "translation": "I help my mother."
+  },
+  {
+    "vocabularyId": "vocab-0223b026aa25",
+    "text": "なるほど、いい。",
+    "targetSurface": "なるほど",
+    "translation": "I see, okay."
+  },
+  {
+    "vocabularyId": "vocab-5450142ee068",
+    "text": "先生がくださる。",
+    "targetSurface": "くださる",
+    "translation": "The teacher gives it to me."
+  },
+  {
+    "vocabularyId": "vocab-0717e551c4a4",
+    "text": "息子は学生です。",
+    "targetSurface": "息子",
+    "translation": "My son is a student."
+  },
+  {
+    "vocabularyId": "vocab-3f2f923c2a59",
+    "text": "会場はここです。",
+    "targetSurface": "会場",
+    "translation": "The venue is here."
+  },
+  {
+    "vocabularyId": "vocab-4f4fa5bb1705",
+    "text": "子供が笑う。",
+    "targetSurface": "笑う",
+    "translation": "The child laughs."
+  },
+  {
+    "vocabularyId": "vocab-96e39ee9cb18",
+    "text": "光が強い。",
+    "targetSurface": "光",
+    "translation": "The light is strong."
+  },
+  {
+    "vocabularyId": "vocab-b2dabb47e7dd",
+    "text": "母のお見舞い。",
+    "targetSurface": "お見舞い",
+    "translation": "I visit my mother in the hospital."
+  },
+  {
+    "vocabularyId": "vocab-b48cb8a41332",
+    "text": "ここに席がある。",
+    "targetSurface": "席",
+    "translation": "There is a seat here."
+  },
+  {
+    "vocabularyId": "vocab-8529ab9ef9d1",
+    "text": "お客様です。",
+    "targetSurface": "お客様",
+    "translation": "He is a customer."
+  },
+  {
+    "vocabularyId": "vocab-722f66c68df5",
+    "text": "ご存じですか。",
+    "targetSurface": "ご存じ",
+    "translation": "Do you know it?"
+  },
+  {
+    "vocabularyId": "vocab-d0862016bbe8",
+    "text": "雨で下る。",
+    "targetSurface": "下る",
+    "translation": "It falls because of the rain."
+  },
+  {
+    "vocabularyId": "vocab-0cdc2d17477e",
+    "text": "アジアは広い。",
+    "targetSurface": "アジア",
+    "translation": "Asia is vast."
+  },
+  {
+    "vocabularyId": "vocab-d78eda1984d2",
+    "text": "今日は空く。",
+    "targetSurface": "空く",
+    "translation": "It is less crowded today."
+  },
+  {
+    "vocabularyId": "vocab-ea786b6c208b",
+    "text": "あ、先生です。",
+    "targetSurface": "あ",
+    "translation": "Ah, it’s the teacher."
+  },
+  {
+    "vocabularyId": "vocab-09c4f84f1846",
+    "text": "これが最もいい。",
+    "targetSurface": "最も",
+    "translation": "This is the best."
+  },
+  {
+    "vocabularyId": "vocab-5b9531ccc9d3",
+    "text": "十代です。",
+    "targetSurface": "十代",
+    "translation": "I am a teenager."
+  },
+  {
+    "vocabularyId": "vocab-d7b583086e09",
+    "text": "これが最後です。",
+    "targetSurface": "最後",
+    "translation": "This is the last one."
+  },
+  {
+    "vocabularyId": "vocab-dd7eca264a07",
+    "text": "今日退院です。",
+    "targetSurface": "退院",
+    "translation": "I leave the hospital today."
+  },
+  {
+    "vocabularyId": "vocab-d2206e134237",
+    "text": "展覧会へ行く。",
+    "targetSurface": "展覧会",
+    "translation": "I go to the exhibition."
+  },
+  {
+    "vocabularyId": "vocab-52b6fa9e374a",
+    "text": "汽車が来る。",
+    "targetSurface": "汽車",
+    "translation": "The train is coming."
+  },
+  {
+    "vocabularyId": "vocab-c2bcee799a05",
+    "text": "鍵が見つかる。",
+    "targetSurface": "見つかる",
+    "translation": "The key is found."
+  },
+  {
+    "vocabularyId": "vocab-b04d34f421af",
+    "text": "注射は痛い。",
+    "targetSurface": "注射",
+    "translation": "An injection hurts."
+  },
+  {
+    "vocabularyId": "vocab-b9013a27e01b",
+    "text": "この様です。",
+    "targetSurface": "様",
+    "translation": "It is like this."
+  },
+  {
+    "vocabularyId": "vocab-04838489b04f",
+    "text": "最初はむずかしい。",
+    "targetSurface": "最初",
+    "translation": "At first, it is hard."
+  },
+  {
+    "vocabularyId": "vocab-945e2f5d47a5",
+    "text": "ご家族は元気ですか。",
+    "targetSurface": "ご家族",
+    "translation": "Is your family well?"
+  },
+  {
+    "vocabularyId": "vocab-88a285690442",
+    "text": "それで安心です。",
+    "targetSurface": "安心",
+    "translation": "That makes me feel relieved."
+  },
+  {
+    "vocabularyId": "vocab-fda6cf2829c8",
+    "text": "時計が直る。",
+    "targetSurface": "直る",
+    "translation": "The clock is fixed."
+  },
+  {
+    "vocabularyId": "vocab-3d6696481a37",
+    "text": "雨が続く。",
+    "targetSurface": "続く",
+    "translation": "The rain continues."
+  },
+  {
+    "vocabularyId": "vocab-dd1abaf7d707",
+    "text": "犬の世話をする。",
+    "targetSurface": "世話",
+    "translation": "I take care of the dog."
+  },
+  {
+    "vocabularyId": "vocab-8269c26a210a",
+    "text": "近所に住む。",
+    "targetSurface": "近所",
+    "translation": "I live in the neighborhood."
+  },
+  {
+    "vocabularyId": "vocab-09ef4d4dc05a",
+    "text": "一億です。",
+    "targetSurface": "億",
+    "translation": "It is one hundred million."
+  },
+  {
+    "vocabularyId": "vocab-73d5b0dd7055",
+    "text": "数学はむずかしい。",
+    "targetSurface": "数学",
+    "translation": "Mathematics is difficult."
+  },
+  {
+    "vocabularyId": "vocab-3ee8d044ef7d",
+    "text": "朝ごはんは習慣です。",
+    "targetSurface": "習慣",
+    "translation": "Breakfast is a custom."
+  },
+  {
+    "vocabularyId": "vocab-f6e52f2b7b88",
+    "text": "パンが焼ける。",
+    "targetSurface": "焼ける",
+    "translation": "The bread is baked."
+  },
+  {
+    "vocabularyId": "vocab-3d35801d70f0",
+    "text": "君は元気ですか？",
+    "targetSurface": "君",
+    "translation": "Are you well?"
+  },
+  {
+    "vocabularyId": "vocab-74bdf22124ea",
+    "text": "夜は水が冷える。",
+    "targetSurface": "冷える",
+    "translation": "At night, the water gets cold."
+  },
+  {
+    "vocabularyId": "vocab-3ab7a11d1e94",
+    "text": "電気が点く。",
+    "targetSurface": "点く",
+    "translation": "The light turns on."
+  },
+  {
+    "vocabularyId": "vocab-15cba3d3865f",
+    "text": "その格好はいい。",
+    "targetSurface": "格好",
+    "translation": "That look is nice."
+  },
+  {
+    "vocabularyId": "vocab-3e552269034a",
+    "text": "私は気にかまう。",
+    "targetSurface": "かまう",
+    "translation": "I worry about it."
+  },
+  {
+    "vocabularyId": "vocab-0ae670bf5bb8",
+    "text": "コップを落す。",
+    "targetSurface": "落す",
+    "translation": "I drop the cup."
+  },
+  {
+    "vocabularyId": "vocab-5fc776fb4e7b",
+    "text": "明日、学校へ行く。",
+    "targetSurface": "明日",
+    "translation": "I go to school tomorrow."
+  },
+  {
+    "vocabularyId": "vocab-208c75c5154e",
+    "text": "七時に出発です。",
+    "targetSurface": "出発",
+    "translation": "Departure is at seven."
+  },
+  {
+    "vocabularyId": "vocab-1890f5e32640",
+    "text": "その本を拝見。",
+    "targetSurface": "拝見",
+    "translation": "I will have a look at that book."
+  },
+  {
+    "vocabularyId": "vocab-629875c01d86",
+    "text": "皿が割れる。",
+    "targetSurface": "割れる",
+    "translation": "The plate breaks."
+  },
+  {
+    "vocabularyId": "vocab-152585804da9",
+    "text": "背中が痛い。",
+    "targetSurface": "背中",
+    "translation": "My back hurts."
+  },
+  {
+    "vocabularyId": "vocab-c67d56fc38d0",
+    "text": "新聞社へ行く。",
+    "targetSurface": "新聞社",
+    "translation": "I go to the newspaper company."
+  },
+  {
+    "vocabularyId": "vocab-bcde89c841b0",
+    "text": "時計が回る。",
+    "targetSurface": "回る",
+    "translation": "The clock turns."
+  },
+  {
+    "vocabularyId": "vocab-f775e1cedb21",
+    "text": "田中君は元気。",
+    "targetSurface": "田中君",
+    "translation": "Tanaka-kun is well."
+  },
+  {
+    "vocabularyId": "vocab-134840eb63c7",
+    "text": "シャツが濡れる。",
+    "targetSurface": "濡れる",
+    "translation": "The shirt gets wet."
+  },
+  {
+    "vocabularyId": "vocab-6b7747655aae",
+    "text": "木が倒れる。",
+    "targetSurface": "倒れる",
+    "translation": "The tree falls over."
+  },
+  {
+    "vocabularyId": "vocab-51091c8920da",
+    "text": "母はアクセサリー。",
+    "targetSurface": "アクセサリー",
+    "translation": "Mother has an accessory."
+  },
+  {
+    "vocabularyId": "vocab-382cdcd3c02c",
+    "text": "駅に向かう。",
+    "targetSurface": "向かう",
+    "translation": "I head toward the station."
+  },
+  {
+    "vocabularyId": "vocab-5b39de46794f",
+    "text": "その仕方はよい。",
+    "targetSurface": "仕方",
+    "translation": "That way is good."
+  },
+  {
+    "vocabularyId": "vocab-3d44adeebdf4",
+    "text": "首が痛い。",
+    "targetSurface": "首",
+    "translation": "My neck hurts."
+  },
+  {
+    "vocabularyId": "vocab-c6dc2b4390af",
+    "text": "雨はこのほど。",
+    "targetSurface": "ほど",
+    "translation": "The rain is this much."
+  },
+  {
+    "vocabularyId": "vocab-14631d2b2029",
+    "text": "私の代わりです。",
+    "targetSurface": "代わり",
+    "translation": "This is my replacement."
+  },
+  {
+    "vocabularyId": "vocab-8d39ee892820",
+    "text": "テストで失敗。",
+    "targetSurface": "失敗",
+    "translation": "I made a mistake on the test."
+  },
+  {
+    "vocabularyId": "vocab-c8a4b6960b52",
+    "text": "工業は大きい。",
+    "targetSurface": "工業",
+    "translation": "Industry is large."
+  },
+  {
+    "vocabularyId": "vocab-f6cfb9ff50ad",
+    "text": "京都へ移る。",
+    "targetSurface": "移る",
+    "translation": "I move to Kyoto."
+  },
+  {
+    "vocabularyId": "vocab-c406fe8bfa49",
+    "text": "スーツケースを持つ。",
+    "targetSurface": "スーツケース",
+    "translation": "I carry the suitcase."
+  },
+  {
+    "vocabularyId": "vocab-0dde3a140238",
+    "text": "研究室へ入る。",
+    "targetSurface": "研究室",
+    "translation": "I enter the laboratory."
+  },
+  {
+    "vocabularyId": "vocab-5f5144524727",
+    "text": "友達を紹介する。",
+    "targetSurface": "紹介",
+    "translation": "I introduce my friend."
+  },
+  {
+    "vocabularyId": "vocab-46b93a75641c",
+    "text": "行くけれど雨。",
+    "targetSurface": "けれど",
+    "translation": "I will go, but it is raining."
+  },
+  {
+    "vocabularyId": "vocab-bebbeab2d422",
+    "text": "舟は川を行く。",
+    "targetSurface": "舟",
+    "translation": "The boat goes on the river."
+  },
+  {
+    "vocabularyId": "vocab-247b87990016",
+    "text": "木が動く。",
+    "targetSurface": "動く",
+    "translation": "The tree moves."
+  },
+  {
+    "vocabularyId": "vocab-a4e5df148631",
+    "text": "虫がいる。",
+    "targetSurface": "虫",
+    "translation": "There is an insect."
+  },
+  {
+    "vocabularyId": "vocab-dcb1b43bf147",
+    "text": "コンピュータを使う。",
+    "targetSurface": "コンピュータ",
+    "translation": "I use the computer."
+  },
+  {
+    "vocabularyId": "vocab-e50904f7bd01",
+    "text": "花を植える。",
+    "targetSurface": "植える",
+    "translation": "I plant flowers."
+  },
+  {
+    "vocabularyId": "vocab-23aabf3d1d5b",
+    "text": "両方とも好き。",
+    "targetSurface": "両方",
+    "translation": "I like both."
+  },
+  {
+    "vocabularyId": "vocab-ff3999380a4a",
+    "text": "手が汚れる。",
+    "targetSurface": "汚れる",
+    "translation": "My hands get dirty."
+  },
+  {
+    "vocabularyId": "vocab-b6c78c16c960",
+    "text": "水泳は楽しい。",
+    "targetSurface": "水泳",
+    "translation": "Swimming is fun."
+  },
+  {
+    "vocabularyId": "vocab-7d67935040af",
+    "text": "経験は大事。",
+    "targetSurface": "経験",
+    "translation": "Experience is important."
+  },
+  {
+    "vocabularyId": "vocab-37f3edcecbb4",
+    "text": "兄が試合に勝つ！",
+    "targetSurface": "勝つ",
+    "translation": "My older brother wins the match!"
+  },
+  {
+    "vocabularyId": "vocab-59368a07ddf7",
+    "text": "海に砂があります。",
+    "targetSurface": "砂",
+    "translation": "There is sand by the sea."
+  },
+  {
+    "vocabularyId": "vocab-3e2039d98970",
+    "text": "古い時計を取り替える。",
+    "targetSurface": "取り替える",
+    "translation": "I replace the old clock."
+  },
+  {
+    "vocabularyId": "vocab-4026ad049145",
+    "text": "この字は簡単です。",
+    "targetSurface": "簡単",
+    "translation": "This character is easy."
+  },
+  {
+    "vocabularyId": "vocab-488c82307112",
+    "text": "特別な日です。",
+    "targetSurface": "特別",
+    "translation": "It is a special day."
+  },
+  {
+    "vocabularyId": "vocab-c00c2836223b",
+    "text": "夜に復習します。",
+    "targetSurface": "復習",
+    "translation": "I review my lessons at night."
+  },
+  {
+    "vocabularyId": "vocab-8aed2e26cdbf",
+    "text": "バスに間に合う。",
+    "targetSurface": "間に合う",
+    "translation": "I make it in time for the bus."
+  },
+  {
+    "vocabularyId": "vocab-a66d2a6ba0ac",
+    "text": "この本は役に立つ。",
+    "targetSurface": "役に立つ",
+    "translation": "This book is useful."
+  },
+  {
+    "vocabularyId": "vocab-aa732c78bd13",
+    "text": "部屋の真中です。",
+    "targetSurface": "真中",
+    "translation": "It is in the middle of the room."
+  },
+  {
+    "vocabularyId": "vocab-e031115f699c",
+    "text": "英語を研究します。",
+    "targetSurface": "研究",
+    "translation": "I study English."
+  },
+  {
+    "vocabularyId": "vocab-4063840184cf",
+    "text": "庭に草があります。",
+    "targetSurface": "草",
+    "translation": "There is grass in the yard."
+  },
+  {
+    "vocabularyId": "vocab-38c7365e9765",
+    "text": "駅は人が込む。",
+    "targetSurface": "込む",
+    "translation": "The station gets crowded."
+  },
+  {
+    "vocabularyId": "vocab-30f7007878e0",
+    "text": "友達を訪ねる。",
+    "targetSurface": "訪ねる",
+    "translation": "I visit a friend."
+  },
+  {
+    "vocabularyId": "vocab-06a4c07236b5",
+    "text": "目を下げる。",
+    "targetSurface": "下げる",
+    "translation": "I lower my eyes."
+  },
+  {
+    "vocabularyId": "vocab-cb7d8a487c4f",
+    "text": "花見に行く。",
+    "targetSurface": "花見",
+    "translation": "I go cherry-blossom viewing."
+  },
+  {
+    "vocabularyId": "vocab-d19fba181116",
+    "text": "途中で休む。",
+    "targetSurface": "途中",
+    "translation": "I rest on the way."
+  },
+  {
+    "vocabularyId": "vocab-f53039a401f5",
+    "text": "父が入院する。",
+    "targetSurface": "入院",
+    "translation": "My father is hospitalized."
+  },
+  {
+    "vocabularyId": "vocab-f19d0a42f775",
+    "text": "ここで乗り換える。",
+    "targetSurface": "乗り換える",
+    "translation": "I transfer here."
+  },
+  {
+    "vocabularyId": "vocab-b746e2383e3b",
+    "text": "駅で別れる。",
+    "targetSurface": "別れる",
+    "translation": "We part at the station."
+  },
+  {
+    "vocabularyId": "vocab-e13ceb2d4ebd",
+    "text": "山田町に住む。",
+    "targetSurface": "山田町",
+    "translation": "I live in Yamada-chō."
+  },
+  {
+    "vocabularyId": "vocab-f4f3b81e8c87",
+    "text": "この道は安全です。",
+    "targetSurface": "安全",
+    "translation": "This road is safe."
+  },
+  {
+    "vocabularyId": "vocab-be665281bf2b",
+    "text": "看護婦が来た。",
+    "targetSurface": "看護婦",
+    "translation": "The nurse came."
+  },
+  {
+    "vocabularyId": "vocab-b205aa560c2f",
+    "text": "京都で見物する。",
+    "targetSurface": "見物",
+    "translation": "I go sightseeing in Kyoto."
+  },
+  {
+    "vocabularyId": "vocab-46a9b4c6d784",
+    "text": "先生に相談する。",
+    "targetSurface": "相談",
+    "translation": "I consult the teacher."
+  },
+  {
+    "vocabularyId": "vocab-badbd8e1e6a9",
+    "text": "ガソリンスタンドへ行く。",
+    "targetSurface": "ガソリンスタンド",
+    "translation": "I go to the gas station."
+  },
+  {
+    "vocabularyId": "vocab-7368b495025b",
+    "text": "赤ちゃんが眠る。",
+    "targetSurface": "眠る",
+    "translation": "The baby sleeps."
+  },
+  {
+    "vocabularyId": "vocab-86592fe77e48",
+    "text": "熱が上がる。",
+    "targetSurface": "上がる",
+    "translation": "The fever rises."
+  },
+  {
+    "vocabularyId": "vocab-656e30786e71",
+    "text": "翻訳をする。",
+    "targetSurface": "翻訳",
+    "translation": "I do a translation."
+  },
+  {
+    "vocabularyId": "vocab-399ca48876cc",
+    "text": "朝に食事する。",
+    "targetSurface": "食事",
+    "translation": "I eat a meal in the morning."
+  },
+  {
+    "vocabularyId": "vocab-d23121a6dec0",
+    "text": "お陰で元気です。",
+    "targetSurface": "お陰",
+    "translation": "Thanks to you, I am well."
+  },
+  {
+    "vocabularyId": "vocab-28295eb27a92",
+    "text": "娘が来た。",
+    "targetSurface": "娘",
+    "translation": "My daughter came."
+  },
+  {
+    "vocabularyId": "vocab-a89eb4b93468",
+    "text": "お湯をください。",
+    "targetSurface": "湯",
+    "translation": "Hot water, please."
+  },
+  {
+    "vocabularyId": "vocab-3aa4b156539e",
+    "text": "二人で競争する。",
+    "targetSurface": "競争",
+    "translation": "Two people compete."
+  },
+  {
+    "vocabularyId": "vocab-6e85ad632e4b",
+    "text": "みんなが集まる。",
+    "targetSurface": "集まる",
+    "translation": "Everyone gathers."
+  },
+  {
+    "vocabularyId": "vocab-0e853c977cf1",
+    "text": "静かな生活です。",
+    "targetSurface": "生活",
+    "translation": "It is a quiet life."
+  },
+  {
+    "vocabularyId": "vocab-e05b8e36c6ca",
+    "text": "糸を使う。",
+    "targetSurface": "糸",
+    "translation": "I use thread."
+  },
+  {
+    "vocabularyId": "vocab-79ab94040415",
+    "text": "二人に関係ある。",
+    "targetSurface": "関係",
+    "translation": "It concerns the two people."
+  },
+  {
+    "vocabularyId": "vocab-f70852bf2310",
+    "text": "急に走る。",
+    "targetSurface": "急",
+    "translation": "I run suddenly."
+  },
+  {
+    "vocabularyId": "vocab-19250758e8ef",
+    "text": "本は棚にあります。",
+    "targetSurface": "棚",
+    "translation": "The books are on the shelf."
+  },
+  {
+    "vocabularyId": "vocab-92d6efe71ffb",
+    "text": "木綿のシャツです。",
+    "targetSurface": "木綿",
+    "translation": "It is a cotton shirt."
+  },
+  {
+    "vocabularyId": "vocab-fedf5212b133",
+    "text": "日本の輸出は多い。",
+    "targetSurface": "輸出",
+    "translation": "Japan's exports are many."
+  },
+  {
+    "vocabularyId": "vocab-7dd5430a1276",
+    "text": "このタイプが好き。",
+    "targetSurface": "タイプ",
+    "translation": "I like this type."
+  },
+  {
+    "vocabularyId": "vocab-44b2d7f92cef",
+    "text": "すりに注意します。",
+    "targetSurface": "すり",
+    "translation": "I will watch out for pickpockets."
+  },
+  {
+    "vocabularyId": "vocab-03c660cf7375",
+    "text": "アルコールはだめ。",
+    "targetSurface": "アルコール",
+    "translation": "Alcohol is no good."
+  },
+  {
+    "vocabularyId": "vocab-20503aaa4a10",
+    "text": "このソフトは便利。",
+    "targetSurface": "ソフト",
+    "translation": "This software is convenient."
+  },
+  {
+    "vocabularyId": "vocab-4d4127e1b81e",
+    "text": "大分よくなった。",
+    "targetSurface": "大分",
+    "translation": "It's gotten much better."
+  },
+  {
+    "vocabularyId": "vocab-405fd8a22af6",
+    "text": "明日が楽しみです。",
+    "targetSurface": "楽しみ",
+    "translation": "I'm looking forward to tomorrow."
+  },
+  {
+    "vocabularyId": "vocab-8b491e3a9476",
+    "text": "電報を送りました。",
+    "targetSurface": "電報",
+    "translation": "I sent a telegram."
+  },
+  {
+    "vocabularyId": "vocab-8de09ebf156e",
+    "text": "家内は元気です。",
+    "targetSurface": "家内",
+    "translation": "My wife is well."
+  },
+  {
+    "vocabularyId": "vocab-293244e6fc0c",
+    "text": "指がいたいです。",
+    "targetSurface": "指",
+    "translation": "My finger hurts."
+  },
+  {
+    "vocabularyId": "vocab-a556c66fb3e4",
+    "text": "これから行きます。",
+    "targetSurface": "これから",
+    "translation": "I'm going from now."
+  },
+  {
+    "vocabularyId": "vocab-44f6e3ee84d8",
+    "text": "たまに映画を見ます。",
+    "targetSurface": "たまに",
+    "translation": "I watch movies occasionally."
+  },
+  {
+    "vocabularyId": "vocab-e31d23c4214b",
+    "text": "社会はむずかしい。",
+    "targetSurface": "社会",
+    "translation": "Society is difficult."
+  },
+  {
+    "vocabularyId": "vocab-115e4e06e38b",
+    "text": "ボールは丸いです。",
+    "targetSurface": "ボール",
+    "translation": "The ball is round."
   },
   {
     "vocabularyId": "kanji-context-washitsu",

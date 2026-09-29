@@ -5,9 +5,10 @@ a claim about an official current JLPT N5 list. It uses the former JLPT Level 4
 vocabulary specification as a stable exam-oriented baseline and adds practical
 words that make the writing system teachable through complete words.
 
-The app dictionary contains 120 all-Katakana entries representing 119 unique
-written words. `キロ` occurs twice because the legacy vocabulary distinguishes
-kilograms from kilometers. The pool consists of:
+The app dictionary contains 159 all-Katakana entries representing 158 unique
+written words. The N5 layer still contains the original 120 entries and 119
+unique words; enabling N4 adds 39 words. `キロ` occurs twice because the legacy
+vocabulary distinguishes kilograms from kilometers. The pool consists of:
 
 - 63 core entries: the existing open N5 data plus `グラス`, `コピー`, and
   `スリッパ`, which restore the omissions found during comparison with the
@@ -16,6 +17,9 @@ kilograms from kilometers. The pool consists of:
   `コンビニ`, `スマホ`, and lesson vocabulary.
 - 37 new Katakana-curriculum entries selected for beginner usefulness and
   writing-system coverage.
+- 39 N4 entries from the pinned Open Anki snapshot and the curated `ボール`
+  gap, including `アルバイト`, `コンサート`, `コンピュータ`, `スーツケース`,
+  `サンドイッチ`, and `レジ`.
 
 `ラジオカセ` was normalized to the usual `ラジカセ`; the longer form remains
 indexed with its own reading so existing authored text can still resolve it.

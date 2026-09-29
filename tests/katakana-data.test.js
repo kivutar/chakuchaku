@@ -53,8 +53,8 @@ test("Katakana pool has practical breadth and all natural basic characters", () 
   ];
   const inventory = new Set(katakanaWords.flatMap(({ term }) => segmentKatakana(term)));
 
-  assert.equal(katakanaWords.length, 120);
-  assert.equal(terms.size, 119);
+  assert.equal(katakanaWords.length, 159);
+  assert.equal(terms.size, 158);
   assert.deepEqual(
     basicKatakana.filter((kana) => !inventory.has(kana)),
     ["ヲ"]

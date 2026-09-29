@@ -1,6 +1,8 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { TokenizerBuilder } from "lindera-wasm-ipadic-nodejs";
+import { toHiragana } from "wanakana";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
 const sourcePath = join(rootDirectory, "data", "source", "vocabulary-examples.json");
@@ -32,6 +34,12 @@ const frenchKanjiContextPath = join(
 const apiKeyPath = join(rootDirectory, ".key");
 const model = "gpt-5.4-mini";
 const defaultBatchSize = 40;
+const tokenizerBuilder = new TokenizerBuilder();
+
+tokenizerBuilder.setDictionary("embedded://ipadic");
+tokenizerBuilder.setMode("normal");
+
+const tokenizer = tokenizerBuilder.build();
 
 function readJson(path) {
   return readFile(path, "utf8").then(JSON.parse);
@@ -191,12 +199,15 @@ async function requestValidatedExamples(apiKey, entries, allowedVocabulary) {
   let lastError;
 
   for (let attempt = 1; attempt <= 3; attempt += 1) {
-    const generated = await requestExamples(
+    const generated = (await requestExamples(
       apiKey,
       entries,
       allowedVocabulary,
       lastError?.message
-    );
+    )).map((example) => repairTargetSurface(
+      example,
+      entries.find(({ vocabularyId }) => vocabularyId === example?.vocabularyId)
+    ));
 
     try {
       validateBatch(generated, entries);
@@ -208,6 +219,48 @@ async function requestValidatedExamples(apiKey, entries, allowedVocabulary) {
   }
 
   throw lastError;
+}
+
+function normalizeJapanese(value) {
+  return toHiragana(value || "", { convertLongVowelMark: false });
+}
+
+function repairTargetSurface(example, entry) {
+  if (
+    !example ||
+    !entry ||
+    typeof example.japanese !== "string" ||
+    typeof example.targetSurface !== "string" ||
+    example.japanese.includes(example.targetSurface)
+  ) {
+    return example;
+  }
+
+  const forms = new Set([
+    entry.term,
+    entry.reading,
+    ...(entry.variants || []),
+    ...(entry.alternateReadings || [])
+  ].filter(Boolean));
+  const normalizedForms = new Set([...forms].map(normalizeJapanese));
+  const suruStems = [...normalizedForms]
+    .filter((form) => form.endsWith("する"))
+    .map((form) => form.slice(0, -2));
+
+  for (const token of tokenizer.tokenize(example.japanese)) {
+    const tokenForms = [token.surface, token.details[6], token.details[7]]
+      .filter((value) => value && value !== "*")
+      .map(normalizeJapanese);
+
+    if (
+      tokenForms.some((form) => normalizedForms.has(form)) ||
+      suruStems.some((stem) => tokenForms.includes(stem))
+    ) {
+      return { ...example, targetSurface: token.surface };
+    }
+  }
+
+  return example;
 }
 
 function validateBatch(generated, requestedEntries) {
@@ -313,6 +366,8 @@ async function main(arguments_ = process.argv.slice(2)) {
       reading: entry.reading,
       partOfSpeech: entry.partOfSpeech,
       englishMeaning: entry.meaning,
+      variants: entry.variants,
+      alternateReadings: entry.alternateReadings,
       frenchMeaning: (entry.scope === "kanji-context"
         ? frenchKanjiContexts
         : frenchVocabulary)[entry.id]?.meaning
@@ -341,4 +396,4 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   await main();
 }
 
-export { createResponseBody, parseArguments, validateBatch };
+export { createResponseBody, parseArguments, repairTargetSurface, validateBatch };

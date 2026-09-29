@@ -28979,7 +28979,7 @@
     "audio": "assets/voices/grammar/movie-or-something-on-day-off.m4a",
     "vocabularyIds": [
       "vocab-ebdaef0f21db",
-      "vocab-5841d3db2c97",
+      "vocab-f3881ce313e7",
       "vocab-7b9d866e6dc2",
       "vocab-385cc0d9ee98"
     ],
@@ -29003,8 +29003,8 @@
       {
         "surface": "日",
         "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "ひ",
+        "vocabularyId": "vocab-f3881ce313e7"
       },
       {
         "surface": "は",
@@ -31059,7 +31059,7 @@
     "audio": "assets/voices/grammar/want-to-go-somewhere-on-day-off.m4a",
     "vocabularyIds": [
       "vocab-ebdaef0f21db",
-      "vocab-5841d3db2c97",
+      "vocab-f3881ce313e7",
       "vocab-521f6c462f58",
       "vocab-ec22142c23d3"
     ],
@@ -31083,8 +31083,8 @@
       {
         "surface": "日",
         "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "ひ",
+        "vocabularyId": "vocab-f3881ce313e7"
       },
       {
         "surface": "は",
@@ -40030,7 +40030,7 @@
     "audio": "assets/voices/grammar/suggest-movie-on-day-off.m4a",
     "vocabularyIds": [
       "vocab-ebdaef0f21db",
-      "vocab-5841d3db2c97",
+      "vocab-f3881ce313e7",
       "vocab-7b9d866e6dc2",
       "vocab-385cc0d9ee98"
     ],
@@ -40054,8 +40054,8 @@
       {
         "surface": "日",
         "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "ひ",
+        "vocabularyId": "vocab-f3881ce313e7"
       },
       {
         "surface": "は",
@@ -43039,7 +43039,7 @@
     "audio": "assets/voices/grammar/important-date-on-calendar.m4a",
     "vocabularyIds": [
       "vocab-aad97415a910",
-      "vocab-5841d3db2c97",
+      "vocab-f3881ce313e7",
       "vocab-046c334490e2",
       "vocab-d34997e828cb"
     ],
@@ -43063,8 +43063,8 @@
       {
         "surface": "日",
         "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "ひ",
+        "vocabularyId": "vocab-f3881ce313e7"
       },
       {
         "surface": "を",
@@ -47684,7 +47684,7 @@
     "audio": "assets/voices/grammar/draw-and-listen-on-rainy-days.m4a",
     "vocabularyIds": [
       "vocab-7e87850c448d",
-      "vocab-5841d3db2c97",
+      "vocab-f3881ce313e7",
       "vocab-8af58778f14e",
       "vocab-1ec067551dd4",
       "vocab-40e15207ddda",
@@ -47714,8 +47714,8 @@
       {
         "surface": "日",
         "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "ひ",
+        "vocabularyId": "vocab-f3881ce313e7"
       },
       {
         "surface": "は",

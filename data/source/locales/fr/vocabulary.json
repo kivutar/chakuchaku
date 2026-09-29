@@ -6280,6 +6280,14 @@
       "bâtir"
     ]
   },
+  "vocab-f3881ce313e7": {
+    "meaning": "jour",
+    "acceptedAnswers": [
+      "jour",
+      "soleil",
+      "ensoleillement"
+    ]
+  },
   "vocab-e2192acf21d2": {
     "meaning": "intervalle ; espace ; entre",
     "acceptedAnswers": [
@@ -6287,6 +6295,4271 @@
       "espace",
       "entre",
       "pendant"
+    ]
+  },
+  "vocab-4a1dc826a5bd": {
+    "meaning": "étudiant universitaire",
+    "acceptedAnswers": [
+      "étudiant universitaire",
+      "étudiant à l'université",
+      "étudiant de l'université"
+    ]
+  },
+  "vocab-5a651c3b2904": {
+    "meaning": "science",
+    "acceptedAnswers": [
+      "science"
+    ]
+  },
+  "vocab-19ccc2f9d429": {
+    "meaning": "Amérique, États-Unis",
+    "acceptedAnswers": [
+      "Amérique",
+      "États-Unis",
+      "U.S.A."
+    ]
+  },
+  "vocab-4354d788c45c": {
+    "meaning": "histoire",
+    "acceptedAnswers": [
+      "histoire"
+    ]
+  },
+  "vocab-ef10bf26926e": {
+    "meaning": "spécialité, discipline",
+    "acceptedAnswers": [
+      "spécialité",
+      "discipline",
+      "domaine d'étude",
+      "major"
+    ]
+  },
+  "vocab-4239848dffa0": {
+    "meaning": "politique",
+    "acceptedAnswers": [
+      "politique"
+    ]
+  },
+  "vocab-0fb876dff5a7": {
+    "meaning": "lycéen",
+    "acceptedAnswers": [
+      "lycéen",
+      "élève de lycée",
+      "étudiant au lycée"
+    ]
+  },
+  "vocab-c2a7e49d3e08": {
+    "meaning": "littérature",
+    "acceptedAnswers": [
+      "littérature"
+    ]
+  },
+  "vocab-467f35f47723": {
+    "meaning": "généralement",
+    "acceptedAnswers": [
+      "généralement",
+      "habituellement",
+      "en général"
+    ]
+  },
+  "vocab-f6b2bc587c44": {
+    "meaning": "emploi à temps partiel",
+    "acceptedAnswers": [
+      "emploi à temps partiel",
+      "travail à temps partiel",
+      "job étudiant",
+      "part-time job"
+    ]
+  },
+  "vocab-8a8d75ddf050": {
+    "meaning": "donc, par conséquent",
+    "acceptedAnswers": [
+      "donc",
+      "par conséquent",
+      "c'est pourquoi",
+      "alors"
+    ]
+  },
+  "vocab-46223139cb17": {
+    "meaning": "il y a un instant",
+    "acceptedAnswers": [
+      "il y a un instant",
+      "tout à l'heure",
+      "il y a peu",
+      "un peu plus tôt"
+    ]
+  },
+  "vocab-02fadb938256": {
+    "meaning": "souvenir (objet)",
+    "acceptedAnswers": [
+      "souvenir (objet)",
+      "cadeau souvenir"
+    ]
+  },
+  "vocab-1ab856befb29": {
+    "meaning": "je (hommes, familier)",
+    "acceptedAnswers": [
+      "je (hommes, familier)",
+      "moi (utilisé par les hommes)"
+    ]
+  },
+  "vocab-f852ba3920a3": {
+    "meaning": "gentil, facile",
+    "acceptedAnswers": [
+      "gentil",
+      "doux",
+      "facile"
+    ]
+  },
+  "vocab-c2674f41fc44": {
+    "meaning": "se dépêcher",
+    "acceptedAnswers": [
+      "se dépêcher",
+      "hâter",
+      "accélérer"
+    ]
+  },
+  "vocab-db78b5f16179": {
+    "meaning": "maigrir",
+    "acceptedAnswers": [
+      "maigrir",
+      "perdre du poids"
+    ]
+  },
+  "vocab-0c360237fbab": {
+    "meaning": "bien sûr",
+    "acceptedAnswers": [
+      "bien sûr",
+      "certainement",
+      "évidemment"
+    ]
+  },
+  "vocab-75ac90da3b27": {
+    "meaning": "grossir",
+    "acceptedAnswers": [
+      "grossir",
+      "prendre du poids"
+    ]
+  },
+  "vocab-f64f1036d22a": {
+    "meaning": "oui (familier)",
+    "acceptedAnswers": [
+      "oui",
+      "ouais",
+      "d'accord"
+    ]
+  },
+  "vocab-d5a23463d010": {
+    "meaning": "air, atmosphère",
+    "acceptedAnswers": [
+      "air",
+      "atmosphère"
+    ]
+  },
+  "vocab-bf761b22ddcb": {
+    "meaning": "météo, prévisions météo",
+    "acceptedAnswers": [
+      "météo",
+      "prévisions météo"
+    ]
+  },
+  "vocab-5178598c5709": {
+    "meaning": "cette fois, prochainement",
+    "acceptedAnswers": [
+      "cette fois",
+      "prochainement"
+    ]
+  },
+  "vocab-98d08dfe0a16": {
+    "meaning": "danser",
+    "acceptedAnswers": [
+      "danser"
+    ]
+  },
+  "vocab-095b33ccc743": {
+    "meaning": "solitaire, seul",
+    "acceptedAnswers": [
+      "solitaire",
+      "seul"
+    ]
+  },
+  "vocab-feaae8188f52": {
+    "meaning": "certainement, à tout prix",
+    "acceptedAnswers": [
+      "certainement",
+      "à tout prix"
+    ]
+  },
+  "vocab-f8ca7072e3f2": {
+    "meaning": "concert",
+    "acceptedAnswers": [
+      "concert"
+    ]
+  },
+  "vocab-aabce87015af": {
+    "meaning": "piano",
+    "acceptedAnswers": [
+      "piano"
+    ]
+  },
+  "vocab-ef4cdc0659e0": {
+    "meaning": "barbier, salon de coiffure pour hommes",
+    "acceptedAnswers": [
+      "barbier",
+      "salon de coiffure pour hommes"
+    ]
+  },
+  "vocab-888b9aa03eb5": {
+    "meaning": "saison",
+    "acceptedAnswers": [
+      "saison"
+    ]
+  },
+  "vocab-6eb4452fedae": {
+    "meaning": "monde",
+    "acceptedAnswers": [
+      "monde"
+    ]
+  },
+  "vocab-07131acd8b99": {
+    "meaning": "décider",
+    "acceptedAnswers": [
+      "décider"
+    ]
+  },
+  "vocab-20fc26e20fc1": {
+    "meaning": "gant, gants",
+    "acceptedAnswers": [
+      "gant",
+      "gants"
+    ]
+  },
+  "vocab-b7d9c4f1e563": {
+    "meaning": "réservation",
+    "acceptedAnswers": [
+      "réservation"
+    ]
+  },
+  "vocab-c614c18b1bec": {
+    "meaning": "ces jours-ci, actuellement",
+    "acceptedAnswers": [
+      "ces jours-ci",
+      "actuellement"
+    ]
+  },
+  "vocab-5621763f634f": {
+    "meaning": "président d'entreprise",
+    "acceptedAnswers": [
+      "président d'entreprise"
+    ]
+  },
+  "vocab-66d5a1c32b63": {
+    "meaning": "musée d'art, galerie d'art",
+    "acceptedAnswers": [
+      "musée d'art",
+      "galerie d'art"
+    ]
+  },
+  "vocab-1fb48109e004": {
+    "meaning": "jouet",
+    "acceptedAnswers": [
+      "jouet"
+    ]
+  },
+  "vocab-13804b9c251f": {
+    "meaning": "rêve",
+    "acceptedAnswers": [
+      "rêve"
+    ]
+  },
+  "vocab-6e1805adea06": {
+    "meaning": "ça fait longtemps",
+    "acceptedAnswers": [
+      "ça fait longtemps"
+    ]
+  },
+  "vocab-5118dfe23709": {
+    "meaning": "avenir, perspectives",
+    "acceptedAnswers": [
+      "avenir",
+      "perspectives"
+    ]
+  },
+  "vocab-213adba436b6": {
+    "meaning": "lac",
+    "acceptedAnswers": [
+      "lac"
+    ]
+  },
+  "vocab-00773cf128bf": {
+    "meaning": "il, petit ami",
+    "acceptedAnswers": [
+      "il",
+      "petit ami"
+    ]
+  },
+  "vocab-410b73381c41": {
+    "meaning": "match, jeu, compétition",
+    "acceptedAnswers": [
+      "match",
+      "jeu",
+      "compétition"
+    ]
+  },
+  "vocab-d8efb8884948": {
+    "meaning": "petite amie, elle",
+    "acceptedAnswers": [
+      "petite amie",
+      "elle"
+    ]
+  },
+  "vocab-7d35ef299db0": {
+    "meaning": "très bientôt, dans quelques instants, jours",
+    "acceptedAnswers": [
+      "très bientôt",
+      "bientôt",
+      "dans quelques instants",
+      "dans quelques jours"
+    ]
+  },
+  "vocab-b6b3f5d2ec09": {
+    "meaning": "maison (de quelqu'un d'autre) -- mot poli pour maison",
+    "acceptedAnswers": [
+      "maison (de quelqu'un d'autre)",
+      "domicile (de quelqu'un d'autre)",
+      "chez (quelqu'un)"
+    ]
+  },
+  "vocab-dd1a5d8063ce": {
+    "meaning": "dur, rigoureux, strict",
+    "acceptedAnswers": [
+      "dur",
+      "rigoureux",
+      "strict"
+    ]
+  },
+  "vocab-ab9eae2e05a3": {
+    "meaning": "essayer fort, persévérer",
+    "acceptedAnswers": [
+      "essayer fort",
+      "persévérer",
+      "faire de son mieux"
+    ]
+  },
+  "vocab-3dbe0fa2abd1": {
+    "meaning": "grammaire",
+    "acceptedAnswers": [
+      "grammaire"
+    ]
+  },
+  "vocab-fe32ad045449": {
+    "meaning": "pleurer",
+    "acceptedAnswers": [
+      "pleurer"
+    ]
+  },
+  "vocab-07ee67a72501": {
+    "meaning": "kimono, vêtement traditionnel japonais",
+    "acceptedAnswers": [
+      "kimono",
+      "vêtement traditionnel japonais"
+    ]
+  },
+  "vocab-c8b78a5bde6a": {
+    "meaning": "promesse, rendez-vous, arrangement",
+    "acceptedAnswers": [
+      "promesse",
+      "rendez-vous",
+      "arrangement"
+    ]
+  },
+  "vocab-58974357459a": {
+    "meaning": "être heureux, être content",
+    "acceptedAnswers": [
+      "être heureux",
+      "être contente",
+      "être content"
+    ]
+  },
+  "vocab-2d0169f5fc5e": {
+    "meaning": "mari (votre, son)",
+    "acceptedAnswers": [
+      "mari"
+    ]
+  },
+  "vocab-497569560cde": {
+    "meaning": "bague (doigt)",
+    "acceptedAnswers": [
+      "bague"
+    ]
+  },
+  "vocab-4bb5dd8a62e0": {
+    "meaning": "tremblement de terre",
+    "acceptedAnswers": [
+      "tremblement de terre",
+      "séisme"
+    ]
+  },
+  "vocab-d4dc972ab510": {
+    "meaning": "jeter, abandonner, se débarrasser de",
+    "acceptedAnswers": [
+      "jeter",
+      "abandonner",
+      "se débarrasser de"
+    ]
+  },
+  "vocab-291f4439ec65": {
+    "meaning": "chercher",
+    "acceptedAnswers": [
+      "chercher"
+    ]
+  },
+  "vocab-f6e600542563": {
+    "meaning": "auberge japonaise",
+    "acceptedAnswers": [
+      "auberge japonaise",
+      "ryokan"
+    ]
+  },
+  "vocab-127859f34798": {
+    "meaning": "récemment",
+    "acceptedAnswers": [
+      "récemment",
+      "de nos jours",
+      "ces derniers temps",
+      "le plus récent",
+      "dernier"
+    ]
+  },
+  "vocab-e99feae5bc25": {
+    "meaning": "être visible",
+    "acceptedAnswers": [
+      "être visible",
+      "pouvoir voir"
+    ]
+  },
+  "vocab-238d8325791a": {
+    "meaning": "émission",
+    "acceptedAnswers": [
+      "émission",
+      "programme"
+    ]
+  },
+  "vocab-89dc1e02df64": {
+    "meaning": "ordures",
+    "acceptedAnswers": [
+      "ordures",
+      "déchets"
+    ]
+  },
+  "vocab-f5e799449931": {
+    "meaning": "typhon",
+    "acceptedAnswers": [
+      "typhon"
+    ]
+  },
+  "vocab-ebc949695b16": {
+    "meaning": "réveiller",
+    "acceptedAnswers": [
+      "réveiller"
+    ]
+  },
+  "vocab-a7fbfba88bfd": {
+    "meaning": "parent",
+    "acceptedAnswers": [
+      "parent"
+    ]
+  },
+  "vocab-26f8d7da9641": {
+    "meaning": "rassembler",
+    "acceptedAnswers": [
+      "rassembler",
+      "collectionner",
+      "réunir"
+    ]
+  },
+  "vocab-a584cd8f1390": {
+    "meaning": "corriger",
+    "acceptedAnswers": [
+      "corriger",
+      "réparer",
+      "fixer"
+    ]
+  },
+  "vocab-119d6aeb6484": {
+    "meaning": "l'autre jour",
+    "acceptedAnswers": [
+      "l'autre jour",
+      "récemment"
+    ]
+  },
+  "vocab-cdc7fbcaab99": {
+    "meaning": "suffire",
+    "acceptedAnswers": [
+      "suffire",
+      "être suffisant",
+      "être assez"
+    ]
+  },
+  "vocab-cbc44d67ceca": {
+    "meaning": "choisir",
+    "acceptedAnswers": [
+      "choisir",
+      "sélectionner"
+    ]
+  },
+  "vocab-98016ab6456d": {
+    "meaning": "par exemple",
+    "acceptedAnswers": [
+      "par exemple",
+      "exemple"
+    ]
+  },
+  "vocab-5d8087a22afd": {
+    "meaning": "barbe",
+    "acceptedAnswers": [
+      "barbe"
+    ]
+  },
+  "vocab-8b65db9c3fbf": {
+    "meaning": "embarassé",
+    "acceptedAnswers": [
+      "embarassé",
+      "honteux"
+    ]
+  },
+  "vocab-5117b0f350f2": {
+    "meaning": "d'abord",
+    "acceptedAnswers": [
+      "d'abord",
+      "tout d'abord"
+    ]
+  },
+  "vocab-b6df2b21dd5c": {
+    "meaning": "journal",
+    "acceptedAnswers": [
+      "journal",
+      "carnet de notes",
+      "journal intime"
+    ]
+  },
+  "vocab-89c37e39c94d": {
+    "meaning": "rideau",
+    "acceptedAnswers": [
+      "rideau"
+    ]
+  },
+  "vocab-4f9ae60eff62": {
+    "meaning": "penser",
+    "acceptedAnswers": [
+      "penser",
+      "considérer"
+    ]
+  },
+  "vocab-cdf37b09dc6a": {
+    "meaning": "se fâcher; gronder",
+    "acceptedAnswers": [
+      "se fâcher",
+      "gronder"
+    ]
+  },
+  "vocab-574d41ad949e": {
+    "meaning": "aller; venir; être (forme honorifique)",
+    "acceptedAnswers": [
+      "aller (forme honorifique)",
+      "venir (forme honorifique)",
+      "être (forme honorifique)"
+    ]
+  },
+  "vocab-df6dd25bbc07": {
+    "meaning": "passer chez; s'arrêter",
+    "acceptedAnswers": [
+      "passer chez",
+      "s'arrêter"
+    ]
+  },
+  "vocab-f9344c46e3a6": {
+    "meaning": "faire (forme honorifique)",
+    "acceptedAnswers": [
+      "faire (forme honorifique)"
+    ]
+  },
+  "vocab-68ea919020d5": {
+    "meaning": "remerciement; gratitude; cadeau de reconnaissance; révérence",
+    "acceptedAnswers": [
+      "remerciement",
+      "gratitude",
+      "cadeau de reconnaissance",
+      "révérence"
+    ]
+  },
+  "vocab-5b21d92a7eee": {
+    "meaning": "regarder (forme honorifique)",
+    "acceptedAnswers": [
+      "regarder (forme honorifique)"
+    ]
+  },
+  "vocab-435c68c810fe": {
+    "meaning": "chef de département",
+    "acceptedAnswers": [
+      "chef de département"
+    ]
+  },
+  "vocab-59e2e3a76319": {
+    "meaning": "enfant (politesse, autrui)",
+    "acceptedAnswers": [
+      "enfant (politesse, autrui)"
+    ]
+  },
+  "vocab-6762b46e5f55": {
+    "meaning": "être en retard",
+    "acceptedAnswers": [
+      "être en retard"
+    ]
+  },
+  "vocab-f6ffa4327b98": {
+    "meaning": "manger; boire (forme honorifique)",
+    "acceptedAnswers": [
+      "manger (forme honorifique)",
+      "boire (forme honorifique)"
+    ]
+  },
+  "vocab-ba5fab138253": {
+    "meaning": "culture",
+    "acceptedAnswers": [
+      "culture"
+    ]
+  },
+  "vocab-3cbee353040d": {
+    "meaning": "dire (forme honorifique)",
+    "acceptedAnswers": [
+      "dire (forme honorifique)"
+    ]
+  },
+  "vocab-e0bb1d02fee0": {
+    "meaning": "lune",
+    "acceptedAnswers": [
+      "lune"
+    ]
+  },
+  "vocab-c914be1a03a3": {
+    "meaning": "faire (forme très modeste)",
+    "acceptedAnswers": [
+      "faire (forme très modeste)"
+    ]
+  },
+  "vocab-3dd0bc872d1e": {
+    "meaning": "roman",
+    "acceptedAnswers": [
+      "roman"
+    ]
+  },
+  "vocab-cb04167d5187": {
+    "meaning": "être (forme très modeste)",
+    "acceptedAnswers": [
+      "être (forme très modeste)"
+    ]
+  },
+  "vocab-d76e957b268f": {
+    "meaning": "dire (forme très modeste)",
+    "acceptedAnswers": [
+      "dire (forme très modeste)"
+    ]
+  },
+  "vocab-3cc61f7bb083": {
+    "meaning": "aéroport",
+    "acceptedAnswers": [
+      "aéroport"
+    ]
+  },
+  "vocab-755c354dc8a8": {
+    "meaning": "offrir (forme humble)",
+    "acceptedAnswers": [
+      "offrir (forme humble)"
+    ]
+  },
+  "vocab-b37750755344": {
+    "meaning": "son; bruit",
+    "acceptedAnswers": [
+      "son",
+      "bruit"
+    ]
+  },
+  "vocab-0cc46aeaf124": {
+    "meaning": "transmettre",
+    "acceptedAnswers": [
+      "transmettre",
+      "communiquer",
+      "raconter",
+      "rapporter"
+    ]
+  },
+  "vocab-7930a252da9b": {
+    "meaning": "lettre",
+    "acceptedAnswers": [
+      "lettre",
+      "caractère"
+    ]
+  },
+  "vocab-754eab0db7c4": {
+    "meaning": "aller (forme humble)",
+    "acceptedAnswers": [
+      "aller (forme humble)",
+      "venir (forme humble)"
+    ]
+  },
+  "vocab-2793645cdcc0": {
+    "meaning": "revenir",
+    "acceptedAnswers": [
+      "revenir",
+      "retourner"
+    ]
+  },
+  "vocab-22872269cd56": {
+    "meaning": "passe-temps",
+    "acceptedAnswers": [
+      "passe-temps",
+      "loisir",
+      "hobby"
+    ]
+  },
+  "vocab-969a24017d82": {
+    "meaning": "voler",
+    "acceptedAnswers": [
+      "voler",
+      "dérober"
+    ]
+  },
+  "vocab-92ea0758eaee": {
+    "meaning": "essence",
+    "acceptedAnswers": [
+      "essence",
+      "carburant"
+    ]
+  },
+  "vocab-13b0a5df30f4": {
+    "meaning": "cuire",
+    "acceptedAnswers": [
+      "cuire",
+      "griller"
+    ]
+  },
+  "vocab-2734b7b214e7": {
+    "meaning": "voleur",
+    "acceptedAnswers": [
+      "voleur",
+      "cambrioleur"
+    ]
+  },
+  "vocab-10791214b2c9": {
+    "meaning": "bébé",
+    "acceptedAnswers": [
+      "bébé",
+      "nourrisson",
+      "infant"
+    ]
+  },
+  "vocab-ac61ad41df92": {
+    "meaning": "emballer",
+    "acceptedAnswers": [
+      "emballer",
+      "envelopper",
+      "couvrir"
+    ]
+  },
+  "vocab-2536adb89a00": {
+    "meaning": "se tromper",
+    "acceptedAnswers": [
+      "se tromper",
+      "faire une erreur"
+    ]
+  },
+  "vocab-5ce8c72581d4": {
+    "meaning": "passé",
+    "acceptedAnswers": [
+      "passé",
+      "autrefois"
+    ]
+  },
+  "vocab-823a82097d3a": {
+    "meaning": "chose",
+    "acceptedAnswers": [
+      "chose",
+      "affaire",
+      "fait"
+    ]
+  },
+  "vocab-ba0581452a8f": {
+    "meaning": "terrible",
+    "acceptedAnswers": [
+      "terrible",
+      "affreux",
+      "injuste",
+      "cruel"
+    ]
+  },
+  "vocab-3755b7ba1ef2": {
+    "meaning": "être surpris",
+    "acceptedAnswers": [
+      "être surpris"
+    ]
+  },
+  "vocab-0c68b34ca3d0": {
+    "meaning": "trouver",
+    "acceptedAnswers": [
+      "trouver",
+      "découvrir"
+    ]
+  },
+  "vocab-9493412fc88d": {
+    "meaning": "absence",
+    "acceptedAnswers": [
+      "absence",
+      "absence du domicile"
+    ]
+  },
+  "vocab-46d460451e75": {
+    "meaning": "faire l'éloge",
+    "acceptedAnswers": [
+      "faire l'éloge",
+      "féliciter"
+    ]
+  },
+  "vocab-536e42da8b84": {
+    "meaning": "continuer",
+    "acceptedAnswers": [
+      "continuer",
+      "maintenir"
+    ]
+  },
+  "vocab-e5a213b2bee9": {
+    "meaning": "harceler, tourmenter",
+    "acceptedAnswers": [
+      "harceler",
+      "tourmenter"
+    ]
+  },
+  "vocab-04ea77dcbf03": {
+    "meaning": "usine",
+    "acceptedAnswers": [
+      "usine"
+    ]
+  },
+  "vocab-558625e0258a": {
+    "meaning": "police; commissariat",
+    "acceptedAnswers": [
+      "police",
+      "commissariat"
+    ]
+  },
+  "vocab-e47785e0c656": {
+    "meaning": "réunion d'affaires; conférence",
+    "acceptedAnswers": [
+      "réunion d'affaires",
+      "conférence"
+    ]
+  },
+  "vocab-ab669e673cdd": {
+    "meaning": "préparation des leçons",
+    "acceptedAnswers": [
+      "préparation des leçons"
+    ]
+  },
+  "vocab-14246fa81e12": {
+    "meaning": "ramasser, trouver",
+    "acceptedAnswers": [
+      "ramasser",
+      "trouver"
+    ]
+  },
+  "vocab-fb32fba0846c": {
+    "meaning": "accueil",
+    "acceptedAnswers": [
+      "accueil"
+    ]
+  },
+  "vocab-365b67cf2e61": {
+    "meaning": "fille (polie)",
+    "acceptedAnswers": [
+      "fille (polie)"
+    ]
+  },
+  "vocab-6542feb4f8ea": {
+    "meaning": "élever, éduquer",
+    "acceptedAnswers": [
+      "élever",
+      "éduquer"
+    ]
+  },
+  "vocab-ac6ebe4452ce": {
+    "meaning": "transporter, porter",
+    "acceptedAnswers": [
+      "transporter",
+      "porter"
+    ]
+  },
+  "vocab-cbc21ac94ed5": {
+    "meaning": "aîné d'un groupe",
+    "acceptedAnswers": [
+      "aîné d'un groupe"
+    ]
+  },
+  "vocab-dcb3a295d7ca": {
+    "meaning": "liberté",
+    "acceptedAnswers": [
+      "liberté"
+    ]
+  },
+  "vocab-1b07285ce1e0": {
+    "meaning": "école primaire",
+    "acceptedAnswers": [
+      "école primaire"
+    ]
+  },
+  "vocab-79b9f20fa351": {
+    "meaning": "endroit, lieu",
+    "acceptedAnswers": [
+      "endroit",
+      "lieu"
+    ]
+  },
+  "vocab-4b74bc1c1ee4": {
+    "meaning": "marcher sur, fouler",
+    "acceptedAnswers": [
+      "marcher sur",
+      "fouler"
+    ]
+  },
+  "vocab-51a5525c40bb": {
+    "meaning": "~ arrondissement, ~ quartier",
+    "acceptedAnswers": [
+      "arrondissement",
+      "quartier"
+    ]
+  },
+  "vocab-a4517808475d": {
+    "meaning": "droit, rapidement",
+    "acceptedAnswers": [
+      "droit",
+      "rapidement"
+    ]
+  },
+  "vocab-e8569fdb6cc4": {
+    "meaning": "enfin, finalement",
+    "acceptedAnswers": [
+      "enfin",
+      "finalement"
+    ]
+  },
+  "vocab-89aea2f63b8b": {
+    "meaning": "sonner, retentir",
+    "acceptedAnswers": [
+      "sonner",
+      "retentir"
+    ]
+  },
+  "vocab-ce141455df63": {
+    "meaning": "fermement, solidement",
+    "acceptedAnswers": [
+      "fermement",
+      "solidement"
+    ]
+  },
+  "vocab-80b68bbbc870": {
+    "meaning": "vivre",
+    "acceptedAnswers": [
+      "vivre"
+    ]
+  },
+  "vocab-b264619d7291": {
+    "meaning": "amer",
+    "acceptedAnswers": [
+      "amer"
+    ]
+  },
+  "vocab-0a2c733eaeaf": {
+    "meaning": "bouillir",
+    "acceptedAnswers": [
+      "bouillir",
+      "chauffer"
+    ]
+  },
+  "vocab-51b98063622b": {
+    "meaning": "opinion",
+    "acceptedAnswers": [
+      "opinion",
+      "avis",
+      "idée"
+    ]
+  },
+  "vocab-72ca288e6674": {
+    "meaning": "comme je le pensais",
+    "acceptedAnswers": [
+      "comme je le pensais",
+      "absolument",
+      "en effet"
+    ]
+  },
+  "vocab-f65b3ffbf71d": {
+    "meaning": "stéréo",
+    "acceptedAnswers": [
+      "stéréo"
+    ]
+  },
+  "vocab-b5a308d8887d": {
+    "meaning": "médecine",
+    "acceptedAnswers": [
+      "médecine",
+      "science médicale"
+    ]
+  },
+  "vocab-7f18aa392c60": {
+    "meaning": "texte",
+    "acceptedAnswers": [
+      "texte",
+      "manuel"
+    ]
+  },
+  "vocab-e006fa6d76c2": {
+    "meaning": "mois",
+    "acceptedAnswers": [
+      "mois"
+    ]
+  },
+  "vocab-52436504afb0": {
+    "meaning": "plier",
+    "acceptedAnswers": [
+      "plier",
+      "casser",
+      "briser"
+    ]
+  },
+  "vocab-4b21d47558da": {
+    "meaning": "réunion",
+    "acceptedAnswers": [
+      "réunion"
+    ]
+  },
+  "vocab-93f32940dba5": {
+    "meaning": "demander",
+    "acceptedAnswers": [
+      "demander"
+    ]
+  },
+  "vocab-905b4023e5c3": {
+    "meaning": "être entendu",
+    "acceptedAnswers": [
+      "être entendu",
+      "être audible"
+    ]
+  },
+  "vocab-3599fe8f0a49": {
+    "meaning": "certainement",
+    "acceptedAnswers": [
+      "certainement",
+      "sûrement"
+    ]
+  },
+  "vocab-cb5de8a2aae3": {
+    "meaning": "casser",
+    "acceptedAnswers": [
+      "casser",
+      "briser",
+      "détruire"
+    ]
+  },
+  "vocab-3440f8f2e4d0": {
+    "meaning": "moto",
+    "acceptedAnswers": [
+      "moto",
+      "motos",
+      "motocyclette"
+    ]
+  },
+  "vocab-8502a9e6483c": {
+    "meaning": "exercice",
+    "acceptedAnswers": [
+      "exercice"
+    ]
+  },
+  "vocab-b1301209e235": {
+    "meaning": "cesser",
+    "acceptedAnswers": [
+      "cesser",
+      "s'arrêter"
+    ]
+  },
+  "vocab-e3643c9dfcee": {
+    "meaning": "si",
+    "acceptedAnswers": [
+      "si"
+    ]
+  },
+  "vocab-5a9b70555134": {
+    "meaning": "surface",
+    "acceptedAnswers": [
+      "surface",
+      "face",
+      "extérieur"
+    ]
+  },
+  "vocab-2a0de905a83a": {
+    "meaning": "conducteur",
+    "acceptedAnswers": [
+      "conducteur",
+      "chauffeur"
+    ]
+  },
+  "vocab-a7095a66e0d8": {
+    "meaning": "inquiétude",
+    "acceptedAnswers": [
+      "inquiétude",
+      "souci"
+    ]
+  },
+  "vocab-87e8cf68e9cb": {
+    "meaning": "différence",
+    "acceptedAnswers": [
+      "différence",
+      "distinction",
+      "autre"
+    ]
+  },
+  "vocab-81edc004fee5": {
+    "meaning": "extrêmement",
+    "acceptedAnswers": [
+      "extrêmement",
+      "très"
+    ]
+  },
+  "vocab-71eb5452a1d3": {
+    "meaning": "doux",
+    "acceptedAnswers": [
+      "doux",
+      "tendre"
+    ]
+  },
+  "vocab-1e808c7b4b4e": {
+    "meaning": "esprit",
+    "acceptedAnswers": [
+      "esprit",
+      "humeur"
+    ]
+  },
+  "vocab-64da6681bb73": {
+    "meaning": "comparer",
+    "acceptedAnswers": [
+      "comparer"
+    ]
+  },
+  "vocab-786e1b164e0a": {
+    "meaning": "banlieue",
+    "acceptedAnswers": [
+      "banlieue",
+      "périphérie"
+    ]
+  },
+  "vocab-7dda6e9ccb51": {
+    "meaning": "inutile",
+    "acceptedAnswers": [
+      "inutile",
+      "pas bon"
+    ]
+  },
+  "vocab-8f85dc2b0919": {
+    "meaning": "Nouvel An",
+    "acceptedAnswers": [
+      "Nouvel An",
+      "Jour de l'An"
+    ]
+  },
+  "vocab-6a1d12d0b6f7": {
+    "meaning": "règle",
+    "acceptedAnswers": [
+      "règle",
+      "réglementation"
+    ]
+  },
+  "vocab-743925dd101f": {
+    "meaning": "prononciation",
+    "acceptedAnswers": [
+      "prononciation"
+    ]
+  },
+  "vocab-720595617569": {
+    "meaning": "toit-terrasse",
+    "acceptedAnswers": [
+      "toit-terrasse",
+      "toit"
+    ]
+  },
+  "vocab-74972ca1389f": {
+    "meaning": "impolitesse",
+    "acceptedAnswers": [
+      "impolitesse",
+      "incorrection",
+      "Excusez-moi"
+    ]
+  },
+  "vocab-aa655a83d9c9": {
+    "meaning": "Afrique",
+    "acceptedAnswers": [
+      "Afrique"
+    ]
+  },
+  "vocab-1b0f2a3c8cc6": {
+    "meaning": "point",
+    "acceptedAnswers": [
+      "point",
+      "note",
+      "marque",
+      "dot"
+    ]
+  },
+  "vocab-eb5958d6f783": {
+    "meaning": "avec acharnement",
+    "acceptedAnswers": [
+      "avec acharnement",
+      "de tout son effort",
+      "à fond"
+    ]
+  },
+  "vocab-a426f5da152d": {
+    "meaning": "occasion",
+    "acceptedAnswers": [
+      "occasion",
+      "opportunité"
+    ]
+  },
+  "vocab-832eea6ee1e6": {
+    "meaning": "complexité",
+    "acceptedAnswers": [
+      "complexité",
+      "complication"
+    ]
+  },
+  "vocab-a36d5cbb506e": {
+    "meaning": "futon",
+    "acceptedAnswers": [
+      "futon"
+    ]
+  },
+  "vocab-b98c225a97fd": {
+    "meaning": "important, précieux, sérieux",
+    "acceptedAnswers": [
+      "important",
+      "précieux",
+      "sérieux"
+    ]
+  },
+  "vocab-84e62df90449": {
+    "meaning": "cadeau",
+    "acceptedAnswers": [
+      "cadeau"
+    ]
+  },
+  "vocab-25c6e0d28265": {
+    "meaning": "fabriqué en ~",
+    "acceptedAnswers": [
+      "fabriqué en ~"
+    ]
+  },
+  "vocab-1472a34fdb88": {
+    "meaning": "attention, précaution",
+    "acceptedAnswers": [
+      "attention",
+      "précaution"
+    ]
+  },
+  "vocab-33107873fa03": {
+    "meaning": "compteur pour maisons",
+    "acceptedAnswers": [
+      "compteur pour maisons"
+    ]
+  },
+  "vocab-0e61b7350e45": {
+    "meaning": "passer, traverser",
+    "acceptedAnswers": [
+      "passer",
+      "traverser"
+    ]
+  },
+  "vocab-61776abbc569": {
+    "meaning": "dépasser, surpasser",
+    "acceptedAnswers": [
+      "dépasser",
+      "surpasser"
+    ]
+  },
+  "vocab-f8a6da26620f": {
+    "meaning": "rapport",
+    "acceptedAnswers": [
+      "rapport"
+    ]
+  },
+  "vocab-829560cefa5a": {
+    "meaning": "feuille",
+    "acceptedAnswers": [
+      "feuille"
+    ]
+  },
+  "vocab-7aee0e75a2a5": {
+    "meaning": "chef de service",
+    "acceptedAnswers": [
+      "chef de service"
+    ]
+  },
+  "vocab-0595507689c9": {
+    "meaning": "alors, puis",
+    "acceptedAnswers": [
+      "alors",
+      "puis"
+    ]
+  },
+  "vocab-f0298a2375dd": {
+    "meaning": "arrêter, cesser",
+    "acceptedAnswers": [
+      "arrêter",
+      "cesser"
+    ]
+  },
+  "vocab-ac3b92bbb172": {
+    "meaning": "verre",
+    "acceptedAnswers": [
+      "verre"
+    ]
+  },
+  "vocab-32e756c8aef2": {
+    "meaning": "faculté",
+    "acceptedAnswers": [
+      "faculté"
+    ]
+  },
+  "vocab-cfc8f5a67e12": {
+    "meaning": "escalator",
+    "acceptedAnswers": [
+      "escalator"
+    ]
+  },
+  "vocab-2ef4da30cf39": {
+    "meaning": "population",
+    "acceptedAnswers": [
+      "population"
+    ]
+  },
+  "vocab-6e38ee647b25": {
+    "meaning": "soie",
+    "acceptedAnswers": [
+      "soie"
+    ]
+  },
+  "vocab-8a24c21542c6": {
+    "meaning": "pas du tout",
+    "acceptedAnswers": [
+      "pas du tout"
+    ]
+  },
+  "vocab-ca9763d00bd7": {
+    "meaning": "profond, profond(e)",
+    "acceptedAnswers": [
+      "profond",
+      "profonde"
+    ]
+  },
+  "vocab-9ce92c5239cf": {
+    "meaning": "être cassé, casser",
+    "acceptedAnswers": [
+      "être cassé",
+      "casser"
+    ]
+  },
+  "vocab-feadcb8e95e6": {
+    "meaning": "secouer, se balancer",
+    "acceptedAnswers": [
+      "secouer",
+      "se balancer"
+    ]
+  },
+  "vocab-ef6041e086e8": {
+    "meaning": "tomber, chuter",
+    "acceptedAnswers": [
+      "tomber",
+      "chuter"
+    ]
+  },
+  "vocab-35e593835cb7": {
+    "meaning": "autant que possible",
+    "acceptedAnswers": [
+      "autant que possible",
+      "si possible"
+    ]
+  },
+  "vocab-f17d48142efb": {
+    "meaning": "collège",
+    "acceptedAnswers": [
+      "collège",
+      "école secondaire"
+    ]
+  },
+  "vocab-a9064f678b13": {
+    "meaning": "gaz",
+    "acceptedAnswers": [
+      "gaz"
+    ]
+  },
+  "vocab-25b29135b27c": {
+    "meaning": "prier, souhaiter",
+    "acceptedAnswers": [
+      "prier",
+      "souhaiter"
+    ]
+  },
+  "vocab-5bb6199c5511": {
+    "meaning": "florissant, actif",
+    "acceptedAnswers": [
+      "florissant",
+      "actif"
+    ]
+  },
+  "vocab-4200d93286a8": {
+    "meaning": "mordre, mâcher",
+    "acceptedAnswers": [
+      "mordre",
+      "mâcher"
+    ]
+  },
+  "vocab-d24688aa2c15": {
+    "meaning": "peu profond, superficiel",
+    "acceptedAnswers": [
+      "peu profond",
+      "superficiel"
+    ]
+  },
+  "vocab-03335ddeaaae": {
+    "meaning": "mensonge",
+    "acceptedAnswers": [
+      "mensonge"
+    ]
+  },
+  "vocab-e6c92761a83c": {
+    "meaning": "de plus, en outre",
+    "acceptedAnswers": [
+      "de plus",
+      "en outre",
+      "de surcroît"
+    ]
+  },
+  "vocab-d2fba12a2ecd": {
+    "meaning": "Occident",
+    "acceptedAnswers": [
+      "Occident",
+      "pays occidentaux"
+    ]
+  },
+  "vocab-7e8f883ed04b": {
+    "meaning": "emploi à temps partiel",
+    "acceptedAnswers": [
+      "emploi à temps partiel",
+      "temps partiel"
+    ]
+  },
+  "vocab-0d603029022b": {
+    "meaning": "époque, ère",
+    "acceptedAnswers": [
+      "époque",
+      "ère",
+      "période"
+    ]
+  },
+  "vocab-b85d4bb9740e": {
+    "meaning": "dire (forme humble)",
+    "acceptedAnswers": [
+      "dire (forme humble)",
+      "annoncer (forme humble)"
+    ]
+  },
+  "vocab-a805b52d7652": {
+    "meaning": "cérémonie ~, style ~",
+    "acceptedAnswers": [
+      "cérémonie ~",
+      "style ~"
+    ]
+  },
+  "vocab-3e101d9e890d": {
+    "meaning": "présence, participation",
+    "acceptedAnswers": [
+      "présence",
+      "participation"
+    ]
+  },
+  "vocab-681a2a552870": {
+    "meaning": "spécialiste en ~",
+    "acceptedAnswers": [
+      "spécialiste en ~"
+    ]
+  },
+  "vocab-8b059c70bef6": {
+    "meaning": "accueillir, recevoir",
+    "acceptedAnswers": [
+      "accueillir",
+      "recevoir"
+    ]
+  },
+  "vocab-eed7a9c3415c": {
+    "meaning": "toucher, sentir",
+    "acceptedAnswers": [
+      "toucher",
+      "sentir"
+    ]
+  },
+  "vocab-d5986434677e": {
+    "meaning": "à ~ étages ; construction ~",
+    "acceptedAnswers": [
+      "à ~ étages",
+      "construction ~"
+    ]
+  },
+  "vocab-c468e0cfe679": {
+    "meaning": "zoo",
+    "acceptedAnswers": [
+      "zoo"
+    ]
+  },
+  "vocab-02c8a1e95598": {
+    "meaning": "attraper, arrêter",
+    "acceptedAnswers": [
+      "attraper",
+      "arrêter"
+    ]
+  },
+  "vocab-6c1bd8b09d2e": {
+    "meaning": "être fixé, être décidé",
+    "acceptedAnswers": [
+      "être fixé",
+      "être décidé"
+    ]
+  },
+  "vocab-42b124f369c4": {
+    "meaning": "ouvrir, organiser (un événement)",
+    "acceptedAnswers": [
+      "ouvrir",
+      "organiser (un événement)"
+    ]
+  },
+  "vocab-891c5d7618d7": {
+    "meaning": "s’échapper, fuir",
+    "acceptedAnswers": [
+      "s’échapper",
+      "fuir"
+    ]
+  },
+  "vocab-595a5c409704": {
+    "meaning": "regret, regrettable",
+    "acceptedAnswers": [
+      "regret",
+      "regrettable"
+    ]
+  },
+  "vocab-3dbf9677fc1f": {
+    "meaning": "tatami (tapis de paille japonais)",
+    "acceptedAnswers": [
+      "tatami",
+      "tapis de paille japonais"
+    ]
+  },
+  "vocab-5dd0300c588e": {
+    "meaning": "poli, soigneux",
+    "acceptedAnswers": [
+      "poli",
+      "soigneux"
+    ]
+  },
+  "vocab-6b2d33b8549a": {
+    "meaning": "géographie",
+    "acceptedAnswers": [
+      "géographie"
+    ]
+  },
+  "vocab-4aca05a29ab9": {
+    "meaning": "si possible, autant que possible",
+    "acceptedAnswers": [
+      "si possible",
+      "autant que possible"
+    ]
+  },
+  "vocab-535d04fce7a1": {
+    "meaning": "déraisonnable, impossible",
+    "acceptedAnswers": [
+      "déraisonnable",
+      "impossible"
+    ]
+  },
+  "vocab-8e8c88c70129": {
+    "meaning": "sandwich",
+    "acceptedAnswers": [
+      "sandwich"
+    ]
+  },
+  "vocab-f39ec05e5a61": {
+    "meaning": "salle de conférence",
+    "acceptedAnswers": [
+      "salle de conférence"
+    ]
+  },
+  "vocab-4b6b3e6fd427": {
+    "meaning": "poupée, figurine",
+    "acceptedAnswers": [
+      "poupée",
+      "figurine"
+    ]
+  },
+  "vocab-2b67dd27a9e9": {
+    "meaning": "utilisation",
+    "acceptedAnswers": [
+      "utilisation"
+    ]
+  },
+  "vocab-e555214f57b5": {
+    "meaning": "décorer",
+    "acceptedAnswers": [
+      "décorer"
+    ]
+  },
+  "vocab-8b215c592588": {
+    "meaning": "arrêter (quelque chose)",
+    "acceptedAnswers": [
+      "arrêter (quelque chose)"
+    ]
+  },
+  "vocab-cda3c96e8c0f": {
+    "meaning": "bâtiment",
+    "acceptedAnswers": [
+      "bâtiment"
+    ]
+  },
+  "vocab-14251503786a": {
+    "meaning": "se disputer",
+    "acceptedAnswers": [
+      "se disputer"
+    ]
+  },
+  "vocab-5ca5913441a0": {
+    "meaning": "jeter, lancer",
+    "acceptedAnswers": [
+      "jeter",
+      "lancer"
+    ]
+  },
+  "vocab-4fff1c1f0559": {
+    "meaning": "panne",
+    "acceptedAnswers": [
+      "panne"
+    ]
+  },
+  "vocab-33c00f4a1a8b": {
+    "meaning": "force, puissance",
+    "acceptedAnswers": [
+      "force",
+      "puissance"
+    ]
+  },
+  "vocab-94be95dda967": {
+    "meaning": "passer, recevoir",
+    "acceptedAnswers": [
+      "passer",
+      "recevoir"
+    ]
+  },
+  "vocab-b22e3a1982e5": {
+    "meaning": "humeur, sentiment",
+    "acceptedAnswers": [
+      "humeur",
+      "sentiment"
+    ]
+  },
+  "vocab-fece8082cc7a": {
+    "meaning": "tel, telle, pareil",
+    "acceptedAnswers": [
+      "tel",
+      "telle",
+      "pareil"
+    ]
+  },
+  "vocab-b76e8f757083": {
+    "meaning": "étoile",
+    "acceptedAnswers": [
+      "étoile"
+    ]
+  },
+  "vocab-6ebb244781a5": {
+    "meaning": "cas, situation",
+    "acceptedAnswers": [
+      "cas",
+      "situation"
+    ]
+  },
+  "vocab-f6cda93b2001": {
+    "meaning": "enfin, finalement",
+    "acceptedAnswers": [
+      "enfin",
+      "finalement"
+    ]
+  },
+  "vocab-c89542082a8a": {
+    "meaning": "effectuer, réaliser",
+    "acceptedAnswers": [
+      "effectuer",
+      "réaliser"
+    ]
+  },
+  "vocab-abe24306ec05": {
+    "meaning": "raisin",
+    "acceptedAnswers": [
+      "raisin"
+    ]
+  },
+  "vocab-bb8e0b90c23d": {
+    "meaning": "disparaître, se perdre",
+    "acceptedAnswers": [
+      "disparaître",
+      "se perdre"
+    ]
+  },
+  "vocab-925841cdfb47": {
+    "meaning": "mois d’après le prochain",
+    "acceptedAnswers": [
+      "mois d’après le prochain"
+    ]
+  },
+  "vocab-698044202165": {
+    "meaning": "bois, forêt",
+    "acceptedAnswers": [
+      "bois",
+      "forêt"
+    ]
+  },
+  "vocab-d5ec0d0afb70": {
+    "meaning": "double",
+    "acceptedAnswers": [
+      "double"
+    ]
+  },
+  "vocab-474250649f50": {
+    "meaning": "ligne, fil",
+    "acceptedAnswers": [
+      "ligne",
+      "fil"
+    ]
+  },
+  "vocab-10bbb65aa613": {
+    "meaning": "guerre",
+    "acceptedAnswers": [
+      "guerre"
+    ]
+  },
+  "vocab-dedac553ff95": {
+    "meaning": "faire la grasse matinée",
+    "acceptedAnswers": [
+      "faire la grasse matinée"
+    ]
+  },
+  "vocab-a9c549b3b28c": {
+    "meaning": "papa, papa",
+    "acceptedAnswers": [
+      "papa"
+    ]
+  },
+  "vocab-f5694f7c75ff": {
+    "meaning": "briller, scintiller",
+    "acceptedAnswers": [
+      "briller",
+      "scintiller"
+    ]
+  },
+  "vocab-9220e0bb1b6c": {
+    "meaning": "mari",
+    "acceptedAnswers": [
+      "mari"
+    ]
+  },
+  "vocab-fab168174274": {
+    "meaning": "nuage",
+    "acceptedAnswers": [
+      "nuage"
+    ]
+  },
+  "vocab-65a2513f9aaa": {
+    "meaning": "pente, colline",
+    "acceptedAnswers": [
+      "pente",
+      "colline"
+    ]
+  },
+  "vocab-b7b3c6fe86c4": {
+    "meaning": "aéroport",
+    "acceptedAnswers": [
+      "aéroport"
+    ]
+  },
+  "vocab-3bfea40cee04": {
+    "meaning": "judo",
+    "acceptedAnswers": [
+      "judo"
+    ]
+  },
+  "vocab-3bd2b3ea92c7": {
+    "meaning": "jamais",
+    "acceptedAnswers": [
+      "jamais"
+    ]
+  },
+  "vocab-031d31c6b474": {
+    "meaning": "bureau",
+    "acceptedAnswers": [
+      "bureau"
+    ]
+  },
+  "vocab-e04a18cc6700": {
+    "meaning": "communication, contact, connexion",
+    "acceptedAnswers": [
+      "communication",
+      "contact",
+      "connexion"
+    ]
+  },
+  "vocab-9c6064a751f5": {
+    "meaning": "invité, client",
+    "acceptedAnswers": [
+      "invité",
+      "client"
+    ]
+  },
+  "vocab-d0552a0707da": {
+    "meaning": "beau, belle",
+    "acceptedAnswers": [
+      "beau",
+      "belle"
+    ]
+  },
+  "vocab-90bceb996408": {
+    "meaning": "rapidement et régulièrement",
+    "acceptedAnswers": [
+      "rapidement et régulièrement"
+    ]
+  },
+  "vocab-3f096d7e0a7b": {
+    "meaning": "adéquat, adapté",
+    "acceptedAnswers": [
+      "adéquat",
+      "adapté"
+    ]
+  },
+  "vocab-f39cb4918556": {
+    "meaning": "formidable",
+    "acceptedAnswers": [
+      "formidable"
+    ]
+  },
+  "vocab-7d00957ad135": {
+    "meaning": "fin",
+    "acceptedAnswers": [
+      "fin"
+    ]
+  },
+  "vocab-12b3aa7f9d18": {
+    "meaning": "mur",
+    "acceptedAnswers": [
+      "mur"
+    ]
+  },
+  "vocab-78afa2b7edef": {
+    "meaning": "une fois",
+    "acceptedAnswers": [
+      "une fois"
+    ]
+  },
+  "vocab-c2cec306f5c4": {
+    "meaning": "gentillesse",
+    "acceptedAnswers": [
+      "gentillesse"
+    ]
+  },
+  "vocab-d7cd17a83e55": {
+    "meaning": "prévenir",
+    "acceptedAnswers": [
+      "prévenir"
+    ]
+  },
+  "vocab-accb87bd0f3e": {
+    "meaning": "dentiste",
+    "acceptedAnswers": [
+      "dentiste"
+    ]
+  },
+  "vocab-2a7ae957f536": {
+    "meaning": "enthousiasme",
+    "acceptedAnswers": [
+      "enthousiasme"
+    ]
+  },
+  "vocab-f172ae18fbf3": {
+    "meaning": "guérir, se rétablir",
+    "acceptedAnswers": [
+      "guérir",
+      "se rétablir"
+    ]
+  },
+  "vocab-5737cdeed6f7": {
+    "meaning": "fièvre, température",
+    "acceptedAnswers": [
+      "fièvre",
+      "température"
+    ]
+  },
+  "vocab-6ab6355f7f71": {
+    "meaning": "festival",
+    "acceptedAnswers": [
+      "festival"
+    ]
+  },
+  "vocab-393cdfe8498b": {
+    "meaning": "service d'eau, canalisation d'eau",
+    "acceptedAnswers": [
+      "service d'eau",
+      "canalisation d'eau"
+    ]
+  },
+  "vocab-e05017b24480": {
+    "meaning": "odeur, parfum",
+    "acceptedAnswers": [
+      "odeur",
+      "parfum"
+    ]
+  },
+  "vocab-c450c35ecb15": {
+    "meaning": "cloche",
+    "acceptedAnswers": [
+      "cloche"
+    ]
+  },
+  "vocab-691fb5f54704": {
+    "meaning": "bébé",
+    "acceptedAnswers": [
+      "bébé"
+    ]
+  },
+  "vocab-0b6e6500104d": {
+    "meaning": "bizarre, drôle",
+    "acceptedAnswers": [
+      "bizarre",
+      "drôle"
+    ]
+  },
+  "vocab-ce352e4f7862": {
+    "meaning": "accident",
+    "acceptedAnswers": [
+      "accident"
+    ]
+  },
+  "vocab-d31a82461823": {
+    "meaning": "bizarre, étrange",
+    "acceptedAnswers": [
+      "bizarre",
+      "étrange"
+    ]
+  },
+  "vocab-f45c71f6f3d7": {
+    "meaning": "dictionnaire, encyclopédie",
+    "acceptedAnswers": [
+      "dictionnaire",
+      "encyclopédie"
+    ]
+  },
+  "vocab-de6d33bc1dab": {
+    "meaning": "rester, demeurer",
+    "acceptedAnswers": [
+      "rester",
+      "demeurer"
+    ]
+  },
+  "vocab-e9ad09158eb3": {
+    "meaning": "dresser, ériger",
+    "acceptedAnswers": [
+      "dresser",
+      "ériger"
+    ]
+  },
+  "vocab-eb290e404456": {
+    "meaning": "cause, origine",
+    "acceptedAnswers": [
+      "cause",
+      "origine"
+    ]
+  },
+  "vocab-42b6a58ec034": {
+    "meaning": "être surpris, s’étonner",
+    "acceptedAnswers": [
+      "être surpris",
+      "s’étonner"
+    ]
+  },
+  "vocab-df957e0341aa": {
+    "meaning": "grand-mère",
+    "acceptedAnswers": [
+      "grand-mère"
+    ]
+  },
+  "vocab-60091bff9249": {
+    "meaning": "réponse",
+    "acceptedAnswers": [
+      "réponse"
+    ]
+  },
+  "vocab-35a0e5ef96cc": {
+    "meaning": "tremper, faire mariner",
+    "acceptedAnswers": [
+      "tremper",
+      "faire mariner"
+    ]
+  },
+  "vocab-6d365d4f9896": {
+    "meaning": "intérieur, dedans",
+    "acceptedAnswers": [
+      "intérieur",
+      "dedans"
+    ]
+  },
+  "vocab-677d626b8761": {
+    "meaning": "écran",
+    "acceptedAnswers": [
+      "écran"
+    ]
+  },
+  "vocab-2c955930b5a4": {
+    "meaning": "augmenter",
+    "acceptedAnswers": [
+      "augmenter",
+      "accroître",
+      "se multiplier"
+    ]
+  },
+  "vocab-41c229a6256d": {
+    "meaning": "ou",
+    "acceptedAnswers": [
+      "ou",
+      "sinon"
+    ]
+  },
+  "vocab-3b9582aaccbb": {
+    "meaning": "blesser",
+    "acceptedAnswers": [
+      "blesser",
+      "faire mal"
+    ]
+  },
+  "vocab-075f4c445195": {
+    "meaning": "en dessous de",
+    "acceptedAnswers": [
+      "en dessous de",
+      "moins de"
+    ]
+  },
+  "vocab-3601c285284c": {
+    "meaning": "cœur",
+    "acceptedAnswers": [
+      "cœur",
+      "esprit"
+    ]
+  },
+  "vocab-e94096ca5160": {
+    "meaning": "livrer",
+    "acceptedAnswers": [
+      "livrer",
+      "apporter"
+    ]
+  },
+  "vocab-e6539ec3b77e": {
+    "meaning": "salutation",
+    "acceptedAnswers": [
+      "salutation",
+      "greeting"
+    ]
+  },
+  "vocab-756e74abdced": {
+    "meaning": "paysage",
+    "acceptedAnswers": [
+      "paysage",
+      "scène",
+      "décor"
+    ]
+  },
+  "vocab-9a283e1d10ef": {
+    "meaning": "sûr",
+    "acceptedAnswers": [
+      "sûr",
+      "certain",
+      "à ce que je me souvienne"
+    ]
+  },
+  "vocab-54ad7f43e52d": {
+    "meaning": "steak",
+    "acceptedAnswers": [
+      "steak"
+    ]
+  },
+  "vocab-23bd9279b21c": {
+    "meaning": "épicerie",
+    "acceptedAnswers": [
+      "épicerie",
+      "produits alimentaires",
+      "nourriture"
+    ]
+  },
+  "vocab-df1a5854e12f": {
+    "meaning": "forêt",
+    "acceptedAnswers": [
+      "forêt"
+    ]
+  },
+  "vocab-f3b716eb4792": {
+    "meaning": "dans",
+    "acceptedAnswers": [
+      "dans",
+      "en moins de"
+    ]
+  },
+  "vocab-b7cdb098ad28": {
+    "meaning": "pardessus",
+    "acceptedAnswers": [
+      "pardessus",
+      "dépassement",
+      "exagération"
+    ]
+  },
+  "vocab-feea8faf61d6": {
+    "meaning": "sécher",
+    "acceptedAnswers": [
+      "sécher",
+      "devenir sec"
+    ]
+  },
+  "vocab-2f734ba866d9": {
+    "meaning": "pierre",
+    "acceptedAnswers": [
+      "pierre",
+      "roche"
+    ]
+  },
+  "vocab-df05e350ec4f": {
+    "meaning": "se souvenir",
+    "acceptedAnswers": [
+      "se souvenir",
+      "rappeler"
+    ]
+  },
+  "vocab-78dfe6560a21": {
+    "meaning": "petit",
+    "acceptedAnswers": [
+      "petit",
+      "minutieux"
+    ]
+  },
+  "vocab-94c0123fb172": {
+    "meaning": "peindre",
+    "acceptedAnswers": [
+      "peindre",
+      "enduire"
+    ]
+  },
+  "vocab-077402970f63": {
+    "meaning": "inhabituel, rare",
+    "acceptedAnswers": [
+      "inhabituel",
+      "rare",
+      "peu commun"
+    ]
+  },
+  "vocab-3aa47bb43d28": {
+    "meaning": "commission, tâche",
+    "acceptedAnswers": [
+      "commission",
+      "tâche",
+      "affaire"
+    ]
+  },
+  "vocab-7e2aba3a4f7c": {
+    "meaning": "fonctionnaire",
+    "acceptedAnswers": [
+      "fonctionnaire",
+      "agent public",
+      "employé gouvernemental"
+    ]
+  },
+  "vocab-aa510d1e8428": {
+    "meaning": "préparation",
+    "acceptedAnswers": [
+      "préparation"
+    ]
+  },
+  "vocab-bdb66ff4eed7": {
+    "meaning": "conduite",
+    "acceptedAnswers": [
+      "conduite",
+      "pilotage"
+    ]
+  },
+  "vocab-4dbdc23e28ba": {
+    "meaning": "complètement",
+    "acceptedAnswers": [
+      "complètement",
+      "totalement",
+      "entièrement"
+    ]
+  },
+  "vocab-1eede6355fcd": {
+    "meaning": "annonceur",
+    "acceptedAnswers": [
+      "annonceur",
+      "commentateur"
+    ]
+  },
+  "vocab-4ab39ba744e4": {
+    "meaning": "gomme",
+    "acceptedAnswers": [
+      "gomme",
+      "effaceur",
+      "effaceur à crayon"
+    ]
+  },
+  "vocab-b9af11aa0741": {
+    "meaning": "côte, rivage",
+    "acceptedAnswers": [
+      "côte",
+      "rivage",
+      "bord de mer"
+    ]
+  },
+  "vocab-cf58c5cf08d9": {
+    "meaning": "feu",
+    "acceptedAnswers": [
+      "feu"
+    ]
+  },
+  "vocab-28643e9a2639": {
+    "meaning": "miso, pâte de soja",
+    "acceptedAnswers": [
+      "miso",
+      "pâte de soja"
+    ]
+  },
+  "vocab-2b1a1ec2f8d6": {
+    "meaning": "félicitations, célébration",
+    "acceptedAnswers": [
+      "félicitations",
+      "célébration",
+      "fête"
+    ]
+  },
+  "vocab-260afafbe574": {
+    "meaning": "véhicule",
+    "acceptedAnswers": [
+      "véhicule",
+      "moyen de transport"
+    ]
+  },
+  "vocab-f9fe99b91dd5": {
+    "meaning": "information, orientation",
+    "acceptedAnswers": [
+      "information",
+      "orientation",
+      "guidage"
+    ]
+  },
+  "vocab-b0613715b46e": {
+    "meaning": "aller et venir, faire la navette",
+    "acceptedAnswers": [
+      "aller et venir",
+      "faire la navette",
+      "commuter"
+    ]
+  },
+  "vocab-f97da654d8fa": {
+    "meaning": "mener, accompagner",
+    "acceptedAnswers": [
+      "mener",
+      "accompagner",
+      "emmener"
+    ]
+  },
+  "vocab-c0780a70018c": {
+    "meaning": "technique, technologie, compétence",
+    "acceptedAnswers": [
+      "technique",
+      "technologie",
+      "compétence"
+    ]
+  },
+  "vocab-a56aa93332fa": {
+    "meaning": "petit oiseau",
+    "acceptedAnswers": [
+      "petit oiseau"
+    ]
+  },
+  "vocab-eab42d5753f9": {
+    "meaning": "logement, pension",
+    "acceptedAnswers": [
+      "logement",
+      "pension",
+      "auberge"
+    ]
+  },
+  "vocab-acb510b96f3a": {
+    "meaning": "confiture",
+    "acceptedAnswers": [
+      "confiture",
+      "gelée"
+    ]
+  },
+  "vocab-5288a1e69b5f": {
+    "meaning": "invitation",
+    "acceptedAnswers": [
+      "invitation"
+    ]
+  },
+  "vocab-93092d3909e4": {
+    "meaning": "miroir",
+    "acceptedAnswers": [
+      "miroir"
+    ]
+  },
+  "vocab-8553997c1475": {
+    "meaning": "ce doit être ainsi",
+    "acceptedAnswers": [
+      "ce doit être ainsi",
+      "cela devrait être ainsi"
+    ]
+  },
+  "vocab-070303f7599d": {
+    "meaning": "loi",
+    "acceptedAnswers": [
+      "loi"
+    ]
+  },
+  "vocab-7aaea21aab43": {
+    "meaning": "avancer, progresser",
+    "acceptedAnswers": [
+      "avancer",
+      "progresser",
+      "aller de l'avant",
+      "aller en avant"
+    ]
+  },
+  "vocab-da2a8ecbb53b": {
+    "meaning": "profiter, apprécier",
+    "acceptedAnswers": [
+      "profiter",
+      "apprécier",
+      "prendre plaisir"
+    ]
+  },
+  "vocab-5f0e2bf0ea23": {
+    "meaning": "commerce",
+    "acceptedAnswers": [
+      "commerce",
+      "échange commercial"
+    ]
+  },
+  "vocab-928b6baae836": {
+    "meaning": "opposition, résistance",
+    "acceptedAnswers": [
+      "opposition",
+      "résistance",
+      "refus"
+    ]
+  },
+  "vocab-28a4f6508a62": {
+    "meaning": "sérieux, appliqué",
+    "acceptedAnswers": [
+      "sérieux",
+      "appliqué",
+      "diligent"
+    ]
+  },
+  "vocab-2a1053878f8a": {
+    "meaning": "vendeur, employé de magasin",
+    "acceptedAnswers": [
+      "vendeur",
+      "employé de magasin",
+      "caissier"
+    ]
+  },
+  "vocab-6609da9af02c": {
+    "meaning": "rester (passer la nuit)",
+    "acceptedAnswers": [
+      "rester (passer la nuit)",
+      "loger",
+      "séjourner"
+    ]
+  },
+  "vocab-ab645ed42d67": {
+    "meaning": "bien, d'accord (formel)",
+    "acceptedAnswers": [
+      "bien (formel)",
+      "d'accord (formel)",
+      "ça va (formel)"
+    ]
+  },
+  "vocab-b733006acec6": {
+    "meaning": "ce soir",
+    "acceptedAnswers": [
+      "ce soir",
+      "cette nuit"
+    ]
+  },
+  "vocab-018d445bd63e": {
+    "meaning": "monnaie",
+    "acceptedAnswers": [
+      "monnaie",
+      "reste",
+      "change"
+    ]
+  },
+  "vocab-a695b5b642a1": {
+    "meaning": "vérifier",
+    "acceptedAnswers": [
+      "vérifier",
+      "contrôler",
+      "examiner",
+      "check"
+    ]
+  },
+  "vocab-d4b36a042116": {
+    "meaning": "conversation",
+    "acceptedAnswers": [
+      "conversation",
+      "dialogue",
+      "discussion"
+    ]
+  },
+  "vocab-043434e7da99": {
+    "meaning": "trafic, transport",
+    "acceptedAnswers": [
+      "trafic",
+      "transport",
+      "circulation"
+    ]
+  },
+  "vocab-bf736dbd5687": {
+    "meaning": "traitement de texte",
+    "acceptedAnswers": [
+      "traitement de texte",
+      "programme de traitement de texte"
+    ]
+  },
+  "vocab-06e8c70619b7": {
+    "meaning": "se réjouir",
+    "acceptedAnswers": [
+      "se réjouir",
+      "être ravi",
+      "être content",
+      "se réjouir de"
+    ]
+  },
+  "vocab-144611cc2889": {
+    "meaning": "train express",
+    "acceptedAnswers": [
+      "train express",
+      "bus express"
+    ]
+  },
+  "vocab-13c936bf001c": {
+    "meaning": "tout le monde",
+    "acceptedAnswers": [
+      "tout le monde",
+      "chacun",
+      "tous"
+    ]
+  },
+  "vocab-40977d83691d": {
+    "meaning": "goût",
+    "acceptedAnswers": [
+      "goût",
+      "saveur"
+    ]
+  },
+  "vocab-34ce7b171b18": {
+    "meaning": "principal",
+    "acceptedAnswers": [
+      "principal",
+      "directeur"
+    ]
+  },
+  "vocab-ce0628d869ba": {
+    "meaning": "festin",
+    "acceptedAnswers": [
+      "festin",
+      "repas de fête",
+      "réception",
+      "traite (offrir un repas)"
+    ]
+  },
+  "vocab-f64f5e7c1bcc": {
+    "meaning": "danse",
+    "acceptedAnswers": [
+      "danse"
+    ]
+  },
+  "vocab-90302d4e2430": {
+    "meaning": "intérêt",
+    "acceptedAnswers": [
+      "intérêt"
+    ]
+  },
+  "vocab-d2b59fda6f1a": {
+    "meaning": "déménager",
+    "acceptedAnswers": [
+      "déménager",
+      "emménager"
+    ]
+  },
+  "vocab-af53c2c7b101": {
+    "meaning": "climatisation",
+    "acceptedAnswers": [
+      "climatisation",
+      "air conditionné",
+      "refroidissement"
+    ]
+  },
+  "vocab-7b97771af3dc": {
+    "meaning": "convenance",
+    "acceptedAnswers": [
+      "convenance",
+      "circonstances",
+      "disponibilité"
+    ]
+  },
+  "vocab-b13a6cff45d1": {
+    "meaning": "réserve",
+    "acceptedAnswers": [
+      "réserve",
+      "retenue",
+      "hésitation"
+    ]
+  },
+  "vocab-0686b84e65eb": {
+    "meaning": "décéder",
+    "acceptedAnswers": [
+      "décéder",
+      "mourir",
+      "s'éteindre"
+    ]
+  },
+  "vocab-f87e559add33": {
+    "meaning": "clairement",
+    "acceptedAnswers": [
+      "clairement",
+      "distinctement"
+    ]
+  },
+  "vocab-52eedb6d1b90": {
+    "meaning": "sentiment",
+    "acceptedAnswers": [
+      "sentiment",
+      "humeur",
+      "émotion",
+      "ressenti"
+    ]
+  },
+  "vocab-3b05ac1772db": {
+    "meaning": "grand-père",
+    "acceptedAnswers": [
+      "grand-père"
+    ]
+  },
+  "vocab-859362abc9a7": {
+    "meaning": "port",
+    "acceptedAnswers": [
+      "port",
+      "havre",
+      "rade"
+    ]
+  },
+  "vocab-126eab7f777a": {
+    "meaning": "formidable",
+    "acceptedAnswers": [
+      "formidable",
+      "super",
+      "génial",
+      "extraordinaire"
+    ]
+  },
+  "vocab-9fb793c875d7": {
+    "meaning": "entrée",
+    "acceptedAnswers": [
+      "entrée",
+      "admission",
+      "inscription"
+    ]
+  },
+  "vocab-eef9d372f5df": {
+    "meaning": "copier",
+    "acceptedAnswers": [
+      "copier",
+      "photographier",
+      "prendre en photo"
+    ]
+  },
+  "vocab-8e4839d2e6de": {
+    "meaning": "incendie",
+    "acceptedAnswers": [
+      "incendie",
+      "feu"
+    ]
+  },
+  "vocab-5bf183e71692": {
+    "meaning": "additionner",
+    "acceptedAnswers": [
+      "additionner",
+      "ajouter"
+    ]
+  },
+  "vocab-252f72480e40": {
+    "meaning": "église",
+    "acceptedAnswers": [
+      "église",
+      "church"
+    ]
+  },
+  "vocab-85f2c5093206": {
+    "meaning": "ils",
+    "acceptedAnswers": [
+      "ils",
+      "eux"
+    ]
+  },
+  "vocab-2fe12f739abb": {
+    "meaning": "plein, au maximum",
+    "acceptedAnswers": [
+      "plein",
+      "au maximum",
+      "complètement",
+      "entièrement"
+    ]
+  },
+  "vocab-c29248bd29e7": {
+    "meaning": "homme; mâle",
+    "acceptedAnswers": [
+      "homme",
+      "mâle"
+    ]
+  },
+  "vocab-d96afe6fc743": {
+    "meaning": "raison",
+    "acceptedAnswers": [
+      "raison",
+      "motif"
+    ]
+  },
+  "vocab-6e5c33003e80": {
+    "meaning": "production; produire",
+    "acceptedAnswers": [
+      "production",
+      "produire"
+    ]
+  },
+  "vocab-dfacd3e8745e": {
+    "meaning": "s'assombrir; se terminer",
+    "acceptedAnswers": [
+      "s'assombrir",
+      "se terminer",
+      "finir",
+      "venir à sa fin"
+    ]
+  },
+  "vocab-6792cf8c08ca": {
+    "meaning": "pêcher",
+    "acceptedAnswers": [
+      "pêcher"
+    ]
+  },
+  "vocab-97100ab7e3a5": {
+    "meaning": "suffixe familier (féminin)",
+    "acceptedAnswers": [
+      "suffixe familier (féminin)",
+      "suffixe affectueux (féminin)"
+    ]
+  },
+  "vocab-5fb1d5e308b6": {
+    "meaning": "frapper",
+    "acceptedAnswers": [
+      "frapper",
+      "taper",
+      "heurter"
+    ]
+  },
+  "vocab-50aebb20091d": {
+    "meaning": "tel, comme ça",
+    "acceptedAnswers": [
+      "tel",
+      "comme ça",
+      "pareil"
+    ]
+  },
+  "vocab-d631eb282f64": {
+    "meaning": "s'excuser",
+    "acceptedAnswers": [
+      "s'excuser",
+      "présenter ses excuses",
+      "demander pardon"
+    ]
+  },
+  "vocab-c3b69b33f808": {
+    "meaning": "journée, pendant la journée",
+    "acceptedAnswers": [
+      "journée",
+      "pendant la journée",
+      "durant la journée"
+    ]
+  },
+  "vocab-6d16cb9c903d": {
+    "meaning": "éducation",
+    "acceptedAnswers": [
+      "éducation",
+      "enseignement"
+    ]
+  },
+  "vocab-8072e2afcecd": {
+    "meaning": "femme",
+    "acceptedAnswers": [
+      "femme"
+    ]
+  },
+  "vocab-0958f7553d9f": {
+    "meaning": "riz cru",
+    "acceptedAnswers": [
+      "riz cru",
+      "riz non cuit"
+    ]
+  },
+  "vocab-c39743221dd3": {
+    "meaning": "gêne, intrusion",
+    "acceptedAnswers": [
+      "gêne",
+      "intrusion",
+      "obstacle",
+      "empêchement"
+    ]
+  },
+  "vocab-16a0dff60b3a": {
+    "meaning": "international",
+    "acceptedAnswers": [
+      "international"
+    ]
+  },
+  "vocab-c76219e32179": {
+    "meaning": "coin",
+    "acceptedAnswers": [
+      "coin"
+    ]
+  },
+  "vocab-5f3a8d4d0dd6": {
+    "meaning": "aller (forme humble); demander (forme humble); venir (forme humble)",
+    "acceptedAnswers": [
+      "aller (forme humble)",
+      "demander (forme humble)",
+      "venir (forme humble)"
+    ]
+  },
+  "vocab-bc20caf6826e": {
+    "meaning": "semaine après la prochaine",
+    "acceptedAnswers": [
+      "semaine après la prochaine",
+      "la semaine après la prochaine"
+    ]
+  },
+  "vocab-7976ab1d84ce": {
+    "meaning": "gorge",
+    "acceptedAnswers": [
+      "gorge"
+    ]
+  },
+  "vocab-6ff267d25764": {
+    "meaning": "environnement",
+    "acceptedAnswers": [
+      "environnement",
+      "alentours",
+      "entourage",
+      "milieu",
+      "environ"
+    ]
+  },
+  "vocab-2a3a992197c7": {
+    "meaning": "inconvénient",
+    "acceptedAnswers": [
+      "inconvénient",
+      "gêne"
+    ]
+  },
+  "vocab-657b6930290d": {
+    "meaning": "sang",
+    "acceptedAnswers": [
+      "sang"
+    ]
+  },
+  "vocab-a76119b3c712": {
+    "meaning": "poil",
+    "acceptedAnswers": [
+      "poil",
+      "cheveu",
+      "poils",
+      "cheveux",
+      "fourrure"
+    ]
+  },
+  "vocab-4992d80e6f22": {
+    "meaning": "extrêmement",
+    "acceptedAnswers": [
+      "extrêmement",
+      "beaucoup",
+      "fortement"
+    ]
+  },
+  "vocab-2267fdbff2e9": {
+    "meaning": "placard",
+    "acceptedAnswers": [
+      "placard",
+      "armoire",
+      "placard à porte coulissante"
+    ]
+  },
+  "vocab-61607c5a6ac7": {
+    "meaning": "lumière électrique",
+    "acceptedAnswers": [
+      "lumière électrique",
+      "éclairage électrique",
+      "lampe électrique"
+    ]
+  },
+  "vocab-1afcc7ef8e83": {
+    "meaning": "gronder",
+    "acceptedAnswers": [
+      "gronder",
+      "réprimander",
+      "disputer"
+    ]
+  },
+  "vocab-7e15f6c865a4": {
+    "meaning": "sandale",
+    "acceptedAnswers": [
+      "sandale",
+      "sandales"
+    ]
+  },
+  "vocab-22ececd801b5": {
+    "meaning": "délicieux; habile; chanceux",
+    "acceptedAnswers": [
+      "délicieux",
+      "habile",
+      "chanceux",
+      "bon",
+      "talentueux",
+      "adroit"
+    ]
+  },
+  "vocab-dcfa870c8a53": {
+    "meaning": "changer",
+    "acceptedAnswers": [
+      "changer",
+      "modifier",
+      "altérer",
+      "varier"
+    ]
+  },
+  "vocab-56d15e2324d0": {
+    "meaning": "auditorium",
+    "acceptedAnswers": [
+      "auditorium",
+      "salle de conférence",
+      "amphithéâtre"
+    ]
+  },
+  "vocab-27d5744f36a2": {
+    "meaning": "enfant",
+    "acceptedAnswers": [
+      "enfant",
+      "gamin",
+      "gosse"
+    ]
+  },
+  "vocab-7368e1e9c171": {
+    "meaning": "faire bouillir",
+    "acceptedAnswers": [
+      "faire bouillir",
+      "bouillir"
+    ]
+  },
+  "vocab-0982a80352d8": {
+    "meaning": "caisse enregistreuse",
+    "acceptedAnswers": [
+      "caisse enregistreuse",
+      "registre"
+    ]
+  },
+  "vocab-f5635cfb88b4": {
+    "meaning": "un moment",
+    "acceptedAnswers": [
+      "un moment",
+      "un instant",
+      "un petit moment",
+      "un peu de temps"
+    ]
+  },
+  "vocab-e6674bacf655": {
+    "meaning": "particulièrement",
+    "acceptedAnswers": [
+      "particulièrement",
+      "surtout",
+      "notamment"
+    ]
+  },
+  "vocab-b650f84a486c": {
+    "meaning": "s'ouvrir, devenir vacant",
+    "acceptedAnswers": [
+      "s'ouvrir",
+      "devenir vacant"
+    ]
+  },
+  "vocab-f3534981adc8": {
+    "meaning": "plan, projet, programme",
+    "acceptedAnswers": [
+      "plan",
+      "projet",
+      "programme"
+    ]
+  },
+  "vocab-53e3381ca854": {
+    "meaning": "~ rue, ~ avenue",
+    "acceptedAnswers": [
+      "rue",
+      "avenue"
+    ]
+  },
+  "vocab-5fe3e02a87b9": {
+    "meaning": "sous-vêtements",
+    "acceptedAnswers": [
+      "sous-vêtements"
+    ]
+  },
+  "vocab-b8d677266acf": {
+    "meaning": "économie, finances",
+    "acceptedAnswers": [
+      "économie",
+      "finances"
+    ]
+  },
+  "vocab-6e70affba493": {
+    "meaning": "ainsi, de cette façon",
+    "acceptedAnswers": [
+      "ainsi",
+      "de cette façon"
+    ]
+  },
+  "vocab-ba08fde088ef": {
+    "meaning": "verso, arrière",
+    "acceptedAnswers": [
+      "verso",
+      "arrière"
+    ]
+  },
+  "vocab-ab1cb4918ea3": {
+    "meaning": "bien, avantage, pour",
+    "acceptedAnswers": [
+      "bien",
+      "avantage",
+      "pour"
+    ]
+  },
+  "vocab-32f470ce19e9": {
+    "meaning": "être (honorifique)",
+    "acceptedAnswers": [
+      "être (honorifique)"
+    ]
+  },
+  "vocab-f073cc582272": {
+    "meaning": "changer, se transformer, varier",
+    "acceptedAnswers": [
+      "changer",
+      "se transformer",
+      "varier"
+    ]
+  },
+  "vocab-b095aafacec8": {
+    "meaning": "sauf, excepté",
+    "acceptedAnswers": [
+      "sauf",
+      "excepté"
+    ]
+  },
+  "vocab-e657b2e7330e": {
+    "meaning": "finir, se terminer",
+    "acceptedAnswers": [
+      "finir",
+      "se terminer"
+    ]
+  },
+  "vocab-b9e99a64864f": {
+    "meaning": "steak haché",
+    "acceptedAnswers": [
+      "steak haché"
+    ]
+  },
+  "vocab-887f569257fd": {
+    "meaning": "ville",
+    "acceptedAnswers": [
+      "ville"
+    ]
+  },
+  "vocab-960a1c151bf7": {
+    "meaning": "tiroir",
+    "acceptedAnswers": [
+      "tiroir"
+    ]
+  },
+  "vocab-a61dbc2d75b5": {
+    "meaning": "jeu",
+    "acceptedAnswers": [
+      "jeu"
+    ]
+  },
+  "vocab-81d17bdcb4bd": {
+    "meaning": "préparation",
+    "acceptedAnswers": [
+      "préparation"
+    ]
+  },
+  "vocab-9750a4fa3e37": {
+    "meaning": "suffisant",
+    "acceptedAnswers": [
+      "suffisant"
+    ]
+  },
+  "vocab-b1f4b1116c69": {
+    "meaning": "sûrement, certainement",
+    "acceptedAnswers": [
+      "sûrement",
+      "certainement"
+    ]
+  },
+  "vocab-37de19811d79": {
+    "meaning": "loin, éloigné",
+    "acceptedAnswers": [
+      "loin",
+      "éloigné"
+    ]
+  },
+  "vocab-97dfa455ab7e": {
+    "meaning": "environ, généralement, à l'origine",
+    "acceptedAnswers": [
+      "environ",
+      "généralement",
+      "à l'origine"
+    ]
+  },
+  "vocab-910187201845": {
+    "meaning": "casser, se plier, céder, tourner (un coin)",
+    "acceptedAnswers": [
+      "casser",
+      "se plier",
+      "céder",
+      "tourner (un coin)"
+    ]
+  },
+  "vocab-7003bbe10d0b": {
+    "meaning": "correct",
+    "acceptedAnswers": [
+      "correct"
+    ]
+  },
+  "vocab-fe5a10ceb5e9": {
+    "meaning": "importation",
+    "acceptedAnswers": [
+      "importation"
+    ]
+  },
+  "vocab-495da4c70f97": {
+    "meaning": "réponse",
+    "acceptedAnswers": [
+      "réponse"
+    ]
+  },
+  "vocab-df4a2eb4330c": {
+    "meaning": "métropole",
+    "acceptedAnswers": [
+      "métropole"
+    ]
+  },
+  "vocab-600a5527ee03": {
+    "meaning": "industrie",
+    "acceptedAnswers": [
+      "industrie"
+    ]
+  },
+  "vocab-c4a082e67773": {
+    "meaning": "riche",
+    "acceptedAnswers": [
+      "riche"
+    ]
+  },
+  "vocab-0b8270c9bdf4": {
+    "meaning": "île",
+    "acceptedAnswers": [
+      "île"
+    ]
+  },
+  "vocab-878b1c1a6272": {
+    "meaning": "outil",
+    "acceptedAnswers": [
+      "outil"
+    ]
+  },
+  "vocab-169da5374ea0": {
+    "meaning": "glisser",
+    "acceptedAnswers": [
+      "glisser"
+    ]
+  },
+  "vocab-21c8718d5853": {
+    "meaning": "à ce point",
+    "acceptedAnswers": [
+      "à ce point"
+    ]
+  },
+  "vocab-7edc058598c9": {
+    "meaning": "plus que, c'est tout",
+    "acceptedAnswers": [
+      "plus que",
+      "c'est tout"
+    ]
+  },
+  "vocab-08a2cfca3418": {
+    "meaning": "express limité",
+    "acceptedAnswers": [
+      "express limité"
+    ]
+  },
+  "vocab-bde430445611": {
+    "meaning": "épouse",
+    "acceptedAnswers": [
+      "épouse"
+    ]
+  },
+  "vocab-64caa70ef0a7": {
+    "meaning": "retour",
+    "acceptedAnswers": [
+      "retour"
+    ]
+  },
+  "vocab-0fd396d3d708": {
+    "meaning": "état, santé",
+    "acceptedAnswers": [
+      "état",
+      "santé"
+    ]
+  },
+  "vocab-b85fc1b82240": {
+    "meaning": "dur",
+    "acceptedAnswers": [
+      "dur"
+    ]
+  },
+  "vocab-52e891db1cfc": {
+    "meaning": "parking",
+    "acceptedAnswers": [
+      "parking"
+    ]
+  },
+  "vocab-61cb6b5bc4df": {
+    "meaning": "costume",
+    "acceptedAnswers": [
+      "costume"
+    ]
+  },
+  "vocab-a11560da1a91": {
+    "meaning": "danger, risque",
+    "acceptedAnswers": [
+      "danger",
+      "risque",
+      "dangerosité"
+    ]
+  },
+  "vocab-2183db666af4": {
+    "meaning": "remise de diplôme",
+    "acceptedAnswers": [
+      "remise de diplôme",
+      "graduation"
+    ]
+  },
+  "vocab-7ec50aeec001": {
+    "meaning": "alors, donc, par conséquent",
+    "acceptedAnswers": [
+      "alors",
+      "donc",
+      "par conséquent"
+    ]
+  },
+  "vocab-a2ad8df0b113": {
+    "meaning": "branche, brindille",
+    "acceptedAnswers": [
+      "branche",
+      "brindille"
+    ]
+  },
+  "vocab-6e3e2cd2b5eb": {
+    "meaning": "bientôt, progressivement",
+    "acceptedAnswers": [
+      "bientôt",
+      "progressivement",
+      "graduellement"
+    ]
+  },
+  "vocab-8e124799ea6c": {
+    "meaning": "faire du bruit, s'agiter",
+    "acceptedAnswers": [
+      "faire du bruit",
+      "s'agiter"
+    ]
+  },
+  "vocab-d65080a0aaae": {
+    "meaning": "demander, s'enquérir",
+    "acceptedAnswers": [
+      "demander",
+      "s'enquérir",
+      "interroger",
+      "poser une question"
+    ]
+  },
+  "vocab-aa2bb59ac398": {
+    "meaning": "diffusion, émission",
+    "acceptedAnswers": [
+      "diffusion",
+      "émission",
+      "radiodiffusion",
+      "télévision"
+    ]
+  },
+  "vocab-4f47b0dd29a1": {
+    "meaning": "citoyen",
+    "acceptedAnswers": [
+      "citoyen"
+    ]
+  },
+  "vocab-2aa424834a1b": {
+    "meaning": "télécopie, fax",
+    "acceptedAnswers": [
+      "télécopie",
+      "fax"
+    ]
+  },
+  "vocab-8c52920802b4": {
+    "meaning": "perdre",
+    "acceptedAnswers": [
+      "perdre"
+    ]
+  },
+  "vocab-57b897862a80": {
+    "meaning": "campagne, région rurale",
+    "acceptedAnswers": [
+      "campagne",
+      "région rurale"
+    ]
+  },
+  "vocab-fcb569060839": {
+    "meaning": "cours, conférence",
+    "acceptedAnswers": [
+      "cours",
+      "conférence",
+      "exposé"
+    ]
+  },
+  "vocab-7ae1ee3a0309": {
+    "meaning": "ainsi, tellement",
+    "acceptedAnswers": [
+      "ainsi",
+      "tellement",
+      "tant"
+    ]
+  },
+  "vocab-385a4dbb8d14": {
+    "meaning": "pause déjeuner",
+    "acceptedAnswers": [
+      "pause déjeuner",
+      "pause de midi",
+      "récréation de midi"
+    ]
+  },
+  "vocab-1a16ba820f65": {
+    "meaning": "objet oublié",
+    "acceptedAnswers": [
+      "objet oublié",
+      "chose oubliée",
+      "perte"
+    ]
+  },
+  "vocab-cce8d1b13e83": {
+    "meaning": "descendre",
+    "acceptedAnswers": [
+      "descendre"
+    ]
+  },
+  "vocab-2f6116f4f545": {
+    "meaning": "bras",
+    "acceptedAnswers": [
+      "bras"
+    ]
+  },
+  "vocab-c165f58620c5": {
+    "meaning": "raison, explication",
+    "acceptedAnswers": [
+      "raison",
+      "explication"
+    ]
+  },
+  "vocab-af01edbc4da3": {
+    "meaning": "consentement, accord",
+    "acceptedAnswers": [
+      "consentement",
+      "accord",
+      "acceptation"
+    ]
+  },
+  "vocab-9345af96fcea": {
+    "meaning": "lycée",
+    "acceptedAnswers": [
+      "lycée"
+    ]
+  },
+  "vocab-118c92324105": {
+    "meaning": "ressembler, être similaire",
+    "acceptedAnswers": [
+      "ressembler",
+      "être similaire"
+    ]
+  },
+  "vocab-1bc4c1ae4874": {
+    "meaning": "chauffage",
+    "acceptedAnswers": [
+      "chauffage"
+    ]
+  },
+  "vocab-f61c8dbcebee": {
+    "meaning": "taux, proportion, pourcentage",
+    "acceptedAnswers": [
+      "taux",
+      "proportion",
+      "pourcentage"
+    ]
+  },
+  "vocab-5355ef79f00f": {
+    "meaning": "temple bouddhiste",
+    "acceptedAnswers": [
+      "temple bouddhiste"
+    ]
+  },
+  "vocab-fa496ae3e1d7": {
+    "meaning": "s'habituer à",
+    "acceptedAnswers": [
+      "s'habituer à"
+    ]
+  },
+  "vocab-61138240865b": {
+    "meaning": "commun, habituel",
+    "acceptedAnswers": [
+      "commun",
+      "habituel"
+    ]
+  },
+  "vocab-19dc754d2746": {
+    "meaning": "aider",
+    "acceptedAnswers": [
+      "aider"
+    ]
+  },
+  "vocab-0223b026aa25": {
+    "meaning": "je vois",
+    "acceptedAnswers": [
+      "je vois"
+    ]
+  },
+  "vocab-5450142ee068": {
+    "meaning": "donner (honorifique)",
+    "acceptedAnswers": [
+      "donner (honorifique)"
+    ]
+  },
+  "vocab-0717e551c4a4": {
+    "meaning": "fils (modeste)",
+    "acceptedAnswers": [
+      "fils (modeste)"
+    ]
+  },
+  "vocab-3f2f923c2a59": {
+    "meaning": "lieu de réunion, salle",
+    "acceptedAnswers": [
+      "lieu de réunion",
+      "salle"
+    ]
+  },
+  "vocab-4f4fa5bb1705": {
+    "meaning": "rire, sourire",
+    "acceptedAnswers": [
+      "rire",
+      "sourire"
+    ]
+  },
+  "vocab-96e39ee9cb18": {
+    "meaning": "lumière",
+    "acceptedAnswers": [
+      "lumière"
+    ]
+  },
+  "vocab-b2dabb47e7dd": {
+    "meaning": "visite à un malade",
+    "acceptedAnswers": [
+      "visite à un malade"
+    ]
+  },
+  "vocab-b48cb8a41332": {
+    "meaning": "siège",
+    "acceptedAnswers": [
+      "siège"
+    ]
+  },
+  "vocab-8529ab9ef9d1": {
+    "meaning": "Monsieur, Madame, Mademoiselle",
+    "acceptedAnswers": [
+      "Monsieur",
+      "Madame",
+      "Mademoiselle"
+    ]
+  },
+  "vocab-722f66c68df5": {
+    "meaning": "connaissance, savoir",
+    "acceptedAnswers": [
+      "connaissance",
+      "savoir"
+    ]
+  },
+  "vocab-d0862016bbe8": {
+    "meaning": "descendre, tomber",
+    "acceptedAnswers": [
+      "descendre",
+      "tomber"
+    ]
+  },
+  "vocab-0cdc2d17477e": {
+    "meaning": "Asie",
+    "acceptedAnswers": [
+      "Asie"
+    ]
+  },
+  "vocab-d78eda1984d2": {
+    "meaning": "être vide, être moins fréquenté",
+    "acceptedAnswers": [
+      "être vide",
+      "être moins fréquenté",
+      "se vider"
+    ]
+  },
+  "vocab-ea786b6c208b": {
+    "meaning": "Ah",
+    "acceptedAnswers": [
+      "Ah"
+    ]
+  },
+  "vocab-09c4f84f1846": {
+    "meaning": "le plus",
+    "acceptedAnswers": [
+      "le plus",
+      "le plus que"
+    ]
+  },
+  "vocab-5b9531ccc9d3": {
+    "meaning": "~ âge; période",
+    "acceptedAnswers": [
+      "~ âge",
+      "~ période"
+    ]
+  },
+  "vocab-d7b583086e09": {
+    "meaning": "fin, dernier",
+    "acceptedAnswers": [
+      "fin",
+      "dernier"
+    ]
+  },
+  "vocab-dd7eca264a07": {
+    "meaning": "sortie de l'hôpital",
+    "acceptedAnswers": [
+      "sortie de l'hôpital",
+      "sortie d'hôpital"
+    ]
+  },
+  "vocab-d2206e134237": {
+    "meaning": "exposition",
+    "acceptedAnswers": [
+      "exposition"
+    ]
+  },
+  "vocab-52b6fa9e374a": {
+    "meaning": "train à vapeur",
+    "acceptedAnswers": [
+      "train à vapeur"
+    ]
+  },
+  "vocab-c2bcee799a05": {
+    "meaning": "être trouvé, être découvert",
+    "acceptedAnswers": [
+      "être trouvé",
+      "être découvert"
+    ]
+  },
+  "vocab-b04d34f421af": {
+    "meaning": "injection",
+    "acceptedAnswers": [
+      "injection"
+    ]
+  },
+  "vocab-b9013a27e01b": {
+    "meaning": "manière, façon, genre",
+    "acceptedAnswers": [
+      "manière",
+      "façon",
+      "genre"
+    ]
+  },
+  "vocab-04838489b04f": {
+    "meaning": "début, premier",
+    "acceptedAnswers": [
+      "début",
+      "premier"
+    ]
+  },
+  "vocab-945e2f5d47a5": {
+    "meaning": "honorable ~",
+    "acceptedAnswers": [
+      "honorable ~"
+    ]
+  },
+  "vocab-88a285690442": {
+    "meaning": "tranquillité d'esprit, soulagement",
+    "acceptedAnswers": [
+      "tranquillité d'esprit",
+      "soulagement"
+    ]
+  },
+  "vocab-fda6cf2829c8": {
+    "meaning": "être réparé",
+    "acceptedAnswers": [
+      "être réparé",
+      "être fixé"
+    ]
+  },
+  "vocab-3d6696481a37": {
+    "meaning": "continuer",
+    "acceptedAnswers": [
+      "continuer",
+      "se poursuivre"
+    ]
+  },
+  "vocab-dd1abaf7d707": {
+    "meaning": "soin, s'occuper de",
+    "acceptedAnswers": [
+      "soin",
+      "s'occuper de"
+    ]
+  },
+  "vocab-8269c26a210a": {
+    "meaning": "voisinage",
+    "acceptedAnswers": [
+      "voisinage",
+      "quartier"
+    ]
+  },
+  "vocab-09ef4d4dc05a": {
+    "meaning": "cent millions",
+    "acceptedAnswers": [
+      "cent millions"
+    ]
+  },
+  "vocab-73d5b0dd7055": {
+    "meaning": "mathématiques",
+    "acceptedAnswers": [
+      "mathématiques"
+    ]
+  },
+  "vocab-3ee8d044ef7d": {
+    "meaning": "coutume",
+    "acceptedAnswers": [
+      "coutume",
+      "habitude"
+    ]
+  },
+  "vocab-f6e52f2b7b88": {
+    "meaning": "brûler, rôtir",
+    "acceptedAnswers": [
+      "brûler",
+      "rôtir"
+    ]
+  },
+  "vocab-3d35801d70f0": {
+    "meaning": "tu (familier)",
+    "acceptedAnswers": [
+      "tu (familier)",
+      "toi (familier)"
+    ]
+  },
+  "vocab-74bdf22124ea": {
+    "meaning": "refroidir",
+    "acceptedAnswers": [
+      "refroidir",
+      "devenir froid",
+      "se refroidir"
+    ]
+  },
+  "vocab-3ab7a11d1e94": {
+    "meaning": "s’allumer",
+    "acceptedAnswers": [
+      "s’allumer",
+      "être allumé",
+      "se mettre en marche"
+    ]
+  },
+  "vocab-15cba3d3865f": {
+    "meaning": "apparence, posture",
+    "acceptedAnswers": [
+      "apparence",
+      "posture",
+      "forme",
+      "allure"
+    ]
+  },
+  "vocab-3e552269034a": {
+    "meaning": "se soucier de",
+    "acceptedAnswers": [
+      "se soucier de",
+      "se préoccuper de",
+      "faire attention à"
+    ]
+  },
+  "vocab-0ae670bf5bb8": {
+    "meaning": "laisser tomber, perdre",
+    "acceptedAnswers": [
+      "laisser tomber",
+      "perdre"
+    ]
+  },
+  "vocab-5fc776fb4e7b": {
+    "meaning": "demain",
+    "acceptedAnswers": [
+      "demain"
+    ]
+  },
+  "vocab-208c75c5154e": {
+    "meaning": "départ",
+    "acceptedAnswers": [
+      "départ"
+    ]
+  },
+  "vocab-1890f5e32640": {
+    "meaning": "regarder (forme humble)",
+    "acceptedAnswers": [
+      "regarder (forme humble)",
+      "voir (forme humble)"
+    ]
+  },
+  "vocab-629875c01d86": {
+    "meaning": "casser",
+    "acceptedAnswers": [
+      "casser",
+      "se casser"
+    ]
+  },
+  "vocab-152585804da9": {
+    "meaning": "dos (du corps)",
+    "acceptedAnswers": [
+      "dos (du corps)",
+      "dos"
+    ]
+  },
+  "vocab-c67d56fc38d0": {
+    "meaning": "entreprise de journal",
+    "acceptedAnswers": [
+      "entreprise de journal",
+      "journal",
+      "compagnie de journal"
+    ]
+  },
+  "vocab-bcde89c841b0": {
+    "meaning": "tourner, faire tourner",
+    "acceptedAnswers": [
+      "tourner",
+      "faire tourner",
+      "faire le tour de"
+    ]
+  },
+  "vocab-f775e1cedb21": {
+    "meaning": "Monsieur (jeune)",
+    "acceptedAnswers": [
+      "Monsieur (jeune)",
+      "Monsieur (junior)"
+    ]
+  },
+  "vocab-134840eb63c7": {
+    "meaning": "être mouillé",
+    "acceptedAnswers": [
+      "être mouillé",
+      "se mouiller"
+    ]
+  },
+  "vocab-6b7747655aae": {
+    "meaning": "s’écrouler, s’effondrer",
+    "acceptedAnswers": [
+      "s’écrouler",
+      "s’effondrer",
+      "tomber"
+    ]
+  },
+  "vocab-51091c8920da": {
+    "meaning": "accessoire",
+    "acceptedAnswers": [
+      "accessoire"
+    ]
+  },
+  "vocab-382cdcd3c02c": {
+    "meaning": "se diriger vers, faire face à",
+    "acceptedAnswers": [
+      "se diriger vers",
+      "faire face à"
+    ]
+  },
+  "vocab-5b39de46794f": {
+    "meaning": "façon de faire",
+    "acceptedAnswers": [
+      "façon de faire",
+      "méthode"
+    ]
+  },
+  "vocab-3d44adeebdf4": {
+    "meaning": "cou",
+    "acceptedAnswers": [
+      "cou"
+    ]
+  },
+  "vocab-c6dc2b4390af": {
+    "meaning": "degré, mesure",
+    "acceptedAnswers": [
+      "degré",
+      "mesure",
+      "étendue"
+    ]
+  },
+  "vocab-14631d2b2029": {
+    "meaning": "substitut, remplacement",
+    "acceptedAnswers": [
+      "substitut",
+      "remplacement"
+    ]
+  },
+  "vocab-8d39ee892820": {
+    "meaning": "échec, erreur",
+    "acceptedAnswers": [
+      "échec",
+      "erreur",
+      "faute"
+    ]
+  },
+  "vocab-c8a4b6960b52": {
+    "meaning": "industrie (manufacturière)",
+    "acceptedAnswers": [
+      "industrie",
+      "industrie manufacturière"
+    ]
+  },
+  "vocab-f6cfb9ff50ad": {
+    "meaning": "déménager, transférer, déplacer",
+    "acceptedAnswers": [
+      "déménager",
+      "transférer",
+      "déplacer"
+    ]
+  },
+  "vocab-c406fe8bfa49": {
+    "meaning": "valise",
+    "acceptedAnswers": [
+      "valise"
+    ]
+  },
+  "vocab-0dde3a140238": {
+    "meaning": "bureau du professeur, laboratoire",
+    "acceptedAnswers": [
+      "bureau du professeur",
+      "laboratoire"
+    ]
+  },
+  "vocab-5f5144524727": {
+    "meaning": "introduction",
+    "acceptedAnswers": [
+      "introduction",
+      "présentation"
+    ]
+  },
+  "vocab-46b93a75641c": {
+    "meaning": "mais, bien que",
+    "acceptedAnswers": [
+      "mais",
+      "bien que"
+    ]
+  },
+  "vocab-bebbeab2d422": {
+    "meaning": "bateau, navire",
+    "acceptedAnswers": [
+      "bateau",
+      "navire"
+    ]
+  },
+  "vocab-247b87990016": {
+    "meaning": "bouger",
+    "acceptedAnswers": [
+      "bouger",
+      "se déplacer"
+    ]
+  },
+  "vocab-a4e5df148631": {
+    "meaning": "insecte",
+    "acceptedAnswers": [
+      "insecte"
+    ]
+  },
+  "vocab-dcb1b43bf147": {
+    "meaning": "ordinateur",
+    "acceptedAnswers": [
+      "ordinateur"
+    ]
+  },
+  "vocab-e50904f7bd01": {
+    "meaning": "planter",
+    "acceptedAnswers": [
+      "planter"
+    ]
+  },
+  "vocab-23aabf3d1d5b": {
+    "meaning": "les deux, les deux côtés",
+    "acceptedAnswers": [
+      "les deux",
+      "les deux côtés",
+      "les deux parties"
+    ]
+  },
+  "vocab-ff3999380a4a": {
+    "meaning": "se salir",
+    "acceptedAnswers": [
+      "se salir",
+      "devenir sale"
+    ]
+  },
+  "vocab-b6c78c16c960": {
+    "meaning": "natation",
+    "acceptedAnswers": [
+      "natation"
+    ]
+  },
+  "vocab-7d67935040af": {
+    "meaning": "expérience",
+    "acceptedAnswers": [
+      "expérience"
+    ]
+  },
+  "vocab-37f3edcecbb4": {
+    "meaning": "gagner",
+    "acceptedAnswers": [
+      "gagner",
+      "remporter"
+    ]
+  },
+  "vocab-59368a07ddf7": {
+    "meaning": "sable",
+    "acceptedAnswers": [
+      "sable"
+    ]
+  },
+  "vocab-3e2039d98970": {
+    "meaning": "échanger, remplacer",
+    "acceptedAnswers": [
+      "échanger",
+      "remplacer"
+    ]
+  },
+  "vocab-4026ad049145": {
+    "meaning": "simple",
+    "acceptedAnswers": [
+      "simple",
+      "facile"
+    ]
+  },
+  "vocab-488c82307112": {
+    "meaning": "spécial",
+    "acceptedAnswers": [
+      "spécial"
+    ]
+  },
+  "vocab-c00c2836223b": {
+    "meaning": "révision",
+    "acceptedAnswers": [
+      "révision",
+      "réexamen"
+    ]
+  },
+  "vocab-8aed2e26cdbf": {
+    "meaning": "être à l'heure",
+    "acceptedAnswers": [
+      "être à l'heure",
+      "arriver à temps",
+      "être dans les temps"
+    ]
+  },
+  "vocab-a66d2a6ba0ac": {
+    "meaning": "être utile, être serviable",
+    "acceptedAnswers": [
+      "être utile",
+      "être serviable",
+      "être bénéfique"
+    ]
+  },
+  "vocab-aa732c78bd13": {
+    "meaning": "milieu, centre",
+    "acceptedAnswers": [
+      "milieu",
+      "centre"
+    ]
+  },
+  "vocab-e031115f699c": {
+    "meaning": "recherche, étude",
+    "acceptedAnswers": [
+      "recherche",
+      "étude",
+      "investigation"
+    ]
+  },
+  "vocab-4063840184cf": {
+    "meaning": "herbe",
+    "acceptedAnswers": [
+      "herbe"
+    ]
+  },
+  "vocab-38c7365e9765": {
+    "meaning": "être bondé",
+    "acceptedAnswers": [
+      "être bondé",
+      "être encombré",
+      "être plein"
+    ]
+  },
+  "vocab-30f7007878e0": {
+    "meaning": "visiter",
+    "acceptedAnswers": [
+      "visiter",
+      "rendre visite à"
+    ]
+  },
+  "vocab-06a4c07236b5": {
+    "meaning": "baisser, suspendre",
+    "acceptedAnswers": [
+      "baisser",
+      "suspendre",
+      "abaisser"
+    ]
+  },
+  "vocab-cb7d8a487c4f": {
+    "meaning": "visionnage des cerisiers en fleurs",
+    "acceptedAnswers": [
+      "visionnage des cerisiers en fleurs",
+      "observation des cerisiers en fleurs",
+      "hanami"
+    ]
+  },
+  "vocab-d19fba181116": {
+    "meaning": "en chemin, en cours de route",
+    "acceptedAnswers": [
+      "en chemin",
+      "en cours de route",
+      "en route"
+    ]
+  },
+  "vocab-f53039a401f5": {
+    "meaning": "hospitalisation",
+    "acceptedAnswers": [
+      "hospitalisation"
+    ]
+  },
+  "vocab-f19d0a42f775": {
+    "meaning": "changer de train, transférer",
+    "acceptedAnswers": [
+      "changer de train",
+      "transférer",
+      "changer de bus"
+    ]
+  },
+  "vocab-b746e2383e3b": {
+    "meaning": "se séparer, partir",
+    "acceptedAnswers": [
+      "se séparer",
+      "partir",
+      "quitter"
+    ]
+  },
+  "vocab-e13ceb2d4ebd": {
+    "meaning": "ville de ~",
+    "acceptedAnswers": [
+      "ville de ~",
+      "~ ville"
+    ]
+  },
+  "vocab-f4f3b81e8c87": {
+    "meaning": "sécurité",
+    "acceptedAnswers": [
+      "sécurité",
+      "sûreté"
+    ]
+  },
+  "vocab-be665281bf2b": {
+    "meaning": "infirmière",
+    "acceptedAnswers": [
+      "infirmière"
+    ]
+  },
+  "vocab-b205aa560c2f": {
+    "meaning": "tourisme",
+    "acceptedAnswers": [
+      "tourisme",
+      "visite touristique"
+    ]
+  },
+  "vocab-46a9b4c6d784": {
+    "meaning": "consultation",
+    "acceptedAnswers": [
+      "consultation",
+      "entretien"
+    ]
+  },
+  "vocab-badbd8e1e6a9": {
+    "meaning": "station-service",
+    "acceptedAnswers": [
+      "station-service",
+      "station d'essence"
+    ]
+  },
+  "vocab-7368b495025b": {
+    "meaning": "dormir",
+    "acceptedAnswers": [
+      "dormir"
+    ]
+  },
+  "vocab-86592fe77e48": {
+    "meaning": "monter",
+    "acceptedAnswers": [
+      "monter",
+      "s'élever",
+      "augmenter"
+    ]
+  },
+  "vocab-656e30786e71": {
+    "meaning": "traduction",
+    "acceptedAnswers": [
+      "traduction"
+    ]
+  },
+  "vocab-399ca48876cc": {
+    "meaning": "repas",
+    "acceptedAnswers": [
+      "repas"
+    ]
+  },
+  "vocab-d23121a6dec0": {
+    "meaning": "grâce à",
+    "acceptedAnswers": [
+      "grâce à",
+      "à cause de",
+      "en raison de"
+    ]
+  },
+  "vocab-28295eb27a92": {
+    "meaning": "fille",
+    "acceptedAnswers": [
+      "fille"
+    ]
+  },
+  "vocab-a89eb4b93468": {
+    "meaning": "eau chaude",
+    "acceptedAnswers": [
+      "eau chaude"
+    ]
+  },
+  "vocab-3aa4b156539e": {
+    "meaning": "compétition",
+    "acceptedAnswers": [
+      "compétition",
+      "concours"
+    ]
+  },
+  "vocab-6e85ad632e4b": {
+    "meaning": "se rassembler",
+    "acceptedAnswers": [
+      "se rassembler",
+      "se réunir",
+      "s'assembler"
+    ]
+  },
+  "vocab-0e853c977cf1": {
+    "meaning": "vie",
+    "acceptedAnswers": [
+      "vie",
+      "mode de vie"
+    ]
+  },
+  "vocab-e05b8e36c6ca": {
+    "meaning": "fil",
+    "acceptedAnswers": [
+      "fil",
+      "ficelle"
+    ]
+  },
+  "vocab-79ab94040415": {
+    "meaning": "relation",
+    "acceptedAnswers": [
+      "relation",
+      "rapport",
+      "lien"
+    ]
+  },
+  "vocab-f70852bf2310": {
+    "meaning": "urgent",
+    "acceptedAnswers": [
+      "urgent",
+      "imminent",
+      "brusque"
+    ]
+  },
+  "vocab-19250758e8ef": {
+    "meaning": "étagères",
+    "acceptedAnswers": [
+      "étagères",
+      "rayonnage",
+      "rayons"
+    ]
+  },
+  "vocab-92d6efe71ffb": {
+    "meaning": "coton",
+    "acceptedAnswers": [
+      "coton"
+    ]
+  },
+  "vocab-fedf5212b133": {
+    "meaning": "exportation",
+    "acceptedAnswers": [
+      "exportation",
+      "export"
+    ]
+  },
+  "vocab-7dd5430a1276": {
+    "meaning": "type",
+    "acceptedAnswers": [
+      "type",
+      "style"
+    ]
+  },
+  "vocab-44b2d7f92cef": {
+    "meaning": "pickpocket",
+    "acceptedAnswers": [
+      "pickpocket"
+    ]
+  },
+  "vocab-03c660cf7375": {
+    "meaning": "alcool",
+    "acceptedAnswers": [
+      "alcool"
+    ]
+  },
+  "vocab-20503aaa4a10": {
+    "meaning": "doux ; chapeau souple ; logiciel",
+    "acceptedAnswers": [
+      "doux",
+      "chapeau souple",
+      "logiciel",
+      "soft"
+    ]
+  },
+  "vocab-4d4127e1b81e": {
+    "meaning": "considérablement",
+    "acceptedAnswers": [
+      "considérablement",
+      "assez bien",
+      "beaucoup",
+      "plutôt"
+    ]
+  },
+  "vocab-405fd8a22af6": {
+    "meaning": "plaisir",
+    "acceptedAnswers": [
+      "plaisir",
+      "joie"
+    ]
+  },
+  "vocab-8b491e3a9476": {
+    "meaning": "télégramme",
+    "acceptedAnswers": [
+      "télégramme"
+    ]
+  },
+  "vocab-8de09ebf156e": {
+    "meaning": "épouse",
+    "acceptedAnswers": [
+      "épouse",
+      "femme"
+    ]
+  },
+  "vocab-293244e6fc0c": {
+    "meaning": "doigt",
+    "acceptedAnswers": [
+      "doigt"
+    ]
+  },
+  "vocab-a556c66fb3e4": {
+    "meaning": "à partir de maintenant",
+    "acceptedAnswers": [
+      "à partir de maintenant",
+      "désormais",
+      "dorénavant",
+      "à partir de ce moment"
+    ]
+  },
+  "vocab-44f6e3ee84d8": {
+    "meaning": "parfois",
+    "acceptedAnswers": [
+      "parfois",
+      "occasionnellement"
+    ]
+  },
+  "vocab-e31d23c4214b": {
+    "meaning": "société",
+    "acceptedAnswers": [
+      "société"
+    ]
+  },
+  "vocab-115e4e06e38b": {
+    "meaning": "ballon ; balle",
+    "acceptedAnswers": [
+      "ballon",
+      "balle"
     ]
   }
 }
