@@ -6,24 +6,42 @@ import { fileURLToPath } from "node:url";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-test("kanji inventory exactly follows the Rikkyo 209-character curriculum", async () => {
-  const [kanji, curriculum] = await Promise.all([
+test("kanji inventory combines the Rikkyo foundation with the pinned N4 delta", async () => {
+  const [kanji, curriculum, n4Curriculum] = await Promise.all([
     readFile(join(rootDirectory, "data", "jlpt-n5-kanji.json"), "utf8").then(JSON.parse),
     readFile(
       join(rootDirectory, "data", "source", "rikkyo-n5-kanji.json"),
+      "utf8"
+    ).then(JSON.parse),
+    readFile(
+      join(rootDirectory, "data", "source", "jlpt-n4-kanji.json"),
       "utf8"
     ).then(JSON.parse)
   ]);
   const ids = new Set();
   const characters = new Set();
-  const expected = curriculum.flatMap(({ stage, characters: stageCharacters }) => {
-    return [...stageCharacters].map((character) => ({ character, stage }));
-  });
+  const n5Characters = new Set(curriculum.flatMap(({ characters }) => [...characters]));
+  const n4ReferenceCharacters = [...n4Curriculum.characters];
+  const n4DeltaCharacters = n4ReferenceCharacters
+    .filter((character) => !n5Characters.has(character));
+  const expected = [
+    ...curriculum.flatMap(({ stage, characters: stageCharacters }) => {
+      return [...stageCharacters].map((character) => ({ character, stage }));
+    }),
+    ...n4DeltaCharacters
+      .map((character) => ({ character, stage: n4Curriculum.stage }))
+  ];
 
-  assert.equal(kanji.length, 209);
+  assert.equal(n4ReferenceCharacters.length, 170);
+  assert.equal(new Set(n4ReferenceCharacters).size, 170);
+  assert.equal(n4ReferenceCharacters.filter((character) => n5Characters.has(character)).length, 91);
+  assert.equal(n4DeltaCharacters.length, 79);
+  assert.deepEqual(new Set(Object.keys(n4Curriculum.meaningOverrides)), new Set(n4DeltaCharacters));
+  assert.equal(kanji.length, 288);
   assert.equal(kanji.filter(({ stage }) => stage === "B6").length, 73);
   assert.equal(kanji.filter(({ stage }) => stage === "B5").length, 68);
   assert.equal(kanji.filter(({ stage }) => stage === "B4").length, 68);
+  assert.equal(kanji.filter(({ stage }) => stage === "N4").length, 79);
   assert.deepEqual(
     kanji.map(({ character, stage }) => ({ character, stage })),
     expected
@@ -36,7 +54,8 @@ test("kanji inventory exactly follows the Rikkyo 209-character curriculum", asyn
     assert.match(entry.character, /^\p{Script=Han}$/u);
     assert.equal(entry.id, `kanji-${codePoint}`);
     assert.ok(entry.meaning.length > 0);
-    assert.ok(["B6", "B5", "B4"].includes(entry.stage));
+    assert.ok(["B6", "B5", "B4", "N4"].includes(entry.stage));
+    assert.equal(entry.introducedAt, entry.stage === "N4" ? "n4" : "n5");
     assert.ok(Array.isArray(entry.onReadings));
     assert.ok(Array.isArray(entry.kunReadings));
     assert.ok(readings.length > 0, `${entry.character} needs at least one N5 reading`);
@@ -68,6 +87,9 @@ test("kanji inventory exactly follows the Rikkyo 209-character curriculum", asyn
   assert.ok(!kanji.find(({ character }) => character === "誰").kunReadings.includes("た"));
   assert.ok(!kanji.find(({ character }) => character === "男").kunReadings.includes("お"));
   assert.ok(!kanji.find(({ character }) => character === "十").kunReadings.includes("と"));
+  assert.ok(!kanji.find(({ character }) => character === "道").onReadings.includes("とう"));
+  assert.ok(!kanji.find(({ character }) => character === "験").onReadings.includes("げん"));
+  assert.deepEqual(kanji.find(({ character }) => character === "写").onReadings, ["しゃ"]);
 
   for (const character of ["兄", "姉", "弟", "妹"]) {
     assert.equal(kanji.find((entry) => entry.character === character).stage, "B5");
@@ -84,7 +106,7 @@ test("kanji-only contexts have complete French display meanings", async () => {
   ]);
   const ids = contexts.map(({ id }) => id);
 
-  assert.equal(contexts.length, 16);
+  assert.equal(contexts.length, 20);
   assert.equal(new Set(ids).size, contexts.length);
   assert.deepEqual(Object.keys(french), ids);
 
@@ -95,6 +117,15 @@ test("kanji-only contexts have complete French display meanings", async () => {
     assert.ok(context.meaning.length > 0);
     assert.ok(french[context.id].meaning.length > 0);
   }
+  assert.deepEqual(
+    contexts.filter(({ introducedAt }) => introducedAt === "n4").map(({ id }) => id),
+    [
+      "kanji-context-shujin",
+      "kanji-context-mokuteki",
+      "kanji-context-kyouto",
+      "kanji-context-shusshin"
+    ]
+  );
 });
 
 test("kanji mnemonics cover the full curriculum in English and French", async () => {
@@ -119,14 +150,26 @@ test("kanji mnemonics cover the full curriculum in English and French", async ()
     join(rootDirectory, "data", "locales", "fr", "kanji-mnemonics.json"),
     "utf8"
   ).then(JSON.parse);
-  const sourceMnemonics = await readFile(
-    join(rootDirectory, "data", "source", "kanji-mnemonics.json"),
-    "utf8"
-  ).then(JSON.parse);
-  const frenchSourceMnemonics = await readFile(
-    join(rootDirectory, "data", "source", "locales", "fr", "kanji-mnemonics.json"),
-    "utf8"
-  ).then(JSON.parse);
+  const sourceMnemonics = [
+    ...await readFile(
+      join(rootDirectory, "data", "source", "kanji-mnemonics.json"),
+      "utf8"
+    ).then(JSON.parse),
+    ...await readFile(
+      join(rootDirectory, "data", "source", "n4-kanji-mnemonics.json"),
+      "utf8"
+    ).then(JSON.parse)
+  ];
+  const frenchSourceMnemonics = {
+    ...await readFile(
+      join(rootDirectory, "data", "source", "locales", "fr", "kanji-mnemonics.json"),
+      "utf8"
+    ).then(JSON.parse),
+    ...await readFile(
+      join(rootDirectory, "data", "source", "locales", "fr", "n4-kanji-mnemonics.json"),
+      "utf8"
+    ).then(JSON.parse)
+  };
 
   const mnemonicById = new Map(mnemonics.map((entry) => [entry.kanjiId, entry]));
   const sourceById = new Map(sourceMnemonics.map((entry) => [entry.kanjiId, entry]));
@@ -233,7 +276,7 @@ test("kanji mnemonics cover the full curriculum in English and French", async ()
   const quality = mnemonicById.get("kanji-8cea");
 
   assert.deepEqual(fire.readings.map(({ reading }) => reading), ["か"]);
-  assert.deepEqual(matter.readings.map(({ reading }) => reading), ["こと"]);
+  assert.deepEqual(matter.readings.map(({ reading }) => reading), ["こと", "じ"]);
   assert.equal(matter.readings[0].anchorReading, "ごと");
   assert.deepEqual(quality.components.map(({ symbol }) => symbol), ["斤", "斤", "貝"]);
 });

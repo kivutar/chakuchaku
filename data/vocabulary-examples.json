@@ -11799,8 +11799,7 @@
       {
         "surface": "京都",
         "category": "noun",
-        "reading": "きょうと",
-        "vocabularyId": "vocab-62153df2c4e3"
+        "reading": "きょうと"
       },
       {
         "surface": "に",
@@ -23850,8 +23849,7 @@
       {
         "surface": "京都",
         "category": "noun",
-        "reading": "きょうと",
-        "vocabularyId": "vocab-62153df2c4e3"
+        "reading": "きょうと"
       },
       {
         "surface": "は",
@@ -26605,8 +26603,7 @@
       {
         "surface": "京都",
         "category": "noun",
-        "reading": "きょうと",
-        "vocabularyId": "vocab-62153df2c4e3"
+        "reading": "きょうと"
       },
       {
         "surface": "へ",
@@ -26689,8 +26686,7 @@
       {
         "surface": "京都",
         "category": "noun",
-        "reading": "きょうと",
-        "vocabularyId": "vocab-62153df2c4e3"
+        "reading": "きょうと"
       },
       {
         "surface": "へ",
@@ -29109,8 +29105,7 @@
       {
         "surface": "出身",
         "category": "noun",
-        "reading": "しゅっしん",
-        "vocabularyId": "vocab-eefac8830079"
+        "reading": "しゅっしん"
       },
       {
         "surface": "です",
@@ -32416,7 +32411,8 @@
       {
         "surface": "主人",
         "category": "noun",
-        "reading": "しゅじん"
+        "reading": "しゅじん",
+        "vocabularyId": "kanji-context-shujin"
       },
       {
         "surface": "は",
@@ -45812,8 +45808,7 @@
       {
         "surface": "京都",
         "category": "noun",
-        "reading": "きょうと",
-        "vocabularyId": "vocab-62153df2c4e3"
+        "reading": "きょうと"
       },
       {
         "surface": "は",
@@ -49433,8 +49428,7 @@
       {
         "surface": "京都",
         "category": "noun",
-        "reading": "きょうと",
-        "vocabularyId": "vocab-62153df2c4e3"
+        "reading": "きょうと"
       },
       {
         "surface": "へ",
@@ -50746,8 +50740,7 @@
       {
         "surface": "京都",
         "category": "noun",
-        "reading": "きょうと",
-        "vocabularyId": "vocab-62153df2c4e3"
+        "reading": "きょうと"
       },
       {
         "surface": "で",
@@ -52626,6 +52619,164 @@
         "surface": "ます",
         "category": "auxiliary",
         "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "kanji-context-shujin",
+    "text": "主人は会社員です。",
+    "targetSurface": "主人",
+    "targetReading": "しゅじん",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "My husband is an office worker.",
+    "tokens": [
+      {
+        "surface": "主人",
+        "category": "noun",
+        "reading": "しゅじん",
+        "vocabularyId": "kanji-context-shujin"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "会社",
+        "category": "noun",
+        "reading": "かいしゃ",
+        "vocabularyId": "vocab-c506bd7fb201"
+      },
+      {
+        "surface": "員",
+        "category": "noun",
+        "reading": "いん",
+        "vocabularyId": "vocab-9958661a47af"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "kanji-context-mokuteki",
+    "text": "旅行の目的を話す。",
+    "targetSurface": "目的",
+    "targetReading": "もくてき",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I explain the purpose of the trip.",
+    "tokens": [
+      {
+        "surface": "旅行",
+        "category": "noun",
+        "reading": "りょこう",
+        "vocabularyId": "vocab-2e3ba98d2367"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "目的",
+        "category": "noun",
+        "reading": "もくてき",
+        "vocabularyId": "kanji-context-mokuteki"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "話す",
+        "category": "verb",
+        "reading": "はなす",
+        "vocabularyId": "vocab-0b969a8c0944"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "kanji-context-kyouto",
+    "text": "京都へ行きます。",
+    "targetSurface": "京都",
+    "targetReading": "きょうと",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I am going to Kyoto.",
+    "tokens": [
+      {
+        "surface": "京都",
+        "category": "noun",
+        "reading": "きょうと"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "kanji-context-shusshin",
+    "text": "出身は日本です。",
+    "targetSurface": "出身",
+    "targetReading": "しゅっしん",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I am from Japan.",
+    "tokens": [
+      {
+        "surface": "出身",
+        "category": "noun",
+        "reading": "しゅっしん"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "日本",
+        "category": "noun",
+        "reading": "にほん",
+        "vocabularyId": "vocab-cf2abf0c5be3"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
       },
       {
         "surface": "。",

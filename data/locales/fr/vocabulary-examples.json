@@ -4495,5 +4495,17 @@
   },
   "kanji-context-shiryou": {
     "translation": "Je lis ce document."
+  },
+  "kanji-context-shujin": {
+    "translation": "Mon mari est employé de bureau."
+  },
+  "kanji-context-mokuteki": {
+    "translation": "J’explique le but du voyage."
+  },
+  "kanji-context-kyouto": {
+    "translation": "Je vais à Kyoto."
+  },
+  "kanji-context-shusshin": {
+    "translation": "Je viens du Japon."
   }
 }

@@ -1,5 +1,6 @@
 {
   "id": "introduction",
+  "minimumLevel": "n5",
   "text": "日本語能力試験N5のレッスンへようこそ。さあ、始めましょう。",
   "audio": "assets/voices/grammar/introduction.m4a",
   "vocabularyIds": [
@@ -15,7 +16,11 @@
   "kanjiIds": [
     "kanji-65e5",
     "kanji-672c",
-    "kanji-8a9e"
+    "kanji-8a9e",
+    "kanji-529b",
+    "kanji-8a66",
+    "kanji-9a13",
+    "kanji-59cb"
   ],
   "tokens": [
     {
@@ -124,6 +129,5 @@
       "tokenStart": 13,
       "tokenEnd": 15
     }
-  ],
-  "minimumLevel": "n5"
+  ]
 }

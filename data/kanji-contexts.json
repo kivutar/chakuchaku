@@ -142,5 +142,41 @@
     "scope": "kanji-context",
     "introducedAt": "n5",
     "partOfSpeech": "noun"
+  },
+  {
+    "id": "kanji-context-shujin",
+    "term": "主人",
+    "reading": "しゅじん",
+    "meaning": "husband; master of the house",
+    "scope": "kanji-context",
+    "introducedAt": "n4",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "kanji-context-mokuteki",
+    "term": "目的",
+    "reading": "もくてき",
+    "meaning": "purpose; objective",
+    "scope": "kanji-context",
+    "introducedAt": "n4",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "kanji-context-kyouto",
+    "term": "京都",
+    "reading": "きょうと",
+    "meaning": "Kyoto",
+    "scope": "kanji-context",
+    "introducedAt": "n4",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "kanji-context-shusshin",
+    "term": "出身",
+    "reading": "しゅっしん",
+    "meaning": "place of origin; hometown",
+    "scope": "kanji-context",
+    "introducedAt": "n4",
+    "partOfSpeech": "noun"
   }
 ]

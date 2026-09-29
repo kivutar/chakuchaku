@@ -3028,6 +3028,11 @@
         "reading": "す",
         "story": "J’habite chez moi et je suis le maître SOUS mon toit. SOUS donne す.",
         "anchorId": "vocab-405805427b97"
+      },
+      {
+        "reading": "じゅう",
+        "story": "JULIE écrit son adresse en lettres immenses : JU s’allonge en じゅう dans 住所（じゅうしょ）.",
+        "anchorId": "vocab-fcdd7a903190"
       }
     ]
   },
@@ -3204,6 +3209,11 @@
         "story": "Un KOTO encombre mon bureau : KOTO rappelle こと, qui se sonorise en ごと dans 仕事（しごと）.",
         "anchorId": "vocab-cdf28ddaf837",
         "anchorReading": "ごと"
+      },
+      {
+        "reading": "じ",
+        "story": "Chaque affaire devient un petit JOB : son J rappelle じ dans 用事（ようじ）.",
+        "anchorId": "vocab-71072742a1c5"
       }
     ]
   },
@@ -4459,6 +4469,1783 @@
         "reading": "こう",
         "story": "交 se lit KŌ : c’est l’indice direct de こう dans 学校（がっこう）.",
         "anchorId": "vocab-42edc1b83779"
+      }
+    ]
+  },
+  "kanji-540c": {
+    "components": [
+      {
+        "symbol": "冂",
+        "meaning": "enceinte"
+      },
+      {
+        "symbol": "一",
+        "meaning": "ligne"
+      },
+      {
+        "symbol": "口",
+        "meaning": "bouche"
+      }
+    ],
+    "meaningStory": "Une bouche parle dans une enceinte commune, et toutes les voix donnent la même réponse.",
+    "readings": [
+      {
+        "reading": "おな",
+        "story": "Deux jumeaux se montrent : « OH, ON A exactement le même ! » On retrouve おな dans 同じ（おなじ）.",
+        "anchorId": "vocab-9ff4f40a3428"
+      }
+    ]
+  },
+  "kanji-5730": {
+    "components": [
+      {
+        "symbol": "土",
+        "meaning": "terre"
+      },
+      {
+        "symbol": "也",
+        "meaning": "forme qui s’étend"
+      }
+    ],
+    "meaningStory": "La terre s’étend dans toutes les directions et forme le sol d’un lieu.",
+    "readings": [
+      {
+        "reading": "ち",
+        "story": "Du fromage « TCHI » tombe par terre : le sol fait entendre ち. On retrouve ち dans 地下鉄（ちかてつ）.",
+        "anchorId": "vocab-f0bea3272626"
+      },
+      {
+        "reading": "じ",
+        "story": "Un DJINN secoue la terre : son début rappelle じ. On retrouve じ dans 地震（じしん）.",
+        "anchorId": "vocab-4bb5dd8a62e0"
+      }
+    ]
+  },
+  "kanji-696d": {
+    "components": [
+      {
+        "symbol": "䒑",
+        "meaning": "râtelier dentelé"
+      },
+      {
+        "symbol": "木",
+        "meaning": "support en bois"
+      }
+    ],
+    "meaningStory": "Un râtelier dentelé domine le bois d’un atelier : le travail spécialisé devient un métier ou une activité.",
+    "readings": [
+      {
+        "reading": "ぎょう",
+        "story": "Une entreprise de GYOzas tourne à plein régime : GYO mène à ぎょう. On retrouve ぎょう dans 授業（じゅぎょう）.",
+        "anchorId": "vocab-4c99b14fe21c"
+      }
+    ]
+  },
+  "kanji-65b9": {
+    "components": [
+      {
+        "symbol": "方",
+        "meaning": "direction"
+      }
+    ],
+    "meaningStory": "Une bannière fixée à un mât indique une direction, donc une manière d’avancer.",
+    "readings": [
+      {
+        "reading": "ほう",
+        "story": "Un hibou dit « HOU ! » en montrant la bonne direction : ほう. On retrouve ほう dans 方（ほう）.",
+        "anchorId": "vocab-18fe4d351abc"
+      },
+      {
+        "reading": "かた",
+        "story": "Un CATAmaran choisit sa route : CATA rappelle かた. On retrouve かた dans 方（かた）.",
+        "anchorId": "vocab-22d08b21620a"
+      },
+      {
+        "reading": "がた",
+        "story": "En fin de journée, le guide fait des dégâts : « GÂTA » rappelle がた. On retrouve がた dans 夕方（ゆうがた）.",
+        "anchorId": "vocab-3534dd7d07d1"
+      }
+    ]
+  },
+  "kanji-5834": {
+    "components": [
+      {
+        "symbol": "土",
+        "meaning": "terre"
+      },
+      {
+        "symbol": "日",
+        "meaning": "soleil"
+      },
+      {
+        "symbol": "勿",
+        "meaning": "étiquette"
+      }
+    ],
+    "meaningStory": "Les rayons du soleil s’étalent sur un morceau de terre et ouvrent un lieu où se réunir.",
+    "readings": [
+      {
+        "reading": "じょう",
+        "story": "JO réserve tout le lieu : JO s’allonge en じょう. On retrouve じょう dans 工場（こうじょう）.",
+        "anchorId": "vocab-04ea77dcbf03"
+      },
+      {
+        "reading": "ば",
+        "story": "Un BAR occupe sa place : BA fait entendre ば. On retrouve ば dans 場所（ばしょ）.",
+        "anchorId": "vocab-79b9f20fa351"
+      }
+    ]
+  },
+  "kanji-54e1": {
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "bouche"
+      },
+      {
+        "symbol": "貝",
+        "meaning": "coquillage-monnaie"
+      }
+    ],
+    "meaningStory": "Une bouche rend compte de la monnaie-coquillage qu’elle gère : cette personne est membre ou employée.",
+    "readings": [
+      {
+        "reading": "いん",
+        "story": "L’employé est INscrit dans l’équipe : IN rappelle いん. On retrouve いん dans 員（いん）.",
+        "anchorId": "vocab-9958661a47af"
+      }
+    ]
+  },
+  "kanji-529b": {
+    "components": [
+      {
+        "symbol": "力",
+        "meaning": "force"
+      }
+    ],
+    "meaningStory": "Un bras plié et contracté représente directement la force et la puissance.",
+    "readings": [
+      {
+        "reading": "りょく",
+        "story": "La force jaillit avec le cri « RYOK ! » : りょく. On retrouve りょく dans 能力（のうりょく）.",
+        "anchorId": "vocab-8670a6307d15"
+      },
+      {
+        "reading": "ちから",
+        "story": "Une force de CHIKARA soulève le rocher : le mot entier donne ちから. On retrouve ちから dans 力（ちから）.",
+        "anchorId": "vocab-33c00f4a1a8b"
+      }
+    ]
+  },
+  "kanji-4ee3": {
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "personne"
+      },
+      {
+        "symbol": "弋",
+        "meaning": "piquet-repère"
+      }
+    ],
+    "meaningStory": "Une personne transmet un repère à la suivante : l’une remplace l’autre au fil d’une époque.",
+    "readings": [
+      {
+        "reading": "だい",
+        "story": "Chaque époque lance son DÉ : DÉ rappelle だい. On retrouve だい dans 時代（じだい）.",
+        "anchorId": "vocab-0d603029022b"
+      },
+      {
+        "reading": "かわ",
+        "story": "Le remplaçant se COUVRE : COUVA rappelle かわ. On retrouve かわ dans 代わり（かわり）.",
+        "anchorId": "vocab-14631d2b2029"
+      },
+      {
+        "reading": "か",
+        "story": "Un remplaçant prend le CAS : CA rappelle か. On retrouve か dans 代わり（かわり）.",
+        "anchorId": "vocab-14631d2b2029"
+      }
+    ]
+  },
+  "kanji-52d5": {
+    "components": [
+      {
+        "symbol": "重",
+        "meaning": "lourde charge"
+      },
+      {
+        "symbol": "力",
+        "meaning": "force"
+      }
+    ],
+    "meaningStory": "Appliquez de la force à quelque chose de lourd : il finit par bouger.",
+    "readings": [
+      {
+        "reading": "どう",
+        "story": "On pousse en criant « DOS ! » : DO s’allonge en どう. On retrouve どう dans 動物（どうぶつ）.",
+        "anchorId": "vocab-a3374580d856"
+      },
+      {
+        "reading": "うご",
+        "story": "Pour bouger, on crie « OU, GO ! » : うご. On retrouve うご dans 動く（うごく）.",
+        "anchorId": "vocab-247b87990016"
+      }
+    ]
+  },
+  "kanji-4eac": {
+    "components": [
+      {
+        "symbol": "亠",
+        "meaning": "couvercle"
+      },
+      {
+        "symbol": "口",
+        "meaning": "bouche"
+      },
+      {
+        "symbol": "小",
+        "meaning": "petit"
+      }
+    ],
+    "meaningStory": "Un haut toit, une grande porte et de petits bâtiments alentour signalent la capitale.",
+    "readings": [
+      {
+        "reading": "きょう",
+        "story": "KYOTO fournit l’indice de la capitale : KYO donne きょう. On retrouve きょう dans 京都（きょうと）.",
+        "anchorId": "vocab-62153df2c4e3"
+      }
+    ]
+  },
+  "kanji-76ee": {
+    "components": [
+      {
+        "symbol": "目",
+        "meaning": "œil"
+      }
+    ],
+    "meaningStory": "La pupille horizontale dans un contour rectangulaire dessine clairement un œil.",
+    "readings": [
+      {
+        "reading": "もく",
+        "story": "MON COUp d’œil vise l’objectif : MO-COU rappelle もく dans 目的（もくてき）.",
+        "anchorId": "kanji-context-mokuteki"
+      },
+      {
+        "reading": "め",
+        "story": "Mon œil ME regarde : ME donne め. On retrouve め dans 目（め）.",
+        "anchorId": "vocab-6c0b9f3278dc"
+      }
+    ]
+  },
+  "kanji-901a": {
+    "components": [
+      {
+        "symbol": "⻌",
+        "meaning": "chemin"
+      },
+      {
+        "symbol": "甬",
+        "meaning": "passage"
+      }
+    ],
+    "meaningStory": "Une route traverse un passage tout droit, permettant la circulation et les trajets répétés.",
+    "readings": [
+      {
+        "reading": "つう",
+        "story": "Le train passe TOUt droit : TOU rappelle つう. On retrouve つう dans 交通（こうつう）.",
+        "anchorId": "vocab-043434e7da99"
+      },
+      {
+        "reading": "とお",
+        "story": "La route va TOUt au loin : TO rappelle とお. On retrouve とお dans 通る（とおる）.",
+        "anchorId": "vocab-0e61b7350e45"
+      },
+      {
+        "reading": "かよ",
+        "story": "Le trajet fait des allers-retours comme un CAILLOU : CA-YO rappelle かよ. On retrouve かよ dans 通う（かよう）.",
+        "anchorId": "vocab-b0613715b46e"
+      }
+    ]
+  },
+  "kanji-7406": {
+    "components": [
+      {
+        "symbol": "王",
+        "meaning": "veines du minerai"
+      },
+      {
+        "symbol": "里",
+        "meaning": "village"
+      }
+    ],
+    "meaningStory": "Les veines d’un minerai sont classées au village jusqu’à révéler leur logique.",
+    "readings": [
+      {
+        "reading": "り",
+        "story": "La RIgueur logique commence par RI : り. On retrouve り dans 理由（りゆう）.",
+        "anchorId": "vocab-d96afe6fc743"
+      }
+    ]
+  },
+  "kanji-4f53": {
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "personne"
+      },
+      {
+        "symbol": "本",
+        "meaning": "racine ; base"
+      }
+    ],
+    "meaningStory": "Le corps d’une personne est sa base et son support physique.",
+    "readings": [
+      {
+        "reading": "たい",
+        "story": "Une TAILLE appartient au corps : TAI rappelle たい. On retrouve たい dans 大体（だいたい）.",
+        "anchorId": "vocab-97dfa455ab7e"
+      },
+      {
+        "reading": "からだ",
+        "story": "Le corps « CARA-DANSE » : CARA-DA rappelle からだ. On retrouve からだ dans 体（からだ）.",
+        "anchorId": "vocab-6e098e54aa63"
+      }
+    ]
+  },
+  "kanji-4e3b": {
+    "components": [
+      {
+        "symbol": "丶",
+        "meaning": "point"
+      },
+      {
+        "symbol": "王",
+        "meaning": "trésor"
+      }
+    ],
+    "meaningStory": "Un point semblable à une flamme couronne un chandelier : cette lumière centrale est le maître et l’élément principal.",
+    "readings": [
+      {
+        "reading": "しゅ",
+        "story": "Le maître CHUchote sous son toit : CHU rappelle しゅ. On retrouve しゅ dans 主人（しゅじん）.",
+        "anchorId": "kanji-context-shujin"
+      }
+    ]
+  },
+  "kanji-4e0d": {
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "ligne"
+      },
+      {
+        "symbol": "丿",
+        "meaning": "barre oblique"
+      },
+      {
+        "symbol": "丨",
+        "meaning": "ligne centrale"
+      }
+    ],
+    "meaningStory": "Une pousse est bloquée par un plafond et ne peut pas grandir : une image nette de la négation.",
+    "readings": [
+      {
+        "reading": "ふ",
+        "story": "On refuse d’un « FOU, non ! » : FOU rappelle ふ. On retrouve ふ dans 不便（ふべん）.",
+        "anchorId": "vocab-2a3a992197c7"
+      }
+    ]
+  },
+  "kanji-7684": {
+    "components": [
+      {
+        "symbol": "白",
+        "meaning": "blanc"
+      },
+      {
+        "symbol": "勺",
+        "meaning": "louche avec une goutte"
+      }
+    ],
+    "meaningStory": "Une cible blanche porte un petit centre : elle marque ce qui est visé ou le suffixe « -ique ».",
+    "readings": [
+      {
+        "reading": "てき",
+        "story": "La TECHnique vise la cible : TECH rappelle てき. On retrouve てき dans 目的（もくてき）.",
+        "anchorId": "kanji-context-mokuteki"
+      }
+    ]
+  },
+  "kanji-7528": {
+    "components": [
+      {
+        "symbol": "用",
+        "meaning": "récipient utile"
+      }
+    ],
+    "meaningStory": "Des traits divisent un récipient à poignée en sections utiles : un outil prêt à servir ou une tâche.",
+    "readings": [
+      {
+        "reading": "よう",
+        "story": "Un YOyo a son utilité : YO s’allonge en よう. On retrouve よう dans 用事（ようじ）.",
+        "anchorId": "vocab-71072742a1c5"
+      }
+    ]
+  },
+  "kanji-5ea6": {
+    "components": [
+      {
+        "symbol": "广",
+        "meaning": "abri"
+      },
+      {
+        "symbol": "廿",
+        "meaning": "barres jointes"
+      },
+      {
+        "symbol": "又",
+        "meaning": "main"
+      }
+    ],
+    "meaningStory": "Sous un abri, une main mesure une longueur fixe : un degré, une occurrence ou une étendue.",
+    "readings": [
+      {
+        "reading": "ど",
+        "story": "On DOse chaque degré : DO donne ど. On retrouve ど dans ～度（～ど）.",
+        "anchorId": "vocab-0e302b0c8583"
+      },
+      {
+        "reading": "たく",
+        "story": "Les préparatifs sont une TÂChe mesurée : TAC rappelle たく. On retrouve たく dans 支度（したく）.",
+        "anchorId": "vocab-81d17bdcb4bd"
+      }
+    ]
+  },
+  "kanji-516c": {
+    "components": [
+      {
+        "symbol": "八",
+        "meaning": "séparation"
+      },
+      {
+        "symbol": "厶",
+        "meaning": "espace privé"
+      }
+    ],
+    "meaningStory": "L’espace privé est ouvert et partagé avec tout le monde : il devient public.",
+    "readings": [
+      {
+        "reading": "こう",
+        "story": "La COmmune est publique : CO s’allonge en こう. On retrouve こう dans 公園（こうえん）.",
+        "anchorId": "vocab-c3f997ee44ba"
+      }
+    ]
+  },
+  "kanji-91ce": {
+    "components": [
+      {
+        "symbol": "里",
+        "meaning": "village"
+      },
+      {
+        "symbol": "予",
+        "meaning": "navette de tissage"
+      }
+    ],
+    "meaningStory": "Au-delà du village, un chemin en navette s’étend dans la plaine ouverte.",
+    "readings": [
+      {
+        "reading": "や",
+        "story": "Dans la plaine, on crie « YA ! » : や. On retrouve や dans 野菜（やさい）.",
+        "anchorId": "vocab-88763af54360"
+      }
+    ]
+  },
+  "kanji-4ee5": {
+    "components": [
+      {
+        "symbol": "人",
+        "meaning": "personne"
+      },
+      {
+        "symbol": "丶",
+        "meaning": "point"
+      }
+    ],
+    "meaningStory": "Une personne prend un petit repère et l’utilise pour comparer : au moyen de, depuis ou plus que.",
+    "readings": [
+      {
+        "reading": "い",
+        "story": "On part « ICI » : son I rappelle い. On retrouve い dans 以下（いか）.",
+        "anchorId": "vocab-075f4c445195"
+      }
+    ]
+  },
+  "kanji-4e16": {
+    "components": [
+      {
+        "symbol": "世",
+        "meaning": "générations liées"
+      }
+    ],
+    "meaningStory": "Trois branches liées ressemblent à des générations unies dans le monde et dans le temps.",
+    "readings": [
+      {
+        "reading": "せ",
+        "story": "Une génération parcourt CE monde : CE rappelle せ. On retrouve せ dans 世界（せかい）.",
+        "anchorId": "vocab-6eb4452fedae"
+      }
+    ]
+  },
+  "kanji-6b63": {
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "ligne"
+      },
+      {
+        "symbol": "止",
+        "meaning": "pied"
+      }
+    ],
+    "meaningStory": "Un pied s’arrête exactement sur la ligne : sa position est correcte.",
+    "readings": [
+      {
+        "reading": "しょう",
+        "story": "On CHOisit la réponse correcte : CHO s’allonge en しょう. On retrouve しょう dans 正月（しょうがつ）.",
+        "anchorId": "vocab-8f85dc2b0919"
+      },
+      {
+        "reading": "ただ",
+        "story": "La bonne réponse apparaît : « TA-DA ! » donne ただ. On retrouve ただ dans 正しい（ただしい）.",
+        "anchorId": "vocab-7003bbe10d0b"
+      }
+    ]
+  },
+  "kanji-5fc3": {
+    "components": [
+      {
+        "symbol": "心",
+        "meaning": "cœur"
+      }
+    ],
+    "meaningStory": "Les cavités courbes et les gouttes esquissent le cœur, siège des sentiments et de l’esprit.",
+    "readings": [
+      {
+        "reading": "しん",
+        "story": "Le cœur bat dans la poitrine de CHIN : CHIN rappelle しん. On retrouve しん dans 心配（しんぱい）.",
+        "anchorId": "vocab-a7095a66e0d8"
+      },
+      {
+        "reading": "こころ",
+        "story": "COCO garde le cœur dans un petit COFFRE : CO-CO-RO rappelle こころ. On retrouve こころ dans 心（こころ）.",
+        "anchorId": "vocab-3601c285284c"
+      }
+    ]
+  },
+  "kanji-754c": {
+    "components": [
+      {
+        "symbol": "田",
+        "meaning": "champ"
+      },
+      {
+        "symbol": "介",
+        "meaning": "séparateur"
+      }
+    ],
+    "meaningStory": "Un séparateur se dresse sur un champ et trace la limite d’un monde ou d’un domaine.",
+    "readings": [
+      {
+        "reading": "かい",
+        "story": "KAI trace la frontière de son monde : かい. On retrouve かい dans 世界（せかい）.",
+        "anchorId": "vocab-6eb4452fedae"
+      }
+    ]
+  },
+  "kanji-91cd": {
+    "components": [
+      {
+        "symbol": "千",
+        "meaning": "mille"
+      },
+      {
+        "symbol": "里",
+        "meaning": "village"
+      }
+    ],
+    "meaningStory": "Mille unités pèsent sur un village : la charge est lourde.",
+    "readings": [
+      {
+        "reading": "おも",
+        "story": "Sous le poids, on gémit « OH, mon dos ! » : O-MO rappelle おも. On retrouve おも dans 重い（おもい）.",
+        "anchorId": "vocab-beff4a4d6b56"
+      }
+    ]
+  },
+  "kanji-8003": {
+    "components": [
+      {
+        "symbol": "耂",
+        "meaning": "ancien"
+      },
+      {
+        "symbol": "丂",
+        "meaning": "souffle courbé"
+      }
+    ],
+    "meaningStory": "Une personne âgée se penche, marque une pause et réfléchit avant de répondre.",
+    "readings": [
+      {
+        "reading": "かんが",
+        "story": "Un penseur KANGOUrou médite : KAN-GA rappelle かんが. On retrouve かんが dans 考える（かんがえる）.",
+        "anchorId": "vocab-4f9ae60eff62"
+      }
+    ]
+  },
+  "kanji-753b": {
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "ligne"
+      },
+      {
+        "symbol": "田",
+        "meaning": "champ"
+      },
+      {
+        "symbol": "凵",
+        "meaning": "récipient ouvert"
+      }
+    ],
+    "meaningStory": "Un champ est encadré par des lignes droites : la vue devient une image ou un plan.",
+    "readings": [
+      {
+        "reading": "が",
+        "story": "L’image fait dire « GAH ! » : が. On retrouve が dans 映画（えいが）.",
+        "anchorId": "vocab-7b9d866e6dc2"
+      },
+      {
+        "reading": "かく",
+        "story": "Le plan est CALCULé au carré : CA-C rappelle かく. On retrouve かく dans 計画（けいかく）.",
+        "anchorId": "vocab-f3534981adc8"
+      }
+    ]
+  },
+  "kanji-6d77": {
+    "components": [
+      {
+        "symbol": "氵",
+        "meaning": "eau"
+      },
+      {
+        "symbol": "毎",
+        "meaning": "chaque"
+      }
+    ],
+    "meaningStory": "Chaque goutte d’eau rejoint les autres jusqu’à former la mer.",
+    "readings": [
+      {
+        "reading": "かい",
+        "story": "Un KAYak traverse la mer : KAY rappelle かい. On retrouve かい dans 海岸（かいがん）.",
+        "anchorId": "vocab-b9af11aa0741"
+      },
+      {
+        "reading": "うみ",
+        "story": "La mer fait « OUH, MIroir ! » : OU-MI rappelle うみ. On retrouve うみ dans 海（うみ）.",
+        "anchorId": "vocab-47c1227c459b"
+      }
+    ]
+  },
+  "kanji-9053": {
+    "components": [
+      {
+        "symbol": "⻌",
+        "meaning": "chemin"
+      },
+      {
+        "symbol": "首",
+        "meaning": "tête"
+      }
+    ],
+    "meaningStory": "Une tête avance sur une route, choisit un chemin et suit les indications.",
+    "readings": [
+      {
+        "reading": "どう",
+        "story": "La route mène au DÔme : DÔ donne どう. On retrouve どう dans 柔道（じゅうどう）.",
+        "anchorId": "vocab-3bfea40cee04"
+      },
+      {
+        "reading": "みち",
+        "story": "MICHI connaît le chemin : son nom donne みち. On retrouve みち dans 道（みち）.",
+        "anchorId": "vocab-b4a022a9e7a6"
+      }
+    ]
+  },
+  "kanji-96c6": {
+    "components": [
+      {
+        "symbol": "隹",
+        "meaning": "oiseau"
+      },
+      {
+        "symbol": "木",
+        "meaning": "arbre"
+      }
+    ],
+    "meaningStory": "Des oiseaux se rassemblent sur le même arbre et forment un groupe bruyant.",
+    "readings": [
+      {
+        "reading": "あつ",
+        "story": "Tous se rassemblent en éternuant « A-TSOU ! » : あつ. On retrouve あつ dans 集める（あつめる）.",
+        "anchorId": "vocab-26f8d7da9641"
+      }
+    ]
+  },
+  "kanji-5225": {
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "bouche"
+      },
+      {
+        "symbol": "力",
+        "meaning": "force"
+      },
+      {
+        "symbol": "刂",
+        "meaning": "lame"
+      }
+    ],
+    "meaningStory": "Une lame coupe un paquet fortement noué : les parties deviennent séparées et différentes.",
+    "readings": [
+      {
+        "reading": "べつ",
+        "story": "BÉA sépare tout : BÉ-TS rappelle べつ. On retrouve べつ dans 別（べつ）.",
+        "anchorId": "vocab-87e8cf68e9cb"
+      },
+      {
+        "reading": "わか",
+        "story": "WAKA fait signe en se séparant : わか. On retrouve わか dans 別れる（わかれる）.",
+        "anchorId": "vocab-b746e2383e3b"
+      }
+    ]
+  },
+  "kanji-8a08": {
+    "components": [
+      {
+        "symbol": "言",
+        "meaning": "paroles"
+      },
+      {
+        "symbol": "十",
+        "meaning": "croix"
+      }
+    ],
+    "meaningStory": "Les mots sont croisés dans une grille comptée : le calcul devient un plan.",
+    "readings": [
+      {
+        "reading": "けい",
+        "story": "KÉvin calcule le plan : KÉ rappelle けい. On retrouve けい dans 計画（けいかく）.",
+        "anchorId": "vocab-f3534981adc8"
+      }
+    ]
+  },
+  "kanji-6b7b": {
+    "components": [
+      {
+        "symbol": "歹",
+        "meaning": "restes nus"
+      },
+      {
+        "symbol": "匕",
+        "meaning": "personne tournée de dos"
+      }
+    ],
+    "meaningStory": "Des restes nus reposent près d’une personne tombée : une image nette de la mort.",
+    "readings": [
+      {
+        "reading": "し",
+        "story": "La mort impose le CHUt : CHI rappelle し. On retrouve し dans 死ぬ（しぬ）.",
+        "anchorId": "vocab-dd5d31dbf7c9"
+      }
+    ]
+  },
+  "kanji-7279": {
+    "components": [
+      {
+        "symbol": "牛",
+        "meaning": "vache"
+      },
+      {
+        "symbol": "寺",
+        "meaning": "temple"
+      }
+    ],
+    "meaningStory": "Le temple garde une vache cérémonielle à part parce qu’elle est spéciale.",
+    "readings": [
+      {
+        "reading": "とく",
+        "story": "Un TOKen spécial est réservé : TOK rappelle とく. On retrouve とく dans 特に（とくに）.",
+        "anchorId": "vocab-e6674bacf655"
+      }
+    ]
+  },
+  "kanji-59cb": {
+    "components": [
+      {
+        "symbol": "女",
+        "meaning": "femme"
+      },
+      {
+        "symbol": "台",
+        "meaning": "estrade"
+      }
+    ],
+    "meaningStory": "Une femme monte sur une estrade pour commencer la cérémonie.",
+    "readings": [
+      {
+        "reading": "はじ",
+        "story": "Au début, la cloche fait « HA-JI ! » : はじ. On retrouve はじ dans 始める（はじめる）.",
+        "anchorId": "vocab-79261a065ba5"
+      }
+    ]
+  },
+  "kanji-904b": {
+    "components": [
+      {
+        "symbol": "⻌",
+        "meaning": "chemin"
+      },
+      {
+        "symbol": "冖",
+        "meaning": "toit"
+      },
+      {
+        "symbol": "車",
+        "meaning": "charrette à roues"
+      }
+    ],
+    "meaningStory": "Un chariot couvert avance sur la route et transporte des marchandises à destination.",
+    "readings": [
+      {
+        "reading": "うん",
+        "story": "Le chariot avance en faisant « OUN » : うん. On retrouve うん dans 運動（うんどう）.",
+        "anchorId": "vocab-8502a9e6483c"
+      },
+      {
+        "reading": "はこ",
+        "story": "On transporte un HAricot dans un COffre : HA-CO rappelle はこ. On retrouve はこ dans 運ぶ（はこぶ）.",
+        "anchorId": "vocab-ac6ebe4452ce"
+      }
+    ]
+  },
+  "kanji-7d42": {
+    "components": [
+      {
+        "symbol": "糸",
+        "meaning": "fil"
+      },
+      {
+        "symbol": "冬",
+        "meaning": "hiver"
+      }
+    ],
+    "meaningStory": "Un fil atteint l’hiver et se noue : la suite prend fin.",
+    "readings": [
+      {
+        "reading": "お",
+        "story": "À la fin, le public dit « OH ! » : お. On retrouve お dans 終る（おわる）.",
+        "anchorId": "vocab-6393ca7aefde"
+      },
+      {
+        "reading": "おわ",
+        "story": "La fin fait dire « OH, WAOUH ! » : O-WA rappelle おわ. On retrouve おわ dans 終る（おわる）.",
+        "anchorId": "vocab-6393ca7aefde"
+      }
+    ]
+  },
+  "kanji-53f0": {
+    "components": [
+      {
+        "symbol": "厶",
+        "meaning": "espace privé"
+      },
+      {
+        "symbol": "口",
+        "meaning": "bouche"
+      }
+    ],
+    "meaningStory": "Une forme coudée surélevée soutient un objet carré : un socle, une estrade ou une base de machine.",
+    "readings": [
+      {
+        "reading": "だい",
+        "story": "La machine repose sur une DALLE : DA rappelle だい. On retrouve だい dans ～台（～だい）.",
+        "anchorId": "vocab-3dfd19ef0d27"
+      },
+      {
+        "reading": "たい",
+        "story": "Le TAIphon secoue l’estrade : TAI donne たい. On retrouve たい dans 台風（たいふう）.",
+        "anchorId": "vocab-f5e799449931"
+      }
+    ]
+  },
+  "kanji-7121": {
+    "components": [
+      {
+        "symbol": "𠂉",
+        "meaning": "personne"
+      },
+      {
+        "symbol": "卌",
+        "meaning": "râtelier d’ornements"
+      },
+      {
+        "symbol": "灬",
+        "meaning": "feu"
+      }
+    ],
+    "meaningStory": "Un ancien danseur paré au-dessus du feu a été emprunté pour exprimer l’absence : rien ou sans.",
+    "readings": [
+      {
+        "reading": "む",
+        "story": "Le vide fait « MOU… » : MOU rappelle む. On retrouve む dans 無理（むり）.",
+        "anchorId": "vocab-535d04fce7a1"
+      }
+    ]
+  },
+  "kanji-771f": {
+    "components": [
+      {
+        "symbol": "十",
+        "meaning": "croix"
+      },
+      {
+        "symbol": "目",
+        "meaning": "œil"
+      },
+      {
+        "symbol": "八",
+        "meaning": "séparation"
+      }
+    ],
+    "meaningStory": "Un œil examine chaque détail séparé jusqu’à faire apparaître la vérité.",
+    "readings": [
+      {
+        "reading": "しん",
+        "story": "La vérité CHINte sans masque : CHIN rappelle しん. On retrouve しん dans 写真（しゃしん）.",
+        "anchorId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "reading": "ま",
+        "story": "La vérité est MA foi évidente : MA donne ま. On retrouve ま dans 真中（まんなか）.",
+        "anchorId": "vocab-aa732c78bd13"
+      }
+    ]
+  },
+  "kanji-6709": {
+    "components": [
+      {
+        "symbol": "𠂇",
+        "meaning": "main"
+      },
+      {
+        "symbol": "月",
+        "meaning": "chair, pas la lune"
+      }
+    ],
+    "meaningStory": "Une main tient un morceau de chair : elle possède manifestement quelque chose.",
+    "readings": [
+      {
+        "reading": "ゆう",
+        "story": "YOU l’as, donc tu le possèdes : YOU donne ゆう. On retrouve ゆう dans 有名（ゆうめい）.",
+        "anchorId": "vocab-7c3179147b51"
+      },
+      {
+        "reading": "あ",
+        "story": "« AH, ça existe ! » : AH donne あ. On retrouve あ dans 有る（ある）.",
+        "anchorId": "vocab-b66f43bc23a1"
+      }
+    ]
+  },
+  "kanji-53e3": {
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "bouche"
+      }
+    ],
+    "meaningStory": "Une simple ouverture carrée représente la bouche par laquelle passent mots et nourriture.",
+    "readings": [
+      {
+        "reading": "こう",
+        "story": "La bouche CAUse : CO s’allonge en こう. On retrouve こう dans 人口（じんこう）.",
+        "anchorId": "vocab-2ef4da30cf39"
+      },
+      {
+        "reading": "くち",
+        "story": "La bouche mange un COOKIE : COU-TCHI rappelle くち. On retrouve くち dans 口（くち）.",
+        "anchorId": "vocab-9e64feeea5ea"
+      }
+    ]
+  },
+  "kanji-5de5": {
+    "components": [
+      {
+        "symbol": "工",
+        "meaning": "outil"
+      }
+    ],
+    "meaningStory": "L’outil d’équerre d’un artisan représente le travail, la construction et l’industrie.",
+    "readings": [
+      {
+        "reading": "こう",
+        "story": "L’artisan construit une COque : CO s’allonge en こう. On retrouve こう dans 工場（こうじょう）.",
+        "anchorId": "vocab-04ea77dcbf03"
+      }
+    ]
+  },
+  "kanji-5efa": {
+    "components": [
+      {
+        "symbol": "廴",
+        "meaning": "long chemin"
+      },
+      {
+        "symbol": "聿",
+        "meaning": "pinceau"
+      }
+    ],
+    "meaningStory": "Une main munie du pinceau du bâtisseur avance sur un long chemin et élève une structure.",
+    "readings": [
+      {
+        "reading": "た",
+        "story": "Un grand TAs de pierres devient bâtiment : TA donne た. On retrouve た dans 建てる（たてる）.",
+        "anchorId": "vocab-861717738347"
+      },
+      {
+        "reading": "だ",
+        "story": "Le bâtiment est DAté : DA rappelle だ. On retrouve だ dans ～建て（～だて）.",
+        "anchorId": "vocab-d5986434677e"
+      }
+    ]
+  },
+  "kanji-7a7a": {
+    "components": [
+      {
+        "symbol": "穴",
+        "meaning": "grotte ; trou"
+      },
+      {
+        "symbol": "工",
+        "meaning": "outil"
+      }
+    ],
+    "meaningStory": "Un travail creuse un trou sous un toit ; au-delà de ce vide s’étend le ciel.",
+    "readings": [
+      {
+        "reading": "くう",
+        "story": "Un COUcou vole dans le ciel : COU rappelle くう. On retrouve くう dans 空気（くうき）.",
+        "anchorId": "vocab-d5a23463d010"
+      },
+      {
+        "reading": "そら",
+        "story": "SORA s’envole dans le ciel : son nom donne そら. On retrouve そら dans 空（そら）.",
+        "anchorId": "vocab-19bd7db9d5d0"
+      },
+      {
+        "reading": "あ",
+        "story": "Une place vide fait dire « AH ! » : あ. On retrouve あ dans 空く（あく）.",
+        "anchorId": "vocab-b650f84a486c"
+      },
+      {
+        "reading": "す",
+        "story": "La salle se vide SOUdain : SOU rappelle す. On retrouve す dans 空く（すく）.",
+        "anchorId": "vocab-d78eda1984d2"
+      }
+    ]
+  },
+  "kanji-6025": {
+    "components": [
+      {
+        "symbol": "𠂊",
+        "meaning": "couvercle"
+      },
+      {
+        "symbol": "⺕",
+        "meaning": "main"
+      },
+      {
+        "symbol": "心",
+        "meaning": "cœur"
+      }
+    ],
+    "meaningStory": "Une main se tend au-dessus d’un cœur qui bat : la situation est urgente et précipitée.",
+    "readings": [
+      {
+        "reading": "きゅう",
+        "story": "La file d’urgence fait la QUEUE : QUEUE rappelle きゅう. On retrouve きゅう dans 急行（きゅうこう）.",
+        "anchorId": "vocab-144611cc2889"
+      },
+      {
+        "reading": "いそ",
+        "story": "Vite, ISSO ! L’appel pressé donne いそ. On retrouve いそ dans 急ぐ（いそぐ）.",
+        "anchorId": "vocab-c2674f41fc44"
+      }
+    ]
+  },
+  "kanji-6b62": {
+    "components": [
+      {
+        "symbol": "止",
+        "meaning": "pied"
+      }
+    ],
+    "meaningStory": "La forme représentait d’abord une empreinte ; posez fermement le pied et il s’arrête.",
+    "readings": [
+      {
+        "reading": "と",
+        "story": "Le pied heurte un TAquet : TO rappelle と. On retrouve と dans 止まる（とまる）.",
+        "anchorId": "vocab-bd365f430f35"
+      },
+      {
+        "reading": "や",
+        "story": "« YA, arrête ! » : YA donne や. On retrouve や dans 止む（やむ）.",
+        "anchorId": "vocab-b1301209e235"
+      }
+    ]
+  },
+  "kanji-53ef": {
+    "components": [
+      {
+        "symbol": "丁",
+        "meaning": "rue"
+      },
+      {
+        "symbol": "口",
+        "meaning": "bouche"
+      }
+    ],
+    "meaningStory": "Une bouche au coin de la rue donne son accord : oui, c’est possible.",
+    "readings": [
+      {
+        "reading": "か",
+        "story": "La bouche dit « CAPable ! » : CA donne か. On retrouve か dans 可愛い（かわいい）.",
+        "anchorId": "vocab-0a04072bf0cc"
+      }
+    ]
+  },
+  "kanji-8eab": {
+    "components": [
+      {
+        "symbol": "身",
+        "meaning": "corps"
+      }
+    ],
+    "meaningStory": "Le torse courbé et le ventre arrondi forment un corps vu de profil, donc la personne elle-même.",
+    "readings": [
+      {
+        "reading": "しん",
+        "story": "Le CHINon appartient au corps : CHIN rappelle しん. On retrouve しん dans 出身（しゅっしん）.",
+        "anchorId": "vocab-eefac8830079"
+      }
+    ]
+  },
+  "kanji-5207": {
+    "components": [
+      {
+        "symbol": "七",
+        "meaning": "sept"
+      },
+      {
+        "symbol": "刀",
+        "meaning": "couteau"
+      }
+    ],
+    "meaningStory": "Un couteau tranche nettement sept marques : tout est coupé.",
+    "readings": [
+      {
+        "reading": "せつ",
+        "story": "La lame fait SEPT coupes : SEPT rappelle せつ. On retrouve せつ dans 大切（たいせつ）.",
+        "anchorId": "vocab-aad97415a910"
+      },
+      {
+        "reading": "き",
+        "story": "Une lame coupe un KIwi : KI donne き. On retrouve き dans 切る（きる）.",
+        "anchorId": "vocab-1ee90bf5d13a"
+      }
+    ]
+  },
+  "kanji-8ee2": {
+    "components": [
+      {
+        "symbol": "車",
+        "meaning": "charrette à roues"
+      },
+      {
+        "symbol": "云",
+        "meaning": "nuage de paroles"
+      }
+    ],
+    "meaningStory": "Un chariot roule sous un nuage qui dérive et tourne en avançant.",
+    "readings": [
+      {
+        "reading": "てん",
+        "story": "Le chariot fait TEN tours : TEN donne てん. On retrouve てん dans 運転（うんてん）.",
+        "anchorId": "vocab-bdb66ff4eed7"
+      }
+    ]
+  },
+  "kanji-7814": {
+    "components": [
+      {
+        "symbol": "石",
+        "meaning": "pierre"
+      },
+      {
+        "symbol": "开",
+        "meaning": "portail ouvert"
+      }
+    ],
+    "meaningStory": "Une pierre est frottée sur un support ouvert jusqu’à être polie ; ce travail persistant devient l’étude.",
+    "readings": [
+      {
+        "reading": "けん",
+        "story": "KEN polit la pierre de recherche : けん. On retrouve けん dans 研究（けんきゅう）.",
+        "anchorId": "vocab-e031115f699c"
+      }
+    ]
+  },
+  "kanji-7a76": {
+    "components": [
+      {
+        "symbol": "穴",
+        "meaning": "grotte ; trou"
+      },
+      {
+        "symbol": "九",
+        "meaning": "neuf"
+      }
+    ],
+    "meaningStory": "Explorez une grotte jusqu’à son neuvième recoin, le plus profond : recherchez à fond.",
+    "readings": [
+      {
+        "reading": "きゅう",
+        "story": "Une QUEUE de chercheurs descend au fond : QUEUE rappelle きゅう. On retrouve きゅう dans 研究（けんきゅう）.",
+        "anchorId": "vocab-e031115f699c"
+      }
+    ]
+  },
+  "kanji-8d77": {
+    "components": [
+      {
+        "symbol": "走",
+        "meaning": "courir"
+      },
+      {
+        "symbol": "己",
+        "meaning": "soi-même"
+      }
+    ],
+    "meaningStory": "La personne se remet debout et part courir : elle se lève et commence.",
+    "readings": [
+      {
+        "reading": "お",
+        "story": "En se levant, on dit « OH ! » : お. On retrouve お dans 起きる（おきる）.",
+        "anchorId": "vocab-72c5b362c4f2"
+      },
+      {
+        "reading": "おこ",
+        "story": "On réveille OKO : O-KO donne おこ. On retrouve おこ dans 起こす（おこす）.",
+        "anchorId": "vocab-ebc949695b16"
+      }
+    ]
+  },
+  "kanji-8a66": {
+    "components": [
+      {
+        "symbol": "言",
+        "meaning": "paroles"
+      },
+      {
+        "symbol": "式",
+        "meaning": "méthode formelle"
+      }
+    ],
+    "meaningStory": "Des mots sont vérifiés selon une méthode formelle : c’est un test ou un essai.",
+    "readings": [
+      {
+        "reading": "し",
+        "story": "CHI passe l’épreuve : CHI rappelle し. On retrouve し dans 試験（しけん）.",
+        "anchorId": "vocab-0c4d68e2ec4d"
+      }
+    ]
+  },
+  "kanji-6620": {
+    "components": [
+      {
+        "symbol": "日",
+        "meaning": "soleil"
+      },
+      {
+        "symbol": "央",
+        "meaning": "centre"
+      }
+    ],
+    "meaningStory": "Le soleil éclaire le centre et projette un reflet ou une image lumineuse.",
+    "readings": [
+      {
+        "reading": "えい",
+        "story": "L’image fait dire « HÉ ! » : É rappelle えい. On retrouve えい dans 映画（えいが）.",
+        "anchorId": "vocab-7b9d866e6dc2"
+      }
+    ]
+  },
+  "kanji-9a13": {
+    "components": [
+      {
+        "symbol": "馬",
+        "meaning": "cheval"
+      },
+      {
+        "symbol": "㑒",
+        "meaning": "inspection"
+      }
+    ],
+    "meaningStory": "Un cheval est inspecté sous tous les angles pour vérifier son état : l’examen établit le résultat.",
+    "readings": [
+      {
+        "reading": "けん",
+        "story": "KEN vérifie chaque réponse : けん. On retrouve けん dans 試験（しけん）.",
+        "anchorId": "vocab-0c4d68e2ec4d"
+      }
+    ]
+  },
+  "kanji-5199": {
+    "components": [
+      {
+        "symbol": "冖",
+        "meaning": "toit"
+      },
+      {
+        "symbol": "与",
+        "meaning": "transfert"
+      }
+    ],
+    "meaningStory": "Sous un couvercle, une forme est transférée vers une autre : une copie ou une photographie.",
+    "readings": [
+      {
+        "reading": "しゃ",
+        "story": "L’appareil fait « CHA ! » en copiant la scène : しゃ. On retrouve しゃ dans 写真（しゃしん）.",
+        "anchorId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "reading": "うつ",
+        "story": "L’image passe OUt sur le papier : OU-TS rappelle うつ. On retrouve うつ dans 写す（うつす）.",
+        "anchorId": "vocab-eef9d372f5df"
+      }
+    ]
+  },
+  "kanji-97f3": {
+    "components": [
+      {
+        "symbol": "立",
+        "meaning": "debout"
+      },
+      {
+        "symbol": "日",
+        "meaning": "caisse de résonance, pas le soleil"
+      }
+    ],
+    "meaningStory": "Une vibration monte et se dresse au-dessus de sa source, devenant une note sonore visible.",
+    "readings": [
+      {
+        "reading": "おん",
+        "story": "On met le son ON : ON donne おん. On retrouve おん dans 音楽（おんがく）.",
+        "anchorId": "vocab-83b219893eca"
+      },
+      {
+        "reading": "おと",
+        "story": "Le son fait « OH, ton ! » : O-TO rappelle おと. On retrouve おと dans 音（おと）.",
+        "anchorId": "vocab-b37750755344"
+      }
+    ]
+  },
+  "kanji-6ce8": {
+    "components": [
+      {
+        "symbol": "氵",
+        "meaning": "eau"
+      },
+      {
+        "symbol": "主",
+        "meaning": "maître, principal"
+      }
+    ],
+    "meaningStory": "L’eau est dirigée vers un point principal : versez-la là et faites attention.",
+    "readings": [
+      {
+        "reading": "ちゅう",
+        "story": "On CHOIsit le point à surveiller : CHOU rappelle ちゅう. On retrouve ちゅう dans 注意（ちゅうい）.",
+        "anchorId": "vocab-1472a34fdb88"
+      }
+    ]
+  },
+  "kanji-6b4c": {
+    "components": [
+      {
+        "symbol": "可",
+        "meaning": "possible"
+      },
+      {
+        "symbol": "可",
+        "meaning": "possible"
+      },
+      {
+        "symbol": "欠",
+        "meaning": "bouche ouverte"
+      }
+    ],
+    "meaningStory": "Deux bouches approbatrices s’ouvrent grand et libèrent ensemble une chanson.",
+    "readings": [
+      {
+        "reading": "うた",
+        "story": "La chanson commence « OU, TA-da ! » : OU-TA rappelle うた. On retrouve うた dans 歌（うた）.",
+        "anchorId": "vocab-c563c884f48f"
+      }
+    ]
+  },
+  "kanji-60aa": {
+    "components": [
+      {
+        "symbol": "亜",
+        "meaning": "cadre déformé"
+      },
+      {
+        "symbol": "心",
+        "meaning": "cœur"
+      }
+    ],
+    "meaningStory": "Une forme déformée pèse sur le cœur et produit un mauvais sentiment.",
+    "readings": [
+      {
+        "reading": "わる",
+        "story": "WALUigi joue le méchant : WALU rappelle わる. On retrouve わる dans 悪い（わるい）.",
+        "anchorId": "vocab-04d486e7201c"
+      }
+    ]
+  },
+  "kanji-98a8": {
+    "components": [
+      {
+        "symbol": "几",
+        "meaning": "enceinte du vent"
+      },
+      {
+        "symbol": "虫",
+        "meaning": "insecte"
+      }
+    ],
+    "meaningStory": "Un insecte est emporté dans une vaste enceinte par le vent.",
+    "readings": [
+      {
+        "reading": "ふう",
+        "story": "Le vent souffle « FOU ! » : FOU donne ふう. On retrouve ふう dans 台風（たいふう）.",
+        "anchorId": "vocab-f5e799449931"
+      },
+      {
+        "reading": "かぜ",
+        "story": "Le vent joue du KAZOU : KAZE rappelle かぜ. On retrouve かぜ dans 風（かぜ）.",
+        "anchorId": "vocab-94bf02007301"
+      }
+    ]
+  },
+  "kanji-7d19": {
+    "components": [
+      {
+        "symbol": "糸",
+        "meaning": "fil"
+      },
+      {
+        "symbol": "氏",
+        "meaning": "sceau du clan"
+      }
+    ],
+    "meaningStory": "Des fibres végétales sont pressées près du sceau d’un clan pour former une feuille de papier.",
+    "readings": [
+      {
+        "reading": "かみ",
+        "story": "Le papier emballe un CAMIon : CAMI rappelle かみ. On retrouve かみ dans 紙（かみ）.",
+        "anchorId": "vocab-d060cd928492"
+      }
+    ]
+  },
+  "kanji-6625": {
+    "components": [
+      {
+        "symbol": "三",
+        "meaning": "trois lignes"
+      },
+      {
+        "symbol": "人",
+        "meaning": "personne"
+      },
+      {
+        "symbol": "日",
+        "meaning": "soleil"
+      }
+    ],
+    "meaningStory": "Le soleil traverse les couches de terre et les gens ressortent : le printemps est arrivé.",
+    "readings": [
+      {
+        "reading": "はる",
+        "story": "HARU ouvre la porte du printemps : son nom donne はる. On retrouve はる dans 春（はる）.",
+        "anchorId": "vocab-18597113ac94"
+      }
+    ]
+  },
+  "kanji-79cb": {
+    "components": [
+      {
+        "symbol": "禾",
+        "meaning": "céréale"
+      },
+      {
+        "symbol": "火",
+        "meaning": "flammes dansantes"
+      }
+    ],
+    "meaningStory": "Le grain récolté rougit près du feu : les champs ont atteint l’automne.",
+    "readings": [
+      {
+        "reading": "あき",
+        "story": "En automne, AKI ramasse les feuilles : son nom donne あき. On retrouve あき dans 秋（あき）.",
+        "anchorId": "vocab-85675bbfdbe6"
+      }
+    ]
+  },
+  "kanji-590f": {
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "ligne"
+      },
+      {
+        "symbol": "自",
+        "meaning": "doigt pointé vers son nez"
+      },
+      {
+        "symbol": "夂",
+        "meaning": "jambes qui suivent"
+      }
+    ],
+    "meaningStory": "Sous la haute ligne de l’été, une grande silhouette avance lentement dans la chaleur.",
+    "readings": [
+      {
+        "reading": "なつ",
+        "story": "NATSU cherche l’ombre en été : son nom donne なつ. On retrouve なつ dans 夏（なつ）.",
+        "anchorId": "vocab-a4e52ef19d81"
+      }
+    ]
+  },
+  "kanji-7fd2": {
+    "components": [
+      {
+        "symbol": "羽",
+        "meaning": "ailes"
+      },
+      {
+        "symbol": "白",
+        "meaning": "blanc"
+      }
+    ],
+    "meaningStory": "Des ailes blanches battent encore et encore jusqu’à ce que l’oisillon apprenne à voler.",
+    "readings": [
+      {
+        "reading": "しゅう",
+        "story": "L’élève répète « CHOU, CHOU » pour apprendre : しゅう. On retrouve しゅう dans 練習（れんしゅう）.",
+        "anchorId": "vocab-0a5beae1698c"
+      },
+      {
+        "reading": "なら",
+        "story": "NARA apprend en répétant : son nom donne なら. On retrouve なら dans 習う（ならう）.",
+        "anchorId": "vocab-0d114c78c7a1"
+      }
+    ]
+  },
+  "kanji-501f": {
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "personne"
+      },
+      {
+        "symbol": "昔",
+        "meaning": "temps anciens"
+      }
+    ],
+    "meaningStory": "Une personne prend un objet venu d’un temps antérieur et promet de le rendre : emprunter.",
+    "readings": [
+      {
+        "reading": "か",
+        "story": "Puis-je emprunter ce CAr ? CA donne か. On retrouve か dans 借りる（かりる）.",
+        "anchorId": "vocab-fcc4b149bcdb"
+      }
+    ]
+  },
+  "kanji-8cb8": {
+    "components": [
+      {
+        "symbol": "代",
+        "meaning": "remplaçant"
+      },
+      {
+        "symbol": "貝",
+        "meaning": "coquillage-monnaie"
+      }
+    ],
+    "meaningStory": "La monnaie-coquillage est confiée quelque temps à un remplaçant : elle est prêtée.",
+    "readings": [
+      {
+        "reading": "か",
+        "story": "Je te prête la CAravane : CA donne か. On retrouve か dans 貸す（かす）.",
+        "anchorId": "vocab-642d3200e09f"
+      }
+    ]
+  },
+  "kanji-5802": {
+    "components": [
+      {
+        "symbol": "尚",
+        "meaning": "haute salle"
+      },
+      {
+        "symbol": "土",
+        "meaning": "terre"
+      }
+    ],
+    "meaningStory": "Un haut toit abrite une grande salle solidement posée sur la terre : un bâtiment public.",
+    "readings": [
+      {
+        "reading": "どう",
+        "story": "Le DÔme couvre le bâtiment public : DÔ donne どう. On retrouve どう dans 食堂（しょくどう）.",
+        "anchorId": "vocab-3f0d257a083a"
+      }
+    ]
+  },
+  "kanji-9ce5": {
+    "components": [
+      {
+        "symbol": "鳥",
+        "meaning": "oiseau"
+      }
+    ],
+    "meaningStory": "Un bec crochu, un œil, un corps et une queue composent le pictogramme d’un oiseau.",
+    "readings": [
+      {
+        "reading": "とり",
+        "story": "TORI l’oiseau s’envole : son nom donne とり. On retrouve とり dans 鳥（とり）.",
+        "anchorId": "vocab-683f3e7fb085"
+      }
+    ]
+  },
+  "kanji-98ef": {
+    "components": [
+      {
+        "symbol": "飠",
+        "meaning": "nourriture"
+      },
+      {
+        "symbol": "反",
+        "meaning": "retourner"
+      }
+    ],
+    "meaningStory": "La nourriture est retournée puis servie depuis la marmite : le riz cuit devient un repas.",
+    "readings": [
+      {
+        "reading": "はん",
+        "story": "HAN a faim et réclame son repas : HAN donne はん. On retrouve はん dans 御飯（ごはん）.",
+        "anchorId": "vocab-2bf5dccca2b0"
+      }
+    ]
+  },
+  "kanji-51ac": {
+    "components": [
+      {
+        "symbol": "夂",
+        "meaning": "jambes qui suivent"
+      },
+      {
+        "symbol": "冫",
+        "meaning": "glace"
+      }
+    ],
+    "meaningStory": "Des pieds en marche atteignent les dernières marques de glace de l’année : l’hiver.",
+    "readings": [
+      {
+        "reading": "ふゆ",
+        "story": "Le froid souffle « FOU, YOU ! » : FU-YU rappelle ふゆ. On retrouve ふゆ dans 冬（ふゆ）.",
+        "anchorId": "vocab-7c4d1abbdd61"
+      }
+    ]
+  },
+  "kanji-725b": {
+    "components": [
+      {
+        "symbol": "牛",
+        "meaning": "vache"
+      }
+    ],
+    "meaningStory": "Des cornes et une large tête forment l’ancien pictogramme d’une vache.",
+    "readings": [
+      {
+        "reading": "ぎゅう",
+        "story": "La vache fait « GYOU » au lieu de meuh : ぎゅう. On retrouve ぎゅう dans 牛乳（ぎゅうにゅう）.",
+        "anchorId": "vocab-e90f788a51b5"
+      }
+    ]
+  },
+  "kanji-72ac": {
+    "components": [
+      {
+        "symbol": "犬",
+        "meaning": "chien"
+      }
+    ],
+    "meaningStory": "Un grand animal avec la queue levée forme l’ancien pictogramme d’un chien.",
+    "readings": [
+      {
+        "reading": "いぬ",
+        "story": "Le chien INU entre dans sa niche : son nom donne いぬ. On retrouve いぬ dans 犬（いぬ）.",
+        "anchorId": "vocab-4cd1238bcb91"
+      }
+    ]
+  },
+  "kanji-6f22": {
+    "components": [
+      {
+        "symbol": "氵",
+        "meaning": "eau"
+      },
+      {
+        "symbol": "廿",
+        "meaning": "barres jointes"
+      },
+      {
+        "symbol": "口",
+        "meaning": "bouche"
+      },
+      {
+        "symbol": "夫",
+        "meaning": "personne adulte"
+      }
+    ],
+    "meaningStory": "L’eau près d’une foule compacte rappelle la rivière Han et le nom des Han, donc l’écriture chinoise.",
+    "readings": [
+      {
+        "reading": "かん",
+        "story": "Les HAN fournissent le son : HAN devient かん. On retrouve かん dans 漢字（かんじ）.",
+        "anchorId": "vocab-535c688e8bf9"
       }
     ]
   }

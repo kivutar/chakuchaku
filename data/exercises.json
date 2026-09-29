@@ -19,6 +19,7 @@
       "kanji-672c",
       "kanji-4eba",
       "kanji-53cb",
+      "kanji-4eac",
       "kanji-96fb",
       "kanji-8eca",
       "kanji-884c",
@@ -272,6 +273,7 @@
     "kanjiIds": [
       "kanji-4eca",
       "kanji-65e5",
+      "kanji-516c",
       "kanji-98df"
     ],
     "tokens": [
@@ -395,6 +397,8 @@
       "kanji-65e5",
       "kanji-66dc",
       "kanji-53cb",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b",
       "kanji-884c"
     ],
@@ -788,7 +792,9 @@
       "vocab-ef4cce00951f"
     ],
     "kanjiIds": [
-      "kanji-5c4b"
+      "kanji-5c4b",
+      "kanji-5199",
+      "kanji-771f"
     ],
     "tokens": [
       {
@@ -1500,7 +1506,10 @@
       "vocab-0c4d68e2ec4d",
       "vocab-6ed0b6d4c374"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-8a66",
+      "kanji-9a13"
+    ],
     "tokens": [
       {
         "surface": "試験",
@@ -2244,7 +2253,8 @@
       "vocab-ef4cce00951f"
     ],
     "kanjiIds": [
-      "kanji-958b"
+      "kanji-958b",
+      "kanji-65b9"
     ],
     "tokens": [
       {
@@ -2696,6 +2706,7 @@
     ],
     "kanjiIds": [
       "kanji-624b",
+      "kanji-7d19",
       "kanji-66f8"
     ],
     "tokens": [
@@ -2937,6 +2948,8 @@
       "vocab-385cc0d9ee98"
     ],
     "kanjiIds": [
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b"
     ],
     "tokens": [
@@ -3023,7 +3036,10 @@
       "vocab-d5901ecbf5fb",
       "vocab-897d3a642135"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-5199",
+      "kanji-771f"
+    ],
     "tokens": [
       {
         "surface": "どこ",
@@ -3238,6 +3254,7 @@
       "vocab-dfb6d8ba613b"
     ],
     "kanjiIds": [
+      "kanji-7d42",
       "kanji-96fb",
       "kanji-8a71"
     ],
@@ -3907,6 +3924,7 @@
       "vocab-2438f15019e7"
     ],
     "kanjiIds": [
+      "kanji-6625",
       "kanji-96e8"
     ],
     "tokens": [
@@ -4342,7 +4360,8 @@
     ],
     "kanjiIds": [
       "kanji-5f1f",
-      "kanji-91d1"
+      "kanji-91d1",
+      "kanji-8cb8"
     ],
     "tokens": [
       {
@@ -5217,6 +5236,7 @@
       "vocab-9cc2d4a9bbe1"
     ],
     "kanjiIds": [
+      "kanji-6f22",
       "kanji-5b57",
       "kanji-52c9",
       "kanji-5f37",
@@ -5324,6 +5344,8 @@
       "kanji-4eca",
       "kanji-65e5",
       "kanji-96e8",
+      "kanji-72ac",
+      "kanji-516c",
       "kanji-6b69"
     ],
     "tokens": [
@@ -5760,6 +5782,8 @@
     "kanjiIds": [
       "kanji-660e",
       "kanji-65e5",
+      "kanji-8a66",
+      "kanji-9a13",
       "kanji-4eca",
       "kanji-6669",
       "kanji-898b"
@@ -5963,6 +5987,7 @@
       "vocab-84e555b3292a"
     ],
     "kanjiIds": [
+      "kanji-98a8",
       "kanji-624b"
     ],
     "tokens": [
@@ -6068,7 +6093,8 @@
     ],
     "kanjiIds": [
       "kanji-5bbf",
-      "kanji-984c"
+      "kanji-984c",
+      "kanji-7d42"
     ],
     "tokens": [
       {
@@ -6176,6 +6202,8 @@
       "vocab-9e765516b917"
     ],
     "kanjiIds": [
+      "kanji-79cb",
+      "kanji-4eac",
       "kanji-884c"
     ],
     "tokens": [
@@ -6474,8 +6502,10 @@
       "vocab-b66f43bc23a1"
     ],
     "kanjiIds": [
+      "kanji-590f",
       "kanji-4f11",
       "kanji-671d",
+      "kanji-516c",
       "kanji-8d70"
     ],
     "tokens": [
@@ -6595,6 +6625,7 @@
       "kanji-805e",
       "kanji-8aad",
       "kanji-671d",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -6690,6 +6721,7 @@
     ],
     "kanjiIds": [
       "kanji-671d",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -6888,9 +6920,12 @@
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
+      "kanji-6620",
+      "kanji-753b",
       "kanji-5f8c",
       "kanji-53cb",
       "kanji-5915",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -7109,6 +7144,8 @@
     "kanjiIds": [
       "kanji-65c5",
       "kanji-884c",
+      "kanji-5199",
+      "kanji-771f",
       "kanji-898b"
     ],
     "tokens": [
@@ -7506,6 +7543,7 @@
     ],
     "kanjiIds": [
       "kanji-99c5",
+      "kanji-5207",
       "kanji-8cb7"
     ],
     "tokens": [
@@ -7603,6 +7641,7 @@
       "vocab-ec22142c23d3"
     ],
     "kanjiIds": [
+      "kanji-725b",
       "kanji-8cb7",
       "kanji-884c"
     ],
@@ -7844,6 +7883,7 @@
     ],
     "kanjiIds": [
       "kanji-4f4f",
+      "kanji-7d19",
       "kanji-66f8"
     ],
     "tokens": [
@@ -8416,6 +8456,7 @@
     "kanjiIds": [
       "kanji-96fb",
       "kanji-8eca",
+      "kanji-5730",
       "kanji-4e0b"
     ],
     "tokens": [
@@ -8600,6 +8641,7 @@
       "kanji-4e2d",
       "kanji-6bcd",
       "kanji-6599",
+      "kanji-7406",
       "kanji-4e00"
     ],
     "tokens": [
@@ -8702,6 +8744,7 @@
     "kanjiIds": [
       "kanji-5144",
       "kanji-79c1",
+      "kanji-540c",
       "kanji-5b66",
       "kanji-6821",
       "kanji-884c"
@@ -9313,7 +9356,8 @@
       "kanji-751f",
       "kanji-65e5",
       "kanji-53cb",
-      "kanji-6642"
+      "kanji-6642",
+      "kanji-8a08"
     ],
     "tokens": [
       {
@@ -9421,6 +9465,7 @@
       "kanji-5f1f",
       "kanji-53e4",
       "kanji-81ea",
+      "kanji-8ee2",
       "kanji-8eca"
     ],
     "tokens": [
@@ -9624,6 +9669,7 @@
       "kanji-82f1",
       "kanji-8a9e",
       "kanji-624b",
+      "kanji-7d19",
       "kanji-66f8"
     ],
     "tokens": [
@@ -9734,7 +9780,9 @@
       "vocab-2ab01f1ec07e",
       "vocab-b66f43bc23a1"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-6d77"
+    ],
     "tokens": [
       {
         "surface": "海",
@@ -9824,6 +9872,7 @@
       "kanji-672c",
       "kanji-8a9e",
       "kanji-624b",
+      "kanji-7d19",
       "kanji-66f8"
     ],
     "tokens": [
@@ -9904,8 +9953,11 @@
     ],
     "kanjiIds": [
       "kanji-9031",
+      "kanji-97f3",
       "kanji-697d",
-      "kanji-805e"
+      "kanji-805e",
+      "kanji-5199",
+      "kanji-771f"
     ],
     "tokens": [
       {
@@ -10098,6 +10150,7 @@
     ],
     "kanjiIds": [
       "kanji-65e5",
+      "kanji-516c",
       "kanji-9759"
     ],
     "tokens": [
@@ -10200,7 +10253,8 @@
       "vocab-beff4a4d6b56"
     ],
     "kanjiIds": [
-      "kanji-7269"
+      "kanji-7269",
+      "kanji-91cd"
     ],
     "tokens": [
       {
@@ -10334,7 +10388,9 @@
       "vocab-ee1543f61b22",
       "vocab-a4945bc781fd"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-9053"
+    ],
     "tokens": [
       {
         "surface": "この",
@@ -10405,6 +10461,7 @@
       "vocab-d34997e828cb"
     ],
     "kanjiIds": [
+      "kanji-6f22",
       "kanji-5b57",
       "kanji-5927",
       "kanji-66f8"
@@ -10658,6 +10715,7 @@
     "kanjiIds": [
       "kanji-9752",
       "kanji-81ea",
+      "kanji-8ee2",
       "kanji-8eca",
       "kanji-5144"
     ],
@@ -10736,6 +10794,7 @@
       "vocab-d8a0261581dc"
     ],
     "kanjiIds": [
+      "kanji-97f3",
       "kanji-697d",
       "kanji-805e"
     ],
@@ -11262,6 +11321,7 @@
     ],
     "kanjiIds": [
       "kanji-6599",
+      "kanji-7406",
       "kanji-4f5c"
     ],
     "tokens": [
@@ -11827,6 +11887,7 @@
       "kanji-5144",
       "kanji-6765",
       "kanji-9031",
+      "kanji-4eac",
       "kanji-884c"
     ],
     "tokens": [
@@ -12264,6 +12325,7 @@
     ],
     "kanjiIds": [
       "kanji-6642",
+      "kanji-8a08",
       "kanji-4e94",
       "kanji-5343",
       "kanji-5186"
@@ -12534,6 +12596,7 @@
     ],
     "kanjiIds": [
       "kanji-624b",
+      "kanji-7d19",
       "kanji-8aad"
     ],
     "tokens": [
@@ -12630,6 +12693,9 @@
     "kanjiIds": [
       "kanji-5148",
       "kanji-751f",
+      "kanji-4eac",
+      "kanji-5199",
+      "kanji-771f",
       "kanji-898b"
     ],
     "tokens": [
@@ -12730,6 +12796,7 @@
       "kanji-66dc",
       "kanji-5bb6",
       "kanji-6599",
+      "kanji-7406",
       "kanji-4f5c"
     ],
     "tokens": [
@@ -12945,6 +13012,7 @@
       "vocab-32a5e8698306"
     ],
     "kanjiIds": [
+      "kanji-72ac",
       "kanji-597d"
     ],
     "tokens": [
@@ -13156,7 +13224,8 @@
     "kanjiIds": [
       "kanji-660e",
       "kanji-65e5",
-      "kanji-65e9"
+      "kanji-65e9",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -13237,6 +13306,7 @@
       "kanji-6708",
       "kanji-5bb6",
       "kanji-65cf",
+      "kanji-4eac",
       "kanji-884c"
     ],
     "tokens": [
@@ -13322,6 +13392,7 @@
     ],
     "kanjiIds": [
       "kanji-5e97",
+      "kanji-91ce",
       "kanji-7269",
       "kanji-8cb7"
     ],
@@ -13626,7 +13697,10 @@
       "vocab-d5901ecbf5fb",
       "vocab-897d3a642135"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-5199",
+      "kanji-771f"
+    ],
     "tokens": [
       {
         "surface": "ここ",
@@ -13709,6 +13783,7 @@
       "vocab-ef4cce00951f"
     ],
     "kanjiIds": [
+      "kanji-98a8",
       "kanji-4eca",
       "kanji-65e5",
       "kanji-65e9"
@@ -13837,7 +13912,8 @@
       "kanji-65e5",
       "kanji-5b66",
       "kanji-6821",
-      "kanji-65e9"
+      "kanji-65e9",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -14156,7 +14232,8 @@
       "vocab-642d3200e09f"
     ],
     "kanjiIds": [
-      "kanji-96e8"
+      "kanji-96e8",
+      "kanji-8cb8"
     ],
     "tokens": [
       {
@@ -14570,6 +14647,8 @@
       "kanji-9031",
       "kanji-53cb",
       "kanji-4e00",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b"
     ],
     "tokens": [
@@ -15394,7 +15473,9 @@
       "vocab-74ec2cfe0a44",
       "vocab-b1d6f8ff0597"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-6625"
+    ],
     "tokens": [
       {
         "surface": "春",
@@ -15504,6 +15585,8 @@
       "vocab-c7c31671d53c"
     ],
     "kanjiIds": [
+      "kanji-5199",
+      "kanji-771f",
       "kanji-597d",
       "kanji-65b0"
     ],
@@ -16011,6 +16094,7 @@
       "kanji-5144",
       "kanji-4f1a",
       "kanji-793e",
+      "kanji-54e1",
       "kanji-59c9",
       "kanji-5b66",
       "kanji-751f"
@@ -16110,7 +16194,9 @@
     "kanjiIds": [
       "kanji-6bce",
       "kanji-671d",
+      "kanji-516c",
       "kanji-6b69",
+      "kanji-97f3",
       "kanji-697d",
       "kanji-805e"
     ],
@@ -16309,6 +16395,8 @@
     "kanjiIds": [
       "kanji-96e8",
       "kanji-5bb6",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b"
     ],
     "tokens": [
@@ -16418,7 +16506,8 @@
     "kanjiIds": [
       "kanji-660e",
       "kanji-65e5",
-      "kanji-65e9"
+      "kanji-65e9",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -16507,6 +16596,7 @@
     "kanjiIds": [
       "kanji-6bcd",
       "kanji-4f5c",
+      "kanji-65b9",
       "kanji-6559"
     ],
     "tokens": [
@@ -16938,6 +17028,7 @@
     ],
     "kanjiIds": [
       "kanji-65e5",
+      "kanji-516c",
       "kanji-6b69"
     ],
     "tokens": [
@@ -17192,6 +17283,8 @@
     "kanjiIds": [
       "kanji-65e5",
       "kanji-66dc",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b",
       "kanji-672c",
       "kanji-8aad"
@@ -17396,6 +17489,7 @@
       "vocab-32a5e8698306"
     ],
     "kanjiIds": [
+      "kanji-97f3",
       "kanji-697d",
       "kanji-805e",
       "kanji-597d"
@@ -17733,6 +17827,7 @@
     ],
     "kanjiIds": [
       "kanji-671d",
+      "kanji-98ef",
       "kanji-98df",
       "kanji-5b66",
       "kanji-6821",
@@ -17952,7 +18047,8 @@
     "kanjiIds": [
       "kanji-5144",
       "kanji-8eca",
-      "kanji-4e09"
+      "kanji-4e09",
+      "kanji-53f0"
     ],
     "tokens": [
       {
@@ -18060,7 +18156,8 @@
     "kanjiIds": [
       "kanji-660e",
       "kanji-65e5",
-      "kanji-65e9"
+      "kanji-65e9",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -18152,7 +18249,10 @@
       "vocab-d5901ecbf5fb",
       "vocab-897d3a642135"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-5199",
+      "kanji-771f"
+    ],
     "tokens": [
       {
         "surface": "ここ",
@@ -19410,7 +19510,8 @@
       "vocab-dfb6d8ba613b"
     ],
     "kanjiIds": [
-      "kanji-59c9"
+      "kanji-59c9",
+      "kanji-540c"
     ],
     "tokens": [
       {
@@ -19836,7 +19937,8 @@
       "kanji-8ab0",
       "kanji-6765",
       "kanji-5206",
-      "kanji-81ea"
+      "kanji-81ea",
+      "kanji-59cb"
     ],
     "tokens": [
       {
@@ -20146,6 +20248,7 @@
       "vocab-dcd3acd6b659"
     ],
     "kanjiIds": [
+      "kanji-6d77",
       "kanji-98f2"
     ],
     "tokens": [
@@ -20906,12 +21009,14 @@
       "vocab-c20b735fa41d"
     ],
     "kanjiIds": [
+      "kanji-65b9",
       "kanji-65b0",
       "kanji-65e5",
       "kanji-672c",
       "kanji-8a9e",
       "kanji-5148",
-      "kanji-751f"
+      "kanji-751f",
+      "kanji-696d"
     ],
     "tokens": [
       {
@@ -21789,6 +21894,7 @@
     ],
     "kanjiIds": [
       "kanji-5165",
+      "kanji-53e3",
       "kanji-8131"
     ],
     "tokens": [
@@ -23058,6 +23164,7 @@
     ],
     "kanjiIds": [
       "kanji-81ea",
+      "kanji-8ee2",
       "kanji-8eca",
       "kanji-96fb",
       "kanji-5b89"
@@ -23189,6 +23296,10 @@
       "vocab-32a5e8698306"
     ],
     "kanjiIds": [
+      "kanji-6625",
+      "kanji-590f",
+      "kanji-79cb",
+      "kanji-51ac",
       "kanji-4e2d",
       "kanji-4e00",
       "kanji-597d"
@@ -23316,6 +23427,7 @@
       "kanji-7236",
       "kanji-53e4",
       "kanji-6642",
+      "kanji-8a08",
       "kanji-4e8c"
     ],
     "tokens": [
@@ -23582,6 +23694,7 @@
     "kanjiIds": [
       "kanji-5144",
       "kanji-81ea",
+      "kanji-8ee2",
       "kanji-8eca"
     ],
     "tokens": [
@@ -23973,6 +24086,7 @@
       "vocab-0ec838cc07ea"
     ],
     "kanjiIds": [
+      "kanji-6f22",
       "kanji-5b57",
       "kanji-899a"
     ],
@@ -24079,7 +24193,8 @@
       "kanji-660e",
       "kanji-65e5",
       "kanji-4f11",
-      "kanji-65e9"
+      "kanji-65e9",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -24361,6 +24476,7 @@
       "kanji-9593",
       "kanji-4e09",
       "kanji-56de",
+      "kanji-97f3",
       "kanji-697d",
       "kanji-805e",
       "kanji-6642",
@@ -24746,6 +24862,7 @@
       "vocab-152ea0d72dc5"
     ],
     "kanjiIds": [
+      "kanji-5efa",
       "kanji-7269",
       "kanji-53bb",
       "kanji-5e74",
@@ -25153,7 +25270,9 @@
       "kanji-6821",
       "kanji-884c",
       "kanji-524d",
+      "kanji-53f0",
       "kanji-671d",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -25434,6 +25553,7 @@
     ],
     "kanjiIds": [
       "kanji-98df",
+      "kanji-5802",
       "kanji-671d",
       "kanji-516b",
       "kanji-6642",
@@ -25742,6 +25862,7 @@
     ],
     "kanjiIds": [
       "kanji-5f1f",
+      "kanji-91ce",
       "kanji-597d",
       "kanji-8a00"
     ],
@@ -25982,6 +26103,7 @@
       "vocab-fae75d2d18b2"
     ],
     "kanjiIds": [
+      "kanji-5207",
       "kanji-624b"
     ],
     "tokens": [
@@ -26460,6 +26582,8 @@
       "kanji-66dc",
       "kanji-53cb",
       "kanji-4e00",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b",
       "kanji-884c"
     ],
@@ -26683,6 +26807,7 @@
       "kanji-8336",
       "kanji-5e97",
       "kanji-663c",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -27750,6 +27875,7 @@
     ],
     "kanjiIds": [
       "kanji-59c9",
+      "kanji-6b4c",
       "kanji-4e0a",
       "kanji-624b",
       "kanji-79c1",
@@ -28111,6 +28237,7 @@
     ],
     "kanjiIds": [
       "kanji-4f5c",
+      "kanji-65b9",
       "kanji-5fd8",
       "kanji-66f8"
     ],
@@ -28986,6 +29113,8 @@
     "kanjiIds": [
       "kanji-4f11",
       "kanji-65e5",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b"
     ],
     "tokens": [
@@ -29096,7 +29225,8 @@
       "kanji-6bce",
       "kanji-671d",
       "kanji-516d",
-      "kanji-6642"
+      "kanji-6642",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -29287,6 +29417,7 @@
     "kanjiIds": [
       "kanji-6bcd",
       "kanji-624b",
+      "kanji-7d19",
       "kanji-66f8"
     ],
     "tokens": [
@@ -29381,7 +29512,8 @@
       "kanji-672c",
       "kanji-8aad",
       "kanji-898b",
-      "kanji-6599"
+      "kanji-6599",
+      "kanji-7406"
     ],
     "tokens": [
       {
@@ -29510,6 +29642,7 @@
       "kanji-65e5",
       "kanji-96e8",
       "kanji-81ea",
+      "kanji-8ee2",
       "kanji-8eca"
     ],
     "tokens": [
@@ -29619,6 +29752,7 @@
       "kanji-4e00",
       "kanji-4eba",
       "kanji-81ea",
+      "kanji-8ee2",
       "kanji-8eca"
     ],
     "tokens": [
@@ -29734,8 +29868,11 @@
     ],
     "kanjiIds": [
       "kanji-6669",
+      "kanji-98ef",
       "kanji-98df",
       "kanji-5f8c",
+      "kanji-72ac",
+      "kanji-516c",
       "kanji-6b69"
     ],
     "tokens": [
@@ -30173,6 +30310,7 @@
     "kanjiIds": [
       "kanji-79c1",
       "kanji-59b9",
+      "kanji-540c",
       "kanji-8272"
     ],
     "tokens": [
@@ -30466,7 +30604,9 @@
       "kanji-53cb",
       "kanji-79c1",
       "kanji-65c5",
-      "kanji-884c"
+      "kanji-884c",
+      "kanji-5199",
+      "kanji-771f"
     ],
     "tokens": [
       {
@@ -30667,6 +30807,7 @@
       "vocab-61b57e2d4702"
     ],
     "kanjiIds": [
+      "kanji-97f3",
       "kanji-697d",
       "kanji-597d",
       "kanji-9759"
@@ -30804,6 +30945,7 @@
       "vocab-c9d354f557b3"
     ],
     "kanjiIds": [
+      "kanji-590f",
       "kanji-4f11"
     ],
     "tokens": [
@@ -30882,7 +31024,9 @@
       "vocab-f5d0af9cc8d2",
       "vocab-61b1348fd56a"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-5207"
+    ],
     "tokens": [
       {
         "surface": "この",
@@ -31393,6 +31537,7 @@
       "vocab-9aa7d5bc2d8f"
     ],
     "kanjiIds": [
+      "kanji-516c",
       "kanji-6b69"
     ],
     "tokens": [
@@ -31494,6 +31639,7 @@
       "kanji-66f8",
       "kanji-9928",
       "kanji-672c",
+      "kanji-501f",
       "kanji-884c"
     ],
     "tokens": [
@@ -32240,6 +32386,7 @@
     ],
     "kanjiIds": [
       "kanji-671d",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -32493,6 +32640,7 @@
     ],
     "kanjiIds": [
       "kanji-6599",
+      "kanji-7406",
       "kanji-98df"
     ],
     "tokens": [
@@ -32680,7 +32828,9 @@
       "vocab-beff4a4d6b56",
       "vocab-62a0b787b977"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-91cd"
+    ],
     "tokens": [
       {
         "surface": "この",
@@ -33063,6 +33213,7 @@
     ],
     "kanjiIds": [
       "kanji-79c1",
+      "kanji-72ac",
       "kanji-597d"
     ],
     "tokens": [
@@ -33164,6 +33315,7 @@
       "vocab-ef4cce00951f"
     ],
     "kanjiIds": [
+      "kanji-98a8",
       "kanji-5f37",
       "kanji-5bb6",
       "kanji-51fa"
@@ -33286,6 +33438,7 @@
       "vocab-2438f15019e7"
     ],
     "kanjiIds": [
+      "kanji-7a7a",
       "kanji-96e8"
     ],
     "tokens": [
@@ -33664,7 +33817,9 @@
       "vocab-123a10eb50b0"
     ],
     "kanjiIds": [
-      "kanji-7269"
+      "kanji-52d5",
+      "kanji-7269",
+      "kanji-72ac"
     ],
     "tokens": [
       {
@@ -33984,6 +34139,7 @@
       "kanji-9031",
       "kanji-4e21",
       "kanji-89aa",
+      "kanji-4eac",
       "kanji-65c5",
       "kanji-884c"
     ],
@@ -34502,6 +34658,7 @@
       "kanji-4e03",
       "kanji-6642",
       "kanji-671d",
+      "kanji-98ef",
       "kanji-98df",
       "kanji-5b66",
       "kanji-6821",
@@ -35157,6 +35314,7 @@
     "kanjiIds": [
       "kanji-624b",
       "kanji-6669",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -35315,6 +35473,7 @@
     ],
     "kanjiIds": [
       "kanji-671d",
+      "kanji-98ef",
       "kanji-98df",
       "kanji-5b66",
       "kanji-6821",
@@ -35510,7 +35669,8 @@
     "kanjiIds": [
       "kanji-4eca",
       "kanji-65e5",
-      "kanji-65e9"
+      "kanji-65e9",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -35954,7 +36114,9 @@
       "vocab-b4a022a9e7a6",
       "vocab-58a04652246f"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-9053"
+    ],
     "tokens": [
       {
         "surface": "危ない",
@@ -36035,7 +36197,8 @@
     ],
     "kanjiIds": [
       "kanji-65e5",
-      "kanji-66dc"
+      "kanji-66dc",
+      "kanji-516c"
     ],
     "tokens": [
       {
@@ -36130,6 +36293,7 @@
     ],
     "kanjiIds": [
       "kanji-663c",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -36231,6 +36395,7 @@
     ],
     "kanjiIds": [
       "kanji-59b9",
+      "kanji-6f22",
       "kanji-5b57",
       "kanji-8aad"
     ],
@@ -36334,6 +36499,7 @@
       "kanji-4e8b",
       "kanji-5f8c",
       "kanji-6669",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -36542,6 +36708,7 @@
       "kanji-65e5",
       "kanji-66dc",
       "kanji-8aad",
+      "kanji-97f3",
       "kanji-697d",
       "kanji-805e"
     ],
@@ -36742,6 +36909,7 @@
     ],
     "kanjiIds": [
       "kanji-6669",
+      "kanji-98ef",
       "kanji-524d",
       "kanji-624b",
       "kanji-98df",
@@ -37129,6 +37297,7 @@
       "kanji-5fd8",
       "kanji-8cb7",
       "kanji-7269",
+      "kanji-7d19",
       "kanji-66f8"
     ],
     "tokens": [
@@ -37374,6 +37543,7 @@
     ],
     "kanjiIds": [
       "kanji-59b9",
+      "kanji-6b4c",
       "kanji-597d"
     ],
     "tokens": [
@@ -37552,6 +37722,7 @@
     "kanjiIds": [
       "kanji-59c9",
       "kanji-81ea",
+      "kanji-8ee2",
       "kanji-8eca"
     ],
     "tokens": [
@@ -37729,6 +37900,7 @@
       "vocab-921d54ba31ef"
     ],
     "kanjiIds": [
+      "kanji-540c",
       "kanji-8272"
     ],
     "tokens": [
@@ -37932,7 +38104,9 @@
     "kanjiIds": [
       "kanji-6bcd",
       "kanji-65b0",
-      "kanji-670d"
+      "kanji-670d",
+      "kanji-5199",
+      "kanji-771f"
     ],
     "tokens": [
       {
@@ -38062,8 +38236,10 @@
     "kanjiIds": [
       "kanji-59c9",
       "kanji-6599",
+      "kanji-7406",
       "kanji-672c",
       "kanji-4f5c",
+      "kanji-65b9",
       "kanji-6559"
     ],
     "tokens": [
@@ -38205,7 +38381,8 @@
       "kanji-65e5",
       "kanji-4f55",
       "kanji-65b0",
-      "kanji-6642"
+      "kanji-6642",
+      "kanji-8a08"
     ],
     "tokens": [
       {
@@ -38448,7 +38625,8 @@
       "vocab-032ac6757485"
     ],
     "kanjiIds": [
-      "kanji-4f11"
+      "kanji-4f11",
+      "kanji-59cb"
     ],
     "tokens": [
       {
@@ -38540,7 +38718,8 @@
     ],
     "kanjiIds": [
       "kanji-96fb",
-      "kanji-8eca"
+      "kanji-8eca",
+      "kanji-6b62"
     ],
     "tokens": [
       {
@@ -38726,6 +38905,7 @@
     "kanjiIds": [
       "kanji-99c5",
       "kanji-884c",
+      "kanji-5730",
       "kanji-4e0b"
     ],
     "tokens": [
@@ -38938,7 +39118,8 @@
     "kanjiIds": [
       "kanji-98f2",
       "kanji-7269",
-      "kanji-597d"
+      "kanji-597d",
+      "kanji-725b"
     ],
     "tokens": [
       {
@@ -39553,6 +39734,7 @@
     ],
     "kanjiIds": [
       "kanji-5e97",
+      "kanji-725b",
       "kanji-8089",
       "kanji-5206"
     ],
@@ -39947,7 +40129,9 @@
       "vocab-3ad79496437d"
     ],
     "kanjiIds": [
-      "kanji-671d"
+      "kanji-671d",
+      "kanji-98ef",
+      "kanji-725b"
     ],
     "tokens": [
       {
@@ -40037,6 +40221,8 @@
     "kanjiIds": [
       "kanji-4f11",
       "kanji-65e5",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b"
     ],
     "tokens": [
@@ -40575,6 +40761,7 @@
     ],
     "kanjiIds": [
       "kanji-5927",
+      "kanji-72ac",
       "kanji-898b"
     ],
     "tokens": [
@@ -40665,6 +40852,7 @@
       "kanji-66dc",
       "kanji-65e5",
       "kanji-5915",
+      "kanji-65b9",
       "kanji-9752",
       "kanji-8cb7"
     ],
@@ -40766,6 +40954,7 @@
       "kanji-767e",
       "kanji-5c4b",
       "kanji-8272",
+      "kanji-91ce",
       "kanji-8cb7"
     ],
     "tokens": [
@@ -40881,6 +41070,8 @@
     "kanjiIds": [
       "kanji-53f3",
       "kanji-66f2",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-9928"
     ],
     "tokens": [
@@ -40994,6 +41185,7 @@
       "kanji-5927",
       "kanji-4f7f",
       "kanji-9928",
+      "kanji-5730",
       "kanji-56f3"
     ],
     "tokens": [
@@ -41095,7 +41287,8 @@
     ],
     "kanjiIds": [
       "kanji-968e",
-      "kanji-51fa"
+      "kanji-51fa",
+      "kanji-53e3"
     ],
     "tokens": [
       {
@@ -41308,6 +41501,7 @@
       "vocab-a76603aae6e4"
     ],
     "kanjiIds": [
+      "kanji-9053",
       "kanji-5de6",
       "kanji-66f2",
       "kanji-6b69"
@@ -41513,7 +41707,8 @@
       "vocab-84e555b3292a"
     ],
     "kanjiIds": [
-      "kanji-671d"
+      "kanji-671d",
+      "kanji-4f53"
     ],
     "tokens": [
       {
@@ -41613,6 +41808,7 @@
       "vocab-dcd3acd6b659"
     ],
     "kanjiIds": [
+      "kanji-98ef",
       "kanji-98df",
       "kanji-98f2"
     ],
@@ -42025,6 +42221,7 @@
       "vocab-0b969a8c0944"
     ],
     "kanjiIds": [
+      "kanji-60aa",
       "kanji-5927",
       "kanji-8a71"
     ],
@@ -42255,6 +42452,7 @@
       "kanji-4eca",
       "kanji-6669",
       "kanji-5915",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -42482,6 +42680,7 @@
     "kanjiIds": [
       "kanji-6bce",
       "kanji-671d",
+      "kanji-516c",
       "kanji-6b69"
     ],
     "tokens": [
@@ -42640,6 +42839,7 @@
       "kanji-4e00",
       "kanji-65e5",
       "kanji-591c",
+      "kanji-98a8",
       "kanji-5f37",
       "kanji-6728",
       "kanji-958b"
@@ -43045,6 +43245,7 @@
     ],
     "kanjiIds": [
       "kanji-5927",
+      "kanji-5207",
       "kanji-65e5",
       "kanji-66f8"
     ],
@@ -43351,6 +43552,8 @@
       "vocab-bfe63a77332b"
     ],
     "kanjiIds": [
+      "kanji-9ce5",
+      "kanji-516c",
       "kanji-4e0a"
     ],
     "tokens": [
@@ -43447,6 +43650,7 @@
     "kanjiIds": [
       "kanji-6bce",
       "kanji-5e74",
+      "kanji-6625",
       "kanji-82b1"
     ],
     "tokens": [
@@ -43655,6 +43859,7 @@
       "vocab-152ea0d72dc5"
     ],
     "kanjiIds": [
+      "kanji-5efa",
       "kanji-7269",
       "kanji-75c5",
       "kanji-9662"
@@ -43767,6 +43972,7 @@
     ],
     "kanjiIds": [
       "kanji-65e5",
+      "kanji-6d77",
       "kanji-9752"
     ],
     "tokens": [
@@ -43867,6 +44073,7 @@
       "vocab-dfb6d8ba613b"
     ],
     "kanjiIds": [
+      "kanji-696d",
       "kanji-5f8c",
       "kanji-4e00",
       "kanji-5bbf",
@@ -43979,7 +44186,8 @@
       "vocab-dfb6d8ba613b"
     ],
     "kanjiIds": [
-      "kanji-663c"
+      "kanji-663c",
+      "kanji-98ef"
     ],
     "tokens": [
       {
@@ -44199,6 +44407,7 @@
       "vocab-86127e9c0299"
     ],
     "kanjiIds": [
+      "kanji-5207",
       "kanji-624b",
       "kanji-8cb7",
       "kanji-5c40",
@@ -44463,7 +44672,9 @@
     "kanjiIds": [
       "kanji-7236",
       "kanji-4eca",
+      "kanji-53f0",
       "kanji-6599",
+      "kanji-7406",
       "kanji-4e2d"
     ],
     "tokens": [
@@ -45149,6 +45360,8 @@
     "kanjiIds": [
       "kanji-5bb6",
       "kanji-65cf",
+      "kanji-5199",
+      "kanji-771f",
       "kanji-898b"
     ],
     "tokens": [
@@ -45327,8 +45540,10 @@
       "vocab-a249b72fa923"
     ],
     "kanjiIds": [
+      "kanji-4eac",
       "kanji-753a",
       "kanji-53e4",
+      "kanji-5efa",
       "kanji-7269",
       "kanji-591a"
     ],
@@ -45677,7 +45892,9 @@
       "vocab-f4ee05460d54",
       "vocab-58a04652246f"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-9053"
+    ],
     "tokens": [
       {
         "surface": "道",
@@ -46752,6 +46969,7 @@
       "vocab-516ad1128c71"
     ],
     "kanjiIds": [
+      "kanji-91cd",
       "kanji-6301"
     ],
     "tokens": [
@@ -47480,6 +47698,7 @@
       "vocab-a76603aae6e4"
     ],
     "kanjiIds": [
+      "kanji-5730",
       "kanji-56f3",
       "kanji-898b",
       "kanji-6b69"
@@ -47584,6 +47803,7 @@
       "kanji-4eca",
       "kanji-65e5",
       "kanji-99c5",
+      "kanji-9053",
       "kanji-6b69"
     ],
     "tokens": [
@@ -47696,6 +47916,7 @@
       "kanji-96e8",
       "kanji-65e5",
       "kanji-5bb6",
+      "kanji-97f3",
       "kanji-697d",
       "kanji-805e"
     ],
@@ -47842,7 +48063,8 @@
     "kanjiIds": [
       "kanji-65e5",
       "kanji-66dc",
-      "kanji-7236"
+      "kanji-7236",
+      "kanji-516c"
     ],
     "tokens": [
       {
@@ -48725,6 +48947,7 @@
       "vocab-19be7f7be766"
     ],
     "kanjiIds": [
+      "kanji-590f",
       "kanji-4e00",
       "kanji-5e74"
     ],
@@ -48818,6 +49041,7 @@
       "vocab-d72e08381953"
     ],
     "kanjiIds": [
+      "kanji-9053",
       "kanji-99c5",
       "kanji-8fd1"
     ],
@@ -48946,6 +49170,7 @@
     ],
     "kanjiIds": [
       "kanji-53cb",
+      "kanji-540c",
       "kanji-672c",
       "kanji-8cb7"
     ],
@@ -49032,7 +49257,9 @@
     ],
     "kanjiIds": [
       "kanji-81ea",
-      "kanji-8eca"
+      "kanji-8ee2",
+      "kanji-8eca",
+      "kanji-501f"
     ],
     "tokens": [
       {
@@ -49139,7 +49366,10 @@
     ],
     "kanjiIds": [
       "kanji-59b9",
+      "kanji-52d5",
       "kanji-7269",
+      "kanji-5199",
+      "kanji-771f",
       "kanji-597d"
     ],
     "tokens": [
@@ -49238,6 +49468,7 @@
       "kanji-5148",
       "kanji-751f",
       "kanji-5b50",
+      "kanji-6f22",
       "kanji-5b57",
       "kanji-6559",
       "kanji-4e0a",
@@ -49413,6 +49644,7 @@
       "vocab-ec22142c23d3"
     ],
     "kanjiIds": [
+      "kanji-51ac",
       "kanji-5c71",
       "kanji-898b",
       "kanji-884c"
@@ -49706,6 +49938,7 @@
       "vocab-ef4cce00951f"
     ],
     "kanjiIds": [
+      "kanji-9053",
       "kanji-4e00",
       "kanji-4eba",
       "kanji-5e30"
@@ -50032,6 +50265,7 @@
       "kanji-5ddd",
       "kanji-8fd1",
       "kanji-81ea",
+      "kanji-8ee2",
       "kanji-8eca",
       "kanji-8d70"
     ],
@@ -50146,6 +50380,7 @@
       "vocab-b66f43bc23a1"
     ],
     "kanjiIds": [
+      "kanji-9053",
       "kanji-884c",
       "kanji-53f3",
       "kanji-9280"
@@ -50280,7 +50515,8 @@
       "kanji-5fd8",
       "kanji-6642",
       "kanji-53cb",
-      "kanji-91d1"
+      "kanji-91d1",
+      "kanji-8cb8"
     ],
     "tokens": [
       {
@@ -50689,6 +50925,7 @@
       "vocab-e71d7d160f29"
     ],
     "kanjiIds": [
+      "kanji-72ac",
       "kanji-5927",
       "kanji-5f37"
     ],
@@ -51312,6 +51549,8 @@
     "kanjiIds": [
       "kanji-65c5",
       "kanji-884c",
+      "kanji-5199",
+      "kanji-771f",
       "kanji-53cb"
     ],
     "tokens": [
@@ -51419,7 +51658,8 @@
       "kanji-672c",
       "kanji-8a9e",
       "kanji-52c9",
-      "kanji-5f37"
+      "kanji-5f37",
+      "kanji-8cb8"
     ],
     "tokens": [
       {
@@ -51562,6 +51802,7 @@
     "kanjiIds": [
       "kanji-59c9",
       "kanji-99c5",
+      "kanji-5207",
       "kanji-8cb7"
     ],
     "tokens": [
@@ -51666,7 +51907,8 @@
     ],
     "kanjiIds": [
       "kanji-6bcd",
-      "kanji-77ed"
+      "kanji-77ed",
+      "kanji-5207"
     ],
     "tokens": [
       {
@@ -51762,6 +52004,7 @@
       "kanji-7236",
       "kanji-65b0",
       "kanji-6642",
+      "kanji-8a08",
       "kanji-898b"
     ],
     "tokens": [
@@ -51854,6 +52097,7 @@
       "kanji-65e5",
       "kanji-672c",
       "kanji-6599",
+      "kanji-7406",
       "kanji-6559"
     ],
     "tokens": [
@@ -51971,6 +52215,8 @@
     ],
     "kanjiIds": [
       "kanji-53e4",
+      "kanji-5199",
+      "kanji-771f",
       "kanji-898b"
     ],
     "tokens": [
@@ -52066,6 +52312,7 @@
     "kanjiIds": [
       "kanji-53cb",
       "kanji-99c5",
+      "kanji-9053",
       "kanji-6559"
     ],
     "tokens": [
@@ -52570,6 +52817,7 @@
     "kanjiIds": [
       "kanji-96fb",
       "kanji-8eca",
+      "kanji-4eac",
       "kanji-884c",
       "kanji-5206"
     ],
@@ -53102,6 +53350,7 @@
     ],
     "kanjiIds": [
       "kanji-6669",
+      "kanji-98ef",
       "kanji-4f55",
       "kanji-4f5c"
     ],
@@ -53479,6 +53728,7 @@
     "kanjiIds": [
       "kanji-5bb6",
       "kanji-65cf",
+      "kanji-97f3",
       "kanji-697d",
       "kanji-9759",
       "kanji-805e"
@@ -54061,7 +54311,10 @@
       "vocab-3f6c04a2d9e0",
       "vocab-1ee90bf5d13a"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-91ce",
+      "kanji-5207"
+    ],
     "tokens": [
       {
         "surface": "野菜",
@@ -54459,7 +54712,9 @@
       "vocab-897d3a642135"
     ],
     "kanjiIds": [
-      "kanji-5c4b"
+      "kanji-5c4b",
+      "kanji-5199",
+      "kanji-771f"
     ],
     "tokens": [
       {
@@ -54727,6 +54982,7 @@
     "kanjiIds": [
       "kanji-6bcd",
       "kanji-6599",
+      "kanji-7406",
       "kanji-4e0a",
       "kanji-624b"
     ],
@@ -54967,6 +55223,7 @@
       "kanji-5144",
       "kanji-4f1a",
       "kanji-793e",
+      "kanji-54e1",
       "kanji-59c9",
       "kanji-5b66",
       "kanji-751f"
@@ -55365,6 +55622,9 @@
     "kanjiIds": [
       "kanji-5148",
       "kanji-751f",
+      "kanji-4eac",
+      "kanji-5199",
+      "kanji-771f",
       "kanji-898b"
     ],
     "tokens": [
@@ -55491,6 +55751,7 @@
       "kanji-6708",
       "kanji-5bb6",
       "kanji-65cf",
+      "kanji-4eac",
       "kanji-884c"
     ],
     "tokens": [
@@ -55999,7 +56260,8 @@
       "vocab-dfb6d8ba613b"
     ],
     "kanjiIds": [
-      "kanji-59c9"
+      "kanji-59c9",
+      "kanji-540c"
     ],
     "tokens": [
       {
@@ -56102,7 +56364,9 @@
       "vocab-74ec2cfe0a44",
       "vocab-b1d6f8ff0597"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-6625"
+    ],
     "tokens": [
       {
         "surface": "春",
@@ -56354,6 +56618,7 @@
       "vocab-ef4cce00951f"
     ],
     "kanjiIds": [
+      "kanji-98a8",
       "kanji-4eca",
       "kanji-65e5",
       "kanji-65e9"
@@ -56780,7 +57045,8 @@
     "kanjiIds": [
       "kanji-660e",
       "kanji-65e5",
-      "kanji-65e9"
+      "kanji-65e9",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -57021,6 +57287,7 @@
       "kanji-66f8",
       "kanji-9928",
       "kanji-672c",
+      "kanji-501f",
       "kanji-884c"
     ],
     "tokens": [
@@ -58367,6 +58634,8 @@
       "vocab-c7c31671d53c"
     ],
     "kanjiIds": [
+      "kanji-5199",
+      "kanji-771f",
       "kanji-597d",
       "kanji-65b0"
     ],
@@ -58651,6 +58920,8 @@
       "kanji-9031",
       "kanji-53cb",
       "kanji-4e00",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b"
     ],
     "tokens": [
@@ -58784,6 +59055,7 @@
       "vocab-32a5e8698306"
     ],
     "kanjiIds": [
+      "kanji-97f3",
       "kanji-697d",
       "kanji-805e",
       "kanji-597d"
@@ -59047,7 +59319,9 @@
     "kanjiIds": [
       "kanji-6bcd",
       "kanji-65b0",
-      "kanji-670d"
+      "kanji-670d",
+      "kanji-5199",
+      "kanji-771f"
     ],
     "tokens": [
       {
@@ -59206,8 +59480,10 @@
     "kanjiIds": [
       "kanji-59c9",
       "kanji-6599",
+      "kanji-7406",
       "kanji-672c",
       "kanji-4f5c",
+      "kanji-65b9",
       "kanji-6559"
     ],
     "tokens": [
@@ -60169,7 +60445,8 @@
     "kanjiIds": [
       "kanji-660e",
       "kanji-65e5",
-      "kanji-65e9"
+      "kanji-65e9",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -60298,6 +60575,7 @@
       "kanji-4e8b",
       "kanji-5f8c",
       "kanji-6669",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -60595,6 +60873,7 @@
       "vocab-dcd3acd6b659"
     ],
     "kanjiIds": [
+      "kanji-6d77",
       "kanji-98f2"
     ],
     "tokens": [
@@ -61689,7 +61968,8 @@
       "kanji-8ab0",
       "kanji-6765",
       "kanji-5206",
-      "kanji-81ea"
+      "kanji-81ea",
+      "kanji-59cb"
     ],
     "tokens": [
       {
@@ -61894,6 +62174,7 @@
       "kanji-9593",
       "kanji-4e09",
       "kanji-56de",
+      "kanji-97f3",
       "kanji-697d",
       "kanji-805e",
       "kanji-6642",
@@ -62055,6 +62336,7 @@
       "vocab-32a5e8698306"
     ],
     "kanjiIds": [
+      "kanji-72ac",
       "kanji-597d"
     ],
     "tokens": [
@@ -62188,6 +62470,7 @@
     "kanjiIds": [
       "kanji-59c9",
       "kanji-81ea",
+      "kanji-8ee2",
       "kanji-8eca"
     ],
     "tokens": [
@@ -62302,6 +62585,7 @@
       "kanji-66dc",
       "kanji-5bb6",
       "kanji-6599",
+      "kanji-7406",
       "kanji-4f5c"
     ],
     "tokens": [
@@ -62803,7 +63087,9 @@
       "vocab-ef4cce00951f"
     ],
     "kanjiIds": [
-      "kanji-5c4b"
+      "kanji-5c4b",
+      "kanji-5199",
+      "kanji-771f"
     ],
     "tokens": [
       {
@@ -62924,7 +63210,8 @@
     "kanjiIds": [
       "kanji-660e",
       "kanji-65e5",
-      "kanji-65e9"
+      "kanji-65e9",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -63019,7 +63306,10 @@
       "vocab-d5901ecbf5fb",
       "vocab-897d3a642135"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-5199",
+      "kanji-771f"
+    ],
     "tokens": [
       {
         "surface": "ここ",
@@ -63115,7 +63405,8 @@
       "vocab-642d3200e09f"
     ],
     "kanjiIds": [
-      "kanji-96e8"
+      "kanji-96e8",
+      "kanji-8cb8"
     ],
     "tokens": [
       {
@@ -63783,6 +64074,7 @@
     ],
     "kanjiIds": [
       "kanji-671d",
+      "kanji-98ef",
       "kanji-98df",
       "kanji-5b66",
       "kanji-6821",
@@ -63914,7 +64206,10 @@
       "vocab-d5901ecbf5fb",
       "vocab-897d3a642135"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-5199",
+      "kanji-771f"
+    ],
     "tokens": [
       {
         "surface": "ここ",
@@ -64822,6 +65117,7 @@
       "kanji-65e5",
       "kanji-96e8",
       "kanji-81ea",
+      "kanji-8ee2",
       "kanji-8eca"
     ],
     "tokens": [
@@ -64948,7 +65244,8 @@
     "kanjiIds": [
       "kanji-4eca",
       "kanji-65e5",
-      "kanji-65e9"
+      "kanji-65e9",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -65052,7 +65349,8 @@
     ],
     "kanjiIds": [
       "kanji-96fb",
-      "kanji-8eca"
+      "kanji-8eca",
+      "kanji-6b62"
     ],
     "tokens": [
       {
@@ -65283,6 +65581,7 @@
       "vocab-fae75d2d18b2"
     ],
     "kanjiIds": [
+      "kanji-5207",
       "kanji-624b"
     ],
     "tokens": [
@@ -67173,7 +67472,9 @@
     "kanjiIds": [
       "kanji-6bce",
       "kanji-671d",
+      "kanji-516c",
       "kanji-6b69",
+      "kanji-97f3",
       "kanji-697d",
       "kanji-805e"
     ],
@@ -67289,6 +67590,8 @@
     "kanjiIds": [
       "kanji-96e8",
       "kanji-5bb6",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b"
     ],
     "tokens": [
@@ -67422,6 +67725,7 @@
     "kanjiIds": [
       "kanji-6bcd",
       "kanji-4f5c",
+      "kanji-65b9",
       "kanji-6559"
     ],
     "tokens": [
@@ -67664,6 +67968,8 @@
     "kanjiIds": [
       "kanji-65e5",
       "kanji-66dc",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b",
       "kanji-672c",
       "kanji-8aad"
@@ -67921,7 +68227,8 @@
       "kanji-66f8",
       "kanji-9928",
       "kanji-884c",
-      "kanji-672c"
+      "kanji-672c",
+      "kanji-501f"
     ],
     "tokens": [
       {
@@ -68071,7 +68378,9 @@
       "vocab-463ea6ce108e",
       "vocab-c7c31671d53c"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-91cd"
+    ],
     "tokens": [
       {
         "surface": "この",
@@ -68331,6 +68640,7 @@
       "vocab-e2f1dae6743a"
     ],
     "kanjiIds": [
+      "kanji-516c",
       "kanji-5b50",
       "kanji-56db",
       "kanji-4eba"
@@ -68811,6 +69121,7 @@
       "vocab-99b783690b64"
     ],
     "kanjiIds": [
+      "kanji-65b9",
       "kanji-65b0",
       "kanji-533b",
       "kanji-8005",
@@ -69717,7 +70028,9 @@
     "kanjiIds": [
       "kanji-5b66",
       "kanji-6821",
-      "kanji-4f11"
+      "kanji-590f",
+      "kanji-4f11",
+      "kanji-59cb"
     ],
     "tokens": [
       {
@@ -69840,6 +70153,7 @@
       "kanji-65b0",
       "kanji-805e",
       "kanji-8aad",
+      "kanji-98ef",
       "kanji-98df",
       "kanji-4ed5",
       "kanji-4e8b"
@@ -70006,6 +70320,7 @@
       "vocab-caa3749b479b"
     ],
     "kanjiIds": [
+      "kanji-5efa",
       "kanji-7269",
       "kanji-53bb",
       "kanji-5e74",
@@ -70313,6 +70628,7 @@
     ],
     "kanjiIds": [
       "kanji-624b",
+      "kanji-7d19",
       "kanji-66f8"
     ],
     "tokens": [
@@ -70679,6 +70995,8 @@
       "kanji-98f2",
       "kanji-53cb",
       "kanji-4e00",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-9928",
       "kanji-884c"
     ],
@@ -71248,9 +71566,11 @@
     "kanjiIds": [
       "kanji-5144",
       "kanji-6599",
+      "kanji-7406",
       "kanji-4f5c",
       "kanji-4e0a",
       "kanji-624b",
+      "kanji-6709",
       "kanji-540d",
       "kanji-50cd"
     ],
@@ -71434,6 +71754,7 @@
       "kanji-6708",
       "kanji-65b0",
       "kanji-81ea",
+      "kanji-8ee2",
       "kanji-8eca",
       "kanji-8cb7",
       "kanji-601d"
@@ -71751,6 +72072,7 @@
     "kanjiIds": [
       "kanji-7236",
       "kanji-6642",
+      "kanji-8a08",
       "kanji-4e94"
     ],
     "tokens": [
@@ -71876,6 +72198,7 @@
     ],
     "kanjiIds": [
       "kanji-65e5",
+      "kanji-516c",
       "kanji-9759",
       "kanji-65e9",
       "kanji-5e30"
@@ -72770,7 +73093,10 @@
       "vocab-ea75e321b7ef",
       "vocab-19be7f7be766"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-590f",
+      "kanji-51ac"
+    ],
     "tokens": [
       {
         "surface": "夏",
@@ -73040,6 +73366,7 @@
     ],
     "kanjiIds": [
       "kanji-6642",
+      "kanji-516c",
       "kanji-672c",
       "kanji-8aad"
     ],
@@ -73455,6 +73782,8 @@
       "vocab-ec22142c23d3"
     ],
     "kanjiIds": [
+      "kanji-696d",
+      "kanji-59cb",
       "kanji-6559",
       "kanji-5ba4",
       "kanji-884c"
@@ -73586,6 +73915,7 @@
     "kanjiIds": [
       "kanji-5144",
       "kanji-6642",
+      "kanji-8a08",
       "kanji-7236"
     ],
     "tokens": [
@@ -74564,7 +74894,8 @@
     "kanjiIds": [
       "kanji-6bcd",
       "kanji-82b1",
-      "kanji-6642"
+      "kanji-6642",
+      "kanji-8a08"
     ],
     "tokens": [
       {
@@ -74726,6 +75057,7 @@
       "kanji-7236",
       "kanji-8eca",
       "kanji-6bcd",
+      "kanji-540c",
       "kanji-8272"
     ],
     "tokens": [
@@ -75138,6 +75470,7 @@
       "vocab-a249b72fa923"
     ],
     "kanjiIds": [
+      "kanji-516c",
       "kanji-5e83",
       "kanji-6728",
       "kanji-591a"
@@ -75267,6 +75600,7 @@
     ],
     "kanjiIds": [
       "kanji-4f7f",
+      "kanji-65b9",
       "kanji-6559"
     ],
     "tokens": [
@@ -75371,8 +75705,10 @@
       "vocab-de83de37aff5"
     ],
     "kanjiIds": [
+      "kanji-6f22",
       "kanji-5b57",
       "kanji-66f8",
+      "kanji-65b9",
       "kanji-6559"
     ],
     "tokens": [
@@ -75583,7 +75919,9 @@
       "vocab-897d3a642135"
     ],
     "kanjiIds": [
-      "kanji-59c9"
+      "kanji-59c9",
+      "kanji-5199",
+      "kanji-771f"
     ],
     "tokens": [
       {
@@ -75688,7 +76026,9 @@
       "vocab-704870bca266",
       "vocab-beff4a4d6b56"
     ],
-    "kanjiIds": [],
+    "kanjiIds": [
+      "kanji-91cd"
+    ],
     "tokens": [
       {
         "surface": "この",
@@ -75928,6 +76268,7 @@
       "vocab-dfb6d8ba613b"
     ],
     "kanjiIds": [
+      "kanji-97f3",
       "kanji-697d",
       "kanji-805e",
       "kanji-52c9",
@@ -76088,6 +76429,7 @@
     ],
     "kanjiIds": [
       "kanji-671d",
+      "kanji-98ef",
       "kanji-98df"
     ],
     "tokens": [
@@ -77222,6 +77564,7 @@
       "kanji-660e",
       "kanji-65e5",
       "kanji-65e9",
+      "kanji-8d77",
       "kanji-601d"
     ],
     "tokens": [
@@ -77375,6 +77718,8 @@
     "kanjiIds": [
       "kanji-4eca",
       "kanji-6669",
+      "kanji-6620",
+      "kanji-753b",
       "kanji-898b",
       "kanji-601d"
     ],
@@ -77465,6 +77810,7 @@
       "vocab-d34997e828cb"
     ],
     "kanjiIds": [
+      "kanji-6f22",
       "kanji-5b57",
       "kanji-8aad",
       "kanji-66f8"
@@ -77929,7 +78275,8 @@
     "kanjiIds": [
       "kanji-6bce",
       "kanji-65e5",
-      "kanji-65e9"
+      "kanji-65e9",
+      "kanji-8d77"
     ],
     "tokens": [
       {
@@ -78836,6 +79183,7 @@
       "vocab-0ec838cc07ea"
     ],
     "kanjiIds": [
+      "kanji-6f22",
       "kanji-5b57",
       "kanji-899a"
     ],
@@ -79259,6 +79607,7 @@
       "vocab-dfb6d8ba613b"
     ],
     "kanjiIds": [
+      "kanji-590f",
       "kanji-4f11",
       "kanji-9593",
       "kanji-6bce",
@@ -79359,6 +79708,7 @@
       "vocab-dfb6d8ba613b"
     ],
     "kanjiIds": [
+      "kanji-590f",
       "kanji-4f11",
       "kanji-9593",
       "kanji-52c9",
@@ -79450,6 +79800,7 @@
       "kanji-65e5",
       "kanji-672c",
       "kanji-9593",
+      "kanji-4eac",
       "kanji-884c"
     ],
     "tokens": [
@@ -79667,7 +80018,9 @@
       "vocab-ef4cce00951f"
     ],
     "kanjiIds": [
-      "kanji-884c"
+      "kanji-4eac",
+      "kanji-884c",
+      "kanji-79cb"
     ],
     "tokens": [
       {

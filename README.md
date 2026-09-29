@@ -44,8 +44,8 @@ every graded position; SRS folds repeated units into one conservative update.
 Vocabulary alternates Japanese-to-English and English-to-Japanese prompts,
 grades curated answer forms locally, and schedules one shared card per word.
 Kanji exercises use complete beginner words in alternating word-to-reading and
-reading-to-missing-character directions. All 209 characters in the B6-B4
-curriculum are active, have their own FSRS cards, and reveal original visual
+reading-to-missing-character directions. All 288 characters in the cumulative
+N5–N4 curriculum are active, have their own FSRS cards, and reveal original visual
 meaning and reading mnemonics in English or French. Kanji-only example words
 fill the few gaps in the N5 vocabulary inventory without entering its SRS.
 Conjugation exercises reuse 48 beginner verbs and 80 adjectives across 88
@@ -84,12 +84,15 @@ Development-time generation is split from the browser runtime:
 | `data/jlpt-n5-vocabulary.json` | Multi-level synthetic vocabulary inventory (legacy filename) | Committed |
 | `data/source/open-anki-jlpt-n4.csv` | Pinned upstream N4 vocabulary snapshot used by the importer | Committed |
 | `data/source/rikkyo-n5-kanji.json` | Rikkyo's staged 209-character N5-equivalent curriculum | Committed |
+| `data/source/jlpt-n4-kanji.json` | Pinned 170-character N4 reference and the metadata used to derive its 79-character delta | Committed |
 | `data/jlpt-n5-kanji.json` | Generated kanji metadata used by lessons and Statistics | Committed |
 | `data/kanji-contexts.json` | Kanji-only example words for curriculum coverage gaps | Committed |
 | `data/source/kanji-components.json` | Default English keyword for every visual mnemonic component | Committed |
 | `data/source/kanji-mnemonics.json` | Original visual, meaning, reading, and anchor-word memory aids, with optional per-kanji `componentLabels` | Committed |
+| `data/source/n4-kanji-mnemonics.json` | Original English mnemonic layer for the N4 kanji delta | Committed |
 | `data/source/locales/fr/kanji-components.json` | Default French component keywords | Committed |
 | `data/source/locales/fr/kanji-mnemonics.json` | French mnemonic prose and matching per-kanji component labels | Committed |
+| `data/source/locales/fr/n4-kanji-mnemonics.json` | Original French mnemonic layer for the N4 kanji delta | Committed |
 | `data/kanji-mnemonics.json` | Generated browser-ready English mnemonic catalogue | Committed |
 | `data/locales/fr/kanji-mnemonics.json` | Generated browser-ready French mnemonic catalogue | Committed |
 | `data/introduction.json` | Generated browser-ready introduction with tokens | Committed |
@@ -368,7 +371,8 @@ counts. Equivalent polite negatives are accepted, such as `高くないです` a
 
 ## Kanji exercises
 
-The Kanji section covers Rikkyo's complete 209-character B6-B4 curriculum. Each
+The Kanji section covers Rikkyo's complete 209-character B6-B4 foundation plus
+the 79 characters missing from the pinned N4 reference, for 288 total. Each
 character is practised inside a complete word instead of as an isolated list of
 dictionary readings. The app prefers the N5 core vocabulary and uses a small,
 separate Kanji-only context catalogue for characters without a suitable core
@@ -384,7 +388,7 @@ the target Kanji updates its FSRS card, while every Kanji present in the context
 is counted as encountered. Packaged vocabulary audio stays hidden until the
 solution is revealed, where it can play automatically according to Settings.
 The result also reveals the target's visual components, an original story that
-connects them to its meaning, useful N5 reading mnemonics, and one localized
+connects them to its meaning, useful level-appropriate reading mnemonics, and one localized
 anchor word for each reading. These are learner-facing visual associations, not
 historical etymologies.
 
@@ -606,8 +610,8 @@ snapshot can be checked or imported reproducibly with
 corrections, merged spellings, French localizations, and examples before
 committing a refreshed snapshot.
 
-Kanji curriculum membership comes from Rikkyo's B6-B4 list rather than lesson
-authors. Run `npm run kanji:update` to refresh meanings and readings from
+Kanji curriculum membership comes from Rikkyo's B6-B4 list and the pinned N4
+reference rather than lesson authors. Run `npm run kanji:update` to refresh meanings and readings from
 KANJIDIC2, then run `npm run content` to regenerate lesson `kanjiIds`. KANJIDIC2
 attribution and licence copies are under `licenses/`.
 

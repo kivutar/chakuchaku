@@ -5,7 +5,8 @@ import { fileURLToPath } from "node:url";
 import { XMLParser } from "fast-xml-parser";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
-const curriculumPath = join(rootDirectory, "data", "source", "rikkyo-n5-kanji.json");
+const n5CurriculumPath = join(rootDirectory, "data", "source", "rikkyo-n5-kanji.json");
+const n4CurriculumPath = join(rootDirectory, "data", "source", "jlpt-n4-kanji.json");
 const vocabularyPath = join(rootDirectory, "data", "jlpt-n5-vocabulary.json");
 const contextPath = join(rootDirectory, "data", "kanji-contexts.json");
 const outputPath = join(rootDirectory, "data", "jlpt-n5-kanji.json");
@@ -109,7 +110,8 @@ function hasReadingEvidence(
   reading,
   fullKunReading,
   vocabularyForms,
-  foldVoicing = false
+  foldVoicing = false,
+  allowKunStemFallback = true
 ) {
   const normalizedReading = normalizeForComparison(reading, foldVoicing);
   const normalizedFullKunReading = fullKunReading
@@ -165,7 +167,8 @@ function hasReadingEvidence(
       return candidate.length >= 2 && wordReading.includes(candidate);
     };
 
-    return matchesPosition(normalizedFullKunReading) || matchesPosition(normalizedReading);
+    return matchesPosition(normalizedFullKunReading) ||
+      (allowKunStemFallback && matchesPosition(normalizedReading));
   });
 }
 
@@ -184,13 +187,25 @@ async function loadKanjidicXml() {
   return gunzipSync(Buffer.from(await response.arrayBuffer())).toString("utf8");
 }
 
-const [curriculum, vocabulary, contexts, xml] = await Promise.all([
-  readFile(curriculumPath, "utf8").then(JSON.parse),
+const [n5Curriculum, n4Curriculum, vocabulary, contexts, xml] = await Promise.all([
+  readFile(n5CurriculumPath, "utf8").then(JSON.parse),
+  readFile(n4CurriculumPath, "utf8").then(JSON.parse),
   readFile(vocabularyPath, "utf8").then(JSON.parse),
   readFile(contextPath, "utf8").then(JSON.parse),
   loadKanjidicXml()
 ]);
-const vocabularyForms = createVocabularyForms([...vocabulary, ...contexts]);
+const curriculum = [
+  ...n5Curriculum.map((stage) => ({ ...stage, introducedAt: "n5" })),
+  {
+    stage: n4Curriculum.stage,
+    introducedAt: n4Curriculum.introducedAt,
+    meaningOverrides: n4Curriculum.meaningOverrides,
+    characters: [...n4Curriculum.characters]
+      .filter((character) => !n5Curriculum.some((stage) => stage.characters.includes(character)))
+      .join("")
+  }
+];
+const vocabularyEntries = [...vocabulary, ...contexts];
 const parser = new XMLParser({
   ignoreAttributes: false,
   parseTagValue: false,
@@ -204,9 +219,13 @@ const result = [];
 const seenCharacters = new Set();
 
 for (const stage of curriculum) {
+  const vocabularyForms = createVocabularyForms(vocabularyEntries.filter((entry) => {
+    return stage.introducedAt === "n4" || entry.introducedAt === "n5";
+  }));
+
   for (const character of stage.characters) {
     if (seenCharacters.has(character)) {
-      throw new Error(`${character} appears more than once in the Rikkyo curriculum.`);
+      throw new Error(`${character} appears more than once in the kanji curriculum.`);
     }
 
     const source = entriesByCharacter.get(character);
@@ -236,16 +255,34 @@ for (const stage of curriculum) {
       kunReadingCandidates.map(normalizeKunReading),
       true
     );
+    const preserveLegacyVoicing = stage.introducedAt === "n5";
     let onReadings = removeReadingPrefixes(allOnReadings.filter((reading) => {
-      return hasReadingEvidence(character, reading, undefined, vocabularyForms, true);
-    }), true);
+      return hasReadingEvidence(
+        character,
+        reading,
+        undefined,
+        vocabularyForms,
+        preserveLegacyVoicing
+      );
+    }), preserveLegacyVoicing);
     let kunReadings = uniqueByReading(kunReadingCandidates
       .filter((reading) => {
         const normalized = normalizeKunReading(reading);
         const fullReading = reading.replaceAll(".", "").replaceAll("-", "");
-        return hasReadingEvidence(character, normalized, fullReading, vocabularyForms, true);
+        return hasReadingEvidence(
+          character,
+          normalized,
+          fullReading,
+          vocabularyForms,
+          preserveLegacyVoicing,
+          preserveLegacyVoicing
+        );
       })
-      .map(normalizeKunReading), true);
+      .map(normalizeKunReading), preserveLegacyVoicing);
+    if (!preserveLegacyVoicing) {
+      const onReadingSet = new Set(onReadings);
+      kunReadings = kunReadings.filter((reading) => !onReadingSet.has(reading));
+    }
     kunReadings = kunReadings.filter((reading) => {
       const normalized = normalizeForComparison(reading, true);
 
@@ -283,9 +320,9 @@ for (const stage of curriculum) {
     result.push({
       id: `kanji-${codePoint}`,
       character,
-      meaning: vocabularyMeaning || meanings[0],
+      meaning: stage.meaningOverrides?.[character] || vocabularyMeaning || meanings[0],
       stage: stage.stage,
-      introducedAt: "n5",
+      introducedAt: stage.introducedAt,
       onReadings,
       kunReadings
     });

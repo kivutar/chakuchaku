@@ -3169,6 +3169,11 @@
         "reading": "す",
         "story": "Sue lives here: Sue begins with す.",
         "anchorId": "vocab-405805427b97"
+      },
+      {
+        "reading": "じゅう",
+        "story": "Jules writes his home address in huge letters: JU stretches into じゅう.",
+        "anchorId": "vocab-fcdd7a903190"
       }
     ]
   },
@@ -3353,6 +3358,11 @@
         "story": "In 仕事（しごと）, こと voices to ごと: every job is a matter to handle.",
         "anchorId": "vocab-cdf28ddaf837",
         "anchorReading": "ごと"
+      },
+      {
+        "reading": "じ",
+        "story": "Every errand is a little JOB; its first sound recalls じ in 用事（ようじ）.",
+        "anchorId": "vocab-71072742a1c5"
       }
     ]
   },
@@ -4668,6 +4678,1862 @@
         "reading": "こう",
         "story": "A cohort studies at school: cohort begins with こう.",
         "anchorId": "vocab-42edc1b83779"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-540c",
+    "components": [
+      {
+        "symbol": "冂",
+        "meaning": "enclosure"
+      },
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "One mouth speaks inside a shared enclosure, and every voice gives the same answer.",
+    "readings": [
+      {
+        "reading": "おな",
+        "story": "Two twins point at one another: ‘OH, NA—exactly the same!’ You meet おな in 同じ（おなじ）.",
+        "anchorId": "vocab-9ff4f40a3428"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5730",
+    "components": [
+      {
+        "symbol": "土",
+        "meaning": "earth"
+      },
+      {
+        "symbol": "也",
+        "meaning": "spreading shape"
+      }
+    ],
+    "meaningStory": "Earth spreads outward in every direction to form the ground beneath a place.",
+    "readings": [
+      {
+        "reading": "ち",
+        "story": "A piece of CHEEse drops onto the ground with ち. You meet ち in 地下鉄（ちかてつ）.",
+        "anchorId": "vocab-f0bea3272626"
+      },
+      {
+        "reading": "じ",
+        "story": "A GEEzer feels the ground shake and cries じ! You meet じ in 地震（じしん）.",
+        "anchorId": "vocab-4bb5dd8a62e0"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-696d",
+    "components": [
+      {
+        "symbol": "䒑",
+        "meaning": "notched rack"
+      },
+      {
+        "symbol": "木",
+        "meaning": "wooden stand"
+      }
+    ],
+    "meaningStory": "A notched rack stands over wood in a workshop: skilled work becomes a trade or business.",
+    "readings": [
+      {
+        "reading": "ぎょう",
+        "story": "A busy shop sells GYOza all day; GYO leads into ぎょう. You meet ぎょう in 授業（じゅぎょう）.",
+        "anchorId": "vocab-4c99b14fe21c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-65b9",
+    "components": [
+      {
+        "symbol": "方",
+        "meaning": "direction"
+      }
+    ],
+    "meaningStory": "A banner fixed to a pole points out a direction and therefore a way to proceed.",
+    "readings": [
+      {
+        "reading": "ほう",
+        "story": "Ask HOW to go that way; HOW points toward ほう. You meet ほう in 方（ほう）.",
+        "anchorId": "vocab-18fe4d351abc"
+      },
+      {
+        "reading": "かた",
+        "story": "A CAT chooses the proper way; CAT recalls かた. You meet かた in 方（かた）.",
+        "anchorId": "vocab-22d08b21620a"
+      },
+      {
+        "reading": "がた",
+        "story": "At evening, ask ‘GOT A way home?’; GOT A recalls がた. You meet がた in 夕方（ゆうがた）.",
+        "anchorId": "vocab-3534dd7d07d1"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5834",
+    "components": [
+      {
+        "symbol": "土",
+        "meaning": "earth"
+      },
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      },
+      {
+        "symbol": "勿",
+        "meaning": "tag"
+      }
+    ],
+    "meaningStory": "Sunbeams spread over a patch of earth, opening a place where people can gather.",
+    "readings": [
+      {
+        "reading": "じょう",
+        "story": "JOE reserves the whole venue; JOE stretches into じょう. You meet じょう in 工場（こうじょう）.",
+        "anchorId": "vocab-04ea77dcbf03"
+      },
+      {
+        "reading": "ば",
+        "story": "A BAR needs a fixed place; BAR begins with ば. You meet ば in 場所（ばしょ）.",
+        "anchorId": "vocab-79b9f20fa351"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-54e1",
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "貝",
+        "meaning": "shell money"
+      }
+    ],
+    "meaningStory": "A mouth reports the shell money it handles: this accountable person is a member or employee.",
+    "readings": [
+      {
+        "reading": "いん",
+        "story": "The employee clocks IN; IN gives いん. You meet いん in 員（いん）.",
+        "anchorId": "vocab-9958661a47af"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-529b",
+    "components": [
+      {
+        "symbol": "力",
+        "meaning": "strength"
+      }
+    ],
+    "meaningStory": "A bent, flexed arm is a direct picture of strength and power.",
+    "readings": [
+      {
+        "reading": "りょく",
+        "story": "Power surges like a RYOKU battle cry: りょく. You meet りょく in 能力（のうりょく）.",
+        "anchorId": "vocab-8670a6307d15"
+      },
+      {
+        "reading": "ちから",
+        "story": "A strong CHICK carries a rock; CHI-KA-RA recalls ちから. You meet ちから in 力（ちから）.",
+        "anchorId": "vocab-33c00f4a1a8b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4ee3",
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "person"
+      },
+      {
+        "symbol": "弋",
+        "meaning": "marker stake"
+      }
+    ],
+    "meaningStory": "A person hands over a marker to the next person: one substitutes for another across an era.",
+    "readings": [
+      {
+        "reading": "だい",
+        "story": "A substitute rolls the DIE; DIE recalls だい. You meet だい in 時代（じだい）.",
+        "anchorId": "vocab-0d603029022b"
+      },
+      {
+        "reading": "かわ",
+        "story": "The replacement arrives in a COVER; COVER begins like かわ. You meet かわ in 代わり（かわり）.",
+        "anchorId": "vocab-14631d2b2029"
+      },
+      {
+        "reading": "か",
+        "story": "A substitute CAT takes your place; its first sound is か. You meet か in 代わり（かわり）.",
+        "anchorId": "vocab-14631d2b2029"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-52d5",
+    "components": [
+      {
+        "symbol": "重",
+        "meaning": "heavy load"
+      },
+      {
+        "symbol": "力",
+        "meaning": "strength"
+      }
+    ],
+    "meaningStory": "Apply force to something heavy and it finally moves.",
+    "readings": [
+      {
+        "reading": "どう",
+        "story": "Push the heavy door—DO move! DO stretches to どう. You meet どう in 動物（どうぶつ）.",
+        "anchorId": "vocab-a3374580d856"
+      },
+      {
+        "reading": "うご",
+        "story": "The moving object goes ‘OO, GO!’: うご. You meet うご in 動く（うごく）.",
+        "anchorId": "vocab-247b87990016"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4eac",
+    "components": [
+      {
+        "symbol": "亠",
+        "meaning": "lid"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "小",
+        "meaning": "small"
+      }
+    ],
+    "meaningStory": "A tall roof, great gate, and small surrounding buildings mark the capital city.",
+    "readings": [
+      {
+        "reading": "きょう",
+        "story": "KYOTO is the capital clue: its KYO gives きょう. You meet きょう in 京都（きょうと）.",
+        "anchorId": "vocab-62153df2c4e3"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-76ee",
+    "components": [
+      {
+        "symbol": "目",
+        "meaning": "eye"
+      }
+    ],
+    "meaningStory": "The horizontal pupil inside a rectangular outline makes this an unmistakable eye.",
+    "readings": [
+      {
+        "reading": "もく",
+        "story": "A goal locks your eye on a MOCK target; MOCK recalls もく in 目的（もくてき）.",
+        "anchorId": "kanji-context-mokuteki"
+      },
+      {
+        "reading": "め",
+        "story": "An eye looks at ME; ME gives め. You meet め in 目（め）.",
+        "anchorId": "vocab-6c0b9f3278dc"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-901a",
+    "components": [
+      {
+        "symbol": "⻌",
+        "meaning": "road"
+      },
+      {
+        "symbol": "甬",
+        "meaning": "passage"
+      }
+    ],
+    "meaningStory": "A road runs straight through a passage, allowing traffic and repeated travel.",
+    "readings": [
+      {
+        "reading": "つう",
+        "story": "A train goes THROUGH; its opening sound recalls つう. You meet つう in 交通（こうつう）.",
+        "anchorId": "vocab-043434e7da99"
+      },
+      {
+        "reading": "とお",
+        "story": "The road goes THROUGH and on; imagine a long とお. You meet とお in 通る（とおる）.",
+        "anchorId": "vocab-0e61b7350e45"
+      },
+      {
+        "reading": "かよ",
+        "story": "Commuters carry a YO-yo back and forth: かよ. You meet かよ in 通う（かよう）.",
+        "anchorId": "vocab-b0613715b46e"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7406",
+    "components": [
+      {
+        "symbol": "王",
+        "meaning": "mineral veins"
+      },
+      {
+        "symbol": "里",
+        "meaning": "village"
+      }
+    ],
+    "meaningStory": "A mineral’s veins are sorted in the village until their underlying logic becomes clear.",
+    "readings": [
+      {
+        "reading": "り",
+        "story": "REason and logic begin with a sound like り. You meet り in 理由（りゆう）.",
+        "anchorId": "vocab-d96afe6fc743"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4f53",
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "person"
+      },
+      {
+        "symbol": "本",
+        "meaning": "root; basis"
+      }
+    ],
+    "meaningStory": "A person’s body is their physical basis and support.",
+    "readings": [
+      {
+        "reading": "たい",
+        "story": "TIE a ribbon around the body; TIE recalls たい. You meet たい in 大体（だいたい）.",
+        "anchorId": "vocab-97dfa455ab7e"
+      },
+      {
+        "reading": "からだ",
+        "story": "The body carries data—CARRY DATA echoes からだ. You meet からだ in 体（からだ）.",
+        "anchorId": "vocab-6e098e54aa63"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e3b",
+    "components": [
+      {
+        "symbol": "丶",
+        "meaning": "dot"
+      },
+      {
+        "symbol": "王",
+        "meaning": "treasure"
+      }
+    ],
+    "meaningStory": "A flame-like dot crowns a lampstand: the central light is the master and main focus.",
+    "readings": [
+      {
+        "reading": "しゅ",
+        "story": "The master says ‘SHOO!’ and everyone obeys; SHOO gives しゅ. You meet しゅ in 主人（しゅじん）.",
+        "anchorId": "kanji-context-shujin"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e0d",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "丿",
+        "meaning": "slash"
+      },
+      {
+        "symbol": "丨",
+        "meaning": "center line"
+      }
+    ],
+    "meaningStory": "A shoot is blocked by a ceiling and cannot grow: a strong image of not or un-.",
+    "readings": [
+      {
+        "reading": "ふ",
+        "story": "A firm ‘FOO, no!’ rejects the idea; FOO gives ふ. You meet ふ in 不便（ふべん）.",
+        "anchorId": "vocab-2a3a992197c7"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7684",
+    "components": [
+      {
+        "symbol": "白",
+        "meaning": "white"
+      },
+      {
+        "symbol": "勺",
+        "meaning": "ladle with a drop"
+      }
+    ],
+    "meaningStory": "A bright white target holds a small bull’s-eye: it marks what is targeted or -like.",
+    "readings": [
+      {
+        "reading": "てき",
+        "story": "Take aim with perfect TECHnique; TECH recalls てき. You meet てき in 目的（もくてき）.",
+        "anchorId": "kanji-context-mokuteki"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7528",
+    "components": [
+      {
+        "symbol": "用",
+        "meaning": "useful container"
+      }
+    ],
+    "meaningStory": "Marks divide a handled container into useful sections: a tool ready for use or a task.",
+    "readings": [
+      {
+        "reading": "よう",
+        "story": "YO! Put this tool to use; YO stretches into よう. You meet よう in 用事（ようじ）.",
+        "anchorId": "vocab-71072742a1c5"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5ea6",
+    "components": [
+      {
+        "symbol": "广",
+        "meaning": "shelter"
+      },
+      {
+        "symbol": "廿",
+        "meaning": "joined bars"
+      },
+      {
+        "symbol": "又",
+        "meaning": "hand"
+      }
+    ],
+    "meaningStory": "Under a shelter, a hand measures a fixed span: a degree, occurrence, or extent.",
+    "readings": [
+      {
+        "reading": "ど",
+        "story": "Measure the DOse by degree; DO gives ど. You meet ど in ～度（～ど）.",
+        "anchorId": "vocab-0e302b0c8583"
+      },
+      {
+        "reading": "たく",
+        "story": "Preparation is a measured TASK; TASK begins like たく. You meet たく in 支度（したく）.",
+        "anchorId": "vocab-81d17bdcb4bd"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-516c",
+    "components": [
+      {
+        "symbol": "八",
+        "meaning": "split"
+      },
+      {
+        "symbol": "厶",
+        "meaning": "private space"
+      }
+    ],
+    "meaningStory": "Private space is split open and shared with everyone, making it public.",
+    "readings": [
+      {
+        "reading": "こう",
+        "story": "A public COurt belongs to all; CO stretches into こう. You meet こう in 公園（こうえん）.",
+        "anchorId": "vocab-c3f997ee44ba"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-91ce",
+    "components": [
+      {
+        "symbol": "里",
+        "meaning": "village"
+      },
+      {
+        "symbol": "予",
+        "meaning": "weaving shuttle"
+      }
+    ],
+    "meaningStory": "Beyond the village, a shuttle-like path extends across the open plains.",
+    "readings": [
+      {
+        "reading": "や",
+        "story": "In the field you shout ‘YAH!’; YAH gives や. You meet や in 野菜（やさい）.",
+        "anchorId": "vocab-88763af54360"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4ee5",
+    "components": [
+      {
+        "symbol": "人",
+        "meaning": "person"
+      },
+      {
+        "symbol": "丶",
+        "meaning": "dot"
+      }
+    ],
+    "meaningStory": "A person takes a small mark and uses it as the means for comparison: by means of, from, or than.",
+    "readings": [
+      {
+        "reading": "い",
+        "story": "Use the marker: ‘E, from here onward’; E recalls い. You meet い in 以下（いか）.",
+        "anchorId": "vocab-075f4c445195"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-4e16",
+    "components": [
+      {
+        "symbol": "世",
+        "meaning": "linked generations"
+      }
+    ],
+    "meaningStory": "Three linked branches resemble generations joined across the world and through time.",
+    "readings": [
+      {
+        "reading": "せ",
+        "story": "A generation says ‘SEe the world’; SE gives せ. You meet せ in 世界（せかい）.",
+        "anchorId": "vocab-6eb4452fedae"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6b63",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "止",
+        "meaning": "foot"
+      }
+    ],
+    "meaningStory": "A foot stops exactly on the line: its position is correct.",
+    "readings": [
+      {
+        "reading": "しょう",
+        "story": "SHOW the correct answer; SHOW stretches into しょう. You meet しょう in 正月（しょうがつ）.",
+        "anchorId": "vocab-8f85dc2b0919"
+      },
+      {
+        "reading": "ただ",
+        "story": "The correct path is TA-DA!—there it is: ただ. You meet ただ in 正しい（ただしい）.",
+        "anchorId": "vocab-7003bbe10d0b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5fc3",
+    "components": [
+      {
+        "symbol": "心",
+        "meaning": "heart"
+      }
+    ],
+    "meaningStory": "The curved chambers and drops sketch the heart, seat of feelings and mind.",
+    "readings": [
+      {
+        "reading": "しん",
+        "story": "A feeling strikes your SHIN and reaches your heart: しん. You meet しん in 心配（しんぱい）.",
+        "anchorId": "vocab-a7095a66e0d8"
+      },
+      {
+        "reading": "こころ",
+        "story": "COCO protects a little heart; CO-CO-RO recalls こころ. You meet こころ in 心（こころ）.",
+        "anchorId": "vocab-3601c285284c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-754c",
+    "components": [
+      {
+        "symbol": "田",
+        "meaning": "field"
+      },
+      {
+        "symbol": "介",
+        "meaning": "divider"
+      }
+    ],
+    "meaningStory": "A divider stands over a field, drawing the boundary of a world or domain.",
+    "readings": [
+      {
+        "reading": "かい",
+        "story": "KAI draws a border around his world; KAI gives かい. You meet かい in 世界（せかい）.",
+        "anchorId": "vocab-6eb4452fedae"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-91cd",
+    "components": [
+      {
+        "symbol": "千",
+        "meaning": "thousand"
+      },
+      {
+        "symbol": "里",
+        "meaning": "village"
+      }
+    ],
+    "meaningStory": "A thousand units press down on a village: the load is heavy.",
+    "readings": [
+      {
+        "reading": "おも",
+        "story": "Lift the heavy load and groan ‘OH, MOre!’: おも. You meet おも in 重い（おもい）.",
+        "anchorId": "vocab-beff4a4d6b56"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8003",
+    "components": [
+      {
+        "symbol": "耂",
+        "meaning": "elder"
+      },
+      {
+        "symbol": "丂",
+        "meaning": "bent breath"
+      }
+    ],
+    "meaningStory": "An elder bends over, pauses, and thinks carefully before answering.",
+    "readings": [
+      {
+        "reading": "かんが",
+        "story": "A thinker CAN gather ideas; CAN-GA recalls かんが. You meet かんが in 考える（かんがえる）.",
+        "anchorId": "vocab-4f9ae60eff62"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-753b",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "田",
+        "meaning": "field"
+      },
+      {
+        "symbol": "凵",
+        "meaning": "open container"
+      }
+    ],
+    "meaningStory": "A field is framed inside straight borders, turning the view into a picture or plan.",
+    "readings": [
+      {
+        "reading": "が",
+        "story": "A film frame makes you GASP; GA gives が. You meet が in 映画（えいが）.",
+        "anchorId": "vocab-7b9d866e6dc2"
+      },
+      {
+        "reading": "かく",
+        "story": "Each plan has a calculated ANGLE; the hard KAK sound recalls かく. You meet かく in 計画（けいかく）.",
+        "anchorId": "vocab-f3534981adc8"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6d77",
+    "components": [
+      {
+        "symbol": "氵",
+        "meaning": "water"
+      },
+      {
+        "symbol": "毎",
+        "meaning": "every"
+      }
+    ],
+    "meaningStory": "Every drop of water flows together until it becomes the sea.",
+    "readings": [
+      {
+        "reading": "かい",
+        "story": "A KAYak crosses the sea; KAY gives かい. You meet かい in 海岸（かいがん）.",
+        "anchorId": "vocab-b9af11aa0741"
+      },
+      {
+        "reading": "うみ",
+        "story": "The sea says ‘OO, ME!’ at the horizon: うみ. You meet うみ in 海（うみ）.",
+        "anchorId": "vocab-47c1227c459b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9053",
+    "components": [
+      {
+        "symbol": "⻌",
+        "meaning": "road"
+      },
+      {
+        "symbol": "首",
+        "meaning": "head"
+      }
+    ],
+    "meaningStory": "A head travels along a road, choosing a way and following directions.",
+    "readings": [
+      {
+        "reading": "どう",
+        "story": "Follow the road to the DOOR; DO stretches into どう. You meet どう in 柔道（じゅうどう）.",
+        "anchorId": "vocab-3bfea40cee04"
+      },
+      {
+        "reading": "みち",
+        "story": "Mitch knows the way; MITCH recalls みち. You meet みち in 道（みち）.",
+        "anchorId": "vocab-b4a022a9e7a6"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-96c6",
+    "components": [
+      {
+        "symbol": "隹",
+        "meaning": "bird"
+      },
+      {
+        "symbol": "木",
+        "meaning": "tree"
+      }
+    ],
+    "meaningStory": "Birds gather on the same tree, forming a noisy collection.",
+    "readings": [
+      {
+        "reading": "あつ",
+        "story": "The birds gather with an ‘AH-TS!’ sneeze: あつ. You meet あつ in 集める（あつめる）.",
+        "anchorId": "vocab-26f8d7da9641"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5225",
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "力",
+        "meaning": "strength"
+      },
+      {
+        "symbol": "刂",
+        "meaning": "blade"
+      }
+    ],
+    "meaningStory": "A blade cuts a forcefully tied bundle apart: it becomes separate and different.",
+    "readings": [
+      {
+        "reading": "べつ",
+        "story": "A blade makes BETSY separate the pieces; BETS recalls べつ. You meet べつ in 別（べつ）.",
+        "anchorId": "vocab-87e8cf68e9cb"
+      },
+      {
+        "reading": "わか",
+        "story": "WAKA waves goodbye as the paths separate: わか. You meet わか in 別れる（わかれる）.",
+        "anchorId": "vocab-b746e2383e3b"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8a08",
+    "components": [
+      {
+        "symbol": "言",
+        "meaning": "words"
+      },
+      {
+        "symbol": "十",
+        "meaning": "cross"
+      }
+    ],
+    "meaningStory": "Words are crossed into a counted grid: counting becomes a plan.",
+    "readings": [
+      {
+        "reading": "けい",
+        "story": "KAY carefully calculates the plan; KAY gives けい. You meet けい in 計画（けいかく）.",
+        "anchorId": "vocab-f3534981adc8"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6b7b",
+    "components": [
+      {
+        "symbol": "歹",
+        "meaning": "bare remains"
+      },
+      {
+        "symbol": "匕",
+        "meaning": "person facing away"
+      }
+    ],
+    "meaningStory": "Bare remains lie beside a fallen person: a stark picture of death.",
+    "readings": [
+      {
+        "reading": "し",
+        "story": "Death brings complete SHEEr silence; SHE gives し. You meet し in 死ぬ（しぬ）.",
+        "anchorId": "vocab-dd5d31dbf7c9"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7279",
+    "components": [
+      {
+        "symbol": "牛",
+        "meaning": "cow"
+      },
+      {
+        "symbol": "寺",
+        "meaning": "temple"
+      }
+    ],
+    "meaningStory": "The temple keeps one ceremonial cow apart because it is special.",
+    "readings": [
+      {
+        "reading": "とく",
+        "story": "A special TOKEN is reserved; TOK recalls とく. You meet とく in 特に（とくに）.",
+        "anchorId": "vocab-e6674bacf655"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-59cb",
+    "components": [
+      {
+        "symbol": "女",
+        "meaning": "woman"
+      },
+      {
+        "symbol": "台",
+        "meaning": "platform"
+      }
+    ],
+    "meaningStory": "A woman steps onto a platform to begin the ceremony.",
+    "readings": [
+      {
+        "reading": "はじ",
+        "story": "At the start, a bell goes ‘HA-JI!’: はじ. You meet はじ in 始める（はじめる）.",
+        "anchorId": "vocab-79261a065ba5"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-904b",
+    "components": [
+      {
+        "symbol": "⻌",
+        "meaning": "road"
+      },
+      {
+        "symbol": "冖",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "車",
+        "meaning": "cart with wheels"
+      }
+    ],
+    "meaningStory": "A covered cart moves along the road, carrying goods to their destination.",
+    "readings": [
+      {
+        "reading": "うん",
+        "story": "The cart’s engine goes ‘OON’; OON gives うん. You meet うん in 運動（うんどう）.",
+        "anchorId": "vocab-8502a9e6483c"
+      },
+      {
+        "reading": "はこ",
+        "story": "HA, carry this COal! HA-CO recalls はこ. You meet はこ in 運ぶ（はこぶ）.",
+        "anchorId": "vocab-ac6ebe4452ce"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7d42",
+    "components": [
+      {
+        "symbol": "糸",
+        "meaning": "thread"
+      },
+      {
+        "symbol": "冬",
+        "meaning": "winter"
+      }
+    ],
+    "meaningStory": "A thread reaches winter and is tied off: the sequence ends.",
+    "readings": [
+      {
+        "reading": "お",
+        "story": "At the end, the audience says ‘OH!’: お. You meet お in 終る（おわる）.",
+        "anchorId": "vocab-6393ca7aefde"
+      },
+      {
+        "reading": "おわ",
+        "story": "The finale earns an ‘OH, WOW!’; OH-WA recalls おわ. You meet おわ in 終る（おわる）.",
+        "anchorId": "vocab-6393ca7aefde"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-53f0",
+    "components": [
+      {
+        "symbol": "厶",
+        "meaning": "private space"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "A raised elbow-like shape supports a square object: a stand, platform, or machine base.",
+    "readings": [
+      {
+        "reading": "だい",
+        "story": "A machine stands on a DIE-shaped base; DIE recalls だい. You meet だい in ～台（～だい）.",
+        "anchorId": "vocab-3dfd19ef0d27"
+      },
+      {
+        "reading": "たい",
+        "story": "A typhoon ties the platform down; TIE recalls たい. You meet たい in 台風（たいふう）.",
+        "anchorId": "vocab-f5e799449931"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7121",
+    "components": [
+      {
+        "symbol": "𠂉",
+        "meaning": "person"
+      },
+      {
+        "symbol": "卌",
+        "meaning": "ornament rack"
+      },
+      {
+        "symbol": "灬",
+        "meaning": "fire"
+      }
+    ],
+    "meaningStory": "An ancient dancer with ornaments over fire was borrowed to express absence: nothing or without.",
+    "readings": [
+      {
+        "reading": "む",
+        "story": "The empty room echoes ‘MOO’; MOO gives む. You meet む in 無理（むり）.",
+        "anchorId": "vocab-535d04fce7a1"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-771f",
+    "components": [
+      {
+        "symbol": "十",
+        "meaning": "cross"
+      },
+      {
+        "symbol": "目",
+        "meaning": "eye"
+      },
+      {
+        "symbol": "八",
+        "meaning": "split"
+      }
+    ],
+    "meaningStory": "An eye examines every divided detail until the truth is exposed.",
+    "readings": [
+      {
+        "reading": "しん",
+        "story": "The truth SHINES; SHIN gives しん. You meet しん in 写真（しゃしん）.",
+        "anchorId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "reading": "ま",
+        "story": "The true center is marked ‘MAin’; MA gives ま. You meet ま in 真中（まんなか）.",
+        "anchorId": "vocab-aa732c78bd13"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6709",
+    "components": [
+      {
+        "symbol": "𠂇",
+        "meaning": "hand"
+      },
+      {
+        "symbol": "月",
+        "meaning": "flesh, not the moon"
+      }
+    ],
+    "meaningStory": "A hand holds a piece of flesh: it visibly possesses something.",
+    "readings": [
+      {
+        "reading": "ゆう",
+        "story": "YOU have it; YOU gives ゆう. You meet ゆう in 有名（ゆうめい）.",
+        "anchorId": "vocab-7c3179147b51"
+      },
+      {
+        "reading": "あ",
+        "story": "Aha, it exists! The first sound gives あ. You meet あ in 有る（ある）.",
+        "anchorId": "vocab-b66f43bc23a1"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-53e3",
+    "components": [
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "A simple square opening is the mouth through which words and food pass.",
+    "readings": [
+      {
+        "reading": "こう",
+        "story": "The mouth CALLS out; CO stretches into こう. You meet こう in 人口（じんこう）.",
+        "anchorId": "vocab-2ef4da30cf39"
+      },
+      {
+        "reading": "くち",
+        "story": "A mouth chews a COOKIE; COO-CHI recalls くち. You meet くち in 口（くち）.",
+        "anchorId": "vocab-9e64feeea5ea"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5de5",
+    "components": [
+      {
+        "symbol": "工",
+        "meaning": "tool"
+      }
+    ],
+    "meaningStory": "A carpenter’s squared tool represents craft, construction, and industry.",
+    "readings": [
+      {
+        "reading": "こう",
+        "story": "A craftsman cuts a COre square; CO stretches into こう. You meet こう in 工場（こうじょう）.",
+        "anchorId": "vocab-04ea77dcbf03"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5efa",
+    "components": [
+      {
+        "symbol": "廴",
+        "meaning": "long road"
+      },
+      {
+        "symbol": "聿",
+        "meaning": "writing brush"
+      }
+    ],
+    "meaningStory": "A hand carrying a builder’s brush advances along a long path, raising a structure as it goes.",
+    "readings": [
+      {
+        "reading": "た",
+        "story": "A TAll building rises; TA gives た. You meet た in 建てる（たてる）.",
+        "anchorId": "vocab-861717738347"
+      },
+      {
+        "reading": "だ",
+        "story": "The building is DAubed from the ground up; DA gives だ. You meet だ in ～建て（～だて）.",
+        "anchorId": "vocab-d5986434677e"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7a7a",
+    "components": [
+      {
+        "symbol": "穴",
+        "meaning": "cave; hole"
+      },
+      {
+        "symbol": "工",
+        "meaning": "tool"
+      }
+    ],
+    "meaningStory": "Work opens a hole under a roof; beyond that emptiness lies the sky.",
+    "readings": [
+      {
+        "reading": "くう",
+        "story": "A bird COOls in the open sky; COO gives くう. You meet くう in 空気（くうき）.",
+        "anchorId": "vocab-d5a23463d010"
+      },
+      {
+        "reading": "そら",
+        "story": "SORA soars through the sky; the name gives そら. You meet そら in 空（そら）.",
+        "anchorId": "vocab-19bd7db9d5d0"
+      },
+      {
+        "reading": "あ",
+        "story": "An empty seat says ‘AH, free!’: あ. You meet あ in 空く（あく）.",
+        "anchorId": "vocab-b650f84a486c"
+      },
+      {
+        "reading": "す",
+        "story": "The crowd thins with a quiet ‘SOO’; SOO gives す. You meet す in 空く（すく）.",
+        "anchorId": "vocab-d78eda1984d2"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6025",
+    "components": [
+      {
+        "symbol": "𠂊",
+        "meaning": "cover"
+      },
+      {
+        "symbol": "⺕",
+        "meaning": "hand"
+      },
+      {
+        "symbol": "心",
+        "meaning": "heart"
+      }
+    ],
+    "meaningStory": "A hand reaches down over a pounding heart: the situation is urgent and hurried.",
+    "readings": [
+      {
+        "reading": "きゅう",
+        "story": "A rescue QUEUE moves urgently; QUEUE gives きゅう. You meet きゅう in 急行（きゅうこう）.",
+        "anchorId": "vocab-144611cc2889"
+      },
+      {
+        "reading": "いそ",
+        "story": "Hurry, ESO! The urgent call gives いそ. You meet いそ in 急ぐ（いそぐ）.",
+        "anchorId": "vocab-c2674f41fc44"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6b62",
+    "components": [
+      {
+        "symbol": "止",
+        "meaning": "foot"
+      }
+    ],
+    "meaningStory": "The shape began as a footprint; plant the foot firmly and it stops.",
+    "readings": [
+      {
+        "reading": "と",
+        "story": "A foot meets a TOE-stop; TOE gives と. You meet と in 止まる（とまる）.",
+        "anchorId": "vocab-bd365f430f35"
+      },
+      {
+        "reading": "や",
+        "story": "YAH, stop now! YAH gives や. You meet や in 止む（やむ）.",
+        "anchorId": "vocab-b1301209e235"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-53ef",
+    "components": [
+      {
+        "symbol": "丁",
+        "meaning": "street"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      }
+    ],
+    "meaningStory": "A mouth at a street corner gives approval: yes, it can be done.",
+    "readings": [
+      {
+        "reading": "か",
+        "story": "The mouth says ‘CAN!’; CAN begins with か. You meet か in 可愛い（かわいい）.",
+        "anchorId": "vocab-0a04072bf0cc"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8eab",
+    "components": [
+      {
+        "symbol": "身",
+        "meaning": "body"
+      }
+    ],
+    "meaningStory": "The curved torso and swelling belly form a side view of the body or oneself.",
+    "readings": [
+      {
+        "reading": "しん",
+        "story": "Your SHIN belongs to your body; SHIN gives しん. You meet しん in 出身（しゅっしん）.",
+        "anchorId": "vocab-eefac8830079"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5207",
+    "components": [
+      {
+        "symbol": "七",
+        "meaning": "seven"
+      },
+      {
+        "symbol": "刀",
+        "meaning": "knife"
+      }
+    ],
+    "meaningStory": "A knife slices straight through seven marks: cut cleanly apart.",
+    "readings": [
+      {
+        "reading": "せつ",
+        "story": "The blade SETS a clean cut; SETS recalls せつ. You meet せつ in 大切（たいせつ）.",
+        "anchorId": "vocab-aad97415a910"
+      },
+      {
+        "reading": "き",
+        "story": "A KEY is cut to shape; KEY gives き. You meet き in 切る（きる）.",
+        "anchorId": "vocab-1ee90bf5d13a"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8ee2",
+    "components": [
+      {
+        "symbol": "車",
+        "meaning": "cart with wheels"
+      },
+      {
+        "symbol": "云",
+        "meaning": "speech cloud"
+      }
+    ],
+    "meaningStory": "A cart rolls beneath a drifting cloud, turning as it travels.",
+    "readings": [
+      {
+        "reading": "てん",
+        "story": "The cart turns TEN times; TEN gives てん. You meet てん in 運転（うんてん）.",
+        "anchorId": "vocab-bdb66ff4eed7"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7814",
+    "components": [
+      {
+        "symbol": "石",
+        "meaning": "stone"
+      },
+      {
+        "symbol": "开",
+        "meaning": "open gate"
+      }
+    ],
+    "meaningStory": "A stone is rubbed against an open frame until it is polished; persistent grinding becomes study.",
+    "readings": [
+      {
+        "reading": "けん",
+        "story": "KEN polishes the research stone; KEN gives けん. You meet けん in 研究（けんきゅう）.",
+        "anchorId": "vocab-e031115f699c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7a76",
+    "components": [
+      {
+        "symbol": "穴",
+        "meaning": "cave; hole"
+      },
+      {
+        "symbol": "九",
+        "meaning": "nine"
+      }
+    ],
+    "meaningStory": "Explore a cave to its ninth and deepest corner: investigate thoroughly.",
+    "readings": [
+      {
+        "reading": "きゅう",
+        "story": "A CUE leads deeper into research; CUE gives きゅう. You meet きゅう in 研究（けんきゅう）.",
+        "anchorId": "vocab-e031115f699c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8d77",
+    "components": [
+      {
+        "symbol": "走",
+        "meaning": "run"
+      },
+      {
+        "symbol": "己",
+        "meaning": "self"
+      }
+    ],
+    "meaningStory": "The self rises to its feet and starts running: get up and begin.",
+    "readings": [
+      {
+        "reading": "お",
+        "story": "On rising, say ‘OH!’; OH gives お. You meet お in 起きる（おきる）.",
+        "anchorId": "vocab-72c5b362c4f2"
+      },
+      {
+        "reading": "おこ",
+        "story": "Wake OKO up; O-KO gives おこ. You meet おこ in 起こす（おこす）.",
+        "anchorId": "vocab-ebc949695b16"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8a66",
+    "components": [
+      {
+        "symbol": "言",
+        "meaning": "words"
+      },
+      {
+        "symbol": "式",
+        "meaning": "formal method"
+      }
+    ],
+    "meaningStory": "Words are checked against a formal method: this is a test or trial.",
+    "readings": [
+      {
+        "reading": "し",
+        "story": "SHE sits the test; SHE gives し. You meet し in 試験（しけん）.",
+        "anchorId": "vocab-0c4d68e2ec4d"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6620",
+    "components": [
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      },
+      {
+        "symbol": "央",
+        "meaning": "center"
+      }
+    ],
+    "meaningStory": "The sun shines into the center and projects a bright reflection or image.",
+    "readings": [
+      {
+        "reading": "えい",
+        "story": "An image earns an ‘AY!’; AY gives えい. You meet えい in 映画（えいが）.",
+        "anchorId": "vocab-7b9d866e6dc2"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9a13",
+    "components": [
+      {
+        "symbol": "馬",
+        "meaning": "horse"
+      },
+      {
+        "symbol": "㑒",
+        "meaning": "inspection"
+      }
+    ],
+    "meaningStory": "A horse is inspected from every side to verify its condition: examination proves the result.",
+    "readings": [
+      {
+        "reading": "けん",
+        "story": "KEN verifies every answer; KEN gives けん. You meet けん in 試験（しけん）.",
+        "anchorId": "vocab-0c4d68e2ec4d"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5199",
+    "components": [
+      {
+        "symbol": "冖",
+        "meaning": "roof"
+      },
+      {
+        "symbol": "与",
+        "meaning": "transfer"
+      }
+    ],
+    "meaningStory": "Under a cover, one form is transferred to another: a copy or photograph.",
+    "readings": [
+      {
+        "reading": "しゃ",
+        "story": "The camera goes ‘SHA!’ as it copies the scene: しゃ. You meet しゃ in 写真（しゃしん）.",
+        "anchorId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "reading": "うつ",
+        "story": "The copied image goes ‘OOT!’ onto paper: うつ. You meet うつ in 写す（うつす）.",
+        "anchorId": "vocab-eef9d372f5df"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-97f3",
+    "components": [
+      {
+        "symbol": "立",
+        "meaning": "stand"
+      },
+      {
+        "symbol": "日",
+        "meaning": "resonating box, not the sun"
+      }
+    ],
+    "meaningStory": "A vibration rises and stands above the source, becoming a visible note of sound.",
+    "readings": [
+      {
+        "reading": "おん",
+        "story": "Turn the sound ON; ON gives おん. You meet おん in 音楽（おんがく）.",
+        "anchorId": "vocab-83b219893eca"
+      },
+      {
+        "reading": "おと",
+        "story": "A sound goes ‘OH, tone!’; O-TO recalls おと. You meet おと in 音（おと）.",
+        "anchorId": "vocab-b37750755344"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6ce8",
+    "components": [
+      {
+        "symbol": "氵",
+        "meaning": "water"
+      },
+      {
+        "symbol": "主",
+        "meaning": "master; main"
+      }
+    ],
+    "meaningStory": "Water is directed at one main point: pour it there and pay attention.",
+    "readings": [
+      {
+        "reading": "ちゅう",
+        "story": "CHOOSE the point that needs attention; CHOO gives ちゅう. You meet ちゅう in 注意（ちゅうい）.",
+        "anchorId": "vocab-1472a34fdb88"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6b4c",
+    "components": [
+      {
+        "symbol": "可",
+        "meaning": "possible"
+      },
+      {
+        "symbol": "可",
+        "meaning": "possible"
+      },
+      {
+        "symbol": "欠",
+        "meaning": "open mouth"
+      }
+    ],
+    "meaningStory": "Two approving mouths open wide and release a song together.",
+    "readings": [
+      {
+        "reading": "うた",
+        "story": "A singer cries ‘OO, TA-da!’; U-TA recalls うた. You meet うた in 歌（うた）.",
+        "anchorId": "vocab-c563c884f48f"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-60aa",
+    "components": [
+      {
+        "symbol": "亜",
+        "meaning": "distorted frame"
+      },
+      {
+        "symbol": "心",
+        "meaning": "heart"
+      }
+    ],
+    "meaningStory": "A distorted shape presses down on the heart, producing a bad feeling.",
+    "readings": [
+      {
+        "reading": "わる",
+        "story": "WALUigi plays the bad one; WALU recalls わる. You meet わる in 悪い（わるい）.",
+        "anchorId": "vocab-04d486e7201c"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-98a8",
+    "components": [
+      {
+        "symbol": "几",
+        "meaning": "wind enclosure"
+      },
+      {
+        "symbol": "虫",
+        "meaning": "insect"
+      }
+    ],
+    "meaningStory": "An insect is swept around inside a broad enclosure by the wind.",
+    "readings": [
+      {
+        "reading": "ふう",
+        "story": "The wind blows ‘FOO!’; FOO gives ふう. You meet ふう in 台風（たいふう）.",
+        "anchorId": "vocab-f5e799449931"
+      },
+      {
+        "reading": "かぜ",
+        "story": "A gust makes a KAZoo whistle; KAZE recalls かぜ. You meet かぜ in 風（かぜ）.",
+        "anchorId": "vocab-94bf02007301"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7d19",
+    "components": [
+      {
+        "symbol": "糸",
+        "meaning": "thread"
+      },
+      {
+        "symbol": "氏",
+        "meaning": "clan seal"
+      }
+    ],
+    "meaningStory": "Plant fibers are pressed beside a clan seal to make a sheet of paper.",
+    "readings": [
+      {
+        "reading": "かみ",
+        "story": "Paper covers a CAMera; CAMI recalls かみ. You meet かみ in 紙（かみ）.",
+        "anchorId": "vocab-d060cd928492"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6625",
+    "components": [
+      {
+        "symbol": "三",
+        "meaning": "three lines"
+      },
+      {
+        "symbol": "人",
+        "meaning": "person"
+      },
+      {
+        "symbol": "日",
+        "meaning": "sun"
+      }
+    ],
+    "meaningStory": "The sun pushes through layered earth and people emerge again: spring has arrived.",
+    "readings": [
+      {
+        "reading": "はる",
+        "story": "HARU opens the door to spring; the name gives はる. You meet はる in 春（はる）.",
+        "anchorId": "vocab-18597113ac94"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-79cb",
+    "components": [
+      {
+        "symbol": "禾",
+        "meaning": "grain"
+      },
+      {
+        "symbol": "火",
+        "meaning": "dancing flames"
+      }
+    ],
+    "meaningStory": "Harvested grain glows beside the fire: the fields have reached autumn.",
+    "readings": [
+      {
+        "reading": "あき",
+        "story": "Autumn leaves make you say ‘AH, key season!’: あき. You meet あき in 秋（あき）.",
+        "anchorId": "vocab-85675bbfdbe6"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-590f",
+    "components": [
+      {
+        "symbol": "一",
+        "meaning": "line"
+      },
+      {
+        "symbol": "自",
+        "meaning": "pointing at one's nose"
+      },
+      {
+        "symbol": "夂",
+        "meaning": "following legs"
+      }
+    ],
+    "meaningStory": "Under the high summer line, a large figure moves slowly in the heat.",
+    "readings": [
+      {
+        "reading": "なつ",
+        "story": "NATSU needs shade in summer; the name gives なつ. You meet なつ in 夏（なつ）.",
+        "anchorId": "vocab-a4e52ef19d81"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-7fd2",
+    "components": [
+      {
+        "symbol": "羽",
+        "meaning": "wings"
+      },
+      {
+        "symbol": "白",
+        "meaning": "white"
+      }
+    ],
+    "meaningStory": "White wings flap again and again until the young bird has learned to fly.",
+    "readings": [
+      {
+        "reading": "しゅう",
+        "story": "A student repeats ‘SHOO, SHOO’ while learning: しゅう. You meet しゅう in 練習（れんしゅう）.",
+        "anchorId": "vocab-0a5beae1698c"
+      },
+      {
+        "reading": "なら",
+        "story": "NARA learns by repetition; the name gives なら. You meet なら in 習う（ならう）.",
+        "anchorId": "vocab-0d114c78c7a1"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-501f",
+    "components": [
+      {
+        "symbol": "亻",
+        "meaning": "person"
+      },
+      {
+        "symbol": "昔",
+        "meaning": "former times"
+      }
+    ],
+    "meaningStory": "A person takes something that belonged to an earlier time and promises to return it: borrow.",
+    "readings": [
+      {
+        "reading": "か",
+        "story": "Can I borrow the CAR? CAR begins with か. You meet か in 借りる（かりる）.",
+        "anchorId": "vocab-fcc4b149bcdb"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-8cb8",
+    "components": [
+      {
+        "symbol": "代",
+        "meaning": "substitute"
+      },
+      {
+        "symbol": "貝",
+        "meaning": "shell money"
+      }
+    ],
+    "meaningStory": "Shell money is handed to a substitute for a while: it is lent out.",
+    "readings": [
+      {
+        "reading": "か",
+        "story": "Lend the CAR keys; CAR begins with か. You meet か in 貸す（かす）.",
+        "anchorId": "vocab-642d3200e09f"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-5802",
+    "components": [
+      {
+        "symbol": "尚",
+        "meaning": "high chamber"
+      },
+      {
+        "symbol": "土",
+        "meaning": "earth"
+      }
+    ],
+    "meaningStory": "A high roof shelters a broad room firmly planted on earth: a public hall.",
+    "readings": [
+      {
+        "reading": "どう",
+        "story": "The hall’s DOOR is huge; DO stretches into どう. You meet どう in 食堂（しょくどう）.",
+        "anchorId": "vocab-3f0d257a083a"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-9ce5",
+    "components": [
+      {
+        "symbol": "鳥",
+        "meaning": "bird"
+      }
+    ],
+    "meaningStory": "A hooked beak, eye, body, and tail combine into the pictograph of a bird.",
+    "readings": [
+      {
+        "reading": "とり",
+        "story": "TORI the bird takes flight; the name gives とり. You meet とり in 鳥（とり）.",
+        "anchorId": "vocab-683f3e7fb085"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-98ef",
+    "components": [
+      {
+        "symbol": "飠",
+        "meaning": "food"
+      },
+      {
+        "symbol": "反",
+        "meaning": "turn back"
+      }
+    ],
+    "meaningStory": "Food is turned and served from the pot: cooked rice becomes a meal.",
+    "readings": [
+      {
+        "reading": "はん",
+        "story": "A hungry HAN reaches for the meal; HAN gives はん. You meet はん in 御飯（ごはん）.",
+        "anchorId": "vocab-2bf5dccca2b0"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-51ac",
+    "components": [
+      {
+        "symbol": "夂",
+        "meaning": "following legs"
+      },
+      {
+        "symbol": "冫",
+        "meaning": "ice"
+      }
+    ],
+    "meaningStory": "Following feet reach the final ice marks of the year: winter.",
+    "readings": [
+      {
+        "reading": "ふゆ",
+        "story": "Cold air goes ‘FOO, you!’; FU-YU recalls ふゆ. You meet ふゆ in 冬（ふゆ）.",
+        "anchorId": "vocab-7c4d1abbdd61"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-725b",
+    "components": [
+      {
+        "symbol": "牛",
+        "meaning": "cow"
+      }
+    ],
+    "meaningStory": "Horns and a broad head form the old pictograph of a cow.",
+    "readings": [
+      {
+        "reading": "ぎゅう",
+        "story": "A cow says ‘GYOO’ instead of moo: ぎゅう. You meet ぎゅう in 牛乳（ぎゅうにゅう）.",
+        "anchorId": "vocab-e90f788a51b5"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-72ac",
+    "components": [
+      {
+        "symbol": "犬",
+        "meaning": "dog"
+      }
+    ],
+    "meaningStory": "A large animal with one raised tail is the old pictograph of a dog.",
+    "readings": [
+      {
+        "reading": "いぬ",
+        "story": "The dog is IN the new kennel; I-NU recalls いぬ. You meet いぬ in 犬（いぬ）.",
+        "anchorId": "vocab-4cd1238bcb91"
+      }
+    ]
+  },
+  {
+    "kanjiId": "kanji-6f22",
+    "components": [
+      {
+        "symbol": "氵",
+        "meaning": "water"
+      },
+      {
+        "symbol": "廿",
+        "meaning": "joined bars"
+      },
+      {
+        "symbol": "口",
+        "meaning": "mouth"
+      },
+      {
+        "symbol": "夫",
+        "meaning": "grown person"
+      }
+    ],
+    "meaningStory": "Water beside a dense mass of people recalls the Han River and the Han name, hence Chinese writing.",
+    "readings": [
+      {
+        "reading": "かん",
+        "story": "The HAN people supply the sound; HAN shifts to かん. You meet かん in 漢字（かんじ）.",
+        "anchorId": "vocab-535c688e8bf9"
       }
     ]
   }

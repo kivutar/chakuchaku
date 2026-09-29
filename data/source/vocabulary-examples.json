@@ -8992,5 +8992,29 @@
     "text": "この資料を読みます。",
     "targetSurface": "資料",
     "translation": "I read this document."
+  },
+  {
+    "vocabularyId": "kanji-context-shujin",
+    "text": "主人は会社員です。",
+    "targetSurface": "主人",
+    "translation": "My husband is an office worker."
+  },
+  {
+    "vocabularyId": "kanji-context-mokuteki",
+    "text": "旅行の目的を話す。",
+    "targetSurface": "目的",
+    "translation": "I explain the purpose of the trip."
+  },
+  {
+    "vocabularyId": "kanji-context-kyouto",
+    "text": "京都へ行きます。",
+    "targetSurface": "京都",
+    "translation": "I am going to Kyoto."
+  },
+  {
+    "vocabularyId": "kanji-context-shusshin",
+    "text": "出身は日本です。",
+    "targetSurface": "出身",
+    "translation": "I am from Japan."
   }
 ]

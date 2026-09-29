@@ -674,20 +674,14 @@ function getRequiredLessonLevel(
   lesson,
   grammarPointById,
   vocabularyIndex,
-  kanjiIndex,
   curriculum,
   additionalVocabularyIds = []
 ) {
-  const kanjiById = new Map(
-    [...kanjiIndex.values()].map((entry) => [entry.id, entry])
-  );
-
   return curriculum.highestLevel([
     ...(lesson.grammarPointIds || []).map((id) => grammarPointById.get(id).introducedAt),
     ...[...lesson.vocabularyIds, ...additionalVocabularyIds].map((id) => (
       vocabularyIndex.entriesById.get(id).introducedAt
-    )),
-    ...lesson.kanjiIds.map((id) => kanjiById.get(id).introducedAt)
+    ))
   ]);
 }
 
@@ -780,7 +774,6 @@ function prepareExercise(
     { ...lesson, grammarPointIds: exercise.grammarPointIds },
     grammarPointById,
     vocabularyIndex,
-    kanjiIndex,
     curriculum,
     hintedVocabularyIds
   );
@@ -1237,7 +1230,8 @@ const [
   exerciseSources,
   vocabularyExampleSources,
   kanjiComponentSources,
-  kanjiMnemonicSources,
+  n5KanjiMnemonicSources,
+  n4KanjiMnemonicSources,
   grammarPoints,
   vocabulary,
   kanjiContexts,
@@ -1252,16 +1246,15 @@ const [
   readJson(join(sourceDirectory, "vocabulary-examples.json")),
   readJson(join(sourceDirectory, "kanji-components.json")),
   readJson(join(sourceDirectory, "kanji-mnemonics.json")),
+  readJson(join(sourceDirectory, "n4-kanji-mnemonics.json")),
   readJson(join(rootDirectory, "data", "jlpt-n5-grammar.json")),
   readJson(join(rootDirectory, "data", "jlpt-n5-vocabulary.json")),
   readJson(join(rootDirectory, "data", "kanji-contexts.json")),
   readJson(join(rootDirectory, "data", "jlpt-n5-kanji.json")),
   readJson(join(rootDirectory, "data", "jlpt-n5-conjugation.json")),
   readJson(join(rootDirectory, "locales", "en.json")),
-  Promise.all(supportedContentLocales.map(async (locale) => ({
-    locale,
-    ui: await readJson(join(rootDirectory, "locales", `${locale}.json`)),
-    localizations: Object.fromEntries(await Promise.all(
+  Promise.all(supportedContentLocales.map(async (locale) => {
+    const localizations = Object.fromEntries(await Promise.all(
       [
         "exercises",
         "grammar",
@@ -1274,9 +1267,27 @@ const [
         kind,
         await readJson(join(sourceDirectory, "locales", locale, `${kind}.json`))
       ])
-    ))
-  })))
+    ));
+    const n4KanjiMnemonics = await readJson(
+      join(sourceDirectory, "locales", locale, "n4-kanji-mnemonics.json")
+    );
+
+    localizations["kanji-mnemonics"] = {
+      ...localizations["kanji-mnemonics"],
+      ...n4KanjiMnemonics
+    };
+
+    return {
+      locale,
+      ui: await readJson(join(rootDirectory, "locales", `${locale}.json`)),
+      localizations
+    };
+  }))
 ]);
+const kanjiMnemonicSources = [
+  ...n5KanjiMnemonicSources,
+  ...n4KanjiMnemonicSources
+];
 
 const curriculum = globalThis.JlptN5Curriculum.createCurriculum(curriculumManifest);
 
@@ -1286,7 +1297,8 @@ if (
   !kanjiComponentSources ||
   Array.isArray(kanjiComponentSources) ||
   typeof kanjiComponentSources !== "object" ||
-  !Array.isArray(kanjiMnemonicSources) ||
+  !Array.isArray(n5KanjiMnemonicSources) ||
+  !Array.isArray(n4KanjiMnemonicSources) ||
   !Array.isArray(grammarPoints) ||
   !Array.isArray(vocabulary) ||
   !Array.isArray(kanjiContexts) ||
@@ -1394,18 +1406,12 @@ try {
     introduction,
     grammarPointById,
     vocabularyIndex,
-    kanjiIndex,
     curriculum
   );
   introduction.minimumLevel ||= introductionRequiredLevel;
 
-  if (curriculum.compareLevels(introduction.minimumLevel, introductionRequiredLevel) < 0) {
-    throw new Error(
-      `introduction: minimum level ${introduction.minimumLevel} is below ${
-        introductionRequiredLevel
-      }.`
-    );
-  }
+  // The welcome sentence names the JLPT itself. Its incidental vocabulary may
+  // belong to a later study level, but it must remain visible to every learner.
 
   if (introduction.grammarHighlights.length !== introduction.grammarPointIds.length) {
     throw new Error("introduction: every grammar point needs an unambiguous highlight.");

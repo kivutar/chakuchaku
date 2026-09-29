@@ -213,33 +213,38 @@ rules, additions, source comparisons, and kana coverage. It uses the former
 Level 4 Katakana subset as the exam-oriented baseline, then adds a small
 beginner layer cross-checked against Irodori and Marugoto A1 materials.
 
-## JLPT N5 kanji inventory
+## Multi-level kanji inventory
 
-`jlpt-n5-kanji.json` is a flat inventory of the exact 209-character curriculum
-that Rikkyo University describes as equivalent to JLPT N5. The source ordering
-and stages are retained: 73 `B6`, 68 `B5`, and 68 `B4` characters. This is a
-coherent beginner curriculum, not an official JLPT specification; the JLPT has
-not published an itemized kanji list since its 2010 revision.
+`jlpt-n5-kanji.json` retains its legacy filename but is now a flat cumulative
+N5–N4 inventory. Its foundation is the exact 209-character curriculum that
+Rikkyo University describes as equivalent to JLPT N5: 73 `B6`, 68 `B5`, and 68
+`B4` characters. `source/jlpt-n4-kanji.json` pins Kanzen's 170-character N4
+study list; 91 were already in that broad foundation, so the `N4` stage adds 79
+characters for 288 total. These are coherent study curricula, not official JLPT
+specifications; the JLPT has not published an itemized kanji list since 2010.
 
 Each entry has a stable Unicode-based `id`, one `character`, a concise English
 `meaning`, its Rikkyo `stage`, and `onReadings` / `kunReadings` arrays. The exact
-stage membership is stored in `source/rikkyo-n5-kanji.json`. Meanings and
+stage membership is stored in `source/rikkyo-n5-kanji.json` and
+`source/jlpt-n4-kanji.json`. Meanings and
 Japanese readings are generated from current KANJIDIC2 data. When a standalone
 core vocabulary entry exists, its learner-oriented meaning takes precedence.
-Readings are limited to forms evidenced by the app's core vocabulary; a single
+Readings are limited to forms evidenced by vocabulary available through the
+character's own level; a single
 dictionary reading is retained as a fallback when the vocabulary has no usable
 evidence. Readings use hiragana stems and are intentionally not exhaustive.
 Irregular whole-word readings such as 今日（きょう）remain vocabulary data.
 
 `kanji-contexts.json` contains a small set of complete example words for
-characters that have no suitable context in the N5 core vocabulary. They make
-all B6-B4 characters exercisable but remain separate from the vocabulary
+characters that have no suitable core-vocabulary context. They make all 288
+characters exercisable but remain separate from the vocabulary
 curriculum and its SRS. French display meanings live in
 `locales/fr/kanji-contexts.json`.
 
-`source/kanji-mnemonics.json` provides an original memory aid for every one of
-the 209 kanji. Each entry combines a learner-facing visual decomposition, a
-short story linking those components to the meaning, one or more useful N5
+`source/kanji-mnemonics.json` provides original memory aids for the 209-character
+foundation, and `source/n4-kanji-mnemonics.json` does the same for the 79-character
+N4 delta. Each entry combines a learner-facing visual decomposition, a
+short story linking those components to the meaning, one or more useful
 reading mnemonics, and an anchor ID per reading from the vocabulary or
 kanji-context inventory. `source/kanji-components.json` assigns one stable
 English keyword to every component symbol, so a symbol never changes meaning
@@ -250,14 +255,14 @@ contraction or voicing, the reading story must explicitly connect the canonical
 reading to the anchor's surface reading. These are visual learning stories, not
 claims about historical character etymology.
 
-French mnemonic prose lives in
-`source/locales/fr/kanji-mnemonics.json`, while the stable French component
+French mnemonic prose lives in `source/locales/fr/kanji-mnemonics.json` and
+`source/locales/fr/n4-kanji-mnemonics.json`, while the stable French component
 keywords live in `source/locales/fr/kanji-components.json`. The compact mnemonic
 localization contains only independently authored stories. The preparation step
 inherits component symbols, kana readings, and per-reading anchor IDs from the
 canonical English source, then writes the complete browser-ready structures to
 `kanji-mnemonics.json` and
-`locales/fr/kanji-mnemonics.json`. Content validation requires exact 209-kanji
+`locales/fr/kanji-mnemonics.json`. Content validation requires exact 288-kanji
 coverage, exact component-key coverage, valid anchor pronunciation placement,
 and matching reading counts.
 
@@ -277,6 +282,8 @@ Sources and licences:
 
 - https://www.jlpt.jp/e/faq/ (no official post-2010 kanji specification)
 - https://cjle.rikkyo.ac.jp/SitePages/pdf/kanji1.pdf (B6-B4 curriculum)
+- https://kanzenkanji.com/kanji/jlpt/n4 (primary 170-character N4 reference)
+- https://jlptsensei.com/jlpt-n4-kanji-list/ (167-character cross-check)
 - https://www.edrdg.org/wiki/KANJIDIC_Project.html (meanings and readings)
 - https://kanjivg.tagaini.net/ (reference for visual component boundaries)
 - `../licenses/KANJIDIC2-NOTICE.txt` and

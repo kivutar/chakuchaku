@@ -164,6 +164,7 @@ test("committed French catalogs completely cover canonical content", async () =>
     kanji,
     kanjiComponents,
     kanjiMnemonics,
+    n4KanjiMnemonics,
     vocabularyExamples,
     englishUi,
     frenchUi,
@@ -173,6 +174,7 @@ test("committed French catalogs completely cover canonical content", async () =>
     localizedKanji,
     localizedKanjiComponents,
     localizedKanjiMnemonics,
+    localizedN4KanjiMnemonics,
     localizedVocabularyExamples
   ] = await Promise.all([
     readJson("data/source/exercises.json"),
@@ -181,6 +183,7 @@ test("committed French catalogs completely cover canonical content", async () =>
     readJson("data/jlpt-n5-kanji.json"),
     readJson("data/source/kanji-components.json"),
     readJson("data/source/kanji-mnemonics.json"),
+    readJson("data/source/n4-kanji-mnemonics.json"),
     readJson("data/source/vocabulary-examples.json"),
     readJson("locales/en.json"),
     readJson("locales/fr.json"),
@@ -190,6 +193,7 @@ test("committed French catalogs completely cover canonical content", async () =>
     readJson("data/source/locales/fr/kanji.json"),
     readJson("data/source/locales/fr/kanji-components.json"),
     readJson("data/source/locales/fr/kanji-mnemonics.json"),
+    readJson("data/source/locales/fr/n4-kanji-mnemonics.json"),
     readJson("data/source/locales/fr/vocabulary-examples.json")
   ]);
 
@@ -200,7 +204,7 @@ test("committed French catalogs completely cover canonical content", async () =>
     vocabulary,
     kanji,
     kanjiComponents,
-    kanjiMnemonics,
+    kanjiMnemonics: [...kanjiMnemonics, ...n4KanjiMnemonics],
     vocabularyExamples,
     localizations: {
       exercises: localizedExercises,
@@ -208,7 +212,10 @@ test("committed French catalogs completely cover canonical content", async () =>
       vocabulary: localizedVocabulary,
       kanji: localizedKanji,
       "kanji-components": localizedKanjiComponents,
-      "kanji-mnemonics": localizedKanjiMnemonics,
+      "kanji-mnemonics": {
+        ...localizedKanjiMnemonics,
+        ...localizedN4KanjiMnemonics
+      },
       "vocabulary-examples": localizedVocabularyExamples
     }
   }), []);
