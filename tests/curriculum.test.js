@@ -177,7 +177,7 @@ test("introduced cards consume today's quota without relocking prior material", 
   ]);
 });
 
-test("the current knowledge units are explicitly assigned to N5", async () => {
+test("knowledge units are explicitly assigned to an enabled curriculum level", async () => {
   const [manifest, grammar, vocabulary, kanji, contexts, conjugation] =
     await Promise.all([
       readJson("data/curriculum.json"),
@@ -191,14 +191,41 @@ test("the current knowledge units are explicitly assigned to N5", async () => {
 
   for (const entries of [grammar, vocabulary, kanji, contexts, conjugation]) {
     assert.ok(entries.length > 0);
-    assert.ok(entries.every(({ introducedAt }) => introducedAt === "n5"));
-    assert.equal(curriculum.filterAvailable(entries).length, entries.length);
+    assert.ok(entries.every(({ introducedAt }) => ["n5", "n4"].includes(introducedAt)));
+    assert.equal(
+      curriculum.filterAvailable(entries).length,
+      entries.filter(({ introducedAt }) => introducedAt === "n5").length
+    );
+  }
+
+  for (const entries of [
+    grammar,
+    vocabulary,
+    kanji,
+    contexts,
+    conjugation,
+    globalThis.JlptN5Conjugation.points
+  ]) {
+    for (let index = 1; index < entries.length; index += 1) {
+      assert.ok(
+        curriculum.compareLevels(
+          entries[index - 1].introducedAt,
+          entries[index].introducedAt
+        ) <= 0,
+        `${entries[index].id || entries[index].vocabularyId} breaks curriculum order`
+      );
+    }
   }
 
   assert.ok(globalThis.JlptN5Conjugation.points.length > 0);
-  assert.ok(globalThis.JlptN5Conjugation.points.every(({ introducedAt }) => {
-    return introducedAt === "n5";
-  }));
+  assert.equal(grammar.filter(({ introducedAt }) => introducedAt === "n4").length, 15);
+  assert.equal(vocabulary.filter(({ introducedAt }) => introducedAt === "n4").length, 1);
+  assert.equal(
+    globalThis.JlptN5Conjugation.points.filter(({ introducedAt }) => {
+      return introducedAt === "n4";
+    }).length,
+    12
+  );
 });
 
 test("all prepared grammar exercises declare their minimum level", async () => {
@@ -207,7 +234,10 @@ test("all prepared grammar exercises declare their minimum level", async () => {
     readJson("data/exercises.json")
   ]);
 
-  for (const lesson of [introduction, ...exercises]) {
-    assert.equal(lesson.minimumLevel, "n5", lesson.id);
-  }
+  assert.equal(introduction.minimumLevel, "n5");
+  assert.ok(exercises.every(({ minimumLevel }) => ["n5", "n4"].includes(minimumLevel)));
+  assert.equal(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").length, 29);
+  assert.ok(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").every(({ id }) => {
+    return id.includes("n4-");
+  }));
 });

@@ -70,7 +70,17 @@
       const existingExercise = exercisesByPath.get(path);
 
       if (existingExercise) {
-        throw new Error(`${exercise.id}: conjugation voice path ${path} is already used by ${existingExercise.id}.`);
+        const sharesIdenticalPronunciationAcrossForms =
+          exercise.form !== existingExercise.form &&
+          exercise.answerSurface === existingExercise.answerSurface &&
+          exercise.answerReading === existingExercise.answerReading &&
+          exercise.term === existingExercise.term;
+
+        if (!sharesIdenticalPronunciationAcrossForms) {
+          throw new Error(`${exercise.id}: conjugation voice path ${path} is already used by ${existingExercise.id}.`);
+        }
+
+        continue;
       }
 
       exercisesByPath.set(path, exercise);

@@ -25,7 +25,7 @@
   { "vocabularyId": "vocab-acc3dd26ba1e", "class": "godan", "introducedAt": "n5" },
   { "vocabularyId": "vocab-0adf764f9311", "class": "godan", "introducedAt": "n5" },
   { "vocabularyId": "vocab-24f188a06d2c", "class": "godan", "introducedAt": "n5" },
-  { "vocabularyId": "vocab-eeb8ecca964f", "class": "godan", "introducedAt": "n5" },
+  { "vocabularyId": "vocab-eeb8ecca964f", "class": "godan", "excludedForms": ["potential"], "introducedAt": "n5" },
   { "vocabularyId": "vocab-0d114c78c7a1", "class": "godan", "introducedAt": "n5" },
   { "vocabularyId": "vocab-9e0eeba39759", "class": "godan", "introducedAt": "n5" },
   { "vocabularyId": "vocab-bdd8330bae6d", "class": "godan", "introducedAt": "n5" },

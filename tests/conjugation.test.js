@@ -21,9 +21,9 @@ function verb(term, reading, verbClass, teException) {
   return { term, reading, class: verbClass, teException };
 }
 
-test("the curriculum exposes 76 reusable conjugation points", () => {
-  assert.equal(points.length, 76);
-  assert.equal(new Set(points.map(({ id }) => id)).size, 76);
+test("the curriculum exposes 88 reusable conjugation points", () => {
+  assert.equal(points.length, 88);
+  assert.equal(new Set(points.map(({ id }) => id)).size, 88);
   assert.ok(points.some(({ id }) => id === "ichidan-polite-past"));
   assert.ok(points.some(({ id }) => id === "godan-polite-volitional"));
   assert.ok(points.some(({ id }) => id === "ichidan-polite-volitional"));
@@ -48,6 +48,10 @@ test("the curriculum exposes 76 reusable conjugation points", () => {
   assert.ok(points.some(({ id }) => id === "i-adjective-plain-past-negative"));
   assert.ok(points.some(({ id }) => id === "ii-adjective-plain-negative"));
   assert.ok(points.some(({ id }) => id === "na-adjective-plain-past"));
+  assert.ok(points.some(({ id }) => id === "godan-plain-volitional"));
+  assert.ok(points.some(({ id }) => id === "ichidan-potential"));
+  assert.ok(points.some(({ id }) => id === "suru-passive"));
+  assert.equal(points.filter(({ introducedAt }) => introducedAt === "n4").length, 12);
   assert.ok(!points.some(({ id }) => id === "ii-adjective-polite-present"));
 });
 
@@ -266,6 +270,28 @@ test("plain negatives and ～ば preserve the ichidan and irregular classes", ()
   }
 });
 
+test("plain volitional, potential, and passive forms cover every verb class", () => {
+  const cases = [
+    [verb("書く", "かく", "godan"), forms.plainVolitional, "書こう", "かこう"],
+    [verb("食べる", "たべる", "ichidan"), forms.plainVolitional, "食べよう", "たべよう"],
+    [verb("勉強する", "べんきょうする", "suru"), forms.plainVolitional, "勉強しよう", "べんきょうしよう"],
+    [verb("来る", "くる", "kuru"), forms.plainVolitional, "来よう", "こよう"],
+    [verb("読む", "よむ", "godan"), forms.potential, "読める", "よめる"],
+    [verb("見る", "みる", "ichidan"), forms.potential, "見られる", "みられる"],
+    [verb("勉強する", "べんきょうする", "suru"), forms.potential, "勉強できる", "べんきょうできる"],
+    [verb("来る", "くる", "kuru"), forms.potential, "来られる", "こられる"],
+    [verb("呼ぶ", "よぶ", "godan"), forms.passive, "呼ばれる", "よばれる"],
+    [verb("見る", "みる", "ichidan"), forms.passive, "見られる", "みられる"],
+    [verb("勉強する", "べんきょうする", "suru"), forms.passive, "勉強される", "べんきょうされる"],
+    [verb("来る", "くる", "kuru"), forms.passive, "来られる", "こられる"]
+  ];
+
+  for (const [entry, form, surface, reading] of cases) {
+    assert.deepEqual(conjugateVerb(entry, form), { surface, reading });
+    assert.equal(getPointIdForVerb(entry, form), `${entry.class}-${form}`);
+  }
+});
+
 test("the curated vocabulary supplies exercises for every point", async () => {
   const [vocabulary, curriculum] = await Promise.all([
     readFile(new URL("../data/jlpt-n5-vocabulary.json", import.meta.url), "utf8").then(JSON.parse),
@@ -279,10 +305,13 @@ test("the curated vocabulary supplies exercises for every point", async () => {
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "i-adjective").length, 60);
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "ii-adjective").length, 2);
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "na-adjective").length, 18);
-  assert.equal(pool.length, 1200);
+  assert.equal(pool.length, 1343);
   assert.deepEqual(coveredPointIds, new Set(points.map(({ id }) => id)));
   assert.ok(pool.every(({ section }) => section === "conjugation"));
   assert.ok(pool.every(({ meaning }) => typeof meaning === "string" && meaning));
+  assert.equal(pool.some(({ term, form }) => {
+    return term === "分かる" && form === forms.potential;
+  }), false);
 
   for (const exercise of pool) {
     assert.equal(gradeAnswer(exercise, exercise.answerSurface, wanakana).correct, true);
@@ -309,6 +338,24 @@ test("the curated vocabulary supplies exercises for every point", async () => {
   assert.equal(gradeAnswer(quietNegative, "shizuka ja nai desu", wanakana).correct, true);
   assert.equal(gradeAnswer(goodPresent, "yoi desu", wanakana).correct, true);
   assert.equal(goodPresent.conjugationPointId, "i-adjective-polite-present");
+});
+
+test("conjugation exclusions reject unknown or duplicate forms", () => {
+  const vocabulary = [{
+    id: "understand",
+    term: "分かる",
+    reading: "わかる",
+    meaning: "to understand",
+    partOfSpeech: "verb"
+  }];
+
+  for (const excludedForms of ["", ["unknown"], [forms.potential, forms.potential]]) {
+    assert.throws(() => createExercisePool(vocabulary, [{
+      vocabularyId: "understand",
+      class: "godan",
+      excludedForms
+    }]), /invalid excluded forms/u);
+  }
 });
 
 test("grading accepts the written form, kana, and converted romaji", () => {

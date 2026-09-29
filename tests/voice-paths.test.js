@@ -88,6 +88,25 @@ test("conjugation voice paths stay readable and distinguish homophones", () => {
     () => validateConjugationVoicePaths([hot, { ...hot, id: "duplicate" }], wanakana),
     /already used/u
   );
+
+  const potential = {
+    id: "ichidan-potential-see",
+    term: "見る",
+    reading: "みる",
+    form: "potential",
+    answerSurface: "見られる",
+    answerReading: "みられる"
+  };
+  const passive = {
+    ...potential,
+    id: "ichidan-passive-see",
+    form: "passive"
+  };
+
+  assert.equal(getConjugationVoicePath(potential, wanakana), (
+    getConjugationVoicePath(passive, wanakana)
+  ));
+  assert.equal(validateConjugationVoicePaths([potential, passive], wanakana).size, 1);
 });
 
 test("the curated vocabulary has one stable readable voice path per entry", async () => {
@@ -97,7 +116,7 @@ test("the curated vocabulary has one stable readable voice path per entry", asyn
   ));
   const voiceSlugs = validateVocabularyVoiceSlugs(vocabulary, wanakana);
 
-  assert.equal(voiceSlugs.size, 867);
+  assert.equal(voiceSlugs.size, 868);
   assert.equal(vocabulary.filter(({ voiceSlug }) => voiceSlug).length, 61);
   assert.equal(
     getVocabularyVoicePath(vocabulary.find(({ term }) => term === "青い"), wanakana),

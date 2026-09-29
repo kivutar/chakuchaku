@@ -13,12 +13,11 @@ authors may raise it for a structurally harder sentence, and content preparation
 rejects an explicit level below any grammar, vocabulary, or Kanji unit it
 references.
 
-The manifest currently enables content through N5. Level metadata and runtime
-filtering are deliberately in place before N4 content is added, so extending
-the manifest cannot change existing IDs or stored SRS cards. The learner's
-selected target level controls which unseen units may enter study; cards that
-already exist in SRS, plus encountered material above a subsequently lowered
-target, remain available.
+The manifest enables N5 and the first N4 content slice while keeping N5 as the
+default for existing learners. Enabling N4 did not change existing IDs or stored
+SRS cards. The learner's selected target level controls which unseen units may
+enter study; cards that already exist in SRS, plus encountered material above a
+subsequently lowered target, remain available.
 
 New grammar, conjugation, vocabulary, and Kanji units enter in authored array
 order under a configurable daily pace. A card stores its first
@@ -27,11 +26,12 @@ same pending cohort and legacy cards do not retroactively consume today's
 quota. Kana stay in the `foundation` layer and use vocabulary through the
 selected target level without their own introduction quota.
 
-# JLPT N5 grammar inventory
+# Grammar inventory
 
-`jlpt-n5-grammar.json` is the canonical preliminary curriculum for the app. It
-is deliberately a flat array: categories are labels on entries, not nested
-sections. Stable `id` values can later key lessons, exercises, and user progress.
+`jlpt-n5-grammar.json` is the canonical curriculum for the app; its filename is
+retained for compatibility even though entries now span N5 and N4. It is
+deliberately a flat array: categories are labels on entries, not nested sections.
+Stable `id` values key lessons, exercises, and user progress.
 
 `grammar-coverage.md` is the generated flat checklist for exercise planning. A
 checked bullet means at least one authored exercise meaningfully assesses that
@@ -71,6 +71,9 @@ Each grammar-point entry contains only scalar fields:
 - `category`: a filterable curriculum area.
 - `kind`: concept, form, particle, pattern, expression, structure, or system.
 - `pattern`: the Japanese form or an abstract formation.
+- `highlightPattern` (optional): a Japanese locator used only to derive the
+  inline highlight when the displayed `pattern` is too abstract or describes
+  several formations. A leading `～` allows a match inside an inflected token.
 - `name`: a concise English label.
 - `meaning`: the learning objective.
 - `scope`: `foundation`, `core`, or `boundary`.
@@ -81,11 +84,23 @@ the N5 curricula published by Bunpro, JLPT Sensei, and Yatta. `boundary` keeps
 useful points that sources variously place at N5 or N4 without presenting them
 as undisputed N5 requirements.
 
+The first N4 slice contains 15 high-value points and 29 independently authored
+recognition and production exercises: plain volitional and `～ようと思う`,
+potential and passive usage, `～ことにする`, `～ことになる`, `～はずだ`,
+`～はずがない`, `～やすい`, `～にくい`, `～ていく`, `～てくる`, `～間`,
+`～間に`, and `～なら`. It is a conservative intersection informed by the
+official N4 test-purpose description and the N4 curricula published by Bunpro
+and JLPT Sensei; it is not presented as an official itemized list:
+
+- https://www.jlpt.jp/e/guideline/pdf/n4_e.pdf
+- https://bunpro.jp/decks/m7omkx/bunpro-n4-grammar
+- https://jlptsensei.com/jlpt-n4-grammar-list/
+
 Writing systems, vocabulary, and kanji are excluded because this file is the
 grammar curriculum. Grammar-dependent counting, time, and question systems are
 included.
 
-## JLPT N5 conjugation curriculum
+## Conjugation curriculum
 
 `jlpt-n5-conjugation.json` assigns 48 verbs and 80 adjectives from the shared
 vocabulary inventory to an inflection class. Verbs use godan, ichidan, `する`,
@@ -95,12 +110,15 @@ inflecting adjective, while `ない` is omitted because requesting its negative
 would create an unnatural double-negative drill.
 
 The browser combines these entries with the rules in `conjugation.js`, producing
-exercises for 76 stable SRS points rather than one card per word-and-form pair:
-50 verb rules, including plain forms, `～ば`, and four class-specific polite
-volitional rules, and 26 adjective rules, including plain, regular, irregular,
-and adverbial transformations. The affirmative `いいです` shares the regular
-`～いです` point. The list remains deliberately limited to beginner forms;
-compound grammar such as `～てくれる` stays in Grammar for now.
+exercises for 88 stable SRS points rather than one card per word-and-form pair:
+62 verb rules, including plain forms, `～ば`, class-specific polite and plain
+volitional forms, potential forms, and passive forms, plus 26 adjective rules
+covering plain, regular, irregular, and adverbial transformations. The 12 new
+verb points enter at N4. When an ichidan or `来る` potential and passive have the
+same written form and pronunciation, their SRS cards remain distinct while the
+audio file is safely shared. The affirmative `いいです` shares the regular
+`～いです` point. Per-word `excludedForms` prevent misleading mechanical drills;
+for example, 分かる does not receive the unrelated potential-looking form 分かれる.
 
 ## JLPT N5 vocabulary inventory
 
@@ -110,7 +128,7 @@ publishing vocabulary, kanji, and grammar specifications after the 2010 revision
 because the test is intended to measure communicative use rather than memorized
 lists.
 
-The inventory currently contains 867 entries:
+The inventory currently contains 868 entries:
 
 - 718 `core` entries adapted from the MIT-licensed Open Anki JLPT N5 deck at
   commit `1ad66734417aca9dbcca6b2d5ee440cb13ab3ba0`.
@@ -118,6 +136,7 @@ The inventory currently contains 867 entries:
   vocabulary specification: `グラス`, `コピー`, and `スリッパ`.
 - 1 contextual core entry, `田んぼ`, added to give the initial Kanji curriculum
   a natural complete-word exercise for `田`.
+- 1 N4 core entry, `間`, required by the first N4 grammar exercises.
 - 145 `supplemental` entries: 42 recognizable and motivating beginner words,
   29 words needed by the current lessons, 37 words curated for practical
   Katakana coverage, 13 essential A1 expressions and everyday words, and 14

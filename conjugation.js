@@ -7,6 +7,9 @@
     politeNegative: "polite-negative",
     politePastNegative: "polite-past-negative",
     politeVolitional: "polite-volitional",
+    plainVolitional: "plain-volitional",
+    potential: "potential",
+    passive: "passive",
     plainPast: "plain-past",
     plainNegative: "plain-negative",
     plainPastNegative: "plain-past-negative",
@@ -65,6 +68,17 @@
     "む": "め",
     "る": "れ"
   });
+  const godanOEndings = Object.freeze({
+    "う": "お",
+    "く": "こ",
+    "ぐ": "ご",
+    "す": "そ",
+    "つ": "と",
+    "ぬ": "の",
+    "ぶ": "ぼ",
+    "む": "も",
+    "る": "ろ"
+  });
   const teEndings = Object.freeze({
     "う": { suffix: "って", group: "godan-u-tsu-ru" },
     "つ": { suffix: "って", group: "godan-u-tsu-ru" },
@@ -92,7 +106,15 @@
     forms.plainPast,
     forms.plainNegative,
     forms.plainPastNegative,
-    forms.conditionalBa
+    forms.conditionalBa,
+    forms.plainVolitional,
+    forms.potential,
+    forms.passive
+  ];
+  const n4VerbForms = [
+    forms.plainVolitional,
+    forms.potential,
+    forms.passive
   ];
   const adjectivePlainForms = [
     forms.plainPast,
@@ -152,6 +174,18 @@
     "ichidan-conditional-ba": "～る → ～れば",
     "suru-conditional-ba": "する → すれば",
     "kuru-conditional-ba": "来る → 来れば",
+    "godan-plain-volitional": "う段 → お段 + う",
+    "ichidan-plain-volitional": "～る → ～よう",
+    "suru-plain-volitional": "する → しよう",
+    "kuru-plain-volitional": "来る → 来よう",
+    "godan-potential": "う段 → え段 + る",
+    "ichidan-potential": "～る → ～られる",
+    "suru-potential": "する → できる",
+    "kuru-potential": "来る → 来られる",
+    "godan-passive": "う段 → あ段 + れる",
+    "ichidan-passive": "～る → ～られる",
+    "suru-passive": "する → される",
+    "kuru-passive": "来る → 来られる",
     "i-adjective-polite-present": "～い → ～いです",
     "i-adjective-polite-past": "～い → ～かったです",
     "i-adjective-polite-negative": "～い → ～くないです",
@@ -232,6 +266,9 @@
     }),
     ...Object.entries(adjectivePointForms).flatMap(([adjectiveClass, adjectiveForms]) => {
       return adjectiveForms.map((form) => createPoint(adjectiveClass, form));
+    }),
+    ...politeClasses.flatMap((verbClass) => {
+      return n4VerbForms.map((form) => createPoint(verbClass, form, "n4"));
     })
   ]);
 
@@ -366,6 +403,84 @@
     throw new TypeError(`Unsupported verb class: ${verb.class}`);
   }
 
+  function createPlainVolitional(value, verb) {
+    if (verb.class === verbClasses.godan) {
+      const replacement = godanOEndings[verb.reading.at(-1)];
+
+      if (!replacement) {
+        throw new TypeError(`Unsupported godan ending: ${verb.reading.at(-1)}`);
+      }
+
+      return `${replaceEnding(value, 1, replacement)}う`;
+    }
+
+    if (verb.class === verbClasses.ichidan) {
+      return `${replaceEnding(value, 1, "")}よう`;
+    }
+
+    if (verb.class === verbClasses.suru) {
+      return `${replaceEnding(value, 2, "")}しよう`;
+    }
+
+    if (verb.class === verbClasses.kuru) {
+      return value === "来る" ? "来よう" : "こよう";
+    }
+
+    throw new TypeError(`Unsupported verb class: ${verb.class}`);
+  }
+
+  function createPotential(value, verb) {
+    if (verb.class === verbClasses.godan) {
+      const replacement = godanEEndings[verb.reading.at(-1)];
+
+      if (!replacement) {
+        throw new TypeError(`Unsupported godan ending: ${verb.reading.at(-1)}`);
+      }
+
+      return `${replaceEnding(value, 1, replacement)}る`;
+    }
+
+    if (verb.class === verbClasses.ichidan) {
+      return `${replaceEnding(value, 1, "")}られる`;
+    }
+
+    if (verb.class === verbClasses.suru) {
+      return `${replaceEnding(value, 2, "")}できる`;
+    }
+
+    if (verb.class === verbClasses.kuru) {
+      return value === "来る" ? "来られる" : "こられる";
+    }
+
+    throw new TypeError(`Unsupported verb class: ${verb.class}`);
+  }
+
+  function createPassive(value, verb) {
+    if (verb.class === verbClasses.godan) {
+      const replacement = godanAEndings[verb.reading.at(-1)];
+
+      if (!replacement) {
+        throw new TypeError(`Unsupported godan ending: ${verb.reading.at(-1)}`);
+      }
+
+      return `${replaceEnding(value, 1, replacement)}れる`;
+    }
+
+    if (verb.class === verbClasses.ichidan) {
+      return `${replaceEnding(value, 1, "")}られる`;
+    }
+
+    if (verb.class === verbClasses.suru) {
+      return `${replaceEnding(value, 2, "")}される`;
+    }
+
+    if (verb.class === verbClasses.kuru) {
+      return value === "来る" ? "来られる" : "こられる";
+    }
+
+    throw new TypeError(`Unsupported verb class: ${verb.class}`);
+  }
+
   function getPointIdForVerb(verb, form) {
     if (![forms.te, forms.plainPast].includes(form)) {
       return createPointId(verb.class, form);
@@ -420,6 +535,27 @@
       return {
         surface: createConditionalBa(verb.term, verb),
         reading: createConditionalBa(verb.reading, verb)
+      };
+    }
+
+    if (form === forms.plainVolitional) {
+      return {
+        surface: createPlainVolitional(verb.term, verb),
+        reading: createPlainVolitional(verb.reading, verb)
+      };
+    }
+
+    if (form === forms.potential) {
+      return {
+        surface: createPotential(verb.term, verb),
+        reading: createPotential(verb.reading, verb)
+      };
+    }
+
+    if (form === forms.passive) {
+      return {
+        surface: createPassive(verb.term, verb),
+        reading: createPassive(verb.reading, verb)
       };
     }
 
@@ -599,8 +735,19 @@
       const itemForms = isVerb
         ? [...politeForms, forms.politeVolitional, ...verbPlainForms, forms.te]
         : adjectiveForms;
+      const configuredExcludedForms = curriculumEntry.excludedForms ?? [];
 
-      return itemForms.map((form) => {
+      if (
+        !Array.isArray(configuredExcludedForms) ||
+        new Set(configuredExcludedForms).size !== configuredExcludedForms.length ||
+        configuredExcludedForms.some((form) => !itemForms.includes(form))
+      ) {
+        throw new TypeError(`${curriculumEntry.vocabularyId}: invalid excluded forms.`);
+      }
+
+      const excludedForms = new Set(configuredExcludedForms);
+
+      return itemForms.filter((form) => !excludedForms.has(form)).map((form) => {
         const answer = isVerb
           ? conjugateVerb(item, form)
           : conjugateAdjective(item, form);

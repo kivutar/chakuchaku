@@ -5202,6 +5202,12 @@
     "translation": "My father built a house."
   },
   {
+    "vocabularyId": "vocab-e2192acf21d2",
+    "text": "休みの間、本を読みます。",
+    "targetSurface": "間",
+    "translation": "I read books during the vacation."
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

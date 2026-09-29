@@ -10623,5 +10623,407 @@
       "darou",
       "clock-calendar-time"
     ]
+  },
+  {
+    "id": "n4-plan-get-up-early",
+    "text": "明日は早く起きようと思います。",
+    "solution": "I think I'll get up early tomorrow.",
+    "grammarPointIds": [
+      "plain-volitional",
+      "volitional-to-omou"
+    ]
+  },
+  {
+    "id": "production-n4-read-this-book-together",
+    "text": "Let's read this book.",
+    "solution": "この本を読もう。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "read",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ],
+    "grammarPointIds": [
+      "plain-volitional"
+    ]
+  },
+  {
+    "id": "production-n4-plan-see-movie-tonight",
+    "text": "I think I'll see a movie tonight.",
+    "solution": "今晩、映画を見ようと思います。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "see",
+        "vocabularyIds": ["vocab-385cc0d9ee98"]
+      }
+    ],
+    "grammarPointIds": [
+      "volitional-to-omou"
+    ]
+  },
+  {
+    "id": "n4-can-read-not-write-kanji",
+    "text": "この漢字は読めますが、書けません。",
+    "solution": "I can read this kanji, but I cannot write it.",
+    "grammarPointIds": [
+      "potential-form",
+      "ga-contrast"
+    ]
+  },
+  {
+    "id": "production-n4-can-use-card",
+    "text": "I can use this card.",
+    "solution": "このカードが使えます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "use",
+        "vocabularyIds": ["vocab-9af9c5ffb30e"]
+      }
+    ],
+    "grammarPointIds": [
+      "potential-form"
+    ]
+  },
+  {
+    "id": "n4-name-called-by-teacher",
+    "text": "先生に名前を呼ばれたので、立ちました。",
+    "solution": "Because my teacher called my name, I stood up.",
+    "tokenOverrides": {
+      "れ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "passive-form",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-n4-book-read-by-students",
+    "text": "This book is read by students.",
+    "solution": "この本は学生に読まれています。",
+    "type": "production",
+    "tokenOverrides": {
+      "れ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "read",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ],
+    "grammarPointIds": [
+      "passive-form"
+    ]
+  },
+  {
+    "id": "n4-decided-go-japan-next-month",
+    "text": "来月、日本へ行くことにしました。",
+    "solution": "I decided to go to Japan next month.",
+    "grammarPointIds": [
+      "koto-ni-suru",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-n4-decided-get-up-early",
+    "text": "I decided to get up early every day.",
+    "solution": "毎日早く起きることにしました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "early",
+        "vocabularyIds": ["vocab-72460e05df01"]
+      }
+    ],
+    "grammarPointIds": [
+      "koto-ni-suru"
+    ]
+  },
+  {
+    "id": "n4-decided-commute-from-next-week",
+    "text": "来週から毎日会社へ行くことになりました。",
+    "solution": "It has been decided that I will go to the office every day starting next week.",
+    "grammarPointIds": [
+      "koto-ni-naru",
+      "kara-start",
+      "frequency-adverbs"
+    ]
+  },
+  {
+    "id": "production-n4-decided-japan-next-month",
+    "text": "It has been decided that I will go to Japan next month.",
+    "solution": "来月、日本へ行くことになりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "go",
+        "vocabularyIds": ["vocab-ec22142c23d3"]
+      }
+    ],
+    "grammarPointIds": [
+      "koto-ni-naru"
+    ]
+  },
+  {
+    "id": "n4-key-should-be-in-bag",
+    "text": "鍵はかばんの中にあるはずです。",
+    "solution": "The key should be inside the bag.",
+    "tokenOverrides": {
+      "はず": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "hazu-da",
+      "location-of-topic"
+    ]
+  },
+  {
+    "id": "production-n4-place-should-be-school",
+    "text": "This place should be a school.",
+    "solution": "ここは学校のはずです。",
+    "type": "production",
+    "tokenOverrides": {
+      "はず": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "school",
+        "vocabularyIds": ["vocab-42edc1b83779"]
+      }
+    ],
+    "grammarPointIds": [
+      "hazu-da"
+    ]
+  },
+  {
+    "id": "n4-mother-cannot-forget-name",
+    "text": "母が私の名前を忘れるはずがありません。",
+    "solution": "My mother cannot possibly forget my name.",
+    "tokenOverrides": {
+      "はず": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "hazu-ga-nai",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "production-n4-room-cannot-be-quiet",
+    "text": "This room cannot possibly be quiet.",
+    "solution": "この部屋が静かなはずがありません。",
+    "type": "production",
+    "tokenOverrides": {
+      "はず": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "quiet",
+        "vocabularyIds": ["vocab-61b57e2d4702"]
+      }
+    ],
+    "grammarPointIds": [
+      "hazu-ga-nai"
+    ]
+  },
+  {
+    "id": "n4-short-text-easy-to-read",
+    "text": "この本は文章が短くて、読みやすいです。",
+    "solution": "The text in this book is short and easy to read.",
+    "tokenOverrides": {
+      "やすい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "yasui",
+      "adjective-connective"
+    ]
+  },
+  {
+    "id": "production-n4-shoes-easy-to-walk-in",
+    "text": "These shoes are easy to walk in.",
+    "solution": "この靴は歩きやすいです。",
+    "type": "production",
+    "tokenOverrides": {
+      "やすい": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "walk",
+        "vocabularyIds": ["vocab-a76603aae6e4"]
+      }
+    ],
+    "grammarPointIds": [
+      "yasui"
+    ]
+  },
+  {
+    "id": "n4-small-pen-hard-to-write-with",
+    "text": "このペンは小さくて、書きにくいです。",
+    "solution": "This pen is small and difficult to write with.",
+    "tokenOverrides": {
+      "にくい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "nikui",
+      "adjective-connective"
+    ]
+  },
+  {
+    "id": "production-n4-kanji-hard-to-remember",
+    "text": "This kanji is difficult to remember.",
+    "solution": "この漢字は覚えにくいです。",
+    "type": "production",
+    "tokenOverrides": {
+      "にくい": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "remember",
+        "vocabularyIds": ["vocab-0ec838cc07ea"]
+      }
+    ],
+    "grammarPointIds": [
+      "nikui"
+    ]
+  },
+  {
+    "id": "n4-weather-will-keep-getting-hotter",
+    "text": "今からもっと暑くなっていきます。",
+    "solution": "It will keep getting hotter from now on.",
+    "grammarPointIds": [
+      "te-iku",
+      "naru-ku-change"
+    ]
+  },
+  {
+    "id": "production-n4-continue-studying-japanese",
+    "text": "I will continue studying Japanese every day.",
+    "solution": "毎日日本語を勉強していきます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "studying",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-iku"
+    ]
+  },
+  {
+    "id": "n4-rain-started-so-going-home",
+    "text": "雨が降ってきたので、家に帰ります。",
+    "solution": "It started raining, so I am going home.",
+    "grammarPointIds": [
+      "te-kuru",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-n4-started-raining",
+    "text": "It has started raining.",
+    "solution": "雨が降ってきました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "raining",
+        "vocabularyIds": ["vocab-777161023023"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-kuru"
+    ]
+  },
+  {
+    "id": "n4-study-throughout-summer-vacation",
+    "text": "夏休みの間、毎日日本語を勉強しました。",
+    "solution": "I studied Japanese every day throughout summer vacation.",
+    "grammarPointIds": [
+      "aida",
+      "frequency-adverbs"
+    ]
+  },
+  {
+    "id": "production-n4-studied-during-summer-vacation",
+    "text": "I studied during summer vacation.",
+    "solution": "夏休みの間、勉強しました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "studied",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ],
+    "grammarPointIds": [
+      "aida"
+    ]
+  },
+  {
+    "id": "n4-visit-kyoto-while-in-japan",
+    "text": "日本にいる間に、京都へ行きたいです。",
+    "solution": "I want to visit Kyoto while I am in Japan.",
+    "grammarPointIds": [
+      "aida-ni",
+      "tai-desire"
+    ]
+  },
+  {
+    "id": "production-n4-clean-while-child-sleeps",
+    "text": "I cleaned the room while the child was sleeping.",
+    "solution": "子供が寝ている間に、部屋を掃除しました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "sleeping",
+        "vocabularyIds": ["vocab-50eb0e80c367"]
+      }
+    ],
+    "grammarPointIds": [
+      "aida-ni"
+    ]
+  },
+  {
+    "id": "n4-autumn-good-if-going-kyoto",
+    "text": "京都へ行くなら、秋がいいです。",
+    "solution": "If you are going to Kyoto, autumn is a good time.",
+    "grammarPointIds": [
+      "nara-conditional",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "production-n4-book-good-if-studying-japanese",
+    "text": "If you are studying Japanese, this book is good.",
+    "solution": "日本語を勉強するなら、この本がいいです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "studying",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ],
+    "grammarPointIds": [
+      "nara-conditional"
+    ]
   }
 ]

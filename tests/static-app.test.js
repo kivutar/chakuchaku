@@ -157,9 +157,20 @@ test("generated lessons match their authored sources", async () => {
     assertPreparedLesson(exercise, vocabularyById, kanjiById, kanjiByCharacter);
   }
 
+  const recognitionExercises = exercises.filter(({ type }) => type !== "production");
+
+  for (const { id } of grammarPoints.filter(({ introducedAt }) => introducedAt === "n4")) {
+    assert.ok(
+      recognitionExercises.some((exercise) => {
+        return exercise.grammarHighlights.some(({ grammarPointId }) => grammarPointId === id);
+      }),
+      `${id} needs a visible highlight in an N4 recognition exercise`
+    );
+  }
+
   const productionExercises = exercises.filter(({ type }) => type === "production");
 
-  assert.equal(productionExercises.length, 174);
+  assert.equal(productionExercises.length, 189);
   assert.ok(productionExercises.every(({ id }) => id.startsWith("production-")));
   assert.ok(productionExercises.every(({ text, promptVocabularyHints }) => {
     return (
@@ -1123,7 +1134,8 @@ test("vocabulary inventory has a substantial core and labeled learner favorites"
         "curated-katakana-curriculum",
         "curated-beginner-vocabulary",
         "curated-kanji-vocabulary",
-        "curated-migii-vocabulary"
+        "curated-migii-vocabulary",
+        "curated-n4-vocabulary"
       ].includes(entry.source)
     );
 

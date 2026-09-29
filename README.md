@@ -48,10 +48,10 @@ reading-to-missing-character directions. All 209 characters in the B6-B4
 curriculum are active, have their own FSRS cards, and reveal original visual
 meaning and reading mnemonics in English or French. Kanji-only example words
 fill the few gaps in the N5 vocabulary inventory without entering its SRS.
-Conjugation exercises reuse 48 beginner verbs and 80 adjectives across 76
+Conjugation exercises reuse 48 beginner verbs and 80 adjectives across 88
 independently scheduled rules: polite and plain forms, the `～ば` conditional,
-polite volitional verbs, beginner て-forms, adjective adverbial forms, and the
-`行く` and `いい` exceptions.
+polite and plain volitional verbs, potential and passive forms, beginner
+て-forms, adjective adverbial forms, and the `行く` and `いい` exceptions.
 Answers accept Japanese writing, hiragana, or rōmaji and are graded locally.
 A single top menu switches study sections and provides settings, SRS progress
 statistics, exercise history, and a project link.
@@ -78,8 +78,8 @@ Development-time generation is split from the browser runtime:
 | --- | --- | --- |
 | `data/source/introduction.json` | Authored introduction and optional ambiguity overrides | Committed |
 | `data/source/exercises.json` | Authored exercises, solutions, grammar references, and optional ambiguity overrides | Committed |
-| `data/jlpt-n5-grammar.json` | Canonical flat JLPT N5 grammar inventory | Committed |
-| `data/jlpt-n5-conjugation.json` | Curated N5 verbs/adjectives and their inflection classes | Committed |
+| `data/jlpt-n5-grammar.json` | Canonical flat grammar inventory, retaining its legacy filename | Committed |
+| `data/jlpt-n5-conjugation.json` | Curated verbs/adjectives and their inflection classes | Committed |
 | `data/grammar-coverage.md` | Generated checklist of grammar points covered by exercises | Committed |
 | `data/jlpt-n5-vocabulary.json` | Synthetic N5 vocabulary core, learner favorites, and reading-level whole-word exceptions | Committed |
 | `data/source/rikkyo-n5-kanji.json` | Rikkyo's staged 209-character N5-equivalent curriculum | Committed |
@@ -344,12 +344,14 @@ then show a compact speaker beside the revealed Japanese answer.
 
 ## Conjugation exercises
 
-The Conjugation section asks for one inflected form of a complete N5 verb or
+The Conjugation section asks for one inflected form of a complete beginner verb or
 adjective. Its verb curriculum contains the four common polite forms (`～ます`,
 `～ました`, `～ません`, and `～ませんでした`) for godan, ichidan, `する`,
 and `来る` verbs, plus every regular て-form sound-change family and irregular
 `行く`, plus polite volitional `～ましょう`. It also drills the plain negative,
-plain past, plain past-negative, and `～ば` conditional forms. Adjectives in い
+plain past, plain past-negative, and `～ば` conditional forms. At N4 it adds
+plain volitional, potential, and passive transformations for all four verb
+classes. Adjectives in い
 and な use the corresponding polite forms, plain past and negative forms, their
 `～くて` / `～で` connective forms, and their `～く` / `～に` adverbial forms,
 with the irregular `いい → よ…` transformations tracked separately.

@@ -240,9 +240,18 @@ function findKanjiIds(text, kanjiIndex) {
   )];
 }
 
-function getGrammarPatternCandidates(pattern) {
-  return [...new Set(pattern.match(japaneseSequencePattern) || [])]
-    .sort((left, right) => right.length - left.length);
+function getGrammarPatternCandidates(pattern, { allowSuffix = false } = {}) {
+  const candidates = new Map();
+
+  for (const match of pattern.matchAll(japaneseSequencePattern)) {
+    const isSuffix = allowSuffix && ["～", "〜"].includes(pattern[match.index - 1]);
+    const candidate = { text: match[0], isSuffix };
+
+    candidates.set(`${candidate.text}:${candidate.isSuffix}`, candidate);
+  }
+
+  return [...candidates.values()]
+    .sort((left, right) => right.text.length - left.text.length);
 }
 
 function getTokenForms(token) {
@@ -264,35 +273,49 @@ function findGrammarCandidateRanges(sourceTokens, candidate) {
 
     for (
       let end = start;
-      end < sourceTokens.length && end < start + candidate.length;
+      end < sourceTokens.length && end < start + candidate.text.length;
       end += 1
     ) {
       const nextStates = [];
 
       for (const state of states) {
         for (const form of getTokenForms(sourceTokens[end])) {
-          const text = state + form.text;
+          const fragments = [form.text];
 
-          if (!candidate.startsWith(text)) {
-            continue;
+          if (state === "" && candidate.isSuffix) {
+            for (
+              let length = 1;
+              length <= Math.min(form.text.length, candidate.text.length);
+              length += 1
+            ) {
+              fragments.push(form.text.slice(-length));
+            }
           }
 
-          if (text === candidate) {
-            let tokenEnd = end + 1;
+          for (const fragment of new Set(fragments)) {
+            const text = state + fragment;
 
-            // If an inflected base form completed the pattern, include its endings.
-            if (form.usesBaseForm) {
-              while (
-                tokenEnd < sourceTokens.length &&
-                sourceTokens[tokenEnd].details[0] === "助動詞"
-              ) {
-                tokenEnd += 1;
-              }
+            if (!candidate.text.startsWith(text)) {
+              continue;
             }
 
-            ranges.set(`${start}:${tokenEnd}`, { tokenStart: start, tokenEnd });
-          } else {
-            nextStates.push(text);
+            if (text === candidate.text) {
+              let tokenEnd = end + 1;
+
+              // If an inflected base form completed the pattern, include its endings.
+              if (form.usesBaseForm) {
+                while (
+                  tokenEnd < sourceTokens.length &&
+                  sourceTokens[tokenEnd].details[0] === "助動詞"
+                ) {
+                  tokenEnd += 1;
+                }
+              }
+
+              ranges.set(`${start}:${tokenEnd}`, { tokenStart: start, tokenEnd });
+            } else {
+              nextStates.push(text);
+            }
           }
         }
       }
@@ -314,8 +337,12 @@ function createGrammarHighlights(text, grammarPointIds, grammarPointById) {
 
   for (const grammarPointId of grammarPointIds) {
     const grammarPoint = grammarPointById.get(grammarPointId);
+    const hasHighlightPattern = grammarPoint.highlightPattern !== undefined;
+    const pattern = grammarPoint.highlightPattern || grammarPoint.pattern;
 
-    for (const candidate of getGrammarPatternCandidates(grammarPoint.pattern)) {
+    for (const candidate of getGrammarPatternCandidates(pattern, {
+      allowSuffix: hasHighlightPattern
+    })) {
       const ranges = findGrammarCandidateRanges(sourceTokens, candidate);
 
       // Common particles and structural descriptions can match unrelated text.
@@ -1307,6 +1334,18 @@ for (const [label, entries] of [
     if (!curriculum.hasLevel(entry?.introducedAt)) {
       errors.push(`${entry?.id || entry?.vocabularyId || label}: invalid introducedAt.`);
     }
+  }
+}
+for (const grammarPoint of grammarPoints) {
+  if (
+    grammarPoint.highlightPattern !== undefined &&
+    (
+      typeof grammarPoint.highlightPattern !== "string" ||
+      grammarPoint.highlightPattern.trim() === "" ||
+      getGrammarPatternCandidates(grammarPoint.highlightPattern).length === 0
+    )
+  ) {
+    errors.push(`${grammarPoint.id}: invalid highlightPattern.`);
   }
 }
 errors.push(...validateKanjiComponents(kanjiComponentSources));

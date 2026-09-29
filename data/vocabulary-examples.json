@@ -30432,6 +30432,64 @@
     ]
   },
   {
+    "vocabularyId": "vocab-e2192acf21d2",
+    "text": "休みの間、本を読みます。",
+    "targetSurface": "間",
+    "targetReading": "あいだ",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I read books during the vacation.",
+    "tokens": [
+      {
+        "surface": "休み",
+        "category": "noun",
+        "reading": "やすみ",
+        "vocabularyId": "vocab-ebdaef0f21db"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "間",
+        "category": "noun",
+        "reading": "あいだ",
+        "vocabularyId": "vocab-e2192acf21d2"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読み",
+        "category": "verb",
+        "reading": "よみ",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

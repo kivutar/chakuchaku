@@ -1846,6 +1846,12 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
+    "inflections": [
+      {
+        "surface": "書ける",
+        "reading": "かける"
+      }
+    ],
     "partOfSpeech": "verb"
   },
   {
@@ -4750,6 +4756,12 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
+    "inflections": [
+      {
+        "surface": "使える",
+        "reading": "つかえる"
+      }
+    ],
     "partOfSpeech": "verb"
   },
   {
@@ -7786,6 +7798,12 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
+    "inflections": [
+      {
+        "surface": "読める",
+        "reading": "よめる"
+      }
+    ],
     "partOfSpeech": "verb"
   },
   {
@@ -10105,5 +10123,23 @@
     "scope": "supplemental",
     "introducedAt": "n5",
     "source": "curated-migii-vocabulary"
+  },
+  {
+    "id": "vocab-e2192acf21d2",
+    "term": "間",
+    "reading": "あいだ",
+    "meaning": "interval; space; between",
+    "acceptedAnswers": [
+      "interval",
+      "space",
+      "between",
+      "during",
+      "while"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "time-position",
+    "scope": "core",
+    "introducedAt": "n4",
+    "source": "curated-n4-vocabulary"
   }
 ]

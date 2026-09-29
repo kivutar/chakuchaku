@@ -806,5 +806,65 @@
   "issho-ni": {
     "name": "Ensemble avec",
     "meaning": "Mettre l'accent sur le fait de faire quelque chose avec une autre personne."
+  },
+  "plain-volitional": {
+    "name": "Volitif neutre",
+    "meaning": "Exprimer une suggestion familière ou la résolution du locuteur avec la forme volitive neutre."
+  },
+  "volitional-to-omou": {
+    "name": "Envisager de faire",
+    "meaning": "Exprimer une intention ou une décision que le locuteur est en train d'envisager."
+  },
+  "potential-form": {
+    "name": "Forme potentielle",
+    "meaning": "Exprimer que quelqu'un peut faire quelque chose ou qu'une action est possible."
+  },
+  "passive-form": {
+    "name": "Forme passive",
+    "meaning": "Présenter comme sujet la personne ou la chose qui subit une action."
+  },
+  "koto-ni-suru": {
+    "name": "Décider de",
+    "meaning": "Exprimer une décision prise par le locuteur ou par une autre personne."
+  },
+  "koto-ni-naru": {
+    "name": "Il a été décidé que",
+    "meaning": "Exprimer une décision, une règle ou un résultat déterminé par les circonstances ou par autrui."
+  },
+  "hazu-da": {
+    "name": "Être censé",
+    "meaning": "Exprimer une forte attente fondée sur des informations ou un raisonnement."
+  },
+  "hazu-ga-nai": {
+    "name": "Ne pas pouvoir être",
+    "meaning": "Rejeter une possibilité comme incompatible avec ce que sait le locuteur."
+  },
+  "yasui": {
+    "name": "Facile à faire",
+    "meaning": "Décrire une action comme facile ou une tendance comme susceptible de se produire."
+  },
+  "nikui": {
+    "name": "Difficile à faire",
+    "meaning": "Décrire une action comme difficile à accomplir."
+  },
+  "te-iku": {
+    "name": "Continuer ou évoluer à partir de maintenant",
+    "meaning": "Décrire une action qui se poursuit depuis le présent ou un changement qui se développe vers l'avenir."
+  },
+  "te-kuru": {
+    "name": "En venir à ou commencer à faire",
+    "meaning": "Décrire une action ou un changement qui se développe jusqu'au présent, ou un déplacement avec retour."
+  },
+  "aida": {
+    "name": "Pendant toute une période",
+    "meaning": "Exprimer qu'un état ou une action continue dure pendant toute une autre période."
+  },
+  "aida-ni": {
+    "name": "Au cours d'une période",
+    "meaning": "Situer un événement dans la durée d'un autre état ou d'une action continue."
+  },
+  "nara-conditional": {
+    "name": "Si c'est le cas",
+    "meaning": "Donner une réponse, un jugement ou un conseil sous une condition exprimée ou comprise."
   }
 }

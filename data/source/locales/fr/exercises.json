@@ -6137,5 +6137,182 @@
         ]
       }
     ]
+  },
+  "n4-plan-get-up-early": {
+    "translation": "Demain, je pense me lever tôt."
+  },
+  "production-n4-read-this-book-together": {
+    "translation": "Lisons ce livre.",
+    "promptVocabularyHints": [
+      {
+        "word": "Lisons",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ]
+  },
+  "production-n4-plan-see-movie-tonight": {
+    "translation": "Je pense regarder un film ce soir.",
+    "promptVocabularyHints": [
+      {
+        "word": "regarder",
+        "vocabularyIds": ["vocab-385cc0d9ee98"]
+      }
+    ]
+  },
+  "n4-can-read-not-write-kanji": {
+    "translation": "Je peux lire ce kanji, mais je ne peux pas l'écrire."
+  },
+  "production-n4-can-use-card": {
+    "translation": "Je peux utiliser cette carte.",
+    "promptVocabularyHints": [
+      {
+        "word": "utiliser",
+        "vocabularyIds": ["vocab-9af9c5ffb30e"]
+      }
+    ]
+  },
+  "n4-name-called-by-teacher": {
+    "translation": "Comme le professeur m'a appelé par mon nom, je me suis levé."
+  },
+  "production-n4-book-read-by-students": {
+    "translation": "Ce livre est lu par des étudiants.",
+    "promptVocabularyHints": [
+      {
+        "word": "lu",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ]
+  },
+  "n4-decided-go-japan-next-month": {
+    "translation": "J'ai décidé d'aller au Japon le mois prochain."
+  },
+  "production-n4-decided-get-up-early": {
+    "translation": "J'ai décidé de me lever tôt tous les jours.",
+    "promptVocabularyHints": [
+      {
+        "word": "tôt",
+        "vocabularyIds": ["vocab-72460e05df01"]
+      }
+    ]
+  },
+  "n4-decided-commute-from-next-week": {
+    "translation": "Il a été décidé que j'irai au bureau tous les jours à partir de la semaine prochaine."
+  },
+  "production-n4-decided-japan-next-month": {
+    "translation": "Il a été décidé que j'irai au Japon le mois prochain.",
+    "promptVocabularyHints": [
+      {
+        "word": "irai",
+        "vocabularyIds": ["vocab-ec22142c23d3"]
+      }
+    ]
+  },
+  "n4-key-should-be-in-bag": {
+    "translation": "La clé devrait être dans le sac."
+  },
+  "production-n4-place-should-be-school": {
+    "translation": "Cet endroit devrait être une école.",
+    "promptVocabularyHints": [
+      {
+        "word": "école",
+        "vocabularyIds": ["vocab-42edc1b83779"]
+      }
+    ]
+  },
+  "n4-mother-cannot-forget-name": {
+    "translation": "Il est impossible que ma mère oublie mon nom."
+  },
+  "production-n4-room-cannot-be-quiet": {
+    "translation": "Il est impossible que cette pièce soit calme.",
+    "promptVocabularyHints": [
+      {
+        "word": "calme",
+        "vocabularyIds": ["vocab-61b57e2d4702"]
+      }
+    ]
+  },
+  "n4-short-text-easy-to-read": {
+    "translation": "Le texte de ce livre est court et facile à lire."
+  },
+  "production-n4-shoes-easy-to-walk-in": {
+    "translation": "Il est facile de marcher avec ces chaussures.",
+    "promptVocabularyHints": [
+      {
+        "word": "marcher",
+        "vocabularyIds": ["vocab-a76603aae6e4"]
+      }
+    ]
+  },
+  "n4-small-pen-hard-to-write-with": {
+    "translation": "Ce stylo est petit et il est difficile d'écrire avec."
+  },
+  "production-n4-kanji-hard-to-remember": {
+    "translation": "Ce kanji est difficile à retenir.",
+    "promptVocabularyHints": [
+      {
+        "word": "retenir",
+        "vocabularyIds": ["vocab-0ec838cc07ea"]
+      }
+    ]
+  },
+  "n4-weather-will-keep-getting-hotter": {
+    "translation": "Il va continuer à faire de plus en plus chaud à partir de maintenant."
+  },
+  "production-n4-continue-studying-japanese": {
+    "translation": "Je continuerai à étudier le japonais tous les jours.",
+    "promptVocabularyHints": [
+      {
+        "word": "étudier",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ]
+  },
+  "n4-rain-started-so-going-home": {
+    "translation": "Il s'est mis à pleuvoir, alors je rentre chez moi."
+  },
+  "production-n4-started-raining": {
+    "translation": "Il s'est mis à pleuvoir.",
+    "promptVocabularyHints": [
+      {
+        "word": "pleuvoir",
+        "vocabularyIds": ["vocab-777161023023"]
+      }
+    ]
+  },
+  "n4-study-throughout-summer-vacation": {
+    "translation": "J'ai étudié le japonais tous les jours pendant toutes les vacances d'été."
+  },
+  "production-n4-studied-during-summer-vacation": {
+    "translation": "J'ai étudié pendant les vacances d'été.",
+    "promptVocabularyHints": [
+      {
+        "word": "étudié",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ]
+  },
+  "n4-visit-kyoto-while-in-japan": {
+    "translation": "Je veux aller à Kyoto pendant mon séjour au Japon."
+  },
+  "production-n4-clean-while-child-sleeps": {
+    "translation": "J'ai nettoyé la chambre pendant que l'enfant dormait.",
+    "promptVocabularyHints": [
+      {
+        "word": "dormait",
+        "vocabularyIds": ["vocab-50eb0e80c367"]
+      }
+    ]
+  },
+  "n4-autumn-good-if-going-kyoto": {
+    "translation": "Si vous allez à Kyoto, l'automne est une bonne saison."
+  },
+  "production-n4-book-good-if-studying-japanese": {
+    "translation": "Si vous étudiez le japonais, ce livre est bien.",
+    "promptVocabularyHints": [
+      {
+        "word": "étudiez",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ]
   }
 }
