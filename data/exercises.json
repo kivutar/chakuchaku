@@ -4647,7 +4647,7 @@
         "reading": "。"
       }
     ],
-    "minimumLevel": "n5",
+    "minimumLevel": "n4",
     "solution": "Wash your face before you go to school.",
     "attribution": {
       "provider": "Tatoeba",
@@ -4656,10 +4656,16 @@
       "license": "CC BY 2.0 FR"
     },
     "grammarPointIds": [
+      "nasai-command",
       "mae-ni",
       "e-direction"
     ],
     "grammarHighlights": [
+      {
+        "grammarPointId": "nasai-command",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      },
       {
         "grammarPointId": "mae-ni",
         "tokenStart": 3,
@@ -79326,9 +79332,9 @@
     ]
   },
   {
-    "id": "production-n4-continue-studying-japanese",
+    "id": "production-n4-keep-studying-japanese",
     "text": "I will continue studying Japanese every day.",
-    "audio": "assets/voices/grammar/production-n4-continue-studying-japanese.m4a",
+    "audio": "assets/voices/grammar/production-n4-keep-studying-japanese.m4a",
     "vocabularyIds": [
       "vocab-1b6483e173f3",
       "vocab-e6870aa0d14e",
@@ -80199,6 +80205,6305 @@
         "grammarPointId": "nara-conditional",
         "tokenStart": 4,
         "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "n4-mother-makes-brother-eat-vegetables",
+    "text": "母は弟に野菜を食べさせました。",
+    "audio": "assets/voices/grammar/n4-mother-makes-brother-eat-vegetables.m4a",
+    "vocabularyIds": [
+      "vocab-7fa86c660a00",
+      "vocab-7e8dc4d63e82",
+      "vocab-88763af54360",
+      "vocab-ec4fa4315542"
+    ],
+    "kanjiIds": [
+      "kanji-6bcd",
+      "kanji-5f1f",
+      "kanji-91ce",
+      "kanji-98df"
+    ],
+    "tokens": [
+      {
+        "surface": "母",
+        "category": "noun",
+        "reading": "はは",
+        "vocabularyId": "vocab-7fa86c660a00"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "弟",
+        "category": "noun",
+        "reading": "おとうと",
+        "vocabularyId": "vocab-7e8dc4d63e82"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "野菜",
+        "category": "noun",
+        "reading": "やさい",
+        "vocabularyId": "vocab-88763af54360"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "させ",
+        "category": "auxiliary",
+        "reading": "させ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "My mother made my younger brother eat vegetables.",
+    "grammarPointIds": [
+      "causative-form",
+      "wa-topic",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "causative-form",
+        "tokenStart": 7,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "n4-teacher-lets-children-play-outside",
+    "text": "先生は子供を外で遊ばせました。",
+    "audio": "assets/voices/grammar/n4-teacher-lets-children-play-outside.m4a",
+    "vocabularyIds": [
+      "vocab-497356cf0646",
+      "vocab-5fd1d3759699",
+      "vocab-6109638dac53",
+      "vocab-58a04652246f"
+    ],
+    "kanjiIds": [
+      "kanji-5148",
+      "kanji-751f",
+      "kanji-5b50",
+      "kanji-5916"
+    ],
+    "tokens": [
+      {
+        "surface": "先生",
+        "category": "noun",
+        "reading": "せんせい",
+        "vocabularyId": "vocab-497356cf0646"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "子供",
+        "category": "noun",
+        "reading": "こども",
+        "vocabularyId": "vocab-5fd1d3759699"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "外",
+        "category": "noun",
+        "reading": "そと",
+        "vocabularyId": "vocab-6109638dac53"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "遊ば",
+        "category": "verb",
+        "reading": "あそば",
+        "vocabularyId": "vocab-58a04652246f"
+      },
+      {
+        "surface": "せ",
+        "category": "auxiliary",
+        "reading": "せ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "The teacher let the children play outside.",
+    "grammarPointIds": [
+      "causative-form",
+      "wa-topic",
+      "de-action-location"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "causative-form",
+        "tokenStart": 7,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "production-n4-father-makes-brother-clean-room",
+    "text": "My father made my younger brother clean the room.",
+    "audio": "assets/voices/grammar/production-n4-father-makes-brother-clean-room.m4a",
+    "vocabularyIds": [
+      "vocab-d15ca6ea1179",
+      "vocab-7e8dc4d63e82",
+      "vocab-23523bbf8d9c",
+      "vocab-21537eeda1e7",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-7236",
+      "kanji-5f1f",
+      "kanji-5c4b"
+    ],
+    "tokens": [
+      {
+        "surface": "父",
+        "category": "noun",
+        "reading": "ちち",
+        "vocabularyId": "vocab-d15ca6ea1179"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "弟",
+        "category": "noun",
+        "reading": "おとうと",
+        "vocabularyId": "vocab-7e8dc4d63e82"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "部屋",
+        "category": "noun",
+        "reading": "へや",
+        "vocabularyId": "vocab-23523bbf8d9c"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "掃除",
+        "category": "noun",
+        "reading": "そうじ",
+        "vocabularyId": "vocab-21537eeda1e7"
+      },
+      {
+        "surface": "さ",
+        "category": "verb",
+        "reading": "さ",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "せ",
+        "category": "auxiliary",
+        "reading": "せ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "父は弟に部屋を掃除させました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "clean",
+        "vocabularyIds": [
+          "vocab-21537eeda1e7"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "causative-form"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "causative-form",
+        "tokenStart": 7,
+        "tokenEnd": 11
+      }
+    ]
+  },
+  {
+    "id": "production-n4-mother-kindly-lets-me-play-outside",
+    "text": "My mother kindly let me play outside.",
+    "audio": "assets/voices/grammar/production-n4-mother-kindly-lets-me-play-outside.m4a",
+    "vocabularyIds": [
+      "vocab-7fa86c660a00",
+      "vocab-b6944a5fe271",
+      "vocab-6109638dac53",
+      "vocab-58a04652246f"
+    ],
+    "kanjiIds": [
+      "kanji-6bcd",
+      "kanji-79c1",
+      "kanji-5916"
+    ],
+    "tokens": [
+      {
+        "surface": "母",
+        "category": "noun",
+        "reading": "はは",
+        "vocabularyId": "vocab-7fa86c660a00"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "外",
+        "category": "noun",
+        "reading": "そと",
+        "vocabularyId": "vocab-6109638dac53"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "遊ば",
+        "category": "verb",
+        "reading": "あそば",
+        "vocabularyId": "vocab-58a04652246f"
+      },
+      {
+        "surface": "せ",
+        "category": "auxiliary",
+        "reading": "せ"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "くれ",
+        "category": "auxiliary",
+        "reading": "くれ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "母は私を外で遊ばせてくれました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "play",
+        "vocabularyIds": [
+          "vocab-58a04652246f"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "causative-form",
+      "te-kureru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "causative-form",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "te-kureru",
+        "tokenStart": 8,
+        "tokenEnd": 12
+      }
+    ]
+  },
+  {
+    "id": "n4-made-get-up-early-every-morning",
+    "text": "子供の時、毎朝母に早く起きさせられました。",
+    "audio": "assets/voices/grammar/n4-made-get-up-early-every-morning.m4a",
+    "vocabularyIds": [
+      "vocab-5fd1d3759699",
+      "vocab-e267b19a680f",
+      "vocab-ecd92861d4d7",
+      "vocab-7fa86c660a00",
+      "vocab-72460e05df01",
+      "vocab-72c5b362c4f2"
+    ],
+    "kanjiIds": [
+      "kanji-5b50",
+      "kanji-6642",
+      "kanji-6bce",
+      "kanji-671d",
+      "kanji-6bcd",
+      "kanji-65e9",
+      "kanji-8d77"
+    ],
+    "tokens": [
+      {
+        "surface": "子供",
+        "category": "noun",
+        "reading": "こども",
+        "vocabularyId": "vocab-5fd1d3759699"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "時",
+        "category": "noun",
+        "reading": "じ",
+        "vocabularyId": "vocab-e267b19a680f"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "毎朝",
+        "category": "noun",
+        "reading": "まいあさ",
+        "vocabularyId": "vocab-ecd92861d4d7"
+      },
+      {
+        "surface": "母",
+        "category": "noun",
+        "reading": "はは",
+        "vocabularyId": "vocab-7fa86c660a00"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "早く",
+        "category": "adjective",
+        "reading": "はやく",
+        "vocabularyId": "vocab-72460e05df01"
+      },
+      {
+        "surface": "起き",
+        "category": "verb",
+        "reading": "おき",
+        "vocabularyId": "vocab-72c5b362c4f2"
+      },
+      {
+        "surface": "させ",
+        "category": "auxiliary",
+        "reading": "させ"
+      },
+      {
+        "surface": "られ",
+        "category": "auxiliary",
+        "reading": "られ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "When I was a child, my mother made me get up early every morning.",
+    "grammarPointIds": [
+      "causative-passive-form",
+      "toki",
+      "frequency-adverbs"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "causative-passive-form",
+        "tokenStart": 9,
+        "tokenEnd": 13
+      }
+    ]
+  },
+  {
+    "id": "n4-brother-forced-clean-room",
+    "text": "弟は父に部屋を掃除させられました。",
+    "audio": "assets/voices/grammar/n4-brother-forced-clean-room.m4a",
+    "vocabularyIds": [
+      "vocab-7e8dc4d63e82",
+      "vocab-d15ca6ea1179",
+      "vocab-23523bbf8d9c",
+      "vocab-21537eeda1e7",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-5f1f",
+      "kanji-7236",
+      "kanji-5c4b"
+    ],
+    "tokens": [
+      {
+        "surface": "弟",
+        "category": "noun",
+        "reading": "おとうと",
+        "vocabularyId": "vocab-7e8dc4d63e82"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "父",
+        "category": "noun",
+        "reading": "ちち",
+        "vocabularyId": "vocab-d15ca6ea1179"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "部屋",
+        "category": "noun",
+        "reading": "へや",
+        "vocabularyId": "vocab-23523bbf8d9c"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "掃除",
+        "category": "noun",
+        "reading": "そうじ",
+        "vocabularyId": "vocab-21537eeda1e7"
+      },
+      {
+        "surface": "さ",
+        "category": "verb",
+        "reading": "さ",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "せ",
+        "category": "auxiliary",
+        "reading": "せ"
+      },
+      {
+        "surface": "られ",
+        "category": "auxiliary",
+        "reading": "られ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "My younger brother was made to clean the room by my father.",
+    "grammarPointIds": [
+      "causative-passive-form",
+      "wa-topic",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "causative-passive-form",
+        "tokenStart": 7,
+        "tokenEnd": 12
+      },
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "production-n4-made-eat-vegetables",
+    "text": "I was made to eat vegetables by my mother.",
+    "audio": "assets/voices/grammar/production-n4-made-eat-vegetables.m4a",
+    "vocabularyIds": [
+      "vocab-b6944a5fe271",
+      "vocab-7fa86c660a00",
+      "vocab-88763af54360",
+      "vocab-ec4fa4315542"
+    ],
+    "kanjiIds": [
+      "kanji-79c1",
+      "kanji-6bcd",
+      "kanji-91ce",
+      "kanji-98df"
+    ],
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "母",
+        "category": "noun",
+        "reading": "はは",
+        "vocabularyId": "vocab-7fa86c660a00"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "野菜",
+        "category": "noun",
+        "reading": "やさい",
+        "vocabularyId": "vocab-88763af54360"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "させ",
+        "category": "auxiliary",
+        "reading": "させ"
+      },
+      {
+        "surface": "られ",
+        "category": "auxiliary",
+        "reading": "られ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "私は母に野菜を食べさせられました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "eat",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "causative-passive-form"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "causative-passive-form",
+        "tokenStart": 7,
+        "tokenEnd": 11
+      }
+    ]
+  },
+  {
+    "id": "production-n4-students-made-read-difficult-book",
+    "text": "The students were made to read a difficult book by the teacher.",
+    "audio": "assets/voices/grammar/production-n4-students-made-read-difficult-book.m4a",
+    "vocabularyIds": [
+      "vocab-9567eaf8fe9b",
+      "vocab-497356cf0646",
+      "vocab-6ed0b6d4c374",
+      "vocab-0ac038632611",
+      "vocab-24f188a06d2c"
+    ],
+    "kanjiIds": [
+      "kanji-5b66",
+      "kanji-751f",
+      "kanji-5148",
+      "kanji-672c",
+      "kanji-8aad"
+    ],
+    "tokens": [
+      {
+        "surface": "学生",
+        "category": "noun",
+        "reading": "がくせい",
+        "vocabularyId": "vocab-9567eaf8fe9b"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "先生",
+        "category": "noun",
+        "reading": "せんせい",
+        "vocabularyId": "vocab-497356cf0646"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "難しい",
+        "category": "adjective",
+        "reading": "むずかしい",
+        "vocabularyId": "vocab-6ed0b6d4c374"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読ま",
+        "category": "verb",
+        "reading": "よま",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "さ",
+        "category": "auxiliary",
+        "reading": "さ"
+      },
+      {
+        "surface": "れ",
+        "category": "auxiliary",
+        "reading": "れ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "学生は先生に難しい本を読まされました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "read",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "causative-passive-form"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "causative-passive-form",
+        "tokenStart": 8,
+        "tokenEnd": 12
+      }
+    ]
+  },
+  {
+    "id": "n4-danger-stop",
+    "text": "危ないから、止まれ！",
+    "audio": "assets/voices/grammar/n4-danger-stop.m4a",
+    "vocabularyIds": [
+      "vocab-b56f4f9656e1",
+      "vocab-bd365f430f35"
+    ],
+    "kanjiIds": [
+      "kanji-6b62"
+    ],
+    "tokens": [
+      {
+        "surface": "危ない",
+        "category": "adjective",
+        "reading": "あぶない",
+        "vocabularyId": "vocab-b56f4f9656e1"
+      },
+      {
+        "surface": "から",
+        "category": "particle",
+        "reading": "から"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "止まれ",
+        "category": "verb",
+        "reading": "とまれ",
+        "vocabularyId": "vocab-bd365f430f35"
+      },
+      {
+        "surface": "！",
+        "reading": "！"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "It is dangerous, so stop!",
+    "grammarPointIds": [
+      "imperative-form",
+      "kara-reason",
+      "i-adjective-predicate"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "imperative-form",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "kara-reason",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "n4-fire-escape-outside",
+    "text": "火事だ。外へ逃げろ！",
+    "audio": "assets/voices/grammar/n4-fire-escape-outside.m4a",
+    "vocabularyIds": [
+      "vocab-8e4839d2e6de",
+      "vocab-6109638dac53",
+      "vocab-891c5d7618d7"
+    ],
+    "kanjiIds": [
+      "kanji-706b",
+      "kanji-4e8b",
+      "kanji-5916"
+    ],
+    "tokens": [
+      {
+        "surface": "火事",
+        "category": "noun",
+        "reading": "かじ",
+        "vocabularyId": "vocab-8e4839d2e6de"
+      },
+      {
+        "surface": "だ",
+        "category": "auxiliary",
+        "reading": "だ"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "外",
+        "category": "noun",
+        "reading": "そと",
+        "vocabularyId": "vocab-6109638dac53"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "逃げろ",
+        "category": "verb",
+        "reading": "にげろ",
+        "vocabularyId": "vocab-891c5d7618d7"
+      },
+      {
+        "surface": "！",
+        "reading": "！"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "Fire! Get outside!",
+    "grammarPointIds": [
+      "imperative-form",
+      "e-direction"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "imperative-form",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "production-n4-run-command",
+    "text": "Run!",
+    "audio": "assets/voices/grammar/production-n4-run-command.m4a",
+    "vocabularyIds": [
+      "vocab-97526e11c703"
+    ],
+    "kanjiIds": [
+      "kanji-8d70"
+    ],
+    "tokens": [
+      {
+        "surface": "走れ",
+        "category": "verb",
+        "reading": "はしれ",
+        "vocabularyId": "vocab-97526e11c703"
+      },
+      {
+        "surface": "！",
+        "reading": "！"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "走れ！",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "run",
+        "vocabularyIds": [
+          "vocab-97526e11c703"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "imperative-form"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "imperative-form",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      }
+    ]
+  },
+  {
+    "id": "production-n4-look-at-photo-command",
+    "text": "Look at this photo!",
+    "audio": "assets/voices/grammar/production-n4-look-at-photo-command.m4a",
+    "vocabularyIds": [
+      "vocab-25acc002a82f",
+      "vocab-d5901ecbf5fb",
+      "vocab-385cc0d9ee98"
+    ],
+    "kanjiIds": [
+      "kanji-5199",
+      "kanji-771f",
+      "kanji-898b"
+    ],
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見ろ",
+        "category": "verb",
+        "reading": "みろ",
+        "vocabularyId": "vocab-385cc0d9ee98"
+      },
+      {
+        "surface": "！",
+        "reading": "！"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "この写真を見ろ！",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "look",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "imperative-form"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "imperative-form",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "n4-medicine-if-taken-get-better",
+    "text": "この薬を飲めば、元気になります。",
+    "audio": "assets/voices/grammar/n4-medicine-if-taken-get-better.m4a",
+    "vocabularyIds": [
+      "vocab-25acc002a82f",
+      "vocab-87bbe3de9902",
+      "vocab-dcd3acd6b659",
+      "vocab-12f44a1311d1",
+      "vocab-3653e718a1a5"
+    ],
+    "kanjiIds": [
+      "kanji-85ac",
+      "kanji-98f2",
+      "kanji-5143",
+      "kanji-6c17"
+    ],
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "薬",
+        "category": "noun",
+        "reading": "くすり",
+        "vocabularyId": "vocab-87bbe3de9902"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "飲め",
+        "category": "verb",
+        "reading": "のめ",
+        "vocabularyId": "vocab-dcd3acd6b659"
+      },
+      {
+        "surface": "ば",
+        "category": "particle",
+        "reading": "ば"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "元気",
+        "category": "adjective",
+        "reading": "げんき",
+        "vocabularyId": "vocab-12f44a1311d1"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "なり",
+        "category": "verb",
+        "reading": "なり",
+        "vocabularyId": "vocab-3653e718a1a5"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "If you take this medicine, you will get better.",
+    "grammarPointIds": [
+      "ba-conditional",
+      "naru-change",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ba-conditional",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "naru-change",
+        "tokenStart": 7,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      }
+    ]
+  },
+  {
+    "id": "n4-no-time-skip-breakfast",
+    "text": "時間がなければ、朝ご飯を食べません。",
+    "audio": "assets/voices/grammar/n4-no-time-skip-breakfast.m4a",
+    "vocabularyIds": [
+      "vocab-f6a8c4a23b51",
+      "vocab-463497b76d92",
+      "vocab-40ae6dddb10a",
+      "vocab-2bf5dccca2b0",
+      "vocab-ec4fa4315542"
+    ],
+    "kanjiIds": [
+      "kanji-6642",
+      "kanji-9593",
+      "kanji-671d",
+      "kanji-98ef",
+      "kanji-98df"
+    ],
+    "tokens": [
+      {
+        "surface": "時間",
+        "category": "noun",
+        "reading": "じかん",
+        "vocabularyId": "vocab-f6a8c4a23b51"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "なけれ",
+        "category": "adjective",
+        "reading": "なけれ",
+        "vocabularyId": "vocab-463497b76d92"
+      },
+      {
+        "surface": "ば",
+        "category": "particle",
+        "reading": "ば"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "朝",
+        "category": "noun",
+        "reading": "あさ",
+        "vocabularyId": "vocab-40ae6dddb10a"
+      },
+      {
+        "surface": "ご飯",
+        "category": "noun",
+        "reading": "ごはん",
+        "vocabularyId": "vocab-2bf5dccca2b0"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "If I do not have time, I do not eat breakfast.",
+    "grammarPointIds": [
+      "ba-conditional",
+      "o-object",
+      "verb-masen"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ba-conditional",
+        "tokenStart": 2,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "verb-masen",
+        "tokenStart": 9,
+        "tokenEnd": 11
+      }
+    ]
+  },
+  {
+    "id": "production-n4-buy-if-cheap",
+    "text": "If it is cheap, I will buy it at this store.",
+    "audio": "assets/voices/grammar/production-n4-buy-if-cheap.m4a",
+    "vocabularyIds": [
+      "vocab-0513945a1ef5",
+      "vocab-25acc002a82f",
+      "vocab-e70f9243d4c7",
+      "vocab-1b65a0cb82d2"
+    ],
+    "kanjiIds": [
+      "kanji-5b89",
+      "kanji-5e97",
+      "kanji-8cb7"
+    ],
+    "tokens": [
+      {
+        "surface": "安けれ",
+        "category": "adjective",
+        "reading": "やすけれ",
+        "vocabularyId": "vocab-0513945a1ef5"
+      },
+      {
+        "surface": "ば",
+        "category": "particle",
+        "reading": "ば"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "店",
+        "category": "noun",
+        "reading": "みせ",
+        "vocabularyId": "vocab-e70f9243d4c7"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "買い",
+        "category": "verb",
+        "reading": "かい",
+        "vocabularyId": "vocab-1b65a0cb82d2"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "安ければ、この店で買います。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "cheap",
+        "vocabularyIds": [
+          "vocab-0513945a1ef5"
+        ]
+      },
+      {
+        "word": "buy",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "ba-conditional"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ba-conditional",
+        "tokenStart": 0,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "production-n4-no-park-if-rain",
+    "text": "If it rains tomorrow, I will not go to the park.",
+    "audio": "assets/voices/grammar/production-n4-no-park-if-rain.m4a",
+    "vocabularyIds": [
+      "vocab-bec9ce9d08c8",
+      "vocab-7e87850c448d",
+      "vocab-777161023023",
+      "vocab-c3f997ee44ba",
+      "vocab-ec22142c23d3"
+    ],
+    "kanjiIds": [
+      "kanji-660e",
+      "kanji-65e5",
+      "kanji-96e8",
+      "kanji-516c",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "明日",
+        "category": "noun",
+        "reading": "あした",
+        "vocabularyId": "vocab-bec9ce9d08c8"
+      },
+      {
+        "surface": "雨",
+        "category": "noun",
+        "reading": "あめ",
+        "vocabularyId": "vocab-7e87850c448d"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "降れ",
+        "category": "verb",
+        "reading": "ふれ",
+        "vocabularyId": "vocab-777161023023"
+      },
+      {
+        "surface": "ば",
+        "category": "particle",
+        "reading": "ば"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "明日雨が降れば、公園へ行きません。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "rains",
+        "vocabularyIds": [
+          "vocab-777161023023"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "ba-conditional"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ba-conditional",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "n4-should-have-brought-umbrella",
+    "text": "昨日、傘を持ってくればよかったです。",
+    "audio": "assets/voices/grammar/n4-should-have-brought-umbrella.m4a",
+    "vocabularyIds": [
+      "vocab-eb208b6436bb",
+      "vocab-e58fdfd2a16b",
+      "vocab-516ad1128c71",
+      "vocab-ef4cce00951f"
+    ],
+    "kanjiIds": [
+      "kanji-65e5",
+      "kanji-6301"
+    ],
+    "tokens": [
+      {
+        "surface": "昨日",
+        "category": "noun",
+        "reading": "きのう",
+        "vocabularyId": "vocab-eb208b6436bb"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "傘",
+        "category": "noun",
+        "reading": "かさ",
+        "vocabularyId": "vocab-e58fdfd2a16b"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "持っ",
+        "category": "verb",
+        "reading": "もっ",
+        "vocabularyId": "vocab-516ad1128c71"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "くれ",
+        "category": "auxiliary",
+        "reading": "くれ"
+      },
+      {
+        "surface": "ば",
+        "category": "particle",
+        "reading": "ば"
+      },
+      {
+        "surface": "よかっ",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "I should have brought an umbrella yesterday.",
+    "grammarPointIds": [
+      "ba-yokatta",
+      "te-kuru",
+      "clock-calendar-time"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ba-yokatta",
+        "tokenStart": 7,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "te-kuru",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "n4-should-have-slept-earlier",
+    "text": "もっと早く寝ればよかったです。",
+    "audio": "assets/voices/grammar/n4-should-have-slept-earlier.m4a",
+    "vocabularyIds": [
+      "vocab-b87d435fd7f9",
+      "vocab-72460e05df01",
+      "vocab-50eb0e80c367",
+      "vocab-ef4cce00951f"
+    ],
+    "kanjiIds": [
+      "kanji-65e9"
+    ],
+    "tokens": [
+      {
+        "surface": "もっと",
+        "category": "adverb",
+        "reading": "もっと",
+        "vocabularyId": "vocab-b87d435fd7f9"
+      },
+      {
+        "surface": "早く",
+        "category": "adjective",
+        "reading": "はやく",
+        "vocabularyId": "vocab-72460e05df01"
+      },
+      {
+        "surface": "寝れ",
+        "category": "verb",
+        "reading": "ねれ",
+        "vocabularyId": "vocab-50eb0e80c367"
+      },
+      {
+        "surface": "ば",
+        "category": "particle",
+        "reading": "ば"
+      },
+      {
+        "surface": "よかっ",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "I should have gone to bed earlier.",
+    "grammarPointIds": [
+      "ba-yokatta",
+      "i-adjective-adverb"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ba-yokatta",
+        "tokenStart": 3,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "production-n4-should-have-asked-clerk",
+    "text": "I should have asked the clerk.",
+    "audio": "assets/voices/grammar/production-n4-should-have-asked-clerk.m4a",
+    "vocabularyIds": [
+      "vocab-2a1053878f8a",
+      "vocab-d8a0261581dc",
+      "vocab-ef4cce00951f"
+    ],
+    "kanjiIds": [
+      "kanji-5e97",
+      "kanji-54e1",
+      "kanji-805e"
+    ],
+    "tokens": [
+      {
+        "surface": "店員",
+        "category": "noun",
+        "reading": "てんいん",
+        "vocabularyId": "vocab-2a1053878f8a"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "聞け",
+        "category": "verb",
+        "reading": "きけ",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "ば",
+        "category": "particle",
+        "reading": "ば"
+      },
+      {
+        "surface": "よかっ",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "店員に聞けばよかったです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "asked",
+        "vocabularyIds": [
+          "vocab-d8a0261581dc"
+        ]
+      },
+      {
+        "word": "clerk",
+        "vocabularyIds": [
+          "vocab-2a1053878f8a"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "ba-yokatta"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ba-yokatta",
+        "tokenStart": 3,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "production-n4-should-not-have-eaten-so-much",
+    "text": "I should not have eaten so much.",
+    "audio": "assets/voices/grammar/production-n4-should-not-have-eaten-so-much.m4a",
+    "vocabularyIds": [
+      "vocab-7ae1ee3a0309",
+      "vocab-ec4fa4315542",
+      "vocab-ef4cce00951f"
+    ],
+    "kanjiIds": [
+      "kanji-98df"
+    ],
+    "tokens": [
+      {
+        "surface": "そんなに",
+        "category": "adverb",
+        "reading": "そんなに",
+        "vocabularyId": "vocab-7ae1ee3a0309"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "なけれ",
+        "category": "auxiliary",
+        "reading": "なけれ"
+      },
+      {
+        "surface": "ば",
+        "category": "particle",
+        "reading": "ば"
+      },
+      {
+        "surface": "よかっ",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "そんなに食べなければよかったです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "eaten",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "ba-yokatta"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ba-yokatta",
+        "tokenStart": 3,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "n4-tired-why-not-rest",
+    "text": "疲れているなら、少し休んだらどうですか。",
+    "audio": "assets/voices/grammar/n4-tired-why-not-rest.m4a",
+    "vocabularyIds": [
+      "vocab-65f5cb2d1bd4",
+      "vocab-8814378ebfc2",
+      "vocab-acc3dd26ba1e",
+      "vocab-99b783690b64"
+    ],
+    "kanjiIds": [
+      "kanji-5c11",
+      "kanji-4f11"
+    ],
+    "tokens": [
+      {
+        "surface": "疲れ",
+        "category": "verb",
+        "reading": "つかれ",
+        "vocabularyId": "vocab-65f5cb2d1bd4"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "いる",
+        "category": "auxiliary",
+        "reading": "いる"
+      },
+      {
+        "surface": "なら",
+        "category": "auxiliary",
+        "reading": "なら"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "少し",
+        "category": "adverb",
+        "reading": "すこし",
+        "vocabularyId": "vocab-8814378ebfc2"
+      },
+      {
+        "surface": "休ん",
+        "category": "verb",
+        "reading": "やすん",
+        "vocabularyId": "vocab-acc3dd26ba1e"
+      },
+      {
+        "surface": "だら",
+        "category": "auxiliary",
+        "reading": "だら"
+      },
+      {
+        "surface": "どう",
+        "category": "adverb",
+        "reading": "どう",
+        "vocabularyId": "vocab-99b783690b64"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "If you are tired, why not rest a little?",
+    "grammarPointIds": [
+      "tara-dou",
+      "nara-conditional"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tara-dou",
+        "tokenStart": 7,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "nara-conditional",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "n4-cold-why-not-hospital",
+    "text": "風邪なら、病院へ行ったらどうですか。",
+    "audio": "assets/voices/grammar/n4-cold-why-not-hospital.m4a",
+    "vocabularyIds": [
+      "vocab-1acb36bc84d4",
+      "vocab-152ea0d72dc5",
+      "vocab-ec22142c23d3",
+      "vocab-99b783690b64"
+    ],
+    "kanjiIds": [
+      "kanji-98a8",
+      "kanji-75c5",
+      "kanji-9662",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "風邪",
+        "category": "noun",
+        "reading": "かぜ",
+        "vocabularyId": "vocab-1acb36bc84d4"
+      },
+      {
+        "surface": "なら",
+        "category": "auxiliary",
+        "reading": "なら"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "病院",
+        "category": "noun",
+        "reading": "びょういん",
+        "vocabularyId": "vocab-152ea0d72dc5"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行っ",
+        "category": "verb",
+        "reading": "いっ",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "たら",
+        "category": "auxiliary",
+        "reading": "たら"
+      },
+      {
+        "surface": "どう",
+        "category": "adverb",
+        "reading": "どう",
+        "vocabularyId": "vocab-99b783690b64"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "If you have a cold, why not go to the hospital?",
+    "grammarPointIds": [
+      "tara-dou",
+      "nara-conditional",
+      "e-direction"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tara-dou",
+        "tokenStart": 6,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "nara-conditional",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "production-n4-why-not-ask-teacher",
+    "text": "Why don't you ask the teacher?",
+    "audio": "assets/voices/grammar/production-n4-why-not-ask-teacher.m4a",
+    "vocabularyIds": [
+      "vocab-497356cf0646",
+      "vocab-d8a0261581dc",
+      "vocab-99b783690b64"
+    ],
+    "kanjiIds": [
+      "kanji-5148",
+      "kanji-751f",
+      "kanji-805e"
+    ],
+    "tokens": [
+      {
+        "surface": "先生",
+        "category": "noun",
+        "reading": "せんせい",
+        "vocabularyId": "vocab-497356cf0646"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "聞い",
+        "category": "verb",
+        "reading": "きい",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "たら",
+        "category": "auxiliary",
+        "reading": "たら"
+      },
+      {
+        "surface": "どう",
+        "category": "adverb",
+        "reading": "どう",
+        "vocabularyId": "vocab-99b783690b64"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "先生に聞いたらどうですか。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "ask",
+        "vocabularyIds": [
+          "vocab-d8a0261581dc"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "tara-dou"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tara-dou",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "production-n4-why-not-sleep-earlier",
+    "text": "Why don't you go to bed earlier?",
+    "audio": "assets/voices/grammar/production-n4-why-not-sleep-earlier.m4a",
+    "vocabularyIds": [
+      "vocab-b87d435fd7f9",
+      "vocab-72460e05df01",
+      "vocab-50eb0e80c367",
+      "vocab-99b783690b64"
+    ],
+    "kanjiIds": [
+      "kanji-65e9"
+    ],
+    "tokens": [
+      {
+        "surface": "もっと",
+        "category": "adverb",
+        "reading": "もっと",
+        "vocabularyId": "vocab-b87d435fd7f9"
+      },
+      {
+        "surface": "早く",
+        "category": "adjective",
+        "reading": "はやく",
+        "vocabularyId": "vocab-72460e05df01"
+      },
+      {
+        "surface": "寝",
+        "category": "verb",
+        "reading": "ね",
+        "vocabularyId": "vocab-50eb0e80c367"
+      },
+      {
+        "surface": "たら",
+        "category": "auxiliary",
+        "reading": "たら"
+      },
+      {
+        "surface": "どう",
+        "category": "adverb",
+        "reading": "どう",
+        "vocabularyId": "vocab-99b783690b64"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "もっと早く寝たらどうですか。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "bed",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "tara-dou"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tara-dou",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "n4-door-closed-by-itself",
+    "text": "ドアが閉まりました。",
+    "audio": "assets/voices/grammar/n4-door-closed-by-itself.m4a",
+    "vocabularyIds": [
+      "vocab-01adf406cacd",
+      "vocab-47246131f042"
+    ],
+    "kanjiIds": [
+      "kanji-9589"
+    ],
+    "tokens": [
+      {
+        "surface": "ドア",
+        "category": "noun",
+        "reading": "どあ",
+        "vocabularyId": "vocab-01adf406cacd"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "閉まり",
+        "category": "verb",
+        "reading": "しまり",
+        "vocabularyId": "vocab-47246131f042"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "The door closed.",
+    "grammarPointIds": [
+      "transitive-intransitive",
+      "ga-subject",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "transitive-intransitive",
+        "tokenStart": 2,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "ga-subject",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "n4-father-closed-door",
+    "text": "父がドアを閉めました。",
+    "audio": "assets/voices/grammar/n4-father-closed-door.m4a",
+    "vocabularyIds": [
+      "vocab-d15ca6ea1179",
+      "vocab-01adf406cacd",
+      "vocab-98e990bf1d44"
+    ],
+    "kanjiIds": [
+      "kanji-7236",
+      "kanji-9589"
+    ],
+    "tokens": [
+      {
+        "surface": "父",
+        "category": "noun",
+        "reading": "ちち",
+        "vocabularyId": "vocab-d15ca6ea1179"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "ドア",
+        "category": "noun",
+        "reading": "どあ",
+        "vocabularyId": "vocab-01adf406cacd"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "閉め",
+        "category": "verb",
+        "reading": "しめ",
+        "vocabularyId": "vocab-98e990bf1d44"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "My father closed the door.",
+    "grammarPointIds": [
+      "transitive-intransitive",
+      "ga-subject",
+      "o-object",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "transitive-intransitive",
+        "tokenStart": 4,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "ga-subject",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-n4-window-opened-by-itself",
+    "text": "The window opened.",
+    "audio": "assets/voices/grammar/production-n4-window-opened-by-itself.m4a",
+    "vocabularyIds": [
+      "vocab-2c2d6564a0bc",
+      "vocab-56dc4d647d8b"
+    ],
+    "kanjiIds": [
+      "kanji-958b"
+    ],
+    "tokens": [
+      {
+        "surface": "窓",
+        "category": "noun",
+        "reading": "まど",
+        "vocabularyId": "vocab-2c2d6564a0bc"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "開き",
+        "category": "verb",
+        "reading": "あき",
+        "vocabularyId": "vocab-56dc4d647d8b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "窓が開きました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "opened",
+        "vocabularyIds": [
+          "vocab-56dc4d647d8b"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "transitive-intransitive"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "transitive-intransitive",
+        "tokenStart": 2,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "production-n4-i-opened-window",
+    "text": "I opened the window.",
+    "audio": "assets/voices/grammar/production-n4-i-opened-window.m4a",
+    "vocabularyIds": [
+      "vocab-b6944a5fe271",
+      "vocab-2c2d6564a0bc",
+      "vocab-658ff53bc114"
+    ],
+    "kanjiIds": [
+      "kanji-79c1",
+      "kanji-958b"
+    ],
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "窓",
+        "category": "noun",
+        "reading": "まど",
+        "vocabularyId": "vocab-2c2d6564a0bc"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "開け",
+        "category": "verb",
+        "reading": "あけ",
+        "vocabularyId": "vocab-658ff53bc114"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "私は窓を開けました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "opened",
+        "vocabularyIds": [
+          "vocab-658ff53bc114"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "transitive-intransitive"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "transitive-intransitive",
+        "tokenStart": 4,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "n4-medicine-needed-every-day",
+    "text": "この薬を毎日飲む必要があります。",
+    "audio": "assets/voices/grammar/n4-medicine-needed-every-day.m4a",
+    "vocabularyIds": [
+      "vocab-25acc002a82f",
+      "vocab-87bbe3de9902",
+      "vocab-1b6483e173f3",
+      "vocab-dcd3acd6b659",
+      "vocab-884e78e7d501",
+      "vocab-b66f43bc23a1"
+    ],
+    "kanjiIds": [
+      "kanji-85ac",
+      "kanji-6bce",
+      "kanji-65e5",
+      "kanji-98f2",
+      "kanji-5fc5",
+      "kanji-8981"
+    ],
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "薬",
+        "category": "noun",
+        "reading": "くすり",
+        "vocabularyId": "vocab-87bbe3de9902"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "毎日",
+        "category": "noun",
+        "reading": "まいにち",
+        "vocabularyId": "vocab-1b6483e173f3"
+      },
+      {
+        "surface": "飲む",
+        "category": "verb",
+        "reading": "のむ",
+        "vocabularyId": "vocab-dcd3acd6b659"
+      },
+      {
+        "surface": "必要",
+        "category": "adjective",
+        "reading": "ひつよう",
+        "vocabularyId": "vocab-884e78e7d501"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "You need to take this medicine every day.",
+    "grammarPointIds": [
+      "hitsuyou-ga-aru",
+      "o-object",
+      "frequency-adverbs"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "hitsuyou-ga-aru",
+        "tokenStart": 5,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      }
+    ]
+  },
+  {
+    "id": "n4-no-need-rise-early-tomorrow",
+    "text": "明日は早く起きる必要はありません。",
+    "audio": "assets/voices/grammar/n4-no-need-rise-early-tomorrow.m4a",
+    "vocabularyIds": [
+      "vocab-bec9ce9d08c8",
+      "vocab-72460e05df01",
+      "vocab-72c5b362c4f2",
+      "vocab-884e78e7d501",
+      "vocab-b66f43bc23a1"
+    ],
+    "kanjiIds": [
+      "kanji-660e",
+      "kanji-65e5",
+      "kanji-65e9",
+      "kanji-8d77",
+      "kanji-5fc5",
+      "kanji-8981"
+    ],
+    "tokens": [
+      {
+        "surface": "明日",
+        "category": "noun",
+        "reading": "あした",
+        "vocabularyId": "vocab-bec9ce9d08c8"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "早く",
+        "category": "adjective",
+        "reading": "はやく",
+        "vocabularyId": "vocab-72460e05df01"
+      },
+      {
+        "surface": "起きる",
+        "category": "verb",
+        "reading": "おきる",
+        "vocabularyId": "vocab-72c5b362c4f2"
+      },
+      {
+        "surface": "必要",
+        "category": "adjective",
+        "reading": "ひつよう",
+        "vocabularyId": "vocab-884e78e7d501"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "You do not need to get up early tomorrow.",
+    "grammarPointIds": [
+      "hitsuyou-ga-aru",
+      "wa-topic",
+      "i-adjective-adverb"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "hitsuyou-ga-aru",
+        "tokenStart": 4,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "production-n4-need-do-homework-today",
+    "text": "I need to do my homework today.",
+    "audio": "assets/voices/grammar/production-n4-need-do-homework-today.m4a",
+    "vocabularyIds": [
+      "vocab-6b9362de88a7",
+      "vocab-f26f501fa1c2",
+      "vocab-dfb6d8ba613b",
+      "vocab-884e78e7d501",
+      "vocab-b66f43bc23a1"
+    ],
+    "kanjiIds": [
+      "kanji-4eca",
+      "kanji-65e5",
+      "kanji-5bbf",
+      "kanji-984c",
+      "kanji-5fc5",
+      "kanji-8981"
+    ],
+    "tokens": [
+      {
+        "surface": "今日",
+        "category": "noun",
+        "reading": "きょう",
+        "vocabularyId": "vocab-6b9362de88a7"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "宿題",
+        "category": "noun",
+        "reading": "しゅくだい",
+        "vocabularyId": "vocab-f26f501fa1c2"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "する",
+        "category": "verb",
+        "reading": "する",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "必要",
+        "category": "adjective",
+        "reading": "ひつよう",
+        "vocabularyId": "vocab-884e78e7d501"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "今日、宿題をする必要があります。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "homework",
+        "vocabularyIds": [
+          "vocab-f26f501fa1c2"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "hitsuyou-ga-aru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "hitsuyou-ga-aru",
+        "tokenStart": 5,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "production-n4-no-need-come-tomorrow",
+    "text": "You do not need to come tomorrow.",
+    "audio": "assets/voices/grammar/production-n4-no-need-come-tomorrow.m4a",
+    "vocabularyIds": [
+      "vocab-bec9ce9d08c8",
+      "vocab-bc01756b4d89",
+      "vocab-884e78e7d501",
+      "vocab-b66f43bc23a1"
+    ],
+    "kanjiIds": [
+      "kanji-660e",
+      "kanji-65e5",
+      "kanji-6765",
+      "kanji-5fc5",
+      "kanji-8981"
+    ],
+    "tokens": [
+      {
+        "surface": "明日",
+        "category": "noun",
+        "reading": "あした",
+        "vocabularyId": "vocab-bec9ce9d08c8"
+      },
+      {
+        "surface": "来る",
+        "category": "verb",
+        "reading": "くる",
+        "vocabularyId": "vocab-bc01756b4d89"
+      },
+      {
+        "surface": "必要",
+        "category": "adjective",
+        "reading": "ひつよう",
+        "vocabularyId": "vocab-884e78e7d501"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "明日来る必要はありません。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "come",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "hitsuyou-ga-aru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "hitsuyou-ga-aru",
+        "tokenStart": 2,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "n4-write-name-here-command",
+    "text": "ここに名前を書きなさい。",
+    "audio": "assets/voices/grammar/n4-write-name-here-command.m4a",
+    "vocabularyIds": [
+      "vocab-f4ee05460d54",
+      "vocab-09558b341dc0",
+      "vocab-d34997e828cb"
+    ],
+    "kanjiIds": [
+      "kanji-540d",
+      "kanji-524d",
+      "kanji-66f8"
+    ],
+    "tokens": [
+      {
+        "surface": "ここ",
+        "category": "noun",
+        "reading": "ここ",
+        "vocabularyId": "vocab-f4ee05460d54"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "名前",
+        "category": "noun",
+        "reading": "なまえ",
+        "vocabularyId": "vocab-09558b341dc0"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "書き",
+        "category": "verb",
+        "reading": "かき",
+        "vocabularyId": "vocab-d34997e828cb"
+      },
+      {
+        "surface": "なさい",
+        "category": "auxiliary",
+        "reading": "なさい"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "Write your name here.",
+    "grammarPointIds": [
+      "nasai-command",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "nasai-command",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "production-n4-go-to-bed-early-command",
+    "text": "Go to bed early.",
+    "audio": "assets/voices/grammar/production-n4-go-to-bed-early-command.m4a",
+    "vocabularyIds": [
+      "vocab-72460e05df01",
+      "vocab-50eb0e80c367"
+    ],
+    "kanjiIds": [
+      "kanji-65e9"
+    ],
+    "tokens": [
+      {
+        "surface": "早く",
+        "category": "adjective",
+        "reading": "はやく",
+        "vocabularyId": "vocab-72460e05df01"
+      },
+      {
+        "surface": "寝",
+        "category": "verb",
+        "reading": "ね",
+        "vocabularyId": "vocab-50eb0e80c367"
+      },
+      {
+        "surface": "なさい",
+        "category": "auxiliary",
+        "reading": "なさい"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "早く寝なさい。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "bed",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "nasai-command"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "nasai-command",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      }
+    ]
+  },
+  {
+    "id": "production-n4-take-medicine-command",
+    "text": "Take this medicine.",
+    "audio": "assets/voices/grammar/production-n4-take-medicine-command.m4a",
+    "vocabularyIds": [
+      "vocab-25acc002a82f",
+      "vocab-87bbe3de9902",
+      "vocab-dcd3acd6b659"
+    ],
+    "kanjiIds": [
+      "kanji-85ac",
+      "kanji-98f2"
+    ],
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "薬",
+        "category": "noun",
+        "reading": "くすり",
+        "vocabularyId": "vocab-87bbe3de9902"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "飲み",
+        "category": "verb",
+        "reading": "のみ",
+        "vocabularyId": "vocab-dcd3acd6b659"
+      },
+      {
+        "surface": "なさい",
+        "category": "auxiliary",
+        "reading": "なさい"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "この薬を飲みなさい。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Take",
+        "vocabularyIds": [
+          "vocab-dcd3acd6b659"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "nasai-command"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "nasai-command",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "n4-started-rising-early",
+    "text": "毎朝早く起きるようになりました。",
+    "audio": "assets/voices/grammar/n4-started-rising-early.m4a",
+    "vocabularyIds": [
+      "vocab-ecd92861d4d7",
+      "vocab-72460e05df01",
+      "vocab-72c5b362c4f2",
+      "vocab-3653e718a1a5"
+    ],
+    "kanjiIds": [
+      "kanji-6bce",
+      "kanji-671d",
+      "kanji-65e9",
+      "kanji-8d77"
+    ],
+    "tokens": [
+      {
+        "surface": "毎朝",
+        "category": "noun",
+        "reading": "まいあさ",
+        "vocabularyId": "vocab-ecd92861d4d7"
+      },
+      {
+        "surface": "早く",
+        "category": "adjective",
+        "reading": "はやく",
+        "vocabularyId": "vocab-72460e05df01"
+      },
+      {
+        "surface": "起きる",
+        "category": "verb",
+        "reading": "おきる",
+        "vocabularyId": "vocab-72c5b362c4f2"
+      },
+      {
+        "surface": "よう",
+        "category": "auxiliary",
+        "reading": "よう"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "なり",
+        "category": "verb",
+        "reading": "なり",
+        "vocabularyId": "vocab-3653e718a1a5"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "I have started getting up early every morning.",
+    "grammarPointIds": [
+      "you-ni-naru",
+      "frequency-adverbs",
+      "i-adjective-adverb"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-ni-naru",
+        "tokenStart": 3,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "n4-became-able-read-kanji",
+    "text": "漢字が読めるようになりました。",
+    "audio": "assets/voices/grammar/n4-became-able-read-kanji.m4a",
+    "vocabularyIds": [
+      "vocab-535c688e8bf9",
+      "vocab-24f188a06d2c",
+      "vocab-3653e718a1a5"
+    ],
+    "kanjiIds": [
+      "kanji-6f22",
+      "kanji-5b57",
+      "kanji-8aad"
+    ],
+    "tokens": [
+      {
+        "surface": "漢字",
+        "category": "noun",
+        "reading": "かんじ",
+        "vocabularyId": "vocab-535c688e8bf9"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "読める",
+        "category": "verb",
+        "reading": "よめる",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "よう",
+        "category": "auxiliary",
+        "reading": "よう"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "なり",
+        "category": "verb",
+        "reading": "なり",
+        "vocabularyId": "vocab-3653e718a1a5"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "I have become able to read kanji.",
+    "grammarPointIds": [
+      "you-ni-naru",
+      "potential-form",
+      "ga-subject"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-ni-naru",
+        "tokenStart": 3,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "potential-form",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "ga-subject",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "production-n4-started-walking-daily",
+    "text": "I have started walking every day.",
+    "audio": "assets/voices/grammar/production-n4-started-walking-daily.m4a",
+    "vocabularyIds": [
+      "vocab-1b6483e173f3",
+      "vocab-a76603aae6e4",
+      "vocab-3653e718a1a5"
+    ],
+    "kanjiIds": [
+      "kanji-6bce",
+      "kanji-65e5",
+      "kanji-6b69"
+    ],
+    "tokens": [
+      {
+        "surface": "毎日",
+        "category": "noun",
+        "reading": "まいにち",
+        "vocabularyId": "vocab-1b6483e173f3"
+      },
+      {
+        "surface": "歩く",
+        "category": "verb",
+        "reading": "あるく",
+        "vocabularyId": "vocab-a76603aae6e4"
+      },
+      {
+        "surface": "よう",
+        "category": "auxiliary",
+        "reading": "よう"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "なり",
+        "category": "verb",
+        "reading": "なり",
+        "vocabularyId": "vocab-3653e718a1a5"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "毎日歩くようになりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "walking",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "you-ni-naru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-ni-naru",
+        "tokenStart": 2,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-n4-stopped-drinking-coffee-at-night",
+    "text": "I no longer drink coffee at night.",
+    "audio": "assets/voices/grammar/production-n4-stopped-drinking-coffee-at-night.m4a",
+    "vocabularyIds": [
+      "vocab-ba0c8a160c33",
+      "vocab-f5f2c2dca175",
+      "vocab-dcd3acd6b659",
+      "vocab-3653e718a1a5"
+    ],
+    "kanjiIds": [
+      "kanji-591c",
+      "kanji-98f2"
+    ],
+    "tokens": [
+      {
+        "surface": "夜",
+        "category": "noun",
+        "reading": "よる",
+        "vocabularyId": "vocab-ba0c8a160c33"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "コーヒー",
+        "category": "noun",
+        "reading": "こーひー",
+        "vocabularyId": "vocab-f5f2c2dca175"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "飲ま",
+        "category": "verb",
+        "reading": "のま",
+        "vocabularyId": "vocab-dcd3acd6b659"
+      },
+      {
+        "surface": "ない",
+        "category": "auxiliary",
+        "reading": "ない"
+      },
+      {
+        "surface": "よう",
+        "category": "auxiliary",
+        "reading": "よう"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "なり",
+        "category": "verb",
+        "reading": "なり",
+        "vocabularyId": "vocab-3653e718a1a5"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "夜はコーヒーを飲まないようになりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "drink",
+        "vocabularyIds": [
+          "vocab-dcd3acd6b659"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "you-ni-naru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-ni-naru",
+        "tokenStart": 6,
+        "tokenEnd": 11
+      }
+    ]
+  },
+  {
+    "id": "n4-make-point-read-kanji",
+    "text": "毎日漢字を読むようにしています。",
+    "audio": "assets/voices/grammar/n4-make-point-read-kanji.m4a",
+    "vocabularyIds": [
+      "vocab-1b6483e173f3",
+      "vocab-535c688e8bf9",
+      "vocab-24f188a06d2c",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-6bce",
+      "kanji-65e5",
+      "kanji-6f22",
+      "kanji-5b57",
+      "kanji-8aad"
+    ],
+    "tokens": [
+      {
+        "surface": "毎日",
+        "category": "noun",
+        "reading": "まいにち",
+        "vocabularyId": "vocab-1b6483e173f3"
+      },
+      {
+        "surface": "漢字",
+        "category": "noun",
+        "reading": "かんじ",
+        "vocabularyId": "vocab-535c688e8bf9"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読む",
+        "category": "verb",
+        "reading": "よむ",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "よう",
+        "category": "auxiliary",
+        "reading": "よう"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "I make a point of reading kanji every day.",
+    "grammarPointIds": [
+      "you-ni-suru",
+      "frequency-adverbs",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-ni-suru",
+        "tokenStart": 4,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      }
+    ]
+  },
+  {
+    "id": "n4-try-not-drink-coffee-at-night",
+    "text": "夜はコーヒーを飲まないようにしています。",
+    "audio": "assets/voices/grammar/n4-try-not-drink-coffee-at-night.m4a",
+    "vocabularyIds": [
+      "vocab-ba0c8a160c33",
+      "vocab-f5f2c2dca175",
+      "vocab-dcd3acd6b659",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-591c",
+      "kanji-98f2"
+    ],
+    "tokens": [
+      {
+        "surface": "夜",
+        "category": "noun",
+        "reading": "よる",
+        "vocabularyId": "vocab-ba0c8a160c33"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "コーヒー",
+        "category": "noun",
+        "reading": "こーひー",
+        "vocabularyId": "vocab-f5f2c2dca175"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "飲ま",
+        "category": "verb",
+        "reading": "のま",
+        "vocabularyId": "vocab-dcd3acd6b659"
+      },
+      {
+        "surface": "ない",
+        "category": "auxiliary",
+        "reading": "ない"
+      },
+      {
+        "surface": "よう",
+        "category": "auxiliary",
+        "reading": "よう"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "I try not to drink coffee at night.",
+    "grammarPointIds": [
+      "you-ni-suru",
+      "wa-topic",
+      "o-object",
+      "verb-nai"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-ni-suru",
+        "tokenStart": 6,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "verb-nai",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "production-n4-make-point-walk-daily",
+    "text": "I make a point of walking every day.",
+    "audio": "assets/voices/grammar/production-n4-make-point-walk-daily.m4a",
+    "vocabularyIds": [
+      "vocab-1b6483e173f3",
+      "vocab-a76603aae6e4",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-6bce",
+      "kanji-65e5",
+      "kanji-6b69"
+    ],
+    "tokens": [
+      {
+        "surface": "毎日",
+        "category": "noun",
+        "reading": "まいにち",
+        "vocabularyId": "vocab-1b6483e173f3"
+      },
+      {
+        "surface": "歩く",
+        "category": "verb",
+        "reading": "あるく",
+        "vocabularyId": "vocab-a76603aae6e4"
+      },
+      {
+        "surface": "よう",
+        "category": "auxiliary",
+        "reading": "よう"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "毎日歩くようにしています。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "walking",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "you-ni-suru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-ni-suru",
+        "tokenStart": 2,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "production-n4-make-sure-not-forget-homework",
+    "text": "I make sure not to forget my homework.",
+    "audio": "assets/voices/grammar/production-n4-make-sure-not-forget-homework.m4a",
+    "vocabularyIds": [
+      "vocab-f26f501fa1c2",
+      "vocab-53c63c8d3e25",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-5bbf",
+      "kanji-984c",
+      "kanji-5fd8"
+    ],
+    "tokens": [
+      {
+        "surface": "宿題",
+        "category": "noun",
+        "reading": "しゅくだい",
+        "vocabularyId": "vocab-f26f501fa1c2"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "忘れ",
+        "category": "verb",
+        "reading": "わすれ",
+        "vocabularyId": "vocab-53c63c8d3e25"
+      },
+      {
+        "surface": "ない",
+        "category": "auxiliary",
+        "reading": "ない"
+      },
+      {
+        "surface": "よう",
+        "category": "auxiliary",
+        "reading": "よう"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "宿題を忘れないようにしています。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "forget",
+        "vocabularyIds": [
+          "vocab-53c63c8d3e25"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "you-ni-suru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-ni-suru",
+        "tokenStart": 4,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "n4-about-to-leave-phone-rang",
+    "text": "家を出ようとした時、電話が鳴りました。",
+    "audio": "assets/voices/grammar/n4-about-to-leave-phone-rang.m4a",
+    "vocabularyIds": [
+      "vocab-8af58778f14e",
+      "vocab-b2a9df4d0301",
+      "vocab-dfb6d8ba613b",
+      "vocab-e267b19a680f",
+      "vocab-24df87472770",
+      "vocab-89aea2f63b8b"
+    ],
+    "kanjiIds": [
+      "kanji-5bb6",
+      "kanji-51fa",
+      "kanji-6642",
+      "kanji-96fb",
+      "kanji-8a71"
+    ],
+    "tokens": [
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "出よ",
+        "category": "verb",
+        "reading": "でよ",
+        "vocabularyId": "vocab-b2a9df4d0301"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "時",
+        "category": "noun",
+        "reading": "じ",
+        "vocabularyId": "vocab-e267b19a680f"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "電話",
+        "category": "noun",
+        "reading": "でんわ",
+        "vocabularyId": "vocab-24df87472770"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "鳴り",
+        "category": "verb",
+        "reading": "なり",
+        "vocabularyId": "vocab-89aea2f63b8b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "The phone rang as I was about to leave the house.",
+    "grammarPointIds": [
+      "you-to-suru",
+      "plain-volitional",
+      "toki",
+      "o-route"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-to-suru",
+        "tokenStart": 2,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "plain-volitional",
+        "tokenStart": 2,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "o-route",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "n4-about-to-board-met-friend",
+    "text": "電車に乗ろうとした時、友達に会いました。",
+    "audio": "assets/voices/grammar/n4-about-to-board-met-friend.m4a",
+    "vocabularyIds": [
+      "vocab-dc7f5fc156cf",
+      "vocab-9e0eeba39759",
+      "vocab-dfb6d8ba613b",
+      "vocab-e267b19a680f",
+      "vocab-d9898f8a95b6",
+      "vocab-40179481fcf6"
+    ],
+    "kanjiIds": [
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-6642",
+      "kanji-53cb",
+      "kanji-4f1a"
+    ],
+    "tokens": [
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "乗ろ",
+        "category": "verb",
+        "reading": "のろ",
+        "vocabularyId": "vocab-9e0eeba39759"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "時",
+        "category": "noun",
+        "reading": "じ",
+        "vocabularyId": "vocab-e267b19a680f"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "会い",
+        "category": "verb",
+        "reading": "あい",
+        "vocabularyId": "vocab-40179481fcf6"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "As I was about to board the train, I met a friend.",
+    "grammarPointIds": [
+      "you-to-suru",
+      "plain-volitional",
+      "toki",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-to-suru",
+        "tokenStart": 2,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "plain-volitional",
+        "tokenStart": 2,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "production-n4-about-to-sleep-phone-rang",
+    "text": "The phone rang when I was about to go to bed.",
+    "audio": "assets/voices/grammar/production-n4-about-to-sleep-phone-rang.m4a",
+    "vocabularyIds": [
+      "vocab-50eb0e80c367",
+      "vocab-dfb6d8ba613b",
+      "vocab-e267b19a680f",
+      "vocab-24df87472770",
+      "vocab-89aea2f63b8b"
+    ],
+    "kanjiIds": [
+      "kanji-6642",
+      "kanji-96fb",
+      "kanji-8a71"
+    ],
+    "tokens": [
+      {
+        "surface": "寝よ",
+        "category": "verb",
+        "reading": "ねよ",
+        "vocabularyId": "vocab-50eb0e80c367"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "時",
+        "category": "noun",
+        "reading": "じ",
+        "vocabularyId": "vocab-e267b19a680f"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "電話",
+        "category": "noun",
+        "reading": "でんわ",
+        "vocabularyId": "vocab-24df87472770"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "鳴り",
+        "category": "verb",
+        "reading": "なり",
+        "vocabularyId": "vocab-89aea2f63b8b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "寝ようとした時、電話が鳴りました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "bed",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "phone",
+        "vocabularyIds": [
+          "vocab-24df87472770"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "you-to-suru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-to-suru",
+        "tokenStart": 0,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "production-n4-child-tried-open-door",
+    "text": "The child tried to open the door.",
+    "audio": "assets/voices/grammar/production-n4-child-tried-open-door.m4a",
+    "vocabularyIds": [
+      "vocab-5fd1d3759699",
+      "vocab-01adf406cacd",
+      "vocab-658ff53bc114",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-5b50",
+      "kanji-958b"
+    ],
+    "tokens": [
+      {
+        "surface": "子供",
+        "category": "noun",
+        "reading": "こども",
+        "vocabularyId": "vocab-5fd1d3759699"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "ドア",
+        "category": "noun",
+        "reading": "どあ",
+        "vocabularyId": "vocab-01adf406cacd"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "開けよ",
+        "category": "verb",
+        "reading": "ひらけよ",
+        "vocabularyId": "vocab-658ff53bc114"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "子供はドアを開けようとしました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "open",
+        "vocabularyIds": [
+          "vocab-658ff53bc114"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "you-to-suru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "you-to-suru",
+        "tokenStart": 4,
+        "tokenEnd": 10
+      }
+    ]
+  },
+  {
+    "id": "n4-bought-tomorrow-ticket-in-advance",
+    "text": "明日の切符を買っておきました。",
+    "audio": "assets/voices/grammar/n4-bought-tomorrow-ticket-in-advance.m4a",
+    "vocabularyIds": [
+      "vocab-bec9ce9d08c8",
+      "vocab-f5d0af9cc8d2",
+      "vocab-1b65a0cb82d2"
+    ],
+    "kanjiIds": [
+      "kanji-660e",
+      "kanji-65e5",
+      "kanji-5207",
+      "kanji-8cb7"
+    ],
+    "tokens": [
+      {
+        "surface": "明日",
+        "category": "noun",
+        "reading": "あした",
+        "vocabularyId": "vocab-bec9ce9d08c8"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "切符",
+        "category": "noun",
+        "reading": "きっぷ",
+        "vocabularyId": "vocab-f5d0af9cc8d2"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "買っ",
+        "category": "verb",
+        "reading": "かっ",
+        "vocabularyId": "vocab-1b65a0cb82d2"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "おき",
+        "category": "auxiliary",
+        "reading": "おき"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "I bought tomorrow's ticket in advance.",
+    "grammarPointIds": [
+      "te-oku",
+      "no-possession",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-oku",
+        "tokenStart": 5,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "no-possession",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "n4-clean-before-friend-arrives",
+    "text": "友達が来る前に、部屋を掃除しておきます。",
+    "audio": "assets/voices/grammar/n4-clean-before-friend-arrives.m4a",
+    "vocabularyIds": [
+      "vocab-d9898f8a95b6",
+      "vocab-bc01756b4d89",
+      "vocab-07f353ef981c",
+      "vocab-23523bbf8d9c",
+      "vocab-21537eeda1e7",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-53cb",
+      "kanji-6765",
+      "kanji-524d",
+      "kanji-5c4b"
+    ],
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "来る",
+        "category": "verb",
+        "reading": "くる",
+        "vocabularyId": "vocab-bc01756b4d89"
+      },
+      {
+        "surface": "前",
+        "category": "noun",
+        "reading": "まえ",
+        "vocabularyId": "vocab-07f353ef981c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "部屋",
+        "category": "noun",
+        "reading": "へや",
+        "vocabularyId": "vocab-23523bbf8d9c"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "掃除",
+        "category": "noun",
+        "reading": "そうじ",
+        "vocabularyId": "vocab-21537eeda1e7"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "おき",
+        "category": "auxiliary",
+        "reading": "おき"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "I will clean the room before my friend comes.",
+    "grammarPointIds": [
+      "te-oku",
+      "mae-ni",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-oku",
+        "tokenStart": 10,
+        "tokenEnd": 13
+      },
+      {
+        "grammarPointId": "mae-ni",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "production-n4-make-dinner-in-advance",
+    "text": "I will make dinner in advance.",
+    "audio": "assets/voices/grammar/production-n4-make-dinner-in-advance.m4a",
+    "vocabularyIds": [
+      "vocab-42964aea18cf",
+      "vocab-2bf5dccca2b0",
+      "vocab-a4ccf0b7bace"
+    ],
+    "kanjiIds": [
+      "kanji-6669",
+      "kanji-98ef",
+      "kanji-4f5c"
+    ],
+    "tokens": [
+      {
+        "surface": "晩",
+        "category": "noun",
+        "reading": "ばん",
+        "vocabularyId": "vocab-42964aea18cf"
+      },
+      {
+        "surface": "御飯",
+        "category": "noun",
+        "reading": "ごはん",
+        "vocabularyId": "vocab-2bf5dccca2b0"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "作っ",
+        "category": "verb",
+        "reading": "つくっ",
+        "vocabularyId": "vocab-a4ccf0b7bace"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "おき",
+        "category": "auxiliary",
+        "reading": "おき"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "晩御飯を作っておきます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "dinner",
+        "vocabularyIds": [
+          "vocab-696613003517"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "te-oku"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-oku",
+        "tokenStart": 4,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-n4-leave-window-open",
+    "text": "Please leave the window open.",
+    "audio": "assets/voices/grammar/production-n4-leave-window-open.m4a",
+    "vocabularyIds": [
+      "vocab-2c2d6564a0bc",
+      "vocab-658ff53bc114"
+    ],
+    "kanjiIds": [
+      "kanji-958b"
+    ],
+    "tokens": [
+      {
+        "surface": "窓",
+        "category": "noun",
+        "reading": "まど",
+        "vocabularyId": "vocab-2c2d6564a0bc"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "開け",
+        "category": "verb",
+        "reading": "あけ",
+        "vocabularyId": "vocab-658ff53bc114"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "おい",
+        "category": "auxiliary",
+        "reading": "おい"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "ください",
+        "category": "auxiliary",
+        "reading": "ください"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "窓を開けておいてください。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "open",
+        "vocabularyIds": [
+          "vocab-658ff53bc114"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "te-oku",
+      "te-kudasai"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-oku",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "te-kudasai",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "n4-rain-started-at-seven",
+    "text": "七時に雨が降り始めました。",
+    "audio": "assets/voices/grammar/n4-rain-started-at-seven.m4a",
+    "vocabularyIds": [
+      "vocab-651603322794",
+      "vocab-e267b19a680f",
+      "vocab-7e87850c448d",
+      "vocab-777161023023"
+    ],
+    "kanjiIds": [
+      "kanji-4e03",
+      "kanji-6642",
+      "kanji-96e8",
+      "kanji-59cb"
+    ],
+    "tokens": [
+      {
+        "surface": "七",
+        "category": "noun",
+        "reading": "なな",
+        "vocabularyId": "vocab-651603322794"
+      },
+      {
+        "surface": "時",
+        "category": "noun",
+        "reading": "じ",
+        "vocabularyId": "vocab-e267b19a680f"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "雨",
+        "category": "noun",
+        "reading": "あめ",
+        "vocabularyId": "vocab-7e87850c448d"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "降り",
+        "category": "verb",
+        "reading": "ふり",
+        "vocabularyId": "vocab-777161023023"
+      },
+      {
+        "surface": "始め",
+        "category": "auxiliary",
+        "reading": "はじめ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "It started raining at seven.",
+    "grammarPointIds": [
+      "stem-hajimeru",
+      "ni-time",
+      "ga-subject"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-hajimeru",
+        "tokenStart": 6,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "ni-time",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "ga-subject",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "n4-child-started-crying",
+    "text": "子供が泣き始めました。",
+    "audio": "assets/voices/grammar/n4-child-started-crying.m4a",
+    "vocabularyIds": [
+      "vocab-5fd1d3759699",
+      "vocab-fe32ad045449"
+    ],
+    "kanjiIds": [
+      "kanji-5b50",
+      "kanji-59cb"
+    ],
+    "tokens": [
+      {
+        "surface": "子供",
+        "category": "noun",
+        "reading": "こども",
+        "vocabularyId": "vocab-5fd1d3759699"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "泣き",
+        "category": "verb",
+        "reading": "なき",
+        "vocabularyId": "vocab-fe32ad045449"
+      },
+      {
+        "surface": "始め",
+        "category": "auxiliary",
+        "reading": "はじめ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "The child started crying.",
+    "grammarPointIds": [
+      "stem-hajimeru",
+      "ga-subject"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-hajimeru",
+        "tokenStart": 3,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "ga-subject",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "production-n4-snow-started-falling",
+    "text": "It started snowing.",
+    "audio": "assets/voices/grammar/production-n4-snow-started-falling.m4a",
+    "vocabularyIds": [
+      "vocab-79db1765ce26",
+      "vocab-777161023023"
+    ],
+    "kanjiIds": [
+      "kanji-59cb"
+    ],
+    "tokens": [
+      {
+        "surface": "雪",
+        "category": "noun",
+        "reading": "ゆき",
+        "vocabularyId": "vocab-79db1765ce26"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "降り",
+        "category": "verb",
+        "reading": "ふり",
+        "vocabularyId": "vocab-777161023023"
+      },
+      {
+        "surface": "始め",
+        "category": "auxiliary",
+        "reading": "はじめ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "雪が降り始めました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "snowing",
+        "vocabularyIds": [
+          "vocab-79db1765ce26"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-hajimeru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-hajimeru",
+        "tokenStart": 3,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "production-n4-brother-started-reading-book",
+    "text": "My younger brother started reading the book.",
+    "audio": "assets/voices/grammar/production-n4-brother-started-reading-book.m4a",
+    "vocabularyIds": [
+      "vocab-7e8dc4d63e82",
+      "vocab-ac42ce789185",
+      "vocab-0ac038632611",
+      "vocab-24f188a06d2c"
+    ],
+    "kanjiIds": [
+      "kanji-5f1f",
+      "kanji-672c",
+      "kanji-8aad",
+      "kanji-59cb"
+    ],
+    "tokens": [
+      {
+        "surface": "弟",
+        "category": "noun",
+        "reading": "おとうと",
+        "vocabularyId": "vocab-7e8dc4d63e82"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読み",
+        "category": "verb",
+        "reading": "よみ",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "始め",
+        "category": "auxiliary",
+        "reading": "はじめ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "弟はその本を読み始めました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "reading",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-hajimeru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-hajimeru",
+        "tokenStart": 6,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "n4-finished-reading-book",
+    "text": "この本を読み終わりました。",
+    "audio": "assets/voices/grammar/n4-finished-reading-book.m4a",
+    "vocabularyIds": [
+      "vocab-25acc002a82f",
+      "vocab-0ac038632611",
+      "vocab-24f188a06d2c"
+    ],
+    "kanjiIds": [
+      "kanji-672c",
+      "kanji-8aad",
+      "kanji-7d42"
+    ],
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読み",
+        "category": "verb",
+        "reading": "よみ",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "終わり",
+        "category": "auxiliary",
+        "reading": "おわり"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "I finished reading this book.",
+    "grammarPointIds": [
+      "stem-owaru",
+      "o-object",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-owaru",
+        "tokenStart": 4,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "n4-finished-letter-then-slept",
+    "text": "手紙を書き終わって、寝ました。",
+    "audio": "assets/voices/grammar/n4-finished-letter-then-slept.m4a",
+    "vocabularyIds": [
+      "vocab-8e7233a38df0",
+      "vocab-d34997e828cb",
+      "vocab-50eb0e80c367"
+    ],
+    "kanjiIds": [
+      "kanji-624b",
+      "kanji-7d19",
+      "kanji-66f8",
+      "kanji-7d42"
+    ],
+    "tokens": [
+      {
+        "surface": "手紙",
+        "category": "noun",
+        "reading": "てがみ",
+        "vocabularyId": "vocab-8e7233a38df0"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "書き",
+        "category": "verb",
+        "reading": "かき",
+        "vocabularyId": "vocab-d34997e828cb"
+      },
+      {
+        "surface": "終わっ",
+        "category": "auxiliary",
+        "reading": "おわっ"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "寝",
+        "category": "verb",
+        "reading": "ね",
+        "vocabularyId": "vocab-50eb0e80c367"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "I finished writing the letter and went to bed.",
+    "grammarPointIds": [
+      "stem-owaru",
+      "te-action-link",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-owaru",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "production-n4-finished-eating-breakfast",
+    "text": "I finished eating breakfast.",
+    "audio": "assets/voices/grammar/production-n4-finished-eating-breakfast.m4a",
+    "vocabularyIds": [
+      "vocab-40ae6dddb10a",
+      "vocab-2bf5dccca2b0",
+      "vocab-ec4fa4315542"
+    ],
+    "kanjiIds": [
+      "kanji-671d",
+      "kanji-98ef",
+      "kanji-98df",
+      "kanji-7d42"
+    ],
+    "tokens": [
+      {
+        "surface": "朝",
+        "category": "noun",
+        "reading": "あさ",
+        "vocabularyId": "vocab-40ae6dddb10a"
+      },
+      {
+        "surface": "御飯",
+        "category": "noun",
+        "reading": "ごはん",
+        "vocabularyId": "vocab-2bf5dccca2b0"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "終わり",
+        "category": "auxiliary",
+        "reading": "おわり"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "朝御飯を食べ終わりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "breakfast",
+        "vocabularyIds": [
+          "vocab-818846d31820"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-owaru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-owaru",
+        "tokenStart": 4,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-n4-she-finished-writing-letter",
+    "text": "She finished writing the letter.",
+    "audio": "assets/voices/grammar/production-n4-she-finished-writing-letter.m4a",
+    "vocabularyIds": [
+      "vocab-d8efb8884948",
+      "vocab-8e7233a38df0",
+      "vocab-d34997e828cb"
+    ],
+    "kanjiIds": [
+      "kanji-5973",
+      "kanji-624b",
+      "kanji-7d19",
+      "kanji-66f8",
+      "kanji-7d42"
+    ],
+    "tokens": [
+      {
+        "surface": "彼女",
+        "category": "noun",
+        "reading": "かのじょ",
+        "vocabularyId": "vocab-d8efb8884948"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "手紙",
+        "category": "noun",
+        "reading": "てがみ",
+        "vocabularyId": "vocab-8e7233a38df0"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "書き",
+        "category": "verb",
+        "reading": "かき",
+        "vocabularyId": "vocab-d34997e828cb"
+      },
+      {
+        "surface": "終わり",
+        "category": "auxiliary",
+        "reading": "おわり"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "彼女は手紙を書き終わりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "writing",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-owaru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-owaru",
+        "tokenStart": 5,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "n4-rain-kept-falling",
+    "text": "雨が降り続けました。",
+    "audio": "assets/voices/grammar/n4-rain-kept-falling.m4a",
+    "vocabularyIds": [
+      "vocab-7e87850c448d",
+      "vocab-777161023023"
+    ],
+    "kanjiIds": [
+      "kanji-96e8"
+    ],
+    "tokens": [
+      {
+        "surface": "雨",
+        "category": "noun",
+        "reading": "あめ",
+        "vocabularyId": "vocab-7e87850c448d"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "降り",
+        "category": "verb",
+        "reading": "ふり",
+        "vocabularyId": "vocab-777161023023"
+      },
+      {
+        "surface": "続け",
+        "category": "auxiliary",
+        "reading": "つづけ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "The rain kept falling.",
+    "grammarPointIds": [
+      "stem-tsuzukeru",
+      "ga-subject"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-tsuzukeru",
+        "tokenStart": 3,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "ga-subject",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "n4-father-worked-three-hours-continuously",
+    "text": "父は三時間働き続けました。",
+    "audio": "assets/voices/grammar/n4-father-worked-three-hours-continuously.m4a",
+    "vocabularyIds": [
+      "vocab-d15ca6ea1179",
+      "vocab-1bedf722c04a",
+      "vocab-f6a8c4a23b51",
+      "vocab-49f91d135f05"
+    ],
+    "kanjiIds": [
+      "kanji-7236",
+      "kanji-4e09",
+      "kanji-6642",
+      "kanji-9593",
+      "kanji-50cd"
+    ],
+    "tokens": [
+      {
+        "surface": "父",
+        "category": "noun",
+        "reading": "ちち",
+        "vocabularyId": "vocab-d15ca6ea1179"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "三",
+        "category": "noun",
+        "reading": "さん",
+        "vocabularyId": "vocab-1bedf722c04a"
+      },
+      {
+        "surface": "時間",
+        "category": "noun",
+        "reading": "じかん",
+        "vocabularyId": "vocab-f6a8c4a23b51"
+      },
+      {
+        "surface": "働き",
+        "category": "verb",
+        "reading": "はたらき",
+        "vocabularyId": "vocab-49f91d135f05"
+      },
+      {
+        "surface": "続け",
+        "category": "auxiliary",
+        "reading": "つづけ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "My father kept working for three hours.",
+    "grammarPointIds": [
+      "stem-tsuzukeru",
+      "wa-topic",
+      "duration-no-particle"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-tsuzukeru",
+        "tokenStart": 5,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "production-n4-she-kept-reading-book",
+    "text": "She kept reading the book.",
+    "audio": "assets/voices/grammar/production-n4-she-kept-reading-book.m4a",
+    "vocabularyIds": [
+      "vocab-d8efb8884948",
+      "vocab-ac42ce789185",
+      "vocab-0ac038632611",
+      "vocab-24f188a06d2c"
+    ],
+    "kanjiIds": [
+      "kanji-5973",
+      "kanji-672c",
+      "kanji-8aad"
+    ],
+    "tokens": [
+      {
+        "surface": "彼女",
+        "category": "noun",
+        "reading": "かのじょ",
+        "vocabularyId": "vocab-d8efb8884948"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読み",
+        "category": "verb",
+        "reading": "よみ",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "続け",
+        "category": "auxiliary",
+        "reading": "つづけ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "彼女はその本を読み続けました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "reading",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-tsuzukeru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-tsuzukeru",
+        "tokenStart": 6,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "production-n4-continue-studying-japanese",
+    "text": "I will continue studying Japanese.",
+    "audio": "assets/voices/grammar/production-n4-continue-studying-japanese.m4a",
+    "vocabularyIds": [
+      "vocab-e6870aa0d14e",
+      "vocab-15863d9e899d",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-65e5",
+      "kanji-672c",
+      "kanji-8a9e",
+      "kanji-52c9",
+      "kanji-5f37"
+    ],
+    "tokens": [
+      {
+        "surface": "日本語",
+        "category": "noun",
+        "reading": "にほんご",
+        "vocabularyId": "vocab-e6870aa0d14e"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "勉強",
+        "category": "noun",
+        "reading": "べんきょう",
+        "vocabularyId": "vocab-15863d9e899d"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "続け",
+        "category": "auxiliary",
+        "reading": "つづけ"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "日本語を勉強し続けます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "studying",
+        "vocabularyIds": [
+          "vocab-15863d9e899d"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-tsuzukeru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-tsuzukeru",
+        "tokenStart": 4,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "n4-child-burst-into-tears",
+    "text": "子供が泣き出しました。",
+    "audio": "assets/voices/grammar/n4-child-burst-into-tears.m4a",
+    "vocabularyIds": [
+      "vocab-5fd1d3759699",
+      "vocab-fe32ad045449"
+    ],
+    "kanjiIds": [
+      "kanji-5b50",
+      "kanji-51fa"
+    ],
+    "tokens": [
+      {
+        "surface": "子供",
+        "category": "noun",
+        "reading": "こども",
+        "vocabularyId": "vocab-5fd1d3759699"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "泣き",
+        "category": "verb",
+        "reading": "なき",
+        "vocabularyId": "vocab-fe32ad045449"
+      },
+      {
+        "surface": "出し",
+        "category": "auxiliary",
+        "reading": "だし"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "The child suddenly burst into tears.",
+    "grammarPointIds": [
+      "stem-dasu",
+      "ga-subject"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-dasu",
+        "tokenStart": 3,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "ga-subject",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "n4-everyone-started-laughing",
+    "text": "みんなが笑い出しました。",
+    "audio": "assets/voices/grammar/n4-everyone-started-laughing.m4a",
+    "vocabularyIds": [
+      "vocab-f8bcafb726fe",
+      "vocab-4f4fa5bb1705"
+    ],
+    "kanjiIds": [
+      "kanji-51fa"
+    ],
+    "tokens": [
+      {
+        "surface": "みんな",
+        "category": "noun",
+        "reading": "みんな",
+        "vocabularyId": "vocab-f8bcafb726fe"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "笑い",
+        "category": "verb",
+        "reading": "わらい",
+        "vocabularyId": "vocab-4f4fa5bb1705"
+      },
+      {
+        "surface": "出し",
+        "category": "auxiliary",
+        "reading": "だし"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "Everyone suddenly started laughing.",
+    "grammarPointIds": [
+      "stem-dasu",
+      "ga-subject"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-dasu",
+        "tokenStart": 3,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "ga-subject",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "production-n4-rain-suddenly-started",
+    "text": "It suddenly started raining.",
+    "audio": "assets/voices/grammar/production-n4-rain-suddenly-started.m4a",
+    "vocabularyIds": [
+      "vocab-7e87850c448d",
+      "vocab-c4dcc34f811a"
+    ],
+    "kanjiIds": [
+      "kanji-96e8",
+      "kanji-51fa"
+    ],
+    "tokens": [
+      {
+        "surface": "雨",
+        "category": "noun",
+        "reading": "あめ",
+        "vocabularyId": "vocab-7e87850c448d"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "降り出し",
+        "category": "verb",
+        "reading": "ふりだし",
+        "vocabularyId": "vocab-c4dcc34f811a"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "雨が降り出しました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "raining",
+        "vocabularyIds": [
+          "vocab-777161023023"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-dasu"
+    ],
+    "grammarHighlights": []
+  },
+  {
+    "id": "production-n4-brother-suddenly-laughed",
+    "text": "My younger brother suddenly started laughing.",
+    "audio": "assets/voices/grammar/production-n4-brother-suddenly-laughed.m4a",
+    "vocabularyIds": [
+      "vocab-7e8dc4d63e82",
+      "vocab-4f4fa5bb1705"
+    ],
+    "kanjiIds": [
+      "kanji-5f1f",
+      "kanji-51fa"
+    ],
+    "tokens": [
+      {
+        "surface": "弟",
+        "category": "noun",
+        "reading": "おとうと",
+        "vocabularyId": "vocab-7e8dc4d63e82"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "笑い",
+        "category": "verb",
+        "reading": "わらい",
+        "vocabularyId": "vocab-4f4fa5bb1705"
+      },
+      {
+        "surface": "出し",
+        "category": "auxiliary",
+        "reading": "だし"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "弟が笑い出しました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "laughing",
+        "vocabularyIds": [
+          "vocab-4f4fa5bb1705"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-dasu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "stem-dasu",
+        "tokenStart": 3,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "n4-brother-wants-play-outside",
+    "text": "弟は外で遊びたがっています。",
+    "audio": "assets/voices/grammar/n4-brother-wants-play-outside.m4a",
+    "vocabularyIds": [
+      "vocab-7e8dc4d63e82",
+      "vocab-6109638dac53",
+      "vocab-58a04652246f"
+    ],
+    "kanjiIds": [
+      "kanji-5f1f",
+      "kanji-5916"
+    ],
+    "tokens": [
+      {
+        "surface": "弟",
+        "category": "noun",
+        "reading": "おとうと",
+        "vocabularyId": "vocab-7e8dc4d63e82"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "外",
+        "category": "noun",
+        "reading": "そと",
+        "vocabularyId": "vocab-6109638dac53"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "遊び",
+        "category": "verb",
+        "reading": "あそび",
+        "vocabularyId": "vocab-58a04652246f"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "がっ",
+        "category": "auxiliary",
+        "reading": "がっ"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "My younger brother wants to play outside.",
+    "grammarPointIds": [
+      "tagaru",
+      "wa-topic",
+      "de-action-location"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tagaru",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "n4-child-wants-see-movie",
+    "text": "子供はその映画を見たがっています。",
+    "audio": "assets/voices/grammar/n4-child-wants-see-movie.m4a",
+    "vocabularyIds": [
+      "vocab-5fd1d3759699",
+      "vocab-ac42ce789185",
+      "vocab-7b9d866e6dc2",
+      "vocab-385cc0d9ee98"
+    ],
+    "kanjiIds": [
+      "kanji-5b50",
+      "kanji-6620",
+      "kanji-753b",
+      "kanji-898b"
+    ],
+    "tokens": [
+      {
+        "surface": "子供",
+        "category": "noun",
+        "reading": "こども",
+        "vocabularyId": "vocab-5fd1d3759699"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "映画",
+        "category": "noun",
+        "reading": "えいが",
+        "vocabularyId": "vocab-7b9d866e6dc2"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見",
+        "category": "verb",
+        "reading": "み",
+        "vocabularyId": "vocab-385cc0d9ee98"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "がっ",
+        "category": "auxiliary",
+        "reading": "がっ"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "The child wants to see that movie.",
+    "grammarPointIds": [
+      "tagaru",
+      "wa-topic",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tagaru",
+        "tokenStart": 6,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "production-n4-sister-wants-go-japan",
+    "text": "My younger sister wants to go to Japan.",
+    "audio": "assets/voices/grammar/production-n4-sister-wants-go-japan.m4a",
+    "vocabularyIds": [
+      "vocab-735d35e5b1be",
+      "vocab-cf2abf0c5be3",
+      "vocab-ec22142c23d3"
+    ],
+    "kanjiIds": [
+      "kanji-59b9",
+      "kanji-65e5",
+      "kanji-672c",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "妹",
+        "category": "noun",
+        "reading": "いもうと",
+        "vocabularyId": "vocab-735d35e5b1be"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "日本",
+        "category": "noun",
+        "reading": "にほん",
+        "vocabularyId": "vocab-cf2abf0c5be3"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "がっ",
+        "category": "auxiliary",
+        "reading": "がっ"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "妹は日本へ行きたがっています。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "go",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "tagaru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tagaru",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-n4-child-does-not-want-vegetables",
+    "text": "The child does not want to eat vegetables.",
+    "audio": "assets/voices/grammar/production-n4-child-does-not-want-vegetables.m4a",
+    "vocabularyIds": [
+      "vocab-5fd1d3759699",
+      "vocab-88763af54360",
+      "vocab-ec4fa4315542"
+    ],
+    "kanjiIds": [
+      "kanji-5b50",
+      "kanji-91ce",
+      "kanji-98df"
+    ],
+    "tokens": [
+      {
+        "surface": "子供",
+        "category": "noun",
+        "reading": "こども",
+        "vocabularyId": "vocab-5fd1d3759699"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "野菜",
+        "category": "noun",
+        "reading": "やさい",
+        "vocabularyId": "vocab-88763af54360"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "がっ",
+        "category": "auxiliary",
+        "reading": "がっ"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "minimumLevel": "n4",
+    "solution": "子供は野菜を食べたがっていません。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "eat",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "tagaru"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tagaru",
+        "tokenStart": 5,
+        "tokenEnd": 7
       }
     ]
   }

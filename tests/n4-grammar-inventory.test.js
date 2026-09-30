@@ -82,10 +82,9 @@ test("planned N4 grammar definitions are unique, localized, and ready for promot
   }
 
   for (const requiredId of [
-    "causative-form",
-    "ba-conditional",
-    "te-oku",
-    "you-ni-naru",
+    "garu",
+    "te-hoshii",
+    "made-ni",
     "noni-concession",
     "sonkeigo-system"
   ]) {
@@ -124,12 +123,19 @@ test("the documented inventory summary and source roles stay in sync", async () 
 });
 
 test("tricky N4 attachment patterns retain their reviewed distinctions", async () => {
-  const inventory = await readJson("data/source/n4-grammar-inventory.json");
+  const [grammar, inventory] = await Promise.all([
+    readJson("data/jlpt-n5-grammar.json"),
+    readJson("data/source/n4-grammar-inventory.json")
+  ]);
+  const grammarById = Object.fromEntries(grammar.map((entry) => [entry.id, entry]));
   const planned = Object.fromEntries(inventory.planned.map((entry) => [entry.id, entry]));
 
-  assert.match(planned["causative-passive-form"].pattern, /～される/);
-  assert.match(planned["imperative-form"].pattern, /～よ/);
-  assert.match(planned["imperative-form"].pattern, /せよ/);
+  assert.match(grammarById["causative-passive-form"].pattern, /～される/);
+  assert.match(grammarById["imperative-form"].pattern, /～よ/);
+  assert.match(grammarById["imperative-form"].pattern, /せよ/);
+  assert.match(grammarById["tara-dou"].pattern, /～だらどう/);
+  assert.match(grammarById["hitsuyou-ga-aru"].pattern, /必要はない/);
+  assert.match(grammarById["you-to-suru"].highlightPattern, /～ろうとする/);
   assert.match(planned["you-da-inference"].pattern, /な-adjective \+ なようだ/);
   assert.match(planned["you-da-inference"].pattern, /noun \+ のようだ/);
   assert.match(planned["you-na-ni-simile"].pattern, /な-adjective \+ なような/);
@@ -139,7 +145,7 @@ test("tricky N4 attachment patterns retain their reviewed distinctions", async (
   assert.equal(planned.mama.scope, "boundary");
   assert.match(planned.mama.pattern, /Vた \/ Vない/);
   assert.match(planned.mama.pattern, /な-adjective \+ なまま/);
-  assert.match(planned["stem-dasu"].meaning, /Lexical compounds/);
+  assert.match(grammarById["stem-dasu"].meaning, /Lexical compounds/);
   assert.equal(planned["te-kudasaru"].name, "Honorific benefactive action");
 });
 

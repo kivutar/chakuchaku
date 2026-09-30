@@ -6314,5 +6314,446 @@
         "vocabularyIds": ["vocab-15863d9e899d"]
       }
     ]
+  },
+  "n4-mother-makes-brother-eat-vegetables": {
+    "translation": "Ma mère a fait manger des légumes à mon petit frère."
+  },
+  "n4-teacher-lets-children-play-outside": {
+    "translation": "Le professeur a laissé les enfants jouer dehors."
+  },
+  "production-n4-father-makes-brother-clean-room": {
+    "translation": "Mon père a obligé mon petit frère à nettoyer la chambre.",
+    "promptVocabularyHints": [
+      {
+        "word": "nettoyer",
+        "vocabularyIds": ["vocab-21537eeda1e7"]
+      }
+    ]
+  },
+  "production-n4-mother-kindly-lets-me-play-outside": {
+    "translation": "Ma mère a gentiment accepté de me laisser jouer dehors.",
+    "promptVocabularyHints": [
+      {
+        "word": "jouer",
+        "vocabularyIds": ["vocab-58a04652246f"]
+      }
+    ]
+  },
+  "n4-made-get-up-early-every-morning": {
+    "translation": "Quand j'étais enfant, ma mère me faisait me lever tôt chaque matin."
+  },
+  "n4-brother-forced-clean-room": {
+    "translation": "Mon petit frère a été forcé par mon père à nettoyer la chambre."
+  },
+  "production-n4-made-eat-vegetables": {
+    "translation": "Ma mère m'a obligé à manger des légumes.",
+    "promptVocabularyHints": [
+      {
+        "word": "manger",
+        "vocabularyIds": ["vocab-ec4fa4315542"]
+      }
+    ]
+  },
+  "production-n4-students-made-read-difficult-book": {
+    "translation": "Le professeur a obligé les étudiants à lire un livre difficile.",
+    "promptVocabularyHints": [
+      {
+        "word": "lire",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ]
+  },
+  "n4-danger-stop": {
+    "translation": "C'est dangereux, alors arrête-toi !"
+  },
+  "n4-fire-escape-outside": {
+    "translation": "Au feu ! Sors !"
+  },
+  "production-n4-run-command": {
+    "translation": "Cours !",
+    "promptVocabularyHints": [
+      {
+        "word": "cours",
+        "vocabularyIds": ["vocab-97526e11c703"]
+      }
+    ]
+  },
+  "production-n4-look-at-photo-command": {
+    "translation": "Regarde cette photo !",
+    "promptVocabularyHints": [
+      {
+        "word": "regarde",
+        "vocabularyIds": ["vocab-385cc0d9ee98"]
+      }
+    ]
+  },
+  "n4-medicine-if-taken-get-better": {
+    "translation": "Si tu prends ce médicament, tu iras mieux."
+  },
+  "n4-no-time-skip-breakfast": {
+    "translation": "Si je n'ai pas le temps, je ne prends pas de petit-déjeuner."
+  },
+  "production-n4-buy-if-cheap": {
+    "translation": "Si ce n'est pas cher, je l'achèterai dans ce magasin.",
+    "promptVocabularyHints": [
+      {
+        "word": "cher",
+        "vocabularyIds": ["vocab-0513945a1ef5"]
+      },
+      {
+        "word": "achèterai",
+        "vocabularyIds": ["vocab-1b65a0cb82d2"]
+      }
+    ]
+  },
+  "production-n4-no-park-if-rain": {
+    "translation": "S'il pleut demain, je n'irai pas au parc.",
+    "promptVocabularyHints": [
+      {
+        "word": "pleut",
+        "vocabularyIds": ["vocab-777161023023"]
+      }
+    ]
+  },
+  "n4-should-have-brought-umbrella": {
+    "translation": "J'aurais dû apporter un parapluie hier."
+  },
+  "n4-should-have-slept-earlier": {
+    "translation": "J'aurais dû me coucher plus tôt."
+  },
+  "production-n4-should-have-asked-clerk": {
+    "translation": "J'aurais dû demander à l'employé.",
+    "promptVocabularyHints": [
+      {
+        "word": "demander",
+        "vocabularyIds": ["vocab-d8a0261581dc"]
+      },
+      {
+        "word": "employé",
+        "vocabularyIds": ["vocab-2a1053878f8a"]
+      }
+    ]
+  },
+  "production-n4-should-not-have-eaten-so-much": {
+    "translation": "Je n'aurais pas dû manger autant.",
+    "promptVocabularyHints": [
+      {
+        "word": "manger",
+        "vocabularyIds": ["vocab-ec4fa4315542"]
+      }
+    ]
+  },
+  "n4-tired-why-not-rest": {
+    "translation": "Si tu es fatigué, pourquoi ne pas te reposer un peu ?"
+  },
+  "n4-cold-why-not-hospital": {
+    "translation": "Si tu es enrhumé, pourquoi ne pas aller à l'hôpital ?"
+  },
+  "production-n4-why-not-ask-teacher": {
+    "translation": "Pourquoi ne demandes-tu pas au professeur ?",
+    "promptVocabularyHints": [
+      {
+        "word": "demandes",
+        "vocabularyIds": ["vocab-d8a0261581dc"]
+      }
+    ]
+  },
+  "production-n4-why-not-sleep-earlier": {
+    "translation": "Pourquoi ne te couches-tu pas plus tôt ?",
+    "promptVocabularyHints": [
+      {
+        "word": "couches",
+        "vocabularyIds": ["vocab-50eb0e80c367"]
+      }
+    ]
+  },
+  "n4-door-closed-by-itself": {
+    "translation": "La porte s'est fermée."
+  },
+  "n4-father-closed-door": {
+    "translation": "Mon père a fermé la porte."
+  },
+  "production-n4-window-opened-by-itself": {
+    "translation": "La fenêtre s'est ouverte.",
+    "promptVocabularyHints": [
+      {
+        "word": "ouverte",
+        "vocabularyIds": ["vocab-56dc4d647d8b"]
+      }
+    ]
+  },
+  "production-n4-i-opened-window": {
+    "translation": "J'ai ouvert la fenêtre.",
+    "promptVocabularyHints": [
+      {
+        "word": "ouvert",
+        "vocabularyIds": ["vocab-658ff53bc114"]
+      }
+    ]
+  },
+  "n4-medicine-needed-every-day": {
+    "translation": "Tu dois prendre ce médicament tous les jours."
+  },
+  "n4-no-need-rise-early-tomorrow": {
+    "translation": "Tu n'as pas besoin de te lever tôt demain."
+  },
+  "production-n4-need-do-homework-today": {
+    "translation": "Je dois faire mes devoirs aujourd'hui.",
+    "promptVocabularyHints": [
+      {
+        "word": "devoirs",
+        "vocabularyIds": ["vocab-f26f501fa1c2"]
+      }
+    ]
+  },
+  "production-n4-no-need-come-tomorrow": {
+    "translation": "Tu n'as pas besoin de venir demain.",
+    "promptVocabularyHints": [
+      {
+        "word": "venir",
+        "vocabularyIds": ["vocab-bc01756b4d89"]
+      }
+    ]
+  },
+  "n4-write-name-here-command": {
+    "translation": "Écris ton nom ici."
+  },
+  "production-n4-go-to-bed-early-command": {
+    "translation": "Va te coucher tôt.",
+    "promptVocabularyHints": [
+      {
+        "word": "coucher",
+        "vocabularyIds": ["vocab-50eb0e80c367"]
+      }
+    ]
+  },
+  "production-n4-take-medicine-command": {
+    "translation": "Prends ce médicament.",
+    "promptVocabularyHints": [
+      {
+        "word": "Prends",
+        "vocabularyIds": ["vocab-dcd3acd6b659"]
+      }
+    ]
+  },
+  "n4-started-rising-early": {
+    "translation": "Je me suis mis à me lever tôt tous les matins."
+  },
+  "n4-became-able-read-kanji": {
+    "translation": "Je suis devenu capable de lire les kanji."
+  },
+  "production-n4-started-walking-daily": {
+    "translation": "Je me suis mis à marcher tous les jours.",
+    "promptVocabularyHints": [
+      {
+        "word": "marcher",
+        "vocabularyIds": ["vocab-a76603aae6e4"]
+      }
+    ]
+  },
+  "production-n4-stopped-drinking-coffee-at-night": {
+    "translation": "Je ne bois plus de café le soir.",
+    "promptVocabularyHints": [
+      {
+        "word": "bois",
+        "vocabularyIds": ["vocab-dcd3acd6b659"]
+      }
+    ]
+  },
+  "n4-make-point-read-kanji": {
+    "translation": "Je veille à lire des kanji tous les jours."
+  },
+  "n4-try-not-drink-coffee-at-night": {
+    "translation": "Je fais en sorte de ne pas boire de café le soir."
+  },
+  "production-n4-make-point-walk-daily": {
+    "translation": "Je veille à marcher tous les jours.",
+    "promptVocabularyHints": [
+      {
+        "word": "marcher",
+        "vocabularyIds": ["vocab-a76603aae6e4"]
+      }
+    ]
+  },
+  "production-n4-make-sure-not-forget-homework": {
+    "translation": "Je veille à ne pas oublier mes devoirs.",
+    "promptVocabularyHints": [
+      {
+        "word": "oublier",
+        "vocabularyIds": ["vocab-53c63c8d3e25"]
+      }
+    ]
+  },
+  "n4-about-to-leave-phone-rang": {
+    "translation": "Le téléphone a sonné alors que j'étais sur le point de quitter la maison."
+  },
+  "n4-about-to-board-met-friend": {
+    "translation": "Alors que j'étais sur le point de monter dans le train, j'ai rencontré un ami."
+  },
+  "production-n4-about-to-sleep-phone-rang": {
+    "translation": "Le téléphone a sonné alors que j'étais sur le point de me coucher.",
+    "promptVocabularyHints": [
+      {
+        "word": "coucher",
+        "vocabularyIds": ["vocab-50eb0e80c367"]
+      },
+      {
+        "word": "téléphone",
+        "vocabularyIds": ["vocab-24df87472770"]
+      }
+    ]
+  },
+  "production-n4-child-tried-open-door": {
+    "translation": "L'enfant a essayé d'ouvrir la porte.",
+    "promptVocabularyHints": [
+      {
+        "word": "ouvrir",
+        "vocabularyIds": ["vocab-658ff53bc114"]
+      }
+    ]
+  },
+  "n4-bought-tomorrow-ticket-in-advance": {
+    "translation": "J'ai acheté à l'avance le billet pour demain."
+  },
+  "n4-clean-before-friend-arrives": {
+    "translation": "Je nettoierai la chambre avant l'arrivée de mon ami."
+  },
+  "production-n4-make-dinner-in-advance": {
+    "translation": "Je préparerai le dîner à l'avance.",
+    "promptVocabularyHints": [
+      {
+        "word": "dîner",
+        "vocabularyIds": ["vocab-696613003517"]
+      }
+    ]
+  },
+  "production-n4-leave-window-open": {
+    "translation": "Laisse la fenêtre ouverte, s'il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "ouverte",
+        "vocabularyIds": ["vocab-658ff53bc114"]
+      }
+    ]
+  },
+  "n4-rain-started-at-seven": {
+    "translation": "Il a commencé à pleuvoir à sept heures."
+  },
+  "n4-child-started-crying": {
+    "translation": "L'enfant s'est mis à pleurer."
+  },
+  "production-n4-snow-started-falling": {
+    "translation": "Il s'est mis à neiger.",
+    "promptVocabularyHints": [
+      {
+        "word": "neiger",
+        "vocabularyIds": ["vocab-79db1765ce26"]
+      }
+    ]
+  },
+  "production-n4-brother-started-reading-book": {
+    "translation": "Mon petit frère a commencé à lire le livre.",
+    "promptVocabularyHints": [
+      {
+        "word": "lire",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ]
+  },
+  "n4-finished-reading-book": {
+    "translation": "J'ai fini de lire ce livre."
+  },
+  "n4-finished-letter-then-slept": {
+    "translation": "J'ai fini d'écrire la lettre, puis je me suis couché."
+  },
+  "production-n4-finished-eating-breakfast": {
+    "translation": "J'ai fini de prendre mon petit-déjeuner.",
+    "promptVocabularyHints": [
+      {
+        "word": "petit-déjeuner",
+        "vocabularyIds": ["vocab-818846d31820"]
+      }
+    ]
+  },
+  "production-n4-she-finished-writing-letter": {
+    "translation": "Elle a fini d'écrire la lettre.",
+    "promptVocabularyHints": [
+      {
+        "word": "écrire",
+        "vocabularyIds": ["vocab-d34997e828cb"]
+      }
+    ]
+  },
+  "n4-rain-kept-falling": {
+    "translation": "La pluie a continué de tomber."
+  },
+  "n4-father-worked-three-hours-continuously": {
+    "translation": "Mon père a continué à travailler pendant trois heures."
+  },
+  "production-n4-she-kept-reading-book": {
+    "translation": "Elle a continué à lire le livre.",
+    "promptVocabularyHints": [
+      {
+        "word": "lire",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ]
+  },
+  "production-n4-keep-studying-japanese": {
+    "translation": "Je continuerai à étudier le japonais.",
+    "promptVocabularyHints": [
+      {
+        "word": "étudier",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ]
+  },
+  "n4-child-burst-into-tears": {
+    "translation": "L'enfant s'est soudain mis à pleurer."
+  },
+  "n4-everyone-started-laughing": {
+    "translation": "Tout le monde s'est soudain mis à rire."
+  },
+  "production-n4-rain-suddenly-started": {
+    "translation": "Il s'est soudain mis à pleuvoir.",
+    "promptVocabularyHints": [
+      {
+        "word": "pleuvoir",
+        "vocabularyIds": ["vocab-777161023023"]
+      }
+    ]
+  },
+  "production-n4-brother-suddenly-laughed": {
+    "translation": "Mon petit frère s'est soudain mis à rire.",
+    "promptVocabularyHints": [
+      {
+        "word": "rire",
+        "vocabularyIds": ["vocab-4f4fa5bb1705"]
+      }
+    ]
+  },
+  "n4-brother-wants-play-outside": {
+    "translation": "Mon petit frère veut jouer dehors."
+  },
+  "n4-child-wants-see-movie": {
+    "translation": "L'enfant veut voir ce film."
+  },
+  "production-n4-sister-wants-go-japan": {
+    "translation": "Ma petite sœur veut aller au Japon.",
+    "promptVocabularyHints": [
+      {
+        "word": "aller",
+        "vocabularyIds": ["vocab-ec22142c23d3"]
+      }
+    ]
+  },
+  "production-n4-child-does-not-want-vegetables": {
+    "translation": "L'enfant ne veut pas manger de légumes.",
+    "promptVocabularyHints": [
+      {
+        "word": "manger",
+        "vocabularyIds": ["vocab-ec4fa4315542"]
+      }
+    ]
   }
 }

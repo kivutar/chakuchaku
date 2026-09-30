@@ -84,21 +84,26 @@ the N5 curricula published by Bunpro, JLPT Sensei, and Yatta. `boundary` keeps
 useful points that sources variously place at N5 or N4 without presenting them
 as undisputed N5 requirements.
 
-The first N4 slice contains 15 high-value points and 29 independently authored
-recognition and production exercises: plain volitional and `～ようと思う`,
-potential and passive usage, `～ことにする`, `～ことになる`, `～はずだ`,
-`～はずがない`, `～やすい`, `～にくい`, `～ていく`, `～てくる`, `～間`,
-`～間に`, and `～なら`. It is a conservative intersection informed by the
-official N4 test-purpose description and the N4 curricula published by Bunpro
-and JLPT Sensei; it is not presented as an official itemized list:
+The live N4 slice contains 33 high-value points and 101 independently authored
+recognition and production exercises. Alongside the original volitional,
+potential, passive, decision, expectation, ease, movement, time, and `～なら`
+points, it now covers the causative, causative-passive, direct imperative,
+`～ば`, `～ばよかった`, `～たらどう`, transitive/intransitive verb pairs,
+necessity, `～なさい`, the three `～よう` patterns, `～ておく`, compound verbs
+with `始める`, `終わる`, `続ける`, and `出す`, and apparent desire with
+`～たがる`.
+It is a conservative intersection
+informed by the official N4 test-purpose description and the N4 curricula
+published by Bunpro and JLPT Sensei; it is not presented as an official
+itemized list:
 
 - https://www.jlpt.jp/e/guideline/pdf/n4_e.pdf
 - https://bunpro.jp/decks/m7omkx/bunpro-n4-grammar
 - https://jlptsensei.com/jlpt-n4-grammar-list/
 
 `source/n4-grammar-inventory.json` records the complete editorial audit before
-the remaining points enter the live SRS. It currently maps 52 semantic families
-to grammar already taught by ChakuChaku and defines 83 missing points: 68 core
+the remaining points enter the live SRS. It currently maps 70 semantic families
+to grammar already taught by ChakuChaku and defines 65 missing points: 50 core
 and 15 boundary items. The companion French catalogue contains original names
 and learning objectives for every planned point. Candidates that are lexical,
 already produced by simpler rules, or insufficiently supported are retained in

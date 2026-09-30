@@ -754,6 +754,7 @@
     "text": "学校へ行く前に顔を洗いなさい。",
     "solution": "Wash your face before you go to school.",
     "grammarPointIds": [
+      "nasai-command",
       "mae-ni",
       "e-direction"
     ],
@@ -10916,7 +10917,7 @@
     ]
   },
   {
-    "id": "production-n4-continue-studying-japanese",
+    "id": "production-n4-keep-studying-japanese",
     "text": "I will continue studying Japanese every day.",
     "solution": "毎日日本語を勉強していきます。",
     "type": "production",
@@ -11024,6 +11025,990 @@
     ],
     "grammarPointIds": [
       "nara-conditional"
+    ]
+  },
+  {
+    "id": "n4-mother-makes-brother-eat-vegetables",
+    "text": "母は弟に野菜を食べさせました。",
+    "solution": "My mother made my younger brother eat vegetables.",
+    "tokenOverrides": {
+      "させ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "causative-form",
+      "wa-topic",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "n4-teacher-lets-children-play-outside",
+    "text": "先生は子供を外で遊ばせました。",
+    "solution": "The teacher let the children play outside.",
+    "tokenOverrides": {
+      "せ": {
+        "category": "auxiliary"
+      }
+    },
+    "vocabularyOverrides": {
+      "外": "vocab-6109638dac53"
+    },
+    "grammarPointIds": [
+      "causative-form",
+      "wa-topic",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "production-n4-father-makes-brother-clean-room",
+    "text": "My father made my younger brother clean the room.",
+    "solution": "父は弟に部屋を掃除させました。",
+    "type": "production",
+    "tokenOverrides": {
+      "せ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "clean",
+        "vocabularyIds": ["vocab-21537eeda1e7"]
+      }
+    ],
+    "grammarPointIds": [
+      "causative-form"
+    ]
+  },
+  {
+    "id": "production-n4-mother-kindly-lets-me-play-outside",
+    "text": "My mother kindly let me play outside.",
+    "solution": "母は私を外で遊ばせてくれました。",
+    "type": "production",
+    "tokenOverrides": {
+      "せ": {
+        "category": "auxiliary"
+      }
+    },
+    "vocabularyOverrides": {
+      "外": "vocab-6109638dac53"
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "play",
+        "vocabularyIds": ["vocab-58a04652246f"]
+      }
+    ],
+    "grammarPointIds": [
+      "causative-form",
+      "te-kureru"
+    ]
+  },
+  {
+    "id": "n4-made-get-up-early-every-morning",
+    "text": "子供の時、毎朝母に早く起きさせられました。",
+    "solution": "When I was a child, my mother made me get up early every morning.",
+    "tokenOverrides": {
+      "させ": {
+        "category": "auxiliary"
+      },
+      "られ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "causative-passive-form",
+      "toki",
+      "frequency-adverbs"
+    ]
+  },
+  {
+    "id": "n4-brother-forced-clean-room",
+    "text": "弟は父に部屋を掃除させられました。",
+    "solution": "My younger brother was made to clean the room by my father.",
+    "tokenOverrides": {
+      "せ": {
+        "category": "auxiliary"
+      },
+      "られ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "causative-passive-form",
+      "wa-topic",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "production-n4-made-eat-vegetables",
+    "text": "I was made to eat vegetables by my mother.",
+    "solution": "私は母に野菜を食べさせられました。",
+    "type": "production",
+    "tokenOverrides": {
+      "させ": {
+        "category": "auxiliary"
+      },
+      "られ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "eat",
+        "vocabularyIds": ["vocab-ec4fa4315542"]
+      }
+    ],
+    "grammarPointIds": [
+      "causative-passive-form"
+    ]
+  },
+  {
+    "id": "production-n4-students-made-read-difficult-book",
+    "text": "The students were made to read a difficult book by the teacher.",
+    "solution": "学生は先生に難しい本を読まされました。",
+    "type": "production",
+    "tokenOverrides": {
+      "さ": {
+        "category": "auxiliary"
+      },
+      "れ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "read",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ],
+    "grammarPointIds": [
+      "causative-passive-form"
+    ]
+  },
+  {
+    "id": "n4-danger-stop",
+    "text": "危ないから、止まれ！",
+    "solution": "It is dangerous, so stop!",
+    "grammarPointIds": [
+      "imperative-form",
+      "kara-reason",
+      "i-adjective-predicate"
+    ]
+  },
+  {
+    "id": "n4-fire-escape-outside",
+    "text": "火事だ。外へ逃げろ！",
+    "solution": "Fire! Get outside!",
+    "vocabularyOverrides": {
+      "外": "vocab-6109638dac53"
+    },
+    "grammarPointIds": [
+      "imperative-form",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "production-n4-run-command",
+    "text": "Run!",
+    "solution": "走れ！",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "run",
+        "vocabularyIds": ["vocab-97526e11c703"]
+      }
+    ],
+    "grammarPointIds": [
+      "imperative-form"
+    ]
+  },
+  {
+    "id": "production-n4-look-at-photo-command",
+    "text": "Look at this photo!",
+    "solution": "この写真を見ろ！",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "look",
+        "vocabularyIds": ["vocab-385cc0d9ee98"]
+      }
+    ],
+    "grammarPointIds": [
+      "imperative-form"
+    ]
+  },
+  {
+    "id": "n4-medicine-if-taken-get-better",
+    "text": "この薬を飲めば、元気になります。",
+    "solution": "If you take this medicine, you will get better.",
+    "grammarPointIds": [
+      "ba-conditional",
+      "naru-change",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-no-time-skip-breakfast",
+    "text": "時間がなければ、朝ご飯を食べません。",
+    "solution": "If I do not have time, I do not eat breakfast.",
+    "grammarPointIds": [
+      "ba-conditional",
+      "o-object",
+      "verb-masen"
+    ]
+  },
+  {
+    "id": "production-n4-buy-if-cheap",
+    "text": "If it is cheap, I will buy it at this store.",
+    "solution": "安ければ、この店で買います。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "cheap",
+        "vocabularyIds": ["vocab-0513945a1ef5"]
+      },
+      {
+        "word": "buy",
+        "vocabularyIds": ["vocab-1b65a0cb82d2"]
+      }
+    ],
+    "grammarPointIds": [
+      "ba-conditional"
+    ]
+  },
+  {
+    "id": "production-n4-no-park-if-rain",
+    "text": "If it rains tomorrow, I will not go to the park.",
+    "solution": "明日雨が降れば、公園へ行きません。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "rains",
+        "vocabularyIds": ["vocab-777161023023"]
+      }
+    ],
+    "grammarPointIds": [
+      "ba-conditional"
+    ]
+  },
+  {
+    "id": "n4-should-have-brought-umbrella",
+    "text": "昨日、傘を持ってくればよかったです。",
+    "solution": "I should have brought an umbrella yesterday.",
+    "grammarPointIds": [
+      "ba-yokatta",
+      "te-kuru",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "n4-should-have-slept-earlier",
+    "text": "もっと早く寝ればよかったです。",
+    "solution": "I should have gone to bed earlier.",
+    "grammarPointIds": [
+      "ba-yokatta",
+      "i-adjective-adverb"
+    ]
+  },
+  {
+    "id": "production-n4-should-have-asked-clerk",
+    "text": "I should have asked the clerk.",
+    "solution": "店員に聞けばよかったです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "asked",
+        "vocabularyIds": ["vocab-d8a0261581dc"]
+      },
+      {
+        "word": "clerk",
+        "vocabularyIds": ["vocab-2a1053878f8a"]
+      }
+    ],
+    "grammarPointIds": [
+      "ba-yokatta"
+    ]
+  },
+  {
+    "id": "production-n4-should-not-have-eaten-so-much",
+    "text": "I should not have eaten so much.",
+    "solution": "そんなに食べなければよかったです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "eaten",
+        "vocabularyIds": ["vocab-ec4fa4315542"]
+      }
+    ],
+    "grammarPointIds": [
+      "ba-yokatta"
+    ]
+  },
+  {
+    "id": "n4-tired-why-not-rest",
+    "text": "疲れているなら、少し休んだらどうですか。",
+    "solution": "If you are tired, why not rest a little?",
+    "grammarPointIds": [
+      "tara-dou",
+      "nara-conditional"
+    ]
+  },
+  {
+    "id": "n4-cold-why-not-hospital",
+    "text": "風邪なら、病院へ行ったらどうですか。",
+    "solution": "If you have a cold, why not go to the hospital?",
+    "grammarPointIds": [
+      "tara-dou",
+      "nara-conditional",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "production-n4-why-not-ask-teacher",
+    "text": "Why don't you ask the teacher?",
+    "solution": "先生に聞いたらどうですか。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "ask",
+        "vocabularyIds": ["vocab-d8a0261581dc"]
+      }
+    ],
+    "grammarPointIds": [
+      "tara-dou"
+    ]
+  },
+  {
+    "id": "production-n4-why-not-sleep-earlier",
+    "text": "Why don't you go to bed earlier?",
+    "solution": "もっと早く寝たらどうですか。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "bed",
+        "vocabularyIds": ["vocab-50eb0e80c367"]
+      }
+    ],
+    "grammarPointIds": [
+      "tara-dou"
+    ]
+  },
+  {
+    "id": "n4-door-closed-by-itself",
+    "text": "ドアが閉まりました。",
+    "solution": "The door closed.",
+    "grammarPointIds": [
+      "transitive-intransitive",
+      "ga-subject",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "n4-father-closed-door",
+    "text": "父がドアを閉めました。",
+    "solution": "My father closed the door.",
+    "grammarPointIds": [
+      "transitive-intransitive",
+      "ga-subject",
+      "o-object",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-n4-window-opened-by-itself",
+    "text": "The window opened.",
+    "solution": "窓が開きました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "opened",
+        "vocabularyIds": ["vocab-56dc4d647d8b"]
+      }
+    ],
+    "grammarPointIds": [
+      "transitive-intransitive"
+    ]
+  },
+  {
+    "id": "production-n4-i-opened-window",
+    "text": "I opened the window.",
+    "solution": "私は窓を開けました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "opened",
+        "vocabularyIds": ["vocab-658ff53bc114"]
+      }
+    ],
+    "grammarPointIds": [
+      "transitive-intransitive"
+    ]
+  },
+  {
+    "id": "n4-medicine-needed-every-day",
+    "text": "この薬を毎日飲む必要があります。",
+    "solution": "You need to take this medicine every day.",
+    "grammarPointIds": [
+      "hitsuyou-ga-aru",
+      "o-object",
+      "frequency-adverbs"
+    ]
+  },
+  {
+    "id": "n4-no-need-rise-early-tomorrow",
+    "text": "明日は早く起きる必要はありません。",
+    "solution": "You do not need to get up early tomorrow.",
+    "grammarPointIds": [
+      "hitsuyou-ga-aru",
+      "wa-topic",
+      "i-adjective-adverb"
+    ]
+  },
+  {
+    "id": "production-n4-need-do-homework-today",
+    "text": "I need to do my homework today.",
+    "solution": "今日、宿題をする必要があります。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "homework",
+        "vocabularyIds": ["vocab-f26f501fa1c2"]
+      }
+    ],
+    "grammarPointIds": [
+      "hitsuyou-ga-aru"
+    ]
+  },
+  {
+    "id": "production-n4-no-need-come-tomorrow",
+    "text": "You do not need to come tomorrow.",
+    "solution": "明日来る必要はありません。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "come",
+        "vocabularyIds": ["vocab-bc01756b4d89"]
+      }
+    ],
+    "grammarPointIds": [
+      "hitsuyou-ga-aru"
+    ]
+  },
+  {
+    "id": "n4-write-name-here-command",
+    "text": "ここに名前を書きなさい。",
+    "solution": "Write your name here.",
+    "grammarPointIds": [
+      "nasai-command",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-go-to-bed-early-command",
+    "text": "Go to bed early.",
+    "solution": "早く寝なさい。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "bed",
+        "vocabularyIds": ["vocab-50eb0e80c367"]
+      }
+    ],
+    "grammarPointIds": [
+      "nasai-command"
+    ]
+  },
+  {
+    "id": "production-n4-take-medicine-command",
+    "text": "Take this medicine.",
+    "solution": "この薬を飲みなさい。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Take",
+        "vocabularyIds": ["vocab-dcd3acd6b659"]
+      }
+    ],
+    "grammarPointIds": [
+      "nasai-command"
+    ]
+  },
+  {
+    "id": "n4-started-rising-early",
+    "text": "毎朝早く起きるようになりました。",
+    "solution": "I have started getting up early every morning.",
+    "grammarPointIds": [
+      "you-ni-naru",
+      "frequency-adverbs",
+      "i-adjective-adverb"
+    ]
+  },
+  {
+    "id": "n4-became-able-read-kanji",
+    "text": "漢字が読めるようになりました。",
+    "solution": "I have become able to read kanji.",
+    "grammarPointIds": [
+      "you-ni-naru",
+      "potential-form",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-n4-started-walking-daily",
+    "text": "I have started walking every day.",
+    "solution": "毎日歩くようになりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "walking",
+        "vocabularyIds": ["vocab-a76603aae6e4"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-ni-naru"
+    ]
+  },
+  {
+    "id": "production-n4-stopped-drinking-coffee-at-night",
+    "text": "I no longer drink coffee at night.",
+    "solution": "夜はコーヒーを飲まないようになりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "drink",
+        "vocabularyIds": ["vocab-dcd3acd6b659"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-ni-naru"
+    ]
+  },
+  {
+    "id": "n4-make-point-read-kanji",
+    "text": "毎日漢字を読むようにしています。",
+    "solution": "I make a point of reading kanji every day.",
+    "grammarPointIds": [
+      "you-ni-suru",
+      "frequency-adverbs",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-try-not-drink-coffee-at-night",
+    "text": "夜はコーヒーを飲まないようにしています。",
+    "solution": "I try not to drink coffee at night.",
+    "grammarPointIds": [
+      "you-ni-suru",
+      "wa-topic",
+      "o-object",
+      "verb-nai"
+    ]
+  },
+  {
+    "id": "production-n4-make-point-walk-daily",
+    "text": "I make a point of walking every day.",
+    "solution": "毎日歩くようにしています。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "walking",
+        "vocabularyIds": ["vocab-a76603aae6e4"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-ni-suru"
+    ]
+  },
+  {
+    "id": "production-n4-make-sure-not-forget-homework",
+    "text": "I make sure not to forget my homework.",
+    "solution": "宿題を忘れないようにしています。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "forget",
+        "vocabularyIds": ["vocab-53c63c8d3e25"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-ni-suru"
+    ]
+  },
+  {
+    "id": "n4-about-to-leave-phone-rang",
+    "text": "家を出ようとした時、電話が鳴りました。",
+    "solution": "The phone rang as I was about to leave the house.",
+    "grammarPointIds": [
+      "you-to-suru",
+      "plain-volitional",
+      "toki",
+      "o-route"
+    ]
+  },
+  {
+    "id": "n4-about-to-board-met-friend",
+    "text": "電車に乗ろうとした時、友達に会いました。",
+    "solution": "As I was about to board the train, I met a friend.",
+    "grammarPointIds": [
+      "you-to-suru",
+      "plain-volitional",
+      "toki",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "production-n4-about-to-sleep-phone-rang",
+    "text": "The phone rang when I was about to go to bed.",
+    "solution": "寝ようとした時、電話が鳴りました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "bed",
+        "vocabularyIds": ["vocab-50eb0e80c367"]
+      },
+      {
+        "word": "phone",
+        "vocabularyIds": ["vocab-24df87472770"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-to-suru"
+    ]
+  },
+  {
+    "id": "production-n4-child-tried-open-door",
+    "text": "The child tried to open the door.",
+    "solution": "子供はドアを開けようとしました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "open",
+        "vocabularyIds": ["vocab-658ff53bc114"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-to-suru"
+    ]
+  },
+  {
+    "id": "n4-bought-tomorrow-ticket-in-advance",
+    "text": "明日の切符を買っておきました。",
+    "solution": "I bought tomorrow's ticket in advance.",
+    "grammarPointIds": [
+      "te-oku",
+      "no-possession",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-clean-before-friend-arrives",
+    "text": "友達が来る前に、部屋を掃除しておきます。",
+    "solution": "I will clean the room before my friend comes.",
+    "grammarPointIds": [
+      "te-oku",
+      "mae-ni",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-make-dinner-in-advance",
+    "text": "I will make dinner in advance.",
+    "solution": "晩御飯を作っておきます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "dinner",
+        "vocabularyIds": ["vocab-696613003517"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-oku"
+    ]
+  },
+  {
+    "id": "production-n4-leave-window-open",
+    "text": "Please leave the window open.",
+    "solution": "窓を開けておいてください。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "open",
+        "vocabularyIds": ["vocab-658ff53bc114"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-oku",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "n4-rain-started-at-seven",
+    "text": "七時に雨が降り始めました。",
+    "solution": "It started raining at seven.",
+    "grammarPointIds": [
+      "stem-hajimeru",
+      "ni-time",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "n4-child-started-crying",
+    "text": "子供が泣き始めました。",
+    "solution": "The child started crying.",
+    "grammarPointIds": [
+      "stem-hajimeru",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-n4-snow-started-falling",
+    "text": "It started snowing.",
+    "solution": "雪が降り始めました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "snowing",
+        "vocabularyIds": ["vocab-79db1765ce26"]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-hajimeru"
+    ]
+  },
+  {
+    "id": "production-n4-brother-started-reading-book",
+    "text": "My younger brother started reading the book.",
+    "solution": "弟はその本を読み始めました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "reading",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-hajimeru"
+    ]
+  },
+  {
+    "id": "n4-finished-reading-book",
+    "text": "この本を読み終わりました。",
+    "solution": "I finished reading this book.",
+    "grammarPointIds": [
+      "stem-owaru",
+      "o-object",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "n4-finished-letter-then-slept",
+    "text": "手紙を書き終わって、寝ました。",
+    "solution": "I finished writing the letter and went to bed.",
+    "grammarPointIds": [
+      "stem-owaru",
+      "te-action-link",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-finished-eating-breakfast",
+    "text": "I finished eating breakfast.",
+    "solution": "朝御飯を食べ終わりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "breakfast",
+        "vocabularyIds": ["vocab-818846d31820"]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-owaru"
+    ]
+  },
+  {
+    "id": "production-n4-she-finished-writing-letter",
+    "text": "She finished writing the letter.",
+    "solution": "彼女は手紙を書き終わりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "writing",
+        "vocabularyIds": ["vocab-d34997e828cb"]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-owaru"
+    ]
+  },
+  {
+    "id": "n4-rain-kept-falling",
+    "text": "雨が降り続けました。",
+    "solution": "The rain kept falling.",
+    "grammarPointIds": [
+      "stem-tsuzukeru",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "n4-father-worked-three-hours-continuously",
+    "text": "父は三時間働き続けました。",
+    "solution": "My father kept working for three hours.",
+    "grammarPointIds": [
+      "stem-tsuzukeru",
+      "wa-topic",
+      "duration-no-particle"
+    ]
+  },
+  {
+    "id": "production-n4-she-kept-reading-book",
+    "text": "She kept reading the book.",
+    "solution": "彼女はその本を読み続けました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "reading",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-tsuzukeru"
+    ]
+  },
+  {
+    "id": "production-n4-continue-studying-japanese",
+    "text": "I will continue studying Japanese.",
+    "solution": "日本語を勉強し続けます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "studying",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-tsuzukeru"
+    ]
+  },
+  {
+    "id": "n4-child-burst-into-tears",
+    "text": "子供が泣き出しました。",
+    "solution": "The child suddenly burst into tears.",
+    "grammarPointIds": [
+      "stem-dasu",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "n4-everyone-started-laughing",
+    "text": "みんなが笑い出しました。",
+    "solution": "Everyone suddenly started laughing.",
+    "grammarPointIds": [
+      "stem-dasu",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-n4-rain-suddenly-started",
+    "text": "It suddenly started raining.",
+    "solution": "雨が降り出しました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "raining",
+        "vocabularyIds": ["vocab-777161023023"]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-dasu"
+    ]
+  },
+  {
+    "id": "production-n4-brother-suddenly-laughed",
+    "text": "My younger brother suddenly started laughing.",
+    "solution": "弟が笑い出しました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "laughing",
+        "vocabularyIds": ["vocab-4f4fa5bb1705"]
+      }
+    ],
+    "grammarPointIds": [
+      "stem-dasu"
+    ]
+  },
+  {
+    "id": "n4-brother-wants-play-outside",
+    "text": "弟は外で遊びたがっています。",
+    "solution": "My younger brother wants to play outside.",
+    "tokenOverrides": {
+      "がっ": {
+        "category": "auxiliary"
+      }
+    },
+    "vocabularyOverrides": {
+      "外": "vocab-6109638dac53"
+    },
+    "grammarPointIds": [
+      "tagaru",
+      "wa-topic",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "n4-child-wants-see-movie",
+    "text": "子供はその映画を見たがっています。",
+    "solution": "The child wants to see that movie.",
+    "tokenOverrides": {
+      "がっ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "tagaru",
+      "wa-topic",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-sister-wants-go-japan",
+    "text": "My younger sister wants to go to Japan.",
+    "solution": "妹は日本へ行きたがっています。",
+    "type": "production",
+    "tokenOverrides": {
+      "がっ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "go",
+        "vocabularyIds": ["vocab-ec22142c23d3"]
+      }
+    ],
+    "grammarPointIds": [
+      "tagaru"
+    ]
+  },
+  {
+    "id": "production-n4-child-does-not-want-vegetables",
+    "text": "The child does not want to eat vegetables.",
+    "solution": "子供は野菜を食べたがっていません。",
+    "type": "production",
+    "tokenOverrides": {
+      "がっ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "eat",
+        "vocabularyIds": ["vocab-ec4fa4315542"]
+      }
+    ],
+    "grammarPointIds": [
+      "tagaru"
     ]
   }
 ]
