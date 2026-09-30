@@ -96,6 +96,25 @@ and JLPT Sensei; it is not presented as an official itemized list:
 - https://bunpro.jp/decks/m7omkx/bunpro-n4-grammar
 - https://jlptsensei.com/jlpt-n4-grammar-list/
 
+`source/n4-grammar-inventory.json` records the complete editorial audit before
+the remaining points enter the live SRS. It currently maps 52 semantic families
+to grammar already taught by ChakuChaku and defines 83 missing points: 68 core
+and 15 boundary items. The companion French catalogue contains original names
+and learning objectives for every planned point. Candidates that are lexical,
+already produced by simpler rules, or insufficiently supported are retained in
+the audit with an explicit reason instead of silently disappearing.
+
+The audit date and source-reference policy are stored in the inventory itself.
+Per-entry `sourceRefs` provide non-exhaustive supporting evidence rather than a
+claim that every occurrence in every curriculum was mapped. The official JLPT
+description supplies the ability scope, while Bunpro serves as a broad coverage
+benchmark; neither is an official itemized grammar syllabus.
+
+This staging file deliberately does not affect Statistics or exercise
+selection. Planned points move into the canonical grammar and French catalogues
+only together with reviewed exercises, so the live curriculum never contains
+an SRS unit that the learner cannot practise.
+
 Writing systems, vocabulary, and kanji are excluded because this file is the
 grammar curriculum. Grammar-dependent counting, time, and question systems are
 included.

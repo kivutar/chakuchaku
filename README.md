@@ -81,6 +81,8 @@ Development-time generation is split from the browser runtime:
 | `data/jlpt-n5-grammar.json` | Canonical flat grammar inventory, retaining its legacy filename | Committed |
 | `data/jlpt-n5-conjugation.json` | Curated verbs/adjectives and their inflection classes | Committed |
 | `data/grammar-coverage.md` | Generated checklist of grammar points covered by exercises | Committed |
+| `data/source/n4-grammar-inventory.json` | Audited N4 grammar families, integration state, and non-exhaustive source evidence | Committed |
+| `data/source/locales/fr/n4-grammar-inventory.json` | French names and objectives for every planned N4 grammar point | Committed |
 | `data/jlpt-n5-vocabulary.json` | Multi-level synthetic vocabulary inventory (legacy filename) | Committed |
 | `data/source/open-anki-jlpt-n4.csv` | Pinned upstream N4 vocabulary snapshot used by the importer | Committed |
 | `data/source/kanji-curricula.json` | Per-level kanji curriculum and mnemonic source manifest | Committed |
