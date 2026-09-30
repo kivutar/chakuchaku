@@ -21,9 +21,9 @@ function verb(term, reading, verbClass, teException) {
   return { term, reading, class: verbClass, teException };
 }
 
-test("the curriculum exposes 88 reusable conjugation points", () => {
-  assert.equal(points.length, 88);
-  assert.equal(new Set(points.map(({ id }) => id)).size, 88);
+test("the curriculum exposes 119 reusable conjugation points", () => {
+  assert.equal(points.length, 119);
+  assert.equal(new Set(points.map(({ id }) => id)).size, 119);
   assert.ok(points.some(({ id }) => id === "ichidan-polite-past"));
   assert.ok(points.some(({ id }) => id === "godan-polite-volitional"));
   assert.ok(points.some(({ id }) => id === "ichidan-polite-volitional"));
@@ -51,7 +51,15 @@ test("the curriculum exposes 88 reusable conjugation points", () => {
   assert.ok(points.some(({ id }) => id === "godan-plain-volitional"));
   assert.ok(points.some(({ id }) => id === "ichidan-potential"));
   assert.ok(points.some(({ id }) => id === "suru-passive"));
-  assert.equal(points.filter(({ introducedAt }) => introducedAt === "n4").length, 12);
+  assert.ok(points.some(({ id }) => id === "godan-causative"));
+  assert.ok(points.some(({ id }) => id === "ichidan-causative-passive"));
+  assert.ok(points.some(({ id }) => id === "godan-su-causative-passive"));
+  assert.ok(points.some(({ id }) => id === "kuru-imperative"));
+  assert.ok(points.some(({ id }) => id === "kureru-imperative"));
+  assert.ok(points.some(({ id }) => id === "godan-negative-conditional-ba"));
+  assert.ok(points.some(({ id }) => id === "i-adjective-conditional-ba"));
+  assert.ok(points.some(({ id }) => id === "na-adjective-negative-connective"));
+  assert.equal(points.filter(({ introducedAt }) => introducedAt === "n4").length, 43);
   assert.ok(!points.some(({ id }) => id === "ii-adjective-polite-present"));
 });
 
@@ -292,6 +300,109 @@ test("plain volitional, potential, and passive forms cover every verb class", ()
   }
 });
 
+test("causative, causative-passive, and imperative forms cover every godan ending", () => {
+  const cases = [
+    ["会う", "あう", "会わせる", "あわせる", "会わされる", "あわされる", "会え", "あえ"],
+    ["書く", "かく", "書かせる", "かかせる", "書かされる", "かかされる", "書け", "かけ"],
+    ["泳ぐ", "およぐ", "泳がせる", "およがせる", "泳がされる", "およがされる", "泳げ", "およげ"],
+    ["話す", "はなす", "話させる", "はなさせる", "話させられる", "はなさせられる", "話せ", "はなせ"],
+    ["待つ", "まつ", "待たせる", "またせる", "待たされる", "またされる", "待て", "まて"],
+    ["死ぬ", "しぬ", "死なせる", "しなせる", "死なされる", "しなされる", "死ね", "しね"],
+    ["遊ぶ", "あそぶ", "遊ばせる", "あそばせる", "遊ばされる", "あそばされる", "遊べ", "あそべ"],
+    ["飲む", "のむ", "飲ませる", "のませる", "飲まされる", "のまされる", "飲め", "のめ"],
+    ["乗る", "のる", "乗らせる", "のらせる", "乗らされる", "のらされる", "乗れ", "のれ"]
+  ];
+
+  for (const [term, reading, causative, causativeReading, causativePassive,
+    causativePassiveReading, imperative, imperativeReading] of cases) {
+    const entry = verb(term, reading, "godan");
+
+    assert.deepEqual(conjugateVerb(entry, forms.causative), {
+      surface: causative,
+      reading: causativeReading
+    });
+    assert.deepEqual(conjugateVerb(entry, forms.causativePassive), {
+      surface: causativePassive,
+      reading: causativePassiveReading
+    });
+    assert.deepEqual(conjugateVerb(entry, forms.imperative), {
+      surface: imperative,
+      reading: imperativeReading
+    });
+  }
+});
+
+test("new N4 verb forms preserve the ichidan and irregular classes", () => {
+  const cases = [
+    [verb("食べる", "たべる", "ichidan"), forms.causative, "食べさせる", "たべさせる"],
+    [verb("勉強する", "べんきょうする", "suru"), forms.causative, "勉強させる", "べんきょうさせる"],
+    [verb("来る", "くる", "kuru"), forms.causative, "来させる", "こさせる"],
+    [verb("食べる", "たべる", "ichidan"), forms.causativePassive, "食べさせられる", "たべさせられる"],
+    [verb("勉強する", "べんきょうする", "suru"), forms.causativePassive, "勉強させられる", "べんきょうさせられる"],
+    [verb("来る", "くる", "kuru"), forms.causativePassive, "来させられる", "こさせられる"],
+    [verb("食べる", "たべる", "ichidan"), forms.imperative, "食べろ", "たべろ"],
+    [verb("勉強する", "べんきょうする", "suru"), forms.imperative, "勉強しろ", "べんきょうしろ"],
+    [verb("来る", "くる", "kuru"), forms.imperative, "来い", "こい"]
+  ];
+
+  for (const [entry, form, surface, reading] of cases) {
+    assert.deepEqual(conjugateVerb(entry, form), { surface, reading });
+    assert.equal(getPointIdForVerb(entry, form), `${entry.class}-${form}`);
+  }
+
+  const kureru = verb("くれる", "くれる", "ichidan");
+  kureru.imperativeException = "kureru";
+  assert.deepEqual(conjugateVerb(kureru, forms.imperative), {
+    surface: "くれ",
+    reading: "くれ"
+  });
+  assert.equal(getPointIdForVerb(kureru, forms.imperative), "kureru-imperative");
+});
+
+test("negative verb conditionals and connectives cover every verb class", () => {
+  const cases = [
+    [verb("書く", "かく", "godan"), "書かなければ", "かかなければ", "書かなくて", "かかなくて"],
+    [verb("食べる", "たべる", "ichidan"), "食べなければ", "たべなければ", "食べなくて", "たべなくて"],
+    [verb("勉強する", "べんきょうする", "suru"), "勉強しなければ", "べんきょうしなければ", "勉強しなくて", "べんきょうしなくて"],
+    [verb("来る", "くる", "kuru"), "来なければ", "こなければ", "来なくて", "こなくて"]
+  ];
+
+  for (const [entry, conditional, conditionalReading, connective, connectiveReading] of cases) {
+    assert.deepEqual(conjugateVerb(entry, forms.negativeConditionalBa), {
+      surface: conditional,
+      reading: conditionalReading
+    });
+    assert.deepEqual(conjugateVerb(entry, forms.negativeConnective), {
+      surface: connective,
+      reading: connectiveReading
+    });
+  }
+});
+
+test("adjective conditionals and negative connectives cover every adjective class", () => {
+  const cases = [
+    [verb("高い", "たかい", "i-adjective"), "高ければ", "たかければ", "高くなければ", "たかくなければ", "高くなくて", "たかくなくて"],
+    [verb("いい", "いい", "ii-adjective"), "よければ", "よければ", "よくなければ", "よくなければ", "よくなくて", "よくなくて"],
+    [verb("静か", "しずか", "na-adjective"), "静かならば", "しずかならば", "静かでなければ", "しずかでなければ", "静かではなくて", "しずかではなくて"]
+  ];
+
+  for (const [entry, conditional, conditionalReading, negativeConditional,
+    negativeConditionalReading, connective, connectiveReading] of cases) {
+    assert.deepEqual(conjugateAdjective(entry, forms.conditionalBa), {
+      surface: conditional,
+      reading: conditionalReading
+    });
+    assert.deepEqual(conjugateAdjective(entry, forms.negativeConditionalBa), {
+      surface: negativeConditional,
+      reading: negativeConditionalReading
+    });
+    assert.deepEqual(conjugateAdjective(entry, forms.negativeConnective), {
+      surface: connective,
+      reading: connectiveReading
+    });
+  }
+});
+
 test("the curated vocabulary supplies exercises for every point", async () => {
   const [vocabulary, curriculum] = await Promise.all([
     readFile(new URL("../data/jlpt-n5-vocabulary.json", import.meta.url), "utf8").then(JSON.parse),
@@ -305,13 +416,29 @@ test("the curated vocabulary supplies exercises for every point", async () => {
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "i-adjective").length, 60);
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "ii-adjective").length, 2);
   assert.equal(curriculum.filter(({ class: itemClass }) => itemClass === "na-adjective").length, 18);
-  assert.equal(pool.length, 1343);
+  assert.equal(pool.length, 1820);
   assert.deepEqual(coveredPointIds, new Set(points.map(({ id }) => id)));
   assert.ok(pool.every(({ section }) => section === "conjugation"));
   assert.ok(pool.every(({ meaning }) => typeof meaning === "string" && meaning));
   assert.equal(pool.some(({ term, form }) => {
     return term === "分かる" && form === forms.potential;
   }), false);
+
+  const quietConditional = pool.find(({ term, form }) => {
+    return term === "静か" && form === forms.conditionalBa;
+  });
+  const quietNegativeConditional = pool.find(({ term, form }) => {
+    return term === "静か" && form === forms.negativeConditionalBa;
+  });
+  const quietNegativeConnective = pool.find(({ term, form }) => {
+    return term === "静か" && form === forms.negativeConnective;
+  });
+
+  assert.equal(gradeAnswer(quietConditional, "静かなら", wanakana).correct, true);
+  assert.equal(gradeAnswer(quietNegativeConditional, "静かじゃなければ", wanakana).correct, true);
+  assert.equal(gradeAnswer(quietNegativeConditional, "静かではなければ", wanakana).correct, true);
+  assert.equal(gradeAnswer(quietNegativeConnective, "静かでなくて", wanakana).correct, true);
+  assert.equal(gradeAnswer(quietNegativeConnective, "静かじゃなくて", wanakana).correct, true);
 
   for (const exercise of pool) {
     assert.equal(gradeAnswer(exercise, exercise.answerSurface, wanakana).correct, true);
@@ -338,6 +465,40 @@ test("the curated vocabulary supplies exercises for every point", async () => {
   assert.equal(gradeAnswer(quietNegative, "shizuka ja nai desu", wanakana).correct, true);
   assert.equal(gradeAnswer(goodPresent, "yoi desu", wanakana).correct, true);
   assert.equal(goodPresent.conjugationPointId, "i-adjective-polite-present");
+
+  const forcedToDrink = pool.find(({ term, form }) => {
+    return term === "飲む" && form === forms.causativePassive;
+  });
+  const forcedToSpeak = pool.find(({ term, form }) => {
+    return term === "話す" && form === forms.causativePassive;
+  });
+  const giveCommand = pool.find(({ term, form }) => {
+    return term === "くれる" && form === forms.imperative;
+  });
+  const eatCommand = pool.find(({ term, form }) => {
+    return term === "食べる" && form === forms.imperative;
+  });
+  const studyCommand = pool.find(({ term, form }) => {
+    return term === "コピーする" && form === forms.imperative;
+  });
+
+  assert.equal(forcedToDrink.answerSurface, "飲まされる");
+  assert.equal(forcedToDrink.conjugationPointId, "godan-causative-passive");
+  assert.equal(gradeAnswer(forcedToDrink, "飲ませられる", wanakana).correct, true);
+  assert.equal(forcedToSpeak.answerSurface, "話させられる");
+  assert.equal(forcedToSpeak.conjugationPointId, "godan-su-causative-passive");
+  assert.equal(gradeAnswer(forcedToSpeak, "話さされる", wanakana).correct, false);
+  assert.equal(giveCommand.answerSurface, "くれ");
+  assert.equal(giveCommand.conjugationPointId, "kureru-imperative");
+  assert.equal(gradeAnswer(eatCommand, "食べよ", wanakana).correct, true);
+  assert.equal(gradeAnswer(studyCommand, "コピーせよ", wanakana).correct, true);
+  assert.equal(pool.some(({ term, form }) => {
+    return term === "いただく" && [
+      forms.causative,
+      forms.causativePassive,
+      forms.imperative
+    ].includes(form);
+  }), false);
 });
 
 test("conjugation exclusions reject unknown or duplicate forms", () => {
@@ -356,6 +517,22 @@ test("conjugation exclusions reject unknown or duplicate forms", () => {
       excludedForms
     }]), /invalid excluded forms/u);
   }
+});
+
+test("imperative exceptions are restricted to the matching irregular verb", () => {
+  const vocabulary = [{
+    id: "eat",
+    term: "食べる",
+    reading: "たべる",
+    meaning: "to eat",
+    partOfSpeech: "verb"
+  }];
+
+  assert.throws(() => createExercisePool(vocabulary, [{
+    vocabularyId: "eat",
+    class: "ichidan",
+    imperativeException: "kureru"
+  }]), /invalid imperative exception/u);
 });
 
 test("grading accepts the written form, kana, and converted romaji", () => {

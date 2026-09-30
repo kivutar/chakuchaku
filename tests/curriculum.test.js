@@ -225,7 +225,7 @@ test("knowledge units are explicitly assigned to an enabled curriculum level", a
     globalThis.JlptN5Conjugation.points.filter(({ introducedAt }) => {
       return introducedAt === "n4";
     }).length,
-    12
+    43
   );
 });
 

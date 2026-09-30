@@ -358,11 +358,15 @@ adjective. Its verb curriculum contains the four common polite forms (`～ます
 and `来る` verbs, plus every regular て-form sound-change family and irregular
 `行く`, plus polite volitional `～ましょう`. It also drills the plain negative,
 plain past, plain past-negative, and `～ば` conditional forms. At N4 it adds
-plain volitional, potential, and passive transformations for all four verb
-classes. Adjectives in い
+plain volitional, potential, passive, causative, causative-passive, and direct
+imperative transformations for all four verb classes, including the shortened
+godan causative-passive, written imperative alternatives `～よ` and `せよ`, and
+irregular `くれる → くれ`. It also covers negative conditionals and connective
+forms such as `行かなければ` and `行かなくて`. Adjectives in い
 and な use the corresponding polite forms, plain past and negative forms, their
 `～くて` / `～で` connective forms, and their `～く` / `～に` adverbial forms,
-with the irregular `いい → よ…` transformations tracked separately.
+conditional and negative-connective forms, with the irregular `いい → よ…`
+transformations tracked separately.
 
 Progress belongs to the reusable rule, not the particular verb. For example,
 correctly forming either `飲んで` or `遊んで` reviews the same

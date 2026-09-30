@@ -128,6 +128,8 @@ test("tricky N4 attachment patterns retain their reviewed distinctions", async (
   const planned = Object.fromEntries(inventory.planned.map((entry) => [entry.id, entry]));
 
   assert.match(planned["causative-passive-form"].pattern, /～される/);
+  assert.match(planned["imperative-form"].pattern, /～よ/);
+  assert.match(planned["imperative-form"].pattern, /せよ/);
   assert.match(planned["you-da-inference"].pattern, /な-adjective \+ なようだ/);
   assert.match(planned["you-da-inference"].pattern, /noun \+ のようだ/);
   assert.match(planned["you-na-ni-simile"].pattern, /な-adjective \+ なような/);

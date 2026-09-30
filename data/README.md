@@ -129,13 +129,20 @@ inflecting adjective, while `ない` is omitted because requesting its negative
 would create an unnatural double-negative drill.
 
 The browser combines these entries with the rules in `conjugation.js`, producing
-exercises for 88 stable SRS points rather than one card per word-and-form pair:
-62 verb rules, including plain forms, `～ば`, class-specific polite and plain
-volitional forms, potential forms, and passive forms, plus 26 adjective rules
-covering plain, regular, irregular, and adverbial transformations. The 12 new
-verb points enter at N4. When an ichidan or `来る` potential and passive have the
+exercises for 119 stable SRS points rather than one card per word-and-form pair:
+84 verb rules, including plain forms, `～ば`, class-specific polite and plain
+volitional forms, potential, passive, causative, causative-passive, and direct
+imperative forms, negative conditionals, and negative connective forms, plus 35
+adjective rules covering plain, regular, irregular, conditional, connective,
+and adverbial transformations. The 43 new points enter at N4. When an
+ichidan or `来る` potential and passive have the
 same written form and pronunciation, their SRS cards remain distinct while the
-audio file is safely shared. The affirmative `いいです` shares the regular
+audio file is safely shared. Contracted godan causative-passives accept their
+long equivalents, verbs ending in `～す` retain the long form, and the irregular
+imperative `くれる → くれ` has its own SRS point. The written imperatives
+`～よ` and `せよ` are accepted alongside the usual spoken forms. Artificial
+causative and imperative drills for humble `いただく` are excluded. The
+affirmative `いいです` shares the regular
 `～いです` point. Per-word `excludedForms` prevent misleading mechanical drills;
 for example, 分かる does not receive the unrelated potential-looking form 分かれる.
 

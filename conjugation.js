@@ -10,6 +10,11 @@
     plainVolitional: "plain-volitional",
     potential: "potential",
     passive: "passive",
+    causative: "causative",
+    causativePassive: "causative-passive",
+    imperative: "imperative",
+    negativeConditionalBa: "negative-conditional-ba",
+    negativeConnective: "negative-connective",
     plainPast: "plain-past",
     plainNegative: "plain-negative",
     plainPastNegative: "plain-past-negative",
@@ -109,12 +114,27 @@
     forms.conditionalBa,
     forms.plainVolitional,
     forms.potential,
-    forms.passive
+    forms.passive,
+    forms.causative,
+    forms.causativePassive,
+    forms.imperative,
+    forms.negativeConditionalBa,
+    forms.negativeConnective
   ];
   const n4VerbForms = [
     forms.plainVolitional,
     forms.potential,
-    forms.passive
+    forms.passive,
+    forms.causative,
+    forms.causativePassive,
+    forms.imperative,
+    forms.negativeConditionalBa,
+    forms.negativeConnective
+  ];
+  const n4AdjectiveForms = [
+    forms.conditionalBa,
+    forms.negativeConditionalBa,
+    forms.negativeConnective
   ];
   const adjectivePlainForms = [
     forms.plainPast,
@@ -125,7 +145,8 @@
     ...politeForms,
     ...adjectivePlainForms,
     forms.te,
-    forms.adverbial
+    forms.adverbial,
+    ...n4AdjectiveForms
   ];
   const adjectivePointForms = Object.freeze({
     [adjectiveClasses.i]: adjectiveForms,
@@ -186,6 +207,28 @@
     "ichidan-passive": "～る → ～られる",
     "suru-passive": "する → される",
     "kuru-passive": "来る → 来られる",
+    "godan-causative": "う段 → あ段 + せる",
+    "ichidan-causative": "～る → ～させる",
+    "suru-causative": "する → させる",
+    "kuru-causative": "来る → 来させる",
+    "godan-causative-passive": "う段（～す以外）→ あ段 + される / せられる",
+    "godan-su-causative-passive": "～す → ～させられる",
+    "ichidan-causative-passive": "～る → ～させられる",
+    "suru-causative-passive": "する → させられる",
+    "kuru-causative-passive": "来る → 来させられる",
+    "godan-imperative": "う段 → え段",
+    "ichidan-imperative": "～る → ～ろ / ～よ",
+    "suru-imperative": "する → しろ / せよ",
+    "kuru-imperative": "来る → 来い",
+    "kureru-imperative": "くれる → くれ",
+    "godan-negative-conditional-ba": "う段 → あ段 + なければ",
+    "ichidan-negative-conditional-ba": "～る → ～なければ",
+    "suru-negative-conditional-ba": "する → しなければ",
+    "kuru-negative-conditional-ba": "来る → 来なければ",
+    "godan-negative-connective": "う段 → あ段 + なくて",
+    "ichidan-negative-connective": "～る → ～なくて",
+    "suru-negative-connective": "する → しなくて",
+    "kuru-negative-connective": "来る → 来なくて",
     "i-adjective-polite-present": "～い → ～いです",
     "i-adjective-polite-past": "～い → ～かったです",
     "i-adjective-polite-negative": "～い → ～くないです",
@@ -195,6 +238,9 @@
     "i-adjective-plain-past-negative": "～い → ～くなかった",
     "i-adjective-te-form": "～い → ～くて",
     "i-adjective-adverbial": "～い → ～く",
+    "i-adjective-conditional-ba": "～い → ～ければ",
+    "i-adjective-negative-conditional-ba": "～い → ～くなければ",
+    "i-adjective-negative-connective": "～い → ～くなくて",
     "ii-adjective-polite-past": "いい → よかったです",
     "ii-adjective-polite-negative": "いい → よくないです",
     "ii-adjective-polite-past-negative": "いい → よくなかったです",
@@ -203,6 +249,9 @@
     "ii-adjective-plain-past-negative": "いい → よくなかった",
     "ii-adjective-te-form": "いい → よくて",
     "ii-adjective-adverbial": "いい → よく",
+    "ii-adjective-conditional-ba": "いい → よければ",
+    "ii-adjective-negative-conditional-ba": "いい → よくなければ",
+    "ii-adjective-negative-connective": "いい → よくなくて",
     "na-adjective-polite-present": "～（な） → ～です",
     "na-adjective-polite-past": "～（な） → ～でした",
     "na-adjective-polite-negative": "～（な） → ～ではありません",
@@ -211,7 +260,10 @@
     "na-adjective-plain-negative": "～（な） → ～ではない",
     "na-adjective-plain-past-negative": "～（な） → ～ではなかった",
     "na-adjective-te-form": "～（な） → ～で",
-    "na-adjective-adverbial": "～（な） → ～に"
+    "na-adjective-adverbial": "～（な） → ～に",
+    "na-adjective-conditional-ba": "～（な） → ～ならば",
+    "na-adjective-negative-conditional-ba": "～（な） → ～でなければ",
+    "na-adjective-negative-connective": "～（な） → ～ではなくて"
   });
 
   function createPointId(group, form) {
@@ -265,10 +317,19 @@
       ].map((form) => createPoint(verbClass, form));
     }),
     ...Object.entries(adjectivePointForms).flatMap(([adjectiveClass, adjectiveForms]) => {
-      return adjectiveForms.map((form) => createPoint(adjectiveClass, form));
+      return adjectiveForms
+        .filter((form) => !n4AdjectiveForms.includes(form))
+        .map((form) => createPoint(adjectiveClass, form));
     }),
     ...politeClasses.flatMap((verbClass) => {
       return n4VerbForms.map((form) => createPoint(verbClass, form, "n4"));
+    }),
+    createPoint("godan-su", forms.causativePassive, "n4"),
+    createPoint("kureru", forms.imperative, "n4"),
+    ...Object.entries(adjectivePointForms).flatMap(([adjectiveClass, adjectiveForms]) => {
+      return adjectiveForms
+        .filter((form) => n4AdjectiveForms.includes(form))
+        .map((form) => createPoint(adjectiveClass, form, "n4"));
     })
   ]);
 
@@ -481,7 +542,140 @@
     throw new TypeError(`Unsupported verb class: ${verb.class}`);
   }
 
+  function createCausative(value, verb) {
+    if (verb.class === verbClasses.godan) {
+      const replacement = godanAEndings[verb.reading.at(-1)];
+
+      if (!replacement) {
+        throw new TypeError(`Unsupported godan ending: ${verb.reading.at(-1)}`);
+      }
+
+      return `${replaceEnding(value, 1, replacement)}せる`;
+    }
+
+    if (verb.class === verbClasses.ichidan) {
+      return `${replaceEnding(value, 1, "")}させる`;
+    }
+
+    if (verb.class === verbClasses.suru) {
+      return `${replaceEnding(value, 2, "")}させる`;
+    }
+
+    if (verb.class === verbClasses.kuru) {
+      return `${value === "来る" ? "来" : "こ"}させる`;
+    }
+
+    throw new TypeError(`Unsupported verb class: ${verb.class}`);
+  }
+
+  function createCausativePassive(value, verb, useLongForm = false) {
+    if (verb.class === verbClasses.godan) {
+      const ending = verb.reading.at(-1);
+      const replacement = godanAEndings[ending];
+
+      if (!replacement) {
+        throw new TypeError(`Unsupported godan ending: ${ending}`);
+      }
+
+      const suffix = useLongForm || ending === "す" ? "せられる" : "される";
+      return `${replaceEnding(value, 1, replacement)}${suffix}`;
+    }
+
+    if (verb.class === verbClasses.ichidan) {
+      return `${replaceEnding(value, 1, "")}させられる`;
+    }
+
+    if (verb.class === verbClasses.suru) {
+      return `${replaceEnding(value, 2, "")}させられる`;
+    }
+
+    if (verb.class === verbClasses.kuru) {
+      return `${value === "来る" ? "来" : "こ"}させられる`;
+    }
+
+    throw new TypeError(`Unsupported verb class: ${verb.class}`);
+  }
+
+  function createImperative(value, verb) {
+    if (verb.imperativeException === "kureru") {
+      return replaceEnding(value, 1, "");
+    }
+
+    if (verb.class === verbClasses.godan) {
+      const replacement = godanEEndings[verb.reading.at(-1)];
+
+      if (!replacement) {
+        throw new TypeError(`Unsupported godan ending: ${verb.reading.at(-1)}`);
+      }
+
+      return replaceEnding(value, 1, replacement);
+    }
+
+    if (verb.class === verbClasses.ichidan) {
+      return `${replaceEnding(value, 1, "")}ろ`;
+    }
+
+    if (verb.class === verbClasses.suru) {
+      return `${replaceEnding(value, 2, "")}しろ`;
+    }
+
+    if (verb.class === verbClasses.kuru) {
+      return value === "来る" ? "来い" : "こい";
+    }
+
+    throw new TypeError(`Unsupported verb class: ${verb.class}`);
+  }
+
+  function createNegativeVerbDerivative(value, verb, suffix) {
+    return replaceEnding(createPlainNegative(value, verb), 2, suffix);
+  }
+
+  function createVerbAlternatives(verb, form) {
+    if (form === forms.causativePassive) {
+      if (verb.class !== verbClasses.godan || verb.reading.endsWith("す")) {
+        return [];
+      }
+
+      return [{
+        surface: createCausativePassive(verb.term, verb, true),
+        reading: createCausativePassive(verb.reading, verb, true)
+      }];
+    }
+
+    if (
+      form === forms.imperative &&
+      verb.class === verbClasses.ichidan &&
+      verb.imperativeException !== "kureru"
+    ) {
+      return [{
+        surface: `${replaceEnding(verb.term, 1, "")}よ`,
+        reading: `${replaceEnding(verb.reading, 1, "")}よ`
+      }];
+    }
+
+    if (form === forms.imperative && verb.class === verbClasses.suru) {
+      return [{
+        surface: `${replaceEnding(verb.term, 2, "")}せよ`,
+        reading: `${replaceEnding(verb.reading, 2, "")}せよ`
+      }];
+    }
+
+    return [];
+  }
+
   function getPointIdForVerb(verb, form) {
+    if (
+      form === forms.causativePassive &&
+      verb.class === verbClasses.godan &&
+      verb.reading.endsWith("す")
+    ) {
+      return createPointId("godan-su", form);
+    }
+
+    if (form === forms.imperative && verb.imperativeException === "kureru") {
+      return createPointId("kureru", form);
+    }
+
     if (![forms.te, forms.plainPast].includes(form)) {
       return createPointId(verb.class, form);
     }
@@ -559,6 +753,41 @@
       };
     }
 
+    if (form === forms.causative) {
+      return {
+        surface: createCausative(verb.term, verb),
+        reading: createCausative(verb.reading, verb)
+      };
+    }
+
+    if (form === forms.causativePassive) {
+      return {
+        surface: createCausativePassive(verb.term, verb),
+        reading: createCausativePassive(verb.reading, verb)
+      };
+    }
+
+    if (form === forms.imperative) {
+      return {
+        surface: createImperative(verb.term, verb),
+        reading: createImperative(verb.reading, verb)
+      };
+    }
+
+    if (form === forms.negativeConditionalBa) {
+      return {
+        surface: createNegativeVerbDerivative(verb.term, verb, "なければ"),
+        reading: createNegativeVerbDerivative(verb.reading, verb, "なければ")
+      };
+    }
+
+    if (form === forms.negativeConnective) {
+      return {
+        surface: createNegativeVerbDerivative(verb.term, verb, "なくて"),
+        reading: createNegativeVerbDerivative(verb.reading, verb, "なくて")
+      };
+    }
+
     const suffix = politeSuffixes[form];
 
     if (!suffix) {
@@ -584,7 +813,10 @@
         [forms.plainNegative]: useAlternativeNegative ? "じゃない" : "ではない",
         [forms.plainPastNegative]: useAlternativeNegative ? "じゃなかった" : "ではなかった",
         [forms.te]: "で",
-        [forms.adverbial]: "に"
+        [forms.adverbial]: "に",
+        [forms.conditionalBa]: "ならば",
+        [forms.negativeConditionalBa]: "でなければ",
+        [forms.negativeConnective]: "ではなくて"
       }[form];
 
       if (!suffix) {
@@ -621,7 +853,10 @@
       [forms.plainNegative]: "くない",
       [forms.plainPastNegative]: "くなかった",
       [forms.te]: "くて",
-      [forms.adverbial]: "く"
+      [forms.adverbial]: "く",
+      [forms.conditionalBa]: "ければ",
+      [forms.negativeConditionalBa]: "くなければ",
+      [forms.negativeConnective]: "くなくて"
     }[form];
 
     if (!suffix) {
@@ -686,6 +921,31 @@
       }
     }
 
+    if (adjective.class === adjectiveClasses.na && form === forms.conditionalBa) {
+      alternatives.push({
+        surface: `${adjective.term}なら`,
+        reading: `${adjective.reading}なら`
+      });
+    }
+
+    if (adjective.class === adjectiveClasses.na && form === forms.negativeConditionalBa) {
+      for (const suffix of ["ではなければ", "じゃなければ"]) {
+        alternatives.push({
+          surface: `${adjective.term}${suffix}`,
+          reading: `${adjective.reading}${suffix}`
+        });
+      }
+    }
+
+    if (adjective.class === adjectiveClasses.na && form === forms.negativeConnective) {
+      for (const suffix of ["でなくて", "じゃなくて"]) {
+        alternatives.push({
+          surface: `${adjective.term}${suffix}`,
+          reading: `${adjective.reading}${suffix}`
+        });
+      }
+    }
+
     return alternatives;
   }
 
@@ -730,12 +990,22 @@
       const item = {
         ...vocabularyEntry,
         class: curriculumEntry.class,
-        teException: curriculumEntry.teException
+        teException: curriculumEntry.teException,
+        imperativeException: curriculumEntry.imperativeException
       };
       const itemForms = isVerb
         ? [...politeForms, forms.politeVolitional, ...verbPlainForms, forms.te]
         : adjectiveForms;
       const configuredExcludedForms = curriculumEntry.excludedForms ?? [];
+
+      if (
+        curriculumEntry.imperativeException !== undefined &&
+        (curriculumEntry.imperativeException !== "kureru" ||
+          curriculumEntry.class !== verbClasses.ichidan ||
+          vocabularyEntry.reading !== "くれる")
+      ) {
+        throw new TypeError(`${curriculumEntry.vocabularyId}: invalid imperative exception.`);
+      }
 
       if (
         !Array.isArray(configuredExcludedForms) ||
@@ -751,7 +1021,9 @@
         const answer = isVerb
           ? conjugateVerb(item, form)
           : conjugateAdjective(item, form);
-        const alternatives = isAdjective ? createAdjectiveAlternatives(item, form) : [];
+        const alternatives = isAdjective
+          ? createAdjectiveAlternatives(item, form)
+          : createVerbAlternatives(item, form);
         const conjugationPointId = getPointIdForItem(item, form);
 
         return {
