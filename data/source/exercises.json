@@ -1078,6 +1078,7 @@
     "text": "月曜日までに作文を書かなければなりません。",
     "solution": "I have to write the composition by Monday.",
     "grammarPointIds": [
+      "made-ni",
       "nakereba-naranai",
       "made-end",
       "clock-calendar-time"
@@ -3996,6 +3997,7 @@
     "text": "明日までに作文を書かなくてはいけません。",
     "solution": "I must write the composition by tomorrow.",
     "grammarPointIds": [
+      "made-ni",
       "nakute-wa-ikenai",
       "made-end",
       "o-object"
@@ -12010,5 +12012,3284 @@
     "grammarPointIds": [
       "tagaru"
     ]
+  },
+  {
+    "id": "n4-child-shows-fear-of-dog",
+    "text": "子供は犬を怖がっています。",
+    "solution": "The child is afraid of the dog.",
+    "tokenOverrides": {
+      "怖がっ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "garu",
+      "wa-topic",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-brother-shows-feeling-cold",
+    "text": "弟は寒がっています。",
+    "solution": "My younger brother seems to feel cold.",
+    "tokenOverrides": {
+      "がっ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "garu",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "production-n4-sister-seems-lonely",
+    "text": "My younger sister seems lonely.",
+    "solution": "妹は寂しがっています。",
+    "type": "production",
+    "tokenOverrides": {
+      "がっ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "lonely",
+        "vocabularyIds": ["vocab-095b33ccc743"]
+      }
+    ],
+    "grammarPointIds": [
+      "garu"
+    ]
+  },
+  {
+    "id": "production-n4-child-seems-in-pain",
+    "text": "The child seems to be in pain.",
+    "solution": "子供は痛がっています。",
+    "type": "production",
+    "tokenOverrides": {
+      "がっ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "pain",
+        "vocabularyIds": ["vocab-64170b1798cb"]
+      }
+    ],
+    "grammarPointIds": [
+      "garu"
+    ]
+  },
+  {
+    "id": "n4-brother-easily-frightened",
+    "text": "弟は怖がりです。",
+    "solution": "My younger brother is easily frightened.",
+    "tokenOverrides": {
+      "怖がり": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "gari",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "n4-mother-sensitive-to-cold",
+    "text": "母は寒がりです。",
+    "solution": "My mother is sensitive to the cold.",
+    "tokenOverrides": {
+      "がり": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "gari",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "production-n4-sister-is-shy",
+    "text": "My younger sister is shy.",
+    "solution": "妹は恥ずかしがりです。",
+    "type": "production",
+    "tokenOverrides": {
+      "がり": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "shy",
+        "vocabularyIds": ["vocab-8b65db9c3fbf"]
+      }
+    ],
+    "grammarPointIds": [
+      "gari"
+    ]
+  },
+  {
+    "id": "production-n4-father-sensitive-to-heat",
+    "text": "My father is sensitive to the heat.",
+    "solution": "父は暑がりです。",
+    "type": "production",
+    "tokenOverrides": {
+      "暑がり": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "heat",
+        "vocabularyIds": ["vocab-19be7f7be766"]
+      }
+    ],
+    "grammarPointIds": [
+      "gari"
+    ]
+  },
+  {
+    "id": "n4-want-friend-send-photo",
+    "text": "友達に写真を送ってほしいです。",
+    "solution": "I want my friend to send me the photo.",
+    "tokenOverrides": {
+      "ほしい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "te-hoshii",
+      "ni-target-recipient",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-do-not-want-brother-play-here",
+    "text": "弟にここで遊ばないでほしいです。",
+    "solution": "I do not want my younger brother to play here.",
+    "tokenOverrides": {
+      "ほしい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "te-hoshii",
+      "ni-target-recipient",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "production-n4-want-brother-wait-here",
+    "text": "I want my younger brother to wait here.",
+    "solution": "弟にここで待ってほしいです。",
+    "type": "production",
+    "tokenOverrides": {
+      "ほしい": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "wait",
+        "vocabularyIds": ["vocab-6f30c5c5938f"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-hoshii"
+    ]
+  },
+  {
+    "id": "production-n4-do-not-want-child-open-window",
+    "text": "I do not want the child to open the window.",
+    "solution": "子供に窓を開けないでほしいです。",
+    "type": "production",
+    "tokenOverrides": {
+      "ほしい": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "open",
+        "vocabularyIds": ["vocab-658ff53bc114"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-hoshii"
+    ]
+  },
+  {
+    "id": "n4-thank-you-for-helping",
+    "text": "手伝ってくれてありがとう。",
+    "solution": "Thank you for helping me.",
+    "grammarPointIds": [
+      "te-kurete-arigatou",
+      "te-kureru"
+    ]
+  },
+  {
+    "id": "n4-thank-you-for-carrying-luggage",
+    "text": "荷物を持ってくれてありがとうございます。",
+    "solution": "Thank you for carrying my luggage.",
+    "grammarPointIds": [
+      "te-kurete-arigatou",
+      "te-kureru",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-thank-you-for-waiting",
+    "text": "Thank you for waiting for me.",
+    "solution": "待ってくれてありがとう。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "waiting",
+        "vocabularyIds": ["vocab-6f30c5c5938f"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-kurete-arigatou"
+    ]
+  },
+  {
+    "id": "production-n4-thank-you-for-coming-today",
+    "text": "Thank you for coming today.",
+    "solution": "今日来てくれてありがとう。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "coming",
+        "vocabularyIds": ["vocab-bc01756b4d89"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-kurete-arigatou"
+    ]
+  },
+  {
+    "id": "n4-sorry-for-being-late",
+    "text": "遅れてすみません。",
+    "solution": "I am sorry for being late.",
+    "grammarPointIds": [
+      "te-sumimasen",
+      "verb-te-form"
+    ]
+  },
+  {
+    "id": "n4-sorry-for-not-coming-yesterday",
+    "text": "昨日来なくてすみません。",
+    "solution": "I am sorry I did not come yesterday.",
+    "grammarPointIds": [
+      "te-sumimasen",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "production-n4-sorry-for-forgetting-name",
+    "text": "I am sorry for forgetting your name.",
+    "solution": "名前を忘れてすみません。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "forgetting",
+        "vocabularyIds": ["vocab-53c63c8d3e25"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-sumimasen"
+    ]
+  },
+  {
+    "id": "production-n4-sorry-for-not-waiting",
+    "text": "I am sorry for not waiting.",
+    "solution": "待たなくてすみません。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "waiting",
+        "vocabularyIds": ["vocab-6f30c5c5938f"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-sumimasen"
+    ]
+  },
+  {
+    "id": "n4-polite-ask-directions-to-station",
+    "text": "駅までの道を教えていただけませんか。",
+    "solution": "Could you please tell me the way to the station?",
+    "grammarPointIds": [
+      "te-itadakemasen-ka",
+      "made-end",
+      "no-possession",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-polite-ask-carry-luggage",
+    "text": "この荷物を持っていただけませんか。",
+    "solution": "Could you please carry this luggage?",
+    "grammarPointIds": [
+      "te-itadakemasen-ka",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-polite-ask-close-window",
+    "text": "Could you please close the window?",
+    "solution": "窓を閉めていただけませんか。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "close",
+        "vocabularyIds": ["vocab-98e990bf1d44"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-itadakemasen-ka"
+    ]
+  },
+  {
+    "id": "production-n4-polite-ask-write-name",
+    "text": "Could you please write your name here?",
+    "solution": "ここに名前を書いていただけませんか。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "write",
+        "vocabularyIds": ["vocab-d34997e828cb"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-itadakemasen-ka"
+    ]
+  },
+  {
+    "id": "n4-glad-came-to-japan",
+    "text": "日本に来てよかったです。",
+    "solution": "I am glad I came to Japan.",
+    "grammarPointIds": [
+      "te-yokatta",
+      "ni-destination"
+    ]
+  },
+  {
+    "id": "n4-glad-took-medicine",
+    "text": "この薬を飲んでよかったです。",
+    "solution": "I am glad I took this medicine.",
+    "grammarPointIds": [
+      "te-yokatta",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-glad-bought-book",
+    "text": "I am glad I bought this book.",
+    "solution": "この本を買ってよかったです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "bought",
+        "vocabularyIds": ["vocab-1b65a0cb82d2"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-yokatta"
+    ]
+  },
+  {
+    "id": "production-n4-glad-studied-japanese",
+    "text": "I am glad I studied Japanese.",
+    "solution": "日本語を勉強してよかったです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "studied",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-yokatta"
+    ]
+  },
+  {
+    "id": "n4-bought-fish-for-cat",
+    "text": "猫に魚を買ってやりました。",
+    "solution": "I bought some fish for the cat.",
+    "grammarPointIds": [
+      "te-yaru",
+      "ni-target-recipient",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-helped-brother-with-homework-blunt",
+    "text": "弟の宿題を手伝ってやりました。",
+    "solution": "I helped my younger brother with his homework.",
+    "grammarPointIds": [
+      "te-yaru",
+      "no-possession",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-opened-door-for-dog",
+    "text": "I opened the door for the dog.",
+    "solution": "犬にドアを開けてやりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "opened",
+        "vocabularyIds": ["vocab-658ff53bc114"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-yaru"
+    ]
+  },
+  {
+    "id": "production-n4-took-photo-for-brother",
+    "text": "I took a photo for my younger brother.",
+    "solution": "弟に写真を撮ってやりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "photo",
+        "vocabularyIds": ["vocab-d5901ecbf5fb"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-yaru"
+    ]
+  },
+  {
+    "id": "production-n4-submit-homework-by-tomorrow",
+    "text": "I will hand in my homework by tomorrow.",
+    "solution": "明日までに宿題を出します。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "homework",
+        "vocabularyIds": ["vocab-f26f501fa1c2"]
+      }
+    ],
+    "grammarPointIds": [
+      "made-ni"
+    ]
+  },
+  {
+    "id": "production-n4-come-by-nine",
+    "text": "Please come by nine o'clock.",
+    "solution": "九時までに来てください。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "come",
+        "vocabularyIds": ["vocab-bc01756b4d89"]
+      }
+    ],
+    "grammarPointIds": [
+      "made-ni",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "n4-about-to-eat-lunch",
+    "text": "今、昼御飯を食べるところです。",
+    "solution": "I am just about to eat lunch.",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "ru-tokoro",
+      "o-object",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "n4-about-to-leave-home",
+    "text": "今、家を出るところです。",
+    "solution": "I am just about to leave home.",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "ru-tokoro",
+      "o-route",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "production-n4-about-to-call-mother",
+    "text": "I am just about to call my mother.",
+    "solution": "母に電話するところです。",
+    "type": "production",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "call",
+        "vocabularyIds": ["vocab-24df87472770"]
+      }
+    ],
+    "grammarPointIds": [
+      "ru-tokoro"
+    ]
+  },
+  {
+    "id": "production-n4-about-to-start-studying",
+    "text": "We are just about to start studying.",
+    "solution": "勉強を始めるところです。",
+    "type": "production",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "start",
+        "vocabularyIds": ["vocab-79261a065ba5"]
+      }
+    ],
+    "grammarPointIds": [
+      "ru-tokoro"
+    ]
+  },
+  {
+    "id": "n4-currently-eating-lunch",
+    "text": "今、昼御飯を食べているところです。",
+    "solution": "I am right in the middle of eating lunch.",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "teiru-tokoro",
+      "te-iru-progressive",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-currently-doing-homework",
+    "text": "今、宿題をしているところです。",
+    "solution": "I am right in the middle of doing my homework.",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "teiru-tokoro",
+      "te-iru-progressive",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-currently-reading-book",
+    "text": "I am right in the middle of reading this book.",
+    "solution": "この本を読んでいるところです。",
+    "type": "production",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "reading",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ],
+    "grammarPointIds": [
+      "teiru-tokoro"
+    ]
+  },
+  {
+    "id": "production-n4-brother-currently-studying-japanese",
+    "text": "My younger brother is right in the middle of studying Japanese.",
+    "solution": "弟は日本語を勉強しているところです。",
+    "type": "production",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "studying",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ],
+    "grammarPointIds": [
+      "teiru-tokoro"
+    ]
+  },
+  {
+    "id": "n4-just-ate-lunch",
+    "text": "今、昼御飯を食べたところです。",
+    "solution": "I have just eaten lunch.",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "ta-tokoro",
+      "verb-ta-past",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-just-returned-home",
+    "text": "今、家に帰ったところです。",
+    "solution": "I have just returned home.",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "ta-tokoro",
+      "verb-ta-past",
+      "ni-destination"
+    ]
+  },
+  {
+    "id": "production-n4-just-finished-homework",
+    "text": "I have just finished my homework.",
+    "solution": "今、宿題が終わったところです。",
+    "type": "production",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "finished",
+        "vocabularyIds": ["vocab-6393ca7aefde"]
+      }
+    ],
+    "grammarPointIds": [
+      "ta-tokoro"
+    ]
+  },
+  {
+    "id": "production-n4-just-bought-book",
+    "text": "I have just bought this book.",
+    "solution": "今、この本を買ったところです。",
+    "type": "production",
+    "tokenOverrides": {
+      "ところ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "bought",
+        "vocabularyIds": ["vocab-1b65a0cb82d2"]
+      }
+    ],
+    "grammarPointIds": [
+      "ta-tokoro"
+    ]
+  },
+  {
+    "id": "n4-only-recently-came-japan",
+    "text": "日本に来たばかりです。",
+    "solution": "I only recently came to Japan.",
+    "grammarPointIds": [
+      "ta-bakari",
+      "ni-destination"
+    ]
+  },
+  {
+    "id": "n4-only-just-started-job",
+    "text": "この仕事を始めたばかりです。",
+    "solution": "I only just started this job.",
+    "grammarPointIds": [
+      "ta-bakari",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-only-just-bought-computer",
+    "text": "I only just bought this computer.",
+    "solution": "このパソコンを買ったばかりです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "computer",
+        "vocabularyIds": ["vocab-5ca53fa1b955"]
+      }
+    ],
+    "grammarPointIds": [
+      "ta-bakari"
+    ]
+  },
+  {
+    "id": "production-n4-brother-only-just-got-up",
+    "text": "My younger brother only just got up.",
+    "solution": "弟は起きたばかりです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "up",
+        "vocabularyIds": ["vocab-72c5b362c4f2"]
+      }
+    ],
+    "grammarPointIds": [
+      "ta-bakari"
+    ]
+  },
+  {
+    "id": "n4-slept-with-window-open",
+    "text": "窓を開けたまま寝ました。",
+    "solution": "I slept with the window left open.",
+    "tokenOverrides": {
+      "まま": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "mama",
+      "o-object",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "n4-went-school-without-breakfast",
+    "text": "朝御飯を食べないまま学校へ行きました。",
+    "solution": "I went to school without eating breakfast.",
+    "tokenOverrides": {
+      "まま": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "mama",
+      "o-object",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "production-n4-room-stayed-quiet",
+    "text": "The room stayed quiet.",
+    "solution": "部屋は静かなままでした。",
+    "type": "production",
+    "tokenOverrides": {
+      "まま": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "quiet",
+        "vocabularyIds": ["vocab-61b57e2d4702"]
+      }
+    ],
+    "grammarPointIds": [
+      "mama"
+    ]
+  },
+  {
+    "id": "production-n4-soup-remains-hot",
+    "text": "The soup is still hot.",
+    "solution": "スープは熱いままです。",
+    "type": "production",
+    "tokenOverrides": {
+      "まま": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "hot",
+        "vocabularyIds": ["vocab-dec4a6497500"]
+      }
+    ],
+    "grammarPointIds": [
+      "mama"
+    ]
+  },
+  {
+    "id": "n4-take-medicine-every-six-hours",
+    "text": "この薬を六時間おきに飲みます。",
+    "solution": "I take this medicine every six hours.",
+    "tokenOverrides": {
+      "おき": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "oki-ni",
+      "o-object",
+      "numbers-and-counters"
+    ]
+  },
+  {
+    "id": "n4-bus-every-fifteen-minutes",
+    "text": "バスは十五分おきに来ます。",
+    "solution": "The bus comes every fifteen minutes.",
+    "tokenOverrides": {
+      "おき": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "oki-ni",
+      "wa-topic",
+      "numbers-and-counters"
+    ]
+  },
+  {
+    "id": "production-n4-rest-every-hour",
+    "text": "Please take a break every hour.",
+    "solution": "一時間おきに休んでください。",
+    "type": "production",
+    "tokenOverrides": {
+      "おき": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "break",
+        "vocabularyIds": ["vocab-acc3dd26ba1e"]
+      }
+    ],
+    "grammarPointIds": [
+      "oki-ni",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n4-call-mother-every-three-days",
+    "text": "I call my mother every three days.",
+    "solution": "三日おきに母に電話します。",
+    "type": "production",
+    "tokenOverrides": {
+      "おき": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "call",
+        "vocabularyIds": ["vocab-24df87472770"]
+      }
+    ],
+    "grammarPointIds": [
+      "oki-ni"
+    ]
+  },
+  {
+    "id": "n4-delicious-looking-cake",
+    "text": "おいしそうなケーキですね。",
+    "solution": "It is a delicious-looking cake, isn't it?",
+    "grammarPointIds": [
+      "sou-modifier",
+      "ne-confirmation"
+    ]
+  },
+  {
+    "id": "n4-child-playing-happily",
+    "text": "子供は楽しそうに遊んでいます。",
+    "solution": "The child looks happy while playing.",
+    "grammarPointIds": [
+      "sou-modifier",
+      "wa-topic",
+      "te-iru-progressive"
+    ]
+  },
+  {
+    "id": "production-n4-interesting-looking-book",
+    "text": "This is a book that looks interesting.",
+    "solution": "これは面白そうな本です。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "interesting",
+        "vocabularyIds": ["vocab-9825648af79e"]
+      }
+    ],
+    "grammarPointIds": [
+      "sou-modifier"
+    ]
+  },
+  {
+    "id": "production-n4-sister-singing-happily",
+    "text": "My younger sister is singing happily.",
+    "solution": "妹は楽しそうに歌っています。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "singing",
+        "vocabularyIds": ["vocab-d8974b42548f"]
+      }
+    ],
+    "grammarPointIds": [
+      "sou-modifier"
+    ]
+  },
+  {
+    "id": "n4-shop-seems-closed",
+    "text": "店は休みのようです。",
+    "solution": "It seems the shop is closed.",
+    "grammarPointIds": [
+      "you-da-inference",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "n4-outside-seems-quiet",
+    "text": "外は静かなようです。",
+    "solution": "It seems quiet outside.",
+    "vocabularyOverrides": {
+      "外": "vocab-6109638dac53"
+    },
+    "grammarPointIds": [
+      "you-da-inference",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "production-n4-seems-will-rain",
+    "text": "It seems it will rain.",
+    "solution": "雨が降るようです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "rain",
+        "vocabularyIds": ["vocab-777161023023"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-da-inference"
+    ]
+  },
+  {
+    "id": "production-n4-seems-nobody-home",
+    "text": "It seems there is nobody home.",
+    "solution": "家には誰もいないようです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "home",
+        "vocabularyIds": ["vocab-8af58778f14e"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-da-inference"
+    ]
+  },
+  {
+    "id": "n4-he-swims-like-fish",
+    "text": "彼は魚のように泳ぎます。",
+    "solution": "He swims like a fish.",
+    "grammarPointIds": [
+      "you-na-ni-simile",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "n4-white-flower-like-snow",
+    "text": "これは雪のような白い花です。",
+    "solution": "This is a white flower like snow.",
+    "grammarPointIds": [
+      "you-na-ni-simile",
+      "wa-topic",
+      "i-adjective-attributive"
+    ]
+  },
+  {
+    "id": "production-n4-sister-sings-like-bird",
+    "text": "My younger sister sings like a bird.",
+    "solution": "妹は鳥のように歌います。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "sings",
+        "vocabularyIds": ["vocab-d8974b42548f"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-na-ni-simile"
+    ]
+  },
+  {
+    "id": "production-n4-town-like-kyoto",
+    "text": "This is a town like Kyoto.",
+    "solution": "これは京都のような町です。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "town",
+        "vocabularyIds": ["vocab-09d74d630a45"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-na-ni-simile"
+    ]
+  },
+  {
+    "id": "n4-cloud-looks-like-fish",
+    "text": "あの雲は魚みたいです。",
+    "solution": "That cloud looks like a fish.",
+    "tokenOverrides": {
+      "みたい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "mitai",
+      "wa-topic",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "n4-looks-like-rain-outside",
+    "text": "外は雨みたいです。",
+    "solution": "It looks like rain outside.",
+    "tokenOverrides": {
+      "みたい": {
+        "category": "auxiliary"
+      }
+    },
+    "vocabularyOverrides": {
+      "外": "vocab-6109638dac53"
+    },
+    "grammarPointIds": [
+      "mitai",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "production-n4-he-seems-busy-casual",
+    "text": "He seems busy.",
+    "solution": "彼は忙しいみたいです。",
+    "type": "production",
+    "tokenOverrides": {
+      "みたい": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "busy",
+        "vocabularyIds": ["vocab-5ee54e973899"]
+      }
+    ],
+    "grammarPointIds": [
+      "mitai"
+    ]
+  },
+  {
+    "id": "production-n4-cake-looks-like-flower",
+    "text": "This cake looks like a flower.",
+    "solution": "このケーキは花みたいです。",
+    "type": "production",
+    "tokenOverrides": {
+      "みたい": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "flower",
+        "vocabularyIds": ["vocab-fa6a4c8f27b4"]
+      }
+    ],
+    "grammarPointIds": [
+      "mitai"
+    ]
+  },
+  {
+    "id": "n4-heard-shop-cake-delicious",
+    "text": "この店のケーキはおいしいらしいです。",
+    "solution": "I hear that this shop's cake is delicious.",
+    "grammarPointIds": [
+      "rashii",
+      "no-possession",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "n4-brother-apparently-home",
+    "text": "弟は家にいるらしいです。",
+    "solution": "Apparently, my younger brother is at home.",
+    "grammarPointIds": [
+      "rashii",
+      "wa-topic",
+      "ni-existence-location"
+    ]
+  },
+  {
+    "id": "production-n4-heard-new-teacher-kind",
+    "text": "I hear the new teacher is kind.",
+    "solution": "新しい先生は親切らしいです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "kind",
+        "vocabularyIds": ["vocab-c2cec306f5c4"]
+      }
+    ],
+    "grammarPointIds": [
+      "rashii"
+    ]
+  },
+  {
+    "id": "production-n4-apparently-snow-tomorrow",
+    "text": "Apparently, it will snow tomorrow.",
+    "solution": "明日は雪が降るらしいです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "snow",
+        "vocabularyIds": ["vocab-79db1765ce26"]
+      }
+    ],
+    "grammarPointIds": [
+      "rashii"
+    ]
+  },
+  {
+    "id": "n4-cold-but-window-open",
+    "text": "寒いのに、窓が開いています。",
+    "solution": "Although it is cold, the window is open.",
+    "grammarPointIds": [
+      "noni-concession",
+      "te-iru-result-state",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "n4-quiet-town-many-people",
+    "text": "この町は静かなのに、人が多いです。",
+    "solution": "Although this town is quiet, there are many people.",
+    "grammarPointIds": [
+      "noni-concession",
+      "wa-topic",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-n4-sunday-but-father-working",
+    "text": "Although it is Sunday, my father is working.",
+    "solution": "日曜日なのに、父は働いています。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Sunday",
+        "vocabularyIds": ["vocab-b7519a0f57a7"]
+      }
+    ],
+    "grammarPointIds": [
+      "noni-concession"
+    ]
+  },
+  {
+    "id": "production-n4-tired-but-will-study",
+    "text": "Although I am tired, I will study.",
+    "solution": "疲れているのに、勉強します。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "tired",
+        "vocabularyIds": ["vocab-65f5cb2d1bd4"]
+      }
+    ],
+    "grammarPointIds": [
+      "noni-concession"
+    ]
+  },
+  {
+    "id": "n4-even-if-rains-go-school",
+    "text": "雨が降っても、学校へ行きます。",
+    "solution": "Even if it rains, I will go to school.",
+    "grammarPointIds": [
+      "temo-concession",
+      "e-direction",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "n4-even-if-expensive-buy-bag",
+    "text": "高くても、このかばんを買います。",
+    "solution": "Even if it is expensive, I will buy this bag.",
+    "grammarPointIds": [
+      "temo-concession",
+      "o-object",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "production-n4-even-if-busy-will-come",
+    "text": "Even if I am busy, I will come.",
+    "solution": "忙しくても、来ます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "busy",
+        "vocabularyIds": ["vocab-5ee54e973899"]
+      }
+    ],
+    "grammarPointIds": [
+      "temo-concession"
+    ]
+  },
+  {
+    "id": "production-n4-even-sunday-mother-works",
+    "text": "Even if it is Sunday, my mother works.",
+    "solution": "日曜日でも、母は働きます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Sunday",
+        "vocabularyIds": ["vocab-b7519a0f57a7"]
+      }
+    ],
+    "grammarPointIds": [
+      "temo-concession"
+    ]
+  },
+  {
+    "id": "n4-came-japan-to-study-japanese",
+    "text": "日本語を勉強するために、日本へ来ました。",
+    "solution": "I came to Japan to study Japanese.",
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "tame-ni-purpose",
+      "e-direction",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-went-park-to-take-photos",
+    "text": "写真を撮るために、公園へ行きました。",
+    "solution": "I went to the park to take photos.",
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "tame-ni-purpose",
+      "e-direction",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-rise-early-to-make-breakfast",
+    "text": "I get up early to make breakfast.",
+    "solution": "朝御飯を作るために、早く起きます。",
+    "type": "production",
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "breakfast",
+        "vocabularyIds": ["vocab-818846d31820"]
+      }
+    ],
+    "grammarPointIds": [
+      "tame-ni-purpose"
+    ]
+  },
+  {
+    "id": "production-n4-went-library-to-study",
+    "text": "I went to the library to study.",
+    "solution": "勉強するために、図書館へ行きました。",
+    "type": "production",
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "library",
+        "vocabularyIds": ["vocab-ca8d0efe19a3"]
+      }
+    ],
+    "grammarPointIds": [
+      "tame-ni-purpose"
+    ]
+  },
+  {
+    "id": "n4-train-late-because-snow",
+    "text": "雪のために、電車が遅れました。",
+    "solution": "The train was late because of the snow.",
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "tame-ni-cause",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "n4-missed-school-because-cold",
+    "text": "風邪を引いたために、学校を休みました。",
+    "solution": "I missed school because I caught a cold.",
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "tame-ni-cause",
+      "o-object",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-n4-no-park-because-rain",
+    "text": "Because of the rain, I did not go to the park.",
+    "solution": "雨のために、公園へ行きませんでした。",
+    "type": "production",
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "rain",
+        "vocabularyIds": ["vocab-7e87850c448d"]
+      }
+    ],
+    "grammarPointIds": [
+      "tame-ni-cause"
+    ]
+  },
+  {
+    "id": "production-n4-late-school-because-overslept",
+    "text": "Because I overslept, I was late for school.",
+    "solution": "寝坊したために、学校に遅れました。",
+    "type": "production",
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "overslept",
+        "vocabularyIds": ["vocab-dedac553ff95"]
+      }
+    ],
+    "grammarPointIds": [
+      "tame-ni-cause"
+    ]
+  },
+  {
+    "id": "n4-hope-sunny-tomorrow",
+    "text": "明日は晴れるといいですね。",
+    "solution": "I hope it will be sunny tomorrow.",
+    "tokenOverrides": {
+      "いい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "to-ii-hope",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "n4-hope-exam-easy",
+    "text": "試験が簡単だといいです。",
+    "solution": "I hope the exam will be easy.",
+    "tokenOverrides": {
+      "いい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "to-ii-hope",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-n4-hope-warm-tomorrow",
+    "text": "I hope it will be warm tomorrow.",
+    "solution": "明日は暖かいといいです。",
+    "type": "production",
+    "tokenOverrides": {
+      "いい": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "warm",
+        "vocabularyIds": ["vocab-b1d6f8ff0597"]
+      }
+    ],
+    "grammarPointIds": [
+      "to-ii-hope"
+    ]
+  },
+  {
+    "id": "production-n4-hope-spring-comes-early",
+    "text": "I hope spring comes early.",
+    "solution": "春が早く来るといいです。",
+    "type": "production",
+    "tokenOverrides": {
+      "いい": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "spring",
+        "vocabularyIds": ["vocab-18597113ac94"]
+      }
+    ],
+    "grammarPointIds": [
+      "to-ii-hope"
+    ]
+  },
+  {
+    "id": "n4-favorite-is-spring",
+    "text": "私が一番好きなのは春です。",
+    "solution": "What I like most is spring.",
+    "grammarPointIds": [
+      "no-wa-da",
+      "ichiban-superlative",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "n4-met-teacher-at-station",
+    "text": "駅で会ったのは先生です。",
+    "solution": "The person I met at the station was my teacher.",
+    "grammarPointIds": [
+      "no-wa-da",
+      "relative-clause",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "production-n4-cake-made-by-sister",
+    "text": "The person who made this cake is my younger sister.",
+    "solution": "このケーキを作ったのは妹です。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "cake",
+        "vocabularyIds": ["vocab-da08a01c25e4"]
+      },
+      {
+        "word": "sister",
+        "vocabularyIds": ["vocab-735d35e5b1be"]
+      }
+    ],
+    "grammarPointIds": [
+      "no-wa-da"
+    ]
+  },
+  {
+    "id": "production-n4-want-new-bicycle",
+    "text": "What I want to buy is a new bicycle.",
+    "solution": "私が買いたいのは新しい自転車です。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "bicycle",
+        "vocabularyIds": ["vocab-457ac376d17f"]
+      }
+    ],
+    "grammarPointIds": [
+      "no-wa-da"
+    ]
+  },
+  {
+    "id": "n4-heard-shop-will-close-fact",
+    "text": "店が閉まるということを聞きました。",
+    "solution": "I heard that the shop will close.",
+    "tokenOverrides": {
+      "こと": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "to-iu-koto",
+      "o-object",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "n4-know-tomorrow-holiday-fact",
+    "text": "明日は休みだということを知っていますか。",
+    "solution": "Do you know that tomorrow is a holiday?",
+    "tokenOverrides": {
+      "こと": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "to-iu-koto",
+      "o-object",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "production-n4-forgot-exam-next-week-fact",
+    "text": "I forgot that there is an exam next week.",
+    "solution": "来週、試験があるということを忘れました。",
+    "type": "production",
+    "tokenOverrides": {
+      "こと": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "exam",
+        "vocabularyIds": ["vocab-0c4d68e2ec4d"]
+      }
+    ],
+    "grammarPointIds": [
+      "to-iu-koto"
+    ]
+  },
+  {
+    "id": "production-n4-remember-library-closes-six-fact",
+    "text": "Please remember that the library closes at six.",
+    "solution": "図書館が六時に閉まるということを覚えてください。",
+    "type": "production",
+    "tokenOverrides": {
+      "こと": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "library",
+        "vocabularyIds": ["vocab-ca8d0efe19a3"]
+      }
+    ],
+    "grammarPointIds": [
+      "to-iu-koto"
+    ]
+  },
+  {
+    "id": "n4-mother-told-return-early",
+    "text": "母に早く帰るように言われました。",
+    "solution": "My mother told me to come home early.",
+    "tokenOverrides": {
+      "れ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "you-ni-to-iu",
+      "passive-form",
+      "i-adjective-adverb"
+    ]
+  },
+  {
+    "id": "n4-teacher-told-students-be-quiet",
+    "text": "先生は学生に静かにするように言いました。",
+    "solution": "The teacher told the students to be quiet.",
+    "grammarPointIds": [
+      "you-ni-to-iu",
+      "na-adjective-adverb",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "production-n4-father-told-not-forget-key",
+    "text": "My father told me not to forget my key.",
+    "solution": "父は私に鍵を忘れないように言いました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "key",
+        "vocabularyIds": ["vocab-dd7cf58e61fa"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-ni-to-iu"
+    ]
+  },
+  {
+    "id": "production-n4-doctor-told-take-medicine",
+    "text": "The doctor told me to take this medicine.",
+    "solution": "医者は私にこの薬を飲むように言いました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "doctor",
+        "vocabularyIds": ["vocab-60e888b69674"]
+      },
+      {
+        "word": "medicine",
+        "vocabularyIds": ["vocab-87bbe3de9902"]
+      }
+    ],
+    "grammarPointIds": [
+      "you-ni-to-iu"
+    ]
+  },
+  {
+    "id": "n4-mountain-height-three-thousand",
+    "text": "この山の高さは三千メートルです。",
+    "solution": "The height of this mountain is three thousand meters.",
+    "tokenOverrides": {
+      "さ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "adjective-sa",
+      "numbers-and-counters",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "n4-know-river-length",
+    "text": "この川の長さを知っていますか。",
+    "solution": "Do you know the length of this river?",
+    "tokenOverrides": {
+      "さ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "adjective-sa",
+      "o-object",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "production-n4-like-room-quietness",
+    "text": "I like how quiet this room is.",
+    "solution": "この部屋の静かさが好きです。",
+    "type": "production",
+    "tokenOverrides": {
+      "さ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "room",
+        "vocabularyIds": ["vocab-23523bbf8d9c"]
+      }
+    ],
+    "grammarPointIds": [
+      "adjective-sa"
+    ]
+  },
+  {
+    "id": "production-n4-building-height-hundred",
+    "text": "The height of this building is one hundred meters.",
+    "solution": "この建物の高さは百メートルです。",
+    "type": "production",
+    "tokenOverrides": {
+      "さ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "building",
+        "vocabularyIds": ["vocab-b11f169893fb"]
+      }
+    ],
+    "grammarPointIds": [
+      "adjective-sa"
+    ]
+  },
+  {
+    "id": "n4-station-about-ten-minutes",
+    "text": "駅まで十分ほどかかります。",
+    "solution": "It takes about ten minutes to get to the station.",
+    "grammarPointIds": [
+      "hodo-degree",
+      "made-end"
+    ]
+  },
+  {
+    "id": "n4-bag-surprisingly-light",
+    "text": "このかばんは驚くほど軽いです。",
+    "solution": "This bag is surprisingly light.",
+    "grammarPointIds": [
+      "hodo-degree",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "production-n4-river-clean-fish-visible",
+    "text": "This river is so clean that the fish are visible.",
+    "solution": "この川は魚が見えるほどきれいです。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "river",
+        "vocabularyIds": ["vocab-82dcbecaf875"]
+      }
+    ],
+    "grammarPointIds": [
+      "hodo-degree"
+    ]
+  },
+  {
+    "id": "production-n4-studied-about-three-hours",
+    "text": "I studied for about three hours.",
+    "solution": "三時間ほど勉強しました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "studied",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ],
+    "grammarPointIds": [
+      "hodo-degree"
+    ]
+  },
+  {
+    "id": "n4-brother-reads-only-manga",
+    "text": "弟は漫画ばかり読んでいます。",
+    "solution": "My younger brother reads nothing but manga.",
+    "grammarPointIds": [
+      "bakari-limitation",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "n4-days-off-only-sleeping",
+    "text": "休みの日は寝てばかりいます。",
+    "solution": "On my days off, I do nothing but sleep.",
+    "grammarPointIds": [
+      "bakari-limitation",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "production-n4-cat-only-sleeps",
+    "text": "My cat does nothing but sleep.",
+    "solution": "私の猫は寝てばかりいます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "cat",
+        "vocabularyIds": ["vocab-123a10eb50b0"]
+      }
+    ],
+    "grammarPointIds": [
+      "bakari-limitation"
+    ]
+  },
+  {
+    "id": "production-n4-he-buys-only-expensive-things",
+    "text": "He buys only expensive things.",
+    "solution": "彼は高い物ばかり買います。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "expensive",
+        "vocabularyIds": ["vocab-775979a197ea"]
+      }
+    ],
+    "grammarPointIds": [
+      "bakari-limitation"
+    ]
+  },
+  {
+    "id": "n4-song-enough-feel-better",
+    "text": "この歌を聞くだけで、元気になります。",
+    "solution": "Just listening to this song makes me feel better.",
+    "grammarPointIds": [
+      "dake-de",
+      "naru-change"
+    ]
+  },
+  {
+    "id": "n4-button-enough-open-door",
+    "text": "このボタンを押すだけで、ドアが開きます。",
+    "solution": "Just pressing this button opens the door.",
+    "grammarPointIds": [
+      "dake-de",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-n4-photo-enough-happy",
+    "text": "Just looking at this photo makes me happy.",
+    "solution": "この写真を見るだけで、嬉しくなります。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "photo",
+        "vocabularyIds": ["vocab-d5901ecbf5fb"]
+      }
+    ],
+    "grammarPointIds": [
+      "dake-de"
+    ]
+  },
+  {
+    "id": "production-n4-medicine-enough-better",
+    "text": "Just taking this medicine will make you better.",
+    "solution": "この薬を飲むだけで、よくなります。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "medicine",
+        "vocabularyIds": ["vocab-87bbe3de9902"]
+      }
+    ],
+    "grammarPointIds": [
+      "dake-de"
+    ]
+  },
+  {
+    "id": "n4-bag-books-notebooks-examples",
+    "text": "かばんに本とかノートとかが入っています。",
+    "solution": "There are things like books and notebooks in the bag.",
+    "grammarPointIds": [
+      "toka-toka",
+      "ni-existence-location"
+    ]
+  },
+  {
+    "id": "n4-breakfast-bread-fruit-examples",
+    "text": "朝御飯はパンとか果物とかを食べます。",
+    "solution": "For breakfast, I eat things like bread and fruit.",
+    "grammarPointIds": [
+      "toka-toka",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-n4-bought-apples-bananas-examples",
+    "text": "I bought things like apples and bananas.",
+    "solution": "りんごとかバナナとかを買いました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "apples",
+        "vocabularyIds": ["vocab-d66c7f00afcd"]
+      },
+      {
+        "word": "bananas",
+        "vocabularyIds": ["vocab-3cae2dee76b4"]
+      }
+    ],
+    "grammarPointIds": [
+      "toka-toka"
+    ]
+  },
+  {
+    "id": "production-n4-sunday-reading-movies-examples",
+    "text": "On Sundays, I do things I like, such as reading books and watching movies.",
+    "solution": "日曜日は本を読むとか、映画を見るとか、好きなことをします。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "movies",
+        "vocabularyIds": ["vocab-7b9d866e6dc2"]
+      }
+    ],
+    "grammarPointIds": [
+      "toka-toka"
+    ]
+  },
+  {
+    "id": "n4-good-smell-from-kitchen",
+    "text": "台所からいい匂いがします。",
+    "solution": "A good smell is coming from the kitchen.",
+    "tokenOverrides": {
+      "し": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "ga-suru-sensation",
+      "kara-start"
+    ]
+  },
+  {
+    "id": "n4-sound-from-next-room",
+    "text": "隣の部屋から音がします。",
+    "solution": "I hear a sound from the room next door.",
+    "tokenOverrides": {
+      "し": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "ga-suru-sensation",
+      "kara-start"
+    ]
+  },
+  {
+    "id": "production-n4-soup-strange-taste",
+    "text": "This medicine tastes bitter.",
+    "solution": "この薬は苦い味がします。",
+    "type": "production",
+    "tokenOverrides": {
+      "し": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "medicine",
+        "vocabularyIds": ["vocab-87bbe3de9902"]
+      }
+    ],
+    "grammarPointIds": [
+      "ga-suru-sensation"
+    ]
+  },
+  {
+    "id": "production-n4-loud-sound-outside",
+    "text": "I hear a loud sound outside.",
+    "solution": "外から大きな音がします。",
+    "type": "production",
+    "tokenOverrides": {
+      "し": {
+        "category": "auxiliary"
+      }
+    },
+    "vocabularyOverrides": {
+      "外": "vocab-6109638dac53"
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "sound",
+        "vocabularyIds": ["vocab-b37750755344"]
+      }
+    ],
+    "grammarPointIds": [
+      "ga-suru-sensation"
+    ]
+  },
+  {
+    "id": "n4-desk-made-of-wood",
+    "text": "この机は木でできています。",
+    "solution": "This desk is made of wood.",
+    "tokenOverrides": {
+      "でき": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "material-de",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "n4-made-bird-from-paper",
+    "text": "これは紙で作った鳥です。",
+    "solution": "This is a bird made of paper.",
+    "grammarPointIds": [
+      "material-de",
+      "relative-clause",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "production-n4-box-made-of-wood",
+    "text": "This box is made of wood.",
+    "solution": "この箱は木でできています。",
+    "type": "production",
+    "tokenOverrides": {
+      "でき": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "box",
+        "vocabularyIds": ["vocab-28102c121d50"]
+      }
+    ],
+    "grammarPointIds": [
+      "material-de"
+    ]
+  },
+  {
+    "id": "production-n4-made-flower-from-paper",
+    "text": "This is a flower made of paper.",
+    "solution": "これは紙で作った花です。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "flower",
+        "vocabularyIds": ["vocab-fa6a4c8f27b4"]
+      }
+    ],
+    "grammarPointIds": [
+      "material-de"
+    ]
+  },
+  {
+    "id": "n4-paper-made-from-wood",
+    "text": "紙は木から作られます。",
+    "solution": "Paper is made from wood.",
+    "tokenOverrides": {
+      "れ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "material-kara",
+      "passive-form",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "n4-jam-made-from-fruit",
+    "text": "ジャムは果物から作られます。",
+    "solution": "Jam is made from fruit.",
+    "tokenOverrides": {
+      "れ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "material-kara",
+      "passive-form",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "production-n4-cheese-made-from-milk",
+    "text": "Cheese is made from milk.",
+    "solution": "チーズは牛乳から作られます。",
+    "type": "production",
+    "tokenOverrides": {
+      "れ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "Cheese",
+        "vocabularyIds": ["vocab-53c901afd6f3"]
+      },
+      {
+        "word": "milk",
+        "vocabularyIds": ["vocab-e90f788a51b5"]
+      }
+    ],
+    "grammarPointIds": [
+      "material-kara"
+    ]
+  },
+  {
+    "id": "production-n4-soup-made-from-vegetables",
+    "text": "This soup is made from vegetables.",
+    "solution": "このスープは野菜から作られています。",
+    "type": "production",
+    "tokenOverrides": {
+      "れ": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "vegetables",
+        "vocabularyIds": ["vocab-88763af54360"]
+      }
+    ],
+    "grammarPointIds": [
+      "material-kara"
+    ]
+  },
+  {
+    "id": "n4-stay-home-if-rain-case",
+    "text": "雨が降る場合は、家にいます。",
+    "solution": "In case it rains, I will stay home.",
+    "tokenOverrides": {
+      "場合": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "baai-wa",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "n4-press-button-if-necessary-case",
+    "text": "必要な場合は、このボタンを押してください。",
+    "solution": "If necessary, please press this button.",
+    "tokenOverrides": {
+      "場合": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "baai-wa",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n4-fire-use-stairs-case",
+    "text": "In case of a fire, please use these stairs.",
+    "solution": "火事の場合は、この階段を使ってください。",
+    "type": "production",
+    "tokenOverrides": {
+      "場合": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "fire",
+        "vocabularyIds": ["vocab-8e4839d2e6de"]
+      },
+      {
+        "word": "stairs",
+        "vocabularyIds": ["vocab-fd12aa0d5724"]
+      }
+    ],
+    "grammarPointIds": [
+      "baai-wa"
+    ]
+  },
+  {
+    "id": "production-n4-dangerous-road-do-not-walk-case",
+    "text": "If the road is dangerous, please do not walk here.",
+    "solution": "道が危ない場合は、ここを歩かないでください。",
+    "type": "production",
+    "tokenOverrides": {
+      "場合": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "road",
+        "vocabularyIds": ["vocab-b4a022a9e7a6"]
+      }
+    ],
+    "grammarPointIds": [
+      "baai-wa"
+    ]
+  },
+  {
+    "id": "n4-plan-go-japan-next-month",
+    "text": "来月、日本へ行く予定です。",
+    "solution": "I plan to go to Japan next month.",
+    "tokenOverrides": {
+      "予定": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "yotei-da",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "n4-meeting-scheduled-start-three",
+    "text": "会議は三時に始まる予定です。",
+    "solution": "The meeting is scheduled to start at three.",
+    "tokenOverrides": {
+      "予定": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "yotei-da",
+      "ni-time"
+    ]
+  },
+  {
+    "id": "production-n4-plan-meet-friend-tomorrow",
+    "text": "I plan to meet my friend tomorrow.",
+    "solution": "明日、友達に会う予定です。",
+    "type": "production",
+    "tokenOverrides": {
+      "予定": {
+        "category": "auxiliary"
+      }
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": ["vocab-d9898f8a95b6"]
+      }
+    ],
+    "grammarPointIds": [
+      "yotei-da"
+    ]
+  },
+  {
+    "id": "production-n4-new-shop-scheduled-open",
+    "text": "The new shop is scheduled to open next week.",
+    "solution": "新しい店は来週開く予定です。",
+    "type": "production",
+    "tokenOverrides": {
+      "予定": {
+        "category": "auxiliary"
+      }
+    },
+    "vocabularyOverrides": {
+      "開く": "vocab-56dc4d647d8b"
+    },
+    "promptVocabularyHints": [
+      {
+        "word": "shop",
+        "vocabularyIds": ["vocab-e70f9243d4c7"]
+      }
+    ],
+    "grammarPointIds": [
+      "yotei-da"
+    ]
+  },
+  {
+    "id": "n4-where-should-buy-ticket",
+    "text": "どこで切符を買ったらいいですか。",
+    "solution": "Where should I buy a ticket?",
+    "grammarPointIds": [
+      "tara-ii-desu-ka",
+      "kosoado-places"
+    ]
+  },
+  {
+    "id": "n4-cold-what-should-eat",
+    "text": "風邪の時、何を食べればいいですか。",
+    "solution": "What should I eat when I have a cold?",
+    "grammarPointIds": [
+      "tara-ii-desu-ka",
+      "toki",
+      "nani"
+    ]
+  },
+  {
+    "id": "production-n4-what-time-should-come",
+    "text": "What time should I come tomorrow?",
+    "solution": "明日、何時に来たらいいですか。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "tomorrow",
+        "vocabularyIds": ["vocab-bec9ce9d08c8"]
+      }
+    ],
+    "grammarPointIds": [
+      "tara-ii-desu-ka"
+    ]
+  },
+  {
+    "id": "production-n4-who-should-ask",
+    "text": "Who should I ask?",
+    "solution": "誰に聞いたらいいですか。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "ask",
+        "vocabularyIds": ["vocab-d8a0261581dc"]
+      }
+    ],
+    "grammarPointIds": [
+      "tara-ii-desu-ka"
+    ]
+  },
+  {
+    "id": "n4-trip-needs-money",
+    "text": "旅行にはお金が必要です。",
+    "solution": "You need money for a trip.",
+    "grammarPointIds": [
+      "ga-hitsuyou",
+      "ni-purpose"
+    ]
+  },
+  {
+    "id": "n4-work-needs-time",
+    "text": "この仕事には時間が必要です。",
+    "solution": "This job requires time.",
+    "grammarPointIds": [
+      "ga-hitsuyou",
+      "ni-purpose"
+    ]
+  },
+  {
+    "id": "production-n4-need-map",
+    "text": "I need a map.",
+    "solution": "地図が必要です。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "map",
+        "vocabularyIds": ["vocab-3c687e40b035"]
+      }
+    ],
+    "grammarPointIds": [
+      "ga-hitsuyou"
+    ]
+  },
+  {
+    "id": "production-n4-need-more-chairs",
+    "text": "We need more chairs.",
+    "solution": "もっと椅子が必要です。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "chairs",
+        "vocabularyIds": ["vocab-7863488ec2b8"]
+      }
+    ],
+    "grammarPointIds": [
+      "ga-hitsuyou"
+    ]
+  },
+  {
+    "id": "n4-missed-school-because-caught-cold-connective",
+    "text": "風邪を引いて、学校を休みました。",
+    "solution": "I missed school because I caught a cold.",
+    "grammarPointIds": [
+      "te-de-cause",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-match-cancelled-because-rain-connective",
+    "text": "雨で、試合がありませんでした。",
+    "solution": "There was no match because of the rain.",
+    "grammarPointIds": [
+      "te-de-cause",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-n4-late-school-train-delay-connective",
+    "text": "I was late for school because the train was delayed.",
+    "solution": "電車が遅れて、学校に遅れました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "train",
+        "vocabularyIds": ["vocab-dc7f5fc156cf"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-de-cause"
+    ]
+  },
+  {
+    "id": "production-n4-bus-stopped-because-snow-connective",
+    "text": "The bus stopped because of the snow.",
+    "solution": "雪で、バスが止まりました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "snow",
+        "vocabularyIds": ["vocab-79db1765ce26"]
+      }
+    ],
+    "grammarPointIds": [
+      "te-de-cause"
+    ]
+  },
+  {
+    "id": "n4-hungry-because-no-breakfast-negative-connective",
+    "text": "朝御飯を食べなくて、お腹が空きました。",
+    "solution": "I got hungry because I did not eat breakfast.",
+    "vocabularyOverrides": {
+      "空き": "vocab-d78eda1984d2"
+    },
+    "grammarPointIds": [
+      "nakute-connective",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-did-not-buy-because-no-money-negative-connective",
+    "text": "お金がなくて、その本を買いませんでした。",
+    "solution": "I did not buy that book because I had no money.",
+    "grammarPointIds": [
+      "nakute-connective",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-n4-worried-mother-did-not-come-negative-connective",
+    "text": "I was worried because my mother did not come.",
+    "solution": "母が来なくて、心配しました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "worried",
+        "vocabularyIds": ["vocab-a7095a66e0d8"]
+      }
+    ],
+    "grammarPointIds": [
+      "nakute-connective"
+    ]
+  },
+  {
+    "id": "production-n4-asked-police-box-did-not-know-way-negative-connective",
+    "text": "I did not know the way, so I asked at a police box.",
+    "solution": "道が分からなくて、交番で聞きました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "way",
+        "vocabularyIds": ["vocab-b4a022a9e7a6"]
+      }
+    ],
+    "grammarPointIds": [
+      "nakute-connective"
+    ]
+  },
+  {
+    "id": "n4-personal-rule-walk-every-morning",
+    "text": "毎朝、三十分歩くことにしています。",
+    "solution": "I make a point of walking for thirty minutes every morning.",
+    "tokenOverrides": {
+      "こと": { "category": "auxiliary" },
+      "し": { "category": "auxiliary" }
+    },
+    "grammarPointIds": [
+      "koto-ni-shiteiru",
+      "frequency-adverbs"
+    ]
+  },
+  {
+    "id": "n4-personal-rule-no-coffee-night",
+    "text": "夜はコーヒーを飲まないことにしています。",
+    "solution": "I make it a rule not to drink coffee at night.",
+    "tokenOverrides": {
+      "こと": { "category": "auxiliary" },
+      "し": { "category": "auxiliary" }
+    },
+    "grammarPointIds": [
+      "koto-ni-shiteiru",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "production-n4-personal-rule-read-japanese-daily",
+    "text": "I make a point of reading Japanese every day.",
+    "solution": "毎日、日本語を読むことにしています。",
+    "type": "production",
+    "tokenOverrides": {
+      "こと": { "category": "auxiliary" },
+      "し": { "category": "auxiliary" }
+    },
+    "promptVocabularyHints": [
+      { "word": "Japanese", "vocabularyIds": ["vocab-e6870aa0d14e"] }
+    ],
+    "grammarPointIds": ["koto-ni-shiteiru"]
+  },
+  {
+    "id": "production-n4-personal-rule-no-tv-meals",
+    "text": "I make it a rule not to watch television during meals.",
+    "solution": "食事の時はテレビを見ないことにしています。",
+    "type": "production",
+    "tokenOverrides": {
+      "こと": { "category": "auxiliary" },
+      "し": { "category": "auxiliary" }
+    },
+    "promptVocabularyHints": [
+      { "word": "meals", "vocabularyIds": ["vocab-399ca48876cc"] }
+    ],
+    "grammarPointIds": ["koto-ni-shiteiru"]
+  },
+  {
+    "id": "n4-school-rule-remove-shoes",
+    "text": "この学校では、教室で靴を脱ぐことになっています。",
+    "solution": "At this school, the rule is to remove your shoes in the classroom.",
+    "tokenOverrides": {
+      "こと": { "category": "auxiliary" },
+      "なっ": { "category": "auxiliary" }
+    },
+    "grammarPointIds": [
+      "koto-ni-natteiru",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "n4-meeting-arranged-start-nine",
+    "text": "会議は九時に始まることになっています。",
+    "solution": "The meeting is arranged to start at nine.",
+    "tokenOverrides": {
+      "こと": { "category": "auxiliary" },
+      "なっ": { "category": "auxiliary" }
+    },
+    "grammarPointIds": [
+      "koto-ni-natteiru",
+      "ni-time"
+    ]
+  },
+  {
+    "id": "production-n4-class-rule-speak-japanese",
+    "text": "Students are required to speak Japanese during class.",
+    "solution": "授業中は日本語を話すことになっています。",
+    "type": "production",
+    "tokenOverrides": {
+      "こと": { "category": "auxiliary" },
+      "なっ": { "category": "auxiliary" }
+    },
+    "promptVocabularyHints": [
+      { "word": "Japanese", "vocabularyIds": ["vocab-e6870aa0d14e"] }
+    ],
+    "grammarPointIds": ["koto-ni-natteiru"]
+  },
+  {
+    "id": "production-n4-bus-arranged-leave-seven",
+    "text": "The bus is scheduled to leave at seven.",
+    "solution": "バスは七時に出ることになっています。",
+    "type": "production",
+    "tokenOverrides": {
+      "こと": { "category": "auxiliary" },
+      "なっ": { "category": "auxiliary" }
+    },
+    "promptVocabularyHints": [
+      { "word": "bus", "vocabularyIds": ["vocab-826a124ad930"] }
+    ],
+    "grammarPointIds": ["koto-ni-natteiru"]
+  },
+  {
+    "id": "n4-sea-visible-from-window",
+    "text": "窓から海が見えます。",
+    "solution": "The sea is visible from the window.",
+    "grammarPointIds": [
+      "mieru-kikoeru",
+      "kara-start",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "n4-music-audible-next-room",
+    "text": "隣の部屋から音楽が聞こえます。",
+    "solution": "Music can be heard from the room next door.",
+    "grammarPointIds": [
+      "mieru-kikoeru",
+      "kara-start",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-n4-station-visible-here",
+    "text": "The station is visible from here.",
+    "solution": "ここから駅が見えます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "station", "vocabularyIds": ["vocab-d29031265cf4"] }
+    ],
+    "grammarPointIds": ["mieru-kikoeru"]
+  },
+  {
+    "id": "production-n4-birds-audible-outside",
+    "text": "I can hear the birds outside.",
+    "solution": "外から鳥の声が聞こえます。",
+    "type": "production",
+    "vocabularyOverrides": {
+      "外": "vocab-6109638dac53"
+    },
+    "promptVocabularyHints": [
+      { "word": "birds", "vocabularyIds": ["vocab-683f3e7fb085"] }
+    ],
+    "grammarPointIds": ["mieru-kikoeru"]
+  },
+  {
+    "id": "n4-teacher-kindly-corrected-composition",
+    "text": "先生に作文を直していただきました。",
+    "solution": "My teacher kindly corrected my composition for me.",
+    "grammarPointIds": [
+      "te-itadaku",
+      "o-object"
+    ]
+  },
+  {
+    "id": "n4-friend-mother-kindly-accompanied-station",
+    "text": "友達のお母さんに駅まで送っていただきました。",
+    "solution": "My friend's mother kindly took me as far as the station.",
+    "grammarPointIds": [
+      "te-itadaku",
+      "made-end"
+    ]
+  },
+  {
+    "id": "production-n4-teacher-kindly-explained-word",
+    "text": "The teacher kindly explained this word to me.",
+    "solution": "先生にこの言葉を説明していただきました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "word", "vocabularyIds": ["vocab-cef4a2049ff3"] }
+    ],
+    "grammarPointIds": ["te-itadaku"]
+  },
+  {
+    "id": "production-n4-doctor-kindly-examined-child",
+    "text": "The doctor kindly examined my child.",
+    "solution": "医者に子供を見ていただきました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "doctor", "vocabularyIds": ["vocab-60e888b69674"] },
+      { "word": "child", "vocabularyIds": ["vocab-5fd1d3759699"] }
+    ],
+    "grammarPointIds": ["te-itadaku"]
+  },
+  {
+    "id": "n4-teacher-kindly-taught-kanji",
+    "text": "先生が漢字を教えてくださいました。",
+    "solution": "My teacher kindly taught me the kanji.",
+    "grammarPointIds": [
+      "te-kudasaru",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "n4-neighbor-kindly-carried-luggage",
+    "text": "隣の人が荷物を持ってくださいました。",
+    "solution": "My neighbor kindly carried my luggage for me.",
+    "grammarPointIds": [
+      "te-kudasaru",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-n4-doctor-kindly-explained-medicine",
+    "text": "The doctor kindly explained the medicine to me.",
+    "solution": "医者が薬を説明してくださいました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "medicine", "vocabularyIds": ["vocab-87bbe3de9902"] }
+    ],
+    "grammarPointIds": ["te-kudasaru"]
+  },
+  {
+    "id": "production-n4-teacher-kindly-wrote-letter",
+    "text": "My teacher kindly wrote a letter for me.",
+    "solution": "先生が手紙を書いてくださいました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "letter", "vocabularyIds": ["vocab-8e7233a38df0"] }
+    ],
+    "grammarPointIds": ["te-kudasaru"]
+  },
+  {
+    "id": "n4-honorific-department-head-went-home",
+    "text": "部長はもうお帰りになりました。",
+    "solution": "The department head has already gone home.",
+    "grammarPointIds": ["sonkeigo-system", "wa-topic"]
+  },
+  {
+    "id": "n4-honorific-teacher-ate-lunch",
+    "text": "先生は昼御飯を召し上がりました。",
+    "solution": "The teacher ate lunch.",
+    "grammarPointIds": ["sonkeigo-system", "o-object"]
+  },
+  {
+    "id": "production-n4-honorific-president-reading-newspaper",
+    "text": "The company president is reading the newspaper.",
+    "solution": "社長は新聞をお読みになっています。",
+    "type": "production",
+    "tokenOverrides": { "読み": { "category": "auxiliary" } },
+    "promptVocabularyHints": [
+      { "word": "newspaper", "vocabularyIds": ["vocab-f906b238c9c2"] }
+    ],
+    "grammarPointIds": ["sonkeigo-system"]
+  },
+  {
+    "id": "production-n4-honorific-teacher-coming-tomorrow",
+    "text": "The teacher will come tomorrow.",
+    "solution": "先生は明日いらっしゃいます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "teacher", "vocabularyIds": ["vocab-497356cf0646"] }
+    ],
+    "grammarPointIds": ["sonkeigo-system"]
+  },
+  {
+    "id": "n4-humble-explain-schedule",
+    "text": "私が予定をご説明いたします。",
+    "solution": "I will explain the schedule.",
+    "grammarPointIds": ["kenjougo-system", "o-object"]
+  },
+  {
+    "id": "n4-humble-carried-teacher-luggage",
+    "text": "先生の荷物をお持ちしました。",
+    "solution": "I carried the teacher's luggage.",
+    "grammarPointIds": ["kenjougo-system", "o-object"]
+  },
+  {
+    "id": "production-n4-humble-guide-teacher-classroom",
+    "text": "I will guide the teacher to the classroom.",
+    "solution": "先生を教室までご案内いたします。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "classroom", "vocabularyIds": ["vocab-fbb71c77ac0e"] }
+    ],
+    "grammarPointIds": ["kenjougo-system"]
+  },
+  {
+    "id": "production-n4-humble-received-book-teacher",
+    "text": "I received this book from the teacher.",
+    "solution": "先生にこの本をいただきました。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "book", "vocabularyIds": ["vocab-0ac038632611"] }
+    ],
+    "grammarPointIds": ["kenjougo-system"]
+  },
+  {
+    "id": "n4-restroom-formally-second-floor",
+    "text": "お手洗いは二階にございます。",
+    "solution": "The restroom is on the second floor.",
+    "tokenOverrides": { "ござい": { "category": "auxiliary" } },
+    "grammarPointIds": ["gozaimasu", "ni-existence-location"]
+  },
+  {
+    "id": "n4-formally-classroom-here",
+    "text": "こちらが教室でございます。",
+    "solution": "This is the classroom.",
+    "grammarPointIds": ["gozaimasu", "kosoado-places"]
+  },
+  {
+    "id": "production-n4-elevator-formally-over-there",
+    "text": "The elevator is over there.",
+    "solution": "エレベーターはあちらにございます。",
+    "type": "production",
+    "tokenOverrides": { "ござい": { "category": "auxiliary" } },
+    "promptVocabularyHints": [
+      { "word": "elevator", "vocabularyIds": ["vocab-34751fd2b8b6"] }
+    ],
+    "grammarPointIds": ["gozaimasu"]
+  },
+  {
+    "id": "production-n4-formally-todays-dish",
+    "text": "This is today's dish.",
+    "solution": "こちらが今日の料理でございます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "dish", "vocabularyIds": ["vocab-6ab8f730431c"] }
+    ],
+    "grammarPointIds": ["gozaimasu"]
+  },
+  {
+    "id": "n4-productive-honorific-teacher-went-home",
+    "text": "先生はもうお帰りになりました。",
+    "solution": "The teacher has already gone home.",
+    "grammarPointIds": ["o-ni-naru", "wa-topic"]
+  },
+  {
+    "id": "n4-productive-honorific-president-read-book",
+    "text": "社長はこの本をお読みになりました。",
+    "solution": "The company president read this book.",
+    "tokenOverrides": { "読み": { "category": "auxiliary" } },
+    "grammarPointIds": ["o-ni-naru", "o-object"]
+  },
+  {
+    "id": "production-n4-productive-honorific-teacher-write-letter",
+    "text": "The teacher will write a letter.",
+    "solution": "先生は手紙をお書きになります。",
+    "type": "production",
+    "tokenOverrides": { "書き": { "category": "auxiliary" } },
+    "promptVocabularyHints": [
+      { "word": "letter", "vocabularyIds": ["vocab-8e7233a38df0"] }
+    ],
+    "grammarPointIds": ["o-ni-naru"]
+  },
+  {
+    "id": "production-n4-productive-honorific-teacher-waiting-outside",
+    "text": "The teacher is waiting outside.",
+    "solution": "先生は外でお待ちになっています。",
+    "type": "production",
+    "tokenOverrides": { "お待ち": { "category": "auxiliary" } },
+    "vocabularyOverrides": { "外": "vocab-6109638dac53" },
+    "promptVocabularyHints": [
+      { "word": "teacher", "vocabularyIds": ["vocab-497356cf0646"] }
+    ],
+    "grammarPointIds": ["o-ni-naru"]
+  },
+  {
+    "id": "n4-productive-humble-carry-luggage",
+    "text": "私が荷物をお持ちします。",
+    "solution": "I will carry your luggage.",
+    "grammarPointIds": ["o-suru-humble", "o-object"]
+  },
+  {
+    "id": "n4-productive-humble-guide-station",
+    "text": "駅までご案内します。",
+    "solution": "I will guide you to the station.",
+    "grammarPointIds": ["o-suru-humble", "made-end"]
+  },
+  {
+    "id": "production-n4-productive-humble-explain-schedule",
+    "text": "I will explain the schedule.",
+    "solution": "予定をご説明します。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "schedule", "vocabularyIds": ["vocab-1b1b5806b28b"] }
+    ],
+    "grammarPointIds": ["o-suru-humble"]
+  },
+  {
+    "id": "production-n4-productive-humble-call-tomorrow",
+    "text": "I will call the teacher tomorrow.",
+    "solution": "明日、先生にお電話します。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "teacher", "vocabularyIds": ["vocab-497356cf0646"] }
+    ],
+    "grammarPointIds": ["o-suru-humble"]
+  },
+  {
+    "id": "n4-respectful-request-write-name",
+    "text": "ここにお名前をお書きください。",
+    "solution": "Please write your name here.",
+    "grammarPointIds": ["o-go-kudasai-honorific", "o-object"]
+  },
+  {
+    "id": "n4-respectful-request-wait-little",
+    "text": "少しお待ちください。",
+    "solution": "Please wait a moment.",
+    "tokenOverrides": { "お待ち": { "category": "auxiliary" } },
+    "grammarPointIds": ["o-go-kudasai-honorific", "te-kudasai"]
+  },
+  {
+    "id": "production-n4-respectful-request-use-elevator",
+    "text": "Please use this elevator.",
+    "solution": "このエレベーターをお使いください。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "elevator", "vocabularyIds": ["vocab-34751fd2b8b6"] }
+    ],
+    "grammarPointIds": ["o-go-kudasai-honorific"]
+  },
+  {
+    "id": "production-n4-respectful-request-read-book",
+    "text": "Please read this book.",
+    "solution": "この本をお読みください。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "book", "vocabularyIds": ["vocab-0ac038632611"] }
+    ],
+    "grammarPointIds": ["o-go-kudasai-honorific"]
+  },
+  {
+    "id": "n4-special-honorific-teacher-arrived",
+    "text": "先生はもういらっしゃいました。",
+    "solution": "The teacher has already arrived.",
+    "grammarPointIds": ["sonkeigo-special-verbs", "wa-topic"]
+  },
+  {
+    "id": "n4-special-honorific-what-teacher-said",
+    "text": "先生は何をおっしゃいましたか。",
+    "solution": "What did the teacher say?",
+    "grammarPointIds": ["sonkeigo-special-verbs", "ka-question", "nani"]
+  },
+  {
+    "id": "production-n4-special-honorific-president-eat-lunch",
+    "text": "The company president will eat lunch here.",
+    "solution": "社長はこちらで昼御飯を召し上がります。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "lunch", "vocabularyIds": ["vocab-91b2f0a8bfc1"] }
+    ],
+    "grammarPointIds": ["sonkeigo-special-verbs"]
+  },
+  {
+    "id": "production-n4-special-honorific-teacher-looked-photo",
+    "text": "The teacher looked at this photo.",
+    "solution": "先生はこの写真をご覧になりました。",
+    "type": "production",
+    "tokenOverrides": { "ご覧": { "category": "auxiliary" } },
+    "promptVocabularyHints": [
+      { "word": "photo", "vocabularyIds": ["vocab-d5901ecbf5fb"] }
+    ],
+    "grammarPointIds": ["sonkeigo-special-verbs"]
+  },
+  {
+    "id": "n4-special-humble-go-company-tomorrow",
+    "text": "明日、会社へ参ります。",
+    "solution": "I will go to the company tomorrow.",
+    "grammarPointIds": ["kenjougo-special-verbs", "e-direction"]
+  },
+  {
+    "id": "n4-special-humble-be-company",
+    "text": "私は会社におります。",
+    "solution": "I am at the company.",
+    "tokenOverrides": { "おり": { "category": "auxiliary" } },
+    "grammarPointIds": ["kenjougo-special-verbs", "ni-existence-location"]
+  },
+  {
+    "id": "production-n4-special-humble-look-documents",
+    "text": "I will look at the documents.",
+    "solution": "資料を拝見します。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "documents", "vocabularyIds": ["vocab-58e891bce783"] }
+    ],
+    "grammarPointIds": ["kenjougo-special-verbs"]
+  },
+  {
+    "id": "production-n4-special-humble-do-immediately",
+    "text": "I will do it immediately.",
+    "solution": "すぐにいたします。",
+    "type": "production",
+    "tokenOverrides": { "いたし": { "category": "auxiliary" } },
+    "promptVocabularyHints": [
+      { "word": "immediately", "vocabularyIds": ["vocab-86f4d5b7a565"] }
+    ],
+    "grammarPointIds": ["kenjougo-special-verbs"]
+  },
+  {
+    "id": "n4-childhood-played-river",
+    "text": "子供の頃、よく川で遊びました。",
+    "solution": "When I was a child, I often played by the river.",
+    "tokenOverrides": { "頃": { "category": "auxiliary" } },
+    "grammarPointIds": ["koro", "frequency-adverbs"]
+  },
+  {
+    "id": "n4-when-came-japan-did-not-understand",
+    "text": "日本へ来た頃は、日本語が分かりませんでした。",
+    "solution": "Around the time I came to Japan, I did not understand Japanese.",
+    "tokenOverrides": { "頃": { "category": "auxiliary" } },
+    "grammarPointIds": ["koro", "wa-topic"]
+  },
+  {
+    "id": "production-n4-student-days-lived-kyoto",
+    "text": "When I was a student, I lived in Kyoto.",
+    "solution": "学生の頃、京都に住んでいました。",
+    "type": "production",
+    "tokenOverrides": { "頃": { "category": "auxiliary" } },
+    "promptVocabularyHints": [
+      { "word": "Kyoto", "vocabularyIds": ["vocab-62153df2c4e3"] }
+    ],
+    "grammarPointIds": ["koro"]
+  },
+  {
+    "id": "production-n4-when-started-job-busy",
+    "text": "Around the time I started this job, I was very busy.",
+    "solution": "この仕事を始めた頃、とても忙しかったです。",
+    "type": "production",
+    "tokenOverrides": { "頃": { "category": "auxiliary" } },
+    "promptVocabularyHints": [
+      { "word": "job", "vocabularyIds": ["vocab-cdf28ddaf837"] }
+    ],
+    "grammarPointIds": ["koro"]
+  },
+  {
+    "id": "n4-knife-used-cut-fruit-purpose",
+    "text": "このナイフは果物を切るのに使います。",
+    "solution": "This knife is used for cutting fruit.",
+    "grammarPointIds": ["noni-purpose", "o-object"]
+  },
+  {
+    "id": "n4-dictionary-useful-study-japanese-purpose",
+    "text": "日本語を勉強するのに、この辞書が便利です。",
+    "solution": "This dictionary is useful for studying Japanese.",
+    "grammarPointIds": ["noni-purpose", "ga-subject"]
+  },
+  {
+    "id": "production-n4-bag-useful-carry-books-purpose",
+    "text": "This bag is useful for carrying books.",
+    "solution": "このかばんは本を運ぶのに便利です。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "bag", "vocabularyIds": ["vocab-704870bca266"] }
+    ],
+    "grammarPointIds": ["noni-purpose"]
+  },
+  {
+    "id": "production-n4-hour-clean-room-purpose",
+    "text": "It takes an hour to clean this room.",
+    "solution": "この部屋を掃除するのに一時間かかります。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "room", "vocabularyIds": ["vocab-23523bbf8d9c"] }
+    ],
+    "grammarPointIds": ["noni-purpose"]
+  },
+  {
+    "id": "n4-bus-does-not-come-easily",
+    "text": "バスがなかなか来ません。",
+    "solution": "The bus is taking a long time to come.",
+    "grammarPointIds": ["nakanaka-nai", "ga-subject"]
+  },
+  {
+    "id": "n4-homework-does-not-finish-easily",
+    "text": "宿題がなかなか終わりません。",
+    "solution": "My homework is not getting finished easily.",
+    "grammarPointIds": ["nakanaka-nai", "ga-subject"]
+  },
+  {
+    "id": "production-n4-explanation-not-understand-easily",
+    "text": "I cannot understand this explanation easily.",
+    "solution": "この説明はなかなか分かりません。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "explanation", "vocabularyIds": ["vocab-9683551a843c"] }
+    ],
+    "grammarPointIds": ["nakanaka-nai"]
+  },
+  {
+    "id": "production-n4-key-not-found-easily",
+    "text": "I cannot find my key easily.",
+    "solution": "鍵がなかなか見つかりません。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "key", "vocabularyIds": ["vocab-dd7cf58e61fa"] }
+    ],
+    "grammarPointIds": ["nakanaka-nai"]
+  },
+  {
+    "id": "n4-cloud-looks-like-dog",
+    "text": "この雲は犬に見えます。",
+    "solution": "This cloud looks like a dog.",
+    "grammarPointIds": ["ni-mieru", "wa-topic"]
+  },
+  {
+    "id": "n4-he-looks-well",
+    "text": "彼は元気に見えます。",
+    "solution": "He looks well.",
+    "grammarPointIds": ["ni-mieru", "na-adjective-adverb"]
+  },
+  {
+    "id": "production-n4-building-looks-like-school",
+    "text": "That building looks like a school.",
+    "solution": "あの建物は学校に見えます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "building", "vocabularyIds": ["vocab-b11f169893fb"] }
+    ],
+    "grammarPointIds": ["ni-mieru"]
+  },
+  {
+    "id": "production-n4-room-looks-clean",
+    "text": "This room looks clean.",
+    "solution": "この部屋はきれいに見えます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "room", "vocabularyIds": ["vocab-23523bbf8d9c"] }
+    ],
+    "grammarPointIds": ["ni-mieru"]
+  },
+  {
+    "id": "n4-hard-to-tell-teacher",
+    "text": "この話は先生には言いづらいです。",
+    "solution": "This is difficult to tell the teacher.",
+    "tokenOverrides": { "づらい": { "category": "auxiliary" } },
+    "grammarPointIds": ["zurai", "wa-topic"]
+  },
+  {
+    "id": "n4-shoes-hard-to-walk-in",
+    "text": "この靴は歩きづらいです。",
+    "solution": "These shoes are difficult to walk in.",
+    "tokenOverrides": { "づらい": { "category": "auxiliary" } },
+    "grammarPointIds": ["zurai", "wa-topic"]
+  },
+  {
+    "id": "production-n4-name-hard-to-remember",
+    "text": "This name is hard to remember.",
+    "solution": "この名前は覚えづらいです。",
+    "type": "production",
+    "tokenOverrides": { "づらい": { "category": "auxiliary" } },
+    "promptVocabularyHints": [
+      { "word": "name", "vocabularyIds": ["vocab-09558b341dc0"] }
+    ],
+    "grammarPointIds": ["zurai"]
+  },
+  {
+    "id": "production-n4-question-hard-to-ask",
+    "text": "This question is hard to ask.",
+    "solution": "この質問は聞きづらいです。",
+    "type": "production",
+    "tokenOverrides": { "聞きづらい": { "category": "auxiliary" } },
+    "promptVocabularyHints": [
+      { "word": "question", "vocabularyIds": ["vocab-f5d831590911"] }
+    ],
+    "grammarPointIds": ["zurai"]
+  },
+  {
+    "id": "n4-writing-name-was-enough",
+    "text": "名前を書くだけで済みました。",
+    "solution": "It was enough just to write my name.",
+    "tokenOverrides": { "済み": { "category": "auxiliary" } },
+    "grammarPointIds": ["te-sumu", "dake-de"]
+  },
+  {
+    "id": "n4-did-not-need-buy-umbrella",
+    "text": "今日は傘を買わなくて済みました。",
+    "solution": "I did not have to buy an umbrella today.",
+    "tokenOverrides": { "済み": { "category": "auxiliary" } },
+    "grammarPointIds": ["te-sumu", "nakute-connective"]
+  },
+  {
+    "id": "production-n4-watch-repair-cost-thousand",
+    "text": "Repairing the watch cost only one thousand yen.",
+    "solution": "時計を直すのは千円で済みました。",
+    "type": "production",
+    "tokenOverrides": { "済み": { "category": "auxiliary" } },
+    "promptVocabularyHints": [
+      { "word": "watch", "vocabularyIds": ["vocab-4754cbccd601"] }
+    ],
+    "grammarPointIds": ["te-sumu"]
+  },
+  {
+    "id": "production-n4-one-phone-call-enough",
+    "text": "One phone call was enough.",
+    "solution": "電話だけで済みました。",
+    "type": "production",
+    "tokenOverrides": { "済み": { "category": "auxiliary" } },
+    "promptVocabularyHints": [
+      { "word": "phone", "vocabularyIds": ["vocab-24df87472770"] }
+    ],
+    "grammarPointIds": ["te-sumu"]
+  },
+  {
+    "id": "n4-wonder-sunny-tomorrow",
+    "text": "明日は晴れるかな。",
+    "solution": "I wonder if it will be sunny tomorrow.",
+    "grammarPointIds": ["kana-wonder", "wa-topic"]
+  },
+  {
+    "id": "n4-wonder-shop-still-open",
+    "text": "この店はまだ開いているかな。",
+    "solution": "I wonder if this shop is still open.",
+    "grammarPointIds": ["kana-wonder", "mada"]
+  },
+  {
+    "id": "production-n4-wonder-train-coming-soon",
+    "text": "I wonder if the train will come soon.",
+    "solution": "電車はもうすぐ来るかな。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "train", "vocabularyIds": ["vocab-dc7f5fc156cf"] }
+    ],
+    "grammarPointIds": ["kana-wonder"]
+  },
+  {
+    "id": "production-n4-wonder-what-give-mother",
+    "text": "I wonder what I should give my mother.",
+    "solution": "母に何をあげようかな。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "mother", "vocabularyIds": ["vocab-7fa86c660a00"] }
+    ],
+    "grammarPointIds": ["kana-wonder", "plain-volitional"]
+  },
+  {
+    "id": "n4-kashira-where-put-key",
+    "text": "鍵はどこに置いたかしら。",
+    "solution": "I wonder where I put the key.",
+    "grammarPointIds": ["kashira-wonder", "wa-topic"]
+  },
+  {
+    "id": "n4-kashira-exam-difficult",
+    "text": "明日の試験は難しいかしら。",
+    "solution": "I wonder if tomorrow's exam will be difficult.",
+    "grammarPointIds": ["kashira-wonder", "wa-topic"]
+  },
+  {
+    "id": "production-n4-kashira-restaurant-open",
+    "text": "I wonder if that restaurant is open.",
+    "solution": "あのレストランは開いているかしら。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "restaurant", "vocabularyIds": ["vocab-61c233ab6a5e"] }
+    ],
+    "grammarPointIds": ["kashira-wonder"]
+  },
+  {
+    "id": "production-n4-kashira-who-person-is",
+    "text": "I wonder who that person is.",
+    "solution": "あの人は誰かしら。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "person", "vocabularyIds": ["vocab-ad7167347a2a"] }
+    ],
+    "grammarPointIds": ["kashira-wonder"]
+  },
+  {
+    "id": "n4-kai-coming-together",
+    "text": "君も一緒に来るかい。",
+    "solution": "Are you coming too?",
+    "grammarPointIds": ["kai-question", "mo-addition"]
+  },
+  {
+    "id": "n4-kai-homework-finished",
+    "text": "もう宿題は終わったかい。",
+    "solution": "Have you finished your homework already?",
+    "grammarPointIds": ["kai-question", "mou"]
+  },
+  {
+    "id": "production-n4-kai-know-person",
+    "text": "Do you know this person?",
+    "solution": "この人を知っているかい。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "person", "vocabularyIds": ["vocab-ad7167347a2a"] }
+    ],
+    "grammarPointIds": ["kai-question"]
+  },
+  {
+    "id": "production-n4-kai-busy-today",
+    "text": "Are you busy today?",
+    "solution": "今日は忙しいかい。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "busy", "vocabularyIds": ["vocab-5ee54e973899"] }
+    ],
+    "grammarPointIds": ["kai-question"]
+  },
+  {
+    "id": "n4-isnt-he-teacher",
+    "text": "あの人は先生ではないか。",
+    "solution": "Isn't that person a teacher?",
+    "grammarPointIds": ["dewa-nai-ka", "wa-topic"]
+  },
+  {
+    "id": "n4-cold-today-isnt-it",
+    "text": "今日は寒いじゃないか。",
+    "solution": "It is cold today, isn't it?",
+    "grammarPointIds": ["dewa-nai-ka", "wa-topic"]
+  },
+  {
+    "id": "production-n4-lets-go-home-together",
+    "text": "Let's go home together, shall we?",
+    "solution": "一緒に帰ろうじゃないか。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "home", "vocabularyIds": ["vocab-944f21154c78"] }
+    ],
+    "grammarPointIds": ["dewa-nai-ka", "plain-volitional"]
+  },
+  {
+    "id": "production-n4-isnt-tomorrow-sunday",
+    "text": "Isn't tomorrow Sunday?",
+    "solution": "明日は日曜日ではないか。",
+    "type": "production",
+    "promptVocabularyHints": [
+      { "word": "Sunday", "vocabularyIds": ["vocab-b7519a0f57a7"] }
+    ],
+    "grammarPointIds": ["dewa-nai-ka"]
   }
 ]

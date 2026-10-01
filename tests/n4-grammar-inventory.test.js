@@ -49,47 +49,15 @@ test("the N4 grammar audit maps integrated families to stable grammar points", a
   );
 });
 
-test("planned N4 grammar definitions are unique, localized, and ready for promotion", async () => {
-  const [grammar, inventory, french] = await Promise.all([
-    readJson("data/jlpt-n5-grammar.json"),
+test("the completed N4 audit has no unpromoted grammar definitions", async () => {
+  const [inventory, french] = await Promise.all([
     readJson("data/source/n4-grammar-inventory.json"),
     readJson("data/source/locales/fr/n4-grammar-inventory.json")
   ]);
-  const grammarIds = new Set(grammar.map(({ id }) => id));
-  const sourceIds = new Set(Object.keys(inventory.sources));
   const plannedIds = inventory.planned.map(({ id }) => id);
 
-  assert.equal(new Set(plannedIds).size, plannedIds.length);
-  assert.deepEqual(Object.keys(french).sort(), [...plannedIds].sort());
-
-  for (const entry of inventory.planned) {
-    assert.ok(!grammarIds.has(entry.id), `${entry.id} is already integrated`);
-    assert.equal(entry.introducedAt, "n4");
-    assert.ok(["core", "boundary"].includes(entry.scope));
-    assert.ok(["concept", "form", "particle", "pattern", "system"].includes(entry.kind));
-
-    for (const field of ["id", "category", "pattern", "name", "meaning"]) {
-      assert.equal(typeof entry[field], "string");
-      assert.ok(entry[field].trim(), `${entry.id} needs ${field}`);
-    }
-
-    assert.ok(Array.isArray(entry.sourceRefs) && entry.sourceRefs.length > 0);
-    assert.ok(entry.sourceRefs.every((id) => sourceIds.has(id)));
-    assert.equal(typeof french[entry.id]?.name, "string");
-    assert.ok(french[entry.id].name.trim());
-    assert.equal(typeof french[entry.id]?.meaning, "string");
-    assert.ok(french[entry.id].meaning.trim());
-  }
-
-  for (const requiredId of [
-    "garu",
-    "te-hoshii",
-    "made-ni",
-    "noni-concession",
-    "sonkeigo-system"
-  ]) {
-    assert.ok(plannedIds.includes(requiredId), `Missing N4 family ${requiredId}`);
-  }
+  assert.deepEqual(plannedIds, []);
+  assert.deepEqual(french, {});
 });
 
 test("the documented inventory summary and source roles stay in sync", async () => {
@@ -123,12 +91,8 @@ test("the documented inventory summary and source roles stay in sync", async () 
 });
 
 test("tricky N4 attachment patterns retain their reviewed distinctions", async () => {
-  const [grammar, inventory] = await Promise.all([
-    readJson("data/jlpt-n5-grammar.json"),
-    readJson("data/source/n4-grammar-inventory.json")
-  ]);
+  const grammar = await readJson("data/jlpt-n5-grammar.json");
   const grammarById = Object.fromEntries(grammar.map((entry) => [entry.id, entry]));
-  const planned = Object.fromEntries(inventory.planned.map((entry) => [entry.id, entry]));
 
   assert.match(grammarById["causative-passive-form"].pattern, /～される/);
   assert.match(grammarById["imperative-form"].pattern, /～よ/);
@@ -136,17 +100,31 @@ test("tricky N4 attachment patterns retain their reviewed distinctions", async (
   assert.match(grammarById["tara-dou"].pattern, /～だらどう/);
   assert.match(grammarById["hitsuyou-ga-aru"].pattern, /必要はない/);
   assert.match(grammarById["you-to-suru"].highlightPattern, /～ろうとする/);
-  assert.match(planned["you-da-inference"].pattern, /な-adjective \+ なようだ/);
-  assert.match(planned["you-da-inference"].pattern, /noun \+ のようだ/);
-  assert.match(planned["you-na-ni-simile"].pattern, /な-adjective \+ なような/);
-  assert.match(planned["noni-concession"].pattern, /な-adjective \/ noun \+ なのに/);
-  assert.match(planned["baai-wa"].pattern, /な-adjective \+ な場合は/);
-  assert.match(planned["baai-wa"].pattern, /noun \+ の場合は/);
-  assert.equal(planned.mama.scope, "boundary");
-  assert.match(planned.mama.pattern, /Vた \/ Vない/);
-  assert.match(planned.mama.pattern, /な-adjective \+ なまま/);
+  assert.match(grammarById["te-hoshii"].pattern, /～ないでほしい/);
+  assert.match(grammarById["te-sumimasen"].pattern, /～なくてすみません/);
+  assert.match(grammarById["ru-tokoro"].highlightPattern, /～るところ/);
+  assert.match(grammarById["teiru-tokoro"].highlightPattern, /～ているところ/);
+  assert.match(grammarById["ta-tokoro"].highlightPattern, /～たところ/);
+  assert.match(grammarById["you-da-inference"].pattern, /な-adjective \+ なようだ/);
+  assert.match(grammarById["you-da-inference"].pattern, /noun \+ のようだ/);
+  assert.match(grammarById["you-na-ni-simile"].pattern, /な-adjective \+ なような/);
+  assert.match(grammarById["noni-concession"].pattern, /な-adjective \/ noun \+ なのに/);
+  assert.match(grammarById["tame-ni-purpose"].pattern, /dictionary form/);
+  assert.match(grammarById["tame-ni-cause"].pattern, /plain form/);
+  assert.match(grammarById["no-wa-da"].pattern, /のは～だ/);
+  assert.match(grammarById["you-ni-to-iu"].pattern, /ない form/);
+  assert.match(grammarById["adjective-sa"].pattern, /adjective stem/);
+  assert.match(grammarById["baai-wa"].pattern, /な-adjective \+ な場合は/);
+  assert.match(grammarById["baai-wa"].pattern, /noun \+ の場合は/);
+  assert.equal(grammarById.mama.scope, "boundary");
+  assert.match(grammarById.mama.pattern, /Vた \/ Vない/);
+  assert.match(grammarById.mama.pattern, /な-adjective \+ なまま/);
   assert.match(grammarById["stem-dasu"].meaning, /Lexical compounds/);
-  assert.equal(planned["te-kudasaru"].name, "Honorific benefactive action");
+  assert.equal(grammarById["te-kudasaru"].name, "Honorific benefactive action");
+  assert.match(grammarById["kana-wonder"].pattern, /かな/);
+  assert.match(grammarById["kashira-wonder"].meaning, /feminine speech/);
+  assert.match(grammarById["kai-question"].meaning, /masculine or older speech/);
+  assert.match(grammarById["dewa-nai-ka"].pattern, /じゃないか/);
 });
 
 test("audited exclusions remain explicit instead of silently disappearing", async () => {

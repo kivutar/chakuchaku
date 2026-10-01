@@ -6755,5 +6755,1442 @@
         "vocabularyIds": ["vocab-ec4fa4315542"]
       }
     ]
+  },
+  "n4-child-shows-fear-of-dog": {
+    "translation": "L'enfant a peur du chien."
+  },
+  "n4-brother-shows-feeling-cold": {
+    "translation": "Mon petit frère semble avoir froid."
+  },
+  "production-n4-sister-seems-lonely": {
+    "translation": "Ma petite sœur semble se sentir seule.",
+    "promptVocabularyHints": [
+      {
+        "word": "seule",
+        "vocabularyIds": ["vocab-095b33ccc743"]
+      }
+    ]
+  },
+  "production-n4-child-seems-in-pain": {
+    "translation": "L'enfant semble avoir mal.",
+    "promptVocabularyHints": [
+      {
+        "word": "mal",
+        "vocabularyIds": ["vocab-64170b1798cb"]
+      }
+    ]
+  },
+  "n4-brother-easily-frightened": {
+    "translation": "Mon petit frère est peureux."
+  },
+  "n4-mother-sensitive-to-cold": {
+    "translation": "Ma mère est sensible au froid."
+  },
+  "production-n4-sister-is-shy": {
+    "translation": "Ma petite sœur est timide.",
+    "promptVocabularyHints": [
+      {
+        "word": "timide",
+        "vocabularyIds": ["vocab-8b65db9c3fbf"]
+      }
+    ]
+  },
+  "production-n4-father-sensitive-to-heat": {
+    "translation": "Mon père est sensible à la chaleur.",
+    "promptVocabularyHints": [
+      {
+        "word": "chaleur",
+        "vocabularyIds": ["vocab-19be7f7be766"]
+      }
+    ]
+  },
+  "n4-want-friend-send-photo": {
+    "translation": "Je veux que mon ami m'envoie la photo."
+  },
+  "n4-do-not-want-brother-play-here": {
+    "translation": "Je ne veux pas que mon petit frère joue ici."
+  },
+  "production-n4-want-brother-wait-here": {
+    "translation": "Je veux que mon petit frère attende ici.",
+    "promptVocabularyHints": [
+      {
+        "word": "attende",
+        "vocabularyIds": ["vocab-6f30c5c5938f"]
+      }
+    ]
+  },
+  "production-n4-do-not-want-child-open-window": {
+    "translation": "Je ne veux pas que l'enfant ouvre la fenêtre.",
+    "promptVocabularyHints": [
+      {
+        "word": "ouvre",
+        "vocabularyIds": ["vocab-658ff53bc114"]
+      }
+    ]
+  },
+  "n4-thank-you-for-helping": {
+    "translation": "Merci de m'avoir aidé."
+  },
+  "n4-thank-you-for-carrying-luggage": {
+    "translation": "Merci d'avoir porté mes bagages."
+  },
+  "production-n4-thank-you-for-waiting": {
+    "translation": "Merci de m'avoir attendu.",
+    "promptVocabularyHints": [
+      {
+        "word": "attendu",
+        "vocabularyIds": ["vocab-6f30c5c5938f"]
+      }
+    ]
+  },
+  "production-n4-thank-you-for-coming-today": {
+    "translation": "Merci d'être venu aujourd'hui.",
+    "promptVocabularyHints": [
+      {
+        "word": "venu",
+        "vocabularyIds": ["vocab-bc01756b4d89"]
+      }
+    ]
+  },
+  "n4-sorry-for-being-late": {
+    "translation": "Désolé d'être en retard."
+  },
+  "n4-sorry-for-not-coming-yesterday": {
+    "translation": "Désolé de ne pas être venu hier."
+  },
+  "production-n4-sorry-for-forgetting-name": {
+    "translation": "Désolé d'avoir oublié ton nom.",
+    "promptVocabularyHints": [
+      {
+        "word": "oublié",
+        "vocabularyIds": ["vocab-53c63c8d3e25"]
+      }
+    ]
+  },
+  "production-n4-sorry-for-not-waiting": {
+    "translation": "Désolé de ne pas avoir attendu.",
+    "promptVocabularyHints": [
+      {
+        "word": "attendu",
+        "vocabularyIds": ["vocab-6f30c5c5938f"]
+      }
+    ]
+  },
+  "n4-polite-ask-directions-to-station": {
+    "translation": "Pourriez-vous m'indiquer le chemin jusqu'à la gare ?"
+  },
+  "n4-polite-ask-carry-luggage": {
+    "translation": "Pourriez-vous porter ce bagage ?"
+  },
+  "production-n4-polite-ask-close-window": {
+    "translation": "Pourriez-vous fermer la fenêtre ?",
+    "promptVocabularyHints": [
+      {
+        "word": "fermer",
+        "vocabularyIds": ["vocab-98e990bf1d44"]
+      }
+    ]
+  },
+  "production-n4-polite-ask-write-name": {
+    "translation": "Pourriez-vous écrire votre nom ici ?",
+    "promptVocabularyHints": [
+      {
+        "word": "écrire",
+        "vocabularyIds": ["vocab-d34997e828cb"]
+      }
+    ]
+  },
+  "n4-glad-came-to-japan": {
+    "translation": "Je suis content d'être venu au Japon."
+  },
+  "n4-glad-took-medicine": {
+    "translation": "Je suis content d'avoir pris ce médicament."
+  },
+  "production-n4-glad-bought-book": {
+    "translation": "Je suis content d'avoir acheté ce livre.",
+    "promptVocabularyHints": [
+      {
+        "word": "acheté",
+        "vocabularyIds": ["vocab-1b65a0cb82d2"]
+      }
+    ]
+  },
+  "production-n4-glad-studied-japanese": {
+    "translation": "Je suis content d'avoir étudié le japonais.",
+    "promptVocabularyHints": [
+      {
+        "word": "étudié",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ]
+  },
+  "n4-bought-fish-for-cat": {
+    "translation": "J'ai acheté du poisson pour le chat."
+  },
+  "n4-helped-brother-with-homework-blunt": {
+    "translation": "J'ai aidé mon petit frère à faire ses devoirs."
+  },
+  "production-n4-opened-door-for-dog": {
+    "translation": "J'ai ouvert la porte pour le chien.",
+    "promptVocabularyHints": [
+      {
+        "word": "ouvert",
+        "vocabularyIds": ["vocab-658ff53bc114"]
+      }
+    ]
+  },
+  "production-n4-took-photo-for-brother": {
+    "translation": "J'ai pris une photo pour mon petit frère.",
+    "promptVocabularyHints": [
+      {
+        "word": "photo",
+        "vocabularyIds": ["vocab-d5901ecbf5fb"]
+      }
+    ]
+  },
+  "production-n4-submit-homework-by-tomorrow": {
+    "translation": "Je rendrai mes devoirs d'ici demain.",
+    "promptVocabularyHints": [
+      {
+        "word": "devoirs",
+        "vocabularyIds": ["vocab-f26f501fa1c2"]
+      }
+    ]
+  },
+  "production-n4-come-by-nine": {
+    "translation": "Viens avant neuf heures, s'il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "Viens",
+        "vocabularyIds": ["vocab-bc01756b4d89"]
+      }
+    ]
+  },
+  "n4-about-to-eat-lunch": {
+    "translation": "Je suis sur le point de déjeuner."
+  },
+  "n4-about-to-leave-home": {
+    "translation": "Je suis sur le point de quitter la maison."
+  },
+  "production-n4-about-to-call-mother": {
+    "translation": "Je suis sur le point d'appeler ma mère.",
+    "promptVocabularyHints": [
+      {
+        "word": "appeler",
+        "vocabularyIds": ["vocab-24df87472770"]
+      }
+    ]
+  },
+  "production-n4-about-to-start-studying": {
+    "translation": "Nous sommes sur le point de commencer à étudier.",
+    "promptVocabularyHints": [
+      {
+        "word": "commencer",
+        "vocabularyIds": ["vocab-79261a065ba5"]
+      }
+    ]
+  },
+  "n4-currently-eating-lunch": {
+    "translation": "Je suis en plein déjeuner."
+  },
+  "n4-currently-doing-homework": {
+    "translation": "Je suis en train de faire mes devoirs."
+  },
+  "production-n4-currently-reading-book": {
+    "translation": "Je suis en train de lire ce livre.",
+    "promptVocabularyHints": [
+      {
+        "word": "lire",
+        "vocabularyIds": ["vocab-24f188a06d2c"]
+      }
+    ]
+  },
+  "production-n4-brother-currently-studying-japanese": {
+    "translation": "Mon petit frère est en train d'étudier le japonais.",
+    "promptVocabularyHints": [
+      {
+        "word": "étudier",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ]
+  },
+  "n4-just-ate-lunch": {
+    "translation": "Je viens de déjeuner."
+  },
+  "n4-just-returned-home": {
+    "translation": "Je viens de rentrer chez moi."
+  },
+  "production-n4-just-finished-homework": {
+    "translation": "Je viens de finir mes devoirs.",
+    "promptVocabularyHints": [
+      {
+        "word": "finir",
+        "vocabularyIds": ["vocab-6393ca7aefde"]
+      }
+    ]
+  },
+  "production-n4-just-bought-book": {
+    "translation": "Je viens d'acheter ce livre.",
+    "promptVocabularyHints": [
+      {
+        "word": "acheter",
+        "vocabularyIds": ["vocab-1b65a0cb82d2"]
+      }
+    ]
+  },
+  "n4-only-recently-came-japan": {
+    "translation": "Je viens seulement d'arriver au Japon."
+  },
+  "n4-only-just-started-job": {
+    "translation": "Je viens tout juste de commencer ce travail."
+  },
+  "production-n4-only-just-bought-computer": {
+    "translation": "Je viens tout juste d'acheter cet ordinateur.",
+    "promptVocabularyHints": [
+      {
+        "word": "ordinateur",
+        "vocabularyIds": ["vocab-5ca53fa1b955"]
+      }
+    ]
+  },
+  "production-n4-brother-only-just-got-up": {
+    "translation": "Mon petit frère vient tout juste de se lever.",
+    "promptVocabularyHints": [
+      {
+        "word": "lever",
+        "vocabularyIds": ["vocab-72c5b362c4f2"]
+      }
+    ]
+  },
+  "n4-slept-with-window-open": {
+    "translation": "J'ai dormi en laissant la fenêtre ouverte."
+  },
+  "n4-went-school-without-breakfast": {
+    "translation": "Je suis allé à l'école sans prendre de petit-déjeuner."
+  },
+  "production-n4-room-stayed-quiet": {
+    "translation": "La chambre est restée calme.",
+    "promptVocabularyHints": [
+      {
+        "word": "calme",
+        "vocabularyIds": ["vocab-61b57e2d4702"]
+      }
+    ]
+  },
+  "production-n4-soup-remains-hot": {
+    "translation": "La soupe est encore chaude.",
+    "promptVocabularyHints": [
+      {
+        "word": "chaude",
+        "vocabularyIds": ["vocab-dec4a6497500"]
+      }
+    ]
+  },
+  "n4-take-medicine-every-six-hours": {
+    "translation": "Je prends ce médicament toutes les six heures."
+  },
+  "n4-bus-every-fifteen-minutes": {
+    "translation": "Le bus passe toutes les quinze minutes."
+  },
+  "production-n4-rest-every-hour": {
+    "translation": "Fais une pause toutes les heures, s'il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "pause",
+        "vocabularyIds": ["vocab-acc3dd26ba1e"]
+      }
+    ]
+  },
+  "production-n4-call-mother-every-three-days": {
+    "translation": "J'appelle ma mère tous les trois jours.",
+    "promptVocabularyHints": [
+      {
+        "word": "appelle",
+        "vocabularyIds": ["vocab-24df87472770"]
+      }
+    ]
+  },
+  "n4-delicious-looking-cake": {
+    "translation": "C'est un gâteau qui a l'air délicieux, n'est-ce pas ?"
+  },
+  "n4-child-playing-happily": {
+    "translation": "L'enfant joue d'un air heureux."
+  },
+  "production-n4-interesting-looking-book": {
+    "translation": "C'est un livre qui a l'air intéressant.",
+    "promptVocabularyHints": [
+      {
+        "word": "intéressant",
+        "vocabularyIds": ["vocab-9825648af79e"]
+      }
+    ]
+  },
+  "production-n4-sister-singing-happily": {
+    "translation": "Ma petite sœur chante d'un air joyeux.",
+    "promptVocabularyHints": [
+      {
+        "word": "chante",
+        "vocabularyIds": ["vocab-d8974b42548f"]
+      }
+    ]
+  },
+  "n4-shop-seems-closed": {
+    "translation": "Il semble que le magasin soit fermé."
+  },
+  "n4-outside-seems-quiet": {
+    "translation": "Il semble que ce soit calme dehors."
+  },
+  "production-n4-seems-will-rain": {
+    "translation": "Il semble qu'il va pleuvoir.",
+    "promptVocabularyHints": [
+      {
+        "word": "pleuvoir",
+        "vocabularyIds": ["vocab-777161023023"]
+      }
+    ]
+  },
+  "production-n4-seems-nobody-home": {
+    "translation": "Il semble qu'il n'y ait personne à la maison.",
+    "promptVocabularyHints": [
+      {
+        "word": "maison",
+        "vocabularyIds": ["vocab-8af58778f14e"]
+      }
+    ]
+  },
+  "n4-he-swims-like-fish": {
+    "translation": "Il nage comme un poisson."
+  },
+  "n4-white-flower-like-snow": {
+    "translation": "C'est une fleur blanche comme la neige."
+  },
+  "production-n4-sister-sings-like-bird": {
+    "translation": "Ma petite sœur chante comme un oiseau.",
+    "promptVocabularyHints": [
+      {
+        "word": "chante",
+        "vocabularyIds": ["vocab-d8974b42548f"]
+      }
+    ]
+  },
+  "production-n4-town-like-kyoto": {
+    "translation": "C'est une ville comme Kyoto.",
+    "promptVocabularyHints": [
+      {
+        "word": "ville",
+        "vocabularyIds": ["vocab-09d74d630a45"]
+      }
+    ]
+  },
+  "n4-cloud-looks-like-fish": {
+    "translation": "Ce nuage ressemble à un poisson."
+  },
+  "n4-looks-like-rain-outside": {
+    "translation": "On dirait qu'il pleut dehors."
+  },
+  "production-n4-he-seems-busy-casual": {
+    "translation": "Il semble occupé.",
+    "promptVocabularyHints": [
+      {
+        "word": "occupé",
+        "vocabularyIds": ["vocab-5ee54e973899"]
+      }
+    ]
+  },
+  "production-n4-cake-looks-like-flower": {
+    "translation": "Ce gâteau ressemble à une fleur.",
+    "promptVocabularyHints": [
+      {
+        "word": "fleur",
+        "vocabularyIds": ["vocab-fa6a4c8f27b4"]
+      }
+    ]
+  },
+  "n4-heard-shop-cake-delicious": {
+    "translation": "Il paraît que le gâteau de ce magasin est délicieux."
+  },
+  "n4-brother-apparently-home": {
+    "translation": "Apparemment, mon petit frère est à la maison."
+  },
+  "production-n4-heard-new-teacher-kind": {
+    "translation": "Il paraît que le nouveau professeur est gentil.",
+    "promptVocabularyHints": [
+      {
+        "word": "gentil",
+        "vocabularyIds": ["vocab-c2cec306f5c4"]
+      }
+    ]
+  },
+  "production-n4-apparently-snow-tomorrow": {
+    "translation": "Apparemment, il neigera demain.",
+    "promptVocabularyHints": [
+      {
+        "word": "neigera",
+        "vocabularyIds": ["vocab-79db1765ce26"]
+      }
+    ]
+  },
+  "n4-cold-but-window-open": {
+    "translation": "Bien qu'il fasse froid, la fenêtre est ouverte."
+  },
+  "n4-quiet-town-many-people": {
+    "translation": "Bien que cette ville soit calme, il y a beaucoup de monde."
+  },
+  "production-n4-sunday-but-father-working": {
+    "translation": "Bien que ce soit dimanche, mon père travaille.",
+    "promptVocabularyHints": [
+      {
+        "word": "dimanche",
+        "vocabularyIds": ["vocab-b7519a0f57a7"]
+      }
+    ]
+  },
+  "production-n4-tired-but-will-study": {
+    "translation": "Bien que je sois fatigué, je vais étudier.",
+    "promptVocabularyHints": [
+      {
+        "word": "fatigué",
+        "vocabularyIds": ["vocab-65f5cb2d1bd4"]
+      }
+    ]
+  },
+  "n4-even-if-rains-go-school": {
+    "translation": "Même s'il pleut, j'irai à l'école."
+  },
+  "n4-even-if-expensive-buy-bag": {
+    "translation": "Même s'il est cher, j'achèterai ce sac."
+  },
+  "production-n4-even-if-busy-will-come": {
+    "translation": "Même si je suis occupé, je viendrai.",
+    "promptVocabularyHints": [
+      {
+        "word": "occupé",
+        "vocabularyIds": ["vocab-5ee54e973899"]
+      }
+    ]
+  },
+  "production-n4-even-sunday-mother-works": {
+    "translation": "Même si c'est dimanche, ma mère travaille.",
+    "promptVocabularyHints": [
+      {
+        "word": "dimanche",
+        "vocabularyIds": ["vocab-b7519a0f57a7"]
+      }
+    ]
+  },
+  "n4-came-japan-to-study-japanese": {
+    "translation": "Je suis venu au Japon pour étudier le japonais."
+  },
+  "n4-went-park-to-take-photos": {
+    "translation": "Je suis allé au parc pour prendre des photos."
+  },
+  "production-n4-rise-early-to-make-breakfast": {
+    "translation": "Je me lève tôt pour préparer le petit-déjeuner.",
+    "promptVocabularyHints": [
+      {
+        "word": "petit-déjeuner",
+        "vocabularyIds": ["vocab-818846d31820"]
+      }
+    ]
+  },
+  "production-n4-went-library-to-study": {
+    "translation": "Je suis allé à la bibliothèque pour étudier.",
+    "promptVocabularyHints": [
+      {
+        "word": "bibliothèque",
+        "vocabularyIds": ["vocab-ca8d0efe19a3"]
+      }
+    ]
+  },
+  "n4-train-late-because-snow": {
+    "translation": "Le train était en retard à cause de la neige."
+  },
+  "n4-missed-school-because-cold": {
+    "translation": "J'ai manqué l'école parce que j'ai attrapé un rhume."
+  },
+  "production-n4-no-park-because-rain": {
+    "translation": "À cause de la pluie, je ne suis pas allé au parc.",
+    "promptVocabularyHints": [
+      {
+        "word": "pluie",
+        "vocabularyIds": ["vocab-7e87850c448d"]
+      }
+    ]
+  },
+  "production-n4-late-school-because-overslept": {
+    "translation": "Comme j'ai trop dormi, je suis arrivé en retard à l'école.",
+    "promptVocabularyHints": [
+      {
+        "word": "trop dormi",
+        "vocabularyIds": ["vocab-dedac553ff95"]
+      }
+    ]
+  },
+  "n4-hope-sunny-tomorrow": {
+    "translation": "J'espère qu'il fera beau demain."
+  },
+  "n4-hope-exam-easy": {
+    "translation": "J'espère que l'examen sera facile."
+  },
+  "production-n4-hope-warm-tomorrow": {
+    "translation": "J'espère qu'il fera chaud demain.",
+    "promptVocabularyHints": [
+      {
+        "word": "chaud",
+        "vocabularyIds": ["vocab-b1d6f8ff0597"]
+      }
+    ]
+  },
+  "production-n4-hope-spring-comes-early": {
+    "translation": "J'espère que le printemps arrivera tôt.",
+    "promptVocabularyHints": [
+      {
+        "word": "printemps",
+        "vocabularyIds": ["vocab-18597113ac94"]
+      }
+    ]
+  },
+  "n4-favorite-is-spring": {
+    "translation": "Ce que j'aime le plus, c'est le printemps."
+  },
+  "n4-met-teacher-at-station": {
+    "translation": "La personne que j'ai rencontrée à la gare était mon professeur."
+  },
+  "production-n4-cake-made-by-sister": {
+    "translation": "La personne qui a fait ce gâteau est ma petite sœur.",
+    "promptVocabularyHints": [
+      {
+        "word": "gâteau",
+        "vocabularyIds": ["vocab-da08a01c25e4"]
+      },
+      {
+        "word": "sœur",
+        "vocabularyIds": ["vocab-735d35e5b1be"]
+      }
+    ]
+  },
+  "production-n4-want-new-bicycle": {
+    "translation": "Ce que je veux acheter, c'est un nouveau vélo.",
+    "promptVocabularyHints": [
+      {
+        "word": "vélo",
+        "vocabularyIds": ["vocab-457ac376d17f"]
+      }
+    ]
+  },
+  "n4-heard-shop-will-close-fact": {
+    "translation": "J'ai entendu dire que le magasin allait fermer."
+  },
+  "n4-know-tomorrow-holiday-fact": {
+    "translation": "Sais-tu que demain est un jour de congé ?"
+  },
+  "production-n4-forgot-exam-next-week-fact": {
+    "translation": "J'ai oublié qu'il y a un examen la semaine prochaine.",
+    "promptVocabularyHints": [
+      {
+        "word": "examen",
+        "vocabularyIds": ["vocab-0c4d68e2ec4d"]
+      }
+    ]
+  },
+  "production-n4-remember-library-closes-six-fact": {
+    "translation": "Souviens-toi que la bibliothèque ferme à six heures.",
+    "promptVocabularyHints": [
+      {
+        "word": "bibliothèque",
+        "vocabularyIds": ["vocab-ca8d0efe19a3"]
+      }
+    ]
+  },
+  "n4-mother-told-return-early": {
+    "translation": "Ma mère m'a dit de rentrer tôt."
+  },
+  "n4-teacher-told-students-be-quiet": {
+    "translation": "Le professeur a dit aux étudiants de rester calmes."
+  },
+  "production-n4-father-told-not-forget-key": {
+    "translation": "Mon père m'a dit de ne pas oublier ma clé.",
+    "promptVocabularyHints": [
+      {
+        "word": "clé",
+        "vocabularyIds": ["vocab-dd7cf58e61fa"]
+      }
+    ]
+  },
+  "production-n4-doctor-told-take-medicine": {
+    "translation": "Le médecin m'a dit de prendre ce médicament.",
+    "promptVocabularyHints": [
+      {
+        "word": "médecin",
+        "vocabularyIds": ["vocab-60e888b69674"]
+      },
+      {
+        "word": "médicament",
+        "vocabularyIds": ["vocab-87bbe3de9902"]
+      }
+    ]
+  },
+  "n4-mountain-height-three-thousand": {
+    "translation": "Cette montagne mesure trois mille mètres de haut."
+  },
+  "n4-know-river-length": {
+    "translation": "Connais-tu la longueur de cette rivière ?"
+  },
+  "production-n4-like-room-quietness": {
+    "translation": "J'aime le calme de cette chambre.",
+    "promptVocabularyHints": [
+      {
+        "word": "chambre",
+        "vocabularyIds": ["vocab-23523bbf8d9c"]
+      }
+    ]
+  },
+  "production-n4-building-height-hundred": {
+    "translation": "La hauteur de ce bâtiment est de cent mètres.",
+    "promptVocabularyHints": [
+      {
+        "word": "bâtiment",
+        "vocabularyIds": ["vocab-b11f169893fb"]
+      }
+    ]
+  },
+  "n4-station-about-ten-minutes": {
+    "translation": "Il faut environ dix minutes pour aller à la gare."
+  },
+  "n4-bag-surprisingly-light": {
+    "translation": "Ce sac est étonnamment léger."
+  },
+  "production-n4-river-clean-fish-visible": {
+    "translation": "Cette rivière est si propre que les poissons sont visibles.",
+    "promptVocabularyHints": [
+      {
+        "word": "rivière",
+        "vocabularyIds": ["vocab-82dcbecaf875"]
+      }
+    ]
+  },
+  "production-n4-studied-about-three-hours": {
+    "translation": "J'ai étudié pendant environ trois heures.",
+    "promptVocabularyHints": [
+      {
+        "word": "étudié",
+        "vocabularyIds": ["vocab-15863d9e899d"]
+      }
+    ]
+  },
+  "n4-brother-reads-only-manga": {
+    "translation": "Mon petit frère ne lit que des mangas."
+  },
+  "n4-days-off-only-sleeping": {
+    "translation": "Pendant mes jours de congé, je ne fais que dormir."
+  },
+  "production-n4-cat-only-sleeps": {
+    "translation": "Mon chat ne fait que dormir.",
+    "promptVocabularyHints": [
+      {
+        "word": "chat",
+        "vocabularyIds": ["vocab-123a10eb50b0"]
+      }
+    ]
+  },
+  "production-n4-he-buys-only-expensive-things": {
+    "translation": "Il n'achète que des choses chères.",
+    "promptVocabularyHints": [
+      {
+        "word": "chères",
+        "vocabularyIds": ["vocab-775979a197ea"]
+      }
+    ]
+  },
+  "n4-song-enough-feel-better": {
+    "translation": "Rien qu'écouter cette chanson me remonte le moral."
+  },
+  "n4-button-enough-open-door": {
+    "translation": "Il suffit d'appuyer sur ce bouton pour ouvrir la porte."
+  },
+  "production-n4-photo-enough-happy": {
+    "translation": "Rien que regarder cette photo me rend heureux.",
+    "promptVocabularyHints": [
+      {
+        "word": "photo",
+        "vocabularyIds": ["vocab-d5901ecbf5fb"]
+      }
+    ]
+  },
+  "production-n4-medicine-enough-better": {
+    "translation": "Il suffit de prendre ce médicament pour aller mieux.",
+    "promptVocabularyHints": [
+      {
+        "word": "médicament",
+        "vocabularyIds": ["vocab-87bbe3de9902"]
+      }
+    ]
+  },
+  "n4-bag-books-notebooks-examples": {
+    "translation": "Il y a des livres, des cahiers et d'autres choses dans le sac."
+  },
+  "n4-breakfast-bread-fruit-examples": {
+    "translation": "Au petit-déjeuner, je mange par exemple du pain et des fruits."
+  },
+  "production-n4-bought-apples-bananas-examples": {
+    "translation": "J'ai acheté entre autres des pommes et des bananes.",
+    "promptVocabularyHints": [
+      {
+        "word": "pommes",
+        "vocabularyIds": ["vocab-d66c7f00afcd"]
+      },
+      {
+        "word": "bananes",
+        "vocabularyIds": ["vocab-3cae2dee76b4"]
+      }
+    ]
+  },
+  "production-n4-sunday-reading-movies-examples": {
+    "translation": "Le dimanche, je fais des choses que j'aime, comme lire des livres et regarder des films.",
+    "promptVocabularyHints": [
+      {
+        "word": "films",
+        "vocabularyIds": ["vocab-7b9d866e6dc2"]
+      }
+    ]
+  },
+  "n4-good-smell-from-kitchen": {
+    "translation": "Une bonne odeur vient de la cuisine."
+  },
+  "n4-sound-from-next-room": {
+    "translation": "J'entends un bruit venant de la pièce d'à côté."
+  },
+  "production-n4-soup-strange-taste": {
+    "translation": "Ce médicament a un goût amer.",
+    "promptVocabularyHints": [
+      {
+        "word": "médicament",
+        "vocabularyIds": ["vocab-87bbe3de9902"]
+      }
+    ]
+  },
+  "production-n4-loud-sound-outside": {
+    "translation": "J'entends un bruit fort dehors.",
+    "promptVocabularyHints": [
+      {
+        "word": "bruit",
+        "vocabularyIds": ["vocab-b37750755344"]
+      }
+    ]
+  },
+  "n4-desk-made-of-wood": {
+    "translation": "Ce bureau est en bois."
+  },
+  "n4-made-bird-from-paper": {
+    "translation": "C'est un oiseau fabriqué en papier."
+  },
+  "production-n4-box-made-of-wood": {
+    "translation": "Cette boîte est en bois.",
+    "promptVocabularyHints": [
+      {
+        "word": "boîte",
+        "vocabularyIds": ["vocab-28102c121d50"]
+      }
+    ]
+  },
+  "production-n4-made-flower-from-paper": {
+    "translation": "C'est une fleur fabriquée en papier.",
+    "promptVocabularyHints": [
+      {
+        "word": "fleur",
+        "vocabularyIds": ["vocab-fa6a4c8f27b4"]
+      }
+    ]
+  },
+  "n4-paper-made-from-wood": {
+    "translation": "Le papier est fabriqué à partir du bois."
+  },
+  "n4-jam-made-from-fruit": {
+    "translation": "La confiture est fabriquée à partir de fruits."
+  },
+  "production-n4-cheese-made-from-milk": {
+    "translation": "Le fromage est fabriqué à partir de lait.",
+    "promptVocabularyHints": [
+      {
+        "word": "fromage",
+        "vocabularyIds": ["vocab-53c901afd6f3"]
+      },
+      {
+        "word": "lait",
+        "vocabularyIds": ["vocab-e90f788a51b5"]
+      }
+    ]
+  },
+  "production-n4-soup-made-from-vegetables": {
+    "translation": "Cette soupe est préparée à partir de légumes.",
+    "promptVocabularyHints": [
+      {
+        "word": "légumes",
+        "vocabularyIds": ["vocab-88763af54360"]
+      }
+    ]
+  },
+  "n4-stay-home-if-rain-case": {
+    "translation": "S'il pleut, je resterai chez moi."
+  },
+  "n4-press-button-if-necessary-case": {
+    "translation": "Si nécessaire, appuyez sur ce bouton."
+  },
+  "production-n4-fire-use-stairs-case": {
+    "translation": "En cas d'incendie, utilisez ces escaliers.",
+    "promptVocabularyHints": [
+      {
+        "word": "incendie",
+        "vocabularyIds": ["vocab-8e4839d2e6de"]
+      },
+      {
+        "word": "escaliers",
+        "vocabularyIds": ["vocab-fd12aa0d5724"]
+      }
+    ]
+  },
+  "production-n4-dangerous-road-do-not-walk-case": {
+    "translation": "Si la route est dangereuse, ne marchez pas ici.",
+    "promptVocabularyHints": [
+      {
+        "word": "route",
+        "vocabularyIds": ["vocab-b4a022a9e7a6"]
+      }
+    ]
+  },
+  "n4-plan-go-japan-next-month": {
+    "translation": "Je prévois d'aller au Japon le mois prochain."
+  },
+  "n4-meeting-scheduled-start-three": {
+    "translation": "La réunion doit commencer à trois heures."
+  },
+  "production-n4-plan-meet-friend-tomorrow": {
+    "translation": "Je prévois de voir mon ami demain.",
+    "promptVocabularyHints": [
+      {
+        "word": "ami",
+        "vocabularyIds": ["vocab-d9898f8a95b6"]
+      }
+    ]
+  },
+  "production-n4-new-shop-scheduled-open": {
+    "translation": "Le nouveau magasin doit ouvrir la semaine prochaine.",
+    "promptVocabularyHints": [
+      {
+        "word": "magasin",
+        "vocabularyIds": ["vocab-e70f9243d4c7"]
+      }
+    ]
+  },
+  "n4-where-should-buy-ticket": {
+    "translation": "Où dois-je acheter un billet ?"
+  },
+  "n4-cold-what-should-eat": {
+    "translation": "Que devrais-je manger quand j'ai un rhume ?"
+  },
+  "production-n4-what-time-should-come": {
+    "translation": "À quelle heure dois-je venir demain ?",
+    "promptVocabularyHints": [
+      {
+        "word": "demain",
+        "vocabularyIds": ["vocab-bec9ce9d08c8"]
+      }
+    ]
+  },
+  "production-n4-who-should-ask": {
+    "translation": "À qui dois-je demander ?",
+    "promptVocabularyHints": [
+      {
+        "word": "demander",
+        "vocabularyIds": ["vocab-d8a0261581dc"]
+      }
+    ]
+  },
+  "n4-trip-needs-money": {
+    "translation": "Il faut de l'argent pour voyager."
+  },
+  "n4-work-needs-time": {
+    "translation": "Ce travail demande du temps."
+  },
+  "production-n4-need-map": {
+    "translation": "J'ai besoin d'une carte.",
+    "promptVocabularyHints": [
+      {
+        "word": "carte",
+        "vocabularyIds": ["vocab-3c687e40b035"]
+      }
+    ]
+  },
+  "production-n4-need-more-chairs": {
+    "translation": "Nous avons besoin de plus de chaises.",
+    "promptVocabularyHints": [
+      {
+        "word": "chaises",
+        "vocabularyIds": ["vocab-7863488ec2b8"]
+      }
+    ]
+  },
+  "n4-missed-school-because-caught-cold-connective": {
+    "translation": "J'ai manqué l'école parce que j'ai attrapé un rhume."
+  },
+  "n4-match-cancelled-because-rain-connective": {
+    "translation": "Le match n'a pas eu lieu à cause de la pluie."
+  },
+  "production-n4-late-school-train-delay-connective": {
+    "translation": "Je suis arrivé en retard à l'école parce que le train avait du retard.",
+    "promptVocabularyHints": [
+      {
+        "word": "train",
+        "vocabularyIds": ["vocab-dc7f5fc156cf"]
+      }
+    ]
+  },
+  "production-n4-bus-stopped-because-snow-connective": {
+    "translation": "Le bus s'est arrêté à cause de la neige.",
+    "promptVocabularyHints": [
+      {
+        "word": "neige",
+        "vocabularyIds": ["vocab-79db1765ce26"]
+      }
+    ]
+  },
+  "n4-hungry-because-no-breakfast-negative-connective": {
+    "translation": "J'ai eu faim parce que je n'avais pas pris de petit-déjeuner."
+  },
+  "n4-did-not-buy-because-no-money-negative-connective": {
+    "translation": "Je n'ai pas acheté ce livre parce que je n'avais pas d'argent."
+  },
+  "production-n4-worried-mother-did-not-come-negative-connective": {
+    "translation": "Je me suis inquiété parce que ma mère n'est pas venue.",
+    "promptVocabularyHints": [
+      {
+        "word": "inquiété",
+        "vocabularyIds": ["vocab-a7095a66e0d8"]
+      }
+    ]
+  },
+  "production-n4-asked-police-box-did-not-know-way-negative-connective": {
+    "translation": "Je ne connaissais pas le chemin, alors j'ai demandé dans un poste de police.",
+    "promptVocabularyHints": [
+      {
+        "word": "chemin",
+        "vocabularyIds": ["vocab-b4a022a9e7a6"]
+      }
+    ]
+  },
+  "n4-personal-rule-walk-every-morning": {
+    "translation": "Je veille à marcher trente minutes tous les matins."
+  },
+  "n4-personal-rule-no-coffee-night": {
+    "translation": "Je me suis fixé comme règle de ne pas boire de café le soir."
+  },
+  "production-n4-personal-rule-read-japanese-daily": {
+    "translation": "Je veille à lire du japonais tous les jours.",
+    "promptVocabularyHints": [
+      { "word": "japonais", "vocabularyIds": ["vocab-e6870aa0d14e"] }
+    ]
+  },
+  "production-n4-personal-rule-no-tv-meals": {
+    "translation": "Je me suis fixé comme règle de ne pas regarder la télévision pendant les repas.",
+    "promptVocabularyHints": [
+      { "word": "repas", "vocabularyIds": ["vocab-399ca48876cc"] }
+    ]
+  },
+  "n4-school-rule-remove-shoes": {
+    "translation": "Dans cette école, la règle est d'enlever ses chaussures dans la salle de classe."
+  },
+  "n4-meeting-arranged-start-nine": {
+    "translation": "Il est prévu que la réunion commence à neuf heures."
+  },
+  "production-n4-class-rule-speak-japanese": {
+    "translation": "Les élèves doivent parler japonais pendant le cours.",
+    "promptVocabularyHints": [
+      { "word": "japonais", "vocabularyIds": ["vocab-e6870aa0d14e"] }
+    ]
+  },
+  "production-n4-bus-arranged-leave-seven": {
+    "translation": "Le bus doit partir à sept heures.",
+    "promptVocabularyHints": [
+      { "word": "bus", "vocabularyIds": ["vocab-826a124ad930"] }
+    ]
+  },
+  "n4-sea-visible-from-window": {
+    "translation": "La mer est visible depuis la fenêtre."
+  },
+  "n4-music-audible-next-room": {
+    "translation": "On entend de la musique venant de la pièce d'à côté."
+  },
+  "production-n4-station-visible-here": {
+    "translation": "La gare est visible d'ici.",
+    "promptVocabularyHints": [
+      { "word": "gare", "vocabularyIds": ["vocab-d29031265cf4"] }
+    ]
+  },
+  "production-n4-birds-audible-outside": {
+    "translation": "J'entends les oiseaux dehors.",
+    "promptVocabularyHints": [
+      { "word": "oiseaux", "vocabularyIds": ["vocab-683f3e7fb085"] }
+    ]
+  },
+  "n4-teacher-kindly-corrected-composition": {
+    "translation": "Mon professeur a eu la gentillesse de corriger ma rédaction."
+  },
+  "n4-friend-mother-kindly-accompanied-station": {
+    "translation": "La mère de mon ami a eu la gentillesse de m'accompagner jusqu'à la gare."
+  },
+  "production-n4-teacher-kindly-explained-word": {
+    "translation": "Le professeur a eu la gentillesse de m'expliquer ce mot.",
+    "promptVocabularyHints": [
+      { "word": "mot", "vocabularyIds": ["vocab-cef4a2049ff3"] }
+    ]
+  },
+  "production-n4-doctor-kindly-examined-child": {
+    "translation": "Le médecin a eu la gentillesse d'examiner mon enfant.",
+    "promptVocabularyHints": [
+      { "word": "médecin", "vocabularyIds": ["vocab-60e888b69674"] },
+      { "word": "enfant", "vocabularyIds": ["vocab-5fd1d3759699"] }
+    ]
+  },
+  "n4-teacher-kindly-taught-kanji": {
+    "translation": "Mon professeur a eu la gentillesse de m'enseigner le kanji."
+  },
+  "n4-neighbor-kindly-carried-luggage": {
+    "translation": "Mon voisin a eu la gentillesse de porter mes bagages."
+  },
+  "production-n4-doctor-kindly-explained-medicine": {
+    "translation": "Le médecin a eu la gentillesse de m'expliquer le médicament.",
+    "promptVocabularyHints": [
+      { "word": "médicament", "vocabularyIds": ["vocab-87bbe3de9902"] }
+    ]
+  },
+  "production-n4-teacher-kindly-wrote-letter": {
+    "translation": "Mon professeur a eu la gentillesse d'écrire une lettre pour moi.",
+    "promptVocabularyHints": [
+      { "word": "lettre", "vocabularyIds": ["vocab-8e7233a38df0"] }
+    ]
+  },
+  "n4-honorific-department-head-went-home": {
+    "translation": "Le chef de service est déjà rentré chez lui."
+  },
+  "n4-honorific-teacher-ate-lunch": {
+    "translation": "Le professeur a déjeuné."
+  },
+  "production-n4-honorific-president-reading-newspaper": {
+    "translation": "Le président de l'entreprise lit le journal.",
+    "promptVocabularyHints": [
+      { "word": "journal", "vocabularyIds": ["vocab-f906b238c9c2"] }
+    ]
+  },
+  "production-n4-honorific-teacher-coming-tomorrow": {
+    "translation": "Le professeur viendra demain.",
+    "promptVocabularyHints": [
+      { "word": "professeur", "vocabularyIds": ["vocab-497356cf0646"] }
+    ]
+  },
+  "n4-humble-explain-schedule": {
+    "translation": "Je vais vous expliquer le programme."
+  },
+  "n4-humble-carried-teacher-luggage": {
+    "translation": "J'ai porté les bagages du professeur."
+  },
+  "production-n4-humble-guide-teacher-classroom": {
+    "translation": "Je vais guider le professeur jusqu'à la salle de classe.",
+    "promptVocabularyHints": [
+      { "word": "salle de classe", "vocabularyIds": ["vocab-fbb71c77ac0e"] }
+    ]
+  },
+  "production-n4-humble-received-book-teacher": {
+    "translation": "J'ai reçu ce livre du professeur.",
+    "promptVocabularyHints": [
+      { "word": "livre", "vocabularyIds": ["vocab-0ac038632611"] }
+    ]
+  },
+  "n4-restroom-formally-second-floor": {
+    "translation": "Les toilettes se trouvent au deuxième étage."
+  },
+  "n4-formally-classroom-here": {
+    "translation": "Voici la salle de classe."
+  },
+  "production-n4-elevator-formally-over-there": {
+    "translation": "L'ascenseur se trouve là-bas.",
+    "promptVocabularyHints": [
+      { "word": "ascenseur", "vocabularyIds": ["vocab-34751fd2b8b6"] }
+    ]
+  },
+  "production-n4-formally-todays-dish": {
+    "translation": "Voici le plat du jour.",
+    "promptVocabularyHints": [
+      { "word": "plat", "vocabularyIds": ["vocab-6ab8f730431c"] }
+    ]
+  },
+  "n4-productive-honorific-teacher-went-home": {
+    "translation": "Le professeur est déjà rentré chez lui."
+  },
+  "n4-productive-honorific-president-read-book": {
+    "translation": "Le président de l'entreprise a lu ce livre."
+  },
+  "production-n4-productive-honorific-teacher-write-letter": {
+    "translation": "Le professeur écrira une lettre.",
+    "promptVocabularyHints": [
+      { "word": "lettre", "vocabularyIds": ["vocab-8e7233a38df0"] }
+    ]
+  },
+  "production-n4-productive-honorific-teacher-waiting-outside": {
+    "translation": "Le professeur attend dehors.",
+    "promptVocabularyHints": [
+      { "word": "professeur", "vocabularyIds": ["vocab-497356cf0646"] }
+    ]
+  },
+  "n4-productive-humble-carry-luggage": {
+    "translation": "Je vais porter vos bagages."
+  },
+  "n4-productive-humble-guide-station": {
+    "translation": "Je vais vous guider jusqu'à la gare."
+  },
+  "production-n4-productive-humble-explain-schedule": {
+    "translation": "Je vais vous expliquer le programme.",
+    "promptVocabularyHints": [
+      { "word": "programme", "vocabularyIds": ["vocab-1b1b5806b28b"] }
+    ]
+  },
+  "production-n4-productive-humble-call-tomorrow": {
+    "translation": "Je téléphonerai au professeur demain.",
+    "promptVocabularyHints": [
+      { "word": "professeur", "vocabularyIds": ["vocab-497356cf0646"] }
+    ]
+  },
+  "n4-respectful-request-write-name": {
+    "translation": "Veuillez écrire votre nom ici."
+  },
+  "n4-respectful-request-wait-little": {
+    "translation": "Veuillez patienter un instant."
+  },
+  "production-n4-respectful-request-use-elevator": {
+    "translation": "Veuillez utiliser cet ascenseur.",
+    "promptVocabularyHints": [
+      { "word": "ascenseur", "vocabularyIds": ["vocab-34751fd2b8b6"] }
+    ]
+  },
+  "production-n4-respectful-request-read-book": {
+    "translation": "Veuillez lire ce livre.",
+    "promptVocabularyHints": [
+      { "word": "livre", "vocabularyIds": ["vocab-0ac038632611"] }
+    ]
+  },
+  "n4-special-honorific-teacher-arrived": {
+    "translation": "Le professeur est déjà arrivé."
+  },
+  "n4-special-honorific-what-teacher-said": {
+    "translation": "Qu'a dit le professeur ?"
+  },
+  "production-n4-special-honorific-president-eat-lunch": {
+    "translation": "Le président de l'entreprise déjeunera ici.",
+    "promptVocabularyHints": [
+      { "word": "déjeunera", "vocabularyIds": ["vocab-91b2f0a8bfc1"] }
+    ]
+  },
+  "production-n4-special-honorific-teacher-looked-photo": {
+    "translation": "Le professeur a regardé cette photo.",
+    "promptVocabularyHints": [
+      { "word": "photo", "vocabularyIds": ["vocab-d5901ecbf5fb"] }
+    ]
+  },
+  "n4-special-humble-go-company-tomorrow": {
+    "translation": "J'irai à l'entreprise demain."
+  },
+  "n4-special-humble-be-company": {
+    "translation": "Je suis à l'entreprise."
+  },
+  "production-n4-special-humble-look-documents": {
+    "translation": "Je vais consulter les documents.",
+    "promptVocabularyHints": [
+      { "word": "documents", "vocabularyIds": ["vocab-58e891bce783"] }
+    ]
+  },
+  "production-n4-special-humble-do-immediately": {
+    "translation": "Je vais m'en occuper immédiatement.",
+    "promptVocabularyHints": [
+      { "word": "immédiatement", "vocabularyIds": ["vocab-86f4d5b7a565"] }
+    ]
+  },
+  "n4-childhood-played-river": {
+    "translation": "Quand j'étais enfant, je jouais souvent au bord de la rivière."
+  },
+  "n4-when-came-japan-did-not-understand": {
+    "translation": "À l'époque où je suis arrivé au Japon, je ne comprenais pas le japonais."
+  },
+  "production-n4-student-days-lived-kyoto": {
+    "translation": "Quand j'étais étudiant, j'habitais à Kyoto.",
+    "promptVocabularyHints": [
+      { "word": "Kyoto", "vocabularyIds": ["vocab-62153df2c4e3"] }
+    ]
+  },
+  "production-n4-when-started-job-busy": {
+    "translation": "À l'époque où j'ai commencé ce travail, j'étais très occupé.",
+    "promptVocabularyHints": [
+      { "word": "travail", "vocabularyIds": ["vocab-cdf28ddaf837"] }
+    ]
+  },
+  "n4-knife-used-cut-fruit-purpose": {
+    "translation": "Ce couteau sert à couper des fruits."
+  },
+  "n4-dictionary-useful-study-japanese-purpose": {
+    "translation": "Ce dictionnaire est pratique pour étudier le japonais."
+  },
+  "production-n4-bag-useful-carry-books-purpose": {
+    "translation": "Ce sac est pratique pour transporter des livres.",
+    "promptVocabularyHints": [
+      { "word": "sac", "vocabularyIds": ["vocab-704870bca266"] }
+    ]
+  },
+  "production-n4-hour-clean-room-purpose": {
+    "translation": "Il faut une heure pour nettoyer cette chambre.",
+    "promptVocabularyHints": [
+      { "word": "chambre", "vocabularyIds": ["vocab-23523bbf8d9c"] }
+    ]
+  },
+  "n4-bus-does-not-come-easily": {
+    "translation": "Le bus met beaucoup de temps à arriver."
+  },
+  "n4-homework-does-not-finish-easily": {
+    "translation": "Je n'arrive pas facilement à finir mes devoirs."
+  },
+  "production-n4-explanation-not-understand-easily": {
+    "translation": "Je n'arrive pas facilement à comprendre cette explication.",
+    "promptVocabularyHints": [
+      { "word": "explication", "vocabularyIds": ["vocab-9683551a843c"] }
+    ]
+  },
+  "production-n4-key-not-found-easily": {
+    "translation": "Je n'arrive pas facilement à trouver ma clé.",
+    "promptVocabularyHints": [
+      { "word": "clé", "vocabularyIds": ["vocab-dd7cf58e61fa"] }
+    ]
+  },
+  "n4-cloud-looks-like-dog": {
+    "translation": "Ce nuage ressemble à un chien."
+  },
+  "n4-he-looks-well": {
+    "translation": "Il a l'air en forme."
+  },
+  "production-n4-building-looks-like-school": {
+    "translation": "Ce bâtiment-là ressemble à une école.",
+    "promptVocabularyHints": [
+      { "word": "bâtiment", "vocabularyIds": ["vocab-b11f169893fb"] }
+    ]
+  },
+  "production-n4-room-looks-clean": {
+    "translation": "Cette chambre a l'air propre.",
+    "promptVocabularyHints": [
+      { "word": "chambre", "vocabularyIds": ["vocab-23523bbf8d9c"] }
+    ]
+  },
+  "n4-hard-to-tell-teacher": {
+    "translation": "C'est difficile à dire au professeur."
+  },
+  "n4-shoes-hard-to-walk-in": {
+    "translation": "Il est difficile de marcher avec ces chaussures."
+  },
+  "production-n4-name-hard-to-remember": {
+    "translation": "Ce nom est difficile à retenir.",
+    "promptVocabularyHints": [
+      { "word": "nom", "vocabularyIds": ["vocab-09558b341dc0"] }
+    ]
+  },
+  "production-n4-question-hard-to-ask": {
+    "translation": "Cette question est difficile à poser.",
+    "promptVocabularyHints": [
+      { "word": "question", "vocabularyIds": ["vocab-f5d831590911"] }
+    ]
+  },
+  "n4-writing-name-was-enough": {
+    "translation": "Il a suffi d'écrire mon nom."
+  },
+  "n4-did-not-need-buy-umbrella": {
+    "translation": "Je n'ai finalement pas eu besoin d'acheter de parapluie aujourd'hui."
+  },
+  "production-n4-watch-repair-cost-thousand": {
+    "translation": "Réparer la montre n'a coûté que mille yens.",
+    "promptVocabularyHints": [
+      { "word": "montre", "vocabularyIds": ["vocab-4754cbccd601"] }
+    ]
+  },
+  "production-n4-one-phone-call-enough": {
+    "translation": "Un seul appel téléphonique a suffi.",
+    "promptVocabularyHints": [
+      { "word": "téléphonique", "vocabularyIds": ["vocab-24df87472770"] }
+    ]
+  },
+  "n4-wonder-sunny-tomorrow": {
+    "translation": "Je me demande s'il fera beau demain."
+  },
+  "n4-wonder-shop-still-open": {
+    "translation": "Je me demande si ce magasin est encore ouvert."
+  },
+  "production-n4-wonder-train-coming-soon": {
+    "translation": "Je me demande si le train arrivera bientôt.",
+    "promptVocabularyHints": [
+      { "word": "train", "vocabularyIds": ["vocab-dc7f5fc156cf"] }
+    ]
+  },
+  "production-n4-wonder-what-give-mother": {
+    "translation": "Je me demande quoi offrir à ma mère.",
+    "promptVocabularyHints": [
+      { "word": "mère", "vocabularyIds": ["vocab-7fa86c660a00"] }
+    ]
+  },
+  "n4-kashira-where-put-key": {
+    "translation": "Je me demande où j'ai mis la clé."
+  },
+  "n4-kashira-exam-difficult": {
+    "translation": "Je me demande si l'examen de demain sera difficile."
+  },
+  "production-n4-kashira-restaurant-open": {
+    "translation": "Je me demande si ce restaurant-là est ouvert.",
+    "promptVocabularyHints": [
+      { "word": "restaurant", "vocabularyIds": ["vocab-61c233ab6a5e"] }
+    ]
+  },
+  "production-n4-kashira-who-person-is": {
+    "translation": "Je me demande qui est cette personne-là.",
+    "promptVocabularyHints": [
+      { "word": "personne", "vocabularyIds": ["vocab-ad7167347a2a"] }
+    ]
+  },
+  "n4-kai-coming-together": {
+    "translation": "Tu viens aussi ?"
+  },
+  "n4-kai-homework-finished": {
+    "translation": "Tu as déjà fini tes devoirs ?"
+  },
+  "production-n4-kai-know-person": {
+    "translation": "Tu connais cette personne ?",
+    "promptVocabularyHints": [
+      { "word": "personne", "vocabularyIds": ["vocab-ad7167347a2a"] }
+    ]
+  },
+  "production-n4-kai-busy-today": {
+    "translation": "Tu es occupé aujourd'hui ?",
+    "promptVocabularyHints": [
+      { "word": "occupé", "vocabularyIds": ["vocab-5ee54e973899"] }
+    ]
+  },
+  "n4-isnt-he-teacher": {
+    "translation": "Cette personne-là n'est-elle pas professeur ?"
+  },
+  "n4-cold-today-isnt-it": {
+    "translation": "Il fait froid aujourd'hui, tu ne trouves pas ?"
+  },
+  "production-n4-lets-go-home-together": {
+    "translation": "Rentrons ensemble, d'accord ?",
+    "promptVocabularyHints": [
+      { "word": "Rentrons", "vocabularyIds": ["vocab-944f21154c78"] }
+    ]
+  },
+  "production-n4-isnt-tomorrow-sunday": {
+    "translation": "Demain, ce n'est pas dimanche ?",
+    "promptVocabularyHints": [
+      { "word": "dimanche", "vocabularyIds": ["vocab-b7519a0f57a7"] }
+    ]
   }
 }

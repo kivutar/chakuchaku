@@ -84,15 +84,39 @@ the N5 curricula published by Bunpro, JLPT Sensei, and Yatta. `boundary` keeps
 useful points that sources variously place at N5 or N4 without presenting them
 as undisputed N5 requirements.
 
-The live N4 slice contains 33 high-value points and 101 independently authored
+The live N4 slice contains 98 high-value points and 361 independently authored
 recognition and production exercises. Alongside the original volitional,
 potential, passive, decision, expectation, ease, movement, time, and `～なら`
 points, it now covers the causative, causative-passive, direct imperative,
 `～ば`, `～ばよかった`, `～たらどう`, transitive/intransitive verb pairs,
 necessity, `～なさい`, the three `～よう` patterns, `～ておく`, compound verbs
 with `始める`, `終わる`, `続ける`, and `出す`, and apparent desire with
-`～たがる`.
-It is a conservative intersection
+`～たがる`. It also distinguishes observable feelings with `～がる` and
+`～がり`, wishes involving another person, action-based thanks and apologies,
+and very polite requests. The latest slice adds satisfaction with `～てよかった`,
+the deliberately familiar `～てやる`, deadlines with `～までに`, and the three
+immediate phases expressed by `～ところだ`. It now also contrasts recent
+events with `～たばかり`, unchanged states with `～まま`, regular intervals,
+appearance modifiers, inference with `～ようだ`, and resemblance with
+`～ような／ように`. The newest batch separates conversational resemblance or
+inference with `～みたい`, reported impressions with `～らしい`, unexpected
+contrast with `～のに`, conditions that do not change the result with `～ても`,
+and the purpose and causal uses of `～ために`. The latest batch adds hopes with
+`～といい`, focused explanations with
+`～のは～だ`, quoted facts with `～ということ`, reported instructions with
+`～ように言う`, productive adjective nouns in `～さ`, and both the approximate
+and degree uses of `ほど`. It also covers exclusive repetition with `ばかり`,
+sufficient conditions with `だけで`, informal examples with `とか`, perceived
+sensations with `～がする`, and the material distinction between `で` and
+`から`. The current slice adds `場合は`, scheduled plans, questions asking
+what one should do, nominal necessity with `が必要`, and both affirmative and
+negative connective causes. It now also contrasts personal policies with
+established rules, natural
+visibility with audibility, and the humble `～ていただく` viewpoint with the
+honorific benefactive `～てくださる`. The keigo slice now separates the overall
+honorific and humble systems from
+their productive forms, conventional special verbs, respectful requests, and
+the formal `ございます` copula. It is a conservative intersection
 informed by the official N4 test-purpose description and the N4 curricula
 published by Bunpro and JLPT Sensei; it is not presented as an official
 itemized list:
@@ -102,10 +126,10 @@ itemized list:
 - https://jlptsensei.com/jlpt-n4-grammar-list/
 
 `source/n4-grammar-inventory.json` records the complete editorial audit before
-the remaining points enter the live SRS. It currently maps 70 semantic families
-to grammar already taught by ChakuChaku and defines 65 missing points: 50 core
-and 15 boundary items. The companion French catalogue contains original names
-and learning objectives for every planned point. Candidates that are lexical,
+the remaining points enter the live SRS. It currently maps 135 semantic families
+to grammar already taught by ChakuChaku and defines 0 missing points: 0 core
+and 0 boundary items. The companion French catalogue mirrors original names
+and learning objectives while a point remains planned. Candidates that are lexical,
 already produced by simpler rules, or insufficiently supported are retained in
 the audit with an explicit reason instead of silently disappearing.
 
