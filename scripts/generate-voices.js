@@ -82,7 +82,7 @@ const conjugationSpeechConfiguration = {
 };
 
 const usage = `Usage: npm run voices -- [--limit COUNT] [--id ID] [--force]
-       npm run voices:vocabulary -- (--limit COUNT | --all | --coverage)
+       npm run voices:vocabulary -- [--level LEVEL] (--limit COUNT | --all | --coverage)
        npm run voices:conjugation -- (--limit COUNT | --all | --id ID)
 
 Options:
@@ -93,6 +93,8 @@ Options:
   --all          Generate every missing voice. Required instead of an implicit
                  unlimited run when targeting vocabulary or conjugation.
   --coverage     Report vocabulary voice coverage without generating audio.
+  --level LEVEL  Limit vocabulary generation or coverage to entries introduced
+                 at one JLPT level (for example, n4).
   --target KIND  Select lessons, vocabulary, or conjugation. Defaults to lessons.
   --help         Show this help.`;
 
@@ -120,6 +122,8 @@ export function parseVoiceGenerationArguments(arguments_) {
   let hasItemId = false;
   let force = false;
   let coverageOnly = false;
+  let level;
+  let hasLevel = false;
   let showHelp = false;
 
   for (let index = 0; index < arguments_.length; index += 1) {
@@ -211,6 +215,24 @@ export function parseVoiceGenerationArguments(arguments_) {
       continue;
     }
 
+    if (argument === "--level" || argument.startsWith("--level=")) {
+      if (hasLevel) {
+        throw new Error("--level may only be provided once.");
+      }
+
+      const value = argument === "--level"
+        ? arguments_[index += 1]
+        : argument.slice("--level=".length);
+
+      if (typeof value !== "string" || !/^n[1-5]$/u.test(value)) {
+        throw new Error("--level needs a JLPT level from n5 to n1.");
+      }
+
+      level = value;
+      hasLevel = true;
+      continue;
+    }
+
     throw new Error(`Unknown option: ${argument}`);
   }
 
@@ -226,12 +248,20 @@ export function parseVoiceGenerationArguments(arguments_) {
     throw new Error("--coverage cannot be combined with --id.");
   }
 
+  if (hasLevel && hasItemId) {
+    throw new Error("--level cannot be combined with --id.");
+  }
+
   if (force && !hasItemId) {
     throw new Error("--force requires --id.");
   }
 
   if (!showHelp && coverageOnly && target !== voiceTargets.vocabulary) {
     throw new Error("--coverage is only available for vocabulary voices.");
+  }
+
+  if (!showHelp && hasLevel && target !== voiceTargets.vocabulary) {
+    throw new Error("--level is only available for vocabulary voices.");
   }
 
   if (
@@ -252,6 +282,7 @@ export function parseVoiceGenerationArguments(arguments_) {
     showHelp,
     target,
     ...(itemId ? { itemId } : {}),
+    ...(level ? { level } : {}),
     ...(force ? { force } : {})
   };
 }
@@ -546,11 +577,22 @@ async function readVoiceFileSizes() {
 }
 
 export async function inspectVocabularyVoiceFiles(vocabulary, {
+  validateM4a,
+  voiceFileSizes,
+  warn
+} = {}) {
+  return inspectVocabularyVoiceItems(createVocabularyVoiceItems(vocabulary), {
+    validateM4a,
+    voiceFileSizes,
+    warn
+  });
+}
+
+async function inspectVocabularyVoiceItems(entries, {
   validateM4a = validateLessonM4a,
   voiceFileSizes,
   warn = console.warn
 } = {}) {
-  const entries = createVocabularyVoiceItems(vocabulary);
   const resolvedVoiceFileSizes = voiceFileSizes || await readVoiceFileSizes();
   const voiceFiles = new Map();
 
@@ -581,7 +623,10 @@ export async function inspectVocabularyVoiceFiles(vocabulary, {
 }
 
 export function summarizeVocabularyVoiceCoverage(vocabulary, voiceFiles = new Map()) {
-  const entries = createVocabularyVoiceItems(vocabulary);
+  return summarizeVocabularyVoiceItems(createVocabularyVoiceItems(vocabulary), voiceFiles);
+}
+
+function summarizeVocabularyVoiceItems(entries, voiceFiles = new Map()) {
   const summary = {
     core: { available: 0, total: 0 },
     supplemental: { available: 0, total: 0 },
@@ -641,10 +686,10 @@ export function formatVocabularyVoiceCoverage(summary) {
   ].join("\n");
 }
 
-async function reportVocabularyVoiceCoverage(vocabulary) {
-  const summary = summarizeVocabularyVoiceCoverage(
-    vocabulary,
-    await inspectVocabularyVoiceFiles(vocabulary)
+async function reportVocabularyVoiceCoverage(entries) {
+  const summary = summarizeVocabularyVoiceItems(
+    entries,
+    await inspectVocabularyVoiceItems(entries)
   );
 
   console.log(formatVocabularyVoiceCoverage(summary));
@@ -677,6 +722,7 @@ export async function generateVoices({
   generateAll = false,
   generationLimit = Number.POSITIVE_INFINITY,
   itemId,
+  level,
   target = voiceTargets.lessons
 } = {}) {
   if (!Object.values(voiceTargets).includes(target)) {
@@ -685,6 +731,10 @@ export async function generateVoices({
 
   if (force && !itemId) {
     throw new Error("Forced voice generation requires one item ID.");
+  }
+
+  if (level && (target !== voiceTargets.vocabulary || !/^n[1-5]$/u.test(level))) {
+    throw new Error("A valid level is only available for vocabulary voices.");
   }
 
   if (
@@ -706,9 +756,12 @@ export async function generateVoices({
     : target === voiceTargets.conjugation
       ? await readConjugationSources()
       : await readLessonSources();
-  const selectedItems = itemId
-    ? items.filter((item) => item.id === itemId)
+  const levelItems = level
+    ? items.filter((item) => item.introducedAt === level)
     : items;
+  const selectedItems = itemId
+    ? levelItems.filter((item) => item.id === itemId)
+    : levelItems;
 
   if (itemId && selectedItems.length !== 1) {
     throw new Error(`Voice item not found: ${itemId}`);
@@ -719,7 +772,7 @@ export async function generateVoices({
       throw new Error("Coverage-only mode is available only for vocabulary voices.");
     }
 
-    await reportVocabularyVoiceCoverage(items);
+    await reportVocabularyVoiceCoverage(selectedItems);
     return 0;
   }
 
@@ -832,7 +885,7 @@ export async function generateVoices({
   }
 
   if (target === voiceTargets.vocabulary) {
-    await reportVocabularyVoiceCoverage(items);
+    await reportVocabularyVoiceCoverage(selectedItems);
   }
 
   return generatedVoiceCount;

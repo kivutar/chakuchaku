@@ -87,6 +87,24 @@ test("vocabulary voice generation requires an explicit spending boundary", () =>
       target: "vocabulary"
     }
   );
+  assert.deepEqual(
+    parseVoiceGenerationArguments([
+      "--target",
+      "vocabulary",
+      "--level",
+      "n4",
+      "--limit",
+      "10"
+    ]),
+    {
+      coverageOnly: false,
+      generateAll: false,
+      generationLimit: 10,
+      level: "n4",
+      showHelp: false,
+      target: "vocabulary"
+    }
+  );
 });
 
 test("conjugation voice generation requires a limit and accepts exact item selection", () => {
@@ -177,6 +195,11 @@ test("voice generation rejects unsafe limits and unknown options", () => {
     ["--coverage", "--limit", "1"],
     ["--coverage"],
     ["--coverage", "--id", "one"],
+    ["--level"],
+    ["--level", "n0", "--target", "vocabulary", "--limit", "1"],
+    ["--level", "n4", "--level", "n5", "--target", "vocabulary", "--limit", "1"],
+    ["--level", "n4", "--id", "one", "--target", "vocabulary"],
+    ["--level", "n4", "--limit", "1"],
     ["--force"],
     ["--id"],
     ["--id", "../unsafe"],
