@@ -26,6 +26,10 @@ class MemoryStorage {
   }
 }
 
+test("progress imports allow backups up to 64 MiB", () => {
+  assert.equal(globalThis.JlptN5Progress.maximumImportBytes, 64 * 1024 * 1024);
+});
+
 test("progress backups round-trip learning data without session secrets", () => {
   const sourceStorage = new MemoryStorage();
   const reviewedAt = "2026-08-19T10:00:00.000Z";

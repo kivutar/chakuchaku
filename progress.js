@@ -3,7 +3,7 @@
 
   const format = "chakuchaku-progress";
   const schemaVersion = 1;
-  const maximumImportBytes = 10 * 1024 * 1024;
+  const maximumImportBytes = 64 * 1024 * 1024;
 
   function createProgressError(message, code, options) {
     const error = new Error(message, options);
