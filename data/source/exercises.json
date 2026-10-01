@@ -11067,6 +11067,7 @@
     "text": "My father made my younger brother clean the room.",
     "solution": "父は弟に部屋を掃除させました。",
     "type": "production",
+    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "せ": {
         "category": "auxiliary"
@@ -11472,6 +11473,7 @@
     "text": "I need to do my homework today.",
     "solution": "今日、宿題をする必要があります。",
     "type": "production",
+    "skipVoiceGeneration": true,
     "promptVocabularyHints": [
       {
         "word": "homework",
@@ -11833,6 +11835,7 @@
     "text": "She finished writing the letter.",
     "solution": "彼女は手紙を書き終わりました。",
     "type": "production",
+    "skipVoiceGeneration": true,
     "promptVocabularyHints": [
       {
         "word": "writing",
@@ -12691,6 +12694,7 @@
     "text": "I have just bought this book.",
     "solution": "今、この本を買ったところです。",
     "type": "production",
+    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "ところ": {
         "category": "auxiliary"
@@ -12859,6 +12863,7 @@
     "text": "Please take a break every hour.",
     "solution": "一時間おきに休んでください。",
     "type": "production",
+    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "おき": {
         "category": "auxiliary"
@@ -14231,6 +14236,7 @@
     "text": "I plan to meet my friend tomorrow.",
     "solution": "明日、友達に会う予定です。",
     "type": "production",
+    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "予定": {
         "category": "auxiliary"
@@ -14251,6 +14257,7 @@
     "text": "The new shop is scheduled to open next week.",
     "solution": "新しい店は来週開く予定です。",
     "type": "production",
+    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "予定": {
         "category": "auxiliary"
@@ -14990,6 +14997,7 @@
     "text": "Around the time I started this job, I was very busy.",
     "solution": "この仕事を始めた頃、とても忙しかったです。",
     "type": "production",
+    "skipVoiceGeneration": true,
     "tokenOverrides": { "頃": { "category": "auxiliary" } },
     "promptVocabularyHints": [
       { "word": "job", "vocabularyIds": ["vocab-cdf28ddaf837"] }

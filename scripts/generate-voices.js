@@ -81,7 +81,7 @@ const conjugationSpeechConfiguration = {
     "translations. Begin speaking immediately and stop immediately after the word."
 };
 
-const usage = `Usage: npm run voices -- [--limit COUNT] [--id ID] [--force]
+const usage = `Usage: npm run voices -- [--level LEVEL] [--exercise-type TYPE] [--limit COUNT] [--id ID] [--force]
        npm run voices:vocabulary -- [--level LEVEL] (--limit COUNT | --all | --coverage)
        npm run voices:conjugation -- (--limit COUNT | --all | --id ID)
 
@@ -93,8 +93,10 @@ Options:
   --all          Generate every missing voice. Required instead of an implicit
                  unlimited run when targeting vocabulary or conjugation.
   --coverage     Report vocabulary voice coverage without generating audio.
-  --level LEVEL  Limit vocabulary generation or coverage to entries introduced
-                 at one JLPT level (for example, n4).
+  --level LEVEL  Limit lesson or vocabulary generation to one JLPT level
+                 (for example, n4). Vocabulary coverage can also be filtered.
+  --exercise-type TYPE
+                 Limit lesson generation to production or recognition exercises.
   --target KIND  Select lessons, vocabulary, or conjugation. Defaults to lessons.
   --help         Show this help.`;
 
@@ -124,6 +126,8 @@ export function parseVoiceGenerationArguments(arguments_) {
   let coverageOnly = false;
   let level;
   let hasLevel = false;
+  let exerciseType;
+  let hasExerciseType = false;
   let showHelp = false;
 
   for (let index = 0; index < arguments_.length; index += 1) {
@@ -233,6 +237,24 @@ export function parseVoiceGenerationArguments(arguments_) {
       continue;
     }
 
+    if (argument === "--exercise-type" || argument.startsWith("--exercise-type=")) {
+      if (hasExerciseType) {
+        throw new Error("--exercise-type may only be provided once.");
+      }
+
+      const value = argument === "--exercise-type"
+        ? arguments_[index += 1]
+        : argument.slice("--exercise-type=".length);
+
+      if (!["production", "recognition"].includes(value)) {
+        throw new Error("--exercise-type must be production or recognition.");
+      }
+
+      exerciseType = value;
+      hasExerciseType = true;
+      continue;
+    }
+
     throw new Error(`Unknown option: ${argument}`);
   }
 
@@ -252,6 +274,10 @@ export function parseVoiceGenerationArguments(arguments_) {
     throw new Error("--level cannot be combined with --id.");
   }
 
+  if (hasExerciseType && hasItemId) {
+    throw new Error("--exercise-type cannot be combined with --id.");
+  }
+
   if (force && !hasItemId) {
     throw new Error("--force requires --id.");
   }
@@ -260,8 +286,12 @@ export function parseVoiceGenerationArguments(arguments_) {
     throw new Error("--coverage is only available for vocabulary voices.");
   }
 
-  if (!showHelp && hasLevel && target !== voiceTargets.vocabulary) {
-    throw new Error("--level is only available for vocabulary voices.");
+  if (!showHelp && hasLevel && target === voiceTargets.conjugation) {
+    throw new Error("--level is not yet available for conjugation voices.");
+  }
+
+  if (!showHelp && hasExerciseType && target !== voiceTargets.lessons) {
+    throw new Error("--exercise-type is only available for lesson voices.");
   }
 
   if (
@@ -281,6 +311,7 @@ export function parseVoiceGenerationArguments(arguments_) {
     generationLimit,
     showHelp,
     target,
+    ...(exerciseType ? { exerciseType } : {}),
     ...(itemId ? { itemId } : {}),
     ...(level ? { level } : {}),
     ...(force ? { force } : {})
@@ -468,6 +499,16 @@ async function readLessonSources() {
   ]);
 
   return [JSON.parse(introduction), ...JSON.parse(exercises)];
+}
+
+export function getLessonVoiceLevel(item) {
+  if (/^n[1-5]$/u.test(item?.minimumLevel || "")) {
+    return item.minimumLevel;
+  }
+
+  const idLevel = String(item?.id || "").match(/(?:^|-)n([1-5])(?:-|$)/u);
+
+  return idLevel ? `n${idLevel[1]}` : "n5";
 }
 
 export function createVocabularyVoiceItems(vocabulary) {
@@ -718,6 +759,7 @@ export async function processVoiceGenerationBatch(
 
 export async function generateVoices({
   coverageOnly = false,
+  exerciseType,
   force = false,
   generateAll = false,
   generationLimit = Number.POSITIVE_INFINITY,
@@ -733,8 +775,18 @@ export async function generateVoices({
     throw new Error("Forced voice generation requires one item ID.");
   }
 
-  if (level && (target !== voiceTargets.vocabulary || !/^n[1-5]$/u.test(level))) {
-    throw new Error("A valid level is only available for vocabulary voices.");
+  if (
+    level &&
+    (!/^n[1-5]$/u.test(level) || target === voiceTargets.conjugation)
+  ) {
+    throw new Error("A valid level is only available for lesson and vocabulary voices.");
+  }
+
+  if (
+    exerciseType &&
+    (target !== voiceTargets.lessons || !["production", "recognition"].includes(exerciseType))
+  ) {
+    throw new Error("A valid exercise type is only available for lesson voices.");
   }
 
   if (
@@ -757,11 +809,18 @@ export async function generateVoices({
       ? await readConjugationSources()
       : await readLessonSources();
   const levelItems = level
-    ? items.filter((item) => item.introducedAt === level)
+    ? items.filter((item) => (
+      target === voiceTargets.lessons
+        ? getLessonVoiceLevel(item) === level
+        : item.introducedAt === level
+    ))
     : items;
-  const selectedItems = itemId
-    ? levelItems.filter((item) => item.id === itemId)
+  const exerciseTypeItems = exerciseType
+    ? levelItems.filter((item) => (item.type || "recognition") === exerciseType)
     : levelItems;
+  const selectedItems = itemId
+    ? exerciseTypeItems.filter((item) => item.id === itemId)
+    : exerciseTypeItems;
 
   if (itemId && selectedItems.length !== 1) {
     throw new Error(`Voice item not found: ${itemId}`);

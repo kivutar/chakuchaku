@@ -8,6 +8,7 @@ import {
   createVocabularySpeechRequest,
   createVocabularyVoiceItems,
   formatVocabularyVoiceCoverage,
+  getLessonVoiceLevel,
   inspectVocabularyVoiceFiles,
   parseVoiceGenerationArguments,
   processVoiceGenerationBatch,
@@ -28,6 +29,35 @@ test("voice generation accepts small request limits", () => {
   assert.equal(parseVoiceGenerationArguments(["--limit", "1"]).generationLimit, 1);
   assert.equal(parseVoiceGenerationArguments(["--limit=2"]).generationLimit, 2);
   assert.equal(parseVoiceGenerationArguments(["--limit", "3"]).generationLimit, 3);
+});
+
+test("lesson voice levels use explicit metadata and stable exercise IDs", () => {
+  assert.equal(getLessonVoiceLevel({ id: "introduction", minimumLevel: "n5" }), "n5");
+  assert.equal(getLessonVoiceLevel({ id: "production-n4-example" }), "n4");
+  assert.equal(getLessonVoiceLevel({ id: "legacy-example" }), "n5");
+  assert.equal(
+    parseVoiceGenerationArguments(["--level", "n4", "--limit", "10"]).level,
+    "n4"
+  );
+  assert.deepEqual(
+    parseVoiceGenerationArguments([
+      "--level",
+      "n4",
+      "--exercise-type",
+      "production",
+      "--limit",
+      "10"
+    ]),
+    {
+      coverageOnly: false,
+      exerciseType: "production",
+      generateAll: false,
+      generationLimit: 10,
+      level: "n4",
+      showHelp: false,
+      target: "lessons"
+    }
+  );
 });
 
 test("voice generation can safely force one exact item", () => {
@@ -199,7 +229,12 @@ test("voice generation rejects unsafe limits and unknown options", () => {
     ["--level", "n0", "--target", "vocabulary", "--limit", "1"],
     ["--level", "n4", "--level", "n5", "--target", "vocabulary", "--limit", "1"],
     ["--level", "n4", "--id", "one", "--target", "vocabulary"],
-    ["--level", "n4", "--limit", "1"],
+    ["--level", "n4", "--target", "conjugation", "--limit", "1"],
+    ["--exercise-type"],
+    ["--exercise-type", "other", "--limit", "1"],
+    ["--exercise-type", "production", "--exercise-type", "recognition", "--limit", "1"],
+    ["--exercise-type", "production", "--id", "one"],
+    ["--exercise-type", "production", "--target", "vocabulary", "--limit", "1"],
     ["--force"],
     ["--id"],
     ["--id", "../unsafe"],
