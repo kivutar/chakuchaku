@@ -8,6 +8,7 @@ import {
   createVocabularySpeechRequest,
   createVocabularyVoiceItems,
   formatVocabularyVoiceCoverage,
+  getConjugationVoiceLevel,
   getLessonVoiceLevel,
   inspectVocabularyVoiceFiles,
   parseVoiceGenerationArguments,
@@ -143,11 +144,17 @@ test("conjugation voice generation requires a limit and accepts exact item selec
     /requires --limit COUNT or explicit --all/u
   );
   assert.deepEqual(
-    parseVoiceGenerationArguments(["--target=conjugation", "--limit", "100"]),
+    parseVoiceGenerationArguments([
+      "--target=conjugation",
+      "--level=n4",
+      "--limit",
+      "100"
+    ]),
     {
       coverageOnly: false,
       generateAll: false,
       generationLimit: 100,
+      level: "n4",
       showHelp: false,
       target: "conjugation"
     }
@@ -157,6 +164,21 @@ test("conjugation voice generation requires a limit and accepts exact item selec
       .itemId,
     "conjugation-example"
   );
+});
+
+test("conjugation voice levels combine the word and form requirements", () => {
+  assert.equal(getConjugationVoiceLevel({
+    conjugationPointId: "godan-polite-present",
+    introducedAt: "n5"
+  }), "n5");
+  assert.equal(getConjugationVoiceLevel({
+    conjugationPointId: "godan-potential",
+    introducedAt: "n5"
+  }), "n4");
+  assert.equal(getConjugationVoiceLevel({
+    conjugationPointId: "godan-polite-present",
+    introducedAt: "n3"
+  }), "n3");
 });
 
 test("conjugation voice items and requests use the actual inflected reading", () => {
@@ -229,7 +251,6 @@ test("voice generation rejects unsafe limits and unknown options", () => {
     ["--level", "n0", "--target", "vocabulary", "--limit", "1"],
     ["--level", "n4", "--level", "n5", "--target", "vocabulary", "--limit", "1"],
     ["--level", "n4", "--id", "one", "--target", "vocabulary"],
-    ["--level", "n4", "--target", "conjugation", "--limit", "1"],
     ["--exercise-type"],
     ["--exercise-type", "other", "--limit", "1"],
     ["--exercise-type", "production", "--exercise-type", "recognition", "--limit", "1"],

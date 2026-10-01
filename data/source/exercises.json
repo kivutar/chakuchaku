@@ -12335,6 +12335,7 @@
     "id": "n4-polite-ask-carry-luggage",
     "text": "この荷物を持っていただけませんか。",
     "solution": "Could you please carry this luggage?",
+    "skipVoiceGeneration": true,
     "grammarPointIds": [
       "te-itadakemasen-ka",
       "o-object"
@@ -12573,6 +12574,7 @@
     "id": "n4-currently-eating-lunch",
     "text": "今、昼御飯を食べているところです。",
     "solution": "I am right in the middle of eating lunch.",
+    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "ところ": {
         "category": "auxiliary"
@@ -12723,6 +12725,7 @@
     "id": "n4-only-just-started-job",
     "text": "この仕事を始めたばかりです。",
     "solution": "I only just started this job.",
+    "skipVoiceGeneration": true,
     "grammarPointIds": [
       "ta-bakari",
       "o-object"
@@ -12832,6 +12835,7 @@
     "id": "n4-take-medicine-every-six-hours",
     "text": "この薬を六時間おきに飲みます。",
     "solution": "I take this medicine every six hours.",
+    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "おき": {
         "category": "auxiliary"
@@ -13053,6 +13057,7 @@
     "id": "n4-cloud-looks-like-fish",
     "text": "あの雲は魚みたいです。",
     "solution": "That cloud looks like a fish.",
+    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "みたい": {
         "category": "auxiliary"
@@ -14002,6 +14007,7 @@
     "id": "n4-desk-made-of-wood",
     "text": "この机は木でできています。",
     "solution": "This desk is made of wood.",
+    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "でき": {
         "category": "auxiliary"

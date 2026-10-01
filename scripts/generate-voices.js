@@ -93,8 +93,9 @@ Options:
   --all          Generate every missing voice. Required instead of an implicit
                  unlimited run when targeting vocabulary or conjugation.
   --coverage     Report vocabulary voice coverage without generating audio.
-  --level LEVEL  Limit lesson or vocabulary generation to one JLPT level
-                 (for example, n4). Vocabulary coverage can also be filtered.
+  --level LEVEL  Limit lesson, vocabulary, or conjugation generation to one
+                 JLPT level (for example, n4). Vocabulary coverage can also
+                 be filtered.
   --exercise-type TYPE
                  Limit lesson generation to production or recognition exercises.
   --target KIND  Select lessons, vocabulary, or conjugation. Defaults to lessons.
@@ -284,10 +285,6 @@ export function parseVoiceGenerationArguments(arguments_) {
 
   if (!showHelp && coverageOnly && target !== voiceTargets.vocabulary) {
     throw new Error("--coverage is only available for vocabulary voices.");
-  }
-
-  if (!showHelp && hasLevel && target === voiceTargets.conjugation) {
-    throw new Error("--level is not yet available for conjugation voices.");
   }
 
   if (!showHelp && hasExerciseType && target !== voiceTargets.lessons) {
@@ -509,6 +506,25 @@ export function getLessonVoiceLevel(item) {
   const idLevel = String(item?.id || "").match(/(?:^|-)n([1-5])(?:-|$)/u);
 
   return idLevel ? `n${idLevel[1]}` : "n5";
+}
+
+export function getConjugationVoiceLevel(item) {
+  const point = globalThis.JlptN5Conjugation.points.find(({ id }) => {
+    return id === item?.conjugationPointId;
+  });
+  const levels = [item?.introducedAt, point?.introducedAt].filter((level) => {
+    return /^n[1-5]$/u.test(level || "");
+  });
+
+  if (levels.length === 0) {
+    return "n5";
+  }
+
+  return levels.reduce((requiredLevel, level) => {
+    return Number(level.slice(1)) < Number(requiredLevel.slice(1))
+      ? level
+      : requiredLevel;
+  });
 }
 
 export function createVocabularyVoiceItems(vocabulary) {
@@ -775,11 +791,8 @@ export async function generateVoices({
     throw new Error("Forced voice generation requires one item ID.");
   }
 
-  if (
-    level &&
-    (!/^n[1-5]$/u.test(level) || target === voiceTargets.conjugation)
-  ) {
-    throw new Error("A valid level is only available for lesson and vocabulary voices.");
+  if (level && !/^n[1-5]$/u.test(level)) {
+    throw new Error("Voice level must be a valid JLPT level.");
   }
 
   if (
@@ -812,7 +825,9 @@ export async function generateVoices({
     ? items.filter((item) => (
       target === voiceTargets.lessons
         ? getLessonVoiceLevel(item) === level
-        : item.introducedAt === level
+        : target === voiceTargets.conjugation
+          ? getConjugationVoiceLevel(item) === level
+          : item.introducedAt === level
     ))
     : items;
   const exerciseTypeItems = exerciseType
