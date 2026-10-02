@@ -129,5 +129,134 @@
       "tokenStart": 13,
       "tokenEnd": 15
     }
-  ]
+  ],
+  "levelVariants": {
+    "n4": {
+      "minimumLevel": "n4",
+      "text": "日本語能力試験N4のレッスンへようこそ。さあ、始めましょう。",
+      "audio": "assets/voices/grammar/introduction-n4.m4a",
+      "vocabularyIds": [
+        "vocab-e6870aa0d14e",
+        "vocab-8670a6307d15",
+        "vocab-0c4d68e2ec4d",
+        "vocab-dc8d0860b963",
+        "vocab-08531328812f",
+        "vocab-ce2f0119c88a",
+        "vocab-a98b98005ebd",
+        "vocab-79261a065ba5"
+      ],
+      "kanjiIds": [
+        "kanji-65e5",
+        "kanji-672c",
+        "kanji-8a9e",
+        "kanji-529b",
+        "kanji-8a66",
+        "kanji-9a13",
+        "kanji-59cb"
+      ],
+      "tokens": [
+        {
+          "surface": "日本語",
+          "category": "noun",
+          "reading": "にほんご",
+          "vocabularyId": "vocab-e6870aa0d14e"
+        },
+        {
+          "surface": "能力",
+          "category": "noun",
+          "reading": "のうりょく",
+          "vocabularyId": "vocab-8670a6307d15"
+        },
+        {
+          "surface": "試験",
+          "category": "noun",
+          "reading": "しけん",
+          "vocabularyId": "vocab-0c4d68e2ec4d"
+        },
+        {
+          "surface": "N",
+          "category": "noun"
+        },
+        {
+          "surface": "4",
+          "category": "noun",
+          "reading": "よん",
+          "vocabularyId": "vocab-dc8d0860b963"
+        },
+        {
+          "surface": "の",
+          "category": "particle",
+          "reading": "の"
+        },
+        {
+          "surface": "レッスン",
+          "category": "noun",
+          "reading": "れっすん",
+          "vocabularyId": "vocab-08531328812f"
+        },
+        {
+          "surface": "へ",
+          "category": "particle",
+          "reading": "へ"
+        },
+        {
+          "surface": "ようこそ",
+          "category": "interjection",
+          "reading": "ようこそ",
+          "vocabularyId": "vocab-ce2f0119c88a"
+        },
+        {
+          "surface": "。",
+          "reading": "。"
+        },
+        {
+          "surface": "さあ",
+          "category": "interjection",
+          "reading": "さあ",
+          "vocabularyId": "vocab-a98b98005ebd"
+        },
+        {
+          "surface": "、",
+          "reading": "、"
+        },
+        {
+          "surface": "始め",
+          "category": "verb",
+          "reading": "はじめ",
+          "vocabularyId": "vocab-79261a065ba5"
+        },
+        {
+          "surface": "ましょ",
+          "category": "auxiliary",
+          "reading": "ましょ"
+        },
+        {
+          "surface": "う",
+          "category": "auxiliary",
+          "reading": "う"
+        },
+        {
+          "surface": "。",
+          "reading": "。"
+        }
+      ],
+      "grammarHighlights": [
+        {
+          "grammarPointId": "no-possession",
+          "tokenStart": 5,
+          "tokenEnd": 6
+        },
+        {
+          "grammarPointId": "e-direction",
+          "tokenStart": 7,
+          "tokenEnd": 8
+        },
+        {
+          "grammarPointId": "mashou",
+          "tokenStart": 13,
+          "tokenEnd": 15
+        }
+      ]
+    }
+  }
 }

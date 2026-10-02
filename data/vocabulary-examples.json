@@ -21189,7 +21189,7 @@
     "vocabularyId": "vocab-d277559c27c1",
     "text": "えんぴつを2本ください。",
     "targetSurface": "2本",
-    "targetReading": "2ほん",
+    "targetReading": "にほん",
     "targetTokenStart": 2,
     "targetTokenEnd": 4,
     "translation": "Two pencils, please.",
@@ -21207,7 +21207,9 @@
       },
       {
         "surface": "2",
-        "category": "noun"
+        "category": "noun",
+        "reading": "に",
+        "vocabularyId": "vocab-7fc81b0ddd17"
       },
       {
         "surface": "本",
@@ -21334,7 +21336,9 @@
       },
       {
         "surface": "3",
-        "category": "noun"
+        "category": "noun",
+        "reading": "さん",
+        "vocabularyId": "vocab-1bedf722c04a"
       },
       {
         "surface": "枚",

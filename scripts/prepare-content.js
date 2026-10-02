@@ -601,7 +601,10 @@ function tokenizeLesson(lesson, vocabularyIndex, options = {}) {
         result.category = getDisplayCategory(selectedMatch.entry.partOfSpeech);
       }
 
-      if (selectedMatch.preferReading || generatedReading === "*") {
+      if (
+        tokenOverride?.reading === undefined &&
+        (selectedMatch.preferReading || generatedReading === "*")
+      ) {
         result.reading = selectedMatch.reading;
       }
 
@@ -1415,6 +1418,91 @@ try {
     curriculum
   );
   introduction.minimumLevel ||= introductionRequiredLevel;
+
+  if (
+    introductionSource.levelVariants !== undefined &&
+    (
+      !introductionSource.levelVariants ||
+      typeof introductionSource.levelVariants !== "object" ||
+      Array.isArray(introductionSource.levelVariants)
+    )
+  ) {
+    throw new Error("introduction: levelVariants must be an object.");
+  }
+
+  const levelVariants = {};
+  const requiredVariantLevels = curriculum.levels
+    .map(({ id }) => id)
+    .filter((level) => {
+      return curriculum.compareLevels(level, introduction.minimumLevel) > 0;
+    });
+  const missingVariantLevels = requiredVariantLevels.filter((level) => {
+    return !Object.hasOwn(introductionSource.levelVariants || {}, level);
+  });
+
+  if (missingVariantLevels.length > 0) {
+    throw new Error(
+      `introduction: missing level variants for ${missingVariantLevels.join(", ")}.`
+    );
+  }
+
+  for (const [level, variantSource] of Object.entries(
+    introductionSource.levelVariants || {}
+  )) {
+    if (
+      !curriculum.hasLevel(level) ||
+      level === "foundation" ||
+      !variantSource ||
+      typeof variantSource !== "object" ||
+      Array.isArray(variantSource) ||
+      typeof variantSource.text !== "string" ||
+      !variantSource.text ||
+      (
+        variantSource.speechText !== undefined &&
+        (typeof variantSource.speechText !== "string" || !variantSource.speechText)
+      )
+    ) {
+      throw new Error(`introduction: invalid ${level} level variant.`);
+    }
+
+    const variant = prepareLesson({
+      ...variantSource,
+      id: `${introductionSource.id}-${level}`,
+      minimumLevel: level,
+      text: variantSource.text
+    }, vocabularyIndex, kanjiIndex, curriculum);
+
+    variant.grammarHighlights = createGrammarHighlights(
+      variant.text,
+      introduction.grammarPointIds,
+      grammarPointById
+    );
+
+    const requiredLevel = getRequiredLessonLevel(
+      { ...variant, grammarPointIds: introduction.grammarPointIds },
+      grammarPointById,
+      vocabularyIndex,
+      curriculum
+    );
+
+    if (
+      curriculum.compareLevels(level, introduction.minimumLevel) <= 0 ||
+      curriculum.compareLevels(level, requiredLevel) < 0 ||
+      variant.grammarHighlights.length !== introduction.grammarPointIds.length
+    ) {
+      throw new Error(`introduction: invalid ${level} level variant coverage.`);
+    }
+
+    const preparedVariant = { ...variant };
+
+    delete preparedVariant.id;
+
+    levelVariants[level] = preparedVariant;
+  }
+
+  if (Object.keys(levelVariants).length > 0) {
+    introduction.levelVariants = levelVariants;
+  }
 
   // The welcome sentence names the JLPT itself. Its incidental vocabulary may
   // belong to a later study level, but it must remain visible to every learner.

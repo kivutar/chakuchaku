@@ -85,7 +85,8 @@ test("generated lessons match their authored sources", async () => {
     exercises,
     grammarPoints,
     vocabulary,
-    kanji
+    kanji,
+    curriculum
   ] =
     await Promise.all([
       readJson("data/source/introduction.json"),
@@ -94,7 +95,8 @@ test("generated lessons match their authored sources", async () => {
       readJson("data/exercises.json"),
       readJson("data/jlpt-n5-grammar.json"),
       readJson("data/jlpt-n5-vocabulary.json"),
-      readJson("data/jlpt-n5-kanji.json")
+      readJson("data/jlpt-n5-kanji.json"),
+      readJson("data/curriculum.json")
     ]);
   const grammarPointIds = new Set(grammarPoints.map(({ id }) => id));
   const vocabularyById = new Map(vocabulary.map((entry) => [entry.id, entry]));
@@ -115,6 +117,29 @@ test("generated lessons match their authored sources", async () => {
     { grammarPointId: "mashou", tokenStart: 13, tokenEnd: 15 }
   ]);
   assertPreparedLesson(introduction, vocabularyById, kanjiById, kanjiByCharacter);
+  const baseLevelRank = curriculum.levels.find(({ id }) => {
+    return id === introductionSource.minimumLevel;
+  }).rank;
+  const requiredVariantLevels = curriculum.levels
+    .filter(({ rank }) => rank > baseLevelRank)
+    .map(({ id }) => id);
+
+  assert.deepEqual(Object.keys(introduction.levelVariants), requiredVariantLevels);
+  assert.equal(
+    introduction.levelVariants.n4.text,
+    introductionSource.levelVariants.n4.text
+  );
+  assert.equal(introduction.levelVariants.n4.minimumLevel, "n4");
+  assert.equal(
+    introduction.levelVariants.n4.tokens.find(({ surface }) => surface === "4")?.reading,
+    "よん"
+  );
+  assertPreparedLesson(
+    { id: "introduction-n4", ...introduction.levelVariants.n4 },
+    vocabularyById,
+    kanjiById,
+    kanjiByCharacter
+  );
   assert.equal(exercises.length, exerciseSources.length);
 
   const sourceById = new Map(exerciseSources.map((exercise) => [exercise.id, exercise]));
@@ -291,6 +316,17 @@ test("the learning interface opts out of browser translation", async () => {
 
   assert.match(html, /<html class="notranslate" lang="en" translate="no">/);
   assert.match(html, /<meta name="google" content="notranslate">/);
+});
+
+test("the welcome lesson follows the selected curriculum level", async () => {
+  const browserCode = await readFile(join(rootDirectory, "app.js"), "utf8");
+
+  assert.match(browserCode, /const targetLevel = getStudyLevel\(curriculum\)/);
+  assert.match(browserCode, /baseIntroduction\.levelVariants\?\.\[targetLevel\]/);
+  assert.match(
+    browserCode,
+    /\{ \.\.\.baseIntroduction, \.\.\.levelVariant, id: baseIntroduction\.id \}/
+  );
 });
 
 test("grammar coverage checklist matches authored exercises", async () => {

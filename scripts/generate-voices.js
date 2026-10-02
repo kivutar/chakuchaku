@@ -495,7 +495,16 @@ async function readLessonSources() {
     readFile(join(sourceDirectory, "exercises.json"), "utf8")
   ]);
 
-  return [JSON.parse(introduction), ...JSON.parse(exercises)];
+  const introductionSource = JSON.parse(introduction);
+  const introductionVariants = Object.entries(
+    introductionSource.levelVariants || {}
+  ).map(([level, variant]) => ({
+    ...variant,
+    id: `${introductionSource.id}-${level}`,
+    minimumLevel: level
+  }));
+
+  return [introductionSource, ...introductionVariants, ...JSON.parse(exercises)];
 }
 
 export function getLessonVoiceLevel(item) {

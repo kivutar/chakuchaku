@@ -3,6 +3,17 @@
   "minimumLevel": "n5",
   "text": "日本語能力試験N5のレッスンへようこそ。さあ、始めましょう。",
   "speechText": "日本語能力試験、エヌごのレッスンへようこそ。さあ、始めましょう。",
+  "levelVariants": {
+    "n4": {
+      "text": "日本語能力試験N4のレッスンへようこそ。さあ、始めましょう。",
+      "speechText": "日本語能力試験、エヌよんのレッスンへようこそ。さあ、始めましょう。",
+      "tokenOverrides": {
+        "4": {
+          "reading": "よん"
+        }
+      }
+    }
+  },
   "grammarPointIds": [
     "no-possession",
     "e-direction",

@@ -297,6 +297,7 @@ test("vocabulary normalization is case, width, whitespace, and punctuation toler
   assert.equal(normalizeEnglish("  Older BROTHER! "), "older brother");
   assert.equal(normalizeEnglish("bread & butter"), "bread and butter");
   assert.equal(normalizeJapanese(" ～ ご　ろ。 "), "ごろ");
+  assert.equal(normalizeJapanese("１,０００円"), "1000円");
   assert.equal(normalizeJapanese("Ｎ"), "n");
 });
 
@@ -535,6 +536,15 @@ test("the vocabulary pool contains the complete curated inventory", async () => 
     return acceptedAnswersByLocale.en.length > 0;
   }), true);
   assert.equal(pool.every(({ acceptedJapaneseAnswers }) => acceptedJapaneseAnswers.length > 0), true);
+  assert.equal(pool.filter(({ partOfSpeech }) => partOfSpeech === "number").every(({ variants }) => {
+    return variants.some((variant) => /^\d/u.test(normalizeJapanese(variant)));
+  }), true);
+  assert.equal(pool.filter(({ term }) => /^[一二三四五六七八九]つ$/u.test(term)).every((entry) => {
+    return entry.variants.some((variant) => /^\dつ$/u.test(normalizeJapanese(variant)));
+  }), true);
+  assert.equal(pool.filter(({ partOfSpeech }) => partOfSpeech === "counter").every(({ term }) => {
+    return term.startsWith("～");
+  }), true);
 
   const goodMorning = pool.find(({ term }) => term === "おはようございます");
   const goodMorningRecall = chooseExercise(
@@ -557,6 +567,34 @@ test("the vocabulary pool contains the complete curated inventory", async () => 
   assert.deepEqual(dayCounter.alternateReadings, ["～か"]);
   assert.equal(gradeAnswer(dayCounterRecall, "にち").correct, true);
   assert.equal(gradeAnswer(dayCounterRecall, "か").correct, true);
+  assert.equal(gradeAnswer(dayCounterRecall, "3日").correct, true);
+  assert.equal(gradeAnswer(dayCounterRecall, "三日").correct, true);
+  assert.equal(gradeAnswer(dayCounterRecall, "３か").correct, true);
+  assert.equal(gradeAnswer(dayCounterRecall, "3回").correct, false);
+
+  const numericAnswers = new Map([
+    ["vocab-dc8d0860b963", "4"],
+    ["vocab-277587e6fa07", "1つ"],
+    ["vocab-08e3c50181be", "20日"],
+    ["vocab-09ef4d4dc05a", "100,000,000"]
+  ]);
+
+  for (const [vocabularyId, answer] of numericAnswers) {
+    const recall = chooseExercise(pool, vocabularyId, directions.englishToJapanese);
+
+    assert.equal(gradeAnswer(recall, answer).correct, true, vocabularyId);
+  }
+
+  const sufficient = pool.find(({ term, reading }) => {
+    return term === "十分" && reading === "じゅうぶん";
+  });
+  const sufficientRecall = chooseExercise(
+    pool,
+    sufficient.vocabularyId,
+    directions.englishToJapanese
+  );
+
+  assert.equal(gradeAnswer(sufficientRecall, "10分").correct, false);
 
   const expectedReversePrompts = new Map([
     ["vocab-f14c108fc553", "over there (away from both people; casual)"],

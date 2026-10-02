@@ -45,8 +45,12 @@ test("every available AAC/M4A voice is referenced and valid", async () => {
     readJson("data/jlpt-n5-conjugation.json")
   ]);
 
-  const lessons = [introduction, ...exercises];
-  const availableVoicePaths = [];
+  const lessons = [
+    introduction,
+    ...Object.values(introduction.levelVariants || {}),
+    ...exercises
+  ];
+  const availableVoicePaths = new Set();
 
   for (const lesson of lessons) {
     const path = join(rootDirectory, lesson.audio);
@@ -64,7 +68,7 @@ test("every available AAC/M4A voice is referenced and valid", async () => {
     }
 
     await assert.doesNotReject(() => validateLessonM4a(path, spokenText), lesson.audio);
-    availableVoicePaths.push(lesson.audio);
+    availableVoicePaths.add(lesson.audio);
   }
 
   for (const entry of vocabulary) {
@@ -90,7 +94,7 @@ test("every available AAC/M4A voice is referenced and valid", async () => {
       ),
       relativePath
     );
-    availableVoicePaths.push(relativePath);
+    availableVoicePaths.add(relativePath);
   }
 
   for (const exercise of createConjugationVoiceItems(vocabulary, conjugationCurriculum)) {
@@ -115,7 +119,7 @@ test("every available AAC/M4A voice is referenced and valid", async () => {
       ),
       exercise.audio
     );
-    availableVoicePaths.push(exercise.audio);
+    availableVoicePaths.add(exercise.audio);
   }
 
   const voiceFiles = (await listM4aFiles(
@@ -124,5 +128,5 @@ test("every available AAC/M4A voice is referenced and valid", async () => {
   )).sort();
 
   assert.ok(voiceFiles.length > 0);
-  assert.deepEqual(availableVoicePaths.sort(), voiceFiles);
+  assert.deepEqual([...availableVoicePaths].sort(), voiceFiles);
 });

@@ -4277,15 +4277,20 @@ async function displayInitialLesson() {
   const requestId = ++lessonRequestId;
 
   try {
-    const [curriculum, introduction, entriesById] = await Promise.all([
+    const [curriculum, baseIntroduction, entriesById] = await Promise.all([
       curriculumDataPromise,
       fetchJson("data/introduction.json"),
       vocabularyDataPromise,
       exerciseDataPromise
     ]);
+    const targetLevel = getStudyLevel(curriculum);
+    const levelVariant = baseIntroduction.levelVariants?.[targetLevel];
+    const introduction = levelVariant
+      ? { ...baseIntroduction, ...levelVariant, id: baseIntroduction.id }
+      : baseIntroduction;
 
     if (
-      !curriculum.isAvailable(introduction.minimumLevel, getStudyLevel(curriculum)) ||
+      !curriculum.isAvailable(introduction.minimumLevel, targetLevel) ||
       !Array.isArray(introduction.tokens) ||
       introduction.tokens.map(({ surface }) => surface).join("") !== introduction.text ||
       !Array.isArray(introduction.grammarHighlights)

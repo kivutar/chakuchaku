@@ -35,7 +35,14 @@
     return String(value || "")
       .normalize("NFKC")
       .toLocaleLowerCase("en")
-      .replace(/[\s~～・･、。！？!?]+/gu, "");
+      .replace(/[\s~～・･、,。！？!?]+/gu, "");
+  }
+
+  function removeCounterNumberPrefix(value) {
+    return value.replace(
+      /^(?:\d+|[〇零一二三四五六七八九十百千万億兆何]+)(?=.)/u,
+      ""
+    );
   }
 
   function normalizeJapaneseContext(value) {
@@ -759,7 +766,13 @@
 
     if (exercise?.direction === directions.englishToJapanese) {
       const normalizedAnswer = normalizeJapanese(answer);
-      const correct = exercise.acceptedJapaneseAnswers.includes(normalizedAnswer);
+      const counterAnswer = exercise.partOfSpeech === "counter"
+        ? removeCounterNumberPrefix(normalizedAnswer)
+        : normalizedAnswer;
+      const correct = exercise.acceptedJapaneseAnswers.includes(normalizedAnswer) || (
+        counterAnswer !== normalizedAnswer &&
+        exercise.acceptedJapaneseAnswers.includes(counterAnswer)
+      );
 
       return {
         correct,

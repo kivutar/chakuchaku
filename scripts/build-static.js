@@ -152,7 +152,11 @@ const conjugationExercises = globalThis.JlptN5Conjugation.createExercisePool(
 validateConjugationVoicePaths(conjugationExercises, wanakana);
 
 const voicePaths = [...new Set([
-  ...[introduction, ...exercises].map(({ audio }) => audio),
+  ...[
+    introduction,
+    ...Object.values(introduction.levelVariants || {}),
+    ...exercises
+  ].map(({ audio }) => audio),
   ...vocabulary.map((entry) => getVocabularyVoicePath(entry, wanakana)),
   ...conjugationExercises.map((exercise) => getConjugationVoicePath(exercise, wanakana))
 ])];

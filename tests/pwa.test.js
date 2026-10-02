@@ -123,6 +123,7 @@ test("service worker pre-caches the app shell but loads voices on demand", async
   assert.match(source, /request\.headers\.has\("range"\)/);
   assert.match(source, /request\.method === "HEAD"/);
   assert.match(buildSource, /"available-voices\.json"/);
+  assert.match(buildSource, /Object\.values\(introduction\.levelVariants \|\| \{\}\)/);
   assert.match(buildSource, /"assets\/store\/google-play\/feature-graphic\.png"/);
   assert.match(buildSource, /getVocabularyVoicePath\(entry, wanakana\)/);
   assert.match(buildSource, /JSON\.stringify\(copiedVoicePaths\.sort\(\), null, 2\)/);

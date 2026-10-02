@@ -680,7 +680,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "1"
+    ]
   },
   {
     "id": "vocab-3d24eb7fb7b5",
@@ -690,7 +693,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "1日"
+    ]
   },
   {
     "id": "vocab-8a98a8e471f7",
@@ -700,7 +706,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "1番"
+    ]
   },
   {
     "id": "vocab-c9d354f557b3",
@@ -720,7 +729,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "5日"
+    ]
   },
   {
     "id": "vocab-842637e88e8c",
@@ -743,7 +755,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "5つ"
+    ]
   },
   {
     "id": "vocab-c983c7b109a6",
@@ -1090,7 +1105,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix",
+    "partOfSpeech": "counter",
     "inflections": [
       {
         "surface": "円",
@@ -1875,7 +1890,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "counter"
   },
   {
     "id": "vocab-173b02087d96",
@@ -1992,7 +2007,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "counter"
   },
   {
     "id": "vocab-42edc1b83779",
@@ -2366,7 +2381,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "9"
+    ]
   },
   {
     "id": "vocab-5dc14aea92c7",
@@ -2545,7 +2563,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "9"
+    ]
   },
   {
     "id": "vocab-87bbe3de9902",
@@ -2989,7 +3010,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "9日"
+    ]
   },
   {
     "id": "vocab-0d0163a40587",
@@ -2999,7 +3023,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "9つ"
+    ]
   },
   {
     "id": "vocab-da5a33de5a30",
@@ -3229,7 +3256,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix",
+    "partOfSpeech": "counter",
     "inflections": [
       {
         "surface": "歳",
@@ -3374,7 +3401,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "3"
+    ]
   },
   {
     "id": "vocab-739ad06f157c",
@@ -3401,6 +3431,9 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
+    "variants": [
+      "4"
+    ],
     "partOfSpeech": "number"
   },
   {
@@ -3459,7 +3492,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "counter"
   },
   {
     "id": "vocab-cdf28ddaf837",
@@ -3513,7 +3546,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "7"
+    ]
   },
   {
     "id": "vocab-f5d831590911",
@@ -3669,7 +3705,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "10"
+    ]
   },
   {
     "id": "vocab-7b157c91e4d9",
@@ -4095,7 +4134,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "0"
+    ]
   },
   {
     "id": "vocab-86ef0852f80f",
@@ -4105,7 +4147,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "1000"
+    ]
   },
   {
     "id": "vocab-65da1512acab",
@@ -4761,7 +4806,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "1日"
+    ]
   },
   {
     "id": "vocab-9af9c5ffb30e",
@@ -5183,7 +5231,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "10"
+    ]
   },
   {
     "id": "vocab-8b4370afb039",
@@ -5203,7 +5254,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "10日"
+    ]
   },
   {
     "id": "vocab-f6481b840edb",
@@ -5563,7 +5617,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "7つ"
+    ]
   },
   {
     "id": "vocab-3b010d61ddd5",
@@ -5583,7 +5640,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "7日"
+    ]
   },
   {
     "id": "vocab-09558b341dc0",
@@ -5653,7 +5713,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "2"
+    ]
   },
   {
     "id": "vocab-52859c55a659",
@@ -5696,7 +5759,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "counter"
   },
   {
     "id": "vocab-b7519a0f57a7",
@@ -5813,7 +5876,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "counter"
   },
   {
     "id": "vocab-73b6cd855160",
@@ -6059,7 +6122,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "20歳"
+    ]
   },
   {
     "id": "vocab-49f91d135f05",
@@ -6079,7 +6145,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "8"
+    ]
   },
   {
     "id": "vocab-08e3c50181be",
@@ -6089,7 +6158,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "20日"
+    ]
   },
   {
     "id": "vocab-fa6a4c8f27b4",
@@ -6245,7 +6317,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "counter"
   },
   {
     "id": "vocab-3ad79496437d",
@@ -6402,7 +6474,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "1つ"
+    ]
   },
   {
     "id": "vocab-14435050c0df",
@@ -6412,7 +6487,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "1月"
+    ]
   },
   {
     "id": "vocab-7de8b40e4f57",
@@ -6422,7 +6500,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "1人"
+    ]
   },
   {
     "id": "vocab-91161e6e754c",
@@ -6442,7 +6523,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "100"
+    ]
   },
   {
     "id": "vocab-152ea0d72dc5",
@@ -6589,7 +6673,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "2つ"
+    ]
   },
   {
     "id": "vocab-adcdf1bd986d",
@@ -6609,7 +6696,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "2人"
+    ]
   },
   {
     "id": "vocab-56d52b7869ab",
@@ -6619,7 +6709,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "2日"
+    ]
   },
   {
     "id": "vocab-b7ea6f7eb013",
@@ -6669,7 +6762,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix",
+    "partOfSpeech": "counter",
     "inflections": [
       {
         "surface": "分",
@@ -7169,7 +7262,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "adverb"
+    "partOfSpeech": "adverb",
+    "variants": [
+      "10000"
+    ]
   },
   {
     "id": "vocab-9d1877a53728",
@@ -7259,7 +7355,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "3日"
+    ]
   },
   {
     "id": "vocab-8b887bc8af0c",
@@ -7269,7 +7368,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "3つ"
+    ]
   },
   {
     "id": "vocab-a460a7ee538c",
@@ -7343,7 +7445,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "6日"
+    ]
   },
   {
     "id": "vocab-9b462ae20b9c",
@@ -7373,7 +7478,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "6つ"
+    ]
   },
   {
     "id": "vocab-92bebda5ac98",
@@ -7616,7 +7724,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "8つ"
+    ]
   },
   {
     "id": "vocab-ddd9dca106e2",
@@ -7739,7 +7850,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "8日"
+    ]
   },
   {
     "id": "vocab-60452785e7a1",
@@ -7783,7 +7897,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "4日"
+    ]
   },
   {
     "id": "vocab-947395f42397",
@@ -7793,7 +7910,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "4つ"
+    ]
   },
   {
     "id": "vocab-0adf764f9311",
@@ -7963,7 +8083,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "0"
+    ]
   },
   {
     "id": "vocab-fd0d7ce5a34d",
@@ -8029,7 +8152,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "number"
+    "partOfSpeech": "number",
+    "variants": [
+      "6"
+    ]
   },
   {
     "id": "vocab-7294370af1b1",
@@ -12404,7 +12530,7 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "counter"
   },
   {
     "id": "vocab-c468e0cfe679",
@@ -12956,7 +13082,10 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "adverb"
+    "partOfSpeech": "adverb",
+    "variants": [
+      "1度"
+    ]
   },
   {
     "id": "vocab-c2cec306f5c4",
@@ -15249,7 +15378,7 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix",
+    "partOfSpeech": "counter",
     "voiceSlug": "dai-charge"
   },
   {
@@ -15404,6 +15533,9 @@
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number",
+    "variants": [
+      "100000000"
+    ],
     "voiceSlug": "oku-hundred-million"
   },
   {

@@ -34,6 +34,7 @@ test("voice generation accepts small request limits", () => {
 
 test("lesson voice levels use explicit metadata and stable exercise IDs", () => {
   assert.equal(getLessonVoiceLevel({ id: "introduction", minimumLevel: "n5" }), "n5");
+  assert.equal(getLessonVoiceLevel({ id: "introduction-n4", minimumLevel: "n4" }), "n4");
   assert.equal(getLessonVoiceLevel({ id: "production-n4-example" }), "n4");
   assert.equal(getLessonVoiceLevel({ id: "legacy-example" }), "n5");
   assert.equal(

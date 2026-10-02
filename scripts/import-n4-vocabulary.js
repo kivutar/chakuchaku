@@ -106,8 +106,10 @@ const entryOverrides = new Map([
     term: "～建て",
     reading: "～だて",
     meaning: "~-story; built as ~",
-    partOfSpeech: "affix"
+    partOfSpeech: "counter"
   }],
+  ["～代", { partOfSpeech: "counter" }],
+  ["億", { variants: ["100000000"] }],
   ["中学校", { meaning: "junior high school; middle school" }],
   ["見える", { meaning: "to be visible; to be able to see" }],
   ["大抵", { partOfSpeech: "adverb" }],
@@ -119,7 +121,7 @@ const entryOverrides = new Map([
   ["ひげ", { partOfSpeech: "noun" }],
   ["自由", { partOfSpeech: "noun" }],
   ["あ", { partOfSpeech: "interjection" }],
-  ["一度", { partOfSpeech: "adverb" }],
+  ["一度", { partOfSpeech: "adverb", variants: ["1度"] }],
   ["一杯", { partOfSpeech: "adverb" }],
   ["十分", { partOfSpeech: "adjective" }],
   ["帰り", { partOfSpeech: "noun" }],
