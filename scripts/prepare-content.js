@@ -159,7 +159,9 @@ function createVocabularyIndex(vocabulary) {
       { surface: entry.term, reading: entry.reading, preferReading: false },
       ...(entry.variants || []).map((surface) => ({
         surface,
-        reading: entry.reading,
+        reading: entry.reading.startsWith("～") && !surface.startsWith("～")
+          ? entry.reading.slice(1)
+          : entry.reading,
         preferReading: true
       })),
       ...inflections.map((inflection) => ({
@@ -603,7 +605,10 @@ function tokenizeLesson(lesson, vocabularyIndex, options = {}) {
 
       if (
         tokenOverride?.reading === undefined &&
-        (selectedMatch.preferReading || generatedReading === "*")
+        (
+          (selectedMatch.isSurface && selectedMatch.preferReading) ||
+          generatedReading === "*"
+        )
       ) {
         result.reading = selectedMatch.reading;
       }

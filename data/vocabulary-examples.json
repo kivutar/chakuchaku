@@ -271,7 +271,7 @@
       {
         "surface": "き",
         "category": "verb",
-        "reading": "くる",
+        "reading": "き",
         "vocabularyId": "vocab-bc01756b4d89"
       },
       {
@@ -7518,7 +7518,7 @@
       {
         "surface": "あけ",
         "category": "verb",
-        "reading": "あける",
+        "reading": "あけ",
         "vocabularyId": "vocab-658ff53bc114"
       },
       {
@@ -9709,7 +9709,7 @@
     "vocabularyId": "vocab-bf2d9a061fe3",
     "text": "二冊買います。",
     "targetSurface": "二冊",
-    "targetReading": "～さつ",
+    "targetReading": "さつ",
     "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "I buy two books.",
@@ -9723,7 +9723,7 @@
       {
         "surface": "冊",
         "category": "noun",
-        "reading": "～さつ",
+        "reading": "さつ",
         "vocabularyId": "vocab-bf2d9a061fe3"
       },
       {
@@ -11455,7 +11455,7 @@
     "vocabularyId": "vocab-d132ddd751b7",
     "text": "ごはんをたべすぎた。",
     "targetSurface": "たべすぎ",
-    "targetReading": "たべるすぎ",
+    "targetReading": "たべすぎ",
     "targetTokenStart": 2,
     "targetTokenEnd": 4,
     "translation": "I ate too much rice.",
@@ -11474,7 +11474,7 @@
       {
         "surface": "たべ",
         "category": "verb",
-        "reading": "たべる",
+        "reading": "たべ",
         "vocabularyId": "vocab-ec4fa4315542"
       },
       {
@@ -16050,7 +16050,7 @@
       {
         "surface": "いい",
         "category": "verb",
-        "reading": "いう",
+        "reading": "いい",
         "vocabularyId": "vocab-4fa253e10946"
       },
       {
@@ -17935,7 +17935,7 @@
       {
         "surface": "みがき",
         "category": "verb",
-        "reading": "みがく",
+        "reading": "みがき",
         "vocabularyId": "vocab-4cbda80a33ed"
       },
       {
@@ -23900,7 +23900,7 @@
       {
         "surface": "ふり",
         "category": "verb",
-        "reading": "ふる",
+        "reading": "ふり",
         "vocabularyId": "vocab-777161023023"
       },
       {
@@ -28484,7 +28484,7 @@
       {
         "surface": "のり",
         "category": "verb",
-        "reading": "のる",
+        "reading": "のり",
         "vocabularyId": "vocab-9e0eeba39759"
       },
       {
@@ -28595,7 +28595,7 @@
       {
         "surface": "き",
         "category": "verb",
-        "reading": "くる",
+        "reading": "き",
         "vocabularyId": "vocab-bc01756b4d89"
       },
       {
@@ -28632,7 +28632,7 @@
       {
         "surface": "たべ",
         "category": "verb",
-        "reading": "たべる",
+        "reading": "たべ",
         "vocabularyId": "vocab-ec4fa4315542"
       },
       {
@@ -28669,7 +28669,7 @@
       {
         "surface": "たべ",
         "category": "verb",
-        "reading": "たべる",
+        "reading": "たべ",
         "vocabularyId": "vocab-ec4fa4315542"
       },
       {
@@ -28706,7 +28706,7 @@
       {
         "surface": "たべ",
         "category": "verb",
-        "reading": "たべる",
+        "reading": "たべ",
         "vocabularyId": "vocab-ec4fa4315542"
       },
       {
@@ -28743,7 +28743,7 @@
       {
         "surface": "もち",
         "category": "verb",
-        "reading": "もつ",
+        "reading": "もち",
         "vocabularyId": "vocab-516ad1128c71"
       },
       {
@@ -28780,7 +28780,7 @@
       {
         "surface": "のり",
         "category": "verb",
-        "reading": "のる",
+        "reading": "のり",
         "vocabularyId": "vocab-9e0eeba39759"
       },
       {
@@ -40107,7 +40107,7 @@
       {
         "surface": "こわれ",
         "category": "verb",
-        "reading": "こわれる",
+        "reading": "こわれ",
         "vocabularyId": "vocab-9ce92c5239cf"
       },
       {
@@ -43058,7 +43058,7 @@
       {
         "surface": "つけ",
         "category": "verb",
-        "reading": "つける",
+        "reading": "つけ",
         "vocabularyId": "vocab-35a0e5ef96cc"
       },
       {
@@ -51602,7 +51602,7 @@
       {
         "surface": "なっ",
         "category": "verb",
-        "reading": "なる",
+        "reading": "なっ",
         "vocabularyId": "vocab-89aea2f63b8b"
       },
       {

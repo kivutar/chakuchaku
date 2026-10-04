@@ -3262,7 +3262,7 @@
       {
         "surface": "終わっ",
         "category": "verb",
-        "reading": "おわる",
+        "reading": "おわっ",
         "vocabularyId": "vocab-6393ca7aefde"
       },
       {
@@ -4078,7 +4078,7 @@
       {
         "surface": "なくし",
         "category": "verb",
-        "reading": "なくす",
+        "reading": "なくし",
         "vocabularyId": "vocab-bfdcaa65f011"
       },
       {
@@ -5636,7 +5636,7 @@
       {
         "surface": "曲がり",
         "category": "verb",
-        "reading": "まがる",
+        "reading": "まがり",
         "vocabularyId": "vocab-9b9a58f11bf9"
       },
       {
@@ -6117,7 +6117,7 @@
       {
         "surface": "終わっ",
         "category": "verb",
-        "reading": "おわる",
+        "reading": "おわっ",
         "vocabularyId": "vocab-6393ca7aefde"
       },
       {
@@ -8891,7 +8891,7 @@
       {
         "surface": "冊",
         "category": "noun",
-        "reading": "～さつ",
+        "reading": "さつ",
         "vocabularyId": "vocab-bf2d9a061fe3"
       },
       {
@@ -8919,7 +8919,7 @@
       {
         "surface": "冊",
         "category": "noun",
-        "reading": "～さつ",
+        "reading": "さつ",
         "vocabularyId": "vocab-bf2d9a061fe3"
       },
       {
@@ -23962,7 +23962,7 @@
       {
         "surface": "おいし",
         "category": "adjective",
-        "reading": "おいしい",
+        "reading": "おいし",
         "vocabularyId": "vocab-2f5084eba81c"
       },
       {
@@ -41561,7 +41561,7 @@
       {
         "surface": "曲がっ",
         "category": "verb",
-        "reading": "まがる",
+        "reading": "まがっ",
         "vocabularyId": "vocab-9b9a58f11bf9"
       },
       {
@@ -48790,7 +48790,7 @@
       {
         "surface": "冊",
         "category": "noun",
-        "reading": "～さつ",
+        "reading": "さつ",
         "vocabularyId": "vocab-bf2d9a061fe3"
       },
       {
@@ -77854,7 +77854,7 @@
       {
         "surface": "読め",
         "category": "verb",
-        "reading": "よめる",
+        "reading": "よめ",
         "vocabularyId": "vocab-24f188a06d2c"
       },
       {
@@ -77874,7 +77874,7 @@
       {
         "surface": "書け",
         "category": "verb",
-        "reading": "かける",
+        "reading": "かけ",
         "vocabularyId": "vocab-d34997e828cb"
       },
       {
@@ -77944,7 +77944,7 @@
       {
         "surface": "使え",
         "category": "verb",
-        "reading": "つかえる",
+        "reading": "つかえ",
         "vocabularyId": "vocab-9af9c5ffb30e"
       },
       {
@@ -81782,7 +81782,7 @@
       {
         "surface": "よかっ",
         "category": "adjective",
-        "reading": "いい",
+        "reading": "よかっ",
         "vocabularyId": "vocab-ef4cce00951f"
       },
       {
@@ -81860,7 +81860,7 @@
       {
         "surface": "よかっ",
         "category": "adjective",
-        "reading": "いい",
+        "reading": "よかっ",
         "vocabularyId": "vocab-ef4cce00951f"
       },
       {
@@ -81932,7 +81932,7 @@
       {
         "surface": "よかっ",
         "category": "adjective",
-        "reading": "いい",
+        "reading": "よかっ",
         "vocabularyId": "vocab-ef4cce00951f"
       },
       {
@@ -82016,7 +82016,7 @@
       {
         "surface": "よかっ",
         "category": "adjective",
-        "reading": "いい",
+        "reading": "よかっ",
         "vocabularyId": "vocab-ef4cce00951f"
       },
       {
@@ -88412,7 +88412,7 @@
       {
         "surface": "よかっ",
         "category": "adjective",
-        "reading": "いい",
+        "reading": "よかっ",
         "vocabularyId": "vocab-ef4cce00951f"
       },
       {
@@ -88495,7 +88495,7 @@
       {
         "surface": "よかっ",
         "category": "adjective",
-        "reading": "いい",
+        "reading": "よかっ",
         "vocabularyId": "vocab-ef4cce00951f"
       },
       {
@@ -88578,7 +88578,7 @@
       {
         "surface": "よかっ",
         "category": "adjective",
-        "reading": "いい",
+        "reading": "よかっ",
         "vocabularyId": "vocab-ef4cce00951f"
       },
       {
@@ -88667,7 +88667,7 @@
       {
         "surface": "よかっ",
         "category": "adjective",
-        "reading": "いい",
+        "reading": "よかっ",
         "vocabularyId": "vocab-ef4cce00951f"
       },
       {
@@ -90143,7 +90143,7 @@
       {
         "surface": "終わっ",
         "category": "verb",
-        "reading": "おわる",
+        "reading": "おわっ",
         "vocabularyId": "vocab-6393ca7aefde"
       },
       {
@@ -91291,7 +91291,7 @@
       {
         "surface": "おいし",
         "category": "adjective",
-        "reading": "おいしい",
+        "reading": "おいし",
         "vocabularyId": "vocab-2f5084eba81c"
       },
       {
@@ -106426,7 +106426,7 @@
       {
         "surface": "終わり",
         "category": "verb",
-        "reading": "おわる",
+        "reading": "おわり",
         "vocabularyId": "vocab-6393ca7aefde"
       },
       {
@@ -108292,7 +108292,7 @@
       {
         "surface": "終わっ",
         "category": "verb",
-        "reading": "おわる",
+        "reading": "おわっ",
         "vocabularyId": "vocab-6393ca7aefde"
       },
       {

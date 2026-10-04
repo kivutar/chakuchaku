@@ -20,6 +20,7 @@ const allowedCategories = new Set([
 ]);
 const glossCategories = new Set(["noun", "verb", "adjective", "adverb", "interjection"]);
 const japaneseTokenPattern = /[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}々ー]/u;
+const trailingHiraganaPattern = /[\p{Script=Hiragana}ー]+$/u;
 
 async function readJson(path) {
   return JSON.parse(await readFile(join(rootDirectory, path), "utf8"));
@@ -58,6 +59,22 @@ function assertPreparedLesson(lesson, vocabularyById, kanjiById, kanjiByCharacte
   for (const token of lesson.tokens) {
     assert.equal(typeof token.surface, "string");
     assert.equal(token.gloss, undefined);
+    assert.doesNotMatch(
+      token.reading || "",
+      /[～〜]/u,
+      `${lesson.id}:${token.surface} must not expose an abstract affix marker in its reading`
+    );
+
+    if (token.reading && /\p{Script=Han}/u.test(token.surface)) {
+      const trailingHiragana = token.surface.match(trailingHiraganaPattern)?.[0];
+
+      if (trailingHiragana) {
+        assert.ok(
+          token.reading.endsWith(trailingHiragana),
+          `${lesson.id}:${token.surface} reading ${token.reading} must match its visible ending`
+        );
+      }
+    }
 
     if (token.category) {
       assert.ok(allowedCategories.has(token.category));
@@ -141,6 +158,19 @@ test("generated lessons match their authored sources", async () => {
     kanjiByCharacter
   );
   assert.equal(exercises.length, exerciseSources.length);
+
+  const potentialExercise = exercises.find(({ id }) => {
+    return id === "n4-can-read-not-write-kanji";
+  });
+
+  assert.equal(
+    potentialExercise.tokens.find(({ surface }) => surface === "読め")?.reading,
+    "よめ"
+  );
+  assert.equal(
+    potentialExercise.tokens.find(({ surface }) => surface === "書け")?.reading,
+    "かけ"
+  );
 
   const sourceById = new Map(exerciseSources.map((exercise) => [exercise.id, exercise]));
   const ids = new Set([introduction.id]);

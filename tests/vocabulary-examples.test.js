@@ -5,6 +5,7 @@ import { repairTargetSurface } from "../scripts/generate-vocabulary-examples.js"
 
 const readJson = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8")
   .then(JSON.parse);
+const trailingHiraganaPattern = /[\p{Script=Hiragana}ー]+$/u;
 
 test("generated examples repair dictionary-form targets to their visible inflection", () => {
   assert.deepEqual(
@@ -82,5 +83,26 @@ test("every vocabulary and kanji-context item has one short localized example", 
     assert.ok(example.targetReading, example.vocabularyId);
     assert.ok(example.translation, example.vocabularyId);
     assert.ok(frenchExamples[example.vocabularyId]?.translation, example.vocabularyId);
+
+    for (const token of example.tokens) {
+      assert.doesNotMatch(
+        token.reading || "",
+        /[～〜]/u,
+        `${example.vocabularyId}:${token.surface} must not expose an abstract affix marker`
+      );
+
+      if (!token.reading || !/\p{Script=Han}/u.test(token.surface)) {
+        continue;
+      }
+
+      const trailingHiragana = token.surface.match(trailingHiraganaPattern)?.[0];
+
+      if (trailingHiragana) {
+        assert.ok(
+          token.reading.endsWith(trailingHiragana),
+          `${example.vocabularyId}:${token.surface} reading ${token.reading} must match its visible ending`
+        );
+      }
+    }
   }
 });
