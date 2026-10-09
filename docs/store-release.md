@@ -47,7 +47,11 @@ Publishing a GitHub Release automatically runs
 tests the application, synchronizes the Capacitor project, builds a signed
 release APK and Android App Bundle, verifies both signatures, and attaches them
 to the GitHub Release as `ChakuChaku-<tag>.apk` and `ChakuChaku-<tag>.aab`.
-The APK is for direct installation; the AAB is the Google Play upload. Draft
+The APK is for direct installation; the AAB is the Google Play upload. With
+`GOOGLE_PLAY_SERVICE_ACCOUNT_JSON` configured, the same bundle is published to
+both internal testing (`internal`) and the existing closed Alpha test (`alpha`).
+This keeps both tester groups on the same version; an internal release alone
+does not update the closed test. Draft
 releases do not trigger a build; publishing a stable release or pre-release
 does. The workflow can also build any Git ref and publish it directly to Google
 Play without creating a GitHub Release:
@@ -70,6 +74,15 @@ Configure these repository Actions secrets once before publishing a release:
 - `ANDROID_KEYSTORE_PASSWORD`: the keystore password.
 - `ANDROID_KEY_ALIAS`: the release key alias.
 - `ANDROID_KEY_PASSWORD`: the release key password.
+- `GOOGLE_PLAY_SERVICE_ACCOUNT_JSON`: the publisher service account JSON,
+  with release permissions for internal and closed testing on
+  `com.kivutar.chakuchaku`.
+
+Closed-test updates can require Google's review even when the internal release
+is already available. Check Play Console's publishing overview after the job
+succeeds: the update must be submitted for review, not left as unsent changes.
+With managed publishing disabled, approved updates publish automatically.
+Tester membership and opt-in are unchanged by an update.
 
 On Arch Linux, create and upload a private release keystore with:
 

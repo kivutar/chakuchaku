@@ -19,7 +19,7 @@ on:
         required: false
         type: string
       publish_to_google_play:
-        description: Publish the AAB to Google Play internal testing
+        description: Publish the AAB to Google Play internal and closed Alpha testing
         required: true
         default: false
         type: boolean
@@ -149,14 +149,14 @@ jobs:
             echo "enabled=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Publish AAB to Google Play internal testing
+      - name: Publish AAB to Google Play internal and closed Alpha testing
         if: steps.google_play.outputs.enabled == 'true'
         uses: r0adkll/upload-google-play@e738b9dd8f2476ea806d921b64aacd24f34515a5 # v1.1.5
         with:
           serviceAccountJsonPlainText: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT_JSON }}
           packageName: com.kivutar.chakuchaku
           releaseFiles: android/app/build/outputs/bundle/release/app-release.aab
-          tracks: internal
+          tracks: internal,alpha
           status: completed
           releaseName: ChakuChaku ${{ steps.release.outputs.version_name }}
 

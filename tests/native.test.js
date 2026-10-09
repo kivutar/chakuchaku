@@ -248,6 +248,8 @@ test("Android releases build and attach signed APK and Play bundle artifacts", a
   assert.match(workflow, /apksigner_path[\s\S]*verify --verbose --print-certs/u);
   assert.match(workflow, /jarsigner -verify "\$AAB_PATH"/u);
   assert.match(workflow, /app\/build\/outputs\/bundle\/release\/app-release\.aab/u);
+  assert.match(workflow, /tracks: internal,alpha\s+status: completed/u);
+  assert.match(workflow, /serviceAccountJsonPlainText: \$\{\{ secrets\.GOOGLE_PLAY_SERVICE_ACCOUNT_JSON \}\}/u);
   assert.match(workflow, /aab_asset_name=ChakuChaku-%s\.aab/u);
   assert.match(workflow, /actions\/upload-artifact@v7/u);
   assert.match(workflow, /gh release upload[\s\S]*--clobber/u);
