@@ -894,7 +894,8 @@
     "grammarPointIds": [
       "soshite-connector",
       "verb-mashita",
-      "o-route"
+      "o-route",
+      "ni-turn-direction"
     ]
   },
   {
@@ -4506,7 +4507,8 @@
     "grammarPointIds": [
       "to-conditional",
       "o-route",
-      "aru-existence"
+      "aru-existence",
+      "ni-turn-direction"
     ]
   },
   {
@@ -15305,5 +15307,468 @@
       { "word": "Sunday", "vocabularyIds": ["vocab-b7519a0f57a7"] }
     ],
     "grammarPointIds": ["dewa-nai-ka"]
+  },
+  {
+    "id": "fruit-pair-total-price",
+    "text": "りんごは二つで三百円です。",
+    "solution": "Two apples cost three hundred yen in total.",
+    "tokenOverrides": { "百": { "reading": "びゃく" } },
+    "grammarPointIds": [
+      "de-total-price",
+      "tsu-counter"
+    ]
+  },
+  {
+    "id": "eggs-six-total-price",
+    "text": "卵は六つで二百円です。",
+    "solution": "Six eggs cost two hundred yen in total.",
+    "grammarPointIds": [
+      "de-total-price",
+      "tsu-counter"
+    ]
+  },
+  {
+    "id": "production-tickets-pair-total",
+    "text": "Two tickets cost one thousand yen in total.",
+    "solution": "切符は二枚で千円です。",
+    "type": "production",
+    "grammarPointIds": [
+      "de-total-price",
+      "common-counters"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "tickets",
+        "vocabularyIds": [
+          "vocab-f5d0af9cc8d2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-pencils-three-total",
+    "text": "Three pencils cost one hundred yen in total.",
+    "solution": "鉛筆は三本で百円です。",
+    "type": "production",
+    "tokenOverrides": { "本": { "reading": "ぼん" } },
+    "grammarPointIds": [
+      "de-total-price",
+      "common-counters"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "pencils",
+        "vocabularyIds": [
+          "vocab-ffe18de42b4b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bridge-turn-left",
+    "text": "橋を渡って、左に曲がってください。",
+    "solution": "Cross the bridge and turn left, please.",
+    "grammarPointIds": [
+      "o-route",
+      "ni-turn-direction",
+      "te-kudasai",
+      "te-action-link"
+    ]
+  },
+  {
+    "id": "corner-turn-right",
+    "text": "その角で右に曲がります。",
+    "solution": "I will turn right at that corner.",
+    "grammarPointIds": [
+      "de-action-location",
+      "ni-turn-direction"
+    ]
+  },
+  {
+    "id": "production-intersection-turn-left",
+    "text": "I will turn left at the intersection.",
+    "solution": "交差点で左に曲がります。",
+    "type": "production",
+    "grammarPointIds": [
+      "de-action-location",
+      "ni-turn-direction"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "intersection",
+        "vocabularyIds": [
+          "vocab-73fc24d6d3cb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-shop-corner-turn-right",
+    "text": "Please turn right in front of the shop.",
+    "solution": "店の前で右に曲がってください。",
+    "type": "production",
+    "grammarPointIds": [
+      "de-action-location",
+      "ni-turn-direction",
+      "te-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "shop",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "restaurant-anything-delicious",
+    "text": "この店では何でもおいしいです。",
+    "solution": "Everything at this restaurant tastes good.",
+    "grammarPointIds": [
+      "de-action-location",
+      "wa-topic",
+      "question-word-demo"
+    ]
+  },
+  {
+    "id": "anyone-can-enter-room",
+    "text": "この部屋には誰でも入ることができます。",
+    "solution": "Anyone can enter this room.",
+    "grammarPointIds": [
+      "ni-destination",
+      "question-word-demo",
+      "koto-ga-dekiru"
+    ]
+  },
+  {
+    "id": "production-anytime-come-home",
+    "text": "Please come to my home anytime.",
+    "solution": "いつでも家に来てください。",
+    "type": "production",
+    "grammarPointIds": [
+      "question-word-demo",
+      "ni-destination",
+      "te-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-anywhere-buy-water",
+    "text": "Water can be bought anywhere.",
+    "solution": "水はどこでも買うことができます。",
+    "type": "production",
+    "grammarPointIds": [
+      "question-word-demo",
+      "koto-ga-dekiru"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "water",
+        "vocabularyIds": [
+          "vocab-28ddfdc9290c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-swim-not-enter",
+    "text": "川で泳ぎますが、海では泳ぎません。",
+    "solution": "I swim in rivers, but I do not swim in the sea.",
+    "grammarPointIds": [
+      "de-action-location",
+      "wa-contrast",
+      "ga-contrast"
+    ]
+  },
+  {
+    "id": "production-river-enter-then-swim",
+    "text": "I went into the river and swam with a friend.",
+    "solution": "川に入って、友達と泳ぎました。",
+    "type": "production",
+    "grammarPointIds": [
+      "ni-destination",
+      "te-action-link",
+      "to-companion"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "river",
+        "vocabularyIds": [
+          "vocab-82dcbecaf875"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "birds-singing-audible",
+    "text": "鳥が鳴いているのが聞こえます。",
+    "solution": "I can hear birds singing.",
+    "grammarPointIds": [
+      "te-iru-progressive",
+      "no-nominalizer",
+      "mieru-kikoeru"
+    ]
+  },
+  {
+    "id": "production-window-bird-visible",
+    "text": "I can see a bird from the window.",
+    "solution": "窓から鳥が見えます。",
+    "type": "production",
+    "grammarPointIds": [
+      "kara-start",
+      "mieru-kikoeru"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "window",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "listen-radio-cannot-hear",
+    "text": "ラジオを聞きたいですが、よく聞こえません。",
+    "solution": "I want to listen to the radio, but I cannot hear it well.",
+    "grammarPointIds": [
+      "tai-desire",
+      "ga-contrast",
+      "mieru-kikoeru"
+    ]
+  },
+  {
+    "id": "production-mountain-visible-not-sea",
+    "text": "I can see the mountains, but I cannot see the sea.",
+    "solution": "山は見えますが、海は見えません。",
+    "type": "production",
+    "grammarPointIds": [
+      "mieru-kikoeru",
+      "wa-contrast",
+      "ga-contrast"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "mountains",
+        "vocabularyIds": [
+          "vocab-ddd9dca106e2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pass-bank-wait-library",
+    "text": "銀行の前を通って、図書館の前で待ちました。",
+    "solution": "I passed in front of the bank and waited in front of the library.",
+    "grammarPointIds": [
+      "o-route",
+      "de-action-location",
+      "te-action-link"
+    ]
+  },
+  {
+    "id": "production-return-after-class-end",
+    "text": "Please come back here after class finishes.",
+    "solution": "授業が終わってから、ここに戻ってください。",
+    "type": "production",
+    "grammarPointIds": [
+      "te-kara",
+      "ni-destination",
+      "te-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "class",
+        "vocabularyIds": [
+          "vocab-4c99b14fe21c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hobby-travel-various-places",
+    "text": "趣味は旅行です。休みにあちこちへ行きます。",
+    "solution": "My hobby is travelling. I go to various places on my days off.",
+    "grammarPointIds": [
+      "copula-da-desu",
+      "ni-time",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "production-morning-soon-finish",
+    "text": "The morning class will finish soon.",
+    "solution": "午前中の授業はもうすぐ終わります。",
+    "type": "production",
+    "grammarPointIds": [
+      "no-possession",
+      "nonpast-tense"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "class",
+        "vocabularyIds": [
+          "vocab-4c99b14fe21c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "different-idea-healthy-habits",
+    "text": "私の考えは違います。毎日歩いたほうがいいです。",
+    "solution": "My opinion is different. It is better to walk every day.",
+    "grammarPointIds": [
+      "no-possession",
+      "hou-ga-ii-advice"
+    ]
+  },
+  {
+    "id": "production-numbers-lined-up",
+    "text": "Four identical digits are lined up.",
+    "solution": "同じ数字が四つ並んでいます。",
+    "type": "production",
+    "grammarPointIds": [
+      "tsu-counter",
+      "te-iru-result-state"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "digits",
+        "vocabularyIds": [
+          "vocab-3097f42345bf"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "heavy-bag-light-bag",
+    "text": "このかばんは重いですが、あのかばんは軽いです。",
+    "solution": "This bag is heavy, but that bag is light.",
+    "grammarPointIds": [
+      "ga-contrast",
+      "wa-contrast"
+    ]
+  },
+  {
+    "id": "production-snow-falling-now",
+    "text": "It is snowing now.",
+    "solution": "今、雪が降っています。",
+    "type": "production",
+    "grammarPointIds": [
+      "te-iru-progressive"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "snowing",
+        "vocabularyIds": [
+          "vocab-777161023023"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "teach-recipient-also",
+    "text": "弟に教えました。私にも教えてください。",
+    "solution": "You taught my younger brother. Please teach me too.",
+    "grammarPointIds": [
+      "ni-target-recipient",
+      "mo-addition",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-language-study-location",
+    "text": "I am studying English at the library.",
+    "solution": "図書館で英語の勉強をしています。",
+    "type": "production",
+    "grammarPointIds": [
+      "de-action-location",
+      "no-possession",
+      "te-iru-progressive"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "English",
+        "vocabularyIds": [
+          "vocab-0f7ce836ef7a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "came-here-then-studied",
+    "text": "日本に来てから、日本語を勉強しています。",
+    "solution": "Since coming to Japan, I have been studying Japanese.",
+    "grammarPointIds": [
+      "ni-destination",
+      "te-kara",
+      "te-iru-progressive"
+    ]
+  },
+  {
+    "id": "production-books-noun-omission",
+    "text": "There are Japanese books here. There are foreign ones too.",
+    "solution": "ここには日本の本があります。外国のもあります。",
+    "type": "production",
+    "grammarPointIds": [
+      "ni-existence-location",
+      "no-noun-omission",
+      "mo-addition",
+      "aru-existence"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "books",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "shop-then-park-meal",
+    "text": "店でパンを買ってから、公園で食べます。",
+    "solution": "After buying bread at the shop, I will eat it in the park.",
+    "grammarPointIds": [
+      "de-action-location",
+      "te-kara"
+    ]
+  },
+  {
+    "id": "coffee-unavailable-warm-tea",
+    "text": "コーヒーはありませんから、温かいお茶をください。",
+    "solution": "Since there is no coffee, please give me some warm tea.",
+    "grammarPointIds": [
+      "aru-existence",
+      "kara-reason",
+      "o-kudasai"
+    ]
+  },
+  {
+    "id": "family-brother-next-to-mother",
+    "text": "母の隣にいる人は私の兄です。",
+    "solution": "The person next to my mother is my older brother.",
+    "grammarPointIds": [
+      "relative-clause",
+      "ni-existence-location",
+      "iru-existence"
+    ]
+  },
+  {
+    "id": "healthy-vegetables-daily",
+    "text": "元気でいたいので、毎日野菜を食べます。",
+    "solution": "I want to stay healthy, so I eat vegetables every day.",
+    "grammarPointIds": [
+      "tai-desire",
+      "node-reason"
+    ]
   }
 ]

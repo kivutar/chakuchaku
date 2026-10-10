@@ -26,6 +26,15 @@ same pending cohort and legacy cards do not retroactively consume today's
 quota. Kana stay in the `foundation` layer and use vocabulary through the
 selected target level without their own introduction quota.
 
+The October beginner-comprehension audit adds three tracked grammar units:
+quantity + `で` for a total price, direction + `に` with `曲がる`, and unrestricted
+question-word + `でも`. It also makes `見える / 聞こえる` available from N5 as a
+boundary item, retaining its previous ID. The 34 new English/French exercises
+are original sentences, not copied mock-test questions. They reinforce these
+points alongside swimming locations, traversed routes, recipient + `にも`,
+noun + `の勉強`, temporal sequencing, noun omission, and listening contrasts.
+These introduction levels are editorial choices, not an official JLPT syllabus.
+
 # Grammar inventory
 
 `jlpt-n5-grammar.json` is the canonical curriculum for the app; its filename is
@@ -84,7 +93,7 @@ the N5 curricula published by Bunpro, JLPT Sensei, and Yatta. `boundary` keeps
 useful points that sources variously place at N5 or N4 without presenting them
 as undisputed N5 requirements.
 
-The live N4 slice contains 98 high-value points and 361 independently authored
+The live N4 slice contains 97 high-value points and 357 independently authored
 recognition and production exercises. Alongside the original volitional,
 potential, passive, decision, expectation, ease, movement, time, and `～なら`
 points, it now covers the causative, causative-passive, direct imperative,
@@ -184,13 +193,15 @@ publishing vocabulary, kanji, and grammar specifications after the 2010 revision
 because the test is intended to measure communicative use rather than memorized
 lists.
 
-The inventory currently contains 1,483 entries: 868 introduced at N5 and 615
+The inventory currently contains 1,488 entries: 879 introduced at N5 and 609
 introduced at N4.
 
-- 719 N5 `core` entries adapted from the MIT-licensed Open Anki decks at commit
+- 725 N5 `core` entries adapted from the MIT-licensed Open Anki decks at commit
   `1ad66734417aca9dbcca6b2d5ee440cb13ab3ba0`. This includes `日（ひ）`, which
   the N4 source labels later but the existing N5 exercises already teach.
-- 611 N4 `core` entries imported from that commit's 668-row N4 snapshot. The
+  Beginner comprehension also introduces `聞こえる`, `見える`, `通る`, `趣味`,
+  `戻る`, and `もうすぐ` at N5 while preserving their existing SRS IDs.
+- 605 N4 `core` entries imported from that commit's 668-row N4 snapshot. The
   importer merges 43 entries already represented in the app and excludes 14
   grammar constructions that belong in grammar or conjugation rather than the
   vocabulary SRS. Its combined `回る、回す` row is deliberately expanded into
@@ -202,7 +213,9 @@ introduced at N4.
 - 4 curated N4 core entries: `間`, required by the first N4 grammar exercises;
   practical Katakana word `ボール`; and consensus-list gaps `引き出す` and
   `降り出す`.
-- 145 `supplemental` entries: 42 recognizable and motivating beginner words,
+- 150 `supplemental` entries, including five beginner-comprehension additions:
+  `あちこち`, `何でも`, `考え`, `午前中`, and `数字`. The original supplement includes
+  42 recognizable and motivating beginner words,
   29 words needed by the current lessons, 37 words curated for practical
   Katakana coverage, 13 essential A1 expressions and everyday words, and 14
   useful words promoted from the Kanji exercise contexts, plus 10 practical
@@ -219,6 +232,8 @@ Each entry contains:
 
 - `id`: a stable content-derived identifier.
 - `term`: the preferred Japanese written form.
+  In Japanese-to-translation exercises, a differing kana reading is an optional
+  hover, focus, or tap hint rather than an automatically visible kanji clue.
 - `reading`: the kana reading, normalized to hiragana where applicable.
 - `alternateReadings`: optional additional readings accepted by vocabulary recall.
 - `acceptedJapaneseAnswers`: optional equivalent Japanese expressions accepted
@@ -277,7 +292,10 @@ N5–N4 inventory. Its foundation is the exact 209-character curriculum that
 Rikkyo University describes as equivalent to JLPT N5: 73 `B6`, 68 `B5`, and 68
 `B4` characters. `source/jlpt-n4-kanji.json` pins Kanzen's 170-character N4
 study list; 91 were already in that broad foundation, so the `N4` stage adds 79
-characters for 288 total. These are coherent study curricula, not official JLPT
+characters. One explicitly labeled `Supplemental` N5 character, `鳴`, supports
+the existing beginner word `鳴く`, giving 289 total. This extra stage is authored
+by ChakuChaku, not attributed to Rikkyo; its dictionary reference is recorded
+in the stage metadata. These are coherent study curricula, not official JLPT
 specifications; the JLPT has not published an itemized kanji list since 2010.
 
 Each entry has a stable Unicode-based `id`, one `character`, a concise English
@@ -293,13 +311,13 @@ evidence. Readings use hiragana stems and are intentionally not exhaustive.
 Irregular whole-word readings such as 今日（きょう）remain vocabulary data.
 
 `kanji-contexts.json` contains a small set of complete example words for
-characters that have no suitable core-vocabulary context. They make all 288
+characters that have no suitable core-vocabulary context. They make all 289
 characters exercisable but remain separate from the vocabulary
 curriculum and its SRS. French display meanings live in
 `locales/fr/kanji-contexts.json`.
 
 `source/kanji-mnemonics.json` provides original memory aids for the 209-character
-foundation, and `source/n4-kanji-mnemonics.json` does the same for the 79-character
+foundation and its one supplementary character, and `source/n4-kanji-mnemonics.json` does the same for the 79-character
 N4 delta. Each entry combines a learner-facing visual decomposition, a
 short story linking those components to the meaning, one or more useful
 reading mnemonics, and an anchor ID per reading from the vocabulary or
@@ -319,7 +337,7 @@ localization contains only independently authored stories. The preparation step
 inherits component symbols, kana readings, and per-reading anchor IDs from the
 canonical English source, then writes the complete browser-ready structures to
 `kanji-mnemonics.json` and
-`locales/fr/kanji-mnemonics.json`. Content validation requires exact 288-kanji
+`locales/fr/kanji-mnemonics.json`. Content validation requires exact 289-kanji
 coverage, exact component-key coverage, valid anchor pronunciation placement,
 and matching reading counts.
 
@@ -363,6 +381,13 @@ Curated `inflections` supply exact surface readings. The optional
 `allowPartOfSpeechMismatch` flag marks the rare form where Lindera assigns a
 different part of speech; mismatch permission is never inferred for every
 inflection.
+
+Nominal compounds that IPADIC splits into separate words or particles may opt
+into `tokenizeAsWord: true` on their dictionary entry (currently `何でも` and
+`午前中`). Content preparation combines exact term/variant matches at token
+boundaries, using the dictionary reading. Grammar highlights and example target
+indexes use those same tokens. This keeps tooltips and contextual SRS credit on
+the complete word without changing the progress format or merging every phrase.
 
 If a surface form still has multiple compatible dictionary entries, the build
 fails with all candidates. Add a `vocabularyOverrides` surface-to-ID mapping to

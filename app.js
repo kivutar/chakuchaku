@@ -88,6 +88,7 @@ const kanjiGuidanceDivider = document.querySelector("#kanji-guidance-divider");
 const kanjiMeaningHint = document.querySelector("#kanji-meaning-hint");
 const kanjiMeaning = document.querySelector("#kanji-meaning");
 const vocabularyGuidance = document.querySelector("#vocabulary-guidance");
+const vocabularyReadingHint = document.querySelector("#vocabulary-reading-hint");
 const vocabularyReading = document.querySelector("#vocabulary-reading");
 const vocabularyGuidanceDivider = document.querySelector("#vocabulary-guidance-divider");
 const vocabularyPartOfSpeech = document.querySelector("#vocabulary-part-of-speech");
@@ -137,6 +138,7 @@ let speechAvailable = false;
 let autoPlayedLesson;
 let controlRevealTimer;
 let exerciseSubmitted = false;
+let answerFeedbackShown = false;
 let grammarRatings = new Map();
 let vocabularyRating;
 let kanjiRating;
@@ -302,6 +304,39 @@ async function giveAnswerHaptic(succeeded) {
   } catch {
     // Haptics are enhancement-only and may be disabled by the device.
   }
+}
+
+function showAnswerFeedback(outcome) {
+  const summary = solutionElement.querySelector(".solution-kana-summary");
+  if (!summary) return;
+
+  const firstFeedback = !answerFeedbackShown;
+  const label = outcome === "good"
+    ? t("feedback.correct")
+    : ["grammar", "hiragana", "katakana"].includes(currentLesson.section)
+      ? t("common.checkEachPart")
+      : t("common.referenceAnswer");
+
+  answerFeedbackShown = true;
+  summary.hidden = false;
+  solutionElement.dataset.feedbackOutcome = outcome;
+  globalThis.JlptN5Feedback.show(summary, outcome, {
+    label,
+    animate: firstFeedback,
+    // Pronunciation takes priority, including audio still being loaded.
+    sound: firstFeedback && !(settings.autoPlayAudio && currentLesson.audio)
+  });
+  if (firstFeedback) void giveAnswerHaptic(outcome === "good");
+}
+
+function revealSolutionPanel(outcome) {
+  const requestId = lessonRequestId;
+  if (outcome) showAnswerFeedback(outcome);
+  window.requestAnimationFrame(() => {
+    if (requestId === lessonRequestId && exerciseSubmitted) {
+      solutionElement.classList.add("is-visible");
+    }
+  });
 }
 
 function getStudyUrl(section) {
@@ -512,6 +547,8 @@ function applySettings() {
   document.documentElement.dataset.furigana = String(settings.furigana);
   document.documentElement.dataset.tokenColoring = String(settings.tokenColoring);
   document.documentElement.dataset.translationTooltips = String(settings.translationTooltips);
+  document.documentElement.dataset.visualEffects = String(settings.visualEffects);
+  globalThis.JlptN5Feedback.configure(settings);
 
   for (const input of settingInputs) {
     const value = settings[input.dataset.setting];
@@ -636,6 +673,10 @@ async function handleSettingChange(event) {
     [input.dataset.setting]: value
   });
   applySettings();
+
+  if (input.dataset.setting === "soundEffects" && value) {
+    void globalThis.JlptN5Feedback.playSound("good");
+  }
 
   if (["userLanguage", "studyLevel", "newContentPace"].includes(input.dataset.setting)) {
     if (await flushLearnerData()) {
@@ -3834,6 +3875,7 @@ function resetSpeechAudio() {
   activeAudio?.pause();
   activeAudio = undefined;
   speechAudioPromise = undefined;
+  globalThis.JlptN5Feedback.setSpeechActive(false);
 
   if (speechAudioUrl) {
     URL.revokeObjectURL(speechAudioUrl);
@@ -3940,6 +3982,9 @@ function shouldDelayKanaPromptAudio(lesson) {
 }
 
 function hideControls() {
+  globalThis.JlptN5Feedback.reset();
+  answerFeedbackShown = false;
+  delete solutionElement.dataset.feedbackOutcome;
   window.clearTimeout(controlRevealTimer);
   lessonElement.classList.remove("controls-visible");
 }
@@ -3968,7 +4013,7 @@ function cancelAutoCorrect() {
   autoCorrectController = undefined;
 }
 
-function setMeaningHintExpanded(button, content, expanded) {
+function setMeaningHintExpanded(button, content, expanded, kind = "Meaning") {
   const isExpanded = Boolean(expanded);
 
   button.classList.toggle("is-expanded", isExpanded);
@@ -3976,10 +4021,21 @@ function setMeaningHintExpanded(button, content, expanded) {
   button.setAttribute(
     "aria-label",
     isExpanded
-      ? t("common.hideMeaning", { meaning: content.textContent })
-      : t("common.revealMeaning")
+      ? t(`common.hide${kind}`, { meaning: content.textContent, reading: content.textContent })
+      : t(`common.reveal${kind}`)
   );
   content.setAttribute("aria-hidden", String(!isExpanded));
+}
+
+function bindHintHover(button, setExpanded) {
+  // Hover uses the same state as taps and keyboard activation, including ARIA.
+  // Touch pointerenter must not open the hint before the following click.
+  button.addEventListener("pointerenter", (event) => {
+    if (event.pointerType === "mouse") setExpanded(true);
+  });
+  button.addEventListener("pointerleave", (event) => {
+    if (event.pointerType === "mouse") setExpanded(false);
+  });
 }
 
 function setKatakanaMeaningHintExpanded(expanded) {
@@ -3989,6 +4045,16 @@ function setKatakanaMeaningHintExpanded(expanded) {
 function handleKatakanaMeaningHintClick() {
   setKatakanaMeaningHintExpanded(
     katakanaMeaningHint.getAttribute("aria-expanded") !== "true"
+  );
+}
+
+function setVocabularyReadingHintExpanded(expanded) {
+  setMeaningHintExpanded(vocabularyReadingHint, vocabularyReading, expanded, "Reading");
+}
+
+function handleVocabularyReadingHintClick() {
+  setVocabularyReadingHintExpanded(
+    vocabularyReadingHint.getAttribute("aria-expanded") !== "true"
   );
 }
 
@@ -4077,6 +4143,7 @@ function displayLesson(lesson) {
   katakanaMeaningHint.hidden = !isKatakana || isSingleKatakana;
   setKatakanaMeaningHintExpanded(false);
   setKanjiMeaningHintExpanded(false);
+  setVocabularyReadingHintExpanded(false);
   renderKanjiChoices(lesson);
 
   if (isConjugation) {
@@ -4135,7 +4202,7 @@ function displayLesson(lesson) {
     exerciseKindLabel.textContent = isEnglishToJapanese
       ? t(`exercise.vocabularyToJapanese.${getUserLocale()}`)
       : t(`exercise.vocabularyFromJapanese.${getUserLocale()}`);
-    vocabularyReading.hidden = !showReading;
+    vocabularyReadingHint.hidden = !showReading;
     vocabularyReading.textContent = showReading ? readingLabel : "";
     vocabularyGuidanceDivider.hidden = !showReading;
     vocabularyPartOfSpeech.textContent = t(`partOfSpeech.${lesson.partOfSpeech}`);
@@ -4455,6 +4522,14 @@ function displayReviewComplete() {
   renderReviewProgress();
   lessonElement.classList.add("controls-visible");
   reviewContinueButton.focus({ preventScroll: true });
+  // Opening an already-empty review queue is not a newly completed session.
+  if (reviewSession?.getProgress().completed > 0) {
+    globalThis.JlptN5Feedback.show(
+      reviewComplete.querySelector(".review-complete-mark"),
+      "good",
+      { label: "", complete: true }
+    );
+  }
 }
 
 async function displayInitialReviewExercise() {
@@ -4587,7 +4662,6 @@ function revealKanaSolution() {
     translationInput.value,
     kanaRatings
   );
-  void giveAnswerHaptic(result.correct);
   exerciseSubmitted = true;
   translationInput.disabled = true;
   answerRow.className = "solution-answer-row";
@@ -4639,9 +4713,7 @@ function revealKanaSolution() {
     void updateSolutionSpeech(currentLesson, speakButton);
   }
 
-  window.requestAnimationFrame(() => {
-    solutionElement.classList.add("is-visible");
-  });
+  revealSolutionPanel(result.correct ? "good" : "again");
 }
 
 function revealConjugationSolution() {
@@ -4671,7 +4743,6 @@ function revealConjugationSolution() {
     translationInput.value,
     result.ratings
   );
-  void giveAnswerHaptic(result.correct);
   exerciseSubmitted = true;
   translationInput.disabled = true;
   answerRow.className = "solution-answer-row";
@@ -4715,9 +4786,7 @@ function revealConjugationSolution() {
   actionButton.textContent = t("common.next");
   actionButton.disabled = false;
 
-  window.requestAnimationFrame(() => {
-    solutionElement.classList.add("is-visible");
-  });
+  revealSolutionPanel(result.outcome);
 }
 
 function createVocabularyExampleElement(example) {
@@ -4885,7 +4954,6 @@ function revealVocabularySolution() {
     result.outcome
   );
   currentAttemptSubmittedAt = stats.exerciseHistory.at(-1)?.submittedAt;
-  void giveAnswerHaptic(result.correct);
   exerciseSubmitted = true;
   translationInput.disabled = true;
   answerRow.className = "solution-answer-row";
@@ -4962,9 +5030,7 @@ function revealVocabularySolution() {
   actionButton.textContent = t("common.next");
   actionButton.disabled = false;
 
-  window.requestAnimationFrame(() => {
-    solutionElement.classList.add("is-visible");
-  });
+  revealSolutionPanel(result.outcome);
 }
 
 function selectVocabularyRating(outcome, persist = true) {
@@ -4996,6 +5062,7 @@ function selectVocabularyRating(outcome, persist = true) {
       outcome
     );
   }
+  if (persist) showAnswerFeedback(outcome);
 }
 
 function handleVocabularyRating(event) {
@@ -5006,7 +5073,6 @@ function handleVocabularyRating(event) {
   }
 
   selectVocabularyRating(ratingButton.dataset.vocabularyRating);
-  void giveAnswerHaptic(ratingButton.dataset.vocabularyRating === "good");
 }
 
 function recordCurrentVocabularyReview() {
@@ -5120,7 +5186,6 @@ function revealKanjiSolution() {
   );
 
   currentAttemptSubmittedAt = stats.exerciseHistory.at(-1)?.submittedAt;
-  void giveAnswerHaptic(result.correct);
   exerciseSubmitted = true;
   translationInput.disabled = true;
 
@@ -5225,9 +5290,7 @@ function revealKanjiSolution() {
     actionButton.focus({ preventScroll: true });
   }
 
-  window.requestAnimationFrame(() => {
-    solutionElement.classList.add("is-visible");
-  });
+  revealSolutionPanel(result.outcome);
 }
 
 function selectKanjiRating(outcome, persist = true) {
@@ -5259,6 +5322,7 @@ function selectKanjiRating(outcome, persist = true) {
       outcome
     );
   }
+  if (persist) showAnswerFeedback(outcome);
 }
 
 function handleKanjiRating(event) {
@@ -5269,7 +5333,6 @@ function handleKanjiRating(event) {
   }
 
   selectKanjiRating(ratingButton.dataset.kanjiRating);
-  void giveAnswerHaptic(ratingButton.dataset.kanjiRating === "good");
 }
 
 function recordCurrentKanjiReview() {
@@ -5387,6 +5450,10 @@ function revealSolution() {
     void updateSpeechAvailability(currentLesson, answerSpeakButton, false);
   }
   grammarSection.className = "solution-grammar";
+  const summary = document.createElement("p");
+  summary.className = "solution-kana-summary solution-grammar-summary";
+  summary.hidden = true;
+  grammarSection.append(summary);
   grammarList.className = "solution-grammar-list";
 
   if (autoCorrectStatus) {
@@ -5455,9 +5522,7 @@ function revealSolution() {
   actionButton.textContent = t("common.next");
   actionButton.disabled = true;
 
-  window.requestAnimationFrame(() => {
-    solutionElement.classList.add("is-visible");
-  });
+  revealSolutionPanel();
 
   if (autoCorrectEnabled) {
     void autoCorrectGrammarRatings();
@@ -5468,6 +5533,11 @@ function updateGrammarRatingSummary() {
   const ratedCount = grammarRatings.size;
   const totalCount = currentLesson.grammarPointIds.length;
   actionButton.disabled = ratedCount !== totalCount;
+  if (ratedCount === totalCount && totalCount > 0) {
+    showAnswerFeedback([...grammarRatings.values()].every((outcome) => outcome === "good")
+      ? "good"
+      : "again");
+  }
 }
 
 function selectGrammarRating(grammarPointId, outcome, updateSummary = true) {
@@ -5558,7 +5628,6 @@ function handleGrammarRating(event) {
     ratingControl.dataset.grammarPointId,
     ratingButton.dataset.grammarRating
   );
-  void giveAnswerHaptic(ratingButton.dataset.grammarRating === "good");
 }
 
 function recordCurrentGrammarReviews() {
@@ -5719,17 +5788,22 @@ function setSpeakButtonState(state, button = speakButton) {
 }
 
 async function loadSpeechAudio() {
+  const lesson = currentLesson;
+  const requestId = lessonRequestId;
   if (globalThis.JlptN5Native?.isNative) {
-    return new Audio(new URL(currentLesson.audio, document.baseURI).href);
+    return new Audio(new URL(lesson.audio, document.baseURI).href);
   }
 
-  const response = await fetch(currentLesson.audio);
+  const response = await fetch(lesson.audio);
 
   if (!response.ok) {
     throw new Error("Speech could not be loaded.");
   }
 
   const audioBlob = await response.blob();
+  if (currentLesson !== lesson || requestId !== lessonRequestId) {
+    throw new DOMException("The exercise changed before audio loaded.", "AbortError");
+  }
   speechAudioUrl = URL.createObjectURL(audioBlob);
   return new Audio(speechAudioUrl);
 }
@@ -5739,19 +5813,34 @@ async function speakSentence(button = speakButton) {
     return;
   }
 
+  const lesson = currentLesson;
+  const requestId = lessonRequestId;
   setSpeakButtonState("loading", button);
+  globalThis.JlptN5Feedback.setSpeechActive(true);
 
   try {
     speechAudioPromise ||= loadSpeechAudio().catch((error) => {
-      speechAudioPromise = undefined;
+      if (currentLesson === lesson && requestId === lessonRequestId) {
+        speechAudioPromise = undefined;
+      }
       throw error;
     });
 
-    activeAudio = await speechAudioPromise;
+    const audio = await speechAudioPromise;
+    if (currentLesson !== lesson || requestId !== lessonRequestId) return;
+    activeAudio = audio;
+    const releaseFeedbackAudio = () => {
+      if (activeAudio === audio) globalThis.JlptN5Feedback.setSpeechActive(false);
+    };
+    audio.onended = releaseFeedbackAudio;
+    audio.onpause = releaseFeedbackAudio;
+    audio.onerror = releaseFeedbackAudio;
     activeAudio.currentTime = 0;
     await activeAudio.play();
     setSpeakButtonState("ready", button);
   } catch (error) {
+    if (currentLesson !== lesson || requestId !== lessonRequestId) return;
+    globalThis.JlptN5Feedback.setSpeechActive(false);
     console.error(error);
     setSpeakButtonState("error", button);
   }
@@ -5791,6 +5880,10 @@ translationInput.addEventListener("input", handleTranslationInputResize);
 kanjiChoiceGrid.addEventListener("click", handleKanjiChoiceClick);
 katakanaMeaningHint.addEventListener("click", handleKatakanaMeaningHintClick);
 kanjiMeaningHint.addEventListener("click", handleKanjiMeaningHintClick);
+vocabularyReadingHint.addEventListener("click", handleVocabularyReadingHintClick);
+bindHintHover(katakanaMeaningHint, setKatakanaMeaningHintExpanded);
+bindHintHover(kanjiMeaningHint, setKanjiMeaningHintExpanded);
+bindHintHover(vocabularyReadingHint, setVocabularyReadingHintExpanded);
 solutionElement.addEventListener("click", handleGrammarRating);
 solutionElement.addEventListener("click", handleVocabularyRating);
 solutionElement.addEventListener("click", handleKanjiRating);

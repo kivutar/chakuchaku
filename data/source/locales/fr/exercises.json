@@ -8192,5 +8192,227 @@
     "promptVocabularyHints": [
       { "word": "dimanche", "vocabularyIds": ["vocab-b7519a0f57a7"] }
     ]
+  },
+  "fruit-pair-total-price": {
+    "translation": "Deux pommes coûtent trois cents yens au total."
+  },
+  "eggs-six-total-price": {
+    "translation": "Six œufs coûtent deux cents yens au total."
+  },
+  "production-tickets-pair-total": {
+    "translation": "Deux billets coûtent mille yens au total.",
+    "promptVocabularyHints": [
+      {
+        "word": "billets",
+        "vocabularyIds": [
+          "vocab-f5d0af9cc8d2"
+        ]
+      }
+    ]
+  },
+  "production-pencils-three-total": {
+    "translation": "Trois crayons coûtent cent yens au total.",
+    "promptVocabularyHints": [
+      {
+        "word": "crayons",
+        "vocabularyIds": [
+          "vocab-ffe18de42b4b"
+        ]
+      }
+    ]
+  },
+  "bridge-turn-left": {
+    "translation": "Traversez le pont, puis tournez à gauche, s’il vous plaît."
+  },
+  "corner-turn-right": {
+    "translation": "Je tournerai à droite à ce coin de rue."
+  },
+  "production-intersection-turn-left": {
+    "translation": "Je tournerai à gauche au carrefour.",
+    "promptVocabularyHints": [
+      {
+        "word": "carrefour",
+        "vocabularyIds": [
+          "vocab-73fc24d6d3cb"
+        ]
+      }
+    ]
+  },
+  "production-shop-corner-turn-right": {
+    "translation": "Tournez à droite devant le magasin, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "magasin",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      }
+    ]
+  },
+  "restaurant-anything-delicious": {
+    "translation": "Tout est bon dans ce restaurant."
+  },
+  "anyone-can-enter-room": {
+    "translation": "N’importe qui peut entrer dans cette pièce."
+  },
+  "production-anytime-come-home": {
+    "translation": "Venez chez moi quand vous voulez, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "chez",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      }
+    ]
+  },
+  "production-anywhere-buy-water": {
+    "translation": "On peut acheter de l’eau n’importe où.",
+    "promptVocabularyHints": [
+      {
+        "word": "eau",
+        "vocabularyIds": [
+          "vocab-28ddfdc9290c"
+        ]
+      }
+    ]
+  },
+  "river-swim-not-enter": {
+    "translation": "Je nage dans les rivières, mais je ne nage pas dans la mer."
+  },
+  "production-river-enter-then-swim": {
+    "translation": "Je suis entré dans la rivière et j’ai nagé avec un ami.",
+    "promptVocabularyHints": [
+      {
+        "word": "rivière",
+        "vocabularyIds": [
+          "vocab-82dcbecaf875"
+        ]
+      }
+    ]
+  },
+  "birds-singing-audible": {
+    "translation": "J’entends des oiseaux chanter."
+  },
+  "production-window-bird-visible": {
+    "translation": "Je vois un oiseau depuis la fenêtre.",
+    "promptVocabularyHints": [
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      }
+    ]
+  },
+  "listen-radio-cannot-hear": {
+    "translation": "Je veux écouter la radio, mais je ne l’entends pas bien."
+  },
+  "production-mountain-visible-not-sea": {
+    "translation": "Je vois les montagnes, mais je ne vois pas la mer.",
+    "promptVocabularyHints": [
+      {
+        "word": "montagnes",
+        "vocabularyIds": [
+          "vocab-ddd9dca106e2"
+        ]
+      }
+    ]
+  },
+  "pass-bank-wait-library": {
+    "translation": "Je suis passé devant la banque et j’ai attendu devant la bibliothèque."
+  },
+  "production-return-after-class-end": {
+    "translation": "Revenez ici après la fin du cours, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "cours",
+        "vocabularyIds": [
+          "vocab-4c99b14fe21c"
+        ]
+      }
+    ]
+  },
+  "hobby-travel-various-places": {
+    "translation": "Mon loisir est de voyager. Je vais un peu partout pendant mes jours de repos."
+  },
+  "production-morning-soon-finish": {
+    "translation": "Le cours du matin va bientôt se terminer.",
+    "promptVocabularyHints": [
+      {
+        "word": "cours",
+        "vocabularyIds": [
+          "vocab-4c99b14fe21c"
+        ]
+      }
+    ]
+  },
+  "different-idea-healthy-habits": {
+    "translation": "Mon avis est différent. Il vaut mieux marcher tous les jours."
+  },
+  "production-numbers-lined-up": {
+    "translation": "Quatre chiffres identiques sont alignés.",
+    "promptVocabularyHints": [
+      {
+        "word": "chiffres",
+        "vocabularyIds": [
+          "vocab-3097f42345bf"
+        ]
+      }
+    ]
+  },
+  "heavy-bag-light-bag": {
+    "translation": "Ce sac est lourd, mais ce sac-là est léger."
+  },
+  "production-snow-falling-now": {
+    "translation": "Il neige en ce moment.",
+    "promptVocabularyHints": [
+      {
+        "word": "neige",
+        "vocabularyIds": [
+          "vocab-777161023023"
+        ]
+      }
+    ]
+  },
+  "teach-recipient-also": {
+    "translation": "Vous l’avez appris à mon petit frère. Apprenez-le à moi aussi, s’il vous plaît."
+  },
+  "production-language-study-location": {
+    "translation": "J’étudie l’anglais à la bibliothèque.",
+    "promptVocabularyHints": [
+      {
+        "word": "anglais",
+        "vocabularyIds": [
+          "vocab-0f7ce836ef7a"
+        ]
+      }
+    ]
+  },
+  "came-here-then-studied": {
+    "translation": "Depuis que je suis arrivé au Japon, j’étudie le japonais."
+  },
+  "production-books-noun-omission": {
+    "translation": "Il y a des livres japonais ici. Il y en a aussi des étrangers.",
+    "promptVocabularyHints": [
+      {
+        "word": "livres",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      }
+    ]
+  },
+  "shop-then-park-meal": {
+    "translation": "Après avoir acheté du pain au magasin, je le mangerai au parc."
+  },
+  "coffee-unavailable-warm-tea": {
+    "translation": "Puisqu’il n’y a pas de café, donnez-moi du thé chaud, s’il vous plaît."
+  },
+  "family-brother-next-to-mother": {
+    "translation": "La personne à côté de ma mère est mon grand frère."
+  },
+  "healthy-vegetables-daily": {
+    "translation": "Je veux rester en bonne santé, alors je mange des légumes tous les jours."
   }
 }

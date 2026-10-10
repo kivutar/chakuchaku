@@ -2462,6 +2462,17 @@
     "kunReadings": []
   },
   {
+    "id": "kanji-9cf4",
+    "character": "鳴",
+    "meaning": "animal call; sound",
+    "stage": "Supplemental",
+    "introducedAt": "n5",
+    "onReadings": [],
+    "kunReadings": [
+      "な"
+    ]
+  },
+  {
     "id": "kanji-540c",
     "character": "同",
     "meaning": "same",

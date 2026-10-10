@@ -3493,5 +3493,20 @@
         "anchorId": "vocab-42edc1b83779"
       }
     ]
+  },
+  {
+    "kanjiId": "kanji-9cf4",
+    "components": [
+      "口",
+      "鳥"
+    ],
+    "meaningStory": "A bird 鳥 opens its mouth 口 to sing: 鳴 is the sound it makes. The same character covers other animal calls.",
+    "readings": [
+      {
+        "reading": "な",
+        "story": "The bird opens its beak to sing a single NA, like the start of a familiar song. Keep NA with 鳴, and add く in 鳴く（なく）.",
+        "anchorId": "vocab-c0ecee8c2c68"
+      }
+    ]
   }
 ]

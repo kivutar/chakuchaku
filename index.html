@@ -132,6 +132,7 @@
     <script src="statistics.js" defer></script>
     <script src="history.js" defer></script>
     <script src="settings.js" defer></script>
+    <script src="feedback.js" defer></script>
     <script src="progress.js" defer></script>
     <script src="native-storage.js" defer></script>
     <script src="native.js" defer></script>
@@ -367,6 +368,28 @@
             >
             <span class="setting-switch" aria-hidden="true"></span>
             <span class="setting-state" data-setting-state="autoPlayAudio"></span>
+          </label>
+        </div>
+        <div class="setting-row">
+          <span id="visual-effects-label" class="setting-label">
+            <span data-i18n="settings.visualEffects">Visual effects</span>
+            <small data-i18n="settings.visualEffectsDescription">Animated answer feedback.</small>
+          </span>
+          <label class="setting-control">
+            <input type="checkbox" data-setting="visualEffects" aria-labelledby="visual-effects-label">
+            <span class="setting-switch" aria-hidden="true"></span>
+            <span class="setting-state" data-setting-state="visualEffects"></span>
+          </label>
+        </div>
+        <div class="setting-row">
+          <span id="sound-effects-label" class="setting-label">
+            <span data-i18n="settings.soundEffects">Sound effects</span>
+            <small data-i18n="settings.soundEffectsDescription">Soft sounds, separate from Japanese audio.</small>
+          </span>
+          <label class="setting-control">
+            <input type="checkbox" data-setting="soundEffects" aria-labelledby="sound-effects-label">
+            <span class="setting-switch" aria-hidden="true"></span>
+            <span class="setting-state" data-setting-state="soundEffects"></span>
           </label>
         </div>
         <div class="setting-row native-setting-row">
@@ -773,7 +796,17 @@
             data-user-language
             hidden
           >
-            <span id="vocabulary-reading" class="vocabulary-reading" lang="ja"></span>
+            <button
+              id="vocabulary-reading-hint"
+              class="katakana-meaning-hint"
+              type="button"
+              aria-expanded="false"
+              aria-label="Reveal reading"
+              data-i18n-aria-label="common.revealReading"
+            >
+              <span class="katakana-meaning-hint-label" aria-hidden="true" data-i18n="common.readingHint">Reading</span>
+              <span id="vocabulary-reading" class="vocabulary-reading katakana-meaning-hint-content" lang="ja" aria-hidden="true"></span>
+            </button>
             <span
               id="vocabulary-guidance-divider"
               class="vocabulary-guidance-divider"

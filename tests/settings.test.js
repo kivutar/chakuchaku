@@ -42,6 +42,8 @@ test("settings use learner-friendly defaults", () => {
     newContentPace: "balanced",
     furigana: true,
     autoPlayAudio: false,
+    visualEffects: true,
+    soundEffects: false,
     tokenColoring: true,
     translationTooltips: true,
     aiAutoCorrect: false,
@@ -67,6 +69,20 @@ test("settings persist and retain valid existing values", () => {
   assert.equal(settings.studyLevel, "n4");
   assert.equal(settings.newContentPace, "gentle");
   assert.deepEqual({ ...api.readSettings() }, { ...settings });
+});
+
+test("feedback preferences migrate, persist independently, and reject non-booleans", () => {
+  const storage = createStorage(JSON.stringify({ version: 3, autoPlayAudio: true }));
+  const api = loadSettingsApi(storage);
+  assert.equal(api.readSettings().visualEffects, true);
+  assert.equal(api.readSettings().soundEffects, false);
+  api.writeSettings({ visualEffects: false, soundEffects: true });
+  assert.equal(api.readSettings().visualEffects, false);
+  assert.equal(api.readSettings().soundEffects, true);
+  assert.equal(api.readSettings().autoPlayAudio, true);
+  api.writeSettings({ visualEffects: "false", soundEffects: 1 });
+  assert.equal(api.readSettings().visualEffects, true);
+  assert.equal(api.readSettings().soundEffects, false);
 });
 
 test("OpenAI keys remain in session storage and can be cleared", () => {

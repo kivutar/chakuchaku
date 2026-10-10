@@ -134,6 +134,7 @@ function createVocabularyIndex(vocabulary) {
   const entriesById = new Map();
   const matchesByForm = new Map();
   const matchesByReading = new Map();
+  const wordForms = [];
 
   for (const entry of vocabulary) {
     if (entriesById.has(entry.id)) {
@@ -141,6 +142,19 @@ function createVocabularyIndex(vocabulary) {
     }
 
     entriesById.set(entry.id, entry);
+
+    if (entry.tokenizeAsWord !== undefined && (
+      typeof entry.tokenizeAsWord !== "boolean" ||
+      (entry.tokenizeAsWord && !["noun", "pronoun"].includes(entry.partOfSpeech))
+    )) {
+      throw new Error(`${entry.id}: tokenizeAsWord requires a noun or pronoun.`);
+    }
+
+    if (entry.tokenizeAsWord) {
+      for (const surface of [entry.term, ...(entry.variants || [])]) {
+        wordForms.push({ surface, entry });
+      }
+    }
 
     const inflections = entry.inflections || [];
 
@@ -218,7 +232,48 @@ function createVocabularyIndex(vocabulary) {
     }
   }
 
-  return { entriesById, matchesByForm, matchesByReading };
+  wordForms.sort((left, right) => right.surface.length - left.surface.length);
+  return { entriesById, matchesByForm, matchesByReading, wordForms };
+}
+
+function tokenizeContent(text, vocabularyIndex) {
+  const sourceTokens = tokenizer.tokenize(text);
+  const tokens = [];
+
+  for (let start = 0; start < sourceTokens.length;) {
+    let merged;
+
+    for (const { surface, entry } of vocabularyIndex.wordForms) {
+      let end = start;
+      let combined = "";
+
+      while (end < sourceTokens.length && combined.length < surface.length) {
+        combined += sourceTokens[end].surface;
+        end += 1;
+      }
+
+      if (end > start + 1 && combined === surface) {
+        // Opt-in nominal compounds keep their lexical identity instead of
+        // silently reviewing their tokenizer components (何 + でも, 午前 + 中).
+        merged = {
+          end,
+          token: {
+            surface,
+            details: [
+              "名詞", entry.partOfSpeech === "pronoun" ? "代名詞" : "一般",
+              "*", "*", "*", "*", surface, entry.reading, entry.reading
+            ]
+          }
+        };
+        break;
+      }
+    }
+
+    tokens.push(merged?.token || sourceTokens[start]);
+    start = merged?.end || start + 1;
+  }
+
+  return tokens;
 }
 
 function createKanjiIndex(kanji) {
@@ -334,8 +389,8 @@ function findGrammarCandidateRanges(sourceTokens, candidate) {
   return [...ranges.values()];
 }
 
-function createGrammarHighlights(text, grammarPointIds, grammarPointById) {
-  const sourceTokens = tokenizer.tokenize(text);
+function createGrammarHighlights(text, grammarPointIds, grammarPointById, vocabularyIndex) {
+  const sourceTokens = tokenizeContent(text, vocabularyIndex);
   const highlights = [];
 
   for (const grammarPointId of grammarPointIds) {
@@ -470,7 +525,7 @@ function tokenizeLesson(lesson, vocabularyIndex, options = {}) {
   const tokenSurfaceOccurrences = new Map();
   const vocabularySurfaceOccurrences = new Map();
   const issues = [];
-  const sourceTokens = tokenizer.tokenize(lesson.text);
+  const sourceTokens = tokenizeContent(lesson.text, vocabularyIndex);
   const tokens = sourceTokens.map((token, index) => {
     const generatedReading = token.details[7];
     const nextToken = sourceTokens[index + 1];
@@ -808,7 +863,8 @@ function prepareExercise(
     grammarHighlights: createGrammarHighlights(
       japaneseText,
       exercise.grammarPointIds,
-      grammarPointById
+      grammarPointById,
+      vocabularyIndex
     )
   };
 }
@@ -835,7 +891,7 @@ function prepareVocabularyExample(example, vocabularyIndex) {
     ...example,
     id: `example-${example.vocabularyId}`
   };
-  const sourceTokens = tokenizer.tokenize(example.text);
+  const sourceTokens = tokenizeContent(example.text, vocabularyIndex);
   const targetStarts = [];
   let targetOffset = example.text.indexOf(example.targetSurface);
 
@@ -1413,7 +1469,8 @@ try {
   introduction.grammarHighlights = createGrammarHighlights(
     introduction.text,
     introduction.grammarPointIds,
-    grammarPointById
+    grammarPointById,
+    vocabularyIndex
   );
 
   const introductionRequiredLevel = getRequiredLessonLevel(
@@ -1480,7 +1537,8 @@ try {
     variant.grammarHighlights = createGrammarHighlights(
       variant.text,
       introduction.grammarPointIds,
-      grammarPointById
+      grammarPointById,
+      vocabularyIndex
     );
 
     const requiredLevel = getRequiredLessonLevel(

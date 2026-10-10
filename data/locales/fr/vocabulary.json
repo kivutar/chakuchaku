@@ -3495,9 +3495,16 @@
     ]
   },
   "vocab-c0ecee8c2c68": {
-    "meaning": "faire un bruit (animal)",
+    "meaning": "chanter, crier (animal) ; aboyer",
     "acceptedAnswers": [
-      "faire un bruit (animal)"
+      "chanter",
+      "crier",
+      "aboyer",
+      "gazouiller",
+      "pousser un cri",
+      "faire un bruit",
+      "faire un bruit (animal)",
+      "émettre un son"
     ]
   },
   "vocab-bfdcaa65f011": {
@@ -3566,10 +3573,15 @@
     ]
   },
   "vocab-1e3947686d28": {
-    "meaning": "faire la queue, se ranger",
+    "meaning": "faire la queue ; être aligné",
     "acceptedAnswers": [
       "faire la queue",
-      "se ranger"
+      "se ranger",
+      "être aligné",
+      "être alignés",
+      "être en rang",
+      "être en ligne",
+      "s’aligner"
     ]
   },
   "vocab-6377c107ca68": {
@@ -6620,7 +6632,7 @@
     ]
   },
   "vocab-7d35ef299db0": {
-    "meaning": "très bientôt, dans quelques instants, jours",
+    "meaning": "très bientôt ; dans quelques instants",
     "acceptedAnswers": [
       "très bientôt",
       "bientôt",
@@ -10592,6 +10604,51 @@
     "acceptedAnswers": [
       "se mettre à pleuvoir",
       "commencer à pleuvoir"
+    ]
+  },
+  "vocab-5c194c4962f9": {
+    "meaning": "ici et là ; un peu partout",
+    "acceptedAnswers": [
+      "ici et là",
+      "un peu partout",
+      "partout",
+      "de-ci de-là",
+      "à divers endroits"
+    ]
+  },
+  "vocab-befa979d0246": {
+    "meaning": "n’importe quoi ; tout",
+    "acceptedAnswers": [
+      "n’importe quoi",
+      "tout",
+      "quoi que ce soit"
+    ]
+  },
+  "vocab-6c023791c87f": {
+    "meaning": "idée ; pensée ; opinion",
+    "acceptedAnswers": [
+      "idée",
+      "pensée",
+      "opinion",
+      "réflexion"
+    ]
+  },
+  "vocab-3097f42345bf": {
+    "meaning": "chiffre ; nombre écrit",
+    "acceptedAnswers": [
+      "chiffre",
+      "nombre",
+      "nombre écrit",
+      "symbole numérique"
+    ]
+  },
+  "vocab-d1ce9c780dd7": {
+    "meaning": "dans la matinée ; pendant la matinée",
+    "acceptedAnswers": [
+      "dans la matinée",
+      "pendant la matinée",
+      "le matin",
+      "matinée"
     ]
   }
 }

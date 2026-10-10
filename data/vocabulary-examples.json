@@ -16638,18 +16638,18 @@
   },
   {
     "vocabularyId": "vocab-c0ecee8c2c68",
-    "text": "犬が鳴く。",
-    "targetSurface": "鳴く",
-    "targetReading": "なく",
+    "text": "鳥が鳴いています。",
+    "targetSurface": "鳴いて",
+    "targetReading": "ない",
     "targetTokenStart": 2,
     "targetTokenEnd": 3,
-    "translation": "The dog barks.",
+    "translation": "The bird is singing.",
     "tokens": [
       {
-        "surface": "犬",
+        "surface": "鳥",
         "category": "noun",
-        "reading": "いぬ",
-        "vocabularyId": "vocab-4cd1238bcb91"
+        "reading": "とり",
+        "vocabularyId": "vocab-683f3e7fb085"
       },
       {
         "surface": "が",
@@ -16657,10 +16657,25 @@
         "reading": "が"
       },
       {
-        "surface": "鳴く",
+        "surface": "鳴い",
         "category": "verb",
-        "reading": "なく",
+        "reading": "ない",
         "vocabularyId": "vocab-c0ecee8c2c68"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
       },
       {
         "surface": "。",
@@ -17002,40 +17017,45 @@
   },
   {
     "vocabularyId": "vocab-1e3947686d28",
-    "text": "店の前に並びます。",
-    "targetSurface": "並びます",
-    "targetReading": "ならび",
-    "targetTokenStart": 4,
-    "targetTokenEnd": 5,
-    "translation": "I line up in front of the shop.",
+    "text": "一が四つ並んでいます。",
+    "targetSurface": "並んで",
+    "targetReading": "ならん",
+    "targetTokenStart": 3,
+    "targetTokenEnd": 4,
+    "translation": "Four ones are lined up.",
     "tokens": [
       {
-        "surface": "店",
+        "surface": "一",
         "category": "noun",
-        "reading": "みせ",
-        "vocabularyId": "vocab-e70f9243d4c7"
+        "reading": "いち",
+        "vocabularyId": "vocab-5d8047464c5d"
       },
       {
-        "surface": "の",
+        "surface": "が",
         "category": "particle",
-        "reading": "の"
+        "reading": "が"
       },
       {
-        "surface": "前",
+        "surface": "四つ",
         "category": "noun",
-        "reading": "まえ",
-        "vocabularyId": "vocab-07f353ef981c"
+        "reading": "よっつ",
+        "vocabularyId": "vocab-947395f42397"
       },
       {
-        "surface": "に",
-        "category": "particle",
-        "reading": "に"
-      },
-      {
-        "surface": "並び",
+        "surface": "並ん",
         "category": "verb",
-        "reading": "ならび",
+        "reading": "ならん",
         "vocabularyId": "vocab-1e3947686d28"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
       },
       {
         "surface": "ます",
@@ -30474,6 +30494,411 @@
     ]
   },
   {
+    "vocabularyId": "vocab-7d35ef299db0",
+    "text": "もうすぐ来ます。",
+    "targetSurface": "もうすぐ",
+    "targetReading": "もうすぐ",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "He will come very soon.",
+    "tokens": [
+      {
+        "surface": "もうすぐ",
+        "category": "adverb",
+        "reading": "もうすぐ",
+        "vocabularyId": "vocab-7d35ef299db0"
+      },
+      {
+        "surface": "来",
+        "category": "verb",
+        "reading": "き",
+        "vocabularyId": "vocab-bc01756b4d89"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-e99feae5bc25",
+    "text": "山が見えます。",
+    "targetSurface": "見え",
+    "targetReading": "みえ",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I can see the mountain.",
+    "tokens": [
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "見え",
+        "category": "verb",
+        "reading": "みえ",
+        "vocabularyId": "vocab-e99feae5bc25"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-2793645cdcc0",
+    "text": "家に戻る。",
+    "targetSurface": "戻る",
+    "targetReading": "もどる",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I return home.",
+    "tokens": [
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "戻る",
+        "category": "verb",
+        "reading": "もどる",
+        "vocabularyId": "vocab-2793645cdcc0"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-22872269cd56",
+    "text": "私の趣味は音楽。",
+    "targetSurface": "趣味",
+    "targetReading": "しゅみ",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "My hobby is music.",
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "趣味",
+        "category": "noun",
+        "reading": "しゅみ",
+        "vocabularyId": "vocab-22872269cd56"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "音楽",
+        "category": "noun",
+        "reading": "おんがく",
+        "vocabularyId": "vocab-83b219893eca"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-905b4023e5c3",
+    "text": "音が聞こえる。",
+    "targetSurface": "聞こえる",
+    "targetReading": "きこえる",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I can hear the sound.",
+    "tokens": [
+      {
+        "surface": "音",
+        "category": "noun",
+        "reading": "おと",
+        "vocabularyId": "vocab-b37750755344"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "聞こえる",
+        "category": "verb",
+        "reading": "きこえる",
+        "vocabularyId": "vocab-905b4023e5c3"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-0e61b7350e45",
+    "text": "橋を通る。",
+    "targetSurface": "通る",
+    "targetReading": "とおる",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I pass over the bridge.",
+    "tokens": [
+      {
+        "surface": "橋",
+        "category": "noun",
+        "reading": "はし",
+        "vocabularyId": "vocab-873a33bd6c13"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "通る",
+        "category": "verb",
+        "reading": "とおる",
+        "vocabularyId": "vocab-0e61b7350e45"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-5c194c4962f9",
+    "text": "あちこちに店があります。",
+    "targetSurface": "あちこち",
+    "targetReading": "あちこち",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "There are shops here and there.",
+    "tokens": [
+      {
+        "surface": "あちこち",
+        "category": "noun",
+        "reading": "あちこち",
+        "vocabularyId": "vocab-5c194c4962f9"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "店",
+        "category": "noun",
+        "reading": "みせ",
+        "vocabularyId": "vocab-e70f9243d4c7"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-befa979d0246",
+    "text": "何でも食べます。",
+    "targetSurface": "何でも",
+    "targetReading": "なんでも",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I eat anything.",
+    "tokens": [
+      {
+        "surface": "何でも",
+        "category": "noun",
+        "reading": "なんでも",
+        "vocabularyId": "vocab-befa979d0246"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-6c023791c87f",
+    "text": "いい考えですね。",
+    "targetSurface": "考え",
+    "targetReading": "かんがえ",
+    "targetTokenStart": 1,
+    "targetTokenEnd": 2,
+    "translation": "That is a good idea.",
+    "tokens": [
+      {
+        "surface": "いい",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "考え",
+        "category": "noun",
+        "reading": "かんがえ",
+        "vocabularyId": "vocab-6c023791c87f"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "ね",
+        "category": "particle",
+        "reading": "ね"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-d1ce9c780dd7",
+    "text": "午前中に帰ります。",
+    "targetSurface": "午前中",
+    "targetReading": "ごぜんちゅう",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I will return during the morning.",
+    "tokens": [
+      {
+        "surface": "午前中",
+        "category": "noun",
+        "reading": "ごぜんちゅう",
+        "vocabularyId": "vocab-d1ce9c780dd7"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "帰り",
+        "category": "verb",
+        "reading": "かえり",
+        "vocabularyId": "vocab-944f21154c78"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-3097f42345bf",
+    "text": "数字を三つ書きます。",
+    "targetSurface": "数字",
+    "targetReading": "すうじ",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I write three digits.",
+    "tokens": [
+      {
+        "surface": "数字",
+        "category": "noun",
+        "reading": "すうじ",
+        "vocabularyId": "vocab-3097f42345bf"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "三つ",
+        "category": "noun",
+        "reading": "みっつ",
+        "vocabularyId": "vocab-8b887bc8af0c"
+      },
+      {
+        "surface": "書き",
+        "category": "verb",
+        "reading": "かき",
+        "vocabularyId": "vocab-d34997e828cb"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
     "vocabularyId": "vocab-e2192acf21d2",
     "text": "休みの間、本を読みます。",
     "targetSurface": "間",
@@ -32069,38 +32494,6 @@
     ]
   },
   {
-    "vocabularyId": "vocab-7d35ef299db0",
-    "text": "もうすぐ来ます。",
-    "targetSurface": "もうすぐ",
-    "targetReading": "もうすぐ",
-    "targetTokenStart": 0,
-    "targetTokenEnd": 1,
-    "translation": "He will come very soon.",
-    "tokens": [
-      {
-        "surface": "もうすぐ",
-        "category": "adverb",
-        "reading": "もうすぐ",
-        "vocabularyId": "vocab-7d35ef299db0"
-      },
-      {
-        "surface": "来",
-        "category": "verb",
-        "reading": "き",
-        "vocabularyId": "vocab-bc01756b4d89"
-      },
-      {
-        "surface": "ます",
-        "category": "auxiliary",
-        "reading": "ます"
-      },
-      {
-        "surface": "。",
-        "reading": "。"
-      }
-    ]
-  },
-  {
     "vocabularyId": "vocab-b6b3f5d2ec09",
     "text": "お宅はきれいです。",
     "targetSurface": "お宅",
@@ -32654,43 +33047,6 @@
         "surface": "です",
         "category": "auxiliary",
         "reading": "です"
-      },
-      {
-        "surface": "。",
-        "reading": "。"
-      }
-    ]
-  },
-  {
-    "vocabularyId": "vocab-e99feae5bc25",
-    "text": "山が見えます。",
-    "targetSurface": "見え",
-    "targetReading": "みえ",
-    "targetTokenStart": 2,
-    "targetTokenEnd": 3,
-    "translation": "I can see the mountain.",
-    "tokens": [
-      {
-        "surface": "山",
-        "category": "noun",
-        "reading": "やま",
-        "vocabularyId": "vocab-ddd9dca106e2"
-      },
-      {
-        "surface": "が",
-        "category": "particle",
-        "reading": "が"
-      },
-      {
-        "surface": "見え",
-        "category": "verb",
-        "reading": "みえ",
-        "vocabularyId": "vocab-e99feae5bc25"
-      },
-      {
-        "surface": "ます",
-        "category": "auxiliary",
-        "reading": "ます"
       },
       {
         "surface": "。",
@@ -34123,81 +34479,6 @@
         "category": "verb",
         "reading": "まいる",
         "vocabularyId": "vocab-754eab0db7c4"
-      },
-      {
-        "surface": "。",
-        "reading": "。"
-      }
-    ]
-  },
-  {
-    "vocabularyId": "vocab-2793645cdcc0",
-    "text": "家に戻る。",
-    "targetSurface": "戻る",
-    "targetReading": "もどる",
-    "targetTokenStart": 2,
-    "targetTokenEnd": 3,
-    "translation": "I return home.",
-    "tokens": [
-      {
-        "surface": "家",
-        "category": "noun",
-        "reading": "いえ",
-        "vocabularyId": "vocab-8af58778f14e"
-      },
-      {
-        "surface": "に",
-        "category": "particle",
-        "reading": "に"
-      },
-      {
-        "surface": "戻る",
-        "category": "verb",
-        "reading": "もどる",
-        "vocabularyId": "vocab-2793645cdcc0"
-      },
-      {
-        "surface": "。",
-        "reading": "。"
-      }
-    ]
-  },
-  {
-    "vocabularyId": "vocab-22872269cd56",
-    "text": "私の趣味は音楽。",
-    "targetSurface": "趣味",
-    "targetReading": "しゅみ",
-    "targetTokenStart": 2,
-    "targetTokenEnd": 3,
-    "translation": "My hobby is music.",
-    "tokens": [
-      {
-        "surface": "私",
-        "category": "noun",
-        "reading": "わたし",
-        "vocabularyId": "vocab-b6944a5fe271"
-      },
-      {
-        "surface": "の",
-        "category": "particle",
-        "reading": "の"
-      },
-      {
-        "surface": "趣味",
-        "category": "noun",
-        "reading": "しゅみ",
-        "vocabularyId": "vocab-22872269cd56"
-      },
-      {
-        "surface": "は",
-        "category": "particle",
-        "reading": "は"
-      },
-      {
-        "surface": "音楽",
-        "category": "noun",
-        "reading": "おんがく",
-        "vocabularyId": "vocab-83b219893eca"
       },
       {
         "surface": "。",
@@ -35712,38 +35993,6 @@
     ]
   },
   {
-    "vocabularyId": "vocab-905b4023e5c3",
-    "text": "音が聞こえる。",
-    "targetSurface": "聞こえる",
-    "targetReading": "きこえる",
-    "targetTokenStart": 2,
-    "targetTokenEnd": 3,
-    "translation": "I can hear the sound.",
-    "tokens": [
-      {
-        "surface": "音",
-        "category": "noun",
-        "reading": "おと",
-        "vocabularyId": "vocab-b37750755344"
-      },
-      {
-        "surface": "が",
-        "category": "particle",
-        "reading": "が"
-      },
-      {
-        "surface": "聞こえる",
-        "category": "verb",
-        "reading": "きこえる",
-        "vocabularyId": "vocab-905b4023e5c3"
-      },
-      {
-        "surface": "。",
-        "reading": "。"
-      }
-    ]
-  },
-  {
     "vocabularyId": "vocab-3599fe8f0a49",
     "text": "必ず来る。",
     "targetSurface": "必ず",
@@ -36757,38 +37006,6 @@
         "surface": "軒",
         "category": "noun",
         "reading": "けん"
-      },
-      {
-        "surface": "。",
-        "reading": "。"
-      }
-    ]
-  },
-  {
-    "vocabularyId": "vocab-0e61b7350e45",
-    "text": "橋を通る。",
-    "targetSurface": "通る",
-    "targetReading": "とおる",
-    "targetTokenStart": 2,
-    "targetTokenEnd": 3,
-    "translation": "I pass over the bridge.",
-    "tokens": [
-      {
-        "surface": "橋",
-        "category": "noun",
-        "reading": "はし",
-        "vocabularyId": "vocab-873a33bd6c13"
-      },
-      {
-        "surface": "を",
-        "category": "particle",
-        "reading": "を"
-      },
-      {
-        "surface": "通る",
-        "category": "verb",
-        "reading": "とおる",
-        "vocabularyId": "vocab-0e61b7350e45"
       },
       {
         "surface": "。",

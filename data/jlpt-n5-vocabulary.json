@@ -237,7 +237,8 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "adjective"
+    "partOfSpeech": "adjective",
+    "variants": ["温かい"]
   },
   {
     "id": "vocab-2110de97e73d",
@@ -5546,11 +5547,17 @@
     "id": "vocab-c0ecee8c2c68",
     "term": "鳴く",
     "reading": "なく",
-    "meaning": "to make sound (animal)",
+    "meaning": "to chirp; to bark; to make an animal sound",
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "acceptedAnswers": [
+      "sing",
+      "cry (animal)",
+      "call (animal)",
+      "make a sound"
+    ]
   },
   {
     "id": "vocab-bfdcaa65f011",
@@ -5669,11 +5676,16 @@
     "id": "vocab-1e3947686d28",
     "term": "並ぶ",
     "reading": "ならぶ",
-    "meaning": "to line up, to stand in a line (v.i.)",
+    "meaning": "to line up; to stand in a line; to be arranged in a row",
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "acceptedAnswers": [
+      "queue",
+      "be lined up",
+      "be in a row"
+    ]
   },
   {
     "id": "vocab-6377c107ca68",
@@ -10283,6 +10295,120 @@
     "voiceSlug": "hi-day"
   },
   {
+    "id": "vocab-7d35ef299db0",
+    "term": "もうすぐ",
+    "reading": "もうすぐ",
+    "meaning": "very soon; in a few moments",
+    "scope": "core",
+    "introducedAt": "n5",
+    "source": "open-anki-jlpt-decks",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "id": "vocab-e99feae5bc25",
+    "term": "見える",
+    "reading": "みえる",
+    "meaning": "to be visible; to be able to see",
+    "scope": "core",
+    "introducedAt": "n5",
+    "source": "open-anki-jlpt-decks",
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "vocab-2793645cdcc0",
+    "term": "戻る",
+    "reading": "もどる",
+    "meaning": "to return (v.i.); to come back",
+    "scope": "core",
+    "introducedAt": "n5",
+    "source": "open-anki-jlpt-decks",
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "vocab-22872269cd56",
+    "term": "趣味",
+    "reading": "しゅみ",
+    "meaning": "hobby; pastime",
+    "scope": "core",
+    "introducedAt": "n5",
+    "source": "open-anki-jlpt-decks",
+    "partOfSpeech": "noun"
+  },
+  {
+    "id": "vocab-905b4023e5c3",
+    "term": "聞こえる",
+    "reading": "きこえる",
+    "meaning": "to be heard, to be audible",
+    "scope": "core",
+    "introducedAt": "n5",
+    "source": "open-anki-jlpt-decks",
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "vocab-0e61b7350e45",
+    "term": "通る",
+    "reading": "とおる",
+    "meaning": "to pass (by), to go through",
+    "scope": "core",
+    "introducedAt": "n5",
+    "source": "open-anki-jlpt-decks",
+    "partOfSpeech": "verb"
+  },
+  {
+    "id": "vocab-5c194c4962f9",
+    "term": "あちこち",
+    "reading": "あちこち",
+    "meaning": "here and there; various places",
+    "partOfSpeech": "pronoun",
+    "scope": "supplemental",
+    "introducedAt": "n5",
+    "source": "curated-beginner-coverage"
+  },
+  {
+    "id": "vocab-befa979d0246",
+    "term": "何でも",
+    "reading": "なんでも",
+    "meaning": "anything; whatever",
+    "partOfSpeech": "pronoun",
+    "tokenizeAsWord": true,
+    "acceptedAnswers": ["everything"],
+    "scope": "supplemental",
+    "introducedAt": "n5",
+    "source": "curated-beginner-coverage"
+  },
+  {
+    "id": "vocab-6c023791c87f",
+    "term": "考え",
+    "reading": "かんがえ",
+    "meaning": "idea; thought; opinion",
+    "partOfSpeech": "noun",
+    "scope": "supplemental",
+    "introducedAt": "n5",
+    "source": "curated-beginner-coverage"
+  },
+  {
+    "id": "vocab-d1ce9c780dd7",
+    "term": "午前中",
+    "reading": "ごぜんちゅう",
+    "meaning": "during the morning; in the morning",
+    "partOfSpeech": "noun",
+    "tokenizeAsWord": true,
+    "acceptedAnswers": ["morning"],
+    "scope": "supplemental",
+    "introducedAt": "n5",
+    "source": "curated-beginner-coverage"
+  },
+  {
+    "id": "vocab-3097f42345bf",
+    "term": "数字",
+    "reading": "すうじ",
+    "meaning": "digit; numeral; number (written symbol)",
+    "partOfSpeech": "noun",
+    "scope": "supplemental",
+    "introducedAt": "n5",
+    "source": "curated-beginner-coverage"
+  },
+  {
     "id": "vocab-e2192acf21d2",
     "term": "間",
     "reading": "あいだ",
@@ -10753,16 +10879,6 @@
     "partOfSpeech": "pronoun"
   },
   {
-    "id": "vocab-7d35ef299db0",
-    "term": "もうすぐ",
-    "reading": "もうすぐ",
-    "meaning": "very soon; in a few moments; days",
-    "scope": "core",
-    "introducedAt": "n4",
-    "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "adverb"
-  },
-  {
     "id": "vocab-b6b3f5d2ec09",
     "term": "お宅",
     "reading": "おたく",
@@ -10912,16 +11028,6 @@
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adverb"
-  },
-  {
-    "id": "vocab-e99feae5bc25",
-    "term": "見える",
-    "reading": "みえる",
-    "meaning": "to be visible; to be able to see",
-    "scope": "core",
-    "introducedAt": "n4",
-    "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
   },
   {
     "id": "vocab-238d8325791a",
@@ -11326,26 +11432,6 @@
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb"
-  },
-  {
-    "id": "vocab-2793645cdcc0",
-    "term": "戻る",
-    "reading": "もどる",
-    "meaning": "to return (v.i.); to come back",
-    "scope": "core",
-    "introducedAt": "n4",
-    "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
-  },
-  {
-    "id": "vocab-22872269cd56",
-    "term": "趣味",
-    "reading": "しゅみ",
-    "meaning": "hobby; pastime",
-    "scope": "core",
-    "introducedAt": "n4",
-    "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
   },
   {
     "id": "vocab-969a24017d82",
@@ -11831,16 +11917,6 @@
     "voiceSlug": "ukagau-ask"
   },
   {
-    "id": "vocab-905b4023e5c3",
-    "term": "聞こえる",
-    "reading": "きこえる",
-    "meaning": "to be heard, to be audible",
-    "scope": "core",
-    "introducedAt": "n4",
-    "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
-  },
-  {
     "id": "vocab-3599fe8f0a49",
     "term": "必ず",
     "reading": "かならず",
@@ -12161,16 +12237,6 @@
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "counter"
-  },
-  {
-    "id": "vocab-0e61b7350e45",
-    "term": "通る",
-    "reading": "とおる",
-    "meaning": "to pass (by), to go through",
-    "scope": "core",
-    "introducedAt": "n4",
-    "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
   },
   {
     "id": "vocab-61776abbc569",

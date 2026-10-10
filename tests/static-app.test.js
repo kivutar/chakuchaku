@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import test from "node:test";
+import { runInNewContext } from "node:vm";
 import { fileURLToPath } from "node:url";
 import { toHiragana, toKana, toKatakana } from "wanakana";
 import { handleStaticRequest } from "../scripts/serve.js";
@@ -225,7 +226,7 @@ test("generated lessons match their authored sources", async () => {
 
   const productionExercises = exercises.filter(({ type }) => type === "production");
 
-  assert.equal(productionExercises.length, 355);
+  assert.equal(productionExercises.length, 370);
   assert.ok(productionExercises.every(({ id }) => id.startsWith("production-")));
   assert.ok(productionExercises.every(({ text, promptVocabularyHints }) => {
     return (
@@ -573,6 +574,153 @@ test("Vocabulary alternates deterministic translation directions and reviews one
   assert.match(statsCode, /section: "vocabulary"/);
 });
 
+test("vocabulary readings are optional accessible hints rather than automatic kanji clues", async () => {
+  const [html, browserCode] = await Promise.all([
+    readFile(join(rootDirectory, "index.html"), "utf8"),
+    readFile(join(rootDirectory, "app.js"), "utf8")
+  ]);
+
+  assert.match(html, /id="vocabulary-reading-hint"[\s\S]*?type="button"[\s\S]*?aria-expanded="false"/);
+  assert.match(html, /id="vocabulary-reading"[^>]*aria-hidden="true"/);
+  assert.match(browserCode, /vocabularyReadingHint\.hidden = !showReading/);
+  assert.match(browserCode, /setVocabularyReadingHintExpanded\(false\)/);
+  assert.match(browserCode, /setMeaningHintExpanded\(vocabularyReadingHint, vocabularyReading, expanded, "Reading"\)/);
+  assert.match(browserCode, /vocabularyReadingHint\.addEventListener\("click", handleVocabularyReadingHintClick\)/);
+});
+
+test("beginner comprehension gaps have balanced exercises and tracked grammar IDs", async () => {
+  const [grammar, exercises, vocabulary, examples, kanji] = await Promise.all([
+    readJson("data/jlpt-n5-grammar.json"),
+    readJson("data/exercises.json"),
+    readJson("data/jlpt-n5-vocabulary.json"),
+    readJson("data/vocabulary-examples.json"),
+    readJson("data/jlpt-n5-kanji.json")
+  ]);
+
+  for (const id of ["de-total-price", "ni-turn-direction", "question-word-demo", "mieru-kikoeru"]) {
+    assert.equal(grammar.find((point) => point.id === id).introducedAt, "n5");
+    const lessons = exercises.filter(({ grammarPointIds }) => grammarPointIds.includes(id));
+    assert.ok(lessons.length >= 4, id);
+    assert.ok(lessons.some(({ type }) => type === "production"), id);
+    assert.ok(lessons.some(({ type }) => type !== "production"), id);
+    assert.ok(lessons.every(({ minimumLevel }) => minimumLevel === "n5"), id);
+  }
+
+  for (const id of ["leave-station-turn-right", "cinema-after-right-at-intersection"]) {
+    assert.ok(exercises.find((entry) => entry.id === id).grammarPointIds.includes("ni-turn-direction"));
+  }
+  for (const term of ["あちこち", "何でも", "考え", "午前中", "数字", "聞こえる", "見える", "通る", "趣味", "戻る", "もうすぐ"]) {
+    assert.equal(vocabulary.find((entry) => entry.term === term).introducedAt, "n5", term);
+  }
+
+  const birds = exercises.find(({ id }) => id === "birds-singing-audible");
+  assert.ok(birds.vocabularyIds.includes("vocab-c0ecee8c2c68"));
+  assert.ok(birds.kanjiIds.includes("kanji-9cf4"));
+  assert.deepEqual(kanji.find(({ character }) => character === "鳴").kunReadings, ["な"]);
+  const anything = examples.find(({ vocabularyId }) => vocabularyId === "vocab-befa979d0246");
+  assert.equal(anything.targetReading, "なんでも");
+  assert.equal(exercises.find(({ id }) => id === "restaurant-anything-delicious")
+    .tokens.find(({ surface }) => surface === "何でも").reading, "なんでも");
+});
+
+test("price and counter exercises preserve contextual sound changes", async () => {
+  const exercises = await readJson("data/exercises.json");
+  const token = (id, surface) => exercises.find((entry) => entry.id === id)
+    .tokens.find((entry) => entry.surface === surface);
+
+  assert.equal(token("fruit-pair-total-price", "百").reading, "びゃく");
+  assert.equal(token("production-pencils-three-total", "本").reading, "ぼん");
+  assert.equal(token("eggs-six-total-price", "百").reading, "ひゃく");
+});
+
+test("compound vocabulary keeps word identity and aligned grammar highlights", async () => {
+  const [exercises, examples] = await Promise.all([
+    readJson("data/exercises.json"),
+    readJson("data/vocabulary-examples.json")
+  ]);
+
+  for (const [id, vocabularyId, surface, reading] of [
+    ["restaurant-anything-delicious", "vocab-befa979d0246", "何でも", "なんでも"],
+    ["production-morning-soon-finish", "vocab-d1ce9c780dd7", "午前中", "ごぜんちゅう"]
+  ]) {
+    const exercise = exercises.find((entry) => entry.id === id);
+    const token = exercise.tokens.find((entry) => entry.surface === surface);
+    assert.equal(token.vocabularyId, vocabularyId);
+    assert.equal(token.reading, reading);
+    assert.ok(exercise.vocabularyIds.includes(vocabularyId));
+    const example = examples.find((entry) => entry.vocabularyId === vocabularyId);
+    assert.equal(example.tokens[example.targetTokenStart].vocabularyId, vocabularyId);
+    assert.equal(example.targetTokenEnd, example.targetTokenStart + 1);
+  }
+
+  const anything = exercises.find((entry) => entry.id === "restaurant-anything-delicious");
+  const highlight = anything.grammarHighlights.find((entry) => entry.grammarPointId === "question-word-demo");
+  assert.equal(anything.tokens.slice(highlight.tokenStart, highlight.tokenEnd)
+    .map(({ surface }) => surface).join(""), "何でも");
+  const morning = exercises.find((entry) => entry.id === "production-morning-soon-finish");
+  for (const { grammarPointId, tokenStart, tokenEnd } of morning.grammarHighlights) {
+    if (grammarPointId === "no-possession") {
+      assert.equal(morning.tokens.slice(tokenStart, tokenEnd).map(({ surface }) => surface).join(""), "の");
+    }
+  }
+});
+
+test("hint hover and explicit activation share one visible and accessible state", async () => {
+  const [browserCode, styles] = await Promise.all([
+    readFile(join(rootDirectory, "app.js"), "utf8"),
+    readFile(join(rootDirectory, "styles.css"), "utf8")
+  ]);
+  const functions = browserCode.slice(
+    browserCode.indexOf("function setMeaningHintExpanded("),
+    browserCode.indexOf("function setKatakanaMeaningHintExpanded(")
+  );
+  const { setMeaningHintExpanded, bindHintHover } = runInNewContext(
+    `${functions}\n({ setMeaningHintExpanded, bindHintHover });`,
+    { t: (key) => key }
+  );
+  const attributes = new Map();
+  const contentAttributes = new Map();
+  const classes = new Set();
+  const listeners = new Map();
+  const button = {
+    classList: { toggle: (name, enabled) => enabled ? classes.add(name) : classes.delete(name) },
+    setAttribute: (name, value) => attributes.set(name, value),
+    addEventListener: (name, handler) => listeners.set(name, handler)
+  };
+  const content = {
+    textContent: "なく",
+    setAttribute: (name, value) => contentAttributes.set(name, value)
+  };
+  const setExpanded = (expanded) => setMeaningHintExpanded(button, content, expanded, "Reading");
+  const assertState = (expanded) => {
+    assert.equal(classes.has("is-expanded"), expanded);
+    assert.equal(attributes.get("aria-expanded"), String(expanded));
+    assert.equal(contentAttributes.get("aria-hidden"), String(!expanded));
+    assert.equal(attributes.get("aria-label"), expanded ? "common.hideReading" : "common.revealReading");
+  };
+
+  bindHintHover(button, setExpanded);
+  setExpanded(false);
+  listeners.get("pointerenter")({ pointerType: "touch" });
+  assertState(false);
+  listeners.get("pointerenter")({ pointerType: "mouse" });
+  assertState(true);
+  setExpanded(false); // Explicit activation can hide a hovered/focused hint.
+  assertState(false);
+  listeners.get("pointerleave")({ pointerType: "mouse" });
+  assertState(false);
+  setExpanded(true);
+  listeners.get("pointerleave")({ pointerType: "touch" });
+  assertState(true);
+  setExpanded(false);
+  assertState(false);
+  assert.doesNotMatch(styles, /\.katakana-meaning-hint:(?:hover|focus)\s+\.katakana-meaning-hint-content/);
+  for (const name of ["KatakanaMeaning", "KanjiMeaning", "VocabularyReading"]) {
+    const buttonName = name[0].toLowerCase() + name.slice(1) + "Hint";
+    assert.ok(browserCode.includes(`bindHintHover(${buttonName}, set${name}HintExpanded)`));
+  }
+});
+
 test("Grammar answers silently reinforce unrevealed due vocabulary", async () => {
   const [browserCode, vocabularyCode, srsCode] = await Promise.all([
     readFile(join(rootDirectory, "app.js"), "utf8"),
@@ -908,6 +1056,8 @@ test("settings layer loads before the app and exposes every initial control", as
     "newContentPace",
     "furigana",
     "autoPlayAudio",
+    "visualEffects",
+    "soundEffects",
     "tokenColoring",
     "translationTooltips",
     "aiAutoCorrect"
@@ -926,6 +1076,25 @@ test("settings layer loads before the app and exposes every initial control", as
   assert.match(html, /Stored only in this tab/);
   assert.match(browserCode, /readOpenAiApiKey/);
   assert.match(browserCode, /openAiApiKeyInput\.addEventListener\("input", handleSettingChange\)/);
+});
+
+test("answer feedback is bundled, optional, and gives pronunciation priority", async () => {
+  const [html, browserCode, styles, build, worker] = await Promise.all([
+    readFile(join(rootDirectory, "index.html"), "utf8"),
+    readFile(join(rootDirectory, "app.js"), "utf8"),
+    readFile(join(rootDirectory, "styles.css"), "utf8"),
+    readFile(join(rootDirectory, "scripts/build-static.js"), "utf8"),
+    readFile(join(rootDirectory, "service-worker.js"), "utf8")
+  ]);
+  assert.ok(html.indexOf('src="feedback.js"') < html.indexOf('src="app.js"'));
+  assert.match(build, /"feedback\.js"/);
+  assert.match(worker, /"feedback\.js"/);
+  assert.match(browserCode, /firstFeedback && !\(settings\.autoPlayAudio && currentLesson\.audio\)/);
+  assert.match(browserCode, /if \(ratedCount === totalCount && totalCount > 0\)/);
+  assert.match(browserCode, /if \(requestId === lessonRequestId && exerciseSubmitted\)/);
+  assert.match(browserCode, /JlptN5Feedback\.setSpeechActive\(true\)/);
+  assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.feedback-stage/);
+  assert.match(styles, /\.feedback-particles[\s\S]*?pointer-events: none/);
 });
 
 test("review-only sections explain when no cards have been introduced", async () => {
@@ -981,7 +1150,8 @@ test("speaker checks local narration availability before playback", async () => 
   assert.match(browserCode, /fetch\("data\/available-voices\.json"\)/);
   assert.match(browserCode, /getVocabularyVoicePath\(entry\)/);
   assert.match(browserCode, /bundledSpeechPathsPromise\.then\(\(paths\) => paths\.has\(audioUrl\)\)/);
-  assert.match(browserCode, /return new Audio\(new URL\(currentLesson\.audio, document\.baseURI\)\.href\)/);
+  assert.match(browserCode, /return new Audio\(new URL\(lesson\.audio, document\.baseURI\)\.href\)/);
+  assert.match(browserCode, /currentLesson !== lesson \|\| requestId !== lessonRequestId/);
   assert.match(browserCode, /setSpeakButtonState\(available \? "ready" : "unavailable", button\)/);
   assert.match(browserCode, /if \(!speechAvailable\)/);
   assert.match(browserCode, /getExerciseType\(currentLesson\) === "production"/);
@@ -1201,6 +1371,7 @@ test("vocabulary inventory has a substantial core and labeled learner favorites"
         "curated-beginner-vocabulary",
         "curated-kanji-vocabulary",
         "curated-migii-vocabulary",
+        "curated-beginner-coverage",
         "curated-n4-vocabulary"
       ].includes(entry.source)
     );

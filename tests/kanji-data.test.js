@@ -59,11 +59,13 @@ test("kanji inventory combines the Rikkyo foundation with the pinned N4 delta", 
   assert.equal(n4ReferenceCharacters.filter((character) => n5Characters.has(character)).length, 91);
   assert.equal(n4DeltaCharacters.length, 79);
   assert.deepEqual(new Set(Object.keys(n4Curriculum.meaningOverrides)), new Set(n4DeltaCharacters));
-  assert.equal(kanji.length, 288);
+  assert.equal(kanji.length, 289);
   assert.equal(kanji.filter(({ stage }) => stage === "B6").length, 73);
   assert.equal(kanji.filter(({ stage }) => stage === "B5").length, 68);
   assert.equal(kanji.filter(({ stage }) => stage === "B4").length, 68);
   assert.equal(kanji.filter(({ stage }) => stage === "N4").length, 79);
+  assert.deepEqual(kanji.filter(({ stage }) => stage === "Supplemental")
+    .map(({ character }) => character), ["鳴"]);
   assert.deepEqual(
     kanji.map(({ character, stage }) => ({ character, stage })),
     expected
@@ -76,7 +78,7 @@ test("kanji inventory combines the Rikkyo foundation with the pinned N4 delta", 
     assert.match(entry.character, /^\p{Script=Han}$/u);
     assert.equal(entry.id, `kanji-${codePoint}`);
     assert.ok(entry.meaning.length > 0);
-    assert.ok(["B6", "B5", "B4", "N4"].includes(entry.stage));
+    assert.ok(["B6", "B5", "B4", "Supplemental", "N4"].includes(entry.stage));
     assert.equal(entry.introducedAt, entry.stage === "N4" ? "n4" : "n5");
     assert.ok(Array.isArray(entry.onReadings));
     assert.ok(Array.isArray(entry.kunReadings));

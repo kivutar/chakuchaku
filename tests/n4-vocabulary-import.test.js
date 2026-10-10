@@ -58,7 +58,9 @@ test("the complete pinned N4 source is either imported, merged, or deliberately 
   const preImportVocabulary = vocabulary.filter((entry) => {
     return !(
       entry.source === "open-anki-jlpt-decks" &&
-      (entry.introducedAt === "n4" || entry.id === "vocab-f3881ce313e7")
+      (entry.introducedAt === "n4" || [
+        "日", "聞こえる", "見える", "通る", "趣味", "戻る", "もうすぐ"
+      ].includes(entry.term))
     );
   });
   const freshImport = prepareImport(
@@ -83,8 +85,8 @@ test("the complete pinned N4 source is either imported, merged, or deliberately 
   assert.ok(freshImport.candidates.some(({ term, reading }) => {
     return term === "～月" && reading === "～つき";
   }));
-  assert.equal(vocabulary.length, 1483);
-  assert.equal(vocabulary.filter(({ introducedAt }) => introducedAt === "n4").length, 615);
+  assert.equal(vocabulary.length, 1488);
+  assert.equal(vocabulary.filter(({ introducedAt }) => introducedAt === "n4").length, 609);
 
   const byId = new Map(vocabulary.map((entry) => [entry.id, entry]));
   const importedFields = [
@@ -120,6 +122,7 @@ test("the complete pinned N4 source is either imported, merged, or deliberately 
   assert.equal(byId.has("vocab-bcde89c841b0"), false);
   assert.equal(byId.get("vocab-59631e105136").term, "引き出す");
   assert.equal(byId.get("vocab-c4dcc34f811a").term, "降り出す");
+  assert.equal(byId.get("vocab-7d35ef299db0").meaning, "very soon; in a few moments");
   for (const duplicateId of [
     "vocab-d3fd26035acb",
     "vocab-8cda46ae057c",

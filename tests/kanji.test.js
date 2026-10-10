@@ -113,7 +113,7 @@ function createFixturePool() {
   ]);
 }
 
-test("the complete kanji curriculum exposes all 288 characters through word contexts", async () => {
+test("the complete kanji curriculum exposes every character through word contexts", async () => {
   const [kanji, mnemonics, vocabulary, contexts, examples] = await Promise.all([
     readFile(new URL("../data/jlpt-n5-kanji.json", import.meta.url), "utf8").then(JSON.parse),
     readFile(new URL("../data/kanji-mnemonics.json", import.meta.url), "utf8").then(JSON.parse),
@@ -134,8 +134,8 @@ test("the complete kanji curriculum exposes all 288 characters through word cont
   const inventory = getKanjiInventory(pool);
   const exampleIds = new Set(examples.map(({ vocabularyId }) => vocabularyId));
 
-  assert.deepEqual(getStageOrder(kanji), ["B6", "B5", "B4", "N4"]);
-  assert.equal(inventory.length, 288);
+  assert.deepEqual(getStageOrder(kanji), ["B6", "B5", "B4", "Supplemental", "N4"]);
+  assert.equal(inventory.length, kanji.length);
   assert.deepEqual(
     new Set(inventory.map(({ stage }) => stage)),
     new Set(getStageOrder(kanji))

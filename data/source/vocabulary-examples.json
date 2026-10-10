@@ -2887,9 +2887,9 @@
   },
   {
     "vocabularyId": "vocab-c0ecee8c2c68",
-    "text": "犬が鳴く。",
-    "targetSurface": "鳴く",
-    "translation": "The dog barks."
+    "text": "鳥が鳴いています。",
+    "targetSurface": "鳴いて",
+    "translation": "The bird is singing."
   },
   {
     "vocabularyId": "vocab-bfdcaa65f011",
@@ -2953,9 +2953,9 @@
   },
   {
     "vocabularyId": "vocab-1e3947686d28",
-    "text": "店の前に並びます。",
-    "targetSurface": "並びます",
-    "translation": "I line up in front of the shop."
+    "text": "一が四つ並んでいます。",
+    "targetSurface": "並んで",
+    "translation": "Four ones are lined up."
   },
   {
     "vocabularyId": "vocab-6377c107ca68",
@@ -5208,6 +5208,72 @@
     "translation": "The sun is strong."
   },
   {
+    "vocabularyId": "vocab-7d35ef299db0",
+    "text": "もうすぐ来ます。",
+    "targetSurface": "もうすぐ",
+    "translation": "He will come very soon."
+  },
+  {
+    "vocabularyId": "vocab-e99feae5bc25",
+    "text": "山が見えます。",
+    "targetSurface": "見え",
+    "translation": "I can see the mountain."
+  },
+  {
+    "vocabularyId": "vocab-2793645cdcc0",
+    "text": "家に戻る。",
+    "targetSurface": "戻る",
+    "translation": "I return home."
+  },
+  {
+    "vocabularyId": "vocab-22872269cd56",
+    "text": "私の趣味は音楽。",
+    "targetSurface": "趣味",
+    "translation": "My hobby is music."
+  },
+  {
+    "vocabularyId": "vocab-905b4023e5c3",
+    "text": "音が聞こえる。",
+    "targetSurface": "聞こえる",
+    "translation": "I can hear the sound."
+  },
+  {
+    "vocabularyId": "vocab-0e61b7350e45",
+    "text": "橋を通る。",
+    "targetSurface": "通る",
+    "translation": "I pass over the bridge."
+  },
+  {
+    "vocabularyId": "vocab-5c194c4962f9",
+    "text": "あちこちに店があります。",
+    "targetSurface": "あちこち",
+    "translation": "There are shops here and there."
+  },
+  {
+    "vocabularyId": "vocab-befa979d0246",
+    "text": "何でも食べます。",
+    "targetSurface": "何でも",
+    "translation": "I eat anything."
+  },
+  {
+    "vocabularyId": "vocab-6c023791c87f",
+    "text": "いい考えですね。",
+    "targetSurface": "考え",
+    "translation": "That is a good idea."
+  },
+  {
+    "vocabularyId": "vocab-d1ce9c780dd7",
+    "text": "午前中に帰ります。",
+    "targetSurface": "午前中",
+    "translation": "I will return during the morning."
+  },
+  {
+    "vocabularyId": "vocab-3097f42345bf",
+    "text": "数字を三つ書きます。",
+    "targetSurface": "数字",
+    "translation": "I write three digits."
+  },
+  {
     "vocabularyId": "vocab-e2192acf21d2",
     "text": "休みの間、本を読みます。",
     "targetSurface": "間",
@@ -5484,12 +5550,6 @@
     "translation": "She is a teacher."
   },
   {
-    "vocabularyId": "vocab-7d35ef299db0",
-    "text": "もうすぐ来ます。",
-    "targetSurface": "もうすぐ",
-    "translation": "He will come very soon."
-  },
-  {
     "vocabularyId": "vocab-b6b3f5d2ec09",
     "text": "お宅はきれいです。",
     "targetSurface": "お宅",
@@ -5578,12 +5638,6 @@
     "text": "最近忙しいです。",
     "targetSurface": "最近",
     "translation": "I’ve been busy lately."
-  },
-  {
-    "vocabularyId": "vocab-e99feae5bc25",
-    "text": "山が見えます。",
-    "targetSurface": "見え",
-    "translation": "I can see the mountain."
   },
   {
     "vocabularyId": "vocab-238d8325791a",
@@ -5824,18 +5878,6 @@
     "text": "家に参る。",
     "targetSurface": "参る",
     "translation": "I go home."
-  },
-  {
-    "vocabularyId": "vocab-2793645cdcc0",
-    "text": "家に戻る。",
-    "targetSurface": "戻る",
-    "translation": "I return home."
-  },
-  {
-    "vocabularyId": "vocab-22872269cd56",
-    "text": "私の趣味は音楽。",
-    "targetSurface": "趣味",
-    "translation": "My hobby is music."
   },
   {
     "vocabularyId": "vocab-969a24017d82",
@@ -6120,12 +6162,6 @@
     "translation": "I ask the teacher."
   },
   {
-    "vocabularyId": "vocab-905b4023e5c3",
-    "text": "音が聞こえる。",
-    "targetSurface": "聞こえる",
-    "translation": "I can hear the sound."
-  },
-  {
     "vocabularyId": "vocab-3599fe8f0a49",
     "text": "必ず来る。",
     "targetSurface": "必ず",
@@ -6316,12 +6352,6 @@
     "text": "家は三軒。",
     "targetSurface": "三軒",
     "translation": "There are three houses."
-  },
-  {
-    "vocabularyId": "vocab-0e61b7350e45",
-    "text": "橋を通る。",
-    "targetSurface": "通る",
-    "translation": "I pass over the bridge."
   },
   {
     "vocabularyId": "vocab-61776abbc569",

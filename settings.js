@@ -11,6 +11,8 @@
     newContentPace: "balanced",
     furigana: true,
     autoPlayAudio: false,
+    visualEffects: true,
+    soundEffects: false,
     tokenColoring: true,
     translationTooltips: true,
     aiAutoCorrect: false,
@@ -20,6 +22,8 @@
   const booleanSettingNames = [
     "furigana",
     "autoPlayAudio",
+    "visualEffects",
+    "soundEffects",
     "tokenColoring",
     "translationTooltips",
     "aiAutoCorrect",

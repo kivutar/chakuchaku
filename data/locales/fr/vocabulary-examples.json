@@ -1443,7 +1443,7 @@
     "translation": "C'est un long chemin."
   },
   "vocab-c0ecee8c2c68": {
-    "translation": "Le chien aboie."
+    "translation": "L’oiseau chante."
   },
   "vocab-bfdcaa65f011": {
     "translation": "Je perds ma clé."
@@ -1476,7 +1476,7 @@
     "translation": "J’apprends avec le professeur."
   },
   "vocab-1e3947686d28": {
-    "translation": "Je fais la queue devant le magasin."
+    "translation": "Quatre chiffres un sont alignés."
   },
   "vocab-6377c107ca68": {
     "translation": "J’aligne les livres."
@@ -2603,6 +2603,39 @@
   "vocab-f3881ce313e7": {
     "translation": "Le soleil est fort."
   },
+  "vocab-7d35ef299db0": {
+    "translation": "Il vient très bientôt."
+  },
+  "vocab-e99feae5bc25": {
+    "translation": "On voit la montagne."
+  },
+  "vocab-2793645cdcc0": {
+    "translation": "Je retourne à la maison."
+  },
+  "vocab-22872269cd56": {
+    "translation": "Mon passe-temps est la musique."
+  },
+  "vocab-905b4023e5c3": {
+    "translation": "J'entends le son."
+  },
+  "vocab-0e61b7350e45": {
+    "translation": "Je passe par le pont."
+  },
+  "vocab-5c194c4962f9": {
+    "translation": "Il y a des magasins un peu partout."
+  },
+  "vocab-befa979d0246": {
+    "translation": "Je mange de tout."
+  },
+  "vocab-6c023791c87f": {
+    "translation": "C’est une bonne idée."
+  },
+  "vocab-d1ce9c780dd7": {
+    "translation": "Je rentrerai dans la matinée."
+  },
+  "vocab-3097f42345bf": {
+    "translation": "J’écris trois chiffres."
+  },
   "vocab-e2192acf21d2": {
     "translation": "Je lis des livres pendant les vacances."
   },
@@ -2741,9 +2774,6 @@
   "vocab-d8efb8884948": {
     "translation": "Elle est enseignante."
   },
-  "vocab-7d35ef299db0": {
-    "translation": "Il vient très bientôt."
-  },
   "vocab-b6b3f5d2ec09": {
     "translation": "Votre maison est jolie."
   },
@@ -2788,9 +2818,6 @@
   },
   "vocab-127859f34798": {
     "translation": "Je suis occupé récemment."
-  },
-  "vocab-e99feae5bc25": {
-    "translation": "On voit la montagne."
   },
   "vocab-238d8325791a": {
     "translation": "J’aime cette émission."
@@ -2911,12 +2938,6 @@
   },
   "vocab-754eab0db7c4": {
     "translation": "Je rentre à la maison."
-  },
-  "vocab-2793645cdcc0": {
-    "translation": "Je retourne à la maison."
-  },
-  "vocab-22872269cd56": {
-    "translation": "Mon passe-temps est la musique."
   },
   "vocab-969a24017d82": {
     "translation": "Il vole de l'argent."
@@ -3059,9 +3080,6 @@
   "vocab-93f32940dba5": {
     "translation": "Je demande au professeur."
   },
-  "vocab-905b4023e5c3": {
-    "translation": "J'entends le son."
-  },
   "vocab-3599fe8f0a49": {
     "translation": "Je viendrai certainement."
   },
@@ -3157,9 +3175,6 @@
   },
   "vocab-33107873fa03": {
     "translation": "Il y a trois maisons."
-  },
-  "vocab-0e61b7350e45": {
-    "translation": "Je passe par le pont."
   },
   "vocab-61776abbc569": {
     "translation": "L'heure est déjà passée."

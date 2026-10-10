@@ -13,5 +13,14 @@
   {
     "stage": "B4",
     "characters": "出入着脱働思仕事教会合売言短社眠色赤青白黒階回開閉早歩走銀局使料払持文字物品誰作必要旅費送質問図館席調説覚忘答宿題欠楽悲意発表味自定資校"
+  },
+  {
+    "stage": "Supplemental",
+    "source": "ChakuChaku beginner coverage supplement (not part of the Rikkyo list)",
+    "sourceUrl": "https://www.kanjipedia.jp/kanji/0006693400",
+    "meaningOverrides": {
+      "鳴": "animal call; sound"
+    },
+    "characters": "鳴"
   }
 ]

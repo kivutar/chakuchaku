@@ -39,6 +39,7 @@ const staticFiles = [
   "statistics.js",
   "history.js",
   "settings.js",
+  "feedback.js",
   "progress.js",
   "native-storage.js",
   "native.js",

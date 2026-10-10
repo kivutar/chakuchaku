@@ -3,6 +3,10 @@
   font-family: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
   background: #fafafa;
   color: #181818;
+  --feedback-good: #216e53;
+  --feedback-good-soft: #deeee5;
+  --feedback-again: #8a6928;
+  --feedback-again-soft: #f6eacb;
 }
 
 * {
@@ -1721,8 +1725,6 @@ main {
     0 0.3rem 0.9rem rgb(56 48 36 / 8%);
 }
 
-.katakana-meaning-hint:hover .katakana-meaning-hint-content,
-.katakana-meaning-hint:focus .katakana-meaning-hint-content,
 .katakana-meaning-hint.is-expanded .katakana-meaning-hint-content {
   max-width: 20rem;
   border-left-width: 1px;
@@ -2247,6 +2249,257 @@ main {
 
 .solution-kana-summary[data-outcome="again"] {
   color: #743b31;
+}
+
+/* A celebratory result banner; Japanese text and layout never bounce. */
+.feedback-summary {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  min-height: 4rem;
+  padding: 0.55rem 0.8rem;
+  overflow: hidden;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.feedback-summary[hidden] {
+  display: none;
+}
+
+.feedback-summary[data-outcome="good"],
+.solution-kana-summary.feedback-summary[data-outcome="good"] {
+  color: var(--feedback-good);
+  background: linear-gradient(110deg, var(--feedback-good-soft), #f2faf5);
+}
+
+.feedback-summary[data-outcome="again"],
+.solution-kana-summary.feedback-summary[data-outcome="again"] {
+  color: var(--feedback-again);
+  background: var(--feedback-again-soft);
+  font-size: 0.87rem;
+}
+
+.feedback-mark {
+  position: relative;
+  display: inline-grid;
+  width: 2.65rem;
+  height: 2.65rem;
+  flex: 0 0 2.65rem;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #40b38b, #208866);
+  box-shadow: 0 3px 9px rgb(33 110 83 / 20%);
+  color: #fff;
+}
+
+[data-outcome="again"] > .feedback-mark {
+  background: #f1d694;
+  box-shadow: none;
+  color: #805d1a;
+}
+
+.feedback-mark svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.feedback-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.feedback-particles,
+.feedback-wave {
+  position: absolute;
+  top: var(--feedback-origin-y);
+  left: var(--feedback-origin-x);
+  pointer-events: none;
+}
+
+.feedback-wave {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #69c7a6;
+  border-radius: 50%;
+  background: radial-gradient(circle, transparent 40%, rgb(64 179 139 / 12%) 70%, transparent 72%);
+  opacity: 0;
+  animation: feedback-wave 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.feedback-wave:nth-child(2) {
+  width: 135px;
+  height: 135px;
+  border-color: #a4d6a7;
+  animation-delay: 130ms;
+}
+
+.feedback-particles i {
+  position: absolute;
+  top: -4px;
+  left: -3px;
+  width: 6px;
+  height: 10px;
+  border-radius: 2px;
+  background: #279e79;
+  opacity: 0;
+  animation: feedback-particle 1000ms cubic-bezier(0.12, 0.7, 0.3, 1) var(--particle-delay) both;
+}
+
+.feedback-particles i:nth-child(3n) {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #389f9b;
+}
+
+.feedback-particles i:nth-child(4n) {
+  width: 13px;
+  height: 13px;
+  border-radius: 0;
+  background: #cc982a;
+  clip-path: polygon(50% 0, 61% 38%, 100% 50%, 61% 62%, 50% 100%, 39% 62%, 0 50%, 39% 38%);
+}
+
+.feedback-enter[data-outcome="good"] .feedback-mark {
+  animation: feedback-pop 650ms cubic-bezier(0.22, 1, 0.36, 1) 260ms both;
+}
+
+.feedback-enter[data-outcome="again"] .feedback-mark {
+  animation: feedback-arrive 350ms ease-out 160ms both;
+}
+
+.feedback-enter .feedback-mark svg path {
+  stroke-dasharray: 1;
+  animation: feedback-draw 320ms ease-out 400ms both;
+}
+
+.feedback-enter[data-outcome="good"] .feedback-label {
+  animation: feedback-settle 650ms cubic-bezier(0.22, 1, 0.36, 1) 320ms both;
+  transform-origin: center;
+}
+
+.feedback-enter[data-outcome="good"]::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(105deg, transparent 30%, rgb(255 255 255 / 70%) 50%, transparent 70%);
+  content: "";
+  animation: feedback-shine 850ms ease-in-out 350ms both;
+}
+
+.solution-grammar-summary:not([hidden]) {
+  margin-bottom: 0.5rem;
+}
+
+html[data-visual-effects="true"] .solution.is-visible[data-feedback-outcome="good"] {
+  border-color: var(--feedback-good);
+}
+
+html[data-visual-effects="true"] .solution.is-visible[data-feedback-outcome="again"] {
+  border-color: var(--feedback-again);
+}
+
+.review-complete-mark.feedback-summary {
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0;
+  overflow: visible;
+  background: none;
+}
+
+.review-complete-mark .feedback-mark {
+  width: 4.5rem;
+  height: 4.5rem;
+  flex-basis: 4.5rem;
+}
+
+.review-complete-mark .feedback-mark svg {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+@keyframes feedback-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes feedback-settle {
+  0% { opacity: 0; transform: translateY(10px) scale(0.85); }
+  45% { opacity: 1; transform: translateY(-2px) scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+@keyframes feedback-pop {
+  0% { opacity: 0; transform: scale(0.2) rotate(-25deg); }
+  45% { opacity: 1; transform: scale(1.35) rotate(8deg); }
+  70% { transform: scale(0.94) rotate(-3deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+
+@keyframes feedback-arrive {
+  from { opacity: 0; transform: scale(0.75); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes feedback-shine {
+  from { transform: translateX(-120%); }
+  to { transform: translateX(120%); }
+}
+
+@keyframes feedback-wave {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.12); }
+  20% { opacity: 0.65; }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+@keyframes feedback-particle {
+  0% { opacity: 0; transform: translate(0, 0) scale(0.3); }
+  12% { opacity: 1; }
+  75% { opacity: 0.9; transform: translate(var(--particle-x), var(--particle-y)) rotate(var(--particle-turn)) scale(1); }
+  100% { opacity: 0; transform: translate(var(--particle-x), var(--particle-y)) rotate(var(--particle-turn)) scale(0.4); }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --feedback-good: #9cccaa;
+    --feedback-good-soft: #294232;
+    --feedback-again: #dcc081;
+    --feedback-again-soft: #42371f;
+  }
+  .feedback-summary[data-outcome="good"],
+  .solution-kana-summary.feedback-summary[data-outcome="good"] {
+    background: linear-gradient(110deg, #294232, #1d332d);
+  }
+  .feedback-enter[data-outcome="good"]::after {
+    background: linear-gradient(105deg, transparent 30%, rgb(135 217 181 / 20%) 50%, transparent 70%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feedback-enter .feedback-mark,
+  .feedback-enter .feedback-mark svg path,
+  .feedback-enter .feedback-label,
+  .feedback-enter::after {
+    animation: none;
+  }
+  .feedback-stage {
+    display: none;
+  }
 }
 
 .solution-kana-list {
@@ -3507,8 +3760,6 @@ html[data-furigana="false"] rt {
       0 0.3rem 0.9rem rgb(0 0 0 / 24%);
   }
 
-  .katakana-meaning-hint:hover .katakana-meaning-hint-content,
-  .katakana-meaning-hint:focus .katakana-meaning-hint-content,
   .katakana-meaning-hint.is-expanded .katakana-meaning-hint-content {
     border-left-color: #514f47;
   }

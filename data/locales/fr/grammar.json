@@ -1198,5 +1198,17 @@
   "dewa-nai-ka": {
     "name": "Confirmation ou suggestion appuyée",
     "meaning": "Chercher l'accord, contester une supposition ou encourager une action commune selon le contexte."
+  },
+  "ni-turn-direction": {
+    "name": "Direction d’un virage",
+    "meaning": "Indiquer vers où l’on tourne, comme dans 右に曲がる. Le lieu où l’on tourne se marque avec で."
+  },
+  "de-total-price": {
+    "name": "Prix total d’un lot",
+    "meaning": "Indiquer le prix total de la quantité ou du lot annoncé, et non le prix de chaque objet."
+  },
+  "question-word-demo": {
+    "name": "Choix sans restriction",
+    "meaning": "Associer un mot interrogatif à でも pour dire n’importe quoi, n’importe qui, n’importe où ou n’importe quand."
   }
 }

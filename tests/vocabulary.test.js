@@ -123,6 +123,70 @@ test("contextual vocabulary detection recovers every prepared word in reference 
   }
 });
 
+test("grammar answers reinforce complete compounds in Japanese, English, and French", async () => {
+  const [exercises, vocabulary, french, frenchExercises] = await Promise.all([
+    readFile(new URL("../data/exercises.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../data/jlpt-n5-vocabulary.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../data/locales/fr/vocabulary.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../data/locales/fr/exercises.json", import.meta.url), "utf8").then(JSON.parse)
+  ]);
+  const localized = vocabulary.map((entry) => ({
+    ...entry,
+    translations: { fr: french[entry.id] }
+  }));
+
+  for (const [id, vocabularyId] of [
+    ["restaurant-anything-delicious", "vocab-befa979d0246"],
+    ["production-morning-soon-finish", "vocab-d1ce9c780dd7"]
+  ]) {
+    const exercise = exercises.find((entry) => entry.id === id);
+    const japanese = exercise.type === "production" ? exercise.solution : exercise.text;
+    const kana = exercise.tokens.map(({ reading, surface }) => reading || surface).join("");
+    for (const answer of [japanese, kana]) {
+      assert.ok(findContextualVocabularyIds({ tokens: exercise.tokens, answer, vocabulary })
+        .includes(vocabularyId), `${id}: ${answer}`);
+      assert.ok(!findContextualVocabularyIds({
+        tokens: exercise.tokens, answer, vocabulary, excludedVocabularyIds: [vocabularyId]
+      }).includes(vocabularyId));
+    }
+    const referenceTranslations = {
+      en: exercise.type === "production" ? exercise.text : exercise.solution,
+      fr: frenchExercises[id].translation
+    };
+    for (const answer of Object.values(referenceTranslations)) {
+      assert.ok(findRecognizedVocabularyIds({
+        tokens: exercise.tokens, answer, referenceTranslations, vocabulary: localized,
+        acceptedLocales: ["en", "fr"]
+      }).includes(vocabularyId), `${id}: ${answer}`);
+      assert.ok(!findRecognizedVocabularyIds({
+        tokens: exercise.tokens, answer, referenceTranslations, vocabulary: localized,
+        acceptedLocales: ["en", "fr"], excludedVocabularyIds: [vocabularyId]
+      }).includes(vocabularyId));
+    }
+  }
+
+  const morning = exercises.find((entry) => entry.id === "production-morning-soon-finish");
+  assert.ok(!findContextualVocabularyIds({
+    tokens: morning.tokens, answer: "午前の授業はもうすぐ終わります。", vocabulary
+  }).includes("vocab-d1ce9c780dd7"));
+});
+
+test("もうすぐ means soon, not a bare unit of days", async () => {
+  const [vocabulary, french] = await Promise.all([
+    readFile(new URL("../data/jlpt-n5-vocabulary.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../data/locales/fr/vocabulary.json", import.meta.url), "utf8").then(JSON.parse)
+  ]);
+  const entry = vocabulary.find(({ term }) => term === "もうすぐ");
+  const pool = createVocabularyPool([{ ...entry, translations: { fr: french[entry.id] } }]);
+  const exercise = chooseExercise(pool, entry.id, directions.japaneseToEnglish);
+  for (const answer of ["very soon", "in a few moments", "très bientôt", "bientôt", "dans quelques instants"]) {
+    assert.equal(gradeAnswer(exercise, answer).correct, true, answer);
+  }
+  for (const answer of ["days", "jours", "day", "jour"]) {
+    assert.equal(gradeAnswer(exercise, answer).correct, false, answer);
+  }
+});
+
 test("grammar recognition detects accepted vocabulary meanings in complete translations", () => {
   const vocabulary = [
     {
@@ -529,8 +593,8 @@ test("the vocabulary pool contains the complete curated inventory", async () => 
   ));
   const pool = createVocabularyPool(vocabulary);
 
-  assert.equal(pool.length, 1483);
-  assert.equal(new Set(pool.map(({ vocabularyId }) => vocabularyId)).size, 1483);
+  assert.equal(pool.length, vocabulary.length);
+  assert.equal(new Set(pool.map(({ vocabularyId }) => vocabularyId)).size, vocabulary.length);
   assert.equal(pool.some(({ term }) => term === "N"), false);
   assert.equal(pool.every(({ acceptedAnswersByLocale }) => {
     return acceptedAnswersByLocale.en.length > 0;
