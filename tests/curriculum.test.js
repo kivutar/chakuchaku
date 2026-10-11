@@ -241,8 +241,26 @@ test("all prepared grammar exercises declare their minimum level", async () => {
 
   assert.equal(introduction.minimumLevel, "n5");
   assert.ok(exercises.every(({ minimumLevel }) => ["n5", "n4"].includes(minimumLevel)));
-  assert.equal(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").length, 357);
+  assert.equal(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").length, 367);
   assert.ok(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").every((exercise) => {
     return exercise.grammarPointIds.some((id) => n4GrammarIds.has(id));
   }));
+});
+
+test("every grammar point has at least three distinct Japanese practice sentences", async () => {
+  const [grammar, exercises] = await Promise.all([
+    readJson("data/jlpt-n5-grammar.json"),
+    readJson("data/exercises.json")
+  ]);
+
+  for (const point of grammar) {
+    const sentences = new Set(exercises
+      .filter(({ grammarPointIds }) => grammarPointIds.includes(point.id))
+      .map(({ type, text, solution }) => type === "production" ? solution : text));
+
+    assert.ok(
+      sentences.size >= 3,
+      `${point.id} needs at least three distinct Japanese sentences (found ${sentences.size})`
+    );
+  }
 });

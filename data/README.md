@@ -47,6 +47,9 @@ checked bullet means at least one authored exercise meaningfully assesses that
 point and records its ID; the bullet also lists every matching exercise.
 Coverage measures deliberate practice, not mastery. Run `npm run content` after
 editing exercises to update it rather than editing the checklist directly.
+Every grammar point has at least three distinct Japanese practice sentences,
+checked by the curriculum tests. Reusing a sentence in recognition and production
+counts only once toward this minimum.
 
 Recognition exercises must list at least two grammar points that drive their
 intended translation challenge. Production exercises may isolate one grammar
@@ -93,7 +96,7 @@ the N5 curricula published by Bunpro, JLPT Sensei, and Yatta. `boundary` keeps
 useful points that sources variously place at N5 or N4 without presenting them
 as undisputed N5 requirements.
 
-The live N4 slice contains 97 high-value points and 357 independently authored
+The live N4 slice contains 97 high-value points and 367 independently authored
 recognition and production exercises. Alongside the original volitional,
 potential, passive, decision, expectation, ease, movement, time, and `～なら`
 points, it now covers the causative, causative-passive, direct imperative,

@@ -8414,5 +8414,75 @@
   },
   "healthy-vegetables-daily": {
     "translation": "Je veux rester en bonne santé, alors je mange des légumes tous les jours."
+  },
+  "production-n4-plan-work-after-graduation": {
+    "translation": "Après avoir obtenu mon diplôme, je compte travailler au Japon.",
+    "promptVocabularyHints": [
+      {
+        "word": "diplôme",
+        "vocabularyIds": [
+          "vocab-2183db666af4"
+        ]
+      }
+    ]
+  },
+  "production-n4-decided-not-buy-expensive-shoes": {
+    "translation": "J’ai décidé de ne pas acheter ces chaussures parce qu’elles sont trop chères.",
+    "promptVocabularyHints": [
+      {
+        "word": "chaussures",
+        "vocabularyIds": [
+          "vocab-d2110e85159b"
+        ]
+      }
+    ]
+  },
+  "n4-no-class-because-teacher-ill": {
+    "translation": "Comme le professeur est malade, il a été décidé que nous n’aurons pas cours aujourd’hui."
+  },
+  "n4-empty-bag-should-be-light": {
+    "translation": "Ce sac devrait être léger puisqu’il ne contient rien."
+  },
+  "production-n4-child-brother-cannot-be-doctor": {
+    "translation": "Mon petit frère ne peut pas être médecin, puisqu’il est encore un enfant.",
+    "promptVocabularyHints": [
+      {
+        "word": "médecin",
+        "vocabularyIds": [
+          "vocab-60e888b69674"
+        ]
+      }
+    ]
+  },
+  "n4-fragile-glass-carry-slowly": {
+    "translation": "Ce verre se casse facilement, alors transportez-le lentement, s’il vous plaît."
+  },
+  "production-n4-hard-to-read-kanji-in-hiragana": {
+    "translation": "Écrivez en hiragana les kanjis difficiles à lire, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "hiragana",
+        "vocabularyIds": [
+          "vocab-1406fd4d2836"
+        ]
+      }
+    ]
+  },
+  "n4-eat-breakfast-here-before-leaving": {
+    "translation": "Comme j’ai encore le temps, je vais prendre mon petit déjeuner ici avant de partir."
+  },
+  "production-n4-no-talking-while-teacher-explains": {
+    "translation": "Ne parlez pas pendant que le professeur explique, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "explique",
+        "vocabularyIds": [
+          "vocab-9683551a843c"
+        ]
+      }
+    ]
+  },
+  "n4-friend-delivered-package-while-away": {
+    "translation": "Pendant mon absence, un ami m’a livré un colis."
   }
 }

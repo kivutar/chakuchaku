@@ -10963,6 +10963,11 @@
     "id": "n4-study-throughout-summer-vacation",
     "text": "夏休みの間、毎日日本語を勉強しました。",
     "solution": "I studied Japanese every day throughout summer vacation.",
+    "tokenOverrides": {
+      "間": {
+        "reading": "あいだ"
+      }
+    },
     "grammarPointIds": [
       "aida",
       "frequency-adverbs"
@@ -10973,6 +10978,11 @@
     "text": "I studied during summer vacation.",
     "solution": "夏休みの間、勉強しました。",
     "type": "production",
+    "tokenOverrides": {
+      "間": {
+        "reading": "あいだ"
+      }
+    },
     "promptVocabularyHints": [
       {
         "word": "studied",
@@ -10987,6 +10997,11 @@
     "id": "n4-visit-kyoto-while-in-japan",
     "text": "日本にいる間に、京都へ行きたいです。",
     "solution": "I want to visit Kyoto while I am in Japan.",
+    "tokenOverrides": {
+      "間": {
+        "reading": "あいだ"
+      }
+    },
     "grammarPointIds": [
       "aida-ni",
       "tai-desire"
@@ -10997,6 +11012,11 @@
     "text": "I cleaned the room while the child was sleeping.",
     "solution": "子供が寝ている間に、部屋を掃除しました。",
     "type": "production",
+    "tokenOverrides": {
+      "間": {
+        "reading": "あいだ"
+      }
+    },
     "promptVocabularyHints": [
       {
         "word": "sleeping",
@@ -15769,6 +15789,174 @@
     "grammarPointIds": [
       "tai-desire",
       "node-reason"
+    ]
+  },
+  {
+    "id": "production-n4-plan-work-after-graduation",
+    "text": "After graduating, I am planning to work in Japan.",
+    "solution": "卒業したら、日本で働こうと思っています。",
+    "type": "production",
+    "grammarPointIds": [
+      "volitional-to-omou",
+      "tara-conditional"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "graduating",
+        "vocabularyIds": [
+          "vocab-2183db666af4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-n4-decided-not-buy-expensive-shoes",
+    "text": "I decided not to buy these shoes because they are too expensive.",
+    "solution": "この靴は高すぎるので、買わないことにしました。",
+    "type": "production",
+    "grammarPointIds": [
+      "koto-ni-suru",
+      "sugiru",
+      "node-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "shoes",
+        "vocabularyIds": [
+          "vocab-d2110e85159b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-no-class-because-teacher-ill",
+    "text": "先生が病気なので、今日は授業をしないことになりました。",
+    "solution": "Because the teacher is ill, it has been decided that we will not have class today.",
+    "grammarPointIds": [
+      "koto-ni-naru",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "n4-empty-bag-should-be-light",
+    "text": "このかばんには何も入っていないので、軽いはずです。",
+    "solution": "This bag should be light because there is nothing in it.",
+    "tokenOverrides": {
+      "はず": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "hazu-da",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-n4-child-brother-cannot-be-doctor",
+    "text": "My younger brother cannot possibly be a doctor, since he is still a child.",
+    "solution": "弟はまだ子供なので、医者のはずがありません。",
+    "type": "production",
+    "tokenOverrides": {
+      "はず": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "hazu-ga-nai",
+      "node-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "doctor",
+        "vocabularyIds": [
+          "vocab-60e888b69674"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-fragile-glass-carry-slowly",
+    "text": "このコップは割れやすいので、ゆっくり運んでください。",
+    "solution": "This glass breaks easily, so please carry it slowly.",
+    "tokenOverrides": {
+      "やすい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "yasui",
+      "node-reason",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n4-hard-to-read-kanji-in-hiragana",
+    "text": "Please write difficult-to-read kanji in hiragana.",
+    "solution": "読みにくい漢字は平仮名で書いてください。",
+    "type": "production",
+    "tokenOverrides": {
+      "にくい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "nikui",
+      "modifier-before-noun",
+      "te-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "hiragana",
+        "vocabularyIds": [
+          "vocab-1406fd4d2836"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-eat-breakfast-here-before-leaving",
+    "text": "まだ時間があるので、ここで朝ご飯を食べていきます。",
+    "solution": "Since I still have time, I will have breakfast here before leaving.",
+    "grammarPointIds": [
+      "te-iku",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-n4-no-talking-while-teacher-explains",
+    "text": "Please do not talk while the teacher is explaining.",
+    "solution": "先生が説明している間、話さないでください。",
+    "type": "production",
+    "tokenOverrides": {
+      "間": {
+        "reading": "あいだ"
+      }
+    },
+    "grammarPointIds": [
+      "aida",
+      "naide-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "explaining",
+        "vocabularyIds": [
+          "vocab-9683551a843c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-friend-delivered-package-while-away",
+    "text": "留守の間に、友達が荷物を届けてくれました。",
+    "solution": "While I was away, a friend delivered a package for me.",
+    "tokenOverrides": {
+      "間": {
+        "reading": "あいだ"
+      }
+    },
+    "grammarPointIds": [
+      "aida-ni",
+      "te-kureru"
     ]
   }
 ]

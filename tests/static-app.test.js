@@ -226,7 +226,7 @@ test("generated lessons match their authored sources", async () => {
 
   const productionExercises = exercises.filter(({ type }) => type === "production");
 
-  assert.equal(productionExercises.length, 370);
+  assert.equal(productionExercises.length, 375);
   assert.ok(productionExercises.every(({ id }) => id.startsWith("production-")));
   assert.ok(productionExercises.every(({ text, promptVocabularyHints }) => {
     return (
@@ -631,6 +631,28 @@ test("price and counter exercises preserve contextual sound changes", async () =
   assert.equal(token("fruit-pair-total-price", "百").reading, "びゃく");
   assert.equal(token("production-pencils-three-total", "本").reading, "ぼん");
   assert.equal(token("eggs-six-total-price", "百").reading, "ひゃく");
+});
+
+test("reviewed N4 time spans and voiced requests keep correct readings and highlights", async () => {
+  const exercises = await readJson("data/exercises.json");
+  const timeSpanExercises = exercises.filter(({ grammarPointIds }) => (
+    grammarPointIds.includes("aida") || grammarPointIds.includes("aida-ni")
+  ));
+
+  assert.ok(timeSpanExercises.length >= 6);
+  for (const exercise of timeSpanExercises) {
+    const interval = exercise.tokens.find(({ surface }) => surface === "間");
+    assert.equal(interval?.reading, "あいだ", exercise.id);
+  }
+
+  const glass = exercises.find(({ id }) => id === "n4-fragile-glass-carry-slowly");
+  const request = glass.grammarHighlights.find(({ grammarPointId }) => grammarPointId === "te-kudasai");
+  assert.ok(request);
+  assert.equal(glass.tokens.slice(request.tokenStart, request.tokenEnd)
+    .map(({ surface }) => surface).join(""), "でください");
+
+  const hiragana = exercises.find(({ id }) => id === "production-n4-hard-to-read-kanji-in-hiragana");
+  assert.equal(hiragana.tokens.find(({ surface }) => surface === "平仮名")?.reading, "ひらがな");
 });
 
 test("compound vocabulary keeps word identity and aligned grammar highlights", async () => {
