@@ -3601,8 +3601,8 @@
     "vocabularyId": "vocab-b4ce03cd6090",
     "text": "お酒を飲む。",
     "targetSurface": "お酒",
-    "targetReading": "おさけ",
-    "targetTokenStart": 0,
+    "targetReading": "さけ",
+    "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "I drink alcohol.",
     "tokens": [
@@ -3613,7 +3613,8 @@
       {
         "surface": "酒",
         "category": "noun",
-        "reading": "さけ"
+        "reading": "さけ",
+        "vocabularyId": "vocab-b4ce03cd6090"
       },
       {
         "surface": "を",
@@ -15513,8 +15514,9 @@
     "tokens": [
       {
         "surface": "どうぞ",
-        "category": "adverb",
-        "reading": "どうぞ"
+        "category": "interjection",
+        "reading": "どうぞ",
+        "vocabularyId": "vocab-7a7059323b2b"
       },
       {
         "surface": "座る",
@@ -24845,8 +24847,9 @@
       },
       {
         "surface": "練習",
-        "category": "noun",
-        "reading": "れんしゅう"
+        "category": "verb",
+        "reading": "れんしゅう",
+        "vocabularyId": "vocab-0a5beae1698c"
       },
       {
         "surface": "する",
@@ -51268,7 +51271,7 @@
     "vocabularyId": "vocab-a89eb4b93468",
     "text": "お湯をください。",
     "targetSurface": "湯",
-    "targetReading": "ゆ",
+    "targetReading": "おゆ",
     "targetTokenStart": 0,
     "targetTokenEnd": 1,
     "translation": "Hot water, please.",
@@ -51276,7 +51279,7 @@
       {
         "surface": "お湯",
         "category": "noun",
-        "reading": "ゆ",
+        "reading": "おゆ",
         "vocabularyId": "vocab-a89eb4b93468"
       },
       {
@@ -51893,7 +51896,8 @@
       {
         "surface": "送り",
         "category": "verb",
-        "reading": "おくり"
+        "reading": "おくり",
+        "vocabularyId": "vocab-d4cd95d9b9a5"
       },
       {
         "surface": "まし",

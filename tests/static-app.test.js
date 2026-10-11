@@ -226,7 +226,7 @@ test("generated lessons match their authored sources", async () => {
 
   const productionExercises = exercises.filter(({ type }) => type === "production");
 
-  assert.equal(productionExercises.length, 384);
+  assert.equal(productionExercises.length, 423);
   assert.ok(productionExercises.every(({ id }) => id.startsWith("production-")));
   assert.ok(productionExercises.every(({ text, promptVocabularyHints }) => {
     return (
@@ -599,7 +599,9 @@ test("beginner comprehension gaps have balanced exercises and tracked grammar ID
 
   for (const id of ["de-total-price", "ni-turn-direction", "question-word-demo", "mieru-kikoeru"]) {
     assert.equal(grammar.find((point) => point.id === id).introducedAt, "n5");
-    const lessons = exercises.filter(({ grammarPointIds }) => grammarPointIds.includes(id));
+    const lessons = exercises.filter(({ grammarPointIds, minimumLevel }) => (
+      grammarPointIds.includes(id) && minimumLevel === "n5"
+    ));
     assert.ok(lessons.length >= 4, id);
     assert.ok(lessons.some(({ type }) => type === "production"), id);
     assert.ok(lessons.some(({ type }) => type !== "production"), id);
@@ -669,6 +671,50 @@ test("new grammar combinations retain compound suffix and voiced preparation hig
   assert.equal(highlightedText("production-n4-call-taxi-while-showering", "te-oku"), "でおいて");
   assert.equal(highlightedText("production-n4-sister-can-eat-egg-free-cake", "ba-conditional"), "なければ");
   assert.equal(highlightedText("production-n4-sister-can-eat-egg-free-cake", "potential-form"), "られます");
+});
+
+test("fifth-sentence additions keep contextual readings and inflected grammar highlights", async () => {
+  const exercises = await readJson("data/exercises.json");
+  const exercise = (id) => {
+    const match = exercises.find((entry) => entry.id === id);
+    assert.ok(match, `${id} is missing`);
+    return match;
+  };
+  const readings = (id, surface) => exercise(id).tokens
+    .filter((token) => token.surface === surface).map(({ reading }) => reading);
+  const highlightedText = (id, pointId) => {
+    const entry = exercise(id);
+    const highlight = entry.grammarHighlights.find(({ grammarPointId }) => grammarPointId === pointId);
+    assert.ok(highlight, `${id} needs a ${pointId} highlight`);
+    return entry.tokens.slice(highlight.tokenStart, highlight.tokenEnd)
+      .map(({ surface }) => surface).join("");
+  };
+
+  assert.deepEqual(readings("banana-single-and-bundle-price", "一"), ["いっ"]);
+  assert.deepEqual(readings("banana-single-and-bundle-price", "本"), ["ぽん", "ほん"]);
+  assert.deepEqual(readings("banana-single-and-bundle-price", "百"), ["ひゃく", "びゃく"]);
+  for (const id of ["production-n4-child-unwilling-to-sleep-alone", "n4-thanks-for-explaining-unclear-parts"]) {
+    assert.deepEqual(readings(id, "一"), ["ひと"]);
+    assert.deepEqual(readings(id, "人"), ["り"]);
+  }
+  assert.deepEqual(readings("n4-two-people-needed-to-carry-box", "二"), ["ふた"]);
+  assert.deepEqual(readings("n4-two-people-needed-to-carry-box", "人"), ["り"]);
+  assert.deepEqual(readings("n4-father-drinks-little-rice-based-sake", "米"), ["こめ"]);
+  assert.deepEqual(readings("n4-what-to-add-if-food-too-spicy", "辛"), ["から"]);
+  for (const id of ["production-n4-light-off-habit-forgot-yesterday", "production-n4-long-drive-break-every-two-hours", "production-n4-personal-rule-try-again-after-failure"]) {
+    assert.deepEqual(readings(id, "時"), ["とき"]);
+  }
+
+  assert.equal(highlightedText("n4-window-closed-still-too-noisy-to-sleep", "potential-form"), "眠れません");
+  assert.equal(highlightedText("n4-clean-desk-before-teacher-honorific-use", "o-ni-naru"), "お使いになる");
+  assert.equal(highlightedText("production-n4-humbly-hand-documents-before-teacher-leaves", "o-suru-humble"), "お渡しします");
+  assert.equal(highlightedText("n4-respectful-call-number-if-unclear", "o-go-kudasai-honorific"), "お電話ください");
+  assert.equal(highlightedText("n4-hearsay-teacher-plays-tennis-honorific", "sou-hearsay"), "そうです");
+  assert.equal(highlightedText("n4-hearsay-teacher-plays-tennis-honorific", "sonkeigo-special-verbs"), "なさる");
+  assert.equal(highlightedText("n4-humbly-tell-teacher-coming-tomorrow", "to-iu"), "と申しました");
+  assert.equal(highlightedText("production-n4-breakfast-ready-around-child-waking-time", "koro"), "頃");
+  assert.equal(highlightedText("n4-hard-to-sleep-decision-no-coffee-before-bed", "nakanaka-nai"), "なかなか眠れない");
+  assert.equal(highlightedText("production-n4-at-sea-invitation-to-swim-together", "no-desu"), "んだ");
 });
 
 test("compound vocabulary keeps word identity and aligned grammar highlights", async () => {

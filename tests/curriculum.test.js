@@ -241,13 +241,13 @@ test("all prepared grammar exercises declare their minimum level", async () => {
 
   assert.equal(introduction.minimumLevel, "n5");
   assert.ok(exercises.every(({ minimumLevel }) => ["n5", "n4"].includes(minimumLevel)));
-  assert.equal(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").length, 379);
+  assert.equal(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").length, 467);
   assert.ok(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").every((exercise) => {
     return exercise.grammarPointIds.some((id) => n4GrammarIds.has(id));
   }));
 });
 
-test("every grammar point has at least four distinct Japanese practice sentences", async () => {
+test("every grammar point has at least five distinct Japanese practice sentences", async () => {
   const [grammar, exercises] = await Promise.all([
     readJson("data/jlpt-n5-grammar.json"),
     readJson("data/exercises.json")
@@ -259,9 +259,44 @@ test("every grammar point has at least four distinct Japanese practice sentences
       .map(({ type, text, solution }) => type === "production" ? solution : text));
 
     assert.ok(
-      sentences.size >= 4,
-      `${point.id} needs at least four distinct Japanese sentences (found ${sentences.size})`
+      sentences.size >= 5,
+      `${point.id} needs at least five distinct Japanese sentences (found ${sentences.size})`
     );
+  }
+});
+
+test("fifth-sentence additions cover every previous deficit with new sentences and grammar pairings", async () => {
+  const exercises = await readJson("data/exercises.json");
+  const start = exercises.findIndex(({ id }) => id === "shift-day-work-night-study");
+  const end = exercises.findIndex(({ id }) => id === "production-n4-at-sea-invitation-to-swim-together");
+  assert.ok(start >= 0 && end >= start);
+  const additions = exercises.slice(start, end + 1);
+  const baseline = exercises.slice(0, start);
+  const japanese = ({ type, text, solution }) => type === "production" ? solution : text;
+  const previousSentences = new Set(baseline.map(japanese));
+  const coverage = new Map();
+
+  for (const exercise of baseline) {
+    for (const pointId of exercise.grammarPointIds) {
+      if (!coverage.has(pointId)) coverage.set(pointId, new Set());
+      coverage.get(pointId).add(japanese(exercise));
+    }
+  }
+
+  const deficits = [...coverage].filter(([, sentences]) => sentences.size === 4)
+    .map(([pointId]) => pointId).sort();
+  assert.equal(additions.length, 101);
+  assert.equal(new Set(additions.map(japanese)).size, additions.length);
+  assert.deepEqual(additions.map(({ grammarPointIds }) => grammarPointIds[0]).sort(), deficits);
+  assert.ok(additions.some(({ type }) => type === "production"));
+  assert.ok(additions.some(({ type }) => type !== "production"));
+
+  for (const exercise of additions) {
+    const [target, ...partners] = exercise.grammarPointIds;
+    assert.ok(!previousSentences.has(japanese(exercise)), `${exercise.id} repeats an existing sentence`);
+    assert.ok(partners.some((partner) => !baseline.some(({ grammarPointIds }) => (
+      grammarPointIds.includes(target) && grammarPointIds.includes(partner)
+    ))), `${exercise.id} needs a new pairing for ${target}`);
   }
 });
 

@@ -9119,5 +9119,620 @@
         ]
       }
     ]
+  },
+  "shift-day-work-night-study": {
+    "translation": "Le matin, je travaille dans un magasin, mais le soir, j’étudie chez moi."
+  },
+  "travel-train-or-bus-choice": {
+    "translation": "Pour ce voyage, irez-vous en train ou en bus ?"
+  },
+  "production-grandmother-visit-photos-and-cooking": {
+    "translation": "Après avoir vu ma grand-mère, je lui ai montré des photos et nous avons cuisiné ensemble.",
+    "promptVocabularyHints": [
+      {
+        "word": "grand-mère",
+        "vocabularyIds": [
+          "vocab-9a9ea8e8d12d"
+        ]
+      }
+    ]
+  },
+  "production-friend-taught-kanji-memory-method": {
+    "translation": "Un ami m’a appris comment mémoriser les kanjis.",
+    "promptVocabularyHints": [
+      {
+        "word": "mémoriser",
+        "vocabularyIds": [
+          "vocab-0ec838cc07ea"
+        ]
+      }
+    ]
+  },
+  "production-envelopes-and-stamps-order": {
+    "translation": "Donnez-moi cinq enveloppes et trois timbres, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "enveloppes",
+        "vocabularyIds": [
+          "vocab-d3e35cbd8b7a"
+        ]
+      }
+    ]
+  },
+  "production-open-door-someone-probably-inside": {
+    "translation": "La porte est ouverte, il doit donc encore y avoir quelqu’un à l’intérieur.",
+    "promptVocabularyHints": [
+      {
+        "word": "porte",
+        "vocabularyIds": [
+          "vocab-01adf406cacd"
+        ]
+      }
+    ]
+  },
+  "picnic-beside-beautiful-river-invitation": {
+    "translation": "Voulez-vous déjeuner au bord d’une belle rivière ?"
+  },
+  "production-fragile-box-no-heavy-objects": {
+    "translation": "Cette boîte n’est pas solide, n’y mettez donc pas d’objets lourds, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "boîte",
+        "vocabularyIds": [
+          "vocab-28102c121d50"
+        ]
+      }
+    ]
+  },
+  "medicine-makes-pain-go-away": {
+    "translation": "Quand je prends le médicament, cela ne fait plus mal."
+  },
+  "bus-or-subway-arrives-sooner": {
+    "translation": "Qu’est-ce qui arrive le plus vite à la gare, le bus ou le métro ?"
+  },
+  "production-lost-traveler-given-map": {
+    "translation": "Je ne connaissais pas le chemin, alors une personne près de moi m’a donné un plan.",
+    "promptVocabularyHints": [
+      {
+        "word": "plan",
+        "vocabularyIds": [
+          "vocab-3c687e40b035"
+        ]
+      }
+    ]
+  },
+  "banana-single-and-bundle-price": {
+    "translation": "Les bananes coûtent 100 yens l’unité, mais quatre coûtent 300 yens au total."
+  },
+  "anyone-may-read-but-not-take-books-home": {
+    "translation": "Tout le monde peut lire des livres ici, mais on ne doit pas les emporter chez soi."
+  },
+  "production-n4-plan-repair-old-bicycle": {
+    "translation": "Un vélo neuf coûte trop cher, je compte donc réparer l’ancien.",
+    "promptVocabularyHints": [
+      {
+        "word": "réparer",
+        "vocabularyIds": [
+          "vocab-a584cd8f1390"
+        ]
+      }
+    ]
+  },
+  "n4-waiting-will-not-let-you-see-teacher": {
+    "translation": "Même si vous attendez ici une heure, vous ne pourrez pas voir le professeur."
+  },
+  "n4-decided-walk-instead-of-bus": {
+    "translation": "J’ai décidé d’aller à pied jusqu’à la gare plutôt que de prendre le bus."
+  },
+  "production-n4-long-meeting-lunch-time-changed": {
+    "translation": "La réunion ayant duré plus longtemps, il a été décidé de changer l’heure du déjeuner.",
+    "promptVocabularyHints": [
+      {
+        "word": "réunion",
+        "vocabularyIds": [
+          "vocab-e47785e0c656"
+        ]
+      }
+    ]
+  },
+  "n4-bank-open-despite-expected-day-off": {
+    "translation": "La banque est censée être fermée, mais elle est ouverte aujourd’hui."
+  },
+  "production-n4-dog-cannot-grow-big-overnight": {
+    "translation": "Un chien ne peut pas devenir aussi gros en une seule nuit.",
+    "promptVocabularyHints": [
+      {
+        "word": "chien",
+        "vocabularyIds": [
+          "vocab-4cd1238bcb91"
+        ]
+      }
+    ]
+  },
+  "n4-plan-travel-with-quick-drying-towel": {
+    "translation": "Cette serviette sèche facilement, je compte donc l’emporter en voyage."
+  },
+  "n4-medicine-hard-to-swallow-with-water": {
+    "translation": "Ce médicament est difficile à avaler, prenez-le donc avec de l’eau, s’il vous plaît."
+  },
+  "production-n4-see-birds-flying-away": {
+    "translation": "Je vois des oiseaux s’éloigner en volant.",
+    "promptVocabularyHints": [
+      {
+        "word": "oiseaux",
+        "vocabularyIds": [
+          "vocab-683f3e7fb085"
+        ]
+      }
+    ]
+  },
+  "n4-lived-in-town-since-childhood": {
+    "translation": "J’habite dans cette ville depuis mon enfance."
+  },
+  "n4-father-cooked-while-mother-in-hospital": {
+    "translation": "Pendant que ma mère était hospitalisée, mon père cuisinait pour nous tous les jours."
+  },
+  "production-n4-send-parcel-during-lunch-break": {
+    "translation": "Pendant ma pause déjeuner, je suis allé à la poste pour envoyer un colis.",
+    "promptVocabularyHints": [
+      {
+        "word": "colis",
+        "vocabularyIds": [
+          "vocab-567f42b89301"
+        ]
+      }
+    ]
+  },
+  "production-n4-train-trip-buy-ticket-in-advance": {
+    "translation": "Si vous allez en train, achetez votre billet à l’avance, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "billet",
+        "vocabularyIds": [
+          "vocab-f5d0af9cc8d2"
+        ]
+      }
+    ]
+  },
+  "n4-teacher-made-students-explain-book-choice": {
+    "translation": "Le professeur a fait expliquer aux élèves pourquoi ils avaient choisi ce livre."
+  },
+  "production-n4-tired-of-forced-repeated-story": {
+    "translation": "À la réunion, on m’a fait écouter la même histoire encore et encore, ce qui m’a fatigué.",
+    "promptVocabularyHints": [
+      {
+        "word": "réunion",
+        "vocabularyIds": [
+          "vocab-e47785e0c656"
+        ]
+      }
+    ]
+  },
+  "n4-police-command-put-hands-up": {
+    "translation": "L’agent de police a dit : « Lève les mains ! »"
+  },
+  "production-n4-regret-hot-water-sweater-shrinkage": {
+    "translation": "Mon pull a rétréci. Je n’aurais pas dû le laver à l’eau chaude.",
+    "promptVocabularyHints": [
+      {
+        "word": "pull",
+        "vocabularyIds": [
+          "vocab-797ac724daf3"
+        ]
+      }
+    ]
+  },
+  "n4-suggest-salt-for-bland-food": {
+    "translation": "Ce plat est fade, pourquoi ne pas ajouter un peu de sel ?"
+  },
+  "n4-driver-stops-car-after-bus-stops": {
+    "translation": "Le bus s’est arrêté, alors mon père, qui conduisait, a arrêté la voiture lui aussi."
+  },
+  "n4-party-food-bought-no-need-to-cook": {
+    "translation": "Les plats pour la fête ont déjà été achetés, il n’est donc pas nécessaire de cuisiner."
+  },
+  "production-n4-wash-own-bowl-after-meal": {
+    "translation": "Quand tu as fini de manger, lave ton bol à riz.",
+    "promptVocabularyHints": [
+      {
+        "word": "bol",
+        "vocabularyIds": [
+          "vocab-aa6a896345b4"
+        ]
+      }
+    ]
+  },
+  "n4-no-longer-out-at-night-after-child-born": {
+    "translation": "Depuis la naissance de mon enfant, je ne sors plus le soir."
+  },
+  "production-n4-light-off-habit-forgot-yesterday": {
+    "translation": "Je veille à éteindre la lumière en quittant la pièce, mais hier j’ai oublié.",
+    "promptVocabularyHints": [
+      {
+        "word": "lumière",
+        "vocabularyIds": [
+          "vocab-a24e73630479"
+        ]
+      }
+    ]
+  },
+  "n4-attempt-carry-heavy-box-fails": {
+    "translation": "J’ai essayé de porter la boîte lourde, mais je n’y suis pas arrivé."
+  },
+  "n4-child-begins-singing-when-name-called": {
+    "translation": "À l’appel de son nom, l’enfant s’est soudain mis à chanter."
+  },
+  "production-n4-hand-over-paper-after-writing-address": {
+    "translation": "Quand vous aurez fini d’écrire votre adresse sur cette feuille, donnez-la-moi, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "adresse",
+        "vocabularyIds": [
+          "vocab-fcdd7a903190"
+        ]
+      }
+    ]
+  },
+  "n4-practise-despite-failure-until-success": {
+    "translation": "Même si j’échoue, je continuerai à m’entraîner jusqu’à y arriver."
+  },
+  "n4-phone-starts-ringing-during-class": {
+    "translation": "En cours, le téléphone s’est soudain mis à sonner."
+  },
+  "production-n4-child-unwilling-to-sleep-alone": {
+    "translation": "L’enfant ne veut pas dormir seul, alors sa mère reste près de lui.",
+    "promptVocabularyHints": [
+      {
+        "word": "enfant",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      }
+    ]
+  },
+  "n4-hot-brother-window-opened-for-him": {
+    "translation": "Mon petit frère souffrait de la chaleur, j’ai donc ouvert la fenêtre pour lui."
+  },
+  "n4-warm-room-for-cold-sensitive-mother": {
+    "translation": "J’ai chauffé la pièce à l’avance pour ma mère, qui est frileuse."
+  },
+  "production-n4-want-water-given-to-cat-while-away": {
+    "translation": "Pendant mon absence, j’aimerais que tu donnes de l’eau au chat tous les jours.",
+    "promptVocabularyHints": [
+      {
+        "word": "chat",
+        "vocabularyIds": [
+          "vocab-123a10eb50b0"
+        ]
+      }
+    ]
+  },
+  "n4-thanks-for-explaining-unclear-parts": {
+    "translation": "Merci d’avoir expliqué les points que je ne comprenais pas. Maintenant, je peux le faire seul."
+  },
+  "production-n4-apology-left-without-notifying": {
+    "translation": "Désolé d’être rentré sans vous avoir prévenu.",
+    "promptVocabularyHints": [
+      {
+        "word": "rentré",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      }
+    ]
+  },
+  "n4-please-write-larger-to-read": {
+    "translation": "Les caractères sont trop petits pour que je les lise ; pourriez-vous les écrire plus grand, s’il vous plaît ?"
+  },
+  "n4-glad-to-have-map-in-mountains": {
+    "translation": "J’étais content d’avoir une carte car je ne connaissais pas le chemin dans la montagne."
+  },
+  "production-n4-bedtime-story-for-child": {
+    "translation": "Avant que l’enfant ne s’endorme, je lui ai lu une histoire courte.",
+    "promptVocabularyHints": [
+      {
+        "word": "histoire",
+        "vocabularyIds": [
+          "vocab-be9551d57abc"
+        ]
+      }
+    ]
+  },
+  "production-n4-pick-tomorrows-clothes-by-bedtime": {
+    "translation": "Choisis tes vêtements pour demain avant d’aller te coucher, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "vêtements",
+        "vocabularyIds": [
+          "vocab-ff1cb3f79233"
+        ]
+      }
+    ]
+  },
+  "n4-hairdresser-about-to-cut-hair": {
+    "translation": "Je vais vous couper les cheveux, asseyez-vous ici, s’il vous plaît."
+  },
+  "production-n4-grilling-fish-stay-out-of-kitchen": {
+    "translation": "Je suis en train de faire griller du poisson, n’entrez donc pas dans la cuisine, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "griller",
+        "vocabularyIds": [
+          "vocab-13b0a5df30f4"
+        ]
+      }
+    ]
+  },
+  "n4-just-closed-window-already-open": {
+    "translation": "Je viens de fermer la fenêtre, mais elle est de nouveau ouverte."
+  },
+  "n4-recently-moved-unfamiliar-with-local-shops": {
+    "translation": "Je viens d’emménager, donc je ne connais pas encore les magasins du quartier."
+  },
+  "production-n4-long-drive-break-every-two-hours": {
+    "translation": "Lors des longs trajets en voiture, je veille à faire une pause toutes les deux heures.",
+    "promptVocabularyHints": [
+      {
+        "word": "voiture",
+        "vocabularyIds": [
+          "vocab-f71f9de56223"
+        ]
+      }
+    ]
+  },
+  "n4-sleepy-looking-brother-still-doing-homework": {
+    "translation": "Mon petit frère a l’air d’avoir sommeil, mais il continue à faire ses devoirs."
+  },
+  "n4-wet-shoes-suggest-rain-outside": {
+    "translation": "Les chaussures sont mouillées, il semble donc qu’il pleuve dehors."
+  },
+  "production-n4-try-cooking-dish-as-mother-does": {
+    "translation": "J’aimerais essayer de préparer ce plat comme le fait ma mère.",
+    "promptVocabularyHints": [
+      {
+        "word": "plat",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      }
+    ]
+  },
+  "n4-restaurant-queue-suggests-good-food": {
+    "translation": "Des gens font la queue devant ce restaurant, sa cuisine doit donc être bonne."
+  },
+  "n4-springlike-day-light-clothes": {
+    "translation": "Aujourd’hui, il fait doux comme au printemps, je vais donc sortir avec des vêtements légers."
+  },
+  "production-n4-borrowed-book-got-wet-in-rain": {
+    "translation": "J’avais emprunté ce livre à un ami, mais il a malheureusement pris l’eau sous la pluie.",
+    "promptVocabularyHints": [
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  "n4-window-closed-still-too-noisy-to-sleep": {
+    "translation": "Même la fenêtre fermée, il y a toujours trop de bruit dehors pour que je dorme."
+  },
+  "production-n4-forgot-wallet-could-not-buy-wanted-things": {
+    "translation": "Comme j’avais oublié mon portefeuille, je n’ai pas pu acheter ce que je voulais.",
+    "promptVocabularyHints": [
+      {
+        "word": "portefeuille",
+        "vocabularyIds": [
+          "vocab-c5df4f2e7eab"
+        ]
+      }
+    ]
+  },
+  "n4-hope-travel-together-after-fathers-discharge": {
+    "translation": "Mon père va sortir de l’hôpital, j’espère donc que nous pourrons de nouveau voyager ensemble."
+  },
+  "n4-white-flower-is-wanted-gift-not-red-one": {
+    "translation": "Ce que je veux offrir à ma mère, c’est une fleur blanche, pas cette fleur rouge."
+  },
+  "n4-did-not-know-photography-was-prohibited": {
+    "translation": "Je ne savais pas qu’il était interdit de prendre des photos ici."
+  },
+  "production-n4-told-not-stand-until-train-stops": {
+    "translation": "Un agent de gare m’a dit de ne pas me lever avant l’arrêt du train.",
+    "promptVocabularyHints": [
+      {
+        "word": "lever",
+        "vocabularyIds": [
+          "vocab-17e3177c62d5"
+        ]
+      }
+    ]
+  },
+  "n4-bags-same-size-different-weight": {
+    "translation": "Ces deux sacs ont la même taille, mais pas le même poids."
+  },
+  "n4-laughing-so-much-stomach-hurts": {
+    "translation": "Je n’ai pas pu m’empêcher de rire à en avoir mal au ventre."
+  },
+  "n4-only-talks-about-holidays-wont-start-work": {
+    "translation": "Il ne parle que de vacances et n’essaie même pas de se mettre au travail."
+  },
+  "production-n4-quiet-places-park-or-library": {
+    "translation": "Si vous cherchez un endroit calme, que diriez-vous d’un parc, d’une bibliothèque ou d’un autre lieu similaire ?",
+    "promptVocabularyHints": [
+      {
+        "word": "calme",
+        "vocabularyIds": [
+          "vocab-61b57e2d4702"
+        ]
+      }
+    ]
+  },
+  "n4-strong-milk-smell-better-not-drink": {
+    "translation": "Ce lait a une odeur forte, il vaut mieux ne pas le boire."
+  },
+  "n4-father-drinks-little-rice-based-sake": {
+    "translation": "Mon père ne boit qu’un peu de saké fabriqué à partir de riz."
+  },
+  "production-n4-rule-call-if-train-delayed": {
+    "translation": "Si le train est en retard, la règle est de prévenir par téléphone.",
+    "promptVocabularyHints": [
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      }
+    ]
+  },
+  "production-n4-sunday-party-plan-clean-room-ahead": {
+    "translation": "Une fête est prévue dimanche, je vais donc nettoyer la pièce à l’avance.",
+    "promptVocabularyHints": [
+      {
+        "word": "fête",
+        "vocabularyIds": [
+          "vocab-37388d6a51a3"
+        ]
+      }
+    ]
+  },
+  "n4-what-to-add-if-food-too-spicy": {
+    "translation": "Si le plat est trop piquant, qu’est-ce que je devrais ajouter ?"
+  },
+  "n4-two-people-needed-to-carry-box": {
+    "translation": "Il faut deux personnes pour porter cette boîte."
+  },
+  "n4-so-happy-could-not-say-anything": {
+    "translation": "J’étais tellement heureux que je n’ai pas pu dire un mot."
+  },
+  "production-n4-personal-rule-try-again-after-failure": {
+    "translation": "Quand j’échoue, ma règle est de réessayer la même chose.",
+    "promptVocabularyHints": [
+      {
+        "word": "échoue",
+        "vocabularyIds": [
+          "vocab-8d39ee892820"
+        ]
+      }
+    ]
+  },
+  "n4-library-rule-return-books-by-monday": {
+    "translation": "À la bibliothèque, la règle est de rendre les livres empruntés d’ici lundi prochain."
+  },
+  "n4-party-teacher-kindly-took-photo-for-us": {
+    "translation": "Un professeur venu à la fête a bien voulu nous prendre en photo."
+  },
+  "production-n4-started-book-teacher-kindly-chose": {
+    "translation": "J’ai commencé à lire le livre que mon professeur a bien voulu choisir pour moi.",
+    "promptVocabularyHints": [
+      {
+        "word": "choisir",
+        "vocabularyIds": [
+          "vocab-cbc44d67ceca"
+        ]
+      }
+    ]
+  },
+  "n4-honorific-teacher-waits-until-students-gather": {
+    "translation": "Le professeur attend que les élèves se rassemblent."
+  },
+  "production-n4-humbly-escort-teacher-after-meeting": {
+    "translation": "Quand la réunion sera terminée, j’accompagnerai le professeur à la gare.",
+    "promptVocabularyHints": [
+      {
+        "word": "réunion",
+        "vocabularyIds": [
+          "vocab-e47785e0c656"
+        ]
+      }
+    ]
+  },
+  "n4-formal-reserved-room-second-floor-this-way": {
+    "translation": "La chambre que vous avez réservée est au deuxième étage ; par ici, s’il vous plaît."
+  },
+  "n4-clean-desk-before-teacher-honorific-use": {
+    "translation": "Nettoyez ce bureau avant que le professeur ne l’utilise, s’il vous plaît."
+  },
+  "production-n4-humbly-hand-documents-before-teacher-leaves": {
+    "translation": "Je remettrai ces documents au professeur avant son départ.",
+    "promptVocabularyHints": [
+      {
+        "word": "documents",
+        "vocabularyIds": [
+          "vocab-58e891bce783"
+        ]
+      }
+    ]
+  },
+  "n4-respectful-call-number-if-unclear": {
+    "translation": "Si quelque chose vous échappe, veuillez appeler ce numéro."
+  },
+  "n4-hearsay-teacher-plays-tennis-honorific": {
+    "translation": "J’ai entendu dire que le professeur joue au tennis le week-end."
+  },
+  "n4-humbly-tell-teacher-coming-tomorrow": {
+    "translation": "J’ai dit au professeur : « Je viendrai demain. »"
+  },
+  "production-n4-breakfast-ready-around-child-waking-time": {
+    "translation": "Le petit déjeuner devrait être prêt vers l’heure du réveil de l’enfant.",
+    "promptVocabularyHints": [
+      {
+        "word": "enfant",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      }
+    ]
+  },
+  "n4-clothing-washing-cost-question": {
+    "translation": "Combien cela coûte-t-il de laver ce vêtement ?"
+  },
+  "n4-hard-to-sleep-decision-no-coffee-before-bed": {
+    "translation": "J’ai du mal à m’endormir, j’ai donc décidé de ne pas boire de café avant de me coucher."
+  },
+  "n4-father-looks-like-student-with-hat": {
+    "translation": "Quand mon père met ce chapeau, il a l’air d’un étudiant."
+  },
+  "production-n4-embarrassment-makes-singing-in-public-hard": {
+    "translation": "Je suis gêné de chanter devant des gens, j’ai donc du mal à le faire.",
+    "promptVocabularyHints": [
+      {
+        "word": "gêné",
+        "vocabularyIds": [
+          "vocab-8b65db9c3fbf"
+        ]
+      }
+    ]
+  },
+  "n4-friend-help-avoids-doing-everything": {
+    "translation": "Comme un ami m’a aidé, je n’ai pas eu à tout faire tout seul."
+  },
+  "production-n4-bus-not-coming-consider-walking-to-station": {
+    "translation": "Le bus n’arrive pas, je me demande donc si je vais marcher jusqu’à la gare.",
+    "promptVocabularyHints": [
+      {
+        "word": "marcher",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      }
+    ]
+  },
+  "n4-wonder-still-sleepy-despite-long-sleep": {
+    "translation": "Je me demande pourquoi j’ai encore sommeil alors que j’ai tant dormi."
+  },
+  "n4-casual-request-help-if-time": {
+    "translation": "Si tu as le temps, pourrais-tu me donner un coup de main ?"
+  },
+  "production-n4-at-sea-invitation-to-swim-together": {
+    "translation": "Puisque nous sommes venus à la mer, allons nager ensemble !",
+    "promptVocabularyHints": [
+      {
+        "word": "mer",
+        "vocabularyIds": [
+          "vocab-47c1227c459b"
+        ]
+      }
+    ]
   }
 }

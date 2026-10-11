@@ -16217,5 +16217,1456 @@
         ]
       }
     ]
+  },
+  {
+    "id": "shift-day-work-night-study",
+    "text": "朝は店で働きますが、夜は家で勉強します。",
+    "solution": "I work at a shop in the morning, but I study at home at night.",
+    "grammarPointIds": [
+      "predicate-final-order",
+      "wa-contrast",
+      "ga-contrast",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "travel-train-or-bus-choice",
+    "text": "旅行には電車かバスで行きますか。",
+    "solution": "Will you travel by train or by bus?",
+    "grammarPointIds": [
+      "ka-alternatives",
+      "de-means",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "production-grandmother-visit-photos-and-cooking",
+    "text": "After meeting my grandmother, I showed her some photos and we cooked together.",
+    "solution": "おばあさんに会った後で、写真を見せて、一緒に料理しました。",
+    "type": "production",
+    "grammarPointIds": [
+      "verb-groups",
+      "ato-de",
+      "te-action-link"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "grandmother",
+        "vocabularyIds": [
+          "vocab-9a9ea8e8d12d"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-friend-taught-kanji-memory-method",
+    "text": "A friend taught me how to memorize kanji.",
+    "solution": "友達に漢字の覚え方を教えてもらいました。",
+    "type": "production",
+    "grammarPointIds": [
+      "verb-stem",
+      "kata-how-to",
+      "te-morau"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "memorize",
+        "vocabularyIds": [
+          "vocab-0ec838cc07ea"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-envelopes-and-stamps-order",
+    "text": "Please give me five envelopes and three stamps.",
+    "solution": "封筒を五枚、切手を三枚ください。",
+    "type": "production",
+    "grammarPointIds": [
+      "o-kudasai",
+      "common-counters"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "envelopes",
+        "vocabularyIds": [
+          "vocab-d3e35cbd8b7a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-open-door-someone-probably-inside",
+    "text": "The door is open, so there is probably still someone inside.",
+    "solution": "ドアが開いているから、まだ誰かいるだろう。",
+    "type": "production",
+    "grammarPointIds": [
+      "darou",
+      "te-iru-result-state",
+      "kara-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "door",
+        "vocabularyIds": [
+          "vocab-01adf406cacd"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "picnic-beside-beautiful-river-invitation",
+    "text": "きれいな川のそばで、昼ご飯を食べませんか。",
+    "solution": "Would you like to have lunch beside a beautiful river?",
+    "grammarPointIds": [
+      "na-adjective-class",
+      "masen-ka-invitation",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "production-fragile-box-no-heavy-objects",
+    "text": "This box is not sturdy, so please do not put heavy things in it.",
+    "solution": "この箱は丈夫ではありませんから、重い物を入れないでください。",
+    "type": "production",
+    "grammarPointIds": [
+      "na-adjective-negative",
+      "kara-reason",
+      "naide-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "box",
+        "vocabularyIds": [
+          "vocab-28102c121d50"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "medicine-makes-pain-go-away",
+    "text": "薬を飲むと、痛くなくなります。",
+    "solution": "When I take the medicine, it stops hurting.",
+    "grammarPointIds": [
+      "naru-ku-change",
+      "i-adjective-negative",
+      "to-conditional"
+    ]
+  },
+  {
+    "id": "bus-or-subway-arrives-sooner",
+    "text": "バスと地下鉄と、どちらが駅まで早く着きますか。",
+    "solution": "Which gets to the station sooner, the bus or the subway?",
+    "grammarPointIds": [
+      "dochira-comparison",
+      "i-adjective-adverb",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "production-lost-traveler-given-map",
+    "text": "I did not know the way, so someone nearby gave me a map.",
+    "solution": "道が分からなかったので、近くの人が地図をくれました。",
+    "type": "production",
+    "grammarPointIds": [
+      "kureru",
+      "node-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "map",
+        "vocabularyIds": [
+          "vocab-3c687e40b035"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "banana-single-and-bundle-price",
+    "text": "バナナは一本百円ですが、四本で三百円です。",
+    "solution": "Bananas cost 100 yen each, but four cost 300 yen in total.",
+    "tokenOverrides": {
+      "一": { "reading": "いっ" },
+      "本#1": { "reading": "ぽん" },
+      "百#2": { "reading": "びゃく" }
+    },
+    "grammarPointIds": [
+      "de-total-price",
+      "common-counters",
+      "ga-contrast"
+    ]
+  },
+  {
+    "id": "anyone-may-read-but-not-take-books-home",
+    "text": "誰でもここで本を読んでもいいですが、家に持って帰ってはいけません。",
+    "solution": "Anyone may read books here, but you must not take them home.",
+    "grammarPointIds": [
+      "question-word-demo",
+      "te-mo-ii",
+      "te-wa-ikenai"
+    ]
+  },
+  {
+    "id": "production-n4-plan-repair-old-bicycle",
+    "text": "A new bicycle costs too much, so I am thinking of fixing my old one.",
+    "solution": "新しい自転車は高すぎるので、古いのを直そうと思っています。",
+    "type": "production",
+    "grammarPointIds": [
+      "volitional-to-omou",
+      "sugiru",
+      "node-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "fixing",
+        "vocabularyIds": [
+          "vocab-a584cd8f1390"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-waiting-will-not-let-you-see-teacher",
+    "text": "ここで一時間待っても、先生には会えません。",
+    "solution": "Even if you wait here for an hour, you will not be able to see the teacher.",
+    "grammarPointIds": [
+      "potential-form",
+      "temo-concession"
+    ]
+  },
+  {
+    "id": "n4-decided-walk-instead-of-bus",
+    "text": "バスに乗らないで、駅まで歩くことにしました。",
+    "solution": "I decided to walk to the station instead of taking the bus.",
+    "grammarPointIds": [
+      "koto-ni-suru",
+      "naide-without"
+    ]
+  },
+  {
+    "id": "production-n4-long-meeting-lunch-time-changed",
+    "text": "Since the meeting ran long, it was decided to change the time for lunch.",
+    "solution": "会議が長くなったために、昼ご飯を食べる時間を変えることになりました。",
+    "type": "production",
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "koto-ni-naru",
+      "tame-ni-cause",
+      "naru-ku-change"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "meeting",
+        "vocabularyIds": [
+          "vocab-e47785e0c656"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-bank-open-despite-expected-day-off",
+    "text": "銀行は休みのはずなのに、今日は開いています。",
+    "solution": "The bank is supposed to be closed, but it is open today.",
+    "tokenOverrides": {
+      "はず": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "hazu-da",
+      "noni-concession",
+      "te-iru-result-state"
+    ]
+  },
+  {
+    "id": "production-n4-dog-cannot-grow-big-overnight",
+    "text": "A dog cannot possibly grow that big overnight.",
+    "solution": "犬が一晩でそんなに大きくなるはずがありません。",
+    "type": "production",
+    "tokenOverrides": {
+      "はず": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "hazu-ga-nai",
+      "naru-ku-change"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "dog",
+        "vocabularyIds": [
+          "vocab-4cd1238bcb91"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-plan-travel-with-quick-drying-towel",
+    "text": "このタオルは乾きやすいので、旅行に持っていこうと思います。",
+    "solution": "This towel dries easily, so I am thinking of taking it on my trip.",
+    "tokenOverrides": {
+      "やすい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "yasui",
+      "volitional-to-omou",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "n4-medicine-hard-to-swallow-with-water",
+    "text": "この薬は飲みにくいので、水と一緒に飲んでください。",
+    "solution": "This medicine is hard to swallow, so please take it with water.",
+    "tokenOverrides": {
+      "にくい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "nikui",
+      "issho-ni",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n4-see-birds-flying-away",
+    "text": "I can see birds flying away.",
+    "solution": "鳥が飛んでいくのが見えます。",
+    "type": "production",
+    "grammarPointIds": [
+      "te-iku",
+      "mieru-kikoeru",
+      "no-nominalizer"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "birds",
+        "vocabularyIds": [
+          "vocab-683f3e7fb085"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-lived-in-town-since-childhood",
+    "text": "子供の頃から、この町に住んできました。",
+    "solution": "I have lived in this town since I was a child.",
+    "tokenOverrides": { "頃": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "te-kuru",
+      "koro",
+      "kara-start"
+    ]
+  },
+  {
+    "id": "n4-father-cooked-while-mother-in-hospital",
+    "text": "母が入院している間、父が毎日料理をしてくれました。",
+    "solution": "While my mother was in hospital, my father cooked for us every day.",
+    "tokenOverrides": {
+      "間": {
+        "reading": "あいだ"
+      }
+    },
+    "grammarPointIds": [
+      "aida",
+      "te-kureru",
+      "frequency-adverbs"
+    ]
+  },
+  {
+    "id": "production-n4-send-parcel-during-lunch-break",
+    "text": "During my lunch break, I went to the post office to send a parcel.",
+    "solution": "昼休みの間に、郵便局へ荷物を送りに行きました。",
+    "type": "production",
+    "tokenOverrides": {
+      "間": {
+        "reading": "あいだ"
+      }
+    },
+    "grammarPointIds": [
+      "aida-ni",
+      "movement-purpose"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "parcel",
+        "vocabularyIds": [
+          "vocab-567f42b89301"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-n4-train-trip-buy-ticket-in-advance",
+    "text": "If you are going by train, please buy your ticket in advance.",
+    "solution": "電車で行くなら、先に切符を買っておいてください。",
+    "type": "production",
+    "grammarPointIds": [
+      "nara-conditional",
+      "te-oku",
+      "te-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "ticket",
+        "vocabularyIds": [
+          "vocab-f5d0af9cc8d2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-teacher-made-students-explain-book-choice",
+    "text": "先生は学生に、どうしてその本を選んだか説明させました。",
+    "solution": "The teacher made the students explain why they had chosen that book.",
+    "tokenOverrides": {
+      "せ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "causative-form",
+      "naze-doushite-nande"
+    ]
+  },
+  {
+    "id": "production-n4-tired-of-forced-repeated-story",
+    "text": "At the meeting, I was made to listen to the same story again and again, which tired me out.",
+    "solution": "会議で、同じ話を何回も聞かされて、疲れました。",
+    "type": "production",
+    "tokenOverrides": {
+      "れ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "causative-passive-form",
+      "te-de-cause"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "meeting",
+        "vocabularyIds": [
+          "vocab-e47785e0c656"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-police-command-put-hands-up",
+    "text": "警官は「手を上げろ！」と言いました。",
+    "solution": "The police officer said, \"Put your hands up!\"",
+    "grammarPointIds": [
+      "imperative-form",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-n4-regret-hot-water-sweater-shrinkage",
+    "text": "My sweater shrank. I wish I had not washed it in hot water.",
+    "solution": "セーターが小さくなってしまいました。湯で洗わなければよかったです。",
+    "type": "production",
+    "grammarPointIds": [
+      "ba-yokatta",
+      "te-shimau",
+      "naru-ku-change"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "sweater",
+        "vocabularyIds": [
+          "vocab-797ac724daf3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-suggest-salt-for-bland-food",
+    "text": "この料理は味が薄いので、塩を少し入れたらどうですか。",
+    "solution": "This dish tastes bland, so how about adding a little salt?",
+    "grammarPointIds": [
+      "tara-dou",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "n4-driver-stops-car-after-bus-stops",
+    "text": "バスが止まったので、運転していた父も車を止めました。",
+    "solution": "The bus stopped, so my father, who was driving, stopped the car too.",
+    "vocabularyOverrides": { "止め": "vocab-8b215c592588" },
+    "grammarPointIds": [
+      "transitive-intransitive",
+      "node-reason",
+      "relative-clause"
+    ]
+  },
+  {
+    "id": "n4-party-food-bought-no-need-to-cook",
+    "text": "パーティーの料理は買ってあるので、作る必要はありません。",
+    "solution": "The food for the party has already been bought, so there is no need to cook.",
+    "tokenOverrides": {
+      "必要": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "hitsuyou-ga-aru",
+      "te-aru-result-state",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-n4-wash-own-bowl-after-meal",
+    "text": "When you have finished eating, wash your own rice bowl.",
+    "solution": "ご飯を食べたら、自分の茶碗を洗いなさい。",
+    "type": "production",
+    "grammarPointIds": [
+      "nasai-command",
+      "tara-conditional"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "bowl",
+        "vocabularyIds": [
+          "vocab-aa6a896345b4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-no-longer-out-at-night-after-child-born",
+    "text": "子供が生まれてから、夜は出かけないようになりました。",
+    "solution": "Since my child was born, I no longer go out at night.",
+    "grammarPointIds": [
+      "you-ni-naru",
+      "te-kara"
+    ]
+  },
+  {
+    "id": "production-n4-light-off-habit-forgot-yesterday",
+    "text": "I make a point of turning off the light when I leave the room, but I forgot yesterday.",
+    "solution": "部屋を出る時は電気を消すようにしていますが、昨日は忘れてしまいました。",
+    "type": "production",
+    "grammarPointIds": [
+      "you-ni-suru",
+      "te-shimau",
+      "toki",
+      "ga-contrast"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "light",
+        "vocabularyIds": [
+          "vocab-a24e73630479"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-attempt-carry-heavy-box-fails",
+    "text": "重い箱を運ぼうとしましたが、運べませんでした。",
+    "solution": "I tried to carry the heavy box, but I could not.",
+    "grammarPointIds": [
+      "you-to-suru",
+      "potential-form"
+    ]
+  },
+  {
+    "id": "n4-child-begins-singing-when-name-called",
+    "text": "名前を呼ばれると、子供が急に歌い始めました。",
+    "solution": "When their name was called, the child suddenly started singing.",
+    "tokenOverrides": { "れる": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "stem-hajimeru",
+      "passive-form",
+      "to-conditional"
+    ]
+  },
+  {
+    "id": "production-n4-hand-over-paper-after-writing-address",
+    "text": "When you finish writing your address on this paper, please hand it to me.",
+    "solution": "この紙に住所を書き終わったら、私に渡してください。",
+    "type": "production",
+    "grammarPointIds": [
+      "stem-owaru",
+      "tara-conditional",
+      "te-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "address",
+        "vocabularyIds": [
+          "vocab-fcdd7a903190"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-practise-despite-failure-until-success",
+    "text": "失敗しても、できるまで練習し続けます。",
+    "solution": "Even if I fail, I will keep practising until I can do it.",
+    "grammarPointIds": [
+      "stem-tsuzukeru",
+      "temo-concession",
+      "made-end"
+    ]
+  },
+  {
+    "id": "n4-phone-starts-ringing-during-class",
+    "text": "授業中に、電話が急に鳴り出しました。",
+    "solution": "During class, the phone suddenly started ringing.",
+    "grammarPointIds": [
+      "stem-dasu",
+      "chuu"
+    ]
+  },
+  {
+    "id": "production-n4-child-unwilling-to-sleep-alone",
+    "text": "The child does not want to sleep alone, so their mother stays nearby.",
+    "solution": "子供は一人で寝たがらないので、母がそばにいます。",
+    "type": "production",
+    "tokenOverrides": {
+      "がら": { "category": "auxiliary" },
+      "一": { "reading": "ひと" },
+      "人": { "reading": "り" }
+    },
+    "grammarPointIds": [
+      "tagaru",
+      "node-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "child",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-hot-brother-window-opened-for-him",
+    "text": "弟が暑がっているので、窓を開けてやりました。",
+    "solution": "My younger brother was bothered by the heat, so I opened the window for him.",
+    "tokenOverrides": { "がっ": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "garu",
+      "node-reason",
+      "te-yaru"
+    ]
+  },
+  {
+    "id": "n4-warm-room-for-cold-sensitive-mother",
+    "text": "寒がりの母のために、部屋を暖かくしておきました。",
+    "solution": "I warmed the room in advance for my mother, who is sensitive to the cold.",
+    "tokenOverrides": {
+      "がり": { "category": "auxiliary" },
+      "ため": { "category": "auxiliary" }
+    },
+    "grammarPointIds": [
+      "gari",
+      "te-oku",
+      "suru-change"
+    ]
+  },
+  {
+    "id": "production-n4-want-water-given-to-cat-while-away",
+    "text": "While I am away, I want you to give the cat water every day.",
+    "solution": "留守の間、猫に毎日水をあげてほしいです。",
+    "type": "production",
+    "tokenOverrides": {
+      "ほしい": { "category": "auxiliary" },
+      "間": {
+        "reading": "あいだ"
+      }
+    },
+    "grammarPointIds": [
+      "te-hoshii",
+      "aida",
+      "frequency-adverbs"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cat",
+        "vocabularyIds": [
+          "vocab-123a10eb50b0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-thanks-for-explaining-unclear-parts",
+    "text": "分からない所を説明してくれてありがとう。これで一人でできます。",
+    "solution": "Thank you for explaining the parts I did not understand. Now I can do it on my own.",
+    "tokenOverrides": {
+      "一": { "reading": "ひと" },
+      "人": { "reading": "り" }
+    },
+    "grammarPointIds": [
+      "te-kurete-arigatou",
+      "relative-clause"
+    ]
+  },
+  {
+    "id": "production-n4-apology-left-without-notifying",
+    "text": "Sorry for going home without letting you know.",
+    "solution": "連絡しないで帰ってしまってすみません。",
+    "type": "production",
+    "grammarPointIds": [
+      "te-sumimasen",
+      "naide-without",
+      "te-shimau"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-please-write-larger-to-read",
+    "text": "字が小さくて読めないので、大きく書いていただけませんか。",
+    "solution": "The letters are so small that I cannot read them; could you please write them bigger?",
+    "grammarPointIds": [
+      "te-itadakemasen-ka",
+      "potential-form",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "n4-glad-to-have-map-in-mountains",
+    "text": "山で道が分からなかったので、地図を持っていてよかったです。",
+    "solution": "I was glad I had a map because I did not know the way in the mountains.",
+    "grammarPointIds": [
+      "te-yokatta",
+      "te-iru-result-state",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-n4-bedtime-story-for-child",
+    "text": "Before the child went to sleep, I read them a short story.",
+    "solution": "子供が寝る前に、短い話を読んでやりました。",
+    "type": "production",
+    "grammarPointIds": [
+      "te-yaru",
+      "mae-ni"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "story",
+        "vocabularyIds": [
+          "vocab-be9551d57abc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-n4-pick-tomorrows-clothes-by-bedtime",
+    "text": "By bedtime, please pick out your clothes for tomorrow.",
+    "solution": "寝るまでに、明日の服を選んでおいてください。",
+    "type": "production",
+    "grammarPointIds": [
+      "made-ni",
+      "te-oku",
+      "te-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "clothes",
+        "vocabularyIds": [
+          "vocab-ff1cb3f79233"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-hairdresser-about-to-cut-hair",
+    "text": "今から髪を切るところなので、ここに座ってください。",
+    "solution": "I am about to cut your hair, so please sit here.",
+    "tokenOverrides": { "ところ": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "ru-tokoro",
+      "node-reason",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n4-grilling-fish-stay-out-of-kitchen",
+    "text": "I am grilling fish right now, so please do not come into the kitchen.",
+    "solution": "今、魚を焼いているところなので、台所に来ないでください。",
+    "type": "production",
+    "tokenOverrides": { "ところ": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "teiru-tokoro",
+      "node-reason",
+      "naide-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "grilling",
+        "vocabularyIds": [
+          "vocab-13b0a5df30f4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-just-closed-window-already-open",
+    "text": "今、窓を閉めたところなのに、また開いています。",
+    "solution": "I have just closed the window, but it is open again.",
+    "tokenOverrides": { "ところ": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "ta-tokoro",
+      "noni-concession",
+      "te-iru-result-state"
+    ]
+  },
+  {
+    "id": "n4-recently-moved-unfamiliar-with-local-shops",
+    "text": "引っ越したばかりなので、近くの店をまだ知りません。",
+    "solution": "I moved here only recently, so I do not yet know the shops nearby.",
+    "grammarPointIds": [
+      "ta-bakari",
+      "node-reason",
+      "mada"
+    ]
+  },
+  {
+    "id": "production-n4-long-drive-break-every-two-hours",
+    "text": "On long car trips, I make a point of taking a break every two hours.",
+    "solution": "車で遠くへ行く時は、二時間おきに休むようにしています。",
+    "type": "production",
+    "tokenOverrides": { "おき": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "oki-ni",
+      "you-ni-suru",
+      "toki"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "car",
+        "vocabularyIds": [
+          "vocab-f71f9de56223"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-sleepy-looking-brother-still-doing-homework",
+    "text": "弟は眠そうな顔をしていますが、宿題を続けています。",
+    "solution": "My younger brother looks sleepy, but he is still doing his homework.",
+    "grammarPointIds": [
+      "sou-modifier",
+      "ga-contrast"
+    ]
+  },
+  {
+    "id": "n4-wet-shoes-suggest-rain-outside",
+    "text": "靴が濡れているので、外は雨のようです。",
+    "solution": "The shoes are wet, so it seems to be raining outside.",
+    "grammarPointIds": [
+      "you-da-inference",
+      "node-reason",
+      "te-iru-result-state"
+    ]
+  },
+  {
+    "id": "production-n4-try-cooking-dish-as-mother-does",
+    "text": "I would like to try making this dish the way my mother does.",
+    "solution": "母が作るように、この料理を作ってみたいです。",
+    "type": "production",
+    "tokenOverrides": { "みたい": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "you-na-ni-simile",
+      "te-miru",
+      "tai-desire"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "dish",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-restaurant-queue-suggests-good-food",
+    "text": "あの店は人が並んでいるから、料理がおいしいみたいです。",
+    "solution": "People are queuing at that restaurant, so it looks like its food is good.",
+    "tokenOverrides": { "みたい": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "mitai",
+      "kara-reason",
+      "te-iru-progressive"
+    ]
+  },
+  {
+    "id": "n4-springlike-day-light-clothes",
+    "text": "今日は春らしい暖かい日なので、薄い服で出かけます。",
+    "solution": "Today is a warm day typical of spring, so I am going out in light clothes.",
+    "grammarPointIds": [
+      "rashii",
+      "node-reason",
+      "i-adjective-attributive"
+    ]
+  },
+  {
+    "id": "production-n4-borrowed-book-got-wet-in-rain",
+    "text": "Although I had borrowed this book from a friend, it ended up getting wet in the rain.",
+    "solution": "友達に借りた本なのに、雨で濡れてしまいました。",
+    "type": "production",
+    "grammarPointIds": [
+      "noni-concession",
+      "te-shimau",
+      "relative-clause"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-window-closed-still-too-noisy-to-sleep",
+    "text": "窓が閉まっていても、外の音がうるさくて眠れません。",
+    "solution": "Even with the window closed, it is still so noisy outside that I cannot sleep.",
+    "grammarPointIds": [
+      "temo-concession",
+      "potential-form",
+      "te-de-cause"
+    ]
+  },
+  {
+    "id": "production-n4-forgot-wallet-could-not-buy-wanted-things",
+    "text": "I forgot my wallet, so I could not buy the things I wanted.",
+    "solution": "財布を忘れたために、買いたい物が買えませんでした。",
+    "type": "production",
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "tame-ni-cause",
+      "potential-form",
+      "tai-desire"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "wallet",
+        "vocabularyIds": [
+          "vocab-c5df4f2e7eab"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-hope-travel-together-after-fathers-discharge",
+    "text": "父が退院するので、また一緒に旅行できるといいです。",
+    "solution": "My father is leaving hospital, so I hope we can travel together again.",
+    "tokenOverrides": { "いい": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "to-ii-hope",
+      "potential-form",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "n4-white-flower-is-wanted-gift-not-red-one",
+    "text": "母にあげたいのは、この赤い花ではなく、白い花です。",
+    "solution": "What I want to give my mother is a white flower, not this red one.",
+    "grammarPointIds": [
+      "no-wa-da",
+      "ageru",
+      "tai-desire"
+    ]
+  },
+  {
+    "id": "n4-did-not-know-photography-was-prohibited",
+    "text": "ここで写真を撮ってはいけないということを、知らなかったんです。",
+    "solution": "I did not realize that we were not allowed to take photos here.",
+    "grammarPointIds": [
+      "to-iu-koto",
+      "te-wa-ikenai",
+      "no-desu"
+    ]
+  },
+  {
+    "id": "production-n4-told-not-stand-until-train-stops",
+    "text": "A station staff member told me not to stand up until the train stopped.",
+    "solution": "駅の人に、電車が止まるまで立たないように言われました。",
+    "type": "production",
+    "tokenOverrides": {
+      "れ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "you-ni-to-iu",
+      "passive-form",
+      "made-end"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "stand",
+        "vocabularyIds": [
+          "vocab-17e3177c62d5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-bags-same-size-different-weight",
+    "text": "この二つのかばんは、大きさは同じなのに、重さが違います。",
+    "solution": "These two bags are the same size, yet their weights are different.",
+    "tokenOverrides": { "さ": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "adjective-sa",
+      "noni-concession"
+    ]
+  },
+  {
+    "id": "n4-laughing-so-much-stomach-hurts",
+    "text": "お腹が痛くなるほど笑ってしまいました。",
+    "solution": "I could not help laughing so hard that my stomach started hurting.",
+    "grammarPointIds": [
+      "hodo-degree",
+      "te-shimau",
+      "naru-ku-change"
+    ]
+  },
+  {
+    "id": "n4-only-talks-about-holidays-wont-start-work",
+    "text": "休みの話ばかりして、仕事を始めようとしません。",
+    "solution": "He keeps talking only about time off and makes no attempt to get started on his work.",
+    "grammarPointIds": [
+      "bakari-limitation",
+      "you-to-suru"
+    ]
+  },
+  {
+    "id": "production-n4-quiet-places-park-or-library",
+    "text": "If you are looking for a quiet place, how about somewhere like a park or a library?",
+    "solution": "静かな場所を探すなら、公園とか図書館とかはどうですか。",
+    "type": "production",
+    "grammarPointIds": [
+      "toka-toka",
+      "nara-conditional",
+      "wa-dou-desu-ka"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "quiet",
+        "vocabularyIds": [
+          "vocab-61b57e2d4702"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-strong-milk-smell-better-not-drink",
+    "text": "この牛乳は強い匂いがするので、飲まないほうがいいです。",
+    "solution": "This milk has a strong smell, so you had better not drink it.",
+    "grammarPointIds": [
+      "ga-suru-sensation",
+      "hou-ga-ii-advice",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "n4-father-drinks-little-rice-based-sake",
+    "text": "米から作ったお酒を、父は少ししか飲みません。",
+    "solution": "My father drinks only a little sake made from rice.",
+    "tokenOverrides": { "米": { "reading": "こめ" } },
+    "grammarPointIds": [
+      "material-kara",
+      "relative-clause",
+      "shika-nai-limitation"
+    ]
+  },
+  {
+    "id": "production-n4-rule-call-if-train-delayed",
+    "text": "If the train is delayed, the rule is to notify us by phone.",
+    "solution": "電車が遅れた場合は、電話で連絡することになっています。",
+    "type": "production",
+    "grammarPointIds": [
+      "baai-wa",
+      "koto-ni-natteiru",
+      "de-means"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-n4-sunday-party-plan-clean-room-ahead",
+    "text": "A party is scheduled for Sunday, so I will clean the room in advance.",
+    "solution": "日曜日はパーティーの予定なので、部屋を掃除しておきます。",
+    "type": "production",
+    "grammarPointIds": [
+      "yotei-da",
+      "te-oku",
+      "node-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "party",
+        "vocabularyIds": [
+          "vocab-37388d6a51a3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-what-to-add-if-food-too-spicy",
+    "text": "料理が辛すぎる場合は、何を入れたらいいですか。",
+    "solution": "If the food is too spicy, what should I add?",
+    "tokenOverrides": { "辛": { "reading": "から" } },
+    "grammarPointIds": [
+      "tara-ii-desu-ka",
+      "baai-wa",
+      "sugiru"
+    ]
+  },
+  {
+    "id": "n4-two-people-needed-to-carry-box",
+    "text": "この箱を運ぶのに、二人が必要です。",
+    "solution": "Two people are needed to carry this box.",
+    "tokenOverrides": {
+      "二": { "reading": "ふた" },
+      "人": { "reading": "り" }
+    },
+    "grammarPointIds": [
+      "ga-hitsuyou",
+      "noni-purpose"
+    ]
+  },
+  {
+    "id": "n4-so-happy-could-not-say-anything",
+    "text": "嬉しくて、何も言えませんでした。",
+    "solution": "I was so happy that I could not say anything.",
+    "grammarPointIds": [
+      "te-de-cause",
+      "potential-form"
+    ]
+  },
+  {
+    "id": "production-n4-personal-rule-try-again-after-failure",
+    "text": "When I fail, my personal rule is to try the same thing again.",
+    "solution": "失敗した時は、またやってみることにしています。",
+    "type": "production",
+    "grammarPointIds": [
+      "koto-ni-shiteiru",
+      "te-miru",
+      "toki"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "fail",
+        "vocabularyIds": [
+          "vocab-8d39ee892820"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-library-rule-return-books-by-monday",
+    "text": "図書館では、借りた本を次の月曜日までに返すことになっています。",
+    "solution": "At the library, borrowed books must be returned by next Monday.",
+    "grammarPointIds": [
+      "koto-ni-natteiru",
+      "made-ni",
+      "relative-clause"
+    ]
+  },
+  {
+    "id": "n4-party-teacher-kindly-took-photo-for-us",
+    "text": "パーティーに来た先生に、写真を撮っていただきました。",
+    "solution": "A teacher who came to the party kindly took a photo for us.",
+    "grammarPointIds": [
+      "te-itadaku",
+      "relative-clause"
+    ]
+  },
+  {
+    "id": "production-n4-started-book-teacher-kindly-chose",
+    "text": "I have started reading the book my teacher kindly chose for me.",
+    "solution": "先生が選んでくださった本を、読み始めました。",
+    "type": "production",
+    "grammarPointIds": [
+      "te-kudasaru",
+      "relative-clause",
+      "stem-hajimeru"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "chose",
+        "vocabularyIds": [
+          "vocab-cbc44d67ceca"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-honorific-teacher-waits-until-students-gather",
+    "text": "先生は、学生が集まるまでお待ちになっています。",
+    "solution": "The teacher is waiting until the students gather.",
+    "grammarPointIds": [
+      "sonkeigo-system",
+      "o-ni-naru",
+      "made-end"
+    ]
+  },
+  {
+    "id": "production-n4-humbly-escort-teacher-after-meeting",
+    "text": "When the meeting is over, I will take the teacher to the station.",
+    "solution": "会議が終わったら、私が先生を駅までお送りします。",
+    "type": "production",
+    "grammarPointIds": [
+      "kenjougo-system",
+      "o-suru-humble",
+      "tara-conditional"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "meeting",
+        "vocabularyIds": [
+          "vocab-e47785e0c656"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-formal-reserved-room-second-floor-this-way",
+    "text": "ご予約の部屋は二階にございますので、こちらへどうぞ。",
+    "solution": "Your reserved room is on the second floor, so please come this way.",
+    "tokenOverrides": { "ござい": { "category": "auxiliary" } },
+    "grammarPointIds": [
+      "gozaimasu",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "n4-clean-desk-before-teacher-honorific-use",
+    "text": "先生がお使いになる前に、この机をきれいにしてください。",
+    "solution": "Please clean this desk before the teacher uses it.",
+    "grammarPointIds": [
+      "o-ni-naru",
+      "mae-ni",
+      "te-kudasai",
+      "suru-change"
+    ]
+  },
+  {
+    "id": "production-n4-humbly-hand-documents-before-teacher-leaves",
+    "text": "I will hand these documents to the teacher before they leave.",
+    "solution": "先生がお帰りになる前に、この資料をお渡しします。",
+    "type": "production",
+    "grammarPointIds": [
+      "o-suru-humble",
+      "o-ni-naru",
+      "mae-ni"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "documents",
+        "vocabularyIds": [
+          "vocab-58e891bce783"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-respectful-call-number-if-unclear",
+    "text": "分からない場合は、こちらの番号にお電話ください。",
+    "solution": "If there is something you do not understand, please call this number.",
+    "grammarPointIds": [
+      "o-go-kudasai-honorific",
+      "baai-wa"
+    ]
+  },
+  {
+    "id": "n4-hearsay-teacher-plays-tennis-honorific",
+    "text": "先生は週末にテニスをなさるそうです。",
+    "solution": "I hear the teacher plays tennis at weekends.",
+    "grammarPointIds": [
+      "sonkeigo-special-verbs",
+      "sou-hearsay"
+    ]
+  },
+  {
+    "id": "n4-humbly-tell-teacher-coming-tomorrow",
+    "text": "先生に「明日は参ります」と申しました。",
+    "solution": "I told the teacher, ‘I will come tomorrow.’",
+    "grammarPointIds": [
+      "kenjougo-special-verbs",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-n4-breakfast-ready-around-child-waking-time",
+    "text": "Breakfast should be ready around the time the child wakes up.",
+    "solution": "子供が起きる頃には、朝ご飯ができているはずです。",
+    "type": "production",
+    "tokenOverrides": {
+      "頃": {
+        "category": "auxiliary"
+      },
+      "はず": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "koro",
+      "hazu-da",
+      "te-iru-result-state"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "child",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-clothing-washing-cost-question",
+    "text": "この服を洗うのに、いくらかかりますか。",
+    "solution": "How much does it cost to wash this item of clothing?",
+    "grammarPointIds": [
+      "noni-purpose",
+      "ikura"
+    ]
+  },
+  {
+    "id": "n4-hard-to-sleep-decision-no-coffee-before-bed",
+    "text": "なかなか眠れないので、寝る前にコーヒーを飲まないことにしました。",
+    "solution": "I have trouble falling asleep, so I decided not to drink coffee before bed.",
+    "grammarPointIds": [
+      "nakanaka-nai",
+      "koto-ni-suru",
+      "node-reason",
+      "mae-ni"
+    ]
+  },
+  {
+    "id": "n4-father-looks-like-student-with-hat",
+    "text": "この帽子をかぶると、父は学生に見えます。",
+    "solution": "When my father wears this hat, he looks like a student.",
+    "grammarPointIds": [
+      "ni-mieru",
+      "to-conditional"
+    ]
+  },
+  {
+    "id": "production-n4-embarrassment-makes-singing-in-public-hard",
+    "text": "Singing in front of people is embarrassing, so I find it hard to sing.",
+    "solution": "人の前で歌うのは恥ずかしくて、歌いづらいです。",
+    "type": "production",
+    "tokenOverrides": {
+      "づらい": { "category": "auxiliary" }
+    },
+    "grammarPointIds": [
+      "zurai",
+      "te-de-cause",
+      "no-nominalizer"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "embarrassing",
+        "vocabularyIds": [
+          "vocab-8b65db9c3fbf"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-friend-help-avoids-doing-everything",
+    "text": "友達が手伝ってくれたので、全部やらなくて済みました。",
+    "solution": "Because a friend helped me, I did not have to do everything myself.",
+    "grammarPointIds": [
+      "te-sumu",
+      "te-kureru",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-n4-bus-not-coming-consider-walking-to-station",
+    "text": "The bus is not coming, so I wonder whether I should walk to the station.",
+    "solution": "バスが来ないから、駅まで歩こうかな。",
+    "type": "production",
+    "grammarPointIds": [
+      "kana-wonder",
+      "plain-volitional",
+      "kara-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "walk",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-wonder-still-sleepy-despite-long-sleep",
+    "text": "たくさん寝たのに、どうしてまだ眠いのかしら。",
+    "solution": "I wonder why I am still sleepy even though I slept so much.",
+    "grammarPointIds": [
+      "kashira-wonder",
+      "noni-concession",
+      "mada"
+    ]
+  },
+  {
+    "id": "n4-casual-request-help-if-time",
+    "text": "時間があったら、少し手伝ってくれるかい。",
+    "solution": "Would you give me a hand if you have time?",
+    "grammarPointIds": [
+      "kai-question",
+      "te-kureru",
+      "tara-conditional"
+    ]
+  },
+  {
+    "id": "production-n4-at-sea-invitation-to-swim-together",
+    "text": "Since we have come to the sea, let’s swim together!",
+    "solution": "海まで来たんだから、一緒に泳ごうじゃないか。",
+    "type": "production",
+    "grammarPointIds": [
+      "dewa-nai-ka",
+      "plain-volitional",
+      "kara-reason",
+      "no-desu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "sea",
+        "vocabularyIds": [
+          "vocab-47c1227c459b"
+        ]
+      }
+    ]
   }
 ]

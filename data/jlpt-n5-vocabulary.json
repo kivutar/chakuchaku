@@ -18,6 +18,12 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
+    "inflections": [
+      {
+        "surface": "会える",
+        "reading": "あえる"
+      }
+    ],
     "partOfSpeech": "verb"
   },
   {
@@ -561,7 +567,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "inflections": [
+      {
+        "surface": "言える",
+        "reading": "いえる"
+      }
+    ]
   },
   {
     "id": "vocab-8af58778f14e",
@@ -617,7 +629,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "inflections": [
+      {
+        "surface": "いくら",
+        "reading": "いくら",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-c32242596278",
@@ -1286,7 +1305,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "酒",
+        "reading": "さけ",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-dfc6c56f52a3",
@@ -1499,7 +1525,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "determiner"
+    "partOfSpeech": "determiner",
+    "inflections": [
+      {
+        "surface": "同じ",
+        "reading": "おなじ",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-7b9061f52b70",
@@ -1793,7 +1826,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "inflections": [
+      {
+        "surface": "買える",
+        "reading": "かえる"
+      }
+    ]
   },
   {
     "id": "vocab-648683b83781",
@@ -2294,7 +2333,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "inflections": [
+      {
+        "surface": "聞かす",
+        "reading": "きかす"
+      }
+    ]
   },
   {
     "id": "vocab-b0a03cee753b",
@@ -4470,7 +4515,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "inflections": [
+      {
+        "surface": "たくさん",
+        "reading": "たくさん",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-0967db6c17f0",
@@ -4824,6 +4876,11 @@
       {
         "surface": "使える",
         "reading": "つかえる"
+      },
+      {
+        "surface": "使い",
+        "reading": "つかい",
+        "allowPartOfSpeechMismatch": true
       }
     ],
     "partOfSpeech": "verb"
@@ -5202,7 +5259,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "interjection"
+    "partOfSpeech": "interjection",
+    "inflections": [
+      {
+        "surface": "どうぞ",
+        "reading": "どうぞ",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-a3374580d856",
@@ -7221,7 +7285,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "inflections": [
+      {
+        "surface": "お待ち",
+        "reading": "おまち",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-b707aecf50a0",
@@ -8141,7 +8212,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "inflections": [
+      {
+        "surface": "練習",
+        "reading": "れんしゅう",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-26adc630f7fe",
@@ -8248,7 +8326,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "inflections": [
+      {
+        "surface": "渡し",
+        "reading": "わたし",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-9aa7d5bc2d8f",
@@ -9037,7 +9122,13 @@
     "topic": "time",
     "scope": "supplemental",
     "introducedAt": "n5",
-    "source": "curated-lesson-vocabulary"
+    "source": "curated-lesson-vocabulary",
+    "inflections": [
+      {
+        "surface": "時",
+        "reading": "とき"
+      }
+    ]
   },
   {
     "id": "vocab-884e78e7d501",
@@ -9987,7 +10078,19 @@
     "topic": "communication",
     "scope": "supplemental",
     "introducedAt": "n5",
-    "source": "curated-kanji-vocabulary"
+    "source": "curated-kanji-vocabulary",
+    "inflections": [
+      {
+        "surface": "送り",
+        "reading": "おくり",
+        "allowPartOfSpeechMismatch": true
+      },
+      {
+        "surface": "お送り",
+        "reading": "おおくり",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-80497d75f04b",
@@ -11682,7 +11785,13 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "inflections": [
+      {
+        "surface": "運べる",
+        "reading": "はこべる"
+      }
+    ]
   },
   {
     "id": "vocab-cbc21ac94ed5",
@@ -11774,7 +11883,13 @@
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "verb",
-    "voiceSlug": "naru-ring"
+    "voiceSlug": "naru-ring",
+    "inflections": [
+      {
+        "surface": "鳴り出す",
+        "reading": "なりだす"
+      }
+    ]
   },
   {
     "id": "vocab-ce141455df63",
@@ -16300,7 +16415,13 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "inflections": [
+      {
+        "surface": "眠れる",
+        "reading": "ねむれる"
+      }
+    ]
   },
   {
     "id": "vocab-86592fe77e48",
@@ -16363,7 +16484,13 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "inflections": [
+      {
+        "surface": "お湯",
+        "reading": "おゆ"
+      }
+    ]
   },
   {
     "id": "vocab-3aa4b156539e",
