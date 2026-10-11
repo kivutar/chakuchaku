@@ -226,7 +226,7 @@ test("generated lessons match their authored sources", async () => {
 
   const productionExercises = exercises.filter(({ type }) => type === "production");
 
-  assert.equal(productionExercises.length, 375);
+  assert.equal(productionExercises.length, 384);
   assert.ok(productionExercises.every(({ id }) => id.startsWith("production-")));
   assert.ok(productionExercises.every(({ text, promptVocabularyHints }) => {
     return (
@@ -639,7 +639,7 @@ test("reviewed N4 time spans and voiced requests keep correct readings and highl
     grammarPointIds.includes("aida") || grammarPointIds.includes("aida-ni")
   ));
 
-  assert.ok(timeSpanExercises.length >= 6);
+  assert.ok(timeSpanExercises.length >= 8);
   for (const exercise of timeSpanExercises) {
     const interval = exercise.tokens.find(({ surface }) => surface === "間");
     assert.equal(interval?.reading, "あいだ", exercise.id);
@@ -653,6 +653,22 @@ test("reviewed N4 time spans and voiced requests keep correct readings and highl
 
   const hiragana = exercises.find(({ id }) => id === "production-n4-hard-to-read-kanji-in-hiragana");
   assert.equal(hiragana.tokens.find(({ surface }) => surface === "平仮名")?.reading, "ひらがな");
+});
+
+test("new grammar combinations retain compound suffix and voiced preparation highlights", async () => {
+  const exercises = await readJson("data/exercises.json");
+  const highlightedText = (id, pointId) => {
+    const exercise = exercises.find((entry) => entry.id === id);
+    const highlight = exercise.grammarHighlights.find(({ grammarPointId }) => grammarPointId === pointId);
+    assert.ok(highlight, `${id} needs a ${pointId} highlight`);
+    return exercise.tokens.slice(highlight.tokenStart, highlight.tokenEnd)
+      .map(({ surface }) => surface).join("");
+  };
+
+  assert.equal(highlightedText("production-how-to-make-sturdy-desk", "kata-how-to"), "作り方");
+  assert.equal(highlightedText("production-n4-call-taxi-while-showering", "te-oku"), "でおいて");
+  assert.equal(highlightedText("production-n4-sister-can-eat-egg-free-cake", "ba-conditional"), "なければ");
+  assert.equal(highlightedText("production-n4-sister-can-eat-egg-free-cake", "potential-form"), "られます");
 });
 
 test("compound vocabulary keeps word identity and aligned grammar highlights", async () => {

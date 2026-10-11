@@ -241,13 +241,13 @@ test("all prepared grammar exercises declare their minimum level", async () => {
 
   assert.equal(introduction.minimumLevel, "n5");
   assert.ok(exercises.every(({ minimumLevel }) => ["n5", "n4"].includes(minimumLevel)));
-  assert.equal(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").length, 367);
+  assert.equal(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").length, 379);
   assert.ok(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").every((exercise) => {
     return exercise.grammarPointIds.some((id) => n4GrammarIds.has(id));
   }));
 });
 
-test("every grammar point has at least three distinct Japanese practice sentences", async () => {
+test("every grammar point has at least four distinct Japanese practice sentences", async () => {
   const [grammar, exercises] = await Promise.all([
     readJson("data/jlpt-n5-grammar.json"),
     readJson("data/exercises.json")
@@ -259,8 +259,43 @@ test("every grammar point has at least three distinct Japanese practice sentence
       .map(({ type, text, solution }) => type === "production" ? solution : text));
 
     assert.ok(
-      sentences.size >= 3,
-      `${point.id} needs at least three distinct Japanese sentences (found ${sentences.size})`
+      sentences.size >= 4,
+      `${point.id} needs at least four distinct Japanese sentences (found ${sentences.size})`
     );
+  }
+});
+
+test("four-sentence additions introduce new grammar pairings without repeating Japanese sentences", async () => {
+  const exercises = await readJson("data/exercises.json");
+  const cases = [
+    ["production-walked-to-station-confirmation", "darou", "ta-koto-ga-aru"],
+    ["production-how-to-make-sturdy-desk", "na-adjective-class", "kata-how-to"],
+    ["n4-camera-for-food-photography", "volitional-to-omou", "tame-ni-purpose"],
+    ["production-n4-sister-can-eat-egg-free-cake", "potential-form", "ba-conditional"],
+    ["n4-no-mountain-climbing-until-leg-heals", "koto-ni-suru", "made-end"],
+    ["production-n4-festival-singing-and-dancing-arrangement", "koto-ni-naru", "tari-tari-suru"],
+    ["production-n4-teacher-reported-home-not-in-classroom", "hazu-da", "sou-hearsay"],
+    ["n4-paper-hat-cannot-be-heavy", "hazu-ga-nai", "material-de"],
+    ["production-n4-note-names-easy-to-forget", "yasui", "te-oku"],
+    ["n4-closed-window-hard-to-hear-outside", "nikui", "mama"],
+    ["production-n4-new-station-shops-will-increase", "te-iku", "ba-conditional"],
+    ["production-n4-buy-and-bring-back-bread-favor", "te-kuru", "te-kureru"],
+    ["n4-reading-with-music-while-waiting-train", "aida", "nagara"],
+    ["production-n4-call-taxi-while-showering", "aida-ni", "te-oku"]
+  ];
+  const japanese = ({ type, text, solution }) => type === "production" ? solution : text;
+
+  for (const [id, target, partner] of cases) {
+    const index = exercises.findIndex((exercise) => exercise.id === id);
+    assert.ok(index >= 0, `${id} is missing`);
+    const exercise = exercises[index];
+    const earlierExercises = exercises.slice(0, index);
+    assert.ok(exercise.grammarPointIds.includes(target), `${id} must assess ${target}`);
+    assert.ok(exercise.grammarPointIds.includes(partner), `${id} must assess ${partner}`);
+    assert.ok(!earlierExercises.some((earlier) => japanese(earlier) === japanese(exercise)),
+      `${id} must introduce a distinct Japanese sentence`);
+    assert.ok(!earlierExercises.some(({ grammarPointIds }) => (
+      grammarPointIds.includes(target) && grammarPointIds.includes(partner)
+    )), `${id} must introduce a new ${target} + ${partner} pairing`);
   }
 });

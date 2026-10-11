@@ -15958,5 +15958,264 @@
       "aida-ni",
       "te-kureru"
     ]
+  },
+  {
+    "id": "production-walked-to-station-confirmation",
+    "text": "You have walked to the station before, haven't you? How long did it take?",
+    "solution": "駅まで歩いたことがあるだろう？どのくらいかかった？",
+    "type": "production",
+    "grammarPointIds": [
+      "darou",
+      "ta-koto-ga-aru"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "walked",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-how-to-make-sturdy-desk",
+    "text": "Please teach me how to make a sturdy desk.",
+    "solution": "丈夫な机の作り方を教えてください。",
+    "type": "production",
+    "grammarPointIds": [
+      "na-adjective-class",
+      "kata-how-to",
+      "te-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "sturdy",
+        "vocabularyIds": [
+          "vocab-62a0b787b977"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-camera-for-food-photography",
+    "text": "料理の写真を撮るために、新しいカメラを買おうと思っています。",
+    "solution": "I am planning to buy a new camera to take pictures of food.",
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "volitional-to-omou",
+      "tame-ni-purpose"
+    ]
+  },
+  {
+    "id": "production-n4-sister-can-eat-egg-free-cake",
+    "text": "If you don't use eggs, my younger sister can eat this cake too.",
+    "solution": "卵を使わなければ、妹もこのケーキを食べられます。",
+    "type": "production",
+    "tokenOverrides": {
+      "られ": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "potential-form",
+      "ba-conditional"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "eggs",
+        "vocabularyIds": [
+          "vocab-190923f1528e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-no-mountain-climbing-until-leg-heals",
+    "text": "足が治るまで、山に登らないことにしました。",
+    "solution": "I decided not to climb mountains until my leg heals.",
+    "grammarPointIds": [
+      "koto-ni-suru",
+      "made-end"
+    ]
+  },
+  {
+    "id": "production-n4-festival-singing-and-dancing-arrangement",
+    "text": "It has been decided that we will do activities like singing and dancing at this year's festival.",
+    "solution": "今年の祭りでは、歌ったり踊ったりすることになりました。",
+    "type": "production",
+    "grammarPointIds": [
+      "koto-ni-naru",
+      "tari-tari-suru"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "festival",
+        "vocabularyIds": [
+          "vocab-a722b3dcc5a4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-n4-teacher-reported-home-not-in-classroom",
+    "text": "I heard that the teacher has already gone home, so they should not be in the classroom.",
+    "solution": "先生はもう帰ったそうだから、教室にはいないはずです。",
+    "type": "production",
+    "tokenOverrides": {
+      "はず": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "hazu-da",
+      "sou-hearsay",
+      "kara-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "classroom",
+        "vocabularyIds": [
+          "vocab-fbb71c77ac0e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-paper-hat-cannot-be-heavy",
+    "text": "紙だけで作った帽子が、そんなに重いはずがありません。",
+    "solution": "A hat made only of paper cannot possibly be that heavy.",
+    "tokenOverrides": {
+      "はず": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "hazu-ga-nai",
+      "material-de",
+      "relative-clause",
+      "dake-limitation"
+    ]
+  },
+  {
+    "id": "production-n4-note-names-easy-to-forget",
+    "text": "You should write down names that are easy to forget in a notebook beforehand.",
+    "solution": "忘れやすい名前は、ノートに書いておいたほうがいいです。",
+    "type": "production",
+    "tokenOverrides": {
+      "やすい": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "yasui",
+      "te-oku",
+      "hou-ga-ii-advice"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "notebook",
+        "vocabularyIds": [
+          "vocab-73b6cd855160"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-closed-window-hard-to-hear-outside",
+    "text": "窓を閉めたままだと、外の声が聞こえにくいです。",
+    "solution": "If you leave the window closed, it is hard to hear voices outside.",
+    "tokenOverrides": {
+      "にくい": {
+        "category": "auxiliary"
+      },
+      "まま": {
+        "category": "auxiliary"
+      }
+    },
+    "grammarPointIds": [
+      "nikui",
+      "mama",
+      "to-conditional"
+    ]
+  },
+  {
+    "id": "production-n4-new-station-shops-will-increase",
+    "text": "If a new station is built, the number of shops in this town will probably keep increasing.",
+    "solution": "新しい駅ができれば、この町の店が増えていくでしょう。",
+    "type": "production",
+    "grammarPointIds": [
+      "te-iku",
+      "ba-conditional",
+      "deshou-darou"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "increasing",
+        "vocabularyIds": [
+          "vocab-2c955930b5a4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "production-n4-buy-and-bring-back-bread-favor",
+    "text": "Since we don't have enough bread, could you go and buy some and bring it back for me?",
+    "solution": "パンが足りないので、買ってきてくれませんか。",
+    "type": "production",
+    "grammarPointIds": [
+      "te-kuru",
+      "te-kureru",
+      "node-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "enough",
+        "vocabularyIds": [
+          "vocab-cdc7fbcaab99"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-reading-with-music-while-waiting-train",
+    "text": "電車を待っている間、音楽を聞きながら本を読んでいました。",
+    "solution": "While I was waiting for the train, I was reading a book and listening to music.",
+    "tokenOverrides": {
+      "間": {
+        "reading": "あいだ"
+      }
+    },
+    "grammarPointIds": [
+      "aida",
+      "nagara"
+    ]
+  },
+  {
+    "id": "production-n4-call-taxi-while-showering",
+    "text": "While I'm taking a shower, please call a taxi in advance.",
+    "solution": "私がシャワーを浴びている間に、タクシーを呼んでおいてください。",
+    "type": "production",
+    "tokenOverrides": {
+      "間": {
+        "reading": "あいだ"
+      }
+    },
+    "grammarPointIds": [
+      "aida-ni",
+      "te-oku",
+      "te-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "taxi",
+        "vocabularyIds": [
+          "vocab-0967db6c17f0"
+        ]
+      }
+    ]
   }
 ]

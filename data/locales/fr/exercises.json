@@ -9005,5 +9005,119 @@
   },
   "n4-friend-delivered-package-while-away": {
     "translation": "Pendant mon absence, un ami m’a livré un colis."
+  },
+  "production-walked-to-station-confirmation": {
+    "translation": "Tu as déjà marché jusqu’à la gare, non ? Combien de temps cela a-t-il pris ?",
+    "promptVocabularyHints": [
+      {
+        "word": "marché",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      }
+    ]
+  },
+  "production-how-to-make-sturdy-desk": {
+    "translation": "Expliquez-moi comment fabriquer un bureau solide, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "solide",
+        "vocabularyIds": [
+          "vocab-62a0b787b977"
+        ]
+      }
+    ]
+  },
+  "n4-camera-for-food-photography": {
+    "translation": "Je compte acheter un nouvel appareil photo pour photographier des plats."
+  },
+  "production-n4-sister-can-eat-egg-free-cake": {
+    "translation": "Si vous n’utilisez pas d’œufs, ma petite sœur pourra manger ce gâteau, elle aussi.",
+    "promptVocabularyHints": [
+      {
+        "word": "œufs",
+        "vocabularyIds": [
+          "vocab-190923f1528e"
+        ]
+      }
+    ]
+  },
+  "n4-no-mountain-climbing-until-leg-heals": {
+    "translation": "J’ai décidé de ne pas gravir de montagnes tant que ma jambe ne sera pas guérie."
+  },
+  "production-n4-festival-singing-and-dancing-arrangement": {
+    "translation": "Il a été décidé que nous ferons des activités comme chanter et danser au festival de cette année.",
+    "promptVocabularyHints": [
+      {
+        "word": "festival",
+        "vocabularyIds": [
+          "vocab-a722b3dcc5a4"
+        ]
+      }
+    ]
+  },
+  "production-n4-teacher-reported-home-not-in-classroom": {
+    "translation": "On m’a dit que le professeur était déjà rentré chez lui, donc il ne devrait pas être dans la salle de classe.",
+    "promptVocabularyHints": [
+      {
+        "word": "classe",
+        "vocabularyIds": [
+          "vocab-fbb71c77ac0e"
+        ]
+      }
+    ]
+  },
+  "n4-paper-hat-cannot-be-heavy": {
+    "translation": "Un chapeau fait uniquement de papier ne peut pas être aussi lourd."
+  },
+  "production-n4-note-names-easy-to-forget": {
+    "translation": "Pour les noms faciles à oublier, il vaut mieux les noter à l’avance dans un carnet.",
+    "promptVocabularyHints": [
+      {
+        "word": "carnet",
+        "vocabularyIds": [
+          "vocab-73b6cd855160"
+        ]
+      }
+    ]
+  },
+  "n4-closed-window-hard-to-hear-outside": {
+    "translation": "Si on laisse la fenêtre fermée, on entend difficilement les voix dehors."
+  },
+  "production-n4-new-station-shops-will-increase": {
+    "translation": "Si une nouvelle gare est construite, le nombre de magasins dans cette ville continuera probablement à augmenter.",
+    "promptVocabularyHints": [
+      {
+        "word": "augmenter",
+        "vocabularyIds": [
+          "vocab-2c955930b5a4"
+        ]
+      }
+    ]
+  },
+  "production-n4-buy-and-bring-back-bread-favor": {
+    "translation": "Comme il n’y a pas assez de pain, pourrais-tu aller en acheter et me le rapporter ?",
+    "promptVocabularyHints": [
+      {
+        "word": "assez",
+        "vocabularyIds": [
+          "vocab-cdc7fbcaab99"
+        ]
+      }
+    ]
+  },
+  "n4-reading-with-music-while-waiting-train": {
+    "translation": "Pendant que j’attendais le train, je lisais un livre en écoutant de la musique."
+  },
+  "production-n4-call-taxi-while-showering": {
+    "translation": "Pendant que je prends une douche, appelle un taxi à l’avance, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "taxi",
+        "vocabularyIds": [
+          "vocab-0967db6c17f0"
+        ]
+      }
+    ]
   }
 }
