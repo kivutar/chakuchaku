@@ -17527,6 +17527,7 @@
     "text": "Breakfast should be ready around the time the child wakes up.",
     "solution": "子供が起きる頃には、朝ご飯ができているはずです。",
     "type": "production",
+    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "頃": {
         "category": "auxiliary"
@@ -17583,6 +17584,7 @@
     "text": "Singing in front of people is embarrassing, so I find it hard to sing.",
     "solution": "人の前で歌うのは恥ずかしくて、歌いづらいです。",
     "type": "production",
+    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "づらい": { "category": "auxiliary" }
     },
