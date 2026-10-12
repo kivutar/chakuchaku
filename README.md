@@ -61,6 +61,10 @@ stories per page and shareable links such as `/reading/?story=my-first-library-c
 Each story has furigana, dictionary helpers, sentence audio, and bilingual
 comprehension questions with evidence-based corrections. Reading and its quiz
 never update learner SRS, exercise history, or learning statistics.
+Every current story sentence also appears in Grammar in both recognition and
+production directions, with English/French translations and production hints.
+These grammar exercises update the existing grammar cards normally and reuse
+the story's Japanese text, furigana, and audio; no new knowledge units are added.
 
 Author stories in `data/source/readings.json`: aim for around twenty sentences,
 not an exact count. Review the narrative, level-appropriate vocabulary, furigana,

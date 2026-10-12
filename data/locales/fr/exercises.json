@@ -10014,5 +10014,285 @@
         ]
       }
     ]
+  },
+  "story-library-card-first-library-visit": {
+    "translation": "La semaine dernière, je suis allé à la nouvelle bibliothèque pour la première fois."
+  },
+  "production-story-library-card-first-library-visit": {
+    "translation": "La semaine dernière, je suis allé à la nouvelle bibliothèque pour la première fois.",
+    "promptVocabularyHints": [
+      {
+        "word": "bibliothèque",
+        "vocabularyIds": [
+          "vocab-ca8d0efe19a3"
+        ]
+      }
+    ]
+  },
+  "story-library-card-white-building-by-station": {
+    "translation": "Il y a un bâtiment blanc devant la gare."
+  },
+  "production-story-library-card-white-building-by-station": {
+    "translation": "Il y a un bâtiment blanc devant la gare.",
+    "promptVocabularyHints": [
+      {
+        "word": "bâtiment",
+        "vocabularyIds": [
+          "vocab-b11f169893fb"
+        ]
+      }
+    ]
+  },
+  "story-library-card-library-on-second-level": {
+    "translation": "Le deuxième niveau de ce bâtiment est la bibliothèque."
+  },
+  "production-story-library-card-library-on-second-level": {
+    "translation": "Le deuxième niveau de ce bâtiment est la bibliothèque.",
+    "promptVocabularyHints": [
+      {
+        "word": "bâtiment",
+        "vocabularyIds": [
+          "vocab-b11f169893fb"
+        ]
+      }
+    ]
+  },
+  "story-library-card-students-reading-quietly": {
+    "translation": "À l’intérieur, des étudiants lisaient des livres en silence."
+  },
+  "production-story-library-card-students-reading-quietly": {
+    "translation": "À l’intérieur, des étudiants lisaient des livres en silence.",
+    "promptVocabularyHints": [
+      {
+        "word": "étudiants",
+        "vocabularyIds": [
+          "vocab-9567eaf8fe9b"
+        ]
+      }
+    ]
+  },
+  "story-library-card-asking-to-borrow-book": {
+    "translation": "J’ai dit à une personne de la bibliothèque : « Je veux emprunter un livre. »"
+  },
+  "production-story-library-card-asking-to-borrow-book": {
+    "translation": "J’ai dit à une personne de la bibliothèque : « Je veux emprunter un livre. »",
+    "promptVocabularyHints": [
+      {
+        "word": "bibliothèque",
+        "vocabularyIds": [
+          "vocab-ca8d0efe19a3"
+        ]
+      }
+    ]
+  },
+  "story-library-card-write-name-and-address": {
+    "translation": "Cette personne a dit : « Écrivez votre nom et votre adresse sur cette feuille, s’il vous plaît. »"
+  },
+  "production-story-library-card-write-name-and-address": {
+    "translation": "Cette personne a dit : « Écrivez votre nom et votre adresse sur cette feuille, s’il vous plaît. »",
+    "promptVocabularyHints": [
+      {
+        "word": "adresse",
+        "vocabularyIds": [
+          "vocab-fcdd7a903190"
+        ]
+      }
+    ]
+  },
+  "story-library-card-pen-out-of-bag": {
+    "translation": "J’ai sorti un stylo de mon sac."
+  },
+  "production-story-library-card-pen-out-of-bag": {
+    "translation": "J’ai sorti un stylo de mon sac.",
+    "promptVocabularyHints": [
+      {
+        "word": "stylo",
+        "vocabularyIds": [
+          "vocab-0aba8d2005d4"
+        ]
+      }
+    ]
+  },
+  "story-library-card-handing-in-paper-after-writing": {
+    "translation": "Après avoir écrit mon nom et mon adresse, j’ai remis la feuille à une personne de la bibliothèque."
+  },
+  "production-story-library-card-handing-in-paper-after-writing": {
+    "translation": "Après avoir écrit mon nom et mon adresse, j’ai remis la feuille à une personne de la bibliothèque.",
+    "promptVocabularyHints": [
+      {
+        "word": "feuille",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
+        ]
+      }
+    ]
+  },
+  "story-library-card-receiving-small-card": {
+    "translation": "Cette personne m’a donné une petite carte."
+  },
+  "production-story-library-card-receiving-small-card": {
+    "translation": "Cette personne m’a donné une petite carte.",
+    "promptVocabularyHints": [
+      {
+        "word": "carte",
+        "vocabularyIds": [
+          "vocab-a586e52ce913"
+        ]
+      }
+    ]
+  },
+  "story-library-card-must-show-card-when-borrowing": {
+    "translation": "Quand vous empruntez un livre, vous devez montrer cette carte."
+  },
+  "production-story-library-card-must-show-card-when-borrowing": {
+    "translation": "Quand vous empruntez un livre, vous devez montrer cette carte.",
+    "promptVocabularyHints": [
+      {
+        "word": "carte",
+        "vocabularyIds": [
+          "vocab-a586e52ce913"
+        ]
+      }
+    ]
+  },
+  "story-library-card-no-need-to-pay": {
+    "translation": "Vous n’avez pas besoin de payer."
+  },
+  "production-story-library-card-no-need-to-pay": {
+    "translation": "Vous n’avez pas besoin de payer.",
+    "promptVocabularyHints": [
+      {
+        "word": "payer",
+        "vocabularyIds": [
+          "vocab-45988c6cec92"
+        ]
+      }
+    ]
+  },
+  "story-library-card-return-book-next-tuesday": {
+    "translation": "Veuillez rendre le livre mardi prochain."
+  },
+  "production-story-library-card-return-book-next-tuesday": {
+    "translation": "Veuillez rendre le livre mardi prochain.",
+    "promptVocabularyHints": [
+      {
+        "word": "mardi",
+        "vocabularyIds": [
+          "vocab-9ba01fdc9897"
+        ]
+      }
+    ]
+  },
+  "story-library-card-received-card-went-to-look-at-books": {
+    "translation": "J’ai reçu une carte, puis je suis allé regarder les livres."
+  },
+  "production-story-library-card-received-card-went-to-look-at-books": {
+    "translation": "J’ai reçu une carte, puis je suis allé regarder les livres.",
+    "promptVocabularyHints": [
+      {
+        "word": "carte",
+        "vocabularyIds": [
+          "vocab-a586e52ce913"
+        ]
+      }
+    ]
+  },
+  "story-library-card-photos-in-cat-book": {
+    "translation": "Il y avait beaucoup de photos dans le livre sur les chats."
+  },
+  "production-story-library-card-photos-in-cat-book": {
+    "translation": "Il y avait beaucoup de photos dans le livre sur les chats.",
+    "promptVocabularyHints": [
+      {
+        "word": "photos",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ]
+  },
+  "story-library-card-asking-permission-to-read-here": {
+    "translation": "J’ai demandé : « Est-ce que je peux lire ce livre ici ? »"
+  },
+  "production-story-library-card-asking-permission-to-read-here": {
+    "translation": "J’ai demandé : « Est-ce que je peux lire ce livre ici ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "lire",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      }
+    ]
+  },
+  "story-library-card-must-not-speak-loudly": {
+    "translation": "Oui, mais il ne faut pas parler fort."
+  },
+  "production-story-library-card-must-not-speak-loudly": {
+    "translation": "Oui, mais il ne faut pas parler fort.",
+    "promptVocabularyHints": [
+      {
+        "word": "parler",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      }
+    ]
+  },
+  "story-library-card-reading-and-looking-at-photos": {
+    "translation": "À la table, j’ai notamment lu le livre et regardé des photos."
+  },
+  "production-story-library-card-reading-and-looking-at-photos": {
+    "translation": "À la table, j’ai notamment lu le livre et regardé des photos.",
+    "promptVocabularyHints": [
+      {
+        "word": "table",
+        "vocabularyIds": [
+          "vocab-0cbee2d10284"
+        ]
+      }
+    ]
+  },
+  "story-library-card-borrow-book-to-read-at-home": {
+    "translation": "Comme je veux aussi le lire à la maison, j’ai emprunté ce livre."
+  },
+  "production-story-library-card-borrow-book-to-read-at-home": {
+    "translation": "Comme je veux aussi le lire à la maison, j’ai emprunté ce livre.",
+    "promptVocabularyHints": [
+      {
+        "word": "maison",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      }
+    ]
+  },
+  "story-library-card-pack-card-before-going-home": {
+    "translation": "Avant de rentrer, j’ai mis la carte dans mon sac."
+  },
+  "production-story-library-card-pack-card-before-going-home": {
+    "translation": "Avant de rentrer, j’ai mis la carte dans mon sac.",
+    "promptVocabularyHints": [
+      {
+        "word": "sac",
+        "vocabularyIds": [
+          "vocab-704870bca266"
+        ]
+      }
+    ]
+  },
+  "story-library-card-study-japanese-on-next-visit": {
+    "translation": "La prochaine fois, j’aimerais aussi étudier le japonais ici."
+  },
+  "production-story-library-card-study-japanese-on-next-visit": {
+    "translation": "La prochaine fois, j’aimerais aussi étudier le japonais ici.",
+    "promptVocabularyHints": [
+      {
+        "word": "japonais",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      }
+    ]
   }
 }

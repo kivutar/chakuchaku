@@ -1402,6 +1402,11 @@
     ],
     "grammarHighlights": [
       {
+        "grammarPointId": "nakereba-naranai",
+        "tokenStart": 3,
+        "tokenEnd": 8
+      },
+      {
         "grammarPointId": "irregular-verbs",
         "tokenStart": 2,
         "tokenEnd": 4
@@ -7560,6 +7565,11 @@
         "tokenEnd": 3
       },
       {
+        "grammarPointId": "nakereba-naranai",
+        "tokenStart": 6,
+        "tokenEnd": 11
+      },
+      {
         "grammarPointId": "made-end",
         "tokenStart": 1,
         "tokenEnd": 2
@@ -13332,7 +13342,13 @@
       "nakereba-naranai",
       "clock-calendar-time"
     ],
-    "grammarHighlights": []
+    "grammarHighlights": [
+      {
+        "grammarPointId": "nakereba-naranai",
+        "tokenStart": 4,
+        "tokenEnd": 9
+      }
+    ]
   },
   {
     "id": "family-trip-plan",
@@ -23656,6 +23672,11 @@
     ],
     "grammarHighlights": [
       {
+        "grammarPointId": "te-iru-progressive",
+        "tokenStart": 7,
+        "tokenEnd": 10
+      },
+      {
         "grammarPointId": "na-adjective-attributive",
         "tokenStart": 1,
         "tokenEnd": 2
@@ -27329,6 +27350,11 @@
       "kosoado-determiners"
     ],
     "grammarHighlights": [
+      {
+        "grammarPointId": "nakereba-naranai",
+        "tokenStart": 5,
+        "tokenEnd": 10
+      },
       {
         "grammarPointId": "wa-topic",
         "tokenStart": 2,
@@ -31935,6 +31961,11 @@
       "clock-calendar-time"
     ],
     "grammarHighlights": [
+      {
+        "grammarPointId": "nakereba-naranai",
+        "tokenStart": 7,
+        "tokenEnd": 12
+      },
       {
         "grammarPointId": "ni-time",
         "tokenStart": 3,
@@ -43743,6 +43774,11 @@
       "positional-nouns"
     ],
     "grammarHighlights": [
+      {
+        "grammarPointId": "te-iru-progressive",
+        "tokenStart": 7,
+        "tokenEnd": 10
+      },
       {
         "grammarPointId": "o-route",
         "tokenStart": 5,
@@ -63464,7 +63500,13 @@
       "nakereba-naranai",
       "clock-calendar-time"
     ],
-    "grammarHighlights": []
+    "grammarHighlights": [
+      {
+        "grammarPointId": "nakereba-naranai",
+        "tokenStart": 4,
+        "tokenEnd": 9
+      }
+    ]
   },
   {
     "id": "production-no-photos-here",
@@ -91622,6 +91664,11 @@
         "grammarPointId": "wa-topic",
         "tokenStart": 1,
         "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "te-iru-progressive",
+        "tokenStart": 6,
+        "tokenEnd": 9
       }
     ]
   },
@@ -123134,6 +123181,11 @@
         "grammarPointId": "kara-reason",
         "tokenStart": 8,
         "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "te-iru-progressive",
+        "tokenStart": 6,
+        "tokenEnd": 8
       }
     ]
   },
@@ -132395,6 +132447,4788 @@
         "grammarPointId": "no-possession",
         "tokenStart": 5,
         "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-first-library-visit",
+    "minimumLevel": "n5",
+    "text": "先週、新しい図書館に初めて行きました。",
+    "audio": "assets/voices/reading/reading-library-card-01.m4a",
+    "vocabularyIds": [
+      "vocab-b669051ec4f4",
+      "vocab-288a95a40d95",
+      "vocab-ca8d0efe19a3",
+      "vocab-575d784f0748",
+      "vocab-ec22142c23d3"
+    ],
+    "kanjiIds": [
+      "kanji-5148",
+      "kanji-9031",
+      "kanji-65b0",
+      "kanji-56f3",
+      "kanji-66f8",
+      "kanji-9928",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "先週",
+        "category": "noun",
+        "reading": "せんしゅう",
+        "vocabularyId": "vocab-b669051ec4f4"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "新しい",
+        "category": "adjective",
+        "reading": "あたらしい",
+        "vocabularyId": "vocab-288a95a40d95"
+      },
+      {
+        "surface": "図書館",
+        "category": "noun",
+        "reading": "としょかん",
+        "vocabularyId": "vocab-ca8d0efe19a3"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "初めて",
+        "category": "adverb",
+        "reading": "はじめて",
+        "vocabularyId": "vocab-575d784f0748"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Last week, I went to the new library for the first time.",
+    "readingSentenceId": "reading-library-card-01",
+    "grammarPointIds": [
+      "i-adjective-attributive",
+      "ni-destination",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-destination",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 7,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-first-library-visit",
+    "minimumLevel": "n5",
+    "text": "Last week, I went to the new library for the first time.",
+    "audio": "assets/voices/reading/reading-library-card-01.m4a",
+    "vocabularyIds": [
+      "vocab-b669051ec4f4",
+      "vocab-288a95a40d95",
+      "vocab-ca8d0efe19a3",
+      "vocab-575d784f0748",
+      "vocab-ec22142c23d3"
+    ],
+    "kanjiIds": [
+      "kanji-5148",
+      "kanji-9031",
+      "kanji-65b0",
+      "kanji-56f3",
+      "kanji-66f8",
+      "kanji-9928",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "先週",
+        "category": "noun",
+        "reading": "せんしゅう",
+        "vocabularyId": "vocab-b669051ec4f4"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "新しい",
+        "category": "adjective",
+        "reading": "あたらしい",
+        "vocabularyId": "vocab-288a95a40d95"
+      },
+      {
+        "surface": "図書館",
+        "category": "noun",
+        "reading": "としょかん",
+        "vocabularyId": "vocab-ca8d0efe19a3"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "初めて",
+        "category": "adverb",
+        "reading": "はじめて",
+        "vocabularyId": "vocab-575d784f0748"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "先週、新しい図書館に初めて行きました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-01",
+    "promptVocabularyHints": [
+      {
+        "word": "library",
+        "vocabularyIds": [
+          "vocab-ca8d0efe19a3"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "i-adjective-attributive",
+      "ni-destination",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-destination",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 7,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-white-building-by-station",
+    "minimumLevel": "n5",
+    "text": "駅の前に白い建物があります。",
+    "audio": "assets/voices/reading/reading-library-card-02.m4a",
+    "vocabularyIds": [
+      "vocab-d29031265cf4",
+      "vocab-07f353ef981c",
+      "vocab-d67a7d3dacc9",
+      "vocab-b11f169893fb",
+      "vocab-b66f43bc23a1"
+    ],
+    "kanjiIds": [
+      "kanji-99c5",
+      "kanji-524d",
+      "kanji-767d",
+      "kanji-5efa",
+      "kanji-7269"
+    ],
+    "tokens": [
+      {
+        "surface": "駅",
+        "category": "noun",
+        "reading": "えき",
+        "vocabularyId": "vocab-d29031265cf4"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "前",
+        "category": "noun",
+        "reading": "まえ",
+        "vocabularyId": "vocab-07f353ef981c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "白い",
+        "category": "adjective",
+        "reading": "しろい",
+        "vocabularyId": "vocab-d67a7d3dacc9"
+      },
+      {
+        "surface": "建物",
+        "category": "noun",
+        "reading": "たてもの",
+        "vocabularyId": "vocab-b11f169893fb"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "There is a white building in front of the station.",
+    "readingSentenceId": "reading-library-card-02",
+    "grammarPointIds": [
+      "positional-nouns",
+      "ni-existence-location",
+      "aru-existence"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "positional-nouns",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-existence-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "aru-existence",
+        "tokenStart": 7,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-white-building-by-station",
+    "minimumLevel": "n5",
+    "text": "There is a white building in front of the station.",
+    "audio": "assets/voices/reading/reading-library-card-02.m4a",
+    "vocabularyIds": [
+      "vocab-d29031265cf4",
+      "vocab-07f353ef981c",
+      "vocab-d67a7d3dacc9",
+      "vocab-b11f169893fb",
+      "vocab-b66f43bc23a1"
+    ],
+    "kanjiIds": [
+      "kanji-99c5",
+      "kanji-524d",
+      "kanji-767d",
+      "kanji-5efa",
+      "kanji-7269"
+    ],
+    "tokens": [
+      {
+        "surface": "駅",
+        "category": "noun",
+        "reading": "えき",
+        "vocabularyId": "vocab-d29031265cf4"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "前",
+        "category": "noun",
+        "reading": "まえ",
+        "vocabularyId": "vocab-07f353ef981c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "白い",
+        "category": "adjective",
+        "reading": "しろい",
+        "vocabularyId": "vocab-d67a7d3dacc9"
+      },
+      {
+        "surface": "建物",
+        "category": "noun",
+        "reading": "たてもの",
+        "vocabularyId": "vocab-b11f169893fb"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "駅の前に白い建物があります。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-02",
+    "promptVocabularyHints": [
+      {
+        "word": "building",
+        "vocabularyIds": [
+          "vocab-b11f169893fb"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "positional-nouns",
+      "ni-existence-location",
+      "aru-existence"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "positional-nouns",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-existence-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "aru-existence",
+        "tokenStart": 7,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-library-on-second-level",
+    "minimumLevel": "n5",
+    "text": "その建物の二階が図書館です。",
+    "audio": "assets/voices/reading/reading-library-card-03.m4a",
+    "vocabularyIds": [
+      "vocab-ac42ce789185",
+      "vocab-b11f169893fb",
+      "vocab-7fc81b0ddd17",
+      "vocab-9848df70e3ed",
+      "vocab-ca8d0efe19a3"
+    ],
+    "kanjiIds": [
+      "kanji-5efa",
+      "kanji-7269",
+      "kanji-4e8c",
+      "kanji-968e",
+      "kanji-56f3",
+      "kanji-66f8",
+      "kanji-9928"
+    ],
+    "tokens": [
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "建物",
+        "category": "noun",
+        "reading": "たてもの",
+        "vocabularyId": "vocab-b11f169893fb"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "二",
+        "category": "noun",
+        "reading": "に",
+        "vocabularyId": "vocab-7fc81b0ddd17"
+      },
+      {
+        "surface": "階",
+        "category": "noun",
+        "reading": "かい",
+        "vocabularyId": "vocab-9848df70e3ed"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "図書館",
+        "category": "noun",
+        "reading": "としょかん",
+        "vocabularyId": "vocab-ca8d0efe19a3"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "The second floor of that building is the library.",
+    "readingSentenceId": "reading-library-card-03",
+    "grammarPointIds": [
+      "kosoado-determiners",
+      "common-counters",
+      "copula-da-desu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "kosoado-determiners",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      },
+      {
+        "grammarPointId": "common-counters",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "copula-da-desu",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-library-on-second-level",
+    "minimumLevel": "n5",
+    "text": "The second floor of that building is the library.",
+    "audio": "assets/voices/reading/reading-library-card-03.m4a",
+    "vocabularyIds": [
+      "vocab-ac42ce789185",
+      "vocab-b11f169893fb",
+      "vocab-7fc81b0ddd17",
+      "vocab-9848df70e3ed",
+      "vocab-ca8d0efe19a3"
+    ],
+    "kanjiIds": [
+      "kanji-5efa",
+      "kanji-7269",
+      "kanji-4e8c",
+      "kanji-968e",
+      "kanji-56f3",
+      "kanji-66f8",
+      "kanji-9928"
+    ],
+    "tokens": [
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "建物",
+        "category": "noun",
+        "reading": "たてもの",
+        "vocabularyId": "vocab-b11f169893fb"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "二",
+        "category": "noun",
+        "reading": "に",
+        "vocabularyId": "vocab-7fc81b0ddd17"
+      },
+      {
+        "surface": "階",
+        "category": "noun",
+        "reading": "かい",
+        "vocabularyId": "vocab-9848df70e3ed"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "図書館",
+        "category": "noun",
+        "reading": "としょかん",
+        "vocabularyId": "vocab-ca8d0efe19a3"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "その建物の二階が図書館です。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-03",
+    "promptVocabularyHints": [
+      {
+        "word": "building",
+        "vocabularyIds": [
+          "vocab-b11f169893fb"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "kosoado-determiners",
+      "common-counters",
+      "copula-da-desu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "kosoado-determiners",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      },
+      {
+        "grammarPointId": "common-counters",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "copula-da-desu",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-students-reading-quietly",
+    "minimumLevel": "n5",
+    "text": "中では、学生が静かに本を読んでいました。",
+    "audio": "assets/voices/reading/reading-library-card-04.m4a",
+    "vocabularyIds": [
+      "vocab-5849925b131d",
+      "vocab-9567eaf8fe9b",
+      "vocab-61b57e2d4702",
+      "vocab-0ac038632611",
+      "vocab-24f188a06d2c"
+    ],
+    "kanjiIds": [
+      "kanji-4e2d",
+      "kanji-5b66",
+      "kanji-751f",
+      "kanji-9759",
+      "kanji-672c",
+      "kanji-8aad"
+    ],
+    "tokens": [
+      {
+        "surface": "中",
+        "category": "noun",
+        "reading": "なか",
+        "vocabularyId": "vocab-5849925b131d"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "学生",
+        "category": "noun",
+        "reading": "がくせい",
+        "vocabularyId": "vocab-9567eaf8fe9b"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "静か",
+        "category": "adjective",
+        "reading": "しずか",
+        "vocabularyId": "vocab-61b57e2d4702"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読ん",
+        "category": "verb",
+        "reading": "よん",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Inside, students were quietly reading books.",
+    "readingSentenceId": "reading-library-card-04",
+    "grammarPointIds": [
+      "de-action-location",
+      "na-adjective-adverb",
+      "te-iru-progressive"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "na-adjective-adverb",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "te-iru-progressive",
+        "tokenStart": 11,
+        "tokenEnd": 15
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-students-reading-quietly",
+    "minimumLevel": "n5",
+    "text": "Inside, students were quietly reading books.",
+    "audio": "assets/voices/reading/reading-library-card-04.m4a",
+    "vocabularyIds": [
+      "vocab-5849925b131d",
+      "vocab-9567eaf8fe9b",
+      "vocab-61b57e2d4702",
+      "vocab-0ac038632611",
+      "vocab-24f188a06d2c"
+    ],
+    "kanjiIds": [
+      "kanji-4e2d",
+      "kanji-5b66",
+      "kanji-751f",
+      "kanji-9759",
+      "kanji-672c",
+      "kanji-8aad"
+    ],
+    "tokens": [
+      {
+        "surface": "中",
+        "category": "noun",
+        "reading": "なか",
+        "vocabularyId": "vocab-5849925b131d"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "学生",
+        "category": "noun",
+        "reading": "がくせい",
+        "vocabularyId": "vocab-9567eaf8fe9b"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "静か",
+        "category": "adjective",
+        "reading": "しずか",
+        "vocabularyId": "vocab-61b57e2d4702"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読ん",
+        "category": "verb",
+        "reading": "よん",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "中では、学生が静かに本を読んでいました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-04",
+    "promptVocabularyHints": [
+      {
+        "word": "students",
+        "vocabularyIds": [
+          "vocab-9567eaf8fe9b"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "de-action-location",
+      "na-adjective-adverb",
+      "te-iru-progressive"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "na-adjective-adverb",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "te-iru-progressive",
+        "tokenStart": 11,
+        "tokenEnd": 15
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-asking-to-borrow-book",
+    "minimumLevel": "n5",
+    "text": "図書館の人に「本を借りたいです」と言いました。",
+    "audio": "assets/voices/reading/reading-library-card-05.m4a",
+    "vocabularyIds": [
+      "vocab-ca8d0efe19a3",
+      "vocab-ad7167347a2a",
+      "vocab-0ac038632611",
+      "vocab-fcc4b149bcdb",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-56f3",
+      "kanji-66f8",
+      "kanji-9928",
+      "kanji-4eba",
+      "kanji-672c",
+      "kanji-501f",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "図書館",
+        "category": "noun",
+        "reading": "としょかん",
+        "vocabularyId": "vocab-ca8d0efe19a3"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "借り",
+        "category": "verb",
+        "reading": "かり",
+        "vocabularyId": "vocab-fcc4b149bcdb"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I told a library staff member, “I want to borrow a book.”",
+    "readingSentenceId": "reading-library-card-05",
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 11,
+        "tokenEnd": 15
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-asking-to-borrow-book",
+    "minimumLevel": "n5",
+    "text": "I told a library staff member, “I want to borrow a book.”",
+    "audio": "assets/voices/reading/reading-library-card-05.m4a",
+    "vocabularyIds": [
+      "vocab-ca8d0efe19a3",
+      "vocab-ad7167347a2a",
+      "vocab-0ac038632611",
+      "vocab-fcc4b149bcdb",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-56f3",
+      "kanji-66f8",
+      "kanji-9928",
+      "kanji-4eba",
+      "kanji-672c",
+      "kanji-501f",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "図書館",
+        "category": "noun",
+        "reading": "としょかん",
+        "vocabularyId": "vocab-ca8d0efe19a3"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "借り",
+        "category": "verb",
+        "reading": "かり",
+        "vocabularyId": "vocab-fcc4b149bcdb"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "図書館の人に「本を借りたいです」と言いました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-05",
+    "promptVocabularyHints": [
+      {
+        "word": "library",
+        "vocabularyIds": [
+          "vocab-ca8d0efe19a3"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 11,
+        "tokenEnd": 15
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-write-name-and-address",
+    "minimumLevel": "n5",
+    "text": "その人は「この紙に名前と住所を書いてください」と言いました。",
+    "audio": "assets/voices/reading/reading-library-card-06.m4a",
+    "vocabularyIds": [
+      "vocab-ac42ce789185",
+      "vocab-ad7167347a2a",
+      "vocab-25acc002a82f",
+      "vocab-d060cd928492",
+      "vocab-09558b341dc0",
+      "vocab-fcdd7a903190",
+      "vocab-d34997e828cb",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-4eba",
+      "kanji-7d19",
+      "kanji-540d",
+      "kanji-524d",
+      "kanji-4f4f",
+      "kanji-66f8",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "紙",
+        "category": "noun",
+        "reading": "かみ",
+        "vocabularyId": "vocab-d060cd928492"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "名前",
+        "category": "noun",
+        "reading": "なまえ",
+        "vocabularyId": "vocab-09558b341dc0"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "住所",
+        "category": "noun",
+        "reading": "じゅうしょ",
+        "vocabularyId": "vocab-fcdd7a903190"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "書い",
+        "category": "verb",
+        "reading": "かい",
+        "vocabularyId": "vocab-d34997e828cb"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "ください",
+        "category": "auxiliary",
+        "reading": "ください"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "That person said, “Please write your name and address on this paper.”",
+    "readingSentenceId": "reading-library-card-06",
+    "grammarPointIds": [
+      "te-kudasai",
+      "to-complete-list",
+      "to-iu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-kudasai",
+        "tokenStart": 12,
+        "tokenEnd": 14
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 15,
+        "tokenEnd": 19
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-write-name-and-address",
+    "minimumLevel": "n5",
+    "text": "That person said, “Please write your name and address on this paper.”",
+    "audio": "assets/voices/reading/reading-library-card-06.m4a",
+    "vocabularyIds": [
+      "vocab-ac42ce789185",
+      "vocab-ad7167347a2a",
+      "vocab-25acc002a82f",
+      "vocab-d060cd928492",
+      "vocab-09558b341dc0",
+      "vocab-fcdd7a903190",
+      "vocab-d34997e828cb",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-4eba",
+      "kanji-7d19",
+      "kanji-540d",
+      "kanji-524d",
+      "kanji-4f4f",
+      "kanji-66f8",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "紙",
+        "category": "noun",
+        "reading": "かみ",
+        "vocabularyId": "vocab-d060cd928492"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "名前",
+        "category": "noun",
+        "reading": "なまえ",
+        "vocabularyId": "vocab-09558b341dc0"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "住所",
+        "category": "noun",
+        "reading": "じゅうしょ",
+        "vocabularyId": "vocab-fcdd7a903190"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "書い",
+        "category": "verb",
+        "reading": "かい",
+        "vocabularyId": "vocab-d34997e828cb"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "ください",
+        "category": "auxiliary",
+        "reading": "ください"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "その人は「この紙に名前と住所を書いてください」と言いました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-06",
+    "promptVocabularyHints": [
+      {
+        "word": "address",
+        "vocabularyIds": [
+          "vocab-fcdd7a903190"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "te-kudasai",
+      "to-complete-list",
+      "to-iu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-kudasai",
+        "tokenStart": 12,
+        "tokenEnd": 14
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 15,
+        "tokenEnd": 19
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-pen-out-of-bag",
+    "minimumLevel": "n5",
+    "text": "私はかばんからペンを出しました。",
+    "audio": "assets/voices/reading/reading-library-card-07.m4a",
+    "vocabularyIds": [
+      "vocab-b6944a5fe271",
+      "vocab-704870bca266",
+      "vocab-0aba8d2005d4",
+      "vocab-a001b24baf12"
+    ],
+    "kanjiIds": [
+      "kanji-79c1",
+      "kanji-51fa"
+    ],
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "かばん",
+        "category": "noun",
+        "reading": "かばん",
+        "vocabularyId": "vocab-704870bca266"
+      },
+      {
+        "surface": "から",
+        "category": "particle",
+        "reading": "から"
+      },
+      {
+        "surface": "ペン",
+        "category": "noun",
+        "reading": "ぺん",
+        "vocabularyId": "vocab-0aba8d2005d4"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "出し",
+        "category": "verb",
+        "reading": "だし",
+        "vocabularyId": "vocab-a001b24baf12"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I took a pen out of my bag.",
+    "readingSentenceId": "reading-library-card-07",
+    "grammarPointIds": [
+      "kara-start",
+      "o-object",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "kara-start",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 7,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-pen-out-of-bag",
+    "minimumLevel": "n5",
+    "text": "I took a pen out of my bag.",
+    "audio": "assets/voices/reading/reading-library-card-07.m4a",
+    "vocabularyIds": [
+      "vocab-b6944a5fe271",
+      "vocab-704870bca266",
+      "vocab-0aba8d2005d4",
+      "vocab-a001b24baf12"
+    ],
+    "kanjiIds": [
+      "kanji-79c1",
+      "kanji-51fa"
+    ],
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "かばん",
+        "category": "noun",
+        "reading": "かばん",
+        "vocabularyId": "vocab-704870bca266"
+      },
+      {
+        "surface": "から",
+        "category": "particle",
+        "reading": "から"
+      },
+      {
+        "surface": "ペン",
+        "category": "noun",
+        "reading": "ぺん",
+        "vocabularyId": "vocab-0aba8d2005d4"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "出し",
+        "category": "verb",
+        "reading": "だし",
+        "vocabularyId": "vocab-a001b24baf12"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "私はかばんからペンを出しました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-07",
+    "promptVocabularyHints": [
+      {
+        "word": "pen",
+        "vocabularyIds": [
+          "vocab-0aba8d2005d4"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "kara-start",
+      "o-object",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "kara-start",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 7,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-handing-in-paper-after-writing",
+    "minimumLevel": "n5",
+    "text": "名前と住所を書いてから、図書館の人に紙を渡しました。",
+    "audio": "assets/voices/reading/reading-library-card-08.m4a",
+    "vocabularyIds": [
+      "vocab-09558b341dc0",
+      "vocab-fcdd7a903190",
+      "vocab-d34997e828cb",
+      "vocab-ca8d0efe19a3",
+      "vocab-ad7167347a2a",
+      "vocab-d060cd928492",
+      "vocab-e713380aad5b"
+    ],
+    "kanjiIds": [
+      "kanji-540d",
+      "kanji-524d",
+      "kanji-4f4f",
+      "kanji-66f8",
+      "kanji-56f3",
+      "kanji-9928",
+      "kanji-4eba",
+      "kanji-7d19"
+    ],
+    "tokens": [
+      {
+        "surface": "名前",
+        "category": "noun",
+        "reading": "なまえ",
+        "vocabularyId": "vocab-09558b341dc0"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "住所",
+        "category": "noun",
+        "reading": "じゅうしょ",
+        "vocabularyId": "vocab-fcdd7a903190"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "書い",
+        "category": "verb",
+        "reading": "かい",
+        "vocabularyId": "vocab-d34997e828cb"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "から",
+        "category": "particle",
+        "reading": "から"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "図書館",
+        "category": "noun",
+        "reading": "としょかん",
+        "vocabularyId": "vocab-ca8d0efe19a3"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "紙",
+        "category": "noun",
+        "reading": "かみ",
+        "vocabularyId": "vocab-d060cd928492"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "渡し",
+        "category": "verb",
+        "reading": "わたし",
+        "vocabularyId": "vocab-e713380aad5b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "After writing my name and address, I handed the paper to a library staff member.",
+    "readingSentenceId": "reading-library-card-08",
+    "grammarPointIds": [
+      "te-kara",
+      "to-complete-list",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-kara",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "to-complete-list",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 11,
+        "tokenEnd": 12
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-handing-in-paper-after-writing",
+    "minimumLevel": "n5",
+    "text": "After writing my name and address, I handed the paper to a library staff member.",
+    "audio": "assets/voices/reading/reading-library-card-08.m4a",
+    "vocabularyIds": [
+      "vocab-09558b341dc0",
+      "vocab-fcdd7a903190",
+      "vocab-d34997e828cb",
+      "vocab-ca8d0efe19a3",
+      "vocab-ad7167347a2a",
+      "vocab-d060cd928492",
+      "vocab-e713380aad5b"
+    ],
+    "kanjiIds": [
+      "kanji-540d",
+      "kanji-524d",
+      "kanji-4f4f",
+      "kanji-66f8",
+      "kanji-56f3",
+      "kanji-9928",
+      "kanji-4eba",
+      "kanji-7d19"
+    ],
+    "tokens": [
+      {
+        "surface": "名前",
+        "category": "noun",
+        "reading": "なまえ",
+        "vocabularyId": "vocab-09558b341dc0"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "住所",
+        "category": "noun",
+        "reading": "じゅうしょ",
+        "vocabularyId": "vocab-fcdd7a903190"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "書い",
+        "category": "verb",
+        "reading": "かい",
+        "vocabularyId": "vocab-d34997e828cb"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "から",
+        "category": "particle",
+        "reading": "から"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "図書館",
+        "category": "noun",
+        "reading": "としょかん",
+        "vocabularyId": "vocab-ca8d0efe19a3"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "紙",
+        "category": "noun",
+        "reading": "かみ",
+        "vocabularyId": "vocab-d060cd928492"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "渡し",
+        "category": "verb",
+        "reading": "わたし",
+        "vocabularyId": "vocab-e713380aad5b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "名前と住所を書いてから、図書館の人に紙を渡しました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-08",
+    "promptVocabularyHints": [
+      {
+        "word": "paper",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "te-kara",
+      "to-complete-list",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-kara",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "to-complete-list",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 11,
+        "tokenEnd": 12
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-receiving-small-card",
+    "minimumLevel": "n5",
+    "text": "その人は小さなカードをくれました。",
+    "audio": "assets/voices/reading/reading-library-card-09.m4a",
+    "vocabularyIds": [
+      "vocab-ac42ce789185",
+      "vocab-ad7167347a2a",
+      "vocab-41e4148a48ea",
+      "vocab-a586e52ce913",
+      "vocab-24fa68d81123"
+    ],
+    "kanjiIds": [
+      "kanji-4eba",
+      "kanji-5c0f"
+    ],
+    "tokens": [
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "小さな",
+        "category": "determiner",
+        "reading": "ちいさな",
+        "vocabularyId": "vocab-41e4148a48ea"
+      },
+      {
+        "surface": "カード",
+        "category": "noun",
+        "reading": "かーど",
+        "vocabularyId": "vocab-a586e52ce913"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "くれ",
+        "category": "verb",
+        "reading": "くれ",
+        "vocabularyId": "vocab-24fa68d81123"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "That person gave me a small card.",
+    "readingSentenceId": "reading-library-card-09",
+    "grammarPointIds": [
+      "kureru",
+      "kosoado-determiners",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "kureru",
+        "tokenStart": 5,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "kosoado-determiners",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-receiving-small-card",
+    "minimumLevel": "n5",
+    "text": "That person gave me a small card.",
+    "audio": "assets/voices/reading/reading-library-card-09.m4a",
+    "vocabularyIds": [
+      "vocab-ac42ce789185",
+      "vocab-ad7167347a2a",
+      "vocab-41e4148a48ea",
+      "vocab-a586e52ce913",
+      "vocab-24fa68d81123"
+    ],
+    "kanjiIds": [
+      "kanji-4eba",
+      "kanji-5c0f"
+    ],
+    "tokens": [
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "小さな",
+        "category": "determiner",
+        "reading": "ちいさな",
+        "vocabularyId": "vocab-41e4148a48ea"
+      },
+      {
+        "surface": "カード",
+        "category": "noun",
+        "reading": "かーど",
+        "vocabularyId": "vocab-a586e52ce913"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "くれ",
+        "category": "verb",
+        "reading": "くれ",
+        "vocabularyId": "vocab-24fa68d81123"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "その人は小さなカードをくれました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-09",
+    "promptVocabularyHints": [
+      {
+        "word": "card",
+        "vocabularyIds": [
+          "vocab-a586e52ce913"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "kureru",
+      "kosoado-determiners",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "kureru",
+        "tokenStart": 5,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "kosoado-determiners",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-must-show-card-when-borrowing",
+    "minimumLevel": "n5",
+    "text": "「本を借りるときは、このカードを見せなければなりません。」",
+    "audio": "assets/voices/reading/reading-library-card-10.m4a",
+    "vocabularyIds": [
+      "vocab-0ac038632611",
+      "vocab-fcc4b149bcdb",
+      "vocab-3ec9b1831a40",
+      "vocab-25acc002a82f",
+      "vocab-a586e52ce913",
+      "vocab-859aec8573b3"
+    ],
+    "kanjiIds": [
+      "kanji-672c",
+      "kanji-501f",
+      "kanji-898b"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "借りる",
+        "category": "verb",
+        "reading": "かりる",
+        "vocabularyId": "vocab-fcc4b149bcdb"
+      },
+      {
+        "surface": "とき",
+        "category": "noun",
+        "reading": "とき",
+        "vocabularyId": "vocab-3ec9b1831a40"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "カード",
+        "category": "noun",
+        "reading": "かーど",
+        "vocabularyId": "vocab-a586e52ce913"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見せ",
+        "category": "verb",
+        "reading": "みせ",
+        "vocabularyId": "vocab-859aec8573b3"
+      },
+      {
+        "surface": "なけれ",
+        "category": "auxiliary",
+        "reading": "なけれ"
+      },
+      {
+        "surface": "ば",
+        "category": "particle",
+        "reading": "ば"
+      },
+      {
+        "surface": "なり",
+        "category": "auxiliary",
+        "reading": "なり"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      }
+    ],
+    "solution": "When you borrow a book, you must show this card.",
+    "readingSentenceId": "reading-library-card-10",
+    "grammarPointIds": [
+      "toki",
+      "nakereba-naranai",
+      "kosoado-determiners"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "toki",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "nakereba-naranai",
+        "tokenStart": 11,
+        "tokenEnd": 16
+      },
+      {
+        "grammarPointId": "kosoado-determiners",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-must-show-card-when-borrowing",
+    "minimumLevel": "n5",
+    "text": "When you borrow a book, you must show this card.",
+    "audio": "assets/voices/reading/reading-library-card-10.m4a",
+    "vocabularyIds": [
+      "vocab-0ac038632611",
+      "vocab-fcc4b149bcdb",
+      "vocab-3ec9b1831a40",
+      "vocab-25acc002a82f",
+      "vocab-a586e52ce913",
+      "vocab-859aec8573b3"
+    ],
+    "kanjiIds": [
+      "kanji-672c",
+      "kanji-501f",
+      "kanji-898b"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "借りる",
+        "category": "verb",
+        "reading": "かりる",
+        "vocabularyId": "vocab-fcc4b149bcdb"
+      },
+      {
+        "surface": "とき",
+        "category": "noun",
+        "reading": "とき",
+        "vocabularyId": "vocab-3ec9b1831a40"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "カード",
+        "category": "noun",
+        "reading": "かーど",
+        "vocabularyId": "vocab-a586e52ce913"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見せ",
+        "category": "verb",
+        "reading": "みせ",
+        "vocabularyId": "vocab-859aec8573b3"
+      },
+      {
+        "surface": "なけれ",
+        "category": "auxiliary",
+        "reading": "なけれ"
+      },
+      {
+        "surface": "ば",
+        "category": "particle",
+        "reading": "ば"
+      },
+      {
+        "surface": "なり",
+        "category": "auxiliary",
+        "reading": "なり"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      }
+    ],
+    "solution": "「本を借りるときは、このカードを見せなければなりません。」",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-10",
+    "promptVocabularyHints": [
+      {
+        "word": "card",
+        "vocabularyIds": [
+          "vocab-a586e52ce913"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "toki",
+      "nakereba-naranai",
+      "kosoado-determiners"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "toki",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "nakereba-naranai",
+        "tokenStart": 11,
+        "tokenEnd": 16
+      },
+      {
+        "grammarPointId": "kosoado-determiners",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-no-need-to-pay",
+    "minimumLevel": "n5",
+    "text": "「お金は払わなくてもいいですよ。」",
+    "audio": "assets/voices/reading/reading-library-card-11.m4a",
+    "vocabularyIds": [
+      "vocab-d242b38667c8",
+      "vocab-45988c6cec92",
+      "vocab-ef4cce00951f"
+    ],
+    "kanjiIds": [
+      "kanji-91d1",
+      "kanji-6255"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "お金",
+        "category": "noun",
+        "reading": "おかね",
+        "vocabularyId": "vocab-d242b38667c8"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "払わ",
+        "category": "verb",
+        "reading": "はらわ",
+        "vocabularyId": "vocab-45988c6cec92"
+      },
+      {
+        "surface": "なく",
+        "category": "auxiliary",
+        "reading": "なく"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "いい",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "よ",
+        "category": "particle",
+        "reading": "よ"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      }
+    ],
+    "solution": "You don’t have to pay any money.",
+    "readingSentenceId": "reading-library-card-11",
+    "grammarPointIds": [
+      "nakute-mo-ii",
+      "yo-emphasis"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "nakute-mo-ii",
+        "tokenStart": 4,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "yo-emphasis",
+        "tokenStart": 9,
+        "tokenEnd": 10
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-no-need-to-pay",
+    "minimumLevel": "n5",
+    "text": "You don’t have to pay any money.",
+    "audio": "assets/voices/reading/reading-library-card-11.m4a",
+    "vocabularyIds": [
+      "vocab-d242b38667c8",
+      "vocab-45988c6cec92",
+      "vocab-ef4cce00951f"
+    ],
+    "kanjiIds": [
+      "kanji-91d1",
+      "kanji-6255"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "お金",
+        "category": "noun",
+        "reading": "おかね",
+        "vocabularyId": "vocab-d242b38667c8"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "払わ",
+        "category": "verb",
+        "reading": "はらわ",
+        "vocabularyId": "vocab-45988c6cec92"
+      },
+      {
+        "surface": "なく",
+        "category": "auxiliary",
+        "reading": "なく"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "いい",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "よ",
+        "category": "particle",
+        "reading": "よ"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      }
+    ],
+    "solution": "「お金は払わなくてもいいですよ。」",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-11",
+    "promptVocabularyHints": [
+      {
+        "word": "pay",
+        "vocabularyIds": [
+          "vocab-45988c6cec92"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "nakute-mo-ii",
+      "yo-emphasis"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "nakute-mo-ii",
+        "tokenStart": 4,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "yo-emphasis",
+        "tokenStart": 9,
+        "tokenEnd": 10
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-return-book-next-tuesday",
+    "minimumLevel": "n5",
+    "text": "「本は来週の火曜日に返してください。」",
+    "audio": "assets/voices/reading/reading-library-card-12.m4a",
+    "vocabularyIds": [
+      "vocab-0ac038632611",
+      "vocab-eddc7f95d55c",
+      "vocab-9ba01fdc9897",
+      "vocab-648683b83781"
+    ],
+    "kanjiIds": [
+      "kanji-672c",
+      "kanji-6765",
+      "kanji-9031",
+      "kanji-706b",
+      "kanji-66dc",
+      "kanji-65e5"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "来週",
+        "category": "noun",
+        "reading": "らいしゅう",
+        "vocabularyId": "vocab-eddc7f95d55c"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "火曜日",
+        "category": "noun",
+        "reading": "かようび",
+        "vocabularyId": "vocab-9ba01fdc9897"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "返し",
+        "category": "verb",
+        "reading": "かえし",
+        "vocabularyId": "vocab-648683b83781"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "ください",
+        "category": "auxiliary",
+        "reading": "ください"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      }
+    ],
+    "solution": "Please return the book next Tuesday.",
+    "readingSentenceId": "reading-library-card-12",
+    "grammarPointIds": [
+      "te-kudasai",
+      "ni-time",
+      "no-possession"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-kudasai",
+        "tokenStart": 8,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "ni-time",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "no-possession",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-return-book-next-tuesday",
+    "minimumLevel": "n5",
+    "text": "Please return the book next Tuesday.",
+    "audio": "assets/voices/reading/reading-library-card-12.m4a",
+    "vocabularyIds": [
+      "vocab-0ac038632611",
+      "vocab-eddc7f95d55c",
+      "vocab-9ba01fdc9897",
+      "vocab-648683b83781"
+    ],
+    "kanjiIds": [
+      "kanji-672c",
+      "kanji-6765",
+      "kanji-9031",
+      "kanji-706b",
+      "kanji-66dc",
+      "kanji-65e5"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "来週",
+        "category": "noun",
+        "reading": "らいしゅう",
+        "vocabularyId": "vocab-eddc7f95d55c"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "火曜日",
+        "category": "noun",
+        "reading": "かようび",
+        "vocabularyId": "vocab-9ba01fdc9897"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "返し",
+        "category": "verb",
+        "reading": "かえし",
+        "vocabularyId": "vocab-648683b83781"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "ください",
+        "category": "auxiliary",
+        "reading": "ください"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      }
+    ],
+    "solution": "「本は来週の火曜日に返してください。」",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-12",
+    "promptVocabularyHints": [
+      {
+        "word": "Tuesday",
+        "vocabularyIds": [
+          "vocab-9ba01fdc9897"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "te-kudasai",
+      "ni-time",
+      "no-possession"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-kudasai",
+        "tokenStart": 8,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "ni-time",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "no-possession",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-received-card-went-to-look-at-books",
+    "minimumLevel": "n5",
+    "text": "私はカードをもらって、本を見に行きました。",
+    "audio": "assets/voices/reading/reading-library-card-13.m4a",
+    "vocabularyIds": [
+      "vocab-b6944a5fe271",
+      "vocab-a586e52ce913",
+      "vocab-9d61f6197627",
+      "vocab-0ac038632611",
+      "vocab-385cc0d9ee98",
+      "vocab-ec22142c23d3"
+    ],
+    "kanjiIds": [
+      "kanji-79c1",
+      "kanji-672c",
+      "kanji-898b",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "カード",
+        "category": "noun",
+        "reading": "かーど",
+        "vocabularyId": "vocab-a586e52ce913"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "もらっ",
+        "category": "verb",
+        "reading": "もらっ",
+        "vocabularyId": "vocab-9d61f6197627"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見",
+        "category": "verb",
+        "reading": "み",
+        "vocabularyId": "vocab-385cc0d9ee98"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I received a card and went to look at the books.",
+    "readingSentenceId": "reading-library-card-13",
+    "grammarPointIds": [
+      "morau",
+      "te-action-link",
+      "movement-purpose"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "morau",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "movement-purpose",
+        "tokenStart": 10,
+        "tokenEnd": 14
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-received-card-went-to-look-at-books",
+    "minimumLevel": "n5",
+    "text": "I received a card and went to look at the books.",
+    "audio": "assets/voices/reading/reading-library-card-13.m4a",
+    "vocabularyIds": [
+      "vocab-b6944a5fe271",
+      "vocab-a586e52ce913",
+      "vocab-9d61f6197627",
+      "vocab-0ac038632611",
+      "vocab-385cc0d9ee98",
+      "vocab-ec22142c23d3"
+    ],
+    "kanjiIds": [
+      "kanji-79c1",
+      "kanji-672c",
+      "kanji-898b",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "カード",
+        "category": "noun",
+        "reading": "かーど",
+        "vocabularyId": "vocab-a586e52ce913"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "もらっ",
+        "category": "verb",
+        "reading": "もらっ",
+        "vocabularyId": "vocab-9d61f6197627"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見",
+        "category": "verb",
+        "reading": "み",
+        "vocabularyId": "vocab-385cc0d9ee98"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "私はカードをもらって、本を見に行きました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-13",
+    "promptVocabularyHints": [
+      {
+        "word": "card",
+        "vocabularyIds": [
+          "vocab-a586e52ce913"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "morau",
+      "te-action-link",
+      "movement-purpose"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "morau",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "movement-purpose",
+        "tokenStart": 10,
+        "tokenEnd": 14
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-photos-in-cat-book",
+    "minimumLevel": "n5",
+    "text": "猫の本には写真がたくさんありました。",
+    "audio": "assets/voices/reading/reading-library-card-14.m4a",
+    "vocabularyIds": [
+      "vocab-123a10eb50b0",
+      "vocab-0ac038632611",
+      "vocab-d5901ecbf5fb",
+      "vocab-106fdb214a72",
+      "vocab-b66f43bc23a1"
+    ],
+    "kanjiIds": [
+      "kanji-672c",
+      "kanji-5199",
+      "kanji-771f"
+    ],
+    "tokens": [
+      {
+        "surface": "猫",
+        "category": "noun",
+        "reading": "ねこ",
+        "vocabularyId": "vocab-123a10eb50b0"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "たくさん",
+        "category": "noun",
+        "reading": "たくさん",
+        "vocabularyId": "vocab-106fdb214a72"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "There were lots of photographs in the book about cats.",
+    "readingSentenceId": "reading-library-card-14",
+    "grammarPointIds": [
+      "no-possession",
+      "ni-existence-location",
+      "aru-existence"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "no-possession",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-existence-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "aru-existence",
+        "tokenStart": 8,
+        "tokenEnd": 11
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-photos-in-cat-book",
+    "minimumLevel": "n5",
+    "text": "There were lots of photographs in the book about cats.",
+    "audio": "assets/voices/reading/reading-library-card-14.m4a",
+    "vocabularyIds": [
+      "vocab-123a10eb50b0",
+      "vocab-0ac038632611",
+      "vocab-d5901ecbf5fb",
+      "vocab-106fdb214a72",
+      "vocab-b66f43bc23a1"
+    ],
+    "kanjiIds": [
+      "kanji-672c",
+      "kanji-5199",
+      "kanji-771f"
+    ],
+    "tokens": [
+      {
+        "surface": "猫",
+        "category": "noun",
+        "reading": "ねこ",
+        "vocabularyId": "vocab-123a10eb50b0"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "たくさん",
+        "category": "noun",
+        "reading": "たくさん",
+        "vocabularyId": "vocab-106fdb214a72"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "猫の本には写真がたくさんありました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-14",
+    "promptVocabularyHints": [
+      {
+        "word": "photographs",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "no-possession",
+      "ni-existence-location",
+      "aru-existence"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "no-possession",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-existence-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "aru-existence",
+        "tokenStart": 8,
+        "tokenEnd": 11
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-asking-permission-to-read-here",
+    "minimumLevel": "n5",
+    "text": "「ここでこの本を読んでもいいですか」と聞きました。",
+    "audio": "assets/voices/reading/reading-library-card-15.m4a",
+    "vocabularyIds": [
+      "vocab-f4ee05460d54",
+      "vocab-25acc002a82f",
+      "vocab-0ac038632611",
+      "vocab-24f188a06d2c",
+      "vocab-ef4cce00951f",
+      "vocab-d8a0261581dc"
+    ],
+    "kanjiIds": [
+      "kanji-672c",
+      "kanji-8aad",
+      "kanji-805e"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "ここ",
+        "category": "noun",
+        "reading": "ここ",
+        "vocabularyId": "vocab-f4ee05460d54"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読ん",
+        "category": "verb",
+        "reading": "よん",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "いい",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "聞き",
+        "category": "verb",
+        "reading": "きき",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I asked, “May I read this book here?”",
+    "readingSentenceId": "reading-library-card-15",
+    "grammarPointIds": [
+      "te-mo-ii",
+      "ka-question",
+      "to-quotation"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-mo-ii",
+        "tokenStart": 7,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "ka-question",
+        "tokenStart": 11,
+        "tokenEnd": 12
+      },
+      {
+        "grammarPointId": "to-quotation",
+        "tokenStart": 13,
+        "tokenEnd": 14
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-asking-permission-to-read-here",
+    "minimumLevel": "n5",
+    "text": "I asked, “May I read this book here?”",
+    "audio": "assets/voices/reading/reading-library-card-15.m4a",
+    "vocabularyIds": [
+      "vocab-f4ee05460d54",
+      "vocab-25acc002a82f",
+      "vocab-0ac038632611",
+      "vocab-24f188a06d2c",
+      "vocab-ef4cce00951f",
+      "vocab-d8a0261581dc"
+    ],
+    "kanjiIds": [
+      "kanji-672c",
+      "kanji-8aad",
+      "kanji-805e"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "ここ",
+        "category": "noun",
+        "reading": "ここ",
+        "vocabularyId": "vocab-f4ee05460d54"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読ん",
+        "category": "verb",
+        "reading": "よん",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "いい",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "聞き",
+        "category": "verb",
+        "reading": "きき",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "「ここでこの本を読んでもいいですか」と聞きました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-15",
+    "promptVocabularyHints": [
+      {
+        "word": "read",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "te-mo-ii",
+      "ka-question",
+      "to-quotation"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-mo-ii",
+        "tokenStart": 7,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "ka-question",
+        "tokenStart": 11,
+        "tokenEnd": 12
+      },
+      {
+        "grammarPointId": "to-quotation",
+        "tokenStart": 13,
+        "tokenEnd": 14
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-must-not-speak-loudly",
+    "minimumLevel": "n5",
+    "text": "「はい、でも大きな声で話してはいけません。」",
+    "audio": "assets/voices/reading/reading-library-card-16.m4a",
+    "vocabularyIds": [
+      "vocab-6bbf1546d4d7",
+      "vocab-7aeac2a5dd4c",
+      "vocab-ef06b1815ddd",
+      "vocab-135a822fbf3a",
+      "vocab-0b969a8c0944"
+    ],
+    "kanjiIds": [
+      "kanji-5927",
+      "kanji-8a71"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "はい",
+        "category": "interjection",
+        "reading": "はい",
+        "vocabularyId": "vocab-6bbf1546d4d7"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "でも",
+        "category": "conjunction",
+        "reading": "でも",
+        "vocabularyId": "vocab-7aeac2a5dd4c"
+      },
+      {
+        "surface": "大きな",
+        "category": "determiner",
+        "reading": "おおきな",
+        "vocabularyId": "vocab-ef06b1815ddd"
+      },
+      {
+        "surface": "声",
+        "category": "noun",
+        "reading": "こえ",
+        "vocabularyId": "vocab-135a822fbf3a"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "話し",
+        "category": "verb",
+        "reading": "はなし",
+        "vocabularyId": "vocab-0b969a8c0944"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "いけ",
+        "category": "auxiliary",
+        "reading": "いけ"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      }
+    ],
+    "solution": "Yes, but you must not speak loudly.",
+    "readingSentenceId": "reading-library-card-16",
+    "grammarPointIds": [
+      "demo-connector",
+      "te-wa-ikenai"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "demo-connector",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "te-wa-ikenai",
+        "tokenStart": 8,
+        "tokenEnd": 13
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-must-not-speak-loudly",
+    "minimumLevel": "n5",
+    "text": "Yes, but you must not speak loudly.",
+    "audio": "assets/voices/reading/reading-library-card-16.m4a",
+    "vocabularyIds": [
+      "vocab-6bbf1546d4d7",
+      "vocab-7aeac2a5dd4c",
+      "vocab-ef06b1815ddd",
+      "vocab-135a822fbf3a",
+      "vocab-0b969a8c0944"
+    ],
+    "kanjiIds": [
+      "kanji-5927",
+      "kanji-8a71"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "はい",
+        "category": "interjection",
+        "reading": "はい",
+        "vocabularyId": "vocab-6bbf1546d4d7"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "でも",
+        "category": "conjunction",
+        "reading": "でも",
+        "vocabularyId": "vocab-7aeac2a5dd4c"
+      },
+      {
+        "surface": "大きな",
+        "category": "determiner",
+        "reading": "おおきな",
+        "vocabularyId": "vocab-ef06b1815ddd"
+      },
+      {
+        "surface": "声",
+        "category": "noun",
+        "reading": "こえ",
+        "vocabularyId": "vocab-135a822fbf3a"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "話し",
+        "category": "verb",
+        "reading": "はなし",
+        "vocabularyId": "vocab-0b969a8c0944"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "いけ",
+        "category": "auxiliary",
+        "reading": "いけ"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      }
+    ],
+    "solution": "「はい、でも大きな声で話してはいけません。」",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-16",
+    "promptVocabularyHints": [
+      {
+        "word": "speak",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "demo-connector",
+      "te-wa-ikenai"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "demo-connector",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "te-wa-ikenai",
+        "tokenStart": 8,
+        "tokenEnd": 13
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-reading-and-looking-at-photos",
+    "minimumLevel": "n5",
+    "text": "机で本を読んだり、写真を見たりしました。",
+    "audio": "assets/voices/reading/reading-library-card-17.m4a",
+    "vocabularyIds": [
+      "vocab-0cbee2d10284",
+      "vocab-0ac038632611",
+      "vocab-24f188a06d2c",
+      "vocab-d5901ecbf5fb",
+      "vocab-385cc0d9ee98",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-672c",
+      "kanji-8aad",
+      "kanji-5199",
+      "kanji-771f",
+      "kanji-898b"
+    ],
+    "tokens": [
+      {
+        "surface": "机",
+        "category": "noun",
+        "reading": "つくえ",
+        "vocabularyId": "vocab-0cbee2d10284"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読ん",
+        "category": "verb",
+        "reading": "よん",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "だり",
+        "category": "particle",
+        "reading": "だり"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見",
+        "category": "verb",
+        "reading": "み",
+        "vocabularyId": "vocab-385cc0d9ee98"
+      },
+      {
+        "surface": "たり",
+        "category": "particle",
+        "reading": "たり"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "At the desk, I did things like reading the book and looking at photographs.",
+    "readingSentenceId": "reading-library-card-17",
+    "grammarPointIds": [
+      "tari-tari-suru",
+      "de-action-location",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tari-tari-suru",
+        "tokenStart": 10,
+        "tokenEnd": 14
+      },
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-reading-and-looking-at-photos",
+    "minimumLevel": "n5",
+    "text": "At the desk, I did things like reading the book and looking at photographs.",
+    "audio": "assets/voices/reading/reading-library-card-17.m4a",
+    "vocabularyIds": [
+      "vocab-0cbee2d10284",
+      "vocab-0ac038632611",
+      "vocab-24f188a06d2c",
+      "vocab-d5901ecbf5fb",
+      "vocab-385cc0d9ee98",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-672c",
+      "kanji-8aad",
+      "kanji-5199",
+      "kanji-771f",
+      "kanji-898b"
+    ],
+    "tokens": [
+      {
+        "surface": "机",
+        "category": "noun",
+        "reading": "つくえ",
+        "vocabularyId": "vocab-0cbee2d10284"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "読ん",
+        "category": "verb",
+        "reading": "よん",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "だり",
+        "category": "particle",
+        "reading": "だり"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見",
+        "category": "verb",
+        "reading": "み",
+        "vocabularyId": "vocab-385cc0d9ee98"
+      },
+      {
+        "surface": "たり",
+        "category": "particle",
+        "reading": "たり"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "机で本を読んだり、写真を見たりしました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-17",
+    "promptVocabularyHints": [
+      {
+        "word": "desk",
+        "vocabularyIds": [
+          "vocab-0cbee2d10284"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "tari-tari-suru",
+      "de-action-location",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tari-tari-suru",
+        "tokenStart": 10,
+        "tokenEnd": 14
+      },
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-borrow-book-to-read-at-home",
+    "minimumLevel": "n5",
+    "text": "家でも読みたいので、この本を借りました。",
+    "audio": "assets/voices/reading/reading-library-card-18.m4a",
+    "vocabularyIds": [
+      "vocab-8af58778f14e",
+      "vocab-24f188a06d2c",
+      "vocab-25acc002a82f",
+      "vocab-0ac038632611",
+      "vocab-fcc4b149bcdb"
+    ],
+    "kanjiIds": [
+      "kanji-5bb6",
+      "kanji-8aad",
+      "kanji-672c",
+      "kanji-501f"
+    ],
+    "tokens": [
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "読み",
+        "category": "verb",
+        "reading": "よみ",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "ので",
+        "category": "particle",
+        "reading": "ので"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "借り",
+        "category": "verb",
+        "reading": "かり",
+        "vocabularyId": "vocab-fcc4b149bcdb"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I borrowed this book because I want to read it at home too.",
+    "readingSentenceId": "reading-library-card-18",
+    "grammarPointIds": [
+      "mo-addition",
+      "tai-desire",
+      "node-reason"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mo-addition",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "node-reason",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-borrow-book-to-read-at-home",
+    "minimumLevel": "n5",
+    "text": "I borrowed this book because I want to read it at home too.",
+    "audio": "assets/voices/reading/reading-library-card-18.m4a",
+    "vocabularyIds": [
+      "vocab-8af58778f14e",
+      "vocab-24f188a06d2c",
+      "vocab-25acc002a82f",
+      "vocab-0ac038632611",
+      "vocab-fcc4b149bcdb"
+    ],
+    "kanjiIds": [
+      "kanji-5bb6",
+      "kanji-8aad",
+      "kanji-672c",
+      "kanji-501f"
+    ],
+    "tokens": [
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "読み",
+        "category": "verb",
+        "reading": "よみ",
+        "vocabularyId": "vocab-24f188a06d2c"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "ので",
+        "category": "particle",
+        "reading": "ので"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "借り",
+        "category": "verb",
+        "reading": "かり",
+        "vocabularyId": "vocab-fcc4b149bcdb"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "家でも読みたいので、この本を借りました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-18",
+    "promptVocabularyHints": [
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "mo-addition",
+      "tai-desire",
+      "node-reason"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mo-addition",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "node-reason",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-pack-card-before-going-home",
+    "minimumLevel": "n5",
+    "text": "帰る前に、カードをかばんに入れました。",
+    "audio": "assets/voices/reading/reading-library-card-19.m4a",
+    "vocabularyIds": [
+      "vocab-944f21154c78",
+      "vocab-07f353ef981c",
+      "vocab-a586e52ce913",
+      "vocab-704870bca266",
+      "vocab-b5e9e035a8be"
+    ],
+    "kanjiIds": [
+      "kanji-5e30",
+      "kanji-524d",
+      "kanji-5165"
+    ],
+    "tokens": [
+      {
+        "surface": "帰る",
+        "category": "verb",
+        "reading": "かえる",
+        "vocabularyId": "vocab-944f21154c78"
+      },
+      {
+        "surface": "前",
+        "category": "noun",
+        "reading": "まえ",
+        "vocabularyId": "vocab-07f353ef981c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "カード",
+        "category": "noun",
+        "reading": "かーど",
+        "vocabularyId": "vocab-a586e52ce913"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "かばん",
+        "category": "noun",
+        "reading": "かばん",
+        "vocabularyId": "vocab-704870bca266"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "入れ",
+        "category": "verb",
+        "reading": "いれ",
+        "vocabularyId": "vocab-b5e9e035a8be"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Before going home, I put the card in my bag.",
+    "readingSentenceId": "reading-library-card-19",
+    "grammarPointIds": [
+      "mae-ni",
+      "ni-destination",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mae-ni",
+        "tokenStart": 1,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-pack-card-before-going-home",
+    "minimumLevel": "n5",
+    "text": "Before going home, I put the card in my bag.",
+    "audio": "assets/voices/reading/reading-library-card-19.m4a",
+    "vocabularyIds": [
+      "vocab-944f21154c78",
+      "vocab-07f353ef981c",
+      "vocab-a586e52ce913",
+      "vocab-704870bca266",
+      "vocab-b5e9e035a8be"
+    ],
+    "kanjiIds": [
+      "kanji-5e30",
+      "kanji-524d",
+      "kanji-5165"
+    ],
+    "tokens": [
+      {
+        "surface": "帰る",
+        "category": "verb",
+        "reading": "かえる",
+        "vocabularyId": "vocab-944f21154c78"
+      },
+      {
+        "surface": "前",
+        "category": "noun",
+        "reading": "まえ",
+        "vocabularyId": "vocab-07f353ef981c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "カード",
+        "category": "noun",
+        "reading": "かーど",
+        "vocabularyId": "vocab-a586e52ce913"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "かばん",
+        "category": "noun",
+        "reading": "かばん",
+        "vocabularyId": "vocab-704870bca266"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "入れ",
+        "category": "verb",
+        "reading": "いれ",
+        "vocabularyId": "vocab-b5e9e035a8be"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "帰る前に、カードをかばんに入れました。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-19",
+    "promptVocabularyHints": [
+      {
+        "word": "bag",
+        "vocabularyIds": [
+          "vocab-704870bca266"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "mae-ni",
+      "ni-destination",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mae-ni",
+        "tokenStart": 1,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-study-japanese-on-next-visit",
+    "minimumLevel": "n5",
+    "text": "またここで日本語も勉強したいです。",
+    "audio": "assets/voices/reading/reading-library-card-20.m4a",
+    "vocabularyIds": [
+      "vocab-a72e26bc8cb2",
+      "vocab-f4ee05460d54",
+      "vocab-e6870aa0d14e",
+      "vocab-15863d9e899d",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-65e5",
+      "kanji-672c",
+      "kanji-8a9e",
+      "kanji-52c9",
+      "kanji-5f37"
+    ],
+    "tokens": [
+      {
+        "surface": "また",
+        "category": "conjunction",
+        "reading": "また",
+        "vocabularyId": "vocab-a72e26bc8cb2"
+      },
+      {
+        "surface": "ここ",
+        "category": "noun",
+        "reading": "ここ",
+        "vocabularyId": "vocab-f4ee05460d54"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "日本語",
+        "category": "noun",
+        "reading": "にほんご",
+        "vocabularyId": "vocab-e6870aa0d14e"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "勉強",
+        "category": "noun",
+        "reading": "べんきょう",
+        "vocabularyId": "vocab-15863d9e899d"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I would like to study Japanese here too on another visit.",
+    "readingSentenceId": "reading-library-card-20",
+    "grammarPointIds": [
+      "de-action-location",
+      "mo-addition",
+      "tai-desire"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "mo-addition",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "production-story-library-card-study-japanese-on-next-visit",
+    "minimumLevel": "n5",
+    "text": "I would like to study Japanese here too on another visit.",
+    "audio": "assets/voices/reading/reading-library-card-20.m4a",
+    "vocabularyIds": [
+      "vocab-a72e26bc8cb2",
+      "vocab-f4ee05460d54",
+      "vocab-e6870aa0d14e",
+      "vocab-15863d9e899d",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-65e5",
+      "kanji-672c",
+      "kanji-8a9e",
+      "kanji-52c9",
+      "kanji-5f37"
+    ],
+    "tokens": [
+      {
+        "surface": "また",
+        "category": "conjunction",
+        "reading": "また",
+        "vocabularyId": "vocab-a72e26bc8cb2"
+      },
+      {
+        "surface": "ここ",
+        "category": "noun",
+        "reading": "ここ",
+        "vocabularyId": "vocab-f4ee05460d54"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "日本語",
+        "category": "noun",
+        "reading": "にほんご",
+        "vocabularyId": "vocab-e6870aa0d14e"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "勉強",
+        "category": "noun",
+        "reading": "べんきょう",
+        "vocabularyId": "vocab-15863d9e899d"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "またここで日本語も勉強したいです。",
+    "type": "production",
+    "readingSentenceId": "reading-library-card-20",
+    "promptVocabularyHints": [
+      {
+        "word": "Japanese",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "de-action-location",
+      "mo-addition",
+      "tai-desire"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "mo-addition",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 7,
+        "tokenEnd": 8
       }
     ]
   }

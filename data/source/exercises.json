@@ -18246,5 +18246,581 @@
         ]
       }
     ]
+  },
+  {
+    "id": "story-library-card-first-library-visit",
+    "readingSentenceId": "reading-library-card-01",
+    "solution": "Last week, I went to the new library for the first time.",
+    "grammarPointIds": [
+      "i-adjective-attributive",
+      "ni-destination",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-library-card-first-library-visit",
+    "readingSentenceId": "reading-library-card-01",
+    "type": "production",
+    "text": "Last week, I went to the new library for the first time.",
+    "grammarPointIds": [
+      "i-adjective-attributive",
+      "ni-destination",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "library",
+        "vocabularyIds": [
+          "vocab-ca8d0efe19a3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-white-building-by-station",
+    "readingSentenceId": "reading-library-card-02",
+    "solution": "There is a white building in front of the station.",
+    "grammarPointIds": [
+      "positional-nouns",
+      "ni-existence-location",
+      "aru-existence"
+    ]
+  },
+  {
+    "id": "production-story-library-card-white-building-by-station",
+    "readingSentenceId": "reading-library-card-02",
+    "type": "production",
+    "text": "There is a white building in front of the station.",
+    "grammarPointIds": [
+      "positional-nouns",
+      "ni-existence-location",
+      "aru-existence"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "building",
+        "vocabularyIds": [
+          "vocab-b11f169893fb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-library-on-second-level",
+    "readingSentenceId": "reading-library-card-03",
+    "solution": "The second floor of that building is the library.",
+    "grammarPointIds": [
+      "kosoado-determiners",
+      "common-counters",
+      "copula-da-desu"
+    ]
+  },
+  {
+    "id": "production-story-library-card-library-on-second-level",
+    "readingSentenceId": "reading-library-card-03",
+    "type": "production",
+    "text": "The second floor of that building is the library.",
+    "grammarPointIds": [
+      "kosoado-determiners",
+      "common-counters",
+      "copula-da-desu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "building",
+        "vocabularyIds": [
+          "vocab-b11f169893fb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-students-reading-quietly",
+    "readingSentenceId": "reading-library-card-04",
+    "solution": "Inside, students were quietly reading books.",
+    "grammarPointIds": [
+      "de-action-location",
+      "na-adjective-adverb",
+      "te-iru-progressive"
+    ]
+  },
+  {
+    "id": "production-story-library-card-students-reading-quietly",
+    "readingSentenceId": "reading-library-card-04",
+    "type": "production",
+    "text": "Inside, students were quietly reading books.",
+    "grammarPointIds": [
+      "de-action-location",
+      "na-adjective-adverb",
+      "te-iru-progressive"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "students",
+        "vocabularyIds": [
+          "vocab-9567eaf8fe9b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-asking-to-borrow-book",
+    "readingSentenceId": "reading-library-card-05",
+    "solution": "I told a library staff member, “I want to borrow a book.”",
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "production-story-library-card-asking-to-borrow-book",
+    "readingSentenceId": "reading-library-card-05",
+    "type": "production",
+    "text": "I told a library staff member, “I want to borrow a book.”",
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu",
+      "ni-target-recipient"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "library",
+        "vocabularyIds": [
+          "vocab-ca8d0efe19a3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-write-name-and-address",
+    "readingSentenceId": "reading-library-card-06",
+    "solution": "That person said, “Please write your name and address on this paper.”",
+    "grammarPointIds": [
+      "te-kudasai",
+      "to-complete-list",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-library-card-write-name-and-address",
+    "readingSentenceId": "reading-library-card-06",
+    "type": "production",
+    "text": "That person said, “Please write your name and address on this paper.”",
+    "grammarPointIds": [
+      "te-kudasai",
+      "to-complete-list",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "address",
+        "vocabularyIds": [
+          "vocab-fcdd7a903190"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-pen-out-of-bag",
+    "readingSentenceId": "reading-library-card-07",
+    "solution": "I took a pen out of my bag.",
+    "grammarPointIds": [
+      "kara-start",
+      "o-object",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-library-card-pen-out-of-bag",
+    "readingSentenceId": "reading-library-card-07",
+    "type": "production",
+    "text": "I took a pen out of my bag.",
+    "grammarPointIds": [
+      "kara-start",
+      "o-object",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "pen",
+        "vocabularyIds": [
+          "vocab-0aba8d2005d4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-handing-in-paper-after-writing",
+    "readingSentenceId": "reading-library-card-08",
+    "solution": "After writing my name and address, I handed the paper to a library staff member.",
+    "grammarPointIds": [
+      "te-kara",
+      "to-complete-list",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "production-story-library-card-handing-in-paper-after-writing",
+    "readingSentenceId": "reading-library-card-08",
+    "type": "production",
+    "text": "After writing my name and address, I handed the paper to a library staff member.",
+    "grammarPointIds": [
+      "te-kara",
+      "to-complete-list",
+      "ni-target-recipient"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "paper",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-receiving-small-card",
+    "readingSentenceId": "reading-library-card-09",
+    "solution": "That person gave me a small card.",
+    "grammarPointIds": [
+      "kureru",
+      "kosoado-determiners",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-library-card-receiving-small-card",
+    "readingSentenceId": "reading-library-card-09",
+    "type": "production",
+    "text": "That person gave me a small card.",
+    "grammarPointIds": [
+      "kureru",
+      "kosoado-determiners",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "card",
+        "vocabularyIds": [
+          "vocab-a586e52ce913"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-must-show-card-when-borrowing",
+    "readingSentenceId": "reading-library-card-10",
+    "solution": "When you borrow a book, you must show this card.",
+    "grammarPointIds": [
+      "toki",
+      "nakereba-naranai",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "production-story-library-card-must-show-card-when-borrowing",
+    "readingSentenceId": "reading-library-card-10",
+    "type": "production",
+    "text": "When you borrow a book, you must show this card.",
+    "grammarPointIds": [
+      "toki",
+      "nakereba-naranai",
+      "kosoado-determiners"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "card",
+        "vocabularyIds": [
+          "vocab-a586e52ce913"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-no-need-to-pay",
+    "readingSentenceId": "reading-library-card-11",
+    "solution": "You don’t have to pay any money.",
+    "grammarPointIds": [
+      "nakute-mo-ii",
+      "yo-emphasis"
+    ]
+  },
+  {
+    "id": "production-story-library-card-no-need-to-pay",
+    "readingSentenceId": "reading-library-card-11",
+    "type": "production",
+    "text": "You don’t have to pay any money.",
+    "grammarPointIds": [
+      "nakute-mo-ii",
+      "yo-emphasis"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "pay",
+        "vocabularyIds": [
+          "vocab-45988c6cec92"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-return-book-next-tuesday",
+    "readingSentenceId": "reading-library-card-12",
+    "solution": "Please return the book next Tuesday.",
+    "grammarPointIds": [
+      "te-kudasai",
+      "ni-time",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "production-story-library-card-return-book-next-tuesday",
+    "readingSentenceId": "reading-library-card-12",
+    "type": "production",
+    "text": "Please return the book next Tuesday.",
+    "grammarPointIds": [
+      "te-kudasai",
+      "ni-time",
+      "no-possession"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "Tuesday",
+        "vocabularyIds": [
+          "vocab-9ba01fdc9897"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-received-card-went-to-look-at-books",
+    "readingSentenceId": "reading-library-card-13",
+    "solution": "I received a card and went to look at the books.",
+    "grammarPointIds": [
+      "morau",
+      "te-action-link",
+      "movement-purpose"
+    ]
+  },
+  {
+    "id": "production-story-library-card-received-card-went-to-look-at-books",
+    "readingSentenceId": "reading-library-card-13",
+    "type": "production",
+    "text": "I received a card and went to look at the books.",
+    "grammarPointIds": [
+      "morau",
+      "te-action-link",
+      "movement-purpose"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "card",
+        "vocabularyIds": [
+          "vocab-a586e52ce913"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-photos-in-cat-book",
+    "readingSentenceId": "reading-library-card-14",
+    "solution": "There were lots of photographs in the book about cats.",
+    "grammarPointIds": [
+      "no-possession",
+      "ni-existence-location",
+      "aru-existence"
+    ]
+  },
+  {
+    "id": "production-story-library-card-photos-in-cat-book",
+    "readingSentenceId": "reading-library-card-14",
+    "type": "production",
+    "text": "There were lots of photographs in the book about cats.",
+    "grammarPointIds": [
+      "no-possession",
+      "ni-existence-location",
+      "aru-existence"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "photographs",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-asking-permission-to-read-here",
+    "readingSentenceId": "reading-library-card-15",
+    "solution": "I asked, “May I read this book here?”",
+    "grammarPointIds": [
+      "te-mo-ii",
+      "ka-question",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-library-card-asking-permission-to-read-here",
+    "readingSentenceId": "reading-library-card-15",
+    "type": "production",
+    "text": "I asked, “May I read this book here?”",
+    "grammarPointIds": [
+      "te-mo-ii",
+      "ka-question",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "read",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-must-not-speak-loudly",
+    "readingSentenceId": "reading-library-card-16",
+    "solution": "Yes, but you must not speak loudly.",
+    "grammarPointIds": [
+      "demo-connector",
+      "te-wa-ikenai"
+    ]
+  },
+  {
+    "id": "production-story-library-card-must-not-speak-loudly",
+    "readingSentenceId": "reading-library-card-16",
+    "type": "production",
+    "text": "Yes, but you must not speak loudly.",
+    "grammarPointIds": [
+      "demo-connector",
+      "te-wa-ikenai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "speak",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-reading-and-looking-at-photos",
+    "readingSentenceId": "reading-library-card-17",
+    "solution": "At the desk, I did things like reading the book and looking at photographs.",
+    "grammarPointIds": [
+      "tari-tari-suru",
+      "de-action-location",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-library-card-reading-and-looking-at-photos",
+    "readingSentenceId": "reading-library-card-17",
+    "type": "production",
+    "text": "At the desk, I did things like reading the book and looking at photographs.",
+    "grammarPointIds": [
+      "tari-tari-suru",
+      "de-action-location",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "desk",
+        "vocabularyIds": [
+          "vocab-0cbee2d10284"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-borrow-book-to-read-at-home",
+    "readingSentenceId": "reading-library-card-18",
+    "solution": "I borrowed this book because I want to read it at home too.",
+    "grammarPointIds": [
+      "mo-addition",
+      "tai-desire",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-story-library-card-borrow-book-to-read-at-home",
+    "readingSentenceId": "reading-library-card-18",
+    "type": "production",
+    "text": "I borrowed this book because I want to read it at home too.",
+    "grammarPointIds": [
+      "mo-addition",
+      "tai-desire",
+      "node-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-pack-card-before-going-home",
+    "readingSentenceId": "reading-library-card-19",
+    "solution": "Before going home, I put the card in my bag.",
+    "grammarPointIds": [
+      "mae-ni",
+      "ni-destination",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-library-card-pack-card-before-going-home",
+    "readingSentenceId": "reading-library-card-19",
+    "type": "production",
+    "text": "Before going home, I put the card in my bag.",
+    "grammarPointIds": [
+      "mae-ni",
+      "ni-destination",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "bag",
+        "vocabularyIds": [
+          "vocab-704870bca266"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-library-card-study-japanese-on-next-visit",
+    "readingSentenceId": "reading-library-card-20",
+    "solution": "I would like to study Japanese here too on another visit.",
+    "grammarPointIds": [
+      "de-action-location",
+      "mo-addition",
+      "tai-desire"
+    ]
+  },
+  {
+    "id": "production-story-library-card-study-japanese-on-next-visit",
+    "readingSentenceId": "reading-library-card-20",
+    "type": "production",
+    "text": "I would like to study Japanese here too on another visit.",
+    "grammarPointIds": [
+      "de-action-location",
+      "mo-addition",
+      "tai-desire"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "Japanese",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      }
+    ]
   }
 ]

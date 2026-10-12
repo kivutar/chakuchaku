@@ -285,17 +285,19 @@ test("borrowed grammar rejects missing references and attempts to override share
   ], sources), /invalid reading grammar exercise type/u);
 });
 
-test("all 20 story sentences join the grammar pool in both directions with the original furigana and audio", async () => {
+test("every story sentence joins the grammar pool in both directions with the original furigana and audio", async () => {
   const [authored, exercises, french] = await Promise.all([
     readJson("data/source/exercises.json"), readJson("data/exercises.json"),
     readJson("data/locales/fr/exercises.json")
   ]);
   const originals = new Map(authored.map((exercise) => [exercise.id, exercise]));
   const borrowed = exercises.filter((exercise) => exercise.readingSentenceId !== undefined);
-  assert.equal(borrowed.length, 40);
+  assert.equal(borrowed.length, prepared.flatMap(({ sentences }) => sentences).length * 2);
   const ordinaryJapanese = new Set(exercises.filter((exercise) => !exercise.readingSentenceId)
     .map((exercise) => exercise.type === "production" ? exercise.solution : exercise.text));
-  for (const sentence of passage.sentences) {
+  for (const { sentence, level } of prepared.flatMap((reading) => (
+    reading.sentences.map((sentence) => ({ sentence, level: reading.level }))
+  ))) {
     const pair = borrowed.filter((exercise) => exercise.readingSentenceId === sentence.id);
     assert.equal(pair.length, 2, sentence.id);
     const recognition = pair.find((exercise) => exercise.type !== "production");
@@ -305,17 +307,74 @@ test("all 20 story sentences join the grammar pool in both directions with the o
     assert.equal(production.solution, sentence.text);
     assert.equal(recognition.solution, production.text);
     assert.deepEqual(recognition.grammarPointIds, production.grammarPointIds);
+    assert.deepEqual(recognition.grammarPointIds, sentence.grammarPointIds);
     assert.equal(french[recognition.id].translation, french[production.id].translation);
     assert.ok(french[recognition.id].translation.trim());
     assert.ok(!ordinaryJapanese.has(sentence.text), sentence.id);
     for (const exercise of pair) {
       assert.equal(exercise.audio, sentence.audio);
-      assert.equal(exercise.minimumLevel, passage.level);
+      assert.equal(exercise.minimumLevel, level);
       assert.deepEqual(exercise.tokens, sentence.tokens, exercise.id);
       assert.deepEqual(exercise.vocabularyIds, sentence.vocabularyIds);
       assert.deepEqual(exercise.kanjiIds, sentence.kanjiIds);
       assert.equal(originals.get(exercise.id)[exercise.type === "production" ? "solution" : "text"], undefined);
     }
+  }
+});
+
+test("library grammar cards have localized dictionary hints for the exact vocabulary in their Japanese answers", async () => {
+  const [exercises, french] = await Promise.all([
+    readJson("data/exercises.json"), readJson("data/locales/fr/exercises.json")
+  ]);
+  const productions = exercises.filter((exercise) => exercise.type === "production" &&
+    exercise.readingSentenceId?.startsWith("reading-library-card-"));
+  assert.equal(productions.length, 20);
+  for (const exercise of productions) {
+    assert.ok(exercise.promptVocabularyHints.length > 0);
+    const localized = french[exercise.id];
+    assert.equal(localized.promptVocabularyHints.length, exercise.promptVocabularyHints.length);
+    for (const [index, hint] of exercise.promptVocabularyHints.entries()) {
+      assert.ok(exercise.text.toLowerCase().includes(hint.word.toLowerCase()));
+      const localizedHint = localized.promptVocabularyHints[index];
+      assert.ok(localized.translation.toLowerCase().includes(localizedHint.word.toLowerCase()));
+      assert.deepEqual(localizedHint.vocabularyIds, hint.vocabularyIds);
+      assert.ok(hint.vocabularyIds.every((id) => exercise.vocabularyIds.includes(id)));
+    }
+  }
+  const floor = productions.find(({ readingSentenceId }) => readingSentenceId === "reading-library-card-03");
+  assert.match(floor.text, /second floor/u);
+  assert.match(french[floor.id].translation, /deuxième niveau/u);
+  const examples = productions.find(({ readingSentenceId }) => readingSentenceId === "reading-library-card-17");
+  assert.match(examples.text, /things like/u);
+  assert.match(french[examples.id].translation, /notamment/u);
+});
+
+test("library grammar assessment keeps obligation, permission, prohibition, and progressive forms distinct", async () => {
+  const exercises = await readJson("data/exercises.json");
+  for (const [number, point, surface] of [
+    [4, "te-iru-progressive", "でいました"],
+    [10, "nakereba-naranai", "なければなりません"],
+    [11, "nakute-mo-ii", "なくてもいい"],
+    [15, "te-mo-ii", "でもいい"],
+    [16, "te-wa-ikenai", "てはいけません"],
+    [17, "tari-tari-suru", "たりしました"]
+  ]) {
+    const pair = exercises.filter((exercise) => exercise.readingSentenceId ===
+      `reading-library-card-${String(number).padStart(2, "0")}`);
+    assert.equal(pair.length, 2);
+    for (const exercise of pair) {
+      assert.ok(exercise.grammarPointIds.includes(point));
+      const highlight = exercise.grammarHighlights.find(({ grammarPointId }) => grammarPointId === point);
+      assert.ok(highlight, `${exercise.id}: missing ${point} highlight`);
+      assert.equal(exercise.tokens.slice(highlight.tokenStart, highlight.tokenEnd)
+        .map((token) => token.surface).join(""), surface);
+    }
+  }
+  for (const [number, excluded] of [[4, "te-iru-result-state"], [11, "te-wa-ikenai"],
+    [15, "nakute-mo-ii"], [17, "te-action-link"]]) {
+    assert.ok(exercises.filter((exercise) => exercise.readingSentenceId ===
+      `reading-library-card-${String(number).padStart(2, "0")}`)
+      .every((exercise) => !exercise.grammarPointIds.includes(excluded)));
   }
 });
 
@@ -368,10 +427,10 @@ test("borrowed exercises are selected normally and train existing grammar units 
   const selection = globalThis.JlptN5ExerciseSelection;
   assert.equal(selection.selectExerciseTypePool({
     exercises, candidates: borrowed, exerciseHistory: []
-  }).length, 20);
+  }).length, borrowed.length / 2);
   assert.equal(selection.selectExerciseTypePool({
     exercises, candidates: borrowed, exerciseHistory: [], forcedExerciseType: "production"
-  }).length, 20);
+  }).length, borrowed.length / 2);
   const knownPoints = [...new Set(borrowed.flatMap((exercise) => exercise.grammarPointIds))];
   const exerciseHistory = [{ grammarRatings: knownPoints.map((grammarPointId) => ({ grammarPointId, outcome: "good" })) }];
   for (const id of knownPoints) {
