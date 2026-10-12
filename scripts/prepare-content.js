@@ -100,6 +100,10 @@ function getCompatiblePartsOfSpeech(details) {
       return new Set(["counter", "number", "noun"]);
     }
 
+    if (secondary === "接尾") {
+      return new Set(["affix", "noun", "pronoun", "number", "counter"]);
+    }
+
     if (secondary === "形容動詞語幹") {
       return new Set(["adjective"]);
     }

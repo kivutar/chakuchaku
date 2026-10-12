@@ -4548,6 +4548,9 @@
     "id": "vocab-7bd027373fce",
     "term": "～たち",
     "reading": "～たち",
+    "variants": [
+      "たち"
+    ],
     "meaning": "plural suffix",
     "scope": "core",
     "introducedAt": "n5",
@@ -6465,6 +6468,9 @@
     "id": "vocab-962a64eb7b14",
     "term": "～匹",
     "reading": "～ひき",
+    "variants": [
+      "匹"
+    ],
     "meaning": "counter for small animals",
     "scope": "core",
     "introducedAt": "n5",

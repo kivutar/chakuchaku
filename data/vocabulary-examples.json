@@ -13256,7 +13256,8 @@
       {
         "surface": "たち",
         "category": "noun",
-        "reading": "たち"
+        "reading": "たち",
+        "vocabularyId": "vocab-7bd027373fce"
       },
       {
         "surface": "が",
@@ -19419,8 +19420,8 @@
     "vocabularyId": "vocab-962a64eb7b14",
     "text": "犬が二匹いる。",
     "targetSurface": "二匹",
-    "targetReading": "にひき",
-    "targetTokenStart": 2,
+    "targetReading": "ひき",
+    "targetTokenStart": 3,
     "targetTokenEnd": 4,
     "translation": "There are two dogs.",
     "tokens": [
@@ -19444,7 +19445,8 @@
       {
         "surface": "匹",
         "category": "noun",
-        "reading": "ひき"
+        "reading": "ひき",
+        "vocabularyId": "vocab-962a64eb7b14"
       },
       {
         "surface": "いる",

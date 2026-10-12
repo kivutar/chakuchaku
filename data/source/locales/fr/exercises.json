@@ -10053,5 +10053,565 @@
         ]
       }
     ]
+  },
+  "story-classroom-visitor-back-to-classroom": {
+    "translation": "Hier après-midi, je suis retourné dans la salle de classe à l’école avec un ami."
+  },
+  "production-story-classroom-visitor-back-to-classroom": {
+    "translation": "Hier après-midi, je suis retourné dans la salle de classe à l’école avec un ami.",
+    "promptVocabularyHints": [
+      {
+        "word": "classe",
+        "vocabularyIds": [
+          "vocab-fbb71c77ac0e"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-forgotten-book": {
+    "translation": "Je suis venu chercher mon livre parce que je l’avais oublié."
+  },
+  "production-story-classroom-visitor-forgotten-book": {
+    "translation": "Je suis venu chercher mon livre parce que je l’avais oublié.",
+    "promptVocabularyHints": [
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-nobody-there": {
+    "translation": "Il n’y avait personne dans la salle de classe."
+  },
+  "production-story-classroom-visitor-nobody-there": {
+    "translation": "Il n’y avait personne dans la salle de classe.",
+    "promptVocabularyHints": [
+      {
+        "word": "classe",
+        "vocabularyIds": [
+          "vocab-fbb71c77ac0e"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-window-already-open": {
+    "translation": "Mais la fenêtre était ouverte."
+  },
+  "production-story-classroom-visitor-window-already-open": {
+    "translation": "Mais la fenêtre était ouverte.",
+    "promptVocabularyHints": [
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-quiet-cry": {
+    "translation": "J’ai entendu un petit cri au moment où je mettais le livre dans mon sac."
+  },
+  "production-story-classroom-visitor-quiet-cry": {
+    "translation": "J’ai entendu un petit cri au moment où je mettais le livre dans mon sac.",
+    "promptVocabularyHints": [
+      {
+        "word": "sac",
+        "vocabularyIds": [
+          "vocab-704870bca266"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-anyone-there": {
+    "translation": "Mon ami a demandé : « Est-ce qu’il y a quelqu’un ? »"
+  },
+  "production-story-classroom-visitor-anyone-there": {
+    "translation": "Mon ami a demandé : « Est-ce qu’il y a quelqu’un ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-look-under-furniture": {
+    "translation": "Mon ami a regardé sous les meubles, notamment les bureaux et les chaises."
+  },
+  "production-story-classroom-visitor-look-under-furniture": {
+    "translation": "Mon ami a regardé sous les meubles, notamment les bureaux et les chaises.",
+    "promptVocabularyHints": [
+      {
+        "word": "chaises",
+        "vocabularyIds": [
+          "vocab-7863488ec2b8"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-hear-it-again": {
+    "translation": "Ensuite, j’ai de nouveau entendu le petit cri."
+  },
+  "production-story-classroom-visitor-hear-it-again": {
+    "translation": "Ensuite, j’ai de nouveau entendu le petit cri.",
+    "promptVocabularyHints": [
+      {
+        "word": "cri",
+        "vocabularyIds": [
+          "vocab-135a822fbf3a"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-near-teachers-desk": {
+    "translation": "Le cri venait de près du bureau du professeur."
+  },
+  "production-story-classroom-visitor-near-teachers-desk": {
+    "translation": "Le cri venait de près du bureau du professeur.",
+    "promptVocabularyHints": [
+      {
+        "word": "bureau",
+        "vocabularyIds": [
+          "vocab-0cbee2d10284"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-box-behind-desk": {
+    "translation": "Il y avait une grande boîte derrière le bureau."
+  },
+  "production-story-classroom-visitor-box-behind-desk": {
+    "translation": "Il y avait une grande boîte derrière le bureau.",
+    "promptVocabularyHints": [
+      {
+        "word": "boîte",
+        "vocabularyIds": [
+          "vocab-28102c121d50"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-one-black-cat": {
+    "translation": "Il y avait un chat noir dans la boîte."
+  },
+  "production-story-classroom-visitor-one-black-cat": {
+    "translation": "Il y avait un chat noir dans la boîte.",
+    "promptVocabularyHints": [
+      {
+        "word": "chat",
+        "vocabularyIds": [
+          "vocab-123a10eb50b0"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-meowing-without-leaving": {
+    "translation": "Le chat miaulait doucement sans sortir de la boîte."
+  },
+  "production-story-classroom-visitor-meowing-without-leaving": {
+    "translation": "Le chat miaulait doucement sans sortir de la boîte.",
+    "promptVocabularyHints": [
+      {
+        "word": "chat",
+        "vocabularyIds": [
+          "vocab-123a10eb50b0"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-whose-cat": {
+    "translation": "Mon ami a demandé : « À qui est ce chat ? »"
+  },
+  "production-story-classroom-visitor-whose-cat": {
+    "translation": "Mon ami a demandé : « À qui est ce chat ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "chat",
+        "vocabularyIds": [
+          "vocab-123a10eb50b0"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-get-the-teacher": {
+    "translation": "Nous sommes allés chercher le professeur."
+  },
+  "production-story-classroom-visitor-get-the-teacher": {
+    "translation": "Nous sommes allés chercher le professeur.",
+    "promptVocabularyHints": [
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-cat-from-nearby-home": {
+    "translation": "Le professeur a dit : « Ce chat appartient à une famille qui habite tout près. »"
+  },
+  "production-story-classroom-visitor-cat-from-nearby-home": {
+    "translation": "Le professeur a dit : « Ce chat appartient à une famille qui habite tout près. »",
+    "promptVocabularyHints": [
+      {
+        "word": "chat",
+        "vocabularyIds": [
+          "vocab-123a10eb50b0"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-sometimes-through-window": {
+    "translation": "« Il entre parfois par cette fenêtre. »"
+  },
+  "production-story-classroom-visitor-sometimes-through-window": {
+    "translation": "« Il entre parfois par cette fenêtre. »",
+    "promptVocabularyHints": [
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-leave-through-door": {
+    "translation": "Quand le professeur a ouvert la porte, le chat est sorti de la salle de classe."
+  },
+  "production-story-classroom-visitor-leave-through-door": {
+    "translation": "Quand le professeur a ouvert la porte, le chat est sorti de la salle de classe.",
+    "promptVocabularyHints": [
+      {
+        "word": "porte",
+        "vocabularyIds": [
+          "vocab-01adf406cacd"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-will-cat-return": {
+    "translation": "Mon ami a dit : « Est-ce que le chat reviendra demain aussi ? »"
+  },
+  "production-story-classroom-visitor-will-cat-return": {
+    "translation": "Mon ami a dit : « Est-ce que le chat reviendra demain aussi ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-cat-likes-school": {
+    "translation": "J’ai dit : « Le chat aime aussi l’école, n’est-ce pas ? »"
+  },
+  "production-story-classroom-visitor-cat-likes-school": {
+    "translation": "J’ai dit : « Le chat aime aussi l’école, n’est-ce pas ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "école",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
+        ]
+      }
+    ]
+  },
+  "story-classroom-visitor-home-with-book": {
+    "translation": "Je suis rentré à la maison avec mon ami, en emportant mon livre."
+  },
+  "production-story-classroom-visitor-home-with-book": {
+    "translation": "Je suis rentré à la maison avec mon ami, en emportant mon livre.",
+    "promptVocabularyHints": [
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-visit-on-saturday": {
+    "translation": "Samedi, je suis allé chez mon grand-père."
+  },
+  "production-story-grandpa-email-visit-on-saturday": {
+    "translation": "Samedi, je suis allé chez mon grand-père.",
+    "promptVocabularyHints": [
+      {
+        "word": "grand-père",
+        "vocabularyIds": [
+          "vocab-e49f0c143bbc"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-letters-to-brother": {
+    "translation": "Mon grand-père écrit toujours des lettres à mon grand frère."
+  },
+  "production-story-grandpa-email-letters-to-brother": {
+    "translation": "Mon grand-père écrit toujours des lettres à mon grand frère.",
+    "promptVocabularyHints": [
+      {
+        "word": "lettres",
+        "vocabularyIds": [
+          "vocab-8e7233a38df0"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-too-far-to-meet": {
+    "translation": "Mon grand frère habite dans une ville lointaine, donc mon grand-père ne peut pas le voir très souvent."
+  },
+  "production-story-grandpa-email-too-far-to-meet": {
+    "translation": "Mon grand frère habite dans une ville lointaine, donc mon grand-père ne peut pas le voir très souvent.",
+    "promptVocabularyHints": [
+      {
+        "word": "frère",
+        "vocabularyIds": [
+          "vocab-cda9169e9fa2"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-wants-to-send-email": {
+    "translation": "Ce jour-là, il a dit : « Je veux envoyer un mail avec l’ordinateur. »"
+  },
+  "production-story-grandpa-email-wants-to-send-email": {
+    "translation": "Ce jour-là, il a dit : « Je veux envoyer un mail avec l’ordinateur. »",
+    "promptVocabularyHints": [
+      {
+        "word": "ordinateur",
+        "vocabularyIds": [
+          "vocab-5ca53fa1b955"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-try-after-lunch": {
+    "translation": "J’ai dit : « Voudriez-vous essayer de le faire ensemble après le déjeuner ? »"
+  },
+  "production-story-grandpa-email-try-after-lunch": {
+    "translation": "J’ai dit : « Voudriez-vous essayer de le faire ensemble après le déjeuner ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "ensemble",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-does-not-know-how": {
+    "translation": "Mon grand-père a répondu : « Bonne idée. Mais je ne sais pas comment l’utiliser. »"
+  },
+  "production-story-grandpa-email-does-not-know-how": {
+    "translation": "Mon grand-père a répondu : « Bonne idée. Mais je ne sais pas comment l’utiliser. »",
+    "promptVocabularyHints": [
+      {
+        "word": "utiliser",
+        "vocabularyIds": [
+          "vocab-4184877824ff"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-explain-slowly": {
+    "translation": "Je me suis assis à côté de lui et j’ai expliqué lentement."
+  },
+  "production-story-grandpa-email-explain-slowly": {
+    "translation": "Je me suis assis à côté de lui et j’ai expliqué lentement.",
+    "promptVocabularyHints": [
+      {
+        "word": "lentement",
+        "vocabularyIds": [
+          "vocab-0609e7997541"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-characters-too-small": {
+    "translation": "Mon grand-père a dit : « Les kanjis sont petits. Agrandissez-les, s’il vous plaît. »"
+  },
+  "production-story-grandpa-email-characters-too-small": {
+    "translation": "Mon grand-père a dit : « Les kanjis sont petits. Agrandissez-les, s’il vous plaît. »",
+    "promptVocabularyHints": [
+      {
+        "word": "kanjis",
+        "vocabularyIds": [
+          "vocab-535c688e8bf9"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-can-see-now": {
+    "translation": "Quand j’ai agrandi les kanjis, mon grand-père a pu les voir clairement lui aussi."
+  },
+  "production-story-grandpa-email-can-see-now": {
+    "translation": "Quand j’ai agrandi les kanjis, mon grand-père a pu les voir clairement lui aussi.",
+    "promptVocabularyHints": [
+      {
+        "word": "voir",
+        "vocabularyIds": [
+          "vocab-e99feae5bc25"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-what-shall-i-write": {
+    "translation": "Mon grand-père a demandé : « Que vais-je écrire ? »"
+  },
+  "production-story-grandpa-email-what-shall-i-write": {
+    "translation": "Mon grand-père a demandé : « Que vais-je écrire ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "écrire",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-advice-about-flowers": {
+    "translation": "J’ai répondu : « Je pense qu’il serait bien d’écrire au sujet des fleurs du jardin. »"
+  },
+  "production-story-grandpa-email-advice-about-flowers": {
+    "translation": "J’ai répondu : « Je pense qu’il serait bien d’écrire au sujet des fleurs du jardin. »",
+    "promptVocabularyHints": [
+      {
+        "word": "fleurs",
+        "vocabularyIds": [
+          "vocab-fa6a4c8f27b4"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-listen-and-write": {
+    "translation": "Mon grand-père a écrit le mail tout en écoutant mes explications."
+  },
+  "production-story-grandpa-email-listen-and-write": {
+    "translation": "Mon grand-père a écrit le mail tout en écoutant mes explications.",
+    "promptVocabularyHints": [
+      {
+        "word": "explications",
+        "vocabularyIds": [
+          "vocab-9683551a843c"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-message-about-garden": {
+    "translation": "Puis il a écrit : « Les fleurs du jardin sont belles. »"
+  },
+  "production-story-grandpa-email-message-about-garden": {
+    "translation": "Puis il a écrit : « Les fleurs du jardin sont belles. »",
+    "promptVocabularyHints": [
+      {
+        "word": "jardin",
+        "vocabularyIds": [
+          "vocab-32b69415feac"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-accidentally-delete": {
+    "translation": "Mais quand il a appuyé sur un bouton, il a effacé par accident les mots qu’il avait écrits."
+  },
+  "production-story-grandpa-email-accidentally-delete": {
+    "translation": "Mais quand il a appuyé sur un bouton, il a effacé par accident les mots qu’il avait écrits.",
+    "promptVocabularyHints": [
+      {
+        "word": "bouton",
+        "vocabularyIds": [
+          "vocab-6e6aad33bc6f"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-try-writing-again": {
+    "translation": "J’ai dit : « Ce n’est pas grave. Essayons de l’écrire à nouveau. »"
+  },
+  "production-story-grandpa-email-try-writing-again": {
+    "translation": "J’ai dit : « Ce n’est pas grave. Essayons de l’écrire à nouveau. »",
+    "promptVocabularyHints": [
+      {
+        "word": "écrire",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-rewrite-on-his-own": {
+    "translation": "Mon grand-père a réécrit le mail lentement, tout seul."
+  },
+  "production-story-grandpa-email-rewrite-on-his-own": {
+    "translation": "Mon grand-père a réécrit le mail lentement, tout seul.",
+    "promptVocabularyHints": [
+      {
+        "word": "mail",
+        "vocabularyIds": [
+          "vocab-046ed410f49b"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-tea-after-sending": {
+    "translation": "Après avoir envoyé le mail, nous avons bu du thé tous les deux."
+  },
+  "production-story-grandpa-email-tea-after-sending": {
+    "translation": "Après avoir envoyé le mail, nous avons bu du thé tous les deux.",
+    "promptVocabularyHints": [
+      {
+        "word": "thé",
+        "vocabularyIds": [
+          "vocab-d18ca13aa386"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-thanks-by-phone": {
+    "translation": "Mon grand frère a dit au téléphone : « Merci pour le mail. »"
+  },
+  "production-story-grandpa-email-thanks-by-phone": {
+    "translation": "Mon grand frère a dit au téléphone : « Merci pour le mail. »",
+    "promptVocabularyHints": [
+      {
+        "word": "téléphone",
+        "vocabularyIds": [
+          "vocab-24df87472770"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-now-i-can": {
+    "translation": "Mon grand-père a dit : « Je peux écrire des mails même tout seul. »"
+  },
+  "production-story-grandpa-email-now-i-can": {
+    "translation": "Mon grand-père a dit : « Je peux écrire des mails même tout seul. »",
+    "promptVocabularyHints": [
+      {
+        "word": "mails",
+        "vocabularyIds": [
+          "vocab-046ed410f49b"
+        ]
+      }
+    ]
+  },
+  "story-grandpa-email-tomorrows-teacher": {
+    "translation": "Au moment de partir, mon grand-père a dit : « Demain, c’est moi qui t’apprendrai à cuisiner. »"
+  },
+  "production-story-grandpa-email-tomorrows-teacher": {
+    "translation": "Au moment de partir, mon grand-père a dit : « Demain, c’est moi qui t’apprendrai à cuisiner. »",
+    "promptVocabularyHints": [
+      {
+        "word": "cuisiner",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      }
+    ]
   }
 }

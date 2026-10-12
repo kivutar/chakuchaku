@@ -19398,5 +19398,1169 @@
         ]
       }
     ]
+  },
+  {
+    "id": "story-classroom-visitor-back-to-classroom",
+    "readingSentenceId": "reading-classroom-visitor-01",
+    "solution": "Yesterday afternoon, I returned to the classroom at school with a friend.",
+    "grammarPointIds": [
+      "to-companion",
+      "ni-destination",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-back-to-classroom",
+    "readingSentenceId": "reading-classroom-visitor-01",
+    "type": "production",
+    "text": "Yesterday afternoon, I returned to the classroom at school with a friend.",
+    "grammarPointIds": [
+      "to-companion",
+      "ni-destination",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "classroom",
+        "vocabularyIds": [
+          "vocab-fbb71c77ac0e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-forgotten-book",
+    "readingSentenceId": "reading-classroom-visitor-02",
+    "solution": "I came to get my book because I had forgotten it.",
+    "grammarPointIds": [
+      "node-reason",
+      "movement-purpose",
+      "verb-ta-past"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-forgotten-book",
+    "readingSentenceId": "reading-classroom-visitor-02",
+    "type": "production",
+    "text": "I came to get my book because I had forgotten it.",
+    "grammarPointIds": [
+      "node-reason",
+      "movement-purpose",
+      "verb-ta-past"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-nobody-there",
+    "readingSentenceId": "reading-classroom-visitor-03",
+    "solution": "There was nobody in the classroom.",
+    "grammarPointIds": [
+      "question-word-mo",
+      "iru-existence",
+      "ni-existence-location"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-nobody-there",
+    "readingSentenceId": "reading-classroom-visitor-03",
+    "type": "production",
+    "text": "There was nobody in the classroom.",
+    "grammarPointIds": [
+      "question-word-mo",
+      "iru-existence",
+      "ni-existence-location"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "classroom",
+        "vocabularyIds": [
+          "vocab-fbb71c77ac0e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-window-already-open",
+    "readingSentenceId": "reading-classroom-visitor-04",
+    "solution": "But the window was open.",
+    "grammarPointIds": [
+      "demo-connector",
+      "te-iru-result-state",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-window-already-open",
+    "readingSentenceId": "reading-classroom-visitor-04",
+    "type": "production",
+    "text": "But the window was open.",
+    "grammarPointIds": [
+      "demo-connector",
+      "te-iru-result-state",
+      "ga-subject"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "window",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-quiet-cry",
+    "readingSentenceId": "reading-classroom-visitor-05",
+    "solution": "I heard a quiet cry as I was putting the book in my bag.",
+    "grammarPointIds": [
+      "toki",
+      "mieru-kikoeru",
+      "ni-destination"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-quiet-cry",
+    "readingSentenceId": "reading-classroom-visitor-05",
+    "type": "production",
+    "text": "I heard a quiet cry as I was putting the book in my bag.",
+    "grammarPointIds": [
+      "toki",
+      "mieru-kikoeru",
+      "ni-destination"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "bag",
+        "vocabularyIds": [
+          "vocab-704870bca266"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-anyone-there",
+    "readingSentenceId": "reading-classroom-visitor-06",
+    "solution": "My friend asked, “Is anyone there?”",
+    "grammarPointIds": [
+      "question-word-ka",
+      "ka-question",
+      "to-quotation",
+      "no-desu"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-anyone-there",
+    "readingSentenceId": "reading-classroom-visitor-06",
+    "type": "production",
+    "text": "My friend asked, “Is anyone there?”",
+    "grammarPointIds": [
+      "question-word-ka",
+      "ka-question",
+      "to-quotation",
+      "no-desu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-look-under-furniture",
+    "readingSentenceId": "reading-classroom-visitor-07",
+    "solution": "My friend looked under things such as the desks and chairs.",
+    "grammarPointIds": [
+      "ya-incomplete-list",
+      "positional-nouns",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-look-under-furniture",
+    "readingSentenceId": "reading-classroom-visitor-07",
+    "type": "production",
+    "text": "My friend looked under things such as the desks and chairs.",
+    "grammarPointIds": [
+      "ya-incomplete-list",
+      "positional-nouns",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "chairs",
+        "vocabularyIds": [
+          "vocab-7863488ec2b8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-hear-it-again",
+    "readingSentenceId": "reading-classroom-visitor-08",
+    "solution": "After that, I heard the quiet cry again.",
+    "grammarPointIds": [
+      "sorekara-connector",
+      "mieru-kikoeru",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-hear-it-again",
+    "readingSentenceId": "reading-classroom-visitor-08",
+    "type": "production",
+    "text": "After that, I heard the quiet cry again.",
+    "grammarPointIds": [
+      "sorekara-connector",
+      "mieru-kikoeru",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cry",
+        "vocabularyIds": [
+          "vocab-135a822fbf3a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-near-teachers-desk",
+    "readingSentenceId": "reading-classroom-visitor-09",
+    "solution": "The cry came from near the teacher's desk.",
+    "grammarPointIds": [
+      "mieru-kikoeru",
+      "kara-start",
+      "positional-nouns"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-near-teachers-desk",
+    "readingSentenceId": "reading-classroom-visitor-09",
+    "type": "production",
+    "text": "The cry came from near the teacher's desk.",
+    "grammarPointIds": [
+      "mieru-kikoeru",
+      "kara-start",
+      "positional-nouns"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "desk",
+        "vocabularyIds": [
+          "vocab-0cbee2d10284"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-box-behind-desk",
+    "readingSentenceId": "reading-classroom-visitor-10",
+    "solution": "There was a large box behind the desk.",
+    "grammarPointIds": [
+      "positional-nouns",
+      "ni-existence-location",
+      "aru-existence"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-box-behind-desk",
+    "readingSentenceId": "reading-classroom-visitor-10",
+    "type": "production",
+    "text": "There was a large box behind the desk.",
+    "grammarPointIds": [
+      "positional-nouns",
+      "ni-existence-location",
+      "aru-existence"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "box",
+        "vocabularyIds": [
+          "vocab-28102c121d50"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-one-black-cat",
+    "readingSentenceId": "reading-classroom-visitor-11",
+    "solution": "There was one black cat inside the box.",
+    "grammarPointIds": [
+      "iru-existence",
+      "common-counters",
+      "ni-existence-location"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-one-black-cat",
+    "readingSentenceId": "reading-classroom-visitor-11",
+    "type": "production",
+    "text": "There was one black cat inside the box.",
+    "grammarPointIds": [
+      "iru-existence",
+      "common-counters",
+      "ni-existence-location"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cat",
+        "vocabularyIds": [
+          "vocab-123a10eb50b0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-meowing-without-leaving",
+    "readingSentenceId": "reading-classroom-visitor-12",
+    "solution": "The cat was meowing quietly without coming out of the box.",
+    "grammarPointIds": [
+      "naide-without",
+      "te-iru-progressive",
+      "kara-start"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-meowing-without-leaving",
+    "readingSentenceId": "reading-classroom-visitor-12",
+    "type": "production",
+    "text": "The cat was meowing quietly without coming out of the box.",
+    "grammarPointIds": [
+      "naide-without",
+      "te-iru-progressive",
+      "kara-start"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cat",
+        "vocabularyIds": [
+          "vocab-123a10eb50b0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-whose-cat",
+    "readingSentenceId": "reading-classroom-visitor-13",
+    "solution": "My friend asked, “Whose cat is this?”",
+    "grammarPointIds": [
+      "dare",
+      "no-possession",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-whose-cat",
+    "readingSentenceId": "reading-classroom-visitor-13",
+    "type": "production",
+    "text": "My friend asked, “Whose cat is this?”",
+    "grammarPointIds": [
+      "dare",
+      "no-possession",
+      "ka-question"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cat",
+        "vocabularyIds": [
+          "vocab-123a10eb50b0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-get-the-teacher",
+    "readingSentenceId": "reading-classroom-visitor-14",
+    "solution": "We went to get the teacher.",
+    "grammarPointIds": [
+      "ni-purpose",
+      "o-object",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-get-the-teacher",
+    "readingSentenceId": "reading-classroom-visitor-14",
+    "type": "production",
+    "text": "We went to get the teacher.",
+    "grammarPointIds": [
+      "ni-purpose",
+      "o-object",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-cat-from-nearby-home",
+    "readingSentenceId": "reading-classroom-visitor-15",
+    "solution": "The teacher said, “That cat belongs to a nearby household.”",
+    "grammarPointIds": [
+      "to-iu",
+      "no-possession",
+      "yo-emphasis"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-cat-from-nearby-home",
+    "readingSentenceId": "reading-classroom-visitor-15",
+    "type": "production",
+    "text": "The teacher said, “That cat belongs to a nearby household.”",
+    "grammarPointIds": [
+      "to-iu",
+      "no-possession",
+      "yo-emphasis"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cat",
+        "vocabularyIds": [
+          "vocab-123a10eb50b0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-sometimes-through-window",
+    "readingSentenceId": "reading-classroom-visitor-16",
+    "solution": "“It sometimes comes in through this window.”",
+    "grammarPointIds": [
+      "frequency-adverbs",
+      "kara-start",
+      "verb-masu"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-sometimes-through-window",
+    "readingSentenceId": "reading-classroom-visitor-16",
+    "type": "production",
+    "text": "“It sometimes comes in through this window.”",
+    "grammarPointIds": [
+      "frequency-adverbs",
+      "kara-start",
+      "verb-masu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "window",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-leave-through-door",
+    "readingSentenceId": "reading-classroom-visitor-17",
+    "solution": "When the teacher opened the door, the cat left the classroom.",
+    "grammarPointIds": [
+      "to-conditional",
+      "o-route",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-leave-through-door",
+    "readingSentenceId": "reading-classroom-visitor-17",
+    "type": "production",
+    "text": "When the teacher opened the door, the cat left the classroom.",
+    "grammarPointIds": [
+      "to-conditional",
+      "o-route",
+      "ga-subject"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "door",
+        "vocabularyIds": [
+          "vocab-01adf406cacd"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-will-cat-return",
+    "readingSentenceId": "reading-classroom-visitor-18",
+    "solution": "My friend said, “I wonder if the cat will come again tomorrow.”",
+    "grammarPointIds": [
+      "deshou-darou",
+      "ka-question",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-will-cat-return",
+    "readingSentenceId": "reading-classroom-visitor-18",
+    "type": "production",
+    "text": "My friend said, “I wonder if the cat will come again tomorrow.”",
+    "grammarPointIds": [
+      "deshou-darou",
+      "ka-question",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-cat-likes-school",
+    "readingSentenceId": "reading-classroom-visitor-19",
+    "solution": "I said, “The cat likes school too, doesn't it?”",
+    "grammarPointIds": [
+      "suki-kirai",
+      "mo-addition",
+      "ne-confirmation",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-cat-likes-school",
+    "readingSentenceId": "reading-classroom-visitor-19",
+    "type": "production",
+    "text": "I said, “The cat likes school too, doesn't it?”",
+    "grammarPointIds": [
+      "suki-kirai",
+      "mo-addition",
+      "ne-confirmation",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "school",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-classroom-visitor-home-with-book",
+    "readingSentenceId": "reading-classroom-visitor-20",
+    "solution": "I went home with my friend, taking my book with me.",
+    "grammarPointIds": [
+      "te-action-link",
+      "issho-ni",
+      "ni-destination"
+    ]
+  },
+  {
+    "id": "production-story-classroom-visitor-home-with-book",
+    "readingSentenceId": "reading-classroom-visitor-20",
+    "type": "production",
+    "text": "I went home with my friend, taking my book with me.",
+    "grammarPointIds": [
+      "te-action-link",
+      "issho-ni",
+      "ni-destination"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-visit-on-saturday",
+    "readingSentenceId": "reading-grandpa-email-01",
+    "solution": "On Saturday, I went to my grandfather’s house.",
+    "grammarPointIds": [
+      "ni-destination",
+      "no-possession",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-visit-on-saturday",
+    "readingSentenceId": "reading-grandpa-email-01",
+    "type": "production",
+    "text": "On Saturday, I went to my grandfather’s house.",
+    "grammarPointIds": [
+      "ni-destination",
+      "no-possession",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "grandfather",
+        "vocabularyIds": [
+          "vocab-e49f0c143bbc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-letters-to-brother",
+    "readingSentenceId": "reading-grandpa-email-02",
+    "solution": "My grandfather always writes letters to my older brother.",
+    "grammarPointIds": [
+      "frequency-adverbs",
+      "ni-target-recipient",
+      "verb-masu"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-letters-to-brother",
+    "readingSentenceId": "reading-grandpa-email-02",
+    "type": "production",
+    "text": "My grandfather always writes letters to my older brother.",
+    "grammarPointIds": [
+      "frequency-adverbs",
+      "ni-target-recipient",
+      "verb-masu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "letters",
+        "vocabularyIds": [
+          "vocab-8e7233a38df0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-too-far-to-meet",
+    "readingSentenceId": "reading-grandpa-email-03",
+    "solution": "My older brother lives in a town far away, so my grandfather cannot see him very often.",
+    "grammarPointIds": [
+      "node-reason",
+      "koto-ga-dekiru",
+      "frequency-adverbs"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-too-far-to-meet",
+    "readingSentenceId": "reading-grandpa-email-03",
+    "type": "production",
+    "text": "My older brother lives in a town far away, so my grandfather cannot see him very often.",
+    "grammarPointIds": [
+      "node-reason",
+      "koto-ga-dekiru",
+      "frequency-adverbs"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "brother",
+        "vocabularyIds": [
+          "vocab-cda9169e9fa2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-wants-to-send-email",
+    "readingSentenceId": "reading-grandpa-email-04",
+    "solution": "That day, he said, “I want to send an email using the computer.”",
+    "grammarPointIds": [
+      "de-means",
+      "tai-desire",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-wants-to-send-email",
+    "readingSentenceId": "reading-grandpa-email-04",
+    "type": "production",
+    "text": "That day, he said, “I want to send an email using the computer.”",
+    "grammarPointIds": [
+      "de-means",
+      "tai-desire",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "computer",
+        "vocabularyIds": [
+          "vocab-5ca53fa1b955"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-try-after-lunch",
+    "readingSentenceId": "reading-grandpa-email-05",
+    "solution": "I said, “Would you like to try doing it together after lunch?”",
+    "grammarPointIds": [
+      "ato-de",
+      "te-miru",
+      "masen-ka-invitation"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-try-after-lunch",
+    "readingSentenceId": "reading-grandpa-email-05",
+    "type": "production",
+    "text": "I said, “Would you like to try doing it together after lunch?”",
+    "grammarPointIds": [
+      "ato-de",
+      "te-miru",
+      "masen-ka-invitation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "together",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-does-not-know-how",
+    "readingSentenceId": "reading-grandpa-email-06",
+    "solution": "My grandfather replied, “That sounds good. But I don’t know how to use it.”",
+    "grammarPointIds": [
+      "kata-how-to",
+      "verb-masen",
+      "demo-connector"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-does-not-know-how",
+    "readingSentenceId": "reading-grandpa-email-06",
+    "type": "production",
+    "text": "My grandfather replied, “That sounds good. But I don’t know how to use it.”",
+    "grammarPointIds": [
+      "kata-how-to",
+      "verb-masen",
+      "demo-connector"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "use",
+        "vocabularyIds": [
+          "vocab-4184877824ff"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-explain-slowly",
+    "readingSentenceId": "reading-grandpa-email-07",
+    "solution": "I sat next to him and explained slowly.",
+    "grammarPointIds": [
+      "te-action-link",
+      "positional-nouns",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-explain-slowly",
+    "readingSentenceId": "reading-grandpa-email-07",
+    "type": "production",
+    "text": "I sat next to him and explained slowly.",
+    "grammarPointIds": [
+      "te-action-link",
+      "positional-nouns",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "slowly",
+        "vocabularyIds": [
+          "vocab-0609e7997541"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-characters-too-small",
+    "readingSentenceId": "reading-grandpa-email-08",
+    "solution": "My grandfather said, “The kanji are small. Please make them bigger.”",
+    "grammarPointIds": [
+      "i-adjective-predicate",
+      "suru-change",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-characters-too-small",
+    "readingSentenceId": "reading-grandpa-email-08",
+    "type": "production",
+    "text": "My grandfather said, “The kanji are small. Please make them bigger.”",
+    "grammarPointIds": [
+      "i-adjective-predicate",
+      "suru-change",
+      "te-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "kanji",
+        "vocabularyIds": [
+          "vocab-535c688e8bf9"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-can-see-now",
+    "readingSentenceId": "reading-grandpa-email-09",
+    "solution": "When I made the kanji bigger, my grandfather could see them clearly too.",
+    "grammarPointIds": [
+      "suru-change",
+      "to-conditional",
+      "mieru-kikoeru"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-can-see-now",
+    "readingSentenceId": "reading-grandpa-email-09",
+    "type": "production",
+    "text": "When I made the kanji bigger, my grandfather could see them clearly too.",
+    "grammarPointIds": [
+      "suru-change",
+      "to-conditional",
+      "mieru-kikoeru"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "see",
+        "vocabularyIds": [
+          "vocab-e99feae5bc25"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-what-shall-i-write",
+    "readingSentenceId": "reading-grandpa-email-10",
+    "solution": "My grandfather asked, “What shall I write?”",
+    "grammarPointIds": [
+      "nani",
+      "mashou-ka",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-what-shall-i-write",
+    "readingSentenceId": "reading-grandpa-email-10",
+    "type": "production",
+    "text": "My grandfather asked, “What shall I write?”",
+    "grammarPointIds": [
+      "nani",
+      "mashou-ka",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "write",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-advice-about-flowers",
+    "readingSentenceId": "reading-grandpa-email-11",
+    "solution": "I replied, “I think it would be good to write about the flowers in the garden.”",
+    "grammarPointIds": [
+      "hou-ga-ii-advice",
+      "to-omou",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-advice-about-flowers",
+    "readingSentenceId": "reading-grandpa-email-11",
+    "type": "production",
+    "text": "I replied, “I think it would be good to write about the flowers in the garden.”",
+    "grammarPointIds": [
+      "hou-ga-ii-advice",
+      "to-omou",
+      "no-possession"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "flowers",
+        "vocabularyIds": [
+          "vocab-fa6a4c8f27b4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-listen-and-write",
+    "readingSentenceId": "reading-grandpa-email-12",
+    "solution": "My grandfather wrote the email while listening to my explanation.",
+    "grammarPointIds": [
+      "nagara",
+      "o-object",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-listen-and-write",
+    "readingSentenceId": "reading-grandpa-email-12",
+    "type": "production",
+    "text": "My grandfather wrote the email while listening to my explanation.",
+    "grammarPointIds": [
+      "nagara",
+      "o-object",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "explanation",
+        "vocabularyIds": [
+          "vocab-9683551a843c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-message-about-garden",
+    "readingSentenceId": "reading-grandpa-email-13",
+    "solution": "Then he wrote, “The flowers in the garden are beautiful.”",
+    "grammarPointIds": [
+      "sorekara-connector",
+      "na-adjective-predicate",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-message-about-garden",
+    "readingSentenceId": "reading-grandpa-email-13",
+    "type": "production",
+    "text": "Then he wrote, “The flowers in the garden are beautiful.”",
+    "grammarPointIds": [
+      "sorekara-connector",
+      "na-adjective-predicate",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "garden",
+        "vocabularyIds": [
+          "vocab-32b69415feac"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-accidentally-delete",
+    "readingSentenceId": "reading-grandpa-email-14",
+    "solution": "But when he pressed a button, he accidentally deleted the words he had written.",
+    "grammarPointIds": [
+      "toki",
+      "relative-clause",
+      "te-shimau"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-accidentally-delete",
+    "readingSentenceId": "reading-grandpa-email-14",
+    "type": "production",
+    "text": "But when he pressed a button, he accidentally deleted the words he had written.",
+    "grammarPointIds": [
+      "toki",
+      "relative-clause",
+      "te-shimau"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "button",
+        "vocabularyIds": [
+          "vocab-6e6aad33bc6f"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-try-writing-again",
+    "readingSentenceId": "reading-grandpa-email-15",
+    "solution": "I said, “It’s all right. Let’s try writing it again.”",
+    "grammarPointIds": [
+      "te-miru",
+      "mashou",
+      "yo-emphasis"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-try-writing-again",
+    "readingSentenceId": "reading-grandpa-email-15",
+    "type": "production",
+    "text": "I said, “It’s all right. Let’s try writing it again.”",
+    "grammarPointIds": [
+      "te-miru",
+      "mashou",
+      "yo-emphasis"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "writing",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-rewrite-on-his-own",
+    "readingSentenceId": "reading-grandpa-email-16",
+    "solution": "My grandfather slowly wrote the email on his own.",
+    "grammarPointIds": [
+      "common-counters",
+      "o-object",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-rewrite-on-his-own",
+    "readingSentenceId": "reading-grandpa-email-16",
+    "type": "production",
+    "text": "My grandfather slowly wrote the email on his own.",
+    "grammarPointIds": [
+      "common-counters",
+      "o-object",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "email",
+        "vocabularyIds": [
+          "vocab-046ed410f49b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-tea-after-sending",
+    "readingSentenceId": "reading-grandpa-email-17",
+    "solution": "After sending the email, the two of us drank tea.",
+    "grammarPointIds": [
+      "te-kara",
+      "common-counters",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-tea-after-sending",
+    "readingSentenceId": "reading-grandpa-email-17",
+    "type": "production",
+    "text": "After sending the email, the two of us drank tea.",
+    "grammarPointIds": [
+      "te-kara",
+      "common-counters",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "tea",
+        "vocabularyIds": [
+          "vocab-d18ca13aa386"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-thanks-by-phone",
+    "readingSentenceId": "reading-grandpa-email-18",
+    "solution": "My older brother said on the phone, “Thank you for the email.”",
+    "grammarPointIds": [
+      "de-means",
+      "to-iu",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-thanks-by-phone",
+    "readingSentenceId": "reading-grandpa-email-18",
+    "type": "production",
+    "text": "My older brother said on the phone, “Thank you for the email.”",
+    "grammarPointIds": [
+      "de-means",
+      "to-iu",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "phone",
+        "vocabularyIds": [
+          "vocab-24df87472770"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-now-i-can",
+    "readingSentenceId": "reading-grandpa-email-19",
+    "solution": "My grandfather said, “I can write emails even on my own.”",
+    "grammarPointIds": [
+      "koto-ga-dekiru",
+      "demo-particle",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-now-i-can",
+    "readingSentenceId": "reading-grandpa-email-19",
+    "type": "production",
+    "text": "My grandfather said, “I can write emails even on my own.”",
+    "grammarPointIds": [
+      "koto-ga-dekiru",
+      "demo-particle",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "emails",
+        "vocabularyIds": [
+          "vocab-046ed410f49b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-grandpa-email-tomorrows-teacher",
+    "readingSentenceId": "reading-grandpa-email-20",
+    "solution": "When I was leaving, my grandfather said, “Tomorrow I’ll be the one to teach you how to cook.”",
+    "grammarPointIds": [
+      "toki",
+      "ga-identification",
+      "yo-emphasis"
+    ]
+  },
+  {
+    "id": "production-story-grandpa-email-tomorrows-teacher",
+    "readingSentenceId": "reading-grandpa-email-20",
+    "type": "production",
+    "text": "When I was leaving, my grandfather said, “Tomorrow I’ll be the one to teach you how to cook.”",
+    "grammarPointIds": [
+      "toki",
+      "ga-identification",
+      "yo-emphasis"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cook",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      }
+    ]
   }
 ]

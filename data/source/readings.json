@@ -634,5 +634,926 @@
         ]
       }
     ]
+  },
+  {
+    "id": "a-voice-in-the-classroom",
+    "level": "n5",
+    "title": {
+      "en": "A voice in the classroom",
+      "fr": "Une voix dans la classe"
+    },
+    "description": {
+      "en": "An empty classroom, a quiet cry, and a visitor hidden behind the teacher’s desk.",
+      "fr": "Une classe vide, un petit cri et un visiteur caché derrière le bureau du professeur."
+    },
+    "sentences": [
+      {
+        "id": "reading-classroom-visitor-01",
+        "paragraph": 1,
+        "text": "昨日の午後、友達と学校の教室に戻りました。",
+        "grammarPointIds": [
+          "to-companion",
+          "ni-destination",
+          "verb-mashita"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-02",
+        "paragraph": 1,
+        "text": "私は本を忘れたので、取りに来ました。",
+        "grammarPointIds": [
+          "node-reason",
+          "movement-purpose",
+          "verb-ta-past"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-03",
+        "paragraph": 1,
+        "text": "教室には誰もいませんでした。",
+        "grammarPointIds": [
+          "question-word-mo",
+          "iru-existence",
+          "ni-existence-location"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-04",
+        "paragraph": 1,
+        "text": "でも、窓が開いていました。",
+        "skipVoiceGeneration": true,
+        "grammarPointIds": [
+          "demo-connector",
+          "te-iru-result-state",
+          "ga-subject"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-05",
+        "paragraph": 2,
+        "text": "本をかばんに入れるとき、小さな声が聞こえました。",
+        "grammarPointIds": [
+          "toki",
+          "mieru-kikoeru",
+          "ni-destination"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-06",
+        "paragraph": 2,
+        "text": "「誰かいるんですか」と友達が聞きました。",
+        "grammarPointIds": [
+          "question-word-ka",
+          "ka-question",
+          "to-quotation",
+          "no-desu"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-07",
+        "paragraph": 2,
+        "text": "友達は机や椅子の下を見ました。",
+        "grammarPointIds": [
+          "ya-incomplete-list",
+          "positional-nouns",
+          "o-object"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-08",
+        "paragraph": 2,
+        "text": "それから、また小さな声が聞こえました。",
+        "grammarPointIds": [
+          "sorekara-connector",
+          "mieru-kikoeru",
+          "verb-mashita"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-09",
+        "paragraph": 3,
+        "text": "声は先生の机の近くから聞こえました。",
+        "grammarPointIds": [
+          "mieru-kikoeru",
+          "kara-start",
+          "positional-nouns"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-10",
+        "paragraph": 3,
+        "text": "机の後ろに大きな箱がありました。",
+        "grammarPointIds": [
+          "positional-nouns",
+          "ni-existence-location",
+          "aru-existence"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-11",
+        "paragraph": 3,
+        "text": "箱の中には、黒い猫が一匹いました。",
+        "tokenOverrides": {
+          "一": { "reading": "いっ" },
+          "匹": { "reading": "ぴき" }
+        },
+        "grammarPointIds": [
+          "iru-existence",
+          "common-counters",
+          "ni-existence-location"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-12",
+        "paragraph": 3,
+        "text": "猫は箱から出ないで、小さな声で鳴いていました。",
+        "grammarPointIds": [
+          "naide-without",
+          "te-iru-progressive",
+          "kara-start"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-13",
+        "paragraph": 4,
+        "text": "友達は「この猫は誰の猫ですか」と聞きました。",
+        "grammarPointIds": [
+          "dare",
+          "no-possession",
+          "ka-question"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-14",
+        "paragraph": 4,
+        "text": "私たちは先生を呼びに行きました。",
+        "grammarPointIds": [
+          "ni-purpose",
+          "o-object",
+          "verb-mashita"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-15",
+        "paragraph": 4,
+        "text": "先生は「その猫は近くの家の猫ですよ」と言いました。",
+        "grammarPointIds": [
+          "to-iu",
+          "no-possession",
+          "yo-emphasis"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-16",
+        "paragraph": 4,
+        "text": "「時々、この窓から入ります。」",
+        "grammarPointIds": [
+          "frequency-adverbs",
+          "kara-start",
+          "verb-masu"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-17",
+        "paragraph": 5,
+        "text": "先生がドアを開けると、猫は教室を出ました。",
+        "grammarPointIds": [
+          "to-conditional",
+          "o-route",
+          "ga-subject"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-18",
+        "paragraph": 5,
+        "text": "友達は「猫は明日も来るでしょうか」と言いました。",
+        "grammarPointIds": [
+          "deshou-darou",
+          "ka-question",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-19",
+        "paragraph": 5,
+        "text": "私は「猫も学校が好きですね」と言いました。",
+        "grammarPointIds": [
+          "suki-kirai",
+          "mo-addition",
+          "ne-confirmation",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-classroom-visitor-20",
+        "paragraph": 5,
+        "text": "本を持って、友達と一緒に家に帰りました。",
+        "grammarPointIds": [
+          "te-action-link",
+          "issho-ni",
+          "ni-destination"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "reason",
+        "prompt": {
+          "en": "Why did the narrator return to the classroom?",
+          "fr": "Pourquoi la personne qui raconte est-elle retournée dans la salle de classe ?"
+        },
+        "choices": [
+          {
+            "id": "lesson",
+            "label": {
+              "en": "To attend another lesson",
+              "fr": "Pour assister à un autre cours"
+            }
+          },
+          {
+            "id": "book",
+            "label": {
+              "en": "To collect a forgotten book",
+              "fr": "Pour récupérer un livre oublié"
+            }
+          },
+          {
+            "id": "feed",
+            "label": {
+              "en": "To feed the cat",
+              "fr": "Pour nourrir le chat"
+            }
+          },
+          {
+            "id": "window",
+            "label": {
+              "en": "To close the window",
+              "fr": "Pour fermer la fenêtre"
+            }
+          }
+        ],
+        "answerId": "book",
+        "explanation": {
+          "en": "The narrator came back to collect a forgotten book. The cat was only discovered afterwards.",
+          "fr": "La personne est revenue chercher le livre qu’elle avait oublié. Le chat n’a été découvert qu’ensuite."
+        },
+        "evidenceSentenceIds": [
+          "reading-classroom-visitor-01",
+          "reading-classroom-visitor-02"
+        ]
+      },
+      {
+        "id": "discovery",
+        "prompt": {
+          "en": "Where did they find the cat?",
+          "fr": "Où ont-ils découvert le chat ?"
+        },
+        "choices": [
+          {
+            "id": "chair",
+            "label": {
+              "en": "On a chair by the window",
+              "fr": "Sur une chaise près de la fenêtre"
+            }
+          },
+          {
+            "id": "bag",
+            "label": {
+              "en": "In the narrator's bag",
+              "fr": "Dans le sac de la personne qui raconte"
+            }
+          },
+          {
+            "id": "box",
+            "label": {
+              "en": "In a box behind the teacher's desk",
+              "fr": "Dans une boîte derrière le bureau du professeur"
+            }
+          },
+          {
+            "id": "outside",
+            "label": {
+              "en": "Outside the classroom door",
+              "fr": "À l’extérieur, devant la porte de la classe"
+            }
+          }
+        ],
+        "answerId": "box",
+        "explanation": {
+          "en": "The cry came from near the teacher's desk. Behind it was a box containing one black cat. The friend first looked under desks and chairs, but that was not where the cat was.",
+          "fr": "Le cri venait de près du bureau du professeur. Derrière celui-ci se trouvait une boîte contenant un chat noir. L’ami avait d’abord regardé sous les bureaux et les chaises, mais le chat n’était pas là."
+        },
+        "evidenceSentenceIds": [
+          "reading-classroom-visitor-07",
+          "reading-classroom-visitor-09",
+          "reading-classroom-visitor-10",
+          "reading-classroom-visitor-11"
+        ]
+      },
+      {
+        "id": "owner",
+        "prompt": {
+          "en": "What did the teacher explain about the cat?",
+          "fr": "Qu’a expliqué le professeur au sujet du chat ?"
+        },
+        "choices": [
+          {
+            "id": "nearby",
+            "label": {
+              "en": "It belongs to a nearby household and sometimes comes in through the window",
+              "fr": "Il appartient à une famille du voisinage et entre parfois par la fenêtre"
+            }
+          },
+          {
+            "id": "teacher",
+            "label": {
+              "en": "It belongs to the teacher and lives in the classroom",
+              "fr": "Il appartient au professeur et vit dans la classe"
+            }
+          },
+          {
+            "id": "friend",
+            "label": {
+              "en": "It belongs to the friend and came from the friend's bag",
+              "fr": "Il appartient à l’ami et est sorti de son sac"
+            }
+          },
+          {
+            "id": "narrator",
+            "label": {
+              "en": "It belongs to the narrator and always comes to school together with them",
+              "fr": "Il appartient à la personne qui raconte et l’accompagne toujours à l’école"
+            }
+          }
+        ],
+        "answerId": "nearby",
+        "explanation": {
+          "en": "The teacher says it is the cat of a nearby home. ときどき means sometimes, not every day or always.",
+          "fr": "Le professeur dit que c’est le chat d’une maison du voisinage. ときどき signifie « parfois », pas « tous les jours » ni « toujours »."
+        },
+        "evidenceSentenceIds": [
+          "reading-classroom-visitor-15",
+          "reading-classroom-visitor-16"
+        ]
+      },
+      {
+        "id": "exit",
+        "prompt": {
+          "en": "How did the cat leave the classroom?",
+          "fr": "Comment le chat est-il sorti de la salle de classe ?"
+        },
+        "choices": [
+          {
+            "id": "window",
+            "label": {
+              "en": "Through the already-open window",
+              "fr": "Par la fenêtre déjà ouverte"
+            }
+          },
+          {
+            "id": "carried",
+            "label": {
+              "en": "The friend carried it out in the box",
+              "fr": "L’ami l’a emporté dans la boîte"
+            }
+          },
+          {
+            "id": "stayed",
+            "label": {
+              "en": "It stayed in the classroom",
+              "fr": "Il est resté dans la classe"
+            }
+          },
+          {
+            "id": "door",
+            "label": {
+              "en": "Through the door after the teacher opened it",
+              "fr": "Par la porte, après que le professeur l’a ouverte"
+            }
+          }
+        ],
+        "answerId": "door",
+        "explanation": {
+          "en": "The teacher opened the door, and the cat left the classroom. The window explains how the cat sometimes enters, not how it leaves in this story.",
+          "fr": "Le professeur a ouvert la porte et le chat est sorti de la classe. La fenêtre explique comment il entre parfois, pas comment il sort dans cette histoire."
+        },
+        "evidenceSentenceIds": [
+          "reading-classroom-visitor-04",
+          "reading-classroom-visitor-16",
+          "reading-classroom-visitor-17"
+        ]
+      },
+      {
+        "id": "tomorrow",
+        "prompt": {
+          "en": "What does the friend wonder at the end?",
+          "fr": "Quelle question l’ami se pose-t-il à la fin ?"
+        },
+        "choices": [
+          {
+            "id": "book",
+            "label": {
+              "en": "Whether the narrator will forget the book again",
+              "fr": "Si la personne qui raconte oubliera encore son livre"
+            }
+          },
+          {
+            "id": "return",
+            "label": {
+              "en": "Whether the cat will return tomorrow",
+              "fr": "Si le chat reviendra demain"
+            }
+          },
+          {
+            "id": "name",
+            "label": {
+              "en": "What the teacher's name is",
+              "fr": "Quel est le nom du professeur"
+            }
+          },
+          {
+            "id": "new",
+            "label": {
+              "en": "Whether there will be a new lesson today",
+              "fr": "S’il y aura un nouveau cours aujourd’hui"
+            }
+          }
+        ],
+        "answerId": "return",
+        "explanation": {
+          "en": "来るでしょうか expresses uncertainty about whether the cat will come tomorrow. The story does not say that the cat definitely will return.",
+          "fr": "来るでしょうか exprime une interrogation sur la venue du chat le lendemain. L’histoire ne dit pas qu’il reviendra forcément."
+        },
+        "evidenceSentenceIds": [
+          "reading-classroom-visitor-18"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "grandpas-first-email",
+    "level": "n5",
+    "title": {
+      "en": "Grandpa’s first email",
+      "fr": "Le premier mail de grand-père"
+    },
+    "description": {
+      "en": "A computer lesson, an unfortunate button, and a new teacher for tomorrow.",
+      "fr": "Une leçon d’informatique, un bouton mal choisi et un nouveau professeur pour demain."
+    },
+    "sentences": [
+      {
+        "id": "reading-grandpa-email-01",
+        "paragraph": 1,
+        "text": "土曜日、私はおじいさんの家に行きました。",
+        "grammarPointIds": [
+          "ni-destination",
+          "no-possession",
+          "verb-mashita"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-02",
+        "paragraph": 1,
+        "text": "おじいさんは、いつも兄に手紙を書きます。",
+        "grammarPointIds": [
+          "frequency-adverbs",
+          "ni-target-recipient",
+          "verb-masu"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-03",
+        "paragraph": 1,
+        "text": "兄は遠い町に住んでいるので、おじいさんはあまり会うことができません。",
+        "grammarPointIds": [
+          "node-reason",
+          "koto-ga-dekiru",
+          "frequency-adverbs"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-04",
+        "paragraph": 1,
+        "text": "その日は「パソコンでメールを送りたいです」と言いました。",
+        "grammarPointIds": [
+          "de-means",
+          "tai-desire",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-05",
+        "paragraph": 2,
+        "text": "私は「昼御飯の後で、一緒にやってみませんか」と言いました。",
+        "grammarPointIds": [
+          "ato-de",
+          "te-miru",
+          "masen-ka-invitation"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-06",
+        "paragraph": 2,
+        "text": "おじいさんは「いいですね。でも、使い方が分かりません」と答えました。",
+        "grammarPointIds": [
+          "kata-how-to",
+          "verb-masen",
+          "demo-connector"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-07",
+        "paragraph": 2,
+        "text": "私は隣に座って、ゆっくり説明しました。",
+        "grammarPointIds": [
+          "te-action-link",
+          "positional-nouns",
+          "verb-mashita"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-08",
+        "paragraph": 2,
+        "text": "「漢字が小さいです。大きくしてください」とおじいさんが言いました。",
+        "grammarPointIds": [
+          "i-adjective-predicate",
+          "suru-change",
+          "te-kudasai"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-09",
+        "paragraph": 3,
+        "text": "漢字を大きくすると、おじいさんにもよく見えました。",
+        "grammarPointIds": [
+          "suru-change",
+          "to-conditional",
+          "mieru-kikoeru"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-10",
+        "paragraph": 3,
+        "text": "「何を書きましょうか」とおじいさんが聞きました。",
+        "grammarPointIds": [
+          "nani",
+          "mashou-ka",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-11",
+        "paragraph": 3,
+        "text": "「庭の花のことを書いたほうがいいと思います」と答えました。",
+        "grammarPointIds": [
+          "hou-ga-ii-advice",
+          "to-omou",
+          "no-possession"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-12",
+        "paragraph": 3,
+        "text": "おじいさんは、私の説明を聞きながら、メールを書きました。",
+        "grammarPointIds": [
+          "nagara",
+          "o-object",
+          "verb-mashita"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-13",
+        "paragraph": 4,
+        "text": "それから、「庭の花がきれいです」と書きました。",
+        "grammarPointIds": [
+          "sorekara-connector",
+          "na-adjective-predicate",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-14",
+        "paragraph": 4,
+        "text": "でも、ボタンを押したとき、書いた言葉を消してしまいました。",
+        "grammarPointIds": [
+          "toki",
+          "relative-clause",
+          "te-shimau"
+        ],
+        "skipVoiceGeneration": true
+      },
+      {
+        "id": "reading-grandpa-email-15",
+        "paragraph": 4,
+        "text": "「大丈夫ですよ。また書いてみましょう」と私は言いました。",
+        "grammarPointIds": [
+          "te-miru",
+          "mashou",
+          "yo-emphasis"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-16",
+        "paragraph": 4,
+        "text": "おじいさんは一人で、ゆっくりメールを書きました。",
+        "grammarPointIds": [
+          "common-counters",
+          "o-object",
+          "verb-mashita"
+        ],
+        "tokenOverrides": {
+          "一": { "reading": "ひと" },
+          "人": { "reading": "り" }
+        }
+      },
+      {
+        "id": "reading-grandpa-email-17",
+        "paragraph": 5,
+        "text": "メールを送ってから、二人でお茶を飲みました。",
+        "grammarPointIds": [
+          "te-kara",
+          "common-counters",
+          "o-object"
+        ],
+        "tokenOverrides": {
+          "二": {
+            "reading": "ふた"
+          },
+          "人": {
+            "reading": "り"
+          }
+        }
+      },
+      {
+        "id": "reading-grandpa-email-18",
+        "paragraph": 5,
+        "text": "兄は電話で「メールをありがとう」と言いました。",
+        "grammarPointIds": [
+          "de-means",
+          "to-iu",
+          "o-object"
+        ]
+      },
+      {
+        "id": "reading-grandpa-email-19",
+        "paragraph": 5,
+        "text": "おじいさんは「一人でもメールを書くことができます」と言いました。",
+        "grammarPointIds": [
+          "koto-ga-dekiru",
+          "demo-particle",
+          "to-iu"
+        ],
+        "tokenOverrides": {
+          "一": { "reading": "ひと" },
+          "人": { "reading": "り" }
+        }
+      },
+      {
+        "id": "reading-grandpa-email-20",
+        "paragraph": 5,
+        "text": "帰るとき、おじいさんは「明日は私が料理を教えますよ」と言いました。",
+        "grammarPointIds": [
+          "toki",
+          "ga-identification",
+          "yo-emphasis"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "recipient",
+        "prompt": {
+          "en": "Who is the email for?",
+          "fr": "À qui le mail est-il destiné ?"
+        },
+        "choices": [
+          {
+            "id": "narrator",
+            "label": {
+              "en": "The narrator",
+              "fr": "La personne qui raconte"
+            }
+          },
+          {
+            "id": "grandfather",
+            "label": {
+              "en": "The grandfather’s older brother",
+              "fr": "Le grand frère du grand-père"
+            }
+          },
+          {
+            "id": "brother",
+            "label": {
+              "en": "The narrator’s older brother",
+              "fr": "Le grand frère de la personne qui raconte"
+            }
+          },
+          {
+            "id": "teacher",
+            "label": {
+              "en": "A schoolteacher",
+              "fr": "Un professeur de l’école"
+            }
+          }
+        ],
+        "answerId": "brother",
+        "explanation": {
+          "en": "The narrator’s grandfather usually writes letters to the narrator’s older brother, who lives far away. This time he wants to send an email instead.",
+          "fr": "Le grand-père écrit habituellement des lettres au grand frère de la personne qui raconte, qui habite loin. Cette fois, il veut envoyer un mail à la place."
+        },
+        "evidenceSentenceIds": [
+          "reading-grandpa-email-02",
+          "reading-grandpa-email-03",
+          "reading-grandpa-email-04"
+        ]
+      },
+      {
+        "id": "bigger",
+        "prompt": {
+          "en": "Why did the narrator make the kanji bigger?",
+          "fr": "Pourquoi la personne qui raconte a-t-elle agrandi les kanjis ?"
+        },
+        "choices": [
+          {
+            "id": "small",
+            "label": {
+              "en": "They were too small for the grandfather to see well",
+              "fr": "Ils étaient trop petits pour que le grand-père les voie bien"
+            }
+          },
+          {
+            "id": "garden",
+            "label": {
+              "en": "To show a larger picture of the garden",
+              "fr": "Pour montrer une photo du jardin en plus grand"
+            }
+          },
+          {
+            "id": "paper",
+            "label": {
+              "en": "To print a letter on a larger sheet of paper",
+              "fr": "Pour imprimer une lettre sur une feuille plus grande"
+            }
+          },
+          {
+            "id": "learn",
+            "label": {
+              "en": "Because the grandfather could not read kanji at all",
+              "fr": "Parce que le grand-père ne savait pas du tout lire les kanjis"
+            }
+          }
+        ],
+        "answerId": "small",
+        "explanation": {
+          "en": "The grandfather says the kanji are small and asks for them to be enlarged. After this change, he can see them clearly too; the problem is their size, not knowing how to read.",
+          "fr": "Le grand-père dit que les kanjis sont petits et demande de les agrandir. Après ce changement, il les voit bien lui aussi : le problème est leur taille, pas l’apprentissage de leur lecture."
+        },
+        "evidenceSentenceIds": [
+          "reading-grandpa-email-08",
+          "reading-grandpa-email-09"
+        ]
+      },
+      {
+        "id": "message",
+        "prompt": {
+          "en": "What does the grandfather write about in his email?",
+          "fr": "De quoi le grand-père parle-t-il dans son mail ?"
+        },
+        "choices": [
+          {
+            "id": "lesson",
+            "label": {
+              "en": "Tomorrow’s cooking lesson",
+              "fr": "Du cours de cuisine du lendemain"
+            }
+          },
+          {
+            "id": "lunch",
+            "label": {
+              "en": "What he ate for lunch",
+              "fr": "De ce qu’il a mangé au déjeuner"
+            }
+          },
+          {
+            "id": "button",
+            "label": {
+              "en": "A broken computer button",
+              "fr": "D’un bouton d’ordinateur cassé"
+            }
+          },
+          {
+            "id": "flowers",
+            "label": {
+              "en": "The beautiful flowers in his garden",
+              "fr": "Des belles fleurs de son jardin"
+            }
+          }
+        ],
+        "answerId": "flowers",
+        "explanation": {
+          "en": "The narrator suggests writing about the garden’s flowers, and the grandfather writes that they are beautiful. Cooking is mentioned only at the end as tomorrow’s lesson.",
+          "fr": "La personne lui conseille d’écrire au sujet des fleurs du jardin, puis il écrit qu’elles sont belles. La cuisine n’est évoquée qu’à la fin, comme le cours du lendemain."
+        },
+        "evidenceSentenceIds": [
+          "reading-grandpa-email-11",
+          "reading-grandpa-email-13"
+        ]
+      },
+      {
+        "id": "mistake",
+        "prompt": {
+          "en": "What does the grandfather do after accidentally deleting his words?",
+          "fr": "Que fait le grand-père après avoir effacé ses mots par accident ?"
+        },
+        "choices": [
+          {
+            "id": "stop",
+            "label": {
+              "en": "He gives up and writes a paper letter",
+              "fr": "Il abandonne et écrit une lettre sur papier"
+            }
+          },
+          {
+            "id": "again",
+            "label": {
+              "en": "He slowly writes the email again on his own",
+              "fr": "Il réécrit lentement le mail tout seul"
+            }
+          },
+          {
+            "id": "narrator",
+            "label": {
+              "en": "He asks the narrator to write the entire email for him",
+              "fr": "Il demande à la personne qui raconte d’écrire tout le mail à sa place"
+            }
+          },
+          {
+            "id": "phone",
+            "label": {
+              "en": "He phones his brother instead of sending the email",
+              "fr": "Il appelle son frère au lieu d’envoyer le mail"
+            }
+          }
+        ],
+        "answerId": "again",
+        "explanation": {
+          "en": "The narrator encourages him to try again. The grandfather then writes the email slowly on his own, and they send it before having tea. It is the narrator’s older brother who later speaks on the phone.",
+          "fr": "La personne l’encourage à réessayer. Le grand-père réécrit alors le mail lentement, tout seul, puis ils l’envoient avant de boire du thé. C’est le grand frère de la personne qui raconte qui leur parle ensuite au téléphone."
+        },
+        "evidenceSentenceIds": [
+          "reading-grandpa-email-14",
+          "reading-grandpa-email-15",
+          "reading-grandpa-email-16",
+          "reading-grandpa-email-17",
+          "reading-grandpa-email-18"
+        ]
+      },
+      {
+        "id": "tomorrow",
+        "prompt": {
+          "en": "What does the grandfather offer to do tomorrow?",
+          "fr": "Que propose le grand-père pour le lendemain ?"
+        },
+        "choices": [
+          {
+            "id": "computer",
+            "label": {
+              "en": "Take another computer lesson at school",
+              "fr": "Prendre un autre cours d’informatique à l’école"
+            }
+          },
+          {
+            "id": "visit",
+            "label": {
+              "en": "Visit the narrator’s older brother",
+              "fr": "Rendre visite au grand frère de la personne qui raconte"
+            }
+          },
+          {
+            "id": "cook",
+            "label": {
+              "en": "Be the teacher and teach the narrator to cook",
+              "fr": "Devenir le professeur et apprendre à cuisiner à la personne qui raconte"
+            }
+          },
+          {
+            "id": "garden",
+            "label": {
+              "en": "Send another photograph of the garden",
+              "fr": "Envoyer une autre photo du jardin"
+            }
+          }
+        ],
+        "answerId": "cook",
+        "explanation": {
+          "en": "In 明日は私が料理を教えますよ, 私が stresses that the grandfather will be the teacher this time. The roles are reversed: the narrator taught email today; the grandfather offers to teach cooking tomorrow.",
+          "fr": "Dans 明日は私が料理を教えますよ, 私が souligne que ce sera cette fois le grand-père qui enseignera. Les rôles s’inversent : la personne lui a appris à écrire un mail aujourd’hui, et il propose de lui apprendre à cuisiner demain."
+        },
+        "evidenceSentenceIds": [
+          "reading-grandpa-email-20"
+        ]
+      }
+    ]
   }
 ]

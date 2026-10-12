@@ -53,7 +53,8 @@ test("the N5 birthday story has a different plot, grounded questions, and previo
   assert.ok(cake.sentences.length >= 18 && cake.sentences.length <= 22);
   assert.equal(cake.questions.length, 5);
   assert.equal(new Set(cake.sentences.map(({ paragraph }) => paragraph)).size, 5);
-  const others = prepared.filter(({ id }) => id !== cake.id).flatMap(({ sentences }) => sentences);
+  const others = prepared.slice(0, prepared.findIndex(({ id }) => id === cake.id))
+    .flatMap(({ sentences }) => sentences);
   const existingText = new Set(others.map(({ text }) => text));
   assert.ok(cake.sentences.every(({ text }) => !existingText.has(text)));
   const previousPoints = new Set(others.flatMap(({ grammarPointIds }) => grammarPointIds));
@@ -98,6 +99,162 @@ test("the N5 birthday story has a different plot, grounded questions, and previo
     assert.equal(exercise.tokens.slice(connective.tokenStart, connective.tokenEnd)
       .map(({ surface }) => surface).join(""), "小さくて", "highlight the connective, not the negative copula");
     assert.ok(!exercise.grammarPointIds.includes("i-adjective-past-negative"), "きれい is a na-adjective");
+  }
+});
+
+test("the N5 classroom mystery has new sentences, accurate readings, and unambiguous evidence", async () => {
+  const index = prepared.findIndex(({ id }) => id === "a-voice-in-the-classroom");
+  assert.ok(index >= 0);
+  const story = prepared[index];
+  assert.equal(story.level, "n5");
+  assert.ok(story.sentences.length >= 18 && story.sentences.length <= 22);
+  assert.equal(story.questions.length, 5);
+  const earlier = prepared.slice(0, index).flatMap(({ sentences }) => sentences);
+  const earlierText = new Set(earlier.map(({ text }) => text));
+  assert.ok(story.sentences.every(({ text }) => !earlierText.has(text)));
+  const earlierPoints = new Set(earlier.flatMap(({ grammarPointIds }) => grammarPointIds));
+  for (const [number, point, surface] of [
+    [3, "question-word-mo", "誰もいませんでした"],
+    [4, "te-iru-result-state", "窓が開いていました"],
+    [6, "question-word-ka", "誰かいるんですか"],
+    [7, "ya-incomplete-list", "机や椅子"],
+    [12, "naide-without", "箱から出ないで"],
+    [14, "ni-purpose", "先生を呼びに"],
+    [18, "deshou-darou", "来るでしょうか"]
+  ]) {
+    const sentence = story.sentences[number - 1];
+    assert.ok(sentence.text.includes(surface));
+    assert.ok(sentence.grammarPointIds.includes(point));
+    assert.ok(!earlierPoints.has(point), point);
+  }
+  const readings = (number) => story.sentences[number - 1].tokens
+    .map((token) => token.reading || token.surface).join("");
+  assert.match(readings(4), /まどがあいていました/u);
+  assert.match(readings(11), /いっぴきいました/u);
+  assert.match(readings(17), /どあをあけると/u);
+  assert.match(readings(18), /あした/u);
+  assert.ok(story.sentences[10].tokens.some((token) =>
+    token.surface === "匹" && token.vocabularyId === "vocab-962a64eb7b14"));
+  assert.ok(story.sentences[13].tokens.some((token) =>
+    token.surface === "たち" && token.vocabularyId === "vocab-7bd027373fce"));
+  assert.ok(!story.sentences[3].grammarPointIds.includes("te-iru-progressive"));
+  assert.ok(!story.sentences[11].grammarPointIds.includes("naide-kudasai"));
+  assert.ok(story.sentences[11].grammarPointIds.includes("te-iru-progressive"));
+  assert.ok(story.sentences[16].grammarPointIds.includes("o-route"));
+  const answer = (id) => story.questions.find((question) => question.id === id).answerId;
+  assert.equal(answer("reason"), "book");
+  assert.equal(answer("discovery"), "box");
+  assert.equal(answer("owner"), "nearby");
+  assert.equal(answer("exit"), "door");
+  assert.equal(answer("tomorrow"), "return");
+  const responses = Object.fromEntries(story.questions.map(({ id, answerId }) => [id, answerId]));
+  assert.equal(gradeAnswers(story, responses).correct, 5);
+  responses.exit = "window";
+  assert.equal(gradeAnswers(story, responses).correct, 4, "entry and exit are different");
+  const byId = new Map(story.sentences.map((sentence) => [sentence.id, sentence]));
+  for (const question of story.questions) {
+    assert.ok(question.evidenceSentenceIds.every((id) => byId.has(id)));
+    assert.ok(question.explanation.en && question.explanation.fr);
+  }
+  const exercises = await readJson("data/exercises.json");
+  for (const [number, point, surface] of [
+    [4, "te-iru-result-state", "ていました"],
+    [11, "common-counters", "匹"],
+    [12, "naide-without", "ないで"],
+    [12, "te-iru-progressive", "ていました"],
+    [18, "deshou-darou", "でしょう"]
+  ]) {
+    const pair = exercises.filter(({ readingSentenceId }) =>
+      readingSentenceId === story.sentences[number - 1].id);
+    assert.equal(pair.length, 2);
+    for (const exercise of pair) {
+      const highlight = exercise.grammarHighlights.find(({ grammarPointId }) => grammarPointId === point);
+      assert.ok(highlight);
+      assert.equal(exercise.tokens.slice(highlight.tokenStart, highlight.tokenEnd)
+        .map((token) => token.surface).join(""), surface);
+    }
+  }
+});
+
+test("the N5 email story has a different plot, accurate counters, and evidence for each answer", async () => {
+  const index = prepared.findIndex(({ id }) => id === "grandpas-first-email");
+  assert.ok(index >= 0);
+  const story = prepared[index];
+  assert.equal(story.level, "n5");
+  assert.ok(story.sentences.length >= 18 && story.sentences.length <= 22);
+  assert.equal(story.questions.length, 5);
+  assert.equal(new Set(story.sentences.map(({ paragraph }) => paragraph)).size, 5);
+  const earlier = prepared.slice(0, index).flatMap(({ sentences }) => sentences);
+  const existingText = new Set(earlier.map(({ text }) => text));
+  assert.ok(story.sentences.every(({ text }) => !existingText.has(text)));
+  const earlierPoints = new Set(earlier.flatMap(({ grammarPointIds }) => grammarPointIds));
+  for (const [number, point, surface] of [
+    [3, "koto-ga-dekiru", "会うことができません"],
+    [5, "ato-de", "昼御飯の後で"],
+    [5, "te-miru", "やってみませんか"],
+    [5, "masen-ka-invitation", "やってみませんか"],
+    [6, "kata-how-to", "使い方"],
+    [8, "suru-change", "大きくしてください"],
+    [10, "mashou-ka", "書きましょうか"],
+    [11, "hou-ga-ii-advice", "書いたほうがいい"],
+    [11, "to-omou", "と思います"],
+    [12, "nagara", "聞きながら"],
+    [14, "te-shimau", "消してしまいました"],
+    [20, "ga-identification", "私が料理を教えます"]
+  ]) {
+    const sentence = story.sentences[number - 1];
+    assert.ok(sentence.text.includes(surface));
+    assert.ok(sentence.grammarPointIds.includes(point));
+    assert.ok(!earlierPoints.has(point), point);
+  }
+  const reading = (number) => story.sentences[number - 1].tokens
+    .map(({ reading, surface }) => reading || surface).join("");
+  assert.match(reading(6), /つかいかた/u);
+  assert.match(reading(10), /なにをかきましょうか/u);
+  assert.match(reading(16), /ひとりで/u);
+  assert.match(reading(17), /ふたりで/u);
+  assert.match(reading(19), /ひとりでも/u);
+  assert.match(reading(20), /あした/u);
+  const answer = (id) => story.questions.find((question) => question.id === id).answerId;
+  assert.equal(answer("recipient"), "brother");
+  assert.equal(answer("bigger"), "small");
+  assert.equal(answer("message"), "flowers");
+  assert.equal(answer("mistake"), "again");
+  assert.equal(answer("tomorrow"), "cook");
+  const responses = Object.fromEntries(story.questions.map(({ id, answerId }) => [id, answerId]));
+  assert.equal(gradeAnswers(story, responses).correct, 5);
+  responses.mistake = "narrator";
+  assert.equal(gradeAnswers(story, responses).correct, 4, "the grandfather rewrites the email himself");
+  const byId = new Set(story.sentences.map(({ id }) => id));
+  for (const question of story.questions) {
+    assert.ok(question.evidenceSentenceIds.every((id) => byId.has(id)));
+    assert.ok(question.explanation.en && question.explanation.fr);
+  }
+  const exercises = await readJson("data/exercises.json");
+  for (const [number, point, surface] of [
+    [3, "koto-ga-dekiru", "ことができません"],
+    [5, "te-miru", "てみません"],
+    [5, "masen-ka-invitation", "ませんか"],
+    [6, "kata-how-to", "使い方"],
+    [8, "suru-change", "大きくし"],
+    [9, "suru-change", "大きくする"],
+    [9, "to-conditional", "と"],
+    [10, "mashou-ka", "ましょうか"],
+    [11, "hou-ga-ii-advice", "たほうがいい"],
+    [11, "to-omou", "と思います"],
+    [12, "nagara", "ながら"],
+    [14, "te-shimau", "てしまいました"],
+    [19, "koto-ga-dekiru", "ことができます"],
+    [20, "ga-identification", "が"]
+  ]) {
+    const pair = exercises.filter(({ readingSentenceId }) => readingSentenceId === story.sentences[number - 1].id);
+    assert.equal(pair.length, 2);
+    for (const exercise of pair) {
+      const highlight = exercise.grammarHighlights.find(({ grammarPointId }) => grammarPointId === point);
+      assert.ok(highlight, `${exercise.id}: ${point}`);
+      assert.equal(exercise.tokens.slice(highlight.tokenStart, highlight.tokenEnd)
+        .map(({ surface }) => surface).join(""), surface);
+    }
   }
 });
 
@@ -509,7 +666,8 @@ test("borrowed sentences never trigger duplicate lesson voice generation or bypa
   const excluded = voices.filter((item) => item.skipVoiceGeneration).map((item) => item.id);
   assert.deepEqual(excluded, sources.flatMap(({ sentences }) => sentences)
     .filter((sentence) => sentence.skipVoiceGeneration).map(({ id }) => id));
-  for (const id of ["reading-sunday-park-07", "reading-sunday-park-14", "reading-birthday-cake-04"]) {
+  for (const id of ["reading-sunday-park-07", "reading-sunday-park-14", "reading-birthday-cake-04",
+    "reading-classroom-visitor-04", "reading-grandpa-email-14"]) {
     assert.ok(excluded.includes(id), "repeatedly rejected audio stays excluded");
   }
   assert.equal(new Set(voices.map((item) => item.id)).size, voices.length);
