@@ -1,11 +1,11 @@
 {
-  "totalPassages": 2,
-  "totalSentences": 40,
+  "totalPassages": 3,
+  "totalSentences": 60,
   "levels": [
     {
       "level": "n5",
       "totalPoints": 206,
-      "coveredPoints": 55,
+      "coveredPoints": 76,
       "uncoveredPointIds": [
         "predicate-final-order",
         "topic-comment-structure",
@@ -23,21 +23,17 @@
         "ni-purpose",
         "ni-frequency",
         "ya-incomplete-list",
-        "no-noun-omission",
         "mo-emphasis",
         "ka-alternatives",
         "ne-confirmation",
         "yone-confirmation",
         "naa-reflection",
         "kara-reason",
-        "ga-contrast",
         "kedo-contrast",
         "shikashi-connector",
         "soshite-connector",
         "sorekara-connector",
         "shi-additive-reason",
-        "dake-limitation",
-        "shika-nai-limitation",
         "kurai-approximation",
         "goro-approximate-time",
         "nado-examples",
@@ -59,17 +55,13 @@
         "te-iru-result-state",
         "te-aru-result-state",
         "te-inai",
-        "mada-te-inai",
         "o-kudasai",
-        "naide-kudasai",
         "naide-without",
         "cha-ikenai",
         "na-prohibitive",
         "masen-ka-invitation",
-        "mashou",
         "mashou-ka",
         "koto-nominalizer",
-        "no-nominalizer",
         "koto-ga-dekiru",
         "ru-koto-ga-aru",
         "ta-koto-ga-aru",
@@ -91,45 +83,32 @@
         "to-conditional",
         "i-adjective-class",
         "i-adjective-predicate",
-        "i-adjective-past",
-        "i-adjective-past-negative",
         "ii-irregular",
         "na-adjective-class",
-        "na-adjective-predicate",
         "na-adjective-attributive",
-        "na-adjective-negative",
         "na-adjective-past",
-        "na-adjective-past-negative",
-        "adjective-connective",
         "naru-change",
         "suru-change",
         "sugiru",
         "hoshii",
-        "suki-kirai",
         "no-ga-suki",
         "no-ga-jouzu-heta",
         "iru-existence",
         "existence-location",
         "location-of-topic",
         "aru-possession",
-        "yori-comparison",
         "hou-ga-comparison",
         "dochira-comparison",
         "ichiban-superlative",
         "onaji",
         "numbers-and-counters",
-        "tsu-counter",
         "nan-counter",
         "quantity-position",
         "clock-calendar-time",
         "kara-made-range",
         "mou",
         "mada",
-        "degree-adverbs",
-        "frequency-adverbs",
         "ageru",
-        "te-ageru",
-        "te-morau",
         "kosoado-pronouns",
         "kosoado-places",
         "kosoado-directions",
@@ -361,6 +340,62 @@
         "verb-mashita",
         "yo-emphasis"
       ]
+    },
+    {
+      "id": "a-cake-for-mum",
+      "level": "n5",
+      "title": {
+        "en": "A cake for Mum",
+        "fr": "Un gâteau pour maman"
+      },
+      "sentences": 20,
+      "grammarPointIds": [
+        "adjective-connective",
+        "common-counters",
+        "copula-past",
+        "dake-limitation",
+        "de-action-location",
+        "degree-adverbs",
+        "demo-connector",
+        "frequency-adverbs",
+        "ga-contrast",
+        "ga-subject",
+        "i-adjective-past",
+        "i-adjective-past-negative",
+        "ka-question",
+        "mada-te-inai",
+        "mae-ni",
+        "mashou",
+        "mo-addition",
+        "na-adjective-negative",
+        "na-adjective-past-negative",
+        "na-adjective-predicate",
+        "naide-kudasai",
+        "ni-destination",
+        "ni-existence-location",
+        "no-nominalizer",
+        "no-noun-omission",
+        "no-possession",
+        "node-reason",
+        "o-object",
+        "relative-clause",
+        "shika-nai-limitation",
+        "suki-kirai",
+        "tai-desire",
+        "te-action-link",
+        "te-ageru",
+        "te-kudasai",
+        "te-mo-ii",
+        "te-morau",
+        "to-companion",
+        "to-iu",
+        "to-quotation",
+        "tsu-counter",
+        "verb-mashita",
+        "verb-masu",
+        "wa-topic",
+        "yori-comparison"
+      ]
     }
   ],
   "points": [
@@ -405,12 +440,16 @@
       "level": "n5",
       "name": "Relative clauses",
       "pattern": "plain clause + noun",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "sunday-at-the-park",
           "sentenceId": "reading-sunday-park-16"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-05"
         }
       ]
     },
@@ -478,12 +517,16 @@
       "level": "n5",
       "name": "Past copula",
       "pattern": "だった / でした",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "sunday-at-the-park",
           "sentenceId": "reading-sunday-park-01"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-01"
         }
       ]
     },
@@ -510,12 +553,16 @@
       "level": "n5",
       "name": "Topic marker",
       "pattern": "は",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "sunday-at-the-park",
           "sentenceId": "reading-sunday-park-15"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-14"
         }
       ]
     },
@@ -533,12 +580,16 @@
       "level": "n5",
       "name": "Subject marker",
       "pattern": "が",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "sunday-at-the-park",
           "sentenceId": "reading-sunday-park-17"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-12"
         }
       ]
     },
@@ -556,8 +607,8 @@
       "level": "n5",
       "name": "Direct object marker",
       "pattern": "を",
-      "sentences": 8,
-      "passages": 2,
+      "sentences": 9,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -590,6 +641,10 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-19"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-05"
         }
       ]
     },
@@ -634,8 +689,8 @@
       "level": "n5",
       "name": "Destination marker",
       "pattern": "に",
-      "sentences": 3,
-      "passages": 2,
+      "sentences": 4,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -648,6 +703,10 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-19"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-16"
         }
       ]
     },
@@ -656,8 +715,8 @@
       "level": "n5",
       "name": "Existence location marker",
       "pattern": "に",
-      "sentences": 3,
-      "passages": 2,
+      "sentences": 4,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -670,6 +729,10 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-14"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-07"
         }
       ]
     },
@@ -744,8 +807,8 @@
       "level": "n5",
       "name": "Action location marker",
       "pattern": "で",
-      "sentences": 7,
-      "passages": 2,
+      "sentences": 9,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -774,6 +837,14 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-20"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-03"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-04"
         }
       ]
     },
@@ -818,12 +889,16 @@
       "level": "n5",
       "name": "Companion marker",
       "pattern": "person と",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "sunday-at-the-park",
           "sentenceId": "reading-sunday-park-05"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-04"
         }
       ]
     },
@@ -832,12 +907,16 @@
       "level": "n5",
       "name": "Quotation marker",
       "pattern": "clause と",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-15"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-08"
         }
       ]
     },
@@ -855,8 +934,8 @@
       "level": "n5",
       "name": "Possession and noun modification",
       "pattern": "A の B",
-      "sentences": 5,
-      "passages": 2,
+      "sentences": 7,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -877,6 +956,14 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-14"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-01"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-05"
         }
       ]
     },
@@ -885,17 +972,22 @@
       "level": "n5",
       "name": "Noun omission with の",
       "pattern": "A の",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-19"
+        }
+      ]
     },
     {
       "id": "mo-addition",
       "level": "n5",
       "name": "Also and too",
       "pattern": "も",
-      "sentences": 3,
-      "passages": 2,
+      "sentences": 4,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -908,6 +1000,10 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-20"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-20"
         }
       ]
     },
@@ -925,12 +1021,16 @@
       "level": "n5",
       "name": "Question marker",
       "pattern": "か",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-15"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-08"
         }
       ]
     },
@@ -1026,8 +1126,8 @@
       "level": "n5",
       "name": "Reason with ので",
       "pattern": "plain clause + ので",
-      "sentences": 3,
-      "passages": 2,
+      "sentences": 4,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1040,6 +1140,10 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-18"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-10"
         }
       ]
     },
@@ -1048,9 +1152,18 @@
       "level": "n5",
       "name": "Contrast with が",
       "pattern": "clause + が",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 2,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-02"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-18"
+        }
+      ]
     },
     {
       "id": "kedo-contrast",
@@ -1066,8 +1179,8 @@
       "level": "n5",
       "name": "However",
       "pattern": "でも",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1076,6 +1189,10 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-16"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-04"
         }
       ]
     },
@@ -1120,18 +1237,28 @@
       "level": "n5",
       "name": "Only",
       "pattern": "だけ",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-09"
+        }
+      ]
     },
     {
       "id": "shika-nai-limitation",
       "level": "n5",
       "name": "Nothing but",
       "pattern": "しか～ない",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-07"
+        }
+      ]
     },
     {
       "id": "kurai-approximation",
@@ -1255,12 +1382,16 @@
       "level": "n5",
       "name": "Polite non-past verbs",
       "pattern": "～ます",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "sunday-at-the-park",
           "sentenceId": "reading-sunday-park-07"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-03"
         }
       ]
     },
@@ -1301,8 +1432,8 @@
       "level": "n5",
       "name": "Polite past verbs",
       "pattern": "～ました",
-      "sentences": 9,
-      "passages": 2,
+      "sentences": 10,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1339,6 +1470,10 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-07"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-10"
         }
       ]
     },
@@ -1374,8 +1509,8 @@
       "level": "n5",
       "name": "Linking actions with て",
       "pattern": "Vて、V",
-      "sentences": 4,
-      "passages": 2,
+      "sentences": 6,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1392,6 +1527,14 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-13"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-12"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-17"
         }
       ]
     },
@@ -1441,9 +1584,14 @@
       "level": "n5",
       "name": "Not yet",
       "pattern": "まだ～ていない",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-14"
+        }
+      ]
     },
     {
       "id": "te-kara",
@@ -1464,8 +1612,8 @@
       "level": "n5",
       "name": "Polite request",
       "pattern": "～てください",
-      "sentences": 2,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -1474,6 +1622,10 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-12"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-09"
         }
       ]
     },
@@ -1491,9 +1643,14 @@
       "level": "n5",
       "name": "Polite negative request",
       "pattern": "～ないでください",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-15"
+        }
+      ]
     },
     {
       "id": "naide-without",
@@ -1509,12 +1666,16 @@
       "level": "n5",
       "name": "Permission",
       "pattern": "～てもいい",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-15"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-08"
         }
       ]
     },
@@ -1569,8 +1730,8 @@
       "level": "n5",
       "name": "Want to do",
       "pattern": "verb stem + たい",
-      "sentences": 5,
-      "passages": 2,
+      "sentences": 7,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1591,6 +1752,14 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-20"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-19"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-20"
         }
       ]
     },
@@ -1608,9 +1777,14 @@
       "level": "n5",
       "name": "Let's",
       "pattern": "～ましょう",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-06"
+        }
+      ]
     },
     {
       "id": "mashou-ka",
@@ -1649,9 +1823,14 @@
       "level": "n5",
       "name": "Nominalization with の",
       "pattern": "plain verb + の",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-10"
+        }
+      ]
     },
     {
       "id": "koto-ga-dekiru",
@@ -1772,12 +1951,16 @@
       "level": "n5",
       "name": "Before",
       "pattern": "dictionary form / noun の + 前に",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-19"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-16"
         }
       ]
     },
@@ -1935,18 +2118,28 @@
       "level": "n5",
       "name": "Past i-adjectives",
       "pattern": "～かった / ～かったです",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-18"
+        }
+      ]
     },
     {
       "id": "i-adjective-past-negative",
       "level": "n5",
       "name": "Past-negative i-adjectives",
       "pattern": "～くなかった / ～くなかったです",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-18"
+        }
+      ]
     },
     {
       "id": "i-adjective-adverb",
@@ -1985,9 +2178,14 @@
       "level": "n5",
       "name": "Na-adjective predicate",
       "pattern": "～だ / ～です",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-11"
+        }
+      ]
     },
     {
       "id": "na-adjective-attributive",
@@ -2003,9 +2201,14 @@
       "level": "n5",
       "name": "Negative na-adjectives",
       "pattern": "～じゃない / ～ではありません",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-02"
+        }
+      ]
     },
     {
       "id": "na-adjective-past",
@@ -2021,9 +2224,14 @@
       "level": "n5",
       "name": "Past-negative na-adjectives",
       "pattern": "～じゃなかった / ～ではありませんでした",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-13"
+        }
+      ]
     },
     {
       "id": "na-adjective-adverb",
@@ -2044,9 +2252,14 @@
       "level": "n5",
       "name": "Connecting descriptions",
       "pattern": "～くて / ～で",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-13"
+        }
+      ]
     },
     {
       "id": "naru-change",
@@ -2103,9 +2316,14 @@
       "level": "n5",
       "name": "Likes and dislikes",
       "pattern": "noun が好き / 嫌い",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-02"
+        }
+      ]
     },
     {
       "id": "no-ga-suki",
@@ -2206,9 +2424,22 @@
       "level": "n5",
       "name": "Comparison baseline",
       "pattern": "A より B",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 3,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-06"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-11"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-17"
+        }
+      ]
     },
     {
       "id": "hou-ga-comparison",
@@ -2260,17 +2491,22 @@
       "level": "n5",
       "name": "General つ counter",
       "pattern": "一つ～十",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-07"
+        }
+      ]
     },
     {
       "id": "common-counters",
       "level": "n5",
       "name": "Common classifiers",
       "pattern": "人 / 枚 / 本 / 冊 / 台 / 匹 / 回 / 階 / 歳",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -2279,6 +2515,10 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-03"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-16"
         }
       ]
     },
@@ -2355,18 +2595,36 @@
       "level": "n5",
       "name": "Basic degree adverbs",
       "pattern": "とても / ちょっと / あまり～ない / 全然～ない",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 3,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-02"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-13"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-18"
+        }
+      ]
     },
     {
       "id": "frequency-adverbs",
       "level": "n5",
       "name": "Basic frequency adverbs",
       "pattern": "いつも / よく / ときどき / あまり～ない / 全然～ない",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-03"
+        }
+      ]
     },
     {
       "id": "ageru",
@@ -2410,9 +2668,14 @@
       "level": "n5",
       "name": "Do for someone",
       "pattern": "～てあげる",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-20"
+        }
+      ]
     },
     {
       "id": "te-kureru",
@@ -2433,9 +2696,14 @@
       "level": "n5",
       "name": "Have someone do",
       "pattern": "～てもらう",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-12"
+        }
+      ]
     },
     {
       "id": "kosoado-pronouns",
@@ -2617,8 +2885,8 @@
       "level": "n5",
       "name": "Say and be called",
       "pattern": "～と言う",
-      "sentences": 4,
-      "passages": 2,
+      "sentences": 9,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -2635,6 +2903,26 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-06"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-06"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-09"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-15"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-17"
+        },
+        {
+          "passageId": "a-cake-for-mum",
+          "sentenceId": "reading-birthday-cake-19"
         }
       ]
     },

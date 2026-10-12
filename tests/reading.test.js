@@ -46,6 +46,61 @@ test("the new N5 library story is distinct, roughly twenty sentences, and has gr
   assert.match(library.questions[0].explanation.fr, /premier étage/u);
 });
 
+test("the N5 birthday story has a different plot, grounded questions, and previously unused reading grammar", async () => {
+  const cake = prepared.find(({ id }) => id === "a-cake-for-mum");
+  assert.ok(cake);
+  assert.equal(cake.level, "n5");
+  assert.ok(cake.sentences.length >= 18 && cake.sentences.length <= 22);
+  assert.equal(cake.questions.length, 5);
+  assert.equal(new Set(cake.sentences.map(({ paragraph }) => paragraph)).size, 5);
+  const others = prepared.filter(({ id }) => id !== cake.id).flatMap(({ sentences }) => sentences);
+  const existingText = new Set(others.map(({ text }) => text));
+  assert.ok(cake.sentences.every(({ text }) => !existingText.has(text)));
+  const previousPoints = new Set(others.flatMap(({ grammarPointIds }) => grammarPointIds));
+  for (const [number, point, surface] of [
+    [6, "yori-comparison", "これより小さい"],
+    [7, "shika-nai-limitation", "三つしかありませんでした"],
+    [9, "dake-limitation", "少しだけ"],
+    [10, "no-nominalizer", "作るのは"],
+    [13, "na-adjective-past-negative", "きれいではありませんでした"],
+    [14, "mada-te-inai", "まだ帰っていませんでした"],
+    [15, "naide-kudasai", "まだ食べないでください"],
+    [19, "no-noun-omission", "大きいのを"]
+  ]) {
+    const sentence = cake.sentences[number - 1];
+    assert.ok(sentence.text.includes(surface));
+    assert.ok(sentence.grammarPointIds.includes(point));
+    assert.ok(!previousPoints.has(point), point);
+  }
+  const byId = new Map(cake.sentences.map((sentence) => [sentence.id, sentence]));
+  for (const question of cake.questions) {
+    assert.ok(question.prompt.en && question.prompt.fr);
+    assert.ok(question.evidenceSentenceIds.every((id) => byId.has(id)));
+  }
+  const answer = (id) => cake.questions.find((question) => question.id === id).answerId;
+  assert.equal(answer("birthday"), "mother");
+  assert.equal(answer("usual-cake"), "home");
+  assert.equal(answer("ingredients"), "all-eggs-little-sugar");
+  assert.equal(answer("waiting"), "three");
+  assert.equal(answer("result"), "tastier");
+  const responses = Object.fromEntries(cake.questions.map(({ id, answerId }) => [id, answerId]));
+  assert.equal(gradeAnswers(cake, responses).correct, 5);
+  responses.result = "pretty";
+  assert.equal(gradeAnswers(cake, responses).correct, 4, "good taste does not imply good appearance");
+  assert.match(cake.sentences[6].tokens.map((token) => token.reading || token.surface).join(""), /みっつ/u);
+  assert.match(cake.sentences[15].tokens.map((token) => token.reading || token.surface).join(""), /さんにん/u);
+  const exercises = await readJson("data/exercises.json");
+  const pair = exercises.filter(({ readingSentenceId }) => readingSentenceId === cake.sentences[12].id);
+  assert.equal(pair.length, 2);
+  for (const exercise of pair) {
+    const connective = exercise.grammarHighlights.find(({ grammarPointId }) => grammarPointId === "adjective-connective");
+    assert.ok(connective);
+    assert.equal(exercise.tokens.slice(connective.tokenStart, connective.tokenEnd)
+      .map(({ surface }) => surface).join(""), "小さくて", "highlight the connective, not the negative copula");
+    assert.ok(!exercise.grammarPointIds.includes("i-adjective-past-negative"), "きれい is a na-adjective");
+  }
+});
+
 test("story search is localized and accent-insensitive, level-aware, and paginated without changing content", () => {
   const original = JSON.stringify(prepared);
   assert.deepEqual(filterPassages(prepared, { query: "BIBLIOTHEQUE chats", locale: "fr" }).map(({ id }) => id), ["my-first-library-card"]);
@@ -322,13 +377,13 @@ test("every story sentence joins the grammar pool in both directions with the or
   }
 });
 
-test("library grammar cards have localized dictionary hints for the exact vocabulary in their Japanese answers", async () => {
+test("all story grammar cards have localized dictionary hints for the exact vocabulary in their Japanese answers", async () => {
   const [exercises, french] = await Promise.all([
     readJson("data/exercises.json"), readJson("data/locales/fr/exercises.json")
   ]);
   const productions = exercises.filter((exercise) => exercise.type === "production" &&
-    exercise.readingSentenceId?.startsWith("reading-library-card-"));
-  assert.equal(productions.length, 20);
+    exercise.readingSentenceId);
+  assert.equal(productions.length, prepared.flatMap(({ sentences }) => sentences).length);
   for (const exercise of productions) {
     assert.ok(exercise.promptVocabularyHints.length > 0);
     const localized = french[exercise.id];
@@ -451,8 +506,11 @@ test("borrowed sentences never trigger duplicate lesson voice generation or bypa
   assert.ok(lessons.every((item) => item.readingSentenceId === undefined));
   const voices = createReadingVoiceItems(sources);
   assert.equal(voices.length, sources.flatMap(({ sentences }) => sentences).length);
-  assert.deepEqual(voices.filter((item) => item.skipVoiceGeneration).map((item) => item.id), [
-    "reading-sunday-park-07", "reading-sunday-park-14"
-  ]);
+  const excluded = voices.filter((item) => item.skipVoiceGeneration).map((item) => item.id);
+  assert.deepEqual(excluded, sources.flatMap(({ sentences }) => sentences)
+    .filter((sentence) => sentence.skipVoiceGeneration).map(({ id }) => id));
+  for (const id of ["reading-sunday-park-07", "reading-sunday-park-14", "reading-birthday-cake-04"]) {
+    assert.ok(excluded.includes(id), "repeatedly rejected audio stays excluded");
+  }
   assert.equal(new Set(voices.map((item) => item.id)).size, voices.length);
 });

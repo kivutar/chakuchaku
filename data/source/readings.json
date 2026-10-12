@@ -188,5 +188,451 @@
         "evidenceSentenceIds": ["reading-library-card-12"]
       }
     ]
+  },
+  {
+    "id": "a-cake-for-mum",
+    "level": "n5",
+    "title": {
+      "en": "A cake for Mum",
+      "fr": "Un gâteau pour maman"
+    },
+    "description": {
+      "en": "A first homemade birthday cake: only three eggs, an uneven result, and a surprise at the table.",
+      "fr": "Un premier gâteau d’anniversaire maison : seulement trois œufs, un résultat peu joli et une surprise à table."
+    },
+    "sentences": [
+      {
+        "id": "reading-birthday-cake-01",
+        "paragraph": 1,
+        "text": "昨日は母の誕生日でした。",
+        "grammarPointIds": [
+          "copula-past",
+          "no-possession"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-02",
+        "paragraph": 1,
+        "text": "母は甘い物が好きですが、私は料理があまり上手ではありません。",
+        "grammarPointIds": [
+          "suki-kirai",
+          "ga-contrast",
+          "degree-adverbs",
+          "na-adjective-negative"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-03",
+        "paragraph": 1,
+        "text": "いつもは店でケーキを買います。",
+        "grammarPointIds": [
+          "frequency-adverbs",
+          "de-action-location",
+          "verb-masu"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-04",
+        "paragraph": 1,
+        "text": "でも、今年は兄と家で作りました。",
+        "skipVoiceGeneration": true,
+        "grammarPointIds": [
+          "demo-connector",
+          "to-companion",
+          "de-action-location"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-05",
+        "paragraph": 2,
+        "text": "父が作ったケーキの写真を見ました。",
+        "grammarPointIds": [
+          "relative-clause",
+          "no-possession",
+          "o-object"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-06",
+        "paragraph": 2,
+        "text": "「これより小さいケーキを作りましょう」と兄が言いました。",
+        "grammarPointIds": [
+          "yori-comparison",
+          "mashou",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-07",
+        "paragraph": 2,
+        "text": "台所には卵が三つしかありませんでした。",
+        "grammarPointIds": [
+          "shika-nai-limitation",
+          "tsu-counter",
+          "ni-existence-location"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-08",
+        "paragraph": 2,
+        "text": "「卵は全部使ってもいいですか」と父に聞きました。",
+        "grammarPointIds": [
+          "te-mo-ii",
+          "ka-question",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-09",
+        "paragraph": 3,
+        "text": "父は「いいですよ。でも、砂糖は少しだけ入れてください」と言いました。",
+        "grammarPointIds": [
+          "dake-limitation",
+          "te-kudasai",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-10",
+        "paragraph": 3,
+        "text": "ケーキを作るのは初めてだったので、時間がかかりました。",
+        "grammarPointIds": [
+          "no-nominalizer",
+          "node-reason",
+          "verb-mashita"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-11",
+        "paragraph": 3,
+        "text": "兄は私より料理が上手です。",
+        "grammarPointIds": [
+          "yori-comparison",
+          "na-adjective-predicate"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-12",
+        "paragraph": 3,
+        "text": "兄に教えてもらって、小さなケーキができました。",
+        "grammarPointIds": [
+          "te-morau",
+          "te-action-link",
+          "ga-subject"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-13",
+        "paragraph": 4,
+        "text": "ケーキは小さくて、あまりきれいではありませんでした。",
+        "grammarPointIds": [
+          "adjective-connective",
+          "degree-adverbs",
+          "na-adjective-past-negative"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-14",
+        "paragraph": 4,
+        "text": "母はまだ帰っていませんでした。",
+        "grammarPointIds": [
+          "mada-te-inai",
+          "wa-topic"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-15",
+        "paragraph": 4,
+        "text": "「まだ食べないでください」と兄が言いました。",
+        "grammarPointIds": [
+          "naide-kudasai",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-16",
+        "paragraph": 4,
+        "text": "母が帰る前に、三人でケーキをテーブルに置きました。",
+        "grammarPointIds": [
+          "mae-ni",
+          "common-counters",
+          "ni-destination"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-17",
+        "paragraph": 5,
+        "text": "母はケーキを少し食べて、「店のケーキよりおいしいですよ」と言いました。",
+        "grammarPointIds": [
+          "te-action-link",
+          "yori-comparison",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-18",
+        "paragraph": 5,
+        "text": "ケーキはあまり甘くありませんでしたが、おいしかったです。",
+        "grammarPointIds": [
+          "degree-adverbs",
+          "i-adjective-past-negative",
+          "ga-contrast",
+          "i-adjective-past"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-19",
+        "paragraph": 5,
+        "text": "兄は「来年はもっと大きいのを作りたいです」と言いました。",
+        "grammarPointIds": [
+          "no-noun-omission",
+          "tai-desire",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-birthday-cake-20",
+        "paragraph": 5,
+        "text": "来年も、母にケーキを作ってあげたいです。",
+        "grammarPointIds": [
+          "te-ageru",
+          "tai-desire",
+          "mo-addition"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "birthday",
+        "prompt": {
+          "en": "Whose birthday was it?",
+          "fr": "De qui était-ce l’anniversaire ?"
+        },
+        "choices": [
+          {
+            "id": "father",
+            "label": {
+              "en": "The father's",
+              "fr": "Du père"
+            }
+          },
+          {
+            "id": "brother",
+            "label": {
+              "en": "The older brother's",
+              "fr": "Du grand frère"
+            }
+          },
+          {
+            "id": "mother",
+            "label": {
+              "en": "The mother's",
+              "fr": "De la mère"
+            }
+          },
+          {
+            "id": "narrator",
+            "label": {
+              "en": "The narrator's",
+              "fr": "De la personne qui raconte"
+            }
+          }
+        ],
+        "answerId": "mother",
+        "explanation": {
+          "en": "The first sentence says it was the mother's birthday. The father and older brother helped with the cake; it was not their birthday.",
+          "fr": "La première phrase indique que c’était l’anniversaire de la mère. Le père et le grand frère ont participé au gâteau, mais ce n’était pas leur anniversaire."
+        },
+        "evidenceSentenceIds": [
+          "reading-birthday-cake-01"
+        ]
+      },
+      {
+        "id": "usual-cake",
+        "prompt": {
+          "en": "What was different about the cake this year?",
+          "fr": "Qu’est-ce qui était différent pour le gâteau cette année ?"
+        },
+        "choices": [
+          {
+            "id": "home",
+            "label": {
+              "en": "It was made at home instead of bought at a shop",
+              "fr": "Il a été fait à la maison au lieu d’être acheté en magasin"
+            }
+          },
+          {
+            "id": "larger",
+            "label": {
+              "en": "It was bigger than the one in the photo",
+              "fr": "Il était plus grand que celui de la photo"
+            }
+          },
+          {
+            "id": "bought",
+            "label": {
+              "en": "The older brother bought it at a shop",
+              "fr": "Le grand frère l’a acheté en magasin"
+            }
+          },
+          {
+            "id": "no-cake",
+            "label": {
+              "en": "There was no birthday cake",
+              "fr": "Il n’y avait pas de gâteau d’anniversaire"
+            }
+          }
+        ],
+        "answerId": "home",
+        "explanation": {
+          "en": "They usually buy a cake, but this year the narrator made one at home with the older brother. The brother suggested making it smaller than the cake in the photo.",
+          "fr": "D’habitude, ils achètent un gâteau. Cette année, la personne qui raconte en a fait un à la maison avec son grand frère. Celui-ci a proposé un gâteau plus petit que celui de la photo."
+        },
+        "evidenceSentenceIds": [
+          "reading-birthday-cake-03",
+          "reading-birthday-cake-04",
+          "reading-birthday-cake-06"
+        ]
+      },
+      {
+        "id": "ingredients",
+        "prompt": {
+          "en": "What did the father say about the ingredients?",
+          "fr": "Qu’a dit le père au sujet des ingrédients ?"
+        },
+        "choices": [
+          {
+            "id": "no-eggs",
+            "label": {
+              "en": "Do not use the eggs",
+              "fr": "Ne pas utiliser les œufs"
+            }
+          },
+          {
+            "id": "all-sugar",
+            "label": {
+              "en": "Use all the sugar",
+              "fr": "Utiliser tout le sucre"
+            }
+          },
+          {
+            "id": "more-eggs",
+            "label": {
+              "en": "Buy three more eggs",
+              "fr": "Acheter trois œufs de plus"
+            }
+          },
+          {
+            "id": "all-eggs-little-sugar",
+            "label": {
+              "en": "All the eggs could be used, but only a little sugar should be added",
+              "fr": "On pouvait utiliser tous les œufs, mais il fallait mettre seulement un peu de sucre"
+            }
+          }
+        ],
+        "answerId": "all-eggs-little-sugar",
+        "explanation": {
+          "en": "There were only three eggs. The narrator asked to use all of them, and the father agreed. 少しだけ limits the sugar to just a small amount.",
+          "fr": "Il n’y avait que trois œufs. Le père a autorisé leur utilisation à tous, mais 少しだけ limite le sucre à une petite quantité."
+        },
+        "evidenceSentenceIds": [
+          "reading-birthday-cake-07",
+          "reading-birthday-cake-08",
+          "reading-birthday-cake-09"
+        ]
+      },
+      {
+        "id": "waiting",
+        "prompt": {
+          "en": "Who put the cake on the table before the mother came home?",
+          "fr": "Qui a posé le gâteau sur la table avant le retour de la mère ?"
+        },
+        "choices": [
+          {
+            "id": "mother",
+            "label": {
+              "en": "The mother alone",
+              "fr": "La mère seule"
+            }
+          },
+          {
+            "id": "three",
+            "label": {
+              "en": "The narrator, older brother, and father",
+              "fr": "La personne qui raconte, son grand frère et son père"
+            }
+          },
+          {
+            "id": "brother",
+            "label": {
+              "en": "The older brother and mother",
+              "fr": "Le grand frère et la mère"
+            }
+          },
+          {
+            "id": "four",
+            "label": {
+              "en": "All four family members together",
+              "fr": "Les quatre membres de la famille ensemble"
+            }
+          }
+        ],
+        "answerId": "three",
+        "explanation": {
+          "en": "The mother had not come home yet. 三人 refers to the three people already there: the narrator, older brother, and father. 前に places setting out the cake before her return.",
+          "fr": "La mère n’était pas encore rentrée. 三人 désigne les trois personnes présentes : la personne qui raconte, son grand frère et son père. 前に situe cette action avant le retour de la mère."
+        },
+        "evidenceSentenceIds": [
+          "reading-birthday-cake-14",
+          "reading-birthday-cake-16"
+        ]
+      },
+      {
+        "id": "result",
+        "prompt": {
+          "en": "What did the mother think of the cake?",
+          "fr": "Qu’a pensé la mère du gâteau ?"
+        },
+        "choices": [
+          {
+            "id": "too-sweet",
+            "label": {
+              "en": "It was too sweet to eat",
+              "fr": "Il était trop sucré pour être mangé"
+            }
+          },
+          {
+            "id": "pretty",
+            "label": {
+              "en": "It looked prettier than a shop-bought cake",
+              "fr": "Il était plus joli qu’un gâteau de magasin"
+            }
+          },
+          {
+            "id": "tastier",
+            "label": {
+              "en": "It tasted better than a shop-bought cake",
+              "fr": "Il était meilleur qu’un gâteau de magasin"
+            }
+          },
+          {
+            "id": "no-taste",
+            "label": {
+              "en": "She did not taste it",
+              "fr": "Elle ne l’a pas goûté"
+            }
+          }
+        ],
+        "answerId": "tastier",
+        "explanation": {
+          "en": "The cake was not very pretty, but the mother tasted it and said it was more delicious than a shop-bought cake. より compares taste, not appearance.",
+          "fr": "Le gâteau n’était pas très joli, mais la mère l’a goûté et l’a trouvé meilleur qu’un gâteau de magasin. より compare ici le goût, pas l’apparence."
+        },
+        "evidenceSentenceIds": [
+          "reading-birthday-cake-13",
+          "reading-birthday-cake-17"
+        ]
+      }
+    ]
   }
 ]

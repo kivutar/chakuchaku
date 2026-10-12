@@ -9773,5 +9773,285 @@
         ]
       }
     ]
+  },
+  "story-birthday-cake-birthday": {
+    "translation": "Hier, c’était l’anniversaire de ma mère."
+  },
+  "production-story-birthday-cake-birthday": {
+    "translation": "Hier, c’était l’anniversaire de ma mère.",
+    "promptVocabularyHints": [
+      {
+        "word": "anniversaire",
+        "vocabularyIds": [
+          "vocab-5841d3db2c97"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-cooking-confidence": {
+    "translation": "Ma mère aime les choses sucrées, mais je ne suis pas très doué en cuisine."
+  },
+  "production-story-birthday-cake-cooking-confidence": {
+    "translation": "Ma mère aime les choses sucrées, mais je ne suis pas très doué en cuisine.",
+    "promptVocabularyHints": [
+      {
+        "word": "cuisine",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-usual-shop-cake": {
+    "translation": "D’habitude, nous achetons un gâteau dans un magasin."
+  },
+  "production-story-birthday-cake-usual-shop-cake": {
+    "translation": "D’habitude, nous achetons un gâteau dans un magasin.",
+    "promptVocabularyHints": [
+      {
+        "word": "magasin",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-homemade-this-year": {
+    "translation": "Mais cette année, j’en ai fait un à la maison avec mon grand frère."
+  },
+  "production-story-birthday-cake-homemade-this-year": {
+    "translation": "Mais cette année, j’en ai fait un à la maison avec mon grand frère.",
+    "promptVocabularyHints": [
+      {
+        "word": "maison",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-fathers-cake-photo": {
+    "translation": "J’ai regardé une photo d’un gâteau que mon père avait fait."
+  },
+  "production-story-birthday-cake-fathers-cake-photo": {
+    "translation": "J’ai regardé une photo d’un gâteau que mon père avait fait.",
+    "promptVocabularyHints": [
+      {
+        "word": "photo",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-smaller-cake-suggestion": {
+    "translation": "Mon grand frère a dit : « Faisons un gâteau plus petit que celui-ci. »"
+  },
+  "production-story-birthday-cake-smaller-cake-suggestion": {
+    "translation": "Mon grand frère a dit : « Faisons un gâteau plus petit que celui-ci. »",
+    "promptVocabularyHints": [
+      {
+        "word": "gâteau",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-three-eggs-only": {
+    "translation": "Il n’y avait que trois œufs dans la cuisine."
+  },
+  "production-story-birthday-cake-three-eggs-only": {
+    "translation": "Il n’y avait que trois œufs dans la cuisine.",
+    "promptVocabularyHints": [
+      {
+        "word": "œufs",
+        "vocabularyIds": [
+          "vocab-190923f1528e"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-permission-to-use-eggs": {
+    "translation": "J’ai demandé à mon père : « Est-ce que je peux utiliser tous les œufs ? »"
+  },
+  "production-story-birthday-cake-permission-to-use-eggs": {
+    "translation": "J’ai demandé à mon père : « Est-ce que je peux utiliser tous les œufs ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "œufs",
+        "vocabularyIds": [
+          "vocab-190923f1528e"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-just-a-little-sugar": {
+    "translation": "Mon père a dit : « Oui, tu peux. Mais mets seulement un peu de sucre, s’il te plaît. »"
+  },
+  "production-story-birthday-cake-just-a-little-sugar": {
+    "translation": "Mon père a dit : « Oui, tu peux. Mais mets seulement un peu de sucre, s’il te plaît. »",
+    "promptVocabularyHints": [
+      {
+        "word": "sucre",
+        "vocabularyIds": [
+          "vocab-bbd430030244"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-first-time-takes-time": {
+    "translation": "Cela a pris du temps, car c’était la première fois que je faisais un gâteau."
+  },
+  "production-story-birthday-cake-first-time-takes-time": {
+    "translation": "Cela a pris du temps, car c’était la première fois que je faisais un gâteau.",
+    "promptVocabularyHints": [
+      {
+        "word": "temps",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-brother-better-at-cooking": {
+    "translation": "Mon grand frère cuisine mieux que moi."
+  },
+  "production-story-birthday-cake-brother-better-at-cooking": {
+    "translation": "Mon grand frère cuisine mieux que moi.",
+    "promptVocabularyHints": [
+      {
+        "word": "cuisine",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-brother-teaches": {
+    "translation": "Mon grand frère m’a montré comment faire, et nous avons fait un petit gâteau."
+  },
+  "production-story-birthday-cake-brother-teaches": {
+    "translation": "Mon grand frère m’a montré comment faire, et nous avons fait un petit gâteau.",
+    "promptVocabularyHints": [
+      {
+        "word": "gâteau",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-not-a-pretty-cake": {
+    "translation": "Le gâteau était petit et pas très joli."
+  },
+  "production-story-birthday-cake-not-a-pretty-cake": {
+    "translation": "Le gâteau était petit et pas très joli.",
+    "promptVocabularyHints": [
+      {
+        "word": "gâteau",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-mother-not-home-yet": {
+    "translation": "Ma mère n’était pas encore rentrée."
+  },
+  "production-story-birthday-cake-mother-not-home-yet": {
+    "translation": "Ma mère n’était pas encore rentrée.",
+    "promptVocabularyHints": [
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-wait-to-taste": {
+    "translation": "Mon grand frère a dit : « Ne le mange pas encore, s’il te plaît. »"
+  },
+  "production-story-birthday-cake-wait-to-taste": {
+    "translation": "Mon grand frère a dit : « Ne le mange pas encore, s’il te plaît. »",
+    "promptVocabularyHints": [
+      {
+        "word": "frère",
+        "vocabularyIds": [
+          "vocab-cda9169e9fa2"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-set-out-cake": {
+    "translation": "Avant le retour de ma mère, nous avons posé le gâteau sur la table tous les trois."
+  },
+  "production-story-birthday-cake-set-out-cake": {
+    "translation": "Avant le retour de ma mère, nous avons posé le gâteau sur la table tous les trois.",
+    "promptVocabularyHints": [
+      {
+        "word": "table",
+        "vocabularyIds": [
+          "vocab-f1af08d4c51c"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-mother-likes-cake": {
+    "translation": "Ma mère a mangé un peu de gâteau et a dit : « Il est meilleur qu’un gâteau acheté en magasin. »"
+  },
+  "production-story-birthday-cake-mother-likes-cake": {
+    "translation": "Ma mère a mangé un peu de gâteau et a dit : « Il est meilleur qu’un gâteau acheté en magasin. »",
+    "promptVocabularyHints": [
+      {
+        "word": "gâteau",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-not-too-sweet": {
+    "translation": "Le gâteau n’était pas très sucré, mais il était délicieux."
+  },
+  "production-story-birthday-cake-not-too-sweet": {
+    "translation": "Le gâteau n’était pas très sucré, mais il était délicieux.",
+    "promptVocabularyHints": [
+      {
+        "word": "sucré",
+        "vocabularyIds": [
+          "vocab-3661d8e205a0"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-bigger-one-next-year": {
+    "translation": "Mon grand frère a dit : « L’année prochaine, j’aimerais en faire un plus grand. »"
+  },
+  "production-story-birthday-cake-bigger-one-next-year": {
+    "translation": "Mon grand frère a dit : « L’année prochaine, j’aimerais en faire un plus grand. »",
+    "promptVocabularyHints": [
+      {
+        "word": "année",
+        "vocabularyIds": [
+          "vocab-fb3e6c8865d4"
+        ]
+      }
+    ]
+  },
+  "story-birthday-cake-bake-for-mother-again": {
+    "translation": "J’aimerais faire un gâteau pour ma mère l’année prochaine aussi."
+  },
+  "production-story-birthday-cake-bake-for-mother-again": {
+    "translation": "J’aimerais faire un gâteau pour ma mère l’année prochaine aussi.",
+    "promptVocabularyHints": [
+      {
+        "word": "gâteau",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
   }
 }

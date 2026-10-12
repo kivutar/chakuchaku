@@ -18822,5 +18822,581 @@
         ]
       }
     ]
+  },
+  {
+    "id": "story-birthday-cake-birthday",
+    "readingSentenceId": "reading-birthday-cake-01",
+    "solution": "Yesterday was my mother's birthday.",
+    "grammarPointIds": [
+      "copula-past",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-birthday",
+    "readingSentenceId": "reading-birthday-cake-01",
+    "type": "production",
+    "text": "Yesterday was my mother's birthday.",
+    "grammarPointIds": [
+      "copula-past",
+      "no-possession"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "birthday",
+        "vocabularyIds": [
+          "vocab-5841d3db2c97"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-cooking-confidence",
+    "readingSentenceId": "reading-birthday-cake-02",
+    "solution": "My mother likes sweet things, but I am not very good at cooking.",
+    "grammarPointIds": [
+      "suki-kirai",
+      "ga-contrast",
+      "degree-adverbs",
+      "na-adjective-negative"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-cooking-confidence",
+    "readingSentenceId": "reading-birthday-cake-02",
+    "type": "production",
+    "text": "My mother likes sweet things, but I am not very good at cooking.",
+    "grammarPointIds": [
+      "suki-kirai",
+      "ga-contrast",
+      "degree-adverbs",
+      "na-adjective-negative"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cooking",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-usual-shop-cake",
+    "readingSentenceId": "reading-birthday-cake-03",
+    "solution": "We usually buy a cake at a shop.",
+    "grammarPointIds": [
+      "frequency-adverbs",
+      "de-action-location",
+      "verb-masu"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-usual-shop-cake",
+    "readingSentenceId": "reading-birthday-cake-03",
+    "type": "production",
+    "text": "We usually buy a cake at a shop.",
+    "grammarPointIds": [
+      "frequency-adverbs",
+      "de-action-location",
+      "verb-masu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "shop",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-homemade-this-year",
+    "readingSentenceId": "reading-birthday-cake-04",
+    "solution": "But this year, I made one at home with my older brother.",
+    "grammarPointIds": [
+      "demo-connector",
+      "to-companion",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-homemade-this-year",
+    "readingSentenceId": "reading-birthday-cake-04",
+    "type": "production",
+    "text": "But this year, I made one at home with my older brother.",
+    "grammarPointIds": [
+      "demo-connector",
+      "to-companion",
+      "de-action-location"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-fathers-cake-photo",
+    "readingSentenceId": "reading-birthday-cake-05",
+    "solution": "I looked at a photo of a cake my father had made.",
+    "grammarPointIds": [
+      "relative-clause",
+      "no-possession",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-fathers-cake-photo",
+    "readingSentenceId": "reading-birthday-cake-05",
+    "type": "production",
+    "text": "I looked at a photo of a cake my father had made.",
+    "grammarPointIds": [
+      "relative-clause",
+      "no-possession",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "photo",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-smaller-cake-suggestion",
+    "readingSentenceId": "reading-birthday-cake-06",
+    "solution": "My older brother said, “Let's make a smaller cake than this one.”",
+    "grammarPointIds": [
+      "yori-comparison",
+      "mashou",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-smaller-cake-suggestion",
+    "readingSentenceId": "reading-birthday-cake-06",
+    "type": "production",
+    "text": "My older brother said, “Let's make a smaller cake than this one.”",
+    "grammarPointIds": [
+      "yori-comparison",
+      "mashou",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cake",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-three-eggs-only",
+    "readingSentenceId": "reading-birthday-cake-07",
+    "solution": "There were only three eggs in the kitchen.",
+    "grammarPointIds": [
+      "shika-nai-limitation",
+      "tsu-counter",
+      "ni-existence-location"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-three-eggs-only",
+    "readingSentenceId": "reading-birthday-cake-07",
+    "type": "production",
+    "text": "There were only three eggs in the kitchen.",
+    "grammarPointIds": [
+      "shika-nai-limitation",
+      "tsu-counter",
+      "ni-existence-location"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "eggs",
+        "vocabularyIds": [
+          "vocab-190923f1528e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-permission-to-use-eggs",
+    "readingSentenceId": "reading-birthday-cake-08",
+    "solution": "I asked my father, “May I use all the eggs?”",
+    "grammarPointIds": [
+      "te-mo-ii",
+      "ka-question",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-permission-to-use-eggs",
+    "readingSentenceId": "reading-birthday-cake-08",
+    "type": "production",
+    "text": "I asked my father, “May I use all the eggs?”",
+    "grammarPointIds": [
+      "te-mo-ii",
+      "ka-question",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "eggs",
+        "vocabularyIds": [
+          "vocab-190923f1528e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-just-a-little-sugar",
+    "readingSentenceId": "reading-birthday-cake-09",
+    "solution": "My father said, “Yes, you may. But please add just a little sugar.”",
+    "grammarPointIds": [
+      "dake-limitation",
+      "te-kudasai",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-just-a-little-sugar",
+    "readingSentenceId": "reading-birthday-cake-09",
+    "type": "production",
+    "text": "My father said, “Yes, you may. But please add just a little sugar.”",
+    "grammarPointIds": [
+      "dake-limitation",
+      "te-kudasai",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "sugar",
+        "vocabularyIds": [
+          "vocab-bbd430030244"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-first-time-takes-time",
+    "readingSentenceId": "reading-birthday-cake-10",
+    "solution": "It took some time because it was my first time making a cake.",
+    "grammarPointIds": [
+      "no-nominalizer",
+      "node-reason",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-first-time-takes-time",
+    "readingSentenceId": "reading-birthday-cake-10",
+    "type": "production",
+    "text": "It took some time because it was my first time making a cake.",
+    "grammarPointIds": [
+      "no-nominalizer",
+      "node-reason",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "time",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-brother-better-at-cooking",
+    "readingSentenceId": "reading-birthday-cake-11",
+    "solution": "My older brother is better at cooking than I am.",
+    "grammarPointIds": [
+      "yori-comparison",
+      "na-adjective-predicate"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-brother-better-at-cooking",
+    "readingSentenceId": "reading-birthday-cake-11",
+    "type": "production",
+    "text": "My older brother is better at cooking than I am.",
+    "grammarPointIds": [
+      "yori-comparison",
+      "na-adjective-predicate"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cooking",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-brother-teaches",
+    "readingSentenceId": "reading-birthday-cake-12",
+    "solution": "My older brother showed me how, and we made a small cake.",
+    "grammarPointIds": [
+      "te-morau",
+      "te-action-link",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-brother-teaches",
+    "readingSentenceId": "reading-birthday-cake-12",
+    "type": "production",
+    "text": "My older brother showed me how, and we made a small cake.",
+    "grammarPointIds": [
+      "te-morau",
+      "te-action-link",
+      "ga-subject"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cake",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-not-a-pretty-cake",
+    "readingSentenceId": "reading-birthday-cake-13",
+    "solution": "The cake was small and not very pretty.",
+    "grammarPointIds": [
+      "adjective-connective",
+      "degree-adverbs",
+      "na-adjective-past-negative"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-not-a-pretty-cake",
+    "readingSentenceId": "reading-birthday-cake-13",
+    "type": "production",
+    "text": "The cake was small and not very pretty.",
+    "grammarPointIds": [
+      "adjective-connective",
+      "degree-adverbs",
+      "na-adjective-past-negative"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cake",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-mother-not-home-yet",
+    "readingSentenceId": "reading-birthday-cake-14",
+    "solution": "My mother had not come home yet.",
+    "grammarPointIds": [
+      "mada-te-inai",
+      "wa-topic"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-mother-not-home-yet",
+    "readingSentenceId": "reading-birthday-cake-14",
+    "type": "production",
+    "text": "My mother had not come home yet.",
+    "grammarPointIds": [
+      "mada-te-inai",
+      "wa-topic"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-wait-to-taste",
+    "readingSentenceId": "reading-birthday-cake-15",
+    "solution": "My older brother said, “Please don't eat it yet.”",
+    "grammarPointIds": [
+      "naide-kudasai",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-wait-to-taste",
+    "readingSentenceId": "reading-birthday-cake-15",
+    "type": "production",
+    "text": "My older brother said, “Please don't eat it yet.”",
+    "grammarPointIds": [
+      "naide-kudasai",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "brother",
+        "vocabularyIds": [
+          "vocab-cda9169e9fa2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-set-out-cake",
+    "readingSentenceId": "reading-birthday-cake-16",
+    "solution": "Before my mother came home, the three of us put the cake on the table.",
+    "grammarPointIds": [
+      "mae-ni",
+      "common-counters",
+      "ni-destination"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-set-out-cake",
+    "readingSentenceId": "reading-birthday-cake-16",
+    "type": "production",
+    "text": "Before my mother came home, the three of us put the cake on the table.",
+    "grammarPointIds": [
+      "mae-ni",
+      "common-counters",
+      "ni-destination"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "table",
+        "vocabularyIds": [
+          "vocab-f1af08d4c51c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-mother-likes-cake",
+    "readingSentenceId": "reading-birthday-cake-17",
+    "solution": "My mother ate a little of the cake and said, “It's tastier than a shop-bought cake.”",
+    "grammarPointIds": [
+      "te-action-link",
+      "yori-comparison",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-mother-likes-cake",
+    "readingSentenceId": "reading-birthday-cake-17",
+    "type": "production",
+    "text": "My mother ate a little of the cake and said, “It's tastier than a shop-bought cake.”",
+    "grammarPointIds": [
+      "te-action-link",
+      "yori-comparison",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cake",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-not-too-sweet",
+    "readingSentenceId": "reading-birthday-cake-18",
+    "solution": "The cake was not very sweet, but it was delicious.",
+    "grammarPointIds": [
+      "degree-adverbs",
+      "i-adjective-past-negative",
+      "ga-contrast",
+      "i-adjective-past"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-not-too-sweet",
+    "readingSentenceId": "reading-birthday-cake-18",
+    "type": "production",
+    "text": "The cake was not very sweet, but it was delicious.",
+    "grammarPointIds": [
+      "degree-adverbs",
+      "i-adjective-past-negative",
+      "ga-contrast",
+      "i-adjective-past"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "sweet",
+        "vocabularyIds": [
+          "vocab-3661d8e205a0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-bigger-one-next-year",
+    "readingSentenceId": "reading-birthday-cake-19",
+    "solution": "My older brother said, “Next year, I'd like to make a bigger one.”",
+    "grammarPointIds": [
+      "no-noun-omission",
+      "tai-desire",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-bigger-one-next-year",
+    "readingSentenceId": "reading-birthday-cake-19",
+    "type": "production",
+    "text": "My older brother said, “Next year, I'd like to make a bigger one.”",
+    "grammarPointIds": [
+      "no-noun-omission",
+      "tai-desire",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "year",
+        "vocabularyIds": [
+          "vocab-fb3e6c8865d4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-birthday-cake-bake-for-mother-again",
+    "readingSentenceId": "reading-birthday-cake-20",
+    "solution": "I'd like to make a cake for my mother next year too.",
+    "grammarPointIds": [
+      "te-ageru",
+      "tai-desire",
+      "mo-addition"
+    ]
+  },
+  {
+    "id": "production-story-birthday-cake-bake-for-mother-again",
+    "readingSentenceId": "reading-birthday-cake-20",
+    "type": "production",
+    "text": "I'd like to make a cake for my mother next year too.",
+    "grammarPointIds": [
+      "te-ageru",
+      "tai-desire",
+      "mo-addition"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cake",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
   }
 ]
