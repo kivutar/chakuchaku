@@ -129,6 +129,8 @@
     <script src="conjugation.js" defer></script>
     <script src="exercise-selection.js" defer></script>
     <script src="review.js" defer></script>
+    <script src="reading.js" defer></script>
+    <script src="reading-view.js" defer></script>
     <script src="statistics.js" defer></script>
     <script src="history.js" defer></script>
     <script src="settings.js" defer></script>
@@ -247,6 +249,14 @@
           data-study-section="conjugation"
           data-i18n="section.conjugation"
         >Conjugation</a>
+        <a
+          class="profile-menu-item profile-menu-study-item"
+          href="reading"
+          role="menuitem"
+          tabindex="-1"
+          data-study-section="reading"
+          data-i18n="section.reading"
+        >Reading</a>
         <span class="profile-menu-separator" role="separator"></span>
         <button
           id="settings-menu-item"
@@ -624,6 +634,7 @@
       </div>
     </dialog>
     <main>
+      <section id="reading-view" class="reading-view" aria-labelledby="reading-title" hidden></section>
       <div class="lesson">
         <section
           id="review-progress"

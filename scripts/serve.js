@@ -17,6 +17,10 @@ const publicFiles = new Map([
   ["/katakana", ["index.html", "text/html; charset=utf-8"]],
   ["/kanji", ["index.html", "text/html; charset=utf-8"]],
   ["/vocabulary", ["index.html", "text/html; charset=utf-8"]],
+  ["/reading", ["index.html", "text/html; charset=utf-8"]],
+  ["/reading.js", ["reading.js", "text/javascript; charset=utf-8"]],
+  ["/reading-view.js", ["reading-view.js", "text/javascript; charset=utf-8"]],
+  ["/data/readings.json", ["data/readings.json", "application/json; charset=utf-8"]],
   ["/app.js", ["app.js", "text/javascript; charset=utf-8"]],
   ["/native-storage.js", ["native-storage.js", "text/javascript; charset=utf-8"]],
   ["/native.js", ["native.js", "text/javascript; charset=utf-8"]],
@@ -182,7 +186,7 @@ export function getPublicFile(pathname) {
   }
 
   const voiceMatch = pathname.match(
-    /^\/assets\/voices\/(grammar|vocab)\/([a-z0-9-]+\.m4a)$/
+    /^\/assets\/voices\/(grammar|vocab|conjugation|reading)\/([a-z0-9-]+\.m4a)$/
   );
 
   if (voiceMatch) {
@@ -206,7 +210,8 @@ export async function handleStaticRequest(request, response) {
     "/hiragana/",
     "/katakana/",
     "/kanji/",
-    "/vocabulary/"
+    "/vocabulary/",
+    "/reading/"
   ].includes(pathname)) {
     response.writeHead(308, { Location: pathname.slice(0, -1) });
     response.end();

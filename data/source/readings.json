@@ -1,0 +1,96 @@
+[
+  {
+    "id": "sunday-at-the-park",
+    "level": "n5",
+    "title": { "en": "Sunday at the park", "fr": "Un dimanche au parc" },
+    "sentences": [
+      { "id": "reading-sunday-park-01", "paragraph": 1, "text": "日曜日の朝、いい天気でした。" },
+      { "id": "reading-sunday-park-02", "paragraph": 1, "text": "妹は公園でおにぎりを食べたいと言いました。" },
+      { "id": "reading-sunday-park-03", "paragraph": 1, "text": "母は台所でおにぎりを作ってくれました。" },
+      { "id": "reading-sunday-park-04", "paragraph": 1, "text": "私は水とお茶をかばんに入れました。" },
+      { "id": "reading-sunday-park-05", "paragraph": 2, "text": "九時に妹と家を出ました。", "tokenOverrides": { "九": { "reading": "く" } } },
+      { "id": "reading-sunday-park-06", "paragraph": 2, "text": "公園までバスで二十分かかります。", "tokenOverrides": { "十": { "reading": "じゅっ" }, "分": { "reading": "ぷん" } } },
+      { "id": "reading-sunday-park-07", "paragraph": 2, "text": "でも、次のバスは三十分後に来ます。", "tokenOverrides": { "十": { "reading": "じゅっ" }, "分": { "reading": "ぷん" } }, "skipVoiceGeneration": true },
+      { "id": "reading-sunday-park-08", "paragraph": 2, "text": "妹は待ちたくないと言いました。" },
+      { "id": "reading-sunday-park-09", "paragraph": 3, "text": "公園は遠くないので、二人で歩いて行きました。", "tokenOverrides": { "二": { "reading": "ふた" }, "人": { "reading": "り" } } },
+      { "id": "reading-sunday-park-10", "paragraph": 3, "text": "道で友達に会いました。" },
+      { "id": "reading-sunday-park-11", "paragraph": 3, "text": "友達も一緒に公園へ行きました。" },
+      { "id": "reading-sunday-park-12", "paragraph": 3, "text": "公園には大きな池があります。" },
+      { "id": "reading-sunday-park-13", "paragraph": 4, "text": "池の近くに座りました。" },
+      { "id": "reading-sunday-park-14", "paragraph": 4, "text": "おにぎりを食べて、学校の話をしました。", "skipVoiceGeneration": true },
+      { "id": "reading-sunday-park-15", "paragraph": 4, "text": "妹は水を飲みました。" },
+      { "id": "reading-sunday-park-16", "paragraph": 4, "text": "友達は家族に見せる写真を撮りました。" },
+      { "id": "reading-sunday-park-17", "paragraph": 5, "text": "午後、空が暗くなりました。" },
+      { "id": "reading-sunday-park-18", "paragraph": 5, "text": "雨が降ったので、早く帰りました。" },
+      { "id": "reading-sunday-park-19", "paragraph": 5, "text": "三人でバスに乗って帰りました。" },
+      { "id": "reading-sunday-park-20", "paragraph": 5, "text": "家で母に公園の写真を見せました。" }
+    ],
+    "questions": [
+      {
+        "id": "lunch",
+        "prompt": { "en": "Who made the rice balls?", "fr": "Qui a préparé les onigiri ?" },
+        "choices": [
+          { "id": "sister", "label": { "en": "The younger sister", "fr": "La petite sœur" } },
+          { "id": "mother", "label": { "en": "The mother", "fr": "La mère" } },
+          { "id": "friend", "label": { "en": "The friend", "fr": "L’ami" } },
+          { "id": "narrator", "label": { "en": "The narrator", "fr": "La personne qui raconte" } }
+        ],
+        "answerId": "mother",
+        "explanation": { "en": "The mother made rice balls in the kitchen for them. The sister suggested eating at the park; she did not prepare the food.", "fr": "La mère a préparé les onigiri dans la cuisine pour eux. La sœur a proposé de manger au parc, mais ce n’est pas elle qui a préparé le repas." },
+        "evidenceSentenceIds": ["reading-sunday-park-03"]
+      },
+      {
+        "id": "walk",
+        "prompt": { "en": "Why did they walk to the park instead of taking the bus?", "fr": "Pourquoi sont-ils allés au parc à pied plutôt qu’en bus ?" },
+        "choices": [
+          { "id": "money", "label": { "en": "They did not have any money", "fr": "Ils n’avaient pas d’argent" } },
+          { "id": "no-bus", "label": { "en": "There were no buses on Sunday", "fr": "Il n’y avait pas de bus le dimanche" } },
+          { "id": "wait", "label": { "en": "The sister did not want to wait, and the park was not far away", "fr": "La sœur ne voulait pas attendre et le parc n’était pas loin" } },
+          { "id": "rain", "label": { "en": "It was already raining", "fr": "Il pleuvait déjà" } }
+        ],
+        "answerId": "wait",
+        "explanation": { "en": "The next bus would arrive in thirty minutes. The sister did not want to wait, and the nearby park was within walking distance. Rain only came in the afternoon.", "fr": "Le prochain bus arrivait dans trente minutes. La sœur ne voulait pas attendre et le parc n’était pas loin. La pluie n’est arrivée que l’après-midi." },
+        "evidenceSentenceIds": ["reading-sunday-park-07", "reading-sunday-park-08", "reading-sunday-park-09"]
+      },
+      {
+        "id": "place",
+        "prompt": { "en": "Where did they sit down to eat?", "fr": "Où se sont-ils assis pour manger ?" },
+        "choices": [
+          { "id": "pond", "label": { "en": "Near the pond", "fr": "Près de l’étang" } },
+          { "id": "kitchen", "label": { "en": "In the mother's kitchen", "fr": "Dans la cuisine de la mère" } },
+          { "id": "bus", "label": { "en": "On the bus", "fr": "Dans le bus" } },
+          { "id": "school", "label": { "en": "In front of the school", "fr": "Devant l’école" } }
+        ],
+        "answerId": "pond",
+        "explanation": { "en": "They sat near the pond, then ate and talked about school. School was their conversation topic, not their location.", "fr": "Ils se sont assis près de l’étang, puis ont mangé et parlé de l’école. L’école était le sujet de leur conversation, pas le lieu du repas." },
+        "evidenceSentenceIds": ["reading-sunday-park-13", "reading-sunday-park-14"]
+      },
+      {
+        "id": "return",
+        "prompt": { "en": "Why did they go home early?", "fr": "Pourquoi sont-ils rentrés tôt ?" },
+        "choices": [
+          { "id": "tired", "label": { "en": "The sister was tired", "fr": "La sœur était fatiguée" } },
+          { "id": "work", "label": { "en": "The friend had to work", "fr": "L’ami devait travailler" } },
+          { "id": "mother", "label": { "en": "The mother asked them to come back", "fr": "La mère leur a demandé de rentrer" } },
+          { "id": "rain", "label": { "en": "It started raining", "fr": "Il s’est mis à pleuvoir" } }
+        ],
+        "answerId": "rain",
+        "explanation": { "en": "The sky grew dark in the afternoon, then it rained. ので connects the rain to their decision to go home early.", "fr": "Le ciel s’est assombri l’après-midi, puis il a plu. ので relie la pluie au fait de rentrer tôt." },
+        "evidenceSentenceIds": ["reading-sunday-park-17", "reading-sunday-park-18"]
+      },
+      {
+        "id": "home",
+        "prompt": { "en": "What did the narrator do after arriving home?", "fr": "Qu’a fait la personne qui raconte une fois à la maison ?" },
+        "choices": [
+          { "id": "cooking", "label": { "en": "Made rice balls for the mother", "fr": "Préparé des onigiri pour sa mère" } },
+          { "id": "photos", "label": { "en": "Showed the mother photos of the park", "fr": "Montré à sa mère des photos du parc" } },
+          { "id": "tea", "label": { "en": "Drank tea with the friend", "fr": "Bu du thé avec son ami" } },
+          { "id": "school", "label": { "en": "Went to school with the sister", "fr": "Accompagné sa sœur à l’école" } }
+        ],
+        "answerId": "photos",
+        "explanation": { "en": "The last sentence says that the narrator showed the mother photos of the park at home. 母に indicates who was shown the photos.", "fr": "La dernière phrase indique que la personne a montré à sa mère des photos du parc, à la maison. 母に précise à qui les photos sont montrées." },
+        "evidenceSentenceIds": ["reading-sunday-park-20"]
+      }
+    ]
+  }
+]

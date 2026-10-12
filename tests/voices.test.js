@@ -38,17 +38,19 @@ async function listM4aFiles(directory, relativeDirectory) {
 }
 
 test("every available AAC/M4A voice is referenced and valid", async () => {
-  const [introduction, exercises, vocabulary, conjugationCurriculum] = await Promise.all([
+  const [introduction, exercises, vocabulary, conjugationCurriculum, readings] = await Promise.all([
     readJson("data/introduction.json"),
     readJson("data/exercises.json"),
     readJson("data/jlpt-n5-vocabulary.json"),
-    readJson("data/jlpt-n5-conjugation.json")
+    readJson("data/jlpt-n5-conjugation.json"),
+    readJson("data/readings.json")
   ]);
 
   const lessons = [
     introduction,
     ...Object.values(introduction.levelVariants || {}),
-    ...exercises
+    ...exercises,
+    ...readings.flatMap(({ sentences }) => sentences)
   ];
   const availableVoicePaths = new Set();
 

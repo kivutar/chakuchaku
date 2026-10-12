@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import * as wanakana from "wanakana";
 import "../voice-paths.js";
 import "../conjugation.js";
+import "../reading.js";
 import {
   encodeLessonM4a,
   validateLessonM4a,
@@ -30,12 +31,14 @@ const legacyCacheDirectory = join(rootDirectory, ".cache", "speech");
 const voiceTargets = Object.freeze({
   lessons: "lessons",
   vocabulary: "vocabulary",
-  conjugation: "conjugation"
+  conjugation: "conjugation",
+  reading: "reading"
 });
 const voiceDirectories = Object.freeze({
   [voiceTargets.lessons]: join(rootDirectory, "assets", "voices", "grammar"),
   [voiceTargets.vocabulary]: join(rootDirectory, "assets", "voices", "vocab"),
-  [voiceTargets.conjugation]: join(rootDirectory, "assets", "voices", "conjugation")
+  [voiceTargets.conjugation]: join(rootDirectory, "assets", "voices", "conjugation"),
+  [voiceTargets.reading]: join(rootDirectory, "assets", "voices", "reading")
 });
 const speechConfiguration = {
   version: 2,
@@ -84,21 +87,22 @@ const conjugationSpeechConfiguration = {
 const usage = `Usage: npm run voices -- [--level LEVEL] [--exercise-type TYPE] [--limit COUNT] [--id ID] [--force]
        npm run voices:vocabulary -- [--level LEVEL] (--limit COUNT | --all | --coverage)
        npm run voices:conjugation -- (--limit COUNT | --all | --id ID)
+       npm run voices -- --target reading (--limit COUNT | --all | --id ID)
 
 Options:
   --limit COUNT  Generate at most COUNT missing voices with OpenAI.
                  Existing voices and local cache restores do not count.
-  --id ID        Process only the lesson, vocabulary, or conjugation item with this exact ID.
+  --id ID        Process only the item with this exact ID.
   --force        Regenerate the selected --id, bypassing existing audio and cache.
   --all          Generate every missing voice. Required instead of an implicit
-                 unlimited run when targeting vocabulary or conjugation.
+                 unlimited run when targeting vocabulary, conjugation, or reading.
   --coverage     Report vocabulary voice coverage without generating audio.
-  --level LEVEL  Limit lesson, vocabulary, or conjugation generation to one
+  --level LEVEL  Limit voice generation to one
                  JLPT level (for example, n4). Vocabulary coverage can also
                  be filtered.
   --exercise-type TYPE
                  Limit lesson generation to production or recognition exercises.
-  --target KIND  Select lessons, vocabulary, or conjugation. Defaults to lessons.
+  --target KIND  Select lessons, vocabulary, conjugation, or reading. Defaults to lessons.
   --help         Show this help.`;
 
 function parsePositiveInteger(value, option) {
@@ -149,7 +153,7 @@ export function parseVoiceGenerationArguments(arguments_) {
         : argument.slice("--target=".length);
 
       if (!Object.values(voiceTargets).includes(value)) {
-        throw new Error("--target must be lessons, vocabulary, or conjugation.");
+        throw new Error("--target must be lessons, vocabulary, conjugation, or reading.");
       }
 
       target = value;
@@ -507,6 +511,20 @@ async function readLessonSources() {
   return [introductionSource, ...introductionVariants, ...JSON.parse(exercises)];
 }
 
+export function createReadingVoiceItems(passages) {
+  globalThis.JlptN5Reading.validatePassages(passages);
+  return passages.flatMap((passage) => passage.sentences.map((sentence) => ({
+    ...sentence,
+    introducedAt: passage.level,
+    minimumLevel: passage.level
+  })));
+}
+
+async function readReadingSources() {
+  const passages = JSON.parse(await readFile(join(sourceDirectory, "readings.json"), "utf8"));
+  return createReadingVoiceItems(passages);
+}
+
 export function getLessonVoiceLevel(item) {
   if (/^n[1-5]$/u.test(item?.minimumLevel || "")) {
     return item.minimumLevel;
@@ -793,7 +811,7 @@ export async function generateVoices({
   target = voiceTargets.lessons
 } = {}) {
   if (!Object.values(voiceTargets).includes(target)) {
-    throw new Error("Voice target must be lessons, vocabulary, or conjugation.");
+    throw new Error("Voice target must be lessons, vocabulary, conjugation, or reading.");
   }
 
   if (force && !itemId) {
@@ -829,7 +847,9 @@ export async function generateVoices({
     ? await readVocabularySources()
     : target === voiceTargets.conjugation
       ? await readConjugationSources()
-      : await readLessonSources();
+      : target === voiceTargets.reading
+        ? await readReadingSources()
+        : await readLessonSources();
   const levelItems = level
     ? items.filter((item) => (
       target === voiceTargets.lessons

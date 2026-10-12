@@ -6,7 +6,8 @@ const studySections = new Set([
   "hiragana",
   "katakana",
   "kanji",
-  "vocabulary"
+  "vocabulary",
+  "reading"
 ]);
 const pathnameSection = window.location.pathname
   .replace(/\/+$/u, "")
@@ -61,6 +62,7 @@ const statisticsContent = document.querySelector("#statistics-content");
 const historyList = document.querySelector("#history-list");
 const historyEmpty = document.querySelector("#history-empty");
 const lessonElement = document.querySelector(".lesson");
+const readingElement = document.querySelector("#reading-view");
 const reviewProgress = document.querySelector("#review-progress");
 const reviewProgressTrack = document.querySelector("#review-progress-track");
 const reviewProgressCount = document.querySelector("#review-progress-count");
@@ -342,9 +344,9 @@ function revealSolutionPanel(outcome) {
 function getStudyUrl(section) {
   const pathname = window.location.pathname;
 
-  if (/\/(?:review|grammar|conjugation|hiragana|katakana|kanji|vocabulary)\/?$/u.test(pathname)) {
+  if (/\/(?:review|grammar|conjugation|hiragana|katakana|kanji|vocabulary|reading)\/?$/u.test(pathname)) {
     return pathname.replace(
-      /\/(?:review|grammar|conjugation|hiragana|katakana|kanji|vocabulary)\/?$/u,
+      /\/(?:review|grammar|conjugation|hiragana|katakana|kanji|vocabulary|reading)\/?$/u,
       `/${section}`
     );
   }
@@ -364,7 +366,8 @@ function configureStudyNavigation() {
     hiragana: t("section.hiragana"),
     katakana: t("section.katakana"),
     kanji: t("section.kanji"),
-    vocabulary: t("section.vocabulary")
+    vocabulary: t("section.vocabulary"),
+    reading: t("section.reading")
   }[currentStudySection];
 
   currentStudyLabel.textContent = label;
@@ -2416,7 +2419,7 @@ function handleOutsideProfileMenuClick(event) {
 }
 
 function handleTokenTap(event) {
-  const activeToken = sentenceElement.querySelector(".token.is-touch-active");
+  const activeToken = getTokenContainer().querySelector(".token.is-touch-active");
   const tappedToken = event.currentTarget;
 
   event.stopPropagation();
@@ -2445,8 +2448,12 @@ function handlePromptVocabularyHintTap(event) {
   handleTokenTap(event);
 }
 
+function getTokenContainer() {
+  return currentStudySection === "reading" ? readingElement : sentenceElement;
+}
+
 function dismissActiveToken() {
-  sentenceElement.querySelector(".token.is-touch-active")
+  getTokenContainer().querySelector(".token.is-touch-active")
     ?.classList.remove("is-touch-active");
 }
 
@@ -2482,7 +2489,7 @@ function createCharacterElement(character) {
   return characterElement;
 }
 
-function createTokenElement(token, newGrammarPointIds = []) {
+function createTokenElement(token, newGrammarPointIds = [], { animate = true } = {}) {
   const tokenElement = document.createElement("span");
   const vocabularyEntry = vocabularyById?.get(token.vocabularyId);
   let exposesVocabularyMeaning = false;
@@ -2494,7 +2501,9 @@ function createTokenElement(token, newGrammarPointIds = []) {
   }
 
   if (
-    ["noun", "verb", "adjective", "adverb", "interjection"].includes(token.category) &&
+    (animate
+      ? ["noun", "verb", "adjective", "adverb", "interjection"].includes(token.category)
+      : Boolean(token.vocabularyId)) &&
     vocabularyEntry
   ) {
     tokenElement.dataset.gloss = vocabularyEntry.meaning;
@@ -2513,10 +2522,18 @@ function createTokenElement(token, newGrammarPointIds = []) {
     exposesVocabularyMeaning = false;
   }
 
-  if (exposesVocabularyMeaning) {
+  if (exposesVocabularyMeaning && animate) {
     tokenElement.dataset.vocabularyIds = token.vocabularyId;
     tokenElement.addEventListener("pointerenter", markVocabularyHintRevealed);
     tokenElement.addEventListener("click", markVocabularyHintRevealed);
+  }
+
+  if (!animate) {
+    tokenElement.append(createFuriganaContent(token.surface, token.reading));
+    if (exposesVocabularyMeaning) {
+      tokenElement.tabIndex = 0;
+    }
+    return tokenElement;
   }
 
   if (token.reading && /\p{Script=Han}/u.test(token.surface)) {
@@ -3831,7 +3848,7 @@ function completeCurrentReviewExercise() {
 
 async function pickNextReviewPracticeExercise() {
   const sections = [...studySections].filter((section) => {
-    return section !== "review" && section !== previousReviewPracticeSection;
+    return section !== "review" && section !== "reading" && section !== previousReviewPracticeSection;
   });
 
   while (sections.length > 0) {
@@ -5740,6 +5757,7 @@ function handleTranslationInputKeydown(event) {
 }
 
 function handleResultKeydown(event) {
+  if (currentStudySection === "reading") return;
   const canSubmitKanjiChoice = !exerciseSubmitted &&
     isKanjiChoiceExercise(currentLesson) && Boolean(selectedKanjiAnswer);
 
@@ -5945,7 +5963,7 @@ async function configureNativeBehavior() {
       return;
     }
 
-    if (sentenceElement.querySelector(".token.is-touch-active")) {
+    if (getTokenContainer().querySelector(".token.is-touch-active")) {
       dismissActiveToken();
       return;
     }
@@ -6034,7 +6052,37 @@ async function startApp() {
       void synchronizeReviewReminder();
     }
 
-    if (currentStudySection === "review") {
+    if (currentStudySection === "reading") {
+      document.body.classList.add("reading-page");
+      lessonElement.hidden = true;
+      try {
+        vocabularyById = await vocabularyDataPromise;
+        const passages = globalThis.JlptN5Reading.validatePassages(await fetchJson("data/readings.json"));
+        globalThis.JlptN5ReadingView.mount({
+          root: readingElement,
+          passage: passages[0],
+          locale: getUserLocale(),
+          t,
+          createToken: (token) => createTokenElement(token, [], { animate: false }),
+          getAudioAvailability: getSpeechAvailability,
+          onSpeechActive: (active) => globalThis.JlptN5Feedback.setSpeechActive(active)
+        });
+      } catch (error) {
+        console.error(error);
+        readingElement.hidden = false;
+        const title = document.createElement("h1");
+        title.id = "reading-title";
+        title.textContent = t("section.reading");
+        const message = document.createElement("p");
+        message.textContent = t("reading.loadError");
+        const reload = document.createElement("button");
+        reload.type = "button";
+        reload.className = "reading-retry";
+        reload.textContent = t("reading.reload");
+        reload.addEventListener("click", () => window.location.reload());
+        readingElement.replaceChildren(title, message, reload);
+      }
+    } else if (currentStudySection === "review") {
       await displayInitialReviewExercise();
     } else if (currentStudySection === "hiragana") {
       await displayInitialHiraganaExercise();

@@ -9,6 +9,7 @@ import {
 } from "./localization.js";
 import { normalizeReading, surfaceCarriesReading } from "./kanji-reading-evidence.js";
 import "../curriculum.js";
+import "../reading.js";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
 const sourceDirectory = join(rootDirectory, "data", "source");
@@ -1397,6 +1398,9 @@ if (grammarPointIds.size !== grammarPoints.length) {
 const vocabularyIndex = createVocabularyIndex(vocabulary);
 const exampleVocabularyIndex = createVocabularyIndex([...vocabulary, ...kanjiContexts]);
 const kanjiIndex = createKanjiIndex(kanji);
+const readingSources = globalThis.JlptN5Reading.validatePassages(
+  await readJson(join(sourceDirectory, "readings.json"))
+);
 const errors = localizedCatalogs.flatMap(({ locale, ui, localizations }) => [
   ...validateUiCatalogs(englishUi, ui, locale),
   ...validateLocalizedContent({
@@ -1613,11 +1617,28 @@ if (
   }
 }
 
+const readings = readingSources.map((passage) => ({
+  ...passage,
+  sentences: passage.sentences.map((sentence) => {
+    const prepared = prepareLesson(
+      { ...sentence, minimumLevel: passage.level }, vocabularyIndex, kanjiIndex, curriculum
+    );
+    const requiredLevel = curriculum.highestLevel(prepared.vocabularyIds.map((id) => (
+      vocabularyIndex.entriesById.get(id).introducedAt
+    )));
+    if (curriculum.compareLevels(requiredLevel, passage.level) > 0) {
+      errors.push(`${sentence.id}: vocabulary exceeds the reading's ${passage.level} level.`);
+    }
+    return { ...prepared, paragraph: sentence.paragraph, audio: `assets/voices/reading/${sentence.id}.m4a` };
+  })
+}));
+
 if (errors.length > 0) {
   throw new Error(`Content preparation failed:\n\n${errors.join("\n\n")}`);
 }
 
 await Promise.all([
+  writeOrCheckJson(join(rootDirectory, "data", "readings.json"), readings),
   writeOrCheckJson(join(rootDirectory, "data", "introduction.json"), introduction),
   writeOrCheckJson(join(rootDirectory, "data", "exercises.json"), exercises),
   writeOrCheckJson(

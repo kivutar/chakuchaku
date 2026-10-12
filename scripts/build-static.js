@@ -36,6 +36,8 @@ const staticFiles = [
   "conjugation.js",
   "exercise-selection.js",
   "review.js",
+  "reading.js",
+  "reading-view.js",
   "statistics.js",
   "history.js",
   "settings.js",
@@ -58,6 +60,7 @@ const staticFiles = [
   "licenses/KanjiVG-NOTICE.txt",
   "data/introduction.json",
   "data/exercises.json",
+  "data/readings.json",
   "data/vocabulary-examples.json",
   "data/kanji-contexts.json",
   "data/kanji-mnemonics.json",
@@ -130,7 +133,8 @@ for (const route of [
   "hiragana",
   "katakana",
   "kanji",
-  "vocabulary"
+  "vocabulary",
+  "reading"
 ]) {
   const routeDirectory = join(outputDirectory, route);
 
@@ -138,11 +142,12 @@ for (const route of [
   await writeFile(join(routeDirectory, "index.html"), routeHtml);
 }
 
-const [introduction, exercises, vocabulary, conjugationCurriculum] = await Promise.all([
+const [introduction, exercises, vocabulary, conjugationCurriculum, readings] = await Promise.all([
   readFile(join(rootDirectory, "data", "introduction.json"), "utf8").then(JSON.parse),
   readFile(join(rootDirectory, "data", "exercises.json"), "utf8").then(JSON.parse),
   readFile(join(rootDirectory, "data", "jlpt-n5-vocabulary.json"), "utf8").then(JSON.parse),
-  readFile(join(rootDirectory, "data", "jlpt-n5-conjugation.json"), "utf8").then(JSON.parse)
+  readFile(join(rootDirectory, "data", "jlpt-n5-conjugation.json"), "utf8").then(JSON.parse),
+  readFile(join(rootDirectory, "data", "readings.json"), "utf8").then(JSON.parse)
 ]);
 
 validateVocabularyVoiceSlugs(vocabulary, wanakana);
@@ -158,6 +163,7 @@ const voicePaths = [...new Set([
     ...Object.values(introduction.levelVariants || {}),
     ...exercises
   ].map(({ audio }) => audio),
+  ...readings.flatMap(({ sentences }) => sentences.map(({ audio }) => audio)),
   ...vocabulary.map((entry) => getVocabularyVoicePath(entry, wanakana)),
   ...conjugationExercises.map((exercise) => getConjugationVoicePath(exercise, wanakana))
 ])];
