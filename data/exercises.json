@@ -128243,5 +128243,4159 @@
         "tokenEnd": 6
       }
     ]
+  },
+  {
+    "id": "story-sunday-park-good-weather",
+    "minimumLevel": "n5",
+    "text": "日曜日の朝、いい天気でした。",
+    "audio": "assets/voices/reading/reading-sunday-park-01.m4a",
+    "vocabularyIds": [
+      "vocab-b7519a0f57a7",
+      "vocab-40ae6dddb10a",
+      "vocab-ef4cce00951f",
+      "vocab-2850b5703e8b"
+    ],
+    "kanjiIds": [
+      "kanji-65e5",
+      "kanji-66dc",
+      "kanji-671d",
+      "kanji-5929",
+      "kanji-6c17"
+    ],
+    "tokens": [
+      {
+        "surface": "日曜日",
+        "category": "noun",
+        "reading": "にちようび",
+        "vocabularyId": "vocab-b7519a0f57a7"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "朝",
+        "category": "noun",
+        "reading": "あさ",
+        "vocabularyId": "vocab-40ae6dddb10a"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "いい",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "天気",
+        "category": "noun",
+        "reading": "てんき",
+        "vocabularyId": "vocab-2850b5703e8b"
+      },
+      {
+        "surface": "でし",
+        "category": "auxiliary",
+        "reading": "でし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "The weather was nice on Sunday morning.",
+    "readingSentenceId": "reading-sunday-park-01",
+    "grammarPointIds": [
+      "copula-past",
+      "i-adjective-attributive",
+      "no-possession"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "copula-past",
+        "tokenStart": 6,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "no-possession",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-good-weather",
+    "minimumLevel": "n5",
+    "text": "The weather was nice on Sunday morning.",
+    "audio": "assets/voices/reading/reading-sunday-park-01.m4a",
+    "vocabularyIds": [
+      "vocab-b7519a0f57a7",
+      "vocab-40ae6dddb10a",
+      "vocab-ef4cce00951f",
+      "vocab-2850b5703e8b"
+    ],
+    "kanjiIds": [
+      "kanji-65e5",
+      "kanji-66dc",
+      "kanji-671d",
+      "kanji-5929",
+      "kanji-6c17"
+    ],
+    "tokens": [
+      {
+        "surface": "日曜日",
+        "category": "noun",
+        "reading": "にちようび",
+        "vocabularyId": "vocab-b7519a0f57a7"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "朝",
+        "category": "noun",
+        "reading": "あさ",
+        "vocabularyId": "vocab-40ae6dddb10a"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "いい",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "天気",
+        "category": "noun",
+        "reading": "てんき",
+        "vocabularyId": "vocab-2850b5703e8b"
+      },
+      {
+        "surface": "でし",
+        "category": "auxiliary",
+        "reading": "でし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "日曜日の朝、いい天気でした。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-01",
+    "promptVocabularyHints": [
+      {
+        "word": "morning",
+        "vocabularyIds": [
+          "vocab-40ae6dddb10a"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "copula-past",
+      "i-adjective-attributive",
+      "no-possession"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "copula-past",
+        "tokenStart": 6,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "no-possession",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-sister-wants-rice-balls",
+    "minimumLevel": "n5",
+    "text": "妹は公園でおにぎりを食べたいと言いました。",
+    "audio": "assets/voices/reading/reading-sunday-park-02.m4a",
+    "vocabularyIds": [
+      "vocab-735d35e5b1be",
+      "vocab-c3f997ee44ba",
+      "vocab-ff4eec38bc5b",
+      "vocab-ec4fa4315542",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-59b9",
+      "kanji-516c",
+      "kanji-98df",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "妹",
+        "category": "noun",
+        "reading": "いもうと",
+        "vocabularyId": "vocab-735d35e5b1be"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "おにぎり",
+        "category": "noun",
+        "reading": "おにぎり",
+        "vocabularyId": "vocab-ff4eec38bc5b"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "My younger sister said she wanted to eat rice balls in the park.",
+    "readingSentenceId": "reading-sunday-park-02",
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu",
+      "de-action-location"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 8,
+        "tokenEnd": 12
+      },
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-sister-wants-rice-balls",
+    "minimumLevel": "n5",
+    "text": "My younger sister said she wanted to eat rice balls in the park.",
+    "audio": "assets/voices/reading/reading-sunday-park-02.m4a",
+    "vocabularyIds": [
+      "vocab-735d35e5b1be",
+      "vocab-c3f997ee44ba",
+      "vocab-ff4eec38bc5b",
+      "vocab-ec4fa4315542",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-59b9",
+      "kanji-516c",
+      "kanji-98df",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "妹",
+        "category": "noun",
+        "reading": "いもうと",
+        "vocabularyId": "vocab-735d35e5b1be"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "おにぎり",
+        "category": "noun",
+        "reading": "おにぎり",
+        "vocabularyId": "vocab-ff4eec38bc5b"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "妹は公園でおにぎりを食べたいと言いました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-02",
+    "promptVocabularyHints": [
+      {
+        "word": "park",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu",
+      "de-action-location"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 8,
+        "tokenEnd": 12
+      },
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-mother-made-rice-balls",
+    "minimumLevel": "n5",
+    "text": "母は台所でおにぎりを作ってくれました。",
+    "audio": "assets/voices/reading/reading-sunday-park-03.m4a",
+    "vocabularyIds": [
+      "vocab-7fa86c660a00",
+      "vocab-2d479962e6d5",
+      "vocab-ff4eec38bc5b",
+      "vocab-a4ccf0b7bace"
+    ],
+    "kanjiIds": [
+      "kanji-6bcd",
+      "kanji-53f0",
+      "kanji-4f5c"
+    ],
+    "tokens": [
+      {
+        "surface": "母",
+        "category": "noun",
+        "reading": "はは",
+        "vocabularyId": "vocab-7fa86c660a00"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "台所",
+        "category": "noun",
+        "reading": "だいどころ",
+        "vocabularyId": "vocab-2d479962e6d5"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "おにぎり",
+        "category": "noun",
+        "reading": "おにぎり",
+        "vocabularyId": "vocab-ff4eec38bc5b"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "作っ",
+        "category": "verb",
+        "reading": "つくっ",
+        "vocabularyId": "vocab-a4ccf0b7bace"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "くれ",
+        "category": "auxiliary",
+        "reading": "くれ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "My mother made rice balls for us in the kitchen.",
+    "readingSentenceId": "reading-sunday-park-03",
+    "grammarPointIds": [
+      "te-kureru",
+      "de-action-location",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-kureru",
+        "tokenStart": 7,
+        "tokenEnd": 11
+      },
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 9,
+        "tokenEnd": 11
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-mother-made-rice-balls",
+    "minimumLevel": "n5",
+    "text": "My mother made rice balls for us in the kitchen.",
+    "audio": "assets/voices/reading/reading-sunday-park-03.m4a",
+    "vocabularyIds": [
+      "vocab-7fa86c660a00",
+      "vocab-2d479962e6d5",
+      "vocab-ff4eec38bc5b",
+      "vocab-a4ccf0b7bace"
+    ],
+    "kanjiIds": [
+      "kanji-6bcd",
+      "kanji-53f0",
+      "kanji-4f5c"
+    ],
+    "tokens": [
+      {
+        "surface": "母",
+        "category": "noun",
+        "reading": "はは",
+        "vocabularyId": "vocab-7fa86c660a00"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "台所",
+        "category": "noun",
+        "reading": "だいどころ",
+        "vocabularyId": "vocab-2d479962e6d5"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "おにぎり",
+        "category": "noun",
+        "reading": "おにぎり",
+        "vocabularyId": "vocab-ff4eec38bc5b"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "作っ",
+        "category": "verb",
+        "reading": "つくっ",
+        "vocabularyId": "vocab-a4ccf0b7bace"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "くれ",
+        "category": "auxiliary",
+        "reading": "くれ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "母は台所でおにぎりを作ってくれました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-03",
+    "promptVocabularyHints": [
+      {
+        "word": "kitchen",
+        "vocabularyIds": [
+          "vocab-2d479962e6d5"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "te-kureru",
+      "de-action-location",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-kureru",
+        "tokenStart": 7,
+        "tokenEnd": 11
+      },
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 9,
+        "tokenEnd": 11
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-packed-water-and-tea",
+    "minimumLevel": "n5",
+    "text": "私は水とお茶をかばんに入れました。",
+    "audio": "assets/voices/reading/reading-sunday-park-04.m4a",
+    "vocabularyIds": [
+      "vocab-b6944a5fe271",
+      "vocab-28ddfdc9290c",
+      "vocab-d18ca13aa386",
+      "vocab-704870bca266",
+      "vocab-b5e9e035a8be"
+    ],
+    "kanjiIds": [
+      "kanji-79c1",
+      "kanji-6c34",
+      "kanji-8336",
+      "kanji-5165"
+    ],
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "水",
+        "category": "noun",
+        "reading": "みず",
+        "vocabularyId": "vocab-28ddfdc9290c"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "お茶",
+        "category": "noun",
+        "reading": "おちゃ",
+        "vocabularyId": "vocab-d18ca13aa386"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "かばん",
+        "category": "noun",
+        "reading": "かばん",
+        "vocabularyId": "vocab-704870bca266"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "入れ",
+        "category": "verb",
+        "reading": "いれ",
+        "vocabularyId": "vocab-b5e9e035a8be"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I put water and tea in my bag.",
+    "readingSentenceId": "reading-sunday-park-04",
+    "grammarPointIds": [
+      "to-complete-list",
+      "ni-destination",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "to-complete-list",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "ni-destination",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-packed-water-and-tea",
+    "minimumLevel": "n5",
+    "text": "I put water and tea in my bag.",
+    "audio": "assets/voices/reading/reading-sunday-park-04.m4a",
+    "vocabularyIds": [
+      "vocab-b6944a5fe271",
+      "vocab-28ddfdc9290c",
+      "vocab-d18ca13aa386",
+      "vocab-704870bca266",
+      "vocab-b5e9e035a8be"
+    ],
+    "kanjiIds": [
+      "kanji-79c1",
+      "kanji-6c34",
+      "kanji-8336",
+      "kanji-5165"
+    ],
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "水",
+        "category": "noun",
+        "reading": "みず",
+        "vocabularyId": "vocab-28ddfdc9290c"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "お茶",
+        "category": "noun",
+        "reading": "おちゃ",
+        "vocabularyId": "vocab-d18ca13aa386"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "かばん",
+        "category": "noun",
+        "reading": "かばん",
+        "vocabularyId": "vocab-704870bca266"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "入れ",
+        "category": "verb",
+        "reading": "いれ",
+        "vocabularyId": "vocab-b5e9e035a8be"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "私は水とお茶をかばんに入れました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-04",
+    "promptVocabularyHints": [
+      {
+        "word": "bag",
+        "vocabularyIds": [
+          "vocab-704870bca266"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "to-complete-list",
+      "ni-destination",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "to-complete-list",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "ni-destination",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-left-home-at-nine",
+    "minimumLevel": "n5",
+    "text": "九時に妹と家を出ました。",
+    "audio": "assets/voices/reading/reading-sunday-park-05.m4a",
+    "vocabularyIds": [
+      "vocab-d33ed6be2a48",
+      "vocab-e267b19a680f",
+      "vocab-735d35e5b1be",
+      "vocab-8af58778f14e",
+      "vocab-b2a9df4d0301"
+    ],
+    "kanjiIds": [
+      "kanji-4e5d",
+      "kanji-6642",
+      "kanji-59b9",
+      "kanji-5bb6",
+      "kanji-51fa"
+    ],
+    "tokens": [
+      {
+        "surface": "九",
+        "category": "noun",
+        "reading": "く",
+        "vocabularyId": "vocab-d33ed6be2a48"
+      },
+      {
+        "surface": "時",
+        "category": "noun",
+        "reading": "じ",
+        "vocabularyId": "vocab-e267b19a680f"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "妹",
+        "category": "noun",
+        "reading": "いもうと",
+        "vocabularyId": "vocab-735d35e5b1be"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "出",
+        "category": "verb",
+        "reading": "で",
+        "vocabularyId": "vocab-b2a9df4d0301"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I left home with my younger sister at nine o'clock.",
+    "readingSentenceId": "reading-sunday-park-05",
+    "grammarPointIds": [
+      "ni-time",
+      "to-companion",
+      "o-route",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-time",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "to-companion",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "o-route",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 8,
+        "tokenEnd": 10
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-left-home-at-nine",
+    "minimumLevel": "n5",
+    "text": "I left home with my younger sister at nine o'clock.",
+    "audio": "assets/voices/reading/reading-sunday-park-05.m4a",
+    "vocabularyIds": [
+      "vocab-d33ed6be2a48",
+      "vocab-e267b19a680f",
+      "vocab-735d35e5b1be",
+      "vocab-8af58778f14e",
+      "vocab-b2a9df4d0301"
+    ],
+    "kanjiIds": [
+      "kanji-4e5d",
+      "kanji-6642",
+      "kanji-59b9",
+      "kanji-5bb6",
+      "kanji-51fa"
+    ],
+    "tokens": [
+      {
+        "surface": "九",
+        "category": "noun",
+        "reading": "く",
+        "vocabularyId": "vocab-d33ed6be2a48"
+      },
+      {
+        "surface": "時",
+        "category": "noun",
+        "reading": "じ",
+        "vocabularyId": "vocab-e267b19a680f"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "妹",
+        "category": "noun",
+        "reading": "いもうと",
+        "vocabularyId": "vocab-735d35e5b1be"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "出",
+        "category": "verb",
+        "reading": "で",
+        "vocabularyId": "vocab-b2a9df4d0301"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "九時に妹と家を出ました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-05",
+    "promptVocabularyHints": [
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "ni-time",
+      "to-companion",
+      "o-route",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-time",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "to-companion",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "o-route",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 8,
+        "tokenEnd": 10
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-twenty-minutes-by-bus",
+    "minimumLevel": "n5",
+    "text": "公園までバスで二十分かかります。",
+    "audio": "assets/voices/reading/reading-sunday-park-06.m4a",
+    "vocabularyIds": [
+      "vocab-c3f997ee44ba",
+      "vocab-826a124ad930",
+      "vocab-7fc81b0ddd17",
+      "vocab-877b9ba07a47",
+      "vocab-662d45b892eb",
+      "vocab-0a3ea16df0dc"
+    ],
+    "kanjiIds": [
+      "kanji-516c",
+      "kanji-4e8c",
+      "kanji-5341",
+      "kanji-5206"
+    ],
+    "tokens": [
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "まで",
+        "category": "particle",
+        "reading": "まで"
+      },
+      {
+        "surface": "バス",
+        "category": "noun",
+        "reading": "ばす",
+        "vocabularyId": "vocab-826a124ad930"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "二",
+        "category": "noun",
+        "reading": "に",
+        "vocabularyId": "vocab-7fc81b0ddd17"
+      },
+      {
+        "surface": "十",
+        "category": "noun",
+        "reading": "じゅっ",
+        "vocabularyId": "vocab-877b9ba07a47"
+      },
+      {
+        "surface": "分",
+        "category": "noun",
+        "reading": "ぷん",
+        "vocabularyId": "vocab-662d45b892eb"
+      },
+      {
+        "surface": "かかり",
+        "category": "verb",
+        "reading": "かかり",
+        "vocabularyId": "vocab-0a3ea16df0dc"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "It takes twenty minutes to get to the park by bus.",
+    "readingSentenceId": "reading-sunday-park-06",
+    "grammarPointIds": [
+      "made-end",
+      "de-means",
+      "duration-no-particle"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "made-end",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "de-means",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-twenty-minutes-by-bus",
+    "minimumLevel": "n5",
+    "text": "It takes twenty minutes to get to the park by bus.",
+    "audio": "assets/voices/reading/reading-sunday-park-06.m4a",
+    "vocabularyIds": [
+      "vocab-c3f997ee44ba",
+      "vocab-826a124ad930",
+      "vocab-7fc81b0ddd17",
+      "vocab-877b9ba07a47",
+      "vocab-662d45b892eb",
+      "vocab-0a3ea16df0dc"
+    ],
+    "kanjiIds": [
+      "kanji-516c",
+      "kanji-4e8c",
+      "kanji-5341",
+      "kanji-5206"
+    ],
+    "tokens": [
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "まで",
+        "category": "particle",
+        "reading": "まで"
+      },
+      {
+        "surface": "バス",
+        "category": "noun",
+        "reading": "ばす",
+        "vocabularyId": "vocab-826a124ad930"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "二",
+        "category": "noun",
+        "reading": "に",
+        "vocabularyId": "vocab-7fc81b0ddd17"
+      },
+      {
+        "surface": "十",
+        "category": "noun",
+        "reading": "じゅっ",
+        "vocabularyId": "vocab-877b9ba07a47"
+      },
+      {
+        "surface": "分",
+        "category": "noun",
+        "reading": "ぷん",
+        "vocabularyId": "vocab-662d45b892eb"
+      },
+      {
+        "surface": "かかり",
+        "category": "verb",
+        "reading": "かかり",
+        "vocabularyId": "vocab-0a3ea16df0dc"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "公園までバスで二十分かかります。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-06",
+    "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "made-end",
+      "de-means",
+      "duration-no-particle"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "made-end",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "de-means",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-next-bus-in-thirty-minutes",
+    "minimumLevel": "n5",
+    "text": "でも、次のバスは三十分後に来ます。",
+    "audio": "assets/voices/reading/reading-sunday-park-07.m4a",
+    "vocabularyIds": [
+      "vocab-7aeac2a5dd4c",
+      "vocab-c97677d187f5",
+      "vocab-826a124ad930",
+      "vocab-1bedf722c04a",
+      "vocab-877b9ba07a47",
+      "vocab-662d45b892eb",
+      "vocab-bc01756b4d89"
+    ],
+    "kanjiIds": [
+      "kanji-4e09",
+      "kanji-5341",
+      "kanji-5206",
+      "kanji-5f8c",
+      "kanji-6765"
+    ],
+    "tokens": [
+      {
+        "surface": "でも",
+        "category": "conjunction",
+        "reading": "でも",
+        "vocabularyId": "vocab-7aeac2a5dd4c"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "次",
+        "category": "noun",
+        "reading": "つぎ",
+        "vocabularyId": "vocab-c97677d187f5"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "バス",
+        "category": "noun",
+        "reading": "ばす",
+        "vocabularyId": "vocab-826a124ad930"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "三",
+        "category": "noun",
+        "reading": "さん",
+        "vocabularyId": "vocab-1bedf722c04a"
+      },
+      {
+        "surface": "十",
+        "category": "noun",
+        "reading": "じゅっ",
+        "vocabularyId": "vocab-877b9ba07a47"
+      },
+      {
+        "surface": "分",
+        "category": "noun",
+        "reading": "ぷん",
+        "vocabularyId": "vocab-662d45b892eb"
+      },
+      {
+        "surface": "後",
+        "category": "particle",
+        "reading": "ご"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "来",
+        "category": "verb",
+        "reading": "き",
+        "vocabularyId": "vocab-bc01756b4d89"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "However, the next bus will arrive in thirty minutes.",
+    "readingSentenceId": "reading-sunday-park-07",
+    "grammarPointIds": [
+      "demo-connector",
+      "ni-time",
+      "verb-masu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "demo-connector",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      },
+      {
+        "grammarPointId": "ni-time",
+        "tokenStart": 10,
+        "tokenEnd": 11
+      },
+      {
+        "grammarPointId": "verb-masu",
+        "tokenStart": 12,
+        "tokenEnd": 13
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-next-bus-in-thirty-minutes",
+    "minimumLevel": "n5",
+    "text": "However, the next bus will arrive in thirty minutes.",
+    "audio": "assets/voices/reading/reading-sunday-park-07.m4a",
+    "vocabularyIds": [
+      "vocab-7aeac2a5dd4c",
+      "vocab-c97677d187f5",
+      "vocab-826a124ad930",
+      "vocab-1bedf722c04a",
+      "vocab-877b9ba07a47",
+      "vocab-662d45b892eb",
+      "vocab-bc01756b4d89"
+    ],
+    "kanjiIds": [
+      "kanji-4e09",
+      "kanji-5341",
+      "kanji-5206",
+      "kanji-5f8c",
+      "kanji-6765"
+    ],
+    "tokens": [
+      {
+        "surface": "でも",
+        "category": "conjunction",
+        "reading": "でも",
+        "vocabularyId": "vocab-7aeac2a5dd4c"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "次",
+        "category": "noun",
+        "reading": "つぎ",
+        "vocabularyId": "vocab-c97677d187f5"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "バス",
+        "category": "noun",
+        "reading": "ばす",
+        "vocabularyId": "vocab-826a124ad930"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "三",
+        "category": "noun",
+        "reading": "さん",
+        "vocabularyId": "vocab-1bedf722c04a"
+      },
+      {
+        "surface": "十",
+        "category": "noun",
+        "reading": "じゅっ",
+        "vocabularyId": "vocab-877b9ba07a47"
+      },
+      {
+        "surface": "分",
+        "category": "noun",
+        "reading": "ぷん",
+        "vocabularyId": "vocab-662d45b892eb"
+      },
+      {
+        "surface": "後",
+        "category": "particle",
+        "reading": "ご"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "来",
+        "category": "verb",
+        "reading": "き",
+        "vocabularyId": "vocab-bc01756b4d89"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "でも、次のバスは三十分後に来ます。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-07",
+    "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "demo-connector",
+      "ni-time",
+      "verb-masu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "demo-connector",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      },
+      {
+        "grammarPointId": "ni-time",
+        "tokenStart": 10,
+        "tokenEnd": 11
+      },
+      {
+        "grammarPointId": "verb-masu",
+        "tokenStart": 12,
+        "tokenEnd": 13
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-sister-does-not-want-to-wait",
+    "minimumLevel": "n5",
+    "text": "妹は待ちたくないと言いました。",
+    "audio": "assets/voices/reading/reading-sunday-park-08.m4a",
+    "vocabularyIds": [
+      "vocab-735d35e5b1be",
+      "vocab-6f30c5c5938f",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-59b9",
+      "kanji-5f85",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "妹",
+        "category": "noun",
+        "reading": "いもうと",
+        "vocabularyId": "vocab-735d35e5b1be"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "待ち",
+        "category": "verb",
+        "reading": "まち",
+        "vocabularyId": "vocab-6f30c5c5938f"
+      },
+      {
+        "surface": "たく",
+        "category": "auxiliary",
+        "reading": "たく"
+      },
+      {
+        "surface": "ない",
+        "category": "auxiliary",
+        "reading": "ない"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "My younger sister said she did not want to wait.",
+    "readingSentenceId": "reading-sunday-park-08",
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 5,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-sister-does-not-want-to-wait",
+    "minimumLevel": "n5",
+    "text": "My younger sister said she did not want to wait.",
+    "audio": "assets/voices/reading/reading-sunday-park-08.m4a",
+    "vocabularyIds": [
+      "vocab-735d35e5b1be",
+      "vocab-6f30c5c5938f",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-59b9",
+      "kanji-5f85",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "妹",
+        "category": "noun",
+        "reading": "いもうと",
+        "vocabularyId": "vocab-735d35e5b1be"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "待ち",
+        "category": "verb",
+        "reading": "まち",
+        "vocabularyId": "vocab-6f30c5c5938f"
+      },
+      {
+        "surface": "たく",
+        "category": "auxiliary",
+        "reading": "たく"
+      },
+      {
+        "surface": "ない",
+        "category": "auxiliary",
+        "reading": "ない"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "妹は待ちたくないと言いました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-08",
+    "promptVocabularyHints": [
+      {
+        "word": "sister",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 3,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 5,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-walked-because-park-nearby",
+    "minimumLevel": "n5",
+    "text": "公園は遠くないので、二人で歩いて行きました。",
+    "audio": "assets/voices/reading/reading-sunday-park-09.m4a",
+    "vocabularyIds": [
+      "vocab-c3f997ee44ba",
+      "vocab-8b4370afb039",
+      "vocab-7fc81b0ddd17",
+      "vocab-ad7167347a2a",
+      "vocab-a76603aae6e4"
+    ],
+    "kanjiIds": [
+      "kanji-516c",
+      "kanji-4e8c",
+      "kanji-4eba",
+      "kanji-6b69",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "遠く",
+        "category": "adjective",
+        "reading": "とおく",
+        "vocabularyId": "vocab-8b4370afb039"
+      },
+      {
+        "surface": "ない",
+        "category": "auxiliary",
+        "reading": "ない"
+      },
+      {
+        "surface": "ので",
+        "category": "particle",
+        "reading": "ので"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "二",
+        "category": "noun",
+        "reading": "ふた",
+        "vocabularyId": "vocab-7fc81b0ddd17"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "り",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "歩い",
+        "category": "verb",
+        "reading": "あるい",
+        "vocabularyId": "vocab-a76603aae6e4"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "行き",
+        "category": "auxiliary",
+        "reading": "いき"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Since the park was not far away, the two of us walked there.",
+    "readingSentenceId": "reading-sunday-park-09",
+    "grammarPointIds": [
+      "i-adjective-negative",
+      "node-reason",
+      "te-action-link"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "i-adjective-negative",
+        "tokenStart": 2,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "node-reason",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 10,
+        "tokenEnd": 11
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-walked-because-park-nearby",
+    "minimumLevel": "n5",
+    "text": "Since the park was not far away, the two of us walked there.",
+    "audio": "assets/voices/reading/reading-sunday-park-09.m4a",
+    "vocabularyIds": [
+      "vocab-c3f997ee44ba",
+      "vocab-8b4370afb039",
+      "vocab-7fc81b0ddd17",
+      "vocab-ad7167347a2a",
+      "vocab-a76603aae6e4"
+    ],
+    "kanjiIds": [
+      "kanji-516c",
+      "kanji-4e8c",
+      "kanji-4eba",
+      "kanji-6b69",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "遠く",
+        "category": "adjective",
+        "reading": "とおく",
+        "vocabularyId": "vocab-8b4370afb039"
+      },
+      {
+        "surface": "ない",
+        "category": "auxiliary",
+        "reading": "ない"
+      },
+      {
+        "surface": "ので",
+        "category": "particle",
+        "reading": "ので"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "二",
+        "category": "noun",
+        "reading": "ふた",
+        "vocabularyId": "vocab-7fc81b0ddd17"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "り",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "歩い",
+        "category": "verb",
+        "reading": "あるい",
+        "vocabularyId": "vocab-a76603aae6e4"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "行き",
+        "category": "auxiliary",
+        "reading": "いき"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "公園は遠くないので、二人で歩いて行きました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-09",
+    "promptVocabularyHints": [
+      {
+        "word": "park",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "i-adjective-negative",
+      "node-reason",
+      "te-action-link"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "i-adjective-negative",
+        "tokenStart": 2,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "node-reason",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 10,
+        "tokenEnd": 11
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-met-friend-on-street",
+    "minimumLevel": "n5",
+    "text": "道で友達に会いました。",
+    "audio": "assets/voices/reading/reading-sunday-park-10.m4a",
+    "vocabularyIds": [
+      "vocab-b4a022a9e7a6",
+      "vocab-d9898f8a95b6",
+      "vocab-40179481fcf6"
+    ],
+    "kanjiIds": [
+      "kanji-9053",
+      "kanji-53cb",
+      "kanji-4f1a"
+    ],
+    "tokens": [
+      {
+        "surface": "道",
+        "category": "noun",
+        "reading": "みち",
+        "vocabularyId": "vocab-b4a022a9e7a6"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "会い",
+        "category": "verb",
+        "reading": "あい",
+        "vocabularyId": "vocab-40179481fcf6"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I met a friend on the street.",
+    "readingSentenceId": "reading-sunday-park-10",
+    "grammarPointIds": [
+      "de-action-location",
+      "ni-target-recipient",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-met-friend-on-street",
+    "minimumLevel": "n5",
+    "text": "I met a friend on the street.",
+    "audio": "assets/voices/reading/reading-sunday-park-10.m4a",
+    "vocabularyIds": [
+      "vocab-b4a022a9e7a6",
+      "vocab-d9898f8a95b6",
+      "vocab-40179481fcf6"
+    ],
+    "kanjiIds": [
+      "kanji-9053",
+      "kanji-53cb",
+      "kanji-4f1a"
+    ],
+    "tokens": [
+      {
+        "surface": "道",
+        "category": "noun",
+        "reading": "みち",
+        "vocabularyId": "vocab-b4a022a9e7a6"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "会い",
+        "category": "verb",
+        "reading": "あい",
+        "vocabularyId": "vocab-40179481fcf6"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "道で友達に会いました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-10",
+    "promptVocabularyHints": [
+      {
+        "word": "street",
+        "vocabularyIds": [
+          "vocab-b4a022a9e7a6"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "de-action-location",
+      "ni-target-recipient",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-friend-came-along",
+    "minimumLevel": "n5",
+    "text": "友達も一緒に公園へ行きました。",
+    "audio": "assets/voices/reading/reading-sunday-park-11.m4a",
+    "vocabularyIds": [
+      "vocab-d9898f8a95b6",
+      "vocab-842637e88e8c",
+      "vocab-c3f997ee44ba",
+      "vocab-ec22142c23d3"
+    ],
+    "kanjiIds": [
+      "kanji-53cb",
+      "kanji-4e00",
+      "kanji-516c",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "一緒",
+        "category": "noun",
+        "reading": "いっしょ",
+        "vocabularyId": "vocab-842637e88e8c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "My friend also went to the park with us.",
+    "readingSentenceId": "reading-sunday-park-11",
+    "grammarPointIds": [
+      "mo-addition",
+      "e-direction",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mo-addition",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 7,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-friend-came-along",
+    "minimumLevel": "n5",
+    "text": "My friend also went to the park with us.",
+    "audio": "assets/voices/reading/reading-sunday-park-11.m4a",
+    "vocabularyIds": [
+      "vocab-d9898f8a95b6",
+      "vocab-842637e88e8c",
+      "vocab-c3f997ee44ba",
+      "vocab-ec22142c23d3"
+    ],
+    "kanjiIds": [
+      "kanji-53cb",
+      "kanji-4e00",
+      "kanji-516c",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "一緒",
+        "category": "noun",
+        "reading": "いっしょ",
+        "vocabularyId": "vocab-842637e88e8c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "友達も一緒に公園へ行きました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-11",
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "mo-addition",
+      "e-direction",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mo-addition",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 7,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-large-pond-in-park",
+    "minimumLevel": "n5",
+    "text": "公園には大きな池があります。",
+    "audio": "assets/voices/reading/reading-sunday-park-12.m4a",
+    "vocabularyIds": [
+      "vocab-c3f997ee44ba",
+      "vocab-ef06b1815ddd",
+      "vocab-c32242596278",
+      "vocab-b66f43bc23a1"
+    ],
+    "kanjiIds": [
+      "kanji-516c",
+      "kanji-5927"
+    ],
+    "tokens": [
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "大きな",
+        "category": "determiner",
+        "reading": "おおきな",
+        "vocabularyId": "vocab-ef06b1815ddd"
+      },
+      {
+        "surface": "池",
+        "category": "noun",
+        "reading": "いけ",
+        "vocabularyId": "vocab-c32242596278"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "There is a large pond in the park.",
+    "readingSentenceId": "reading-sunday-park-12",
+    "grammarPointIds": [
+      "ni-existence-location",
+      "aru-existence"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-existence-location",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "aru-existence",
+        "tokenStart": 6,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-large-pond-in-park",
+    "minimumLevel": "n5",
+    "text": "There is a large pond in the park.",
+    "audio": "assets/voices/reading/reading-sunday-park-12.m4a",
+    "vocabularyIds": [
+      "vocab-c3f997ee44ba",
+      "vocab-ef06b1815ddd",
+      "vocab-c32242596278",
+      "vocab-b66f43bc23a1"
+    ],
+    "kanjiIds": [
+      "kanji-516c",
+      "kanji-5927"
+    ],
+    "tokens": [
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "大きな",
+        "category": "determiner",
+        "reading": "おおきな",
+        "vocabularyId": "vocab-ef06b1815ddd"
+      },
+      {
+        "surface": "池",
+        "category": "noun",
+        "reading": "いけ",
+        "vocabularyId": "vocab-c32242596278"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "公園には大きな池があります。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-12",
+    "promptVocabularyHints": [
+      {
+        "word": "pond",
+        "vocabularyIds": [
+          "vocab-c32242596278"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "ni-existence-location",
+      "aru-existence"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-existence-location",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "aru-existence",
+        "tokenStart": 6,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-sat-near-pond",
+    "minimumLevel": "n5",
+    "text": "池の近くに座りました。",
+    "audio": "assets/voices/reading/reading-sunday-park-13.m4a",
+    "vocabularyIds": [
+      "vocab-c32242596278",
+      "vocab-cacc70775f3e",
+      "vocab-1920bee7857b"
+    ],
+    "kanjiIds": [
+      "kanji-8fd1",
+      "kanji-5ea7"
+    ],
+    "tokens": [
+      {
+        "surface": "池",
+        "category": "noun",
+        "reading": "いけ",
+        "vocabularyId": "vocab-c32242596278"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "近く",
+        "category": "noun",
+        "reading": "ちかく",
+        "vocabularyId": "vocab-cacc70775f3e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "座り",
+        "category": "verb",
+        "reading": "すわり",
+        "vocabularyId": "vocab-1920bee7857b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "We sat down near the pond.",
+    "readingSentenceId": "reading-sunday-park-13",
+    "grammarPointIds": [
+      "positional-nouns",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "positional-nouns",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-sat-near-pond",
+    "minimumLevel": "n5",
+    "text": "We sat down near the pond.",
+    "audio": "assets/voices/reading/reading-sunday-park-13.m4a",
+    "vocabularyIds": [
+      "vocab-c32242596278",
+      "vocab-cacc70775f3e",
+      "vocab-1920bee7857b"
+    ],
+    "kanjiIds": [
+      "kanji-8fd1",
+      "kanji-5ea7"
+    ],
+    "tokens": [
+      {
+        "surface": "池",
+        "category": "noun",
+        "reading": "いけ",
+        "vocabularyId": "vocab-c32242596278"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "近く",
+        "category": "noun",
+        "reading": "ちかく",
+        "vocabularyId": "vocab-cacc70775f3e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "座り",
+        "category": "verb",
+        "reading": "すわり",
+        "vocabularyId": "vocab-1920bee7857b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "池の近くに座りました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-13",
+    "promptVocabularyHints": [
+      {
+        "word": "pond",
+        "vocabularyIds": [
+          "vocab-c32242596278"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "positional-nouns",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "positional-nouns",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-ate-and-talked-about-school",
+    "minimumLevel": "n5",
+    "text": "おにぎりを食べて、学校の話をしました。",
+    "audio": "assets/voices/reading/reading-sunday-park-14.m4a",
+    "vocabularyIds": [
+      "vocab-ff4eec38bc5b",
+      "vocab-ec4fa4315542",
+      "vocab-42edc1b83779",
+      "vocab-be9551d57abc",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-98df",
+      "kanji-5b66",
+      "kanji-6821",
+      "kanji-8a71"
+    ],
+    "tokens": [
+      {
+        "surface": "おにぎり",
+        "category": "noun",
+        "reading": "おにぎり",
+        "vocabularyId": "vocab-ff4eec38bc5b"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "学校",
+        "category": "noun",
+        "reading": "がっこう",
+        "vocabularyId": "vocab-42edc1b83779"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "話",
+        "category": "noun",
+        "reading": "はなし",
+        "vocabularyId": "vocab-be9551d57abc"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "We ate rice balls and talked about school.",
+    "readingSentenceId": "reading-sunday-park-14",
+    "grammarPointIds": [
+      "te-action-link",
+      "o-object",
+      "no-possession"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "no-possession",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-ate-and-talked-about-school",
+    "minimumLevel": "n5",
+    "text": "We ate rice balls and talked about school.",
+    "audio": "assets/voices/reading/reading-sunday-park-14.m4a",
+    "vocabularyIds": [
+      "vocab-ff4eec38bc5b",
+      "vocab-ec4fa4315542",
+      "vocab-42edc1b83779",
+      "vocab-be9551d57abc",
+      "vocab-dfb6d8ba613b"
+    ],
+    "kanjiIds": [
+      "kanji-98df",
+      "kanji-5b66",
+      "kanji-6821",
+      "kanji-8a71"
+    ],
+    "tokens": [
+      {
+        "surface": "おにぎり",
+        "category": "noun",
+        "reading": "おにぎり",
+        "vocabularyId": "vocab-ff4eec38bc5b"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "食べ",
+        "category": "verb",
+        "reading": "たべ",
+        "vocabularyId": "vocab-ec4fa4315542"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "学校",
+        "category": "noun",
+        "reading": "がっこう",
+        "vocabularyId": "vocab-42edc1b83779"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "話",
+        "category": "noun",
+        "reading": "はなし",
+        "vocabularyId": "vocab-be9551d57abc"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "おにぎりを食べて、学校の話をしました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-14",
+    "promptVocabularyHints": [
+      {
+        "word": "school",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "te-action-link",
+      "o-object",
+      "no-possession"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "no-possession",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-sister-drank-water",
+    "minimumLevel": "n5",
+    "text": "妹は水を飲みました。",
+    "audio": "assets/voices/reading/reading-sunday-park-15.m4a",
+    "vocabularyIds": [
+      "vocab-735d35e5b1be",
+      "vocab-28ddfdc9290c",
+      "vocab-dcd3acd6b659"
+    ],
+    "kanjiIds": [
+      "kanji-59b9",
+      "kanji-6c34",
+      "kanji-98f2"
+    ],
+    "tokens": [
+      {
+        "surface": "妹",
+        "category": "noun",
+        "reading": "いもうと",
+        "vocabularyId": "vocab-735d35e5b1be"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "水",
+        "category": "noun",
+        "reading": "みず",
+        "vocabularyId": "vocab-28ddfdc9290c"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "飲み",
+        "category": "verb",
+        "reading": "のみ",
+        "vocabularyId": "vocab-dcd3acd6b659"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "My younger sister drank water.",
+    "readingSentenceId": "reading-sunday-park-15",
+    "grammarPointIds": [
+      "wa-topic",
+      "o-object",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-sister-drank-water",
+    "minimumLevel": "n5",
+    "text": "My younger sister drank water.",
+    "audio": "assets/voices/reading/reading-sunday-park-15.m4a",
+    "vocabularyIds": [
+      "vocab-735d35e5b1be",
+      "vocab-28ddfdc9290c",
+      "vocab-dcd3acd6b659"
+    ],
+    "kanjiIds": [
+      "kanji-59b9",
+      "kanji-6c34",
+      "kanji-98f2"
+    ],
+    "tokens": [
+      {
+        "surface": "妹",
+        "category": "noun",
+        "reading": "いもうと",
+        "vocabularyId": "vocab-735d35e5b1be"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "水",
+        "category": "noun",
+        "reading": "みず",
+        "vocabularyId": "vocab-28ddfdc9290c"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "飲み",
+        "category": "verb",
+        "reading": "のみ",
+        "vocabularyId": "vocab-dcd3acd6b659"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "妹は水を飲みました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-15",
+    "promptVocabularyHints": [
+      {
+        "word": "water",
+        "vocabularyIds": [
+          "vocab-28ddfdc9290c"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "wa-topic",
+      "o-object",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "wa-topic",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-photos-to-show-family",
+    "minimumLevel": "n5",
+    "text": "友達は家族に見せる写真を撮りました。",
+    "audio": "assets/voices/reading/reading-sunday-park-16.m4a",
+    "vocabularyIds": [
+      "vocab-d9898f8a95b6",
+      "vocab-a16373e2426c",
+      "vocab-859aec8573b3",
+      "vocab-d5901ecbf5fb",
+      "vocab-897d3a642135"
+    ],
+    "kanjiIds": [
+      "kanji-53cb",
+      "kanji-5bb6",
+      "kanji-65cf",
+      "kanji-898b",
+      "kanji-5199",
+      "kanji-771f"
+    ],
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "家族",
+        "category": "noun",
+        "reading": "かぞく",
+        "vocabularyId": "vocab-a16373e2426c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "見せる",
+        "category": "verb",
+        "reading": "みせる",
+        "vocabularyId": "vocab-859aec8573b3"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "撮り",
+        "category": "verb",
+        "reading": "とり",
+        "vocabularyId": "vocab-897d3a642135"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "My friend took photos that they would show their family.",
+    "readingSentenceId": "reading-sunday-park-16",
+    "grammarPointIds": [
+      "relative-clause",
+      "ni-target-recipient",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-photos-to-show-family",
+    "minimumLevel": "n5",
+    "text": "My friend took photos that they would show their family.",
+    "audio": "assets/voices/reading/reading-sunday-park-16.m4a",
+    "vocabularyIds": [
+      "vocab-d9898f8a95b6",
+      "vocab-a16373e2426c",
+      "vocab-859aec8573b3",
+      "vocab-d5901ecbf5fb",
+      "vocab-897d3a642135"
+    ],
+    "kanjiIds": [
+      "kanji-53cb",
+      "kanji-5bb6",
+      "kanji-65cf",
+      "kanji-898b",
+      "kanji-5199",
+      "kanji-771f"
+    ],
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "家族",
+        "category": "noun",
+        "reading": "かぞく",
+        "vocabularyId": "vocab-a16373e2426c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "見せる",
+        "category": "verb",
+        "reading": "みせる",
+        "vocabularyId": "vocab-859aec8573b3"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "撮り",
+        "category": "verb",
+        "reading": "とり",
+        "vocabularyId": "vocab-897d3a642135"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "友達は家族に見せる写真を撮りました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-16",
+    "promptVocabularyHints": [
+      {
+        "word": "family",
+        "vocabularyIds": [
+          "vocab-a16373e2426c"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "relative-clause",
+      "ni-target-recipient",
+      "o-object"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "o-object",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-sky-grew-dark",
+    "minimumLevel": "n5",
+    "text": "午後、空が暗くなりました。",
+    "audio": "assets/voices/reading/reading-sunday-park-17.m4a",
+    "vocabularyIds": [
+      "vocab-3e1bdafed48a",
+      "vocab-19bd7db9d5d0",
+      "vocab-a4945bc781fd",
+      "vocab-3653e718a1a5"
+    ],
+    "kanjiIds": [
+      "kanji-5348",
+      "kanji-5f8c",
+      "kanji-7a7a"
+    ],
+    "tokens": [
+      {
+        "surface": "午後",
+        "category": "noun",
+        "reading": "ごご",
+        "vocabularyId": "vocab-3e1bdafed48a"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "空",
+        "category": "noun",
+        "reading": "そら",
+        "vocabularyId": "vocab-19bd7db9d5d0"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "暗く",
+        "category": "adjective",
+        "reading": "くらく",
+        "vocabularyId": "vocab-a4945bc781fd"
+      },
+      {
+        "surface": "なり",
+        "category": "verb",
+        "reading": "なり",
+        "vocabularyId": "vocab-3653e718a1a5"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "In the afternoon, the sky grew dark.",
+    "readingSentenceId": "reading-sunday-park-17",
+    "grammarPointIds": [
+      "naru-ku-change",
+      "ga-subject",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "naru-ku-change",
+        "tokenStart": 4,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "ga-subject",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 6,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-sky-grew-dark",
+    "minimumLevel": "n5",
+    "text": "In the afternoon, the sky grew dark.",
+    "audio": "assets/voices/reading/reading-sunday-park-17.m4a",
+    "vocabularyIds": [
+      "vocab-3e1bdafed48a",
+      "vocab-19bd7db9d5d0",
+      "vocab-a4945bc781fd",
+      "vocab-3653e718a1a5"
+    ],
+    "kanjiIds": [
+      "kanji-5348",
+      "kanji-5f8c",
+      "kanji-7a7a"
+    ],
+    "tokens": [
+      {
+        "surface": "午後",
+        "category": "noun",
+        "reading": "ごご",
+        "vocabularyId": "vocab-3e1bdafed48a"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "空",
+        "category": "noun",
+        "reading": "そら",
+        "vocabularyId": "vocab-19bd7db9d5d0"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "暗く",
+        "category": "adjective",
+        "reading": "くらく",
+        "vocabularyId": "vocab-a4945bc781fd"
+      },
+      {
+        "surface": "なり",
+        "category": "verb",
+        "reading": "なり",
+        "vocabularyId": "vocab-3653e718a1a5"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "午後、空が暗くなりました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-17",
+    "promptVocabularyHints": [
+      {
+        "word": "sky",
+        "vocabularyIds": [
+          "vocab-19bd7db9d5d0"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "naru-ku-change",
+      "ga-subject",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "naru-ku-change",
+        "tokenStart": 4,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "ga-subject",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 6,
+        "tokenEnd": 8
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-rain-so-returned-early",
+    "minimumLevel": "n5",
+    "text": "雨が降ったので、早く帰りました。",
+    "audio": "assets/voices/reading/reading-sunday-park-18.m4a",
+    "vocabularyIds": [
+      "vocab-7e87850c448d",
+      "vocab-777161023023",
+      "vocab-72460e05df01",
+      "vocab-944f21154c78"
+    ],
+    "kanjiIds": [
+      "kanji-96e8",
+      "kanji-65e9",
+      "kanji-5e30"
+    ],
+    "tokens": [
+      {
+        "surface": "雨",
+        "category": "noun",
+        "reading": "あめ",
+        "vocabularyId": "vocab-7e87850c448d"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "降っ",
+        "category": "verb",
+        "reading": "ふっ",
+        "vocabularyId": "vocab-777161023023"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "ので",
+        "category": "particle",
+        "reading": "ので"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "早く",
+        "category": "adjective",
+        "reading": "はやく",
+        "vocabularyId": "vocab-72460e05df01"
+      },
+      {
+        "surface": "帰り",
+        "category": "verb",
+        "reading": "かえり",
+        "vocabularyId": "vocab-944f21154c78"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Since it rained, we went home early.",
+    "readingSentenceId": "reading-sunday-park-18",
+    "grammarPointIds": [
+      "node-reason",
+      "verb-ta-past",
+      "i-adjective-adverb"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "node-reason",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-rain-so-returned-early",
+    "minimumLevel": "n5",
+    "text": "Since it rained, we went home early.",
+    "audio": "assets/voices/reading/reading-sunday-park-18.m4a",
+    "vocabularyIds": [
+      "vocab-7e87850c448d",
+      "vocab-777161023023",
+      "vocab-72460e05df01",
+      "vocab-944f21154c78"
+    ],
+    "kanjiIds": [
+      "kanji-96e8",
+      "kanji-65e9",
+      "kanji-5e30"
+    ],
+    "tokens": [
+      {
+        "surface": "雨",
+        "category": "noun",
+        "reading": "あめ",
+        "vocabularyId": "vocab-7e87850c448d"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "降っ",
+        "category": "verb",
+        "reading": "ふっ",
+        "vocabularyId": "vocab-777161023023"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "ので",
+        "category": "particle",
+        "reading": "ので"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "早く",
+        "category": "adjective",
+        "reading": "はやく",
+        "vocabularyId": "vocab-72460e05df01"
+      },
+      {
+        "surface": "帰り",
+        "category": "verb",
+        "reading": "かえり",
+        "vocabularyId": "vocab-944f21154c78"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "雨が降ったので、早く帰りました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-18",
+    "promptVocabularyHints": [
+      {
+        "word": "early",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "node-reason",
+      "verb-ta-past",
+      "i-adjective-adverb"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "node-reason",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-three-people-returned-by-bus",
+    "minimumLevel": "n5",
+    "text": "三人でバスに乗って帰りました。",
+    "audio": "assets/voices/reading/reading-sunday-park-19.m4a",
+    "vocabularyIds": [
+      "vocab-1bedf722c04a",
+      "vocab-ad7167347a2a",
+      "vocab-826a124ad930",
+      "vocab-9e0eeba39759",
+      "vocab-944f21154c78"
+    ],
+    "kanjiIds": [
+      "kanji-4e09",
+      "kanji-4eba",
+      "kanji-5e30"
+    ],
+    "tokens": [
+      {
+        "surface": "三",
+        "category": "noun",
+        "reading": "さん",
+        "vocabularyId": "vocab-1bedf722c04a"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "にん",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "バス",
+        "category": "noun",
+        "reading": "ばす",
+        "vocabularyId": "vocab-826a124ad930"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "乗っ",
+        "category": "verb",
+        "reading": "のっ",
+        "vocabularyId": "vocab-9e0eeba39759"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "帰り",
+        "category": "verb",
+        "reading": "かえり",
+        "vocabularyId": "vocab-944f21154c78"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "The three of us got on the bus and went home.",
+    "readingSentenceId": "reading-sunday-park-19",
+    "grammarPointIds": [
+      "ni-target-recipient",
+      "te-action-link",
+      "common-counters"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "common-counters",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-three-people-returned-by-bus",
+    "minimumLevel": "n5",
+    "text": "The three of us got on the bus and went home.",
+    "audio": "assets/voices/reading/reading-sunday-park-19.m4a",
+    "vocabularyIds": [
+      "vocab-1bedf722c04a",
+      "vocab-ad7167347a2a",
+      "vocab-826a124ad930",
+      "vocab-9e0eeba39759",
+      "vocab-944f21154c78"
+    ],
+    "kanjiIds": [
+      "kanji-4e09",
+      "kanji-4eba",
+      "kanji-5e30"
+    ],
+    "tokens": [
+      {
+        "surface": "三",
+        "category": "noun",
+        "reading": "さん",
+        "vocabularyId": "vocab-1bedf722c04a"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "にん",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "バス",
+        "category": "noun",
+        "reading": "ばす",
+        "vocabularyId": "vocab-826a124ad930"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "乗っ",
+        "category": "verb",
+        "reading": "のっ",
+        "vocabularyId": "vocab-9e0eeba39759"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "帰り",
+        "category": "verb",
+        "reading": "かえり",
+        "vocabularyId": "vocab-944f21154c78"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "三人でバスに乗って帰りました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-19",
+    "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "ni-target-recipient",
+      "te-action-link",
+      "common-counters"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "common-counters",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-showed-mother-park-photos",
+    "minimumLevel": "n5",
+    "text": "家で母に公園の写真を見せました。",
+    "audio": "assets/voices/reading/reading-sunday-park-20.m4a",
+    "vocabularyIds": [
+      "vocab-8af58778f14e",
+      "vocab-7fa86c660a00",
+      "vocab-c3f997ee44ba",
+      "vocab-d5901ecbf5fb",
+      "vocab-859aec8573b3"
+    ],
+    "kanjiIds": [
+      "kanji-5bb6",
+      "kanji-6bcd",
+      "kanji-516c",
+      "kanji-5199",
+      "kanji-771f",
+      "kanji-898b"
+    ],
+    "tokens": [
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "母",
+        "category": "noun",
+        "reading": "はは",
+        "vocabularyId": "vocab-7fa86c660a00"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見せ",
+        "category": "verb",
+        "reading": "みせ",
+        "vocabularyId": "vocab-859aec8573b3"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "At home, I showed my mother photos of the park.",
+    "readingSentenceId": "reading-sunday-park-20",
+    "grammarPointIds": [
+      "de-action-location",
+      "ni-target-recipient",
+      "no-possession"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "no-possession",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-showed-mother-park-photos",
+    "minimumLevel": "n5",
+    "text": "At home, I showed my mother photos of the park.",
+    "audio": "assets/voices/reading/reading-sunday-park-20.m4a",
+    "vocabularyIds": [
+      "vocab-8af58778f14e",
+      "vocab-7fa86c660a00",
+      "vocab-c3f997ee44ba",
+      "vocab-d5901ecbf5fb",
+      "vocab-859aec8573b3"
+    ],
+    "kanjiIds": [
+      "kanji-5bb6",
+      "kanji-6bcd",
+      "kanji-516c",
+      "kanji-5199",
+      "kanji-771f",
+      "kanji-898b"
+    ],
+    "tokens": [
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "母",
+        "category": "noun",
+        "reading": "はは",
+        "vocabularyId": "vocab-7fa86c660a00"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "公園",
+        "category": "noun",
+        "reading": "こうえん",
+        "vocabularyId": "vocab-c3f997ee44ba"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見せ",
+        "category": "verb",
+        "reading": "みせ",
+        "vocabularyId": "vocab-859aec8573b3"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "家で母に公園の写真を見せました。",
+    "type": "production",
+    "readingSentenceId": "reading-sunday-park-20",
+    "promptVocabularyHints": [
+      {
+        "word": "photos",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "de-action-location",
+      "ni-target-recipient",
+      "no-possession"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "no-possession",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      }
+    ]
   }
 ]

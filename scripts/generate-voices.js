@@ -499,7 +499,10 @@ async function readLessonSources() {
     readFile(join(sourceDirectory, "exercises.json"), "utf8")
   ]);
 
-  const introductionSource = JSON.parse(introduction);
+  return createLessonVoiceItems(JSON.parse(introduction), JSON.parse(exercises));
+}
+
+export function createLessonVoiceItems(introductionSource, exercises) {
   const introductionVariants = Object.entries(
     introductionSource.levelVariants || {}
   ).map(([level, variant]) => ({
@@ -508,7 +511,10 @@ async function readLessonSources() {
     minimumLevel: level
   }));
 
-  return [introductionSource, ...introductionVariants, ...JSON.parse(exercises)];
+  // Borrowed sentences already have a reading voice. Generate them only through
+  // the reading target, including its retry exclusions; never pay for duplicates.
+  return [introductionSource, ...introductionVariants,
+    ...exercises.filter((exercise) => exercise.readingSentenceId === undefined)];
 }
 
 export function createReadingVoiceItems(passages) {

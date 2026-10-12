@@ -1,5 +1,22 @@
 # ChakuChaku curriculum levels
 
+## Reusing reading sentences in grammar
+
+An entry in `source/exercises.json` can declare `readingSentenceId` to borrow a
+sentence from `source/readings.json`. Author the English translation, existing
+`grammarPointIds`, and French localization as for any other grammar exercise:
+use `solution` for recognition, or `text` plus `type: "production"` for production.
+Do not repeat the Japanese text, token overrides, minimum level, or audio path
+in that entry; its minimum level follows the reading passage.
+Content preparation resolves those from the original reading and retains the
+reference in the generated exercise. Both directions share its narration;
+generate that voice with the `reading` target, not the lesson target.
+
+These exercises use the normal grammar SRS. Reading passages and their
+comprehension quizzes never update SRS, history, or learning statistics.
+
+## Curriculum
+
 `curriculum.json` defines the ordered curriculum levels understood by the app.
 Knowledge units use `introducedAt` for the first level at which they enter the
 curriculum. An N5 unit remains useful at N4 and above, so entries carry one

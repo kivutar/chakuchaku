@@ -6,6 +6,7 @@ import { runInNewContext } from "node:vm";
 import { fileURLToPath } from "node:url";
 import { toHiragana, toKana, toKatakana } from "wanakana";
 import { handleStaticRequest } from "../scripts/serve.js";
+import { resolveReadingGrammarExercises } from "../scripts/reading-grammar.js";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
 const allowedCategories = new Set([
@@ -33,7 +34,9 @@ function assertPreparedLesson(lesson, vocabularyById, kanjiById, kanjiByCharacte
   assert.match(lesson.id, /^[a-z0-9-]+$/);
   assert.equal(typeof lesson.text, "string");
   assert.ok(lesson.text.length > 0);
-  assert.equal(lesson.audio, `assets/voices/grammar/${lesson.id}.m4a`);
+  assert.equal(lesson.audio, lesson.readingSentenceId
+    ? `assets/voices/reading/${lesson.readingSentenceId}.m4a`
+    : `assets/voices/grammar/${lesson.id}.m4a`);
   assert.ok(Array.isArray(lesson.vocabularyIds));
   assert.equal(new Set(lesson.vocabularyIds).size, lesson.vocabularyIds.length);
   assert.ok(lesson.vocabularyIds.every((id) => vocabularyById.has(id)));
@@ -173,7 +176,10 @@ test("generated lessons match their authored sources", async () => {
     "かけ"
   );
 
-  const sourceById = new Map(exerciseSources.map((exercise) => [exercise.id, exercise]));
+  const resolvedSources = resolveReadingGrammarExercises(
+    exerciseSources, await readJson("data/source/readings.json")
+  );
+  const sourceById = new Map(resolvedSources.map((exercise) => [exercise.id, exercise]));
   const ids = new Set([introduction.id]);
 
   for (const exercise of exercises) {
@@ -226,7 +232,8 @@ test("generated lessons match their authored sources", async () => {
 
   const productionExercises = exercises.filter(({ type }) => type === "production");
 
-  assert.equal(productionExercises.length, 423);
+  assert.equal(productionExercises.length,
+    exerciseSources.filter(({ type }) => type === "production").length);
   assert.ok(productionExercises.every(({ id }) => id.startsWith("production-")));
   assert.ok(productionExercises.every(({ text, promptVocabularyHints }) => {
     return (

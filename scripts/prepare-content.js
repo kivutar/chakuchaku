@@ -8,6 +8,7 @@ import {
   validateUiCatalogs
 } from "./localization.js";
 import { normalizeReading, surfaceCarriesReading } from "./kanji-reading-evidence.js";
+import { resolveReadingGrammarExercises } from "./reading-grammar.js";
 import "../curriculum.js";
 import "../reading.js";
 
@@ -728,7 +729,7 @@ function prepareLesson(lesson, vocabularyIndex, kanjiIndex, curriculum) {
     id: lesson.id,
     ...(lesson.minimumLevel ? { minimumLevel: lesson.minimumLevel } : {}),
     text: lesson.text,
-    audio: `assets/voices/grammar/${lesson.id}.m4a`,
+    audio: lesson.readingSentenceId ? lesson.audio : `assets/voices/grammar/${lesson.id}.m4a`,
     vocabularyIds,
     kanjiIds: findKanjiIds(lesson.text, kanjiIndex),
     tokens
@@ -856,6 +857,7 @@ function prepareExercise(
     text: exercise.text,
     solution: exercise.solution,
     ...(exercise.type ? { type: exercise.type } : {}),
+    ...(exercise.readingSentenceId ? { readingSentenceId: exercise.readingSentenceId } : {}),
     ...(exercise.promptVocabularyHints
       ? { promptVocabularyHints: exercise.promptVocabularyHints }
       : {}),
@@ -1294,7 +1296,7 @@ if (new Set(mnemonicSourceFiles).size !== mnemonicSourceFiles.length) {
 const [
   curriculumManifest,
   introductionSource,
-  exerciseSources,
+  authoredExerciseSources,
   vocabularyExampleSources,
   kanjiComponentSources,
   kanjiMnemonicSourceGroups,
@@ -1364,7 +1366,7 @@ if (
 }
 
 if (
-  !Array.isArray(exerciseSources) ||
+  !Array.isArray(authoredExerciseSources) ||
   !Array.isArray(vocabularyExampleSources) ||
   !kanjiComponentSources ||
   Array.isArray(kanjiComponentSources) ||
@@ -1381,6 +1383,10 @@ if (
   );
 }
 
+const readingSources = globalThis.JlptN5Reading.validatePassages(
+  await readJson(join(sourceDirectory, "readings.json"))
+);
+const exerciseSources = resolveReadingGrammarExercises(authoredExerciseSources, readingSources);
 const allSources = [introductionSource, ...exerciseSources];
 const lessonIds = new Set(allSources.map(({ id }) => id));
 
@@ -1398,9 +1404,6 @@ if (grammarPointIds.size !== grammarPoints.length) {
 const vocabularyIndex = createVocabularyIndex(vocabulary);
 const exampleVocabularyIndex = createVocabularyIndex([...vocabulary, ...kanjiContexts]);
 const kanjiIndex = createKanjiIndex(kanji);
-const readingSources = globalThis.JlptN5Reading.validatePassages(
-  await readJson(join(sourceDirectory, "readings.json"))
-);
 const errors = localizedCatalogs.flatMap(({ locale, ui, localizations }) => [
   ...validateUiCatalogs(englishUi, ui, locale),
   ...validateLocalizedContent({

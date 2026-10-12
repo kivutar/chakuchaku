@@ -9734,5 +9734,285 @@
         ]
       }
     ]
+  },
+  "story-sunday-park-good-weather": {
+    "translation": "Il faisait beau dimanche matin."
+  },
+  "production-story-sunday-park-good-weather": {
+    "translation": "Il faisait beau dimanche matin.",
+    "promptVocabularyHints": [
+      {
+        "word": "matin",
+        "vocabularyIds": [
+          "vocab-40ae6dddb10a"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-sister-wants-rice-balls": {
+    "translation": "Ma petite sœur a dit qu’elle voulait manger des onigiri au parc."
+  },
+  "production-story-sunday-park-sister-wants-rice-balls": {
+    "translation": "Ma petite sœur a dit qu’elle voulait manger des onigiri au parc.",
+    "promptVocabularyHints": [
+      {
+        "word": "parc",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-mother-made-rice-balls": {
+    "translation": "Ma mère nous a préparé des onigiri dans la cuisine."
+  },
+  "production-story-sunday-park-mother-made-rice-balls": {
+    "translation": "Ma mère nous a préparé des onigiri dans la cuisine.",
+    "promptVocabularyHints": [
+      {
+        "word": "cuisine",
+        "vocabularyIds": [
+          "vocab-2d479962e6d5"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-packed-water-and-tea": {
+    "translation": "J’ai mis de l’eau et du thé dans mon sac."
+  },
+  "production-story-sunday-park-packed-water-and-tea": {
+    "translation": "J’ai mis de l’eau et du thé dans mon sac.",
+    "promptVocabularyHints": [
+      {
+        "word": "sac",
+        "vocabularyIds": [
+          "vocab-704870bca266"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-left-home-at-nine": {
+    "translation": "J’ai quitté la maison avec ma petite sœur à neuf heures."
+  },
+  "production-story-sunday-park-left-home-at-nine": {
+    "translation": "J’ai quitté la maison avec ma petite sœur à neuf heures.",
+    "promptVocabularyHints": [
+      {
+        "word": "maison",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-twenty-minutes-by-bus": {
+    "translation": "Il faut vingt minutes pour aller au parc en bus."
+  },
+  "production-story-sunday-park-twenty-minutes-by-bus": {
+    "translation": "Il faut vingt minutes pour aller au parc en bus.",
+    "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-next-bus-in-thirty-minutes": {
+    "translation": "Cependant, le prochain bus arrive dans trente minutes."
+  },
+  "production-story-sunday-park-next-bus-in-thirty-minutes": {
+    "translation": "Cependant, le prochain bus arrive dans trente minutes.",
+    "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-sister-does-not-want-to-wait": {
+    "translation": "Ma petite sœur a dit qu’elle ne voulait pas attendre."
+  },
+  "production-story-sunday-park-sister-does-not-want-to-wait": {
+    "translation": "Ma petite sœur a dit qu’elle ne voulait pas attendre.",
+    "promptVocabularyHints": [
+      {
+        "word": "sœur",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-walked-because-park-nearby": {
+    "translation": "Comme le parc n’était pas loin, nous y sommes allés à pied tous les deux."
+  },
+  "production-story-sunday-park-walked-because-park-nearby": {
+    "translation": "Comme le parc n’était pas loin, nous y sommes allés à pied tous les deux.",
+    "promptVocabularyHints": [
+      {
+        "word": "parc",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-met-friend-on-street": {
+    "translation": "J’ai rencontré un ami dans la rue."
+  },
+  "production-story-sunday-park-met-friend-on-street": {
+    "translation": "J’ai rencontré un ami dans la rue.",
+    "promptVocabularyHints": [
+      {
+        "word": "rue",
+        "vocabularyIds": [
+          "vocab-b4a022a9e7a6"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-friend-came-along": {
+    "translation": "Mon ami est aussi allé au parc avec nous."
+  },
+  "production-story-sunday-park-friend-came-along": {
+    "translation": "Mon ami est aussi allé au parc avec nous.",
+    "promptVocabularyHints": [
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-large-pond-in-park": {
+    "translation": "Il y a un grand étang dans le parc."
+  },
+  "production-story-sunday-park-large-pond-in-park": {
+    "translation": "Il y a un grand étang dans le parc.",
+    "promptVocabularyHints": [
+      {
+        "word": "étang",
+        "vocabularyIds": [
+          "vocab-c32242596278"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-sat-near-pond": {
+    "translation": "Nous nous sommes assis près de l’étang."
+  },
+  "production-story-sunday-park-sat-near-pond": {
+    "translation": "Nous nous sommes assis près de l’étang.",
+    "promptVocabularyHints": [
+      {
+        "word": "étang",
+        "vocabularyIds": [
+          "vocab-c32242596278"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-ate-and-talked-about-school": {
+    "translation": "Nous avons mangé des onigiri et parlé de l’école."
+  },
+  "production-story-sunday-park-ate-and-talked-about-school": {
+    "translation": "Nous avons mangé des onigiri et parlé de l’école.",
+    "promptVocabularyHints": [
+      {
+        "word": "école",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-sister-drank-water": {
+    "translation": "Ma petite sœur a bu de l’eau."
+  },
+  "production-story-sunday-park-sister-drank-water": {
+    "translation": "Ma petite sœur a bu de l’eau.",
+    "promptVocabularyHints": [
+      {
+        "word": "eau",
+        "vocabularyIds": [
+          "vocab-28ddfdc9290c"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-photos-to-show-family": {
+    "translation": "Mon ami a pris des photos qu’il montrera à sa famille."
+  },
+  "production-story-sunday-park-photos-to-show-family": {
+    "translation": "Mon ami a pris des photos qu’il montrera à sa famille.",
+    "promptVocabularyHints": [
+      {
+        "word": "famille",
+        "vocabularyIds": [
+          "vocab-a16373e2426c"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-sky-grew-dark": {
+    "translation": "L’après-midi, le ciel s’est assombri."
+  },
+  "production-story-sunday-park-sky-grew-dark": {
+    "translation": "L’après-midi, le ciel s’est assombri.",
+    "promptVocabularyHints": [
+      {
+        "word": "ciel",
+        "vocabularyIds": [
+          "vocab-19bd7db9d5d0"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-rain-so-returned-early": {
+    "translation": "Comme il a plu, nous sommes rentrés tôt."
+  },
+  "production-story-sunday-park-rain-so-returned-early": {
+    "translation": "Comme il a plu, nous sommes rentrés tôt.",
+    "promptVocabularyHints": [
+      {
+        "word": "tôt",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-three-people-returned-by-bus": {
+    "translation": "Nous sommes montés dans le bus et nous sommes rentrés tous les trois."
+  },
+  "production-story-sunday-park-three-people-returned-by-bus": {
+    "translation": "Nous sommes montés dans le bus et nous sommes rentrés tous les trois.",
+    "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      }
+    ]
+  },
+  "story-sunday-park-showed-mother-park-photos": {
+    "translation": "À la maison, j’ai montré à ma mère des photos du parc."
+  },
+  "production-story-sunday-park-showed-mother-park-photos": {
+    "translation": "À la maison, j’ai montré à ma mère des photos du parc.",
+    "promptVocabularyHints": [
+      {
+        "word": "photos",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ]
   }
 }

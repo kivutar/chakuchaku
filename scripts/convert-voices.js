@@ -20,7 +20,8 @@ const [introduction, exercises, voiceFiles] = await Promise.all([
   readdir(voiceDirectory)
 ]);
 const textById = new Map(
-  [introduction, ...exercises].map((lesson) => [lesson.id, getLessonText(lesson)])
+  [introduction, ...exercises.filter((exercise) => exercise.readingSentenceId === undefined)]
+    .map((lesson) => [lesson.id, getLessonText(lesson)])
 );
 const wavFiles = voiceFiles.filter((file) => file.endsWith(".wav")).sort();
 

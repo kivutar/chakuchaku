@@ -17670,5 +17670,581 @@
         ]
       }
     ]
+  },
+  {
+    "id": "story-sunday-park-good-weather",
+    "readingSentenceId": "reading-sunday-park-01",
+    "solution": "The weather was nice on Sunday morning.",
+    "grammarPointIds": [
+      "copula-past",
+      "i-adjective-attributive",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-good-weather",
+    "readingSentenceId": "reading-sunday-park-01",
+    "type": "production",
+    "text": "The weather was nice on Sunday morning.",
+    "grammarPointIds": [
+      "copula-past",
+      "i-adjective-attributive",
+      "no-possession"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "morning",
+        "vocabularyIds": [
+          "vocab-40ae6dddb10a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-sister-wants-rice-balls",
+    "readingSentenceId": "reading-sunday-park-02",
+    "solution": "My younger sister said she wanted to eat rice balls in the park.",
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-sister-wants-rice-balls",
+    "readingSentenceId": "reading-sunday-park-02",
+    "type": "production",
+    "text": "My younger sister said she wanted to eat rice balls in the park.",
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu",
+      "de-action-location"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "park",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-mother-made-rice-balls",
+    "readingSentenceId": "reading-sunday-park-03",
+    "solution": "My mother made rice balls for us in the kitchen.",
+    "grammarPointIds": [
+      "te-kureru",
+      "de-action-location",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-mother-made-rice-balls",
+    "readingSentenceId": "reading-sunday-park-03",
+    "type": "production",
+    "text": "My mother made rice balls for us in the kitchen.",
+    "grammarPointIds": [
+      "te-kureru",
+      "de-action-location",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "kitchen",
+        "vocabularyIds": [
+          "vocab-2d479962e6d5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-packed-water-and-tea",
+    "readingSentenceId": "reading-sunday-park-04",
+    "solution": "I put water and tea in my bag.",
+    "grammarPointIds": [
+      "to-complete-list",
+      "ni-destination",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-packed-water-and-tea",
+    "readingSentenceId": "reading-sunday-park-04",
+    "type": "production",
+    "text": "I put water and tea in my bag.",
+    "grammarPointIds": [
+      "to-complete-list",
+      "ni-destination",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "bag",
+        "vocabularyIds": [
+          "vocab-704870bca266"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-left-home-at-nine",
+    "readingSentenceId": "reading-sunday-park-05",
+    "solution": "I left home with my younger sister at nine o'clock.",
+    "grammarPointIds": [
+      "ni-time",
+      "to-companion",
+      "o-route",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-left-home-at-nine",
+    "readingSentenceId": "reading-sunday-park-05",
+    "type": "production",
+    "text": "I left home with my younger sister at nine o'clock.",
+    "grammarPointIds": [
+      "ni-time",
+      "to-companion",
+      "o-route",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-twenty-minutes-by-bus",
+    "readingSentenceId": "reading-sunday-park-06",
+    "solution": "It takes twenty minutes to get to the park by bus.",
+    "grammarPointIds": [
+      "made-end",
+      "de-means",
+      "duration-no-particle"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-twenty-minutes-by-bus",
+    "readingSentenceId": "reading-sunday-park-06",
+    "type": "production",
+    "text": "It takes twenty minutes to get to the park by bus.",
+    "grammarPointIds": [
+      "made-end",
+      "de-means",
+      "duration-no-particle"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-next-bus-in-thirty-minutes",
+    "readingSentenceId": "reading-sunday-park-07",
+    "solution": "However, the next bus will arrive in thirty minutes.",
+    "grammarPointIds": [
+      "demo-connector",
+      "ni-time",
+      "verb-masu"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-next-bus-in-thirty-minutes",
+    "readingSentenceId": "reading-sunday-park-07",
+    "type": "production",
+    "text": "However, the next bus will arrive in thirty minutes.",
+    "grammarPointIds": [
+      "demo-connector",
+      "ni-time",
+      "verb-masu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-sister-does-not-want-to-wait",
+    "readingSentenceId": "reading-sunday-park-08",
+    "solution": "My younger sister said she did not want to wait.",
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-sister-does-not-want-to-wait",
+    "readingSentenceId": "reading-sunday-park-08",
+    "type": "production",
+    "text": "My younger sister said she did not want to wait.",
+    "grammarPointIds": [
+      "tai-desire",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "sister",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-walked-because-park-nearby",
+    "readingSentenceId": "reading-sunday-park-09",
+    "solution": "Since the park was not far away, the two of us walked there.",
+    "grammarPointIds": [
+      "i-adjective-negative",
+      "node-reason",
+      "te-action-link"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-walked-because-park-nearby",
+    "readingSentenceId": "reading-sunday-park-09",
+    "type": "production",
+    "text": "Since the park was not far away, the two of us walked there.",
+    "grammarPointIds": [
+      "i-adjective-negative",
+      "node-reason",
+      "te-action-link"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "park",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-met-friend-on-street",
+    "readingSentenceId": "reading-sunday-park-10",
+    "solution": "I met a friend on the street.",
+    "grammarPointIds": [
+      "de-action-location",
+      "ni-target-recipient",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-met-friend-on-street",
+    "readingSentenceId": "reading-sunday-park-10",
+    "type": "production",
+    "text": "I met a friend on the street.",
+    "grammarPointIds": [
+      "de-action-location",
+      "ni-target-recipient",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "street",
+        "vocabularyIds": [
+          "vocab-b4a022a9e7a6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-friend-came-along",
+    "readingSentenceId": "reading-sunday-park-11",
+    "solution": "My friend also went to the park with us.",
+    "grammarPointIds": [
+      "mo-addition",
+      "e-direction",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-friend-came-along",
+    "readingSentenceId": "reading-sunday-park-11",
+    "type": "production",
+    "text": "My friend also went to the park with us.",
+    "grammarPointIds": [
+      "mo-addition",
+      "e-direction",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-large-pond-in-park",
+    "readingSentenceId": "reading-sunday-park-12",
+    "solution": "There is a large pond in the park.",
+    "grammarPointIds": [
+      "ni-existence-location",
+      "aru-existence"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-large-pond-in-park",
+    "readingSentenceId": "reading-sunday-park-12",
+    "type": "production",
+    "text": "There is a large pond in the park.",
+    "grammarPointIds": [
+      "ni-existence-location",
+      "aru-existence"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "pond",
+        "vocabularyIds": [
+          "vocab-c32242596278"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-sat-near-pond",
+    "readingSentenceId": "reading-sunday-park-13",
+    "solution": "We sat down near the pond.",
+    "grammarPointIds": [
+      "positional-nouns",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-sat-near-pond",
+    "readingSentenceId": "reading-sunday-park-13",
+    "type": "production",
+    "text": "We sat down near the pond.",
+    "grammarPointIds": [
+      "positional-nouns",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "pond",
+        "vocabularyIds": [
+          "vocab-c32242596278"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-ate-and-talked-about-school",
+    "readingSentenceId": "reading-sunday-park-14",
+    "solution": "We ate rice balls and talked about school.",
+    "grammarPointIds": [
+      "te-action-link",
+      "o-object",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-ate-and-talked-about-school",
+    "readingSentenceId": "reading-sunday-park-14",
+    "type": "production",
+    "text": "We ate rice balls and talked about school.",
+    "grammarPointIds": [
+      "te-action-link",
+      "o-object",
+      "no-possession"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "school",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-sister-drank-water",
+    "readingSentenceId": "reading-sunday-park-15",
+    "solution": "My younger sister drank water.",
+    "grammarPointIds": [
+      "wa-topic",
+      "o-object",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-sister-drank-water",
+    "readingSentenceId": "reading-sunday-park-15",
+    "type": "production",
+    "text": "My younger sister drank water.",
+    "grammarPointIds": [
+      "wa-topic",
+      "o-object",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "water",
+        "vocabularyIds": [
+          "vocab-28ddfdc9290c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-photos-to-show-family",
+    "readingSentenceId": "reading-sunday-park-16",
+    "solution": "My friend took photos that they would show their family.",
+    "grammarPointIds": [
+      "relative-clause",
+      "ni-target-recipient",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-photos-to-show-family",
+    "readingSentenceId": "reading-sunday-park-16",
+    "type": "production",
+    "text": "My friend took photos that they would show their family.",
+    "grammarPointIds": [
+      "relative-clause",
+      "ni-target-recipient",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "family",
+        "vocabularyIds": [
+          "vocab-a16373e2426c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-sky-grew-dark",
+    "readingSentenceId": "reading-sunday-park-17",
+    "solution": "In the afternoon, the sky grew dark.",
+    "grammarPointIds": [
+      "naru-ku-change",
+      "ga-subject",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-sky-grew-dark",
+    "readingSentenceId": "reading-sunday-park-17",
+    "type": "production",
+    "text": "In the afternoon, the sky grew dark.",
+    "grammarPointIds": [
+      "naru-ku-change",
+      "ga-subject",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "sky",
+        "vocabularyIds": [
+          "vocab-19bd7db9d5d0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-rain-so-returned-early",
+    "readingSentenceId": "reading-sunday-park-18",
+    "solution": "Since it rained, we went home early.",
+    "grammarPointIds": [
+      "node-reason",
+      "verb-ta-past",
+      "i-adjective-adverb"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-rain-so-returned-early",
+    "readingSentenceId": "reading-sunday-park-18",
+    "type": "production",
+    "text": "Since it rained, we went home early.",
+    "grammarPointIds": [
+      "node-reason",
+      "verb-ta-past",
+      "i-adjective-adverb"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "early",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-three-people-returned-by-bus",
+    "readingSentenceId": "reading-sunday-park-19",
+    "solution": "The three of us got on the bus and went home.",
+    "grammarPointIds": [
+      "ni-target-recipient",
+      "te-action-link",
+      "common-counters"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-three-people-returned-by-bus",
+    "readingSentenceId": "reading-sunday-park-19",
+    "type": "production",
+    "text": "The three of us got on the bus and went home.",
+    "grammarPointIds": [
+      "ni-target-recipient",
+      "te-action-link",
+      "common-counters"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-sunday-park-showed-mother-park-photos",
+    "readingSentenceId": "reading-sunday-park-20",
+    "solution": "At home, I showed my mother photos of the park.",
+    "grammarPointIds": [
+      "de-action-location",
+      "ni-target-recipient",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "production-story-sunday-park-showed-mother-park-photos",
+    "readingSentenceId": "reading-sunday-park-20",
+    "type": "production",
+    "text": "At home, I showed my mother photos of the park.",
+    "grammarPointIds": [
+      "de-action-location",
+      "ni-target-recipient",
+      "no-possession"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "photos",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ]
   }
 ]

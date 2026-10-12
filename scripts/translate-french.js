@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { resolveReadingGrammarExercises } from "./reading-grammar.js";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
 const sourceLocaleDirectory = join(rootDirectory, "data", "source", "locales", "fr");
@@ -277,7 +278,11 @@ function validateBatch(kind, sourceEntries, translatedItems) {
 
 async function loadKind(kind) {
   if (kind === "exercises") {
-    const exercises = await readJson(join(rootDirectory, "data", "source", "exercises.json"));
+    const [sources, readings] = await Promise.all([
+      readJson(join(rootDirectory, "data", "source", "exercises.json")),
+      readJson(join(rootDirectory, "data", "source", "readings.json"))
+    ]);
+    const exercises = resolveReadingGrammarExercises(sources, readings);
     return exercises.map(exerciseInput);
   }
 
