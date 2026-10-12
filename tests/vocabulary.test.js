@@ -102,7 +102,70 @@ test("contextual vocabulary detection excludes revealed hints and absent words",
   }), ["eat"]);
 });
 
-test("contextual vocabulary detection recovers every prepared word in reference productions", async () => {
+test("contextual vocabulary detection keeps short verb stems before punctuation and quotes", () => {
+  const vocabulary = [
+    { id: "look", term: "見る", reading: "みる" },
+    { id: "sea", term: "海", reading: "うみ" }
+  ];
+  const tokens = [
+    { surface: "見", reading: "み", vocabularyId: "look" },
+    { surface: "て", reading: "て" },
+    { surface: "、" },
+    { surface: "「" },
+    { surface: "海", reading: "うみ", vocabularyId: "sea" },
+    { surface: "」" }
+  ];
+  for (const answer of ["見て、「海」", "見て『海』", "みて、うみ", "みて『うみ』"]) {
+    assert.deepEqual(new Set(findContextualVocabularyIds({ tokens, answer, vocabulary })),
+      new Set(["look", "sea"]), answer);
+  }
+  for (const answer of ["見", "み", "海", "うみ"]) {
+    assert.ok(!findContextualVocabularyIds({ tokens, answer, vocabulary }).includes("look"), answer);
+  }
+});
+
+test("contextual vocabulary detection keeps quoted verbs after と when punctuation is omitted", () => {
+  const vocabulary = [
+    { id: "train", term: "電車", reading: "でんしゃ" },
+    { id: "ten", term: "十", reading: "とお" },
+    { id: "teach", term: "教える", reading: "おしえる" },
+    { id: "think", term: "思う", reading: "おもう" }
+  ];
+
+  for (const [id, surface, reading, ending] of [
+    ["teach", "教え", "おしえ", "てくれました"],
+    ["think", "思い", "おもい", "ました"]
+  ]) {
+    const tokens = [
+      { surface: "「" },
+      { surface: "電車", reading: "でんしゃ", vocabularyId: "train" },
+      { surface: "ですよ", reading: "ですよ" },
+      { surface: "」" },
+      { surface: "と", reading: "と" },
+      { surface, reading, vocabularyId: id },
+      { surface: ending, reading: ending },
+      { surface: "。" }
+    ];
+    for (const answer of [
+      `「電車ですよ」と${surface}${ending}。`,
+      `『でんしゃですよ』と${reading}${ending}。`,
+      `“でんしゃですよ”と${reading}${ending}。`,
+      `でんしゃですよと${reading}${ending}`,
+      `そのひとはでんしゃですよと${reading}${ending}`
+    ]) {
+      assert.deepEqual(new Set(findContextualVocabularyIds({ tokens, answer, vocabulary })),
+        new Set(["train", id]), answer);
+      assert.deepEqual(findContextualVocabularyIds({
+        tokens, answer, vocabulary, excludedVocabularyIds: [id]
+      }), ["train"], `revealed ${id}: ${answer}`);
+    }
+    assert.deepEqual(findContextualVocabularyIds({
+      tokens, answer: "でんしゃですよとおなじです", vocabulary
+    }), ["train"], "an unrelated お-word must not earn verb credit");
+  }
+});
+
+test("contextual vocabulary detection recovers every prepared word in kanji and kana reference productions", async () => {
   const [exercises, vocabulary] = await Promise.all([
     readFile(new URL("../data/exercises.json", import.meta.url), "utf8").then(JSON.parse),
     readFile(new URL("../data/jlpt-n5-vocabulary.json", import.meta.url), "utf8")
@@ -110,16 +173,25 @@ test("contextual vocabulary detection recovers every prepared word in reference 
   ]);
 
   for (const exercise of exercises.filter(({ type }) => type === "production")) {
-    const detectedIds = new Set(findContextualVocabularyIds({
-      tokens: exercise.tokens,
-      answer: exercise.solution,
-      vocabulary
-    }));
     const expectedIds = new Set(exercise.tokens
       .map(({ vocabularyId }) => vocabularyId)
       .filter(Boolean));
+    const kana = exercise.tokens.map(({ reading, surface }) => reading || surface).join("");
 
-    assert.deepEqual(detectedIds, expectedIds, exercise.id);
+    for (const answer of new Set([
+      exercise.solution,
+      exercise.solution.replace(/[\p{P}\p{S}]/gu, ""),
+      kana,
+      kana.replace(/[\p{P}\p{S}]/gu, "")
+    ])) {
+      const detectedIds = new Set(findContextualVocabularyIds({
+        tokens: exercise.tokens,
+        answer,
+        vocabulary
+      }));
+
+      assert.deepEqual(detectedIds, expectedIds, `${exercise.id}: ${answer}`);
+    }
   }
 });
 

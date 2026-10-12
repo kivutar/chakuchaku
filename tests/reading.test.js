@@ -258,6 +258,87 @@ test("the N5 email story has a different plot, accurate counters, and evidence f
   }
 });
 
+test("the N5 train story distinguishes plans from events, has correct readings, and broadens grammar coverage", async () => {
+  const index = prepared.findIndex(({ id }) => id === "the-wrong-train");
+  assert.ok(index >= 0);
+  const story = prepared[index];
+  assert.equal(story.level, "n5");
+  assert.ok(story.sentences.length >= 18 && story.sentences.length <= 22);
+  assert.equal(story.questions.length, 5);
+  assert.equal(new Set(story.sentences.map(({ paragraph }) => paragraph)).size, 5);
+  const earlier = prepared.slice(0, index).flatMap(({ sentences }) => sentences);
+  const existingText = new Set(earlier.map(({ text }) => text));
+  assert.ok(story.sentences.every(({ text }) => !existingText.has(text)));
+  const earlierPoints = new Set(earlier.flatMap(({ grammarPointIds }) => grammarPointIds));
+  for (const [number, point, surface] of [
+    [2, "goro-approximate-time", "十二時ごろ"],
+    [2, "tsumori", "着くつもりでした"],
+    [4, "ka-alternatives", "右ですか、左ですか"],
+    [9, "verb-masen-deshita", "見えませんでした"],
+    [13, "mada", "まだ海の近くにいます"],
+    [16, "kara-reason", "きれいだったから"],
+    [16, "ageru", "友達にも一枚あげたい"],
+    [17, "ka-dou-ka", "山へ行くかどうか"],
+    [19, "naa-reflection", "行きたいなあ"]
+  ]) {
+    const sentence = story.sentences[number - 1];
+    assert.ok(sentence.text.includes(surface));
+    assert.ok(sentence.grammarPointIds.includes(point));
+    assert.ok(!earlierPoints.has(point), point);
+  }
+  const reading = (number) => story.sentences[number - 1].tokens
+    .map(({ reading, surface }) => reading || surface).join("");
+  assert.match(reading(2), /^じゅうにじごろ/u);
+  assert.match(reading(3), /にほん/u);
+  assert.equal(story.sentences[2].text, "駅には電車が二本止まっていました。");
+  assert.equal(story.sentences[6].text, "この電車は山へ行くだろうと思いました。");
+  assert.ok(story.sentences[6].grammarPointIds.includes("darou"));
+  assert.ok(!story.sentences[6].grammarPointIds.includes("deshou-darou"));
+  assert.match(reading(8), /でんしゃのなかで、まどのそと/u);
+  assert.match(reading(14), /ひるごはん/u);
+  assert.match(reading(16), /いちまい/u);
+  assert.match(reading(18), /^ごごいちじごろ/u);
+  const answer = (id) => story.questions.find((question) => question.id === id).answerId;
+  assert.equal(answer("plan"), "noon");
+  assert.equal(answer("mistake"), "listening");
+  assert.equal(answer("lunch"), "not-yet");
+  assert.equal(answer("gift"), "sea-picture");
+  assert.equal(answer("check"), "destination");
+  const responses = Object.fromEntries(story.questions.map(({ id, answerId }) => [id, answerId]));
+  assert.equal(gradeAnswers(story, responses).correct, 5);
+  responses.plan = "one";
+  responses.mistake = "advice";
+  assert.equal(gradeAnswers(story, responses).correct, 3, "actual arrival differs from the plan, and the advice was correct");
+  const byId = new Set(story.sentences.map(({ id }) => id));
+  for (const question of story.questions) {
+    assert.ok(question.evidenceSentenceIds.every((id) => byId.has(id)));
+    assert.ok(question.explanation.en && question.explanation.fr);
+  }
+  const exercises = await readJson("data/exercises.json");
+  for (const [number, point, surface] of [
+    [3, "common-counters", "本"],
+    [3, "te-iru-result-state", "ていました"],
+    [6, "naide-without", "ないで"],
+    [7, "darou", "だろう"],
+    [8, "te-iru-progressive", "ていました"],
+    [9, "verb-masen-deshita", "ませんでした"],
+    [13, "mada", "まだ"],
+    [13, "naru-ku-change", "遅くなります"],
+    [16, "kara-reason", "から"],
+    [17, "ka-dou-ka", "かどうか"],
+    [19, "naa-reflection", "なあ"]
+  ]) {
+    const pair = exercises.filter(({ readingSentenceId }) => readingSentenceId === story.sentences[number - 1].id);
+    assert.equal(pair.length, 2);
+    for (const exercise of pair) {
+      const highlight = exercise.grammarHighlights.find(({ grammarPointId }) => grammarPointId === point);
+      assert.ok(highlight, `${exercise.id}: ${point}`);
+      assert.equal(exercise.tokens.slice(highlight.tokenStart, highlight.tokenEnd)
+        .map(({ surface }) => surface).join(""), surface);
+    }
+  }
+});
+
 test("story search is localized and accent-insensitive, level-aware, and paginated without changing content", () => {
   const original = JSON.stringify(prepared);
   assert.deepEqual(filterPassages(prepared, { query: "BIBLIOTHEQUE chats", locale: "fr" }).map(({ id }) => id), ["my-first-library-card"]);

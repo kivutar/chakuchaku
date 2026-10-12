@@ -152520,5 +152520,5725 @@
         "tokenEnd": 15
       }
     ]
+  },
+  {
+    "id": "story-wrong-train-visit-near-mountains",
+    "minimumLevel": "n5",
+    "text": "土曜日、山の近くに住んでいる友達に会いに行きました。",
+    "audio": "assets/voices/reading/reading-wrong-train-01.m4a",
+    "vocabularyIds": [
+      "vocab-440290628fd6",
+      "vocab-ddd9dca106e2",
+      "vocab-cacc70775f3e",
+      "vocab-405805427b97",
+      "vocab-d9898f8a95b6",
+      "vocab-40179481fcf6",
+      "vocab-ec22142c23d3"
+    ],
+    "kanjiIds": [
+      "kanji-571f",
+      "kanji-66dc",
+      "kanji-65e5",
+      "kanji-5c71",
+      "kanji-8fd1",
+      "kanji-4f4f",
+      "kanji-53cb",
+      "kanji-4f1a",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "土曜日",
+        "category": "noun",
+        "reading": "どようび",
+        "vocabularyId": "vocab-440290628fd6"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "近く",
+        "category": "noun",
+        "reading": "ちかく",
+        "vocabularyId": "vocab-cacc70775f3e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "住ん",
+        "category": "verb",
+        "reading": "すん",
+        "vocabularyId": "vocab-405805427b97"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "いる",
+        "category": "auxiliary",
+        "reading": "いる"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "会い",
+        "category": "verb",
+        "reading": "あい",
+        "vocabularyId": "vocab-40179481fcf6"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "On Saturday, I went to visit a friend who lives near the mountains.",
+    "readingSentenceId": "reading-wrong-train-01",
+    "grammarPointIds": [
+      "relative-clause",
+      "te-iru-result-state",
+      "movement-purpose"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "movement-purpose",
+        "tokenStart": 12,
+        "tokenEnd": 16
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-visit-near-mountains",
+    "minimumLevel": "n5",
+    "text": "On Saturday, I went to visit a friend who lives near the mountains.",
+    "audio": "assets/voices/reading/reading-wrong-train-01.m4a",
+    "vocabularyIds": [
+      "vocab-440290628fd6",
+      "vocab-ddd9dca106e2",
+      "vocab-cacc70775f3e",
+      "vocab-405805427b97",
+      "vocab-d9898f8a95b6",
+      "vocab-40179481fcf6",
+      "vocab-ec22142c23d3"
+    ],
+    "kanjiIds": [
+      "kanji-571f",
+      "kanji-66dc",
+      "kanji-65e5",
+      "kanji-5c71",
+      "kanji-8fd1",
+      "kanji-4f4f",
+      "kanji-53cb",
+      "kanji-4f1a",
+      "kanji-884c"
+    ],
+    "tokens": [
+      {
+        "surface": "土曜日",
+        "category": "noun",
+        "reading": "どようび",
+        "vocabularyId": "vocab-440290628fd6"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "近く",
+        "category": "noun",
+        "reading": "ちかく",
+        "vocabularyId": "vocab-cacc70775f3e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "住ん",
+        "category": "verb",
+        "reading": "すん",
+        "vocabularyId": "vocab-405805427b97"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "いる",
+        "category": "auxiliary",
+        "reading": "いる"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "会い",
+        "category": "verb",
+        "reading": "あい",
+        "vocabularyId": "vocab-40179481fcf6"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "土曜日、山の近くに住んでいる友達に会いに行きました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-01",
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "relative-clause",
+      "te-iru-result-state",
+      "movement-purpose"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "movement-purpose",
+        "tokenStart": 12,
+        "tokenEnd": 16
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-planned-noon-arrival",
+    "minimumLevel": "n5",
+    "text": "十二時ごろに友達の家に着くつもりでした。",
+    "audio": "assets/voices/reading/reading-wrong-train-02.m4a",
+    "vocabularyIds": [
+      "vocab-877b9ba07a47",
+      "vocab-7fc81b0ddd17",
+      "vocab-e267b19a680f",
+      "vocab-d9898f8a95b6",
+      "vocab-8af58778f14e",
+      "vocab-f024ec5e9eea",
+      "vocab-9e765516b917"
+    ],
+    "kanjiIds": [
+      "kanji-5341",
+      "kanji-4e8c",
+      "kanji-6642",
+      "kanji-53cb",
+      "kanji-5bb6",
+      "kanji-7740"
+    ],
+    "tokens": [
+      {
+        "surface": "十",
+        "category": "noun",
+        "reading": "じゅう",
+        "vocabularyId": "vocab-877b9ba07a47"
+      },
+      {
+        "surface": "二",
+        "category": "noun",
+        "reading": "に",
+        "vocabularyId": "vocab-7fc81b0ddd17"
+      },
+      {
+        "surface": "時",
+        "category": "noun",
+        "reading": "じ",
+        "vocabularyId": "vocab-e267b19a680f"
+      },
+      {
+        "surface": "ごろ",
+        "category": "particle",
+        "reading": "ごろ"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "着く",
+        "category": "verb",
+        "reading": "つく",
+        "vocabularyId": "vocab-f024ec5e9eea"
+      },
+      {
+        "surface": "つもり",
+        "category": "noun",
+        "reading": "つもり",
+        "vocabularyId": "vocab-9e765516b917"
+      },
+      {
+        "surface": "でし",
+        "category": "auxiliary",
+        "reading": "でし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I intended to arrive at my friend’s house around noon.",
+    "readingSentenceId": "reading-wrong-train-02",
+    "grammarPointIds": [
+      "goro-approximate-time",
+      "tsumori",
+      "ni-destination"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "goro-approximate-time",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-planned-noon-arrival",
+    "minimumLevel": "n5",
+    "text": "I intended to arrive at my friend’s house around noon.",
+    "audio": "assets/voices/reading/reading-wrong-train-02.m4a",
+    "vocabularyIds": [
+      "vocab-877b9ba07a47",
+      "vocab-7fc81b0ddd17",
+      "vocab-e267b19a680f",
+      "vocab-d9898f8a95b6",
+      "vocab-8af58778f14e",
+      "vocab-f024ec5e9eea",
+      "vocab-9e765516b917"
+    ],
+    "kanjiIds": [
+      "kanji-5341",
+      "kanji-4e8c",
+      "kanji-6642",
+      "kanji-53cb",
+      "kanji-5bb6",
+      "kanji-7740"
+    ],
+    "tokens": [
+      {
+        "surface": "十",
+        "category": "noun",
+        "reading": "じゅう",
+        "vocabularyId": "vocab-877b9ba07a47"
+      },
+      {
+        "surface": "二",
+        "category": "noun",
+        "reading": "に",
+        "vocabularyId": "vocab-7fc81b0ddd17"
+      },
+      {
+        "surface": "時",
+        "category": "noun",
+        "reading": "じ",
+        "vocabularyId": "vocab-e267b19a680f"
+      },
+      {
+        "surface": "ごろ",
+        "category": "particle",
+        "reading": "ごろ"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "着く",
+        "category": "verb",
+        "reading": "つく",
+        "vocabularyId": "vocab-f024ec5e9eea"
+      },
+      {
+        "surface": "つもり",
+        "category": "noun",
+        "reading": "つもり",
+        "vocabularyId": "vocab-9e765516b917"
+      },
+      {
+        "surface": "でし",
+        "category": "auxiliary",
+        "reading": "でし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "十二時ごろに友達の家に着くつもりでした。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-02",
+    "promptVocabularyHints": [
+      {
+        "word": "arrive",
+        "vocabularyIds": [
+          "vocab-f024ec5e9eea"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "goro-approximate-time",
+      "tsumori",
+      "ni-destination"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "goro-approximate-time",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-two-stopped-trains",
+    "minimumLevel": "n5",
+    "text": "駅には電車が二本止まっていました。",
+    "audio": "assets/voices/reading/reading-wrong-train-03.m4a",
+    "vocabularyIds": [
+      "vocab-d29031265cf4",
+      "vocab-dc7f5fc156cf",
+      "vocab-7fc81b0ddd17",
+      "vocab-0ac038632611",
+      "vocab-bd365f430f35"
+    ],
+    "kanjiIds": [
+      "kanji-99c5",
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-4e8c",
+      "kanji-672c",
+      "kanji-6b62"
+    ],
+    "tokens": [
+      {
+        "surface": "駅",
+        "category": "noun",
+        "reading": "えき",
+        "vocabularyId": "vocab-d29031265cf4"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "二",
+        "category": "noun",
+        "reading": "に",
+        "vocabularyId": "vocab-7fc81b0ddd17"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "止まっ",
+        "category": "verb",
+        "reading": "とまっ",
+        "vocabularyId": "vocab-bd365f430f35"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Two trains were standing at the station.",
+    "readingSentenceId": "reading-wrong-train-03",
+    "grammarPointIds": [
+      "ni-existence-location",
+      "te-iru-result-state",
+      "common-counters"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-existence-location",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "te-iru-result-state",
+        "tokenStart": 8,
+        "tokenEnd": 12
+      },
+      {
+        "grammarPointId": "common-counters",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-two-stopped-trains",
+    "minimumLevel": "n5",
+    "text": "Two trains were standing at the station.",
+    "audio": "assets/voices/reading/reading-wrong-train-03.m4a",
+    "vocabularyIds": [
+      "vocab-d29031265cf4",
+      "vocab-dc7f5fc156cf",
+      "vocab-7fc81b0ddd17",
+      "vocab-0ac038632611",
+      "vocab-bd365f430f35"
+    ],
+    "kanjiIds": [
+      "kanji-99c5",
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-4e8c",
+      "kanji-672c",
+      "kanji-6b62"
+    ],
+    "tokens": [
+      {
+        "surface": "駅",
+        "category": "noun",
+        "reading": "えき",
+        "vocabularyId": "vocab-d29031265cf4"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "二",
+        "category": "noun",
+        "reading": "に",
+        "vocabularyId": "vocab-7fc81b0ddd17"
+      },
+      {
+        "surface": "本",
+        "category": "noun",
+        "reading": "ほん",
+        "vocabularyId": "vocab-0ac038632611"
+      },
+      {
+        "surface": "止まっ",
+        "category": "verb",
+        "reading": "とまっ",
+        "vocabularyId": "vocab-bd365f430f35"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "駅には電車が二本止まっていました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-03",
+    "promptVocabularyHints": [
+      {
+        "word": "trains",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "ni-existence-location",
+      "te-iru-result-state",
+      "common-counters"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ni-existence-location",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "te-iru-result-state",
+        "tokenStart": 8,
+        "tokenEnd": 12
+      },
+      {
+        "grammarPointId": "common-counters",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-right-or-left",
+    "minimumLevel": "n5",
+    "text": "「山へ行く電車は、右ですか、左ですか」と近くの人に聞きました。",
+    "audio": "assets/voices/reading/reading-wrong-train-04.m4a",
+    "vocabularyIds": [
+      "vocab-ddd9dca106e2",
+      "vocab-ec22142c23d3",
+      "vocab-dc7f5fc156cf",
+      "vocab-ed6bd4d73b76",
+      "vocab-14be5202d5b3",
+      "vocab-cacc70775f3e",
+      "vocab-ad7167347a2a",
+      "vocab-d8a0261581dc"
+    ],
+    "kanjiIds": [
+      "kanji-5c71",
+      "kanji-884c",
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-53f3",
+      "kanji-5de6",
+      "kanji-8fd1",
+      "kanji-4eba",
+      "kanji-805e"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行く",
+        "category": "verb",
+        "reading": "いく",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "右",
+        "category": "noun",
+        "reading": "みぎ",
+        "vocabularyId": "vocab-ed6bd4d73b76"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "左",
+        "category": "noun",
+        "reading": "ひだり",
+        "vocabularyId": "vocab-14be5202d5b3"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "近く",
+        "category": "noun",
+        "reading": "ちかく",
+        "vocabularyId": "vocab-cacc70775f3e"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "聞き",
+        "category": "verb",
+        "reading": "きき",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I asked a person nearby, “Is the train that goes towards the mountains the one on the right or the one on the left?”",
+    "readingSentenceId": "reading-wrong-train-04",
+    "grammarPointIds": [
+      "relative-clause",
+      "ka-alternatives",
+      "to-quotation"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "to-quotation",
+        "tokenStart": 15,
+        "tokenEnd": 16
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-right-or-left",
+    "minimumLevel": "n5",
+    "text": "I asked a person nearby, “Is the train that goes towards the mountains the one on the right or the one on the left?”",
+    "audio": "assets/voices/reading/reading-wrong-train-04.m4a",
+    "vocabularyIds": [
+      "vocab-ddd9dca106e2",
+      "vocab-ec22142c23d3",
+      "vocab-dc7f5fc156cf",
+      "vocab-ed6bd4d73b76",
+      "vocab-14be5202d5b3",
+      "vocab-cacc70775f3e",
+      "vocab-ad7167347a2a",
+      "vocab-d8a0261581dc"
+    ],
+    "kanjiIds": [
+      "kanji-5c71",
+      "kanji-884c",
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-53f3",
+      "kanji-5de6",
+      "kanji-8fd1",
+      "kanji-4eba",
+      "kanji-805e"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行く",
+        "category": "verb",
+        "reading": "いく",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "右",
+        "category": "noun",
+        "reading": "みぎ",
+        "vocabularyId": "vocab-ed6bd4d73b76"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "左",
+        "category": "noun",
+        "reading": "ひだり",
+        "vocabularyId": "vocab-14be5202d5b3"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "近く",
+        "category": "noun",
+        "reading": "ちかく",
+        "vocabularyId": "vocab-cacc70775f3e"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "聞き",
+        "category": "verb",
+        "reading": "きき",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "「山へ行く電車は、右ですか、左ですか」と近くの人に聞きました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-04",
+    "promptVocabularyHints": [
+      {
+        "word": "right",
+        "vocabularyIds": [
+          "vocab-ed6bd4d73b76"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "relative-clause",
+      "ka-alternatives",
+      "to-quotation"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "to-quotation",
+        "tokenStart": 15,
+        "tokenEnd": 16
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-helpful-directions",
+    "minimumLevel": "n5",
+    "text": "その人は「右の電車ですよ」と教えてくれました。",
+    "audio": "assets/voices/reading/reading-wrong-train-05.m4a",
+    "vocabularyIds": [
+      "vocab-ac42ce789185",
+      "vocab-ad7167347a2a",
+      "vocab-ed6bd4d73b76",
+      "vocab-dc7f5fc156cf",
+      "vocab-de83de37aff5"
+    ],
+    "kanjiIds": [
+      "kanji-4eba",
+      "kanji-53f3",
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-6559"
+    ],
+    "tokens": [
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "右",
+        "category": "noun",
+        "reading": "みぎ",
+        "vocabularyId": "vocab-ed6bd4d73b76"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "よ",
+        "category": "particle",
+        "reading": "よ"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "教え",
+        "category": "verb",
+        "reading": "おしえ",
+        "vocabularyId": "vocab-de83de37aff5"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "くれ",
+        "category": "auxiliary",
+        "reading": "くれ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "That person helpfully told me, “It’s the train on the right.”",
+    "readingSentenceId": "reading-wrong-train-05",
+    "grammarPointIds": [
+      "kosoado-determiners",
+      "te-kureru",
+      "yo-emphasis"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "kosoado-determiners",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      },
+      {
+        "grammarPointId": "te-kureru",
+        "tokenStart": 12,
+        "tokenEnd": 16
+      },
+      {
+        "grammarPointId": "yo-emphasis",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-helpful-directions",
+    "minimumLevel": "n5",
+    "text": "That person helpfully told me, “It’s the train on the right.”",
+    "audio": "assets/voices/reading/reading-wrong-train-05.m4a",
+    "vocabularyIds": [
+      "vocab-ac42ce789185",
+      "vocab-ad7167347a2a",
+      "vocab-ed6bd4d73b76",
+      "vocab-dc7f5fc156cf",
+      "vocab-de83de37aff5"
+    ],
+    "kanjiIds": [
+      "kanji-4eba",
+      "kanji-53f3",
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-6559"
+    ],
+    "tokens": [
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "右",
+        "category": "noun",
+        "reading": "みぎ",
+        "vocabularyId": "vocab-ed6bd4d73b76"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "よ",
+        "category": "particle",
+        "reading": "よ"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "教え",
+        "category": "verb",
+        "reading": "おしえ",
+        "vocabularyId": "vocab-de83de37aff5"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "くれ",
+        "category": "auxiliary",
+        "reading": "くれ"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "その人は「右の電車ですよ」と教えてくれました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-05",
+    "promptVocabularyHints": [
+      {
+        "word": "right",
+        "vocabularyIds": [
+          "vocab-ed6bd4d73b76"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "kosoado-determiners",
+      "te-kureru",
+      "yo-emphasis"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "kosoado-determiners",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      },
+      {
+        "grammarPointId": "te-kureru",
+        "tokenStart": 12,
+        "tokenEnd": 16
+      },
+      {
+        "grammarPointId": "yo-emphasis",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-board-without-listening",
+    "minimumLevel": "n5",
+    "text": "でも、私は話をよく聞かないで、左の電車に乗りました。",
+    "audio": "assets/voices/reading/reading-wrong-train-06.m4a",
+    "vocabularyIds": [
+      "vocab-7aeac2a5dd4c",
+      "vocab-b6944a5fe271",
+      "vocab-be9551d57abc",
+      "vocab-ac0d84b30392",
+      "vocab-d8a0261581dc",
+      "vocab-14be5202d5b3",
+      "vocab-dc7f5fc156cf",
+      "vocab-9e0eeba39759"
+    ],
+    "kanjiIds": [
+      "kanji-79c1",
+      "kanji-8a71",
+      "kanji-805e",
+      "kanji-5de6",
+      "kanji-96fb",
+      "kanji-8eca"
+    ],
+    "tokens": [
+      {
+        "surface": "でも",
+        "category": "conjunction",
+        "reading": "でも",
+        "vocabularyId": "vocab-7aeac2a5dd4c"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "話",
+        "category": "noun",
+        "reading": "はなし",
+        "vocabularyId": "vocab-be9551d57abc"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "よく",
+        "category": "adverb",
+        "reading": "よく",
+        "vocabularyId": "vocab-ac0d84b30392"
+      },
+      {
+        "surface": "聞か",
+        "category": "verb",
+        "reading": "きか",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "ない",
+        "category": "auxiliary",
+        "reading": "ない"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "左",
+        "category": "noun",
+        "reading": "ひだり",
+        "vocabularyId": "vocab-14be5202d5b3"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "乗り",
+        "category": "verb",
+        "reading": "のり",
+        "vocabularyId": "vocab-9e0eeba39759"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "But without listening carefully, I boarded the train on the left.",
+    "readingSentenceId": "reading-wrong-train-06",
+    "grammarPointIds": [
+      "demo-connector",
+      "naide-without",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "demo-connector",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      },
+      {
+        "grammarPointId": "naide-without",
+        "tokenStart": 8,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 14,
+        "tokenEnd": 15
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-board-without-listening",
+    "minimumLevel": "n5",
+    "text": "But without listening carefully, I boarded the train on the left.",
+    "audio": "assets/voices/reading/reading-wrong-train-06.m4a",
+    "vocabularyIds": [
+      "vocab-7aeac2a5dd4c",
+      "vocab-b6944a5fe271",
+      "vocab-be9551d57abc",
+      "vocab-ac0d84b30392",
+      "vocab-d8a0261581dc",
+      "vocab-14be5202d5b3",
+      "vocab-dc7f5fc156cf",
+      "vocab-9e0eeba39759"
+    ],
+    "kanjiIds": [
+      "kanji-79c1",
+      "kanji-8a71",
+      "kanji-805e",
+      "kanji-5de6",
+      "kanji-96fb",
+      "kanji-8eca"
+    ],
+    "tokens": [
+      {
+        "surface": "でも",
+        "category": "conjunction",
+        "reading": "でも",
+        "vocabularyId": "vocab-7aeac2a5dd4c"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "話",
+        "category": "noun",
+        "reading": "はなし",
+        "vocabularyId": "vocab-be9551d57abc"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "よく",
+        "category": "adverb",
+        "reading": "よく",
+        "vocabularyId": "vocab-ac0d84b30392"
+      },
+      {
+        "surface": "聞か",
+        "category": "verb",
+        "reading": "きか",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "ない",
+        "category": "auxiliary",
+        "reading": "ない"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "左",
+        "category": "noun",
+        "reading": "ひだり",
+        "vocabularyId": "vocab-14be5202d5b3"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "乗り",
+        "category": "verb",
+        "reading": "のり",
+        "vocabularyId": "vocab-9e0eeba39759"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "でも、私は話をよく聞かないで、左の電車に乗りました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-06",
+    "promptVocabularyHints": [
+      {
+        "word": "left",
+        "vocabularyIds": [
+          "vocab-14be5202d5b3"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "demo-connector",
+      "naide-without",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "demo-connector",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      },
+      {
+        "grammarPointId": "naide-without",
+        "tokenStart": 8,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 14,
+        "tokenEnd": 15
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-assume-the-destination",
+    "minimumLevel": "n5",
+    "text": "この電車は山へ行くだろうと思いました。",
+    "audio": "assets/voices/reading/reading-wrong-train-07.m4a",
+    "vocabularyIds": [
+      "vocab-25acc002a82f",
+      "vocab-dc7f5fc156cf",
+      "vocab-ddd9dca106e2",
+      "vocab-ec22142c23d3",
+      "vocab-c64ca071011e"
+    ],
+    "kanjiIds": [
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-5c71",
+      "kanji-884c",
+      "kanji-601d"
+    ],
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行く",
+        "category": "verb",
+        "reading": "いく",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "だろ",
+        "category": "auxiliary",
+        "reading": "だろ"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "思い",
+        "category": "verb",
+        "reading": "おもい",
+        "vocabularyId": "vocab-c64ca071011e"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I thought this train would probably go towards the mountains.",
+    "readingSentenceId": "reading-wrong-train-07",
+    "grammarPointIds": [
+      "darou",
+      "to-omou",
+      "e-direction"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "darou",
+        "tokenStart": 6,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "to-omou",
+        "tokenStart": 8,
+        "tokenEnd": 12
+      },
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-assume-the-destination",
+    "minimumLevel": "n5",
+    "text": "I thought this train would probably go towards the mountains.",
+    "audio": "assets/voices/reading/reading-wrong-train-07.m4a",
+    "vocabularyIds": [
+      "vocab-25acc002a82f",
+      "vocab-dc7f5fc156cf",
+      "vocab-ddd9dca106e2",
+      "vocab-ec22142c23d3",
+      "vocab-c64ca071011e"
+    ],
+    "kanjiIds": [
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-5c71",
+      "kanji-884c",
+      "kanji-601d"
+    ],
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行く",
+        "category": "verb",
+        "reading": "いく",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "だろ",
+        "category": "auxiliary",
+        "reading": "だろ"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "思い",
+        "category": "verb",
+        "reading": "おもい",
+        "vocabularyId": "vocab-c64ca071011e"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "この電車は山へ行くだろうと思いました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-07",
+    "promptVocabularyHints": [
+      {
+        "word": "mountains",
+        "vocabularyIds": [
+          "vocab-ddd9dca106e2"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "darou",
+      "to-omou",
+      "e-direction"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "darou",
+        "tokenStart": 6,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "to-omou",
+        "tokenStart": 8,
+        "tokenEnd": 12
+      },
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-look-outside",
+    "minimumLevel": "n5",
+    "text": "電車の中で、窓の外を見ていました。",
+    "audio": "assets/voices/reading/reading-wrong-train-08.m4a",
+    "vocabularyIds": [
+      "vocab-dc7f5fc156cf",
+      "vocab-5849925b131d",
+      "vocab-2c2d6564a0bc",
+      "vocab-6109638dac53",
+      "vocab-385cc0d9ee98"
+    ],
+    "kanjiIds": [
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-4e2d",
+      "kanji-5916",
+      "kanji-898b"
+    ],
+    "tokens": [
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "中",
+        "category": "noun",
+        "reading": "なか",
+        "vocabularyId": "vocab-5849925b131d"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "窓",
+        "category": "noun",
+        "reading": "まど",
+        "vocabularyId": "vocab-2c2d6564a0bc"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "外",
+        "category": "noun",
+        "reading": "そと",
+        "vocabularyId": "vocab-6109638dac53"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見",
+        "category": "verb",
+        "reading": "み",
+        "vocabularyId": "vocab-385cc0d9ee98"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Inside the train, I was looking outside through the window.",
+    "readingSentenceId": "reading-wrong-train-08",
+    "grammarPointIds": [
+      "de-action-location",
+      "positional-nouns",
+      "te-iru-progressive"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "positional-nouns",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "te-iru-progressive",
+        "tokenStart": 10,
+        "tokenEnd": 14
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-look-outside",
+    "minimumLevel": "n5",
+    "text": "Inside the train, I was looking outside through the window.",
+    "audio": "assets/voices/reading/reading-wrong-train-08.m4a",
+    "vocabularyIds": [
+      "vocab-dc7f5fc156cf",
+      "vocab-5849925b131d",
+      "vocab-2c2d6564a0bc",
+      "vocab-6109638dac53",
+      "vocab-385cc0d9ee98"
+    ],
+    "kanjiIds": [
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-4e2d",
+      "kanji-5916",
+      "kanji-898b"
+    ],
+    "tokens": [
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "中",
+        "category": "noun",
+        "reading": "なか",
+        "vocabularyId": "vocab-5849925b131d"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "窓",
+        "category": "noun",
+        "reading": "まど",
+        "vocabularyId": "vocab-2c2d6564a0bc"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "外",
+        "category": "noun",
+        "reading": "そと",
+        "vocabularyId": "vocab-6109638dac53"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見",
+        "category": "verb",
+        "reading": "み",
+        "vocabularyId": "vocab-385cc0d9ee98"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "電車の中で、窓の外を見ていました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-08",
+    "promptVocabularyHints": [
+      {
+        "word": "window",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "de-action-location",
+      "positional-nouns",
+      "te-iru-progressive"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "positional-nouns",
+        "tokenStart": 2,
+        "tokenEnd": 3
+      },
+      {
+        "grammarPointId": "te-iru-progressive",
+        "tokenStart": 10,
+        "tokenEnd": 14
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-sea-not-mountains",
+    "minimumLevel": "n5",
+    "text": "山は見えませんでしたが、海がよく見えました。",
+    "audio": "assets/voices/reading/reading-wrong-train-09.m4a",
+    "vocabularyIds": [
+      "vocab-ddd9dca106e2",
+      "vocab-e99feae5bc25",
+      "vocab-47c1227c459b",
+      "vocab-ac0d84b30392"
+    ],
+    "kanjiIds": [
+      "kanji-5c71",
+      "kanji-898b",
+      "kanji-6d77"
+    ],
+    "tokens": [
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "見え",
+        "category": "verb",
+        "reading": "みえ",
+        "vocabularyId": "vocab-e99feae5bc25"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "でし",
+        "category": "auxiliary",
+        "reading": "でし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "よく",
+        "category": "adverb",
+        "reading": "よく",
+        "vocabularyId": "vocab-ac0d84b30392"
+      },
+      {
+        "surface": "見え",
+        "category": "verb",
+        "reading": "みえ",
+        "vocabularyId": "vocab-e99feae5bc25"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I could not see the mountains, but I could see the sea clearly.",
+    "readingSentenceId": "reading-wrong-train-09",
+    "grammarPointIds": [
+      "verb-masen-deshita",
+      "ga-contrast",
+      "ga-subject"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "verb-masen-deshita",
+        "tokenStart": 3,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-sea-not-mountains",
+    "minimumLevel": "n5",
+    "text": "I could not see the mountains, but I could see the sea clearly.",
+    "audio": "assets/voices/reading/reading-wrong-train-09.m4a",
+    "vocabularyIds": [
+      "vocab-ddd9dca106e2",
+      "vocab-e99feae5bc25",
+      "vocab-47c1227c459b",
+      "vocab-ac0d84b30392"
+    ],
+    "kanjiIds": [
+      "kanji-5c71",
+      "kanji-898b",
+      "kanji-6d77"
+    ],
+    "tokens": [
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "見え",
+        "category": "verb",
+        "reading": "みえ",
+        "vocabularyId": "vocab-e99feae5bc25"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "でし",
+        "category": "auxiliary",
+        "reading": "でし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "よく",
+        "category": "adverb",
+        "reading": "よく",
+        "vocabularyId": "vocab-ac0d84b30392"
+      },
+      {
+        "surface": "見え",
+        "category": "verb",
+        "reading": "みえ",
+        "vocabularyId": "vocab-e99feae5bc25"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "山は見えませんでしたが、海がよく見えました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-09",
+    "promptVocabularyHints": [
+      {
+        "word": "sea",
+        "vocabularyIds": [
+          "vocab-47c1227c459b"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "verb-masen-deshita",
+      "ga-contrast",
+      "ga-subject"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "verb-masen-deshita",
+        "tokenStart": 3,
+        "tokenEnd": 7
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-ask-the-neighbour",
+    "minimumLevel": "n5",
+    "text": "「この電車は山へ行きますか」と隣の人に聞きました。",
+    "audio": "assets/voices/reading/reading-wrong-train-10.m4a",
+    "vocabularyIds": [
+      "vocab-25acc002a82f",
+      "vocab-dc7f5fc156cf",
+      "vocab-ddd9dca106e2",
+      "vocab-ec22142c23d3",
+      "vocab-1e9c76154fae",
+      "vocab-ad7167347a2a",
+      "vocab-d8a0261581dc"
+    ],
+    "kanjiIds": [
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-5c71",
+      "kanji-884c",
+      "kanji-4eba",
+      "kanji-805e"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "隣",
+        "category": "noun",
+        "reading": "となり",
+        "vocabularyId": "vocab-1e9c76154fae"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "聞き",
+        "category": "verb",
+        "reading": "きき",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I asked the person next to me, “Does this train go towards the mountains?”",
+    "readingSentenceId": "reading-wrong-train-10",
+    "grammarPointIds": [
+      "ka-question",
+      "to-quotation",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ka-question",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "to-quotation",
+        "tokenStart": 10,
+        "tokenEnd": 11
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 14,
+        "tokenEnd": 15
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-ask-the-neighbour",
+    "minimumLevel": "n5",
+    "text": "I asked the person next to me, “Does this train go towards the mountains?”",
+    "audio": "assets/voices/reading/reading-wrong-train-10.m4a",
+    "vocabularyIds": [
+      "vocab-25acc002a82f",
+      "vocab-dc7f5fc156cf",
+      "vocab-ddd9dca106e2",
+      "vocab-ec22142c23d3",
+      "vocab-1e9c76154fae",
+      "vocab-ad7167347a2a",
+      "vocab-d8a0261581dc"
+    ],
+    "kanjiIds": [
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-5c71",
+      "kanji-884c",
+      "kanji-4eba",
+      "kanji-805e"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "隣",
+        "category": "noun",
+        "reading": "となり",
+        "vocabularyId": "vocab-1e9c76154fae"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "聞き",
+        "category": "verb",
+        "reading": "きき",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "「この電車は山へ行きますか」と隣の人に聞きました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-10",
+    "promptVocabularyHints": [
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "ka-question",
+      "to-quotation",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "ka-question",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "to-quotation",
+        "tokenStart": 10,
+        "tokenEnd": 11
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 14,
+        "tokenEnd": 15
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-actual-destination",
+    "minimumLevel": "n5",
+    "text": "その人は「いいえ、海へ行きますよ」と答えました。",
+    "audio": "assets/voices/reading/reading-wrong-train-11.m4a",
+    "vocabularyIds": [
+      "vocab-ac42ce789185",
+      "vocab-ad7167347a2a",
+      "vocab-5e97c99f1db9",
+      "vocab-47c1227c459b",
+      "vocab-ec22142c23d3",
+      "vocab-b4624c258f50"
+    ],
+    "kanjiIds": [
+      "kanji-4eba",
+      "kanji-6d77",
+      "kanji-884c",
+      "kanji-7b54"
+    ],
+    "tokens": [
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "いいえ",
+        "category": "interjection",
+        "reading": "いいえ",
+        "vocabularyId": "vocab-5e97c99f1db9"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "よ",
+        "category": "particle",
+        "reading": "よ"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "答え",
+        "category": "verb",
+        "reading": "こたえ",
+        "vocabularyId": "vocab-b4624c258f50"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "That person replied, “No, it goes towards the sea.”",
+    "readingSentenceId": "reading-wrong-train-11",
+    "grammarPointIds": [
+      "e-direction",
+      "yo-emphasis",
+      "to-quotation"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "yo-emphasis",
+        "tokenStart": 10,
+        "tokenEnd": 11
+      },
+      {
+        "grammarPointId": "to-quotation",
+        "tokenStart": 12,
+        "tokenEnd": 13
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-actual-destination",
+    "minimumLevel": "n5",
+    "text": "That person replied, “No, it goes towards the sea.”",
+    "audio": "assets/voices/reading/reading-wrong-train-11.m4a",
+    "vocabularyIds": [
+      "vocab-ac42ce789185",
+      "vocab-ad7167347a2a",
+      "vocab-5e97c99f1db9",
+      "vocab-47c1227c459b",
+      "vocab-ec22142c23d3",
+      "vocab-b4624c258f50"
+    ],
+    "kanjiIds": [
+      "kanji-4eba",
+      "kanji-6d77",
+      "kanji-884c",
+      "kanji-7b54"
+    ],
+    "tokens": [
+      {
+        "surface": "その",
+        "category": "determiner",
+        "reading": "その",
+        "vocabularyId": "vocab-ac42ce789185"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "いいえ",
+        "category": "interjection",
+        "reading": "いいえ",
+        "vocabularyId": "vocab-5e97c99f1db9"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "よ",
+        "category": "particle",
+        "reading": "よ"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "答え",
+        "category": "verb",
+        "reading": "こたえ",
+        "vocabularyId": "vocab-b4624c258f50"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "その人は「いいえ、海へ行きますよ」と答えました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-11",
+    "promptVocabularyHints": [
+      {
+        "word": "sea",
+        "vocabularyIds": [
+          "vocab-47c1227c459b"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "e-direction",
+      "yo-emphasis",
+      "to-quotation"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "yo-emphasis",
+        "tokenStart": 10,
+        "tokenEnd": 11
+      },
+      {
+        "grammarPointId": "to-quotation",
+        "tokenStart": 12,
+        "tokenEnd": 13
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-phone-at-next-station",
+    "minimumLevel": "n5",
+    "text": "次の駅で降りて、友達に電話をかけました。",
+    "audio": "assets/voices/reading/reading-wrong-train-12.m4a",
+    "vocabularyIds": [
+      "vocab-c97677d187f5",
+      "vocab-d29031265cf4",
+      "vocab-2438f15019e7",
+      "vocab-d9898f8a95b6",
+      "vocab-24df87472770",
+      "vocab-115e9c23e2b9"
+    ],
+    "kanjiIds": [
+      "kanji-99c5",
+      "kanji-53cb",
+      "kanji-96fb",
+      "kanji-8a71"
+    ],
+    "tokens": [
+      {
+        "surface": "次",
+        "category": "noun",
+        "reading": "つぎ",
+        "vocabularyId": "vocab-c97677d187f5"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "駅",
+        "category": "noun",
+        "reading": "えき",
+        "vocabularyId": "vocab-d29031265cf4"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "降り",
+        "category": "verb",
+        "reading": "おり",
+        "vocabularyId": "vocab-2438f15019e7"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "電話",
+        "category": "noun",
+        "reading": "でんわ",
+        "vocabularyId": "vocab-24df87472770"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "かけ",
+        "category": "verb",
+        "reading": "かけ",
+        "vocabularyId": "vocab-115e9c23e2b9"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I got off at the next station and phoned my friend.",
+    "readingSentenceId": "reading-wrong-train-12",
+    "grammarPointIds": [
+      "de-action-location",
+      "te-action-link",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-phone-at-next-station",
+    "minimumLevel": "n5",
+    "text": "I got off at the next station and phoned my friend.",
+    "audio": "assets/voices/reading/reading-wrong-train-12.m4a",
+    "vocabularyIds": [
+      "vocab-c97677d187f5",
+      "vocab-d29031265cf4",
+      "vocab-2438f15019e7",
+      "vocab-d9898f8a95b6",
+      "vocab-24df87472770",
+      "vocab-115e9c23e2b9"
+    ],
+    "kanjiIds": [
+      "kanji-99c5",
+      "kanji-53cb",
+      "kanji-96fb",
+      "kanji-8a71"
+    ],
+    "tokens": [
+      {
+        "surface": "次",
+        "category": "noun",
+        "reading": "つぎ",
+        "vocabularyId": "vocab-c97677d187f5"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "駅",
+        "category": "noun",
+        "reading": "えき",
+        "vocabularyId": "vocab-d29031265cf4"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "降り",
+        "category": "verb",
+        "reading": "おり",
+        "vocabularyId": "vocab-2438f15019e7"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "電話",
+        "category": "noun",
+        "reading": "でんわ",
+        "vocabularyId": "vocab-24df87472770"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "かけ",
+        "category": "verb",
+        "reading": "かけ",
+        "vocabularyId": "vocab-115e9c23e2b9"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "次の駅で降りて、友達に電話をかけました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-12",
+    "promptVocabularyHints": [
+      {
+        "word": "station",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "de-action-location",
+      "te-action-link",
+      "ni-target-recipient"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "ni-target-recipient",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-late-phone-call",
+    "minimumLevel": "n5",
+    "text": "「まだ海の近くにいます。少し遅くなります」と言いました。",
+    "audio": "assets/voices/reading/reading-wrong-train-13.m4a",
+    "vocabularyIds": [
+      "vocab-f385448e1132",
+      "vocab-47c1227c459b",
+      "vocab-cacc70775f3e",
+      "vocab-e2f1dae6743a",
+      "vocab-8814378ebfc2",
+      "vocab-f19598f8742b",
+      "vocab-3653e718a1a5",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-6d77",
+      "kanji-8fd1",
+      "kanji-5c11",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "まだ",
+        "category": "adverb",
+        "reading": "まだ",
+        "vocabularyId": "vocab-f385448e1132"
+      },
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "近く",
+        "category": "noun",
+        "reading": "ちかく",
+        "vocabularyId": "vocab-cacc70775f3e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "い",
+        "category": "verb",
+        "reading": "い",
+        "vocabularyId": "vocab-e2f1dae6743a"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "少し",
+        "category": "adverb",
+        "reading": "すこし",
+        "vocabularyId": "vocab-8814378ebfc2"
+      },
+      {
+        "surface": "遅く",
+        "category": "adjective",
+        "reading": "おそく",
+        "vocabularyId": "vocab-f19598f8742b"
+      },
+      {
+        "surface": "なり",
+        "category": "verb",
+        "reading": "なり",
+        "vocabularyId": "vocab-3653e718a1a5"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I said, “I’m still near the sea. I’ll be a little late.”",
+    "readingSentenceId": "reading-wrong-train-13",
+    "grammarPointIds": [
+      "mada",
+      "naru-ku-change",
+      "to-iu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mada",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "naru-ku-change",
+        "tokenStart": 10,
+        "tokenEnd": 13
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 14,
+        "tokenEnd": 18
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-late-phone-call",
+    "minimumLevel": "n5",
+    "text": "I said, “I’m still near the sea. I’ll be a little late.”",
+    "audio": "assets/voices/reading/reading-wrong-train-13.m4a",
+    "vocabularyIds": [
+      "vocab-f385448e1132",
+      "vocab-47c1227c459b",
+      "vocab-cacc70775f3e",
+      "vocab-e2f1dae6743a",
+      "vocab-8814378ebfc2",
+      "vocab-f19598f8742b",
+      "vocab-3653e718a1a5",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-6d77",
+      "kanji-8fd1",
+      "kanji-5c11",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "まだ",
+        "category": "adverb",
+        "reading": "まだ",
+        "vocabularyId": "vocab-f385448e1132"
+      },
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "近く",
+        "category": "noun",
+        "reading": "ちかく",
+        "vocabularyId": "vocab-cacc70775f3e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "い",
+        "category": "verb",
+        "reading": "い",
+        "vocabularyId": "vocab-e2f1dae6743a"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "少し",
+        "category": "adverb",
+        "reading": "すこし",
+        "vocabularyId": "vocab-8814378ebfc2"
+      },
+      {
+        "surface": "遅く",
+        "category": "adjective",
+        "reading": "おそく",
+        "vocabularyId": "vocab-f19598f8742b"
+      },
+      {
+        "surface": "なり",
+        "category": "verb",
+        "reading": "なり",
+        "vocabularyId": "vocab-3653e718a1a5"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "「まだ海の近くにいます。少し遅くなります」と言いました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-13",
+    "promptVocabularyHints": [
+      {
+        "word": "late",
+        "vocabularyIds": [
+          "vocab-f19598f8742b"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "mada",
+      "naru-ku-change",
+      "to-iu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mada",
+        "tokenStart": 1,
+        "tokenEnd": 2
+      },
+      {
+        "grammarPointId": "naru-ku-change",
+        "tokenStart": 10,
+        "tokenEnd": 13
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 14,
+        "tokenEnd": 18
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-lunch-not-ready",
+    "minimumLevel": "n5",
+    "text": "友達は「大丈夫です。昼御飯はまだ作っていません」と言いました。",
+    "audio": "assets/voices/reading/reading-wrong-train-14.m4a",
+    "vocabularyIds": [
+      "vocab-d9898f8a95b6",
+      "vocab-2d473f5bae43",
+      "vocab-4a9566e87de1",
+      "vocab-2bf5dccca2b0",
+      "vocab-f385448e1132",
+      "vocab-a4ccf0b7bace",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-53cb",
+      "kanji-5927",
+      "kanji-663c",
+      "kanji-98ef",
+      "kanji-4f5c",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "大丈夫",
+        "category": "adjective",
+        "reading": "だいじょうぶ",
+        "vocabularyId": "vocab-2d473f5bae43"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "昼",
+        "category": "noun",
+        "reading": "ひる",
+        "vocabularyId": "vocab-4a9566e87de1"
+      },
+      {
+        "surface": "御飯",
+        "category": "noun",
+        "reading": "ごはん",
+        "vocabularyId": "vocab-2bf5dccca2b0"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "まだ",
+        "category": "adverb",
+        "reading": "まだ",
+        "vocabularyId": "vocab-f385448e1132"
+      },
+      {
+        "surface": "作っ",
+        "category": "verb",
+        "reading": "つくっ",
+        "vocabularyId": "vocab-a4ccf0b7bace"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "My friend said, “It’s all right. I haven’t made lunch yet.”",
+    "readingSentenceId": "reading-wrong-train-14",
+    "grammarPointIds": [
+      "mada-te-inai",
+      "na-adjective-predicate",
+      "to-iu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mada-te-inai",
+        "tokenStart": 9,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "na-adjective-predicate",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 16,
+        "tokenEnd": 20
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-lunch-not-ready",
+    "minimumLevel": "n5",
+    "text": "My friend said, “It’s all right. I haven’t made lunch yet.”",
+    "audio": "assets/voices/reading/reading-wrong-train-14.m4a",
+    "vocabularyIds": [
+      "vocab-d9898f8a95b6",
+      "vocab-2d473f5bae43",
+      "vocab-4a9566e87de1",
+      "vocab-2bf5dccca2b0",
+      "vocab-f385448e1132",
+      "vocab-a4ccf0b7bace",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-53cb",
+      "kanji-5927",
+      "kanji-663c",
+      "kanji-98ef",
+      "kanji-4f5c",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "大丈夫",
+        "category": "adjective",
+        "reading": "だいじょうぶ",
+        "vocabularyId": "vocab-2d473f5bae43"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "昼",
+        "category": "noun",
+        "reading": "ひる",
+        "vocabularyId": "vocab-4a9566e87de1"
+      },
+      {
+        "surface": "御飯",
+        "category": "noun",
+        "reading": "ごはん",
+        "vocabularyId": "vocab-2bf5dccca2b0"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "まだ",
+        "category": "adverb",
+        "reading": "まだ",
+        "vocabularyId": "vocab-f385448e1132"
+      },
+      {
+        "surface": "作っ",
+        "category": "verb",
+        "reading": "つくっ",
+        "vocabularyId": "vocab-a4ccf0b7bace"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "い",
+        "category": "auxiliary",
+        "reading": "い"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "友達は「大丈夫です。昼御飯はまだ作っていません」と言いました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-14",
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "mada-te-inai",
+      "na-adjective-predicate",
+      "to-iu"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mada-te-inai",
+        "tokenStart": 9,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "na-adjective-predicate",
+        "tokenStart": 4,
+        "tokenEnd": 5
+      },
+      {
+        "grammarPointId": "to-iu",
+        "tokenStart": 16,
+        "tokenEnd": 20
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-postcards-while-waiting",
+    "minimumLevel": "n5",
+    "text": "次の電車まで時間があったので、駅の店で葉書を買いました。",
+    "audio": "assets/voices/reading/reading-wrong-train-15.m4a",
+    "vocabularyIds": [
+      "vocab-c97677d187f5",
+      "vocab-dc7f5fc156cf",
+      "vocab-f6a8c4a23b51",
+      "vocab-b66f43bc23a1",
+      "vocab-d29031265cf4",
+      "vocab-e70f9243d4c7",
+      "vocab-39d2d353efa5",
+      "vocab-1b65a0cb82d2"
+    ],
+    "kanjiIds": [
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-6642",
+      "kanji-9593",
+      "kanji-99c5",
+      "kanji-5e97",
+      "kanji-66f8",
+      "kanji-8cb7"
+    ],
+    "tokens": [
+      {
+        "surface": "次",
+        "category": "noun",
+        "reading": "つぎ",
+        "vocabularyId": "vocab-c97677d187f5"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "まで",
+        "category": "particle",
+        "reading": "まで"
+      },
+      {
+        "surface": "時間",
+        "category": "noun",
+        "reading": "じかん",
+        "vocabularyId": "vocab-f6a8c4a23b51"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あっ",
+        "category": "verb",
+        "reading": "あっ",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "ので",
+        "category": "particle",
+        "reading": "ので"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "駅",
+        "category": "noun",
+        "reading": "えき",
+        "vocabularyId": "vocab-d29031265cf4"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "店",
+        "category": "noun",
+        "reading": "みせ",
+        "vocabularyId": "vocab-e70f9243d4c7"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "葉書",
+        "category": "noun",
+        "reading": "はがき",
+        "vocabularyId": "vocab-39d2d353efa5"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "買い",
+        "category": "verb",
+        "reading": "かい",
+        "vocabularyId": "vocab-1b65a0cb82d2"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Since I had some time before the next train, I bought postcards at the station shop.",
+    "readingSentenceId": "reading-wrong-train-15",
+    "grammarPointIds": [
+      "made-end",
+      "node-reason",
+      "de-action-location"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "made-end",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "node-reason",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 13,
+        "tokenEnd": 14
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-postcards-while-waiting",
+    "minimumLevel": "n5",
+    "text": "Since I had some time before the next train, I bought postcards at the station shop.",
+    "audio": "assets/voices/reading/reading-wrong-train-15.m4a",
+    "vocabularyIds": [
+      "vocab-c97677d187f5",
+      "vocab-dc7f5fc156cf",
+      "vocab-f6a8c4a23b51",
+      "vocab-b66f43bc23a1",
+      "vocab-d29031265cf4",
+      "vocab-e70f9243d4c7",
+      "vocab-39d2d353efa5",
+      "vocab-1b65a0cb82d2"
+    ],
+    "kanjiIds": [
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-6642",
+      "kanji-9593",
+      "kanji-99c5",
+      "kanji-5e97",
+      "kanji-66f8",
+      "kanji-8cb7"
+    ],
+    "tokens": [
+      {
+        "surface": "次",
+        "category": "noun",
+        "reading": "つぎ",
+        "vocabularyId": "vocab-c97677d187f5"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "まで",
+        "category": "particle",
+        "reading": "まで"
+      },
+      {
+        "surface": "時間",
+        "category": "noun",
+        "reading": "じかん",
+        "vocabularyId": "vocab-f6a8c4a23b51"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あっ",
+        "category": "verb",
+        "reading": "あっ",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "ので",
+        "category": "particle",
+        "reading": "ので"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "駅",
+        "category": "noun",
+        "reading": "えき",
+        "vocabularyId": "vocab-d29031265cf4"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "店",
+        "category": "noun",
+        "reading": "みせ",
+        "vocabularyId": "vocab-e70f9243d4c7"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "葉書",
+        "category": "noun",
+        "reading": "はがき",
+        "vocabularyId": "vocab-39d2d353efa5"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "買い",
+        "category": "verb",
+        "reading": "かい",
+        "vocabularyId": "vocab-1b65a0cb82d2"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "次の電車まで時間があったので、駅の店で葉書を買いました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-15",
+    "promptVocabularyHints": [
+      {
+        "word": "postcards",
+        "vocabularyIds": [
+          "vocab-39d2d353efa5"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "made-end",
+      "node-reason",
+      "de-action-location"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "made-end",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "node-reason",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "de-action-location",
+        "tokenStart": 13,
+        "tokenEnd": 14
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-beautiful-sea-gift",
+    "minimumLevel": "n5",
+    "text": "海の写真がきれいだったから、友達にも一枚あげたいと思いました。",
+    "audio": "assets/voices/reading/reading-wrong-train-16.m4a",
+    "vocabularyIds": [
+      "vocab-47c1227c459b",
+      "vocab-d5901ecbf5fb",
+      "vocab-58a738a344fe",
+      "vocab-d9898f8a95b6",
+      "vocab-5d8047464c5d",
+      "vocab-86127e9c0299",
+      "vocab-eee8b9c95721",
+      "vocab-c64ca071011e"
+    ],
+    "kanjiIds": [
+      "kanji-6d77",
+      "kanji-5199",
+      "kanji-771f",
+      "kanji-53cb",
+      "kanji-4e00",
+      "kanji-601d"
+    ],
+    "tokens": [
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "きれい",
+        "category": "adjective",
+        "reading": "きれい",
+        "vocabularyId": "vocab-58a738a344fe"
+      },
+      {
+        "surface": "だっ",
+        "category": "auxiliary",
+        "reading": "だっ"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "から",
+        "category": "particle",
+        "reading": "から"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "一",
+        "category": "noun",
+        "reading": "いち",
+        "vocabularyId": "vocab-5d8047464c5d"
+      },
+      {
+        "surface": "枚",
+        "category": "noun",
+        "reading": "まい",
+        "vocabularyId": "vocab-86127e9c0299"
+      },
+      {
+        "surface": "あげ",
+        "category": "verb",
+        "reading": "あげ",
+        "vocabularyId": "vocab-eee8b9c95721"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "思い",
+        "category": "verb",
+        "reading": "おもい",
+        "vocabularyId": "vocab-c64ca071011e"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Because the photograph of the sea was beautiful, I thought I would like to give my friend one too.",
+    "readingSentenceId": "reading-wrong-train-16",
+    "grammarPointIds": [
+      "kara-reason",
+      "ageru",
+      "tai-desire",
+      "to-omou"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "kara-reason",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "ageru",
+        "tokenStart": 10,
+        "tokenEnd": 11
+      },
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 15,
+        "tokenEnd": 16
+      },
+      {
+        "grammarPointId": "to-omou",
+        "tokenStart": 16,
+        "tokenEnd": 20
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-beautiful-sea-gift",
+    "minimumLevel": "n5",
+    "text": "Because the photograph of the sea was beautiful, I thought I would like to give my friend one too.",
+    "audio": "assets/voices/reading/reading-wrong-train-16.m4a",
+    "vocabularyIds": [
+      "vocab-47c1227c459b",
+      "vocab-d5901ecbf5fb",
+      "vocab-58a738a344fe",
+      "vocab-d9898f8a95b6",
+      "vocab-5d8047464c5d",
+      "vocab-86127e9c0299",
+      "vocab-eee8b9c95721",
+      "vocab-c64ca071011e"
+    ],
+    "kanjiIds": [
+      "kanji-6d77",
+      "kanji-5199",
+      "kanji-771f",
+      "kanji-53cb",
+      "kanji-4e00",
+      "kanji-601d"
+    ],
+    "tokens": [
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "きれい",
+        "category": "adjective",
+        "reading": "きれい",
+        "vocabularyId": "vocab-58a738a344fe"
+      },
+      {
+        "surface": "だっ",
+        "category": "auxiliary",
+        "reading": "だっ"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "から",
+        "category": "particle",
+        "reading": "から"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "一",
+        "category": "noun",
+        "reading": "いち",
+        "vocabularyId": "vocab-5d8047464c5d"
+      },
+      {
+        "surface": "枚",
+        "category": "noun",
+        "reading": "まい",
+        "vocabularyId": "vocab-86127e9c0299"
+      },
+      {
+        "surface": "あげ",
+        "category": "verb",
+        "reading": "あげ",
+        "vocabularyId": "vocab-eee8b9c95721"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "思い",
+        "category": "verb",
+        "reading": "おもい",
+        "vocabularyId": "vocab-c64ca071011e"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "海の写真がきれいだったから、友達にも一枚あげたいと思いました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-16",
+    "promptVocabularyHints": [
+      {
+        "word": "photograph",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "kara-reason",
+      "ageru",
+      "tai-desire",
+      "to-omou"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "kara-reason",
+        "tokenStart": 7,
+        "tokenEnd": 8
+      },
+      {
+        "grammarPointId": "ageru",
+        "tokenStart": 10,
+        "tokenEnd": 11
+      },
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 15,
+        "tokenEnd": 16
+      },
+      {
+        "grammarPointId": "to-omou",
+        "tokenStart": 16,
+        "tokenEnd": 20
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-check-before-boarding",
+    "minimumLevel": "n5",
+    "text": "次の電車に乗る前に、山へ行くかどうか聞きました。",
+    "audio": "assets/voices/reading/reading-wrong-train-17.m4a",
+    "vocabularyIds": [
+      "vocab-c97677d187f5",
+      "vocab-dc7f5fc156cf",
+      "vocab-9e0eeba39759",
+      "vocab-07f353ef981c",
+      "vocab-ddd9dca106e2",
+      "vocab-ec22142c23d3",
+      "vocab-99b783690b64",
+      "vocab-d8a0261581dc"
+    ],
+    "kanjiIds": [
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-524d",
+      "kanji-5c71",
+      "kanji-884c",
+      "kanji-805e"
+    ],
+    "tokens": [
+      {
+        "surface": "次",
+        "category": "noun",
+        "reading": "つぎ",
+        "vocabularyId": "vocab-c97677d187f5"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "乗る",
+        "category": "verb",
+        "reading": "のる",
+        "vocabularyId": "vocab-9e0eeba39759"
+      },
+      {
+        "surface": "前",
+        "category": "noun",
+        "reading": "まえ",
+        "vocabularyId": "vocab-07f353ef981c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行く",
+        "category": "verb",
+        "reading": "いく",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "どう",
+        "category": "adverb",
+        "reading": "どう",
+        "vocabularyId": "vocab-99b783690b64"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "聞き",
+        "category": "verb",
+        "reading": "きき",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "Before boarding the next train, I asked whether it went towards the mountains.",
+    "readingSentenceId": "reading-wrong-train-17",
+    "grammarPointIds": [
+      "mae-ni",
+      "ka-dou-ka",
+      "e-direction"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mae-ni",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "ka-dou-ka",
+        "tokenStart": 11,
+        "tokenEnd": 14
+      },
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 9,
+        "tokenEnd": 10
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-check-before-boarding",
+    "minimumLevel": "n5",
+    "text": "Before boarding the next train, I asked whether it went towards the mountains.",
+    "audio": "assets/voices/reading/reading-wrong-train-17.m4a",
+    "vocabularyIds": [
+      "vocab-c97677d187f5",
+      "vocab-dc7f5fc156cf",
+      "vocab-9e0eeba39759",
+      "vocab-07f353ef981c",
+      "vocab-ddd9dca106e2",
+      "vocab-ec22142c23d3",
+      "vocab-99b783690b64",
+      "vocab-d8a0261581dc"
+    ],
+    "kanjiIds": [
+      "kanji-96fb",
+      "kanji-8eca",
+      "kanji-524d",
+      "kanji-5c71",
+      "kanji-884c",
+      "kanji-805e"
+    ],
+    "tokens": [
+      {
+        "surface": "次",
+        "category": "noun",
+        "reading": "つぎ",
+        "vocabularyId": "vocab-c97677d187f5"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "乗る",
+        "category": "verb",
+        "reading": "のる",
+        "vocabularyId": "vocab-9e0eeba39759"
+      },
+      {
+        "surface": "前",
+        "category": "noun",
+        "reading": "まえ",
+        "vocabularyId": "vocab-07f353ef981c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "山",
+        "category": "noun",
+        "reading": "やま",
+        "vocabularyId": "vocab-ddd9dca106e2"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行く",
+        "category": "verb",
+        "reading": "いく",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "どう",
+        "category": "adverb",
+        "reading": "どう",
+        "vocabularyId": "vocab-99b783690b64"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "聞き",
+        "category": "verb",
+        "reading": "きき",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "次の電車に乗る前に、山へ行くかどうか聞きました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-17",
+    "promptVocabularyHints": [
+      {
+        "word": "mountains",
+        "vocabularyIds": [
+          "vocab-ddd9dca106e2"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "mae-ni",
+      "ka-dou-ka",
+      "e-direction"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mae-ni",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "ka-dou-ka",
+        "tokenStart": 11,
+        "tokenEnd": 14
+      },
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 9,
+        "tokenEnd": 10
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-actual-one-arrival",
+    "minimumLevel": "n5",
+    "text": "午後一時ごろ、友達の家に着きました。",
+    "audio": "assets/voices/reading/reading-wrong-train-18.m4a",
+    "vocabularyIds": [
+      "vocab-3e1bdafed48a",
+      "vocab-5d8047464c5d",
+      "vocab-e267b19a680f",
+      "vocab-d9898f8a95b6",
+      "vocab-8af58778f14e",
+      "vocab-f024ec5e9eea"
+    ],
+    "kanjiIds": [
+      "kanji-5348",
+      "kanji-5f8c",
+      "kanji-4e00",
+      "kanji-6642",
+      "kanji-53cb",
+      "kanji-5bb6",
+      "kanji-7740"
+    ],
+    "tokens": [
+      {
+        "surface": "午後",
+        "category": "noun",
+        "reading": "ごご",
+        "vocabularyId": "vocab-3e1bdafed48a"
+      },
+      {
+        "surface": "一",
+        "category": "noun",
+        "reading": "いち",
+        "vocabularyId": "vocab-5d8047464c5d"
+      },
+      {
+        "surface": "時",
+        "category": "noun",
+        "reading": "じ",
+        "vocabularyId": "vocab-e267b19a680f"
+      },
+      {
+        "surface": "ごろ",
+        "category": "particle",
+        "reading": "ごろ"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "着き",
+        "category": "verb",
+        "reading": "つき",
+        "vocabularyId": "vocab-f024ec5e9eea"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I arrived at my friend’s house around one o’clock in the afternoon.",
+    "readingSentenceId": "reading-wrong-train-18",
+    "grammarPointIds": [
+      "goro-approximate-time",
+      "ni-destination",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "goro-approximate-time",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "ni-destination",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 10,
+        "tokenEnd": 12
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-actual-one-arrival",
+    "minimumLevel": "n5",
+    "text": "I arrived at my friend’s house around one o’clock in the afternoon.",
+    "audio": "assets/voices/reading/reading-wrong-train-18.m4a",
+    "vocabularyIds": [
+      "vocab-3e1bdafed48a",
+      "vocab-5d8047464c5d",
+      "vocab-e267b19a680f",
+      "vocab-d9898f8a95b6",
+      "vocab-8af58778f14e",
+      "vocab-f024ec5e9eea"
+    ],
+    "kanjiIds": [
+      "kanji-5348",
+      "kanji-5f8c",
+      "kanji-4e00",
+      "kanji-6642",
+      "kanji-53cb",
+      "kanji-5bb6",
+      "kanji-7740"
+    ],
+    "tokens": [
+      {
+        "surface": "午後",
+        "category": "noun",
+        "reading": "ごご",
+        "vocabularyId": "vocab-3e1bdafed48a"
+      },
+      {
+        "surface": "一",
+        "category": "noun",
+        "reading": "いち",
+        "vocabularyId": "vocab-5d8047464c5d"
+      },
+      {
+        "surface": "時",
+        "category": "noun",
+        "reading": "じ",
+        "vocabularyId": "vocab-e267b19a680f"
+      },
+      {
+        "surface": "ごろ",
+        "category": "particle",
+        "reading": "ごろ"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "着き",
+        "category": "verb",
+        "reading": "つき",
+        "vocabularyId": "vocab-f024ec5e9eea"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "午後一時ごろ、友達の家に着きました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-18",
+    "promptVocabularyHints": [
+      {
+        "word": "arrived",
+        "vocabularyIds": [
+          "vocab-f024ec5e9eea"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "goro-approximate-time",
+      "ni-destination",
+      "verb-mashita"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "goro-approximate-time",
+        "tokenStart": 3,
+        "tokenEnd": 4
+      },
+      {
+        "grammarPointId": "ni-destination",
+        "tokenStart": 8,
+        "tokenEnd": 9
+      },
+      {
+        "grammarPointId": "verb-mashita",
+        "tokenStart": 10,
+        "tokenEnd": 12
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-friend-wants-the-sea",
+    "minimumLevel": "n5",
+    "text": "友達は葉書を見て、「私も海に行きたいなあ」と言いました。",
+    "audio": "assets/voices/reading/reading-wrong-train-19.m4a",
+    "vocabularyIds": [
+      "vocab-d9898f8a95b6",
+      "vocab-39d2d353efa5",
+      "vocab-385cc0d9ee98",
+      "vocab-b6944a5fe271",
+      "vocab-47c1227c459b",
+      "vocab-ec22142c23d3",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-53cb",
+      "kanji-66f8",
+      "kanji-898b",
+      "kanji-79c1",
+      "kanji-6d77",
+      "kanji-884c",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "葉書",
+        "category": "noun",
+        "reading": "はがき",
+        "vocabularyId": "vocab-39d2d353efa5"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見",
+        "category": "verb",
+        "reading": "み",
+        "vocabularyId": "vocab-385cc0d9ee98"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "なあ",
+        "category": "particle",
+        "reading": "なあ"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "My friend looked at the postcard and said, “I’d like to go to the sea too!”",
+    "readingSentenceId": "reading-wrong-train-19",
+    "grammarPointIds": [
+      "te-action-link",
+      "mo-addition",
+      "tai-desire",
+      "naa-reflection"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "mo-addition",
+        "tokenStart": 9,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 13,
+        "tokenEnd": 14
+      },
+      {
+        "grammarPointId": "naa-reflection",
+        "tokenStart": 14,
+        "tokenEnd": 15
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-friend-wants-the-sea",
+    "minimumLevel": "n5",
+    "text": "My friend looked at the postcard and said, “I’d like to go to the sea too!”",
+    "audio": "assets/voices/reading/reading-wrong-train-19.m4a",
+    "vocabularyIds": [
+      "vocab-d9898f8a95b6",
+      "vocab-39d2d353efa5",
+      "vocab-385cc0d9ee98",
+      "vocab-b6944a5fe271",
+      "vocab-47c1227c459b",
+      "vocab-ec22142c23d3",
+      "vocab-4fa253e10946"
+    ],
+    "kanjiIds": [
+      "kanji-53cb",
+      "kanji-66f8",
+      "kanji-898b",
+      "kanji-79c1",
+      "kanji-6d77",
+      "kanji-884c",
+      "kanji-8a00"
+    ],
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "葉書",
+        "category": "noun",
+        "reading": "はがき",
+        "vocabularyId": "vocab-39d2d353efa5"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見",
+        "category": "verb",
+        "reading": "み",
+        "vocabularyId": "vocab-385cc0d9ee98"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "なあ",
+        "category": "particle",
+        "reading": "なあ"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "言い",
+        "category": "verb",
+        "reading": "いい",
+        "vocabularyId": "vocab-4fa253e10946"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "友達は葉書を見て、「私も海に行きたいなあ」と言いました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-19",
+    "promptVocabularyHints": [
+      {
+        "word": "postcard",
+        "vocabularyIds": [
+          "vocab-39d2d353efa5"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "te-action-link",
+      "mo-addition",
+      "tai-desire",
+      "naa-reflection"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "te-action-link",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
+        "grammarPointId": "mo-addition",
+        "tokenStart": 9,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "tai-desire",
+        "tokenStart": 13,
+        "tokenEnd": 14
+      },
+      {
+        "grammarPointId": "naa-reflection",
+        "tokenStart": 14,
+        "tokenEnd": 15
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-next-trip-together",
+    "minimumLevel": "n5",
+    "text": "「次は一緒に海へ行きましょう」と私は答えました。",
+    "audio": "assets/voices/reading/reading-wrong-train-20.m4a",
+    "vocabularyIds": [
+      "vocab-c97677d187f5",
+      "vocab-842637e88e8c",
+      "vocab-47c1227c459b",
+      "vocab-ec22142c23d3",
+      "vocab-b6944a5fe271",
+      "vocab-b4624c258f50"
+    ],
+    "kanjiIds": [
+      "kanji-4e00",
+      "kanji-6d77",
+      "kanji-884c",
+      "kanji-79c1",
+      "kanji-7b54"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "次",
+        "category": "noun",
+        "reading": "つぎ",
+        "vocabularyId": "vocab-c97677d187f5"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "一緒",
+        "category": "noun",
+        "reading": "いっしょ",
+        "vocabularyId": "vocab-842637e88e8c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "ましょ",
+        "category": "auxiliary",
+        "reading": "ましょ"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "答え",
+        "category": "verb",
+        "reading": "こたえ",
+        "vocabularyId": "vocab-b4624c258f50"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "I replied, “Next time, let’s go to the sea together.”",
+    "readingSentenceId": "reading-wrong-train-20",
+    "grammarPointIds": [
+      "mashou",
+      "e-direction",
+      "to-quotation"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mashou",
+        "tokenStart": 8,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "to-quotation",
+        "tokenStart": 11,
+        "tokenEnd": 12
+      }
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-next-trip-together",
+    "minimumLevel": "n5",
+    "text": "I replied, “Next time, let’s go to the sea together.”",
+    "audio": "assets/voices/reading/reading-wrong-train-20.m4a",
+    "vocabularyIds": [
+      "vocab-c97677d187f5",
+      "vocab-842637e88e8c",
+      "vocab-47c1227c459b",
+      "vocab-ec22142c23d3",
+      "vocab-b6944a5fe271",
+      "vocab-b4624c258f50"
+    ],
+    "kanjiIds": [
+      "kanji-4e00",
+      "kanji-6d77",
+      "kanji-884c",
+      "kanji-79c1",
+      "kanji-7b54"
+    ],
+    "tokens": [
+      {
+        "surface": "「",
+        "reading": "「"
+      },
+      {
+        "surface": "次",
+        "category": "noun",
+        "reading": "つぎ",
+        "vocabularyId": "vocab-c97677d187f5"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "一緒",
+        "category": "noun",
+        "reading": "いっしょ",
+        "vocabularyId": "vocab-842637e88e8c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "海",
+        "category": "noun",
+        "reading": "うみ",
+        "vocabularyId": "vocab-47c1227c459b"
+      },
+      {
+        "surface": "へ",
+        "category": "particle",
+        "reading": "へ"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "ましょ",
+        "category": "auxiliary",
+        "reading": "ましょ"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "」",
+        "reading": "」"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "答え",
+        "category": "verb",
+        "reading": "こたえ",
+        "vocabularyId": "vocab-b4624c258f50"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ],
+    "solution": "「次は一緒に海へ行きましょう」と私は答えました。",
+    "type": "production",
+    "readingSentenceId": "reading-wrong-train-20",
+    "promptVocabularyHints": [
+      {
+        "word": "together",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      }
+    ],
+    "grammarPointIds": [
+      "mashou",
+      "e-direction",
+      "to-quotation"
+    ],
+    "grammarHighlights": [
+      {
+        "grammarPointId": "mashou",
+        "tokenStart": 8,
+        "tokenEnd": 10
+      },
+      {
+        "grammarPointId": "e-direction",
+        "tokenStart": 6,
+        "tokenEnd": 7
+      },
+      {
+        "grammarPointId": "to-quotation",
+        "tokenStart": 11,
+        "tokenEnd": 12
+      }
+    ]
   }
 ]

@@ -1,11 +1,11 @@
 {
-  "totalPassages": 5,
-  "totalSentences": 100,
+  "totalPassages": 6,
+  "totalSentences": 120,
   "levels": [
     {
       "level": "n5",
       "totalPoints": 206,
-      "coveredPoints": 107,
+      "coveredPoints": 117,
       "uncoveredPointIds": [
         "predicate-final-order",
         "topic-comment-structure",
@@ -21,16 +21,12 @@
         "wa-contrast",
         "ni-frequency",
         "mo-emphasis",
-        "ka-alternatives",
         "yone-confirmation",
-        "naa-reflection",
-        "kara-reason",
         "kedo-contrast",
         "shikashi-connector",
         "soshite-connector",
         "shi-additive-reason",
         "kurai-approximation",
-        "goro-approximate-time",
         "nado-examples",
         "nanka-nante-examples",
         "tte-casual-quotation",
@@ -43,7 +39,6 @@
         "verb-dictionary-nonpast",
         "verb-nai",
         "verb-nakatta",
-        "verb-masen-deshita",
         "verb-te-form",
         "te-aru-result-state",
         "te-inai",
@@ -53,12 +48,10 @@
         "koto-nominalizer",
         "ru-koto-ga-aru",
         "ta-koto-ga-aru",
-        "tsumori",
         "nakute-wa-ikenai",
         "nakya-nakucha",
         "tara-conditional",
         "kamoshirenai",
-        "darou",
         "sou-appearance",
         "sou-hearsay",
         "you-ni-purpose",
@@ -85,8 +78,6 @@
         "clock-calendar-time",
         "kara-made-range",
         "mou",
-        "mada",
-        "ageru",
         "kosoado-pronouns",
         "kosoado-places",
         "kosoado-directions",
@@ -100,7 +91,6 @@
         "dore-dono",
         "ikura",
         "ikutsu",
-        "ka-dou-ka",
         "no-question",
         "chuu",
         "ni-turn-direction",
@@ -471,6 +461,60 @@
         "verb-masu",
         "yo-emphasis"
       ]
+    },
+    {
+      "id": "the-wrong-train",
+      "level": "n5",
+      "title": {
+        "en": "The wrong train",
+        "fr": "Le mauvais train"
+      },
+      "sentences": 20,
+      "grammarPointIds": [
+        "ageru",
+        "common-counters",
+        "darou",
+        "de-action-location",
+        "demo-connector",
+        "e-direction",
+        "ga-contrast",
+        "ga-subject",
+        "goro-approximate-time",
+        "ka-alternatives",
+        "ka-dou-ka",
+        "ka-question",
+        "kara-reason",
+        "kosoado-determiners",
+        "mada",
+        "mada-te-inai",
+        "made-end",
+        "mae-ni",
+        "mashou",
+        "mo-addition",
+        "movement-purpose",
+        "na-adjective-predicate",
+        "naa-reflection",
+        "naide-without",
+        "naru-ku-change",
+        "ni-destination",
+        "ni-existence-location",
+        "ni-target-recipient",
+        "node-reason",
+        "positional-nouns",
+        "relative-clause",
+        "tai-desire",
+        "te-action-link",
+        "te-iru-progressive",
+        "te-iru-result-state",
+        "te-kureru",
+        "to-iu",
+        "to-omou",
+        "to-quotation",
+        "tsumori",
+        "verb-masen-deshita",
+        "verb-mashita",
+        "yo-emphasis"
+      ]
     }
   ],
   "points": [
@@ -515,8 +559,8 @@
       "level": "n5",
       "name": "Relative clauses",
       "pattern": "plain clause + noun",
-      "sentences": 3,
-      "passages": 3,
+      "sentences": 5,
+      "passages": 4,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -529,6 +573,14 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-14"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-01"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-04"
         }
       ]
     },
@@ -659,8 +711,8 @@
       "level": "n5",
       "name": "Subject marker",
       "pattern": "が",
-      "sentences": 4,
-      "passages": 3,
+      "sentences": 5,
+      "passages": 4,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -677,6 +729,10 @@
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-17"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-09"
         }
       ]
     },
@@ -809,8 +865,8 @@
       "level": "n5",
       "name": "Destination marker",
       "pattern": "に",
-      "sentences": 8,
-      "passages": 5,
+      "sentences": 10,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -843,6 +899,14 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-01"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-02"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-18"
         }
       ]
     },
@@ -851,8 +915,8 @@
       "level": "n5",
       "name": "Existence location marker",
       "pattern": "に",
-      "sentences": 7,
-      "passages": 4,
+      "sentences": 8,
+      "passages": 5,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -881,6 +945,10 @@
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-11"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-03"
         }
       ]
     },
@@ -889,8 +957,8 @@
       "level": "n5",
       "name": "Target and recipient marker",
       "pattern": "に",
-      "sentences": 7,
-      "passages": 3,
+      "sentences": 10,
+      "passages": 4,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -919,6 +987,18 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-02"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-06"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-10"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-12"
         }
       ]
     },
@@ -950,12 +1030,28 @@
       "level": "n5",
       "name": "Direction marker",
       "pattern": "へ",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 5,
+      "passages": 2,
       "references": [
         {
           "passageId": "sunday-at-the-park",
           "sentenceId": "reading-sunday-park-11"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-07"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-11"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-17"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-20"
         }
       ]
     },
@@ -964,8 +1060,8 @@
       "level": "n5",
       "name": "Action location marker",
       "pattern": "で",
-      "sentences": 9,
-      "passages": 3,
+      "sentences": 12,
+      "passages": 4,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1002,6 +1098,18 @@
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-04"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-08"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-12"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-15"
         }
       ]
     },
@@ -1076,8 +1184,8 @@
       "level": "n5",
       "name": "Quotation marker",
       "pattern": "clause と",
-      "sentences": 5,
-      "passages": 4,
+      "sentences": 9,
+      "passages": 5,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -1098,6 +1206,22 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-13"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-04"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-10"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-11"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-20"
         }
       ]
     },
@@ -1188,8 +1312,8 @@
       "level": "n5",
       "name": "Also and too",
       "pattern": "も",
-      "sentences": 5,
-      "passages": 4,
+      "sentences": 6,
+      "passages": 5,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1210,6 +1334,10 @@
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-19"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-19"
         }
       ]
     },
@@ -1227,8 +1355,8 @@
       "level": "n5",
       "name": "Question marker",
       "pattern": "か",
-      "sentences": 5,
-      "passages": 3,
+      "sentences": 6,
+      "passages": 4,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -1249,6 +1377,10 @@
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-18"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-10"
         }
       ]
     },
@@ -1257,17 +1389,22 @@
       "level": "n5",
       "name": "Alternative marker",
       "pattern": "A か B / A か B か",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-04"
+        }
+      ]
     },
     {
       "id": "yo-emphasis",
       "level": "n5",
       "name": "Informing and emphasis",
       "pattern": "よ",
-      "sentences": 4,
-      "passages": 3,
+      "sentences": 6,
+      "passages": 4,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -1284,6 +1421,14 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-20"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-05"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-11"
         }
       ]
     },
@@ -1315,9 +1460,14 @@
       "level": "n5",
       "name": "Reflection and admiration",
       "pattern": "なあ",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-19"
+        }
+      ]
     },
     {
       "id": "kara-start",
@@ -1350,12 +1500,16 @@
       "level": "n5",
       "name": "End point and limit",
       "pattern": "まで",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "sunday-at-the-park",
           "sentenceId": "reading-sunday-park-06"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-15"
         }
       ]
     },
@@ -1364,17 +1518,22 @@
       "level": "n5",
       "name": "Reason with から",
       "pattern": "plain clause + から",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-16"
+        }
+      ]
     },
     {
       "id": "node-reason",
       "level": "n5",
       "name": "Reason with ので",
       "pattern": "plain clause + ので",
-      "sentences": 6,
-      "passages": 5,
+      "sentences": 7,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1399,6 +1558,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-03"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-15"
         }
       ]
     },
@@ -1407,8 +1570,8 @@
       "level": "n5",
       "name": "Contrast with が",
       "pattern": "clause + が",
-      "sentences": 2,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-cake-for-mum",
@@ -1417,6 +1580,10 @@
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-18"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-09"
         }
       ]
     },
@@ -1434,8 +1601,8 @@
       "level": "n5",
       "name": "However",
       "pattern": "でも",
-      "sentences": 5,
-      "passages": 5,
+      "sentences": 6,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1456,6 +1623,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-06"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-06"
         }
       ]
     },
@@ -1546,9 +1717,18 @@
       "level": "n5",
       "name": "Approximate time",
       "pattern": "ごろ",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 2,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-02"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-18"
+        }
+      ]
     },
     {
       "id": "nado-examples",
@@ -1726,8 +1906,8 @@
       "level": "n5",
       "name": "Polite past verbs",
       "pattern": "～ました",
-      "sentences": 17,
-      "passages": 5,
+      "sentences": 18,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1796,6 +1976,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-16"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-18"
         }
       ]
     },
@@ -1813,9 +1997,14 @@
       "level": "n5",
       "name": "Polite past-negative verbs",
       "pattern": "～ませんでした",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-09"
+        }
+      ]
     },
     {
       "id": "verb-te-form",
@@ -1831,8 +2020,8 @@
       "level": "n5",
       "name": "Linking actions with て",
       "pattern": "Vて、V",
-      "sentences": 8,
-      "passages": 5,
+      "sentences": 10,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1865,6 +2054,14 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-07"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-12"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-19"
         }
       ]
     },
@@ -1873,8 +2070,8 @@
       "level": "n5",
       "name": "Ongoing action",
       "pattern": "～ている",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -1883,6 +2080,10 @@
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-12"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-08"
         }
       ]
     },
@@ -1891,12 +2092,20 @@
       "level": "n5",
       "name": "Resulting state and repeated action",
       "pattern": "～ている",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-04"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-01"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-03"
         }
       ]
     },
@@ -1923,12 +2132,16 @@
       "level": "n5",
       "name": "Not yet",
       "pattern": "まだ～ていない",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-14"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-14"
         }
       ]
     },
@@ -2004,12 +2217,16 @@
       "level": "n5",
       "name": "Without doing",
       "pattern": "～ないで",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-12"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-06"
         }
       ]
     },
@@ -2082,8 +2299,8 @@
       "level": "n5",
       "name": "Want to do",
       "pattern": "verb stem + たい",
-      "sentences": 8,
-      "passages": 4,
+      "sentences": 10,
+      "passages": 5,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -2116,6 +2333,14 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-04"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-16"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-19"
         }
       ]
     },
@@ -2138,8 +2363,8 @@
       "level": "n5",
       "name": "Let's",
       "pattern": "～ましょう",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "a-cake-for-mum",
@@ -2148,6 +2373,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-15"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-20"
         }
       ]
     },
@@ -2170,8 +2399,8 @@
       "level": "n5",
       "name": "Go, come, or return to do",
       "pattern": "verb stem + に行く / に来る / に帰る",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -2180,6 +2409,10 @@
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-02"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-01"
         }
       ]
     },
@@ -2261,9 +2494,14 @@
       "level": "n5",
       "name": "Plan and intention",
       "pattern": "plain form + つもりだ",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-02"
+        }
+      ]
     },
     {
       "id": "hou-ga-ii-advice",
@@ -2351,8 +2589,8 @@
       "level": "n5",
       "name": "Before",
       "pattern": "dictionary form / noun の + 前に",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -2361,6 +2599,10 @@
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-16"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-17"
         }
       ]
     },
@@ -2452,9 +2694,14 @@
       "level": "n5",
       "name": "Plain probability and confirmation",
       "pattern": "だろう",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-07"
+        }
+      ]
     },
     {
       "id": "sou-appearance",
@@ -2621,8 +2868,8 @@
       "level": "n5",
       "name": "Na-adjective predicate",
       "pattern": "～だ / ～です",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "a-cake-for-mum",
@@ -2631,6 +2878,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-13"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-14"
         }
       ]
     },
@@ -2722,12 +2973,16 @@
       "level": "n5",
       "name": "Become with くなる",
       "pattern": "～くなる",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "sunday-at-the-park",
           "sentenceId": "reading-sunday-park-17"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-13"
         }
       ]
     },
@@ -2870,8 +3125,8 @@
       "level": "n5",
       "name": "Relative locations",
       "pattern": "noun の 上 / 下 / 中 / 前 / 後ろ / 隣 / 近く",
-      "sentences": 6,
-      "passages": 4,
+      "sentences": 7,
+      "passages": 5,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -2896,6 +3151,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-07"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-08"
         }
       ]
     },
@@ -2994,8 +3253,8 @@
       "level": "n5",
       "name": "Common classifiers",
       "pattern": "人 / 枚 / 本 / 冊 / 台 / 匹 / 回 / 階 / 歳",
-      "sentences": 6,
-      "passages": 5,
+      "sentences": 7,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -3020,6 +3279,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-17"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-03"
         }
       ]
     },
@@ -3087,9 +3350,14 @@
       "level": "n5",
       "name": "Still and not yet",
       "pattern": "まだ",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-13"
+        }
+      ]
     },
     {
       "id": "degree-adverbs",
@@ -3144,9 +3412,14 @@
       "level": "n5",
       "name": "Give away from the speaker's side",
       "pattern": "giver は recipient に thing をあげる",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-16"
+        }
+      ]
     },
     {
       "id": "kureru",
@@ -3195,12 +3468,16 @@
       "level": "n5",
       "name": "Someone does for me",
       "pattern": "～てくれる",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "sunday-at-the-park",
           "sentenceId": "reading-sunday-park-03"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-05"
         }
       ]
     },
@@ -3232,8 +3509,8 @@
       "level": "n5",
       "name": "Demonstrative determiners",
       "pattern": "この / その / あの / どの",
-      "sentences": 3,
-      "passages": 1,
+      "sentences": 4,
+      "passages": 2,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -3246,6 +3523,10 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-10"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-05"
         }
       ]
     },
@@ -3418,8 +3699,8 @@
       "level": "n5",
       "name": "Say and be called",
       "pattern": "～と言う",
-      "sentences": 15,
-      "passages": 5,
+      "sentences": 17,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -3480,6 +3761,14 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-19"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-13"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-14"
         }
       ]
     },
@@ -3488,12 +3777,20 @@
       "level": "n5",
       "name": "Think that",
       "pattern": "plain clause + と思う",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-11"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-07"
+        },
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-16"
         }
       ]
     },
@@ -3502,9 +3799,14 @@
       "level": "n5",
       "name": "Whether or not",
       "pattern": "plain form + かどうか",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-wrong-train",
+          "sentenceId": "reading-wrong-train-17"
+        }
+      ]
     },
     {
       "id": "no-desu",

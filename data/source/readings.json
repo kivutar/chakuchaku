@@ -1555,5 +1555,100 @@
         ]
       }
     ]
+  },
+  {
+    "id": "the-wrong-train",
+    "level": "n5",
+    "title": { "en": "The wrong train", "fr": "Le mauvais train" },
+    "description": { "en": "A visit near the mountains turns into an unexpected seaside detour, with a small gift at the end.", "fr": "Une visite près de la montagne devient un détour imprévu vers la mer, avec un petit cadeau à l’arrivée." },
+    "sentences": [
+      { "id": "reading-wrong-train-01", "paragraph": 1, "text": "土曜日、山の近くに住んでいる友達に会いに行きました。", "grammarPointIds": ["relative-clause", "te-iru-result-state", "movement-purpose"] },
+      { "id": "reading-wrong-train-02", "paragraph": 1, "text": "十二時ごろに友達の家に着くつもりでした。", "grammarPointIds": ["goro-approximate-time", "tsumori", "ni-destination"] },
+      { "id": "reading-wrong-train-03", "paragraph": 1, "text": "駅には電車が二本止まっていました。", "grammarPointIds": ["ni-existence-location", "te-iru-result-state", "common-counters"] },
+      { "id": "reading-wrong-train-04", "paragraph": 1, "text": "「山へ行く電車は、右ですか、左ですか」と近くの人に聞きました。", "grammarPointIds": ["relative-clause", "ka-alternatives", "to-quotation"] },
+      { "id": "reading-wrong-train-05", "paragraph": 2, "text": "その人は「右の電車ですよ」と教えてくれました。", "grammarPointIds": ["kosoado-determiners", "te-kureru", "yo-emphasis"] },
+      { "id": "reading-wrong-train-06", "paragraph": 2, "text": "でも、私は話をよく聞かないで、左の電車に乗りました。", "grammarPointIds": ["demo-connector", "naide-without", "ni-target-recipient"], "skipVoiceGeneration": true },
+      { "id": "reading-wrong-train-07", "paragraph": 2, "text": "この電車は山へ行くだろうと思いました。", "grammarPointIds": ["darou", "to-omou", "e-direction"] },
+      { "id": "reading-wrong-train-08", "paragraph": 2, "text": "電車の中で、窓の外を見ていました。", "grammarPointIds": ["de-action-location", "positional-nouns", "te-iru-progressive"], "vocabularyOverrides": { "外": "vocab-6109638dac53" } },
+      { "id": "reading-wrong-train-09", "paragraph": 3, "text": "山は見えませんでしたが、海がよく見えました。", "grammarPointIds": ["verb-masen-deshita", "ga-contrast", "ga-subject"] },
+      { "id": "reading-wrong-train-10", "paragraph": 3, "text": "「この電車は山へ行きますか」と隣の人に聞きました。", "grammarPointIds": ["ka-question", "to-quotation", "ni-target-recipient"] },
+      { "id": "reading-wrong-train-11", "paragraph": 3, "text": "その人は「いいえ、海へ行きますよ」と答えました。", "grammarPointIds": ["e-direction", "yo-emphasis", "to-quotation"] },
+      { "id": "reading-wrong-train-12", "paragraph": 3, "text": "次の駅で降りて、友達に電話をかけました。", "grammarPointIds": ["de-action-location", "te-action-link", "ni-target-recipient"] },
+      { "id": "reading-wrong-train-13", "paragraph": 4, "text": "「まだ海の近くにいます。少し遅くなります」と言いました。", "grammarPointIds": ["mada", "naru-ku-change", "to-iu"] },
+      { "id": "reading-wrong-train-14", "paragraph": 4, "text": "友達は「大丈夫です。昼御飯はまだ作っていません」と言いました。", "grammarPointIds": ["mada-te-inai", "na-adjective-predicate", "to-iu"] },
+      { "id": "reading-wrong-train-15", "paragraph": 4, "text": "次の電車まで時間があったので、駅の店で葉書を買いました。", "grammarPointIds": ["made-end", "node-reason", "de-action-location"] },
+      { "id": "reading-wrong-train-16", "paragraph": 4, "text": "海の写真がきれいだったから、友達にも一枚あげたいと思いました。", "grammarPointIds": ["kara-reason", "ageru", "tai-desire", "to-omou"] },
+      { "id": "reading-wrong-train-17", "paragraph": 5, "text": "次の電車に乗る前に、山へ行くかどうか聞きました。", "grammarPointIds": ["mae-ni", "ka-dou-ka", "e-direction"] },
+      { "id": "reading-wrong-train-18", "paragraph": 5, "text": "午後一時ごろ、友達の家に着きました。", "grammarPointIds": ["goro-approximate-time", "ni-destination", "verb-mashita"] },
+      { "id": "reading-wrong-train-19", "paragraph": 5, "text": "友達は葉書を見て、「私も海に行きたいなあ」と言いました。", "grammarPointIds": ["te-action-link", "mo-addition", "tai-desire", "naa-reflection"] },
+      { "id": "reading-wrong-train-20", "paragraph": 5, "text": "「次は一緒に海へ行きましょう」と私は答えました。", "grammarPointIds": ["mashou", "e-direction", "to-quotation"] }
+    ],
+    "questions": [
+      {
+        "id": "plan",
+        "prompt": { "en": "When did the narrator intend to arrive at the friend's house?", "fr": "À quelle heure la personne comptait-elle arriver chez son ami ?" },
+        "choices": [
+          { "id": "one", "label": { "en": "Around one o'clock", "fr": "Vers une heure" } },
+          { "id": "noon", "label": { "en": "Around noon", "fr": "Vers midi" } },
+          { "id": "two", "label": { "en": "Around two o'clock", "fr": "Vers deux heures" } },
+          { "id": "evening", "label": { "en": "In the evening", "fr": "Le soir" } }
+        ],
+        "answerId": "noon",
+        "explanation": { "en": "十二時ごろ means around twelve, and 着くつもりでした describes the planned arrival. 一時ごろ is the actual arrival later in the story, not the original plan.", "fr": "十二時ごろ signifie vers midi, et 着くつもりでした indique l’arrivée prévue. 一時ごろ correspond à l’arrivée réelle plus tard dans le récit, et non au projet initial." },
+        "evidenceSentenceIds": ["reading-wrong-train-02", "reading-wrong-train-18"]
+      },
+      {
+        "id": "mistake",
+        "prompt": { "en": "Why did the narrator take the wrong train?", "fr": "Pourquoi la personne est-elle montée dans le mauvais train ?" },
+        "choices": [
+          { "id": "advice", "label": { "en": "The person said to take the train on the left", "fr": "La personne lui a indiqué le train de gauche" } },
+          { "id": "sea", "label": { "en": "The narrator wanted to go to the sea instead", "fr": "Elle voulait finalement aller à la mer" } },
+          { "id": "listening", "label": { "en": "The narrator did not listen carefully and boarded the train on the left", "fr": "Elle n’a pas bien écouté et est montée dans le train de gauche" } },
+          { "id": "late", "label": { "en": "The train on the right had already left", "fr": "Le train de droite était déjà parti" } }
+        ],
+        "answerId": "listening",
+        "explanation": { "en": "The person clearly said 右, right. The narrator then boarded the train on the left without listening carefully: よく聞かないで. The intended destination was near the mountains.", "fr": "La personne a bien indiqué 右, à droite. Mais la personne qui raconte est montée à gauche sans bien écouter : よく聞かないで. Elle voulait aller près de la montagne." },
+        "evidenceSentenceIds": ["reading-wrong-train-01", "reading-wrong-train-05", "reading-wrong-train-06"]
+      },
+      {
+        "id": "lunch",
+        "prompt": { "en": "What does the friend say about lunch during the phone call?", "fr": "Que dit l’ami au sujet du déjeuner pendant l’appel ?" },
+        "choices": [
+          { "id": "not-yet", "label": { "en": "The friend has not made it yet", "fr": "Il ne l’a pas encore préparé" } },
+          { "id": "finished", "label": { "en": "The friend has already eaten it", "fr": "Il l’a déjà mangé" } },
+          { "id": "train", "label": { "en": "They will eat it on the train", "fr": "Ils le mangeront dans le train" } },
+          { "id": "shop", "label": { "en": "The narrator must buy it at the station", "fr": "Il faut l’acheter à la gare" } }
+        ],
+        "answerId": "not-yet",
+        "explanation": { "en": "昼御飯はまだ作っていません means that the friend has not made lunch yet. It does not say that lunch has already been eaten or that the narrator must buy food.", "fr": "昼御飯はまだ作っていません signifie que l’ami n’a pas encore préparé le déjeuner. Rien n’indique qu’il l’a déjà mangé ou qu’il demande d’acheter à manger." },
+        "evidenceSentenceIds": ["reading-wrong-train-14"]
+      },
+      {
+        "id": "gift",
+        "prompt": { "en": "Why does the narrator want to give the friend a postcard?", "fr": "Pourquoi la personne veut-elle offrir une carte postale à son ami ?" },
+        "choices": [
+          { "id": "request", "label": { "en": "The friend requested one over the phone", "fr": "L’ami en a demandé une au téléphone" } },
+          { "id": "map", "label": { "en": "It shows which train to take", "fr": "Elle indique quel train prendre" } },
+          { "id": "mountain", "label": { "en": "It has a beautiful picture of the mountains", "fr": "Elle montre une belle photo de la montagne" } },
+          { "id": "sea-picture", "label": { "en": "It has a beautiful picture of the sea", "fr": "Elle montre une belle photo de la mer" } }
+        ],
+        "answerId": "sea-picture",
+        "explanation": { "en": "海の写真がきれいだったから gives the reason: the sea photograph was beautiful. あげたい expresses the wish to give one to the friend as well.", "fr": "海の写真がきれいだったから donne la raison : la photo de la mer était belle. あげたい exprime l’envie d’en offrir une aussi à l’ami." },
+        "evidenceSentenceIds": ["reading-wrong-train-15", "reading-wrong-train-16"]
+      },
+      {
+        "id": "check",
+        "prompt": { "en": "What does the narrator do differently before boarding the next train?", "fr": "Que fait la personne différemment avant de monter dans le train suivant ?" },
+        "choices": [
+          { "id": "left", "label": { "en": "Boards the train on the left again without asking", "fr": "Elle remonte à gauche sans rien demander" } },
+          { "id": "destination", "label": { "en": "Asks whether the train goes towards the mountains", "fr": "Elle demande si le train va vers la montagne" } },
+          { "id": "walk", "label": { "en": "Decides to walk to the friend's house instead", "fr": "Elle décide plutôt d’aller chez son ami à pied" } },
+          { "id": "visit", "label": { "en": "Asks the friend to come to the sea immediately", "fr": "Elle demande à son ami de venir immédiatement à la mer" } }
+        ],
+        "answerId": "destination",
+        "explanation": { "en": "乗る前に means before boarding. 山へ行くかどうか聞きました means that the narrator checked whether the train went towards the mountains, instead of simply assuming it did.", "fr": "乗る前に signifie avant de monter. 山へ行くかどうか聞きました indique qu’elle a demandé si le train allait vers la montagne, au lieu de le supposer." },
+        "evidenceSentenceIds": ["reading-wrong-train-07", "reading-wrong-train-17"]
+      }
+    ]
   }
 ]

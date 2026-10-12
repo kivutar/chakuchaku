@@ -20562,5 +20562,589 @@
         ]
       }
     ]
+  },
+  {
+    "id": "story-wrong-train-visit-near-mountains",
+    "readingSentenceId": "reading-wrong-train-01",
+    "solution": "On Saturday, I went to visit a friend who lives near the mountains.",
+    "grammarPointIds": [
+      "relative-clause",
+      "te-iru-result-state",
+      "movement-purpose"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-visit-near-mountains",
+    "readingSentenceId": "reading-wrong-train-01",
+    "type": "production",
+    "text": "On Saturday, I went to visit a friend who lives near the mountains.",
+    "grammarPointIds": [
+      "relative-clause",
+      "te-iru-result-state",
+      "movement-purpose"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-planned-noon-arrival",
+    "readingSentenceId": "reading-wrong-train-02",
+    "solution": "I intended to arrive at my friend’s house around noon.",
+    "grammarPointIds": [
+      "goro-approximate-time",
+      "tsumori",
+      "ni-destination"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-planned-noon-arrival",
+    "readingSentenceId": "reading-wrong-train-02",
+    "type": "production",
+    "text": "I intended to arrive at my friend’s house around noon.",
+    "grammarPointIds": [
+      "goro-approximate-time",
+      "tsumori",
+      "ni-destination"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "arrive",
+        "vocabularyIds": [
+          "vocab-f024ec5e9eea"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-two-stopped-trains",
+    "readingSentenceId": "reading-wrong-train-03",
+    "solution": "Two trains were standing at the station.",
+    "grammarPointIds": [
+      "ni-existence-location",
+      "te-iru-result-state",
+      "common-counters"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-two-stopped-trains",
+    "readingSentenceId": "reading-wrong-train-03",
+    "type": "production",
+    "text": "Two trains were standing at the station.",
+    "grammarPointIds": [
+      "ni-existence-location",
+      "te-iru-result-state",
+      "common-counters"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "trains",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-right-or-left",
+    "readingSentenceId": "reading-wrong-train-04",
+    "solution": "I asked a person nearby, “Is the train that goes towards the mountains the one on the right or the one on the left?”",
+    "grammarPointIds": [
+      "relative-clause",
+      "ka-alternatives",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-right-or-left",
+    "readingSentenceId": "reading-wrong-train-04",
+    "type": "production",
+    "text": "I asked a person nearby, “Is the train that goes towards the mountains the one on the right or the one on the left?”",
+    "grammarPointIds": [
+      "relative-clause",
+      "ka-alternatives",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "right",
+        "vocabularyIds": [
+          "vocab-ed6bd4d73b76"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-helpful-directions",
+    "readingSentenceId": "reading-wrong-train-05",
+    "solution": "That person helpfully told me, “It’s the train on the right.”",
+    "grammarPointIds": [
+      "kosoado-determiners",
+      "te-kureru",
+      "yo-emphasis"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-helpful-directions",
+    "readingSentenceId": "reading-wrong-train-05",
+    "type": "production",
+    "text": "That person helpfully told me, “It’s the train on the right.”",
+    "grammarPointIds": [
+      "kosoado-determiners",
+      "te-kureru",
+      "yo-emphasis"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "right",
+        "vocabularyIds": [
+          "vocab-ed6bd4d73b76"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-board-without-listening",
+    "readingSentenceId": "reading-wrong-train-06",
+    "solution": "But without listening carefully, I boarded the train on the left.",
+    "grammarPointIds": [
+      "demo-connector",
+      "naide-without",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-board-without-listening",
+    "readingSentenceId": "reading-wrong-train-06",
+    "type": "production",
+    "text": "But without listening carefully, I boarded the train on the left.",
+    "grammarPointIds": [
+      "demo-connector",
+      "naide-without",
+      "ni-target-recipient"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "left",
+        "vocabularyIds": [
+          "vocab-14be5202d5b3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-assume-the-destination",
+    "readingSentenceId": "reading-wrong-train-07",
+    "solution": "I thought this train would probably go towards the mountains.",
+    "grammarPointIds": [
+      "darou",
+      "to-omou",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-assume-the-destination",
+    "readingSentenceId": "reading-wrong-train-07",
+    "type": "production",
+    "text": "I thought this train would probably go towards the mountains.",
+    "grammarPointIds": [
+      "darou",
+      "to-omou",
+      "e-direction"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "mountains",
+        "vocabularyIds": [
+          "vocab-ddd9dca106e2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-look-outside",
+    "readingSentenceId": "reading-wrong-train-08",
+    "solution": "Inside the train, I was looking outside through the window.",
+    "grammarPointIds": [
+      "de-action-location",
+      "positional-nouns",
+      "te-iru-progressive"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-look-outside",
+    "readingSentenceId": "reading-wrong-train-08",
+    "type": "production",
+    "text": "Inside the train, I was looking outside through the window.",
+    "grammarPointIds": [
+      "de-action-location",
+      "positional-nouns",
+      "te-iru-progressive"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "window",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-sea-not-mountains",
+    "readingSentenceId": "reading-wrong-train-09",
+    "solution": "I could not see the mountains, but I could see the sea clearly.",
+    "grammarPointIds": [
+      "verb-masen-deshita",
+      "ga-contrast",
+      "ga-subject"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-sea-not-mountains",
+    "readingSentenceId": "reading-wrong-train-09",
+    "type": "production",
+    "text": "I could not see the mountains, but I could see the sea clearly.",
+    "grammarPointIds": [
+      "verb-masen-deshita",
+      "ga-contrast",
+      "ga-subject"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "sea",
+        "vocabularyIds": [
+          "vocab-47c1227c459b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-ask-the-neighbour",
+    "readingSentenceId": "reading-wrong-train-10",
+    "solution": "I asked the person next to me, “Does this train go towards the mountains?”",
+    "grammarPointIds": [
+      "ka-question",
+      "to-quotation",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-ask-the-neighbour",
+    "readingSentenceId": "reading-wrong-train-10",
+    "type": "production",
+    "text": "I asked the person next to me, “Does this train go towards the mountains?”",
+    "grammarPointIds": [
+      "ka-question",
+      "to-quotation",
+      "ni-target-recipient"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-actual-destination",
+    "readingSentenceId": "reading-wrong-train-11",
+    "solution": "That person replied, “No, it goes towards the sea.”",
+    "grammarPointIds": [
+      "e-direction",
+      "yo-emphasis",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-actual-destination",
+    "readingSentenceId": "reading-wrong-train-11",
+    "type": "production",
+    "text": "That person replied, “No, it goes towards the sea.”",
+    "grammarPointIds": [
+      "e-direction",
+      "yo-emphasis",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "sea",
+        "vocabularyIds": [
+          "vocab-47c1227c459b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-phone-at-next-station",
+    "readingSentenceId": "reading-wrong-train-12",
+    "solution": "I got off at the next station and phoned my friend.",
+    "grammarPointIds": [
+      "de-action-location",
+      "te-action-link",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-phone-at-next-station",
+    "readingSentenceId": "reading-wrong-train-12",
+    "type": "production",
+    "text": "I got off at the next station and phoned my friend.",
+    "grammarPointIds": [
+      "de-action-location",
+      "te-action-link",
+      "ni-target-recipient"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "station",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-late-phone-call",
+    "readingSentenceId": "reading-wrong-train-13",
+    "solution": "I said, “I’m still near the sea. I’ll be a little late.”",
+    "grammarPointIds": [
+      "mada",
+      "naru-ku-change",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-late-phone-call",
+    "readingSentenceId": "reading-wrong-train-13",
+    "type": "production",
+    "text": "I said, “I’m still near the sea. I’ll be a little late.”",
+    "grammarPointIds": [
+      "mada",
+      "naru-ku-change",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "late",
+        "vocabularyIds": [
+          "vocab-f19598f8742b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-lunch-not-ready",
+    "readingSentenceId": "reading-wrong-train-14",
+    "solution": "My friend said, “It’s all right. I haven’t made lunch yet.”",
+    "grammarPointIds": [
+      "mada-te-inai",
+      "na-adjective-predicate",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-lunch-not-ready",
+    "readingSentenceId": "reading-wrong-train-14",
+    "type": "production",
+    "text": "My friend said, “It’s all right. I haven’t made lunch yet.”",
+    "grammarPointIds": [
+      "mada-te-inai",
+      "na-adjective-predicate",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-postcards-while-waiting",
+    "readingSentenceId": "reading-wrong-train-15",
+    "solution": "Since I had some time before the next train, I bought postcards at the station shop.",
+    "grammarPointIds": [
+      "made-end",
+      "node-reason",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-postcards-while-waiting",
+    "readingSentenceId": "reading-wrong-train-15",
+    "type": "production",
+    "text": "Since I had some time before the next train, I bought postcards at the station shop.",
+    "grammarPointIds": [
+      "made-end",
+      "node-reason",
+      "de-action-location"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "postcards",
+        "vocabularyIds": [
+          "vocab-39d2d353efa5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-beautiful-sea-gift",
+    "readingSentenceId": "reading-wrong-train-16",
+    "solution": "Because the photograph of the sea was beautiful, I thought I would like to give my friend one too.",
+    "grammarPointIds": [
+      "kara-reason",
+      "ageru",
+      "tai-desire",
+      "to-omou"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-beautiful-sea-gift",
+    "readingSentenceId": "reading-wrong-train-16",
+    "type": "production",
+    "text": "Because the photograph of the sea was beautiful, I thought I would like to give my friend one too.",
+    "grammarPointIds": [
+      "kara-reason",
+      "ageru",
+      "tai-desire",
+      "to-omou"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "photograph",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-check-before-boarding",
+    "readingSentenceId": "reading-wrong-train-17",
+    "solution": "Before boarding the next train, I asked whether it went towards the mountains.",
+    "grammarPointIds": [
+      "mae-ni",
+      "ka-dou-ka",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-check-before-boarding",
+    "readingSentenceId": "reading-wrong-train-17",
+    "type": "production",
+    "text": "Before boarding the next train, I asked whether it went towards the mountains.",
+    "grammarPointIds": [
+      "mae-ni",
+      "ka-dou-ka",
+      "e-direction"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "mountains",
+        "vocabularyIds": [
+          "vocab-ddd9dca106e2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-actual-one-arrival",
+    "readingSentenceId": "reading-wrong-train-18",
+    "solution": "I arrived at my friend’s house around one o’clock in the afternoon.",
+    "grammarPointIds": [
+      "goro-approximate-time",
+      "ni-destination",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-actual-one-arrival",
+    "readingSentenceId": "reading-wrong-train-18",
+    "type": "production",
+    "text": "I arrived at my friend’s house around one o’clock in the afternoon.",
+    "grammarPointIds": [
+      "goro-approximate-time",
+      "ni-destination",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "arrived",
+        "vocabularyIds": [
+          "vocab-f024ec5e9eea"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-friend-wants-the-sea",
+    "readingSentenceId": "reading-wrong-train-19",
+    "solution": "My friend looked at the postcard and said, “I’d like to go to the sea too!”",
+    "grammarPointIds": [
+      "te-action-link",
+      "mo-addition",
+      "tai-desire",
+      "naa-reflection"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-friend-wants-the-sea",
+    "readingSentenceId": "reading-wrong-train-19",
+    "type": "production",
+    "text": "My friend looked at the postcard and said, “I’d like to go to the sea too!”",
+    "grammarPointIds": [
+      "te-action-link",
+      "mo-addition",
+      "tai-desire",
+      "naa-reflection"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "postcard",
+        "vocabularyIds": [
+          "vocab-39d2d353efa5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-wrong-train-next-trip-together",
+    "readingSentenceId": "reading-wrong-train-20",
+    "solution": "I replied, “Next time, let’s go to the sea together.”",
+    "grammarPointIds": [
+      "mashou",
+      "e-direction",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-wrong-train-next-trip-together",
+    "readingSentenceId": "reading-wrong-train-20",
+    "type": "production",
+    "text": "I replied, “Next time, let’s go to the sea together.”",
+    "grammarPointIds": [
+      "mashou",
+      "e-direction",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "together",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      }
+    ]
   }
 ]

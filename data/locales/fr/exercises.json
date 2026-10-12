@@ -11134,5 +11134,285 @@
         ]
       }
     ]
+  },
+  "story-wrong-train-visit-near-mountains": {
+    "translation": "Samedi, je suis allé rendre visite à un ami qui habite près de la montagne."
+  },
+  "production-story-wrong-train-visit-near-mountains": {
+    "translation": "Samedi, je suis allé rendre visite à un ami qui habite près de la montagne.",
+    "promptVocabularyHints": [
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-planned-noon-arrival": {
+    "translation": "Je comptais arriver chez mon ami vers midi."
+  },
+  "production-story-wrong-train-planned-noon-arrival": {
+    "translation": "Je comptais arriver chez mon ami vers midi.",
+    "promptVocabularyHints": [
+      {
+        "word": "arriver",
+        "vocabularyIds": [
+          "vocab-f024ec5e9eea"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-two-stopped-trains": {
+    "translation": "Deux trains étaient à l’arrêt dans la gare."
+  },
+  "production-story-wrong-train-two-stopped-trains": {
+    "translation": "Deux trains étaient à l’arrêt dans la gare.",
+    "promptVocabularyHints": [
+      {
+        "word": "trains",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-right-or-left": {
+    "translation": "J’ai demandé à une personne près de moi : « Le train qui va vers la montagne est-il celui de droite ou celui de gauche ? »"
+  },
+  "production-story-wrong-train-right-or-left": {
+    "translation": "J’ai demandé à une personne près de moi : « Le train qui va vers la montagne est-il celui de droite ou celui de gauche ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "droite",
+        "vocabularyIds": [
+          "vocab-ed6bd4d73b76"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-helpful-directions": {
+    "translation": "Cette personne m’a indiqué : « C’est le train de droite. »"
+  },
+  "production-story-wrong-train-helpful-directions": {
+    "translation": "Cette personne m’a indiqué : « C’est le train de droite. »",
+    "promptVocabularyHints": [
+      {
+        "word": "droite",
+        "vocabularyIds": [
+          "vocab-ed6bd4d73b76"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-board-without-listening": {
+    "translation": "Mais, sans bien écouter, je suis monté dans le train de gauche."
+  },
+  "production-story-wrong-train-board-without-listening": {
+    "translation": "Mais, sans bien écouter, je suis monté dans le train de gauche.",
+    "promptVocabularyHints": [
+      {
+        "word": "gauche",
+        "vocabularyIds": [
+          "vocab-14be5202d5b3"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-assume-the-destination": {
+    "translation": "J’ai pensé que ce train irait probablement vers la montagne."
+  },
+  "production-story-wrong-train-assume-the-destination": {
+    "translation": "J’ai pensé que ce train irait probablement vers la montagne.",
+    "promptVocabularyHints": [
+      {
+        "word": "montagne",
+        "vocabularyIds": [
+          "vocab-ddd9dca106e2"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-look-outside": {
+    "translation": "Dans le train, je regardais dehors par la fenêtre."
+  },
+  "production-story-wrong-train-look-outside": {
+    "translation": "Dans le train, je regardais dehors par la fenêtre.",
+    "promptVocabularyHints": [
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-sea-not-mountains": {
+    "translation": "Je ne voyais pas la montagne, mais je voyais très bien la mer."
+  },
+  "production-story-wrong-train-sea-not-mountains": {
+    "translation": "Je ne voyais pas la montagne, mais je voyais très bien la mer.",
+    "promptVocabularyHints": [
+      {
+        "word": "mer",
+        "vocabularyIds": [
+          "vocab-47c1227c459b"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-ask-the-neighbour": {
+    "translation": "J’ai demandé à la personne à côté de moi : « Ce train va-t-il vers la montagne ? »"
+  },
+  "production-story-wrong-train-ask-the-neighbour": {
+    "translation": "J’ai demandé à la personne à côté de moi : « Ce train va-t-il vers la montagne ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-actual-destination": {
+    "translation": "Cette personne a répondu : « Non, il va vers la mer. »"
+  },
+  "production-story-wrong-train-actual-destination": {
+    "translation": "Cette personne a répondu : « Non, il va vers la mer. »",
+    "promptVocabularyHints": [
+      {
+        "word": "mer",
+        "vocabularyIds": [
+          "vocab-47c1227c459b"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-phone-at-next-station": {
+    "translation": "Je suis descendu à la gare suivante et j’ai téléphoné à mon ami."
+  },
+  "production-story-wrong-train-phone-at-next-station": {
+    "translation": "Je suis descendu à la gare suivante et j’ai téléphoné à mon ami.",
+    "promptVocabularyHints": [
+      {
+        "word": "gare",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-late-phone-call": {
+    "translation": "J’ai dit : « Je suis encore près de la mer. Je vais être un peu en retard. »"
+  },
+  "production-story-wrong-train-late-phone-call": {
+    "translation": "J’ai dit : « Je suis encore près de la mer. Je vais être un peu en retard. »",
+    "promptVocabularyHints": [
+      {
+        "word": "en retard",
+        "vocabularyIds": [
+          "vocab-f19598f8742b"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-lunch-not-ready": {
+    "translation": "Mon ami a dit : « Pas de problème. Je n’ai pas encore préparé le déjeuner. »"
+  },
+  "production-story-wrong-train-lunch-not-ready": {
+    "translation": "Mon ami a dit : « Pas de problème. Je n’ai pas encore préparé le déjeuner. »",
+    "promptVocabularyHints": [
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-postcards-while-waiting": {
+    "translation": "Comme j’avais du temps avant le prochain train, j’ai acheté des cartes postales dans la boutique de la gare."
+  },
+  "production-story-wrong-train-postcards-while-waiting": {
+    "translation": "Comme j’avais du temps avant le prochain train, j’ai acheté des cartes postales dans la boutique de la gare.",
+    "promptVocabularyHints": [
+      {
+        "word": "cartes postales",
+        "vocabularyIds": [
+          "vocab-39d2d353efa5"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-beautiful-sea-gift": {
+    "translation": "La photo de la mer était belle, alors j’ai pensé : « J’aimerais aussi en offrir une à mon ami. »"
+  },
+  "production-story-wrong-train-beautiful-sea-gift": {
+    "translation": "La photo de la mer était belle, alors j’ai pensé : « J’aimerais aussi en offrir une à mon ami. »",
+    "promptVocabularyHints": [
+      {
+        "word": "photo",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-check-before-boarding": {
+    "translation": "Avant de monter dans le train suivant, j’ai demandé s’il allait vers la montagne."
+  },
+  "production-story-wrong-train-check-before-boarding": {
+    "translation": "Avant de monter dans le train suivant, j’ai demandé s’il allait vers la montagne.",
+    "promptVocabularyHints": [
+      {
+        "word": "montagne",
+        "vocabularyIds": [
+          "vocab-ddd9dca106e2"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-actual-one-arrival": {
+    "translation": "Je suis arrivé chez mon ami vers une heure de l’après-midi."
+  },
+  "production-story-wrong-train-actual-one-arrival": {
+    "translation": "Je suis arrivé chez mon ami vers une heure de l’après-midi.",
+    "promptVocabularyHints": [
+      {
+        "word": "arrivé",
+        "vocabularyIds": [
+          "vocab-f024ec5e9eea"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-friend-wants-the-sea": {
+    "translation": "Mon ami a regardé la carte postale et a dit : « Moi aussi, j’aimerais aller à la mer ! »"
+  },
+  "production-story-wrong-train-friend-wants-the-sea": {
+    "translation": "Mon ami a regardé la carte postale et a dit : « Moi aussi, j’aimerais aller à la mer ! »",
+    "promptVocabularyHints": [
+      {
+        "word": "carte postale",
+        "vocabularyIds": [
+          "vocab-39d2d353efa5"
+        ]
+      }
+    ]
+  },
+  "story-wrong-train-next-trip-together": {
+    "translation": "J’ai répondu : « La prochaine fois, allons à la mer ensemble. »"
+  },
+  "production-story-wrong-train-next-trip-together": {
+    "translation": "J’ai répondu : « La prochaine fois, allons à la mer ensemble. »",
+    "promptVocabularyHints": [
+      {
+        "word": "ensemble",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      }
+    ]
   }
 }

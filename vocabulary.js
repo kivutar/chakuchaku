@@ -49,7 +49,7 @@
     return String(value || "")
       .normalize("NFKC")
       .toLocaleLowerCase("en")
-      .replace(/[\s~～・･]+/gu, "");
+      .replace(/[\s~～・･「」『』“”«»"]+/gu, "");
   }
 
   function getJapaneseForms(entry) {
@@ -93,6 +93,20 @@
       return [];
     }
 
+    // Exact reference answers already have known word boundaries, even in
+    // kana without punctuation (朝、いい must not become 浅い).
+    const withoutPunctuation = (text) => normalizeJapaneseContext(text)
+      .replace(/[\p{P}\p{S}]/gu, "");
+    const referenceAnswer = withoutPunctuation(answer);
+    const referenceTexts = [
+      tokens.map(({ surface }) => surface).join(""),
+      tokens.map(({ reading, surface }) => reading || surface).join("")
+    ];
+
+    if (referenceTexts.some((text) => withoutPunctuation(text) === referenceAnswer)) {
+      return [...targetIds];
+    }
+
     const vocabularyIdsByForm = new Map();
 
     for (const entry of entries) {
@@ -116,13 +130,20 @@
     const contextualMatches = [];
 
     const addContextualMatch = (text, vocabularyIds) => {
-      const normalizedText = normalizeJapanese(text);
+      // Normalize the answer and contexts alike: quotation marks are optional.
+      // Keep full contexts for word boundaries (ですよ」と教え), plus prefixes
+      // before punctuation so 見て、「… need not include the quoted text.
+      const normalizedTexts = new Set([
+        text, text.split(/[\p{P}\p{S}]/u)[0]
+      ].map(normalizeJapaneseContext));
 
-      if (normalizedText) {
-        contextualMatches.push({
-          text: normalizedText,
-          vocabularyIds: new Set(vocabularyIds)
-        });
+      for (const normalizedText of normalizedTexts) {
+        if (normalizedText) {
+          contextualMatches.push({
+            text: normalizedText,
+            vocabularyIds: new Set(vocabularyIds)
+          });
+        }
       }
     };
 
