@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { runInNewContext } from "node:vm";
 import { handleStaticRequest } from "../scripts/serve.js";
 import { createReadingVoiceItems, parseVoiceGenerationArguments } from "../scripts/generate-voices.js";
 
@@ -121,4 +122,20 @@ test("reading is served locally and linked in the static and offline app", async
   }
   assert.match(app, /section !== "reading"/u, "reading must not be picked as SRS free practice");
   assert.doesNotMatch(view, /JlptN5(?:Srs|Stats|History|Progress|Storage)/u);
+});
+
+test("the question shortcut stays on the reading page despite static route base URLs", async () => {
+  const view = await readFile(new URL("../reading-view.js", import.meta.url), "utf8");
+  const assignment = view.match(/questionLink\.href = [^;]+;/u)?.[0];
+  assert.ok(assignment);
+  for (const pageUrl of [
+    "http://127.0.0.1:4174/reading",
+    "https://kivutar.github.io/chakuchaku/reading/",
+    "https://kivutar.github.io/chakuchaku/reading/?qa=fr"
+  ]) {
+    const questionLink = {};
+    runInNewContext(assignment, { questionLink, window: { location: { href: pageUrl } }, URL });
+    const target = new URL(questionLink.href, new URL("../", pageUrl));
+    assert.equal(target.href, `${pageUrl}#reading-questions`);
+  }
 });

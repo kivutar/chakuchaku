@@ -109,7 +109,9 @@
     }));
     header.append(title, metadata, element("p", "reading-instructions", t("reading.instructions")));
     const questionLink = element("a", "reading-question-link", t("reading.goToQuestions"));
-    questionLink.href = "#reading-questions";
+    // Static route pages use <base href="../">; resolve fragments against the
+    // current document, not that base, to stay inside the reading section.
+    questionLink.href = new URL("#reading-questions", window.location.href).href;
     header.append(questionLink);
     const article = element("article", "reading-article");
     article.setAttribute("aria-labelledby", title.id);
