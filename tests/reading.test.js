@@ -7,9 +7,10 @@ import {
   createLessonVoiceItems, createReadingVoiceItems, parseVoiceGenerationArguments
 } from "../scripts/generate-voices.js";
 import { resolveReadingGrammarExercises } from "../scripts/reading-grammar.js";
+import { createReadingCoverage, formatReadingCoverage } from "../scripts/reading-coverage.js";
 import "../exercise-selection.js";
 
-const { validatePassages, gradeAnswers, localizedText } = globalThis.JlptN5Reading;
+const { validatePassages, gradeAnswers, localizedText, filterPassages, paginatePassages, storyUrl } = globalThis.JlptN5Reading;
 const readJson = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8").then(JSON.parse);
 const sources = await readJson("data/source/readings.json");
 const prepared = await readJson("data/readings.json");
@@ -23,6 +24,80 @@ test("the reading prototype has 20 coherent sentences and five bilingual questio
   assert.equal(new Set(passage.sentences.map((sentence) => sentence.paragraph)).size, 5);
   assert.equal(localizedText(passage.title, "fr"), "Un dimanche au parc");
   assert.equal(localizedText(passage.title, "de"), passage.title.en);
+});
+
+test("the new N5 library story is distinct, roughly twenty sentences, and has grounded bilingual questions", () => {
+  const library = prepared.find(({ id }) => id === "my-first-library-card");
+  assert.ok(library);
+  assert.equal(library.level, "n5");
+  assert.ok(library.sentences.length >= 18 && library.sentences.length <= 22);
+  assert.equal(library.questions.length, 5);
+  const oldText = new Set(passage.sentences.map(({ text }) => text));
+  assert.ok(library.sentences.every(({ text }) => !oldText.has(text)));
+  assert.equal(gradeAnswers(library, Object.fromEntries(library.questions.map((question) => [question.id, question.answerId]))).correct, 5);
+  const find = (point) => library.sentences.find((sentence) => sentence.grammarPointIds.includes(point));
+  assert.match(find("nakereba-naranai").text, /見せなければなりません/u);
+  assert.match(find("tari-tari-suru").text, /読んだり、写真を見たりしました/u);
+  assert.match(find("nakute-mo-ii").text, /払わなくてもいい/u);
+  assert.match(find("te-mo-ii").text, /読んでもいいですか/u);
+  assert.match(find("te-wa-ikenai").text, /話してはいけません/u);
+  const floorAnswer = library.questions[0].choices.find(({ id }) => id === library.questions[0].answerId);
+  assert.match(floorAnswer.label.fr, /deuxième niveau/u);
+  assert.match(library.questions[0].explanation.fr, /premier étage/u);
+});
+
+test("story search is localized and accent-insensitive, level-aware, and paginated without changing content", () => {
+  const original = JSON.stringify(prepared);
+  assert.deepEqual(filterPassages(prepared, { query: "BIBLIOTHEQUE chats", locale: "fr" }).map(({ id }) => id), ["my-first-library-card"]);
+  assert.equal(filterPassages(prepared, { query: "library", locale: "en" }).length, 1);
+  assert.equal(filterPassages(prepared, { query: "not in any story" }).length, 0);
+  assert.equal(filterPassages(prepared, { level: "n4" }).length, 0);
+  const many = Array.from({ length: 25 }, (_, index) => ({ ...passage, id: `story-${index}`, level: index % 2 ? "n4" : "n5" }));
+  assert.equal(filterPassages(many, { level: "n4" }).length, 12);
+  assert.equal(paginatePassages(many).items.length, 8);
+  const last = paginatePassages(many, 99);
+  assert.equal(last.page, 4);
+  assert.equal(last.items.length, 1);
+  assert.equal(paginatePassages(many, -10).page, 1);
+  assert.deepEqual(paginatePassages([], 3), { items: [], page: 1, pages: 1, total: 0 });
+  assert.throws(() => paginatePassages(many, 1, 0), /page size/);
+  assert.equal(JSON.stringify(prepared), original);
+});
+
+test("shareable story URLs preserve the native/web reading route and unrelated query parameters", () => {
+  for (const base of ["http://127.0.0.1:4174/reading", "https://kivutar.github.io/chakuchaku/reading/", "capacitor://localhost/reading"]) {
+    const link = storyUrl(`${base}?qa=fr#reading-questions`, "my-first-library-card");
+    assert.equal(new URL(link).searchParams.get("story"), "my-first-library-card");
+    assert.equal(new URL(link).searchParams.get("qa"), "fr");
+    assert.equal(new URL(link).hash, "");
+    assert.equal(new URL(link).pathname, new URL(base).pathname);
+    assert.equal(storyUrl(link), `${base}?qa=fr`);
+  }
+});
+
+test("internal reading coverage is reproducible, counts sentences once, and exposes gaps per level", async () => {
+  const grammar = await readJson("data/jlpt-n5-grammar.json");
+  const original = JSON.stringify(sources);
+  const coverage = createReadingCoverage(sources, grammar);
+  assert.deepEqual(coverage, await readJson("data/reading-coverage.json"));
+  assert.equal(formatReadingCoverage(coverage), await readFile(new URL("../data/reading-coverage.md", import.meta.url), "utf8"));
+  assert.equal(coverage.totalPassages, sources.length);
+  assert.equal(coverage.totalSentences, sources.flatMap(({ sentences }) => sentences).length);
+  assert.equal(coverage.points.find(({ id }) => id === "nakereba-naranai").sentences, 1);
+  assert.equal(coverage.points.find(({ id }) => id === "tari-tari-suru").passages, 1);
+  assert.ok(coverage.levels.find(({ level }) => level === "n5").coveredPoints > 35);
+  assert.ok(coverage.levels.every(({ coveredPoints, totalPoints, uncoveredPointIds }) => coveredPoints + uncoveredPointIds.length === totalPoints));
+  assert.equal(JSON.stringify(sources), original);
+  const unknown = structuredClone(sources);
+  unknown[1].sentences[0].grammarPointIds = ["invented"];
+  assert.throws(() => createReadingCoverage(unknown, grammar), /unknown reading grammar point/u);
+  unknown[1].sentences[0].grammarPointIds = [grammar.find(({ introducedAt }) => introducedAt === "n4").id];
+  assert.throws(() => createReadingCoverage(unknown, grammar), /grammar exceeds/u);
+  const duplicate = structuredClone(sources);
+  duplicate[1].sentences[0].grammarPointIds = ["ni-time", "ni-time"];
+  assert.throws(() => validatePassages(duplicate), /unique point IDs/u);
+  delete duplicate[1].sentences[0].grammarPointIds;
+  assert.throws(() => validatePassages(duplicate), /unique point IDs/u);
 });
 
 test("every reading sentence has matching tokens, kana furigana, and dictionary helpers", async () => {
@@ -93,7 +168,7 @@ test("reading voices use their own bounded generation target and original Japane
   assert.equal(parseVoiceGenerationArguments(["--target", "reading", "--limit", "2"]).generationLimit, 2);
   assert.throws(() => parseVoiceGenerationArguments(["--target", "reading", "--limit", "2", "--exercise-type", "recognition"]), /only available for lesson/);
   const items = createReadingVoiceItems(sources);
-  assert.equal(items.length, 20);
+  assert.equal(items.length, sources.flatMap(({ sentences }) => sentences).length);
   assert.equal(items[0].text, sources[0].sentences[0].text);
   assert.equal(items[0].introducedAt, "n5");
   assert.equal(items[0].minimumLevel, "n5");
@@ -116,6 +191,8 @@ test("reading is served locally and linked in the static and offline app", async
   const redirect = await request("/reading/");
   assert.equal(redirect.status, 308);
   assert.equal(redirect.headers.Location, "/reading");
+  const storyRedirect = await request("/reading/?story=my-first-library-card");
+  assert.equal(storyRedirect.headers.Location, "/reading?story=my-first-library-card");
   const [html, build, sw, app, view] = await Promise.all([
     "index.html", "scripts/build-static.js", "service-worker.js", "app.js", "reading-view.js"
   ].map((path) => readFile(new URL(`../${path}`, import.meta.url), "utf8")));
@@ -160,6 +237,7 @@ test("borrowed grammar sources resolve both directions without copying or mutati
   assert.equal(resolved[2].solution, readingSentence.text);
   assert.equal(resolved[2].text, authored[2].text);
   for (const exercise of resolved.slice(1)) {
+    assert.deepEqual(exercise.grammarPointIds, readingSentence.grammarPointIds);
     assert.deepEqual(exercise.tokenOverrides, readingSentence.tokenOverrides);
     assert.equal(exercise.minimumLevel, sources[0].level);
     assert.equal(exercise.audio, `assets/voices/reading/${readingSentence.id}.m4a`);
@@ -180,6 +258,12 @@ test("borrowed grammar sources resolve both directions without copying or mutati
 });
 
 test("borrowed grammar rejects missing references and attempts to override shared content", () => {
+  assert.throws(() => resolveReadingGrammarExercises([
+    { id: "drifted-tags", readingSentenceId: sources[0].sentences[0].id, solution: "Translation.", grammarPointIds: ["te-kara"] }
+  ], sources), /grammar tags must match/u);
+  assert.throws(() => resolveReadingGrammarExercises([
+    { id: "duplicated-tags", readingSentenceId: sources[0].sentences[0].id, solution: "Translation.", grammarPointIds: ["copula-past", "copula-past", "no-possession"] }
+  ], sources), /grammar tags must match/u);
   for (const readingSentenceId of [null, "", "not-a-reading-sentence"]) {
     assert.throws(() => resolveReadingGrammarExercises([
       { id: "invalid", readingSentenceId, solution: "Translation." }
@@ -307,7 +391,7 @@ test("borrowed sentences never trigger duplicate lesson voice generation or bypa
     exercises.filter((exercise) => exercise.readingSentenceId === undefined).length);
   assert.ok(lessons.every((item) => item.readingSentenceId === undefined));
   const voices = createReadingVoiceItems(sources);
-  assert.equal(voices.length, 20);
+  assert.equal(voices.length, sources.flatMap(({ sentences }) => sentences).length);
   assert.deepEqual(voices.filter((item) => item.skipVoiceGeneration).map((item) => item.id), [
     "reading-sunday-park-07", "reading-sunday-park-14"
   ]);

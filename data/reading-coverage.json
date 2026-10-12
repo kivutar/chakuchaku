@@ -1,0 +1,3614 @@
+{
+  "totalPassages": 2,
+  "totalSentences": 40,
+  "levels": [
+    {
+      "level": "n5",
+      "totalPoints": 206,
+      "coveredPoints": 55,
+      "uncoveredPointIds": [
+        "predicate-final-order",
+        "topic-comment-structure",
+        "argument-omission",
+        "modifier-before-noun",
+        "plain-polite-register",
+        "nonpast-tense",
+        "predicate-types",
+        "copula-negative-plain",
+        "copula-negative-polite",
+        "copula-past-negative",
+        "noun-connective-de",
+        "wa-contrast",
+        "ga-identification",
+        "ni-purpose",
+        "ni-frequency",
+        "ya-incomplete-list",
+        "no-noun-omission",
+        "mo-emphasis",
+        "ka-alternatives",
+        "ne-confirmation",
+        "yone-confirmation",
+        "naa-reflection",
+        "kara-reason",
+        "ga-contrast",
+        "kedo-contrast",
+        "shikashi-connector",
+        "soshite-connector",
+        "sorekara-connector",
+        "shi-additive-reason",
+        "dake-limitation",
+        "shika-nai-limitation",
+        "kurai-approximation",
+        "goro-approximate-time",
+        "nado-examples",
+        "nanka-nante-examples",
+        "tte-casual-quotation",
+        "demo-particle",
+        "o-go-honorific-prefix",
+        "verb-groups",
+        "ichidan-conjugation",
+        "godan-conjugation",
+        "irregular-verbs",
+        "verb-stem",
+        "verb-dictionary-nonpast",
+        "verb-nai",
+        "verb-masen",
+        "verb-nakatta",
+        "verb-masen-deshita",
+        "verb-te-form",
+        "te-iru-result-state",
+        "te-aru-result-state",
+        "te-inai",
+        "mada-te-inai",
+        "o-kudasai",
+        "naide-kudasai",
+        "naide-without",
+        "cha-ikenai",
+        "na-prohibitive",
+        "masen-ka-invitation",
+        "mashou",
+        "mashou-ka",
+        "koto-nominalizer",
+        "no-nominalizer",
+        "koto-ga-dekiru",
+        "ru-koto-ga-aru",
+        "ta-koto-ga-aru",
+        "tsumori",
+        "hou-ga-ii-advice",
+        "nakute-wa-ikenai",
+        "nakya-nakucha",
+        "tara-conditional",
+        "ato-de",
+        "te-miru",
+        "te-shimau",
+        "nagara",
+        "kamoshirenai",
+        "deshou-darou",
+        "darou",
+        "sou-appearance",
+        "sou-hearsay",
+        "you-ni-purpose",
+        "to-conditional",
+        "i-adjective-class",
+        "i-adjective-predicate",
+        "i-adjective-past",
+        "i-adjective-past-negative",
+        "ii-irregular",
+        "na-adjective-class",
+        "na-adjective-predicate",
+        "na-adjective-attributive",
+        "na-adjective-negative",
+        "na-adjective-past",
+        "na-adjective-past-negative",
+        "adjective-connective",
+        "naru-change",
+        "suru-change",
+        "sugiru",
+        "hoshii",
+        "suki-kirai",
+        "no-ga-suki",
+        "no-ga-jouzu-heta",
+        "iru-existence",
+        "existence-location",
+        "location-of-topic",
+        "aru-possession",
+        "yori-comparison",
+        "hou-ga-comparison",
+        "dochira-comparison",
+        "ichiban-superlative",
+        "onaji",
+        "numbers-and-counters",
+        "tsu-counter",
+        "nan-counter",
+        "quantity-position",
+        "clock-calendar-time",
+        "kara-made-range",
+        "mou",
+        "mada",
+        "degree-adverbs",
+        "frequency-adverbs",
+        "ageru",
+        "te-ageru",
+        "te-morau",
+        "kosoado-pronouns",
+        "kosoado-places",
+        "kosoado-directions",
+        "kosoado-kind",
+        "nani",
+        "dare",
+        "itsu",
+        "naze-doushite-nande",
+        "dou",
+        "wa-dou-desu-ka",
+        "dou-yatte",
+        "donna",
+        "dore-dono",
+        "ikura",
+        "ikutsu",
+        "question-word-ka",
+        "question-word-mo",
+        "to-omou",
+        "ka-dou-ka",
+        "no-desu",
+        "no-question",
+        "kata-how-to",
+        "chuu",
+        "issho-ni",
+        "ni-turn-direction",
+        "de-total-price",
+        "question-word-demo",
+        "mieru-kikoeru"
+      ]
+    },
+    {
+      "level": "n4",
+      "totalPoints": 97,
+      "coveredPoints": 0,
+      "uncoveredPointIds": [
+        "plain-volitional",
+        "volitional-to-omou",
+        "potential-form",
+        "passive-form",
+        "koto-ni-suru",
+        "koto-ni-naru",
+        "hazu-da",
+        "hazu-ga-nai",
+        "yasui",
+        "nikui",
+        "te-iku",
+        "te-kuru",
+        "aida",
+        "aida-ni",
+        "nara-conditional",
+        "causative-form",
+        "causative-passive-form",
+        "imperative-form",
+        "ba-conditional",
+        "ba-yokatta",
+        "tara-dou",
+        "transitive-intransitive",
+        "hitsuyou-ga-aru",
+        "nasai-command",
+        "you-ni-naru",
+        "you-ni-suru",
+        "you-to-suru",
+        "te-oku",
+        "stem-hajimeru",
+        "stem-owaru",
+        "stem-tsuzukeru",
+        "stem-dasu",
+        "tagaru",
+        "garu",
+        "gari",
+        "te-hoshii",
+        "te-kurete-arigatou",
+        "te-sumimasen",
+        "te-itadakemasen-ka",
+        "te-yokatta",
+        "te-yaru",
+        "made-ni",
+        "ru-tokoro",
+        "teiru-tokoro",
+        "ta-tokoro",
+        "ta-bakari",
+        "mama",
+        "oki-ni",
+        "sou-modifier",
+        "you-da-inference",
+        "you-na-ni-simile",
+        "mitai",
+        "rashii",
+        "noni-concession",
+        "temo-concession",
+        "tame-ni-purpose",
+        "tame-ni-cause",
+        "to-ii-hope",
+        "no-wa-da",
+        "to-iu-koto",
+        "you-ni-to-iu",
+        "adjective-sa",
+        "hodo-degree",
+        "bakari-limitation",
+        "dake-de",
+        "toka-toka",
+        "ga-suru-sensation",
+        "material-de",
+        "material-kara",
+        "baai-wa",
+        "yotei-da",
+        "tara-ii-desu-ka",
+        "ga-hitsuyou",
+        "te-de-cause",
+        "nakute-connective",
+        "koto-ni-shiteiru",
+        "koto-ni-natteiru",
+        "te-itadaku",
+        "te-kudasaru",
+        "sonkeigo-system",
+        "kenjougo-system",
+        "gozaimasu",
+        "o-ni-naru",
+        "o-suru-humble",
+        "o-go-kudasai-honorific",
+        "sonkeigo-special-verbs",
+        "kenjougo-special-verbs",
+        "koro",
+        "noni-purpose",
+        "nakanaka-nai",
+        "ni-mieru",
+        "zurai",
+        "te-sumu",
+        "kana-wonder",
+        "kashira-wonder",
+        "kai-question",
+        "dewa-nai-ka"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "sunday-at-the-park",
+      "level": "n5",
+      "title": {
+        "en": "Sunday at the park",
+        "fr": "Un dimanche au parc"
+      },
+      "sentences": 20,
+      "grammarPointIds": [
+        "aru-existence",
+        "common-counters",
+        "copula-past",
+        "de-action-location",
+        "de-means",
+        "demo-connector",
+        "duration-no-particle",
+        "e-direction",
+        "ga-subject",
+        "i-adjective-adverb",
+        "i-adjective-attributive",
+        "i-adjective-negative",
+        "made-end",
+        "mo-addition",
+        "naru-ku-change",
+        "ni-destination",
+        "ni-existence-location",
+        "ni-target-recipient",
+        "ni-time",
+        "no-possession",
+        "node-reason",
+        "o-object",
+        "o-route",
+        "positional-nouns",
+        "relative-clause",
+        "tai-desire",
+        "te-action-link",
+        "te-kureru",
+        "to-companion",
+        "to-complete-list",
+        "to-iu",
+        "verb-mashita",
+        "verb-masu",
+        "verb-ta-past",
+        "wa-topic"
+      ]
+    },
+    {
+      "id": "my-first-library-card",
+      "level": "n5",
+      "title": {
+        "en": "My first library card",
+        "fr": "Ma première carte de bibliothèque"
+      },
+      "sentences": 20,
+      "grammarPointIds": [
+        "aru-existence",
+        "common-counters",
+        "copula-da-desu",
+        "de-action-location",
+        "demo-connector",
+        "i-adjective-attributive",
+        "ka-question",
+        "kara-start",
+        "kosoado-determiners",
+        "kureru",
+        "mae-ni",
+        "mo-addition",
+        "morau",
+        "movement-purpose",
+        "na-adjective-adverb",
+        "nakereba-naranai",
+        "nakute-mo-ii",
+        "ni-destination",
+        "ni-existence-location",
+        "ni-target-recipient",
+        "ni-time",
+        "no-possession",
+        "node-reason",
+        "o-object",
+        "positional-nouns",
+        "tai-desire",
+        "tari-tari-suru",
+        "te-action-link",
+        "te-iru-progressive",
+        "te-kara",
+        "te-kudasai",
+        "te-mo-ii",
+        "te-wa-ikenai",
+        "to-complete-list",
+        "to-iu",
+        "to-quotation",
+        "toki",
+        "verb-mashita",
+        "yo-emphasis"
+      ]
+    }
+  ],
+  "points": [
+    {
+      "id": "predicate-final-order",
+      "level": "n5",
+      "name": "Predicate-final word order",
+      "pattern": "X は Y",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "topic-comment-structure",
+      "level": "n5",
+      "name": "Topic-comment structure",
+      "pattern": "X は Y",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "argument-omission",
+      "level": "n5",
+      "name": "Contextual omission",
+      "pattern": "(X) ...",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "modifier-before-noun",
+      "level": "n5",
+      "name": "Modifiers precede nouns",
+      "pattern": "modifier + noun",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "relative-clause",
+      "level": "n5",
+      "name": "Relative clauses",
+      "pattern": "plain clause + noun",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-16"
+        }
+      ]
+    },
+    {
+      "id": "plain-polite-register",
+      "level": "n5",
+      "name": "Plain and polite register",
+      "pattern": "plain / polite",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nonpast-tense",
+      "level": "n5",
+      "name": "Non-past tense",
+      "pattern": "non-past",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "predicate-types",
+      "level": "n5",
+      "name": "Predicate types",
+      "pattern": "noun / adjective / verb",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "copula-da-desu",
+      "level": "n5",
+      "name": "Plain and polite copula",
+      "pattern": "だ / です",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-03"
+        }
+      ]
+    },
+    {
+      "id": "copula-negative-plain",
+      "level": "n5",
+      "name": "Plain negative copula",
+      "pattern": "じゃない / ではない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "copula-negative-polite",
+      "level": "n5",
+      "name": "Polite negative copula",
+      "pattern": "じゃありません / ではありません",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "copula-past",
+      "level": "n5",
+      "name": "Past copula",
+      "pattern": "だった / でした",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-01"
+        }
+      ]
+    },
+    {
+      "id": "copula-past-negative",
+      "level": "n5",
+      "name": "Past negative copula",
+      "pattern": "じゃなかった / ではありませんでした",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "noun-connective-de",
+      "level": "n5",
+      "name": "Connecting noun predicates",
+      "pattern": "noun + で",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "wa-topic",
+      "level": "n5",
+      "name": "Topic marker",
+      "pattern": "は",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-15"
+        }
+      ]
+    },
+    {
+      "id": "wa-contrast",
+      "level": "n5",
+      "name": "Contrast marker",
+      "pattern": "は",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ga-subject",
+      "level": "n5",
+      "name": "Subject marker",
+      "pattern": "が",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-17"
+        }
+      ]
+    },
+    {
+      "id": "ga-identification",
+      "level": "n5",
+      "name": "Identification and exhaustive focus",
+      "pattern": "が",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "o-object",
+      "level": "n5",
+      "name": "Direct object marker",
+      "pattern": "を",
+      "sentences": 8,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-04"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-14"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-15"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-16"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-07"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-09"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-17"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-19"
+        }
+      ]
+    },
+    {
+      "id": "o-route",
+      "level": "n5",
+      "name": "Route marker",
+      "pattern": "を",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-05"
+        }
+      ]
+    },
+    {
+      "id": "ni-time",
+      "level": "n5",
+      "name": "Specific time marker",
+      "pattern": "に",
+      "sentences": 3,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-05"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-07"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-12"
+        }
+      ]
+    },
+    {
+      "id": "ni-destination",
+      "level": "n5",
+      "name": "Destination marker",
+      "pattern": "に",
+      "sentences": 3,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-04"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-01"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-19"
+        }
+      ]
+    },
+    {
+      "id": "ni-existence-location",
+      "level": "n5",
+      "name": "Existence location marker",
+      "pattern": "に",
+      "sentences": 3,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-12"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-02"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-14"
+        }
+      ]
+    },
+    {
+      "id": "ni-target-recipient",
+      "level": "n5",
+      "name": "Target and recipient marker",
+      "pattern": "に",
+      "sentences": 6,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-10"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-16"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-19"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-20"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-05"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-08"
+        }
+      ]
+    },
+    {
+      "id": "ni-purpose",
+      "level": "n5",
+      "name": "Movement purpose marker",
+      "pattern": "verb stem + に",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ni-frequency",
+      "level": "n5",
+      "name": "Frequency per period",
+      "pattern": "period に frequency",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "e-direction",
+      "level": "n5",
+      "name": "Direction marker",
+      "pattern": "へ",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-11"
+        }
+      ]
+    },
+    {
+      "id": "de-action-location",
+      "level": "n5",
+      "name": "Action location marker",
+      "pattern": "で",
+      "sentences": 7,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-02"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-03"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-10"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-20"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-04"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-17"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-20"
+        }
+      ]
+    },
+    {
+      "id": "de-means",
+      "level": "n5",
+      "name": "Means and instrument marker",
+      "pattern": "で",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-06"
+        }
+      ]
+    },
+    {
+      "id": "to-complete-list",
+      "level": "n5",
+      "name": "Complete noun listing",
+      "pattern": "A と B",
+      "sentences": 3,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-04"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-06"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-08"
+        }
+      ]
+    },
+    {
+      "id": "to-companion",
+      "level": "n5",
+      "name": "Companion marker",
+      "pattern": "person と",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-05"
+        }
+      ]
+    },
+    {
+      "id": "to-quotation",
+      "level": "n5",
+      "name": "Quotation marker",
+      "pattern": "clause と",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-15"
+        }
+      ]
+    },
+    {
+      "id": "ya-incomplete-list",
+      "level": "n5",
+      "name": "Incomplete noun listing",
+      "pattern": "A や B",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "no-possession",
+      "level": "n5",
+      "name": "Possession and noun modification",
+      "pattern": "A の B",
+      "sentences": 5,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-01"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-14"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-20"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-12"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-14"
+        }
+      ]
+    },
+    {
+      "id": "no-noun-omission",
+      "level": "n5",
+      "name": "Noun omission with の",
+      "pattern": "A の",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "mo-addition",
+      "level": "n5",
+      "name": "Also and too",
+      "pattern": "も",
+      "sentences": 3,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-11"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-18"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-20"
+        }
+      ]
+    },
+    {
+      "id": "mo-emphasis",
+      "level": "n5",
+      "name": "Emphatic も",
+      "pattern": "quantity + も",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ka-question",
+      "level": "n5",
+      "name": "Question marker",
+      "pattern": "か",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-15"
+        }
+      ]
+    },
+    {
+      "id": "ka-alternatives",
+      "level": "n5",
+      "name": "Alternative marker",
+      "pattern": "A か B / A か B か",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "yo-emphasis",
+      "level": "n5",
+      "name": "Informing and emphasis",
+      "pattern": "よ",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-11"
+        }
+      ]
+    },
+    {
+      "id": "ne-confirmation",
+      "level": "n5",
+      "name": "Agreement and confirmation",
+      "pattern": "ね",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "yone-confirmation",
+      "level": "n5",
+      "name": "Emphatic confirmation",
+      "pattern": "よね",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "naa-reflection",
+      "level": "n5",
+      "name": "Reflection and admiration",
+      "pattern": "なあ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kara-start",
+      "level": "n5",
+      "name": "Starting point",
+      "pattern": "から",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-07"
+        }
+      ]
+    },
+    {
+      "id": "made-end",
+      "level": "n5",
+      "name": "End point and limit",
+      "pattern": "まで",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-06"
+        }
+      ]
+    },
+    {
+      "id": "kara-reason",
+      "level": "n5",
+      "name": "Reason with から",
+      "pattern": "plain clause + から",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "node-reason",
+      "level": "n5",
+      "name": "Reason with ので",
+      "pattern": "plain clause + ので",
+      "sentences": 3,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-09"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-18"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-18"
+        }
+      ]
+    },
+    {
+      "id": "ga-contrast",
+      "level": "n5",
+      "name": "Contrast with が",
+      "pattern": "clause + が",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kedo-contrast",
+      "level": "n5",
+      "name": "Contrast with けど",
+      "pattern": "けど / けれど / けれども",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "demo-connector",
+      "level": "n5",
+      "name": "However",
+      "pattern": "でも",
+      "sentences": 2,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-07"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-16"
+        }
+      ]
+    },
+    {
+      "id": "shikashi-connector",
+      "level": "n5",
+      "name": "Formal however",
+      "pattern": "しかし",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "soshite-connector",
+      "level": "n5",
+      "name": "And then",
+      "pattern": "そして",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "sorekara-connector",
+      "level": "n5",
+      "name": "After that",
+      "pattern": "それから",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "shi-additive-reason",
+      "level": "n5",
+      "name": "Additive reasons",
+      "pattern": "plain clause + し",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "dake-limitation",
+      "level": "n5",
+      "name": "Only",
+      "pattern": "だけ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "shika-nai-limitation",
+      "level": "n5",
+      "name": "Nothing but",
+      "pattern": "しか～ない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kurai-approximation",
+      "level": "n5",
+      "name": "Approximate amount",
+      "pattern": "くらい / ぐらい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "goro-approximate-time",
+      "level": "n5",
+      "name": "Approximate time",
+      "pattern": "ごろ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nado-examples",
+      "level": "n5",
+      "name": "Examples and so on",
+      "pattern": "など",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nanka-nante-examples",
+      "level": "n5",
+      "name": "Casual examples and reaction",
+      "pattern": "なんか / なんて",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "tte-casual-quotation",
+      "level": "n5",
+      "name": "Casual quotation",
+      "pattern": "って",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "demo-particle",
+      "level": "n5",
+      "name": "Even or something like",
+      "pattern": "でも",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "o-go-honorific-prefix",
+      "level": "n5",
+      "name": "Honorific prefix",
+      "pattern": "お～ / ご～",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "verb-groups",
+      "level": "n5",
+      "name": "Verb groups",
+      "pattern": "godan / ichidan / irregular",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ichidan-conjugation",
+      "level": "n5",
+      "name": "Ichidan verb conjugation",
+      "pattern": "る-verb",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "godan-conjugation",
+      "level": "n5",
+      "name": "Godan verb conjugation",
+      "pattern": "う-verb",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "irregular-verbs",
+      "level": "n5",
+      "name": "Irregular verbs",
+      "pattern": "する / 来る",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "verb-stem",
+      "level": "n5",
+      "name": "Verb stem",
+      "pattern": "ます-stem",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "verb-dictionary-nonpast",
+      "level": "n5",
+      "name": "Plain non-past verbs",
+      "pattern": "dictionary form",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "verb-masu",
+      "level": "n5",
+      "name": "Polite non-past verbs",
+      "pattern": "～ます",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-07"
+        }
+      ]
+    },
+    {
+      "id": "verb-nai",
+      "level": "n5",
+      "name": "Plain negative verbs",
+      "pattern": "～ない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "verb-masen",
+      "level": "n5",
+      "name": "Polite negative verbs",
+      "pattern": "～ません",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "verb-ta-past",
+      "level": "n5",
+      "name": "Plain past verbs",
+      "pattern": "～た / ～だ",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-18"
+        }
+      ]
+    },
+    {
+      "id": "verb-mashita",
+      "level": "n5",
+      "name": "Polite past verbs",
+      "pattern": "～ました",
+      "sentences": 9,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-03"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-05"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-10"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-11"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-13"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-15"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-17"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-01"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-07"
+        }
+      ]
+    },
+    {
+      "id": "verb-nakatta",
+      "level": "n5",
+      "name": "Plain past-negative verbs",
+      "pattern": "～なかった",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "verb-masen-deshita",
+      "level": "n5",
+      "name": "Polite past-negative verbs",
+      "pattern": "～ませんでした",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "verb-te-form",
+      "level": "n5",
+      "name": "Te-form",
+      "pattern": "～て / ～で",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-action-link",
+      "level": "n5",
+      "name": "Linking actions with て",
+      "pattern": "Vて、V",
+      "sentences": 4,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-09"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-14"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-19"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-13"
+        }
+      ]
+    },
+    {
+      "id": "te-iru-progressive",
+      "level": "n5",
+      "name": "Ongoing action",
+      "pattern": "～ている",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-04"
+        }
+      ]
+    },
+    {
+      "id": "te-iru-result-state",
+      "level": "n5",
+      "name": "Resulting state and repeated action",
+      "pattern": "～ている",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-aru-result-state",
+      "level": "n5",
+      "name": "Intentional resulting state",
+      "pattern": "～てある",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-inai",
+      "level": "n5",
+      "name": "Negative progressive or state",
+      "pattern": "～ていない / ～ていません",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "mada-te-inai",
+      "level": "n5",
+      "name": "Not yet",
+      "pattern": "まだ～ていない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-kara",
+      "level": "n5",
+      "name": "After doing",
+      "pattern": "～てから",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-08"
+        }
+      ]
+    },
+    {
+      "id": "te-kudasai",
+      "level": "n5",
+      "name": "Polite request",
+      "pattern": "～てください",
+      "sentences": 2,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-06"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-12"
+        }
+      ]
+    },
+    {
+      "id": "o-kudasai",
+      "level": "n5",
+      "name": "Please give me",
+      "pattern": "noun をください",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "naide-kudasai",
+      "level": "n5",
+      "name": "Polite negative request",
+      "pattern": "～ないでください",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "naide-without",
+      "level": "n5",
+      "name": "Without doing",
+      "pattern": "～ないで",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-mo-ii",
+      "level": "n5",
+      "name": "Permission",
+      "pattern": "～てもいい",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-15"
+        }
+      ]
+    },
+    {
+      "id": "nakute-mo-ii",
+      "level": "n5",
+      "name": "Lack of obligation",
+      "pattern": "～なくてもいい",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-11"
+        }
+      ]
+    },
+    {
+      "id": "te-wa-ikenai",
+      "level": "n5",
+      "name": "Prohibition",
+      "pattern": "～てはいけない / ～てはいけません",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-16"
+        }
+      ]
+    },
+    {
+      "id": "cha-ikenai",
+      "level": "n5",
+      "name": "Casual prohibition",
+      "pattern": "～ちゃいけない / ～じゃいけない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "na-prohibitive",
+      "level": "n5",
+      "name": "Direct prohibition",
+      "pattern": "dictionary form + な",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "tai-desire",
+      "level": "n5",
+      "name": "Want to do",
+      "pattern": "verb stem + たい",
+      "sentences": 5,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-02"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-08"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-05"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-18"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-20"
+        }
+      ]
+    },
+    {
+      "id": "masen-ka-invitation",
+      "level": "n5",
+      "name": "Invitation",
+      "pattern": "～ませんか",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "mashou",
+      "level": "n5",
+      "name": "Let's",
+      "pattern": "～ましょう",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "mashou-ka",
+      "level": "n5",
+      "name": "Offer or joint suggestion",
+      "pattern": "～ましょうか",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "movement-purpose",
+      "level": "n5",
+      "name": "Go, come, or return to do",
+      "pattern": "verb stem + に行く / に来る / に帰る",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-13"
+        }
+      ]
+    },
+    {
+      "id": "koto-nominalizer",
+      "level": "n5",
+      "name": "Nominalization with こと",
+      "pattern": "plain verb + こと",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "no-nominalizer",
+      "level": "n5",
+      "name": "Nominalization with の",
+      "pattern": "plain verb + の",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "koto-ga-dekiru",
+      "level": "n5",
+      "name": "Ability",
+      "pattern": "dictionary form + ことができる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ru-koto-ga-aru",
+      "level": "n5",
+      "name": "Sometimes do",
+      "pattern": "dictionary form + ことがある",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ta-koto-ga-aru",
+      "level": "n5",
+      "name": "Past experience",
+      "pattern": "past form + ことがある",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "tari-tari-suru",
+      "level": "n5",
+      "name": "Representative actions",
+      "pattern": "～たり～たりする",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-17"
+        }
+      ]
+    },
+    {
+      "id": "tsumori",
+      "level": "n5",
+      "name": "Plan and intention",
+      "pattern": "plain form + つもりだ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "hou-ga-ii-advice",
+      "level": "n5",
+      "name": "Advice",
+      "pattern": "～たほうがいい / ～ないほうがいい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nakereba-naranai",
+      "level": "n5",
+      "name": "Formal obligation",
+      "pattern": "～なければならない",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-10"
+        }
+      ]
+    },
+    {
+      "id": "nakute-wa-ikenai",
+      "level": "n5",
+      "name": "Obligation",
+      "pattern": "～なくてはいけない / ～ないといけない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nakya-nakucha",
+      "level": "n5",
+      "name": "Casual obligation",
+      "pattern": "～なきゃ / ～なくちゃ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "tara-conditional",
+      "level": "n5",
+      "name": "If and when",
+      "pattern": "～たら",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "toki",
+      "level": "n5",
+      "name": "When",
+      "pattern": "plain form + とき",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-10"
+        }
+      ]
+    },
+    {
+      "id": "mae-ni",
+      "level": "n5",
+      "name": "Before",
+      "pattern": "dictionary form / noun の + 前に",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-19"
+        }
+      ]
+    },
+    {
+      "id": "ato-de",
+      "level": "n5",
+      "name": "After",
+      "pattern": "past form / noun の + 後で",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-miru",
+      "level": "n5",
+      "name": "Try doing",
+      "pattern": "～てみる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-shimau",
+      "level": "n5",
+      "name": "Completion or regret",
+      "pattern": "～てしまう",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nagara",
+      "level": "n5",
+      "name": "While doing",
+      "pattern": "verb stem + ながら",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kamoshirenai",
+      "level": "n5",
+      "name": "Possibility",
+      "pattern": "plain form + かもしれない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "deshou-darou",
+      "level": "n5",
+      "name": "Polite probability and confirmation",
+      "pattern": "でしょう",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "darou",
+      "level": "n5",
+      "name": "Plain probability and confirmation",
+      "pattern": "だろう",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "sou-appearance",
+      "level": "n5",
+      "name": "Appearance",
+      "pattern": "stem + そうだ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "sou-hearsay",
+      "level": "n5",
+      "name": "Hearsay",
+      "pattern": "plain form + そうだ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "you-ni-purpose",
+      "level": "n5",
+      "name": "So that",
+      "pattern": "plain form + ように",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "to-conditional",
+      "level": "n5",
+      "name": "Automatic condition",
+      "pattern": "plain non-past + と",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "i-adjective-class",
+      "level": "n5",
+      "name": "I-adjectives",
+      "pattern": "～い adjective",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "i-adjective-predicate",
+      "level": "n5",
+      "name": "I-adjective predicate",
+      "pattern": "～い / ～いです",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "i-adjective-attributive",
+      "level": "n5",
+      "name": "I-adjective noun modification",
+      "pattern": "～い + noun",
+      "sentences": 2,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-01"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-01"
+        }
+      ]
+    },
+    {
+      "id": "i-adjective-negative",
+      "level": "n5",
+      "name": "Negative i-adjectives",
+      "pattern": "～くない / ～くないです",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-09"
+        }
+      ]
+    },
+    {
+      "id": "i-adjective-past",
+      "level": "n5",
+      "name": "Past i-adjectives",
+      "pattern": "～かった / ～かったです",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "i-adjective-past-negative",
+      "level": "n5",
+      "name": "Past-negative i-adjectives",
+      "pattern": "～くなかった / ～くなかったです",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "i-adjective-adverb",
+      "level": "n5",
+      "name": "I-adjective adverbs",
+      "pattern": "～く + verb",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-18"
+        }
+      ]
+    },
+    {
+      "id": "ii-irregular",
+      "level": "n5",
+      "name": "Irregular adjective いい",
+      "pattern": "いい / よい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "na-adjective-class",
+      "level": "n5",
+      "name": "Na-adjectives",
+      "pattern": "な-adjective",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "na-adjective-predicate",
+      "level": "n5",
+      "name": "Na-adjective predicate",
+      "pattern": "～だ / ～です",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "na-adjective-attributive",
+      "level": "n5",
+      "name": "Na-adjective noun modification",
+      "pattern": "～な + noun",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "na-adjective-negative",
+      "level": "n5",
+      "name": "Negative na-adjectives",
+      "pattern": "～じゃない / ～ではありません",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "na-adjective-past",
+      "level": "n5",
+      "name": "Past na-adjectives",
+      "pattern": "～だった / ～でした",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "na-adjective-past-negative",
+      "level": "n5",
+      "name": "Past-negative na-adjectives",
+      "pattern": "～じゃなかった / ～ではありませんでした",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "na-adjective-adverb",
+      "level": "n5",
+      "name": "Na-adjective adverbs",
+      "pattern": "～に + verb",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-04"
+        }
+      ]
+    },
+    {
+      "id": "adjective-connective",
+      "level": "n5",
+      "name": "Connecting descriptions",
+      "pattern": "～くて / ～で",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "naru-change",
+      "level": "n5",
+      "name": "Become with になる",
+      "pattern": "～になる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "naru-ku-change",
+      "level": "n5",
+      "name": "Become with くなる",
+      "pattern": "～くなる",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-17"
+        }
+      ]
+    },
+    {
+      "id": "suru-change",
+      "level": "n5",
+      "name": "Make or choose",
+      "pattern": "～くする / ～にする",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "sugiru",
+      "level": "n5",
+      "name": "Too much",
+      "pattern": "stem + すぎる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "hoshii",
+      "level": "n5",
+      "name": "Want a thing",
+      "pattern": "noun がほしい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "suki-kirai",
+      "level": "n5",
+      "name": "Likes and dislikes",
+      "pattern": "noun が好き / 嫌い",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "no-ga-suki",
+      "level": "n5",
+      "name": "Like or dislike doing",
+      "pattern": "verb + のが好き / 嫌い",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "no-ga-jouzu-heta",
+      "level": "n5",
+      "name": "Good or bad at doing",
+      "pattern": "verb + のが上手 / 下手",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "aru-existence",
+      "level": "n5",
+      "name": "Inanimate existence",
+      "pattern": "～がある / あります",
+      "sentences": 3,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-12"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-02"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-14"
+        }
+      ]
+    },
+    {
+      "id": "iru-existence",
+      "level": "n5",
+      "name": "Animate existence",
+      "pattern": "～がいる / います",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "existence-location",
+      "level": "n5",
+      "name": "Something is in a place",
+      "pattern": "place に thing がある / いる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "location-of-topic",
+      "level": "n5",
+      "name": "Location of a known thing",
+      "pattern": "thing は place にある / いる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "positional-nouns",
+      "level": "n5",
+      "name": "Relative locations",
+      "pattern": "noun の 上 / 下 / 中 / 前 / 後ろ / 隣 / 近く",
+      "sentences": 2,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-13"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-02"
+        }
+      ]
+    },
+    {
+      "id": "aru-possession",
+      "level": "n5",
+      "name": "Possession with existence",
+      "pattern": "person には thing がある",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "yori-comparison",
+      "level": "n5",
+      "name": "Comparison baseline",
+      "pattern": "A より B",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "hou-ga-comparison",
+      "level": "n5",
+      "name": "Comparative preference",
+      "pattern": "A より B のほうが adjective",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "dochira-comparison",
+      "level": "n5",
+      "name": "Comparing two choices",
+      "pattern": "A と B とどちらが ...",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ichiban-superlative",
+      "level": "n5",
+      "name": "Superlative",
+      "pattern": "～で ... が一番",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "onaji",
+      "level": "n5",
+      "name": "Same as",
+      "pattern": "A と B は同じ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "numbers-and-counters",
+      "level": "n5",
+      "name": "Counter system",
+      "pattern": "number + counter",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "tsu-counter",
+      "level": "n5",
+      "name": "General つ counter",
+      "pattern": "一つ～十",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "common-counters",
+      "level": "n5",
+      "name": "Common classifiers",
+      "pattern": "人 / 枚 / 本 / 冊 / 台 / 匹 / 回 / 階 / 歳",
+      "sentences": 2,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-19"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-03"
+        }
+      ]
+    },
+    {
+      "id": "nan-counter",
+      "level": "n5",
+      "name": "How many",
+      "pattern": "何 + counter",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "quantity-position",
+      "level": "n5",
+      "name": "Quantity placement",
+      "pattern": "noun を quantity verb",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "duration-no-particle",
+      "level": "n5",
+      "name": "Duration expressions",
+      "pattern": "duration + verb",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-06"
+        }
+      ]
+    },
+    {
+      "id": "clock-calendar-time",
+      "level": "n5",
+      "name": "Clock and calendar expressions",
+      "pattern": "時 / 分 / 日 / 月 / 年 / 曜日",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kara-made-range",
+      "level": "n5",
+      "name": "From A to B",
+      "pattern": "A から B まで",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "mou",
+      "level": "n5",
+      "name": "Already, anymore, or another",
+      "pattern": "もう",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "mada",
+      "level": "n5",
+      "name": "Still and not yet",
+      "pattern": "まだ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "degree-adverbs",
+      "level": "n5",
+      "name": "Basic degree adverbs",
+      "pattern": "とても / ちょっと / あまり～ない / 全然～ない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "frequency-adverbs",
+      "level": "n5",
+      "name": "Basic frequency adverbs",
+      "pattern": "いつも / よく / ときどき / あまり～ない / 全然～ない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ageru",
+      "level": "n5",
+      "name": "Give away from the speaker's side",
+      "pattern": "giver は recipient に thing をあげる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kureru",
+      "level": "n5",
+      "name": "Give toward the speaker",
+      "pattern": "giver が speaker-side person に thing をくれる",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-09"
+        }
+      ]
+    },
+    {
+      "id": "morau",
+      "level": "n5",
+      "name": "Receive",
+      "pattern": "recipient は giver に / から thing をもらう",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-13"
+        }
+      ]
+    },
+    {
+      "id": "te-ageru",
+      "level": "n5",
+      "name": "Do for someone",
+      "pattern": "～てあげる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-kureru",
+      "level": "n5",
+      "name": "Someone does for me",
+      "pattern": "～てくれる",
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-03"
+        }
+      ]
+    },
+    {
+      "id": "te-morau",
+      "level": "n5",
+      "name": "Have someone do",
+      "pattern": "～てもらう",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kosoado-pronouns",
+      "level": "n5",
+      "name": "Demonstrative pronouns",
+      "pattern": "これ / それ / あれ / どれ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kosoado-determiners",
+      "level": "n5",
+      "name": "Demonstrative determiners",
+      "pattern": "この / その / あの / どの",
+      "sentences": 3,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-03"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-09"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-10"
+        }
+      ]
+    },
+    {
+      "id": "kosoado-places",
+      "level": "n5",
+      "name": "Place demonstratives",
+      "pattern": "ここ / そこ / あそこ / どこ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kosoado-directions",
+      "level": "n5",
+      "name": "Polite place, direction, and person demonstratives",
+      "pattern": "こちら / そちら / あちら / どちら",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kosoado-kind",
+      "level": "n5",
+      "name": "Kind demonstratives",
+      "pattern": "こんな / そんな / あんな / どんな",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nani",
+      "level": "n5",
+      "name": "What",
+      "pattern": "何（なに / なん）",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "dare",
+      "level": "n5",
+      "name": "Who",
+      "pattern": "誰",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "itsu",
+      "level": "n5",
+      "name": "When",
+      "pattern": "いつ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "naze-doushite-nande",
+      "level": "n5",
+      "name": "Why",
+      "pattern": "なぜ / どうして / なんで",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "dou",
+      "level": "n5",
+      "name": "How",
+      "pattern": "どう",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "wa-dou-desu-ka",
+      "level": "n5",
+      "name": "How about",
+      "pattern": "noun はどうですか",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "dou-yatte",
+      "level": "n5",
+      "name": "By what means",
+      "pattern": "どうやって",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "donna",
+      "level": "n5",
+      "name": "What kind",
+      "pattern": "どんな + noun",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "dore-dono",
+      "level": "n5",
+      "name": "Which",
+      "pattern": "どれ / どの + noun",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ikura",
+      "level": "n5",
+      "name": "How much",
+      "pattern": "いくら",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ikutsu",
+      "level": "n5",
+      "name": "How many or how old",
+      "pattern": "いくつ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "question-word-ka",
+      "level": "n5",
+      "name": "Indefinite pronouns",
+      "pattern": "question word + か",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "question-word-mo",
+      "level": "n5",
+      "name": "Total and negative pronouns",
+      "pattern": "question word + も",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "to-iu",
+      "level": "n5",
+      "name": "Say and be called",
+      "pattern": "～と言う",
+      "sentences": 4,
+      "passages": 2,
+      "references": [
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-02"
+        },
+        {
+          "passageId": "sunday-at-the-park",
+          "sentenceId": "reading-sunday-park-08"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-05"
+        },
+        {
+          "passageId": "my-first-library-card",
+          "sentenceId": "reading-library-card-06"
+        }
+      ]
+    },
+    {
+      "id": "to-omou",
+      "level": "n5",
+      "name": "Think that",
+      "pattern": "plain clause + と思う",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ka-dou-ka",
+      "level": "n5",
+      "name": "Whether or not",
+      "pattern": "plain form + かどうか",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "no-desu",
+      "level": "n5",
+      "name": "Explanation and context",
+      "pattern": "～のです / ～んです",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "no-question",
+      "level": "n5",
+      "name": "Explanatory casual question",
+      "pattern": "plain form + の？",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kata-how-to",
+      "level": "n5",
+      "name": "Way of doing",
+      "pattern": "verb stem + 方",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "chuu",
+      "level": "n5",
+      "name": "In the middle of",
+      "pattern": "noun + 中",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "issho-ni",
+      "level": "n5",
+      "name": "Together with",
+      "pattern": "～と一緒に",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ni-turn-direction",
+      "level": "n5",
+      "name": "Direction of a turn",
+      "pattern": "direction + に + 曲がる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "de-total-price",
+      "level": "n5",
+      "name": "Total price for a quantity",
+      "pattern": "quantity + で + price",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "question-word-demo",
+      "level": "n5",
+      "name": "Unrestricted choice",
+      "pattern": "何でも / 誰でも / どこでも / いつでも",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "mieru-kikoeru",
+      "level": "n5",
+      "name": "Spontaneous visibility and audibility",
+      "pattern": "見える / 聞こえる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "plain-volitional",
+      "level": "n4",
+      "name": "Plain volitional",
+      "pattern": "～よう / ～おう",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "volitional-to-omou",
+      "level": "n4",
+      "name": "Thinking of doing",
+      "pattern": "volitional + と思う",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "potential-form",
+      "level": "n4",
+      "name": "Potential form",
+      "pattern": "～える / ～られる / できる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "passive-form",
+      "level": "n4",
+      "name": "Passive form",
+      "pattern": "～れる / ～られる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "koto-ni-suru",
+      "level": "n4",
+      "name": "Decide to",
+      "pattern": "dictionary / ない form + ことにする",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "koto-ni-naru",
+      "level": "n4",
+      "name": "It has been decided",
+      "pattern": "dictionary / ない form + ことになる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "hazu-da",
+      "level": "n4",
+      "name": "Expected to be",
+      "pattern": "verb / い-adjective + はず · noun + のはず · な-adjective + なはず",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "hazu-ga-nai",
+      "level": "n4",
+      "name": "Cannot possibly be",
+      "pattern": "verb / い-adjective + はずがない · noun + のはずがない · な-adjective + なはずがない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "yasui",
+      "level": "n4",
+      "name": "Easy to do",
+      "pattern": "verb stem + やすい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nikui",
+      "level": "n4",
+      "name": "Difficult to do",
+      "pattern": "verb stem + にくい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-iku",
+      "level": "n4",
+      "name": "Movement away or continuation",
+      "pattern": "～ていく",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-kuru",
+      "level": "n4",
+      "name": "Come to or begin doing",
+      "pattern": "～てくる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "aida",
+      "level": "n4",
+      "name": "Throughout a period",
+      "pattern": "～間",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "aida-ni",
+      "level": "n4",
+      "name": "During a period",
+      "pattern": "～間に",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nara-conditional",
+      "level": "n4",
+      "name": "If that is the case",
+      "pattern": "plain form + なら",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "causative-form",
+      "level": "n4",
+      "name": "Causative form",
+      "pattern": "～せる / ～させる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "causative-passive-form",
+      "level": "n4",
+      "name": "Causative-passive form",
+      "pattern": "～せられる / ～させられる / ～される",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "imperative-form",
+      "level": "n4",
+      "name": "Direct imperative",
+      "pattern": "～え / ～ろ・～よ / しろ・せよ / 来い",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ba-conditional",
+      "level": "n4",
+      "name": "Conditional with ば",
+      "pattern": "～ば / ～れば",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ba-yokatta",
+      "level": "n4",
+      "name": "Regret with ばよかった",
+      "pattern": "～ばよかった",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "tara-dou",
+      "level": "n4",
+      "name": "Suggestion with たらどう",
+      "pattern": "～たらどう / ～だらどう",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "transitive-intransitive",
+      "level": "n4",
+      "name": "Transitive and intransitive verbs",
+      "pattern": "他動詞 / 自動詞",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "hitsuyou-ga-aru",
+      "level": "n4",
+      "name": "Need to / no need to",
+      "pattern": "dictionary form + 必要がある / 必要はない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nasai-command",
+      "level": "n4",
+      "name": "Firm instruction with なさい",
+      "pattern": "verb stem + なさい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "you-ni-naru",
+      "level": "n4",
+      "name": "Come to a new ability or habit",
+      "pattern": "dictionary / ない form + ようになる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "you-ni-suru",
+      "level": "n4",
+      "name": "Make an effort to",
+      "pattern": "dictionary / ない form + ようにする",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "you-to-suru",
+      "level": "n4",
+      "name": "Attempt or be about to",
+      "pattern": "volitional + とする",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-oku",
+      "level": "n4",
+      "name": "Preparation with ておく",
+      "pattern": "～ておく",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "stem-hajimeru",
+      "level": "n4",
+      "name": "Begin doing",
+      "pattern": "verb stem + 始める",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "stem-owaru",
+      "level": "n4",
+      "name": "Finish doing",
+      "pattern": "verb stem + 終わる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "stem-tsuzukeru",
+      "level": "n4",
+      "name": "Continue doing",
+      "pattern": "verb stem + 続ける",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "stem-dasu",
+      "level": "n4",
+      "name": "Suddenly begin",
+      "pattern": "verb stem + 出す",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "tagaru",
+      "level": "n4",
+      "name": "Another person's apparent desire",
+      "pattern": "verb stem + たがる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "garu",
+      "level": "n4",
+      "name": "Showing signs of a feeling",
+      "pattern": "feeling adjective stem + がる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "gari",
+      "level": "n4",
+      "name": "Tendency toward a feeling",
+      "pattern": "feeling adjective stem + がり",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-hoshii",
+      "level": "n4",
+      "name": "Want someone to do / not do",
+      "pattern": "person に ～てほしい / ～ないでほしい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-kurete-arigatou",
+      "level": "n4",
+      "name": "Thank someone for an action",
+      "pattern": "～てくれてありがとう",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-sumimasen",
+      "level": "n4",
+      "name": "Apologize for an action",
+      "pattern": "～てすみません / ～なくてすみません",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-itadakemasen-ka",
+      "level": "n4",
+      "name": "Very polite request",
+      "pattern": "～ていただけませんか",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-yokatta",
+      "level": "n4",
+      "name": "Glad that something happened",
+      "pattern": "～てよかった / ～でよかった",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-yaru",
+      "level": "n4",
+      "name": "Blunt benefactive",
+      "pattern": "～てやる / ～でやる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "made-ni",
+      "level": "n4",
+      "name": "Deadline with までに",
+      "pattern": "time + までに",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ru-tokoro",
+      "level": "n4",
+      "name": "Just about to do",
+      "pattern": "dictionary form + ところだ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "teiru-tokoro",
+      "level": "n4",
+      "name": "Right in the middle of doing",
+      "pattern": "～ているところだ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ta-tokoro",
+      "level": "n4",
+      "name": "Have just done",
+      "pattern": "past form + ところだ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ta-bakari",
+      "level": "n4",
+      "name": "Have only just done",
+      "pattern": "past form + ばかり",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "mama",
+      "level": "n4",
+      "name": "Leave a state unchanged",
+      "pattern": "Vた / Vない / い-adjective + まま; な-adjective + なまま; noun + のまま",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "oki-ni",
+      "level": "n4",
+      "name": "At regular intervals",
+      "pattern": "counter + おきに",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "sou-modifier",
+      "level": "n4",
+      "name": "Modify with an apparent quality",
+      "pattern": "stem + そうな / そうに",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "you-da-inference",
+      "level": "n4",
+      "name": "Inference with ようだ",
+      "pattern": "verb / い-adjective plain form + ようだ; な-adjective + なようだ; noun + のようだ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "you-na-ni-simile",
+      "level": "n4",
+      "name": "Resemblance with よう",
+      "pattern": "verb / い-adjective plain form + ような / ように; な-adjective + なような / なように; noun + のような / のように",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "mitai",
+      "level": "n4",
+      "name": "Casual resemblance or inference",
+      "pattern": "plain form / noun + みたいだ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "rashii",
+      "level": "n4",
+      "name": "Apparently or characteristically",
+      "pattern": "plain form + らしい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "noni-concession",
+      "level": "n4",
+      "name": "Unexpected contrast with のに",
+      "pattern": "verb / い-adjective plain form + のに; な-adjective / noun + なのに",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "temo-concession",
+      "level": "n4",
+      "name": "Even if",
+      "pattern": "～ても / ～でも",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "tame-ni-purpose",
+      "level": "n4",
+      "name": "Purpose with ために",
+      "pattern": "dictionary form / noun の + ために",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "tame-ni-cause",
+      "level": "n4",
+      "name": "Cause with ために",
+      "pattern": "plain form / noun の + ために",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "to-ii-hope",
+      "level": "n4",
+      "name": "Hope with といい",
+      "pattern": "plain form + といい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "no-wa-da",
+      "level": "n4",
+      "name": "Focused explanation",
+      "pattern": "plain form + のは～だ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "to-iu-koto",
+      "level": "n4",
+      "name": "Nominalized quoted content",
+      "pattern": "plain clause + ということ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "you-ni-to-iu",
+      "level": "n4",
+      "name": "Report an instruction",
+      "pattern": "dictionary / ない form + ように言う",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "adjective-sa",
+      "level": "n4",
+      "name": "Adjective quality nouns",
+      "pattern": "adjective stem + さ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "hodo-degree",
+      "level": "n4",
+      "name": "Extent with ほど",
+      "pattern": "ほど",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "bakari-limitation",
+      "level": "n4",
+      "name": "Nothing but",
+      "pattern": "ばかり",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "dake-de",
+      "level": "n4",
+      "name": "Just by",
+      "pattern": "だけで",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "toka-toka",
+      "level": "n4",
+      "name": "Casual representative examples",
+      "pattern": "A とか B とか",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ga-suru-sensation",
+      "level": "n4",
+      "name": "Perceived sensation",
+      "pattern": "sound / smell / taste / feeling + がする",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "material-de",
+      "level": "n4",
+      "name": "Made of a visible material",
+      "pattern": "material でできる / で作る",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "material-kara",
+      "level": "n4",
+      "name": "Made from a transformed material",
+      "pattern": "material からできる / から作る",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "baai-wa",
+      "level": "n4",
+      "name": "In the event that",
+      "pattern": "verb / い-adjective plain form + 場合は; な-adjective + な場合は; noun + の場合は",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "yotei-da",
+      "level": "n4",
+      "name": "Scheduled plan",
+      "pattern": "dictionary form / noun の + 予定だ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "tara-ii-desu-ka",
+      "level": "n4",
+      "name": "Ask what one should do",
+      "pattern": "question word + ～たらいいですか / ～ばいいですか",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ga-hitsuyou",
+      "level": "n4",
+      "name": "Need a thing",
+      "pattern": "noun が必要だ",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-de-cause",
+      "level": "n4",
+      "name": "Cause with the connective form",
+      "pattern": "～て / ～で",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nakute-connective",
+      "level": "n4",
+      "name": "Negative connective form",
+      "pattern": "～なくて",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "koto-ni-shiteiru",
+      "level": "n4",
+      "name": "Personal rule or maintained decision",
+      "pattern": "dictionary / ない form + ことにしている",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "koto-ni-natteiru",
+      "level": "n4",
+      "name": "Established rule or arrangement",
+      "pattern": "dictionary / ない form + ことになっている",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-itadaku",
+      "level": "n4",
+      "name": "Humbly receive an action",
+      "pattern": "～ていただく",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-kudasaru",
+      "level": "n4",
+      "name": "Honorific benefactive action",
+      "pattern": "～てくださる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "sonkeigo-system",
+      "level": "n4",
+      "name": "Honorific language",
+      "pattern": "尊敬語",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kenjougo-system",
+      "level": "n4",
+      "name": "Humble language",
+      "pattern": "謙譲語",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "gozaimasu",
+      "level": "n4",
+      "name": "Very polite existence and copula",
+      "pattern": "ございます / でございます",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "o-ni-naru",
+      "level": "n4",
+      "name": "Productive honorific action",
+      "pattern": "お / ご + stem + になる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "o-suru-humble",
+      "level": "n4",
+      "name": "Productive humble action",
+      "pattern": "お / ご + stem + する",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "o-go-kudasai-honorific",
+      "level": "n4",
+      "name": "Respectful request",
+      "pattern": "お / ご + stem + ください",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "sonkeigo-special-verbs",
+      "level": "n4",
+      "name": "Special honorific verbs",
+      "pattern": "いらっしゃる / おっしゃる / なさる / くださる / 召し上がる / ご覧になる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kenjougo-special-verbs",
+      "level": "n4",
+      "name": "Special humble verbs",
+      "pattern": "参る / 申す / いたす / いただく / 拝見する / おる",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "koro",
+      "level": "n4",
+      "name": "Around the time when",
+      "pattern": "plain form / noun の + 頃",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "noni-purpose",
+      "level": "n4",
+      "name": "For doing",
+      "pattern": "dictionary form + のに",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "nakanaka-nai",
+      "level": "n4",
+      "name": "Not easily",
+      "pattern": "なかなか～ない",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "ni-mieru",
+      "level": "n4",
+      "name": "Look or appear",
+      "pattern": "～に見える",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "zurai",
+      "level": "n4",
+      "name": "Emotionally difficult to do",
+      "pattern": "verb stem + づらい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "te-sumu",
+      "level": "n4",
+      "name": "Be settled by",
+      "pattern": "～て済む",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kana-wonder",
+      "level": "n4",
+      "name": "Wondering with かな",
+      "pattern": "plain form + かな",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kashira-wonder",
+      "level": "n4",
+      "name": "Wondering with かしら",
+      "pattern": "plain form + かしら",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "kai-question",
+      "level": "n4",
+      "name": "Casual question with かい",
+      "pattern": "plain form + かい",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    },
+    {
+      "id": "dewa-nai-ka",
+      "level": "n4",
+      "name": "Confirmation or forceful suggestion",
+      "pattern": "ではないか / じゃないか",
+      "sentences": 0,
+      "passages": 0,
+      "references": []
+    }
+  ]
+}

@@ -28,8 +28,15 @@ export function resolveReadingGrammarExercises(exercises, passages) {
       }
     }
     const { sentence, level } = source;
+    if (exercise.grammarPointIds !== undefined && (!Array.isArray(exercise.grammarPointIds) ||
+      exercise.grammarPointIds.length !== sentence.grammarPointIds.length ||
+      new Set(exercise.grammarPointIds).size !== sentence.grammarPointIds.length ||
+      exercise.grammarPointIds.some((id) => !sentence.grammarPointIds.includes(id)))) {
+      throw new Error(`${exercise.id}: grammar tags must match its reading sentence.`);
+    }
     return {
       ...exercise,
+      grammarPointIds: sentence.grammarPointIds,
       [japaneseField]: sentence.text,
       minimumLevel: level,
       audio: `assets/voices/reading/${sentence.id}.m4a`,

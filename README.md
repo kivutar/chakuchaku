@@ -56,6 +56,26 @@ Answers accept Japanese writing, hiragana, or rōmaji and are graded locally.
 A single top menu switches study sections and provides settings, SRS progress
 statistics, exercise history, and a project link.
 
+The Reading section offers a searchable, level-filtered library, with eight
+stories per page and shareable links such as `/reading/?story=my-first-library-card`.
+Each story has furigana, dictionary helpers, sentence audio, and bilingual
+comprehension questions with evidence-based corrections. Reading and its quiz
+never update learner SRS, exercise history, or learning statistics.
+
+Author stories in `data/source/readings.json`: aim for around twenty sentences,
+not an exact count. Review the narrative, level-appropriate vocabulary, furigana,
+questions, and each sentence's explicit `grammarPointIds` before generating its
+audio with `npm run voices -- --target reading --limit COUNT`. Existing audio
+and sentences marked `skipVoiceGeneration` are retained/skipped. Grammar cards
+may borrow a `readingSentenceId`; their tags must match the canonical sentence
+and their voice is shared, never generated a second time.
+
+`npm run content` also generates `data/reading-coverage.md` and
+`data/reading-coverage.json`. These internal editorial reports count sentences
+and stories per grammar point, include zero-count gaps at each level, and keep
+coverage separate from learner mastery. Explicit tags record selected usages
+actually present, not an exhaustive automatic analysis of every construction.
+
 ## Architecture
 
 The deployed app is fully static. By default the browser only loads HTML, CSS,

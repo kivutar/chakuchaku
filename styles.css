@@ -37,6 +37,111 @@
   margin-bottom: 2rem;
 }
 
+.reading-library-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.reading-library-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  color: var(--reading-muted);
+  font-size: 0.85rem;
+  min-width: 0;
+}
+
+.reading-library-field:first-child {
+  flex: 1 1 14rem;
+}
+
+.reading-search, .reading-level-filter {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 2.8rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--reading-border);
+  border-radius: 8px;
+  background: var(--reading-surface);
+  color: inherit;
+  font: inherit;
+  font-size: 1rem;
+}
+
+.reading-library-status, .reading-story-description, .reading-page-label {
+  color: var(--reading-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.reading-story-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reading-story-link {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 1.3rem;
+  border: 1px solid var(--reading-border);
+  border-radius: 14px;
+  background: var(--reading-surface);
+  color: inherit;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.reading-story-link:hover {
+  border-color: var(--reading-accent);
+}
+
+.reading-story-title {
+  font-size: 1.15rem;
+  font-weight: 550;
+  line-height: 1.5;
+}
+
+.reading-story-navigation {
+  margin-bottom: 1.5rem;
+}
+
+.reading-back-link {
+  color: var(--reading-accent);
+  font-size: 0.9rem;
+  text-underline-offset: 0.2em;
+}
+
+.reading-pagination:not([hidden]) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.reading-page-button {
+  min-height: 2.75rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--reading-border);
+  border-radius: 8px;
+  color: var(--reading-accent);
+  background: var(--reading-surface);
+  font: inherit;
+  cursor: pointer;
+}
+
+.reading-page-button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
 .reading-eyebrow {
   color: var(--reading-accent);
   font-size: 0.72rem;
@@ -117,6 +222,10 @@ html[data-translation-tooltips="true"] .reading-view .token[data-gloss]:is(:hove
 
 .reading-view .token:focus-visible,
 .reading-view button:focus-visible,
+.reading-story-link:focus-visible,
+.reading-back-link:focus-visible,
+.reading-search:focus-visible,
+.reading-level-filter:focus-visible,
 .reading-question-link:focus-visible,
 .reading-choice:has(input:focus-visible) {
   outline: 2px solid var(--reading-accent);

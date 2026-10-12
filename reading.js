@@ -31,6 +31,7 @@
       passageIds.add(passage.id);
       if (!["n5", "n4"].includes(passage.level)) throw new Error("Invalid reading level.");
       requireTranslations(passage.title);
+      if (passage.description !== undefined) requireTranslations(passage.description);
       if (!Array.isArray(passage.sentences) || passage.sentences.length === 0) {
         throw new Error(`${passage.id}: missing sentences.`);
       }
@@ -44,6 +45,11 @@
         if (typeof sentence.text !== "string" || !sentence.text.trim()) {
           throw new Error(`${sentence.id}: missing Japanese text.`);
         }
+        if (!Array.isArray(sentence.grammarPointIds) || !sentence.grammarPointIds.length ||
+          new Set(sentence.grammarPointIds).size !== sentence.grammarPointIds.length) {
+          throw new Error(`${sentence.id}: grammar coverage needs unique point IDs.`);
+        }
+        sentence.grammarPointIds.forEach(requireId);
         if (sentence.skipVoiceGeneration !== undefined && sentence.skipVoiceGeneration !== true) {
           throw new Error(`${sentence.id}: skipVoiceGeneration must be true when supplied.`);
         }
@@ -101,5 +107,30 @@
     return { correct: results.filter((result) => result.correct).length, total: results.length, results };
   }
 
-  global.JlptN5Reading = Object.freeze({ localizedText, validatePassages, gradeAnswers });
+  function filterPassages(passages, { query = "", level = "all", locale = "en" } = {}) {
+    const normalize = (value) => value.normalize("NFD").replace(/\p{M}/gu, "").toLocaleLowerCase(locale);
+    const words = normalize(query.trim()).split(/\s+/u).filter(Boolean);
+    return passages.filter((passage) => {
+      if (level !== "all" && passage.level !== level) return false;
+      const searchable = normalize(`${localizedText(passage.title, locale)} ${passage.description ? localizedText(passage.description, locale) : ""}`);
+      return words.every((word) => searchable.includes(word));
+    });
+  }
+
+  function paginatePassages(passages, page = 1, pageSize = 8) {
+    if (!Number.isInteger(pageSize) || pageSize < 1) throw new Error("Invalid reading page size.");
+    const pages = Math.max(1, Math.ceil(passages.length / pageSize));
+    const current = Math.max(1, Math.min(Number.isInteger(page) ? page : 1, pages));
+    return { items: passages.slice((current - 1) * pageSize, current * pageSize), page: current, pages, total: passages.length };
+  }
+
+  function storyUrl(pageUrl, passageId) {
+    const url = new URL(pageUrl);
+    if (passageId) url.searchParams.set("story", passageId);
+    else url.searchParams.delete("story");
+    url.hash = "";
+    return url.href;
+  }
+
+  global.JlptN5Reading = Object.freeze({ localizedText, validatePassages, gradeAnswers, filterPassages, paginatePassages, storyUrl });
 })(globalThis);

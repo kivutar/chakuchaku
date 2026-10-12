@@ -195,7 +195,8 @@ export function getPublicFile(pathname) {
 }
 
 export async function handleStaticRequest(request, response) {
-  const pathname = new URL(request.url, `http://${request.headers.host || host}`).pathname;
+  const requestUrl = new URL(request.url, `http://${request.headers.host || host}`);
+  const pathname = requestUrl.pathname;
 
   if (request.method !== "GET" && request.method !== "HEAD") {
     response.writeHead(405, { Allow: "GET, HEAD" });
@@ -213,7 +214,7 @@ export async function handleStaticRequest(request, response) {
     "/vocabulary/",
     "/reading/"
   ].includes(pathname)) {
-    response.writeHead(308, { Location: pathname.slice(0, -1) });
+    response.writeHead(308, { Location: `${pathname.slice(0, -1)}${requestUrl.search}` });
     response.end();
     return;
   }

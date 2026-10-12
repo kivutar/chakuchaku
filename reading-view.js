@@ -1,6 +1,13 @@
 (function initializeReadingView(global) {
   "use strict";
 
+  function element(tag, className, content) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (content !== undefined) node.textContent = content;
+    return node;
+  }
+
   // Reading is deliberately not an SRS exercise. Answers live only in this view.
   function mount({ root, passage, locale, t, createToken, getAudioAvailability, onSpeechActive }) {
     const { localizedText, gradeAnswers } = global.JlptN5Reading;
@@ -12,13 +19,6 @@
     let corrected = false;
     let destroyed = false;
     let playing;
-
-    function element(tag, className, content) {
-      const node = document.createElement(tag);
-      if (className) node.className = className;
-      if (content !== undefined) node.textContent = content;
-      return node;
-    }
 
     function sentenceContent(sentence, endingButton) {
       const content = element("span", "reading-sentence-text");
@@ -297,5 +297,129 @@
     };
   }
 
-  global.JlptN5ReadingView = Object.freeze({ mount });
+  function mountLibrary({ passages, ...options }) {
+    const { root, locale, t } = options;
+    const { localizedText, filterPassages, paginatePassages, storyUrl } = global.JlptN5Reading;
+    const filters = { query: "", level: "all", locale };
+    let page = 1;
+    let destroyStory;
+    let activeStoryId;
+
+    function renderLibrary(notFound) {
+      root.replaceChildren();
+      root.hidden = false;
+      const header = element("header", "reading-header");
+      header.append(element("p", "reading-eyebrow", t("reading.eyebrow")));
+      const title = element("h1", "reading-title", t("reading.libraryTitle"));
+      title.id = "reading-title";
+      header.append(title, element("p", "reading-instructions", t("reading.libraryInstructions")));
+      if (notFound) header.append(element("p", "reading-instructions", t("reading.storyNotFound")));
+      const toolbar = element("div", "reading-library-toolbar");
+      const searchLabel = element("label", "reading-library-field", t("reading.search"));
+      const search = element("input", "reading-search");
+      search.type = "search";
+      search.value = filters.query;
+      search.placeholder = t("reading.searchPlaceholder");
+      searchLabel.append(search);
+      const levelLabel = element("label", "reading-library-field", t("reading.level"));
+      const level = element("select", "reading-level-filter");
+      const availableLevels = new Set(passages.map((passage) => passage.level));
+      for (const id of ["all", "n5", "n4"]) {
+        if (id !== "all" && !availableLevels.has(id)) continue;
+        const option = element("option", "", id === "all" ? t("reading.allLevels") : id.toUpperCase());
+        option.value = id;
+        level.append(option);
+      }
+      level.value = filters.level;
+      levelLabel.append(level);
+      toolbar.append(searchLabel, levelLabel);
+      const status = element("p", "reading-library-status");
+      status.setAttribute("role", "status");
+      const list = element("ul", "reading-story-list");
+      const pagination = element("nav", "reading-pagination");
+      pagination.setAttribute("aria-label", t("reading.pages"));
+      const previous = element("button", "reading-page-button", t("reading.previousPage"));
+      const next = element("button", "reading-page-button", t("reading.nextPage"));
+      previous.type = next.type = "button";
+      const pageLabel = element("span", "reading-page-label");
+      pagination.append(previous, pageLabel, next);
+      root.append(header, toolbar, status, list, pagination);
+
+      function updateResults() {
+        const result = paginatePassages(filterPassages(passages, filters), page);
+        page = result.page;
+        status.textContent = result.total === 1 ? t("reading.oneStory") : result.total
+          ? t("reading.storyCount", { count: result.total }) : t("reading.noStories");
+        list.replaceChildren(...result.items.map((passage) => {
+          const item = element("li");
+          const link = element("a", "reading-story-link");
+          link.href = storyUrl(window.location.href, passage.id);
+          link.dataset.story = passage.id;
+          link.append(element("span", "reading-story-title", localizedText(passage.title, locale)),
+            element("span", "reading-metadata", t("reading.metadata", {
+              level: passage.level.toUpperCase(), sentences: passage.sentences.length, questions: passage.questions.length
+            })));
+          if (passage.description) link.append(element("span", "reading-story-description", localizedText(passage.description, locale)));
+          item.append(link);
+          return item;
+        }));
+        pagination.hidden = result.pages === 1;
+        previous.disabled = result.page === 1;
+        next.disabled = result.page === result.pages;
+        pageLabel.textContent = t("reading.page", { page: result.page, total: result.pages });
+      }
+      search.addEventListener("input", () => { filters.query = search.value; page = 1; updateResults(); });
+      level.addEventListener("change", () => { filters.level = level.value; page = 1; updateResults(); });
+      previous.addEventListener("click", () => { page -= 1; updateResults(); });
+      next.addEventListener("click", () => { page += 1; updateResults(); });
+      updateResults();
+    }
+
+    function showCurrentPage(focus = false) {
+      destroyStory?.();
+      destroyStory = undefined;
+      activeStoryId = new URL(window.location.href).searchParams.get("story");
+      const passage = passages.find(({ id }) => id === activeStoryId);
+      if (passage) {
+        destroyStory = mount({ ...options, passage });
+        const navigation = element("nav", "reading-story-navigation");
+        navigation.setAttribute("aria-label", t("reading.libraryTitle"));
+        const back = element("a", "reading-back-link", t("reading.backToLibrary"));
+        back.href = storyUrl(window.location.href);
+        navigation.append(back);
+        root.prepend(navigation);
+      } else renderLibrary(Boolean(activeStoryId));
+      if (focus) {
+        const heading = root.querySelector("h1");
+        heading.tabIndex = -1;
+        heading.focus({ preventScroll: true });
+        window.scrollTo({ top: 0, behavior: "instant" });
+      } else if (passage && window.location.hash === "#reading-questions") {
+        root.querySelector("#reading-questions").scrollIntoView();
+      }
+    }
+
+    const navigate = (event) => {
+      const link = event.target.closest?.(".reading-story-link, .reading-back-link");
+      if (!link || !root.contains(link) || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      window.history.pushState(null, "", link.href);
+      showCurrentPage(true);
+    };
+    const handleBack = () => {
+      // A questions/evidence fragment is still the same story. Do not erase
+      // quiz answers when Back merely removes a fragment from its URL.
+      if (new URL(window.location.href).searchParams.get("story") !== activeStoryId) showCurrentPage(true);
+    };
+    root.addEventListener("click", navigate);
+    window.addEventListener("popstate", handleBack);
+    showCurrentPage();
+    return function destroyLibrary() {
+      destroyStory?.();
+      root.removeEventListener("click", navigate);
+      window.removeEventListener("popstate", handleBack);
+    };
+  }
+
+  global.JlptN5ReadingView = Object.freeze({ mount, mountLibrary });
 })(globalThis);

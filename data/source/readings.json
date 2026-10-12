@@ -3,27 +3,28 @@
     "id": "sunday-at-the-park",
     "level": "n5",
     "title": { "en": "Sunday at the park", "fr": "Un dimanche au parc" },
+    "description": { "en": "A picnic, an unexpected friend, and a change in the weather.", "fr": "Un pique-nique, une rencontre et un changement de temps." },
     "sentences": [
-      { "id": "reading-sunday-park-01", "paragraph": 1, "text": "日曜日の朝、いい天気でした。" },
-      { "id": "reading-sunday-park-02", "paragraph": 1, "text": "妹は公園でおにぎりを食べたいと言いました。" },
-      { "id": "reading-sunday-park-03", "paragraph": 1, "text": "母は台所でおにぎりを作ってくれました。" },
-      { "id": "reading-sunday-park-04", "paragraph": 1, "text": "私は水とお茶をかばんに入れました。" },
-      { "id": "reading-sunday-park-05", "paragraph": 2, "text": "九時に妹と家を出ました。", "tokenOverrides": { "九": { "reading": "く" } } },
-      { "id": "reading-sunday-park-06", "paragraph": 2, "text": "公園までバスで二十分かかります。", "tokenOverrides": { "十": { "reading": "じゅっ" }, "分": { "reading": "ぷん" } } },
-      { "id": "reading-sunday-park-07", "paragraph": 2, "text": "でも、次のバスは三十分後に来ます。", "tokenOverrides": { "十": { "reading": "じゅっ" }, "分": { "reading": "ぷん" } }, "skipVoiceGeneration": true },
-      { "id": "reading-sunday-park-08", "paragraph": 2, "text": "妹は待ちたくないと言いました。" },
-      { "id": "reading-sunday-park-09", "paragraph": 3, "text": "公園は遠くないので、二人で歩いて行きました。", "tokenOverrides": { "二": { "reading": "ふた" }, "人": { "reading": "り" } } },
-      { "id": "reading-sunday-park-10", "paragraph": 3, "text": "道で友達に会いました。" },
-      { "id": "reading-sunday-park-11", "paragraph": 3, "text": "友達も一緒に公園へ行きました。" },
-      { "id": "reading-sunday-park-12", "paragraph": 3, "text": "公園には大きな池があります。" },
-      { "id": "reading-sunday-park-13", "paragraph": 4, "text": "池の近くに座りました。" },
-      { "id": "reading-sunday-park-14", "paragraph": 4, "text": "おにぎりを食べて、学校の話をしました。", "skipVoiceGeneration": true },
-      { "id": "reading-sunday-park-15", "paragraph": 4, "text": "妹は水を飲みました。" },
-      { "id": "reading-sunday-park-16", "paragraph": 4, "text": "友達は家族に見せる写真を撮りました。" },
-      { "id": "reading-sunday-park-17", "paragraph": 5, "text": "午後、空が暗くなりました。" },
-      { "id": "reading-sunday-park-18", "paragraph": 5, "text": "雨が降ったので、早く帰りました。" },
-      { "id": "reading-sunday-park-19", "paragraph": 5, "text": "三人でバスに乗って帰りました。" },
-      { "id": "reading-sunday-park-20", "paragraph": 5, "text": "家で母に公園の写真を見せました。" }
+      { "id": "reading-sunday-park-01", "paragraph": 1, "text": "日曜日の朝、いい天気でした。", "grammarPointIds": ["copula-past", "i-adjective-attributive", "no-possession"] },
+      { "id": "reading-sunday-park-02", "paragraph": 1, "text": "妹は公園でおにぎりを食べたいと言いました。", "grammarPointIds": ["tai-desire", "to-iu", "de-action-location"] },
+      { "id": "reading-sunday-park-03", "paragraph": 1, "text": "母は台所でおにぎりを作ってくれました。", "grammarPointIds": ["te-kureru", "de-action-location", "verb-mashita"] },
+      { "id": "reading-sunday-park-04", "paragraph": 1, "text": "私は水とお茶をかばんに入れました。", "grammarPointIds": ["to-complete-list", "ni-destination", "o-object"] },
+      { "id": "reading-sunday-park-05", "paragraph": 2, "text": "九時に妹と家を出ました。", "grammarPointIds": ["ni-time", "to-companion", "o-route", "verb-mashita"], "tokenOverrides": { "九": { "reading": "く" } } },
+      { "id": "reading-sunday-park-06", "paragraph": 2, "text": "公園までバスで二十分かかります。", "grammarPointIds": ["made-end", "de-means", "duration-no-particle"], "tokenOverrides": { "十": { "reading": "じゅっ" }, "分": { "reading": "ぷん" } } },
+      { "id": "reading-sunday-park-07", "paragraph": 2, "text": "でも、次のバスは三十分後に来ます。", "grammarPointIds": ["demo-connector", "ni-time", "verb-masu"], "tokenOverrides": { "十": { "reading": "じゅっ" }, "分": { "reading": "ぷん" } }, "skipVoiceGeneration": true },
+      { "id": "reading-sunday-park-08", "paragraph": 2, "text": "妹は待ちたくないと言いました。", "grammarPointIds": ["tai-desire", "to-iu"] },
+      { "id": "reading-sunday-park-09", "paragraph": 3, "text": "公園は遠くないので、二人で歩いて行きました。", "grammarPointIds": ["i-adjective-negative", "node-reason", "te-action-link"], "tokenOverrides": { "二": { "reading": "ふた" }, "人": { "reading": "り" } } },
+      { "id": "reading-sunday-park-10", "paragraph": 3, "text": "道で友達に会いました。", "grammarPointIds": ["de-action-location", "ni-target-recipient", "verb-mashita"] },
+      { "id": "reading-sunday-park-11", "paragraph": 3, "text": "友達も一緒に公園へ行きました。", "grammarPointIds": ["mo-addition", "e-direction", "verb-mashita"] },
+      { "id": "reading-sunday-park-12", "paragraph": 3, "text": "公園には大きな池があります。", "grammarPointIds": ["ni-existence-location", "aru-existence"] },
+      { "id": "reading-sunday-park-13", "paragraph": 4, "text": "池の近くに座りました。", "grammarPointIds": ["positional-nouns", "verb-mashita"] },
+      { "id": "reading-sunday-park-14", "paragraph": 4, "text": "おにぎりを食べて、学校の話をしました。", "grammarPointIds": ["te-action-link", "o-object", "no-possession"], "skipVoiceGeneration": true },
+      { "id": "reading-sunday-park-15", "paragraph": 4, "text": "妹は水を飲みました。", "grammarPointIds": ["wa-topic", "o-object", "verb-mashita"] },
+      { "id": "reading-sunday-park-16", "paragraph": 4, "text": "友達は家族に見せる写真を撮りました。", "grammarPointIds": ["relative-clause", "ni-target-recipient", "o-object"] },
+      { "id": "reading-sunday-park-17", "paragraph": 5, "text": "午後、空が暗くなりました。", "grammarPointIds": ["naru-ku-change", "ga-subject", "verb-mashita"] },
+      { "id": "reading-sunday-park-18", "paragraph": 5, "text": "雨が降ったので、早く帰りました。", "grammarPointIds": ["node-reason", "verb-ta-past", "i-adjective-adverb"] },
+      { "id": "reading-sunday-park-19", "paragraph": 5, "text": "三人でバスに乗って帰りました。", "grammarPointIds": ["ni-target-recipient", "te-action-link", "common-counters"] },
+      { "id": "reading-sunday-park-20", "paragraph": 5, "text": "家で母に公園の写真を見せました。", "grammarPointIds": ["de-action-location", "ni-target-recipient", "no-possession"] }
     ],
     "questions": [
       {
@@ -90,6 +91,101 @@
         "answerId": "photos",
         "explanation": { "en": "The last sentence says that the narrator showed the mother photos of the park at home. 母に indicates who was shown the photos.", "fr": "La dernière phrase indique que la personne a montré à sa mère des photos du parc, à la maison. 母に précise à qui les photos sont montrées." },
         "evidenceSentenceIds": ["reading-sunday-park-20"]
+      }
+    ]
+  },
+  {
+    "id": "my-first-library-card",
+    "level": "n5",
+    "title": { "en": "My first library card", "fr": "Ma première carte de bibliothèque" },
+    "description": { "en": "A first visit to a library: a new card, a few rules, and a book about cats.", "fr": "Une première visite à la bibliothèque : une carte, quelques règles et un livre sur les chats." },
+    "sentences": [
+      { "id": "reading-library-card-01", "paragraph": 1, "text": "先週、新しい図書館に初めて行きました。", "grammarPointIds": ["i-adjective-attributive", "ni-destination", "verb-mashita"] },
+      { "id": "reading-library-card-02", "paragraph": 1, "text": "駅の前に白い建物があります。", "grammarPointIds": ["positional-nouns", "ni-existence-location", "aru-existence"] },
+      { "id": "reading-library-card-03", "paragraph": 1, "text": "その建物の二階が図書館です。", "grammarPointIds": ["kosoado-determiners", "common-counters", "copula-da-desu"] },
+      { "id": "reading-library-card-04", "paragraph": 1, "text": "中では、学生が静かに本を読んでいました。", "grammarPointIds": ["de-action-location", "na-adjective-adverb", "te-iru-progressive"] },
+      { "id": "reading-library-card-05", "paragraph": 2, "text": "図書館の人に「本を借りたいです」と言いました。", "grammarPointIds": ["tai-desire", "to-iu", "ni-target-recipient"] },
+      { "id": "reading-library-card-06", "paragraph": 2, "text": "その人は「この紙に名前と住所を書いてください」と言いました。", "grammarPointIds": ["te-kudasai", "to-complete-list", "to-iu"] },
+      { "id": "reading-library-card-07", "paragraph": 2, "text": "私はかばんからペンを出しました。", "grammarPointIds": ["kara-start", "o-object", "verb-mashita"] },
+      { "id": "reading-library-card-08", "paragraph": 2, "text": "名前と住所を書いてから、図書館の人に紙を渡しました。", "grammarPointIds": ["te-kara", "to-complete-list", "ni-target-recipient"] },
+      { "id": "reading-library-card-09", "paragraph": 3, "text": "その人は小さなカードをくれました。", "grammarPointIds": ["kureru", "kosoado-determiners", "o-object"] },
+      { "id": "reading-library-card-10", "paragraph": 3, "text": "「本を借りるときは、このカードを見せなければなりません。」", "grammarPointIds": ["toki", "nakereba-naranai", "kosoado-determiners"] },
+      { "id": "reading-library-card-11", "paragraph": 3, "text": "「お金は払わなくてもいいですよ。」", "grammarPointIds": ["nakute-mo-ii", "yo-emphasis"] },
+      { "id": "reading-library-card-12", "paragraph": 3, "text": "「本は来週の火曜日に返してください。」", "grammarPointIds": ["te-kudasai", "ni-time", "no-possession"] },
+      { "id": "reading-library-card-13", "paragraph": 4, "text": "私はカードをもらって、本を見に行きました。", "grammarPointIds": ["morau", "te-action-link", "movement-purpose"] },
+      { "id": "reading-library-card-14", "paragraph": 4, "text": "猫の本には写真がたくさんありました。", "grammarPointIds": ["no-possession", "ni-existence-location", "aru-existence"] },
+      { "id": "reading-library-card-15", "paragraph": 4, "text": "「ここでこの本を読んでもいいですか」と聞きました。", "grammarPointIds": ["te-mo-ii", "ka-question", "to-quotation"] },
+      { "id": "reading-library-card-16", "paragraph": 4, "text": "「はい、でも大きな声で話してはいけません。」", "grammarPointIds": ["demo-connector", "te-wa-ikenai"] },
+      { "id": "reading-library-card-17", "paragraph": 5, "text": "机で本を読んだり、写真を見たりしました。", "grammarPointIds": ["tari-tari-suru", "de-action-location", "o-object"] },
+      { "id": "reading-library-card-18", "paragraph": 5, "text": "家でも読みたいので、この本を借りました。", "grammarPointIds": ["mo-addition", "tai-desire", "node-reason"] },
+      { "id": "reading-library-card-19", "paragraph": 5, "text": "帰る前に、カードをかばんに入れました。", "grammarPointIds": ["mae-ni", "ni-destination", "o-object"] },
+      { "id": "reading-library-card-20", "paragraph": 5, "text": "またここで日本語も勉強したいです。", "grammarPointIds": ["de-action-location", "mo-addition", "tai-desire"] }
+    ],
+    "questions": [
+      {
+        "id": "location",
+        "prompt": { "en": "Where is the library?", "fr": "Où se trouve la bibliothèque ?" },
+        "choices": [
+          { "id": "station", "label": { "en": "Inside the station", "fr": "Dans la gare" } },
+          { "id": "upstairs", "label": { "en": "On the second floor of the white building in front of the station", "fr": "Au deuxième niveau du bâtiment blanc devant la gare" } },
+          { "id": "school", "label": { "en": "Next to the school", "fr": "À côté de l’école" } },
+          { "id": "ground", "label": { "en": "On the ground floor of the white building", "fr": "Au rez-de-chaussée du bâtiment blanc" } }
+        ],
+        "answerId": "upstairs",
+        "explanation": { "en": "The white building is in front of the station, and the library is on its second floor. Japanese 二階 counts the ground floor as the first floor.", "fr": "Le bâtiment blanc se trouve devant la gare. La bibliothèque est à son deuxième niveau, donc au premier étage selon la numérotation française : au Japon, le rez-de-chaussée compte comme 一階." },
+        "evidenceSentenceIds": ["reading-library-card-02", "reading-library-card-03"]
+      },
+      {
+        "id": "card",
+        "prompt": { "en": "What must the narrator do when borrowing a book?", "fr": "Que faut-il faire pour emprunter un livre ?" },
+        "choices": [
+          { "id": "pay", "label": { "en": "Pay for each book", "fr": "Payer pour chaque livre" } },
+          { "id": "name", "label": { "en": "Write a name on the book", "fr": "Écrire son nom sur le livre" } },
+          { "id": "show", "label": { "en": "Show the library card", "fr": "Montrer la carte de bibliothèque" } },
+          { "id": "phone", "label": { "en": "Telephone the library first", "fr": "Téléphoner d’abord à la bibliothèque" } }
+        ],
+        "answerId": "show",
+        "explanation": { "en": "見せなければなりません means that showing the card is required. This is an obligation, not merely permission to show it.", "fr": "見せなければなりません signifie qu’il faut montrer la carte. C’est une obligation, et pas simplement une permission." },
+        "evidenceSentenceIds": ["reading-library-card-10"]
+      },
+      {
+        "id": "payment",
+        "prompt": { "en": "Does the narrator have to pay to borrow the book?", "fr": "Faut-il payer pour emprunter le livre ?" },
+        "choices": [
+          { "id": "later", "label": { "en": "Yes, when returning it", "fr": "Oui, au moment de le rendre" } },
+          { "id": "no", "label": { "en": "No, payment is not required", "fr": "Non, il n’est pas nécessaire de payer" } },
+          { "id": "card", "label": { "en": "Yes, to receive the card", "fr": "Oui, pour recevoir la carte" } },
+          { "id": "cats", "label": { "en": "Only for books about cats", "fr": "Seulement pour les livres sur les chats" } }
+        ],
+        "answerId": "no",
+        "explanation": { "en": "払わなくてもいい means that paying is not necessary. It does not mean that paying is forbidden; that would use a prohibition such as ～てはいけません.", "fr": "払わなくてもいい signifie qu’il n’est pas nécessaire de payer. Ce n’est pas une interdiction de payer, qui s’exprimerait avec une forme comme ～てはいけません." },
+        "evidenceSentenceIds": ["reading-library-card-11"]
+      },
+      {
+        "id": "activities",
+        "prompt": { "en": "What did the narrator do at the desk?", "fr": "Qu’a fait la personne qui raconte à la table ?" },
+        "choices": [
+          { "id": "talk", "label": { "en": "Spoke loudly with the students", "fr": "Parlé fort avec les étudiants" } },
+          { "id": "write", "label": { "en": "Wrote in the book", "fr": "Écrit dans le livre" } },
+          { "id": "photos", "label": { "en": "Took photographs of the library", "fr": "Pris des photos de la bibliothèque" } },
+          { "id": "read", "label": { "en": "Read the book and looked at its photographs", "fr": "Lu le livre et regardé ses photos" } }
+        ],
+        "answerId": "read",
+        "explanation": { "en": "読んだり、写真を見たりしました lists examples of activities: reading and looking at photographs. It does not specify their order. Speaking loudly was prohibited.", "fr": "読んだり、写真を見たりしました donne des exemples d’activités : lire et regarder les photos, sans préciser leur ordre. Parler fort était interdit." },
+        "evidenceSentenceIds": ["reading-library-card-16", "reading-library-card-17"]
+      },
+      {
+        "id": "return",
+        "prompt": { "en": "When should the book be returned?", "fr": "Quand faut-il rendre le livre ?" },
+        "choices": [
+          { "id": "tuesday", "label": { "en": "Next Tuesday", "fr": "Mardi prochain" } },
+          { "id": "today", "label": { "en": "The same evening", "fr": "Le soir même" } },
+          { "id": "sunday", "label": { "en": "Next Sunday", "fr": "Dimanche prochain" } },
+          { "id": "month", "label": { "en": "Next month", "fr": "Le mois prochain" } }
+        ],
+        "answerId": "tuesday",
+        "explanation": { "en": "来週の火曜日に返してください asks the narrator to return the book next Tuesday. The particle に marks the specified time.", "fr": "来週の火曜日に返してください demande de rendre le livre mardi prochain. La particule に marque le moment indiqué." },
+        "evidenceSentenceIds": ["reading-library-card-12"]
       }
     ]
   }

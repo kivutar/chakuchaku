@@ -6058,9 +6058,9 @@ async function startApp() {
       try {
         vocabularyById = await vocabularyDataPromise;
         const passages = globalThis.JlptN5Reading.validatePassages(await fetchJson("data/readings.json"));
-        globalThis.JlptN5ReadingView.mount({
+        globalThis.JlptN5ReadingView.mountLibrary({
           root: readingElement,
-          passage: passages[0],
+          passages,
           locale: getUserLocale(),
           t,
           createToken: (token) => createTokenElement(token, [], { animate: false }),

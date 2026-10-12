@@ -9,6 +9,7 @@ import {
 } from "./localization.js";
 import { normalizeReading, surfaceCarriesReading } from "./kanji-reading-evidence.js";
 import { resolveReadingGrammarExercises } from "./reading-grammar.js";
+import { createReadingCoverage, formatReadingCoverage } from "./reading-coverage.js";
 import "../curriculum.js";
 import "../reading.js";
 
@@ -1386,6 +1387,7 @@ if (
 const readingSources = globalThis.JlptN5Reading.validatePassages(
   await readJson(join(sourceDirectory, "readings.json"))
 );
+const readingCoverage = createReadingCoverage(readingSources, grammarPoints);
 const exerciseSources = resolveReadingGrammarExercises(authoredExerciseSources, readingSources);
 const allSources = [introductionSource, ...exerciseSources];
 const lessonIds = new Set(allSources.map(({ id }) => id));
@@ -1632,7 +1634,8 @@ const readings = readingSources.map((passage) => ({
     if (curriculum.compareLevels(requiredLevel, passage.level) > 0) {
       errors.push(`${sentence.id}: vocabulary exceeds the reading's ${passage.level} level.`);
     }
-    return { ...prepared, paragraph: sentence.paragraph, audio: `assets/voices/reading/${sentence.id}.m4a` };
+    return { ...prepared, paragraph: sentence.paragraph, grammarPointIds: sentence.grammarPointIds,
+      audio: `assets/voices/reading/${sentence.id}.m4a` };
   })
 }));
 
@@ -1642,6 +1645,8 @@ if (errors.length > 0) {
 
 await Promise.all([
   writeOrCheckJson(join(rootDirectory, "data", "readings.json"), readings),
+  writeOrCheckJson(join(rootDirectory, "data", "reading-coverage.json"), readingCoverage),
+  writeOrCheckFile(join(rootDirectory, "data", "reading-coverage.md"), formatReadingCoverage(readingCoverage)),
   writeOrCheckJson(join(rootDirectory, "data", "introduction.json"), introduction),
   writeOrCheckJson(join(rootDirectory, "data", "exercises.json"), exercises),
   writeOrCheckJson(
