@@ -11530,7 +11530,7 @@
     "vocabularyId": "vocab-86f4d5b7a565",
     "text": "すぐに行く。",
     "targetSurface": "すぐに",
-    "targetReading": "すぐに",
+    "targetReading": "すぐ",
     "targetTokenStart": 0,
     "targetTokenEnd": 1,
     "translation": "I will go right away.",
@@ -11538,7 +11538,7 @@
       {
         "surface": "すぐ",
         "category": "adverb",
-        "reading": "すぐに",
+        "reading": "すぐ",
         "vocabularyId": "vocab-86f4d5b7a565"
       },
       {
@@ -44165,7 +44165,7 @@
       {
         "surface": "すぐ",
         "category": "adverb",
-        "reading": "すぐに",
+        "reading": "すぐ",
         "vocabularyId": "vocab-86f4d5b7a565"
       },
       {
@@ -45996,7 +45996,7 @@
       {
         "surface": "すぐ",
         "category": "adverb",
-        "reading": "すぐに",
+        "reading": "すぐ",
         "vocabularyId": "vocab-86f4d5b7a565"
       },
       {
@@ -49469,7 +49469,7 @@
       {
         "surface": "よい",
         "category": "adjective",
-        "reading": "いい",
+        "reading": "よい",
         "vocabularyId": "vocab-ef4cce00951f"
       },
       {

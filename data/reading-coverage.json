@@ -1,11 +1,11 @@
 {
-  "totalPassages": 6,
-  "totalSentences": 120,
+  "totalPassages": 8,
+  "totalSentences": 160,
   "levels": [
     {
       "level": "n5",
       "totalPoints": 206,
-      "coveredPoints": 117,
+      "coveredPoints": 132,
       "uncoveredPointIds": [
         "predicate-final-order",
         "topic-comment-structure",
@@ -18,10 +18,8 @@
         "copula-negative-polite",
         "copula-past-negative",
         "noun-connective-de",
-        "wa-contrast",
         "ni-frequency",
         "mo-emphasis",
-        "yone-confirmation",
         "kedo-contrast",
         "shikashi-connector",
         "soshite-connector",
@@ -40,7 +38,6 @@
         "verb-nai",
         "verb-nakatta",
         "verb-te-form",
-        "te-aru-result-state",
         "te-inai",
         "o-kudasai",
         "cha-ikenai",
@@ -50,10 +47,6 @@
         "ta-koto-ga-aru",
         "nakute-wa-ikenai",
         "nakya-nakucha",
-        "tara-conditional",
-        "kamoshirenai",
-        "sou-appearance",
-        "sou-hearsay",
         "you-ni-purpose",
         "i-adjective-class",
         "ii-irregular",
@@ -63,21 +56,15 @@
         "naru-change",
         "sugiru",
         "hoshii",
-        "no-ga-suki",
         "no-ga-jouzu-heta",
         "existence-location",
-        "location-of-topic",
         "aru-possession",
-        "hou-ga-comparison",
         "dochira-comparison",
         "ichiban-superlative",
-        "onaji",
         "numbers-and-counters",
         "nan-counter",
-        "quantity-position",
         "clock-calendar-time",
         "kara-made-range",
-        "mou",
         "kosoado-pronouns",
         "kosoado-places",
         "kosoado-directions",
@@ -86,12 +73,10 @@
         "naze-doushite-nande",
         "dou",
         "wa-dou-desu-ka",
-        "dou-yatte",
         "donna",
         "dore-dono",
         "ikura",
         "ikutsu",
-        "no-question",
         "chuu",
         "ni-turn-direction",
         "de-total-price",
@@ -101,21 +86,16 @@
     {
       "level": "n4",
       "totalPoints": 97,
-      "coveredPoints": 0,
+      "coveredPoints": 20,
       "uncoveredPointIds": [
         "plain-volitional",
         "volitional-to-omou",
-        "potential-form",
-        "passive-form",
-        "koto-ni-suru",
         "koto-ni-naru",
         "hazu-da",
         "hazu-ga-nai",
         "yasui",
         "nikui",
-        "te-iku",
         "te-kuru",
-        "aida",
         "aida-ni",
         "nara-conditional",
         "causative-form",
@@ -129,8 +109,6 @@
         "nasai-command",
         "you-ni-naru",
         "you-ni-suru",
-        "you-to-suru",
-        "te-oku",
         "stem-hajimeru",
         "stem-owaru",
         "stem-tsuzukeru",
@@ -142,28 +120,18 @@
         "te-kurete-arigatou",
         "te-sumimasen",
         "te-itadakemasen-ka",
-        "te-yokatta",
         "te-yaru",
-        "made-ni",
         "ru-tokoro",
         "teiru-tokoro",
         "ta-tokoro",
-        "ta-bakari",
         "mama",
         "oki-ni",
-        "sou-modifier",
-        "you-da-inference",
         "you-na-ni-simile",
         "mitai",
         "rashii",
-        "noni-concession",
-        "temo-concession",
-        "tame-ni-purpose",
         "tame-ni-cause",
         "to-ii-hope",
-        "no-wa-da",
         "to-iu-koto",
-        "you-ni-to-iu",
         "adjective-sa",
         "hodo-degree",
         "bakari-limitation",
@@ -173,12 +141,9 @@
         "material-de",
         "material-kara",
         "baai-wa",
-        "yotei-da",
         "tara-ii-desu-ka",
         "ga-hitsuyou",
         "te-de-cause",
-        "nakute-connective",
-        "koto-ni-shiteiru",
         "koto-ni-natteiru",
         "te-itadaku",
         "te-kudasaru",
@@ -515,6 +480,103 @@
         "verb-mashita",
         "yo-emphasis"
       ]
+    },
+    {
+      "id": "a-hungry-student",
+      "level": "n5",
+      "title": {
+        "en": "A hungry student",
+        "fr": "Un élève gourmand"
+      },
+      "sentences": 20,
+      "grammarPointIds": [
+        "ageru",
+        "aru-existence",
+        "dake-limitation",
+        "demo-connector",
+        "dou-yatte",
+        "e-direction",
+        "hou-ga-comparison",
+        "kamoshirenai",
+        "kosoado-determiners",
+        "location-of-topic",
+        "mada",
+        "mo-addition",
+        "mou",
+        "naide-without",
+        "ni-target-recipient",
+        "no-desu",
+        "no-ga-suki",
+        "o-object",
+        "onaji",
+        "positional-nouns",
+        "quantity-position",
+        "question-word-mo",
+        "sorekara-connector",
+        "sou-appearance",
+        "tai-desire",
+        "tara-conditional",
+        "te-action-link",
+        "te-kara",
+        "te-kudasai",
+        "to-conditional",
+        "to-iu",
+        "to-omou",
+        "to-quotation",
+        "toki",
+        "verb-masen",
+        "verb-masu",
+        "wa-contrast",
+        "yone-confirmation",
+        "yori-comparison"
+      ]
+    },
+    {
+      "id": "the-red-box",
+      "level": "n4",
+      "title": {
+        "en": "The red box",
+        "fr": "Le carton rouge"
+      },
+      "sentences": 20,
+      "grammarPointIds": [
+        "aida",
+        "dake-limitation",
+        "ga-contrast",
+        "koto-ni-shiteiru",
+        "koto-ni-suru",
+        "made-ni",
+        "nakute-connective",
+        "no-question",
+        "no-wa-da",
+        "node-reason",
+        "noni-concession",
+        "passive-form",
+        "positional-nouns",
+        "potential-form",
+        "relative-clause",
+        "sou-hearsay",
+        "sou-modifier",
+        "ta-bakari",
+        "tame-ni-purpose",
+        "te-action-link",
+        "te-aru-result-state",
+        "te-iku",
+        "te-iru-result-state",
+        "te-miru",
+        "te-oku",
+        "te-yokatta",
+        "temo-concession",
+        "to-conditional",
+        "to-iu",
+        "to-omou",
+        "to-quotation",
+        "toki",
+        "yotei-da",
+        "you-da-inference",
+        "you-ni-to-iu",
+        "you-to-suru"
+      ]
     }
   ],
   "points": [
@@ -559,8 +621,8 @@
       "level": "n5",
       "name": "Relative clauses",
       "pattern": "plain clause + noun",
-      "sentences": 5,
-      "passages": 4,
+      "sentences": 7,
+      "passages": 5,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -581,6 +643,14 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-04"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-09"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-13"
         }
       ]
     },
@@ -702,9 +772,14 @@
       "level": "n5",
       "name": "Contrast marker",
       "pattern": "は",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-13"
+        }
+      ]
     },
     {
       "id": "ga-subject",
@@ -755,8 +830,8 @@
       "level": "n5",
       "name": "Direct object marker",
       "pattern": "を",
-      "sentences": 15,
-      "passages": 5,
+      "sentences": 16,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -817,6 +892,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-18"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-01"
         }
       ]
     },
@@ -957,8 +1036,8 @@
       "level": "n5",
       "name": "Target and recipient marker",
       "pattern": "に",
-      "sentences": 10,
-      "passages": 4,
+      "sentences": 11,
+      "passages": 5,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -999,6 +1078,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-12"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-12"
         }
       ]
     },
@@ -1030,8 +1113,8 @@
       "level": "n5",
       "name": "Direction marker",
       "pattern": "へ",
-      "sentences": 5,
-      "passages": 2,
+      "sentences": 6,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1052,6 +1135,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-20"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-15"
         }
       ]
     },
@@ -1184,8 +1271,8 @@
       "level": "n5",
       "name": "Quotation marker",
       "pattern": "clause と",
-      "sentences": 9,
-      "passages": 5,
+      "sentences": 16,
+      "passages": 7,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -1222,6 +1309,34 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-20"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-03"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-06"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-11"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-18"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-10"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-11"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-18"
         }
       ]
     },
@@ -1312,8 +1427,8 @@
       "level": "n5",
       "name": "Also and too",
       "pattern": "も",
-      "sentences": 6,
-      "passages": 5,
+      "sentences": 7,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1338,6 +1453,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-19"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-19"
         }
       ]
     },
@@ -1451,9 +1570,14 @@
       "level": "n5",
       "name": "Emphatic confirmation",
       "pattern": "よね",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-16"
+        }
+      ]
     },
     {
       "id": "naa-reflection",
@@ -1532,8 +1656,8 @@
       "level": "n5",
       "name": "Reason with ので",
       "pattern": "plain clause + ので",
-      "sentences": 7,
-      "passages": 6,
+      "sentences": 8,
+      "passages": 7,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1562,6 +1686,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-15"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-04"
         }
       ]
     },
@@ -1570,8 +1698,8 @@
       "level": "n5",
       "name": "Contrast with が",
       "pattern": "clause + が",
-      "sentences": 3,
-      "passages": 2,
+      "sentences": 5,
+      "passages": 3,
       "references": [
         {
           "passageId": "a-cake-for-mum",
@@ -1584,6 +1712,14 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-09"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-14"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-20"
         }
       ]
     },
@@ -1601,8 +1737,8 @@
       "level": "n5",
       "name": "However",
       "pattern": "でも",
-      "sentences": 6,
-      "passages": 6,
+      "sentences": 7,
+      "passages": 7,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1627,6 +1763,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-06"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-04"
         }
       ]
     },
@@ -1653,8 +1793,8 @@
       "level": "n5",
       "name": "After that",
       "pattern": "それから",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "a-voice-in-the-classroom",
@@ -1663,6 +1803,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-13"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-12"
         }
       ]
     },
@@ -1680,12 +1824,20 @@
       "level": "n5",
       "name": "Only",
       "pattern": "だけ",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-09"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-11"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-05"
         }
       ]
     },
@@ -1839,8 +1991,8 @@
       "level": "n5",
       "name": "Polite non-past verbs",
       "pattern": "～ます",
-      "sentences": 4,
-      "passages": 4,
+      "sentences": 5,
+      "passages": 5,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1857,6 +2009,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-02"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-02"
         }
       ]
     },
@@ -1874,12 +2030,16 @@
       "level": "n5",
       "name": "Polite negative verbs",
       "pattern": "～ません",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-06"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-04"
         }
       ]
     },
@@ -2020,8 +2180,8 @@
       "level": "n5",
       "name": "Linking actions with て",
       "pattern": "Vて、V",
-      "sentences": 10,
-      "passages": 6,
+      "sentences": 13,
+      "passages": 8,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -2062,6 +2222,18 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-19"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-09"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-10"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-03"
         }
       ]
     },
@@ -2092,8 +2264,8 @@
       "level": "n5",
       "name": "Resulting state and repeated action",
       "pattern": "～ている",
-      "sentences": 3,
-      "passages": 2,
+      "sentences": 4,
+      "passages": 3,
       "references": [
         {
           "passageId": "a-voice-in-the-classroom",
@@ -2106,6 +2278,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-03"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-14"
         }
       ]
     },
@@ -2114,9 +2290,14 @@
       "level": "n5",
       "name": "Intentional resulting state",
       "pattern": "～てある",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-10"
+        }
+      ]
     },
     {
       "id": "te-inai",
@@ -2150,8 +2331,8 @@
       "level": "n5",
       "name": "After doing",
       "pattern": "～てから",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -2160,6 +2341,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-17"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-07"
         }
       ]
     },
@@ -2168,8 +2353,8 @@
       "level": "n5",
       "name": "Polite request",
       "pattern": "～てください",
-      "sentences": 4,
-      "passages": 3,
+      "sentences": 5,
+      "passages": 4,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -2186,6 +2371,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-08"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-07"
         }
       ]
     },
@@ -2217,8 +2406,8 @@
       "level": "n5",
       "name": "Without doing",
       "pattern": "～ないで",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 5,
+      "passages": 3,
       "references": [
         {
           "passageId": "a-voice-in-the-classroom",
@@ -2227,6 +2416,18 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-06"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-13"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-15"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-20"
         }
       ]
     },
@@ -2299,8 +2500,8 @@
       "level": "n5",
       "name": "Want to do",
       "pattern": "verb stem + たい",
-      "sentences": 10,
-      "passages": 5,
+      "sentences": 11,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -2341,6 +2542,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-19"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-05"
         }
       ]
     },
@@ -2554,17 +2759,22 @@
       "level": "n5",
       "name": "If and when",
       "pattern": "～たら",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-11"
+        }
+      ]
     },
     {
       "id": "toki",
       "level": "n5",
       "name": "When",
       "pattern": "plain form + とき",
-      "sentences": 4,
-      "passages": 3,
+      "sentences": 6,
+      "passages": 5,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -2581,6 +2791,14 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-20"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-02"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-13"
         }
       ]
     },
@@ -2625,8 +2843,8 @@
       "level": "n5",
       "name": "Try doing",
       "pattern": "～てみる",
-      "sentences": 2,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "grandpas-first-email",
@@ -2635,6 +2853,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-15"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-06"
         }
       ]
     },
@@ -2671,9 +2893,14 @@
       "level": "n5",
       "name": "Possibility",
       "pattern": "plain form + かもしれない",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-17"
+        }
+      ]
     },
     {
       "id": "deshou-darou",
@@ -2708,18 +2935,28 @@
       "level": "n5",
       "name": "Appearance",
       "pattern": "stem + そうだ",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-10"
+        }
+      ]
     },
     {
       "id": "sou-hearsay",
       "level": "n5",
       "name": "Hearsay",
       "pattern": "plain form + そうだ",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-04"
+        }
+      ]
     },
     {
       "id": "you-ni-purpose",
@@ -2735,8 +2972,8 @@
       "level": "n5",
       "name": "Automatic condition",
       "pattern": "plain non-past + と",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 5,
+      "passages": 4,
       "references": [
         {
           "passageId": "a-voice-in-the-classroom",
@@ -2745,6 +2982,18 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-09"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-03"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-18"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-06"
         }
       ]
     },
@@ -3045,9 +3294,18 @@
       "level": "n5",
       "name": "Like or dislike doing",
       "pattern": "verb + のが好き / 嫌い",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 2,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-01"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-17"
+        }
+      ]
     },
     {
       "id": "no-ga-jouzu-heta",
@@ -3063,8 +3321,8 @@
       "level": "n5",
       "name": "Inanimate existence",
       "pattern": "～がある / あります",
-      "sentences": 4,
-      "passages": 3,
+      "sentences": 5,
+      "passages": 4,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -3081,6 +3339,10 @@
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-10"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-14"
         }
       ]
     },
@@ -3116,17 +3378,22 @@
       "level": "n5",
       "name": "Location of a known thing",
       "pattern": "thing は place にある / いる",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-08"
+        }
+      ]
     },
     {
       "id": "positional-nouns",
       "level": "n5",
       "name": "Relative locations",
       "pattern": "noun の 上 / 下 / 中 / 前 / 後ろ / 隣 / 近く",
-      "sentences": 7,
-      "passages": 5,
+      "sentences": 10,
+      "passages": 7,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -3155,6 +3422,18 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-08"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-08"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-09"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-19"
         }
       ]
     },
@@ -3172,8 +3451,8 @@
       "level": "n5",
       "name": "Comparison baseline",
       "pattern": "A より B",
-      "sentences": 3,
-      "passages": 1,
+      "sentences": 4,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-cake-for-mum",
@@ -3186,6 +3465,10 @@
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-17"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-17"
         }
       ]
     },
@@ -3194,9 +3477,14 @@
       "level": "n5",
       "name": "Comparative preference",
       "pattern": "A より B のほうが adjective",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-16"
+        }
+      ]
     },
     {
       "id": "dochira-comparison",
@@ -3221,9 +3509,18 @@
       "level": "n5",
       "name": "Same as",
       "pattern": "A と B は同じ",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 2,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-13"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-19"
+        }
+      ]
     },
     {
       "id": "numbers-and-counters",
@@ -3300,9 +3597,14 @@
       "level": "n5",
       "name": "Quantity placement",
       "pattern": "noun を quantity verb",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-20"
+        }
+      ]
     },
     {
       "id": "duration-no-particle",
@@ -3341,21 +3643,30 @@
       "level": "n5",
       "name": "Already, anymore, or another",
       "pattern": "もう",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-20"
+        }
+      ]
     },
     {
       "id": "mada",
       "level": "n5",
       "name": "Still and not yet",
       "pattern": "まだ",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-13"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-04"
         }
       ]
     },
@@ -3412,12 +3723,16 @@
       "level": "n5",
       "name": "Give away from the speaker's side",
       "pattern": "giver は recipient に thing をあげる",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-16"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-12"
         }
       ]
     },
@@ -3509,8 +3824,8 @@
       "level": "n5",
       "name": "Demonstrative determiners",
       "pattern": "この / その / あの / どの",
-      "sentences": 4,
-      "passages": 2,
+      "sentences": 5,
+      "passages": 3,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -3527,6 +3842,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-05"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-05"
         }
       ]
     },
@@ -3626,9 +3945,14 @@
       "level": "n5",
       "name": "By what means",
       "pattern": "どうやって",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-06"
+        }
+      ]
     },
     {
       "id": "donna",
@@ -3685,12 +4009,20 @@
       "level": "n5",
       "name": "Total and negative pronouns",
       "pattern": "question word + も",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-03"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-14"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-20"
         }
       ]
     },
@@ -3699,8 +4031,8 @@
       "level": "n5",
       "name": "Say and be called",
       "pattern": "～と言う",
-      "sentences": 17,
-      "passages": 6,
+      "sentences": 21,
+      "passages": 8,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -3769,6 +4101,22 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-14"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-07"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-16"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-19"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-12"
         }
       ]
     },
@@ -3777,8 +4125,8 @@
       "level": "n5",
       "name": "Think that",
       "pattern": "plain clause + と思う",
-      "sentences": 3,
-      "passages": 2,
+      "sentences": 5,
+      "passages": 4,
       "references": [
         {
           "passageId": "grandpas-first-email",
@@ -3791,6 +4139,14 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-16"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-05"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-17"
         }
       ]
     },
@@ -3813,12 +4169,20 @@
       "level": "n5",
       "name": "Explanation and context",
       "pattern": "～のです / ～んです",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-06"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-06"
+        },
+        {
+          "passageId": "a-hungry-student",
+          "sentenceId": "reading-hungry-student-18"
         }
       ]
     },
@@ -3827,9 +4191,14 @@
       "level": "n5",
       "name": "Explanatory casual question",
       "pattern": "plain form + の？",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-11"
+        }
+      ]
     },
     {
       "id": "kata-how-to",
@@ -3944,27 +4313,46 @@
       "level": "n4",
       "name": "Potential form",
       "pattern": "～える / ～られる / できる",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-16"
+        }
+      ]
     },
     {
       "id": "passive-form",
       "level": "n4",
       "name": "Passive form",
       "pattern": "～れる / ～られる",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 2,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-07"
+        },
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-18"
+        }
+      ]
     },
     {
       "id": "koto-ni-suru",
       "level": "n4",
       "name": "Decide to",
       "pattern": "dictionary / ない form + ことにする",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-08"
+        }
+      ]
     },
     {
       "id": "koto-ni-naru",
@@ -4016,9 +4404,14 @@
       "level": "n4",
       "name": "Movement away or continuation",
       "pattern": "～ていく",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-15"
+        }
+      ]
     },
     {
       "id": "te-kuru",
@@ -4034,9 +4427,14 @@
       "level": "n4",
       "name": "Throughout a period",
       "pattern": "～間",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-03"
+        }
+      ]
     },
     {
       "id": "aida-ni",
@@ -4160,18 +4558,28 @@
       "level": "n4",
       "name": "Attempt or be about to",
       "pattern": "volitional + とする",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-07"
+        }
+      ]
     },
     {
       "id": "te-oku",
       "level": "n4",
       "name": "Preparation with ておく",
       "pattern": "～ておく",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-19"
+        }
+      ]
     },
     {
       "id": "stem-hajimeru",
@@ -4277,9 +4685,14 @@
       "level": "n4",
       "name": "Glad that something happened",
       "pattern": "～てよかった / ～でよかった",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-17"
+        }
+      ]
     },
     {
       "id": "te-yaru",
@@ -4295,9 +4708,14 @@
       "level": "n4",
       "name": "Deadline with までに",
       "pattern": "time + までに",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-02"
+        }
+      ]
     },
     {
       "id": "ru-tokoro",
@@ -4331,9 +4749,14 @@
       "level": "n4",
       "name": "Have only just done",
       "pattern": "past form + ばかり",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-01"
+        }
+      ]
     },
     {
       "id": "mama",
@@ -4358,18 +4781,28 @@
       "level": "n4",
       "name": "Modify with an apparent quality",
       "pattern": "stem + そうな / そうに",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-20"
+        }
+      ]
     },
     {
       "id": "you-da-inference",
       "level": "n4",
       "name": "Inference with ようだ",
       "pattern": "verb / い-adjective plain form + ようだ; な-adjective + なようだ; noun + のようだ",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-09"
+        }
+      ]
     },
     {
       "id": "you-na-ni-simile",
@@ -4403,27 +4836,42 @@
       "level": "n4",
       "name": "Unexpected contrast with のに",
       "pattern": "verb / い-adjective plain form + のに; な-adjective / noun + なのに",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-05"
+        }
+      ]
     },
     {
       "id": "temo-concession",
       "level": "n4",
       "name": "Even if",
       "pattern": "～ても / ～でも",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-15"
+        }
+      ]
     },
     {
       "id": "tame-ni-purpose",
       "level": "n4",
       "name": "Purpose with ために",
       "pattern": "dictionary form / noun の + ために",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-01"
+        }
+      ]
     },
     {
       "id": "tame-ni-cause",
@@ -4448,9 +4896,14 @@
       "level": "n4",
       "name": "Focused explanation",
       "pattern": "plain form + のは～だ",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-12"
+        }
+      ]
     },
     {
       "id": "to-iu-koto",
@@ -4466,9 +4919,14 @@
       "level": "n4",
       "name": "Report an instruction",
       "pattern": "dictionary / ない form + ように言う",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-08"
+        }
+      ]
     },
     {
       "id": "adjective-sa",
@@ -4556,9 +5014,14 @@
       "level": "n4",
       "name": "Scheduled plan",
       "pattern": "dictionary form / noun の + 予定だ",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-02"
+        }
+      ]
     },
     {
       "id": "tara-ii-desu-ka",
@@ -4592,18 +5055,28 @@
       "level": "n4",
       "name": "Negative connective form",
       "pattern": "～なくて",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-16"
+        }
+      ]
     },
     {
       "id": "koto-ni-shiteiru",
       "level": "n4",
       "name": "Personal rule or maintained decision",
       "pattern": "dictionary / ない form + ことにしている",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "the-red-box",
+          "sentenceId": "reading-red-box-15"
+        }
+      ]
     },
     {
       "id": "koto-ni-natteiru",

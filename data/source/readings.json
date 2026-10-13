@@ -1650,5 +1650,904 @@
         "evidenceSentenceIds": ["reading-wrong-train-07", "reading-wrong-train-17"]
       }
     ]
+  },
+  {
+    "id": "a-hungry-student",
+    "level": "n5",
+    "title": {
+      "en": "A hungry student",
+      "fr": "Un élève gourmand"
+    },
+    "description": {
+      "en": "Japanese lessons for the family dog, a little food, and a remark that also applies to the teacher.",
+      "fr": "Des cours de japonais pour le chien de la maison, un peu de nourriture et une remarque qui vaut aussi pour son professeur."
+    },
+    "sentences": [
+      {
+        "id": "reading-hungry-student-01",
+        "paragraph": 1,
+        "text": "私は日本語を勉強するのが好きです。",
+        "grammarPointIds": [
+          "no-ga-suki",
+          "o-object"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-02",
+        "paragraph": 1,
+        "text": "勉強するときは、いつもお菓子を食べます。",
+        "grammarPointIds": [
+          "toki",
+          "verb-masu"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-03",
+        "paragraph": 1,
+        "text": "うちの犬に「座って」と言うと、すぐに座ります。",
+        "grammarPointIds": [
+          "to-quotation",
+          "to-conditional"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-04",
+        "paragraph": 1,
+        "text": "でも、「待って」はまだ分かりません。",
+        "grammarPointIds": [
+          "demo-connector",
+          "mada",
+          "verb-masen"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-05",
+        "paragraph": 2,
+        "text": "今日は、この言葉を犬に教えたいと思いました。",
+        "grammarPointIds": [
+          "tai-desire",
+          "to-omou",
+          "kosoado-determiners"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-06",
+        "paragraph": 2,
+        "text": "母に「どうやって教えるんですか」と聞きました。",
+        "grammarPointIds": [
+          "dou-yatte",
+          "no-desu",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-07",
+        "paragraph": 2,
+        "text": "母は「食べ物を見せてから、教えてください」と言いました。",
+        "grammarPointIds": [
+          "te-kara",
+          "te-kudasai",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-08",
+        "paragraph": 2,
+        "text": "犬の食べ物は、台所の箱の中にあります。",
+        "grammarPointIds": [
+          "location-of-topic",
+          "positional-nouns"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-09",
+        "paragraph": 3,
+        "text": "犬の食べ物を少し持って、犬の前に立ちました。",
+        "grammarPointIds": [
+          "te-action-link",
+          "positional-nouns"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-10",
+        "paragraph": 3,
+        "text": "犬は食べ物を見て、とても楽しそうでした。",
+        "grammarPointIds": [
+          "sou-appearance",
+          "te-action-link"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-11",
+        "paragraph": 3,
+        "text": "私が「待って」と言ったら、犬は少しだけ待ちました。",
+        "grammarPointIds": [
+          "tara-conditional",
+          "to-quotation",
+          "dake-limitation"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-12",
+        "paragraph": 3,
+        "text": "それから、犬に食べ物をあげました。",
+        "grammarPointIds": [
+          "sorekara-connector",
+          "ageru",
+          "ni-target-recipient"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-13",
+        "paragraph": 4,
+        "text": "次は、食べ物を持たないで同じ言葉を言いました。",
+        "grammarPointIds": [
+          "naide-without",
+          "onaji",
+          "wa-contrast"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-14",
+        "paragraph": 4,
+        "text": "私の手には、何もありませんでした。",
+        "grammarPointIds": [
+          "question-word-mo",
+          "aru-existence"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-15",
+        "paragraph": 4,
+        "text": "犬は待たないで、すぐに台所へ行きました。",
+        "grammarPointIds": [
+          "naide-without",
+          "e-direction"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-16",
+        "paragraph": 4,
+        "text": "「日本語より食べ物のほうが大切だよね」と母は言いました。",
+        "grammarPointIds": [
+          "hou-ga-comparison",
+          "yone-confirmation",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-17",
+        "paragraph": 5,
+        "text": "犬は、勉強より食べるのが好きなのかもしれません。",
+        "grammarPointIds": [
+          "no-ga-suki",
+          "kamoshirenai",
+          "yori-comparison"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-18",
+        "paragraph": 5,
+        "text": "「食べ物がないと、勉強しないんですか」と犬に聞きました。",
+        "grammarPointIds": [
+          "to-conditional",
+          "no-desu",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-19",
+        "paragraph": 5,
+        "text": "母は「あなたも同じですよ」と言いました。",
+        "grammarPointIds": [
+          "onaji",
+          "mo-addition",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-hungry-student-20",
+        "paragraph": 5,
+        "text": "私は何も言わないで、お菓子をもう一つ食べました。",
+        "grammarPointIds": [
+          "naide-without",
+          "mou",
+          "quantity-position",
+          "question-word-mo"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "study-habit",
+        "prompt": {
+          "en": "What does the narrator usually do while studying?",
+          "fr": "Que fait habituellement la personne qui raconte pendant qu’elle étudie ?"
+        },
+        "choices": [
+          {
+            "id": "teach-dog",
+            "label": {
+              "en": "Always teaches the dog at the same time",
+              "fr": "Elle apprend toujours quelque chose au chien en même temps"
+            }
+          },
+          {
+            "id": "snacks",
+            "label": {
+              "en": "Eats snacks",
+              "fr": "Elle mange des friandises"
+            }
+          },
+          {
+            "id": "no-food",
+            "label": {
+              "en": "Avoids eating anything",
+              "fr": "Elle évite de manger quoi que ce soit"
+            }
+          },
+          {
+            "id": "phone",
+            "label": {
+              "en": "Telephones the mother",
+              "fr": "Elle téléphone à sa mère"
+            }
+          }
+        ],
+        "answerId": "snacks",
+        "explanation": {
+          "en": "勉強するときは、いつもお菓子を食べます says that the narrator always eats snacks when studying. This habit explains the mother's final joke.",
+          "fr": "勉強するときは、いつもお菓子を食べます indique que la personne mange toujours des friandises quand elle étudie. Cette habitude explique la plaisanterie finale de la mère."
+        },
+        "evidenceSentenceIds": [
+          "reading-hungry-student-02"
+        ]
+      },
+      {
+        "id": "known-command",
+        "prompt": {
+          "en": "Before today's lesson, which command does the dog already understand?",
+          "fr": "Avant la leçon du jour, quel ordre le chien comprend-il déjà ?"
+        },
+        "choices": [
+          {
+            "id": "wait",
+            "label": {
+              "en": "Wait",
+              "fr": "Attends"
+            }
+          },
+          {
+            "id": "eat",
+            "label": {
+              "en": "Eat",
+              "fr": "Mange"
+            }
+          },
+          {
+            "id": "go",
+            "label": {
+              "en": "Go",
+              "fr": "Va"
+            }
+          },
+          {
+            "id": "sit",
+            "label": {
+              "en": "Sit",
+              "fr": "Assis"
+            }
+          }
+        ],
+        "answerId": "sit",
+        "explanation": {
+          "en": "When the narrator says 座って, the dog immediately sits. 待ってはまだ分かりません says it does not understand the waiting command yet.",
+          "fr": "Quand la personne dit 座って, le chien s’assoit immédiatement. 待ってはまだ分かりません signifie qu’il ne comprend pas encore l’ordre d’attendre."
+        },
+        "evidenceSentenceIds": [
+          "reading-hungry-student-03",
+          "reading-hungry-student-04"
+        ]
+      },
+      {
+        "id": "teaching-order",
+        "prompt": {
+          "en": "What does the mother advise doing first?",
+          "fr": "Que conseille la mère de faire en premier ?"
+        },
+        "choices": [
+          {
+            "id": "show",
+            "label": {
+              "en": "Show the dog some food, then teach it",
+              "fr": "Montrer de la nourriture au chien, puis lui apprendre le mot"
+            }
+          },
+          {
+            "id": "feed",
+            "label": {
+              "en": "Let the dog eat everything before the lesson",
+              "fr": "Laisser le chien tout manger avant la leçon"
+            }
+          },
+          {
+            "id": "hide",
+            "label": {
+              "en": "Hide the food without showing it",
+              "fr": "Cacher la nourriture sans la montrer"
+            }
+          },
+          {
+            "id": "wait-long",
+            "label": {
+              "en": "Wait a long time before getting any food",
+              "fr": "Attendre longtemps avant de prendre de la nourriture"
+            }
+          }
+        ],
+        "answerId": "show",
+        "explanation": {
+          "en": "見せてから means after showing it. The mother advises showing the food before teaching. The narrator gives the food only after the dog has waited briefly.",
+          "fr": "見せてから signifie après avoir montré. La mère conseille de montrer la nourriture avant d’apprendre le mot au chien. La personne ne lui donne à manger qu’après qu’il a attendu un petit moment."
+        },
+        "evidenceSentenceIds": [
+          "reading-hungry-student-07",
+          "reading-hungry-student-11",
+          "reading-hungry-student-12"
+        ]
+      },
+      {
+        "id": "second-attempt",
+        "prompt": {
+          "en": "What happens when the narrator repeats the command with no food in hand?",
+          "fr": "Que se passe-t-il quand la personne répète l’ordre sans nourriture dans la main ?"
+        },
+        "choices": [
+          {
+            "id": "stay",
+            "label": {
+              "en": "The dog stays and waits a long time",
+              "fr": "Le chien reste et attend longtemps"
+            }
+          },
+          {
+            "id": "understand-everything",
+            "label": {
+              "en": "The dog suddenly understands every Japanese word",
+              "fr": "Le chien comprend soudain tous les mots japonais"
+            }
+          },
+          {
+            "id": "kitchen",
+            "label": {
+              "en": "The dog goes straight to the kitchen without waiting",
+              "fr": "Le chien va directement dans la cuisine sans attendre"
+            }
+          },
+          {
+            "id": "speak",
+            "label": {
+              "en": "The dog replies in Japanese",
+              "fr": "Le chien répond en japonais"
+            }
+          }
+        ],
+        "answerId": "kitchen",
+        "explanation": {
+          "en": "食べ物を持たないで and 何もありませんでした establish that the hand is empty. 待たないで means without waiting: the dog heads straight to the kitchen, where its food is kept.",
+          "fr": "食べ物を持たないで et 何もありませんでした montrent que la main est vide. 待たないで signifie sans attendre : le chien va directement dans la cuisine, où se trouve sa nourriture."
+        },
+        "evidenceSentenceIds": [
+          "reading-hungry-student-08",
+          "reading-hungry-student-13",
+          "reading-hungry-student-14",
+          "reading-hungry-student-15"
+        ]
+      },
+      {
+        "id": "mothers-joke",
+        "prompt": {
+          "en": "Why does the mother say that the narrator is the same as the dog?",
+          "fr": "Pourquoi la mère dit-elle que la personne qui raconte est pareille au chien ?"
+        },
+        "choices": [
+          {
+            "id": "sit",
+            "label": {
+              "en": "They both sit down on command",
+              "fr": "Tous deux s’assoient quand on leur en donne l’ordre"
+            }
+          },
+          {
+            "id": "snacks",
+            "label": {
+              "en": "The narrator also associates studying with food",
+              "fr": "La personne associe elle aussi les études à la nourriture"
+            }
+          },
+          {
+            "id": "no-japanese",
+            "label": {
+              "en": "Neither understands any Japanese",
+              "fr": "Aucun des deux ne comprend le japonais"
+            }
+          },
+          {
+            "id": "same-food",
+            "label": {
+              "en": "They eat exactly the same food",
+              "fr": "Ils mangent exactement la même nourriture"
+            }
+          }
+        ],
+        "answerId": "snacks",
+        "explanation": {
+          "en": "The narrator has already said that studying always comes with snacks. After the mother's あなたも同じですよ, the narrator silently eats one more snack. The joke is about a shared fondness for food, not a claim that they eat the same food.",
+          "fr": "La personne a déjà dit qu’elle mange toujours des friandises en étudiant. Après le あなたも同じですよ de sa mère, elle mange encore une friandise sans rien dire. La plaisanterie porte sur leur gourmandise commune, pas sur le fait de manger la même nourriture."
+        },
+        "evidenceSentenceIds": [
+          "reading-hungry-student-02",
+          "reading-hungry-student-17",
+          "reading-hungry-student-18",
+          "reading-hungry-student-19",
+          "reading-hungry-student-20"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-red-box",
+    "level": "n4",
+    "title": {
+      "en": "The red box",
+      "fr": "Le carton rouge"
+    },
+    "description": {
+      "en": "Helping with a move, a surprisingly light box, and something that almost ends up in the rubbish.",
+      "fr": "Un déménagement, un carton étonnamment léger et quelque chose qui manque de finir à la poubelle."
+    },
+    "sentences": [
+      {
+        "id": "reading-red-box-01",
+        "paragraph": 1,
+        "text": "土曜日、引っ越したばかりの姉を手伝うために、新しい家へ行きました。",
+        "tokenOverrides": {
+          "ため": { "category": "auxiliary" }
+        },
+        "grammarPointIds": [
+          "ta-bakari",
+          "tame-ni-purpose"
+        ]
+      },
+      {
+        "id": "reading-red-box-02",
+        "paragraph": 1,
+        "text": "午後三時までに、部屋の荷物を全部片付ける予定でした。",
+        "grammarPointIds": [
+          "made-ni",
+          "yotei-da"
+        ]
+      },
+      {
+        "id": "reading-red-box-03",
+        "paragraph": 1,
+        "text": "姉が台所を掃除している間、私は箱から本を出して棚に並べました。",
+        "tokenOverrides": {
+          "間": { "reading": "あいだ" }
+        },
+        "grammarPointIds": [
+          "aida",
+          "te-action-link"
+        ]
+      },
+      {
+        "id": "reading-red-box-04",
+        "paragraph": 1,
+        "text": "子供のときから集めていた本なので、どれも捨てたくないそうです。",
+        "grammarPointIds": [
+          "sou-hearsay",
+          "node-reason"
+        ]
+      },
+      {
+        "id": "reading-red-box-05",
+        "paragraph": 2,
+        "text": "本の箱は重いのに、赤い箱だけはとても軽かったです。",
+        "grammarPointIds": [
+          "noni-concession",
+          "dake-limitation"
+        ]
+      },
+      {
+        "id": "reading-red-box-06",
+        "paragraph": 2,
+        "text": "開けてみると、古い紙がたくさん入っていました。",
+        "grammarPointIds": [
+          "te-miru",
+          "to-conditional"
+        ]
+      },
+      {
+        "id": "reading-red-box-07",
+        "paragraph": 2,
+        "text": "箱を捨てようとしたとき、姉に「ちょっと待って」と言われました。",
+        "tokenOverrides": {
+          "れ": { "category": "auxiliary" }
+        },
+        "grammarPointIds": [
+          "you-to-suru",
+          "passive-form"
+        ]
+      },
+      {
+        "id": "reading-red-box-08",
+        "paragraph": 2,
+        "text": "中をよく見るように言われたので、また調べることにしました。",
+        "tokenOverrides": {
+          "れ": { "category": "auxiliary" }
+        },
+        "grammarPointIds": [
+          "you-ni-to-iu",
+          "koto-ni-suru"
+        ]
+      },
+      {
+        "id": "reading-red-box-09",
+        "paragraph": 3,
+        "text": "一枚の紙をよく見ると、子供が描いた家の絵のようでした。",
+        "speechText": "一枚の紙をよく見ると、子供がかいた家の絵のようでした。",
+        "tokenOverrides": {
+          "描い": { "reading": "かい" }
+        },
+        "grammarPointIds": [
+          "you-da-inference",
+          "relative-clause"
+        ]
+      },
+      {
+        "id": "reading-red-box-10",
+        "paragraph": 3,
+        "text": "絵の下には、「ありがとう」と書いてありました。",
+        "grammarPointIds": [
+          "te-aru-result-state",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-red-box-11",
+        "paragraph": 3,
+        "text": "「こんな下手な絵を、どうして大事にしているの」と聞きました。",
+        "grammarPointIds": [
+          "no-question",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-red-box-12",
+        "paragraph": 3,
+        "text": "姉は笑って、「それを描いたのは、私じゃなくて、あなたよ」と言いました。",
+        "speechText": "姉は笑って、「それをかいたのは、私じゃなくて、あなたよ」と言いました。",
+        "tokenOverrides": {
+          "描い": { "reading": "かい" }
+        },
+        "grammarPointIds": [
+          "no-wa-da",
+          "to-iu"
+        ]
+      },
+      {
+        "id": "reading-red-box-13",
+        "paragraph": 4,
+        "text": "私が五歳のときに、姉の誕生日にあげた絵でした。",
+        "grammarPointIds": [
+          "relative-clause",
+          "toki"
+        ]
+      },
+      {
+        "id": "reading-red-box-14",
+        "paragraph": 4,
+        "text": "私はそのときのことをあまり覚えていませんが、姉ははっきり覚えていました。",
+        "grammarPointIds": [
+          "ga-contrast",
+          "te-iru-result-state"
+        ]
+      },
+      {
+        "id": "reading-red-box-15",
+        "paragraph": 4,
+        "text": "姉は、どこに引っ越しても、この絵だけは持っていくことにしているそうです。",
+        "grammarPointIds": [
+          "temo-concession",
+          "koto-ni-shiteiru",
+          "te-iku"
+        ]
+      },
+      {
+        "id": "reading-red-box-16",
+        "paragraph": 4,
+        "text": "私は何も言えなくて、しばらく絵を見ていました。",
+        "grammarPointIds": [
+          "potential-form",
+          "nakute-connective"
+        ]
+      },
+      {
+        "id": "reading-red-box-17",
+        "paragraph": 5,
+        "text": "大事な絵を捨てなくてよかったと思いました。",
+        "grammarPointIds": [
+          "te-yokatta",
+          "to-omou"
+        ]
+      },
+      {
+        "id": "reading-red-box-18",
+        "paragraph": 5,
+        "text": "姉に「今度はもっと上手に描いてね」と頼まれました。",
+        "speechText": "姉に「今度はもっと上手にかいてね」と頼まれました。",
+        "tokenOverrides": {
+          "描い": { "reading": "かい" },
+          "れ": { "category": "auxiliary" }
+        },
+        "grammarPointIds": [
+          "passive-form",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-red-box-19",
+        "paragraph": 5,
+        "text": "私は、その絵を姉の机の上に置いておきました。",
+        "grammarPointIds": [
+          "te-oku",
+          "positional-nouns"
+        ]
+      },
+      {
+        "id": "reading-red-box-20",
+        "paragraph": 5,
+        "text": "三時には終わりませんでしたが、姉は嬉しそうに絵を見ていました。",
+        "grammarPointIds": [
+          "sou-modifier",
+          "ga-contrast"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "deadline",
+        "prompt": {
+          "en": "By what time did they plan to put everything away?",
+          "fr": "Pour quelle heure avaient-ils prévu de tout ranger ?"
+        },
+        "choices": [
+          {
+            "id": "morning",
+            "label": {
+              "en": "Before noon",
+              "fr": "Avant midi"
+            }
+          },
+          {
+            "id": "three",
+            "label": {
+              "en": "By three in the afternoon",
+              "fr": "Pour quinze heures"
+            }
+          },
+          {
+            "id": "evening",
+            "label": {
+              "en": "Before six in the evening",
+              "fr": "Avant dix-huit heures"
+            }
+          },
+          {
+            "id": "sunday",
+            "label": {
+              "en": "By Sunday morning",
+              "fr": "Pour dimanche matin"
+            }
+          }
+        ],
+        "answerId": "three",
+        "explanation": {
+          "en": "午後三時までに sets a deadline of three in the afternoon. 予定でした describes the plan, not proof that it was achieved.",
+          "fr": "午後三時までに fixe l’échéance à quinze heures. 予定でした indique ce qui était prévu, pas que cet objectif a été atteint."
+        },
+        "evidenceSentenceIds": [
+          "reading-red-box-02"
+        ]
+      },
+      {
+        "id": "light-box",
+        "prompt": {
+          "en": "What does the narrator find inside the light red box?",
+          "fr": "Que trouve la personne qui raconte dans le carton rouge, qui est léger ?"
+        },
+        "choices": [
+          {
+            "id": "books",
+            "label": {
+              "en": "The sister's collection of books",
+              "fr": "La collection de livres de sa sœur"
+            }
+          },
+          {
+            "id": "kitchen",
+            "label": {
+              "en": "Things from the kitchen",
+              "fr": "Des objets de la cuisine"
+            }
+          },
+          {
+            "id": "nothing",
+            "label": {
+              "en": "Nothing: the box is empty",
+              "fr": "Rien : le carton est vide"
+            }
+          },
+          {
+            "id": "papers",
+            "label": {
+              "en": "Lots of old papers, including a drawing",
+              "fr": "Beaucoup de vieux papiers, dont un dessin"
+            }
+          }
+        ],
+        "answerId": "papers",
+        "explanation": {
+          "en": "The heavy boxes contain books. The red box contains 古い紙, old papers; the narrator later notices a drawing on one sheet.",
+          "fr": "Les cartons lourds contiennent des livres. Le carton rouge contient 古い紙, de vieux papiers ; la personne remarque ensuite un dessin sur une des feuilles."
+        },
+        "evidenceSentenceIds": [
+          "reading-red-box-05",
+          "reading-red-box-06",
+          "reading-red-box-09"
+        ]
+      },
+      {
+        "id": "artist",
+        "prompt": {
+          "en": "Who made the drawing, and when?",
+          "fr": "Qui a fait le dessin, et à quel âge ?"
+        },
+        "choices": [
+          {
+            "id": "narrator-five",
+            "label": {
+              "en": "The narrator, at five years old",
+              "fr": "La personne qui raconte, à cinq ans"
+            }
+          },
+          {
+            "id": "sister-five",
+            "label": {
+              "en": "The older sister, at five years old",
+              "fr": "Sa sœur aînée, à cinq ans"
+            }
+          },
+          {
+            "id": "sister-now",
+            "label": {
+              "en": "The older sister, after moving house",
+              "fr": "Sa sœur aînée, après son déménagement"
+            }
+          },
+          {
+            "id": "narrator-now",
+            "label": {
+              "en": "The narrator, on the day of the move",
+              "fr": "La personne qui raconte, le jour du déménagement"
+            }
+          }
+        ],
+        "answerId": "narrator-five",
+        "explanation": {
+          "en": "それを描いたのは、私じゃなくて、あなたよ identifies the narrator, not the sister, as the artist. 私が五歳のとき gives the narrator's age at the time.",
+          "fr": "それを描いたのは、私じゃなくて、あなたよ signifie que c’est la personne qui raconte qui a dessiné, et non sa sœur. 私が五歳のとき précise qu’elle avait alors cinq ans."
+        },
+        "evidenceSentenceIds": [
+          "reading-red-box-12",
+          "reading-red-box-13"
+        ]
+      },
+      {
+        "id": "precious-drawing",
+        "prompt": {
+          "en": "What makes this drawing precious to the sister?",
+          "fr": "Pourquoi ce dessin est-il précieux pour la sœur ?"
+        },
+        "choices": [
+          {
+            "id": "skill",
+            "label": {
+              "en": "It was drawn by a professional artist",
+              "fr": "Il a été dessiné par un artiste professionnel"
+            }
+          },
+          {
+            "id": "house",
+            "label": {
+              "en": "It shows the new house exactly",
+              "fr": "Il représente exactement la nouvelle maison"
+            }
+          },
+          {
+            "id": "gift",
+            "label": {
+              "en": "It was a childhood birthday gift from the narrator",
+              "fr": "C’était un cadeau d’anniversaire offert dans l’enfance par la personne qui raconte"
+            }
+          },
+          {
+            "id": "price",
+            "label": {
+              "en": "It is worth more money than the books",
+              "fr": "Il vaut plus d’argent que les livres"
+            }
+          }
+        ],
+        "answerId": "gift",
+        "explanation": {
+          "en": "The narrator gave this drawing to the sister for her birthday at age five. She remembers it clearly and keeps taking it with her when she moves. Its value is personal, not its artistic skill or price.",
+          "fr": "La personne a offert ce dessin à sa sœur pour son anniversaire lorsqu’elle avait cinq ans. La sœur s’en souvient clairement et l’emporte à chaque déménagement. Sa valeur est affective, pas liée à la qualité du dessin ou à un prix."
+        },
+        "evidenceSentenceIds": [
+          "reading-red-box-11",
+          "reading-red-box-13",
+          "reading-red-box-14",
+          "reading-red-box-15"
+        ]
+      },
+      {
+        "id": "outcome",
+        "prompt": {
+          "en": "Which statement matches the end of the story?",
+          "fr": "Quelle affirmation correspond à la fin de l’histoire ?"
+        },
+        "choices": [
+          {
+            "id": "finished",
+            "label": {
+              "en": "They finished on time and threw away the drawing",
+              "fr": "Ils ont terminé à temps et jeté le dessin"
+            }
+          },
+          {
+            "id": "kept",
+            "label": {
+              "en": "They missed the deadline, but kept the drawing and the sister looked happy",
+              "fr": "Ils n’ont pas terminé à temps, mais ont gardé le dessin et la sœur avait l’air heureuse"
+            }
+          },
+          {
+            "id": "new-drawing",
+            "label": {
+              "en": "The narrator finished a new drawing before three",
+              "fr": "La personne a terminé un nouveau dessin avant quinze heures"
+            }
+          },
+          {
+            "id": "books-thrown",
+            "label": {
+              "en": "The sister threw away all her books to save time",
+              "fr": "La sœur a jeté tous ses livres pour gagner du temps"
+            }
+          }
+        ],
+        "answerId": "kept",
+        "explanation": {
+          "en": "The narrator leaves the old drawing on the sister's desk. 三時には終わりませんでした explicitly says they had not finished by three, while 嬉しそうに describes the sister's happy appearance. A new drawing is only requested for next time.",
+          "fr": "La personne laisse le vieux dessin sur le bureau de sa sœur. 三時には終わりませんでした dit explicitement qu’ils n’avaient pas terminé à quinze heures, tandis que 嬉しそうに décrit l’air heureux de la sœur. Un nouveau dessin n’est demandé que pour une prochaine fois."
+        },
+        "evidenceSentenceIds": [
+          "reading-red-box-18",
+          "reading-red-box-19",
+          "reading-red-box-20"
+        ]
+      }
+    ]
   }
 ]

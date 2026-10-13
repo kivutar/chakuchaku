@@ -114,7 +114,10 @@ useful points that sources variously place at N5 or N4 without presenting them
 as undisputed N5 requirements.
 
 The live N4 slice contains 97 high-value points and 467 independently authored
-recognition and production exercises. Alongside the original volitional,
+recognition and production exercises, plus exercises borrowed from N4 stories.
+An N4 story can reuse N5 vocabulary and grammar: its borrowed exercises retain
+the story's N4 minimum level even when an individual sentence uses only N5 points.
+Alongside the original volitional,
 potential, passive, decision, expectation, ease, movement, time, and `～なら`
 points, it now covers the causative, causative-passive, direct imperative,
 `～ば`, `～ばよかった`, `～たらどう`, transitive/intransitive verb pairs,

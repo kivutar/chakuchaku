@@ -668,7 +668,10 @@ function tokenizeLesson(lesson, vocabularyIndex, options = {}) {
       if (
         tokenOverride?.reading === undefined &&
         (
-          (selectedMatch.isSurface && selectedMatch.preferReading) ||
+          // Kana variants are read as written, not as the entire dictionary
+          // headword: すぐ + に must not receive すぐに + に.
+          (selectedMatch.isSurface && selectedMatch.preferReading &&
+            !/^[\p{Script=Hiragana}\p{Script=Katakana}ー]+$/u.test(token.surface)) ||
           generatedReading === "*"
         )
       ) {

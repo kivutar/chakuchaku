@@ -21146,5 +21146,1113 @@
         ]
       }
     ]
+  },
+  {
+    "id": "story-hungry-student-likes-studying",
+    "readingSentenceId": "reading-hungry-student-01",
+    "solution": "I like studying Japanese.",
+    "grammarPointIds": [
+      "no-ga-suki",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-likes-studying",
+    "readingSentenceId": "reading-hungry-student-01",
+    "type": "production",
+    "text": "I like studying Japanese.",
+    "grammarPointIds": [
+      "no-ga-suki",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "Japanese",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-study-snacks",
+    "readingSentenceId": "reading-hungry-student-02",
+    "solution": "Whenever I study, I always eat snacks.",
+    "grammarPointIds": [
+      "toki",
+      "verb-masu"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-study-snacks",
+    "readingSentenceId": "reading-hungry-student-02",
+    "type": "production",
+    "text": "Whenever I study, I always eat snacks.",
+    "grammarPointIds": [
+      "toki",
+      "verb-masu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "snacks",
+        "vocabularyIds": [
+          "vocab-3841b646739f"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-already-knows-sit",
+    "readingSentenceId": "reading-hungry-student-03",
+    "solution": "When I say “Sit!” to our dog, it sits down straight away.",
+    "grammarPointIds": [
+      "to-quotation",
+      "to-conditional"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-already-knows-sit",
+    "readingSentenceId": "reading-hungry-student-03",
+    "type": "production",
+    "text": "When I say “Sit!” to our dog, it sits down straight away.",
+    "grammarPointIds": [
+      "to-quotation",
+      "to-conditional"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "dog",
+        "vocabularyIds": [
+          "vocab-4cd1238bcb91"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-wait-not-yet",
+    "readingSentenceId": "reading-hungry-student-04",
+    "solution": "But it does not understand “Wait!” yet.",
+    "grammarPointIds": [
+      "demo-connector",
+      "mada",
+      "verb-masen"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-wait-not-yet",
+    "readingSentenceId": "reading-hungry-student-04",
+    "type": "production",
+    "text": "But it does not understand “Wait!” yet.",
+    "grammarPointIds": [
+      "demo-connector",
+      "mada",
+      "verb-masen"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "Wait",
+        "vocabularyIds": [
+          "vocab-6f30c5c5938f"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-teaching-plan",
+    "readingSentenceId": "reading-hungry-student-05",
+    "solution": "Today, I thought I would like to teach this word to our dog.",
+    "grammarPointIds": [
+      "tai-desire",
+      "to-omou",
+      "kosoado-determiners"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-teaching-plan",
+    "readingSentenceId": "reading-hungry-student-05",
+    "type": "production",
+    "text": "Today, I thought I would like to teach this word to our dog.",
+    "grammarPointIds": [
+      "tai-desire",
+      "to-omou",
+      "kosoado-determiners"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "word",
+        "vocabularyIds": [
+          "vocab-cef4a2049ff3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-ask-for-method",
+    "readingSentenceId": "reading-hungry-student-06",
+    "solution": "I asked my mother, “How do I teach it?”",
+    "grammarPointIds": [
+      "dou-yatte",
+      "no-desu",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-ask-for-method",
+    "readingSentenceId": "reading-hungry-student-06",
+    "type": "production",
+    "text": "I asked my mother, “How do I teach it?”",
+    "grammarPointIds": [
+      "dou-yatte",
+      "no-desu",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-mothers-advice",
+    "readingSentenceId": "reading-hungry-student-07",
+    "solution": "My mother said, “Please show it some food first, then teach it.”",
+    "grammarPointIds": [
+      "te-kara",
+      "te-kudasai",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-mothers-advice",
+    "readingSentenceId": "reading-hungry-student-07",
+    "type": "production",
+    "text": "My mother said, “Please show it some food first, then teach it.”",
+    "grammarPointIds": [
+      "te-kara",
+      "te-kudasai",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "food",
+        "vocabularyIds": [
+          "vocab-d26eb9131afb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-food-location",
+    "readingSentenceId": "reading-hungry-student-08",
+    "solution": "The dog's food is inside a box in the kitchen.",
+    "grammarPointIds": [
+      "location-of-topic",
+      "positional-nouns"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-food-location",
+    "readingSentenceId": "reading-hungry-student-08",
+    "type": "production",
+    "text": "The dog's food is inside a box in the kitchen.",
+    "grammarPointIds": [
+      "location-of-topic",
+      "positional-nouns"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "food",
+        "vocabularyIds": [
+          "vocab-d26eb9131afb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-food-in-hand",
+    "readingSentenceId": "reading-hungry-student-09",
+    "solution": "I held a little dog food and stood in front of our dog.",
+    "grammarPointIds": [
+      "te-action-link",
+      "positional-nouns"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-food-in-hand",
+    "readingSentenceId": "reading-hungry-student-09",
+    "type": "production",
+    "text": "I held a little dog food and stood in front of our dog.",
+    "grammarPointIds": [
+      "te-action-link",
+      "positional-nouns"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "dog",
+        "vocabularyIds": [
+          "vocab-4cd1238bcb91"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-looks-happy",
+    "readingSentenceId": "reading-hungry-student-10",
+    "solution": "The dog looked at the food and seemed very happy.",
+    "grammarPointIds": [
+      "sou-appearance",
+      "te-action-link"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-looks-happy",
+    "readingSentenceId": "reading-hungry-student-10",
+    "type": "production",
+    "text": "The dog looked at the food and seemed very happy.",
+    "grammarPointIds": [
+      "sou-appearance",
+      "te-action-link"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "food",
+        "vocabularyIds": [
+          "vocab-d26eb9131afb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-brief-wait",
+    "readingSentenceId": "reading-hungry-student-11",
+    "solution": "When I said “Wait!”, the dog waited for just a little while.",
+    "grammarPointIds": [
+      "tara-conditional",
+      "to-quotation",
+      "dake-limitation"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-brief-wait",
+    "readingSentenceId": "reading-hungry-student-11",
+    "type": "production",
+    "text": "When I said “Wait!”, the dog waited for just a little while.",
+    "grammarPointIds": [
+      "tara-conditional",
+      "to-quotation",
+      "dake-limitation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "Wait",
+        "vocabularyIds": [
+          "vocab-6f30c5c5938f"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-give-reward",
+    "readingSentenceId": "reading-hungry-student-12",
+    "solution": "After that, I gave the dog some food.",
+    "grammarPointIds": [
+      "sorekara-connector",
+      "ageru",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-give-reward",
+    "readingSentenceId": "reading-hungry-student-12",
+    "type": "production",
+    "text": "After that, I gave the dog some food.",
+    "grammarPointIds": [
+      "sorekara-connector",
+      "ageru",
+      "ni-target-recipient"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "dog",
+        "vocabularyIds": [
+          "vocab-4cd1238bcb91"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-repeat-without-food",
+    "readingSentenceId": "reading-hungry-student-13",
+    "solution": "Next, I said the same word without holding any food.",
+    "grammarPointIds": [
+      "naide-without",
+      "onaji",
+      "wa-contrast"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-repeat-without-food",
+    "readingSentenceId": "reading-hungry-student-13",
+    "type": "production",
+    "text": "Next, I said the same word without holding any food.",
+    "grammarPointIds": [
+      "naide-without",
+      "onaji",
+      "wa-contrast"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "same",
+        "vocabularyIds": [
+          "vocab-9ff4f40a3428"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-empty-hand",
+    "readingSentenceId": "reading-hungry-student-14",
+    "solution": "There was nothing in my hand.",
+    "grammarPointIds": [
+      "question-word-mo",
+      "aru-existence"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-empty-hand",
+    "readingSentenceId": "reading-hungry-student-14",
+    "type": "production",
+    "text": "There was nothing in my hand.",
+    "grammarPointIds": [
+      "question-word-mo",
+      "aru-existence"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "hand",
+        "vocabularyIds": [
+          "vocab-b1ff052549ed"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-straight-to-kitchen",
+    "readingSentenceId": "reading-hungry-student-15",
+    "solution": "Without waiting, the dog went straight to the kitchen.",
+    "grammarPointIds": [
+      "naide-without",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-straight-to-kitchen",
+    "readingSentenceId": "reading-hungry-student-15",
+    "type": "production",
+    "text": "Without waiting, the dog went straight to the kitchen.",
+    "grammarPointIds": [
+      "naide-without",
+      "e-direction"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "kitchen",
+        "vocabularyIds": [
+          "vocab-2d479962e6d5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-food-more-important",
+    "readingSentenceId": "reading-hungry-student-16",
+    "solution": "My mother said, “Food is more important to it than Japanese, isn't it?”",
+    "grammarPointIds": [
+      "hou-ga-comparison",
+      "yone-confirmation",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-food-more-important",
+    "readingSentenceId": "reading-hungry-student-16",
+    "type": "production",
+    "text": "My mother said, “Food is more important to it than Japanese, isn't it?”",
+    "grammarPointIds": [
+      "hou-ga-comparison",
+      "yone-confirmation",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "important",
+        "vocabularyIds": [
+          "vocab-aad97415a910"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-possible-preference",
+    "readingSentenceId": "reading-hungry-student-17",
+    "solution": "Perhaps the dog likes eating more than studying.",
+    "grammarPointIds": [
+      "no-ga-suki",
+      "kamoshirenai",
+      "yori-comparison"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-possible-preference",
+    "readingSentenceId": "reading-hungry-student-17",
+    "type": "production",
+    "text": "Perhaps the dog likes eating more than studying.",
+    "grammarPointIds": [
+      "no-ga-suki",
+      "kamoshirenai",
+      "yori-comparison"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "eating",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-question-for-dog",
+    "readingSentenceId": "reading-hungry-student-18",
+    "solution": "I asked the dog, “So you don't study when there's no food?”",
+    "grammarPointIds": [
+      "to-conditional",
+      "no-desu",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-question-for-dog",
+    "readingSentenceId": "reading-hungry-student-18",
+    "type": "production",
+    "text": "I asked the dog, “So you don't study when there's no food?”",
+    "grammarPointIds": [
+      "to-conditional",
+      "no-desu",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "food",
+        "vocabularyIds": [
+          "vocab-d26eb9131afb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-same-as-narrator",
+    "readingSentenceId": "reading-hungry-student-19",
+    "solution": "My mother said, “You're the same, too.”",
+    "grammarPointIds": [
+      "onaji",
+      "mo-addition",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-same-as-narrator",
+    "readingSentenceId": "reading-hungry-student-19",
+    "type": "production",
+    "text": "My mother said, “You're the same, too.”",
+    "grammarPointIds": [
+      "onaji",
+      "mo-addition",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "same",
+        "vocabularyIds": [
+          "vocab-9ff4f40a3428"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-hungry-student-silent-snack",
+    "readingSentenceId": "reading-hungry-student-20",
+    "solution": "Without saying anything, I ate one more snack.",
+    "grammarPointIds": [
+      "naide-without",
+      "mou",
+      "quantity-position",
+      "question-word-mo"
+    ]
+  },
+  {
+    "id": "production-story-hungry-student-silent-snack",
+    "readingSentenceId": "reading-hungry-student-20",
+    "type": "production",
+    "text": "Without saying anything, I ate one more snack.",
+    "grammarPointIds": [
+      "naide-without",
+      "mou",
+      "quantity-position",
+      "question-word-mo"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "snack",
+        "vocabularyIds": [
+          "vocab-3841b646739f"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-recent-move",
+    "readingSentenceId": "reading-red-box-01",
+    "solution": "On Saturday, I went to my older sister's new house to help her, as she had just moved.",
+    "grammarPointIds": [
+      "ta-bakari",
+      "tame-ni-purpose"
+    ]
+  },
+  {
+    "id": "production-story-red-box-recent-move",
+    "readingSentenceId": "reading-red-box-01",
+    "type": "production",
+    "text": "On Saturday, I went to my older sister's new house to help her, as she had just moved.",
+    "grammarPointIds": [
+      "ta-bakari",
+      "tame-ni-purpose"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "moved",
+        "vocabularyIds": [
+          "vocab-d2b59fda6f1a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-afternoon-deadline",
+    "readingSentenceId": "reading-red-box-02",
+    "solution": "We planned to put away all the belongings in the room by three in the afternoon.",
+    "grammarPointIds": [
+      "made-ni",
+      "yotei-da"
+    ]
+  },
+  {
+    "id": "production-story-red-box-afternoon-deadline",
+    "readingSentenceId": "reading-red-box-02",
+    "type": "production",
+    "text": "We planned to put away all the belongings in the room by three in the afternoon.",
+    "grammarPointIds": [
+      "made-ni",
+      "yotei-da"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "belongings",
+        "vocabularyIds": [
+          "vocab-567f42b89301"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-books-while-cleaning",
+    "readingSentenceId": "reading-red-box-03",
+    "solution": "While my sister was cleaning the kitchen, I took the books out of their boxes and arranged them on a shelf.",
+    "grammarPointIds": [
+      "aida",
+      "te-action-link"
+    ]
+  },
+  {
+    "id": "production-story-red-box-books-while-cleaning",
+    "readingSentenceId": "reading-red-box-03",
+    "type": "production",
+    "text": "While my sister was cleaning the kitchen, I took the books out of their boxes and arranged them on a shelf.",
+    "grammarPointIds": [
+      "aida",
+      "te-action-link"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "shelf",
+        "vocabularyIds": [
+          "vocab-19250758e8ef"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-collection-since-childhood",
+    "readingSentenceId": "reading-red-box-04",
+    "solution": "She says she does not want to throw any of them away, because she has been collecting these books since childhood.",
+    "grammarPointIds": [
+      "sou-hearsay",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-story-red-box-collection-since-childhood",
+    "readingSentenceId": "reading-red-box-04",
+    "type": "production",
+    "text": "She says she does not want to throw any of them away, because she has been collecting these books since childhood.",
+    "grammarPointIds": [
+      "sou-hearsay",
+      "node-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "throw",
+        "vocabularyIds": [
+          "vocab-d4dc972ab510"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-surprisingly-light-box",
+    "readingSentenceId": "reading-red-box-05",
+    "solution": "Although the boxes of books were heavy, only the red box was very light.",
+    "grammarPointIds": [
+      "noni-concession",
+      "dake-limitation"
+    ]
+  },
+  {
+    "id": "production-story-red-box-surprisingly-light-box",
+    "readingSentenceId": "reading-red-box-05",
+    "type": "production",
+    "text": "Although the boxes of books were heavy, only the red box was very light.",
+    "grammarPointIds": [
+      "noni-concession",
+      "dake-limitation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "light",
+        "vocabularyIds": [
+          "vocab-463ea6ce108e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-old-papers",
+    "readingSentenceId": "reading-red-box-06",
+    "solution": "When I tried opening it, I found lots of old papers inside.",
+    "grammarPointIds": [
+      "te-miru",
+      "to-conditional"
+    ]
+  },
+  {
+    "id": "production-story-red-box-old-papers",
+    "readingSentenceId": "reading-red-box-06",
+    "type": "production",
+    "text": "When I tried opening it, I found lots of old papers inside.",
+    "grammarPointIds": [
+      "te-miru",
+      "to-conditional"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "papers",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-stopped-before-discarding",
+    "readingSentenceId": "reading-red-box-07",
+    "solution": "When I was about to throw the box away, my sister told me, “Wait a moment!”",
+    "grammarPointIds": [
+      "you-to-suru",
+      "passive-form"
+    ]
+  },
+  {
+    "id": "production-story-red-box-stopped-before-discarding",
+    "readingSentenceId": "reading-red-box-07",
+    "type": "production",
+    "text": "When I was about to throw the box away, my sister told me, “Wait a moment!”",
+    "grammarPointIds": [
+      "you-to-suru",
+      "passive-form"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "box",
+        "vocabularyIds": [
+          "vocab-28102c121d50"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-check-again",
+    "readingSentenceId": "reading-red-box-08",
+    "solution": "Since I was told to look carefully inside, I decided to check again.",
+    "grammarPointIds": [
+      "you-ni-to-iu",
+      "koto-ni-suru"
+    ]
+  },
+  {
+    "id": "production-story-red-box-check-again",
+    "readingSentenceId": "reading-red-box-08",
+    "type": "production",
+    "text": "Since I was told to look carefully inside, I decided to check again.",
+    "grammarPointIds": [
+      "you-ni-to-iu",
+      "koto-ni-suru"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "check",
+        "vocabularyIds": [
+          "vocab-162459c6ef3e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-childs-drawing",
+    "readingSentenceId": "reading-red-box-09",
+    "solution": "When I looked closely at one of the sheets, it seemed to be a child's drawing of a house.",
+    "grammarPointIds": [
+      "you-da-inference",
+      "relative-clause"
+    ]
+  },
+  {
+    "id": "production-story-red-box-childs-drawing",
+    "readingSentenceId": "reading-red-box-09",
+    "type": "production",
+    "text": "When I looked closely at one of the sheets, it seemed to be a child's drawing of a house.",
+    "grammarPointIds": [
+      "you-da-inference",
+      "relative-clause"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "drawing",
+        "vocabularyIds": [
+          "vocab-1ec067551dd4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-thank-you-written",
+    "readingSentenceId": "reading-red-box-10",
+    "solution": "Under the drawing, someone had written “Thank you.”",
+    "grammarPointIds": [
+      "te-aru-result-state",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-red-box-thank-you-written",
+    "readingSentenceId": "reading-red-box-10",
+    "type": "production",
+    "text": "Under the drawing, someone had written “Thank you.”",
+    "grammarPointIds": [
+      "te-aru-result-state",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "written",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-why-keep-this",
+    "readingSentenceId": "reading-red-box-11",
+    "solution": "I asked, “Why do you treasure such a badly drawn picture?”",
+    "grammarPointIds": [
+      "no-question",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-red-box-why-keep-this",
+    "readingSentenceId": "reading-red-box-11",
+    "type": "production",
+    "text": "I asked, “Why do you treasure such a badly drawn picture?”",
+    "grammarPointIds": [
+      "no-question",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "treasure",
+        "vocabularyIds": [
+          "vocab-b98c225a97fd"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-unexpected-artist",
+    "readingSentenceId": "reading-red-box-12",
+    "solution": "My sister smiled and said, “The person who drew that was not me, but you.”",
+    "grammarPointIds": [
+      "no-wa-da",
+      "to-iu"
+    ]
+  },
+  {
+    "id": "production-story-red-box-unexpected-artist",
+    "readingSentenceId": "reading-red-box-12",
+    "type": "production",
+    "text": "My sister smiled and said, “The person who drew that was not me, but you.”",
+    "grammarPointIds": [
+      "no-wa-da",
+      "to-iu"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "drew",
+        "vocabularyIds": [
+          "vocab-40e15207ddda"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-childhood-present",
+    "readingSentenceId": "reading-red-box-13",
+    "solution": "It was a drawing I had given my sister for her birthday when I was five.",
+    "grammarPointIds": [
+      "relative-clause",
+      "toki"
+    ]
+  },
+  {
+    "id": "production-story-red-box-childhood-present",
+    "readingSentenceId": "reading-red-box-13",
+    "type": "production",
+    "text": "It was a drawing I had given my sister for her birthday when I was five.",
+    "grammarPointIds": [
+      "relative-clause",
+      "toki"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "birthday",
+        "vocabularyIds": [
+          "vocab-5841d3db2c97"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-different-memories",
+    "readingSentenceId": "reading-red-box-14",
+    "solution": "I do not remember much about that time, but my sister remembered it clearly.",
+    "grammarPointIds": [
+      "ga-contrast",
+      "te-iru-result-state"
+    ]
+  },
+  {
+    "id": "production-story-red-box-different-memories",
+    "readingSentenceId": "reading-red-box-14",
+    "type": "production",
+    "text": "I do not remember much about that time, but my sister remembered it clearly.",
+    "grammarPointIds": [
+      "ga-contrast",
+      "te-iru-result-state"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "remember",
+        "vocabularyIds": [
+          "vocab-0ec838cc07ea"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-keep-on-every-move",
+    "readingSentenceId": "reading-red-box-15",
+    "solution": "She says she makes a point of taking this drawing with her, wherever she moves.",
+    "grammarPointIds": [
+      "temo-concession",
+      "koto-ni-shiteiru",
+      "te-iku"
+    ]
+  },
+  {
+    "id": "production-story-red-box-keep-on-every-move",
+    "readingSentenceId": "reading-red-box-15",
+    "type": "production",
+    "text": "She says she makes a point of taking this drawing with her, wherever she moves.",
+    "grammarPointIds": [
+      "temo-concession",
+      "koto-ni-shiteiru",
+      "te-iku"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "drawing",
+        "vocabularyIds": [
+          "vocab-1ec067551dd4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-lost-for-words",
+    "readingSentenceId": "reading-red-box-16",
+    "solution": "I could not say anything and looked at the drawing for a while.",
+    "grammarPointIds": [
+      "potential-form",
+      "nakute-connective"
+    ]
+  },
+  {
+    "id": "production-story-red-box-lost-for-words",
+    "readingSentenceId": "reading-red-box-16",
+    "type": "production",
+    "text": "I could not say anything and looked at the drawing for a while.",
+    "grammarPointIds": [
+      "potential-form",
+      "nakute-connective"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "while",
+        "vocabularyIds": [
+          "vocab-f5635cfb88b4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-glad-not-discarded",
+    "readingSentenceId": "reading-red-box-17",
+    "solution": "I was glad that I had not thrown away such a precious drawing.",
+    "grammarPointIds": [
+      "te-yokatta",
+      "to-omou"
+    ]
+  },
+  {
+    "id": "production-story-red-box-glad-not-discarded",
+    "readingSentenceId": "reading-red-box-17",
+    "type": "production",
+    "text": "I was glad that I had not thrown away such a precious drawing.",
+    "grammarPointIds": [
+      "te-yokatta",
+      "to-omou"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "precious",
+        "vocabularyIds": [
+          "vocab-b98c225a97fd"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-next-drawing-request",
+    "readingSentenceId": "reading-red-box-18",
+    "solution": "My sister asked me, “Next time, draw something even better, all right?”",
+    "grammarPointIds": [
+      "passive-form",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-red-box-next-drawing-request",
+    "readingSentenceId": "reading-red-box-18",
+    "type": "production",
+    "text": "My sister asked me, “Next time, draw something even better, all right?”",
+    "grammarPointIds": [
+      "passive-form",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "draw",
+        "vocabularyIds": [
+          "vocab-40e15207ddda"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-drawing-on-desk",
+    "readingSentenceId": "reading-red-box-19",
+    "solution": "I put the drawing on my sister's desk and left it there.",
+    "grammarPointIds": [
+      "te-oku",
+      "positional-nouns"
+    ]
+  },
+  {
+    "id": "production-story-red-box-drawing-on-desk",
+    "readingSentenceId": "reading-red-box-19",
+    "type": "production",
+    "text": "I put the drawing on my sister's desk and left it there.",
+    "grammarPointIds": [
+      "te-oku",
+      "positional-nouns"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "desk",
+        "vocabularyIds": [
+          "vocab-0cbee2d10284"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-red-box-missed-deadline-happy-sister",
+    "readingSentenceId": "reading-red-box-20",
+    "solution": "We had not finished by three, but my sister was looking at the drawing happily.",
+    "grammarPointIds": [
+      "sou-modifier",
+      "ga-contrast"
+    ]
+  },
+  {
+    "id": "production-story-red-box-missed-deadline-happy-sister",
+    "readingSentenceId": "reading-red-box-20",
+    "type": "production",
+    "text": "We had not finished by three, but my sister was looking at the drawing happily.",
+    "grammarPointIds": [
+      "sou-modifier",
+      "ga-contrast"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "happily",
+        "vocabularyIds": [
+          "vocab-58974357459a"
+        ]
+      }
+    ]
   }
 ]

@@ -10893,5 +10893,565 @@
         ]
       }
     ]
+  },
+  "story-hungry-student-likes-studying": {
+    "translation": "J’aime étudier le japonais."
+  },
+  "production-story-hungry-student-likes-studying": {
+    "translation": "J’aime étudier le japonais.",
+    "promptVocabularyHints": [
+      {
+        "word": "japonais",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-study-snacks": {
+    "translation": "Quand j’étudie, je mange toujours des friandises."
+  },
+  "production-story-hungry-student-study-snacks": {
+    "translation": "Quand j’étudie, je mange toujours des friandises.",
+    "promptVocabularyHints": [
+      {
+        "word": "friandises",
+        "vocabularyIds": [
+          "vocab-3841b646739f"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-already-knows-sit": {
+    "translation": "Quand je dis « Assis ! » à notre chien, il s’assoit tout de suite."
+  },
+  "production-story-hungry-student-already-knows-sit": {
+    "translation": "Quand je dis « Assis ! » à notre chien, il s’assoit tout de suite.",
+    "promptVocabularyHints": [
+      {
+        "word": "chien",
+        "vocabularyIds": [
+          "vocab-4cd1238bcb91"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-wait-not-yet": {
+    "translation": "Mais il ne comprend pas encore « Attends ! »."
+  },
+  "production-story-hungry-student-wait-not-yet": {
+    "translation": "Mais il ne comprend pas encore « Attends ! ».",
+    "promptVocabularyHints": [
+      {
+        "word": "Attends",
+        "vocabularyIds": [
+          "vocab-6f30c5c5938f"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-teaching-plan": {
+    "translation": "Aujourd’hui, j’ai pensé que j’aimerais apprendre ce mot à notre chien."
+  },
+  "production-story-hungry-student-teaching-plan": {
+    "translation": "Aujourd’hui, j’ai pensé que j’aimerais apprendre ce mot à notre chien.",
+    "promptVocabularyHints": [
+      {
+        "word": "mot",
+        "vocabularyIds": [
+          "vocab-cef4a2049ff3"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-ask-for-method": {
+    "translation": "J’ai demandé à ma mère : « Comment faire pour lui apprendre ? »"
+  },
+  "production-story-hungry-student-ask-for-method": {
+    "translation": "J’ai demandé à ma mère : « Comment faire pour lui apprendre ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-mothers-advice": {
+    "translation": "Ma mère a dit : « Montre-lui d’abord de la nourriture, puis apprends-lui le mot, s’il te plaît. »"
+  },
+  "production-story-hungry-student-mothers-advice": {
+    "translation": "Ma mère a dit : « Montre-lui d’abord de la nourriture, puis apprends-lui le mot, s’il te plaît. »",
+    "promptVocabularyHints": [
+      {
+        "word": "nourriture",
+        "vocabularyIds": [
+          "vocab-d26eb9131afb"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-food-location": {
+    "translation": "La nourriture du chien est dans une boîte dans la cuisine."
+  },
+  "production-story-hungry-student-food-location": {
+    "translation": "La nourriture du chien est dans une boîte dans la cuisine.",
+    "promptVocabularyHints": [
+      {
+        "word": "nourriture",
+        "vocabularyIds": [
+          "vocab-d26eb9131afb"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-food-in-hand": {
+    "translation": "Je me suis placé devant notre chien en tenant un peu de sa nourriture."
+  },
+  "production-story-hungry-student-food-in-hand": {
+    "translation": "Je me suis placé devant notre chien en tenant un peu de sa nourriture.",
+    "promptVocabularyHints": [
+      {
+        "word": "chien",
+        "vocabularyIds": [
+          "vocab-4cd1238bcb91"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-looks-happy": {
+    "translation": "Le chien a regardé la nourriture et semblait très content."
+  },
+  "production-story-hungry-student-looks-happy": {
+    "translation": "Le chien a regardé la nourriture et semblait très content.",
+    "promptVocabularyHints": [
+      {
+        "word": "nourriture",
+        "vocabularyIds": [
+          "vocab-d26eb9131afb"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-brief-wait": {
+    "translation": "Quand j’ai dit « Attends ! », le chien a attendu juste un petit moment."
+  },
+  "production-story-hungry-student-brief-wait": {
+    "translation": "Quand j’ai dit « Attends ! », le chien a attendu juste un petit moment.",
+    "promptVocabularyHints": [
+      {
+        "word": "Attends",
+        "vocabularyIds": [
+          "vocab-6f30c5c5938f"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-give-reward": {
+    "translation": "Ensuite, j’ai donné de la nourriture au chien."
+  },
+  "production-story-hungry-student-give-reward": {
+    "translation": "Ensuite, j’ai donné de la nourriture au chien.",
+    "promptVocabularyHints": [
+      {
+        "word": "chien",
+        "vocabularyIds": [
+          "vocab-4cd1238bcb91"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-repeat-without-food": {
+    "translation": "Ensuite, j’ai dit le même mot sans tenir de nourriture."
+  },
+  "production-story-hungry-student-repeat-without-food": {
+    "translation": "Ensuite, j’ai dit le même mot sans tenir de nourriture.",
+    "promptVocabularyHints": [
+      {
+        "word": "même",
+        "vocabularyIds": [
+          "vocab-9ff4f40a3428"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-empty-hand": {
+    "translation": "Il n’y avait rien dans ma main."
+  },
+  "production-story-hungry-student-empty-hand": {
+    "translation": "Il n’y avait rien dans ma main.",
+    "promptVocabularyHints": [
+      {
+        "word": "main",
+        "vocabularyIds": [
+          "vocab-b1ff052549ed"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-straight-to-kitchen": {
+    "translation": "Sans attendre, le chien est allé directement dans la cuisine."
+  },
+  "production-story-hungry-student-straight-to-kitchen": {
+    "translation": "Sans attendre, le chien est allé directement dans la cuisine.",
+    "promptVocabularyHints": [
+      {
+        "word": "cuisine",
+        "vocabularyIds": [
+          "vocab-2d479962e6d5"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-food-more-important": {
+    "translation": "Ma mère a dit : « Pour lui, la nourriture est plus importante que le japonais, n’est-ce pas ? »"
+  },
+  "production-story-hungry-student-food-more-important": {
+    "translation": "Ma mère a dit : « Pour lui, la nourriture est plus importante que le japonais, n’est-ce pas ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "importante",
+        "vocabularyIds": [
+          "vocab-aad97415a910"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-possible-preference": {
+    "translation": "Le chien préfère peut-être manger plutôt qu’étudier."
+  },
+  "production-story-hungry-student-possible-preference": {
+    "translation": "Le chien préfère peut-être manger plutôt qu’étudier.",
+    "promptVocabularyHints": [
+      {
+        "word": "manger",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-question-for-dog": {
+    "translation": "J’ai demandé au chien : « Quand il n’y a pas de nourriture, tu n’étudies pas ? »"
+  },
+  "production-story-hungry-student-question-for-dog": {
+    "translation": "J’ai demandé au chien : « Quand il n’y a pas de nourriture, tu n’étudies pas ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "nourriture",
+        "vocabularyIds": [
+          "vocab-d26eb9131afb"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-same-as-narrator": {
+    "translation": "Ma mère a dit : « Toi aussi, tu es pareil. »"
+  },
+  "production-story-hungry-student-same-as-narrator": {
+    "translation": "Ma mère a dit : « Toi aussi, tu es pareil. »",
+    "promptVocabularyHints": [
+      {
+        "word": "pareil",
+        "vocabularyIds": [
+          "vocab-9ff4f40a3428"
+        ]
+      }
+    ]
+  },
+  "story-hungry-student-silent-snack": {
+    "translation": "Sans rien dire, j’ai mangé encore une friandise."
+  },
+  "production-story-hungry-student-silent-snack": {
+    "translation": "Sans rien dire, j’ai mangé encore une friandise.",
+    "promptVocabularyHints": [
+      {
+        "word": "friandise",
+        "vocabularyIds": [
+          "vocab-3841b646739f"
+        ]
+      }
+    ]
+  },
+  "story-red-box-recent-move": {
+    "translation": "Samedi, je suis allé dans la nouvelle maison de ma sœur aînée pour l’aider, car elle venait de déménager."
+  },
+  "production-story-red-box-recent-move": {
+    "translation": "Samedi, je suis allé dans la nouvelle maison de ma sœur aînée pour l’aider, car elle venait de déménager.",
+    "promptVocabularyHints": [
+      {
+        "word": "déménager",
+        "vocabularyIds": [
+          "vocab-d2b59fda6f1a"
+        ]
+      }
+    ]
+  },
+  "story-red-box-afternoon-deadline": {
+    "translation": "Nous avions prévu de ranger toutes les affaires de la pièce pour quinze heures."
+  },
+  "production-story-red-box-afternoon-deadline": {
+    "translation": "Nous avions prévu de ranger toutes les affaires de la pièce pour quinze heures.",
+    "promptVocabularyHints": [
+      {
+        "word": "affaires",
+        "vocabularyIds": [
+          "vocab-567f42b89301"
+        ]
+      }
+    ]
+  },
+  "story-red-box-books-while-cleaning": {
+    "translation": "Pendant que ma sœur nettoyait la cuisine, j’ai sorti les livres de leurs cartons et les ai rangés sur une étagère."
+  },
+  "production-story-red-box-books-while-cleaning": {
+    "translation": "Pendant que ma sœur nettoyait la cuisine, j’ai sorti les livres de leurs cartons et les ai rangés sur une étagère.",
+    "promptVocabularyHints": [
+      {
+        "word": "étagère",
+        "vocabularyIds": [
+          "vocab-19250758e8ef"
+        ]
+      }
+    ]
+  },
+  "story-red-box-collection-since-childhood": {
+    "translation": "Elle dit qu’elle ne veut en jeter aucun, car elle collectionne ces livres depuis son enfance."
+  },
+  "production-story-red-box-collection-since-childhood": {
+    "translation": "Elle dit qu’elle ne veut en jeter aucun, car elle collectionne ces livres depuis son enfance.",
+    "promptVocabularyHints": [
+      {
+        "word": "jeter",
+        "vocabularyIds": [
+          "vocab-d4dc972ab510"
+        ]
+      }
+    ]
+  },
+  "story-red-box-surprisingly-light-box": {
+    "translation": "Alors que les cartons de livres étaient lourds, seul le carton rouge était très léger."
+  },
+  "production-story-red-box-surprisingly-light-box": {
+    "translation": "Alors que les cartons de livres étaient lourds, seul le carton rouge était très léger.",
+    "promptVocabularyHints": [
+      {
+        "word": "léger",
+        "vocabularyIds": [
+          "vocab-463ea6ce108e"
+        ]
+      }
+    ]
+  },
+  "story-red-box-old-papers": {
+    "translation": "Quand je l’ai ouvert pour voir, j’ai trouvé beaucoup de vieux papiers à l’intérieur."
+  },
+  "production-story-red-box-old-papers": {
+    "translation": "Quand je l’ai ouvert pour voir, j’ai trouvé beaucoup de vieux papiers à l’intérieur.",
+    "promptVocabularyHints": [
+      {
+        "word": "papiers",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
+        ]
+      }
+    ]
+  },
+  "story-red-box-stopped-before-discarding": {
+    "translation": "Au moment où j’allais jeter le carton, ma sœur m’a dit : « Attends un peu ! »"
+  },
+  "production-story-red-box-stopped-before-discarding": {
+    "translation": "Au moment où j’allais jeter le carton, ma sœur m’a dit : « Attends un peu ! »",
+    "promptVocabularyHints": [
+      {
+        "word": "carton",
+        "vocabularyIds": [
+          "vocab-28102c121d50"
+        ]
+      }
+    ]
+  },
+  "story-red-box-check-again": {
+    "translation": "Comme on m’avait dit de bien regarder à l’intérieur, j’ai décidé de vérifier encore une fois."
+  },
+  "production-story-red-box-check-again": {
+    "translation": "Comme on m’avait dit de bien regarder à l’intérieur, j’ai décidé de vérifier encore une fois.",
+    "promptVocabularyHints": [
+      {
+        "word": "vérifier",
+        "vocabularyIds": [
+          "vocab-162459c6ef3e"
+        ]
+      }
+    ]
+  },
+  "story-red-box-childs-drawing": {
+    "translation": "En regardant de près une des feuilles, il m’a semblé que c’était un dessin de maison fait par un enfant."
+  },
+  "production-story-red-box-childs-drawing": {
+    "translation": "En regardant de près une des feuilles, il m’a semblé que c’était un dessin de maison fait par un enfant.",
+    "promptVocabularyHints": [
+      {
+        "word": "dessin",
+        "vocabularyIds": [
+          "vocab-1ec067551dd4"
+        ]
+      }
+    ]
+  },
+  "story-red-box-thank-you-written": {
+    "translation": "Sous le dessin, il était écrit « Merci »."
+  },
+  "production-story-red-box-thank-you-written": {
+    "translation": "Sous le dessin, il était écrit « Merci ».",
+    "promptVocabularyHints": [
+      {
+        "word": "écrit",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      }
+    ]
+  },
+  "story-red-box-why-keep-this": {
+    "translation": "J’ai demandé : « Pourquoi tiens-tu tant à un dessin aussi mal fait ? »"
+  },
+  "production-story-red-box-why-keep-this": {
+    "translation": "J’ai demandé : « Pourquoi tiens-tu tant à un dessin aussi mal fait ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "tiens",
+        "vocabularyIds": [
+          "vocab-b98c225a97fd"
+        ]
+      }
+    ]
+  },
+  "story-red-box-unexpected-artist": {
+    "translation": "Ma sœur a souri et a dit : « Ce n’est pas moi qui ai dessiné ça, c’est toi. »"
+  },
+  "production-story-red-box-unexpected-artist": {
+    "translation": "Ma sœur a souri et a dit : « Ce n’est pas moi qui ai dessiné ça, c’est toi. »",
+    "promptVocabularyHints": [
+      {
+        "word": "dessiné",
+        "vocabularyIds": [
+          "vocab-40e15207ddda"
+        ]
+      }
+    ]
+  },
+  "story-red-box-childhood-present": {
+    "translation": "C’était un dessin que j’avais offert à ma sœur pour son anniversaire, quand j’avais cinq ans."
+  },
+  "production-story-red-box-childhood-present": {
+    "translation": "C’était un dessin que j’avais offert à ma sœur pour son anniversaire, quand j’avais cinq ans.",
+    "promptVocabularyHints": [
+      {
+        "word": "anniversaire",
+        "vocabularyIds": [
+          "vocab-5841d3db2c97"
+        ]
+      }
+    ]
+  },
+  "story-red-box-different-memories": {
+    "translation": "Je ne me souviens pas beaucoup de cette époque, mais ma sœur s’en souvenait très bien."
+  },
+  "production-story-red-box-different-memories": {
+    "translation": "Je ne me souviens pas beaucoup de cette époque, mais ma sœur s’en souvenait très bien.",
+    "promptVocabularyHints": [
+      {
+        "word": "souviens",
+        "vocabularyIds": [
+          "vocab-0ec838cc07ea"
+        ]
+      }
+    ]
+  },
+  "story-red-box-keep-on-every-move": {
+    "translation": "Elle dit qu’elle tient à emporter ce dessin avec elle, quel que soit l’endroit où elle déménage."
+  },
+  "production-story-red-box-keep-on-every-move": {
+    "translation": "Elle dit qu’elle tient à emporter ce dessin avec elle, quel que soit l’endroit où elle déménage.",
+    "promptVocabularyHints": [
+      {
+        "word": "dessin",
+        "vocabularyIds": [
+          "vocab-1ec067551dd4"
+        ]
+      }
+    ]
+  },
+  "story-red-box-lost-for-words": {
+    "translation": "Je n’arrivais pas à dire un mot et j’ai regardé le dessin un moment."
+  },
+  "production-story-red-box-lost-for-words": {
+    "translation": "Je n’arrivais pas à dire un mot et j’ai regardé le dessin un moment.",
+    "promptVocabularyHints": [
+      {
+        "word": "moment",
+        "vocabularyIds": [
+          "vocab-f5635cfb88b4"
+        ]
+      }
+    ]
+  },
+  "story-red-box-glad-not-discarded": {
+    "translation": "J’étais soulagé de ne pas avoir jeté ce dessin précieux."
+  },
+  "production-story-red-box-glad-not-discarded": {
+    "translation": "J’étais soulagé de ne pas avoir jeté ce dessin précieux.",
+    "promptVocabularyHints": [
+      {
+        "word": "précieux",
+        "vocabularyIds": [
+          "vocab-b98c225a97fd"
+        ]
+      }
+    ]
+  },
+  "story-red-box-next-drawing-request": {
+    "translation": "Ma sœur m’a demandé : « La prochaine fois, dessine quelque chose d’encore mieux, d’accord ? »"
+  },
+  "production-story-red-box-next-drawing-request": {
+    "translation": "Ma sœur m’a demandé : « La prochaine fois, dessine quelque chose d’encore mieux, d’accord ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "dessine",
+        "vocabularyIds": [
+          "vocab-40e15207ddda"
+        ]
+      }
+    ]
+  },
+  "story-red-box-drawing-on-desk": {
+    "translation": "J’ai posé le dessin sur le bureau de ma sœur et l’y ai laissé."
+  },
+  "production-story-red-box-drawing-on-desk": {
+    "translation": "J’ai posé le dessin sur le bureau de ma sœur et l’y ai laissé.",
+    "promptVocabularyHints": [
+      {
+        "word": "bureau",
+        "vocabularyIds": [
+          "vocab-0cbee2d10284"
+        ]
+      }
+    ]
+  },
+  "story-red-box-missed-deadline-happy-sister": {
+    "translation": "Nous n’avions pas terminé à quinze heures, mais ma sœur regardait le dessin avec un air heureux."
+  },
+  "production-story-red-box-missed-deadline-happy-sister": {
+    "translation": "Nous n’avions pas terminé à quinze heures, mais ma sœur regardait le dessin avec un air heureux.",
+    "promptVocabularyHints": [
+      {
+        "word": "heureux",
+        "vocabularyIds": [
+          "vocab-58974357459a"
+        ]
+      }
+    ]
   }
 }
