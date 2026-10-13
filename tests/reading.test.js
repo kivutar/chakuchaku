@@ -257,6 +257,14 @@ test("the N5 email story has a different plot, accurate counters, and evidence f
         .map(({ surface }) => surface).join(""), surface);
     }
   }
+  const invitation = story.sentences[4];
+  const voice = createReadingVoiceItems(sources).find(({ id }) => id === invitation.id);
+  assert.equal(voice.speechText,
+    "わたしは、ひるごはんのあとで、いっしょにやってみませんか、といいました。");
+  const compact = (value) => value.replace(/[\p{P}\s]/gu, "");
+  assert.equal(compact(voice.speechText), compact(invitation.tokens
+    .map(({ reading, surface }) => reading || surface).join("")),
+  "the spoken invitation must include the narrator and quotation verb, not only the quoted words");
 });
 
 test("the N5 train story distinguishes plans from events, has correct readings, and broadens grammar coverage", async () => {

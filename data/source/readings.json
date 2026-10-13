@@ -1146,6 +1146,7 @@
         "id": "reading-grandpa-email-05",
         "paragraph": 2,
         "text": "私は「昼御飯の後で、一緒にやってみませんか」と言いました。",
+        "speechText": "わたしは、ひるごはんのあとで、いっしょにやってみませんか、といいました。",
         "grammarPointIds": [
           "ato-de",
           "te-miru",
