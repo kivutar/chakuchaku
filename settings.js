@@ -10,6 +10,7 @@
     studyLevel: "n5",
     newContentPace: "balanced",
     furigana: true,
+    adaptiveFurigana: false,
     autoPlayAudio: false,
     visualEffects: true,
     soundEffects: false,
@@ -21,6 +22,7 @@
   });
   const booleanSettingNames = [
     "furigana",
+    "adaptiveFurigana",
     "autoPlayAudio",
     "visualEffects",
     "soundEffects",

@@ -513,6 +513,16 @@ as durable knowledge.
 
 ## Spaced repetition
 
+Settings includes an optional **Adaptive furigana** toggle for stories, grammar
+prompts, and Japanese grammar solutions, including daily-review grammar cards.
+It hides a token's reading only when all its kanji are Mature or Mastered under
+the same criteria as Statistics (Review state and at least 30 days of stability).
+Unknown, out-of-curriculum, Learning, and Relearning kanji keep their readings.
+Compound readings are kept intact rather than guessing a character-by-character
+alignment. The option defaults off, applies immediately, and is included in
+progress exports; the main Furigana switch still controls all sections.
+Displaying or hiding a reading never changes SRS progress.
+
 Each assessed grammar point has its own card, scheduled by the MIT-licensed
 [`ts-fsrs`](https://open-spaced-repetition.github.io/ts-fsrs/) package. After
 viewing a solution, the learner marks every listed point as `できなかった` or

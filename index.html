@@ -369,6 +369,22 @@
           </label>
         </div>
         <div class="setting-row">
+          <span class="setting-label">
+            <span id="adaptive-furigana-label" data-i18n="settings.adaptiveFurigana">Adaptive furigana</span>
+            <small id="adaptive-furigana-description" data-i18n="settings.adaptiveFuriganaDescription">Reading and grammar: hide readings when all kanji in a word are mature or mastered.</small>
+          </span>
+          <label class="setting-control">
+            <input
+              type="checkbox"
+              data-setting="adaptiveFurigana"
+              aria-labelledby="adaptive-furigana-label"
+              aria-describedby="adaptive-furigana-description"
+            >
+            <span class="setting-switch" aria-hidden="true"></span>
+            <span class="setting-state" data-setting-state="adaptiveFurigana"></span>
+          </label>
+        </div>
+        <div class="setting-row">
           <span id="auto-play-audio-label" data-i18n="settings.autoPlayAudio">Auto play audio</span>
           <label class="setting-control">
             <input

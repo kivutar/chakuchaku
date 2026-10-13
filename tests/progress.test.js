@@ -44,7 +44,7 @@ test("progress backups round-trip learning data without session secrets", () => 
     id: "coffee-before-work",
     text: "毎朝、コーヒーを飲んでから仕事に行きます。"
   }, "I drink coffee before work.", { storage: sourceStorage, now: reviewedAt });
-  globalThis.JlptN5Settings.writeSettings({ furigana: false }, { storage: sourceStorage });
+  globalThis.JlptN5Settings.writeSettings({ furigana: true, adaptiveFurigana: true }, { storage: sourceStorage });
 
   const serialized = globalThis.JlptN5Progress.serializeBackup({
     storage: sourceStorage,
@@ -76,8 +76,9 @@ test("progress backups round-trip learning data without session secrets", () => 
   );
   assert.equal(
     globalThis.JlptN5Settings.readSettings({ storage: destinationStorage }).furigana,
-    false
+    true
   );
+  assert.equal(globalThis.JlptN5Settings.readSettings({ storage: destinationStorage }).adaptiveFurigana, true);
 });
 test("invalid progress is rejected before stored values change", () => {
   const storage = new MemoryStorage();

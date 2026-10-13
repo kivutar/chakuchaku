@@ -41,6 +41,7 @@ test("settings use learner-friendly defaults", () => {
     studyLevel: "n5",
     newContentPace: "balanced",
     furigana: true,
+    adaptiveFurigana: false,
     autoPlayAudio: false,
     visualEffects: true,
     soundEffects: false,
@@ -83,6 +84,23 @@ test("feedback preferences migrate, persist independently, and reject non-boolea
   api.writeSettings({ visualEffects: "false", soundEffects: 1 });
   assert.equal(api.readSettings().visualEffects, true);
   assert.equal(api.readSettings().soundEffects, false);
+});
+
+test("adaptive furigana defaults off for existing settings and persist independently", () => {
+  const storage = createStorage(JSON.stringify({ version: 3, furigana: true }));
+  const api = loadSettingsApi(storage);
+  assert.equal(api.readSettings().adaptiveFurigana, false);
+  api.writeSettings({ adaptiveFurigana: true });
+  assert.equal(api.readSettings().adaptiveFurigana, true);
+  api.writeSettings({ furigana: false });
+  assert.equal(api.readSettings().adaptiveFurigana, true);
+  api.writeSettings({ adaptiveFurigana: "true" });
+  assert.equal(api.readSettings().adaptiveFurigana, false);
+  for (const version of [1, 2]) {
+    const legacy = loadSettingsApi(createStorage(JSON.stringify({ version, furigana: false }))).readSettings();
+    assert.equal(legacy.furigana, false);
+    assert.equal(legacy.adaptiveFurigana, false);
+  }
 });
 
 test("OpenAI keys remain in session storage and can be cleared", () => {

@@ -45,6 +45,7 @@ const settingInputs = [...settingsDialog.querySelectorAll("[data-setting]")];
 const settingStateElements = [...settingsDialog.querySelectorAll("[data-setting-state]")];
 const studyLevelInput = settingsDialog.querySelector('[data-setting="studyLevel"]');
 const newContentPaceInput = settingsDialog.querySelector('[data-setting="newContentPace"]');
+const adaptiveFuriganaInput = settingsDialog.querySelector('[data-setting="adaptiveFurigana"]');
 const openAiApiKeyInput = document.querySelector("#openai-api-key");
 const aiAutoCorrectInput = settingsDialog.querySelector('[data-setting="aiAutoCorrect"]');
 const progressExportButton = document.querySelector("#progress-export-button");
@@ -116,6 +117,7 @@ let currentLesson;
 let grammarPointById = new Map();
 let vocabularyById;
 let kanjiById;
+let acquiredKanjiCharacters = new Set();
 let hiraganaWords;
 let katakanaWords;
 let kanjiExercisePool;
@@ -548,6 +550,7 @@ function applySettings() {
   const autoCorrectAvailable = Boolean(openAiApiKey);
 
   document.documentElement.dataset.furigana = String(settings.furigana);
+  document.documentElement.dataset.adaptiveFurigana = String(settings.adaptiveFurigana);
   document.documentElement.dataset.tokenColoring = String(settings.tokenColoring);
   document.documentElement.dataset.translationTooltips = String(settings.translationTooltips);
   document.documentElement.dataset.visualEffects = String(settings.visualEffects);
@@ -583,6 +586,9 @@ function applySettings() {
     "is-disabled",
     !settings.reviewReminder
   );
+  adaptiveFuriganaInput.disabled = !settings.furigana;
+  adaptiveFuriganaInput.closest(".setting-row").classList.toggle("is-disabled", !settings.furigana);
+  refreshAdaptiveFurigana();
 }
 
 async function synchronizeReviewReminder({ requestPermission = false } = {}) {
@@ -2489,7 +2495,41 @@ function createCharacterElement(character) {
   return characterElement;
 }
 
-function createTokenElement(token, newGrammarPointIds = [], { animate = true } = {}) {
+function getAcquiredKanjiCharacters(kanji, cards, now = new Date()) {
+  return new Set([...kanji.values()].filter(({ id }) => {
+    const knowledge = globalThis.JlptN5Statistics.getKnowledgeLevel(
+      cards[id], now, globalThis.JlptN5Srs.getRetrievability
+    );
+    return ["mature", "mastered"].includes(knowledge.key);
+  }).map(({ character }) => character));
+}
+
+function hasOnlyKnownKanji(surface, knownCharacters) {
+  // Furigana annotate whole tokens; do not guess how to split compound readings.
+  // The iteration mark repeats a preceding kanji, not a separate SRS unit.
+  const characters = [...surface].filter((character) =>
+    character !== "々" && /\p{Script=Han}/u.test(character));
+  return characters.length > 0 && characters.every((character) => knownCharacters.has(character));
+}
+
+function markAdaptiveFurigana(ruby, surface) {
+  ruby.dataset.furiganaSurface = surface;
+  ruby.classList.toggle("has-known-kanji", hasOnlyKnownKanji(surface, acquiredKanjiCharacters));
+}
+
+function refreshAdaptiveFurigana() {
+  if (!settings.adaptiveFurigana || !kanjiById) return;
+  acquiredKanjiCharacters = getAcquiredKanjiCharacters(
+    kanjiById, globalThis.JlptN5Srs.readSrsData().kanjiCards
+  );
+  for (const ruby of document.querySelectorAll("ruby[data-furigana-surface]")) {
+    markAdaptiveFurigana(ruby, ruby.dataset.furiganaSurface);
+  }
+}
+
+function createTokenElement(token, newGrammarPointIds = [], {
+  animate = true, adaptiveFurigana = false
+} = {}) {
   const tokenElement = document.createElement("span");
   const vocabularyEntry = vocabularyById?.get(token.vocabularyId);
   let exposesVocabularyMeaning = false;
@@ -2529,7 +2569,7 @@ function createTokenElement(token, newGrammarPointIds = [], { animate = true } =
   }
 
   if (!animate) {
-    tokenElement.append(createFuriganaContent(token.surface, token.reading));
+    tokenElement.append(createFuriganaContent(token.surface, token.reading, { adaptiveFurigana }));
     if (exposesVocabularyMeaning) {
       tokenElement.tabIndex = 0;
     }
@@ -2550,6 +2590,7 @@ function createTokenElement(token, newGrammarPointIds = [], { animate = true } =
       `${getCharacterRevealDelay(characterIndex - 1, true)}ms`
     );
     ruby.append(annotation);
+    if (adaptiveFurigana) markAdaptiveFurigana(ruby, token.surface);
     tokenElement.append(ruby);
   } else {
     for (const character of token.surface) {
@@ -2590,7 +2631,8 @@ function renderSentence(text, tokens, grammarHighlights = []) {
   for (const [tokenIndex, token] of tokens.entries()) {
     phraseElement.append(createTokenElement(
       token,
-      grammarPointIdsByToken.get(tokenIndex)
+      grammarPointIdsByToken.get(tokenIndex),
+      { adaptiveFurigana: true }
     ));
 
     if (token.surface.endsWith("。")) {
@@ -2623,7 +2665,7 @@ function getVisibleGrammarHighlights(lesson) {
   });
 }
 
-function createFuriganaContent(surface, reading) {
+function createFuriganaContent(surface, reading, { adaptiveFurigana = false } = {}) {
   if (reading && /\p{Script=Han}/u.test(surface)) {
     const ruby = document.createElement("ruby");
     const annotation = document.createElement("rt");
@@ -2631,6 +2673,7 @@ function createFuriganaContent(surface, reading) {
     ruby.append(surface);
     annotation.textContent = reading;
     ruby.append(annotation);
+    if (adaptiveFurigana) markAdaptiveFurigana(ruby, surface);
     return ruby;
   }
 
@@ -2661,11 +2704,11 @@ function renderFuriganaText(element, text, tokens, options = {}) {
       const target = document.createElement("mark");
 
       target.className = "vocabulary-example-target";
-      target.append(createFuriganaContent(targetText, targetReading));
+      target.append(createFuriganaContent(targetText, targetReading, options));
       element.append(target);
       index = options.targetTokenEnd - 1;
     } else {
-      element.append(createFuriganaContent(token.surface, token.reading));
+      element.append(createFuriganaContent(token.surface, token.reading, options));
     }
   }
 }
@@ -3214,6 +3257,7 @@ async function loadExerciseData() {
   grammarPointById = new Map(
     grammarPoints.map((grammarPoint) => [grammarPoint.id, grammarPoint])
   );
+  kanjiById ||= kanjiEntriesById;
   return validExercises;
 }
 
@@ -4337,6 +4381,7 @@ function displayLesson(lesson) {
     }
   }
 
+  refreshAdaptiveFurigana();
   const sentenceDrawDuration = isProduction
     ? renderPlainSentence(lesson.text, lesson.promptVocabularyHints)
     : renderSentence(
@@ -5446,7 +5491,7 @@ function revealSolution() {
   answer.lang = isProduction ? "ja" : getUserLocale();
 
   if (isProduction) {
-    renderFuriganaText(answer, currentLesson.solution, currentLesson.tokens);
+    renderFuriganaText(answer, currentLesson.solution, currentLesson.tokens, { adaptiveFurigana: true });
   } else {
     answer.textContent = currentLesson.solution;
   }
@@ -6056,14 +6101,21 @@ async function startApp() {
       document.body.classList.add("reading-page");
       lessonElement.hidden = true;
       try {
-        vocabularyById = await vocabularyDataPromise;
+        const [entriesById, kanjiEntriesById] = await Promise.all([
+          vocabularyDataPromise, kanjiDataPromise
+        ]);
+        vocabularyById = entriesById;
+        kanjiById ||= kanjiEntriesById;
+        refreshAdaptiveFurigana();
         const passages = globalThis.JlptN5Reading.validatePassages(await fetchJson("data/readings.json"));
         globalThis.JlptN5ReadingView.mountLibrary({
           root: readingElement,
           passages,
           locale: getUserLocale(),
           t,
-          createToken: (token) => createTokenElement(token, [], { animate: false }),
+          createToken: (token) => createTokenElement(token, [], {
+            animate: false, adaptiveFurigana: true
+          }),
           getAudioAvailability: getSpeechAvailability,
           onSpeechActive: (active) => globalThis.JlptN5Feedback.setSpeechActive(active)
         });

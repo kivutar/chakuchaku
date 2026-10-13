@@ -99,6 +99,8 @@
   "settings.pace.intensive": "Intensive",
   "settings.pace.unlimited": "Unlimited",
   "settings.furigana": "Furigana",
+  "settings.adaptiveFurigana": "Adaptive furigana",
+  "settings.adaptiveFuriganaDescription": "Reading and grammar: hide readings when all kanji in a word are mature or mastered.",
   "settings.autoPlayAudio": "Auto play audio",
   "settings.visualEffects": "Visual effects",
   "settings.visualEffectsDescription": "Animated answer feedback.",

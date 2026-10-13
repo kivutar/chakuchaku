@@ -581,6 +581,80 @@ test("Vocabulary alternates deterministic translation directions and reviews one
   assert.match(statsCode, /section: "vocabulary"/);
 });
 
+async function loadAdaptiveFuriganaHelpers(extraContext = {}) {
+  await import("../statistics.js");
+  const code = await readFile(join(rootDirectory, "app.js"), "utf8");
+  const helpers = code.slice(code.indexOf("function getAcquiredKanjiCharacters("),
+    code.indexOf("function createTokenElement("));
+  return runInNewContext(`${helpers}; ({
+    getAcquiredKanjiCharacters, hasOnlyKnownKanji, markAdaptiveFurigana, refreshAdaptiveFurigana
+  });`, {
+    JlptN5Statistics: globalThis.JlptN5Statistics,
+    JlptN5Srs: { getRetrievability: () => 0.9 },
+    acquiredKanjiCharacters: new Set(),
+    ...extraContext
+  });
+}
+
+test("adaptive furigana use only mature and mastered kanji cards, without altering progress", async () => {
+  const { getAcquiredKanjiCharacters } = await loadAdaptiveFuriganaHelpers();
+  const entries = new Map([
+    ["sun", { id: "sun", character: "日" }],
+    ["moon", { id: "moon", character: "月" }],
+    ["school", { id: "school", character: "学" }],
+    ["book", { id: "book", character: "本" }],
+    ["person", { id: "person", character: "人" }],
+    ["unseen", { id: "unseen", character: "語" }]
+  ]);
+  const cards = {
+    sun: { state: 2, stability: 30 }, moon: { state: 2, stability: 100 },
+    school: { state: 2, stability: 29.9 }, book: { state: 1, stability: 100 },
+    person: { state: 3, stability: 100 }
+  };
+  const original = JSON.stringify({ entries: [...entries], cards });
+  assert.deepEqual([...getAcquiredKanjiCharacters(entries, cards)], ["日", "月"]);
+  assert.equal(JSON.stringify({ entries: [...entries], cards }), original);
+});
+
+test("mixed, unknown, and out-of-curriculum compounds keep their complete furigana", async () => {
+  const { hasOnlyKnownKanji } = await loadAdaptiveFuriganaHelpers();
+  const known = new Set(["日", "本", "学", "人", "読"]);
+  assert.equal(hasOnlyKnownKanji("日本", known), true);
+  assert.equal(hasOnlyKnownKanji("日本語", known), false);
+  assert.equal(hasOnlyKnownKanji("学校", known), false);
+  assert.equal(hasOnlyKnownKanji("日本橋", known), false);
+  assert.equal(hasOnlyKnownKanji("読んで", known), true);
+  assert.equal(hasOnlyKnownKanji("人々", known), true);
+  assert.equal(hasOnlyKnownKanji("みんな", known), false);
+  assert.equal(hasOnlyKnownKanji("々", known), false);
+});
+
+test("adaptive furigana refresh existing reading and grammar ruby after a kanji lapse", async () => {
+  const knownClass = new Set();
+  const ruby = { dataset: { furiganaSurface: "日" }, classList: {
+    toggle(name, value) { if (value) knownClass.add(name); else knownClass.delete(name); }
+  } };
+  const settings = { adaptiveFurigana: true };
+  const kanjiById = new Map([["sun", { id: "sun", character: "日" }]]);
+  const data = { kanjiCards: { sun: { state: 2, stability: 30 } } };
+  let reads = 0;
+  const original = JSON.stringify(data);
+  const { refreshAdaptiveFurigana } = await loadAdaptiveFuriganaHelpers({
+    settings, kanjiById,
+    JlptN5Srs: { getRetrievability: () => 0.9, readSrsData: () => { reads += 1; return data; } },
+    document: { querySelectorAll: () => [ruby] }
+  });
+  refreshAdaptiveFurigana();
+  assert.ok(knownClass.has("has-known-kanji"));
+  assert.equal(JSON.stringify(data), original);
+  data.kanjiCards.sun.state = 3;
+  refreshAdaptiveFurigana();
+  assert.ok(!knownClass.has("has-known-kanji"));
+  settings.adaptiveFurigana = false;
+  refreshAdaptiveFurigana();
+  assert.equal(reads, 2, "the disabled option does not read progress");
+});
+
 test("vocabulary readings are optional accessible hints rather than automatic kanji clues", async () => {
   const [html, browserCode] = await Promise.all([
     readFile(join(rootDirectory, "index.html"), "utf8"),
@@ -1146,6 +1220,7 @@ test("settings layer loads before the app and exposes every initial control", as
     "studyLevel",
     "newContentPace",
     "furigana",
+    "adaptiveFurigana",
     "autoPlayAudio",
     "visualEffects",
     "soundEffects",
@@ -1247,7 +1322,7 @@ test("speaker checks local narration availability before playback", async () => 
   assert.match(browserCode, /if \(!speechAvailable\)/);
   assert.match(browserCode, /getExerciseType\(currentLesson\) === "production"/);
   assert.match(browserCode, /isEnglishToJapanese && currentLesson\.audio/);
-  assert.match(browserCode, /renderFuriganaText\(answer, currentLesson\.solution, currentLesson\.tokens\)/);
+  assert.match(browserCode, /renderFuriganaText\(answer, currentLesson\.solution, currentLesson\.tokens, \{ adaptiveFurigana: true \}\)/);
   assert.match(browserCode, /answerSpeakButton\.className = "speak-button solution-speak-button"/);
   assert.match(browserCode, /async function updateSolutionSpeech\(lesson, button, hideWhenUnavailable = false\)/);
   assert.match(browserCode, /updateSpeechAvailability\(lesson, button, false\)/);

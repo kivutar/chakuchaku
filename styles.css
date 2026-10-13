@@ -3526,6 +3526,10 @@ html[data-furigana="false"] rt {
   display: none;
 }
 
+html[data-adaptive-furigana="true"] ruby.has-known-kanji > rt {
+  display: none;
+}
+
 @keyframes reveal {
   to {
     opacity: 1;

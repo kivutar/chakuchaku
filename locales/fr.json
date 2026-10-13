@@ -99,6 +99,8 @@
   "settings.pace.intensive": "Intensif",
   "settings.pace.unlimited": "Illimité",
   "settings.furigana": "Furigana",
+  "settings.adaptiveFurigana": "Furigana adaptatifs",
+  "settings.adaptiveFuriganaDescription": "Lecture et grammaire : masquer la lecture si tous les kanjis du mot sont acquis ou maîtrisés.",
   "settings.autoPlayAudio": "Lecture audio automatique",
   "settings.visualEffects": "Effets visuels",
   "settings.visualEffectsDescription": "Animations des réponses.",
