@@ -16833,9 +16833,7 @@
     "solution": "子供は一人で寝たがらないので、母がそばにいます。",
     "type": "production",
     "tokenOverrides": {
-      "がら": { "category": "auxiliary" },
-      "一": { "reading": "ひと" },
-      "人": { "reading": "り" }
+      "がら": { "category": "auxiliary" }
     },
     "grammarPointIds": [
       "tagaru",
@@ -16904,10 +16902,6 @@
     "id": "n4-thanks-for-explaining-unclear-parts",
     "text": "分からない所を説明してくれてありがとう。これで一人でできます。",
     "solution": "Thank you for explaining the parts I did not understand. Now I can do it on my own.",
-    "tokenOverrides": {
-      "一": { "reading": "ひと" },
-      "人": { "reading": "り" }
-    },
     "grammarPointIds": [
       "te-kurete-arigatou",
       "relative-clause"
@@ -17351,10 +17345,6 @@
     "id": "n4-two-people-needed-to-carry-box",
     "text": "この箱を運ぶのに、二人が必要です。",
     "solution": "Two people are needed to carry this box.",
-    "tokenOverrides": {
-      "二": { "reading": "ふた" },
-      "人": { "reading": "り" }
-    },
     "grammarPointIds": [
       "ga-hitsuyou",
       "noni-purpose"

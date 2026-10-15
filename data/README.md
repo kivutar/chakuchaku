@@ -406,11 +406,14 @@ different part of speech; mismatch permission is never inferred for every
 inflection.
 
 Nominal compounds that IPADIC splits into separate words or particles may opt
-into `tokenizeAsWord: true` on their dictionary entry (currently `何でも` and
-`午前中`). Content preparation combines exact term/variant matches at token
+into `tokenizeAsWord: true` on their dictionary entry (for example `何でも`,
+`午前中`, `一人`, and `二人`). Nouns, pronouns, and numbers support this option.
+Content preparation combines exact term/variant matches at token
 boundaries, using the dictionary reading. Grammar highlights and example target
 indexes use those same tokens. This keeps tooltips and contextual SRS credit on
 the complete word without changing the progress format or merging every phrase.
+Number compounds are not merged after another numeric token: `十一人` retains
+its regular `じゅういちにん` reading instead of ending in `ひとり`.
 
 If a surface form still has multiple compatible dictionary entries, the build
 fails with all candidates. Add a `vocabularyOverrides` surface-to-ID mapping to

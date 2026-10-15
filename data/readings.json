@@ -719,8 +719,7 @@
         "vocabularyIds": [
           "vocab-c3f997ee44ba",
           "vocab-8b4370afb039",
-          "vocab-7fc81b0ddd17",
-          "vocab-ad7167347a2a",
+          "vocab-4fa716f651b2",
           "vocab-a76603aae6e4"
         ],
         "kanjiIds": [
@@ -763,16 +762,10 @@
             "reading": "、"
           },
           {
-            "surface": "二",
+            "surface": "二人",
             "category": "noun",
-            "reading": "ふた",
-            "vocabularyId": "vocab-7fc81b0ddd17"
-          },
-          {
-            "surface": "人",
-            "category": "noun",
-            "reading": "り",
-            "vocabularyId": "vocab-ad7167347a2a"
+            "reading": "ふたり",
+            "vocabularyId": "vocab-4fa716f651b2"
           },
           {
             "surface": "で",
@@ -10435,8 +10428,7 @@
         "audio": "assets/voices/reading/reading-grandpa-email-16.m4a",
         "vocabularyIds": [
           "vocab-e49f0c143bbc",
-          "vocab-5d8047464c5d",
-          "vocab-ad7167347a2a",
+          "vocab-7de8b40e4f57",
           "vocab-0609e7997541",
           "vocab-046ed410f49b",
           "vocab-d34997e828cb"
@@ -10459,16 +10451,10 @@
             "reading": "は"
           },
           {
-            "surface": "一",
+            "surface": "一人",
             "category": "noun",
-            "reading": "ひと",
-            "vocabularyId": "vocab-5d8047464c5d"
-          },
-          {
-            "surface": "人",
-            "category": "noun",
-            "reading": "り",
-            "vocabularyId": "vocab-ad7167347a2a"
+            "reading": "ひとり",
+            "vocabularyId": "vocab-7de8b40e4f57"
           },
           {
             "surface": "で",
@@ -10532,8 +10518,7 @@
         "vocabularyIds": [
           "vocab-046ed410f49b",
           "vocab-d4cd95d9b9a5",
-          "vocab-7fc81b0ddd17",
-          "vocab-ad7167347a2a",
+          "vocab-4fa716f651b2",
           "vocab-d18ca13aa386",
           "vocab-dcd3acd6b659"
         ],
@@ -10577,16 +10562,10 @@
             "reading": "、"
           },
           {
-            "surface": "二",
+            "surface": "二人",
             "category": "noun",
-            "reading": "ふた",
-            "vocabularyId": "vocab-7fc81b0ddd17"
-          },
-          {
-            "surface": "人",
-            "category": "noun",
-            "reading": "り",
-            "vocabularyId": "vocab-ad7167347a2a"
+            "reading": "ふたり",
+            "vocabularyId": "vocab-4fa716f651b2"
           },
           {
             "surface": "で",
@@ -10738,8 +10717,7 @@
         "audio": "assets/voices/reading/reading-grandpa-email-19.m4a",
         "vocabularyIds": [
           "vocab-e49f0c143bbc",
-          "vocab-5d8047464c5d",
-          "vocab-ad7167347a2a",
+          "vocab-7de8b40e4f57",
           "vocab-046ed410f49b",
           "vocab-d34997e828cb",
           "vocab-2ab01f1ec07e",
@@ -10769,16 +10747,10 @@
             "reading": "「"
           },
           {
-            "surface": "一",
+            "surface": "一人",
             "category": "noun",
-            "reading": "ひと",
-            "vocabularyId": "vocab-5d8047464c5d"
-          },
-          {
-            "surface": "人",
-            "category": "noun",
-            "reading": "り",
-            "vocabularyId": "vocab-ad7167347a2a"
+            "reading": "ひとり",
+            "vocabularyId": "vocab-7de8b40e4f57"
           },
           {
             "surface": "でも",

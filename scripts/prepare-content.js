@@ -152,9 +152,9 @@ function createVocabularyIndex(vocabulary) {
 
     if (entry.tokenizeAsWord !== undefined && (
       typeof entry.tokenizeAsWord !== "boolean" ||
-      (entry.tokenizeAsWord && !["noun", "pronoun"].includes(entry.partOfSpeech))
+      (entry.tokenizeAsWord && !["noun", "pronoun", "number"].includes(entry.partOfSpeech))
     )) {
-      throw new Error(`${entry.id}: tokenizeAsWord requires a noun or pronoun.`);
+      throw new Error(`${entry.id}: tokenizeAsWord requires a noun, pronoun, or number.`);
     }
 
     if (entry.tokenizeAsWord) {
@@ -251,6 +251,12 @@ function tokenizeContent(text, vocabularyIndex) {
     let merged;
 
     for (const { surface, entry } of vocabularyIndex.wordForms) {
+      // 一人 and 二人 have whole-word readings, but the endings of larger
+      // counts such as 十一人 must retain their regular numeric reading.
+      if (entry.partOfSpeech === "number" && sourceTokens[start - 1]?.details[1] === "数") {
+        continue;
+      }
+
       let end = start;
       let combined = "";
 
@@ -267,7 +273,7 @@ function tokenizeContent(text, vocabularyIndex) {
           token: {
             surface,
             details: [
-              "名詞", entry.partOfSpeech === "pronoun" ? "代名詞" : "一般",
+              "名詞", { pronoun: "代名詞", number: "数" }[entry.partOfSpeech] || "一般",
               "*", "*", "*", "*", surface, entry.reading, entry.reading
             ]
           }

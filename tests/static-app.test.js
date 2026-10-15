@@ -5,6 +5,7 @@ import test from "node:test";
 import { runInNewContext } from "node:vm";
 import { fileURLToPath } from "node:url";
 import { toHiragana, toKana, toKatakana } from "wanakana";
+import { TokenizerBuilder } from "lindera-wasm-ipadic-nodejs";
 import { handleStaticRequest } from "../scripts/serve.js";
 import { resolveReadingGrammarExercises } from "../scripts/reading-grammar.js";
 
@@ -775,11 +776,9 @@ test("fifth-sentence additions keep contextual readings and inflected grammar hi
   assert.deepEqual(readings("banana-single-and-bundle-price", "本"), ["ぽん", "ほん"]);
   assert.deepEqual(readings("banana-single-and-bundle-price", "百"), ["ひゃく", "びゃく"]);
   for (const id of ["production-n4-child-unwilling-to-sleep-alone", "n4-thanks-for-explaining-unclear-parts"]) {
-    assert.deepEqual(readings(id, "一"), ["ひと"]);
-    assert.deepEqual(readings(id, "人"), ["り"]);
+    assert.deepEqual(readings(id, "一人"), ["ひとり"]);
   }
-  assert.deepEqual(readings("n4-two-people-needed-to-carry-box", "二"), ["ふた"]);
-  assert.deepEqual(readings("n4-two-people-needed-to-carry-box", "人"), ["り"]);
+  assert.deepEqual(readings("n4-two-people-needed-to-carry-box", "二人"), ["ふたり"]);
   assert.deepEqual(readings("n4-father-drinks-little-rice-based-sake", "米"), ["こめ"]);
   assert.deepEqual(readings("n4-what-to-add-if-food-too-spicy", "辛"), ["から"]);
   for (const id of ["production-n4-light-off-habit-forgot-yesterday", "production-n4-long-drive-break-every-two-hours", "production-n4-personal-rule-try-again-after-failure"]) {
@@ -796,6 +795,82 @@ test("fifth-sentence additions keep contextual readings and inflected grammar hi
   assert.equal(highlightedText("production-n4-breakfast-ready-around-child-waking-time", "koro"), "頃");
   assert.equal(highlightedText("n4-hard-to-sleep-decision-no-coffee-before-bed", "nakanaka-nai"), "なかなか眠れない");
   assert.equal(highlightedText("production-n4-at-sea-invitation-to-swim-together", "no-desu"), "んだ");
+});
+
+test("irregular person counts stay whole without changing larger counts", async () => {
+  const [vocabulary, preparationCode] = await Promise.all([
+    readJson("data/jlpt-n5-vocabulary.json"),
+    readFile(join(rootDirectory, "scripts/prepare-content.js"), "utf8")
+  ]);
+  const builder = new TokenizerBuilder();
+  builder.setDictionary("embedded://ipadic");
+  builder.setMode("normal");
+  const tokenizer = builder.build();
+  const { createVocabularyIndex, tokenizeContent } = runInNewContext(
+    `${preparationCode.slice(
+      preparationCode.indexOf("function createVocabularyIndex("),
+      preparationCode.indexOf("function createKanjiIndex(")
+    )}\n({ createVocabularyIndex, tokenizeContent });`,
+    { tokenizer }
+  );
+  const index = createVocabularyIndex(vocabulary);
+
+  for (const [text, surface, reading] of [
+    ["一人で帰る。", "一人", "ひとり"],
+    ["1人で帰る。", "1人", "ひとり"],
+    ["二人で帰る。", "二人", "ふたり"],
+    ["2人で帰る。", "2人", "ふたり"]
+  ]) {
+    const tokens = tokenizeContent(text, index);
+    assert.equal(tokens.map((token) => token.surface).join(""), text);
+    assert.equal(tokens.find((token) => token.surface === surface)?.details[7], reading);
+  }
+
+  for (const text of ["十一人で帰る。", "二十二人で帰る。", "21人で帰る。", "12人で帰る。", "三人で帰る。", "第一人者"]) {
+    const tokens = tokenizeContent(text, index);
+    assert.equal(tokens.map((token) => token.surface).join(""), text);
+    assert.equal(tokens.some((token) => ["一人", "二人", "1人", "2人"].includes(token.surface)), false, text);
+    assert.equal(tokens.map((token) => token.details[7]).join(""),
+      tokenizer.tokenize(text).map((token) => token.details[7]).join(""), text);
+  }
+  assert.equal(tokenizeContent("一人一人", index)
+    .map((token) => token.details[7]).join(""), "ひとりひとり");
+});
+
+test("grammar, stories, and vocabulary examples use whole-word person-count readings", async () => {
+  const [exercises, stories, examples] = await Promise.all([
+    readJson("data/exercises.json"),
+    readJson("data/readings.json"),
+    readJson("data/vocabulary-examples.json")
+  ]);
+  const lessons = [...exercises, ...stories.flatMap((story) => story.sentences), ...examples];
+  assert.ok(lessons.some((lesson) => lesson.id === "avoid-walking-home-alone-in-dark"));
+
+  for (const [surface, reading, vocabularyId] of [
+    ["一人", "ひとり", "vocab-7de8b40e4f57"],
+    ["二人", "ふたり", "vocab-4fa716f651b2"]
+  ]) {
+    const matches = lessons.filter((lesson) =>
+      (lesson.type === "production" ? lesson.solution : lesson.text).includes(surface));
+    assert.ok(matches.length > 0);
+    for (const lesson of matches) {
+      const token = lesson.tokens.find((entry) => entry.surface === surface);
+      assert.ok(token, `${lesson.id || lesson.vocabularyId}: ${surface} must remain one word`);
+      assert.equal(token.reading, reading);
+      assert.equal(token.vocabularyId, vocabularyId);
+      if (lesson.grammarPointIds?.includes("common-counters") && lesson.grammarHighlights) {
+        const highlight = lesson.grammarHighlights.find((entry) => entry.grammarPointId === "common-counters");
+        assert.ok(highlight, `${lesson.id}: keep the counter highlighted`);
+        assert.equal(lesson.tokens.slice(highlight.tokenStart, highlight.tokenEnd)
+          .map((entry) => entry.surface).join(""), surface);
+      }
+    }
+  }
+
+  const exercise = exercises.find((lesson) => lesson.id === "avoid-walking-home-alone-in-dark");
+  const advice = exercise.grammarHighlights.find((highlight) => highlight.grammarPointId === "hou-ga-ii-advice");
+  assert.equal(exercise.tokens.slice(advice.tokenStart, advice.tokenEnd)
+    .map((token) => token.surface).join(""), "ないほうがいい");
 });
 
 test("compound vocabulary keeps word identity and aligned grammar highlights", async () => {

@@ -6991,16 +6991,10 @@
         "reading": "が"
       },
       {
-        "surface": "二",
+        "surface": "二人",
         "category": "noun",
-        "reading": "に",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ふたり",
+        "vocabularyId": "vocab-4fa716f651b2"
       },
       {
         "surface": "い",
@@ -19727,20 +19721,14 @@
     "targetSurface": "一人",
     "targetReading": "ひとり",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I go alone.",
     "tokens": [
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "いち",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "で",
@@ -20295,20 +20283,14 @@
     "targetSurface": "二人",
     "targetReading": "ふたり",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "We go in pairs.",
     "tokens": [
       {
-        "surface": "二",
+        "surface": "二人",
         "category": "noun",
-        "reading": "に",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ふたり",
+        "vocabularyId": "vocab-4fa716f651b2"
       },
       {
         "surface": "で",
@@ -26978,21 +26960,15 @@
     "text": "一人の員です。",
     "targetSurface": "員",
     "targetReading": "いん",
-    "targetTokenStart": 3,
-    "targetTokenEnd": 4,
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
     "translation": "I am one member.",
     "tokens": [
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "いち",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "の",
@@ -31782,21 +31758,15 @@
     "text": "一人で寂しい。",
     "targetSurface": "寂しい",
     "targetReading": "さびしい",
-    "targetTokenStart": 3,
-    "targetTokenEnd": 4,
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
     "translation": "I feel lonely by myself.",
     "tokens": [
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "いち",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "で",
@@ -51306,21 +51276,15 @@
     "text": "二人で競争する。",
     "targetSurface": "競争",
     "targetReading": "きょうそう",
-    "targetTokenStart": 3,
-    "targetTokenEnd": 4,
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
     "translation": "Two people compete.",
     "tokens": [
       {
-        "surface": "二",
+        "surface": "二人",
         "category": "noun",
-        "reading": "に",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ふたり",
+        "vocabularyId": "vocab-4fa716f651b2"
       },
       {
         "surface": "で",
@@ -51451,21 +51415,15 @@
     "text": "二人に関係ある。",
     "targetSurface": "関係",
     "targetReading": "かんけい",
-    "targetTokenStart": 3,
-    "targetTokenEnd": 4,
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
     "translation": "It concerns the two people.",
     "tokens": [
       {
-        "surface": "二",
+        "surface": "二人",
         "category": "noun",
-        "reading": "に",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ふたり",
+        "vocabularyId": "vocab-4fa716f651b2"
       },
       {
         "surface": "に",

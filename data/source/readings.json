@@ -13,7 +13,7 @@
       { "id": "reading-sunday-park-06", "paragraph": 2, "text": "公園までバスで二十分かかります。", "grammarPointIds": ["made-end", "de-means", "duration-no-particle"], "tokenOverrides": { "十": { "reading": "じゅっ" }, "分": { "reading": "ぷん" } } },
       { "id": "reading-sunday-park-07", "paragraph": 2, "text": "でも、次のバスは三十分後に来ます。", "grammarPointIds": ["demo-connector", "ni-time", "verb-masu"], "tokenOverrides": { "十": { "reading": "じゅっ" }, "分": { "reading": "ぷん" } }, "skipVoiceGeneration": true },
       { "id": "reading-sunday-park-08", "paragraph": 2, "text": "妹は待ちたくないと言いました。", "grammarPointIds": ["tai-desire", "to-iu"] },
-      { "id": "reading-sunday-park-09", "paragraph": 3, "text": "公園は遠くないので、二人で歩いて行きました。", "grammarPointIds": ["i-adjective-negative", "node-reason", "te-action-link"], "tokenOverrides": { "二": { "reading": "ふた" }, "人": { "reading": "り" } } },
+      { "id": "reading-sunday-park-09", "paragraph": 3, "text": "公園は遠くないので、二人で歩いて行きました。", "grammarPointIds": ["i-adjective-negative", "node-reason", "te-action-link"] },
       { "id": "reading-sunday-park-10", "paragraph": 3, "text": "道で友達に会いました。", "grammarPointIds": ["de-action-location", "ni-target-recipient", "verb-mashita"] },
       { "id": "reading-sunday-park-11", "paragraph": 3, "text": "友達も一緒に公園へ行きました。", "grammarPointIds": ["mo-addition", "e-direction", "verb-mashita"] },
       { "id": "reading-sunday-park-12", "paragraph": 3, "text": "公園には大きな池があります。", "grammarPointIds": ["ni-existence-location", "aru-existence"] },
@@ -1262,11 +1262,7 @@
           "common-counters",
           "o-object",
           "verb-mashita"
-        ],
-        "tokenOverrides": {
-          "一": { "reading": "ひと" },
-          "人": { "reading": "り" }
-        }
+        ]
       },
       {
         "id": "reading-grandpa-email-17",
@@ -1276,15 +1272,7 @@
           "te-kara",
           "common-counters",
           "o-object"
-        ],
-        "tokenOverrides": {
-          "二": {
-            "reading": "ふた"
-          },
-          "人": {
-            "reading": "り"
-          }
-        }
+        ]
       },
       {
         "id": "reading-grandpa-email-18",
@@ -1304,11 +1292,7 @@
           "koto-ga-dekiru",
           "demo-particle",
           "to-iu"
-        ],
-        "tokenOverrides": {
-          "一": { "reading": "ひと" },
-          "人": { "reading": "り" }
-        }
+        ]
       },
       {
         "id": "reading-grandpa-email-20",

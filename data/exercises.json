@@ -1253,8 +1253,7 @@
     "text": "一人いくらですか？",
     "audio": "assets/voices/grammar/price-per-person.m4a",
     "vocabularyIds": [
-      "vocab-5d8047464c5d",
-      "vocab-ad7167347a2a",
+      "vocab-7de8b40e4f57",
       "vocab-61b1348fd56a"
     ],
     "kanjiIds": [
@@ -1263,16 +1262,10 @@
     ],
     "tokens": [
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "いち",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "いくら",
@@ -1311,18 +1304,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ikura",
-        "tokenStart": 2,
-        "tokenEnd": 3
-      },
-      {
-        "grammarPointId": "common-counters",
         "tokenStart": 1,
         "tokenEnd": 2
       },
       {
+        "grammarPointId": "common-counters",
+        "tokenStart": 0,
+        "tokenEnd": 1
+      },
+      {
         "grammarPointId": "ka-question",
-        "tokenStart": 4,
-        "tokenEnd": 5
+        "tokenStart": 3,
+        "tokenEnd": 4
       }
     ]
   },
@@ -29871,8 +29864,7 @@
     "audio": "assets/voices/grammar/brother-can-ride-alone.m4a",
     "vocabularyIds": [
       "vocab-7e8dc4d63e82",
-      "vocab-5d8047464c5d",
-      "vocab-ad7167347a2a",
+      "vocab-7de8b40e4f57",
       "vocab-457ac376d17f",
       "vocab-9e0eeba39759",
       "vocab-2ab01f1ec07e",
@@ -29899,16 +29891,10 @@
         "reading": "は"
       },
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "いち",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "で",
@@ -29969,18 +29955,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "koto-ga-dekiru",
-        "tokenStart": 8,
-        "tokenEnd": 12
+        "tokenStart": 7,
+        "tokenEnd": 11
       },
       {
         "grammarPointId": "koto-nominalizer",
-        "tokenStart": 8,
-        "tokenEnd": 9
+        "tokenStart": 7,
+        "tokenEnd": 8
       },
       {
         "grammarPointId": "common-counters",
-        "tokenStart": 3,
-        "tokenEnd": 4
+        "tokenStart": 2,
+        "tokenEnd": 3
       }
     ]
   },
@@ -50171,8 +50157,7 @@
     "vocabularyIds": [
       "vocab-b4a022a9e7a6",
       "vocab-a4945bc781fd",
-      "vocab-5d8047464c5d",
-      "vocab-ad7167347a2a",
+      "vocab-7de8b40e4f57",
       "vocab-944f21154c78",
       "vocab-18fe4d351abc",
       "vocab-ef4cce00951f"
@@ -50216,16 +50201,10 @@
         "reading": "、"
       },
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "いち",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "で",
@@ -50287,8 +50266,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "hou-ga-ii-advice",
-        "tokenStart": 10,
-        "tokenEnd": 14
+        "tokenStart": 9,
+        "tokenEnd": 13
       },
       {
         "grammarPointId": "kara-reason",
@@ -50297,13 +50276,13 @@
       },
       {
         "grammarPointId": "verb-nai",
-        "tokenStart": 10,
-        "tokenEnd": 11
+        "tokenStart": 9,
+        "tokenEnd": 10
       },
       {
         "grammarPointId": "yo-emphasis",
-        "tokenStart": 15,
-        "tokenEnd": 16
+        "tokenStart": 14,
+        "tokenEnd": 15
       }
     ]
   },
@@ -120848,8 +120827,7 @@
     "audio": "assets/voices/grammar/production-n4-child-unwilling-to-sleep-alone.m4a",
     "vocabularyIds": [
       "vocab-5fd1d3759699",
-      "vocab-5d8047464c5d",
-      "vocab-ad7167347a2a",
+      "vocab-7de8b40e4f57",
       "vocab-50eb0e80c367",
       "vocab-7fa86c660a00",
       "vocab-08a53edb01c1",
@@ -120874,16 +120852,10 @@
         "reading": "は"
       },
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "ひと",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "り",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "で",
@@ -120976,13 +120948,13 @@
     "grammarHighlights": [
       {
         "grammarPointId": "tagaru",
-        "tokenStart": 6,
-        "tokenEnd": 9
+        "tokenStart": 5,
+        "tokenEnd": 8
       },
       {
         "grammarPointId": "node-reason",
-        "tokenStart": 9,
-        "tokenEnd": 10
+        "tokenStart": 8,
+        "tokenEnd": 9
       }
     ]
   },
@@ -121373,8 +121345,7 @@
       "vocab-dfb6d8ba613b",
       "vocab-aa8a24f49c4d",
       "vocab-fb33e3a6798b",
-      "vocab-5d8047464c5d",
-      "vocab-ad7167347a2a",
+      "vocab-7de8b40e4f57",
       "vocab-581d18f92555"
     ],
     "kanjiIds": [
@@ -121456,16 +121427,10 @@
         "reading": "で"
       },
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "ひと",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "り",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "で",
@@ -125565,8 +125530,7 @@
       "vocab-25acc002a82f",
       "vocab-28102c121d50",
       "vocab-ac6ebe4452ce",
-      "vocab-7fc81b0ddd17",
-      "vocab-ad7167347a2a",
+      "vocab-4fa716f651b2",
       "vocab-884e78e7d501"
     ],
     "kanjiIds": [
@@ -125610,16 +125574,10 @@
         "reading": "、"
       },
       {
-        "surface": "二",
+        "surface": "二人",
         "category": "noun",
-        "reading": "ふた",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "り",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ふたり",
+        "vocabularyId": "vocab-4fa716f651b2"
       },
       {
         "surface": "が",
@@ -125651,8 +125609,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ga-hitsuyou",
-        "tokenStart": 8,
-        "tokenEnd": 11
+        "tokenStart": 7,
+        "tokenEnd": 10
       },
       {
         "grammarPointId": "noni-purpose",
@@ -130165,8 +130123,7 @@
     "vocabularyIds": [
       "vocab-c3f997ee44ba",
       "vocab-8b4370afb039",
-      "vocab-7fc81b0ddd17",
-      "vocab-ad7167347a2a",
+      "vocab-4fa716f651b2",
       "vocab-a76603aae6e4"
     ],
     "kanjiIds": [
@@ -130209,16 +130166,10 @@
         "reading": "、"
       },
       {
-        "surface": "二",
+        "surface": "二人",
         "category": "noun",
-        "reading": "ふた",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "り",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ふたり",
+        "vocabularyId": "vocab-4fa716f651b2"
       },
       {
         "surface": "で",
@@ -130276,8 +130227,8 @@
       },
       {
         "grammarPointId": "te-action-link",
-        "tokenStart": 10,
-        "tokenEnd": 11
+        "tokenStart": 9,
+        "tokenEnd": 10
       }
     ]
   },
@@ -130289,8 +130240,7 @@
     "vocabularyIds": [
       "vocab-c3f997ee44ba",
       "vocab-8b4370afb039",
-      "vocab-7fc81b0ddd17",
-      "vocab-ad7167347a2a",
+      "vocab-4fa716f651b2",
       "vocab-a76603aae6e4"
     ],
     "kanjiIds": [
@@ -130333,16 +130283,10 @@
         "reading": "、"
       },
       {
-        "surface": "二",
+        "surface": "二人",
         "category": "noun",
-        "reading": "ふた",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "り",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ふたり",
+        "vocabularyId": "vocab-4fa716f651b2"
       },
       {
         "surface": "で",
@@ -130409,8 +130353,8 @@
       },
       {
         "grammarPointId": "te-action-link",
-        "tokenStart": 10,
-        "tokenEnd": 11
+        "tokenStart": 9,
+        "tokenEnd": 10
       }
     ]
   },
@@ -151217,8 +151161,7 @@
     "audio": "assets/voices/reading/reading-grandpa-email-16.m4a",
     "vocabularyIds": [
       "vocab-e49f0c143bbc",
-      "vocab-5d8047464c5d",
-      "vocab-ad7167347a2a",
+      "vocab-7de8b40e4f57",
       "vocab-0609e7997541",
       "vocab-046ed410f49b",
       "vocab-d34997e828cb"
@@ -151241,16 +151184,10 @@
         "reading": "は"
       },
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "ひと",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "り",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "で",
@@ -151309,18 +151246,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "common-counters",
-        "tokenStart": 3,
-        "tokenEnd": 4
+        "tokenStart": 2,
+        "tokenEnd": 3
       },
       {
         "grammarPointId": "o-object",
-        "tokenStart": 8,
-        "tokenEnd": 9
+        "tokenStart": 7,
+        "tokenEnd": 8
       },
       {
         "grammarPointId": "verb-mashita",
-        "tokenStart": 10,
-        "tokenEnd": 12
+        "tokenStart": 9,
+        "tokenEnd": 11
       }
     ]
   },
@@ -151331,8 +151268,7 @@
     "audio": "assets/voices/reading/reading-grandpa-email-16.m4a",
     "vocabularyIds": [
       "vocab-e49f0c143bbc",
-      "vocab-5d8047464c5d",
-      "vocab-ad7167347a2a",
+      "vocab-7de8b40e4f57",
       "vocab-0609e7997541",
       "vocab-046ed410f49b",
       "vocab-d34997e828cb"
@@ -151355,16 +151291,10 @@
         "reading": "は"
       },
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "ひと",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "り",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "で",
@@ -151432,18 +151362,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "common-counters",
-        "tokenStart": 3,
-        "tokenEnd": 4
+        "tokenStart": 2,
+        "tokenEnd": 3
       },
       {
         "grammarPointId": "o-object",
-        "tokenStart": 8,
-        "tokenEnd": 9
+        "tokenStart": 7,
+        "tokenEnd": 8
       },
       {
         "grammarPointId": "verb-mashita",
-        "tokenStart": 10,
-        "tokenEnd": 12
+        "tokenStart": 9,
+        "tokenEnd": 11
       }
     ]
   },
@@ -151455,8 +151385,7 @@
     "vocabularyIds": [
       "vocab-046ed410f49b",
       "vocab-d4cd95d9b9a5",
-      "vocab-7fc81b0ddd17",
-      "vocab-ad7167347a2a",
+      "vocab-4fa716f651b2",
       "vocab-d18ca13aa386",
       "vocab-dcd3acd6b659"
     ],
@@ -151500,16 +151429,10 @@
         "reading": "、"
       },
       {
-        "surface": "二",
+        "surface": "二人",
         "category": "noun",
-        "reading": "ふた",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "り",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ふたり",
+        "vocabularyId": "vocab-4fa716f651b2"
       },
       {
         "surface": "で",
@@ -151563,8 +151486,8 @@
       },
       {
         "grammarPointId": "common-counters",
-        "tokenStart": 7,
-        "tokenEnd": 8
+        "tokenStart": 6,
+        "tokenEnd": 7
       }
     ]
   },
@@ -151576,8 +151499,7 @@
     "vocabularyIds": [
       "vocab-046ed410f49b",
       "vocab-d4cd95d9b9a5",
-      "vocab-7fc81b0ddd17",
-      "vocab-ad7167347a2a",
+      "vocab-4fa716f651b2",
       "vocab-d18ca13aa386",
       "vocab-dcd3acd6b659"
     ],
@@ -151621,16 +151543,10 @@
         "reading": "、"
       },
       {
-        "surface": "二",
+        "surface": "二人",
         "category": "noun",
-        "reading": "ふた",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "り",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ふたり",
+        "vocabularyId": "vocab-4fa716f651b2"
       },
       {
         "surface": "で",
@@ -151693,8 +151609,8 @@
       },
       {
         "grammarPointId": "common-counters",
-        "tokenStart": 7,
-        "tokenEnd": 8
+        "tokenStart": 6,
+        "tokenEnd": 7
       }
     ]
   },
@@ -151948,8 +151864,7 @@
     "audio": "assets/voices/reading/reading-grandpa-email-19.m4a",
     "vocabularyIds": [
       "vocab-e49f0c143bbc",
-      "vocab-5d8047464c5d",
-      "vocab-ad7167347a2a",
+      "vocab-7de8b40e4f57",
       "vocab-046ed410f49b",
       "vocab-d34997e828cb",
       "vocab-2ab01f1ec07e",
@@ -151979,16 +151894,10 @@
         "reading": "「"
       },
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "ひと",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "り",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "でも",
@@ -152074,18 +151983,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "koto-ga-dekiru",
-        "tokenStart": 9,
-        "tokenEnd": 13
+        "tokenStart": 8,
+        "tokenEnd": 12
       },
       {
         "grammarPointId": "demo-particle",
-        "tokenStart": 5,
-        "tokenEnd": 6
+        "tokenStart": 4,
+        "tokenEnd": 5
       },
       {
         "grammarPointId": "to-iu",
-        "tokenStart": 14,
-        "tokenEnd": 18
+        "tokenStart": 13,
+        "tokenEnd": 17
       }
     ]
   },
@@ -152096,8 +152005,7 @@
     "audio": "assets/voices/reading/reading-grandpa-email-19.m4a",
     "vocabularyIds": [
       "vocab-e49f0c143bbc",
-      "vocab-5d8047464c5d",
-      "vocab-ad7167347a2a",
+      "vocab-7de8b40e4f57",
       "vocab-046ed410f49b",
       "vocab-d34997e828cb",
       "vocab-2ab01f1ec07e",
@@ -152127,16 +152035,10 @@
         "reading": "「"
       },
       {
-        "surface": "一",
+        "surface": "一人",
         "category": "noun",
-        "reading": "ひと",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "り",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "ひとり",
+        "vocabularyId": "vocab-7de8b40e4f57"
       },
       {
         "surface": "でも",
@@ -152231,18 +152133,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "koto-ga-dekiru",
-        "tokenStart": 9,
-        "tokenEnd": 13
+        "tokenStart": 8,
+        "tokenEnd": 12
       },
       {
         "grammarPointId": "demo-particle",
-        "tokenStart": 5,
-        "tokenEnd": 6
+        "tokenStart": 4,
+        "tokenEnd": 5
       },
       {
         "grammarPointId": "to-iu",
-        "tokenStart": 14,
-        "tokenEnd": 18
+        "tokenStart": 13,
+        "tokenEnd": 17
       }
     ]
   },
