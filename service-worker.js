@@ -7,6 +7,8 @@ const voiceCacheName = `${cachePrefix}voices-${buildVersion}`;
 const shellPaths = [
   "./",
   "index.html",
+  "landing.css",
+  "landing.js",
   "privacy.html",
   "review",
   "grammar",

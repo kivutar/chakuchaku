@@ -17,6 +17,15 @@ conjugation into one calm daily practice loop. Adaptive FSRS reviews focus on
 what is due, progress stays on your device, and the app works in English or
 French with optional audio and offline access. No account is required.
 
+The web homepage introduces the learning method and curriculum, with a small
+interactive exercise preview and English/French copy. Its source is
+`landing.html`, `landing.css`, and `landing.js`. Study routes such as `/grammar`
+and `/hiragana` continue to open the app directly. `npm start` serves the landing
+page at `/`; `npm run build:static` includes it as the published homepage.
+`npm run build:native` (also used by `native:sync` and iOS releases) keeps the
+study app as the native launch screen. The existing `index.html` remains the
+shared source for study routes and native launches.
+
 The `/review` route gathers every previously encountered card due that day
 across all six study sections. Its progress bar counts individual SRS knowledge
 units, so one word or sentence can clear several units; failed units are mixed

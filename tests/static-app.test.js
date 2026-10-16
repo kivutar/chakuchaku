@@ -1665,6 +1665,8 @@ async function requestStatic(path, method = "GET") {
 test("preview serves the committed static application", async () => {
   const expectedTypes = new Map([
     ["/", "text/html"],
+    ["/landing.css", "text/css"],
+    ["/landing.js", "text/javascript"],
     ["/privacy.html", "text/html"],
     ["/review", "text/html"],
     ["/grammar", "text/html"],
@@ -1740,6 +1742,24 @@ test("preview serves the committed static application", async () => {
 
     assert.match(response.headers["Content-Type"], new RegExp(`^${escapedContentType}`));
     assert.ok(response.body.length > 0);
+  }
+});
+
+test("web entry points welcome visitors while study links open practice directly", async () => {
+  const [home, index, grammar, hiragana] = await Promise.all([
+    requestStatic("/"),
+    requestStatic("/index.html"),
+    requestStatic("/grammar"),
+    requestStatic("/hiragana")
+  ]);
+
+  assert.equal(home.body.toString(), index.body.toString());
+  assert.match(home.body.toString(), /id="hero-title"/);
+  assert.match(home.body.toString(), /href="hiragana"/);
+  assert.doesNotMatch(home.body.toString(), /src="app\.js"/);
+  for (const page of [grammar, hiragana]) {
+    assert.match(page.body.toString(), /src="app\.js"/);
+    assert.doesNotMatch(page.body.toString(), /id="hero-title"/);
   }
 });
 

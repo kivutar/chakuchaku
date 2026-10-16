@@ -15,8 +15,11 @@ const {
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
 const outputDirectory = join(rootDirectory, "dist");
+const isNativeBuild = process.argv.includes("--native");
 const staticFiles = [
   "index.html",
+  "landing.css",
+  "landing.js",
   "privacy.html",
   "app.js",
   "pwa.js",
@@ -125,6 +128,11 @@ for (const [sourcePath, destinationPath] of dependencyFiles) {
 
 const routeHtml = (await readFile(join(rootDirectory, "index.html"), "utf8"))
   .replace("<head>", "<head>\n    <base href=\"../\">");
+
+// Native shells open straight into practice. The website welcomes new learners.
+if (!isNativeBuild) {
+  await copyFile(join(rootDirectory, "landing.html"), join(outputDirectory, "index.html"));
+}
 
 for (const route of [
   "review",

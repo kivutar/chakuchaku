@@ -65,7 +65,7 @@ jobs:
 
       - name: Sync iOS application
         run: |
-          npm run build:static
+          npm run build:native
           npx cap sync ios
 
       - name: Prepare release metadata
