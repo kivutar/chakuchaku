@@ -28,10 +28,9 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
 .skip-link:focus { transform: translateY(0); }
 .site-header { display: flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 106px; }
 .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; font-size: 21px; font-weight: 700; letter-spacing: -0.8px; }
-.brand-mark { position: relative; display: grid; place-items: center; width: 39px; height: 42px; border-radius: 11px 11px 16px 11px; background: var(--green); color: var(--lime); font-size: 27px; transform: rotate(-7deg); }
-.brand-mark > span { position: absolute; top: -9px; right: -7px; color: #b08b34; font-size: 19px; }
+.brand-logo { display: block; width: 66px; height: 48px; flex-shrink: 0; object-fit: cover; }
 .brand-caption { display: block; margin-top: 2px; font-size: 9px; font-weight: 500; letter-spacing: 1px; color: var(--muted); }
-.main-nav { display: flex; gap: 27px; margin-left: auto; }
+.main-nav { display: flex; gap: 24px; margin-left: auto; }
 .main-nav a, .site-footer nav a { text-decoration: none; font-size: 12px; font-weight: 500; }
 .main-nav a:hover, .site-footer nav a:hover { text-decoration: underline; text-underline-offset: 5px; }
 .header-actions { display: flex; align-items: center; gap: 25px; }
@@ -68,7 +67,7 @@ em { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
 .scene-label .icon { width: 15px; height: 15px; color: #8c8c40; }
 .practice-card { overflow: hidden; position: relative; border: 1px solid #dce2d2; border-radius: 14px; background: #fffefa; box-shadow: 0 24px 50px -25px #29452b3b, 0 3px 7px #29452b06; transform: rotate(2deg); }
 .practice-card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 20px 24px 17px; }
-.practice-wordmark { color: #467543; font-size: 15px; font-weight: 800; letter-spacing: -1px; }
+.practice-wordmark { display: block; width: 76px; height: 32px; object-fit: cover; }
 .preview-label { color: var(--muted); font-size: 8px; letter-spacing: 0.6px; }
 .demo-tabs { display: flex; gap: 5px; padding: 0 24px; }
 .demo-tabs button { flex: 1; min-width: 0; min-height: 38px; padding: 8px 4px; border: 1px solid transparent; border-radius: 5px; background: #f3f4ed; color: #747c6d; font-size: 10px; }
@@ -161,6 +160,31 @@ h2 { font-size: clamp(34px, 3.4vw, 47px); line-height: 1.17; letter-spacing: -1.
 .reading-excerpt rt { color: #83916f; font-size: 8px; }
 .reading-translation { margin-top: 13px; color: #79876a; font-size: 9px; }
 .reading-page-number { position: absolute; right: 20px; bottom: 13px; color: #9ca78d; font-size: 9px; }
+.ios-section { overflow: hidden; border-bottom: 1px solid #e8e5d8; background: #f6f4e9; }
+.ios-layout { display: grid; grid-template-columns: 1fr 1.1fr; align-items: center; gap: 75px; }
+.ios-copy { min-width: 0; }
+.ios-app-icon { display: block; width: 66px; height: 66px; margin-bottom: 25px; border: 1px solid #e4e5d8; border-radius: 16px; box-shadow: 0 5px 12px #273e2210; }
+.ios-copy h2 { margin-top: 16px; }
+.ios-copy h2 em { color: #59734c; }
+.ios-description { max-width: 420px; margin-top: 23px; color: var(--muted); font-size: 14px; line-height: 1.85; }
+.ios-benefits { display: grid; gap: 14px; margin: 25px 0 30px; padding: 0; list-style: none; }
+.ios-benefits li { display: flex; align-items: start; gap: 9px; color: #53654a; font-size: 12px; line-height: 1.6; }
+.ios-benefits .icon { width: 16px; height: 16px; margin-top: 1px; color: #6b8951; }
+.button-store { background: #23352a; }
+.button-store:hover { background: #14261a; }
+.ios-web-link { margin-top: 18px; color: var(--muted); font-size: 10px; line-height: 1.8; }
+.ios-web-link a { color: var(--ink); text-underline-offset: 3px; }
+.phone-showcase { min-width: 0; margin: 0; }
+.phone-stage { position: relative; width: 100%; aspect-ratio: 0.9; isolation: isolate; }
+.phone-stage::before { content: ""; position: absolute; z-index: -1; inset: 14% -4% 10%; border-radius: 50%; background: #e9e6cf; }
+.phone { position: absolute; padding: 8px; border: 1px solid #a9aea1; border-radius: 39px; background: #263b2d; box-shadow: inset 0 0 0 2px #56654d, 12px 22px 32px -13px #293a3240; }
+.phone-back { z-index: 1; top: 10px; left: 5%; width: 43%; transform: rotate(-8deg); }
+.phone-front { z-index: 2; top: 48px; left: 45%; width: 47%; transform: rotate(6deg); }
+.phone-screen { position: relative; overflow: hidden; aspect-ratio: 390 / 844; border-radius: 31px; background: #fafafa; }
+.phone-screen img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.phone-screen::before { content: ""; position: absolute; z-index: 1; top: 2%; left: 35%; width: 30%; height: 3.5%; border-radius: 20px; background: #17251c; }
+.phone-screen::after { content: ""; position: absolute; bottom: 1.5%; left: 35%; width: 30%; height: 3px; border-radius: 3px; background: #243a2c; }
+.phone-showcase figcaption { margin-top: 14px; color: #7c836d; font-size: 10px; text-align: center; line-height: 1.7; }
 .everyday-heading { text-align: center; }
 .everyday-heading .eyebrow { justify-content: center; }
 .everyday-heading h2 { margin-top: 16px; font-size: clamp(28px, 3vw, 39px); }
@@ -192,7 +216,7 @@ details[open] .faq-plus { transform: rotate(45deg); }
 .store-link:hover { text-decoration: underline; text-underline-offset: 4px; }
 .site-footer { display: flex; align-items: center; gap: 26px; min-height: 99px; }
 .footer-brand { display: flex; align-items: center; gap: 13px; text-decoration: none; font-size: 16px; font-weight: 650; letter-spacing: -0.5px; }
-.footer-brand > span { color: #7e8b70; font-family: serif; font-size: 12px; font-weight: 400; }
+.footer-brand .brand-logo { width: 48px; height: 36px; }
 .site-footer > p { color: var(--muted); font-size: 9px; }
 .site-footer nav { display: flex; gap: 25px; margin-left: auto; }
 .site-footer nav a { font-size: 10px; }
@@ -215,6 +239,11 @@ details[open] .faq-plus { transform: rotate(45deg); }
   .review-callout { gap: 20px; padding-inline: 24px; }
   .curriculum-grid { column-gap: 35px; }
   .reading-feature { padding-inline: 30px; gap: 30px; }
+  .ios-layout { gap: 40px; }
+  .ios-description { font-size: 13px; }
+  .phone { padding: 6px; border-radius: 34px; }
+  .phone-screen { border-radius: 28px; }
+  .phone-front { top: 40px; }
   .everyday-grid { gap: 40px; }
   .faq-section { gap: 50px; }
 }
@@ -267,6 +296,16 @@ details[open] .faq-plus { transform: rotate(45deg); }
   .reading-copy h3 { font-size: 25px; }
   .reading-excerpt { padding-inline: 18px; }
   .reading-excerpt p { font-size: 17px; }
+  .ios-layout { gap: 30px; }
+  .ios-copy h2 { font-size: 33px; }
+  .ios-app-icon { width: 54px; height: 54px; margin-bottom: 20px; border-radius: 13px; }
+  .ios-benefits { gap: 11px; }
+  .ios-benefits li { font-size: 11px; }
+  .ios-description { font-size: 12px; }
+  .ios-copy .button { padding-inline: 15px; gap: 13px; font-size: 11px; }
+  .phone { padding: 5px; border-radius: 27px; }
+  .phone-screen { border-radius: 22px; }
+  .phone-front { top: 30px; }
   .everyday-grid { gap: 25px; }
   .everyday-grid h3 { font-size: 15px; }
   .everyday-grid p { font-size: 11px; }
@@ -280,8 +319,8 @@ details[open] .faq-plus { transform: rotate(45deg); }
 @media (max-width: 620px) {
   .wrap { width: calc(100% - 40px); }
   .site-header { min-height: 88px; gap: 10px; }
-  .brand { gap: 9px; font-size: 18px; }
-  .brand-mark { width: 30px; height: 34px; font-size: 22px; border-radius: 8px 8px 12px 8px; }
+  .brand { gap: 5px; font-size: 16px; }
+  .brand-logo { width: 47px; height: 36px; }
   .brand-caption { font-size: 7px; }
   .header-actions { gap: 12px; }
   .header-actions .button { padding: 10px 12px; font-size: 10px; min-height: 39px; }
@@ -355,6 +394,18 @@ details[open] .faq-plus { transform: rotate(45deg); }
   .reading-excerpt { min-height: 235px; padding: 25px 22px; }
   .reading-excerpt p { font-size: clamp(17px, 5vw, 25px); }
   .reading-translation { font-size: 10px; }
+  .ios-layout { grid-template-columns: 1fr; gap: 36px; }
+  .ios-copy h2 { font-size: 36px; }
+  .ios-app-icon { width: 62px; height: 62px; margin-bottom: 23px; border-radius: 15px; }
+  .ios-description { margin-top: 20px; font-size: 14px; }
+  .ios-benefits { gap: 13px; margin-bottom: 26px; }
+  .ios-benefits li { font-size: 12px; }
+  .ios-copy .button { padding-inline: 22px; font-size: 12px; }
+  .ios-web-link { font-size: 11px; }
+  .phone-showcase { width: min(430px, 100%); margin-inline: auto; }
+  .phone-stage::before { inset-inline: 0; }
+  .phone-front { top: 28px; }
+  .phone-showcase figcaption { margin-top: 20px; font-size: 9px; }
   .everyday-heading { text-align: left; }
   .everyday-heading .eyebrow { justify-content: start; }
   .everyday-heading h2 { font-size: 31px; }

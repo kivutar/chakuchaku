@@ -474,5 +474,19 @@
   "landing.demo.grammar.hint": "You know 水. Now meet it in a sentence.",
   "landing.demo.grammar.answer": "I drink water.",
   "landing.demo.next": "Try another little step",
-  "landing.brandCaption": "着々 · step by step"
+  "landing.brandCaption": "着々 · step by step",
+  "landing.nav.ios": "The iOS app",
+  "landing.ios.eyebrow": "Your Japanese, to go",
+  "landing.ios.title": "A little practice.",
+  "landing.ios.accent": "Always with you.",
+  "landing.ios.description": "A few words on the train. A sentence over coffee. Bring ChakuChaku to your iPhone and make the moments in between a little more Japanese.",
+  "landing.ios.offline": "Lessons and audio, ready offline.",
+  "landing.ios.reminders": "Optional daily reminders to find your rhythm.",
+  "landing.ios.private": "Your progress stays on your device.",
+  "landing.ios.download": "Download on the App Store",
+  "landing.ios.browser": "Prefer your browser?",
+  "landing.ios.web": "Try the web app →",
+  "landing.ios.caption": "The same calm practice. A place in your pocket.",
+  "landing.ios.hiraganaAlt": "ChakuChaku Hiragana practice on a phone",
+  "landing.ios.grammarAlt": "ChakuChaku Japanese grammar lesson on a phone"
 }

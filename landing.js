@@ -54,6 +54,10 @@
       document.querySelector('meta[property="og:title"]').content = document.title;
       document.querySelector('meta[property="og:description"]').content = description;
       document.querySelector("#privacy-link").href = `privacy.html?lang=${locale}`;
+      for (const screen of document.querySelectorAll("[data-ios-screen]")) {
+        screen.src = `assets/landing/iphone-${screen.dataset.iosScreen}-${locale}.png`;
+        screen.alt = i18n.t(`landing.ios.${screen.dataset.iosScreen}Alt`);
+      }
       for (const button of languageButtons) {
         button.setAttribute("aria-pressed", String(button.dataset.language === locale));
       }

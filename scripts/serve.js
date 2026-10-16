@@ -54,6 +54,10 @@ const publicFiles = new Map([
   ["/assets/branding/logo.png", ["assets/branding/logo.png", "image/png"]],
   ["/assets/branding/icon-192.png", ["assets/branding/icon-192.png", "image/png"]],
   ["/assets/branding/icon-512.png", ["assets/branding/icon-512.png", "image/png"]],
+  ["/assets/landing/iphone-hiragana-en.png", ["assets/landing/iphone-hiragana-en.png", "image/png"]],
+  ["/assets/landing/iphone-hiragana-fr.png", ["assets/landing/iphone-hiragana-fr.png", "image/png"]],
+  ["/assets/landing/iphone-grammar-en.png", ["assets/landing/iphone-grammar-en.png", "image/png"]],
+  ["/assets/landing/iphone-grammar-fr.png", ["assets/landing/iphone-grammar-fr.png", "image/png"]],
   [
     "/assets/branding/icon-maskable-512.png",
     ["assets/branding/icon-maskable-512.png", "image/png"]

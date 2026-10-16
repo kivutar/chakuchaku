@@ -41,12 +41,13 @@
     <a class="skip-link" href="#main" data-i18n="landing.skip">Skip to content</a>
     <header class="site-header wrap">
       <a class="brand" href="./" aria-label="ChakuChaku home" data-i18n-aria-label="landing.home">
-        <span class="brand-mark" lang="ja" aria-hidden="true">チ<span>✳</span></span>
+        <img class="brand-logo" src="assets/branding/logo.png" alt="" width="1254" height="1254" fetchpriority="high">
         <span>ChakuChaku<span class="brand-caption" data-i18n="landing.brandCaption">着々 · step by step</span></span>
       </a>
       <nav class="main-nav" aria-label="Main navigation" data-i18n-aria-label="landing.nav">
         <a href="#method" data-i18n="landing.nav.method">The method</a>
         <a href="#learn" data-i18n="landing.nav.learn">What you’ll learn</a>
+        <a href="#ios" data-i18n="landing.nav.ios">The iOS app</a>
         <a href="#questions" data-i18n="landing.nav.questions">Good to know</a>
       </nav>
       <div class="header-actions">
@@ -78,7 +79,7 @@
           <span class="scene-orbit" aria-hidden="true"></span>
           <div class="scene-label"><svg class="icon" aria-hidden="true"><use href="#spark"/></svg><span data-i18n="landing.demo.invite">Your first little win</span></div>
           <div class="practice-card" aria-label="Interactive practice preview" data-i18n-aria-label="landing.demo.label">
-            <div class="practice-card-top"><span class="practice-wordmark" lang="ja">チャクチャク</span><span class="preview-label" data-i18n="landing.demo.preview">A taste of the app</span></div>
+            <div class="practice-card-top"><img class="practice-wordmark" src="assets/branding/logo.png" alt="ChakuChaku" width="1254" height="1254"><span class="preview-label" data-i18n="landing.demo.preview">A taste of the app</span></div>
             <div class="demo-tabs" role="group" aria-label="Example exercises" data-i18n-aria-label="landing.demo.exercises">
               <button type="button" data-demo="hiragana" aria-pressed="false" data-i18n="section.hiragana">Hiragana</button>
               <button type="button" data-demo="vocabulary" aria-pressed="true" data-i18n="section.vocabulary">Vocabulary</button>
@@ -127,6 +128,31 @@
         </div>
       </section>
 
+      <section id="ios" class="ios-section section" aria-labelledby="ios-title">
+        <div class="wrap ios-layout">
+          <div class="ios-copy">
+            <img class="ios-app-icon" src="assets/branding/icon-192.png" alt="" width="192" height="192" loading="lazy">
+            <p class="eyebrow" data-i18n="landing.ios.eyebrow">Your Japanese, to go</p>
+            <h2 id="ios-title"><span data-i18n="landing.ios.title">A little practice.</span><br><em data-i18n="landing.ios.accent">Always with you.</em></h2>
+            <p class="ios-description" data-i18n="landing.ios.description">A few words on the train. A sentence over coffee. Bring ChakuChaku to your iPhone and make the moments in between a little more Japanese.</p>
+            <ul class="ios-benefits">
+              <li><svg class="icon" aria-hidden="true"><use href="#check"/></svg><span data-i18n="landing.ios.offline">Lessons and audio, ready offline.</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#check"/></svg><span data-i18n="landing.ios.reminders">Optional daily reminders to find your rhythm.</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#check"/></svg><span data-i18n="landing.ios.private">Your progress stays on your device.</span></li>
+            </ul>
+            <a class="button button-store" href="https://apps.apple.com/app/id6803144387"><span data-i18n="landing.ios.download">Download on the App Store</span><svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
+            <p class="ios-web-link"><span data-i18n="landing.ios.browser">Prefer your browser?</span> <a href="grammar" data-i18n="landing.ios.web">Try the web app →</a></p>
+          </div>
+          <figure class="phone-showcase">
+            <div class="phone-stage">
+              <div class="phone phone-back"><div class="phone-screen"><img src="assets/landing/iphone-hiragana-en.png" data-ios-screen="hiragana" alt="ChakuChaku Hiragana practice on a phone" width="390" height="844" loading="lazy" decoding="async"></div></div>
+              <div class="phone phone-front"><div class="phone-screen"><img src="assets/landing/iphone-grammar-en.png" data-ios-screen="grammar" alt="ChakuChaku Japanese grammar lesson on a phone" width="390" height="844" loading="lazy" decoding="async"></div></div>
+            </div>
+            <figcaption data-i18n="landing.ios.caption">The same calm practice. A place in your pocket.</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section class="everyday-section section wrap" aria-labelledby="everyday-title"><div class="everyday-heading"><p class="eyebrow" data-i18n="landing.everyday.eyebrow">Made for real life</p><h2 id="everyday-title" data-i18n="landing.everyday.title">Your practice. Your pace. Your space.</h2></div><div class="everyday-grid"><article><svg class="feature-icon" aria-hidden="true"><use href="#shield"/></svg><h3 data-i18n="landing.everyday.private.title">Quietly private.</h3><p data-i18n="landing.everyday.private.text">No account, ads, or analytics. Your progress lives on your device, with backup and import when you need them.</p></article><article><svg class="feature-icon" aria-hidden="true"><use href="#offline"/></svg><h3 data-i18n="landing.everyday.offline.title">Ready when you are.</h3><p data-i18n="landing.everyday.offline.text">Study on the web or iOS. The web app works offline after loading; audio becomes available offline once you’ve played it.</p></article><article><svg class="feature-icon" aria-hidden="true"><use href="#globe"/></svg><h3 data-i18n="landing.everyday.language.title">A familiar starting point.</h3><p data-i18n="landing.everyday.language.text">Learn with English or French explanations. Adjust reading hints, audio, and the pace of new material to suit you.</p></article></div></section>
 
       <section id="questions" class="faq-section section wrap" aria-labelledby="questions-title"><div><p class="eyebrow" data-i18n="landing.faq.eyebrow">Before your first step</p><h2 id="questions-title" data-i18n="landing.faq.title">Good to know.</h2><p class="faq-intro" data-i18n="landing.faq.intro">A few answers, so you can get straight to learning.</p></div><div class="faq-list">
@@ -139,6 +165,6 @@
       <section class="closing-section" aria-labelledby="closing-title"><div class="wrap closing-inner"><div><p class="eyebrow" data-i18n="landing.closing.eyebrow">There’s a word for steady progress.</p><h2 id="closing-title"><span lang="ja">着々。</span><br><span data-i18n="landing.closing.title">Make it your way forward.</span></h2><p data-i18n="landing.closing.text">A character today. A sentence tomorrow. See where a little Japanese can take you.</p></div><div class="closing-actions"><a class="button button-lime" href="hiragana"><span data-i18n="landing.start">Start learning for free</span><svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a><a class="store-link" href="https://apps.apple.com/app/id6803144387"><span data-i18n="landing.closing.store">Also available on the App Store</span><span aria-hidden="true">↗</span></a></div></div></section>
     </main>
 
-    <footer class="site-footer wrap"><a class="footer-brand" href="./">ChakuChaku<span lang="ja">着々</span></a><p data-i18n="landing.footer.note">Japanese, one small step at a time.</p><nav aria-label="Footer" data-i18n-aria-label="landing.footer.nav"><a id="privacy-link" href="privacy.html" data-i18n="menu.privacy">Privacy</a><a href="https://github.com/kivutar/chakuchaku" data-i18n="landing.footer.source">Open source ↗</a><a href="grammar" data-i18n="landing.open">Open the app</a></nav></footer>
+    <footer class="site-footer wrap"><a class="footer-brand" href="./"><img class="brand-logo" src="assets/branding/logo.png" alt="" width="1254" height="1254" loading="lazy">ChakuChaku</a><p data-i18n="landing.footer.note">Japanese, one small step at a time.</p><nav aria-label="Footer" data-i18n-aria-label="landing.footer.nav"><a id="privacy-link" href="privacy.html" data-i18n="menu.privacy">Privacy</a><a href="https://github.com/kivutar/chakuchaku" data-i18n="landing.footer.source">Open source ↗</a><a href="grammar" data-i18n="landing.open">Open the app</a></nav></footer>
   </body>
 </html>
