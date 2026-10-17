@@ -434,6 +434,7 @@ details[open] .faq-plus { transform: rotate(45deg); }
   .header-actions .button { padding-inline: 9px; font-size: 9px; }
   .language-picker { gap: 1px; }
   .language-picker button { font-size: 8px; }
+  .language-picker > span { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

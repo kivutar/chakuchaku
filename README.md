@@ -18,8 +18,9 @@ what is due, progress stays on your device, and the app works in English or
 French with optional audio and offline access. No account is required.
 
 The web homepage introduces the learning method and curriculum, with a small
-interactive exercise preview and English, French, and Filipino copy. Filipino
-is available through the landing page's FIL button or `?lang=fil`; the study
+interactive exercise preview and English, French, Filipino, and Vietnamese copy.
+Filipino and Vietnamese are available through the FIL and VI buttons or
+`?lang=fil` and `?lang=vi`, respectively; the study
 app and its learning content remain available in English and French. Its source is
 `landing.html`, `landing.css`, and `landing.js`. Study routes such as `/grammar`
 and `/hiragana` continue to open the app directly. `npm start` serves the landing

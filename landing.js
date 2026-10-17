@@ -4,7 +4,7 @@
   const i18n = global.JlptN5I18n;
   const settings = global.JlptN5Settings;
   const document = global.document;
-  const landingLocales = [...i18n.supportedLocales, "fil"];
+  const landingLocales = [...i18n.supportedLocales, "fil", "vi"];
   const languageStorageKey = "chakuchaku:landing-language";
   const demos = [
     { id: "hiragana", japanese: "ねこ", prompt: "How do you read this word?", hint: "Two characters. One familiar friend.", answer: "neko · cat" },

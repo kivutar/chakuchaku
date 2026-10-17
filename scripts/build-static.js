@@ -79,6 +79,7 @@ const staticFiles = [
   "locales/en.json",
   "locales/fr.json",
   "locales/fil.json",
+  "locales/vi.json",
   "data/locales/fr/exercises.json",
   "data/locales/fr/vocabulary-examples.json",
   "data/locales/fr/grammar.json",

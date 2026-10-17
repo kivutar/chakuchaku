@@ -6,11 +6,12 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
-const [code, english, french, filipino] = await Promise.all([
+const [code, english, french, filipino, vietnamese] = await Promise.all([
   readFile(join(rootDirectory, "i18n.js"), "utf8"),
   readFile(join(rootDirectory, "locales", "en.json"), "utf8").then(JSON.parse),
   readFile(join(rootDirectory, "locales", "fr.json"), "utf8").then(JSON.parse),
-  readFile(join(rootDirectory, "locales", "fil.json"), "utf8").then(JSON.parse)
+  readFile(join(rootDirectory, "locales", "fil.json"), "utf8").then(JSON.parse),
+  readFile(join(rootDirectory, "locales", "vi.json"), "utf8").then(JSON.parse)
 ]);
 
 function loadApi(languages = ["en-US"]) {
@@ -27,7 +28,13 @@ function loadApi(languages = ["en-US"]) {
 }
 
 function catalogFetch(url) {
-  const value = url.endsWith("fil.json") ? filipino : url.endsWith("fr.json") ? french : english;
+  const value = {
+    "locales/en.json": english,
+    "locales/fr.json": french,
+    "locales/fil.json": filipino,
+    "locales/vi.json": vietnamese
+  }[url];
+  assert.ok(value, `Unexpected catalog request: ${url}`);
 
   return Promise.resolve({ ok: true, json: async () => value });
 }
@@ -55,34 +62,39 @@ test("French messages interpolate and pluralize with English fallback", async ()
   assert.equal(api.t("missing.key"), "missing.key");
 });
 
-test("Filipino can be enabled for the landing page without extending study languages", async () => {
-  const api = loadApi(["fil-PH", "en-US"]);
-  const landingLocales = [...api.supportedLocales, "fil"];
+for (const [name, locale, browserLocale, alias, answer, catalog] of [
+  ["Filipino", "fil", "fil-PH", "tl-PH", "Tubig", filipino],
+  ["Vietnamese", "vi", "vi-VN", "VI_VN", "Nước", vietnamese]
+]) {
+  test(`${name} can be enabled for the landing page without extending study languages`, async () => {
+    const api = loadApi([browserLocale, "en-US"]);
+    const landingLocales = [...api.supportedLocales, "fil", "vi"];
 
-  assert.deepEqual([...api.supportedLocales], ["en", "fr"]);
-  assert.equal(api.resolveLocale("auto"), "en");
-  assert.equal(api.resolveLocale("auto", ["tl-PH"], landingLocales), "fil");
-  assert.equal(api.normalizeLocale("FIL_PH", landingLocales), "fil");
+    assert.deepEqual([...api.supportedLocales], ["en", "fr"]);
+    assert.equal(api.resolveLocale("auto"), "en");
+    assert.equal(api.resolveLocale("auto", [alias], landingLocales), locale);
+    assert.equal(api.normalizeLocale(browserLocale, landingLocales), locale);
 
-  await api.initialize("auto", { supportedLocales: landingLocales, fetchImpl: catalogFetch });
-  assert.equal(api.getLocale(), "fil");
-  assert.equal(api.t("landing.demo.vocabulary.answer"), "Tubig");
-  assert.equal(api.t("common.next"), english["common.next"]);
-  assert.deepEqual([...api.supportedLocales], ["en", "fr"]);
+    await api.initialize("auto", { supportedLocales: landingLocales, fetchImpl: catalogFetch });
+    assert.equal(api.getLocale(), locale);
+    assert.equal(api.t("landing.demo.vocabulary.answer"), answer);
+    assert.equal(api.t("common.next"), english["common.next"]);
+    assert.deepEqual([...api.supportedLocales], ["en", "fr"]);
 
-  await api.initialize("auto", { fetchImpl: catalogFetch });
-  assert.equal(api.getLocale(), "en");
-});
+    await api.initialize("auto", { fetchImpl: catalogFetch });
+    assert.equal(api.getLocale(), "en");
+  });
 
-test("Filipino translates every landing message and shared label used on the page", async () => {
-  const html = await readFile(join(rootDirectory, "landing.html"), "utf8");
-  const keys = new Set([
-    ...Object.keys(english).filter((key) => key.startsWith("landing.")),
-    ...[...html.matchAll(/data-i18n(?:-aria-label)?="([^"]+)"/gu)].map((match) => match[1])
-  ]);
+  test(`${name} translates every landing message and shared label used on the page`, async () => {
+    const html = await readFile(join(rootDirectory, "landing.html"), "utf8");
+    const keys = new Set([
+      ...Object.keys(english).filter((key) => key.startsWith("landing.")),
+      ...[...html.matchAll(/data-i18n(?:-aria-label)?="([^"]+)"/gu)].map((match) => match[1])
+    ]);
 
-  for (const key of keys) {
-    assert.equal(typeof filipino[key], "string", key);
-    assert.ok(filipino[key].trim().length > 0, key);
-  }
-});
+    for (const key of keys) {
+      assert.equal(typeof catalog[key], "string", key);
+      assert.ok(catalog[key].trim().length > 0, key);
+    }
+  });
+}
