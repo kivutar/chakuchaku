@@ -8,14 +8,19 @@
   let catalog = {};
   let fallbackCatalog = {};
 
-  function normalizeLocale(value) {
-    const language = String(value || "").trim().toLocaleLowerCase("en").split(/[-_]/u)[0];
+  function normalizeLocale(value, locales = supportedLocales) {
+    const baseLanguage = String(value || "").trim().toLocaleLowerCase("en").split(/[-_]/u)[0];
+    const language = baseLanguage === "tl" ? "fil" : baseLanguage;
 
-    return supportedLocales.includes(language) ? language : undefined;
+    return locales.includes(language) ? language : undefined;
   }
 
-  function resolveLocale(preference = "auto", languages = global.navigator?.languages) {
-    const explicitLocale = normalizeLocale(preference);
+  function resolveLocale(
+    preference = "auto",
+    languages = global.navigator?.languages,
+    locales = supportedLocales
+  ) {
+    const explicitLocale = normalizeLocale(preference, locales);
 
     if (explicitLocale) {
       return explicitLocale;
@@ -25,7 +30,7 @@
       ? languages
       : [global.navigator?.language];
 
-    return candidates.map(normalizeLocale).find(Boolean) || defaultLocale;
+    return candidates.map((value) => normalizeLocale(value, locales)).find(Boolean) || defaultLocale;
   }
 
   async function fetchCatalog(language, fetchImpl = global.fetch) {
@@ -50,7 +55,7 @@
   }
 
   async function initialize(preference, options = {}) {
-    locale = resolveLocale(preference, options.languages);
+    locale = resolveLocale(preference, options.languages, options.supportedLocales);
     const fetchImpl = options.fetchImpl || global.fetch;
 
     fallbackCatalog = await fetchCatalog(defaultLocale, fetchImpl);

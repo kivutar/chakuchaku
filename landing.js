@@ -4,6 +4,8 @@
   const i18n = global.JlptN5I18n;
   const settings = global.JlptN5Settings;
   const document = global.document;
+  const landingLocales = [...i18n.supportedLocales, "fil"];
+  const languageStorageKey = "chakuchaku:landing-language";
   const demos = [
     { id: "hiragana", japanese: "ねこ", prompt: "How do you read this word?", hint: "Two characters. One familiar friend.", answer: "neko · cat" },
     { id: "vocabulary", japanese: "<ruby>水<rt>みず</rt></ruby>", prompt: "What does this word mean?", hint: "A little word you’ll use every day.", answer: "Water" },
@@ -15,6 +17,33 @@
   const revealButton = document.querySelector("#demo-reveal");
   const languageButtons = [...document.querySelectorAll("[data-language]")];
   const demoButtons = [...document.querySelectorAll("[data-demo]")];
+
+  function readLanguagePreference() {
+    const requestedLanguage = new URLSearchParams(global.location.search).get("lang");
+    const requestedLocale = i18n.normalizeLocale(requestedLanguage, landingLocales);
+    if (requestedLocale) return requestedLocale;
+    try {
+      const savedLocale = global.localStorage.getItem(languageStorageKey);
+      if (landingLocales.includes(savedLocale)) return savedLocale;
+    } catch {
+      // Browser language detection also works when storage is unavailable.
+    }
+    return settings.readSettings().userLanguage;
+  }
+
+  function saveLanguagePreference(locale) {
+    try {
+      global.localStorage.setItem(languageStorageKey, locale);
+    } catch {
+      // The selection still applies for the current page.
+    }
+    if (i18n.supportedLocales.includes(locale)) settings.writeSettings({ userLanguage: locale });
+    const url = new URL(global.location.href);
+    if (url.searchParams.has("lang")) {
+      url.searchParams.set("lang", locale);
+      global.history.replaceState(null, "", url);
+    }
+  }
 
   function message(key, fallback) {
     const value = i18n.t(key);
@@ -45,7 +74,7 @@
     changingLanguage = true;
     languageButtons.forEach((button) => { button.disabled = true; });
     try {
-      await i18n.initialize(preference);
+      await i18n.initialize(preference, { supportedLocales: landingLocales });
       i18n.applyDocument();
       const locale = i18n.getLocale();
       document.title = i18n.t("landing.pageTitle");
@@ -53,9 +82,10 @@
       document.querySelector('meta[name="description"]').content = description;
       document.querySelector('meta[property="og:title"]').content = document.title;
       document.querySelector('meta[property="og:description"]').content = description;
-      document.querySelector("#privacy-link").href = `privacy.html?lang=${locale}`;
+      const appLocale = i18n.supportedLocales.includes(locale) ? locale : i18n.defaultLocale;
+      document.querySelector("#privacy-link").href = `privacy.html?lang=${appLocale}`;
       for (const screen of document.querySelectorAll("[data-ios-screen]")) {
-        screen.src = `assets/landing/iphone-${screen.dataset.iosScreen}-${locale}.png`;
+        screen.src = `assets/landing/iphone-${screen.dataset.iosScreen}-${appLocale}.png`;
         screen.alt = i18n.t(`landing.ios.${screen.dataset.iosScreen}Alt`);
       }
       for (const button of languageButtons) {
@@ -72,12 +102,12 @@
     }
   }
 
-  await applyLanguage(settings.readSettings().userLanguage);
+  await applyLanguage(readLanguagePreference());
 
   for (const button of languageButtons) {
     button.addEventListener("click", async () => {
       const locale = button.dataset.language;
-      if (await applyLanguage(locale)) settings.writeSettings({ userLanguage: locale });
+      if (await applyLanguage(locale)) saveLanguagePreference(locale);
     });
   }
 

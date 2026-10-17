@@ -78,6 +78,7 @@ const staticFiles = [
   "data/jlpt-n5-conjugation.json",
   "locales/en.json",
   "locales/fr.json",
+  "locales/fil.json",
   "data/locales/fr/exercises.json",
   "data/locales/fr/vocabulary-examples.json",
   "data/locales/fr/grammar.json",

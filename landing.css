@@ -426,6 +426,15 @@ details[open] .faq-plus { transform: rotate(45deg); }
   .site-footer nav { flex-wrap: wrap; gap: 25px; margin-left: 0; }
   .site-footer nav a { font-size: 11px; }
 }
+@media (max-width: 420px) {
+  .site-header { gap: 6px; }
+  .brand { gap: 3px; font-size: 14px; }
+  .brand-logo { width: 40px; height: 32px; }
+  .header-actions { gap: 6px; }
+  .header-actions .button { padding-inline: 9px; font-size: 9px; }
+  .language-picker { gap: 1px; }
+  .language-picker button { font-size: 8px; }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }

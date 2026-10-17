@@ -1667,6 +1667,7 @@ test("preview serves the committed static application", async () => {
     ["/", "text/html"],
     ["/landing.css", "text/css"],
     ["/landing.js", "text/javascript"],
+    ["/locales/fil.json", "application/json"],
     ["/assets/landing/iphone-hiragana-en.png", "image/png"],
     ["/assets/landing/iphone-hiragana-fr.png", "image/png"],
     ["/assets/landing/iphone-grammar-en.png", "image/png"],

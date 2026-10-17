@@ -138,6 +138,7 @@ const publicFiles = new Map([
   ],
   ["/locales/en.json", ["locales/en.json", "application/json; charset=utf-8"]],
   ["/locales/fr.json", ["locales/fr.json", "application/json; charset=utf-8"]],
+  ["/locales/fil.json", ["locales/fil.json", "application/json; charset=utf-8"]],
   [
     "/data/locales/fr/exercises.json",
     ["data/locales/fr/exercises.json", "application/json; charset=utf-8"]
