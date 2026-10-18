@@ -16255,6 +16255,2004 @@
     ]
   },
   {
+    "id": "learning-to-love-dark-souls",
+    "level": "n5",
+    "title": {
+      "en": "Learning to love Dark Souls",
+      "fr": "Apprendre à aimer Dark Souls"
+    },
+    "description": {
+      "en": "A short interview with a gamer: a difficult start, a brother’s advice, and a new favourite series.",
+      "fr": "Un court entretien avec un joueur : des débuts difficiles, les conseils de son frère et une nouvelle passion."
+    },
+    "sentences": [
+      {
+        "id": "reading-dark-souls-01",
+        "minimumLevel": "n5",
+        "text": "「DARK SOULSは、初めから好きでしたか。」",
+        "audio": "assets/voices/reading/reading-dark-souls-01.m4a",
+        "vocabularyIds": [
+          "vocab-2dba63ed9209",
+          "vocab-32a5e8698306"
+        ],
+        "kanjiIds": [
+          "kanji-597d"
+        ],
+        "tokens": [
+          {
+            "surface": "「",
+            "reading": "「"
+          },
+          {
+            "surface": "DARK",
+            "category": "noun"
+          },
+          {
+            "surface": " "
+          },
+          {
+            "surface": "SOULS",
+            "category": "noun"
+          },
+          {
+            "surface": "は",
+            "category": "particle",
+            "reading": "は"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "初め",
+            "category": "noun",
+            "reading": "はじめ",
+            "vocabularyId": "vocab-2dba63ed9209"
+          },
+          {
+            "surface": "から",
+            "category": "particle",
+            "reading": "から"
+          },
+          {
+            "surface": "好き",
+            "category": "adjective",
+            "reading": "すき",
+            "vocabularyId": "vocab-32a5e8698306"
+          },
+          {
+            "surface": "でし",
+            "category": "auxiliary",
+            "reading": "でし"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "か",
+            "category": "particle",
+            "reading": "か"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          },
+          {
+            "surface": "」",
+            "reading": "」"
+          }
+        ],
+        "paragraph": 1,
+        "grammarPointIds": [
+          "kara-start",
+          "suki-kirai",
+          "ka-question"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-02",
+        "minimumLevel": "n5",
+        "text": "いいえ、初めはあまり好きではありませんでした。",
+        "audio": "assets/voices/reading/reading-dark-souls-02.m4a",
+        "vocabularyIds": [
+          "vocab-5e97c99f1db9",
+          "vocab-2dba63ed9209",
+          "vocab-255c097781c5",
+          "vocab-32a5e8698306",
+          "vocab-b66f43bc23a1"
+        ],
+        "kanjiIds": [
+          "kanji-597d"
+        ],
+        "tokens": [
+          {
+            "surface": "いいえ",
+            "category": "interjection",
+            "reading": "いいえ",
+            "vocabularyId": "vocab-5e97c99f1db9"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "初め",
+            "category": "noun",
+            "reading": "はじめ",
+            "vocabularyId": "vocab-2dba63ed9209"
+          },
+          {
+            "surface": "は",
+            "category": "particle",
+            "reading": "は"
+          },
+          {
+            "surface": "あまり",
+            "category": "adverb",
+            "reading": "あまり",
+            "vocabularyId": "vocab-255c097781c5"
+          },
+          {
+            "surface": "好き",
+            "category": "adjective",
+            "reading": "すき",
+            "vocabularyId": "vocab-32a5e8698306"
+          },
+          {
+            "surface": "で",
+            "category": "auxiliary",
+            "reading": "で"
+          },
+          {
+            "surface": "は",
+            "category": "particle",
+            "reading": "は"
+          },
+          {
+            "surface": "あり",
+            "category": "verb",
+            "reading": "あり",
+            "vocabularyId": "vocab-b66f43bc23a1"
+          },
+          {
+            "surface": "ませ",
+            "category": "auxiliary",
+            "reading": "ませ"
+          },
+          {
+            "surface": "ん",
+            "category": "auxiliary",
+            "reading": "ん"
+          },
+          {
+            "surface": "でし",
+            "category": "auxiliary",
+            "reading": "でし"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 2,
+        "grammarPointIds": [
+          "frequency-adverbs",
+          "na-adjective-past-negative"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-03",
+        "minimumLevel": "n5",
+        "text": "暗くて怖いゲームだと思いました。",
+        "audio": "assets/voices/reading/reading-dark-souls-03.m4a",
+        "vocabularyIds": [
+          "vocab-a4945bc781fd",
+          "vocab-c79c9d356804",
+          "vocab-d0d5c0952530",
+          "vocab-c64ca071011e"
+        ],
+        "kanjiIds": [
+          "kanji-601d"
+        ],
+        "tokens": [
+          {
+            "surface": "暗く",
+            "category": "adjective",
+            "reading": "くらく",
+            "vocabularyId": "vocab-a4945bc781fd"
+          },
+          {
+            "surface": "て",
+            "category": "particle",
+            "reading": "て"
+          },
+          {
+            "surface": "怖い",
+            "category": "adjective",
+            "reading": "こわい",
+            "vocabularyId": "vocab-c79c9d356804"
+          },
+          {
+            "surface": "ゲーム",
+            "category": "noun",
+            "reading": "げーむ",
+            "vocabularyId": "vocab-d0d5c0952530"
+          },
+          {
+            "surface": "だ",
+            "category": "auxiliary",
+            "reading": "だ"
+          },
+          {
+            "surface": "と",
+            "category": "particle",
+            "reading": "と"
+          },
+          {
+            "surface": "思い",
+            "category": "verb",
+            "reading": "おもい",
+            "vocabularyId": "vocab-c64ca071011e"
+          },
+          {
+            "surface": "まし",
+            "category": "auxiliary",
+            "reading": "まし"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 2,
+        "grammarPointIds": [
+          "adjective-connective",
+          "to-omou"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-04",
+        "minimumLevel": "n5",
+        "text": "同じ橋でよく死にました。",
+        "audio": "assets/voices/reading/reading-dark-souls-04.m4a",
+        "vocabularyIds": [
+          "vocab-9ff4f40a3428",
+          "vocab-873a33bd6c13",
+          "vocab-ef4cce00951f",
+          "vocab-dd5d31dbf7c9"
+        ],
+        "kanjiIds": [
+          "kanji-540c",
+          "kanji-6b7b"
+        ],
+        "tokens": [
+          {
+            "surface": "同じ",
+            "category": "determiner",
+            "reading": "おなじ",
+            "vocabularyId": "vocab-9ff4f40a3428"
+          },
+          {
+            "surface": "橋",
+            "category": "noun",
+            "reading": "はし",
+            "vocabularyId": "vocab-873a33bd6c13"
+          },
+          {
+            "surface": "で",
+            "category": "auxiliary",
+            "reading": "で"
+          },
+          {
+            "surface": "よく",
+            "category": "adjective",
+            "reading": "よく",
+            "vocabularyId": "vocab-ef4cce00951f"
+          },
+          {
+            "surface": "死に",
+            "category": "verb",
+            "reading": "しに",
+            "vocabularyId": "vocab-dd5d31dbf7c9"
+          },
+          {
+            "surface": "まし",
+            "category": "auxiliary",
+            "reading": "まし"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 2,
+        "grammarPointIds": [
+          "onaji",
+          "de-action-location",
+          "frequency-adverbs"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-05",
+        "minimumLevel": "n5",
+        "text": "「どうして、また遊んだんですか。」",
+        "audio": "assets/voices/reading/reading-dark-souls-05.m4a",
+        "vocabularyIds": [
+          "vocab-8684d9811d46",
+          "vocab-a72e26bc8cb2",
+          "vocab-58a04652246f"
+        ],
+        "kanjiIds": [],
+        "tokens": [
+          {
+            "surface": "「",
+            "reading": "「"
+          },
+          {
+            "surface": "どうして",
+            "category": "adverb",
+            "reading": "どうして",
+            "vocabularyId": "vocab-8684d9811d46"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "また",
+            "category": "conjunction",
+            "reading": "また",
+            "vocabularyId": "vocab-a72e26bc8cb2"
+          },
+          {
+            "surface": "遊ん",
+            "category": "verb",
+            "reading": "あそん",
+            "vocabularyId": "vocab-58a04652246f"
+          },
+          {
+            "surface": "だ",
+            "category": "auxiliary",
+            "reading": "だ"
+          },
+          {
+            "surface": "ん",
+            "category": "auxiliary",
+            "reading": "ん"
+          },
+          {
+            "surface": "です",
+            "category": "auxiliary",
+            "reading": "です"
+          },
+          {
+            "surface": "か",
+            "category": "particle",
+            "reading": "か"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          },
+          {
+            "surface": "」",
+            "reading": "」"
+          }
+        ],
+        "paragraph": 3,
+        "grammarPointIds": [
+          "naze-doushite-nande",
+          "no-desu",
+          "ka-question"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-06",
+        "minimumLevel": "n5",
+        "text": "兄が教えてくれたからです。",
+        "audio": "assets/voices/reading/reading-dark-souls-06.m4a",
+        "vocabularyIds": [
+          "vocab-cda9169e9fa2",
+          "vocab-de83de37aff5"
+        ],
+        "kanjiIds": [
+          "kanji-5144",
+          "kanji-6559"
+        ],
+        "tokens": [
+          {
+            "surface": "兄",
+            "category": "noun",
+            "reading": "あに",
+            "vocabularyId": "vocab-cda9169e9fa2"
+          },
+          {
+            "surface": "が",
+            "category": "particle",
+            "reading": "が"
+          },
+          {
+            "surface": "教え",
+            "category": "verb",
+            "reading": "おしえ",
+            "vocabularyId": "vocab-de83de37aff5"
+          },
+          {
+            "surface": "て",
+            "category": "particle",
+            "reading": "て"
+          },
+          {
+            "surface": "くれ",
+            "category": "auxiliary",
+            "reading": "くれ"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "から",
+            "category": "particle",
+            "reading": "から"
+          },
+          {
+            "surface": "です",
+            "category": "auxiliary",
+            "reading": "です"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 4,
+        "grammarPointIds": [
+          "ga-subject",
+          "te-kureru",
+          "kara-reason"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-07",
+        "minimumLevel": "n5",
+        "text": "兄は「走る前に、よく見てください」と言いました。",
+        "audio": "assets/voices/reading/reading-dark-souls-07.m4a",
+        "vocabularyIds": [
+          "vocab-cda9169e9fa2",
+          "vocab-97526e11c703",
+          "vocab-07f353ef981c",
+          "vocab-ac0d84b30392",
+          "vocab-385cc0d9ee98",
+          "vocab-4fa253e10946"
+        ],
+        "kanjiIds": [
+          "kanji-5144",
+          "kanji-8d70",
+          "kanji-524d",
+          "kanji-898b",
+          "kanji-8a00"
+        ],
+        "tokens": [
+          {
+            "surface": "兄",
+            "category": "noun",
+            "reading": "あに",
+            "vocabularyId": "vocab-cda9169e9fa2"
+          },
+          {
+            "surface": "は",
+            "category": "particle",
+            "reading": "は"
+          },
+          {
+            "surface": "「",
+            "reading": "「"
+          },
+          {
+            "surface": "走る",
+            "category": "verb",
+            "reading": "はしる",
+            "vocabularyId": "vocab-97526e11c703"
+          },
+          {
+            "surface": "前",
+            "category": "noun",
+            "reading": "まえ",
+            "vocabularyId": "vocab-07f353ef981c"
+          },
+          {
+            "surface": "に",
+            "category": "particle",
+            "reading": "に"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "よく",
+            "category": "adverb",
+            "reading": "よく",
+            "vocabularyId": "vocab-ac0d84b30392"
+          },
+          {
+            "surface": "見",
+            "category": "verb",
+            "reading": "み",
+            "vocabularyId": "vocab-385cc0d9ee98"
+          },
+          {
+            "surface": "て",
+            "category": "particle",
+            "reading": "て"
+          },
+          {
+            "surface": "ください",
+            "category": "auxiliary",
+            "reading": "ください"
+          },
+          {
+            "surface": "」",
+            "reading": "」"
+          },
+          {
+            "surface": "と",
+            "category": "particle",
+            "reading": "と"
+          },
+          {
+            "surface": "言い",
+            "category": "verb",
+            "reading": "いい",
+            "vocabularyId": "vocab-4fa253e10946"
+          },
+          {
+            "surface": "まし",
+            "category": "auxiliary",
+            "reading": "まし"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 4,
+        "grammarPointIds": [
+          "mae-ni",
+          "te-kudasai",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-08",
+        "minimumLevel": "n5",
+        "text": "私はゆっくり歩いて、あの橋を渡ることができました。",
+        "audio": "assets/voices/reading/reading-dark-souls-08.m4a",
+        "vocabularyIds": [
+          "vocab-b6944a5fe271",
+          "vocab-0609e7997541",
+          "vocab-a76603aae6e4",
+          "vocab-1cca7d20a36c",
+          "vocab-873a33bd6c13",
+          "vocab-9aa7d5bc2d8f",
+          "vocab-2ab01f1ec07e",
+          "vocab-581d18f92555"
+        ],
+        "kanjiIds": [
+          "kanji-79c1",
+          "kanji-6b69"
+        ],
+        "tokens": [
+          {
+            "surface": "私",
+            "category": "noun",
+            "reading": "わたし",
+            "vocabularyId": "vocab-b6944a5fe271"
+          },
+          {
+            "surface": "は",
+            "category": "particle",
+            "reading": "は"
+          },
+          {
+            "surface": "ゆっくり",
+            "category": "adverb",
+            "reading": "ゆっくり",
+            "vocabularyId": "vocab-0609e7997541"
+          },
+          {
+            "surface": "歩い",
+            "category": "verb",
+            "reading": "あるい",
+            "vocabularyId": "vocab-a76603aae6e4"
+          },
+          {
+            "surface": "て",
+            "category": "particle",
+            "reading": "て"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "あの",
+            "category": "determiner",
+            "reading": "あの",
+            "vocabularyId": "vocab-1cca7d20a36c"
+          },
+          {
+            "surface": "橋",
+            "category": "noun",
+            "reading": "はし",
+            "vocabularyId": "vocab-873a33bd6c13"
+          },
+          {
+            "surface": "を",
+            "category": "particle",
+            "reading": "を"
+          },
+          {
+            "surface": "渡る",
+            "category": "verb",
+            "reading": "わたる",
+            "vocabularyId": "vocab-9aa7d5bc2d8f"
+          },
+          {
+            "surface": "こと",
+            "category": "noun",
+            "reading": "こと",
+            "vocabularyId": "vocab-2ab01f1ec07e"
+          },
+          {
+            "surface": "が",
+            "category": "particle",
+            "reading": "が"
+          },
+          {
+            "surface": "でき",
+            "category": "verb",
+            "reading": "でき",
+            "vocabularyId": "vocab-581d18f92555"
+          },
+          {
+            "surface": "まし",
+            "category": "auxiliary",
+            "reading": "まし"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 4,
+        "grammarPointIds": [
+          "te-action-link",
+          "koto-ga-dekiru",
+          "o-route"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-09",
+        "minimumLevel": "n5",
+        "text": "「今は、何が一番好きですか。」",
+        "audio": "assets/voices/reading/reading-dark-souls-09.m4a",
+        "vocabularyIds": [
+          "vocab-89beba69de5a",
+          "vocab-3b010d61ddd5",
+          "vocab-8a98a8e471f7",
+          "vocab-32a5e8698306"
+        ],
+        "kanjiIds": [
+          "kanji-4eca",
+          "kanji-4f55",
+          "kanji-4e00",
+          "kanji-597d"
+        ],
+        "tokens": [
+          {
+            "surface": "「",
+            "reading": "「"
+          },
+          {
+            "surface": "今",
+            "category": "noun",
+            "reading": "いま",
+            "vocabularyId": "vocab-89beba69de5a"
+          },
+          {
+            "surface": "は",
+            "category": "particle",
+            "reading": "は"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "何",
+            "category": "noun",
+            "reading": "なに",
+            "vocabularyId": "vocab-3b010d61ddd5"
+          },
+          {
+            "surface": "が",
+            "category": "particle",
+            "reading": "が"
+          },
+          {
+            "surface": "一番",
+            "category": "noun",
+            "reading": "いちばん",
+            "vocabularyId": "vocab-8a98a8e471f7"
+          },
+          {
+            "surface": "好き",
+            "category": "adjective",
+            "reading": "すき",
+            "vocabularyId": "vocab-32a5e8698306"
+          },
+          {
+            "surface": "です",
+            "category": "auxiliary",
+            "reading": "です"
+          },
+          {
+            "surface": "か",
+            "category": "particle",
+            "reading": "か"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          },
+          {
+            "surface": "」",
+            "reading": "」"
+          }
+        ],
+        "paragraph": 5,
+        "grammarPointIds": [
+          "nani",
+          "ichiban-superlative",
+          "suki-kirai"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-10",
+        "minimumLevel": "n5",
+        "text": "知らない道を歩くのが一番好きです。",
+        "audio": "assets/voices/reading/reading-dark-souls-10.m4a",
+        "vocabularyIds": [
+          "vocab-531b240786ce",
+          "vocab-b4a022a9e7a6",
+          "vocab-a76603aae6e4",
+          "vocab-8a98a8e471f7",
+          "vocab-32a5e8698306"
+        ],
+        "kanjiIds": [
+          "kanji-77e5",
+          "kanji-9053",
+          "kanji-6b69",
+          "kanji-4e00",
+          "kanji-597d"
+        ],
+        "tokens": [
+          {
+            "surface": "知ら",
+            "category": "verb",
+            "reading": "しら",
+            "vocabularyId": "vocab-531b240786ce"
+          },
+          {
+            "surface": "ない",
+            "category": "auxiliary",
+            "reading": "ない"
+          },
+          {
+            "surface": "道",
+            "category": "noun",
+            "reading": "みち",
+            "vocabularyId": "vocab-b4a022a9e7a6"
+          },
+          {
+            "surface": "を",
+            "category": "particle",
+            "reading": "を"
+          },
+          {
+            "surface": "歩く",
+            "category": "verb",
+            "reading": "あるく",
+            "vocabularyId": "vocab-a76603aae6e4"
+          },
+          {
+            "surface": "の",
+            "category": "particle",
+            "reading": "の"
+          },
+          {
+            "surface": "が",
+            "category": "particle",
+            "reading": "が"
+          },
+          {
+            "surface": "一番",
+            "category": "noun",
+            "reading": "いちばん",
+            "vocabularyId": "vocab-8a98a8e471f7"
+          },
+          {
+            "surface": "好き",
+            "category": "adjective",
+            "reading": "すき",
+            "vocabularyId": "vocab-32a5e8698306"
+          },
+          {
+            "surface": "です",
+            "category": "auxiliary",
+            "reading": "です"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 6,
+        "grammarPointIds": [
+          "no-ga-suki",
+          "ichiban-superlative",
+          "o-route"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-11",
+        "minimumLevel": "n5",
+        "text": "音楽を聞くのも好きです。",
+        "audio": "assets/voices/reading/reading-dark-souls-11.m4a",
+        "vocabularyIds": [
+          "vocab-83b219893eca",
+          "vocab-d8a0261581dc",
+          "vocab-32a5e8698306"
+        ],
+        "kanjiIds": [
+          "kanji-97f3",
+          "kanji-697d",
+          "kanji-805e",
+          "kanji-597d"
+        ],
+        "tokens": [
+          {
+            "surface": "音楽",
+            "category": "noun",
+            "reading": "おんがく",
+            "vocabularyId": "vocab-83b219893eca"
+          },
+          {
+            "surface": "を",
+            "category": "particle",
+            "reading": "を"
+          },
+          {
+            "surface": "聞く",
+            "category": "verb",
+            "reading": "きく",
+            "vocabularyId": "vocab-d8a0261581dc"
+          },
+          {
+            "surface": "の",
+            "category": "particle",
+            "reading": "の"
+          },
+          {
+            "surface": "も",
+            "category": "particle",
+            "reading": "も"
+          },
+          {
+            "surface": "好き",
+            "category": "adjective",
+            "reading": "すき",
+            "vocabularyId": "vocab-32a5e8698306"
+          },
+          {
+            "surface": "です",
+            "category": "auxiliary",
+            "reading": "です"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 6,
+        "grammarPointIds": [
+          "no-nominalizer",
+          "mo-addition",
+          "suki-kirai"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-12",
+        "minimumLevel": "n5",
+        "text": "前より上手になるのが楽しいです。",
+        "audio": "assets/voices/reading/reading-dark-souls-12.m4a",
+        "vocabularyIds": [
+          "vocab-07f353ef981c",
+          "vocab-f78f531c55a5",
+          "vocab-3653e718a1a5",
+          "vocab-9cc2d4a9bbe1"
+        ],
+        "kanjiIds": [
+          "kanji-524d",
+          "kanji-4e0a",
+          "kanji-624b",
+          "kanji-697d"
+        ],
+        "tokens": [
+          {
+            "surface": "前",
+            "category": "noun",
+            "reading": "まえ",
+            "vocabularyId": "vocab-07f353ef981c"
+          },
+          {
+            "surface": "より",
+            "category": "particle",
+            "reading": "より"
+          },
+          {
+            "surface": "上手",
+            "category": "adjective",
+            "reading": "じょうず",
+            "vocabularyId": "vocab-f78f531c55a5"
+          },
+          {
+            "surface": "に",
+            "category": "particle",
+            "reading": "に"
+          },
+          {
+            "surface": "なる",
+            "category": "verb",
+            "reading": "なる",
+            "vocabularyId": "vocab-3653e718a1a5"
+          },
+          {
+            "surface": "の",
+            "category": "particle",
+            "reading": "の"
+          },
+          {
+            "surface": "が",
+            "category": "particle",
+            "reading": "が"
+          },
+          {
+            "surface": "楽しい",
+            "category": "adjective",
+            "reading": "たのしい",
+            "vocabularyId": "vocab-9cc2d4a9bbe1"
+          },
+          {
+            "surface": "です",
+            "category": "auxiliary",
+            "reading": "です"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 6,
+        "grammarPointIds": [
+          "yori-comparison",
+          "naru-change",
+          "no-nominalizer"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-13",
+        "minimumLevel": "n5",
+        "text": "「DARK SOULS IIとDARK SOULS IIIも遊びましたか。」",
+        "audio": "assets/voices/reading/reading-dark-souls-13.m4a",
+        "vocabularyIds": [
+          "vocab-58a04652246f"
+        ],
+        "kanjiIds": [],
+        "tokens": [
+          {
+            "surface": "「",
+            "reading": "「"
+          },
+          {
+            "surface": "DARK",
+            "category": "noun"
+          },
+          {
+            "surface": " "
+          },
+          {
+            "surface": "SOULS",
+            "category": "noun"
+          },
+          {
+            "surface": " "
+          },
+          {
+            "surface": "II",
+            "category": "noun"
+          },
+          {
+            "surface": "と",
+            "category": "particle",
+            "reading": "と"
+          },
+          {
+            "surface": "DARK",
+            "category": "noun"
+          },
+          {
+            "surface": " "
+          },
+          {
+            "surface": "SOULS",
+            "category": "noun"
+          },
+          {
+            "surface": " "
+          },
+          {
+            "surface": "III",
+            "category": "noun"
+          },
+          {
+            "surface": "も",
+            "category": "particle",
+            "reading": "も"
+          },
+          {
+            "surface": "遊び",
+            "category": "verb",
+            "reading": "あそび",
+            "vocabularyId": "vocab-58a04652246f"
+          },
+          {
+            "surface": "まし",
+            "category": "auxiliary",
+            "reading": "まし"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "か",
+            "category": "particle",
+            "reading": "か"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          },
+          {
+            "surface": "」",
+            "reading": "」"
+          }
+        ],
+        "paragraph": 7,
+        "grammarPointIds": [
+          "to-complete-list",
+          "mo-addition",
+          "ka-question"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-14",
+        "minimumLevel": "n5",
+        "text": "はい、DARK SOULSの後で、その二つも遊びました。",
+        "audio": "assets/voices/reading/reading-dark-souls-14.m4a",
+        "vocabularyIds": [
+          "vocab-6bbf1546d4d7",
+          "vocab-415439a1dbb6",
+          "vocab-ac42ce789185",
+          "vocab-bb85f028d944",
+          "vocab-58a04652246f"
+        ],
+        "kanjiIds": [
+          "kanji-5f8c",
+          "kanji-4e8c"
+        ],
+        "tokens": [
+          {
+            "surface": "はい",
+            "category": "interjection",
+            "reading": "はい",
+            "vocabularyId": "vocab-6bbf1546d4d7"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "DARK",
+            "category": "noun"
+          },
+          {
+            "surface": " "
+          },
+          {
+            "surface": "SOULS",
+            "category": "noun"
+          },
+          {
+            "surface": "の",
+            "category": "particle",
+            "reading": "の"
+          },
+          {
+            "surface": "後",
+            "category": "noun",
+            "reading": "あと",
+            "vocabularyId": "vocab-415439a1dbb6"
+          },
+          {
+            "surface": "で",
+            "category": "particle",
+            "reading": "で"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "その",
+            "category": "determiner",
+            "reading": "その",
+            "vocabularyId": "vocab-ac42ce789185"
+          },
+          {
+            "surface": "二つ",
+            "category": "noun",
+            "reading": "ふたつ",
+            "vocabularyId": "vocab-bb85f028d944"
+          },
+          {
+            "surface": "も",
+            "category": "particle",
+            "reading": "も"
+          },
+          {
+            "surface": "遊び",
+            "category": "verb",
+            "reading": "あそび",
+            "vocabularyId": "vocab-58a04652246f"
+          },
+          {
+            "surface": "まし",
+            "category": "auxiliary",
+            "reading": "まし"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 8,
+        "grammarPointIds": [
+          "ato-de",
+          "tsu-counter",
+          "mo-addition"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-15",
+        "minimumLevel": "n5",
+        "text": "どのゲームも難しかったですが、面白かったです。",
+        "audio": "assets/voices/reading/reading-dark-souls-15.m4a",
+        "vocabularyIds": [
+          "vocab-5400f9f54134",
+          "vocab-d0d5c0952530",
+          "vocab-6ed0b6d4c374",
+          "vocab-9825648af79e"
+        ],
+        "kanjiIds": [
+          "kanji-767d"
+        ],
+        "tokens": [
+          {
+            "surface": "どの",
+            "category": "determiner",
+            "reading": "どの",
+            "vocabularyId": "vocab-5400f9f54134"
+          },
+          {
+            "surface": "ゲーム",
+            "category": "noun",
+            "reading": "げーむ",
+            "vocabularyId": "vocab-d0d5c0952530"
+          },
+          {
+            "surface": "も",
+            "category": "particle",
+            "reading": "も"
+          },
+          {
+            "surface": "難しかっ",
+            "category": "adjective",
+            "reading": "むずかしかっ",
+            "vocabularyId": "vocab-6ed0b6d4c374"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "です",
+            "category": "auxiliary",
+            "reading": "です"
+          },
+          {
+            "surface": "が",
+            "category": "particle",
+            "reading": "が"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "面白かっ",
+            "category": "adjective",
+            "reading": "おもしろかっ",
+            "vocabularyId": "vocab-9825648af79e"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "です",
+            "category": "auxiliary",
+            "reading": "です"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 8,
+        "grammarPointIds": [
+          "question-word-mo",
+          "i-adjective-past",
+          "ga-contrast"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-16",
+        "minimumLevel": "n5",
+        "text": "でも、私は今もDARK SOULSが一番好きです。",
+        "audio": "assets/voices/reading/reading-dark-souls-16.m4a",
+        "vocabularyIds": [
+          "vocab-7aeac2a5dd4c",
+          "vocab-b6944a5fe271",
+          "vocab-89beba69de5a",
+          "vocab-8a98a8e471f7",
+          "vocab-32a5e8698306"
+        ],
+        "kanjiIds": [
+          "kanji-79c1",
+          "kanji-4eca",
+          "kanji-4e00",
+          "kanji-597d"
+        ],
+        "tokens": [
+          {
+            "surface": "でも",
+            "category": "conjunction",
+            "reading": "でも",
+            "vocabularyId": "vocab-7aeac2a5dd4c"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "私",
+            "category": "noun",
+            "reading": "わたし",
+            "vocabularyId": "vocab-b6944a5fe271"
+          },
+          {
+            "surface": "は",
+            "category": "particle",
+            "reading": "は"
+          },
+          {
+            "surface": "今",
+            "category": "noun",
+            "reading": "いま",
+            "vocabularyId": "vocab-89beba69de5a"
+          },
+          {
+            "surface": "も",
+            "category": "particle",
+            "reading": "も"
+          },
+          {
+            "surface": "DARK",
+            "category": "noun"
+          },
+          {
+            "surface": " "
+          },
+          {
+            "surface": "SOULS",
+            "category": "noun"
+          },
+          {
+            "surface": "が",
+            "category": "particle",
+            "reading": "が"
+          },
+          {
+            "surface": "一番",
+            "category": "noun",
+            "reading": "いちばん",
+            "vocabularyId": "vocab-8a98a8e471f7"
+          },
+          {
+            "surface": "好き",
+            "category": "adjective",
+            "reading": "すき",
+            "vocabularyId": "vocab-32a5e8698306"
+          },
+          {
+            "surface": "です",
+            "category": "auxiliary",
+            "reading": "です"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 8,
+        "grammarPointIds": [
+          "demo-connector",
+          "mo-addition",
+          "ichiban-superlative"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-17",
+        "minimumLevel": "n5",
+        "text": "「初めて遊ぶ人に、何を言いたいですか。」",
+        "audio": "assets/voices/reading/reading-dark-souls-17.m4a",
+        "vocabularyIds": [
+          "vocab-575d784f0748",
+          "vocab-58a04652246f",
+          "vocab-ad7167347a2a",
+          "vocab-3b010d61ddd5",
+          "vocab-4fa253e10946"
+        ],
+        "kanjiIds": [
+          "kanji-4eba",
+          "kanji-4f55",
+          "kanji-8a00"
+        ],
+        "tokens": [
+          {
+            "surface": "「",
+            "reading": "「"
+          },
+          {
+            "surface": "初めて",
+            "category": "adverb",
+            "reading": "はじめて",
+            "vocabularyId": "vocab-575d784f0748"
+          },
+          {
+            "surface": "遊ぶ",
+            "category": "verb",
+            "reading": "あそぶ",
+            "vocabularyId": "vocab-58a04652246f"
+          },
+          {
+            "surface": "人",
+            "category": "noun",
+            "reading": "ひと",
+            "vocabularyId": "vocab-ad7167347a2a"
+          },
+          {
+            "surface": "に",
+            "category": "particle",
+            "reading": "に"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "何",
+            "category": "noun",
+            "reading": "なに",
+            "vocabularyId": "vocab-3b010d61ddd5"
+          },
+          {
+            "surface": "を",
+            "category": "particle",
+            "reading": "を"
+          },
+          {
+            "surface": "言い",
+            "category": "verb",
+            "reading": "いい",
+            "vocabularyId": "vocab-4fa253e10946"
+          },
+          {
+            "surface": "たい",
+            "category": "auxiliary",
+            "reading": "たい"
+          },
+          {
+            "surface": "です",
+            "category": "auxiliary",
+            "reading": "です"
+          },
+          {
+            "surface": "か",
+            "category": "particle",
+            "reading": "か"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          },
+          {
+            "surface": "」",
+            "reading": "」"
+          }
+        ],
+        "paragraph": 9,
+        "grammarPointIds": [
+          "relative-clause",
+          "ni-target-recipient",
+          "tai-desire"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-18",
+        "minimumLevel": "n5",
+        "text": "怖いときは、少し休んでもいいですよ。",
+        "audio": "assets/voices/reading/reading-dark-souls-18.m4a",
+        "vocabularyIds": [
+          "vocab-c79c9d356804",
+          "vocab-3ec9b1831a40",
+          "vocab-8814378ebfc2",
+          "vocab-acc3dd26ba1e",
+          "vocab-ef4cce00951f"
+        ],
+        "kanjiIds": [
+          "kanji-5c11",
+          "kanji-4f11"
+        ],
+        "tokens": [
+          {
+            "surface": "怖い",
+            "category": "adjective",
+            "reading": "こわい",
+            "vocabularyId": "vocab-c79c9d356804"
+          },
+          {
+            "surface": "とき",
+            "category": "noun",
+            "reading": "とき",
+            "vocabularyId": "vocab-3ec9b1831a40"
+          },
+          {
+            "surface": "は",
+            "category": "particle",
+            "reading": "は"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "少し",
+            "category": "adverb",
+            "reading": "すこし",
+            "vocabularyId": "vocab-8814378ebfc2"
+          },
+          {
+            "surface": "休ん",
+            "category": "verb",
+            "reading": "やすん",
+            "vocabularyId": "vocab-acc3dd26ba1e"
+          },
+          {
+            "surface": "で",
+            "category": "particle",
+            "reading": "で"
+          },
+          {
+            "surface": "も",
+            "category": "particle",
+            "reading": "も"
+          },
+          {
+            "surface": "いい",
+            "category": "adjective",
+            "reading": "いい",
+            "vocabularyId": "vocab-ef4cce00951f"
+          },
+          {
+            "surface": "です",
+            "category": "auxiliary",
+            "reading": "です"
+          },
+          {
+            "surface": "よ",
+            "category": "particle",
+            "reading": "よ"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 10,
+        "grammarPointIds": [
+          "toki",
+          "te-mo-ii",
+          "yo-emphasis"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-19",
+        "minimumLevel": "n5",
+        "text": "初めは、私も上手ではありませんでした。",
+        "audio": "assets/voices/reading/reading-dark-souls-19.m4a",
+        "vocabularyIds": [
+          "vocab-2dba63ed9209",
+          "vocab-b6944a5fe271",
+          "vocab-f78f531c55a5",
+          "vocab-b66f43bc23a1"
+        ],
+        "kanjiIds": [
+          "kanji-79c1",
+          "kanji-4e0a",
+          "kanji-624b"
+        ],
+        "tokens": [
+          {
+            "surface": "初め",
+            "category": "noun",
+            "reading": "はじめ",
+            "vocabularyId": "vocab-2dba63ed9209"
+          },
+          {
+            "surface": "は",
+            "category": "particle",
+            "reading": "は"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "私",
+            "category": "noun",
+            "reading": "わたし",
+            "vocabularyId": "vocab-b6944a5fe271"
+          },
+          {
+            "surface": "も",
+            "category": "particle",
+            "reading": "も"
+          },
+          {
+            "surface": "上手",
+            "category": "adjective",
+            "reading": "じょうず",
+            "vocabularyId": "vocab-f78f531c55a5"
+          },
+          {
+            "surface": "で",
+            "category": "auxiliary",
+            "reading": "で"
+          },
+          {
+            "surface": "は",
+            "category": "particle",
+            "reading": "は"
+          },
+          {
+            "surface": "あり",
+            "category": "verb",
+            "reading": "あり",
+            "vocabularyId": "vocab-b66f43bc23a1"
+          },
+          {
+            "surface": "ませ",
+            "category": "auxiliary",
+            "reading": "ませ"
+          },
+          {
+            "surface": "ん",
+            "category": "auxiliary",
+            "reading": "ん"
+          },
+          {
+            "surface": "でし",
+            "category": "auxiliary",
+            "reading": "でし"
+          },
+          {
+            "surface": "た",
+            "category": "auxiliary",
+            "reading": "た"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 10,
+        "grammarPointIds": [
+          "mo-addition",
+          "na-adjective-past-negative"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-20",
+        "minimumLevel": "n5",
+        "text": "死んだら、またやってみてください。",
+        "audio": "assets/voices/reading/reading-dark-souls-20.m4a",
+        "vocabularyIds": [
+          "vocab-dd5d31dbf7c9",
+          "vocab-a72e26bc8cb2",
+          "vocab-922ff9e0323a"
+        ],
+        "kanjiIds": [
+          "kanji-6b7b"
+        ],
+        "tokens": [
+          {
+            "surface": "死ん",
+            "category": "verb",
+            "reading": "しん",
+            "vocabularyId": "vocab-dd5d31dbf7c9"
+          },
+          {
+            "surface": "だら",
+            "category": "auxiliary",
+            "reading": "だら"
+          },
+          {
+            "surface": "、",
+            "reading": "、"
+          },
+          {
+            "surface": "また",
+            "category": "conjunction",
+            "reading": "また",
+            "vocabularyId": "vocab-a72e26bc8cb2"
+          },
+          {
+            "surface": "やっ",
+            "category": "verb",
+            "reading": "やっ",
+            "vocabularyId": "vocab-922ff9e0323a"
+          },
+          {
+            "surface": "て",
+            "category": "particle",
+            "reading": "て"
+          },
+          {
+            "surface": "み",
+            "category": "auxiliary",
+            "reading": "み"
+          },
+          {
+            "surface": "て",
+            "category": "particle",
+            "reading": "て"
+          },
+          {
+            "surface": "ください",
+            "category": "auxiliary",
+            "reading": "ください"
+          },
+          {
+            "surface": "。",
+            "reading": "。"
+          }
+        ],
+        "paragraph": 10,
+        "grammarPointIds": [
+          "tara-conditional",
+          "te-miru",
+          "te-kudasai"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "first-impression",
+        "prompt": {
+          "en": "How did the player feel about DARK SOULS at first?",
+          "fr": "Que pensait le joueur de DARK SOULS au début ?"
+        },
+        "choices": [
+          {
+            "id": "easy",
+            "label": {
+              "en": "It was easy from the beginning",
+              "fr": "Il le trouvait facile dès le début"
+            }
+          },
+          {
+            "id": "scary",
+            "label": {
+              "en": "It was dark and scary, and he did not like it much",
+              "fr": "Il le trouvait sombre et effrayant et ne l’aimait pas beaucoup"
+            }
+          },
+          {
+            "id": "favourite",
+            "label": {
+              "en": "It was already his favourite game",
+              "fr": "C’était déjà son jeu préféré"
+            }
+          },
+          {
+            "id": "boring-music",
+            "label": {
+              "en": "He only disliked the music",
+              "fr": "Seule la musique lui déplaisait"
+            }
+          }
+        ],
+        "answerId": "scary",
+        "explanation": {
+          "en": "He says 初めはあまり好きではありませんでした, then describes the game as dark and scary. His current favourite was not an immediate favourite.",
+          "fr": "Il dit 初めはあまり好きではありませんでした, puis décrit le jeu comme sombre et effrayant. Son jeu préféré aujourd’hui ne lui a donc pas plu immédiatement."
+        },
+        "evidenceSentenceIds": [
+          "reading-dark-souls-02",
+          "reading-dark-souls-03"
+        ]
+      },
+      {
+        "id": "helpful-advice",
+        "prompt": {
+          "en": "What advice did his older brother give him?",
+          "fr": "Quel conseil son grand frère lui a-t-il donné ?"
+        },
+        "choices": [
+          {
+            "id": "run",
+            "label": {
+              "en": "Run as fast as possible",
+              "fr": "Courir le plus vite possible"
+            }
+          },
+          {
+            "id": "quit",
+            "label": {
+              "en": "Stop playing the game",
+              "fr": "Arrêter de jouer"
+            }
+          },
+          {
+            "id": "watch",
+            "label": {
+              "en": "Look carefully before running",
+              "fr": "Bien regarder avant de courir"
+            }
+          },
+          {
+            "id": "music",
+            "label": {
+              "en": "Turn off the music",
+              "fr": "Couper la musique"
+            }
+          }
+        ],
+        "answerId": "watch",
+        "explanation": {
+          "en": "走る前に means before running. His brother asks him to look carefully first; the player then walks slowly and manages to cross the bridge.",
+          "fr": "走る前に signifie avant de courir. Son frère lui conseille de bien regarder d’abord ; le joueur marche ensuite lentement et réussit à traverser le pont."
+        },
+        "evidenceSentenceIds": [
+          "reading-dark-souls-07",
+          "reading-dark-souls-08"
+        ]
+      },
+      {
+        "id": "favourite-activity",
+        "prompt": {
+          "en": "What does the player now enjoy most?",
+          "fr": "Qu’est-ce que le joueur aime le plus maintenant ?"
+        },
+        "choices": [
+          {
+            "id": "paths",
+            "label": {
+              "en": "Walking along unfamiliar paths",
+              "fr": "Marcher sur des chemins qu’il ne connaît pas"
+            }
+          },
+          {
+            "id": "dying",
+            "label": {
+              "en": "Dying on the same bridge",
+              "fr": "Mourir sur le même pont"
+            }
+          },
+          {
+            "id": "running",
+            "label": {
+              "en": "Running without looking",
+              "fr": "Courir sans regarder"
+            }
+          },
+          {
+            "id": "teaching",
+            "label": {
+              "en": "Teaching his brother to play",
+              "fr": "Apprendre à son frère à jouer"
+            }
+          }
+        ],
+        "answerId": "paths",
+        "explanation": {
+          "en": "知らない道を歩くのが一番好きです explicitly says that walking along unfamiliar paths is his favourite activity. He also likes the music and the feeling of improving.",
+          "fr": "知らない道を歩くのが一番好きです indique explicitement que marcher sur des chemins inconnus est son activité préférée. Il aime aussi la musique et le fait de progresser."
+        },
+        "evidenceSentenceIds": [
+          "reading-dark-souls-10",
+          "reading-dark-souls-11",
+          "reading-dark-souls-12"
+        ]
+      },
+      {
+        "id": "sequels",
+        "prompt": {
+          "en": "What happened after he played the first DARK SOULS?",
+          "fr": "Qu’a-t-il fait après avoir joué au premier DARK SOULS ?"
+        },
+        "choices": [
+          {
+            "id": "only-two",
+            "label": {
+              "en": "He played II, but never tried III",
+              "fr": "Il a joué au II, mais n’a jamais essayé le III"
+            }
+          },
+          {
+            "id": "stopped",
+            "label": {
+              "en": "He stopped playing video games",
+              "fr": "Il a arrêté les jeux vidéo"
+            }
+          },
+          {
+            "id": "three-favourite",
+            "label": {
+              "en": "He played both sequels and III became his favourite",
+              "fr": "Il a joué aux deux suites et le III est devenu son préféré"
+            }
+          },
+          {
+            "id": "both-original",
+            "label": {
+              "en": "He played II and III, but still prefers the first game",
+              "fr": "Il a joué au II et au III, mais préfère toujours le premier"
+            }
+          }
+        ],
+        "answerId": "both-original",
+        "explanation": {
+          "en": "その二つ refers to DARK SOULS II and DARK SOULS III in the question. He played both after the original, but 今も and 一番好き say the original is still his favourite.",
+          "fr": "その二つ renvoie à DARK SOULS II et à DARK SOULS III, cités dans la question. Il a joué aux deux après le premier, mais 今も et 一番好き indiquent que celui-ci reste son préféré."
+        },
+        "evidenceSentenceIds": [
+          "reading-dark-souls-13",
+          "reading-dark-souls-14",
+          "reading-dark-souls-16"
+        ]
+      },
+      {
+        "id": "new-player",
+        "prompt": {
+          "en": "What does he recommend to new players?",
+          "fr": "Que conseille-t-il aux nouveaux joueurs ?"
+        },
+        "choices": [
+          {
+            "id": "no-breaks",
+            "label": {
+              "en": "Never take a break",
+              "fr": "Ne jamais faire de pause"
+            }
+          },
+          {
+            "id": "perfect",
+            "label": {
+              "en": "Only play if they are already good",
+              "fr": "Jouer seulement s’ils sont déjà doués"
+            }
+          },
+          {
+            "id": "rest-and-retry",
+            "label": {
+              "en": "Take a break if scared, and try again after dying",
+              "fr": "Faire une pause s’ils ont peur et réessayer après une mort"
+            }
+          },
+          {
+            "id": "avoid-first",
+            "label": {
+              "en": "Skip the first game entirely",
+              "fr": "Ne pas jouer du tout au premier jeu"
+            }
+          }
+        ],
+        "answerId": "rest-and-retry",
+        "explanation": {
+          "en": "休んでもいい gives permission to rest. He admits he was a beginner too, then encourages players to try again if they die.",
+          "fr": "休んでもいい autorise à faire une pause. Il reconnaît qu’il était débutant lui aussi, puis encourage les joueurs à réessayer s’ils meurent."
+        },
+        "evidenceSentenceIds": [
+          "reading-dark-souls-18",
+          "reading-dark-souls-19",
+          "reading-dark-souls-20"
+        ]
+      }
+    ]
+  },
+  {
     "id": "the-red-box",
     "level": "n4",
     "title": {

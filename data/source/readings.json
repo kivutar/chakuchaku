@@ -2081,6 +2081,459 @@
     ]
   },
   {
+    "id": "learning-to-love-dark-souls",
+    "level": "n5",
+    "title": {
+      "en": "Learning to love Dark Souls",
+      "fr": "Apprendre à aimer Dark Souls"
+    },
+    "description": {
+      "en": "A short interview with a gamer: a difficult start, a brother’s advice, and a new favourite series.",
+      "fr": "Un court entretien avec un joueur : des débuts difficiles, les conseils de son frère et une nouvelle passion."
+    },
+    "sentences": [
+      {
+        "id": "reading-dark-souls-01",
+        "paragraph": 1,
+        "text": "「DARK SOULSは、初めから好きでしたか。」",
+        "grammarPointIds": [
+          "kara-start",
+          "suki-kirai",
+          "ka-question"
+        ],
+        "speechText": "ダークソウルは、初めから好きでしたか。"
+      },
+      {
+        "id": "reading-dark-souls-02",
+        "paragraph": 2,
+        "text": "いいえ、初めはあまり好きではありませんでした。",
+        "grammarPointIds": [
+          "frequency-adverbs",
+          "na-adjective-past-negative"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-03",
+        "paragraph": 2,
+        "text": "暗くて怖いゲームだと思いました。",
+        "grammarPointIds": [
+          "adjective-connective",
+          "to-omou"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-04",
+        "paragraph": 2,
+        "text": "同じ橋でよく死にました。",
+        "grammarPointIds": [
+          "onaji",
+          "de-action-location",
+          "frequency-adverbs"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-05",
+        "paragraph": 3,
+        "text": "「どうして、また遊んだんですか。」",
+        "grammarPointIds": [
+          "naze-doushite-nande",
+          "no-desu",
+          "ka-question"
+        ],
+        "speechText": "どうして、また遊んだんですか。"
+      },
+      {
+        "id": "reading-dark-souls-06",
+        "paragraph": 4,
+        "text": "兄が教えてくれたからです。",
+        "grammarPointIds": [
+          "ga-subject",
+          "te-kureru",
+          "kara-reason"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-07",
+        "paragraph": 4,
+        "text": "兄は「走る前に、よく見てください」と言いました。",
+        "grammarPointIds": [
+          "mae-ni",
+          "te-kudasai",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-08",
+        "paragraph": 4,
+        "text": "私はゆっくり歩いて、あの橋を渡ることができました。",
+        "grammarPointIds": [
+          "te-action-link",
+          "koto-ga-dekiru",
+          "o-route"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-09",
+        "paragraph": 5,
+        "text": "「今は、何が一番好きですか。」",
+        "grammarPointIds": [
+          "nani",
+          "ichiban-superlative",
+          "suki-kirai"
+        ],
+        "speechText": "今は、何が一番好きですか。"
+      },
+      {
+        "id": "reading-dark-souls-10",
+        "paragraph": 6,
+        "text": "知らない道を歩くのが一番好きです。",
+        "grammarPointIds": [
+          "no-ga-suki",
+          "ichiban-superlative",
+          "o-route"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-11",
+        "paragraph": 6,
+        "text": "音楽を聞くのも好きです。",
+        "grammarPointIds": [
+          "no-nominalizer",
+          "mo-addition",
+          "suki-kirai"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-12",
+        "paragraph": 6,
+        "text": "前より上手になるのが楽しいです。",
+        "grammarPointIds": [
+          "yori-comparison",
+          "naru-change",
+          "no-nominalizer"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-13",
+        "paragraph": 7,
+        "text": "「DARK SOULS IIとDARK SOULS IIIも遊びましたか。」",
+        "grammarPointIds": [
+          "to-complete-list",
+          "mo-addition",
+          "ka-question"
+        ],
+        "speechText": "ダークソウルツーとダークソウルスリーも遊びましたか。"
+      },
+      {
+        "id": "reading-dark-souls-14",
+        "paragraph": 8,
+        "text": "はい、DARK SOULSの後で、その二つも遊びました。",
+        "grammarPointIds": [
+          "ato-de",
+          "tsu-counter",
+          "mo-addition"
+        ],
+        "speechText": "はい、ダークソウルの後で、その二つも遊びました。"
+      },
+      {
+        "id": "reading-dark-souls-15",
+        "paragraph": 8,
+        "text": "どのゲームも難しかったですが、面白かったです。",
+        "grammarPointIds": [
+          "question-word-mo",
+          "i-adjective-past",
+          "ga-contrast"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-16",
+        "paragraph": 8,
+        "text": "でも、私は今もDARK SOULSが一番好きです。",
+        "grammarPointIds": [
+          "demo-connector",
+          "mo-addition",
+          "ichiban-superlative"
+        ],
+        "speechText": "でも、わたしはいまもダークソウルがいちばんすきです。"
+      },
+      {
+        "id": "reading-dark-souls-17",
+        "paragraph": 9,
+        "text": "「初めて遊ぶ人に、何を言いたいですか。」",
+        "grammarPointIds": [
+          "relative-clause",
+          "ni-target-recipient",
+          "tai-desire"
+        ],
+        "speechText": "初めて遊ぶ人に、何を言いたいですか。"
+      },
+      {
+        "id": "reading-dark-souls-18",
+        "paragraph": 10,
+        "text": "怖いときは、少し休んでもいいですよ。",
+        "grammarPointIds": [
+          "toki",
+          "te-mo-ii",
+          "yo-emphasis"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-19",
+        "paragraph": 10,
+        "text": "初めは、私も上手ではありませんでした。",
+        "grammarPointIds": [
+          "mo-addition",
+          "na-adjective-past-negative"
+        ]
+      },
+      {
+        "id": "reading-dark-souls-20",
+        "paragraph": 10,
+        "text": "死んだら、またやってみてください。",
+        "grammarPointIds": [
+          "tara-conditional",
+          "te-miru",
+          "te-kudasai"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "first-impression",
+        "prompt": {
+          "en": "How did the player feel about DARK SOULS at first?",
+          "fr": "Que pensait le joueur de DARK SOULS au début ?"
+        },
+        "choices": [
+          {
+            "id": "easy",
+            "label": {
+              "en": "It was easy from the beginning",
+              "fr": "Il le trouvait facile dès le début"
+            }
+          },
+          {
+            "id": "scary",
+            "label": {
+              "en": "It was dark and scary, and he did not like it much",
+              "fr": "Il le trouvait sombre et effrayant et ne l’aimait pas beaucoup"
+            }
+          },
+          {
+            "id": "favourite",
+            "label": {
+              "en": "It was already his favourite game",
+              "fr": "C’était déjà son jeu préféré"
+            }
+          },
+          {
+            "id": "boring-music",
+            "label": {
+              "en": "He only disliked the music",
+              "fr": "Seule la musique lui déplaisait"
+            }
+          }
+        ],
+        "answerId": "scary",
+        "explanation": {
+          "en": "He says 初めはあまり好きではありませんでした, then describes the game as dark and scary. His current favourite was not an immediate favourite.",
+          "fr": "Il dit 初めはあまり好きではありませんでした, puis décrit le jeu comme sombre et effrayant. Son jeu préféré aujourd’hui ne lui a donc pas plu immédiatement."
+        },
+        "evidenceSentenceIds": [
+          "reading-dark-souls-02",
+          "reading-dark-souls-03"
+        ]
+      },
+      {
+        "id": "helpful-advice",
+        "prompt": {
+          "en": "What advice did his older brother give him?",
+          "fr": "Quel conseil son grand frère lui a-t-il donné ?"
+        },
+        "choices": [
+          {
+            "id": "run",
+            "label": {
+              "en": "Run as fast as possible",
+              "fr": "Courir le plus vite possible"
+            }
+          },
+          {
+            "id": "quit",
+            "label": {
+              "en": "Stop playing the game",
+              "fr": "Arrêter de jouer"
+            }
+          },
+          {
+            "id": "watch",
+            "label": {
+              "en": "Look carefully before running",
+              "fr": "Bien regarder avant de courir"
+            }
+          },
+          {
+            "id": "music",
+            "label": {
+              "en": "Turn off the music",
+              "fr": "Couper la musique"
+            }
+          }
+        ],
+        "answerId": "watch",
+        "explanation": {
+          "en": "走る前に means before running. His brother asks him to look carefully first; the player then walks slowly and manages to cross the bridge.",
+          "fr": "走る前に signifie avant de courir. Son frère lui conseille de bien regarder d’abord ; le joueur marche ensuite lentement et réussit à traverser le pont."
+        },
+        "evidenceSentenceIds": [
+          "reading-dark-souls-07",
+          "reading-dark-souls-08"
+        ]
+      },
+      {
+        "id": "favourite-activity",
+        "prompt": {
+          "en": "What does the player now enjoy most?",
+          "fr": "Qu’est-ce que le joueur aime le plus maintenant ?"
+        },
+        "choices": [
+          {
+            "id": "paths",
+            "label": {
+              "en": "Walking along unfamiliar paths",
+              "fr": "Marcher sur des chemins qu’il ne connaît pas"
+            }
+          },
+          {
+            "id": "dying",
+            "label": {
+              "en": "Dying on the same bridge",
+              "fr": "Mourir sur le même pont"
+            }
+          },
+          {
+            "id": "running",
+            "label": {
+              "en": "Running without looking",
+              "fr": "Courir sans regarder"
+            }
+          },
+          {
+            "id": "teaching",
+            "label": {
+              "en": "Teaching his brother to play",
+              "fr": "Apprendre à son frère à jouer"
+            }
+          }
+        ],
+        "answerId": "paths",
+        "explanation": {
+          "en": "知らない道を歩くのが一番好きです explicitly says that walking along unfamiliar paths is his favourite activity. He also likes the music and the feeling of improving.",
+          "fr": "知らない道を歩くのが一番好きです indique explicitement que marcher sur des chemins inconnus est son activité préférée. Il aime aussi la musique et le fait de progresser."
+        },
+        "evidenceSentenceIds": [
+          "reading-dark-souls-10",
+          "reading-dark-souls-11",
+          "reading-dark-souls-12"
+        ]
+      },
+      {
+        "id": "sequels",
+        "prompt": {
+          "en": "What happened after he played the first DARK SOULS?",
+          "fr": "Qu’a-t-il fait après avoir joué au premier DARK SOULS ?"
+        },
+        "choices": [
+          {
+            "id": "only-two",
+            "label": {
+              "en": "He played II, but never tried III",
+              "fr": "Il a joué au II, mais n’a jamais essayé le III"
+            }
+          },
+          {
+            "id": "stopped",
+            "label": {
+              "en": "He stopped playing video games",
+              "fr": "Il a arrêté les jeux vidéo"
+            }
+          },
+          {
+            "id": "three-favourite",
+            "label": {
+              "en": "He played both sequels and III became his favourite",
+              "fr": "Il a joué aux deux suites et le III est devenu son préféré"
+            }
+          },
+          {
+            "id": "both-original",
+            "label": {
+              "en": "He played II and III, but still prefers the first game",
+              "fr": "Il a joué au II et au III, mais préfère toujours le premier"
+            }
+          }
+        ],
+        "answerId": "both-original",
+        "explanation": {
+          "en": "その二つ refers to DARK SOULS II and DARK SOULS III in the question. He played both after the original, but 今も and 一番好き say the original is still his favourite.",
+          "fr": "その二つ renvoie à DARK SOULS II et à DARK SOULS III, cités dans la question. Il a joué aux deux après le premier, mais 今も et 一番好き indiquent que celui-ci reste son préféré."
+        },
+        "evidenceSentenceIds": [
+          "reading-dark-souls-13",
+          "reading-dark-souls-14",
+          "reading-dark-souls-16"
+        ]
+      },
+      {
+        "id": "new-player",
+        "prompt": {
+          "en": "What does he recommend to new players?",
+          "fr": "Que conseille-t-il aux nouveaux joueurs ?"
+        },
+        "choices": [
+          {
+            "id": "no-breaks",
+            "label": {
+              "en": "Never take a break",
+              "fr": "Ne jamais faire de pause"
+            }
+          },
+          {
+            "id": "perfect",
+            "label": {
+              "en": "Only play if they are already good",
+              "fr": "Jouer seulement s’ils sont déjà doués"
+            }
+          },
+          {
+            "id": "rest-and-retry",
+            "label": {
+              "en": "Take a break if scared, and try again after dying",
+              "fr": "Faire une pause s’ils ont peur et réessayer après une mort"
+            }
+          },
+          {
+            "id": "avoid-first",
+            "label": {
+              "en": "Skip the first game entirely",
+              "fr": "Ne pas jouer du tout au premier jeu"
+            }
+          }
+        ],
+        "answerId": "rest-and-retry",
+        "explanation": {
+          "en": "休んでもいい gives permission to rest. He admits he was a beginner too, then encourages players to try again if they die.",
+          "fr": "休んでもいい autorise à faire une pause. Il reconnaît qu’il était débutant lui aussi, puis encourage les joueurs à réessayer s’ils meurent."
+        },
+        "evidenceSentenceIds": [
+          "reading-dark-souls-18",
+          "reading-dark-souls-19",
+          "reading-dark-souls-20"
+        ]
+      }
+    ]
+  },
+  {
     "id": "the-red-box",
     "level": "n4",
     "title": {

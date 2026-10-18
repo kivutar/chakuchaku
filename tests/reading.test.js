@@ -27,6 +27,36 @@ test("the reading prototype has 20 coherent sentences and five bilingual questio
   assert.equal(localizedText(passage.title, "de"), passage.title.en);
 });
 
+test("the N5 Dark Souls interview preserves game titles, Japanese narration, and the distinction between sequels and favourite", async () => {
+  const story = prepared.find(({ id }) => id === "learning-to-love-dark-souls");
+  assert.equal(story.level, "n5");
+  const paragraphs = Map.groupBy(story.sentences, ({ paragraph }) => paragraph);
+  assert.equal(paragraphs.size, 10);
+  for (let paragraph = 1; paragraph <= 10; paragraph += 2) {
+    assert.equal(paragraphs.get(paragraph).length, 1);
+    assert.match(paragraphs.get(paragraph)[0].text, /^「.*か。」$/u);
+    assert.ok(paragraphs.get(paragraph + 1).every(({ text }) => !text.startsWith("「")));
+  }
+  const vocabulary = new Map((await readJson("data/jlpt-n5-vocabulary.json"))
+    .map((entry) => [entry.id, entry]));
+  assert.ok(story.sentences.flatMap(({ vocabularyIds }) => vocabularyIds)
+    .every((id) => vocabulary.get(id).introducedAt === "n5"));
+  const voices = new Map(createReadingVoiceItems(sources).map((item) => [item.id, item]));
+  const sequels = story.sentences.find(({ text }) => text.includes("DARK SOULS III"));
+  assert.match(sequels.text, /DARK SOULS IIとDARK SOULS III/u);
+  assert.match(voices.get(sequels.id).speechText, /ダークソウルツーとダークソウルスリー/u);
+  for (const sentence of story.sentences.filter(({ text }) => text.includes("DARK SOULS"))) {
+    assert.equal(sentence.tokens.map(({ surface }) => surface).join(""), sentence.text);
+    assert.ok(!voices.get(sentence.id).speechText.includes("DARK"));
+  }
+  const answers = Object.fromEntries(story.questions.map(({ id, answerId }) => [id, answerId]));
+  assert.equal(gradeAnswers(story, answers).correct, 5);
+  answers.sequels = "three-favourite";
+  assert.equal(gradeAnswers(story, answers).correct, 4, "playing both sequels does not make III the favourite");
+  assert.ok(story.questions.find(({ id }) => id === "sequels")
+    .evidenceSentenceIds.includes("reading-dark-souls-16"));
+});
+
 test("the new N5 library story is distinct, roughly twenty sentences, and has grounded bilingual questions", () => {
   const library = prepared.find(({ id }) => id === "my-first-library-card");
   assert.ok(library);

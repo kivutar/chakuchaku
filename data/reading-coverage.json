@@ -1,11 +1,11 @@
 {
-  "totalPassages": 8,
-  "totalSentences": 160,
+  "totalPassages": 9,
+  "totalSentences": 180,
   "levels": [
     {
       "level": "n5",
       "totalPoints": 206,
-      "coveredPoints": 132,
+      "coveredPoints": 135,
       "uncoveredPointIds": [
         "predicate-final-order",
         "topic-comment-structure",
@@ -53,14 +53,12 @@
         "na-adjective-class",
         "na-adjective-attributive",
         "na-adjective-past",
-        "naru-change",
         "sugiru",
         "hoshii",
         "no-ga-jouzu-heta",
         "existence-location",
         "aru-possession",
         "dochira-comparison",
-        "ichiban-superlative",
         "numbers-and-counters",
         "nan-counter",
         "clock-calendar-time",
@@ -70,7 +68,6 @@
         "kosoado-directions",
         "kosoado-kind",
         "itsu",
-        "naze-doushite-nande",
         "dou",
         "wa-dou-desu-ka",
         "donna",
@@ -532,6 +529,59 @@
       ]
     },
     {
+      "id": "learning-to-love-dark-souls",
+      "level": "n5",
+      "title": {
+        "en": "Learning to love Dark Souls",
+        "fr": "Apprendre à aimer Dark Souls"
+      },
+      "sentences": 20,
+      "grammarPointIds": [
+        "adjective-connective",
+        "ato-de",
+        "de-action-location",
+        "demo-connector",
+        "frequency-adverbs",
+        "ga-contrast",
+        "ga-subject",
+        "i-adjective-past",
+        "ichiban-superlative",
+        "ka-question",
+        "kara-reason",
+        "kara-start",
+        "koto-ga-dekiru",
+        "mae-ni",
+        "mo-addition",
+        "na-adjective-past-negative",
+        "nani",
+        "naru-change",
+        "naze-doushite-nande",
+        "ni-target-recipient",
+        "no-desu",
+        "no-ga-suki",
+        "no-nominalizer",
+        "o-route",
+        "onaji",
+        "question-word-mo",
+        "relative-clause",
+        "suki-kirai",
+        "tai-desire",
+        "tara-conditional",
+        "te-action-link",
+        "te-kudasai",
+        "te-kureru",
+        "te-miru",
+        "te-mo-ii",
+        "to-complete-list",
+        "to-omou",
+        "to-quotation",
+        "toki",
+        "tsu-counter",
+        "yo-emphasis",
+        "yori-comparison"
+      ]
+    },
+    {
       "id": "the-red-box",
       "level": "n4",
       "title": {
@@ -621,8 +671,8 @@
       "level": "n5",
       "name": "Relative clauses",
       "pattern": "plain clause + noun",
-      "sentences": 7,
-      "passages": 5,
+      "sentences": 8,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -643,6 +693,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-04"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-17"
         },
         {
           "passageId": "the-red-box",
@@ -786,8 +840,8 @@
       "level": "n5",
       "name": "Subject marker",
       "pattern": "が",
-      "sentences": 5,
-      "passages": 4,
+      "sentences": 6,
+      "passages": 5,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -808,6 +862,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-09"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-06"
         }
       ]
     },
@@ -904,8 +962,8 @@
       "level": "n5",
       "name": "Route marker",
       "pattern": "を",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 4,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -914,6 +972,14 @@
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-17"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-08"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-10"
         }
       ]
     },
@@ -1036,8 +1102,8 @@
       "level": "n5",
       "name": "Target and recipient marker",
       "pattern": "に",
-      "sentences": 11,
-      "passages": 5,
+      "sentences": 12,
+      "passages": 6,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1082,6 +1148,10 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-12"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-17"
         }
       ]
     },
@@ -1147,8 +1217,8 @@
       "level": "n5",
       "name": "Action location marker",
       "pattern": "で",
-      "sentences": 12,
-      "passages": 4,
+      "sentences": 13,
+      "passages": 5,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1197,6 +1267,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-15"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-04"
         }
       ]
     },
@@ -1227,8 +1301,8 @@
       "level": "n5",
       "name": "Complete noun listing",
       "pattern": "A と B",
-      "sentences": 3,
-      "passages": 2,
+      "sentences": 4,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1241,6 +1315,10 @@
         {
           "passageId": "my-first-library-card",
           "sentenceId": "reading-library-card-08"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-13"
         }
       ]
     },
@@ -1271,8 +1349,8 @@
       "level": "n5",
       "name": "Quotation marker",
       "pattern": "clause と",
-      "sentences": 16,
-      "passages": 7,
+      "sentences": 17,
+      "passages": 8,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -1325,6 +1403,10 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-18"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-07"
         },
         {
           "passageId": "the-red-box",
@@ -1427,8 +1509,8 @@
       "level": "n5",
       "name": "Also and too",
       "pattern": "も",
-      "sentences": 7,
-      "passages": 6,
+      "sentences": 12,
+      "passages": 7,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1457,6 +1539,26 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-19"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-11"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-13"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-14"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-16"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-19"
         }
       ]
     },
@@ -1474,8 +1576,8 @@
       "level": "n5",
       "name": "Question marker",
       "pattern": "か",
-      "sentences": 6,
-      "passages": 4,
+      "sentences": 9,
+      "passages": 5,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -1500,6 +1602,18 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-10"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-01"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-05"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-13"
         }
       ]
     },
@@ -1522,8 +1636,8 @@
       "level": "n5",
       "name": "Informing and emphasis",
       "pattern": "よ",
-      "sentences": 6,
-      "passages": 4,
+      "sentences": 7,
+      "passages": 5,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -1548,6 +1662,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-11"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-18"
         }
       ]
     },
@@ -1598,8 +1716,8 @@
       "level": "n5",
       "name": "Starting point",
       "pattern": "から",
-      "sentences": 4,
-      "passages": 2,
+      "sentences": 5,
+      "passages": 3,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -1616,6 +1734,10 @@
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-16"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-01"
         }
       ]
     },
@@ -1642,12 +1764,16 @@
       "level": "n5",
       "name": "Reason with から",
       "pattern": "plain clause + から",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-16"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-06"
         }
       ]
     },
@@ -1698,8 +1824,8 @@
       "level": "n5",
       "name": "Contrast with が",
       "pattern": "clause + が",
-      "sentences": 5,
-      "passages": 3,
+      "sentences": 6,
+      "passages": 4,
       "references": [
         {
           "passageId": "a-cake-for-mum",
@@ -1712,6 +1838,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-09"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-15"
         },
         {
           "passageId": "the-red-box",
@@ -1737,8 +1867,8 @@
       "level": "n5",
       "name": "However",
       "pattern": "でも",
-      "sentences": 7,
-      "passages": 7,
+      "sentences": 8,
+      "passages": 8,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -1767,6 +1897,10 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-04"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-16"
         }
       ]
     },
@@ -2180,8 +2314,8 @@
       "level": "n5",
       "name": "Linking actions with て",
       "pattern": "Vて、V",
-      "sentences": 13,
-      "passages": 8,
+      "sentences": 14,
+      "passages": 9,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -2230,6 +2364,10 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-10"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-08"
         },
         {
           "passageId": "the-red-box",
@@ -2353,8 +2491,8 @@
       "level": "n5",
       "name": "Polite request",
       "pattern": "～てください",
-      "sentences": 5,
-      "passages": 4,
+      "sentences": 7,
+      "passages": 5,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -2375,6 +2513,14 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-07"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-07"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-20"
         }
       ]
     },
@@ -2436,8 +2582,8 @@
       "level": "n5",
       "name": "Permission",
       "pattern": "～てもいい",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -2446,6 +2592,10 @@
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-08"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-18"
         }
       ]
     },
@@ -2500,8 +2650,8 @@
       "level": "n5",
       "name": "Want to do",
       "pattern": "verb stem + たい",
-      "sentences": 11,
-      "passages": 6,
+      "sentences": 12,
+      "passages": 7,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -2546,6 +2696,10 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-05"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-17"
         }
       ]
     },
@@ -2635,12 +2789,20 @@
       "level": "n5",
       "name": "Nominalization with の",
       "pattern": "plain verb + の",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-10"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-11"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-12"
         }
       ]
     },
@@ -2649,8 +2811,8 @@
       "level": "n5",
       "name": "Ability",
       "pattern": "dictionary form + ことができる",
-      "sentences": 2,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "grandpas-first-email",
@@ -2659,6 +2821,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-19"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-08"
         }
       ]
     },
@@ -2759,12 +2925,16 @@
       "level": "n5",
       "name": "If and when",
       "pattern": "～たら",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-11"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-20"
         }
       ]
     },
@@ -2773,8 +2943,8 @@
       "level": "n5",
       "name": "When",
       "pattern": "plain form + とき",
-      "sentences": 6,
-      "passages": 5,
+      "sentences": 7,
+      "passages": 6,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -2797,6 +2967,10 @@
           "sentenceId": "reading-hungry-student-02"
         },
         {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-18"
+        },
+        {
           "passageId": "the-red-box",
           "sentenceId": "reading-red-box-13"
         }
@@ -2807,8 +2981,8 @@
       "level": "n5",
       "name": "Before",
       "pattern": "dictionary form / noun の + 前に",
-      "sentences": 3,
-      "passages": 3,
+      "sentences": 4,
+      "passages": 4,
       "references": [
         {
           "passageId": "my-first-library-card",
@@ -2821,6 +2995,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-17"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-07"
         }
       ]
     },
@@ -2829,12 +3007,16 @@
       "level": "n5",
       "name": "After",
       "pattern": "past form / noun の + 後で",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-05"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-14"
         }
       ]
     },
@@ -2843,8 +3025,8 @@
       "level": "n5",
       "name": "Try doing",
       "pattern": "～てみる",
-      "sentences": 3,
-      "passages": 2,
+      "sentences": 4,
+      "passages": 3,
       "references": [
         {
           "passageId": "grandpas-first-email",
@@ -2853,6 +3035,10 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-15"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-20"
         },
         {
           "passageId": "the-red-box",
@@ -3057,12 +3243,16 @@
       "level": "n5",
       "name": "Past i-adjectives",
       "pattern": "～かった / ～かったです",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-18"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-15"
         }
       ]
     },
@@ -3171,12 +3361,20 @@
       "level": "n5",
       "name": "Past-negative na-adjectives",
       "pattern": "～じゃなかった / ～ではありませんでした",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-13"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-02"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-19"
         }
       ]
     },
@@ -3199,12 +3397,16 @@
       "level": "n5",
       "name": "Connecting descriptions",
       "pattern": "～くて / ～で",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-13"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-03"
         }
       ]
     },
@@ -3213,9 +3415,14 @@
       "level": "n5",
       "name": "Become with になる",
       "pattern": "～になる",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-12"
+        }
+      ]
     },
     {
       "id": "naru-ku-change",
@@ -3276,8 +3483,8 @@
       "level": "n5",
       "name": "Likes and dislikes",
       "pattern": "noun が好き / 嫌い",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 5,
+      "passages": 3,
       "references": [
         {
           "passageId": "a-cake-for-mum",
@@ -3286,6 +3493,18 @@
         {
           "passageId": "a-voice-in-the-classroom",
           "sentenceId": "reading-classroom-visitor-19"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-01"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-09"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-11"
         }
       ]
     },
@@ -3294,8 +3513,8 @@
       "level": "n5",
       "name": "Like or dislike doing",
       "pattern": "verb + のが好き / 嫌い",
-      "sentences": 2,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-hungry-student",
@@ -3304,6 +3523,10 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-17"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-10"
         }
       ]
     },
@@ -3451,8 +3674,8 @@
       "level": "n5",
       "name": "Comparison baseline",
       "pattern": "A より B",
-      "sentences": 4,
-      "passages": 2,
+      "sentences": 5,
+      "passages": 3,
       "references": [
         {
           "passageId": "a-cake-for-mum",
@@ -3469,6 +3692,10 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-17"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-12"
         }
       ]
     },
@@ -3500,17 +3727,30 @@
       "level": "n5",
       "name": "Superlative",
       "pattern": "～で ... が一番",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 3,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-09"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-10"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-16"
+        }
+      ]
     },
     {
       "id": "onaji",
       "level": "n5",
       "name": "Same as",
       "pattern": "A と B は同じ",
-      "sentences": 2,
-      "passages": 1,
+      "sentences": 3,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-hungry-student",
@@ -3519,6 +3759,10 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-19"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-04"
         }
       ]
     },
@@ -3536,12 +3780,16 @@
       "level": "n5",
       "name": "General つ counter",
       "pattern": "一つ～十",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "a-cake-for-mum",
           "sentenceId": "reading-birthday-cake-07"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-14"
         }
       ]
     },
@@ -3697,8 +3945,8 @@
       "level": "n5",
       "name": "Basic frequency adverbs",
       "pattern": "いつも / よく / ときどき / あまり～ない / 全然～ない",
-      "sentences": 4,
-      "passages": 3,
+      "sentences": 6,
+      "passages": 4,
       "references": [
         {
           "passageId": "a-cake-for-mum",
@@ -3715,6 +3963,14 @@
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-03"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-02"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-04"
         }
       ]
     },
@@ -3783,8 +4039,8 @@
       "level": "n5",
       "name": "Someone does for me",
       "pattern": "～てくれる",
-      "sentences": 2,
-      "passages": 2,
+      "sentences": 3,
+      "passages": 3,
       "references": [
         {
           "passageId": "sunday-at-the-park",
@@ -3793,6 +4049,10 @@
         {
           "passageId": "the-wrong-train",
           "sentenceId": "reading-wrong-train-05"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-06"
         }
       ]
     },
@@ -3881,12 +4141,16 @@
       "level": "n5",
       "name": "What",
       "pattern": "何（なに / なん）",
-      "sentences": 1,
-      "passages": 1,
+      "sentences": 2,
+      "passages": 2,
       "references": [
         {
           "passageId": "grandpas-first-email",
           "sentenceId": "reading-grandpa-email-10"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-09"
         }
       ]
     },
@@ -3918,9 +4182,14 @@
       "level": "n5",
       "name": "Why",
       "pattern": "なぜ / どうして / なんで",
-      "sentences": 0,
-      "passages": 0,
-      "references": []
+      "sentences": 1,
+      "passages": 1,
+      "references": [
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-05"
+        }
+      ]
     },
     {
       "id": "dou",
@@ -4009,8 +4278,8 @@
       "level": "n5",
       "name": "Total and negative pronouns",
       "pattern": "question word + も",
-      "sentences": 3,
-      "passages": 2,
+      "sentences": 4,
+      "passages": 3,
       "references": [
         {
           "passageId": "a-voice-in-the-classroom",
@@ -4023,6 +4292,10 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-20"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-15"
         }
       ]
     },
@@ -4125,8 +4398,8 @@
       "level": "n5",
       "name": "Think that",
       "pattern": "plain clause + と思う",
-      "sentences": 5,
-      "passages": 4,
+      "sentences": 6,
+      "passages": 5,
       "references": [
         {
           "passageId": "grandpas-first-email",
@@ -4143,6 +4416,10 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-05"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-03"
         },
         {
           "passageId": "the-red-box",
@@ -4169,8 +4446,8 @@
       "level": "n5",
       "name": "Explanation and context",
       "pattern": "～のです / ～んです",
-      "sentences": 3,
-      "passages": 2,
+      "sentences": 4,
+      "passages": 3,
       "references": [
         {
           "passageId": "a-voice-in-the-classroom",
@@ -4183,6 +4460,10 @@
         {
           "passageId": "a-hungry-student",
           "sentenceId": "reading-hungry-student-18"
+        },
+        {
+          "passageId": "learning-to-love-dark-souls",
+          "sentenceId": "reading-dark-souls-05"
         }
       ]
     },

@@ -11453,5 +11453,285 @@
         ]
       }
     ]
+  },
+  "story-dark-souls-first-impression": {
+    "translation": "DARK SOULS vous plaisait-il dès le début ?"
+  },
+  "production-story-dark-souls-first-impression": {
+    "translation": "DARK SOULS vous plaisait-il dès le début ?",
+    "promptVocabularyHints": [
+      {
+        "word": "début",
+        "vocabularyIds": [
+          "vocab-2dba63ed9209"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-not-at-first": {
+    "translation": "Non, au début, je ne l’aimais pas beaucoup."
+  },
+  "production-story-dark-souls-not-at-first": {
+    "translation": "Non, au début, je ne l’aimais pas beaucoup.",
+    "promptVocabularyHints": [
+      {
+        "word": "début",
+        "vocabularyIds": [
+          "vocab-2dba63ed9209"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-dark-and-scary": {
+    "translation": "Je trouvais que c’était un jeu sombre et effrayant."
+  },
+  "production-story-dark-souls-dark-and-scary": {
+    "translation": "Je trouvais que c’était un jeu sombre et effrayant.",
+    "promptVocabularyHints": [
+      {
+        "word": "jeu",
+        "vocabularyIds": [
+          "vocab-d0d5c0952530"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-same-bridge": {
+    "translation": "Je mourais souvent sur le même pont."
+  },
+  "production-story-dark-souls-same-bridge": {
+    "translation": "Je mourais souvent sur le même pont.",
+    "promptVocabularyHints": [
+      {
+        "word": "pont",
+        "vocabularyIds": [
+          "vocab-873a33bd6c13"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-why-return": {
+    "translation": "Pourquoi y avez-vous rejoué ?"
+  },
+  "production-story-dark-souls-why-return": {
+    "translation": "Pourquoi y avez-vous rejoué ?",
+    "promptVocabularyHints": [
+      {
+        "word": "rejoué",
+        "vocabularyIds": [
+          "vocab-a72e26bc8cb2"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-brothers-help": {
+    "translation": "Parce que mon grand frère m’a appris à jouer."
+  },
+  "production-story-dark-souls-brothers-help": {
+    "translation": "Parce que mon grand frère m’a appris à jouer.",
+    "promptVocabularyHints": [
+      {
+        "word": "frère",
+        "vocabularyIds": [
+          "vocab-cda9169e9fa2"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-watch-first": {
+    "translation": "Mon grand frère m’a dit : « Regarde bien avant de courir, s’il te plaît. »"
+  },
+  "production-story-dark-souls-watch-first": {
+    "translation": "Mon grand frère m’a dit : « Regarde bien avant de courir, s’il te plaît. »",
+    "promptVocabularyHints": [
+      {
+        "word": "courir",
+        "vocabularyIds": [
+          "vocab-97526e11c703"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-crossing-bridge": {
+    "translation": "J’ai marché lentement et j’ai réussi à traverser ce pont."
+  },
+  "production-story-dark-souls-crossing-bridge": {
+    "translation": "J’ai marché lentement et j’ai réussi à traverser ce pont.",
+    "promptVocabularyHints": [
+      {
+        "word": "lentement",
+        "vocabularyIds": [
+          "vocab-0609e7997541"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-favourite-part": {
+    "translation": "Qu’est-ce que vous aimez le plus maintenant ?"
+  },
+  "production-story-dark-souls-favourite-part": {
+    "translation": "Qu’est-ce que vous aimez le plus maintenant ?",
+    "promptVocabularyHints": [
+      {
+        "word": "maintenant",
+        "vocabularyIds": [
+          "vocab-89beba69de5a"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-unknown-paths": {
+    "translation": "Ce que j’aime le plus, c’est marcher sur des chemins que je ne connais pas."
+  },
+  "production-story-dark-souls-unknown-paths": {
+    "translation": "Ce que j’aime le plus, c’est marcher sur des chemins que je ne connais pas.",
+    "promptVocabularyHints": [
+      {
+        "word": "chemins",
+        "vocabularyIds": [
+          "vocab-b4a022a9e7a6"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-music": {
+    "translation": "J’aime aussi écouter la musique."
+  },
+  "production-story-dark-souls-music": {
+    "translation": "J’aime aussi écouter la musique.",
+    "promptVocabularyHints": [
+      {
+        "word": "musique",
+        "vocabularyIds": [
+          "vocab-83b219893eca"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-getting-better": {
+    "translation": "C’est amusant de devenir meilleur qu’avant."
+  },
+  "production-story-dark-souls-getting-better": {
+    "translation": "C’est amusant de devenir meilleur qu’avant.",
+    "promptVocabularyHints": [
+      {
+        "word": "amusant",
+        "vocabularyIds": [
+          "vocab-9cc2d4a9bbe1"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-other-games": {
+    "translation": "Avez-vous aussi joué à DARK SOULS II et à DARK SOULS III ?"
+  },
+  "production-story-dark-souls-other-games": {
+    "translation": "Avez-vous aussi joué à DARK SOULS II et à DARK SOULS III ?",
+    "promptVocabularyHints": [
+      {
+        "word": "joué",
+        "vocabularyIds": [
+          "vocab-58a04652246f"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-played-both": {
+    "translation": "Oui, après DARK SOULS, j’ai aussi joué à ces deux jeux."
+  },
+  "production-story-dark-souls-played-both": {
+    "translation": "Oui, après DARK SOULS, j’ai aussi joué à ces deux jeux.",
+    "promptVocabularyHints": [
+      {
+        "word": "deux",
+        "vocabularyIds": [
+          "vocab-bb85f028d944"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-hard-but-fun": {
+    "translation": "Tous ces jeux étaient difficiles, mais tous étaient amusants."
+  },
+  "production-story-dark-souls-hard-but-fun": {
+    "translation": "Tous ces jeux étaient difficiles, mais tous étaient amusants.",
+    "promptVocabularyHints": [
+      {
+        "word": "difficiles",
+        "vocabularyIds": [
+          "vocab-6ed0b6d4c374"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-original-favourite": {
+    "translation": "Mais le premier DARK SOULS reste mon préféré."
+  },
+  "production-story-dark-souls-original-favourite": {
+    "translation": "Mais le premier DARK SOULS reste mon préféré.",
+    "promptVocabularyHints": [
+      {
+        "word": "préféré",
+        "vocabularyIds": [
+          "vocab-32a5e8698306"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-advice": {
+    "translation": "Que voulez-vous dire aux personnes qui y jouent pour la première fois ?"
+  },
+  "production-story-dark-souls-advice": {
+    "translation": "Que voulez-vous dire aux personnes qui y jouent pour la première fois ?",
+    "promptVocabularyHints": [
+      {
+        "word": "personnes",
+        "vocabularyIds": [
+          "vocab-ad7167347a2a"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-take-a-break": {
+    "translation": "Quand vous avez peur, vous pouvez faire une petite pause."
+  },
+  "production-story-dark-souls-take-a-break": {
+    "translation": "Quand vous avez peur, vous pouvez faire une petite pause.",
+    "promptVocabularyHints": [
+      {
+        "word": "pause",
+        "vocabularyIds": [
+          "vocab-acc3dd26ba1e"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-beginner-too": {
+    "translation": "Moi non plus, je n’étais pas doué au début."
+  },
+  "production-story-dark-souls-beginner-too": {
+    "translation": "Moi non plus, je n’étais pas doué au début.",
+    "promptVocabularyHints": [
+      {
+        "word": "début",
+        "vocabularyIds": [
+          "vocab-2dba63ed9209"
+        ]
+      }
+    ]
+  },
+  "story-dark-souls-try-again": {
+    "translation": "Si vous mourez, essayez encore."
+  },
+  "production-story-dark-souls-try-again": {
+    "translation": "Si vous mourez, essayez encore.",
+    "promptVocabularyHints": [
+      {
+        "word": "mourez",
+        "vocabularyIds": [
+          "vocab-dd5d31dbf7c9"
+        ]
+      }
+    ]
   }
 }

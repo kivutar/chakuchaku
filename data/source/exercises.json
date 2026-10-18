@@ -22244,5 +22244,579 @@
         ]
       }
     ]
+  },
+  {
+    "id": "story-dark-souls-first-impression",
+    "readingSentenceId": "reading-dark-souls-01",
+    "solution": "Did you like DARK SOULS from the beginning?",
+    "grammarPointIds": [
+      "kara-start",
+      "suki-kirai",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-first-impression",
+    "readingSentenceId": "reading-dark-souls-01",
+    "type": "production",
+    "text": "Did you like DARK SOULS from the beginning?",
+    "grammarPointIds": [
+      "kara-start",
+      "suki-kirai",
+      "ka-question"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "beginning",
+        "vocabularyIds": [
+          "vocab-2dba63ed9209"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-not-at-first",
+    "readingSentenceId": "reading-dark-souls-02",
+    "solution": "No, I did not like it very much at first.",
+    "grammarPointIds": [
+      "frequency-adverbs",
+      "na-adjective-past-negative"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-not-at-first",
+    "readingSentenceId": "reading-dark-souls-02",
+    "type": "production",
+    "text": "No, I did not like it very much at first.",
+    "grammarPointIds": [
+      "frequency-adverbs",
+      "na-adjective-past-negative"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "first",
+        "vocabularyIds": [
+          "vocab-2dba63ed9209"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-dark-and-scary",
+    "readingSentenceId": "reading-dark-souls-03",
+    "solution": "I thought it was a dark and scary game.",
+    "grammarPointIds": [
+      "adjective-connective",
+      "to-omou"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-dark-and-scary",
+    "readingSentenceId": "reading-dark-souls-03",
+    "type": "production",
+    "text": "I thought it was a dark and scary game.",
+    "grammarPointIds": [
+      "adjective-connective",
+      "to-omou"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "game",
+        "vocabularyIds": [
+          "vocab-d0d5c0952530"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-same-bridge",
+    "readingSentenceId": "reading-dark-souls-04",
+    "solution": "I often died on the same bridge.",
+    "grammarPointIds": [
+      "onaji",
+      "de-action-location",
+      "frequency-adverbs"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-same-bridge",
+    "readingSentenceId": "reading-dark-souls-04",
+    "type": "production",
+    "text": "I often died on the same bridge.",
+    "grammarPointIds": [
+      "onaji",
+      "de-action-location",
+      "frequency-adverbs"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "bridge",
+        "vocabularyIds": [
+          "vocab-873a33bd6c13"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-why-return",
+    "readingSentenceId": "reading-dark-souls-05",
+    "solution": "Why did you play it again?",
+    "grammarPointIds": [
+      "naze-doushite-nande",
+      "no-desu",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-why-return",
+    "readingSentenceId": "reading-dark-souls-05",
+    "type": "production",
+    "text": "Why did you play it again?",
+    "grammarPointIds": [
+      "naze-doushite-nande",
+      "no-desu",
+      "ka-question"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "again",
+        "vocabularyIds": [
+          "vocab-a72e26bc8cb2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-brothers-help",
+    "readingSentenceId": "reading-dark-souls-06",
+    "solution": "Because my older brother taught me how to play.",
+    "grammarPointIds": [
+      "ga-subject",
+      "te-kureru",
+      "kara-reason"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-brothers-help",
+    "readingSentenceId": "reading-dark-souls-06",
+    "type": "production",
+    "text": "Because my older brother taught me how to play.",
+    "grammarPointIds": [
+      "ga-subject",
+      "te-kureru",
+      "kara-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "brother",
+        "vocabularyIds": [
+          "vocab-cda9169e9fa2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-watch-first",
+    "readingSentenceId": "reading-dark-souls-07",
+    "solution": "My older brother said, “Please look carefully before running.”",
+    "grammarPointIds": [
+      "mae-ni",
+      "te-kudasai",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-watch-first",
+    "readingSentenceId": "reading-dark-souls-07",
+    "type": "production",
+    "text": "My older brother said, “Please look carefully before running.”",
+    "grammarPointIds": [
+      "mae-ni",
+      "te-kudasai",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "running",
+        "vocabularyIds": [
+          "vocab-97526e11c703"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-crossing-bridge",
+    "readingSentenceId": "reading-dark-souls-08",
+    "solution": "I walked slowly and was able to cross that bridge.",
+    "grammarPointIds": [
+      "te-action-link",
+      "koto-ga-dekiru",
+      "o-route"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-crossing-bridge",
+    "readingSentenceId": "reading-dark-souls-08",
+    "type": "production",
+    "text": "I walked slowly and was able to cross that bridge.",
+    "grammarPointIds": [
+      "te-action-link",
+      "koto-ga-dekiru",
+      "o-route"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "slowly",
+        "vocabularyIds": [
+          "vocab-0609e7997541"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-favourite-part",
+    "readingSentenceId": "reading-dark-souls-09",
+    "solution": "What do you like best now?",
+    "grammarPointIds": [
+      "nani",
+      "ichiban-superlative",
+      "suki-kirai"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-favourite-part",
+    "readingSentenceId": "reading-dark-souls-09",
+    "type": "production",
+    "text": "What do you like best now?",
+    "grammarPointIds": [
+      "nani",
+      "ichiban-superlative",
+      "suki-kirai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "now",
+        "vocabularyIds": [
+          "vocab-89beba69de5a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-unknown-paths",
+    "readingSentenceId": "reading-dark-souls-10",
+    "solution": "I like walking along unfamiliar paths best.",
+    "grammarPointIds": [
+      "no-ga-suki",
+      "ichiban-superlative",
+      "o-route"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-unknown-paths",
+    "readingSentenceId": "reading-dark-souls-10",
+    "type": "production",
+    "text": "I like walking along unfamiliar paths best.",
+    "grammarPointIds": [
+      "no-ga-suki",
+      "ichiban-superlative",
+      "o-route"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "paths",
+        "vocabularyIds": [
+          "vocab-b4a022a9e7a6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-music",
+    "readingSentenceId": "reading-dark-souls-11",
+    "solution": "I also like listening to the music.",
+    "grammarPointIds": [
+      "no-nominalizer",
+      "mo-addition",
+      "suki-kirai"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-music",
+    "readingSentenceId": "reading-dark-souls-11",
+    "type": "production",
+    "text": "I also like listening to the music.",
+    "grammarPointIds": [
+      "no-nominalizer",
+      "mo-addition",
+      "suki-kirai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "music",
+        "vocabularyIds": [
+          "vocab-83b219893eca"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-getting-better",
+    "readingSentenceId": "reading-dark-souls-12",
+    "solution": "It is fun to get better than before.",
+    "grammarPointIds": [
+      "yori-comparison",
+      "naru-change",
+      "no-nominalizer"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-getting-better",
+    "readingSentenceId": "reading-dark-souls-12",
+    "type": "production",
+    "text": "It is fun to get better than before.",
+    "grammarPointIds": [
+      "yori-comparison",
+      "naru-change",
+      "no-nominalizer"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "fun",
+        "vocabularyIds": [
+          "vocab-9cc2d4a9bbe1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-other-games",
+    "readingSentenceId": "reading-dark-souls-13",
+    "solution": "Did you also play DARK SOULS II and DARK SOULS III?",
+    "grammarPointIds": [
+      "to-complete-list",
+      "mo-addition",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-other-games",
+    "readingSentenceId": "reading-dark-souls-13",
+    "type": "production",
+    "text": "Did you also play DARK SOULS II and DARK SOULS III?",
+    "grammarPointIds": [
+      "to-complete-list",
+      "mo-addition",
+      "ka-question"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "play",
+        "vocabularyIds": [
+          "vocab-58a04652246f"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-played-both",
+    "readingSentenceId": "reading-dark-souls-14",
+    "solution": "Yes, after DARK SOULS, I played those two as well.",
+    "grammarPointIds": [
+      "ato-de",
+      "tsu-counter",
+      "mo-addition"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-played-both",
+    "readingSentenceId": "reading-dark-souls-14",
+    "type": "production",
+    "text": "Yes, after DARK SOULS, I played those two as well.",
+    "grammarPointIds": [
+      "ato-de",
+      "tsu-counter",
+      "mo-addition"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "two",
+        "vocabularyIds": [
+          "vocab-bb85f028d944"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-hard-but-fun",
+    "readingSentenceId": "reading-dark-souls-15",
+    "solution": "Every game was difficult, but each was fun.",
+    "grammarPointIds": [
+      "question-word-mo",
+      "i-adjective-past",
+      "ga-contrast"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-hard-but-fun",
+    "readingSentenceId": "reading-dark-souls-15",
+    "type": "production",
+    "text": "Every game was difficult, but each was fun.",
+    "grammarPointIds": [
+      "question-word-mo",
+      "i-adjective-past",
+      "ga-contrast"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "difficult",
+        "vocabularyIds": [
+          "vocab-6ed0b6d4c374"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-original-favourite",
+    "readingSentenceId": "reading-dark-souls-16",
+    "solution": "But the original DARK SOULS is still my favourite.",
+    "grammarPointIds": [
+      "demo-connector",
+      "mo-addition",
+      "ichiban-superlative"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-original-favourite",
+    "readingSentenceId": "reading-dark-souls-16",
+    "type": "production",
+    "text": "But the original DARK SOULS is still my favourite.",
+    "grammarPointIds": [
+      "demo-connector",
+      "mo-addition",
+      "ichiban-superlative"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "favourite",
+        "vocabularyIds": [
+          "vocab-32a5e8698306"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-advice",
+    "readingSentenceId": "reading-dark-souls-17",
+    "solution": "What would you like to say to people playing it for the first time?",
+    "grammarPointIds": [
+      "relative-clause",
+      "ni-target-recipient",
+      "tai-desire"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-advice",
+    "readingSentenceId": "reading-dark-souls-17",
+    "type": "production",
+    "text": "What would you like to say to people playing it for the first time?",
+    "grammarPointIds": [
+      "relative-clause",
+      "ni-target-recipient",
+      "tai-desire"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "people",
+        "vocabularyIds": [
+          "vocab-ad7167347a2a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-take-a-break",
+    "readingSentenceId": "reading-dark-souls-18",
+    "solution": "When you are scared, it is okay to take a short break.",
+    "grammarPointIds": [
+      "toki",
+      "te-mo-ii",
+      "yo-emphasis"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-take-a-break",
+    "readingSentenceId": "reading-dark-souls-18",
+    "type": "production",
+    "text": "When you are scared, it is okay to take a short break.",
+    "grammarPointIds": [
+      "toki",
+      "te-mo-ii",
+      "yo-emphasis"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "break",
+        "vocabularyIds": [
+          "vocab-acc3dd26ba1e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-beginner-too",
+    "readingSentenceId": "reading-dark-souls-19",
+    "solution": "I was not good at it at first either.",
+    "grammarPointIds": [
+      "mo-addition",
+      "na-adjective-past-negative"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-beginner-too",
+    "readingSentenceId": "reading-dark-souls-19",
+    "type": "production",
+    "text": "I was not good at it at first either.",
+    "grammarPointIds": [
+      "mo-addition",
+      "na-adjective-past-negative"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "first",
+        "vocabularyIds": [
+          "vocab-2dba63ed9209"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-dark-souls-try-again",
+    "readingSentenceId": "reading-dark-souls-20",
+    "solution": "If you die, please give it another try.",
+    "grammarPointIds": [
+      "tara-conditional",
+      "te-miru",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-story-dark-souls-try-again",
+    "readingSentenceId": "reading-dark-souls-20",
+    "type": "production",
+    "text": "If you die, please give it another try.",
+    "grammarPointIds": [
+      "tara-conditional",
+      "te-miru",
+      "te-kudasai"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "die",
+        "vocabularyIds": [
+          "vocab-dd5d31dbf7c9"
+        ]
+      }
+    ]
   }
 ]

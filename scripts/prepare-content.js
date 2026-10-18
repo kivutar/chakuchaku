@@ -244,7 +244,25 @@ function createVocabularyIndex(vocabulary) {
 }
 
 function tokenizeContent(text, vocabularyIndex) {
-  const sourceTokens = tokenizer.tokenize(text);
+  // Lindera omits whitespace. Retain it as display text, including spaces in
+  // Latin names, so tokens still reconstruct the authored sentence exactly.
+  const bytes = Buffer.from(text);
+  const sourceTokens = [];
+  let byteOffset = 0;
+  const appendGap = (end) => {
+    if (end > byteOffset) {
+      sourceTokens.push({
+        surface: bytes.subarray(byteOffset, end).toString("utf8"),
+        details: ["記号", "空白", "*", "*", "*", "*", "*", "*", "*"]
+      });
+    }
+  };
+  for (const token of tokenizer.tokenize(text)) {
+    appendGap(token.byte_start);
+    sourceTokens.push(token);
+    byteOffset = token.byte_end;
+  }
+  appendGap(bytes.length);
   const tokens = [];
 
   for (let start = 0; start < sourceTokens.length;) {

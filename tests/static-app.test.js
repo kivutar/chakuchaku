@@ -797,7 +797,7 @@ test("fifth-sentence additions keep contextual readings and inflected grammar hi
   assert.equal(highlightedText("production-n4-at-sea-invitation-to-swim-together", "no-desu"), "んだ");
 });
 
-test("irregular person counts stay whole without changing larger counts", async () => {
+test("content tokenization preserves spaces and whole-word person counts", async () => {
   const [vocabulary, preparationCode] = await Promise.all([
     readJson("data/jlpt-n5-vocabulary.json"),
     readFile(join(rootDirectory, "scripts/prepare-content.js"), "utf8")
@@ -811,7 +811,7 @@ test("irregular person counts stay whole without changing larger counts", async 
       preparationCode.indexOf("function createVocabularyIndex("),
       preparationCode.indexOf("function createKanjiIndex(")
     )}\n({ createVocabularyIndex, tokenizeContent });`,
-    { tokenizer }
+    { tokenizer, Buffer }
   );
   const index = createVocabularyIndex(vocabulary);
 
@@ -835,6 +835,11 @@ test("irregular person counts stay whole without changing larger counts", async 
   }
   assert.equal(tokenizeContent("一人一人", index)
     .map((token) => token.details[7]).join(""), "ひとりひとり");
+  for (const text of ["「DARK SOULSは好きですか。」", "DARK SOULS IIとDARK SOULS III", " 二 人で帰る。\t", "一　人で帰る。", " \t"]) {
+    const tokens = tokenizeContent(text, index);
+    assert.equal(tokens.map(({ surface }) => surface).join(""), text);
+    assert.ok(!tokens.some(({ surface }) => surface === "二人" || surface === "一人"));
+  }
 });
 
 test("grammar, stories, and vocabulary examples use whole-word person-count readings", async () => {
