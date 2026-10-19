@@ -22818,5 +22818,1157 @@
         ]
       }
     ]
+  },
+  {
+    "id": "story-kyoto-trip-spring-trip",
+    "readingSentenceId": "reading-kyoto-trip-01",
+    "solution": "In spring, I went on a trip to Kyoto with a friend.",
+    "grammarPointIds": [
+      "ni-time",
+      "to-companion",
+      "ni-purpose"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-spring-trip",
+    "readingSentenceId": "reading-kyoto-trip-01",
+    "type": "production",
+    "text": "In spring, I went on a trip to Kyoto with a friend.",
+    "grammarPointIds": [
+      "ni-time",
+      "to-companion",
+      "ni-purpose"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "spring",
+        "vocabularyIds": [
+          "vocab-18597113ac94"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-three-temples-planned",
+    "readingSentenceId": "reading-kyoto-trip-02",
+    "solution": "The two of us planned to visit three temples.",
+    "grammarPointIds": [
+      "tsumori",
+      "tsu-counter",
+      "common-counters"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-three-temples-planned",
+    "readingSentenceId": "reading-kyoto-trip-02",
+    "type": "production",
+    "text": "The two of us planned to visit three temples.",
+    "grammarPointIds": [
+      "tsumori",
+      "tsu-counter",
+      "common-counters"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "temples",
+        "vocabularyIds": [
+          "vocab-9baf2fabdc97"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-morning-train",
+    "readingSentenceId": "reading-kyoto-trip-03",
+    "solution": "We took the Shinkansen early in the morning and got off at Kyoto Station.",
+    "grammarPointIds": [
+      "te-action-link",
+      "de-action-location",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-morning-train",
+    "readingSentenceId": "reading-kyoto-trip-03",
+    "type": "production",
+    "text": "We took the Shinkansen early in the morning and got off at Kyoto Station.",
+    "grammarPointIds": [
+      "te-action-link",
+      "de-action-location",
+      "ni-target-recipient"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "Shinkansen",
+        "vocabularyIds": [
+          "vocab-b4dca49d44f1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-many-places-on-map",
+    "readingSentenceId": "reading-kyoto-trip-04",
+    "solution": "There were many places on the map that I wanted to visit.",
+    "grammarPointIds": [
+      "relative-clause",
+      "tai-desire",
+      "aru-existence"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-many-places-on-map",
+    "readingSentenceId": "reading-kyoto-trip-04",
+    "type": "production",
+    "text": "There were many places on the map that I wanted to visit.",
+    "grammarPointIds": [
+      "relative-clause",
+      "tai-desire",
+      "aru-existence"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "map",
+        "vocabularyIds": [
+          "vocab-3c687e40b035"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-temple-by-bus",
+    "readingSentenceId": "reading-kyoto-trip-05",
+    "solution": "In the morning, we went to an old temple by bus.",
+    "grammarPointIds": [
+      "de-means",
+      "e-direction",
+      "i-adjective-attributive"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-temple-by-bus",
+    "readingSentenceId": "reading-kyoto-trip-05",
+    "type": "production",
+    "text": "In the morning, we went to an old temple by bus.",
+    "grammarPointIds": [
+      "de-means",
+      "e-direction",
+      "i-adjective-attributive"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-cherry-blossoms",
+    "readingSentenceId": "reading-kyoto-trip-06",
+    "solution": "We saw cherry blossoms in the temple garden.",
+    "grammarPointIds": [
+      "de-action-location",
+      "no-possession",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-cherry-blossoms",
+    "readingSentenceId": "reading-kyoto-trip-06",
+    "type": "production",
+    "text": "We saw cherry blossoms in the temple garden.",
+    "grammarPointIds": [
+      "de-action-location",
+      "no-possession",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "garden",
+        "vocabularyIds": [
+          "vocab-32b69415feac"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-map-again",
+    "readingSentenceId": "reading-kyoto-trip-07",
+    "solution": "But I soon looked at the map again.",
+    "grammarPointIds": [
+      "demo-connector",
+      "o-object",
+      "verb-mashita"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-map-again",
+    "readingSentenceId": "reading-kyoto-trip-07",
+    "type": "production",
+    "text": "But I soon looked at the map again.",
+    "grammarPointIds": [
+      "demo-connector",
+      "o-object",
+      "verb-mashita"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "map",
+        "vocabularyIds": [
+          "vocab-3c687e40b035"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-next-temple",
+    "readingSentenceId": "reading-kyoto-trip-08",
+    "solution": "Because I wanted to go to the next temple too.",
+    "grammarPointIds": [
+      "tai-desire",
+      "kara-reason",
+      "mo-addition"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-next-temple",
+    "readingSentenceId": "reading-kyoto-trip-08",
+    "type": "production",
+    "text": "Because I wanted to go to the next temple too.",
+    "grammarPointIds": [
+      "tai-desire",
+      "kara-reason",
+      "mo-addition"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "next",
+        "vocabularyIds": [
+          "vocab-c97677d187f5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-friends-break",
+    "readingSentenceId": "reading-kyoto-trip-09",
+    "solution": "My friend said, “Shall we take a short break?”",
+    "grammarPointIds": [
+      "masen-ka-invitation",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-friends-break",
+    "readingSentenceId": "reading-kyoto-trip-09",
+    "type": "production",
+    "text": "My friend said, “Shall we take a short break?”",
+    "grammarPointIds": [
+      "masen-ka-invitation",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-matcha-and-sweets",
+    "readingSentenceId": "reading-kyoto-trip-10",
+    "solution": "We ordered matcha and sweets at a shop near the temple.",
+    "grammarPointIds": [
+      "positional-nouns",
+      "to-complete-list",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-matcha-and-sweets",
+    "readingSentenceId": "reading-kyoto-trip-10",
+    "type": "production",
+    "text": "We ordered matcha and sweets at a shop near the temple.",
+    "grammarPointIds": [
+      "positional-nouns",
+      "to-complete-list",
+      "de-action-location"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "matcha",
+        "vocabularyIds": [
+          "vocab-6132962d1ace"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-telling-plans",
+    "readingSentenceId": "reading-kyoto-trip-11",
+    "solution": "We told someone at the shop about our plans for the day.",
+    "grammarPointIds": [
+      "ni-target-recipient",
+      "no-possession",
+      "o-object"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-telling-plans",
+    "readingSentenceId": "reading-kyoto-trip-11",
+    "type": "production",
+    "text": "We told someone at the shop about our plans for the day.",
+    "grammarPointIds": [
+      "ni-target-recipient",
+      "no-possession",
+      "o-object"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "plans",
+        "vocabularyIds": [
+          "vocab-1b1b5806b28b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-all-today",
+    "readingSentenceId": "reading-kyoto-trip-12",
+    "solution": "When I showed the map, that person asked, “All of that, today?”",
+    "grammarPointIds": [
+      "to-conditional",
+      "to-quotation",
+      "ka-question"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-all-today",
+    "readingSentenceId": "reading-kyoto-trip-12",
+    "type": "production",
+    "text": "When I showed the map, that person asked, “All of that, today?”",
+    "grammarPointIds": [
+      "to-conditional",
+      "to-quotation",
+      "ka-question"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "map",
+        "vocabularyIds": [
+          "vocab-3c687e40b035"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-riverside-path",
+    "readingSentenceId": "reading-kyoto-trip-13",
+    "solution": "The person at the shop told us about a path by the river.",
+    "grammarPointIds": [
+      "te-kureru",
+      "positional-nouns",
+      "no-possession"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-riverside-path",
+    "readingSentenceId": "reading-kyoto-trip-13",
+    "type": "production",
+    "text": "The person at the shop told us about a path by the river.",
+    "grammarPointIds": [
+      "te-kureru",
+      "positional-nouns",
+      "no-possession"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "river",
+        "vocabularyIds": [
+          "vocab-82dcbecaf875"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-take-your-time",
+    "readingSentenceId": "reading-kyoto-trip-14",
+    "solution": "They said, “Taking a slow walk over there is nice too.”",
+    "grammarPointIds": [
+      "no-nominalizer",
+      "mo-addition",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-take-your-time",
+    "readingSentenceId": "reading-kyoto-trip-14",
+    "type": "production",
+    "text": "They said, “Taking a slow walk over there is nice too.”",
+    "grammarPointIds": [
+      "no-nominalizer",
+      "mo-addition",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "slow",
+        "vocabularyIds": [
+          "vocab-0609e7997541"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-walking-to-river",
+    "readingSentenceId": "reading-kyoto-trip-15",
+    "solution": "After leaving the shop, the two of us walked to the river.",
+    "grammarPointIds": [
+      "te-kara",
+      "made-end",
+      "common-counters"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-walking-to-river",
+    "readingSentenceId": "reading-kyoto-trip-15",
+    "type": "production",
+    "text": "After leaving the shop, the two of us walked to the river.",
+    "grammarPointIds": [
+      "te-kara",
+      "made-end",
+      "common-counters"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "river",
+        "vocabularyIds": [
+          "vocab-82dcbecaf875"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-flowers-and-photos",
+    "readingSentenceId": "reading-kyoto-trip-16",
+    "solution": "By the river, we did things like looking at flowers and taking photos.",
+    "grammarPointIds": [
+      "tari-tari-suru",
+      "de-action-location"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-flowers-and-photos",
+    "readingSentenceId": "reading-kyoto-trip-16",
+    "type": "production",
+    "text": "By the river, we did things like looking at flowers and taking photos.",
+    "grammarPointIds": [
+      "tari-tari-suru",
+      "de-action-location"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "photos",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-only-one-temple",
+    "readingSentenceId": "reading-kyoto-trip-17",
+    "solution": "That day, we visited only one temple.",
+    "grammarPointIds": [
+      "shika-nai-limitation",
+      "tsu-counter"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-only-one-temple",
+    "readingSentenceId": "reading-kyoto-trip-17",
+    "type": "production",
+    "text": "That day, we visited only one temple.",
+    "grammarPointIds": [
+      "shika-nai-limitation",
+      "tsu-counter"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "temple",
+        "vocabularyIds": [
+          "vocab-9baf2fabdc97"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-loving-kyoto",
+    "readingSentenceId": "reading-kyoto-trip-18",
+    "solution": "But by walking slowly, I grew to love the city of Kyoto.",
+    "grammarPointIds": [
+      "demo-connector",
+      "te-action-link",
+      "naru-change"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-loving-kyoto",
+    "readingSentenceId": "reading-kyoto-trip-18",
+    "type": "production",
+    "text": "But by walking slowly, I grew to love the city of Kyoto.",
+    "grammarPointIds": [
+      "demo-connector",
+      "te-action-link",
+      "naru-change"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "city",
+        "vocabularyIds": [
+          "vocab-09d74d630a45"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-return-invitation",
+    "readingSentenceId": "reading-kyoto-trip-19",
+    "solution": "My friend said, “Let’s come to Kyoto again.”",
+    "grammarPointIds": [
+      "mashou",
+      "to-quotation",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-return-invitation",
+    "readingSentenceId": "reading-kyoto-trip-19",
+    "type": "production",
+    "text": "My friend said, “Let’s come to Kyoto again.”",
+    "grammarPointIds": [
+      "mashou",
+      "to-quotation",
+      "e-direction"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-kyoto-trip-sweets-for-mum",
+    "readingSentenceId": "reading-kyoto-trip-20",
+    "solution": "Next time, I want to buy some sweets from that shop to take home for my mother too.",
+    "grammarPointIds": [
+      "tai-desire",
+      "te-action-link",
+      "ni-target-recipient",
+      "mo-addition"
+    ]
+  },
+  {
+    "id": "production-story-kyoto-trip-sweets-for-mum",
+    "readingSentenceId": "reading-kyoto-trip-20",
+    "type": "production",
+    "text": "Next time, I want to buy some sweets from that shop to take home for my mother too.",
+    "grammarPointIds": [
+      "tai-desire",
+      "te-action-link",
+      "ni-target-recipient",
+      "mo-addition"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-tonights-party",
+    "readingSentenceId": "reading-evening-curry-01",
+    "solution": "Tonight, I am planning to have a party with friends at my place, starting at seven.",
+    "grammarPointIds": [
+      "yotei-da",
+      "kara-start",
+      "to-companion"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-tonights-party",
+    "readingSentenceId": "reading-evening-curry-01",
+    "type": "production",
+    "text": "Tonight, I am planning to have a party with friends at my place, starting at seven.",
+    "grammarPointIds": [
+      "yotei-da",
+      "kara-start",
+      "to-companion"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "tonight",
+        "vocabularyIds": [
+          "vocab-b733006acec6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-chicken-curry-plan",
+    "readingSentenceId": "reading-evening-curry-02",
+    "solution": "Thinking that I would like everyone to try my cooking, I decided to make chicken curry.",
+    "grammarPointIds": [
+      "volitional-to-omou",
+      "te-morau",
+      "koto-ni-suru"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-chicken-curry-plan",
+    "readingSentenceId": "reading-evening-curry-02",
+    "type": "production",
+    "text": "Thinking that I would like everyone to try my cooking, I decided to make chicken curry.",
+    "grammarPointIds": [
+      "volitional-to-omou",
+      "te-morau",
+      "koto-ni-suru"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "chicken",
+        "vocabularyIds": [
+          "vocab-50bc45f0097a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-not-too-spicy",
+    "readingSentenceId": "reading-evening-curry-03",
+    "solution": "Since one of my friends cannot eat much spicy food, I tried to keep it as mild as possible.",
+    "grammarPointIds": [
+      "potential-form",
+      "you-ni-suru",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-not-too-spicy",
+    "readingSentenceId": "reading-evening-curry-03",
+    "type": "production",
+    "text": "Since one of my friends cannot eat much spicy food, I tried to keep it as mild as possible.",
+    "grammarPointIds": [
+      "potential-form",
+      "you-ni-suru",
+      "node-reason"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "spicy",
+        "vocabularyIds": [
+          "vocab-5ee635ff604e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-shopping-list",
+    "readingSentenceId": "reading-evening-curry-04",
+    "solution": "Before going shopping, I wrote down the things I needed on paper.",
+    "grammarPointIds": [
+      "mae-ni",
+      "te-oku"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-shopping-list",
+    "readingSentenceId": "reading-evening-curry-04",
+    "type": "production",
+    "text": "Before going shopping, I wrote down the things I needed on paper.",
+    "grammarPointIds": [
+      "mae-ni",
+      "te-oku"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "shopping",
+        "vocabularyIds": [
+          "vocab-723d3f75fc14"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-supermarket-after-lunch",
+    "readingSentenceId": "reading-evening-curry-05",
+    "solution": "After lunch, I went shopping at a nearby supermarket.",
+    "grammarPointIds": [
+      "ato-de",
+      "ni-purpose",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-supermarket-after-lunch",
+    "readingSentenceId": "reading-evening-curry-05",
+    "type": "production",
+    "text": "After lunch, I went shopping at a nearby supermarket.",
+    "grammarPointIds": [
+      "ato-de",
+      "ni-purpose",
+      "e-direction"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "supermarket",
+        "vocabularyIds": [
+          "vocab-280c303db8c8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-choosing-ingredients",
+    "readingSentenceId": "reading-evening-curry-06",
+    "solution": "After choosing vegetables, chicken, milk, and other things, I went to the rice section.",
+    "grammarPointIds": [
+      "ya-incomplete-list",
+      "te-kara",
+      "e-direction"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-choosing-ingredients",
+    "readingSentenceId": "reading-evening-curry-06",
+    "type": "production",
+    "text": "After choosing vegetables, chicken, milk, and other things, I went to the rice section.",
+    "grammarPointIds": [
+      "ya-incomplete-list",
+      "te-kara",
+      "e-direction"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "rice",
+        "vocabularyIds": [
+          "vocab-0958f7553d9f"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-extra-rice",
+    "readingSentenceId": "reading-evening-curry-07",
+    "solution": "There should still be some rice at home, but I thought it would not be enough for everyone.",
+    "grammarPointIds": [
+      "hazu-da",
+      "ga-contrast",
+      "to-omou"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-extra-rice",
+    "readingSentenceId": "reading-evening-curry-07",
+    "type": "production",
+    "text": "There should still be some rice at home, but I thought it would not be enough for everyone.",
+    "grammarPointIds": [
+      "hazu-da",
+      "ga-contrast",
+      "to-omou"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "enough",
+        "vocabularyIds": [
+          "vocab-cdc7fbcaab99"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-heavy-shopping",
+    "readingSentenceId": "reading-evening-curry-08",
+    "solution": "Because I bought rice too, my shopping ended up heavier than I had expected.",
+    "grammarPointIds": [
+      "node-reason",
+      "yori-comparison",
+      "te-shimau"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-heavy-shopping",
+    "readingSentenceId": "reading-evening-curry-08",
+    "type": "production",
+    "text": "Because I bought rice too, my shopping ended up heavier than I had expected.",
+    "grammarPointIds": [
+      "node-reason",
+      "yori-comparison",
+      "te-shimau"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "heavier",
+        "vocabularyIds": [
+          "vocab-beff4a4d6b56"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-offer-of-help",
+    "readingSentenceId": "reading-evening-curry-09",
+    "solution": "When I got home, a friend called and said, “Shall I come a little early and help?”",
+    "grammarPointIds": [
+      "to-conditional",
+      "plain-volitional",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-offer-of-help",
+    "readingSentenceId": "reading-evening-curry-09",
+    "type": "production",
+    "text": "When I got home, a friend called and said, “Shall I come a little early and help?”",
+    "grammarPointIds": [
+      "to-conditional",
+      "plain-volitional",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "help",
+        "vocabularyIds": [
+          "vocab-19dc754d2746"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-cutting-ahead",
+    "readingSentenceId": "reading-evening-curry-10",
+    "solution": "Before starting to cook, I cut the meat and vegetables into small pieces in advance.",
+    "grammarPointIds": [
+      "mae-ni",
+      "te-oku",
+      "i-adjective-adverb"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-cutting-ahead",
+    "readingSentenceId": "reading-evening-curry-10",
+    "type": "production",
+    "text": "Before starting to cook, I cut the meat and vegetables into small pieces in advance.",
+    "grammarPointIds": [
+      "mae-ni",
+      "te-oku",
+      "i-adjective-adverb"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "vegetables",
+        "vocabularyIds": [
+          "vocab-88763af54360"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-cooking-when-friend-arrives",
+    "readingSentenceId": "reading-evening-curry-11",
+    "solution": "When my friend arrived, I was in the middle of making the curry.",
+    "grammarPointIds": [
+      "teiru-tokoro",
+      "toki"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-cooking-when-friend-arrives",
+    "readingSentenceId": "reading-evening-curry-11",
+    "type": "production",
+    "text": "When my friend arrived, I was in the middle of making the curry.",
+    "grammarPointIds": [
+      "teiru-tokoro",
+      "toki"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "curry",
+        "vocabularyIds": [
+          "vocab-323e543ce9f9"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-taste-while-setting-table",
+    "readingSentenceId": "reading-evening-curry-12",
+    "solution": "While my friend was setting out the glasses, I tasted a little of the curry.",
+    "grammarPointIds": [
+      "aida-ni",
+      "te-iru-progressive",
+      "te-miru"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-taste-while-setting-table",
+    "readingSentenceId": "reading-evening-curry-12",
+    "type": "production",
+    "text": "While my friend was setting out the glasses, I tasted a little of the curry.",
+    "grammarPointIds": [
+      "aida-ni",
+      "te-iru-progressive",
+      "te-miru"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "glasses",
+        "vocabularyIds": [
+          "vocab-317fd78ce0fc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-unexpected-spice",
+    "readingSentenceId": "reading-evening-curry-13",
+    "solution": "Although I had tried not to make it spicy, it tasted spicier than I had expected.",
+    "grammarPointIds": [
+      "you-ni-suru",
+      "noni-concession",
+      "ga-suru-sensation"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-unexpected-spice",
+    "readingSentenceId": "reading-evening-curry-13",
+    "type": "production",
+    "text": "Although I had tried not to make it spicy, it tasted spicier than I had expected.",
+    "grammarPointIds": [
+      "you-ni-suru",
+      "noni-concession",
+      "ga-suru-sensation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "tasted",
+        "vocabularyIds": [
+          "vocab-40977d83691d"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-milk-suggestion",
+    "readingSentenceId": "reading-evening-curry-14",
+    "solution": "When I was at a loss, my friend said, “Why not try adding a little milk?”",
+    "grammarPointIds": [
+      "to-conditional",
+      "tara-dou",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-milk-suggestion",
+    "readingSentenceId": "reading-evening-curry-14",
+    "type": "production",
+    "text": "When I was at a loss, my friend said, “Why not try adding a little milk?”",
+    "grammarPointIds": [
+      "to-conditional",
+      "tara-dou",
+      "to-quotation"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "milk",
+        "vocabularyIds": [
+          "vocab-e90f788a51b5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-easier-to-eat",
+    "readingSentenceId": "reading-evening-curry-15",
+    "solution": "After I added a little milk, it became easier to eat.",
+    "grammarPointIds": [
+      "tara-conditional",
+      "yasui",
+      "naru-ku-change"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-easier-to-eat",
+    "readingSentenceId": "reading-evening-curry-15",
+    "type": "production",
+    "text": "After I added a little milk, it became easier to eat.",
+    "grammarPointIds": [
+      "tara-conditional",
+      "yasui",
+      "naru-ku-change"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "added",
+        "vocabularyIds": [
+          "vocab-5bf183e71692"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-glad-for-help",
+    "readingSentenceId": "reading-evening-curry-16",
+    "solution": "I thought, “I’m glad my friend helped me.”",
+    "grammarPointIds": [
+      "te-morau",
+      "te-yokatta",
+      "to-omou"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-glad-for-help",
+    "readingSentenceId": "reading-evening-curry-16",
+    "type": "production",
+    "text": "I thought, “I’m glad my friend helped me.”",
+    "grammarPointIds": [
+      "te-morau",
+      "te-yokatta",
+      "to-omou"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "helped",
+        "vocabularyIds": [
+          "vocab-19dc754d2746"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-ready-at-six-thirty",
+    "readingSentenceId": "reading-evening-curry-17",
+    "solution": "By half past six, the food was ready and the table was set.",
+    "grammarPointIds": [
+      "te-iru-result-state",
+      "mo-addition",
+      "clock-calendar-time"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-ready-at-six-thirty",
+    "readingSentenceId": "reading-evening-curry-17",
+    "type": "production",
+    "text": "By half past six, the food was ready and the table was set.",
+    "grammarPointIds": [
+      "te-iru-result-state",
+      "mo-addition",
+      "clock-calendar-time"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "table",
+        "vocabularyIds": [
+          "vocab-f1af08d4c51c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-homemade-cake",
+    "readingSentenceId": "reading-evening-curry-18",
+    "solution": "My friend had also brought a cake they had baked themselves.",
+    "grammarPointIds": [
+      "relative-clause",
+      "te-kuru",
+      "te-kureru"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-homemade-cake",
+    "readingSentenceId": "reading-evening-curry-18",
+    "type": "production",
+    "text": "My friend had also brought a cake they had baked themselves.",
+    "grammarPointIds": [
+      "relative-clause",
+      "te-kuru",
+      "te-kureru"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "cake",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-smell-makes-hungry",
+    "readingSentenceId": "reading-evening-curry-19",
+    "solution": "It smells so good that I am starting to want to eat a little more.",
+    "grammarPointIds": [
+      "ga-suru-sensation",
+      "te-kuru",
+      "tai-desire"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-smell-makes-hungry",
+    "readingSentenceId": "reading-evening-curry-19",
+    "type": "production",
+    "text": "It smells so good that I am starting to want to eat a little more.",
+    "grammarPointIds": [
+      "ga-suru-sensation",
+      "te-kuru",
+      "tai-desire"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "smells",
+        "vocabularyIds": [
+          "vocab-e05017b24480"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "story-evening-curry-hardest-part-waiting",
+    "readingSentenceId": "reading-evening-curry-20",
+    "solution": "Waiting until everyone arrives looks harder than cooking.",
+    "grammarPointIds": [
+      "yori-comparison",
+      "hou-ga-comparison",
+      "sou-appearance"
+    ]
+  },
+  {
+    "id": "production-story-evening-curry-hardest-part-waiting",
+    "readingSentenceId": "reading-evening-curry-20",
+    "type": "production",
+    "text": "Waiting until everyone arrives looks harder than cooking.",
+    "grammarPointIds": [
+      "yori-comparison",
+      "hou-ga-comparison",
+      "sou-appearance"
+    ],
+    "promptVocabularyHints": [
+      {
+        "word": "waiting",
+        "vocabularyIds": [
+          "vocab-6f30c5c5938f"
+        ]
+      }
+    ]
   }
 ]

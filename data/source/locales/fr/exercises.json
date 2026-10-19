@@ -11733,5 +11733,565 @@
         ]
       }
     ]
+  },
+  "story-kyoto-trip-spring-trip": {
+    "translation": "Au printemps, je suis parti en voyage à Kyoto avec un ami."
+  },
+  "production-story-kyoto-trip-spring-trip": {
+    "translation": "Au printemps, je suis parti en voyage à Kyoto avec un ami.",
+    "promptVocabularyHints": [
+      {
+        "word": "printemps",
+        "vocabularyIds": [
+          "vocab-18597113ac94"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-three-temples-planned": {
+    "translation": "Nous avions prévu de visiter trois temples tous les deux."
+  },
+  "production-story-kyoto-trip-three-temples-planned": {
+    "translation": "Nous avions prévu de visiter trois temples tous les deux.",
+    "promptVocabularyHints": [
+      {
+        "word": "temples",
+        "vocabularyIds": [
+          "vocab-9baf2fabdc97"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-morning-train": {
+    "translation": "Nous avons pris le Shinkansen tôt le matin et sommes descendus à la gare de Kyoto."
+  },
+  "production-story-kyoto-trip-morning-train": {
+    "translation": "Nous avons pris le Shinkansen tôt le matin et sommes descendus à la gare de Kyoto.",
+    "promptVocabularyHints": [
+      {
+        "word": "Shinkansen",
+        "vocabularyIds": [
+          "vocab-b4dca49d44f1"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-many-places-on-map": {
+    "translation": "Il y avait sur la carte beaucoup d’endroits que je voulais visiter."
+  },
+  "production-story-kyoto-trip-many-places-on-map": {
+    "translation": "Il y avait sur la carte beaucoup d’endroits que je voulais visiter.",
+    "promptVocabularyHints": [
+      {
+        "word": "carte",
+        "vocabularyIds": [
+          "vocab-3c687e40b035"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-temple-by-bus": {
+    "translation": "Le matin, nous sommes allés en bus dans un vieux temple."
+  },
+  "production-story-kyoto-trip-temple-by-bus": {
+    "translation": "Le matin, nous sommes allés en bus dans un vieux temple.",
+    "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-cherry-blossoms": {
+    "translation": "Nous avons vu des fleurs de cerisier dans le jardin du temple."
+  },
+  "production-story-kyoto-trip-cherry-blossoms": {
+    "translation": "Nous avons vu des fleurs de cerisier dans le jardin du temple.",
+    "promptVocabularyHints": [
+      {
+        "word": "jardin",
+        "vocabularyIds": [
+          "vocab-32b69415feac"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-map-again": {
+    "translation": "Mais j’ai vite regardé la carte à nouveau."
+  },
+  "production-story-kyoto-trip-map-again": {
+    "translation": "Mais j’ai vite regardé la carte à nouveau.",
+    "promptVocabularyHints": [
+      {
+        "word": "carte",
+        "vocabularyIds": [
+          "vocab-3c687e40b035"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-next-temple": {
+    "translation": "Parce que je voulais aussi aller au temple suivant."
+  },
+  "production-story-kyoto-trip-next-temple": {
+    "translation": "Parce que je voulais aussi aller au temple suivant.",
+    "promptVocabularyHints": [
+      {
+        "word": "suivant",
+        "vocabularyIds": [
+          "vocab-c97677d187f5"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-friends-break": {
+    "translation": "Mon ami a dit : « On fait une petite pause ? »"
+  },
+  "production-story-kyoto-trip-friends-break": {
+    "translation": "Mon ami a dit : « On fait une petite pause ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-matcha-and-sweets": {
+    "translation": "Nous avons commandé du matcha et des pâtisseries dans une boutique près du temple."
+  },
+  "production-story-kyoto-trip-matcha-and-sweets": {
+    "translation": "Nous avons commandé du matcha et des pâtisseries dans une boutique près du temple.",
+    "promptVocabularyHints": [
+      {
+        "word": "matcha",
+        "vocabularyIds": [
+          "vocab-6132962d1ace"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-telling-plans": {
+    "translation": "Nous avons parlé de notre programme de la journée à une personne de la boutique."
+  },
+  "production-story-kyoto-trip-telling-plans": {
+    "translation": "Nous avons parlé de notre programme de la journée à une personne de la boutique.",
+    "promptVocabularyHints": [
+      {
+        "word": "programme",
+        "vocabularyIds": [
+          "vocab-1b1b5806b28b"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-all-today": {
+    "translation": "Quand j’ai montré la carte, cette personne a demandé : « Tout ça, aujourd’hui ? »"
+  },
+  "production-story-kyoto-trip-all-today": {
+    "translation": "Quand j’ai montré la carte, cette personne a demandé : « Tout ça, aujourd’hui ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "carte",
+        "vocabularyIds": [
+          "vocab-3c687e40b035"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-riverside-path": {
+    "translation": "La personne de la boutique nous a indiqué un chemin au bord de la rivière."
+  },
+  "production-story-kyoto-trip-riverside-path": {
+    "translation": "La personne de la boutique nous a indiqué un chemin au bord de la rivière.",
+    "promptVocabularyHints": [
+      {
+        "word": "rivière",
+        "vocabularyIds": [
+          "vocab-82dcbecaf875"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-take-your-time": {
+    "translation": "Elle a dit : « C’est agréable aussi de se promener tranquillement là-bas. »"
+  },
+  "production-story-kyoto-trip-take-your-time": {
+    "translation": "Elle a dit : « C’est agréable aussi de se promener tranquillement là-bas. »",
+    "promptVocabularyHints": [
+      {
+        "word": "tranquillement",
+        "vocabularyIds": [
+          "vocab-0609e7997541"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-walking-to-river": {
+    "translation": "Après avoir quitté la boutique, nous avons marché tous les deux jusqu’à la rivière."
+  },
+  "production-story-kyoto-trip-walking-to-river": {
+    "translation": "Après avoir quitté la boutique, nous avons marché tous les deux jusqu’à la rivière.",
+    "promptVocabularyHints": [
+      {
+        "word": "rivière",
+        "vocabularyIds": [
+          "vocab-82dcbecaf875"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-flowers-and-photos": {
+    "translation": "Au bord de la rivière, nous avons notamment regardé les fleurs et pris des photos."
+  },
+  "production-story-kyoto-trip-flowers-and-photos": {
+    "translation": "Au bord de la rivière, nous avons notamment regardé les fleurs et pris des photos.",
+    "promptVocabularyHints": [
+      {
+        "word": "photos",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-only-one-temple": {
+    "translation": "Ce jour-là, nous n’avons visité qu’un seul temple."
+  },
+  "production-story-kyoto-trip-only-one-temple": {
+    "translation": "Ce jour-là, nous n’avons visité qu’un seul temple.",
+    "promptVocabularyHints": [
+      {
+        "word": "temple",
+        "vocabularyIds": [
+          "vocab-9baf2fabdc97"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-loving-kyoto": {
+    "translation": "Mais en prenant le temps de marcher, j’ai appris à aimer la ville de Kyoto."
+  },
+  "production-story-kyoto-trip-loving-kyoto": {
+    "translation": "Mais en prenant le temps de marcher, j’ai appris à aimer la ville de Kyoto.",
+    "promptVocabularyHints": [
+      {
+        "word": "ville",
+        "vocabularyIds": [
+          "vocab-09d74d630a45"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-return-invitation": {
+    "translation": "Mon ami a dit : « Revenons à Kyoto. »"
+  },
+  "production-story-kyoto-trip-return-invitation": {
+    "translation": "Mon ami a dit : « Revenons à Kyoto. »",
+    "promptVocabularyHints": [
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  "story-kyoto-trip-sweets-for-mum": {
+    "translation": "La prochaine fois, je veux aussi acheter des pâtisseries dans cette boutique pour en rapporter à ma mère."
+  },
+  "production-story-kyoto-trip-sweets-for-mum": {
+    "translation": "La prochaine fois, je veux aussi acheter des pâtisseries dans cette boutique pour en rapporter à ma mère.",
+    "promptVocabularyHints": [
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-tonights-party": {
+    "translation": "Ce soir, je prévois de faire une fête chez moi avec des amis, à partir de dix-neuf heures."
+  },
+  "production-story-evening-curry-tonights-party": {
+    "translation": "Ce soir, je prévois de faire une fête chez moi avec des amis, à partir de dix-neuf heures.",
+    "promptVocabularyHints": [
+      {
+        "word": "soir",
+        "vocabularyIds": [
+          "vocab-b733006acec6"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-chicken-curry-plan": {
+    "translation": "En me disant que j’aimerais faire goûter ma cuisine à tout le monde, j’ai décidé de préparer un curry au poulet."
+  },
+  "production-story-evening-curry-chicken-curry-plan": {
+    "translation": "En me disant que j’aimerais faire goûter ma cuisine à tout le monde, j’ai décidé de préparer un curry au poulet.",
+    "promptVocabularyHints": [
+      {
+        "word": "poulet",
+        "vocabularyIds": [
+          "vocab-50bc45f0097a"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-not-too-spicy": {
+    "translation": "Comme l’un de mes amis ne peut pas manger beaucoup de choses épicées, j’ai essayé de préparer un curry aussi doux que possible."
+  },
+  "production-story-evening-curry-not-too-spicy": {
+    "translation": "Comme l’un de mes amis ne peut pas manger beaucoup de choses épicées, j’ai essayé de préparer un curry aussi doux que possible.",
+    "promptVocabularyHints": [
+      {
+        "word": "épicées",
+        "vocabularyIds": [
+          "vocab-5ee635ff604e"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-shopping-list": {
+    "translation": "Avant d’aller faire les courses, j’ai noté sur une feuille ce dont j’avais besoin."
+  },
+  "production-story-evening-curry-shopping-list": {
+    "translation": "Avant d’aller faire les courses, j’ai noté sur une feuille ce dont j’avais besoin.",
+    "promptVocabularyHints": [
+      {
+        "word": "courses",
+        "vocabularyIds": [
+          "vocab-723d3f75fc14"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-supermarket-after-lunch": {
+    "translation": "Après le déjeuner, je suis allé faire les courses dans un supermarché du quartier."
+  },
+  "production-story-evening-curry-supermarket-after-lunch": {
+    "translation": "Après le déjeuner, je suis allé faire les courses dans un supermarché du quartier.",
+    "promptVocabularyHints": [
+      {
+        "word": "supermarché",
+        "vocabularyIds": [
+          "vocab-280c303db8c8"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-choosing-ingredients": {
+    "translation": "Après avoir choisi des légumes, du poulet, du lait et d’autres choses, je suis allé au rayon du riz."
+  },
+  "production-story-evening-curry-choosing-ingredients": {
+    "translation": "Après avoir choisi des légumes, du poulet, du lait et d’autres choses, je suis allé au rayon du riz.",
+    "promptVocabularyHints": [
+      {
+        "word": "riz",
+        "vocabularyIds": [
+          "vocab-0958f7553d9f"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-extra-rice": {
+    "translation": "Il devrait rester du riz à la maison, mais j’ai pensé qu’il n’y en aurait pas assez pour tout le monde."
+  },
+  "production-story-evening-curry-extra-rice": {
+    "translation": "Il devrait rester du riz à la maison, mais j’ai pensé qu’il n’y en aurait pas assez pour tout le monde.",
+    "promptVocabularyHints": [
+      {
+        "word": "assez",
+        "vocabularyIds": [
+          "vocab-cdc7fbcaab99"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-heavy-shopping": {
+    "translation": "Comme j’ai aussi acheté du riz, mes courses se sont retrouvées plus lourdes que prévu."
+  },
+  "production-story-evening-curry-heavy-shopping": {
+    "translation": "Comme j’ai aussi acheté du riz, mes courses se sont retrouvées plus lourdes que prévu.",
+    "promptVocabularyHints": [
+      {
+        "word": "lourdes",
+        "vocabularyIds": [
+          "vocab-beff4a4d6b56"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-offer-of-help": {
+    "translation": "Quand je suis rentré, un ami m’a téléphoné : « Je viens un peu plus tôt pour t’aider ? »"
+  },
+  "production-story-evening-curry-offer-of-help": {
+    "translation": "Quand je suis rentré, un ami m’a téléphoné : « Je viens un peu plus tôt pour t’aider ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "aider",
+        "vocabularyIds": [
+          "vocab-19dc754d2746"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-cutting-ahead": {
+    "translation": "Avant de commencer à cuisiner, j’ai découpé la viande et les légumes en petits morceaux."
+  },
+  "production-story-evening-curry-cutting-ahead": {
+    "translation": "Avant de commencer à cuisiner, j’ai découpé la viande et les légumes en petits morceaux.",
+    "promptVocabularyHints": [
+      {
+        "word": "légumes",
+        "vocabularyIds": [
+          "vocab-88763af54360"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-cooking-when-friend-arrives": {
+    "translation": "Quand mon ami est arrivé, j’étais en train de préparer le curry."
+  },
+  "production-story-evening-curry-cooking-when-friend-arrives": {
+    "translation": "Quand mon ami est arrivé, j’étais en train de préparer le curry.",
+    "promptVocabularyHints": [
+      {
+        "word": "curry",
+        "vocabularyIds": [
+          "vocab-323e543ce9f9"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-taste-while-setting-table": {
+    "translation": "Pendant que mon ami disposait les verres, j’ai goûté un peu de curry."
+  },
+  "production-story-evening-curry-taste-while-setting-table": {
+    "translation": "Pendant que mon ami disposait les verres, j’ai goûté un peu de curry.",
+    "promptVocabularyHints": [
+      {
+        "word": "verres",
+        "vocabularyIds": [
+          "vocab-317fd78ce0fc"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-unexpected-spice": {
+    "translation": "Même si j’avais essayé de ne pas trop le relever, le curry avait un goût plus épicé que prévu."
+  },
+  "production-story-evening-curry-unexpected-spice": {
+    "translation": "Même si j’avais essayé de ne pas trop le relever, le curry avait un goût plus épicé que prévu.",
+    "promptVocabularyHints": [
+      {
+        "word": "goût",
+        "vocabularyIds": [
+          "vocab-40977d83691d"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-milk-suggestion": {
+    "translation": "Comme je ne savais pas quoi faire, mon ami a dit : « Pourquoi ne pas essayer d’ajouter un peu de lait ? »"
+  },
+  "production-story-evening-curry-milk-suggestion": {
+    "translation": "Comme je ne savais pas quoi faire, mon ami a dit : « Pourquoi ne pas essayer d’ajouter un peu de lait ? »",
+    "promptVocabularyHints": [
+      {
+        "word": "lait",
+        "vocabularyIds": [
+          "vocab-e90f788a51b5"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-easier-to-eat": {
+    "translation": "Après avoir ajouté un peu de lait, le curry était plus facile à manger."
+  },
+  "production-story-evening-curry-easier-to-eat": {
+    "translation": "Après avoir ajouté un peu de lait, le curry était plus facile à manger.",
+    "promptVocabularyHints": [
+      {
+        "word": "ajouté",
+        "vocabularyIds": [
+          "vocab-5bf183e71692"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-glad-for-help": {
+    "translation": "Je me suis dit que j’avais bien fait de me faire aider par mon ami."
+  },
+  "production-story-evening-curry-glad-for-help": {
+    "translation": "Je me suis dit que j’avais bien fait de me faire aider par mon ami.",
+    "promptVocabularyHints": [
+      {
+        "word": "aider",
+        "vocabularyIds": [
+          "vocab-19dc754d2746"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-ready-at-six-thirty": {
+    "translation": "À dix-huit heures trente, le repas était déjà prêt et la table était mise."
+  },
+  "production-story-evening-curry-ready-at-six-thirty": {
+    "translation": "À dix-huit heures trente, le repas était déjà prêt et la table était mise.",
+    "promptVocabularyHints": [
+      {
+        "word": "table",
+        "vocabularyIds": [
+          "vocab-f1af08d4c51c"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-homemade-cake": {
+    "translation": "Mon ami avait aussi apporté un gâteau qu’il avait lui-même fait cuire."
+  },
+  "production-story-evening-curry-homemade-cake": {
+    "translation": "Mon ami avait aussi apporté un gâteau qu’il avait lui-même fait cuire.",
+    "promptVocabularyHints": [
+      {
+        "word": "gâteau",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-smell-makes-hungry": {
+    "translation": "Cela sent si bon que je commence à avoir envie d’en manger un peu plus."
+  },
+  "production-story-evening-curry-smell-makes-hungry": {
+    "translation": "Cela sent si bon que je commence à avoir envie d’en manger un peu plus.",
+    "promptVocabularyHints": [
+      {
+        "word": "sent",
+        "vocabularyIds": [
+          "vocab-e05017b24480"
+        ]
+      }
+    ]
+  },
+  "story-evening-curry-hardest-part-waiting": {
+    "translation": "Attendre que tout le monde arrive semble plus difficile que de cuisiner."
+  },
+  "production-story-evening-curry-hardest-part-waiting": {
+    "translation": "Attendre que tout le monde arrive semble plus difficile que de cuisiner.",
+    "promptVocabularyHints": [
+      {
+        "word": "Attendre",
+        "vocabularyIds": [
+          "vocab-6f30c5c5938f"
+        ]
+      }
+    ]
   }
 }

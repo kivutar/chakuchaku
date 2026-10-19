@@ -159,7 +159,7 @@
   { "id": "aru-possession", "category": "existence", "kind": "pattern", "pattern": "person には thing がある", "name": "Possession with existence", "meaning": "Express having or possessing something through its existence.", "scope": "core", "introducedAt": "n5" },
 
   { "id": "yori-comparison", "category": "comparison", "kind": "particle", "pattern": "A より B", "name": "Comparison baseline", "meaning": "Mark the item against which another item is compared.", "scope": "core", "introducedAt": "n5" },
-  { "id": "hou-ga-comparison", "category": "comparison", "kind": "pattern", "pattern": "A より B のほうが adjective", "name": "Comparative preference", "meaning": "Say that B is more adjective than A.", "scope": "core", "introducedAt": "n5" },
+  { "id": "hou-ga-comparison", "category": "comparison", "kind": "pattern", "pattern": "A より B のほうが adjective", "highlightPattern": "のほうが / ほうが / の方が / 方が", "name": "Comparative preference", "meaning": "Say that B is more adjective than A.", "scope": "core", "introducedAt": "n5" },
   { "id": "dochira-comparison", "category": "comparison", "kind": "pattern", "pattern": "A と B とどちらが ...", "name": "Comparing two choices", "meaning": "Ask which of two items has more of a quality.", "scope": "core", "introducedAt": "n5" },
   { "id": "ichiban-superlative", "category": "comparison", "kind": "pattern", "pattern": "～で ... が一番", "name": "Superlative", "meaning": "Identify the item with the greatest degree within a group.", "scope": "core", "introducedAt": "n5" },
   { "id": "onaji", "category": "comparison", "kind": "pattern", "pattern": "A と B は同じ", "highlightPattern": "同じ", "name": "Same as", "meaning": "State that two things are the same in a relevant respect.", "scope": "boundary", "introducedAt": "n5" },

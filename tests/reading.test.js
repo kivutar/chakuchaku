@@ -57,6 +57,41 @@ test("the N5 Dark Souls interview preserves game titles, Japanese narration, and
     .evidenceSentenceIds.includes("reading-dark-souls-16"));
 });
 
+test("the N4 curry story uses context-appropriate food and clock readings", () => {
+  const story = prepared.find(({ id }) => id === "curry-for-tonight");
+  const reading = (number) => story.sentences[number - 1].tokens
+    .map(({ reading, surface }) => reading || surface).join("");
+  assert.match(reading(1), /しちじから/u);
+  assert.match(reading(2), /とりにくのかれー/u);
+  assert.match(reading(3), /^からいもの/u);
+  assert.match(reading(6), /とりにく.*こめのうりば/u);
+  assert.match(reading(12), /こっぷ.*あいだに/u);
+  assert.match(reading(13), /からいあじ/u);
+  assert.match(reading(17), /^ろくじさんじゅっぷん/u);
+  const voices = new Map(createReadingVoiceItems(sources).map((item) => [item.id, item]));
+  for (const [number, pronunciation] of [[2, "とりにく"], [3, "からい"], [6, "こめ"], [12, "あいだ"]]) {
+    assert.ok(voices.get(story.sentences[number - 1].id).speechText.includes(pronunciation));
+  }
+});
+
+test("comparative preference highlights the preferred side after both verbs and nouns", async () => {
+  const exercises = await readJson("data/exercises.json");
+  for (const prefix of ["story-", "production-story-"]) {
+    const exercise = exercises.find(({ id }) => id === `${prefix}evening-curry-hardest-part-waiting`);
+    for (const [point, expected] of [["yori-comparison", "より"], ["hou-ga-comparison", "ほうが"]]) {
+      const highlight = exercise.grammarHighlights.find(({ grammarPointId }) => grammarPointId === point);
+      assert.ok(highlight, `${exercise.id}: ${point}`);
+      assert.equal(exercise.tokens.slice(highlight.tokenStart, highlight.tokenEnd)
+        .map(({ surface }) => surface).join(""), expected);
+    }
+  }
+  const nounComparison = exercises.find(({ id }) => id === "subway-faster-than-train");
+  const highlight = nounComparison.grammarHighlights.find(({ grammarPointId }) =>
+    grammarPointId === "hou-ga-comparison");
+  assert.equal(nounComparison.tokens.slice(highlight.tokenStart, highlight.tokenEnd)
+    .map(({ surface }) => surface).join(""), "のほうが");
+});
+
 test("the new N5 library story is distinct, roughly twenty sentences, and has grounded bilingual questions", () => {
   const library = prepared.find(({ id }) => id === "my-first-library-card");
   assert.ok(library);
@@ -595,8 +630,11 @@ test("internal reading coverage is reproducible, counts sentences once, and expo
   assert.equal(formatReadingCoverage(coverage), await readFile(new URL("../data/reading-coverage.md", import.meta.url), "utf8"));
   assert.equal(coverage.totalPassages, sources.length);
   assert.equal(coverage.totalSentences, sources.flatMap(({ sentences }) => sentences).length);
-  assert.equal(coverage.points.find(({ id }) => id === "nakereba-naranai").sentences, 1);
-  assert.equal(coverage.points.find(({ id }) => id === "tari-tari-suru").passages, 1);
+  const libraryCoverage = createReadingCoverage(
+    sources.filter(({ id }) => id === "my-first-library-card"), grammar
+  );
+  assert.equal(libraryCoverage.points.find(({ id }) => id === "nakereba-naranai").sentences, 1);
+  assert.equal(libraryCoverage.points.find(({ id }) => id === "tari-tari-suru").passages, 1);
   assert.ok(coverage.levels.find(({ level }) => level === "n5").coveredPoints > 35);
   assert.ok(coverage.levels.every(({ coveredPoints, totalPoints, uncoveredPointIds }) => coveredPoints + uncoveredPointIds.length === totalPoints));
   assert.equal(JSON.stringify(sources), original);

@@ -2534,6 +2534,453 @@
     ]
   },
   {
+    "id": "a-day-in-kyoto",
+    "level": "n5",
+    "title": {
+      "en": "A day in Kyoto",
+      "fr": "Une journée à Kyoto"
+    },
+    "description": {
+      "en": "Three temples on the map, a cup of matcha, and a change of plans.",
+      "fr": "Trois temples sur la carte, une tasse de matcha et un changement de programme."
+    },
+    "sentences": [
+      {
+        "id": "reading-kyoto-trip-01",
+        "paragraph": 1,
+        "text": "春に、友達と京都へ旅行に行きました。",
+        "grammarPointIds": [
+          "ni-time",
+          "to-companion",
+          "ni-purpose"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-02",
+        "paragraph": 1,
+        "text": "二人で、三つのお寺を見るつもりでした。",
+        "grammarPointIds": [
+          "tsumori",
+          "tsu-counter",
+          "common-counters"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-03",
+        "paragraph": 1,
+        "text": "朝早く新幹線に乗って、京都駅で降りました。",
+        "grammarPointIds": [
+          "te-action-link",
+          "de-action-location",
+          "ni-target-recipient"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-04",
+        "paragraph": 1,
+        "text": "地図には、行きたい所がたくさんありました。",
+        "grammarPointIds": [
+          "relative-clause",
+          "tai-desire",
+          "aru-existence"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-05",
+        "paragraph": 2,
+        "text": "朝は、バスで古いお寺へ行きました。",
+        "grammarPointIds": [
+          "de-means",
+          "e-direction",
+          "i-adjective-attributive"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-06",
+        "paragraph": 2,
+        "text": "お寺の庭で、桜の花を見ました。",
+        "grammarPointIds": [
+          "de-action-location",
+          "no-possession",
+          "o-object"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-07",
+        "paragraph": 2,
+        "text": "でも、私はすぐに、また地図を見ました。",
+        "grammarPointIds": [
+          "demo-connector",
+          "o-object",
+          "verb-mashita"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-08",
+        "paragraph": 2,
+        "text": "次のお寺にも行きたかったからです。",
+        "grammarPointIds": [
+          "tai-desire",
+          "kara-reason",
+          "mo-addition"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-09",
+        "paragraph": 3,
+        "text": "友達は「少し休みませんか」と言いました。",
+        "grammarPointIds": [
+          "masen-ka-invitation",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-10",
+        "paragraph": 3,
+        "text": "お寺の近くの店で、抹茶とお菓子を頼みました。",
+        "grammarPointIds": [
+          "positional-nouns",
+          "to-complete-list",
+          "de-action-location"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-11",
+        "paragraph": 3,
+        "text": "店の人に、今日の予定を話しました。",
+        "grammarPointIds": [
+          "ni-target-recipient",
+          "no-possession",
+          "o-object"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-12",
+        "paragraph": 3,
+        "text": "地図を見せると、その人は「全部、今日ですか」と聞きました。",
+        "grammarPointIds": [
+          "to-conditional",
+          "to-quotation",
+          "ka-question"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-13",
+        "paragraph": 4,
+        "text": "店の人は、川のそばの道を教えてくれました。",
+        "grammarPointIds": [
+          "te-kureru",
+          "positional-nouns",
+          "no-possession"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-14",
+        "paragraph": 4,
+        "text": "「あそこをゆっくり歩くのもいいですよ」と言いました。",
+        "grammarPointIds": [
+          "no-nominalizer",
+          "mo-addition",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-15",
+        "paragraph": 4,
+        "text": "店を出てから、二人で川まで歩きました。",
+        "grammarPointIds": [
+          "te-kara",
+          "made-end",
+          "common-counters"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-16",
+        "paragraph": 4,
+        "text": "川のそばで、花を見たり、写真を撮ったりしました。",
+        "grammarPointIds": [
+          "tari-tari-suru",
+          "de-action-location"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-17",
+        "paragraph": 5,
+        "text": "その日は、お寺を一つしか見ませんでした。",
+        "grammarPointIds": [
+          "shika-nai-limitation",
+          "tsu-counter"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-18",
+        "paragraph": 5,
+        "text": "でも、ゆっくり歩いて、京都の町が好きになりました。",
+        "grammarPointIds": [
+          "demo-connector",
+          "te-action-link",
+          "naru-change"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-19",
+        "paragraph": 5,
+        "text": "友達は「また京都へ来ましょう」と言いました。",
+        "grammarPointIds": [
+          "mashou",
+          "to-quotation",
+          "e-direction"
+        ]
+      },
+      {
+        "id": "reading-kyoto-trip-20",
+        "paragraph": 5,
+        "text": "次は、あのお店のお菓子を母にも買って帰りたいです。",
+        "grammarPointIds": [
+          "tai-desire",
+          "te-action-link",
+          "ni-target-recipient",
+          "mo-addition"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "original-plan",
+        "prompt": {
+          "en": "How many temples did the two friends originally plan to visit?",
+          "fr": "Combien de temples les deux amis avaient-ils prévu de visiter au départ ?"
+        },
+        "choices": [
+          {
+            "id": "one",
+            "label": {
+              "en": "One",
+              "fr": "Un"
+            }
+          },
+          {
+            "id": "three",
+            "label": {
+              "en": "Three",
+              "fr": "Trois"
+            }
+          },
+          {
+            "id": "two",
+            "label": {
+              "en": "Two",
+              "fr": "Deux"
+            }
+          },
+          {
+            "id": "none",
+            "label": {
+              "en": "None",
+              "fr": "Aucun"
+            }
+          }
+        ],
+        "answerId": "three",
+        "explanation": {
+          "en": "三つのお寺を見るつもりでした states their original plan: three temples. つもり describes an intention, so it does not mean they actually visited all three.",
+          "fr": "三つのお寺を見るつもりでした donne leur projet initial : trois temples. つもり exprime une intention et ne signifie donc pas qu’ils les ont tous visités."
+        },
+        "evidenceSentenceIds": [
+          "reading-kyoto-trip-02"
+        ]
+      },
+      {
+        "id": "checking-map",
+        "prompt": {
+          "en": "Why did the narrator look at the map again at the first temple?",
+          "fr": "Pourquoi la personne qui raconte a-t-elle regardé à nouveau la carte au premier temple ?"
+        },
+        "choices": [
+          {
+            "id": "lost",
+            "label": {
+              "en": "They were lost and could not find the first temple",
+              "fr": "Les deux amis étaient perdus et ne trouvaient pas le premier temple"
+            }
+          },
+          {
+            "id": "station",
+            "label": {
+              "en": "They wanted to return to the station immediately",
+              "fr": "Ils voulaient retourner immédiatement à la gare"
+            }
+          },
+          {
+            "id": "flowers",
+            "label": {
+              "en": "They wanted to find the name of a flower",
+              "fr": "Ils voulaient trouver le nom d’une fleur"
+            }
+          },
+          {
+            "id": "next",
+            "label": {
+              "en": "The narrator already wanted to go to the next temple",
+              "fr": "La personne voulait déjà aller au temple suivant"
+            }
+          }
+        ],
+        "answerId": "next",
+        "explanation": {
+          "en": "次のお寺にも行きたかったからです gives the reason directly: the narrator wanted to visit the next temple too. They had already reached a temple and seen its cherry blossoms.",
+          "fr": "次のお寺にも行きたかったからです en donne directement la raison : la personne voulait aussi aller au temple suivant. Les amis étaient déjà arrivés dans un temple et avaient vu ses fleurs de cerisier."
+        },
+        "evidenceSentenceIds": [
+          "reading-kyoto-trip-06",
+          "reading-kyoto-trip-07",
+          "reading-kyoto-trip-08"
+        ]
+      },
+      {
+        "id": "shop-stop",
+        "prompt": {
+          "en": "What did they order during their break?",
+          "fr": "Qu’ont-ils commandé pendant leur pause ?"
+        },
+        "choices": [
+          {
+            "id": "matcha-sweets",
+            "label": {
+              "en": "Matcha and sweets",
+              "fr": "Du matcha et des pâtisseries"
+            }
+          },
+          {
+            "id": "coffee-cake",
+            "label": {
+              "en": "Coffee and cake",
+              "fr": "Du café et du gâteau"
+            }
+          },
+          {
+            "id": "tea-only",
+            "label": {
+              "en": "Tea, without anything to eat",
+              "fr": "Du thé, sans rien à manger"
+            }
+          },
+          {
+            "id": "rice-fish",
+            "label": {
+              "en": "Rice and fish",
+              "fr": "Du riz et du poisson"
+            }
+          }
+        ],
+        "answerId": "matcha-sweets",
+        "explanation": {
+          "en": "抹茶とお菓子を頼みました explicitly names both items. The shop is near the temple; it is not a meal on the train.",
+          "fr": "抹茶とお菓子を頼みました nomme les deux choses commandées. La boutique se trouve près du temple ; il ne s’agit pas d’un repas dans le train."
+        },
+        "evidenceSentenceIds": [
+          "reading-kyoto-trip-10"
+        ]
+      },
+      {
+        "id": "new-route",
+        "prompt": {
+          "en": "What did they do after leaving the shop?",
+          "fr": "Qu’ont-ils fait après avoir quitté la boutique ?"
+        },
+        "choices": [
+          {
+            "id": "bus-tour",
+            "label": {
+              "en": "They took a bus to the other two temples",
+              "fr": "Ils ont pris un bus pour visiter les deux autres temples"
+            }
+          },
+          {
+            "id": "hotel",
+            "label": {
+              "en": "They went straight to their hotel",
+              "fr": "Ils sont allés directement à leur hôtel"
+            }
+          },
+          {
+            "id": "river",
+            "label": {
+              "en": "They walked to the river, looked at flowers, and took photos",
+              "fr": "Ils ont marché jusqu’à la rivière, regardé les fleurs et pris des photos"
+            }
+          },
+          {
+            "id": "train",
+            "label": {
+              "en": "They immediately caught the train home",
+              "fr": "Ils ont immédiatement repris le train pour rentrer"
+            }
+          }
+        ],
+        "answerId": "river",
+        "explanation": {
+          "en": "The shop worker suggests a path by the river. 店を出てから places the walk after the shop visit, and the next sentence describes flowers and photos there.",
+          "fr": "La personne de la boutique leur indique un chemin au bord de la rivière. 店を出てから situe la promenade après la pause, et la phrase suivante décrit les fleurs et les photos prises sur place."
+        },
+        "evidenceSentenceIds": [
+          "reading-kyoto-trip-13",
+          "reading-kyoto-trip-14",
+          "reading-kyoto-trip-15",
+          "reading-kyoto-trip-16"
+        ]
+      },
+      {
+        "id": "ending",
+        "prompt": {
+          "en": "How did the trip turn out?",
+          "fr": "Comment le voyage s’est-il terminé ?"
+        },
+        "choices": [
+          {
+            "id": "all-three",
+            "label": {
+              "en": "They visited all three temples and decided not to return",
+              "fr": "Ils ont visité les trois temples et décidé de ne pas revenir"
+            }
+          },
+          {
+            "id": "one-and-return",
+            "label": {
+              "en": "They visited only one temple, enjoyed Kyoto, and talked about coming back",
+              "fr": "Ils n’ont visité qu’un temple, ont apprécié Kyoto et ont parlé d’y revenir"
+            }
+          },
+          {
+            "id": "none",
+            "label": {
+              "en": "They saw no temples and disliked Kyoto",
+              "fr": "Ils n’ont vu aucun temple et n’ont pas aimé Kyoto"
+            }
+          },
+          {
+            "id": "mother-present",
+            "label": {
+              "en": "The narrator’s mother joined them at the shop",
+              "fr": "La mère de la personne qui raconte les a rejoints dans la boutique"
+            }
+          }
+        ],
+        "answerId": "one-and-return",
+        "explanation": {
+          "en": "一つしか見ませんでした means only one temple. Despite the smaller itinerary, the narrator grew to love Kyoto, the friend suggested returning, and the narrator wants to bring sweets home for their mother next time.",
+          "fr": "一つしか見ませんでした signifie un seul temple. Malgré le programme réduit, la personne a appris à aimer Kyoto, son ami a proposé d’y revenir, et elle veut rapporter des pâtisseries à sa mère la prochaine fois."
+        },
+        "evidenceSentenceIds": [
+          "reading-kyoto-trip-17",
+          "reading-kyoto-trip-18",
+          "reading-kyoto-trip-19",
+          "reading-kyoto-trip-20"
+        ]
+      }
+    ]
+  },
+  {
     "id": "the-red-box",
     "level": "n4",
     "title": {
@@ -2984,6 +3431,514 @@
           "reading-red-box-18",
           "reading-red-box-19",
           "reading-red-box-20"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curry-for-tonight",
+    "level": "n4",
+    "title": {
+      "en": "Curry for tonight",
+      "fr": "Un curry pour ce soir"
+    },
+    "description": {
+      "en": "Shopping for an evening with friends, a curry surprise, and a helping hand.",
+      "fr": "Des courses pour une soirée entre amis, un curry surprenant et un coup de main bienvenu."
+    },
+    "sentences": [
+      {
+        "id": "reading-evening-curry-01",
+        "paragraph": 1,
+        "text": "今夜は七時から、うちで友達とパーティーをする予定です。",
+        "grammarPointIds": [
+          "yotei-da",
+          "kara-start",
+          "to-companion"
+        ],
+        "tokenOverrides": {
+          "七": {
+            "reading": "しち"
+          }
+        },
+        "speechText": "今夜はしちじから、うちで友達とパーティーをする予定です。"
+      },
+      {
+        "id": "reading-evening-curry-02",
+        "paragraph": 1,
+        "text": "みんなに食べてもらおうと思って、鶏肉のカレーを作ることにしました。",
+        "grammarPointIds": [
+          "volitional-to-omou",
+          "te-morau",
+          "koto-ni-suru"
+        ],
+        "tokenOverrides": {
+          "鶏肉": {
+            "reading": "とりにく"
+          }
+        },
+        "speechText": "みんなに食べてもらおうと思って、とりにくのカレーを作ることにしました。"
+      },
+      {
+        "id": "reading-evening-curry-03",
+        "paragraph": 1,
+        "text": "辛い物があまり食べられない友達もいるので、なるべく辛くしないようにしました。",
+        "tokenOverrides": {
+          "られ": {
+            "category": "auxiliary"
+          },
+          "辛い": {
+            "reading": "からい"
+          }
+        },
+        "grammarPointIds": [
+          "potential-form",
+          "you-ni-suru",
+          "node-reason"
+        ],
+        "speechText": "からい物があまり食べられない友達もいるので、なるべくからくしないようにしました。"
+      },
+      {
+        "id": "reading-evening-curry-04",
+        "paragraph": 1,
+        "text": "買い物に行く前に、必要な物を紙に書いておきました。",
+        "grammarPointIds": [
+          "mae-ni",
+          "te-oku"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-05",
+        "paragraph": 2,
+        "text": "昼ご飯の後で、近くのスーパーへ買い物に行きました。",
+        "grammarPointIds": [
+          "ato-de",
+          "ni-purpose",
+          "e-direction"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-06",
+        "paragraph": 2,
+        "text": "野菜や鶏肉、牛乳を選んでから、米の売り場へ行きました。",
+        "grammarPointIds": [
+          "ya-incomplete-list",
+          "te-kara",
+          "e-direction"
+        ],
+        "tokenOverrides": {
+          "鶏肉": {
+            "reading": "とりにく"
+          },
+          "米": {
+            "reading": "こめ"
+          }
+        },
+        "speechText": "野菜やとりにく、牛乳を選んでから、こめの売り場へ行きました。"
+      },
+      {
+        "id": "reading-evening-curry-07",
+        "paragraph": 2,
+        "text": "家にも米が残っているはずですが、みんなで食べるには足りないと思いました。",
+        "grammarPointIds": [
+          "hazu-da",
+          "ga-contrast",
+          "to-omou"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-08",
+        "paragraph": 2,
+        "text": "米も買ったので、荷物が思ったより重くなってしまいました。",
+        "grammarPointIds": [
+          "node-reason",
+          "yori-comparison",
+          "te-shimau"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-09",
+        "paragraph": 3,
+        "text": "家に帰ると、友達から「少し早く行って手伝おうか」と電話がありました。",
+        "grammarPointIds": [
+          "to-conditional",
+          "plain-volitional",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-10",
+        "paragraph": 3,
+        "text": "料理を始める前に、肉と野菜を小さく切っておきました。",
+        "grammarPointIds": [
+          "mae-ni",
+          "te-oku",
+          "i-adjective-adverb"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-11",
+        "paragraph": 3,
+        "text": "友達が来たとき、私はカレーを作っているところでした。",
+        "tokenOverrides": {
+          "ところ": {
+            "category": "auxiliary"
+          }
+        },
+        "grammarPointIds": [
+          "teiru-tokoro",
+          "toki"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-12",
+        "paragraph": 3,
+        "text": "友達がコップを並べている間に、カレーを少し食べてみました。",
+        "grammarPointIds": [
+          "aida-ni",
+          "te-iru-progressive",
+          "te-miru"
+        ],
+        "tokenOverrides": {
+          "間": {
+            "reading": "あいだ"
+          }
+        },
+        "speechText": "友達がコップを並べているあいだに、カレーを少し食べてみました。"
+      },
+      {
+        "id": "reading-evening-curry-13",
+        "paragraph": 4,
+        "text": "辛くしないようにしたのに、思ったより辛い味がしました。",
+        "grammarPointIds": [
+          "you-ni-suru",
+          "noni-concession",
+          "ga-suru-sensation"
+        ],
+        "tokenOverrides": {
+          "辛い": {
+            "reading": "からい"
+          }
+        },
+        "speechText": "からくしないようにしたのに、思ったよりからい味がしました。"
+      },
+      {
+        "id": "reading-evening-curry-14",
+        "paragraph": 4,
+        "text": "困っていると、友達が「牛乳を少し足してみたらどう」と言いました。",
+        "grammarPointIds": [
+          "to-conditional",
+          "tara-dou",
+          "to-quotation"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-15",
+        "paragraph": 4,
+        "text": "牛乳を少し足したら、食べやすくなりました。",
+        "tokenOverrides": {
+          "やすく": {
+            "category": "auxiliary"
+          }
+        },
+        "grammarPointIds": [
+          "tara-conditional",
+          "yasui",
+          "naru-ku-change"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-16",
+        "paragraph": 4,
+        "text": "友達に手伝ってもらってよかったと思いました。",
+        "grammarPointIds": [
+          "te-morau",
+          "te-yokatta",
+          "to-omou"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-17",
+        "paragraph": 5,
+        "text": "六時三十分には、料理もテーブルの準備も終わっていました。",
+        "tokenOverrides": {
+          "十": {
+            "reading": "じゅっ"
+          },
+          "分": {
+            "reading": "ぷん"
+          }
+        },
+        "grammarPointIds": [
+          "te-iru-result-state",
+          "mo-addition",
+          "clock-calendar-time"
+        ],
+        "speechText": "ろくじさんじゅっぷんには、料理もテーブルの準備も終わっていました。"
+      },
+      {
+        "id": "reading-evening-curry-18",
+        "paragraph": 5,
+        "text": "友達は、自分で焼いたケーキも持って来てくれました。",
+        "grammarPointIds": [
+          "relative-clause",
+          "te-kuru",
+          "te-kureru"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-19",
+        "paragraph": 5,
+        "text": "いい匂いがするので、また少し食べたくなってきました。",
+        "grammarPointIds": [
+          "ga-suru-sensation",
+          "te-kuru",
+          "tai-desire"
+        ]
+      },
+      {
+        "id": "reading-evening-curry-20",
+        "paragraph": 5,
+        "text": "料理より、みんなが来るまで待つほうが難しそうです。",
+        "grammarPointIds": [
+          "yori-comparison",
+          "hou-ga-comparison",
+          "sou-appearance"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "party-time",
+        "prompt": {
+          "en": "When and where is the party planned?",
+          "fr": "Quand et où la fête est-elle prévue ?"
+        },
+        "choices": [
+          {
+            "id": "six-thirty",
+            "label": {
+              "en": "At the narrator’s home, starting at half past six",
+              "fr": "Chez la personne qui raconte, à partir de dix-huit heures trente"
+            }
+          },
+          {
+            "id": "restaurant",
+            "label": {
+              "en": "At a restaurant, starting at seven",
+              "fr": "Dans un restaurant, à partir de dix-neuf heures"
+            }
+          },
+          {
+            "id": "home-seven",
+            "label": {
+              "en": "At the narrator’s home, starting at seven tonight",
+              "fr": "Chez la personne qui raconte, à partir de dix-neuf heures ce soir"
+            }
+          },
+          {
+            "id": "tomorrow",
+            "label": {
+              "en": "At a friend’s home tomorrow evening",
+              "fr": "Chez un ami demain soir"
+            }
+          }
+        ],
+        "answerId": "home-seven",
+        "explanation": {
+          "en": "今夜, 七時から, and うちで give tonight, from seven, and at the narrator’s home. By half past six, the preparations were already finished; the party starts at seven.",
+          "fr": "今夜, 七時から et うちで indiquent ce soir, à partir de dix-neuf heures et chez la personne qui raconte. À dix-huit heures trente, les préparatifs étaient déjà terminés ; la fête commence à dix-neuf heures."
+        },
+        "evidenceSentenceIds": [
+          "reading-evening-curry-01",
+          "reading-evening-curry-17"
+        ]
+      },
+      {
+        "id": "mild-curry",
+        "prompt": {
+          "en": "Why does the narrator try to make the curry mild?",
+          "fr": "Pourquoi la personne essaie-t-elle de préparer un curry peu épicé ?"
+        },
+        "choices": [
+          {
+            "id": "friend",
+            "label": {
+              "en": "One friend cannot eat much spicy food",
+              "fr": "Un ami ne peut pas manger beaucoup de choses épicées"
+            }
+          },
+          {
+            "id": "no-milk",
+            "label": {
+              "en": "There is no milk at the supermarket",
+              "fr": "Il n’y a pas de lait au supermarché"
+            }
+          },
+          {
+            "id": "no-chicken",
+            "label": {
+              "en": "Nobody likes chicken",
+              "fr": "Personne n’aime le poulet"
+            }
+          },
+          {
+            "id": "cake",
+            "label": {
+              "en": "The cake tastes too spicy",
+              "fr": "Le gâteau est trop épicé"
+            }
+          }
+        ],
+        "answerId": "friend",
+        "explanation": {
+          "en": "辛い物があまり食べられない友達もいる explains the plan. 食べられない expresses inability; the story does not say that everyone dislikes chicken or curry.",
+          "fr": "辛い物があまり食べられない友達もいる explique ce choix. 食べられない exprime une impossibilité ; le texte ne dit pas que tout le monde déteste le poulet ou le curry."
+        },
+        "evidenceSentenceIds": [
+          "reading-evening-curry-03"
+        ]
+      },
+      {
+        "id": "extra-rice",
+        "prompt": {
+          "en": "Why does the narrator buy rice as well?",
+          "fr": "Pourquoi la personne achète-t-elle aussi du riz ?"
+        },
+        "choices": [
+          {
+            "id": "cheap",
+            "label": {
+              "en": "It is cheaper than vegetables",
+              "fr": "Il coûte moins cher que les légumes"
+            }
+          },
+          {
+            "id": "forgot-list",
+            "label": {
+              "en": "They forgot what was on the shopping list",
+              "fr": "Elle a oublié ce qu’il y avait sur la liste de courses"
+            }
+          },
+          {
+            "id": "none-at-home",
+            "label": {
+              "en": "They are certain there is no rice left at home",
+              "fr": "Elle est certaine qu’il ne reste plus de riz chez elle"
+            }
+          },
+          {
+            "id": "not-enough",
+            "label": {
+              "en": "They think the rice left at home will not be enough for everyone",
+              "fr": "Elle pense que le riz restant chez elle ne suffira pas pour tout le monde"
+            }
+          }
+        ],
+        "answerId": "not-enough",
+        "explanation": {
+          "en": "残っているはず says that there should still be rice at home. 足りないと思いました shows concern about having enough for the group, rather than certainty that there is none.",
+          "fr": "残っているはず indique qu’il devrait rester du riz à la maison. 足りないと思いました montre que la personne craint de ne pas en avoir assez pour le groupe, sans affirmer qu’il n’en reste plus du tout."
+        },
+        "evidenceSentenceIds": [
+          "reading-evening-curry-06",
+          "reading-evening-curry-07",
+          "reading-evening-curry-08"
+        ]
+      },
+      {
+        "id": "fixing-curry",
+        "prompt": {
+          "en": "How does the narrator improve the curry?",
+          "fr": "Comment la personne améliore-t-elle le curry ?"
+        },
+        "choices": [
+          {
+            "id": "salt",
+            "label": {
+              "en": "By adding salt without asking anyone",
+              "fr": "En ajoutant du sel sans demander conseil"
+            }
+          },
+          {
+            "id": "milk",
+            "label": {
+              "en": "By adding a little milk, following the friend’s suggestion",
+              "fr": "En ajoutant un peu de lait, sur le conseil de son ami"
+            }
+          },
+          {
+            "id": "cake",
+            "label": {
+              "en": "By putting the cake into it",
+              "fr": "En y mettant le gâteau"
+            }
+          },
+          {
+            "id": "replace",
+            "label": {
+              "en": "By throwing it away and ordering food",
+              "fr": "En le jetant et en commandant à manger"
+            }
+          }
+        ],
+        "answerId": "milk",
+        "explanation": {
+          "en": "The curry tastes spicier than expected. The friend suggests 牛乳を少し足してみたらどう; after adding milk, the narrator says 食べやすくなりました, it became easier to eat.",
+          "fr": "Le curry est plus épicé que prévu. L’ami propose 牛乳を少し足してみたらどう ; après avoir ajouté du lait, la personne dit 食べやすくなりました, il est devenu plus facile à manger."
+        },
+        "evidenceSentenceIds": [
+          "reading-evening-curry-13",
+          "reading-evening-curry-14",
+          "reading-evening-curry-15"
+        ]
+      },
+      {
+        "id": "ending",
+        "prompt": {
+          "en": "Which statement matches the end of the story?",
+          "fr": "Quelle affirmation correspond à la fin de l’histoire ?"
+        },
+        "choices": [
+          {
+            "id": "already-eaten",
+            "label": {
+              "en": "All the guests have arrived and finished dinner",
+              "fr": "Tous les invités sont arrivés et ont terminé le repas"
+            }
+          },
+          {
+            "id": "not-ready",
+            "label": {
+              "en": "It is already seven, but the food is still not ready",
+              "fr": "Il est déjà dix-neuf heures, mais le repas n’est pas encore prêt"
+            }
+          },
+          {
+            "id": "ready-and-waiting",
+            "label": {
+              "en": "The food and table are ready, a friend has brought cake, and they are waiting for the others",
+              "fr": "Le repas et la table sont prêts, un ami a apporté un gâteau et ils attendent les autres"
+            }
+          },
+          {
+            "id": "cancelled",
+            "label": {
+              "en": "They have cancelled the party because the curry is too spicy",
+              "fr": "Ils ont annulé la fête parce que le curry est trop épicé"
+            }
+          }
+        ],
+        "answerId": "ready-and-waiting",
+        "explanation": {
+          "en": "The preparations are finished by half past six. The friend has brought a homemade cake, and みんなが来るまで待つ places the remaining guests’ arrival in the future. The party has not started yet.",
+          "fr": "Les préparatifs sont terminés à dix-huit heures trente. L’ami a apporté un gâteau maison, et みんなが来るまで待つ situe l’arrivée des autres invités dans le futur. La fête n’a pas encore commencé."
+        },
+        "evidenceSentenceIds": [
+          "reading-evening-curry-17",
+          "reading-evening-curry-18",
+          "reading-evening-curry-19",
+          "reading-evening-curry-20"
         ]
       }
     ]
