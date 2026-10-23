@@ -1,0 +1,622 @@
+{
+  "reviewedAt": "2026-10-23",
+  "targetLevel": "n4",
+  "selectionPolicy": [
+    "Kaishi supplies candidate headwords, not an authoritative JLPT syllabus.",
+    "Resolve existing terms, readings, variants, meanings and compositional forms before adding any SRS unit.",
+    "Require clear everyday beginner usefulness and a specific primary beginner-material reference for each imported word.",
+    "Irodori through Elementary 2 is an approximate N4 ability benchmark, not an official word-by-word JLPT classification.",
+    "Use supplemental scope for these practical additions while retaining the existing exam-oriented core inventory.",
+    "All meanings, examples and translations are authored for ChakuChaku; Kaishi/Japan Foundation sentences, images and recordings are not imported.",
+    "New examples use existing N5 vocabulary around the target, with familiar basic grammar. New words share the normal N4 introduction budget."
+  ],
+  "sources": {
+    "kaishi": {
+      "title": "Kaishi 1.5k v2.4.3",
+      "url": "https://github.com/donkuri/kaishi/releases/tag/v2.4.3",
+      "assetSha256": "33da6f5a8b5d5cf12ccd79f6279775fc44b1de54159aad189a2e691386fce464"
+    },
+    "irodori-starter": {
+      "title": "Irodori Starter word list",
+      "url": "https://www.irodori.jpf.go.jp/assets/data/wordlist_X.pdf"
+    },
+    "irodori-elementary1": {
+      "title": "Irodori Elementary 1 word list",
+      "url": "https://www.irodori.jpf.go.jp/assets/data/wordlist_Y.pdf"
+    },
+    "irodori-elementary2": {
+      "title": "Irodori Elementary 2 word list",
+      "url": "https://www.irodori.jpf.go.jp/assets/data/wordlist_Z.pdf"
+    },
+    "irodori-n4-scope": {
+      "title": "Japan Foundation: Irodori and JLPT N4, FAQ 11–12",
+      "url": "https://www.irodori.jpf.go.jp/faq.html"
+    }
+  },
+  "entries": [
+    {
+      "kaishiWord": "苦手",
+      "reading": "にがて",
+      "kaishiNoteId": 1708637440890,
+      "decision": "imported",
+      "vocabularyId": "vocab-253d683401cc",
+      "reason": "Expresses limited ability or a mild dislike in everyday conversations, including food preferences. It adds a common alternative to 好き, 嫌い, 上手 and 下手.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 10,
+          "location": "L3-2",
+          "form": "苦手（な）"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "kaishiWord": "素敵",
+      "reading": "すてき",
+      "kaishiNoteId": 1708637441017,
+      "decision": "imported",
+      "vocabularyId": "vocab-dc41fb12246c",
+      "reason": "A basic compliment for people, clothes, places and gifts. Explicitly taught in Irodori beginner materials.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 58,
+          "location": "L18-3",
+          "form": "素敵（な）"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "kaishiWord": "ずっと",
+      "reading": "ずっと",
+      "kaishiNoteId": 1708637440107,
+      "decision": "imported",
+      "vocabularyId": "vocab-93c07a76f81a",
+      "reason": "Describes an uninterrupted state or activity in routine accounts of a day. This initial gloss and example target the continuous-time sense, not every comparative or spatial use.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 10,
+          "location": "L3-2",
+          "form": "ずっと"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "kaishiWord": "怪我",
+      "reading": "けが",
+      "kaishiNoteId": 1708637441032,
+      "decision": "already-covered",
+      "vocabularyId": "vocab-3b9582aaccbb",
+      "reason": "The existing N4 けがする card already teaches getting hurt, with けが explicitly present in its example. Do not create an additional noun SRS card solely to match Kaishi’s 怪我 headword.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 67,
+          "location": "L14-6",
+          "form": "けが"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "kaishiWord": "調子",
+      "reading": "ちょうし",
+      "kaishiNoteId": 1708637440774,
+      "decision": "imported",
+      "vocabularyId": "vocab-67a6e7abf723",
+      "reason": "The everyday expression 調子が悪い is explicitly taught in elementary health communication. The example identifies bodily condition rather than a musical sense.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 48,
+          "location": "L16-1",
+          "form": "調子が悪い"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "kaishiWord": "自信",
+      "reading": "じしん",
+      "kaishiNoteId": 1708637440601,
+      "decision": "imported",
+      "vocabularyId": "vocab-310771e3065b",
+      "reason": "Lets learners discuss confidence in language and practical abilities. It is a separate word from the homophone 地震; its new audio slug preserves the existing earthquake recording.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 24,
+          "location": "L9-2",
+          "form": "自信がありません"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "kaishiWord": "信じる",
+      "reading": "しんじる",
+      "kaishiNoteId": 1708637439990,
+      "decision": "imported",
+      "vocabularyId": "vocab-2d343609fd77",
+      "reason": "Useful for trust, beliefs and everyday interpersonal communication. Included in Irodori Elementary 2 even though the legacy JLPT source places it later.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 45,
+          "location": "L10-4",
+          "form": "信じる［2］"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "kaishiWord": "助ける",
+      "reading": "たすける",
+      "kaishiNoteId": 1708637440184,
+      "decision": "imported",
+      "vocabularyId": "vocab-854f088ff1cb",
+      "reason": "Covers helping or rescuing someone in difficulty, extending beyond 手伝う for assisting with a task. Explicitly present in Irodori Elementary 2.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 84,
+          "location": "L18-2",
+          "form": "助ける［2］"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "kaishiWord": "床",
+      "reading": "ゆか",
+      "kaishiNoteId": 1708637440539,
+      "decision": "imported",
+      "vocabularyId": "vocab-5583cc1e42ca",
+      "reason": "Basic home and workplace vocabulary for cleaning, room descriptions and problems with a building. Read ゆか, not the とこ in 床屋.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 77,
+          "location": "L16-5",
+          "form": "床"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "kaishiWord": "天井",
+      "reading": "てんじょう",
+      "kaishiNoteId": 1708637441173,
+      "decision": "imported",
+      "vocabularyId": "vocab-4fc3246809ef",
+      "reason": "An elementary room-description and household-problem word explicitly taught with 床 in Irodori Elementary 2.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 78,
+          "location": "L16-6",
+          "form": "天井"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "kaishiWord": "残り",
+      "reading": "のこり",
+      "kaishiNoteId": 1708637440883,
+      "decision": "imported",
+      "vocabularyId": "vocab-a3d09d288b5e",
+      "reason": "Needed for remaining food, drink, quantities and time. Its presence in Irodori Starter provides strong beginner-usefulness evidence; N4 is this app’s introduction choice for the current review batch. Keep the lexical noun 残り distinct from the existing verb 残る: the new example teaches noun + の for a remaining quantity.",
+      "evidence": [
+        {
+          "source": "irodori-starter",
+          "page": 24,
+          "location": "L7-4",
+          "form": "残り"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "kaishiWord": "途中",
+      "reading": "とちゅう",
+      "kaishiNoteId": 1708637440441,
+      "decision": "already-covered",
+      "vocabularyId": "vocab-d19fba181116",
+      "reason": "Already taught at N4 with the required on-the-way/midway sense. Keep its existing SRS identity and examples; do not create a duplicate.",
+      "batch": 1
+    },
+    {
+      "kaishiWord": "魔法",
+      "reading": "まほう",
+      "kaishiNoteId": 1708637440213,
+      "decision": "deferred",
+      "reason": "Primarily needed for fantasy and fictional settings; no clear everyday N4 task justifies prioritizing it in this batch.",
+      "batch": 1
+    },
+    {
+      "kaishiWord": "王国",
+      "reading": "おうこく",
+      "kaishiNoteId": 1708637440903,
+      "decision": "deferred",
+      "reason": "A political/fantasy setting noun; lower priority than routine home, health and interpersonal communication for the current N4 goals.",
+      "batch": 1
+    },
+    {
+      "kaishiWord": "呪い",
+      "reading": "のろい",
+      "kaishiNoteId": 1708637441276,
+      "decision": "deferred",
+      "reason": "A fiction and supernatural-content word; defer pending a separate need-based review rather than promoting it solely on media frequency.",
+      "batch": 1
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "胸",
+      "reading": "むね",
+      "kaishiNoteId": 1708637440164,
+      "decision": "imported",
+      "vocabularyId": "vocab-bbac5d033b1a",
+      "reason": "A basic body part needed to describe pain to a doctor. Irodori teaches it in its elementary health lesson; the example targets the chest sense.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 48,
+          "location": "L16-1",
+          "form": "胸"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "肩",
+      "reading": "かた",
+      "kaishiNoteId": 1708637440342,
+      "decision": "imported",
+      "vocabularyId": "vocab-b709bc92e2a4",
+      "reason": "Needed to describe common shoulder pain and stiffness in elementary health communication. It is distinct from the existing homophone 方, whose recording is preserved.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 48,
+          "location": "L16-1",
+          "form": "肩"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "腰",
+      "reading": "こし",
+      "kaishiNoteId": 1708637440358,
+      "decision": "imported",
+      "vocabularyId": "vocab-2a384afa6c75",
+      "reason": "A basic word for explaining lower-back pain, with a direct elementary health reference. The example makes the lower-back sense explicit.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 48,
+          "location": "L16-1",
+          "form": "腰"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "袋",
+      "reading": "ふくろ",
+      "kaishiNoteId": 1708637441281,
+      "decision": "imported",
+      "vocabularyId": "vocab-3d41e179ee9d",
+      "reason": "Useful at a checkout and when carrying or packing purchases; explicitly taught in Irodori Starter. Existing 手袋 means gloves and does not teach this standalone word.",
+      "evidence": [
+        {
+          "source": "irodori-starter",
+          "page": 60,
+          "location": "L16-4",
+          "form": "袋"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "奥",
+      "reading": "おく",
+      "kaishiNoteId": 1708637440240,
+      "decision": "imported",
+      "vocabularyId": "vocab-97281763bdaa",
+      "reason": "A basic location word for following directions inside a building, taught in Irodori Starter. Existing 奥さん, 置く and 億 are different words; a semantic audio slug preserves both existing おく recordings.",
+      "evidence": [
+        {
+          "source": "irodori-starter",
+          "page": 48,
+          "location": "L14-1",
+          "form": "奥"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "量",
+      "reading": "りょう",
+      "kaishiNoteId": 1708637440846,
+      "decision": "imported",
+      "vocabularyId": "vocab-10627df9154a",
+      "reason": "Lets learners discuss portions of food and other everyday quantities. Irodori Elementary 2 teaches it in a restaurant context.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 11,
+          "location": "L3-3",
+          "form": "量"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "人気",
+      "reading": "にんき",
+      "kaishiNoteId": 1708637441183,
+      "decision": "imported",
+      "vocabularyId": "vocab-5b451287c47e",
+      "reason": "Useful for discussing and recommending shops, places and entertainment. The example teaches the common 人気がある construction; Irodori has both the noun and that construction.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 15,
+          "location": "L5-3",
+          "form": "人気"
+        },
+        {
+          "source": "irodori-elementary2",
+          "page": 11,
+          "location": "L3-3",
+          "form": "人気がある［1］"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "幸せ",
+      "reading": "しあわせ",
+      "kaishiNoteId": 1708637440266,
+      "decision": "imported",
+      "vocabularyId": "vocab-f1feac298c6d",
+      "reason": "Expresses a lasting feeling of happiness and well-being, extending the existing words for being pleased or having fun. Explicitly taught as a na-adjective in Irodori Elementary 1.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 58,
+          "location": "L18-3",
+          "form": "幸せ（な）"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "恋人",
+      "reading": "こいびと",
+      "kaishiNoteId": 1708637440945,
+      "decision": "imported",
+      "vocabularyId": "vocab-da2dc33c64f3",
+      "reason": "Basic vocabulary for describing personal relationships, taught as boyfriend/girlfriend in Irodori Starter. The meaning specifies a romantic partner rather than a business partner.",
+      "evidence": [
+        {
+          "source": "irodori-starter",
+          "page": 12,
+          "location": "L4-3",
+          "form": "恋人"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "知り合い",
+      "reading": "しりあい",
+      "kaishiNoteId": 1708637440916,
+      "decision": "imported",
+      "vocabularyId": "vocab-cb93d3e51121",
+      "reason": "Distinguishes an acquaintance from a friend, useful in introductions and everyday accounts of meeting people. Taught in the opening lesson of Irodori Elementary 1.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 3,
+          "location": "L1-1",
+          "form": "知り合い"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "思い出",
+      "reading": "おもいで",
+      "kaishiNoteId": 1708637441172,
+      "decision": "imported",
+      "vocabularyId": "vocab-e7fa516324bb",
+      "reason": "Useful for talking about trips and shared experiences. This lexical noun is explicitly taught in Irodori Elementary 1 and is distinct from the existing verb 思い出す, to remember.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 57,
+          "location": "L18-2",
+          "form": "思い出"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "いつか",
+      "reading": "いつか",
+      "kaishiNoteId": 1708637440538,
+      "decision": "imported",
+      "vocabularyId": "vocab-307298ad886d",
+      "reason": "Needed for simple hopes and future plans, explicitly taught in Irodori Elementary 2. This is not the existing 五日, five days/the fifth; it gets a separate recording and SRS identity.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 18,
+          "location": "L5-1",
+          "form": "いつか"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "今回",
+      "reading": "こんかい",
+      "kaishiNoteId": 1708637440025,
+      "decision": "imported",
+      "vocabularyId": "vocab-bdf7ba87a26a",
+      "reason": "A practical time expression for the current trip, attempt or occasion, distinct from 今, 前回 and 次回. Explicitly present in Irodori Elementary 2.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 79,
+          "location": "L16-7",
+          "form": "今回"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "直接",
+      "reading": "ちょくせつ",
+      "kaishiNoteId": 1708637440627,
+      "decision": "imported",
+      "vocabularyId": "vocab-13175f045c7b",
+      "reason": "Useful for asking someone directly, arranging an in-person exchange and avoiding intermediaries. Explicitly taught in Irodori Elementary 2.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 45,
+          "location": "L10-4",
+          "form": "直接"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "届く",
+      "reading": "とどく",
+      "kaishiNoteId": 1708637440353,
+      "decision": "imported",
+      "vocabularyId": "vocab-9f9483df0196",
+      "reason": "Needed for letters, parcels and deliveries. Irodori Elementary 2 explicitly teaches the delivery sense; it is an intransitive arrival, not sending or handing something over.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 51,
+          "location": "L12-1",
+          "form": "届く［1］"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "誘う",
+      "reading": "さそう",
+      "kaishiNoteId": 1708637440606,
+      "decision": "imported",
+      "vocabularyId": "vocab-893901c70f1b",
+      "reason": "A useful verb for making social plans and inviting friends to activities. Explicitly taught in Irodori Elementary 2; the example uses the basic person を activity に pattern.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 81,
+          "location": "L17-1",
+          "form": "誘う［1］"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "試す",
+      "reading": "ためす",
+      "kaishiNoteId": 1708637440891,
+      "decision": "imported",
+      "vocabularyId": "vocab-adb5486e08dd",
+      "reason": "Useful for trying a dish, a product or a method. The lexical verb is explicitly taught in Irodori Elementary 1 and is distinct from the grammatical てみる construction.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 49,
+          "location": "L16-2",
+          "form": "試す［1］"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "着替える",
+      "reading": "きがえる",
+      "kaishiNoteId": 1708637441026,
+      "decision": "imported",
+      "vocabularyId": "vocab-b25871996039",
+      "reason": "A basic daily routine and workplace action, explicitly taught in Irodori Starter. Knowing the existing verb 着る alone does not independently teach this compound verb.",
+      "evidence": [
+        {
+          "source": "irodori-starter",
+          "page": 26,
+          "location": "L8-1",
+          "form": "着替える［2］"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "預ける",
+      "reading": "あずける",
+      "kaishiNoteId": 1708637441241,
+      "decision": "imported",
+      "vocabularyId": "vocab-66874224e11d",
+      "reason": "Useful when leaving luggage at a hotel or checking belongings at a facility. Irodori Elementary 2 teaches this safekeeping sense and its polite request form.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 60,
+          "location": "L13-4",
+          "form": "預ける［2］"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "kaishiWord": "守る",
+      "reading": "まもる",
+      "kaishiNoteId": 1708637440008,
+      "decision": "imported",
+      "vocabularyId": "vocab-7df42cbdaf8e",
+      "reason": "A practical verb for protection and following rules, both explicitly taught in Irodori beginner materials. The example teaches protection with familiar N5 vocabulary; it is not selected solely for fictional combat contexts.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 47,
+          "location": "L15-4",
+          "form": "守る［1］"
+        },
+        {
+          "source": "irodori-elementary2",
+          "page": 43,
+          "location": "L10-2",
+          "form": "守る［1］（ルールを守る）"
+        }
+      ]
+    }
+  ],
+  "batches": [
+    {
+      "batch": 1,
+      "reviewedAt": "2026-10-23",
+      "focus": "Everyday preferences, health, relationships, home and quantities."
+    },
+    {
+      "batch": 2,
+      "reviewedAt": "2026-10-23",
+      "focus": "Health, shopping, places, relationships, time and practical everyday verbs."
+    }
+  ]
+}

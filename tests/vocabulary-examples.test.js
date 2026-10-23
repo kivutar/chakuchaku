@@ -37,6 +37,57 @@ test("generated examples repair dictionary-form targets to their visible inflect
   );
 });
 
+test("reviewed N4 vocabulary has evidence, correct readings and familiar context", async () => {
+  const [review, vocabulary, examples] = await Promise.all([
+    readJson("data/source/n4-vocabulary-review.json"),
+    readJson("data/jlpt-n5-vocabulary.json"),
+    readJson("data/vocabulary-examples.json")
+  ]);
+  const vocabularyById = new Map(vocabulary.map((entry) => [entry.id, entry]));
+  const examplesById = new Map(examples.map((entry) => [entry.vocabularyId, entry]));
+  const batchNumbers = new Set(review.batches.map(({ batch }) => batch));
+  const imported = review.entries.filter(({ decision }) => decision === "imported");
+
+  assert.deepEqual(
+    imported.map(({ vocabularyId }) => vocabularyId),
+    vocabulary.filter(({ source }) => source === "curated-n4-kaishi-review")
+      .map(({ id }) => id)
+  );
+
+  for (const record of imported) {
+    const entry = vocabularyById.get(record.vocabularyId);
+    const example = examplesById.get(record.vocabularyId);
+
+    assert.equal(entry.introducedAt, "n4");
+    assert.equal(entry.scope, "supplemental");
+    assert.ok(batchNumbers.has(record.batch), `${entry.term}: unknown review batch`);
+    assert.ok(record.reason);
+    assert.ok(record.evidence.length > 0);
+    assert.ok(record.evidence.every(({ source, page, location }) => (
+      review.sources[source]?.url && Number.isInteger(page) && page > 0 && location
+    )));
+    assert.ok(example.tokens.slice(example.targetTokenStart, example.targetTokenEnd)
+      .some(({ vocabularyId }) => vocabularyId === entry.id));
+
+    for (const token of example.tokens) {
+      if (token.vocabularyId && token.vocabularyId !== entry.id) {
+        assert.equal(vocabularyById.get(token.vocabularyId)?.introducedAt, "n5",
+          `${entry.term}: example context ${token.surface} must already be available at N5`);
+      }
+      if (["noun", "verb", "adjective", "adverb", "pronoun", "interjection"]
+        .includes(token.category)) {
+        assert.ok(token.vocabularyId, `${entry.term}: unknown context word ${token.surface}`);
+      }
+    }
+  }
+
+  // Keep the modern kana spelling in the inflected example.
+  const safekeepingExample = examplesById.get("vocab-66874224e11d");
+
+  assert.equal(safekeepingExample.targetReading, "あずけ");
+  assert.equal(safekeepingExample.tokens[safekeepingExample.targetTokenStart].reading, "あずけ");
+});
+
 test("every vocabulary and kanji-context item has one short localized example", async () => {
   const [
     vocabulary,

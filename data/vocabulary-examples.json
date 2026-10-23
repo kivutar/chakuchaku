@@ -52185,6 +52185,1571 @@
     ]
   },
   {
+    "vocabularyId": "vocab-253d683401cc",
+    "text": "私は料理が苦手です。",
+    "targetSurface": "苦手",
+    "targetReading": "にがて",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I am not good at cooking.",
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "料理",
+        "category": "noun",
+        "reading": "りょうり",
+        "vocabularyId": "vocab-6ab8f730431c"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "苦手",
+        "category": "adjective",
+        "reading": "にがて",
+        "vocabularyId": "vocab-253d683401cc"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-dc41fb12246c",
+    "text": "素敵な写真ですね。",
+    "targetSurface": "素敵",
+    "targetReading": "すてき",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "That is a lovely photo.",
+    "tokens": [
+      {
+        "surface": "素敵",
+        "category": "adjective",
+        "reading": "すてき",
+        "vocabularyId": "vocab-dc41fb12246c"
+      },
+      {
+        "surface": "な",
+        "category": "auxiliary",
+        "reading": "な"
+      },
+      {
+        "surface": "写真",
+        "category": "noun",
+        "reading": "しゃしん",
+        "vocabularyId": "vocab-d5901ecbf5fb"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "ね",
+        "category": "particle",
+        "reading": "ね"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-93c07a76f81a",
+    "text": "今日はずっと家にいました。",
+    "targetSurface": "ずっと",
+    "targetReading": "ずっと",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I was at home all day today.",
+    "tokens": [
+      {
+        "surface": "今日",
+        "category": "noun",
+        "reading": "きょう",
+        "vocabularyId": "vocab-6b9362de88a7"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "ずっと",
+        "category": "adverb",
+        "reading": "ずっと",
+        "vocabularyId": "vocab-93c07a76f81a"
+      },
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "い",
+        "category": "verb",
+        "reading": "い",
+        "vocabularyId": "vocab-e2f1dae6743a"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-67a6e7abf723",
+    "text": "今日は体の調子が悪いです。",
+    "targetSurface": "調子",
+    "targetReading": "ちょうし",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I am not feeling well today.",
+    "tokens": [
+      {
+        "surface": "今日",
+        "category": "noun",
+        "reading": "きょう",
+        "vocabularyId": "vocab-6b9362de88a7"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "体",
+        "category": "noun",
+        "reading": "からだ",
+        "vocabularyId": "vocab-6e098e54aa63"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "調子",
+        "category": "noun",
+        "reading": "ちょうし",
+        "vocabularyId": "vocab-67a6e7abf723"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "悪い",
+        "category": "adjective",
+        "reading": "わるい",
+        "vocabularyId": "vocab-04d486e7201c"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-310771e3065b",
+    "text": "日本語を話す自信がありません。",
+    "targetSurface": "自信",
+    "targetReading": "じしん",
+    "targetTokenStart": 3,
+    "targetTokenEnd": 4,
+    "translation": "I do not feel confident speaking Japanese.",
+    "tokens": [
+      {
+        "surface": "日本語",
+        "category": "noun",
+        "reading": "にほんご",
+        "vocabularyId": "vocab-e6870aa0d14e"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "話す",
+        "category": "verb",
+        "reading": "はなす",
+        "vocabularyId": "vocab-0b969a8c0944"
+      },
+      {
+        "surface": "自信",
+        "category": "noun",
+        "reading": "じしん",
+        "vocabularyId": "vocab-310771e3065b"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ませ",
+        "category": "auxiliary",
+        "reading": "ませ"
+      },
+      {
+        "surface": "ん",
+        "category": "auxiliary",
+        "reading": "ん"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-2d343609fd77",
+    "text": "友達を信じます。",
+    "targetSurface": "信じ",
+    "targetReading": "しんじ",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I trust my friend.",
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "信じ",
+        "category": "verb",
+        "reading": "しんじ",
+        "vocabularyId": "vocab-2d343609fd77"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-854f088ff1cb",
+    "text": "友達を助けました。",
+    "targetSurface": "助け",
+    "targetReading": "たすけ",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I helped my friend.",
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "助け",
+        "category": "verb",
+        "reading": "たすけ",
+        "vocabularyId": "vocab-854f088ff1cb"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-5583cc1e42ca",
+    "text": "床をきれいにしました。",
+    "targetSurface": "床",
+    "targetReading": "ゆか",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I cleaned the floor.",
+    "tokens": [
+      {
+        "surface": "床",
+        "category": "noun",
+        "reading": "ゆか",
+        "vocabularyId": "vocab-5583cc1e42ca"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "きれい",
+        "category": "adjective",
+        "reading": "きれい",
+        "vocabularyId": "vocab-58a738a344fe"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-4fc3246809ef",
+    "text": "この部屋は天井が高いです。",
+    "targetSurface": "天井",
+    "targetReading": "てんじょう",
+    "targetTokenStart": 3,
+    "targetTokenEnd": 4,
+    "translation": "This room has a high ceiling.",
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "部屋",
+        "category": "noun",
+        "reading": "へや",
+        "vocabularyId": "vocab-23523bbf8d9c"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "天井",
+        "category": "noun",
+        "reading": "てんじょう",
+        "vocabularyId": "vocab-4fc3246809ef"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "高い",
+        "category": "adjective",
+        "reading": "たかい",
+        "vocabularyId": "vocab-775979a197ea"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-a3d09d288b5e",
+    "text": "残りの水を飲みました。",
+    "targetSurface": "残り",
+    "targetReading": "のこり",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I drank the remaining water.",
+    "tokens": [
+      {
+        "surface": "残り",
+        "category": "noun",
+        "reading": "のこり",
+        "vocabularyId": "vocab-a3d09d288b5e"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "水",
+        "category": "noun",
+        "reading": "みず",
+        "vocabularyId": "vocab-28ddfdc9290c"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "飲み",
+        "category": "verb",
+        "reading": "のみ",
+        "vocabularyId": "vocab-dcd3acd6b659"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-bbac5d033b1a",
+    "text": "胸が痛くて、病院に行きました。",
+    "targetSurface": "胸",
+    "targetReading": "むね",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I went to the hospital because my chest hurt.",
+    "tokens": [
+      {
+        "surface": "胸",
+        "category": "noun",
+        "reading": "むね",
+        "vocabularyId": "vocab-bbac5d033b1a"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "痛く",
+        "category": "adjective",
+        "reading": "いたく",
+        "vocabularyId": "vocab-64170b1798cb"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "病院",
+        "category": "noun",
+        "reading": "びょういん",
+        "vocabularyId": "vocab-152ea0d72dc5"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-b709bc92e2a4",
+    "text": "重いかばんで肩が痛いです。",
+    "targetSurface": "肩",
+    "targetReading": "かた",
+    "targetTokenStart": 3,
+    "targetTokenEnd": 4,
+    "translation": "My shoulder hurts from the heavy bag.",
+    "tokens": [
+      {
+        "surface": "重い",
+        "category": "adjective",
+        "reading": "おもい",
+        "vocabularyId": "vocab-beff4a4d6b56"
+      },
+      {
+        "surface": "かばん",
+        "category": "noun",
+        "reading": "かばん",
+        "vocabularyId": "vocab-704870bca266"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "肩",
+        "category": "noun",
+        "reading": "かた",
+        "vocabularyId": "vocab-b709bc92e2a4"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "痛い",
+        "category": "adjective",
+        "reading": "いたい",
+        "vocabularyId": "vocab-64170b1798cb"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-2a384afa6c75",
+    "text": "腰が痛いので、休みます。",
+    "targetSurface": "腰",
+    "targetReading": "こし",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I will rest because my lower back hurts.",
+    "tokens": [
+      {
+        "surface": "腰",
+        "category": "noun",
+        "reading": "こし",
+        "vocabularyId": "vocab-2a384afa6c75"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "痛い",
+        "category": "adjective",
+        "reading": "いたい",
+        "vocabularyId": "vocab-64170b1798cb"
+      },
+      {
+        "surface": "ので",
+        "category": "particle",
+        "reading": "ので"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "休み",
+        "category": "verb",
+        "reading": "やすみ",
+        "vocabularyId": "vocab-acc3dd26ba1e"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-3d41e179ee9d",
+    "text": "この袋にりんごを入れてください。",
+    "targetSurface": "袋",
+    "targetReading": "ふくろ",
+    "targetTokenStart": 1,
+    "targetTokenEnd": 2,
+    "translation": "Please put the apples in this bag.",
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "袋",
+        "category": "noun",
+        "reading": "ふくろ",
+        "vocabularyId": "vocab-3d41e179ee9d"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "りんご",
+        "category": "noun",
+        "reading": "りんご",
+        "vocabularyId": "vocab-d66c7f00afcd"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "入れ",
+        "category": "verb",
+        "reading": "いれ",
+        "vocabularyId": "vocab-b5e9e035a8be"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "ください",
+        "category": "auxiliary",
+        "reading": "ください"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-97281763bdaa",
+    "text": "店の奥にトイレがあります。",
+    "targetSurface": "奥",
+    "targetReading": "おく",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "There is a restroom at the back of the shop.",
+    "tokens": [
+      {
+        "surface": "店",
+        "category": "noun",
+        "reading": "みせ",
+        "vocabularyId": "vocab-e70f9243d4c7"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "奥",
+        "category": "noun",
+        "reading": "おく",
+        "vocabularyId": "vocab-97281763bdaa"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "トイレ",
+        "category": "noun",
+        "reading": "といれ",
+        "vocabularyId": "vocab-3ef72de4de64"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-10627df9154a",
+    "text": "ご飯の量が多いです。",
+    "targetSurface": "量",
+    "targetReading": "りょう",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "That is a large portion of rice.",
+    "tokens": [
+      {
+        "surface": "ご飯",
+        "category": "noun",
+        "reading": "ごはん",
+        "vocabularyId": "vocab-2bf5dccca2b0"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "量",
+        "category": "noun",
+        "reading": "りょう",
+        "vocabularyId": "vocab-10627df9154a"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "多い",
+        "category": "adjective",
+        "reading": "おおい",
+        "vocabularyId": "vocab-a249b72fa923"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-5b451287c47e",
+    "text": "この店は学生に人気があります。",
+    "targetSurface": "人気",
+    "targetReading": "にんき",
+    "targetTokenStart": 5,
+    "targetTokenEnd": 6,
+    "translation": "This shop is popular with students.",
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "店",
+        "category": "noun",
+        "reading": "みせ",
+        "vocabularyId": "vocab-e70f9243d4c7"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "学生",
+        "category": "noun",
+        "reading": "がくせい",
+        "vocabularyId": "vocab-9567eaf8fe9b"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "人気",
+        "category": "noun",
+        "reading": "にんき",
+        "vocabularyId": "vocab-5b451287c47e"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-f1feac298c6d",
+    "text": "家族といると幸せです。",
+    "targetSurface": "幸せ",
+    "targetReading": "しあわせ",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I am happy when I am with my family.",
+    "tokens": [
+      {
+        "surface": "家族",
+        "category": "noun",
+        "reading": "かぞく",
+        "vocabularyId": "vocab-a16373e2426c"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "いる",
+        "category": "verb",
+        "reading": "いる",
+        "vocabularyId": "vocab-e2f1dae6743a"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "幸せ",
+        "category": "adjective",
+        "reading": "しあわせ",
+        "vocabularyId": "vocab-f1feac298c6d"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-da2dc33c64f3",
+    "text": "日曜日に恋人と映画を見ます。",
+    "targetSurface": "恋人",
+    "targetReading": "こいびと",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I will watch a movie with my partner on Sunday.",
+    "tokens": [
+      {
+        "surface": "日曜日",
+        "category": "noun",
+        "reading": "にちようび",
+        "vocabularyId": "vocab-b7519a0f57a7"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "恋人",
+        "category": "noun",
+        "reading": "こいびと",
+        "vocabularyId": "vocab-da2dc33c64f3"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "映画",
+        "category": "noun",
+        "reading": "えいが",
+        "vocabularyId": "vocab-7b9d866e6dc2"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "見",
+        "category": "verb",
+        "reading": "み",
+        "vocabularyId": "vocab-385cc0d9ee98"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-cb93d3e51121",
+    "text": "駅で知り合いに会いました。",
+    "targetSurface": "知り合い",
+    "targetReading": "しりあい",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I met an acquaintance at the station.",
+    "tokens": [
+      {
+        "surface": "駅",
+        "category": "noun",
+        "reading": "えき",
+        "vocabularyId": "vocab-d29031265cf4"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "知り合い",
+        "category": "noun",
+        "reading": "しりあい",
+        "vocabularyId": "vocab-cb93d3e51121"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "会い",
+        "category": "verb",
+        "reading": "あい",
+        "vocabularyId": "vocab-40179481fcf6"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-e7fa516324bb",
+    "text": "旅行の思い出を話しました。",
+    "targetSurface": "思い出",
+    "targetReading": "おもいで",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I talked about memories of my trip.",
+    "tokens": [
+      {
+        "surface": "旅行",
+        "category": "noun",
+        "reading": "りょこう",
+        "vocabularyId": "vocab-2e3ba98d2367"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "思い出",
+        "category": "noun",
+        "reading": "おもいで",
+        "vocabularyId": "vocab-e7fa516324bb"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "話し",
+        "category": "verb",
+        "reading": "はなし",
+        "vocabularyId": "vocab-0b969a8c0944"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-307298ad886d",
+    "text": "いつか日本に住みたいです。",
+    "targetSurface": "いつか",
+    "targetReading": "いつか",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I want to live in Japan someday.",
+    "tokens": [
+      {
+        "surface": "いつか",
+        "category": "adverb",
+        "reading": "いつか",
+        "vocabularyId": "vocab-307298ad886d"
+      },
+      {
+        "surface": "日本",
+        "category": "noun",
+        "reading": "にほん",
+        "vocabularyId": "vocab-cf2abf0c5be3"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "住み",
+        "category": "verb",
+        "reading": "すみ",
+        "vocabularyId": "vocab-405805427b97"
+      },
+      {
+        "surface": "たい",
+        "category": "auxiliary",
+        "reading": "たい"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-bdf7ba87a26a",
+    "text": "今回は電車で行きます。",
+    "targetSurface": "今回",
+    "targetReading": "こんかい",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "This time, I will go by train.",
+    "tokens": [
+      {
+        "surface": "今回",
+        "category": "noun",
+        "reading": "こんかい",
+        "vocabularyId": "vocab-bdf7ba87a26a"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "電車",
+        "category": "noun",
+        "reading": "でんしゃ",
+        "vocabularyId": "vocab-dc7f5fc156cf"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-13175f045c7b",
+    "text": "先生に直接聞きました。",
+    "targetSurface": "直接",
+    "targetReading": "ちょくせつ",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I asked the teacher directly.",
+    "tokens": [
+      {
+        "surface": "先生",
+        "category": "noun",
+        "reading": "せんせい",
+        "vocabularyId": "vocab-497356cf0646"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "直接",
+        "category": "adverb",
+        "reading": "ちょくせつ",
+        "vocabularyId": "vocab-13175f045c7b"
+      },
+      {
+        "surface": "聞き",
+        "category": "verb",
+        "reading": "きき",
+        "vocabularyId": "vocab-d8a0261581dc"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-9f9483df0196",
+    "text": "母から手紙が届きました。",
+    "targetSurface": "届き",
+    "targetReading": "とどき",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "A letter arrived from my mother.",
+    "tokens": [
+      {
+        "surface": "母",
+        "category": "noun",
+        "reading": "はは",
+        "vocabularyId": "vocab-7fa86c660a00"
+      },
+      {
+        "surface": "から",
+        "category": "particle",
+        "reading": "から"
+      },
+      {
+        "surface": "手紙",
+        "category": "noun",
+        "reading": "てがみ",
+        "vocabularyId": "vocab-8e7233a38df0"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "届き",
+        "category": "verb",
+        "reading": "とどき",
+        "vocabularyId": "vocab-9f9483df0196"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-893901c70f1b",
+    "text": "友達を映画に誘いました。",
+    "targetSurface": "誘い",
+    "targetReading": "さそい",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I invited my friend to see a movie.",
+    "tokens": [
+      {
+        "surface": "友達",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "映画",
+        "category": "noun",
+        "reading": "えいが",
+        "vocabularyId": "vocab-7b9d866e6dc2"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "誘い",
+        "category": "verb",
+        "reading": "さそい",
+        "vocabularyId": "vocab-893901c70f1b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-adb5486e08dd",
+    "text": "新しい料理を試しました。",
+    "targetSurface": "試し",
+    "targetReading": "ためし",
+    "targetTokenStart": 3,
+    "targetTokenEnd": 4,
+    "translation": "I tried a new dish.",
+    "tokens": [
+      {
+        "surface": "新しい",
+        "category": "adjective",
+        "reading": "あたらしい",
+        "vocabularyId": "vocab-288a95a40d95"
+      },
+      {
+        "surface": "料理",
+        "category": "noun",
+        "reading": "りょうり",
+        "vocabularyId": "vocab-6ab8f730431c"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "試し",
+        "category": "verb",
+        "reading": "ためし",
+        "vocabularyId": "vocab-adb5486e08dd"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-b25871996039",
+    "text": "家で服を着替えました。",
+    "targetSurface": "着替え",
+    "targetReading": "きがえ",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I changed my clothes at home.",
+    "tokens": [
+      {
+        "surface": "家",
+        "category": "noun",
+        "reading": "いえ",
+        "vocabularyId": "vocab-8af58778f14e"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "服",
+        "category": "noun",
+        "reading": "ふく",
+        "vocabularyId": "vocab-ff1cb3f79233"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "着替え",
+        "category": "verb",
+        "reading": "きがえ",
+        "vocabularyId": "vocab-b25871996039"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-66874224e11d",
+    "text": "ホテルに荷物を預けました。",
+    "targetSurface": "預け",
+    "targetReading": "あずけ",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I left my luggage in the hotel's care.",
+    "tokens": [
+      {
+        "surface": "ホテル",
+        "category": "noun",
+        "reading": "ほてる",
+        "vocabularyId": "vocab-9d97ee4082e2"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "荷物",
+        "category": "noun",
+        "reading": "にもつ",
+        "vocabularyId": "vocab-567f42b89301"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "預け",
+        "category": "verb",
+        "reading": "あずけ",
+        "vocabularyId": "vocab-66874224e11d"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-7df42cbdaf8e",
+    "text": "家族を守ります。",
+    "targetSurface": "守り",
+    "targetReading": "まもり",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I will protect my family.",
+    "tokens": [
+      {
+        "surface": "家族",
+        "category": "noun",
+        "reading": "かぞく",
+        "vocabularyId": "vocab-a16373e2426c"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "守り",
+        "category": "verb",
+        "reading": "まもり",
+        "vocabularyId": "vocab-7df42cbdaf8e"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

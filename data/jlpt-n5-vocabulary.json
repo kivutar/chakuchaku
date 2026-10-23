@@ -16741,5 +16741,533 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "curated-n4-vocabulary"
+  },
+  {
+    "id": "vocab-253d683401cc",
+    "term": "苦手",
+    "reading": "にがて",
+    "meaning": "not good at; not fond of",
+    "acceptedAnswers": [
+      "poor at",
+      "bad at",
+      "not keen on"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "preferences",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-dc41fb12246c",
+    "term": "素敵",
+    "reading": "すてき",
+    "meaning": "lovely; wonderful",
+    "acceptedAnswers": [
+      "nice",
+      "beautiful",
+      "splendid"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "descriptions",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review",
+    "variants": [
+      "すてき",
+      "ステキ"
+    ]
+  },
+  {
+    "id": "vocab-93c07a76f81a",
+    "term": "ずっと",
+    "reading": "ずっと",
+    "meaning": "the whole time; continuously",
+    "acceptedAnswers": [
+      "all along",
+      "all the time",
+      "throughout"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "time",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-67a6e7abf723",
+    "term": "調子",
+    "reading": "ちょうし",
+    "meaning": "condition; state of health",
+    "acceptedAnswers": [
+      "physical condition",
+      "health",
+      "how one is feeling"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-310771e3065b",
+    "term": "自信",
+    "reading": "じしん",
+    "meaning": "self-confidence",
+    "acceptedAnswers": [
+      "confidence",
+      "self confidence"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "ability",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review",
+    "voiceSlug": "jishin-confidence"
+  },
+  {
+    "id": "vocab-2d343609fd77",
+    "term": "信じる",
+    "reading": "しんじる",
+    "meaning": "to believe; to trust",
+    "acceptedAnswers": [
+      "believe",
+      "trust",
+      "to believe in",
+      "believe in",
+      "to have faith in"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "relationships",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-854f088ff1cb",
+    "term": "助ける",
+    "reading": "たすける",
+    "meaning": "to help; to rescue",
+    "acceptedAnswers": [
+      "help",
+      "rescue",
+      "to save",
+      "save",
+      "to assist"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "help",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-5583cc1e42ca",
+    "term": "床",
+    "reading": "ゆか",
+    "meaning": "floor",
+    "acceptedAnswers": [
+      "the floor"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "home",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-4fc3246809ef",
+    "term": "天井",
+    "reading": "てんじょう",
+    "meaning": "ceiling",
+    "acceptedAnswers": [
+      "the ceiling"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "home",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-a3d09d288b5e",
+    "term": "残り",
+    "reading": "のこり",
+    "meaning": "the rest; remainder",
+    "acceptedAnswers": [
+      "rest",
+      "remaining part",
+      "leftover",
+      "leftovers"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "amounts",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-bbac5d033b1a",
+    "term": "胸",
+    "reading": "むね",
+    "meaning": "chest; breast",
+    "acceptedAnswers": [
+      "chest",
+      "breast"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-b709bc92e2a4",
+    "term": "肩",
+    "reading": "かた",
+    "meaning": "shoulder",
+    "acceptedAnswers": [
+      "shoulders",
+      "a shoulder"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "voiceSlug": "kata-shoulder",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-2a384afa6c75",
+    "term": "腰",
+    "reading": "こし",
+    "meaning": "lower back; waist",
+    "acceptedAnswers": [
+      "lower back",
+      "waist"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-3d41e179ee9d",
+    "term": "袋",
+    "reading": "ふくろ",
+    "meaning": "bag; sack",
+    "acceptedAnswers": [
+      "bag",
+      "sack",
+      "a bag"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "shopping",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-97281763bdaa",
+    "term": "奥",
+    "reading": "おく",
+    "meaning": "back; inner part",
+    "acceptedAnswers": [
+      "the back",
+      "inside",
+      "inner part",
+      "back of something"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "places",
+    "voiceSlug": "oku-interior",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-10627df9154a",
+    "term": "量",
+    "reading": "りょう",
+    "meaning": "amount; quantity",
+    "acceptedAnswers": [
+      "amount",
+      "quantity",
+      "portion",
+      "volume"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "amounts",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-5b451287c47e",
+    "term": "人気",
+    "reading": "にんき",
+    "meaning": "popularity",
+    "acceptedAnswers": [
+      "popularity",
+      "being popular",
+      "popular"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "descriptions",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-f1feac298c6d",
+    "term": "幸せ",
+    "reading": "しあわせ",
+    "meaning": "happy; happiness",
+    "acceptedAnswers": [
+      "happy",
+      "happiness",
+      "fortunate"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "feelings",
+    "variants": [
+      "しあわせ"
+    ],
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-da2dc33c64f3",
+    "term": "恋人",
+    "reading": "こいびと",
+    "meaning": "romantic partner; boyfriend or girlfriend",
+    "acceptedAnswers": [
+      "partner",
+      "boyfriend",
+      "girlfriend",
+      "lover",
+      "sweetheart"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "relationships",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-cb93d3e51121",
+    "term": "知り合い",
+    "reading": "しりあい",
+    "meaning": "acquaintance; someone you know",
+    "acceptedAnswers": [
+      "acquaintance",
+      "an acquaintance",
+      "someone I know",
+      "someone you know"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "relationships",
+    "variants": [
+      "知合い"
+    ],
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-e7fa516324bb",
+    "term": "思い出",
+    "reading": "おもいで",
+    "meaning": "memory; memories",
+    "acceptedAnswers": [
+      "memory",
+      "memories",
+      "recollection",
+      "recollections"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "experiences",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-307298ad886d",
+    "term": "いつか",
+    "reading": "いつか",
+    "meaning": "someday; sometime",
+    "acceptedAnswers": [
+      "some day",
+      "one day",
+      "sometime",
+      "at some point"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "time",
+    "voiceSlug": "itsuka-someday",
+    "inflections": [
+      {
+        "surface": "いつか",
+        "reading": "いつか",
+        "allowPartOfSpeechMismatch": true
+      }
+    ],
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-bdf7ba87a26a",
+    "term": "今回",
+    "reading": "こんかい",
+    "meaning": "this time",
+    "acceptedAnswers": [
+      "this time",
+      "on this occasion"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "time",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-13175f045c7b",
+    "term": "直接",
+    "reading": "ちょくせつ",
+    "inflections": [
+      {
+        "surface": "直接",
+        "reading": "ちょくせつ",
+        "allowPartOfSpeechMismatch": true
+      }
+    ],
+    "meaning": "directly; in person",
+    "acceptedAnswers": [
+      "directly",
+      "in person",
+      "personally"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "communication",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-9f9483df0196",
+    "term": "届く",
+    "reading": "とどく",
+    "meaning": "to arrive; to be delivered",
+    "acceptedAnswers": [
+      "arrive",
+      "be delivered",
+      "to reach",
+      "reach"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "communication",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-893901c70f1b",
+    "term": "誘う",
+    "reading": "さそう",
+    "meaning": "to invite; to ask out",
+    "acceptedAnswers": [
+      "invite",
+      "ask out",
+      "to invite someone"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "relationships",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-adb5486e08dd",
+    "term": "試す",
+    "reading": "ためす",
+    "meaning": "to try; to test",
+    "acceptedAnswers": [
+      "try",
+      "test",
+      "to try out",
+      "try out"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "experiences",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-b25871996039",
+    "term": "着替える",
+    "reading": "きがえる",
+    "meaning": "to change clothes",
+    "acceptedAnswers": [
+      "change clothes",
+      "to get changed",
+      "get changed",
+      "to change one's clothes"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "daily-life",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-66874224e11d",
+    "term": "預ける",
+    "reading": "あずける",
+    "inflections": [
+      {
+        "surface": "預け",
+        "reading": "あずけ"
+      }
+    ],
+    "meaning": "to leave in someone's care; to check luggage",
+    "acceptedAnswers": [
+      "to entrust",
+      "entrust",
+      "to leave for safekeeping",
+      "to deposit",
+      "deposit",
+      "check luggage"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "travel",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-7df42cbdaf8e",
+    "term": "守る",
+    "reading": "まもる",
+    "meaning": "to protect; to keep a promise; to obey a rule",
+    "acceptedAnswers": [
+      "protect",
+      "to guard",
+      "guard",
+      "to keep",
+      "keep",
+      "to obey",
+      "obey",
+      "to observe"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "daily-life",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-kaishi-review"
   }
 ]

@@ -216,7 +216,7 @@ publishing vocabulary, kanji, and grammar specifications after the 2010 revision
 because the test is intended to measure communicative use rather than memorized
 lists.
 
-The inventory currently contains 1,488 entries: 879 introduced at N5 and 609
+The inventory currently contains 1,518 entries: 879 introduced at N5 and 639
 introduced at N4.
 
 - 725 N5 `core` entries adapted from the MIT-licensed Open Anki decks at commit
@@ -236,7 +236,7 @@ introduced at N4.
 - 4 curated N4 core entries: `間`, required by the first N4 grammar exercises;
   practical Katakana word `ボール`; and consensus-list gaps `引き出す` and
   `降り出す`.
-- 150 `supplemental` entries, including five beginner-comprehension additions:
+- 150 N5 `supplemental` entries, including five beginner-comprehension additions:
   `あちこち`, `何でも`, `考え`, `午前中`, and `数字`. The original supplement includes
   42 recognizable and motivating beginner words,
   29 words needed by the current lessons, 37 words curated for practical
@@ -245,6 +245,15 @@ introduced at N4.
   gaps identified through mock-test review. These
   include `ラーメン`, `寿司`, `アニメ`, `漫画`, greetings, food, travel, culture,
   modern technology, and everyday loanwords.
+- 30 N4 `supplemental` entries reviewed individually against Kaishi 1.5k and
+  the Japan Foundation's Irodori beginner materials. The first ten include
+  `苦手`, `素敵`, `ずっと`, `調子`, `自信`, `信じる`, `助ける`, `床`, `天井`, and
+  `残り`. The second batch adds `胸`, `肩`, `腰`, `袋`, `奥`, `量`, `人気`, `幸せ`,
+  `恋人`, `知り合い`, `思い出`, `いつか`, `今回`, `直接`, `届く`, `誘う`, `試す`,
+  `着替える`, `預ける`, and `守る`. These support everyday preferences, ability,
+  health, relationships, home, shopping, travel and quantities. They are
+  practical additions to learn by N4, not claims about an official JLPT
+  vocabulary specification or measured frequency thresholds.
 
 The `core` label means "exam-oriented consensus candidate," not "officially
 required." The `supplemental` label keeps useful lesson vocabulary without
@@ -300,6 +309,23 @@ deliberately excluded, and `npm run vocabulary:n4:import` after replacing the
 snapshot. The importer preserves source ordering (with Genki-tagged rows first),
 normalizes readings, assigns stable content-derived IDs, resolves known source
 errors, and protects existing audio filenames when a new homophone appears.
+
+`source/n4-vocabulary-review.json` records the word-by-word Kaishi review.
+Each imported word has a practical learning rationale, a specific Irodori
+word-list page and lesson reference, and its review batch number. The first
+batch records 10 imports, retains the existing `途中` and `けがする` entries,
+and defers `魔法`, `王国`, and `呪い`. The apparent `怪我` gap is already taught
+through `けがする`. The second batch records 20 further imports. Homophones
+such as `いつか` (someday) and `五日` (five days/the fifth) retain separate SRS
+identities and audio; the lexical noun `思い出` is distinct from `思い出す`.
+Review decisions do not themselves add SRS items: accepted words enter the
+canonical vocabulary with authored English/French meanings, original short
+examples, and generated word audio. They use the existing N4 daily introduction
+budget. New homophones (`自信`, `肩`, `奥`, `いつか`) have distinct audio slugs
+so existing recordings and progress remain stable.
+Irodori through Elementary 2 is an approximate N4 ability benchmark, not a
+word-by-word JLPT assignment. No source examples, images, or recordings are
+copied into this batch.
 
 `katakana-vocabulary.md` documents the Katakana pool, its exact selection
 rules, additions, source comparisons, and kana coverage. It uses the former

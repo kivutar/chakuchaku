@@ -10645,5 +10645,229 @@
       "le matin",
       "matinée"
     ]
+  },
+  "vocab-253d683401cc": {
+    "meaning": "peu doué pour ; qui n’aime pas beaucoup",
+    "acceptedAnswers": [
+      "pas doué pour",
+      "mauvais en",
+      "ne pas aimer beaucoup"
+    ]
+  },
+  "vocab-dc41fb12246c": {
+    "meaning": "joli ; merveilleux",
+    "acceptedAnswers": [
+      "magnifique",
+      "superbe",
+      "charmant"
+    ]
+  },
+  "vocab-93c07a76f81a": {
+    "meaning": "tout le temps ; continuellement",
+    "acceptedAnswers": [
+      "sans interruption",
+      "pendant tout ce temps",
+      "en continu"
+    ]
+  },
+  "vocab-67a6e7abf723": {
+    "meaning": "état ; forme physique",
+    "acceptedAnswers": [
+      "état de santé",
+      "forme",
+      "condition physique"
+    ]
+  },
+  "vocab-310771e3065b": {
+    "meaning": "confiance en soi",
+    "acceptedAnswers": [
+      "assurance",
+      "confiance"
+    ]
+  },
+  "vocab-2d343609fd77": {
+    "meaning": "croire ; faire confiance à",
+    "acceptedAnswers": [
+      "croire en",
+      "avoir confiance en"
+    ]
+  },
+  "vocab-854f088ff1cb": {
+    "meaning": "aider ; secourir",
+    "acceptedAnswers": [
+      "sauver",
+      "porter secours à"
+    ]
+  },
+  "vocab-5583cc1e42ca": {
+    "meaning": "sol",
+    "acceptedAnswers": [
+      "plancher",
+      "le sol"
+    ]
+  },
+  "vocab-4fc3246809ef": {
+    "meaning": "plafond",
+    "acceptedAnswers": [
+      "le plafond"
+    ]
+  },
+  "vocab-a3d09d288b5e": {
+    "meaning": "reste",
+    "acceptedAnswers": [
+      "le reste",
+      "ce qui reste"
+    ]
+  },
+  "vocab-bbac5d033b1a": {
+    "meaning": "poitrine",
+    "acceptedAnswers": [
+      "la poitrine",
+      "buste"
+    ]
+  },
+  "vocab-b709bc92e2a4": {
+    "meaning": "épaule",
+    "acceptedAnswers": [
+      "les épaules",
+      "une épaule"
+    ]
+  },
+  "vocab-2a384afa6c75": {
+    "meaning": "bas du dos ; taille",
+    "acceptedAnswers": [
+      "les reins",
+      "zone lombaire"
+    ]
+  },
+  "vocab-3d41e179ee9d": {
+    "meaning": "sac ; sachet",
+    "acceptedAnswers": [
+      "un sac",
+      "un sachet"
+    ]
+  },
+  "vocab-97281763bdaa": {
+    "meaning": "fond ; partie intérieure",
+    "acceptedAnswers": [
+      "le fond",
+      "intérieur",
+      "au fond"
+    ]
+  },
+  "vocab-10627df9154a": {
+    "meaning": "quantité",
+    "acceptedAnswers": [
+      "la quantité",
+      "volume",
+      "portion"
+    ]
+  },
+  "vocab-5b451287c47e": {
+    "meaning": "popularité",
+    "acceptedAnswers": [
+      "la popularité",
+      "succès",
+      "populaire"
+    ]
+  },
+  "vocab-f1feac298c6d": {
+    "meaning": "heureux ; bonheur",
+    "acceptedAnswers": [
+      "heureuse",
+      "le bonheur",
+      "bienheureux"
+    ]
+  },
+  "vocab-da2dc33c64f3": {
+    "meaning": "partenaire amoureux ; petit ami ou petite amie",
+    "acceptedAnswers": [
+      "petit ami",
+      "petite amie",
+      "amoureux",
+      "amoureuse"
+    ]
+  },
+  "vocab-cb93d3e51121": {
+    "meaning": "connaissance ; personne que l’on connaît",
+    "acceptedAnswers": [
+      "une connaissance",
+      "quelqu’un que je connais"
+    ]
+  },
+  "vocab-e7fa516324bb": {
+    "meaning": "souvenir",
+    "acceptedAnswers": [
+      "souvenirs",
+      "un souvenir",
+      "les souvenirs"
+    ]
+  },
+  "vocab-307298ad886d": {
+    "meaning": "un jour ; à un moment donné",
+    "acceptedAnswers": [
+      "un jour ou l’autre",
+      "un de ces jours"
+    ]
+  },
+  "vocab-bdf7ba87a26a": {
+    "meaning": "cette fois-ci",
+    "acceptedAnswers": [
+      "cette fois",
+      "à cette occasion"
+    ]
+  },
+  "vocab-13175f045c7b": {
+    "meaning": "directement ; en personne",
+    "acceptedAnswers": [
+      "en personne",
+      "personnellement"
+    ]
+  },
+  "vocab-9f9483df0196": {
+    "meaning": "arriver ; être livré",
+    "acceptedAnswers": [
+      "parvenir",
+      "être remis"
+    ]
+  },
+  "vocab-893901c70f1b": {
+    "meaning": "inviter ; proposer une sortie",
+    "acceptedAnswers": [
+      "inviter quelqu’un",
+      "proposer de sortir"
+    ]
+  },
+  "vocab-adb5486e08dd": {
+    "meaning": "essayer ; tester",
+    "acceptedAnswers": [
+      "faire un essai",
+      "mettre à l’essai"
+    ]
+  },
+  "vocab-b25871996039": {
+    "meaning": "se changer ; changer de vêtements",
+    "acceptedAnswers": [
+      "se changer",
+      "changer de tenue"
+    ]
+  },
+  "vocab-66874224e11d": {
+    "meaning": "confier ; laisser en garde",
+    "acceptedAnswers": [
+      "déposer",
+      "laisser en consigne",
+      "faire garder"
+    ]
+  },
+  "vocab-7df42cbdaf8e": {
+    "meaning": "protéger ; tenir une promesse ; respecter une règle",
+    "acceptedAnswers": [
+      "protéger",
+      "garder",
+      "tenir",
+      "respecter",
+      "obéir"
+    ]
   }
 }
