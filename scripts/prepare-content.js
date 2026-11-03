@@ -9,6 +9,7 @@ import {
 } from "./localization.js";
 import { normalizeReading, surfaceCarriesReading } from "./kanji-reading-evidence.js";
 import { resolveReadingGrammarExercises } from "./reading-grammar.js";
+import { resolveExerciseAudioSources } from "./exercise-audio.js";
 import { createReadingCoverage, formatReadingCoverage } from "./reading-coverage.js";
 import "../curriculum.js";
 import "../reading.js";
@@ -761,7 +762,9 @@ function prepareLesson(lesson, vocabularyIndex, kanjiIndex, curriculum) {
     id: lesson.id,
     ...(lesson.minimumLevel ? { minimumLevel: lesson.minimumLevel } : {}),
     text: lesson.text,
-    audio: lesson.readingSentenceId ? lesson.audio : `assets/voices/grammar/${lesson.id}.m4a`,
+    audio: lesson.readingSentenceId || lesson.audioSourceId
+      ? lesson.audio
+      : `assets/voices/grammar/${lesson.id}.m4a`,
     vocabularyIds,
     kanjiIds: findKanjiIds(lesson.text, kanjiIndex),
     tokens
@@ -890,6 +893,7 @@ function prepareExercise(
     solution: exercise.solution,
     ...(exercise.type ? { type: exercise.type } : {}),
     ...(exercise.readingSentenceId ? { readingSentenceId: exercise.readingSentenceId } : {}),
+    ...(exercise.audioSourceId ? { audioSourceId: exercise.audioSourceId } : {}),
     ...(exercise.promptVocabularyHints
       ? { promptVocabularyHints: exercise.promptVocabularyHints }
       : {}),
@@ -1419,7 +1423,9 @@ const readingSources = globalThis.JlptN5Reading.validatePassages(
   await readJson(join(sourceDirectory, "readings.json"))
 );
 const readingCoverage = createReadingCoverage(readingSources, grammarPoints);
-const exerciseSources = resolveReadingGrammarExercises(authoredExerciseSources, readingSources);
+const exerciseSources = resolveExerciseAudioSources(
+  resolveReadingGrammarExercises(authoredExerciseSources, readingSources)
+);
 const allSources = [introductionSource, ...exerciseSources];
 const lessonIds = new Set(allSources.map(({ id }) => id));
 

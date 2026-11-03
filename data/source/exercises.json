@@ -5977,6 +5977,7 @@
   },
   {
     "id": "production-siblings-occupations",
+    "audioSourceId": "siblings-occupations",
     "text": "My older brother is a company employee, and my older sister is a student.",
     "solution": "兄は会社員で、姉は学生です。",
     "type": "production",
@@ -6007,6 +6008,7 @@
   },
   {
     "id": "production-sugar-or-salt",
+    "audioSourceId": "sugar-or-salt",
     "skipVoiceGeneration": true,
     "text": "Is this sugar or salt? It is not sugar; it is salt.",
     "solution": "これは砂糖ですか、塩ですか。砂糖ではありません。塩です。",
@@ -6030,6 +6032,7 @@
   },
   {
     "id": "production-cat-under-table",
+    "audioSourceId": "cat-under-table",
     "text": "The cat is under the table.",
     "solution": "猫はテーブルの下にいます。",
     "type": "production",
@@ -6057,6 +6060,7 @@
   },
   {
     "id": "production-show-teacher-kyoto-photo",
+    "audioSourceId": "show-teacher-kyoto-photo",
     "text": "I showed my teacher a photo of Kyoto.",
     "solution": "先生に京都の写真を見せました。",
     "type": "production",
@@ -6087,6 +6091,7 @@
   },
   {
     "id": "production-family-trip-plan",
+    "audioSourceId": "family-trip-plan",
     "text": "I plan to go to Kyoto with my family next month.",
     "solution": "来月、家族と京都に行くつもりです。",
     "type": "production",
@@ -6121,6 +6126,7 @@
   },
   {
     "id": "production-busy-yesterday-not-today",
+    "audioSourceId": "busy-yesterday-not-today",
     "text": "I was busy yesterday, but I am not busy today.",
     "solution": "昨日は忙しかったですが、今日は忙しくないです。",
     "type": "production",
@@ -6148,6 +6154,7 @@
   },
   {
     "id": "production-old-apartment-description",
+    "audioSourceId": "old-apartment-description",
     "text": "My previous apartment was quiet, but it was not convenient.",
     "solution": "前のアパートは静かでしたが、便利ではありませんでした。",
     "type": "production",
@@ -6179,6 +6186,7 @@
   },
   {
     "id": "production-bus-cheaper-than-train",
+    "audioSourceId": "bus-cheaper-than-train",
     "text": "The bus is cheaper than the train.",
     "solution": "電車よりバスのほうが安いです。",
     "type": "production",
@@ -6204,6 +6212,7 @@
   },
   {
     "id": "production-choose-same-cake-as-sister",
+    "audioSourceId": "choose-same-cake-as-sister",
     "text": "I chose the same cake as my older sister.",
     "solution": "姉と同じケーキにしました。",
     "type": "production",
@@ -6228,6 +6237,7 @@
   },
   {
     "id": "production-spring-gets-warmer",
+    "audioSourceId": "spring-gets-warmer",
     "skipVoiceGeneration": true,
     "text": "Spring arrived, and it gradually became warmer.",
     "solution": "春になりました。そして、段々暖かくなりました。",
@@ -6259,6 +6269,7 @@
   },
   {
     "id": "production-quiet-library",
+    "audioSourceId": "quiet-library",
     "text": "Please read quietly in the library.",
     "solution": "図書館では静かに本を読んでください。",
     "type": "production",
@@ -6285,6 +6296,7 @@
   },
   {
     "id": "production-cold-bedtime-advice",
+    "audioSourceId": "cold-bedtime-advice",
     "text": "Since you have a cold, you should go to bed early today.",
     "solution": "風邪ですから、今日は早く寝たほうがいいですよ。",
     "type": "production",
@@ -6345,6 +6357,7 @@
   },
   {
     "id": "production-meet-around-three",
+    "audioSourceId": "meet-around-three",
     "text": "Let us meet at the station around three o'clock.",
     "solution": "三時ごろ駅で会いましょう。",
     "type": "production",
@@ -6370,6 +6383,7 @@
   },
   {
     "id": "production-must-wake-early",
+    "audioSourceId": "must-wake-early",
     "text": "I have to wake up early tomorrow.",
     "solution": "明日は早く起きなくてはいけません。",
     "type": "production",
@@ -6395,6 +6409,7 @@
   },
   {
     "id": "production-ask-duration-to-station",
+    "audioSourceId": "ask-duration-to-station",
     "text": "About how long does it take from here to the station?",
     "solution": "ここから駅までどのくらいかかりますか。",
     "type": "production",
@@ -6421,6 +6436,7 @@
   },
   {
     "id": "production-borrow-library-books-twice-weekly",
+    "audioSourceId": "borrow-library-books-twice-weekly",
     "text": "I go to the library to borrow books twice a week.",
     "solution": "一週間に二回、図書館へ本を借りに行きます。",
     "type": "production",
@@ -6456,6 +6472,7 @@
   },
   {
     "id": "production-order-hot-tea",
+    "audioSourceId": "order-hot-tea",
     "text": "Excuse me, one hot tea, please.",
     "solution": "すみません、熱いお茶を一つください。",
     "type": "production",
@@ -6482,6 +6499,7 @@
   },
   {
     "id": "production-brother-buys-five-snacks",
+    "audioSourceId": "brother-buys-five-snacks",
     "text": "My older brother bought as many as five snacks.",
     "solution": "兄はお菓子を五つも買いました。",
     "type": "production",
@@ -6510,6 +6528,7 @@
   },
   {
     "id": "production-plan-party-numbers",
+    "audioSourceId": "plan-party-numbers",
     "text": "How many people are coming to the party? How many cakes will you buy?",
     "solution": "パーティーには何人来ますか。ケーキはいくつ買いますか。",
     "type": "production",
@@ -6543,6 +6562,7 @@
   },
   {
     "id": "production-morning-routine-verb-groups",
+    "audioSourceId": "morning-routine-verb-groups",
     "text": "Every morning, I wash my face, take a shower, and study.",
     "solution": "毎朝、顔を洗って、シャワーを浴びて、勉強します。",
     "type": "production",
@@ -6574,6 +6594,7 @@
   },
   {
     "id": "production-open-window-empty-room",
+    "audioSourceId": "open-window-empty-room",
     "text": "The window had been left open, but nobody was there.",
     "solution": "窓が開けてあったけど、誰もいなかった。",
     "type": "production",
@@ -6601,6 +6622,7 @@
   },
   {
     "id": "production-sister-not-eaten-yet",
+    "audioSourceId": "sister-not-eaten-yet",
     "text": "My younger sister has not eaten anything yet.",
     "solution": "妹はまだ何も食べていません。",
     "type": "production",
@@ -6631,6 +6653,7 @@
   },
   {
     "id": "production-left-home-without-key",
+    "audioSourceId": "left-home-without-key",
     "text": "I ended up leaving home without my key.",
     "solution": "鍵を持たないで家を出てしまいました。",
     "type": "production",
@@ -6659,6 +6682,7 @@
   },
   {
     "id": "production-library-weekday-hours",
+    "audioSourceId": "library-weekday-hours",
     "text": "The library is open from Monday through Friday.",
     "solution": "図書館は月曜日から金曜日まで開いています。",
     "type": "production",
@@ -6688,6 +6712,7 @@
   },
   {
     "id": "production-try-playing-guitar",
+    "audioSourceId": "try-playing-guitar",
     "text": "I have never played the guitar. I would like to try it.",
     "solution": "ギターを弾いたことがありません。弾いてみたいです。",
     "type": "production",
@@ -6714,6 +6739,7 @@
   },
   {
     "id": "production-photography-and-camera",
+    "audioSourceId": "photography-and-camera",
     "text": "I like taking photos, and I want a new camera.",
     "solution": "写真を撮るのが好きで、新しいカメラが欲しいです。",
     "type": "production",
@@ -6744,6 +6770,7 @@
   },
   {
     "id": "production-father-reads-japanese",
+    "audioSourceId": "father-reads-japanese",
     "text": "My father can read Japanese newspapers.",
     "solution": "父は日本語の新聞を読むことができます。",
     "type": "production",
@@ -6773,6 +6800,7 @@
   },
   {
     "id": "production-weekend-movies-together",
+    "audioSourceId": "weekend-movies-together",
     "text": "On weekends, I often watch movies with my friends.",
     "solution": "週末はよく友だちと一緒に映画を見ます。",
     "type": "production",
@@ -6802,6 +6830,7 @@
   },
   {
     "id": "production-favorite-kind-of-music",
+    "audioSourceId": "favorite-kind-of-music",
     "text": "What kind of music do you like listening to?",
     "solution": "どんな音楽を聞くのが好きですか。",
     "type": "production",
@@ -6832,6 +6861,7 @@
   },
   {
     "id": "production-give-brother-book-and-read-it",
+    "audioSourceId": "give-brother-book-and-read-it",
     "text": "I gave my younger brother a book and read it to him.",
     "solution": "弟に本をあげて、読んであげました。",
     "type": "production",
@@ -6861,6 +6891,7 @@
   },
   {
     "id": "production-mother-gave-clothes-and-took-photo",
+    "audioSourceId": "mother-gave-clothes-and-took-photo",
     "text": "My mother gave me new clothes and also took a photo for me.",
     "solution": "母が新しい服をくれて、写真も撮ってくれました。",
     "type": "production",
@@ -6891,6 +6922,7 @@
   },
   {
     "id": "production-receive-cookbook-and-curry-help",
+    "audioSourceId": "receive-cookbook-and-curry-help",
     "text": "I received a cookbook from my older sister and had her teach me how to make curry.",
     "solution": "姉に料理の本をもらって、カレーの作り方を教えてもらいました。",
     "type": "production",
@@ -6925,6 +6957,7 @@
   },
   {
     "id": "production-teacher-announces-test",
+    "audioSourceId": "teacher-announces-test",
     "text": "The teacher said, \"There will be a test tomorrow.\"",
     "solution": "先生は「明日、テストがあります」と言いました。",
     "type": "production",
@@ -6955,6 +6988,7 @@
   },
   {
     "id": "production-rain-probability-opinion",
+    "audioSourceId": "rain-probability-opinion",
     "text": "It will probably rain tomorrow. I think we will need an umbrella.",
     "solution": "明日は雨が降るでしょう。傘が必要だと思います。",
     "type": "production",
@@ -7019,6 +7053,7 @@
   },
   {
     "id": "production-cake-too-sweet",
+    "audioSourceId": "cake-too-sweet",
     "text": "This cake is too sweet, so I will eat only half.",
     "solution": "このケーキは甘すぎるので、半分だけ食べます。",
     "type": "production",
@@ -7048,6 +7083,7 @@
   },
   {
     "id": "production-no-heavy-coat-this-morning",
+    "audioSourceId": "no-heavy-coat-this-morning",
     "text": "It was not very cold this morning, so I did not wear a thick coat.",
     "solution": "今朝はあまり寒くなかったので、厚いコートを着ませんでした。",
     "type": "production",
@@ -7079,6 +7115,7 @@
   },
   {
     "id": "production-sleep-before-early-morning",
+    "audioSourceId": "sleep-before-early-morning",
     "text": "I have to go to bed now because I am getting up early tomorrow.",
     "solution": "明日は早く起きるから、もう寝なきゃ。",
     "type": "production",
@@ -7109,6 +7146,7 @@
   },
   {
     "id": "production-sometimes-dinner-after-work",
+    "audioSourceId": "sometimes-dinner-after-work",
     "text": "I sometimes eat dinner at a restaurant after work.",
     "solution": "仕事の後で、レストランで晩御飯を食べることがあります。",
     "type": "production",
@@ -7138,6 +7176,7 @@
   },
   {
     "id": "production-buy-umbrella-despite-rain",
+    "audioSourceId": "buy-umbrella-despite-rain",
     "skipVoiceGeneration": true,
     "text": "It is raining today. However, I will go and buy an umbrella.",
     "solution": "今日は雨です。でも、傘を買いに行きます。",
@@ -7168,6 +7207,7 @@
   },
   {
     "id": "production-seaside-coffee-invitation",
+    "audioSourceId": "seaside-coffee-invitation",
     "text": "The sea is beautiful. How about this table? Shall we have coffee or something?",
     "solution": "海がきれいだなあ。こちらのテーブルはどうですか。コーヒーでも飲みませんか。",
     "type": "production",
@@ -7234,6 +7274,7 @@
   },
   {
     "id": "production-sister-asks-cake-preference",
+    "audioSourceId": "sister-asks-cake-preference",
     "text": "My younger sister asked, 'Which cake do you like?' so I answered, 'Chocolate or something would be good.'",
     "solution": "妹が「どのケーキが好きなの？」って聞いたので、「チョコレートなんかがいい」と答えました。",
     "type": "production",
@@ -7277,6 +7318,7 @@
   },
   {
     "id": "production-room-not-quiet-but-convenient",
+    "audioSourceId": "room-not-quiet-but-convenient",
     "text": "This room is not quiet, but it is convenient, isn't it?",
     "solution": "この部屋は静かじゃないけど、便利だよね。",
     "type": "production",
@@ -7303,6 +7345,7 @@
   },
   {
     "id": "production-only-hundred-yen-in-wallet",
+    "audioSourceId": "only-hundred-yen-in-wallet",
     "text": "There is only one hundred yen in my wallet.",
     "solution": "財布には百円しかありません。",
     "type": "production",
@@ -7328,6 +7371,7 @@
   },
   {
     "id": "production-brush-before-bed",
+    "audioSourceId": "brush-before-bed",
     "text": "I brush my teeth before going to bed.",
     "solution": "寝る前に、歯を磨きます。",
     "type": "production",
@@ -7353,6 +7397,7 @@
   },
   {
     "id": "production-coffee-before-work",
+    "audioSourceId": "coffee-before-work",
     "text": "Every morning, I go to work after drinking coffee.",
     "solution": "毎朝、コーヒーを飲んでから会社へ行きます。",
     "type": "production",
@@ -7383,6 +7428,7 @@
   },
   {
     "id": "production-uncertain-help-start-alone",
+    "audioSourceId": "uncertain-help-start-alone",
     "text": "I do not know yet whether someone will come to help me. However, I will start by myself.",
     "solution": "誰かが来てくれるかどうか、まだ分かりません。しかし、自分で始めます。",
     "type": "production",
@@ -7418,6 +7464,7 @@
   },
   {
     "id": "production-walk-listening-three-times-weekly",
+    "audioSourceId": "walk-listening-three-times-weekly",
     "text": "Three times a week, I walk for an hour while listening to music.",
     "solution": "一週間に三回、音楽を聞きながら一時間歩きます。",
     "type": "production",
@@ -7452,6 +7499,7 @@
   },
   {
     "id": "production-cats-or-dogs",
+    "audioSourceId": "cats-or-dogs",
     "text": "Which do you like better, dogs or cats? I prefer cats.",
     "solution": "犬と猫とどちらが好きですか。猫が好きです。",
     "type": "production",
@@ -7478,6 +7526,7 @@
   },
   {
     "id": "production-sister-has-beautiful-bicycle",
+    "audioSourceId": "sister-has-beautiful-bicycle",
     "text": "My older sister has a beautiful bicycle.",
     "solution": "姉にはきれいな自転車があります。",
     "type": "production",
@@ -7502,6 +7551,7 @@
   },
   {
     "id": "production-sunday-chores",
+    "audioSourceId": "sunday-chores",
     "text": "On Sundays, I do things like clean the house and cook.",
     "solution": "日曜日は家を掃除したり、料理を作ったりします。",
     "type": "production",
@@ -7526,6 +7576,7 @@
   },
   {
     "id": "production-what-button-does",
+    "audioSourceId": "what-button-does",
     "text": "What happens when you press this button? The door opens.",
     "solution": "「このボタンを押すと、どうなりますか。」「ドアが開きます。」",
     "type": "production",
@@ -7556,6 +7607,7 @@
   },
   {
     "id": "production-ask-route-to-station",
+    "audioSourceId": "ask-route-to-station",
     "text": "How do you get to the station?",
     "solution": "駅までどうやって行きますか。",
     "type": "production",
@@ -7576,6 +7628,7 @@
   },
   {
     "id": "production-take-medicine-when-sick",
+    "audioSourceId": "take-medicine-when-sick",
     "text": "When I am sick, I take medicine.",
     "solution": "病気のとき、薬を飲みます。",
     "type": "production",
@@ -7596,6 +7649,7 @@
   },
   {
     "id": "production-photo-permission",
+    "audioSourceId": "photo-permission",
     "text": "May I take pictures in this room?",
     "solution": "この部屋で写真を撮ってもいいですか。",
     "type": "production",
@@ -7617,6 +7671,7 @@
   },
   {
     "id": "production-early-tomorrow",
+    "audioSourceId": "early-tomorrow",
     "text": "I have to get up early tomorrow.",
     "solution": "明日は早く起きなければなりません。",
     "type": "production",
@@ -7642,6 +7697,7 @@
   },
   {
     "id": "production-no-photos-here",
+    "audioSourceId": "no-photos-here",
     "text": "Please do not take photos here.",
     "solution": "ここで写真を撮らないでください。",
     "type": "production",
@@ -7663,6 +7719,7 @@
   },
   {
     "id": "production-umbrella-offer",
+    "audioSourceId": "umbrella-offer",
     "text": "It is raining, isn't it? Shall I lend you an umbrella?",
     "solution": "雨ですね。傘を貸しましょうか。",
     "type": "production",
@@ -7688,6 +7745,7 @@
   },
   {
     "id": "production-ramen-favorite-food",
+    "audioSourceId": "ramen-favorite-food",
     "text": "Of all Japanese foods, I like ramen best.",
     "solution": "日本の食べ物で、ラーメンが一番好きです。",
     "type": "production",
@@ -7713,6 +7771,7 @@
   },
   {
     "id": "production-try-hot-soup",
+    "audioSourceId": "try-hot-soup",
     "text": "This soup looks hot, but I will try drinking a little.",
     "solution": "このスープは熱そうだけど、少し飲んでみます。",
     "type": "production",
@@ -7742,6 +7801,7 @@
   },
   {
     "id": "production-umbrella-for-possible-rain",
+    "audioSourceId": "umbrella-for-possible-rain",
     "text": "It might rain tomorrow, so I will take an umbrella.",
     "solution": "明日は雨が降るかもしれないので、傘を持って行きます。",
     "type": "production",
@@ -7771,6 +7831,7 @@
   },
   {
     "id": "production-pack-homework-to-remember",
+    "audioSourceId": "pack-homework-to-remember",
     "text": "I put my homework in my bag so that I would not forget it.",
     "solution": "忘れないように、宿題をかばんに入れました。",
     "type": "production",
@@ -7822,6 +7883,7 @@
   },
   {
     "id": "production-casual-no-photos",
+    "audioSourceId": "casual-no-photos",
     "text": "You must not take photos here.",
     "solution": "ここで写真を撮っちゃいけないよ。",
     "type": "production",
@@ -7865,6 +7927,7 @@
   },
   {
     "id": "production-snow-forecast-hearsay",
+    "audioSourceId": "snow-forecast-hearsay",
     "text": "I heard that it will snow tomorrow.",
     "solution": "明日は雪が降るそうです。",
     "type": "production",
@@ -7886,6 +7949,7 @@
   },
   {
     "id": "production-ask-japanese-test-date",
+    "audioSourceId": "ask-japanese-test-date",
     "text": "When will we have the Japanese test?",
     "solution": "いつ日本語のテストをしますか。",
     "type": "production",
@@ -7911,6 +7975,7 @@
   },
   {
     "id": "production-ask-red-bag-price",
+    "audioSourceId": "ask-red-bag-price",
     "text": "How much is this red bag?",
     "solution": "この赤いかばんはいくらですか。",
     "type": "production",
@@ -7936,6 +8001,7 @@
   },
   {
     "id": "production-choose-red-or-blue-shirt",
+    "audioSourceId": "choose-red-or-blue-shirt",
     "text": "Which is better, the red shirt or the blue shirt?",
     "solution": "赤いシャツと青いシャツと、どっちがいいですか。",
     "type": "production",
@@ -7965,6 +8031,7 @@
   },
   {
     "id": "production-write-name-here",
+    "audioSourceId": "write-name-here",
     "text": "Please write your name here.",
     "solution": "こちらにお名前を書いてください。",
     "type": "production",
@@ -7990,6 +8057,7 @@
   },
   {
     "id": "production-leave-and-arrive-every-morning",
+    "audioSourceId": "leave-and-arrive-every-morning",
     "skipVoiceGeneration": true,
     "text": "Every morning, I leave home at seven and arrive at work at eight.",
     "solution": "毎朝七時に家を出て、八時に会社に着きます。",
@@ -8024,6 +8092,7 @@
   },
   {
     "id": "production-no-bicycle-because-rain",
+    "audioSourceId": "no-bicycle-because-rain",
     "text": "I will not ride my bicycle today because it is raining.",
     "solution": "今日は雨なので、自転車に乗りません。",
     "type": "production",
@@ -8049,6 +8118,7 @@
   },
   {
     "id": "production-no-need-to-wake-early",
+    "audioSourceId": "no-need-to-wake-early",
     "text": "You do not have to wake up early today.",
     "solution": "今日は早く起きなくてもいいです。",
     "type": "production",
@@ -8074,6 +8144,7 @@
   },
   {
     "id": "production-why-train-is-stopped",
+    "audioSourceId": "why-train-is-stopped",
     "text": "Why is the train stopped?",
     "solution": "どうして電車が止まっているんですか。",
     "type": "production",
@@ -8099,6 +8170,7 @@
   },
   {
     "id": "production-which-umbrella-is-yours",
+    "audioSourceId": "which-umbrella-is-yours",
     "text": "Which umbrella is yours? It is the black umbrella.",
     "solution": "どの傘があなたのですか。黒い傘です。",
     "type": "production",
@@ -8124,6 +8196,7 @@
   },
   {
     "id": "production-ask-for-this-stamp",
+    "audioSourceId": "ask-for-this-stamp",
     "text": "Please give me this stamp.",
     "solution": "この切手をください。",
     "type": "production",
@@ -8140,6 +8213,7 @@
   },
   {
     "id": "production-sunday-laundry-and-cleaning",
+    "audioSourceId": "sunday-laundry-and-cleaning",
     "text": "On Sundays, I do things like laundry and cleaning my room.",
     "solution": "日曜日は、洗濯をしたり、部屋を掃除したりします。",
     "type": "production",
@@ -8168,6 +8242,7 @@
   },
   {
     "id": "production-must-remove-shoes-at-entrance",
+    "audioSourceId": "must-remove-shoes-at-entrance",
     "text": "You have to take off your shoes at the entrance.",
     "solution": "玄関で靴を脱がなくてはいけません。",
     "type": "production",
@@ -8188,6 +8263,7 @@
   },
   {
     "id": "production-homework-already-finished",
+    "audioSourceId": "homework-already-finished",
     "text": "My homework is already done.",
     "solution": "宿題はもうできました。",
     "type": "production",
@@ -8212,6 +8288,7 @@
   },
   {
     "id": "production-receive-dictionary-from-teacher",
+    "audioSourceId": "receive-dictionary-from-teacher",
     "text": "I received a dictionary from my teacher.",
     "solution": "私は先生から辞書をもらいました。",
     "type": "production",
@@ -8239,6 +8316,7 @@
   },
   {
     "id": "production-pack-clothes-for-trip",
+    "audioSourceId": "pack-clothes-for-trip",
     "text": "I take shirts, trousers, and similar clothes on trips.",
     "solution": "旅行にはシャツやズボンなどを持って行きます。",
     "type": "production",
@@ -8267,6 +8345,7 @@
   },
   {
     "id": "production-wallet-forgotten-at-home",
+    "audioSourceId": "wallet-forgotten-at-home",
     "text": "I accidentally left my wallet at home.",
     "solution": "財布を家に忘れてしまいました。",
     "type": "production",
@@ -8291,6 +8370,7 @@
   },
   {
     "id": "production-ask-for-that-ballpoint-pen",
+    "audioSourceId": "ask-for-that-ballpoint-pen",
     "text": "Please give me that ballpoint pen.",
     "solution": "そのボールペンをください。",
     "type": "production",
@@ -8307,6 +8387,7 @@
   },
   {
     "id": "production-experience-riding-airplane",
+    "audioSourceId": "experience-riding-airplane",
     "text": "I have been on an airplane before.",
     "solution": "飛行機に乗ったことがあります。",
     "type": "production",
@@ -8323,6 +8404,7 @@
   },
   {
     "id": "production-rain-probable-day-after-tomorrow",
+    "audioSourceId": "rain-probable-day-after-tomorrow",
     "text": "It will probably rain the day after tomorrow.",
     "solution": "明後日は多分雨でしょう。",
     "type": "production",
@@ -8347,6 +8429,7 @@
   },
   {
     "id": "production-siblings-study-english",
+    "audioSourceId": "siblings-study-english",
     "text": "Both my older brother and younger sister are studying English.",
     "solution": "兄も妹も英語を勉強しています。",
     "type": "production",
@@ -8376,6 +8459,7 @@
   },
   {
     "id": "production-swim-three-times-weekly",
+    "audioSourceId": "swim-three-times-weekly",
     "text": "I swim at the pool three times a week.",
     "solution": "一週間に三回、プールで泳ぎます。",
     "type": "production",
@@ -8405,6 +8489,7 @@
   },
   {
     "id": "production-game-after-homework",
+    "audioSourceId": "game-after-homework",
     "text": "After doing my homework, I play video games with my friend.",
     "solution": "宿題をした後で、友だちとゲームをします。",
     "type": "production",
@@ -8434,6 +8519,7 @@
   },
   {
     "id": "production-been-to-japan",
+    "audioSourceId": "been-to-japan",
     "text": "Have you ever been to Japan?",
     "solution": "日本へ行ったことがありますか。",
     "type": "production",
@@ -8455,6 +8541,7 @@
   },
   {
     "id": "production-birthday-book-gift",
+    "audioSourceId": "birthday-book-gift",
     "text": "My friend gave me a new book for my birthday.",
     "solution": "誕生日に友だちが新しい本をくれました。",
     "type": "production",
@@ -8484,6 +8571,7 @@
   },
   {
     "id": "production-dangerous-no-swimming",
+    "audioSourceId": "dangerous-no-swimming",
     "text": "You must not swim here because it is dangerous.",
     "solution": "危ないので、ここで泳いではいけません。",
     "type": "production",
@@ -8509,6 +8597,7 @@
   },
   {
     "id": "production-left-without-umbrella",
+    "audioSourceId": "left-without-umbrella",
     "text": "I went out without taking an umbrella.",
     "solution": "傘を持たないで出かけました。",
     "type": "production",
@@ -8534,6 +8623,7 @@
   },
   {
     "id": "production-walk-while-listening",
+    "audioSourceId": "walk-while-listening",
     "text": "Every morning, I listen to music while walking through the park.",
     "solution": "毎朝、公園を歩きながら音楽を聞きます。",
     "type": "production",
@@ -8559,6 +8649,7 @@
   },
   {
     "id": "production-movie-if-rain",
+    "audioSourceId": "movie-if-rain",
     "text": "If it rains, let's watch a movie at home.",
     "solution": "雨が降ったら、家で映画を見ましょう。",
     "type": "production",
@@ -8584,6 +8675,7 @@
   },
   {
     "id": "production-mother-teaches-cake-recipe",
+    "audioSourceId": "mother-teaches-cake-recipe",
     "text": "I had my mother teach me how to make a cake.",
     "solution": "母にケーキの作り方を教えてもらいました。",
     "type": "production",
@@ -8613,6 +8705,7 @@
   },
   {
     "id": "production-forgot-umbrella-on-train",
+    "audioSourceId": "forgot-umbrella-on-train",
     "text": "I accidentally left my umbrella on the train.",
     "solution": "電車に傘を忘れてしまいました。",
     "type": "production",
@@ -8638,6 +8731,7 @@
   },
   {
     "id": "production-sunday-movie-or-book",
+    "audioSourceId": "sunday-movie-or-book",
     "text": "Will you watch a movie or read a book on Sunday?",
     "solution": "日曜日は映画を見ますか、本を読みますか。",
     "type": "production",
@@ -8663,6 +8757,7 @@
   },
   {
     "id": "production-study-one-hour-nightly",
+    "audioSourceId": "study-one-hour-nightly",
     "text": "I study Japanese for about one hour every evening.",
     "solution": "毎晩、一時間ぐらい日本語を勉強します。",
     "type": "production",

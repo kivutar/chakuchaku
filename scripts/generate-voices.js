@@ -3,6 +3,7 @@ import { mkdir, readFile, readdir, stat } from "node:fs/promises";
 import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import * as wanakana from "wanakana";
+import { resolveExerciseAudioSources } from "./exercise-audio.js";
 import "../voice-paths.js";
 import "../conjugation.js";
 import "../reading.js";
@@ -511,10 +512,12 @@ export function createLessonVoiceItems(introductionSource, exercises) {
     minimumLevel: level
   }));
 
-  // Borrowed sentences already have a reading voice. Generate them only through
-  // the reading target, including its retry exclusions; never pay for duplicates.
+  // Shared grammar voices are generated only through their audio owner.
+  // Reading voices retain their own generation target and retry exclusions.
   return [introductionSource, ...introductionVariants,
-    ...exercises.filter((exercise) => exercise.readingSentenceId === undefined)];
+    ...resolveExerciseAudioSources(exercises).filter((exercise) => (
+      exercise.readingSentenceId === undefined && exercise.audioSourceId === undefined
+    ))];
 }
 
 export function createReadingVoiceItems(passages) {

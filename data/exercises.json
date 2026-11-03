@@ -55460,7 +55460,7 @@
   {
     "id": "production-siblings-occupations",
     "text": "My older brother is a company employee, and my older sister is a student.",
-    "audio": "assets/voices/grammar/production-siblings-occupations.m4a",
+    "audio": "assets/voices/grammar/siblings-occupations.m4a",
     "vocabularyIds": [
       "vocab-cda9169e9fa2",
       "vocab-c506bd7fb201",
@@ -55540,6 +55540,7 @@
     "minimumLevel": "n5",
     "solution": "兄は会社員で、姉は学生です。",
     "type": "production",
+    "audioSourceId": "siblings-occupations",
     "promptVocabularyHints": [
       {
         "word": "brother",
@@ -55589,7 +55590,7 @@
   {
     "id": "production-sugar-or-salt",
     "text": "Is this sugar or salt? It is not sugar; it is salt.",
-    "audio": "assets/voices/grammar/production-sugar-or-salt.m4a",
+    "audio": "assets/voices/grammar/sugar-or-salt.m4a",
     "vocabularyIds": [
       "vocab-fb33e3a6798b",
       "vocab-bbd430030244",
@@ -55704,6 +55705,7 @@
     "minimumLevel": "n5",
     "solution": "これは砂糖ですか、塩ですか。砂糖ではありません。塩です。",
     "type": "production",
+    "audioSourceId": "sugar-or-salt",
     "promptVocabularyHints": [
       {
         "word": "sugar",
@@ -55740,7 +55742,7 @@
   {
     "id": "production-cat-under-table",
     "text": "The cat is under the table.",
-    "audio": "assets/voices/grammar/production-cat-under-table.m4a",
+    "audio": "assets/voices/grammar/cat-under-table.m4a",
     "vocabularyIds": [
       "vocab-123a10eb50b0",
       "vocab-f1af08d4c51c",
@@ -55803,6 +55805,7 @@
     "minimumLevel": "n5",
     "solution": "猫はテーブルの下にいます。",
     "type": "production",
+    "audioSourceId": "cat-under-table",
     "promptVocabularyHints": [
       {
         "word": "cat",
@@ -55861,7 +55864,7 @@
   {
     "id": "production-show-teacher-kyoto-photo",
     "text": "I showed my teacher a photo of Kyoto.",
-    "audio": "assets/voices/grammar/production-show-teacher-kyoto-photo.m4a",
+    "audio": "assets/voices/grammar/show-teacher-kyoto-photo.m4a",
     "vocabularyIds": [
       "vocab-497356cf0646",
       "vocab-62153df2c4e3",
@@ -55934,6 +55937,7 @@
     "minimumLevel": "n5",
     "solution": "先生に京都の写真を見せました。",
     "type": "production",
+    "audioSourceId": "show-teacher-kyoto-photo",
     "promptVocabularyHints": [
       {
         "word": "showed",
@@ -55987,7 +55991,7 @@
   {
     "id": "production-family-trip-plan",
     "text": "I plan to go to Kyoto with my family next month.",
-    "audio": "assets/voices/grammar/production-family-trip-plan.m4a",
+    "audio": "assets/voices/grammar/family-trip-plan.m4a",
     "vocabularyIds": [
       "vocab-55fef51b0694",
       "vocab-a16373e2426c",
@@ -56061,6 +56065,7 @@
     "minimumLevel": "n5",
     "solution": "来月、家族と京都に行くつもりです。",
     "type": "production",
+    "audioSourceId": "family-trip-plan",
     "promptVocabularyHints": [
       {
         "word": "plan",
@@ -56110,7 +56115,7 @@
   {
     "id": "production-busy-yesterday-not-today",
     "text": "I was busy yesterday, but I am not busy today.",
-    "audio": "assets/voices/grammar/production-busy-yesterday-not-today.m4a",
+    "audio": "assets/voices/grammar/busy-yesterday-not-today.m4a",
     "vocabularyIds": [
       "vocab-eb208b6436bb",
       "vocab-5ee54e973899",
@@ -56193,6 +56198,7 @@
     "minimumLevel": "n5",
     "solution": "昨日は忙しかったですが、今日は忙しくないです。",
     "type": "production",
+    "audioSourceId": "busy-yesterday-not-today",
     "promptVocabularyHints": [
       {
         "word": "busy",
@@ -56236,7 +56242,7 @@
   {
     "id": "production-old-apartment-description",
     "text": "My previous apartment was quiet, but it was not convenient.",
-    "audio": "assets/voices/grammar/production-old-apartment-description.m4a",
+    "audio": "assets/voices/grammar/old-apartment-description.m4a",
     "vocabularyIds": [
       "vocab-07f353ef981c",
       "vocab-c7012a730acb",
@@ -56346,6 +56352,7 @@
     "minimumLevel": "n5",
     "solution": "前のアパートは静かでしたが、便利ではありませんでした。",
     "type": "production",
+    "audioSourceId": "old-apartment-description",
     "promptVocabularyHints": [
       {
         "word": "previous",
@@ -56400,7 +56407,7 @@
   {
     "id": "production-bus-cheaper-than-train",
     "text": "The bus is cheaper than the train.",
-    "audio": "assets/voices/grammar/production-bus-cheaper-than-train.m4a",
+    "audio": "assets/voices/grammar/bus-cheaper-than-train.m4a",
     "vocabularyIds": [
       "vocab-dc7f5fc156cf",
       "vocab-826a124ad930",
@@ -56465,6 +56472,7 @@
     "minimumLevel": "n5",
     "solution": "電車よりバスのほうが安いです。",
     "type": "production",
+    "audioSourceId": "bus-cheaper-than-train",
     "promptVocabularyHints": [
       {
         "word": "bus",
@@ -56506,7 +56514,7 @@
   {
     "id": "production-choose-same-cake-as-sister",
     "text": "I chose the same cake as my older sister.",
-    "audio": "assets/voices/grammar/production-choose-same-cake-as-sister.m4a",
+    "audio": "assets/voices/grammar/choose-same-cake-as-sister.m4a",
     "vocabularyIds": [
       "vocab-e3507900ad06",
       "vocab-9ff4f40a3428",
@@ -56570,6 +56578,7 @@
     "minimumLevel": "n5",
     "solution": "姉と同じケーキにしました。",
     "type": "production",
+    "audioSourceId": "choose-same-cake-as-sister",
     "promptVocabularyHints": [
       {
         "word": "same",
@@ -56610,7 +56619,7 @@
   {
     "id": "production-spring-gets-warmer",
     "text": "Spring arrived, and it gradually became warmer.",
-    "audio": "assets/voices/grammar/production-spring-gets-warmer.m4a",
+    "audio": "assets/voices/grammar/spring-gets-warmer.m4a",
     "vocabularyIds": [
       "vocab-18597113ac94",
       "vocab-3653e718a1a5",
@@ -56699,6 +56708,7 @@
     "minimumLevel": "n5",
     "solution": "春になりました。そして、段々暖かくなりました。",
     "type": "production",
+    "audioSourceId": "spring-gets-warmer",
     "promptVocabularyHints": [
       {
         "word": "spring",
@@ -56752,7 +56762,7 @@
   {
     "id": "production-quiet-library",
     "text": "Please read quietly in the library.",
-    "audio": "assets/voices/grammar/production-quiet-library.m4a",
+    "audio": "assets/voices/grammar/quiet-library.m4a",
     "vocabularyIds": [
       "vocab-ca8d0efe19a3",
       "vocab-61b57e2d4702",
@@ -56830,6 +56840,7 @@
     "minimumLevel": "n5",
     "solution": "図書館では静かに本を読んでください。",
     "type": "production",
+    "audioSourceId": "quiet-library",
     "promptVocabularyHints": [
       {
         "word": "read",
@@ -56872,7 +56883,7 @@
   {
     "id": "production-cold-bedtime-advice",
     "text": "Since you have a cold, you should go to bed early today.",
-    "audio": "assets/voices/grammar/production-cold-bedtime-advice.m4a",
+    "audio": "assets/voices/grammar/cold-bedtime-advice.m4a",
     "vocabularyIds": [
       "vocab-1acb36bc84d4",
       "vocab-6b9362de88a7",
@@ -56971,6 +56982,7 @@
     "minimumLevel": "n5",
     "solution": "風邪ですから、今日は早く寝たほうがいいですよ。",
     "type": "production",
+    "audioSourceId": "cold-bedtime-advice",
     "promptVocabularyHints": [
       {
         "word": "cold",
@@ -57187,7 +57199,7 @@
   {
     "id": "production-meet-around-three",
     "text": "Let us meet at the station around three o'clock.",
-    "audio": "assets/voices/grammar/production-meet-around-three.m4a",
+    "audio": "assets/voices/grammar/meet-around-three.m4a",
     "vocabularyIds": [
       "vocab-1bedf722c04a",
       "vocab-e267b19a680f",
@@ -57253,6 +57265,7 @@
     "minimumLevel": "n5",
     "solution": "三時ごろ駅で会いましょう。",
     "type": "production",
+    "audioSourceId": "meet-around-three",
     "promptVocabularyHints": [
       {
         "word": "meet",
@@ -57300,7 +57313,7 @@
   {
     "id": "production-must-wake-early",
     "text": "I have to wake up early tomorrow.",
-    "audio": "assets/voices/grammar/production-must-wake-early.m4a",
+    "audio": "assets/voices/grammar/must-wake-early.m4a",
     "vocabularyIds": [
       "vocab-bec9ce9d08c8",
       "vocab-72460e05df01",
@@ -57374,6 +57387,7 @@
     "minimumLevel": "n5",
     "solution": "明日は早く起きなくてはいけません。",
     "type": "production",
+    "audioSourceId": "must-wake-early",
     "promptVocabularyHints": [
       {
         "word": "wake",
@@ -57410,7 +57424,7 @@
   {
     "id": "production-ask-duration-to-station",
     "text": "About how long does it take from here to the station?",
-    "audio": "assets/voices/grammar/production-ask-duration-to-station.m4a",
+    "audio": "assets/voices/grammar/ask-duration-to-station.m4a",
     "vocabularyIds": [
       "vocab-f4ee05460d54",
       "vocab-d29031265cf4",
@@ -57478,6 +57492,7 @@
     "minimumLevel": "n5",
     "solution": "ここから駅までどのくらいかかりますか。",
     "type": "production",
+    "audioSourceId": "ask-duration-to-station",
     "promptVocabularyHints": [
       {
         "word": "here",
@@ -57530,7 +57545,7 @@
   {
     "id": "production-borrow-library-books-twice-weekly",
     "text": "I go to the library to borrow books twice a week.",
-    "audio": "assets/voices/grammar/production-borrow-library-books-twice-weekly.m4a",
+    "audio": "assets/voices/grammar/borrow-library-books-twice-weekly.m4a",
     "vocabularyIds": [
       "vocab-5d8047464c5d",
       "vocab-fd63d3fc7c86",
@@ -57640,6 +57655,7 @@
     "minimumLevel": "n5",
     "solution": "一週間に二回、図書館へ本を借りに行きます。",
     "type": "production",
+    "audioSourceId": "borrow-library-books-twice-weekly",
     "promptVocabularyHints": [
       {
         "word": "library",
@@ -57701,7 +57717,7 @@
   {
     "id": "production-order-hot-tea",
     "text": "Excuse me, one hot tea, please.",
-    "audio": "assets/voices/grammar/production-order-hot-tea.m4a",
+    "audio": "assets/voices/grammar/order-hot-tea.m4a",
     "vocabularyIds": [
       "vocab-20c644122287",
       "vocab-dec4a6497500",
@@ -57761,6 +57777,7 @@
     "minimumLevel": "n5",
     "solution": "すみません、熱いお茶を一つください。",
     "type": "production",
+    "audioSourceId": "order-hot-tea",
     "promptVocabularyHints": [
       {
         "word": "tea",
@@ -57803,7 +57820,7 @@
   {
     "id": "production-brother-buys-five-snacks",
     "text": "My older brother bought as many as five snacks.",
-    "audio": "assets/voices/grammar/production-brother-buys-five-snacks.m4a",
+    "audio": "assets/voices/grammar/brother-buys-five-snacks.m4a",
     "vocabularyIds": [
       "vocab-cda9169e9fa2",
       "vocab-3841b646739f",
@@ -57874,6 +57891,7 @@
     "minimumLevel": "n5",
     "solution": "兄はお菓子を五つも買いました。",
     "type": "production",
+    "audioSourceId": "brother-buys-five-snacks",
     "promptVocabularyHints": [
       {
         "word": "brother",
@@ -57915,7 +57933,7 @@
   {
     "id": "production-plan-party-numbers",
     "text": "How many people are coming to the party? How many cakes will you buy?",
-    "audio": "assets/voices/grammar/production-plan-party-numbers.m4a",
+    "audio": "assets/voices/grammar/plan-party-numbers.m4a",
     "vocabularyIds": [
       "vocab-37388d6a51a3",
       "vocab-3b010d61ddd5",
@@ -58021,6 +58039,7 @@
     "minimumLevel": "n5",
     "solution": "パーティーには何人来ますか。ケーキはいくつ買いますか。",
     "type": "production",
+    "audioSourceId": "plan-party-numbers",
     "promptVocabularyHints": [
       {
         "word": "people",
@@ -58079,7 +58098,7 @@
   {
     "id": "production-morning-routine-verb-groups",
     "text": "Every morning, I wash my face, take a shower, and study.",
-    "audio": "assets/voices/grammar/production-morning-routine-verb-groups.m4a",
+    "audio": "assets/voices/grammar/morning-routine-verb-groups.m4a",
     "vocabularyIds": [
       "vocab-ecd92861d4d7",
       "vocab-a048719a9044",
@@ -58183,6 +58202,7 @@
     "minimumLevel": "n5",
     "solution": "毎朝、顔を洗って、シャワーを浴びて、勉強します。",
     "type": "production",
+    "audioSourceId": "morning-routine-verb-groups",
     "promptVocabularyHints": [
       {
         "word": "morning",
@@ -58230,7 +58250,7 @@
   {
     "id": "production-open-window-empty-room",
     "text": "The window had been left open, but nobody was there.",
-    "audio": "assets/voices/grammar/production-open-window-empty-room.m4a",
+    "audio": "assets/voices/grammar/open-window-empty-room.m4a",
     "vocabularyIds": [
       "vocab-2c2d6564a0bc",
       "vocab-658ff53bc114",
@@ -58318,6 +58338,7 @@
     "minimumLevel": "n5",
     "solution": "窓が開けてあったけど、誰もいなかった。",
     "type": "production",
+    "audioSourceId": "open-window-empty-room",
     "promptVocabularyHints": [
       {
         "word": "window",
@@ -58376,7 +58397,7 @@
   {
     "id": "production-sister-not-eaten-yet",
     "text": "My younger sister has not eaten anything yet.",
-    "audio": "assets/voices/grammar/production-sister-not-eaten-yet.m4a",
+    "audio": "assets/voices/grammar/sister-not-eaten-yet.m4a",
     "vocabularyIds": [
       "vocab-735d35e5b1be",
       "vocab-f385448e1132",
@@ -58451,6 +58472,7 @@
     "minimumLevel": "n5",
     "solution": "妹はまだ何も食べていません。",
     "type": "production",
+    "audioSourceId": "sister-not-eaten-yet",
     "promptVocabularyHints": [
       {
         "word": "sister",
@@ -58509,7 +58531,7 @@
   {
     "id": "production-left-home-without-key",
     "text": "I ended up leaving home without my key.",
-    "audio": "assets/voices/grammar/production-left-home-without-key.m4a",
+    "audio": "assets/voices/grammar/left-home-without-key.m4a",
     "vocabularyIds": [
       "vocab-dd7cf58e61fa",
       "vocab-516ad1128c71",
@@ -58594,6 +58616,7 @@
     "minimumLevel": "n5",
     "solution": "鍵を持たないで家を出てしまいました。",
     "type": "production",
+    "audioSourceId": "left-home-without-key",
     "promptVocabularyHints": [
       {
         "word": "leaving",
@@ -58640,7 +58663,7 @@
   {
     "id": "production-library-weekday-hours",
     "text": "The library is open from Monday through Friday.",
-    "audio": "assets/voices/grammar/production-library-weekday-hours.m4a",
+    "audio": "assets/voices/grammar/library-weekday-hours.m4a",
     "vocabularyIds": [
       "vocab-ca8d0efe19a3",
       "vocab-61c02e7f4acc",
@@ -58720,6 +58743,7 @@
     "minimumLevel": "n5",
     "solution": "図書館は月曜日から金曜日まで開いています。",
     "type": "production",
+    "audioSourceId": "library-weekday-hours",
     "promptVocabularyHints": [
       {
         "word": "library",
@@ -58767,7 +58791,7 @@
   {
     "id": "production-try-playing-guitar",
     "text": "I have never played the guitar. I would like to try it.",
-    "audio": "assets/voices/grammar/production-try-playing-guitar.m4a",
+    "audio": "assets/voices/grammar/try-playing-guitar.m4a",
     "vocabularyIds": [
       "vocab-e1ede1d758f0",
       "vocab-a27e87116d14",
@@ -58858,6 +58882,7 @@
     "minimumLevel": "n5",
     "solution": "ギターを弾いたことがありません。弾いてみたいです。",
     "type": "production",
+    "audioSourceId": "try-playing-guitar",
     "promptVocabularyHints": [
       {
         "word": "guitar",
@@ -58888,7 +58913,7 @@
   {
     "id": "production-photography-and-camera",
     "text": "I like taking photos, and I want a new camera.",
-    "audio": "assets/voices/grammar/production-photography-and-camera.m4a",
+    "audio": "assets/voices/grammar/photography-and-camera.m4a",
     "vocabularyIds": [
       "vocab-d5901ecbf5fb",
       "vocab-897d3a642135",
@@ -58982,6 +59007,7 @@
     "minimumLevel": "n5",
     "solution": "写真を撮るのが好きで、新しいカメラが欲しいです。",
     "type": "production",
+    "audioSourceId": "photography-and-camera",
     "promptVocabularyHints": [
       {
         "word": "taking",
@@ -59036,7 +59062,7 @@
   {
     "id": "production-father-reads-japanese",
     "text": "My father can read Japanese newspapers.",
-    "audio": "assets/voices/grammar/production-father-reads-japanese.m4a",
+    "audio": "assets/voices/grammar/father-reads-japanese.m4a",
     "vocabularyIds": [
       "vocab-d15ca6ea1179",
       "vocab-e6870aa0d14e",
@@ -59124,6 +59150,7 @@
     "minimumLevel": "n5",
     "solution": "父は日本語の新聞を読むことができます。",
     "type": "production",
+    "audioSourceId": "father-reads-japanese",
     "promptVocabularyHints": [
       {
         "word": "father",
@@ -59171,7 +59198,7 @@
   {
     "id": "production-weekend-movies-together",
     "text": "On weekends, I often watch movies with my friends.",
-    "audio": "assets/voices/grammar/production-weekend-movies-together.m4a",
+    "audio": "assets/voices/grammar/weekend-movies-together.m4a",
     "vocabularyIds": [
       "vocab-ad5be9c1595b",
       "vocab-ac0d84b30392",
@@ -59258,6 +59285,7 @@
     "minimumLevel": "n5",
     "solution": "週末はよく友だちと一緒に映画を見ます。",
     "type": "production",
+    "audioSourceId": "weekend-movies-together",
     "promptVocabularyHints": [
       {
         "word": "weekends",
@@ -59311,7 +59339,7 @@
   {
     "id": "production-favorite-kind-of-music",
     "text": "What kind of music do you like listening to?",
-    "audio": "assets/voices/grammar/production-favorite-kind-of-music.m4a",
+    "audio": "assets/voices/grammar/favorite-kind-of-music.m4a",
     "vocabularyIds": [
       "vocab-89335bcfbc88",
       "vocab-83b219893eca",
@@ -59382,6 +59410,7 @@
     "minimumLevel": "n5",
     "solution": "どんな音楽を聞くのが好きですか。",
     "type": "production",
+    "audioSourceId": "favorite-kind-of-music",
     "promptVocabularyHints": [
       {
         "word": "kind",
@@ -59440,7 +59469,7 @@
   {
     "id": "production-give-brother-book-and-read-it",
     "text": "I gave my younger brother a book and read it to him.",
-    "audio": "assets/voices/grammar/production-give-brother-book-and-read-it.m4a",
+    "audio": "assets/voices/grammar/give-brother-book-and-read-it.m4a",
     "vocabularyIds": [
       "vocab-7e8dc4d63e82",
       "vocab-0ac038632611",
@@ -59524,6 +59553,7 @@
     "minimumLevel": "n5",
     "solution": "弟に本をあげて、読んであげました。",
     "type": "production",
+    "audioSourceId": "give-brother-book-and-read-it",
     "promptVocabularyHints": [
       {
         "word": "brother",
@@ -59571,7 +59601,7 @@
   {
     "id": "production-mother-gave-clothes-and-took-photo",
     "text": "My mother gave me new clothes and also took a photo for me.",
-    "audio": "assets/voices/grammar/production-mother-gave-clothes-and-took-photo.m4a",
+    "audio": "assets/voices/grammar/mother-gave-clothes-and-took-photo.m4a",
     "vocabularyIds": [
       "vocab-7fa86c660a00",
       "vocab-288a95a40d95",
@@ -59676,6 +59706,7 @@
     "minimumLevel": "n5",
     "solution": "母が新しい服をくれて、写真も撮ってくれました。",
     "type": "production",
+    "audioSourceId": "mother-gave-clothes-and-took-photo",
     "promptVocabularyHints": [
       {
         "word": "mother",
@@ -59731,7 +59762,7 @@
   {
     "id": "production-receive-cookbook-and-curry-help",
     "text": "I received a cookbook from my older sister and had her teach me how to make curry.",
-    "audio": "assets/voices/grammar/production-receive-cookbook-and-curry-help.m4a",
+    "audio": "assets/voices/grammar/receive-cookbook-and-curry-help.m4a",
     "vocabularyIds": [
       "vocab-e3507900ad06",
       "vocab-6ab8f730431c",
@@ -59855,6 +59886,7 @@
     "minimumLevel": "n5",
     "solution": "姉に料理の本をもらって、カレーの作り方を教えてもらいました。",
     "type": "production",
+    "audioSourceId": "receive-cookbook-and-curry-help",
     "promptVocabularyHints": [
       {
         "word": "received",
@@ -59916,7 +59948,7 @@
   {
     "id": "production-teacher-announces-test",
     "text": "The teacher said, \"There will be a test tomorrow.\"",
-    "audio": "assets/voices/grammar/production-teacher-announces-test.m4a",
+    "audio": "assets/voices/grammar/teacher-announces-test.m4a",
     "vocabularyIds": [
       "vocab-497356cf0646",
       "vocab-bec9ce9d08c8",
@@ -60012,6 +60044,7 @@
     "minimumLevel": "n5",
     "solution": "先生は「明日、テストがあります」と言いました。",
     "type": "production",
+    "audioSourceId": "teacher-announces-test",
     "promptVocabularyHints": [
       {
         "word": "teacher",
@@ -60070,7 +60103,7 @@
   {
     "id": "production-rain-probability-opinion",
     "text": "It will probably rain tomorrow. I think we will need an umbrella.",
-    "audio": "assets/voices/grammar/production-rain-probability-opinion.m4a",
+    "audio": "assets/voices/grammar/rain-probability-opinion.m4a",
     "vocabularyIds": [
       "vocab-bec9ce9d08c8",
       "vocab-7e87850c448d",
@@ -60176,6 +60209,7 @@
     "minimumLevel": "n5",
     "solution": "明日は雨が降るでしょう。傘が必要だと思います。",
     "type": "production",
+    "audioSourceId": "rain-probability-opinion",
     "promptVocabularyHints": [
       {
         "word": "rain",
@@ -60407,7 +60441,7 @@
   {
     "id": "production-cake-too-sweet",
     "text": "This cake is too sweet, so I will eat only half.",
-    "audio": "assets/voices/grammar/production-cake-too-sweet.m4a",
+    "audio": "assets/voices/grammar/cake-too-sweet.m4a",
     "vocabularyIds": [
       "vocab-25acc002a82f",
       "vocab-da08a01c25e4",
@@ -60488,6 +60522,7 @@
     "minimumLevel": "n5",
     "solution": "このケーキは甘すぎるので、半分だけ食べます。",
     "type": "production",
+    "audioSourceId": "cake-too-sweet",
     "promptVocabularyHints": [
       {
         "word": "cake",
@@ -60540,7 +60575,7 @@
   {
     "id": "production-no-heavy-coat-this-morning",
     "text": "It was not very cold this morning, so I did not wear a thick coat.",
-    "audio": "assets/voices/grammar/production-no-heavy-coat-this-morning.m4a",
+    "audio": "assets/voices/grammar/no-heavy-coat-this-morning.m4a",
     "vocabularyIds": [
       "vocab-c290e4d3a56e",
       "vocab-255c097781c5",
@@ -60648,6 +60683,7 @@
     "minimumLevel": "n5",
     "solution": "今朝はあまり寒くなかったので、厚いコートを着ませんでした。",
     "type": "production",
+    "audioSourceId": "no-heavy-coat-this-morning",
     "promptVocabularyHints": [
       {
         "word": "morning",
@@ -60703,7 +60739,7 @@
   {
     "id": "production-sleep-before-early-morning",
     "text": "I have to go to bed now because I am getting up early tomorrow.",
-    "audio": "assets/voices/grammar/production-sleep-before-early-morning.m4a",
+    "audio": "assets/voices/grammar/sleep-before-early-morning.m4a",
     "vocabularyIds": [
       "vocab-bec9ce9d08c8",
       "vocab-72460e05df01",
@@ -60775,6 +60811,7 @@
     "minimumLevel": "n5",
     "solution": "明日は早く起きるから、もう寝なきゃ。",
     "type": "production",
+    "audioSourceId": "sleep-before-early-morning",
     "promptVocabularyHints": [
       {
         "word": "bed",
@@ -60828,7 +60865,7 @@
   {
     "id": "production-sometimes-dinner-after-work",
     "text": "I sometimes eat dinner at a restaurant after work.",
-    "audio": "assets/voices/grammar/production-sometimes-dinner-after-work.m4a",
+    "audio": "assets/voices/grammar/sometimes-dinner-after-work.m4a",
     "vocabularyIds": [
       "vocab-cdf28ddaf837",
       "vocab-415439a1dbb6",
@@ -60938,6 +60975,7 @@
     "minimumLevel": "n5",
     "solution": "仕事の後で、レストランで晩御飯を食べることがあります。",
     "type": "production",
+    "audioSourceId": "sometimes-dinner-after-work",
     "promptVocabularyHints": [
       {
         "word": "dinner",
@@ -60985,7 +61023,7 @@
   {
     "id": "production-buy-umbrella-despite-rain",
     "text": "It is raining today. However, I will go and buy an umbrella.",
-    "audio": "assets/voices/grammar/production-buy-umbrella-despite-rain.m4a",
+    "audio": "assets/voices/grammar/buy-umbrella-despite-rain.m4a",
     "vocabularyIds": [
       "vocab-6b9362de88a7",
       "vocab-7e87850c448d",
@@ -61079,6 +61117,7 @@
     "minimumLevel": "n5",
     "solution": "今日は雨です。でも、傘を買いに行きます。",
     "type": "production",
+    "audioSourceId": "buy-umbrella-despite-rain",
     "promptVocabularyHints": [
       {
         "word": "raining",
@@ -61131,7 +61170,7 @@
   {
     "id": "production-seaside-coffee-invitation",
     "text": "The sea is beautiful. How about this table? Shall we have coffee or something?",
-    "audio": "assets/voices/grammar/production-seaside-coffee-invitation.m4a",
+    "audio": "assets/voices/grammar/seaside-coffee-invitation.m4a",
     "vocabularyIds": [
       "vocab-47c1227c459b",
       "vocab-58a738a344fe",
@@ -61264,6 +61303,7 @@
     "minimumLevel": "n5",
     "solution": "海がきれいだなあ。こちらのテーブルはどうですか。コーヒーでも飲みませんか。",
     "type": "production",
+    "audioSourceId": "seaside-coffee-invitation",
     "promptVocabularyHints": [
       {
         "word": "sea",
@@ -61500,7 +61540,7 @@
   {
     "id": "production-sister-asks-cake-preference",
     "text": "My younger sister asked, 'Which cake do you like?' so I answered, 'Chocolate or something would be good.'",
-    "audio": "assets/voices/grammar/production-sister-asks-cake-preference.m4a",
+    "audio": "assets/voices/grammar/sister-asks-cake-preference.m4a",
     "vocabularyIds": [
       "vocab-735d35e5b1be",
       "vocab-5400f9f54134",
@@ -61658,6 +61698,7 @@
     "minimumLevel": "n5",
     "solution": "妹が「どのケーキが好きなの？」って聞いたので、「チョコレートなんかがいい」と答えました。",
     "type": "production",
+    "audioSourceId": "sister-asks-cake-preference",
     "promptVocabularyHints": [
       {
         "word": "sister",
@@ -61740,7 +61781,7 @@
   {
     "id": "production-room-not-quiet-but-convenient",
     "text": "This room is not quiet, but it is convenient, isn't it?",
-    "audio": "assets/voices/grammar/production-room-not-quiet-but-convenient.m4a",
+    "audio": "assets/voices/grammar/room-not-quiet-but-convenient.m4a",
     "vocabularyIds": [
       "vocab-25acc002a82f",
       "vocab-23523bbf8d9c",
@@ -61823,6 +61864,7 @@
     "minimumLevel": "n5",
     "solution": "この部屋は静かじゃないけど、便利だよね。",
     "type": "production",
+    "audioSourceId": "room-not-quiet-but-convenient",
     "promptVocabularyHints": [
       {
         "word": "room",
@@ -61875,7 +61917,7 @@
   {
     "id": "production-only-hundred-yen-in-wallet",
     "text": "There is only one hundred yen in my wallet.",
-    "audio": "assets/voices/grammar/production-only-hundred-yen-in-wallet.m4a",
+    "audio": "assets/voices/grammar/only-hundred-yen-in-wallet.m4a",
     "vocabularyIds": [
       "vocab-c5df4f2e7eab",
       "vocab-96a032e15dda",
@@ -61944,6 +61986,7 @@
     "minimumLevel": "n5",
     "solution": "財布には百円しかありません。",
     "type": "production",
+    "audioSourceId": "only-hundred-yen-in-wallet",
     "promptVocabularyHints": [
       {
         "word": "hundred",
@@ -61990,7 +62033,7 @@
   {
     "id": "production-brush-before-bed",
     "text": "I brush my teeth before going to bed.",
-    "audio": "assets/voices/grammar/production-brush-before-bed.m4a",
+    "audio": "assets/voices/grammar/brush-before-bed.m4a",
     "vocabularyIds": [
       "vocab-50eb0e80c367",
       "vocab-07f353ef981c",
@@ -62052,6 +62095,7 @@
     "minimumLevel": "n5",
     "solution": "寝る前に、歯を磨きます。",
     "type": "production",
+    "audioSourceId": "brush-before-bed",
     "promptVocabularyHints": [
       {
         "word": "brush",
@@ -62089,7 +62133,7 @@
   {
     "id": "production-coffee-before-work",
     "text": "Every morning, I go to work after drinking coffee.",
-    "audio": "assets/voices/grammar/production-coffee-before-work.m4a",
+    "audio": "assets/voices/grammar/coffee-before-work.m4a",
     "vocabularyIds": [
       "vocab-ecd92861d4d7",
       "vocab-f5f2c2dca175",
@@ -62173,6 +62217,7 @@
     "minimumLevel": "n5",
     "solution": "毎朝、コーヒーを飲んでから会社へ行きます。",
     "type": "production",
+    "audioSourceId": "coffee-before-work",
     "promptVocabularyHints": [
       {
         "word": "morning",
@@ -62222,7 +62267,7 @@
   {
     "id": "production-uncertain-help-start-alone",
     "text": "I do not know yet whether someone will come to help me. However, I will start by myself.",
-    "audio": "assets/voices/grammar/production-uncertain-help-start-alone.m4a",
+    "audio": "assets/voices/grammar/uncertain-help-start-alone.m4a",
     "vocabularyIds": [
       "vocab-f3f74ef8bc9a",
       "vocab-bc01756b4d89",
@@ -62359,6 +62404,7 @@
     "minimumLevel": "n5",
     "solution": "誰かが来てくれるかどうか、まだ分かりません。しかし、自分で始めます。",
     "type": "production",
+    "audioSourceId": "uncertain-help-start-alone",
     "promptVocabularyHints": [
       {
         "word": "someone",
@@ -62426,7 +62472,7 @@
   {
     "id": "production-walk-listening-three-times-weekly",
     "text": "Three times a week, I walk for an hour while listening to music.",
-    "audio": "assets/voices/grammar/production-walk-listening-three-times-weekly.m4a",
+    "audio": "assets/voices/grammar/walk-listening-three-times-weekly.m4a",
     "vocabularyIds": [
       "vocab-5d8047464c5d",
       "vocab-fd63d3fc7c86",
@@ -62536,6 +62582,7 @@
     "minimumLevel": "n5",
     "solution": "一週間に三回、音楽を聞きながら一時間歩きます。",
     "type": "production",
+    "audioSourceId": "walk-listening-three-times-weekly",
     "promptVocabularyHints": [
       {
         "word": "Three",
@@ -62597,7 +62644,7 @@
   {
     "id": "production-cats-or-dogs",
     "text": "Which do you like better, dogs or cats? I prefer cats.",
-    "audio": "assets/voices/grammar/production-cats-or-dogs.m4a",
+    "audio": "assets/voices/grammar/cats-or-dogs.m4a",
     "vocabularyIds": [
       "vocab-4cd1238bcb91",
       "vocab-123a10eb50b0",
@@ -62692,6 +62739,7 @@
     "minimumLevel": "n5",
     "solution": "犬と猫とどちらが好きですか。猫が好きです。",
     "type": "production",
+    "audioSourceId": "cats-or-dogs",
     "promptVocabularyHints": [
       {
         "word": "dogs",
@@ -62729,7 +62777,7 @@
   {
     "id": "production-sister-has-beautiful-bicycle",
     "text": "My older sister has a beautiful bicycle.",
-    "audio": "assets/voices/grammar/production-sister-has-beautiful-bicycle.m4a",
+    "audio": "assets/voices/grammar/sister-has-beautiful-bicycle.m4a",
     "vocabularyIds": [
       "vocab-e3507900ad06",
       "vocab-58a738a344fe",
@@ -62800,6 +62848,7 @@
     "minimumLevel": "n5",
     "solution": "姉にはきれいな自転車があります。",
     "type": "production",
+    "audioSourceId": "sister-has-beautiful-bicycle",
     "promptVocabularyHints": [
       {
         "word": "sister",
@@ -62840,7 +62889,7 @@
   {
     "id": "production-sunday-chores",
     "text": "On Sundays, I do things like clean the house and cook.",
-    "audio": "assets/voices/grammar/production-sunday-chores.m4a",
+    "audio": "assets/voices/grammar/sunday-chores.m4a",
     "vocabularyIds": [
       "vocab-b7519a0f57a7",
       "vocab-8af58778f14e",
@@ -62942,6 +62991,7 @@
     "minimumLevel": "n5",
     "solution": "日曜日は家を掃除したり、料理を作ったりします。",
     "type": "production",
+    "audioSourceId": "sunday-chores",
     "promptVocabularyHints": [
       {
         "word": "Sundays",
@@ -62979,7 +63029,7 @@
   {
     "id": "production-what-button-does",
     "text": "What happens when you press this button? The door opens.",
-    "audio": "assets/voices/grammar/production-what-button-does.m4a",
+    "audio": "assets/voices/grammar/what-button-does.m4a",
     "vocabularyIds": [
       "vocab-25acc002a82f",
       "vocab-6e6aad33bc6f",
@@ -63097,6 +63147,7 @@
     "minimumLevel": "n5",
     "solution": "「このボタンを押すと、どうなりますか。」「ドアが開きます。」",
     "type": "production",
+    "audioSourceId": "what-button-does",
     "promptVocabularyHints": [
       {
         "word": "happens",
@@ -63151,7 +63202,7 @@
   {
     "id": "production-ask-route-to-station",
     "text": "How do you get to the station?",
-    "audio": "assets/voices/grammar/production-ask-route-to-station.m4a",
+    "audio": "assets/voices/grammar/ask-route-to-station.m4a",
     "vocabularyIds": [
       "vocab-d29031265cf4",
       "vocab-99b783690b64",
@@ -63213,6 +63264,7 @@
     "minimumLevel": "n5",
     "solution": "駅までどうやって行きますか。",
     "type": "production",
+    "audioSourceId": "ask-route-to-station",
     "promptVocabularyHints": [
       {
         "word": "station",
@@ -63247,7 +63299,7 @@
   {
     "id": "production-take-medicine-when-sick",
     "text": "When I am sick, I take medicine.",
-    "audio": "assets/voices/grammar/production-take-medicine-when-sick.m4a",
+    "audio": "assets/voices/grammar/take-medicine-when-sick.m4a",
     "vocabularyIds": [
       "vocab-f1d4ccc1ebeb",
       "vocab-3ec9b1831a40",
@@ -63312,6 +63364,7 @@
     "minimumLevel": "n5",
     "solution": "病気のとき、薬を飲みます。",
     "type": "production",
+    "audioSourceId": "take-medicine-when-sick",
     "promptVocabularyHints": [
       {
         "word": "sick",
@@ -63347,7 +63400,7 @@
   {
     "id": "production-photo-permission",
     "text": "May I take pictures in this room?",
-    "audio": "assets/voices/grammar/production-photo-permission.m4a",
+    "audio": "assets/voices/grammar/photo-permission.m4a",
     "vocabularyIds": [
       "vocab-25acc002a82f",
       "vocab-23523bbf8d9c",
@@ -63429,6 +63482,7 @@
     "minimumLevel": "n5",
     "solution": "この部屋で写真を撮ってもいいですか。",
     "type": "production",
+    "audioSourceId": "photo-permission",
     "promptVocabularyHints": [
       {
         "word": "pictures",
@@ -63470,7 +63524,7 @@
   {
     "id": "production-early-tomorrow",
     "text": "I have to get up early tomorrow.",
-    "audio": "assets/voices/grammar/production-early-tomorrow.m4a",
+    "audio": "assets/voices/grammar/early-tomorrow.m4a",
     "vocabularyIds": [
       "vocab-bec9ce9d08c8",
       "vocab-72460e05df01",
@@ -63539,6 +63593,7 @@
     "minimumLevel": "n5",
     "solution": "明日は早く起きなければなりません。",
     "type": "production",
+    "audioSourceId": "early-tomorrow",
     "promptVocabularyHints": [
       {
         "word": "get",
@@ -63575,7 +63630,7 @@
   {
     "id": "production-no-photos-here",
     "text": "Please do not take photos here.",
-    "audio": "assets/voices/grammar/production-no-photos-here.m4a",
+    "audio": "assets/voices/grammar/no-photos-here.m4a",
     "vocabularyIds": [
       "vocab-f4ee05460d54",
       "vocab-d5901ecbf5fb",
@@ -63637,6 +63692,7 @@
     "minimumLevel": "n5",
     "solution": "ここで写真を撮らないでください。",
     "type": "production",
+    "audioSourceId": "no-photos-here",
     "promptVocabularyHints": [
       {
         "word": "photos",
@@ -63673,7 +63729,7 @@
   {
     "id": "production-umbrella-offer",
     "text": "It is raining, isn't it? Shall I lend you an umbrella?",
-    "audio": "assets/voices/grammar/production-umbrella-offer.m4a",
+    "audio": "assets/voices/grammar/umbrella-offer.m4a",
     "vocabularyIds": [
       "vocab-7e87850c448d",
       "vocab-e58fdfd2a16b",
@@ -63744,6 +63800,7 @@
     "minimumLevel": "n5",
     "solution": "雨ですね。傘を貸しましょうか。",
     "type": "production",
+    "audioSourceId": "umbrella-offer",
     "promptVocabularyHints": [
       {
         "word": "raining",
@@ -63790,7 +63847,7 @@
   {
     "id": "production-ramen-favorite-food",
     "text": "Of all Japanese foods, I like ramen best.",
-    "audio": "assets/voices/grammar/production-ramen-favorite-food.m4a",
+    "audio": "assets/voices/grammar/ramen-favorite-food.m4a",
     "vocabularyIds": [
       "vocab-cf2abf0c5be3",
       "vocab-d26eb9131afb",
@@ -63869,6 +63926,7 @@
     "minimumLevel": "n5",
     "solution": "日本の食べ物で、ラーメンが一番好きです。",
     "type": "production",
+    "audioSourceId": "ramen-favorite-food",
     "promptVocabularyHints": [
       {
         "word": "Japanese",
@@ -63912,7 +63970,7 @@
   {
     "id": "production-try-hot-soup",
     "text": "This soup looks hot, but I will try drinking a little.",
-    "audio": "assets/voices/grammar/production-try-hot-soup.m4a",
+    "audio": "assets/voices/grammar/try-hot-soup.m4a",
     "vocabularyIds": [
       "vocab-25acc002a82f",
       "vocab-935437cca5af",
@@ -64002,6 +64060,7 @@
     "minimumLevel": "n5",
     "solution": "このスープは熱そうだけど、少し飲んでみます。",
     "type": "production",
+    "audioSourceId": "try-hot-soup",
     "promptVocabularyHints": [
       {
         "word": "soup",
@@ -64049,7 +64108,7 @@
   {
     "id": "production-umbrella-for-possible-rain",
     "text": "It might rain tomorrow, so I will take an umbrella.",
-    "audio": "assets/voices/grammar/production-umbrella-for-possible-rain.m4a",
+    "audio": "assets/voices/grammar/umbrella-for-possible-rain.m4a",
     "vocabularyIds": [
       "vocab-bec9ce9d08c8",
       "vocab-7e87850c448d",
@@ -64157,6 +64216,7 @@
     "minimumLevel": "n5",
     "solution": "明日は雨が降るかもしれないので、傘を持って行きます。",
     "type": "production",
+    "audioSourceId": "umbrella-for-possible-rain",
     "promptVocabularyHints": [
       {
         "word": "rain",
@@ -64211,7 +64271,7 @@
   {
     "id": "production-pack-homework-to-remember",
     "text": "I put my homework in my bag so that I would not forget it.",
-    "audio": "assets/voices/grammar/production-pack-homework-to-remember.m4a",
+    "audio": "assets/voices/grammar/pack-homework-to-remember.m4a",
     "vocabularyIds": [
       "vocab-53c63c8d3e25",
       "vocab-f26f501fa1c2",
@@ -64296,6 +64356,7 @@
     "minimumLevel": "n5",
     "solution": "忘れないように、宿題をかばんに入れました。",
     "type": "production",
+    "audioSourceId": "pack-homework-to-remember",
     "promptVocabularyHints": [
       {
         "word": "homework",
@@ -64480,7 +64541,7 @@
   {
     "id": "production-casual-no-photos",
     "text": "You must not take photos here.",
-    "audio": "assets/voices/grammar/production-casual-no-photos.m4a",
+    "audio": "assets/voices/grammar/casual-no-photos.m4a",
     "vocabularyIds": [
       "vocab-f4ee05460d54",
       "vocab-d5901ecbf5fb",
@@ -64547,6 +64608,7 @@
     "minimumLevel": "n5",
     "solution": "ここで写真を撮っちゃいけないよ。",
     "type": "production",
+    "audioSourceId": "casual-no-photos",
     "promptVocabularyHints": [
       {
         "word": "photos",
@@ -64679,7 +64741,7 @@
   {
     "id": "production-snow-forecast-hearsay",
     "text": "I heard that it will snow tomorrow.",
-    "audio": "assets/voices/grammar/production-snow-forecast-hearsay.m4a",
+    "audio": "assets/voices/grammar/snow-forecast-hearsay.m4a",
     "vocabularyIds": [
       "vocab-bec9ce9d08c8",
       "vocab-79db1765ce26",
@@ -64736,6 +64798,7 @@
     "minimumLevel": "n5",
     "solution": "明日は雪が降るそうです。",
     "type": "production",
+    "audioSourceId": "snow-forecast-hearsay",
     "promptVocabularyHints": [
       {
         "word": "snow",
@@ -64772,7 +64835,7 @@
   {
     "id": "production-ask-japanese-test-date",
     "text": "When will we have the Japanese test?",
-    "audio": "assets/voices/grammar/production-ask-japanese-test-date.m4a",
+    "audio": "assets/voices/grammar/ask-japanese-test-date.m4a",
     "vocabularyIds": [
       "vocab-c9d354f557b3",
       "vocab-e6870aa0d14e",
@@ -64837,6 +64900,7 @@
     "minimumLevel": "n5",
     "solution": "いつ日本語のテストをしますか。",
     "type": "production",
+    "audioSourceId": "ask-japanese-test-date",
     "promptVocabularyHints": [
       {
         "word": "When",
@@ -64883,7 +64947,7 @@
   {
     "id": "production-ask-red-bag-price",
     "text": "How much is this red bag?",
-    "audio": "assets/voices/grammar/production-ask-red-bag-price.m4a",
+    "audio": "assets/voices/grammar/ask-red-bag-price.m4a",
     "vocabularyIds": [
       "vocab-25acc002a82f",
       "vocab-a595b5ca5679",
@@ -64941,6 +65005,7 @@
     "minimumLevel": "n5",
     "solution": "この赤いかばんはいくらですか。",
     "type": "production",
+    "audioSourceId": "ask-red-bag-price",
     "promptVocabularyHints": [
       {
         "word": "red",
@@ -64982,7 +65047,7 @@
   {
     "id": "production-choose-red-or-blue-shirt",
     "text": "Which is better, the red shirt or the blue shirt?",
-    "audio": "assets/voices/grammar/production-choose-red-or-blue-shirt.m4a",
+    "audio": "assets/voices/grammar/choose-red-or-blue-shirt.m4a",
     "vocabularyIds": [
       "vocab-a595b5ca5679",
       "vocab-1d1eb2c3032c",
@@ -65068,6 +65133,7 @@
     "minimumLevel": "n5",
     "solution": "赤いシャツと青いシャツと、どっちがいいですか。",
     "type": "production",
+    "audioSourceId": "choose-red-or-blue-shirt",
     "promptVocabularyHints": [
       {
         "word": "red",
@@ -65110,7 +65176,7 @@
   {
     "id": "production-write-name-here",
     "text": "Please write your name here.",
-    "audio": "assets/voices/grammar/production-write-name-here.m4a",
+    "audio": "assets/voices/grammar/write-name-here.m4a",
     "vocabularyIds": [
       "vocab-57367d42ac5c",
       "vocab-09558b341dc0",
@@ -65172,6 +65238,7 @@
     "minimumLevel": "n5",
     "solution": "こちらにお名前を書いてください。",
     "type": "production",
+    "audioSourceId": "write-name-here",
     "promptVocabularyHints": [
       {
         "word": "write",
@@ -65218,7 +65285,7 @@
   {
     "id": "production-leave-and-arrive-every-morning",
     "text": "Every morning, I leave home at seven and arrive at work at eight.",
-    "audio": "assets/voices/grammar/production-leave-and-arrive-every-morning.m4a",
+    "audio": "assets/voices/grammar/leave-and-arrive-every-morning.m4a",
     "vocabularyIds": [
       "vocab-ecd92861d4d7",
       "vocab-651603322794",
@@ -65338,6 +65405,7 @@
     "minimumLevel": "n5",
     "solution": "毎朝七時に家を出て、八時に会社に着きます。",
     "type": "production",
+    "audioSourceId": "leave-and-arrive-every-morning",
     "promptVocabularyHints": [
       {
         "word": "morning",
@@ -65390,7 +65458,7 @@
   {
     "id": "production-no-bicycle-because-rain",
     "text": "I will not ride my bicycle today because it is raining.",
-    "audio": "assets/voices/grammar/production-no-bicycle-because-rain.m4a",
+    "audio": "assets/voices/grammar/no-bicycle-because-rain.m4a",
     "vocabularyIds": [
       "vocab-6b9362de88a7",
       "vocab-7e87850c448d",
@@ -65472,6 +65540,7 @@
     "minimumLevel": "n5",
     "solution": "今日は雨なので、自転車に乗りません。",
     "type": "production",
+    "audioSourceId": "no-bicycle-because-rain",
     "promptVocabularyHints": [
       {
         "word": "bicycle",
@@ -65519,7 +65588,7 @@
   {
     "id": "production-no-need-to-wake-early",
     "text": "You do not have to wake up early today.",
-    "audio": "assets/voices/grammar/production-no-need-to-wake-early.m4a",
+    "audio": "assets/voices/grammar/no-need-to-wake-early.m4a",
     "vocabularyIds": [
       "vocab-6b9362de88a7",
       "vocab-72460e05df01",
@@ -65590,6 +65659,7 @@
     "minimumLevel": "n5",
     "solution": "今日は早く起きなくてもいいです。",
     "type": "production",
+    "audioSourceId": "no-need-to-wake-early",
     "promptVocabularyHints": [
       {
         "word": "wake",
@@ -65626,7 +65696,7 @@
   {
     "id": "production-why-train-is-stopped",
     "text": "Why is the train stopped?",
-    "audio": "assets/voices/grammar/production-why-train-is-stopped.m4a",
+    "audio": "assets/voices/grammar/why-train-is-stopped.m4a",
     "vocabularyIds": [
       "vocab-8684d9811d46",
       "vocab-dc7f5fc156cf",
@@ -65694,6 +65764,7 @@
     "minimumLevel": "n5",
     "solution": "どうして電車が止まっているんですか。",
     "type": "production",
+    "audioSourceId": "why-train-is-stopped",
     "promptVocabularyHints": [
       {
         "word": "Why",
@@ -65740,7 +65811,7 @@
   {
     "id": "production-which-umbrella-is-yours",
     "text": "Which umbrella is yours? It is the black umbrella.",
-    "audio": "assets/voices/grammar/production-which-umbrella-is-yours.m4a",
+    "audio": "assets/voices/grammar/which-umbrella-is-yours.m4a",
     "vocabularyIds": [
       "vocab-5400f9f54134",
       "vocab-e58fdfd2a16b",
@@ -65818,6 +65889,7 @@
     "minimumLevel": "n5",
     "solution": "どの傘があなたのですか。黒い傘です。",
     "type": "production",
+    "audioSourceId": "which-umbrella-is-yours",
     "promptVocabularyHints": [
       {
         "word": "umbrella",
@@ -65859,7 +65931,7 @@
   {
     "id": "production-ask-for-this-stamp",
     "text": "Please give me this stamp.",
-    "audio": "assets/voices/grammar/production-ask-for-this-stamp.m4a",
+    "audio": "assets/voices/grammar/ask-for-this-stamp.m4a",
     "vocabularyIds": [
       "vocab-25acc002a82f",
       "vocab-36897e1da4ac",
@@ -65901,6 +65973,7 @@
     "minimumLevel": "n5",
     "solution": "この切手をください。",
     "type": "production",
+    "audioSourceId": "ask-for-this-stamp",
     "promptVocabularyHints": [
       {
         "word": "stamp",
@@ -65929,7 +66002,7 @@
   {
     "id": "production-sunday-laundry-and-cleaning",
     "text": "On Sundays, I do things like laundry and cleaning my room.",
-    "audio": "assets/voices/grammar/production-sunday-laundry-and-cleaning.m4a",
+    "audio": "assets/voices/grammar/sunday-laundry-and-cleaning.m4a",
     "vocabularyIds": [
       "vocab-b7519a0f57a7",
       "vocab-30e81148f7ab",
@@ -66031,6 +66104,7 @@
     "minimumLevel": "n5",
     "solution": "日曜日は、洗濯をしたり、部屋を掃除したりします。",
     "type": "production",
+    "audioSourceId": "sunday-laundry-and-cleaning",
     "promptVocabularyHints": [
       {
         "word": "Sundays",
@@ -66077,7 +66151,7 @@
   {
     "id": "production-must-remove-shoes-at-entrance",
     "text": "You have to take off your shoes at the entrance.",
-    "audio": "assets/voices/grammar/production-must-remove-shoes-at-entrance.m4a",
+    "audio": "assets/voices/grammar/must-remove-shoes-at-entrance.m4a",
     "vocabularyIds": [
       "vocab-df6ef292ae5d",
       "vocab-d2110e85159b",
@@ -66153,6 +66227,7 @@
     "minimumLevel": "n5",
     "solution": "玄関で靴を脱がなくてはいけません。",
     "type": "production",
+    "audioSourceId": "must-remove-shoes-at-entrance",
     "promptVocabularyHints": [
       {
         "word": "shoes",
@@ -66183,7 +66258,7 @@
   {
     "id": "production-homework-already-finished",
     "text": "My homework is already done.",
-    "audio": "assets/voices/grammar/production-homework-already-finished.m4a",
+    "audio": "assets/voices/grammar/homework-already-finished.m4a",
     "vocabularyIds": [
       "vocab-f26f501fa1c2",
       "vocab-0960d185c7f1",
@@ -66235,6 +66310,7 @@
     "minimumLevel": "n5",
     "solution": "宿題はもうできました。",
     "type": "production",
+    "audioSourceId": "homework-already-finished",
     "promptVocabularyHints": [
       {
         "word": "homework",
@@ -66275,7 +66351,7 @@
   {
     "id": "production-receive-dictionary-from-teacher",
     "text": "I received a dictionary from my teacher.",
-    "audio": "assets/voices/grammar/production-receive-dictionary-from-teacher.m4a",
+    "audio": "assets/voices/grammar/receive-dictionary-from-teacher.m4a",
     "vocabularyIds": [
       "vocab-b6944a5fe271",
       "vocab-497356cf0646",
@@ -66346,6 +66422,7 @@
     "minimumLevel": "n5",
     "solution": "私は先生から辞書をもらいました。",
     "type": "production",
+    "audioSourceId": "receive-dictionary-from-teacher",
     "promptVocabularyHints": [
       {
         "word": "received",
@@ -66386,7 +66463,7 @@
   {
     "id": "production-pack-clothes-for-trip",
     "text": "I take shirts, trousers, and similar clothes on trips.",
-    "audio": "assets/voices/grammar/production-pack-clothes-for-trip.m4a",
+    "audio": "assets/voices/grammar/pack-clothes-for-trip.m4a",
     "vocabularyIds": [
       "vocab-2e3ba98d2367",
       "vocab-1d1eb2c3032c",
@@ -66471,6 +66548,7 @@
     "minimumLevel": "n5",
     "solution": "旅行にはシャツやズボンなどを持って行きます。",
     "type": "production",
+    "audioSourceId": "pack-clothes-for-trip",
     "promptVocabularyHints": [
       {
         "word": "shirts",
@@ -66518,7 +66596,7 @@
   {
     "id": "production-wallet-forgotten-at-home",
     "text": "I accidentally left my wallet at home.",
-    "audio": "assets/voices/grammar/production-wallet-forgotten-at-home.m4a",
+    "audio": "assets/voices/grammar/wallet-forgotten-at-home.m4a",
     "vocabularyIds": [
       "vocab-c5df4f2e7eab",
       "vocab-8af58778f14e",
@@ -66585,6 +66663,7 @@
     "minimumLevel": "n5",
     "solution": "財布を家に忘れてしまいました。",
     "type": "production",
+    "audioSourceId": "wallet-forgotten-at-home",
     "promptVocabularyHints": [
       {
         "word": "wallet",
@@ -66625,7 +66704,7 @@
   {
     "id": "production-ask-for-that-ballpoint-pen",
     "text": "Please give me that ballpoint pen.",
-    "audio": "assets/voices/grammar/production-ask-for-that-ballpoint-pen.m4a",
+    "audio": "assets/voices/grammar/ask-for-that-ballpoint-pen.m4a",
     "vocabularyIds": [
       "vocab-ac42ce789185",
       "vocab-352e1de5e9e9",
@@ -66664,6 +66743,7 @@
     "minimumLevel": "n5",
     "solution": "そのボールペンをください。",
     "type": "production",
+    "audioSourceId": "ask-for-that-ballpoint-pen",
     "promptVocabularyHints": [
       {
         "word": "pen",
@@ -66692,7 +66772,7 @@
   {
     "id": "production-experience-riding-airplane",
     "text": "I have been on an airplane before.",
-    "audio": "assets/voices/grammar/production-experience-riding-airplane.m4a",
+    "audio": "assets/voices/grammar/experience-riding-airplane.m4a",
     "vocabularyIds": [
       "vocab-505a4fc8629a",
       "vocab-9e0eeba39759",
@@ -66755,6 +66835,7 @@
     "minimumLevel": "n5",
     "solution": "飛行機に乗ったことがあります。",
     "type": "production",
+    "audioSourceId": "experience-riding-airplane",
     "promptVocabularyHints": [
       {
         "word": "airplane",
@@ -66784,7 +66865,7 @@
   {
     "id": "production-rain-probable-day-after-tomorrow",
     "text": "It will probably rain the day after tomorrow.",
-    "audio": "assets/voices/grammar/production-rain-probable-day-after-tomorrow.m4a",
+    "audio": "assets/voices/grammar/rain-probable-day-after-tomorrow.m4a",
     "vocabularyIds": [
       "vocab-3a318cc61aa9",
       "vocab-25611a347757",
@@ -66840,6 +66921,7 @@
     "minimumLevel": "n5",
     "solution": "明後日は多分雨でしょう。",
     "type": "production",
+    "audioSourceId": "rain-probable-day-after-tomorrow",
     "promptVocabularyHints": [
       {
         "word": "probably",
@@ -66875,7 +66957,7 @@
   {
     "id": "production-siblings-study-english",
     "text": "Both my older brother and younger sister are studying English.",
-    "audio": "assets/voices/grammar/production-siblings-study-english.m4a",
+    "audio": "assets/voices/grammar/siblings-study-english.m4a",
     "vocabularyIds": [
       "vocab-cda9169e9fa2",
       "vocab-735d35e5b1be",
@@ -66960,6 +67042,7 @@
     "minimumLevel": "n5",
     "solution": "兄も妹も英語を勉強しています。",
     "type": "production",
+    "audioSourceId": "siblings-study-english",
     "promptVocabularyHints": [
       {
         "word": "brother",
@@ -67007,7 +67090,7 @@
   {
     "id": "production-swim-three-times-weekly",
     "text": "I swim at the pool three times a week.",
-    "audio": "assets/voices/grammar/production-swim-three-times-weekly.m4a",
+    "audio": "assets/voices/grammar/swim-three-times-weekly.m4a",
     "vocabularyIds": [
       "vocab-5d8047464c5d",
       "vocab-fd63d3fc7c86",
@@ -67087,6 +67170,7 @@
     "minimumLevel": "n5",
     "solution": "一週間に三回、プールで泳ぎます。",
     "type": "production",
+    "audioSourceId": "swim-three-times-weekly",
     "promptVocabularyHints": [
       {
         "word": "swim",
@@ -67140,7 +67224,7 @@
   {
     "id": "production-game-after-homework",
     "text": "After doing my homework, I play video games with my friend.",
-    "audio": "assets/voices/grammar/production-game-after-homework.m4a",
+    "audio": "assets/voices/grammar/game-after-homework.m4a",
     "vocabularyIds": [
       "vocab-f26f501fa1c2",
       "vocab-dfb6d8ba613b",
@@ -67233,6 +67317,7 @@
     "minimumLevel": "n5",
     "solution": "宿題をした後で、友だちとゲームをします。",
     "type": "production",
+    "audioSourceId": "game-after-homework",
     "promptVocabularyHints": [
       {
         "word": "homework",
@@ -67281,7 +67366,7 @@
   {
     "id": "production-been-to-japan",
     "text": "Have you ever been to Japan?",
-    "audio": "assets/voices/grammar/production-been-to-japan.m4a",
+    "audio": "assets/voices/grammar/been-to-japan.m4a",
     "vocabularyIds": [
       "vocab-cf2abf0c5be3",
       "vocab-ec22142c23d3",
@@ -67351,6 +67436,7 @@
     "minimumLevel": "n5",
     "solution": "日本へ行ったことがありますか。",
     "type": "production",
+    "audioSourceId": "been-to-japan",
     "promptVocabularyHints": [
       {
         "word": "Japan",
@@ -67391,7 +67477,7 @@
   {
     "id": "production-birthday-book-gift",
     "text": "My friend gave me a new book for my birthday.",
-    "audio": "assets/voices/grammar/production-birthday-book-gift.m4a",
+    "audio": "assets/voices/grammar/birthday-book-gift.m4a",
     "vocabularyIds": [
       "vocab-5841d3db2c97",
       "vocab-d9898f8a95b6",
@@ -67476,6 +67562,7 @@
     "minimumLevel": "n5",
     "solution": "誕生日に友だちが新しい本をくれました。",
     "type": "production",
+    "audioSourceId": "birthday-book-gift",
     "promptVocabularyHints": [
       {
         "word": "friend",
@@ -67529,7 +67616,7 @@
   {
     "id": "production-dangerous-no-swimming",
     "text": "You must not swim here because it is dangerous.",
-    "audio": "assets/voices/grammar/production-dangerous-no-swimming.m4a",
+    "audio": "assets/voices/grammar/dangerous-no-swimming.m4a",
     "vocabularyIds": [
       "vocab-b56f4f9656e1",
       "vocab-f4ee05460d54",
@@ -67602,6 +67689,7 @@
     "minimumLevel": "n5",
     "solution": "危ないので、ここで泳いではいけません。",
     "type": "production",
+    "audioSourceId": "dangerous-no-swimming",
     "promptVocabularyHints": [
       {
         "word": "swim",
@@ -67638,7 +67726,7 @@
   {
     "id": "production-left-without-umbrella",
     "text": "I went out without taking an umbrella.",
-    "audio": "assets/voices/grammar/production-left-without-umbrella.m4a",
+    "audio": "assets/voices/grammar/left-without-umbrella.m4a",
     "vocabularyIds": [
       "vocab-e58fdfd2a16b",
       "vocab-516ad1128c71",
@@ -67700,6 +67788,7 @@
     "minimumLevel": "n5",
     "solution": "傘を持たないで出かけました。",
     "type": "production",
+    "audioSourceId": "left-without-umbrella",
     "promptVocabularyHints": [
       {
         "word": "umbrella",
@@ -67746,7 +67835,7 @@
   {
     "id": "production-walk-while-listening",
     "text": "Every morning, I listen to music while walking through the park.",
-    "audio": "assets/voices/grammar/production-walk-while-listening.m4a",
+    "audio": "assets/voices/grammar/walk-while-listening.m4a",
     "vocabularyIds": [
       "vocab-ecd92861d4d7",
       "vocab-c3f997ee44ba",
@@ -67826,6 +67915,7 @@
     "minimumLevel": "n5",
     "solution": "毎朝、公園を歩きながら音楽を聞きます。",
     "type": "production",
+    "audioSourceId": "walk-while-listening",
     "promptVocabularyHints": [
       {
         "word": "morning",
@@ -67864,7 +67954,7 @@
   {
     "id": "production-movie-if-rain",
     "text": "If it rains, let's watch a movie at home.",
-    "audio": "assets/voices/grammar/production-movie-if-rain.m4a",
+    "audio": "assets/voices/grammar/movie-if-rain.m4a",
     "vocabularyIds": [
       "vocab-7e87850c448d",
       "vocab-777161023023",
@@ -67952,6 +68042,7 @@
     "minimumLevel": "n5",
     "solution": "雨が降ったら、家で映画を見ましょう。",
     "type": "production",
+    "audioSourceId": "movie-if-rain",
     "promptVocabularyHints": [
       {
         "word": "rains",
@@ -68000,7 +68091,7 @@
   {
     "id": "production-mother-teaches-cake-recipe",
     "text": "I had my mother teach me how to make a cake.",
-    "audio": "assets/voices/grammar/production-mother-teaches-cake-recipe.m4a",
+    "audio": "assets/voices/grammar/mother-teaches-cake-recipe.m4a",
     "vocabularyIds": [
       "vocab-7fa86c660a00",
       "vocab-da08a01c25e4",
@@ -68081,6 +68172,7 @@
     "minimumLevel": "n5",
     "solution": "母にケーキの作り方を教えてもらいました。",
     "type": "production",
+    "audioSourceId": "mother-teaches-cake-recipe",
     "promptVocabularyHints": [
       {
         "word": "mother",
@@ -68133,7 +68225,7 @@
   {
     "id": "production-forgot-umbrella-on-train",
     "text": "I accidentally left my umbrella on the train.",
-    "audio": "assets/voices/grammar/production-forgot-umbrella-on-train.m4a",
+    "audio": "assets/voices/grammar/forgot-umbrella-on-train.m4a",
     "vocabularyIds": [
       "vocab-dc7f5fc156cf",
       "vocab-e58fdfd2a16b",
@@ -68201,6 +68293,7 @@
     "minimumLevel": "n5",
     "solution": "電車に傘を忘れてしまいました。",
     "type": "production",
+    "audioSourceId": "forgot-umbrella-on-train",
     "promptVocabularyHints": [
       {
         "word": "umbrella",
@@ -68247,7 +68340,7 @@
   {
     "id": "production-sunday-movie-or-book",
     "text": "Will you watch a movie or read a book on Sunday?",
-    "audio": "assets/voices/grammar/production-sunday-movie-or-book.m4a",
+    "audio": "assets/voices/grammar/sunday-movie-or-book.m4a",
     "vocabularyIds": [
       "vocab-b7519a0f57a7",
       "vocab-7b9d866e6dc2",
@@ -68342,6 +68435,7 @@
     "minimumLevel": "n5",
     "solution": "日曜日は映画を見ますか、本を読みますか。",
     "type": "production",
+    "audioSourceId": "sunday-movie-or-book",
     "promptVocabularyHints": [
       {
         "word": "Sunday",
@@ -68374,7 +68468,7 @@
   {
     "id": "production-study-one-hour-nightly",
     "text": "I study Japanese for about one hour every evening.",
-    "audio": "assets/voices/grammar/production-study-one-hour-nightly.m4a",
+    "audio": "assets/voices/grammar/study-one-hour-nightly.m4a",
     "vocabularyIds": [
       "vocab-2eff08417f34",
       "vocab-5d8047464c5d",
@@ -68459,6 +68553,7 @@
     "minimumLevel": "n5",
     "solution": "毎晩、一時間ぐらい日本語を勉強します。",
     "type": "production",
+    "audioSourceId": "study-one-hour-nightly",
     "promptVocabularyHints": [
       {
         "word": "study",

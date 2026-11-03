@@ -4,6 +4,7 @@ import test from "node:test";
 import {
   createConjugationSpeechRequest,
   createConjugationVoiceItems,
+  createLessonVoiceItems,
   createSpeechRequestBody,
   createVocabularySpeechRequest,
   createVocabularyVoiceItems,
@@ -24,6 +25,18 @@ test("voice generation is unlimited by default", () => {
     showHelp: false,
     target: "lessons"
   });
+});
+
+test("shared grammar recordings are generated only through their owner", () => {
+  const owner = { id: "cat", text: "猫がいます。", solution: "There is a cat." };
+  const shared = {
+    id: "production-cat", type: "production", text: "There is a cat.",
+    solution: owner.text, audioSourceId: owner.id
+  };
+  const borrowed = { id: "story-cat", readingSentenceId: "reading-cat" };
+  const items = createLessonVoiceItems({ id: "introduction" }, [owner, shared, borrowed]);
+
+  assert.deepEqual(items.map(({ id }) => id), ["introduction", "cat"]);
 });
 
 test("voice generation accepts small request limits", () => {

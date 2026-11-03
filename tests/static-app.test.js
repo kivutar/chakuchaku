@@ -37,7 +37,7 @@ function assertPreparedLesson(lesson, vocabularyById, kanjiById, kanjiByCharacte
   assert.ok(lesson.text.length > 0);
   assert.equal(lesson.audio, lesson.readingSentenceId
     ? `assets/voices/reading/${lesson.readingSentenceId}.m4a`
-    : `assets/voices/grammar/${lesson.id}.m4a`);
+    : `assets/voices/grammar/${lesson.audioSourceId || lesson.id}.m4a`);
   assert.ok(Array.isArray(lesson.vocabularyIds));
   assert.equal(new Set(lesson.vocabularyIds).size, lesson.vocabularyIds.length);
   assert.ok(lesson.vocabularyIds.every((id) => vocabularyById.has(id)));

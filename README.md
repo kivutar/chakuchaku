@@ -86,6 +86,13 @@ and sentences marked `skipVoiceGeneration` are retained/skipped. Grammar cards
 may borrow a `readingSentenceId`; their tags must match the canonical sentence
 and their voice is shared, never generated a second time.
 
+Ordinary grammar cards with identical Japanese and narration text can declare
+`audioSourceId` to share a recording. For example, a production card can use its
+recognition counterpart's audio while keeping its own exercise ID and SRS
+history. Content preparation validates the reference and text; voice generation
+processes only the owner. The first 95 references restore playback after
+answering production exercises, using existing recordings.
+
 `npm run content` also generates `data/reading-coverage.md` and
 `data/reading-coverage.json`. These internal editorial reports count sentences
 and stories per grammar point, include zero-count gaps at each level, and keep

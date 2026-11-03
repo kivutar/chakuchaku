@@ -15,6 +15,20 @@ generate that voice with the `reading` target, not the lesson target.
 These exercises use the normal grammar SRS. Reading passages and their
 comprehension quizzes never update SRS, history, or learning statistics.
 
+## Sharing audio between grammar exercises
+
+An ordinary exercise can declare `audioSourceId` in `source/exercises.json` to
+reuse another exercise's narration. For example, `production-cat-under-table`
+references `cat-under-table` while retaining its own ID, prompt, solution,
+grammar tags and SRS history. Both its Japanese sentence and its effective
+`speechText` must exactly match the owner's. Content preparation rejects
+missing owners, self-references, reference chains, and competing audio paths.
+
+The generated `audio` field points directly to the owner's grammar recording.
+The lesson voice generator excludes shared cards; generate or regenerate the
+recording using its owner's ID. Reading narration continues to use
+`readingSentenceId` and the `reading` voice target.
+
 ## Curriculum
 
 `curriculum.json` defines the ordered curriculum levels understood by the app.

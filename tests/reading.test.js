@@ -1001,8 +1001,10 @@ test("borrowed sentences never trigger duplicate lesson voice generation or bypa
   ]);
   const lessons = createLessonVoiceItems(introduction, exercises);
   assert.equal(lessons.length, 1 + Object.keys(introduction.levelVariants).length +
-    exercises.filter((exercise) => exercise.readingSentenceId === undefined).length);
-  assert.ok(lessons.every((item) => item.readingSentenceId === undefined));
+    exercises.filter((exercise) => exercise.readingSentenceId === undefined &&
+      exercise.audioSourceId === undefined).length);
+  assert.ok(lessons.every((item) => item.readingSentenceId === undefined &&
+    item.audioSourceId === undefined));
   const voices = createReadingVoiceItems(sources);
   assert.equal(voices.length, sources.flatMap(({ sentences }) => sentences).length);
   const excluded = voices.filter((item) => item.skipVoiceGeneration).map((item) => item.id);
