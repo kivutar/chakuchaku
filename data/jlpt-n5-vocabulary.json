@@ -3558,8 +3558,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun",
-    "skipVoiceGeneration": true
+    "partOfSpeech": "noun"
   },
   {
     "id": "vocab-61b57e2d4702",
@@ -3706,8 +3705,7 @@
     "variants": [
       "じゃあ"
     ],
-    "partOfSpeech": "conjunction",
-    "skipVoiceGeneration": true
+    "partOfSpeech": "conjunction"
   },
   {
     "id": "vocab-d5901ecbf5fb",
@@ -5201,12 +5199,12 @@
     "id": "vocab-0e302b0c8583",
     "term": "～度",
     "reading": "～ど",
+    "speechText": "ド",
     "meaning": "counter for occurrences; ~ degree; ~ point",
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter",
-    "skipVoiceGeneration": true
+    "partOfSpeech": "counter"
   },
   {
     "id": "vocab-01adf406cacd",
