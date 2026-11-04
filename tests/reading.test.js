@@ -1010,9 +1010,10 @@ test("borrowed sentences never trigger duplicate lesson voice generation or bypa
   const excluded = voices.filter((item) => item.skipVoiceGeneration).map((item) => item.id);
   assert.deepEqual(excluded, sources.flatMap(({ sentences }) => sentences)
     .filter((sentence) => sentence.skipVoiceGeneration).map(({ id }) => id));
-  for (const id of ["reading-sunday-park-07", "reading-sunday-park-14", "reading-birthday-cake-04",
-    "reading-classroom-visitor-04", "reading-grandpa-email-14"]) {
-    assert.ok(excluded.includes(id), "repeatedly rejected audio stays excluded");
-  }
+  const blockedSources = structuredClone(sources);
+  const blockedId = blockedSources[0].sentences[0].id;
+  blockedSources[0].sentences[0].skipVoiceGeneration = true;
+  assert.equal(createReadingVoiceItems(blockedSources)
+    .find(({ id }) => id === blockedId).skipVoiceGeneration, true);
   assert.equal(new Set(voices.map((item) => item.id)).size, voices.length);
 });

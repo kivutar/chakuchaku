@@ -11,14 +11,14 @@
       { "id": "reading-sunday-park-04", "paragraph": 1, "text": "私は水とお茶をかばんに入れました。", "grammarPointIds": ["to-complete-list", "ni-destination", "o-object"] },
       { "id": "reading-sunday-park-05", "paragraph": 2, "text": "九時に妹と家を出ました。", "grammarPointIds": ["ni-time", "to-companion", "o-route", "verb-mashita"], "tokenOverrides": { "九": { "reading": "く" } } },
       { "id": "reading-sunday-park-06", "paragraph": 2, "text": "公園までバスで二十分かかります。", "grammarPointIds": ["made-end", "de-means", "duration-no-particle"], "tokenOverrides": { "十": { "reading": "じゅっ" }, "分": { "reading": "ぷん" } } },
-      { "id": "reading-sunday-park-07", "paragraph": 2, "text": "でも、次のバスは三十分後に来ます。", "grammarPointIds": ["demo-connector", "ni-time", "verb-masu"], "tokenOverrides": { "十": { "reading": "じゅっ" }, "分": { "reading": "ぷん" } }, "skipVoiceGeneration": true },
+      { "id": "reading-sunday-park-07", "paragraph": 2, "text": "でも、次のバスは三十分後に来ます。", "grammarPointIds": ["demo-connector", "ni-time", "verb-masu"], "tokenOverrides": { "十": { "reading": "じゅっ" }, "分": { "reading": "ぷん" } }, "speechText": "でも、つぎのばすはさんじゅっぷんごにきます。" },
       { "id": "reading-sunday-park-08", "paragraph": 2, "text": "妹は待ちたくないと言いました。", "grammarPointIds": ["tai-desire", "to-iu"] },
       { "id": "reading-sunday-park-09", "paragraph": 3, "text": "公園は遠くないので、二人で歩いて行きました。", "grammarPointIds": ["i-adjective-negative", "node-reason", "te-action-link"] },
       { "id": "reading-sunday-park-10", "paragraph": 3, "text": "道で友達に会いました。", "grammarPointIds": ["de-action-location", "ni-target-recipient", "verb-mashita"] },
       { "id": "reading-sunday-park-11", "paragraph": 3, "text": "友達も一緒に公園へ行きました。", "grammarPointIds": ["mo-addition", "e-direction", "verb-mashita"] },
       { "id": "reading-sunday-park-12", "paragraph": 3, "text": "公園には大きな池があります。", "grammarPointIds": ["ni-existence-location", "aru-existence"] },
       { "id": "reading-sunday-park-13", "paragraph": 4, "text": "池の近くに座りました。", "grammarPointIds": ["positional-nouns", "verb-mashita"] },
-      { "id": "reading-sunday-park-14", "paragraph": 4, "text": "おにぎりを食べて、学校の話をしました。", "grammarPointIds": ["te-action-link", "o-object", "no-possession"], "skipVoiceGeneration": true },
+      { "id": "reading-sunday-park-14", "paragraph": 4, "text": "おにぎりを食べて、学校の話をしました。", "grammarPointIds": ["te-action-link", "o-object", "no-possession"] },
       { "id": "reading-sunday-park-15", "paragraph": 4, "text": "妹は水を飲みました。", "grammarPointIds": ["wa-topic", "o-object", "verb-mashita"] },
       { "id": "reading-sunday-park-16", "paragraph": 4, "text": "友達は家族に見せる写真を撮りました。", "grammarPointIds": ["relative-clause", "ni-target-recipient", "o-object"] },
       { "id": "reading-sunday-park-17", "paragraph": 5, "text": "午後、空が暗くなりました。", "grammarPointIds": ["naru-ku-change", "ga-subject", "verb-mashita"] },
@@ -235,12 +235,12 @@
         "id": "reading-birthday-cake-04",
         "paragraph": 1,
         "text": "でも、今年は兄と家で作りました。",
-        "skipVoiceGeneration": true,
         "grammarPointIds": [
           "demo-connector",
           "to-companion",
           "de-action-location"
-        ]
+        ],
+        "speechText": "でも、ことしはあにといえでつくりました。"
       },
       {
         "id": "reading-birthday-cake-05",
@@ -681,12 +681,12 @@
         "id": "reading-classroom-visitor-04",
         "paragraph": 1,
         "text": "でも、窓が開いていました。",
-        "skipVoiceGeneration": true,
         "grammarPointIds": [
           "demo-connector",
           "te-iru-result-state",
           "ga-subject"
-        ]
+        ],
+        "speechText": "でも、まどがあいていました。"
       },
       {
         "id": "reading-classroom-visitor-05",
@@ -1241,8 +1241,7 @@
           "toki",
           "relative-clause",
           "te-shimau"
-        ],
-        "skipVoiceGeneration": true
+        ]
       },
       {
         "id": "reading-grandpa-email-15",
@@ -1552,7 +1551,7 @@
       { "id": "reading-wrong-train-03", "paragraph": 1, "text": "駅には電車が二本止まっていました。", "grammarPointIds": ["ni-existence-location", "te-iru-result-state", "common-counters"] },
       { "id": "reading-wrong-train-04", "paragraph": 1, "text": "「山へ行く電車は、右ですか、左ですか」と近くの人に聞きました。", "grammarPointIds": ["relative-clause", "ka-alternatives", "to-quotation"] },
       { "id": "reading-wrong-train-05", "paragraph": 2, "text": "その人は「右の電車ですよ」と教えてくれました。", "grammarPointIds": ["kosoado-determiners", "te-kureru", "yo-emphasis"] },
-      { "id": "reading-wrong-train-06", "paragraph": 2, "text": "でも、私は話をよく聞かないで、左の電車に乗りました。", "grammarPointIds": ["demo-connector", "naide-without", "ni-target-recipient"], "skipVoiceGeneration": true },
+      { "id": "reading-wrong-train-06", "paragraph": 2, "text": "でも、私は話をよく聞かないで、左の電車に乗りました。", "grammarPointIds": ["demo-connector", "naide-without", "ni-target-recipient"], "speechText": "でも、わたしははなしをよくきかないで、ひだりのでんしゃにのりました。" },
       { "id": "reading-wrong-train-07", "paragraph": 2, "text": "この電車は山へ行くだろうと思いました。", "grammarPointIds": ["darou", "to-omou", "e-direction"] },
       { "id": "reading-wrong-train-08", "paragraph": 2, "text": "電車の中で、窓の外を見ていました。", "grammarPointIds": ["de-action-location", "positional-nouns", "te-iru-progressive"], "vocabularyOverrides": { "外": "vocab-6109638dac53" } },
       { "id": "reading-wrong-train-09", "paragraph": 3, "text": "山は見えませんでしたが、海がよく見えました。", "grammarPointIds": ["verb-masen-deshita", "ga-contrast", "ga-subject"] },

@@ -2188,14 +2188,14 @@
   },
   {
     "id": "breakfast-then-school",
-    "skipVoiceGeneration": true,
     "text": "朝ご飯を食べました。それから、学校へ行きました。",
     "solution": "I ate breakfast. After that, I went to school.",
     "grammarPointIds": [
       "e-direction",
       "verb-mashita",
       "sorekara-connector"
-    ]
+    ],
+    "speechText": "あさごはんをたべました。それから、がっこうへいきました。"
   },
   {
     "id": "study-one-hour-nightly",
@@ -2241,7 +2241,6 @@
   },
   {
     "id": "do-not-press-button",
-    "skipVoiceGeneration": true,
     "text": "危ない！そのボタンを押すな。",
     "solution": "Danger! Do not press that button.",
     "grammarPointIds": [
@@ -2504,7 +2503,6 @@
   },
   {
     "id": "ask-party-schedule-and-age",
-    "skipVoiceGeneration": true,
     "text": "弟の誕生日パーティーは何曜日の何時ですか。弟は何歳になりますか。",
     "solution": "What day and time is my younger brother's birthday party? How old will he be?",
     "grammarPointIds": [
@@ -2513,7 +2511,8 @@
       "nan-counter",
       "clock-calendar-time",
       "nani"
-    ]
+    ],
+    "speechText": "おとうとのたんじょうびぱーてぃーはなんようびのなんじですか。おとうとはなんさいになりますか。"
   },
   {
     "id": "ask-duration-to-station",
@@ -2592,7 +2591,6 @@
   },
   {
     "id": "easy-work-completed",
-    "skipVoiceGeneration": true,
     "text": "昨日の仕事は大変ではありませんでした。そして、全部できました。",
     "solution": "Yesterday's work was not difficult, and I was able to finish everything.",
     "grammarPointIds": [
@@ -2600,7 +2598,8 @@
       "soshite-connector",
       "na-adjective-past-negative",
       "verb-mashita"
-    ]
+    ],
+    "speechText": "きのうのしごとはたいへんではありませんでした。そして、ぜんぶできました。"
   },
   {
     "id": "no-heavy-coat-this-morning",
@@ -2682,7 +2681,6 @@
   },
   {
     "id": "dirty-pond-no-swimming",
-    "skipVoiceGeneration": true,
     "text": "この池で泳がないでください。水が汚いです。",
     "solution": "Please do not swim in this pond. The water is dirty.",
     "grammarPointIds": [
@@ -2873,14 +2871,14 @@
   },
   {
     "id": "today-is-day-off",
-    "skipVoiceGeneration": true,
     "text": "昨日は休みではありませんでした。でも、今日は休みです。",
     "solution": "Yesterday was not a day off. But today is.",
     "grammarPointIds": [
       "copula-past-negative",
       "wa-contrast",
       "demo-connector"
-    ]
+    ],
+    "speechText": "きのうはやすみではありませんでした。でも、きょうはやすみです。"
   },
   {
     "id": "leave-and-arrive-every-morning",
@@ -3094,7 +3092,6 @@
   },
   {
     "id": "rain-forecast-taxi-home",
-    "skipVoiceGeneration": true,
     "text": "明日は雨が降るでしょう。雨が降ったら、タクシーで帰ります。",
     "solution": "It will probably rain tomorrow. If it does, I will take a taxi home.",
     "grammarPointIds": [
@@ -3151,7 +3148,6 @@
   },
   {
     "id": "coffee-offer-during-study",
-    "skipVoiceGeneration": true,
     "text": "「今、勉強中なんです。」「コーヒーを入れましょうか。」",
     "solution": "I'm studying right now. Shall I make you some coffee?",
     "grammarPointIds": [
@@ -3907,7 +3903,6 @@
     "id": "fish-not-meat-today",
     "text": "今日は魚を食べません。肉を食べます。",
     "solution": "I will not eat fish today. I will eat meat.",
-    "skipVoiceGeneration": true,
     "grammarPointIds": [
       "verb-masen",
       "wa-contrast",
@@ -4238,7 +4233,6 @@
     "id": "want-new-watch-for-birthday",
     "text": "誕生日に何が欲しいですか。新しい時計が欲しいです。",
     "solution": "What do you want for your birthday? I want a new watch.",
-    "skipVoiceGeneration": true,
     "grammarPointIds": [
       "hoshii",
       "nani",
@@ -4633,7 +4627,6 @@
   },
   {
     "id": "stomachache-skip-dinner",
-    "skipVoiceGeneration": true,
     "text": "お腹が痛いので、今晩は夕飯を食べません。",
     "solution": "My stomach hurts, so I will not eat dinner tonight.",
     "grammarPointIds": [
@@ -5366,13 +5359,13 @@
     "id": "think-problem-is-not-difficult",
     "text": "この問題は難しくないと思います。",
     "solution": "I think this problem is not difficult.",
-    "skipVoiceGeneration": true,
     "grammarPointIds": [
       "to-omou",
       "to-quotation",
       "i-adjective-negative",
       "kosoado-determiners"
-    ]
+    ],
+    "speechText": "このもんだいはむずかしくないとおもいます。"
   },
   {
     "id": "avoid-walking-home-alone-in-dark",
@@ -5793,7 +5786,6 @@
     "id": "bank-errand-then-met-friend",
     "text": "朝、銀行へ行きました。そして、駅で友達に会いました。",
     "solution": "In the morning, I went to the bank. Then I met my friend at the station.",
-    "skipVoiceGeneration": true,
     "grammarPointIds": [
       "soshite-connector",
       "e-direction",
@@ -6327,7 +6319,6 @@
   },
   {
     "id": "production-coffee-offer-during-study",
-    "skipVoiceGeneration": true,
     "text": "I'm studying right now. Shall I make you some coffee?",
     "solution": "「今、勉強中なんです。」「コーヒーを入れましょうか。」",
     "type": "production",
@@ -6353,7 +6344,8 @@
       "chuu",
       "no-desu",
       "mashou-ka"
-    ]
+    ],
+    "audioSourceId": "coffee-offer-during-study"
   },
   {
     "id": "production-meet-around-three",
@@ -7023,7 +7015,6 @@
   },
   {
     "id": "production-rain-forecast-taxi-home",
-    "skipVoiceGeneration": true,
     "text": "It will probably rain tomorrow. If it does, I will take a taxi home.",
     "solution": "明日は雨が降るでしょう。雨が降ったら、タクシーで帰ります。",
     "type": "production",
@@ -7049,7 +7040,8 @@
       "deshou-darou",
       "tara-conditional",
       "de-means"
-    ]
+    ],
+    "audioSourceId": "rain-forecast-taxi-home"
   },
   {
     "id": "production-cake-too-sweet",
@@ -7861,7 +7853,6 @@
   },
   {
     "id": "production-breakfast-then-school",
-    "skipVoiceGeneration": true,
     "text": "I ate breakfast. After that, I went to school.",
     "solution": "朝ご飯を食べました。それから、学校へ行きました。",
     "type": "production",
@@ -7879,7 +7870,9 @@
       "e-direction",
       "verb-mashita",
       "sorekara-connector"
-    ]
+    ],
+    "audioSourceId": "breakfast-then-school",
+    "speechText": "あさごはんをたべました。それから、がっこうへいきました。"
   },
   {
     "id": "production-casual-no-photos",
@@ -7905,7 +7898,6 @@
   },
   {
     "id": "production-do-not-press-button",
-    "skipVoiceGeneration": true,
     "text": "Danger! Do not press that button.",
     "solution": "危ない！そのボタンを押すな。",
     "type": "production",
@@ -7923,7 +7915,8 @@
       "na-prohibitive",
       "i-adjective-predicate",
       "kosoado-determiners"
-    ]
+    ],
+    "audioSourceId": "do-not-press-button"
   },
   {
     "id": "production-snow-forecast-hearsay",
@@ -9524,7 +9517,8 @@
       "to-omou",
       "na-adjective-predicate",
       "clock-calendar-time"
-    ]
+    ],
+    "speechText": "らいげつ、あたらしいじてんしゃをかうつもりです。べんりだとおもいます。"
   },
   {
     "id": "production-teacher-corridor-warning",
@@ -9622,7 +9616,8 @@
       "soshite-connector",
       "na-adjective-past-negative",
       "verb-mashita"
-    ]
+    ],
+    "speechText": "きのうのこうえんはしずかではありませんでした。そして、はやくかえりました。"
   },
   {
     "id": "production-sunday-rest-advice",
@@ -11184,7 +11179,6 @@
     "text": "My father made my younger brother clean the room.",
     "solution": "父は弟に部屋を掃除させました。",
     "type": "production",
-    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "せ": {
         "category": "auxiliary"
@@ -11590,7 +11584,6 @@
     "text": "I need to do my homework today.",
     "solution": "今日、宿題をする必要があります。",
     "type": "production",
-    "skipVoiceGeneration": true,
     "promptVocabularyHints": [
       {
         "word": "homework",
@@ -11599,7 +11592,8 @@
     ],
     "grammarPointIds": [
       "hitsuyou-ga-aru"
-    ]
+    ],
+    "speechText": "きょう、しゅくだいをするひつようがあります。"
   },
   {
     "id": "production-n4-no-need-come-tomorrow",
@@ -11952,7 +11946,6 @@
     "text": "She finished writing the letter.",
     "solution": "彼女は手紙を書き終わりました。",
     "type": "production",
-    "skipVoiceGeneration": true,
     "promptVocabularyHints": [
       {
         "word": "writing",
@@ -12452,7 +12445,6 @@
     "id": "n4-polite-ask-carry-luggage",
     "text": "この荷物を持っていただけませんか。",
     "solution": "Could you please carry this luggage?",
-    "skipVoiceGeneration": true,
     "grammarPointIds": [
       "te-itadakemasen-ka",
       "o-object"
@@ -12691,7 +12683,6 @@
     "id": "n4-currently-eating-lunch",
     "text": "今、昼御飯を食べているところです。",
     "solution": "I am right in the middle of eating lunch.",
-    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "ところ": {
         "category": "auxiliary"
@@ -12813,7 +12804,6 @@
     "text": "I have just bought this book.",
     "solution": "今、この本を買ったところです。",
     "type": "production",
-    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "ところ": {
         "category": "auxiliary"
@@ -12827,7 +12817,8 @@
     ],
     "grammarPointIds": [
       "ta-tokoro"
-    ]
+    ],
+    "speechText": "いま、このほんをかったところです。"
   },
   {
     "id": "n4-only-recently-came-japan",
@@ -12842,7 +12833,6 @@
     "id": "n4-only-just-started-job",
     "text": "この仕事を始めたばかりです。",
     "solution": "I only just started this job.",
-    "skipVoiceGeneration": true,
     "grammarPointIds": [
       "ta-bakari",
       "o-object"
@@ -12952,7 +12942,6 @@
     "id": "n4-take-medicine-every-six-hours",
     "text": "この薬を六時間おきに飲みます。",
     "solution": "I take this medicine every six hours.",
-    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "おき": {
         "category": "auxiliary"
@@ -12962,7 +12951,8 @@
       "oki-ni",
       "o-object",
       "numbers-and-counters"
-    ]
+    ],
+    "speechText": "このくすりをろくじかんおきにのみます。"
   },
   {
     "id": "n4-bus-every-fifteen-minutes",
@@ -12984,7 +12974,6 @@
     "text": "Please take a break every hour.",
     "solution": "一時間おきに休んでください。",
     "type": "production",
-    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "おき": {
         "category": "auxiliary"
@@ -12999,7 +12988,8 @@
     "grammarPointIds": [
       "oki-ni",
       "te-kudasai"
-    ]
+    ],
+    "speechText": "いちじかんおきにやすんでください。"
   },
   {
     "id": "production-n4-call-mother-every-three-days",
@@ -13174,7 +13164,6 @@
     "id": "n4-cloud-looks-like-fish",
     "text": "あの雲は魚みたいです。",
     "solution": "That cloud looks like a fish.",
-    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "みたい": {
         "category": "auxiliary"
@@ -14124,7 +14113,6 @@
     "id": "n4-desk-made-of-wood",
     "text": "この机は木でできています。",
     "solution": "This desk is made of wood.",
-    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "でき": {
         "category": "auxiliary"
@@ -14359,7 +14347,6 @@
     "text": "I plan to meet my friend tomorrow.",
     "solution": "明日、友達に会う予定です。",
     "type": "production",
-    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "予定": {
         "category": "auxiliary"
@@ -14380,7 +14367,6 @@
     "text": "The new shop is scheduled to open next week.",
     "solution": "新しい店は来週開く予定です。",
     "type": "production",
-    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "予定": {
         "category": "auxiliary"
@@ -15120,12 +15106,12 @@
     "text": "Around the time I started this job, I was very busy.",
     "solution": "この仕事を始めた頃、とても忙しかったです。",
     "type": "production",
-    "skipVoiceGeneration": true,
     "tokenOverrides": { "頃": { "category": "auxiliary" } },
     "promptVocabularyHints": [
       { "word": "job", "vocabularyIds": ["vocab-cdf28ddaf837"] }
     ],
-    "grammarPointIds": ["koro"]
+    "grammarPointIds": ["koro"],
+    "speechText": "このしごとをはじめたころ、とてもいそがしかったです。"
   },
   {
     "id": "n4-knife-used-cut-fruit-purpose",
@@ -17612,7 +17598,6 @@
     "text": "Breakfast should be ready around the time the child wakes up.",
     "solution": "子供が起きる頃には、朝ご飯ができているはずです。",
     "type": "production",
-    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "頃": {
         "category": "auxiliary"
@@ -17669,7 +17654,6 @@
     "text": "Singing in front of people is embarrassing, so I find it hard to sing.",
     "solution": "人の前で歌うのは恥ずかしくて、歌いづらいです。",
     "type": "production",
-    "skipVoiceGeneration": true,
     "tokenOverrides": {
       "づらい": { "category": "auxiliary" }
     },

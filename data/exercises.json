@@ -57036,7 +57036,7 @@
   {
     "id": "production-coffee-offer-during-study",
     "text": "I'm studying right now. Shall I make you some coffee?",
-    "audio": "assets/voices/grammar/production-coffee-offer-during-study.m4a",
+    "audio": "assets/voices/grammar/coffee-offer-during-study.m4a",
     "vocabularyIds": [
       "vocab-89beba69de5a",
       "vocab-15863d9e899d",
@@ -57147,6 +57147,7 @@
     "minimumLevel": "n5",
     "solution": "「今、勉強中なんです。」「コーヒーを入れましょうか。」",
     "type": "production",
+    "audioSourceId": "coffee-offer-during-study",
     "promptVocabularyHints": [
       {
         "word": "studying",
@@ -60275,7 +60276,7 @@
   {
     "id": "production-rain-forecast-taxi-home",
     "text": "It will probably rain tomorrow. If it does, I will take a taxi home.",
-    "audio": "assets/voices/grammar/production-rain-forecast-taxi-home.m4a",
+    "audio": "assets/voices/grammar/rain-forecast-taxi-home.m4a",
     "vocabularyIds": [
       "vocab-bec9ce9d08c8",
       "vocab-7e87850c448d",
@@ -60388,6 +60389,7 @@
     "minimumLevel": "n5",
     "solution": "明日は雨が降るでしょう。雨が降ったら、タクシーで帰ります。",
     "type": "production",
+    "audioSourceId": "rain-forecast-taxi-home",
     "promptVocabularyHints": [
       {
         "word": "rain",
@@ -64404,7 +64406,7 @@
   {
     "id": "production-breakfast-then-school",
     "text": "I ate breakfast. After that, I went to school.",
-    "audio": "assets/voices/grammar/production-breakfast-then-school.m4a",
+    "audio": "assets/voices/grammar/breakfast-then-school.m4a",
     "vocabularyIds": [
       "vocab-40ae6dddb10a",
       "vocab-2bf5dccca2b0",
@@ -64504,6 +64506,7 @@
     "minimumLevel": "n5",
     "solution": "朝ご飯を食べました。それから、学校へ行きました。",
     "type": "production",
+    "audioSourceId": "breakfast-then-school",
     "promptVocabularyHints": [
       {
         "word": "breakfast",
@@ -64650,7 +64653,7 @@
   {
     "id": "production-do-not-press-button",
     "text": "Danger! Do not press that button.",
-    "audio": "assets/voices/grammar/production-do-not-press-button.m4a",
+    "audio": "assets/voices/grammar/do-not-press-button.m4a",
     "vocabularyIds": [
       "vocab-b56f4f9656e1",
       "vocab-ac42ce789185",
@@ -64705,6 +64708,7 @@
     "minimumLevel": "n5",
     "solution": "危ない！そのボタンを押すな。",
     "type": "production",
+    "audioSourceId": "do-not-press-button",
     "promptVocabularyHints": [
       {
         "word": "Danger",

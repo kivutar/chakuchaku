@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile } from "node:fs/promises";
+import { access, readFile, stat } from "node:fs/promises";
 import test from "node:test";
 import { resolveExerciseAudioSources } from "../scripts/exercise-audio.js";
 
@@ -80,5 +80,21 @@ test("every shared grammar card uses its owner's existing recording and preserve
     assert.deepEqual(exercise.grammarPointIds, source.grammarPointIds);
     assert.equal(exercise.audio, preparedById.get(audioOwner.id).audio);
     await access(new URL(`../${exercise.audio}`, import.meta.url));
+  }
+});
+
+test("every grammar and reading sentence has a nonempty local recording", async () => {
+  const readJson = path => readFile(new URL(`../${path}`, import.meta.url), "utf8").then(JSON.parse);
+  const [introduction, exercises, readings] = await Promise.all([
+    readJson("data/introduction.json"), readJson("data/exercises.json"),
+    readJson("data/readings.json")
+  ]);
+  const sentences = [
+    introduction, ...Object.values(introduction.levelVariants || {}),
+    ...exercises, ...readings.flatMap(passage => passage.sentences)
+  ];
+  for (const audio of new Set(sentences.map(sentence => sentence.audio))) {
+    const recording = await stat(new URL(`../${audio}`, import.meta.url));
+    assert.ok(recording.isFile() && recording.size > 0, `${audio}: missing sentence narration`);
   }
 });

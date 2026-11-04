@@ -213,6 +213,11 @@ before those strict checks, preventing a clean pronunciation from wasting an
 API request. The current speech configurations are kept in that script so each
 item produces a consistent cache identity.
 
+All grammar and reading sentences have local narration. The normal test suite
+requires every sentence's audio file to exist and be nonempty, including shared
+recordings used by production answers. Generate narration before publishing new
+sentences; `npm run test:voices` also decodes and validates available recordings.
+
 `scripts/serve.js` is an allowlisted local preview server. It is not an
 application backend and accepts only `GET` and `HEAD`. In particular, it cannot
 serve `.key`, source data, development scripts, or an `/api/*` endpoint.
