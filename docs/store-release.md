@@ -84,6 +84,45 @@ succeeds: the update must be submitted for review, not left as unsent changes.
 With managed publishing disabled, approved updates publish automatically.
 Tester membership and opt-in are unchanged by an update.
 
+### Production readiness and publication
+
+Production access approval does not itself publish a release. Inspect the
+existing store listing, images, production countries, uploaded bundles, and
+tracks using the CI publisher account:
+
+```sh
+gh workflow run google-play-production.yml -f action=inspect
+```
+
+This action uses `GOOGLE_PLAY_SERVICE_ACCOUNT_JSON` in CI. It does not export
+credentials or publish changes. Its report is attached as a workflow artifact.
+Complete missing listing, app-content, pricing, or country setup in Play Console
+before production validation. The service account must have production release
+permission as well as its existing testing-track permissions.
+
+Build and upload the current source with the Android-only workflow above, then
+use the resulting version code. Add reviewed English/French release notes as
+`docs/releases/android-<version>.json`, with a maximum of 500 characters per
+language. For example, validate an uploaded 1.0.17 bundle without publishing:
+
+```sh
+gh workflow run google-play-production.yml \
+  -f action=validate-production \
+  -f version_code=1022 \
+  -f release_notes_file=docs/releases/android-1.0.17.json
+```
+
+After checking the validation report, the same command with `action=publish`
+promotes that exact uploaded bundle to production and submits the changes for
+Google's normal review. It does not rebuild the application. The workflow
+rejects untested version codes, downgrades, and replacement of unfinished
+production rollouts. Managed publishing and any further Console-only review
+steps still apply; an API commit is not proof of public store availability.
+
+The first production rollout serves all users in the selected countries;
+staged percentage rollouts apply to later updates. Source:
+[Google Play release preparation and rollout](https://support.google.com/googleplay/android-developer/answer/9859348).
+
 On Arch Linux, create and upload a private release keystore with:
 
 ```sh
@@ -222,7 +261,8 @@ Baseline declarations, to be confirmed against the final binary:
 
 - Keep the previous accepted binaries available in the store consoles until the
   new rollout is stable.
-- Start Google Play production with a staged rollout.
+- The first Google Play production release reaches all selected countries;
+  start later production updates with a staged rollout.
 - Never change SRS or statistics storage versions without a tested migration.
 - Before a risky persistence change, ask TestFlight/closed-test users to export
   a progress backup and verify that the previous release can still import it.

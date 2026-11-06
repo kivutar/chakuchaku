@@ -1,0 +1,55 @@
+name: Google Play production
+run-name: Google Play ${{ inputs.action }} ${{ inputs.version_code }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Inspect readiness, validate without publishing, or publish an uploaded bundle
+        type: choice
+        options: [inspect, validate-production, publish]
+        default: inspect
+        required: true
+      version_code:
+        description: Existing internal/Alpha version code, required for validation or publication
+        type: string
+        required: false
+      release_notes_file:
+        description: Reviewed repository JSON file, required for production actions
+        type: string
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: google-play-production
+  cancel-in-progress: false
+
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - name: Check production release planning
+        run: node --test tests/google-play-production.test.js
+      - name: Inspect or publish Google Play production
+        env:
+          GOOGLE_PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT_JSON }}
+          PLAY_ACTION: ${{ inputs.action }}
+          PLAY_VERSION_CODE: ${{ inputs.version_code }}
+          PLAY_RELEASE_NOTES_PATH: ${{ inputs.release_notes_file }}
+          PLAY_REPORT_PATH: ${{ runner.temp }}/google-play-production-report.json
+        run: node scripts/google-play-production.js
+      - name: Preserve production report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: google-play-production-${{ inputs.action }}-${{ github.run_number }}
+          path: ${{ runner.temp }}/google-play-production-report.json
+          if-no-files-found: ignore
+          retention-days: 14
