@@ -17605,5 +17605,108 @@
     "scope": "supplemental",
     "introducedAt": "n4",
     "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-8af407d4d086",
+    "term": "まあ",
+    "reading": "まあ",
+    "meaning": "well…; I suppose",
+    "acceptedAnswers": [
+      "well",
+      "I suppose",
+      "I guess"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "conversation",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-c6b3d77ac32b",
+    "term": "人間",
+    "reading": "にんげん",
+    "meaning": "human being",
+    "acceptedAnswers": [
+      "human being",
+      "human",
+      "humans",
+      "person"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "people",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-032157e79367",
+    "term": "人生",
+    "reading": "じんせい",
+    "meaning": "life; one's lifetime",
+    "acceptedAnswers": [
+      "life",
+      "lifetime",
+      "one's life",
+      "one's lifetime"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "life",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-ff22c9e77ef2",
+    "term": "そういう",
+    "reading": "そういう",
+    "meaning": "that kind of; that sort of",
+    "acceptedAnswers": [
+      "that kind of",
+      "that sort of",
+      "that kind",
+      "that sort",
+      "such"
+    ],
+    "partOfSpeech": "determiner",
+    "topic": "conversation",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-62b60f8db319",
+    "term": "仲間",
+    "reading": "なかま",
+    "meaning": "companion; fellow group member",
+    "acceptedAnswers": [
+      "companion",
+      "comrade",
+      "fellow group member",
+      "group member",
+      "teammate"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "relationships",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-ca25a0f0a942",
+    "term": "数",
+    "reading": "かず",
+    "meaning": "number; quantity",
+    "acceptedAnswers": [
+      "number",
+      "quantity",
+      "count",
+      "amount"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "quantities",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
   }
 ]

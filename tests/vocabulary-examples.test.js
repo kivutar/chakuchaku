@@ -54,9 +54,9 @@ test("reviewed N4 vocabulary has evidence, correct readings and familiar context
     const imported = review.entries.filter(({ decision }) => decision === "imported");
 
     assert.deepEqual(
-      imported.map(({ vocabularyId }) => vocabularyId),
+      imported.map(({ vocabularyId }) => vocabularyId).toSorted(),
       vocabulary.filter((entry) => entry.source === source)
-        .map(({ id }) => id)
+        .map(({ id }) => id).toSorted()
     );
 
     for (const record of imported) {
@@ -68,9 +68,16 @@ test("reviewed N4 vocabulary has evidence, correct readings and familiar context
       assert.ok(batchNumbers.has(record.batch), `${entry.term}: unknown review batch`);
       assert.ok(record.reason);
       assert.ok(record.evidence.length > 0);
-      assert.ok(record.evidence.every(({ source, page, location }) => (
-        review.sources[source]?.url && Number.isInteger(page) && page > 0 && location
-      )));
+      for (const evidence of record.evidence) {
+        assert.ok(review.sources[evidence.source]?.url && evidence.location, entry.term);
+        if (review.sources[evidence.source].url.endsWith(".pdf")) {
+          assert.ok(Number.isInteger(evidence.page) && evidence.page > 0, entry.term);
+        } else {
+          assert.equal(evidence.kind, "taught-expression", entry.term);
+          assert.equal(review.sources[evidence.source].curriculum,
+            "N4 (publisher placement)", entry.term);
+        }
+      }
       assert.ok(example.tokens.slice(example.targetTokenStart, example.targetTokenEnd)
         .some(({ vocabularyId }) => vocabularyId === entry.id));
 
@@ -100,15 +107,18 @@ test("frequency review keeps unverified levels unassigned and preserves distinct
     readJson("data/jlpt-n5-vocabulary.json")
   ]);
   assert.equal(review.entries.length, 62);
-  assert.equal(review.entries.filter(entry => entry.decision === "imported").length, 19);
+  assert.equal(review.entries.filter(entry => entry.decision === "imported").length, 25);
   assert.deepEqual(review.entries.map(entry => entry.frequencyRank),
     review.entries.map(entry => entry.frequencyRank).toSorted((a, b) => a - b));
   for (const entry of review.entries) {
     assert.ok(entry.usageTags.length > 0 && entry.register && entry.reason, entry.word);
-    if (entry.decision === "pending-review") {
+    if (entry.decision !== "imported") {
       assert.equal(entry.introducedAt, undefined, entry.word);
-      assert.equal(entry.levelConfidence, "unassigned", entry.word);
       assert.equal(entry.vocabularyId, undefined, entry.word);
+    }
+    if (["pending-review", "deferred"].includes(entry.decision)) {
+      assert.equal(entry.levelConfidence, "unassigned", entry.word);
+      assert.equal(entry.proposedIntroducedAt, undefined, entry.word);
     }
   }
   assert.equal(review.entries[0].word, "俺");

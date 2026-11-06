@@ -5,11 +5,12 @@
     "Frequency orders candidate review; it does not assign a JLPT level.",
     "Resolve existing spellings, readings, compositional forms and meanings before adding SRS units.",
     "Classify usage, register and learning focus separately from introduction level.",
-    "Require direct beginner word-list evidence and everyday usefulness for this import batch.",
+    "Require direct beginner teaching evidence (a standalone word-list headword or an explicitly taught expression) and everyday usefulness; record the evidence type.",
     "Irodori through Elementary 2 is an approximate N4 ability benchmark, not an official word-by-word JLPT classification.",
+    "Marugoto A2 and publisher N4 curricula support an editorial N4 supplement; neither assigns an official JLPT level to individual words. A2/B1 evidence alone is insufficient for this batch.",
     "New entries are supplemental and share the existing N4 daily introduction budget.",
     "Author original English/French meanings and examples; do not copy source sentences, illustrations or audio.",
-    "Keep unverified levels unassigned; pending-review is not a judgment that a word is unimportant."
+    "Keep unverified levels unassigned; pending-review and deferred do not mean that a word is unimportant. A recommendation does not itself create an SRS item."
   ],
   "sources": {
     "frequency-report": {
@@ -43,6 +44,60 @@
     "irodori-n4-scope": {
       "title": "Japan Foundation: Irodori and JLPT N4, FAQ 11–12",
       "url": "https://www.irodori.jpf.go.jp/faq.html"
+    },
+    "marugoto-a2-1-competences": {
+      "title": "Marugoto Elementary 1 A2: Competences vocabulary index (English)",
+      "url": "https://marugoto.jpf.go.jp/assets/docs/download/elementary1_c/MarugotoElementary1CompetencesVocabularyIndex_EN.pdf",
+      "sha256": "e00f3c580440df11c651047b7591cb68f9244e5eb670e05bcb3108a08c0b231a",
+      "pageNumbering": "PDF pages counted from 1",
+      "curriculum": "A2"
+    },
+    "marugoto-a2-2-competences": {
+      "title": "Marugoto Elementary 2 A2: Competences vocabulary index (English)",
+      "url": "https://marugoto.jpf.go.jp/assets/docs/download/elementary2_c/MarugotoElementary2CompetencesVocabularyIndex_EN.pdf",
+      "sha256": "40150f992613810eac2843cbcd7a8fc472d01082dd4b0b59ac8449cf023d8d06",
+      "pageNumbering": "PDF pages counted from 1",
+      "curriculum": "A2"
+    },
+    "marugoto-a2-b1": {
+      "title": "Marugoto Pre-Intermediate A2/B1 vocabulary index (English)",
+      "url": "https://marugoto.jpf.go.jp/assets/docs/download/pre_intermediate/MarugotoPre-IntermediateVocabularyIndex_EN.pdf",
+      "sha256": "fc7041cc172ff5939aa71c47032b5e25fc7e31ec321d7e1d3d6fc44386fe5146",
+      "pageNumbering": "PDF pages counted from 1",
+      "curriculum": "A2/B1"
+    },
+    "ippo-beginner1": {
+      "title": "Ippo Nihongo Sanpo: Kurashi no Nihongo Kyoshitsu, Beginner 1, alphabetical vocabulary index",
+      "url": "https://www.3anet.co.jp/np/en/secure/0-0001-03-308100/0-0001-03-308100-1.pdf",
+      "sha256": "365b5c5dae0f7464b5a34e7e9a3b32bf4126058643d9fc30464a877594843c8b",
+      "pageNumbering": "PDF pages counted from 1",
+      "curriculum": "Beginner 1"
+    },
+    "try-n4": {
+      "title": "ASK Publishing: TRY! JLPT N4 vocabulary list (English)",
+      "url": "https://storage.ask-books.com/uploads/books/9784866396330/bonus_materials/bonus_material_1.pdf",
+      "publisherPage": "https://ask-books.com/book-details/?slug=9784866396330",
+      "curriculum": "N4 (publisher placement)",
+      "pageNumbering": "PDF pages counted from 1",
+      "accessNote": "Headwords and page numbers verified in search-indexed publisher PDF text on 2026-11-06. Direct PDF downloads returned HTTP 403; no downloaded-file checksum is claimed."
+    },
+    "try-n3": {
+      "title": "ASK Publishing: TRY! JLPT N3 vocabulary list (Chinese)",
+      "url": "https://storage.ask-books.com/uploads/books/9784866396668/bonus_materials/bonus_material_2.pdf",
+      "publisherPage": "https://ask-books.com/book-details/?slug=9784866396668",
+      "curriculum": "N3 (publisher placement)",
+      "pageNumbering": "PDF pages counted from 1",
+      "accessNote": "The 許す headword and page number were verified in search-indexed publisher PDF text on 2026-11-06; no downloaded-file checksum is claimed."
+    },
+    "bunpro-souiu": {
+      "title": "Bunpro: そういう, N4 lesson 3, item 8",
+      "url": "https://bunpro.jp/grammar_points/そういう",
+      "curriculum": "N4 (publisher placement)"
+    },
+    "kanjipedia-makaseru": {
+      "title": "Kanjipedia: 任せる, sense 2",
+      "url": "https://www.kanjipedia.jp/kotoba/0005459500",
+      "purpose": "Meaning and usage only; no JLPT placement is inferred from a dictionary definition."
     }
   },
   "batches": [
@@ -51,6 +106,12 @@
       "reviewedAt": "2026-11-06",
       "imported": 19,
       "description": "First frequency-ordered batch of everyday and conversation vocabulary with direct beginner word-list evidence."
+    },
+    {
+      "batch": 2,
+      "reviewedAt": "2026-11-06",
+      "imported": 6,
+      "description": "Import the six agreed follow-up recommendations, with direct beginner teaching evidence, original English/French examples and dedicated word audio."
     }
   ],
   "entries": [
@@ -155,9 +216,43 @@
       ],
       "register": "conversational",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
-      "levelConfidence": "unassigned",
-      "reason": "The word lists contain まあまあ, which does not establish the separate discourse-marker senses of まあ; seek direct beginner evidence."
+      "decision": "imported",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Import the conversational softener well / I suppose: Marugoto Elementary 2 A2 lists this exact sense. Do not substitute the separate surprised exclamation or まあまあ.",
+      "followupReview": 2,
+      "evidence": [
+        {
+          "source": "marugoto-a2-2-competences",
+          "kind": "headword",
+          "location": "Lesson 1 script (1ス)",
+          "form": "まあ",
+          "page": 21,
+          "sense": "Conversational softener: well / I suppose."
+        },
+        {
+          "source": "marugoto-a2-1-competences",
+          "kind": "headword",
+          "location": "Lesson 5 script (5ス)",
+          "form": "まあ",
+          "page": 15,
+          "sense": "Surprised exclamation; checked but not the proposed teaching sense."
+        }
+      ],
+      "teachingNote": "Teach one conversational use in context. The surprised Oh! sense and まあまあ (so-so) are outside this proposed entry.",
+      "vocabularyId": "vocab-8af407d4d086",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "batch": 2,
+      "teachingMeaning": {
+        "en": "well…; I suppose",
+        "fr": "eh bien… ; disons"
+      },
+      "authoredExample": {
+        "japanese": "まあ、少し待ちましょう。",
+        "targetSurface": "まあ",
+        "english": "Well, let’s wait a little.",
+        "french": "Eh bien, attendons un peu."
+      }
     },
     {
       "word": "ただ",
@@ -198,9 +293,46 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
-      "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "decision": "imported",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Import human being: an explicit headword in the publisher's TRY! N4 list. The existing 人 does not remove the need to understand the distinct word 人間.",
+      "followupReview": 2,
+      "evidence": [
+        {
+          "source": "try-n4",
+          "kind": "headword",
+          "location": "Vocabulary index, page 14, before section 6",
+          "form": "人間",
+          "page": 14,
+          "sense": "Human being."
+        },
+        {
+          "source": "marugoto-a2-b1",
+          "kind": "headword",
+          "location": "Lesson 7",
+          "form": "にんげん / 人間",
+          "page": 17,
+          "sense": "Human; corroboration only, not the beginner-level justification."
+        }
+      ],
+      "relatedVocabularyIds": [
+        "vocab-ad7167347a2a"
+      ],
+      "teachingNote": "Teach the human-being sense, rather than treating 人間 and 人 as interchangeable in every context.",
+      "vocabularyId": "vocab-c6b3d77ac32b",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "batch": 2,
+      "teachingMeaning": {
+        "en": "human being",
+        "fr": "être humain"
+      },
+      "authoredExample": {
+        "japanese": "人間も動物です。",
+        "targetSurface": "人間",
+        "english": "Human beings are animals too.",
+        "french": "Les êtres humains sont aussi des animaux."
+      }
     },
     {
       "word": "最高",
@@ -438,9 +570,21 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
+      "decision": "deferred",
       "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "reason": "Defer this N4 supplement: the exact surprise/disbelief expression is in Marugoto A2/B1, but no matching A2 or N4 teaching evidence was established in this pass. This does not by itself assign the word to N3.",
+      "followupReview": 2,
+      "evidence": [
+        {
+          "source": "marugoto-a2-b1",
+          "kind": "headword",
+          "location": "Lesson 6 script (6ス)",
+          "form": "まさか",
+          "page": 20,
+          "sense": "Surprise / disbelief."
+        }
+      ],
+      "teachingNote": "Later teach disbelief in dialogue, including standalone and sentence-adverb uses; do not reduce all uses to a single literal no way translation."
     },
     {
       "word": "愛す",
@@ -468,9 +612,38 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
-      "levelConfidence": "unassigned",
-      "reason": "Occurs in an Elementary 2 topic heading, but this pass did not establish a standalone word-list headword; retain for a contextual follow-up review."
+      "decision": "imported",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Import life as a lifetime or life course: a standalone headword in Marugoto Elementary 2 A2, rather than relying on the earlier Irodori heading match.",
+      "followupReview": 2,
+      "evidence": [
+        {
+          "source": "marugoto-a2-2-competences",
+          "kind": "headword",
+          "location": "Lesson 17",
+          "form": "じんせい / 人生",
+          "page": 12,
+          "sense": "Life / lifetime."
+        }
+      ],
+      "relatedVocabularyIds": [
+        "vocab-0e853c977cf1"
+      ],
+      "teachingNote": "Distinguish a whole life or life course from 生活, which concerns daily living.",
+      "vocabularyId": "vocab-032157e79367",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "batch": 2,
+      "teachingMeaning": {
+        "en": "life; one's lifetime",
+        "fr": "vie ; parcours de vie"
+      },
+      "authoredExample": {
+        "japanese": "私の人生は楽しいです。",
+        "targetSurface": "人生",
+        "english": "I enjoy my life.",
+        "french": "J’aime ma vie."
+      }
     },
     {
       "word": "黙る",
@@ -513,9 +686,39 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
-      "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "decision": "imported",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Import the noun modifier that kind of: Bunpro explicitly teaches this expression in its N4 curriculum. It complements the existing どういう and should not be read as an ordinary statement meaning to say so.",
+      "followupReview": 2,
+      "evidence": [
+        {
+          "source": "bunpro-souiu",
+          "kind": "taught-expression",
+          "location": "N4 lesson 3, item 8; Structure and About sections",
+          "form": "そういう + noun",
+          "sense": "That kind of; modifies a following noun."
+        }
+      ],
+      "relatedVocabularyIds": [
+        "vocab-dbf08e9fe044",
+        "vocab-fece8082cc7a",
+        "vocab-de2baf055bb3"
+      ],
+      "teachingNote": "Teach before a noun with an understood prior reference. Keep its recognition link and SRS identity distinct from そう, そんな and the question word どういう.",
+      "vocabularyId": "vocab-ff22c9e77ef2",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "batch": 2,
+      "teachingMeaning": {
+        "en": "that kind of; that sort of",
+        "fr": "ce genre de ; de cette sorte"
+      },
+      "authoredExample": {
+        "japanese": "そういう店は近くにあります。",
+        "targetSurface": "そういう",
+        "english": "There is a shop like that nearby.",
+        "french": "Il y a un magasin de ce genre près d’ici."
+      }
     },
     {
       "word": "どういう",
@@ -556,9 +759,38 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
-      "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "decision": "imported",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Import a companion or fellow group member: an explicit headword in the publisher's TRY! N4 list, useful for shared hobbies, activities and work.",
+      "followupReview": 2,
+      "evidence": [
+        {
+          "source": "try-n4",
+          "kind": "headword",
+          "location": "Vocabulary index, page 23",
+          "form": "なかま / 仲間",
+          "page": 23,
+          "sense": "Companion / fellow group member."
+        }
+      ],
+      "relatedVocabularyIds": [
+        "vocab-d9898f8a95b6"
+      ],
+      "teachingNote": "Use a shared activity to distinguish belonging to the same group from the broader friendship word 友達.",
+      "vocabularyId": "vocab-62b60f8db319",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "batch": 2,
+      "teachingMeaning": {
+        "en": "companion; fellow group member",
+        "fr": "camarade ; compagnon"
+      },
+      "authoredExample": {
+        "japanese": "仲間と毎週走ります。",
+        "targetSurface": "仲間",
+        "english": "I run with my group every week.",
+        "french": "Je cours avec mon groupe chaque semaine."
+      }
     },
     {
       "word": "敵",
@@ -614,9 +846,38 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
-      "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "decision": "imported",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Import number / quantity with the reading かず: a standalone headword in lesson 1 of a publisher's Beginner 1 textbook. The current 数字 entry teaches written digits and does not cover this quantity use.",
+      "followupReview": 2,
+      "evidence": [
+        {
+          "source": "ippo-beginner1",
+          "kind": "headword",
+          "location": "Lesson 1, alphabetical headword index",
+          "form": "かず / 数",
+          "page": 4,
+          "sense": "Number / quantity; reading kazu."
+        }
+      ],
+      "relatedVocabularyIds": [
+        "vocab-3097f42345bf"
+      ],
+      "teachingNote": "Start with the number of things (noun + の数). Do not merge with 数字 or teach the prefix reading すう in this entry.",
+      "vocabularyId": "vocab-ca25a0f0a942",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "batch": 2,
+      "teachingMeaning": {
+        "en": "number; quantity",
+        "fr": "nombre ; quantité"
+      },
+      "authoredExample": {
+        "japanese": "椅子の数を教えてください。",
+        "targetSurface": "数",
+        "english": "Please tell me how many chairs there are.",
+        "french": "Dites-moi combien il y a de chaises, s’il vous plaît."
+      }
     },
     {
       "word": "愛",
@@ -659,9 +920,21 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
+      "decision": "deferred",
       "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "reason": "Defer this N4 supplement: the checked publisher explicitly includes this headword in its N3 material, and no direct beginner support was established here. High dialogue frequency alone is not a reason to move it into N4.",
+      "followupReview": 2,
+      "evidence": [
+        {
+          "source": "try-n3",
+          "kind": "headword",
+          "location": "Vocabulary index, page 6",
+          "form": "ゆるす / 許す",
+          "page": 6,
+          "sense": "Allow / forgive; publisher N3 material."
+        }
+      ],
+      "teachingNote": "A future entry should separate permission from forgiveness and remain distinct from the permission grammar てもいい."
     },
     {
       "word": "全員",
@@ -730,9 +1003,24 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
+      "decision": "deferred",
       "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "reason": "Defer this N4 supplement pending beginner teaching evidence. Its task-delegation sense is useful and is a real lexical gap, but the existing 預ける safekeeping entry is not sufficient evidence for its level or a reason to merge the two words.",
+      "followupReview": 2,
+      "evidence": [
+        {
+          "source": "kanjipedia-makaseru",
+          "kind": "definition",
+          "location": "Definition, sense 2",
+          "form": "任せる",
+          "sense": "Entrust a task to another; definition confirms the teaching distinction, not a level."
+        }
+      ],
+      "relatedVocabularyIds": [
+        "vocab-66874224e11d",
+        "vocab-a905e5f18cff"
+      ],
+      "teachingNote": "Use a task + を + person + に + 任せる context in a later review. The dictionary source is semantic evidence only."
     },
     {
       "word": "父親",
@@ -919,9 +1207,24 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
+      "decision": "deferred",
       "levelConfidence": "unassigned",
-      "reason": "Found only in compounds, headings or unrelated substring matches in this pass; do not treat these as standalone headword evidence."
+      "reason": "Defer this N4 supplement: the standalone method headword is established in Marugoto A2/B1, but no direct A2 or N4 headword evidence was found in this pass. The existing 仕方 already gives learners one way to discuss how something is done.",
+      "followupReview": 2,
+      "evidence": [
+        {
+          "source": "marugoto-a2-b1",
+          "kind": "headword",
+          "location": "Lesson 5",
+          "form": "ほうほう / 方法",
+          "page": 20,
+          "sense": "Method / how to do something."
+        }
+      ],
+      "relatedVocabularyIds": [
+        "vocab-5b39de46794f"
+      ],
+      "teachingNote": "Keep 方法 and 仕方 as separate lexical items if 方法 is later imported. A heading or compound is not standalone beginner evidence."
     },
     {
       "word": "確認",
@@ -1235,6 +1538,42 @@
       "decision": "pending-review",
       "levelConfidence": "unassigned",
       "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    }
+  ],
+  "followupReviews": [
+    {
+      "review": 2,
+      "reviewedAt": "2026-11-06",
+      "candidateWords": [
+        "まあ",
+        "人間",
+        "まさか",
+        "人生",
+        "そういう",
+        "仲間",
+        "数",
+        "許す",
+        "任せる",
+        "方法"
+      ],
+      "recommended": 6,
+      "deferred": 4,
+      "imported": 6,
+      "description": "Ten candidates reviewed in frequency order: the six recommendations were subsequently imported as N4 supplements in batch 2; four remain deferred.",
+      "sourcesChecked": [
+        "irodori-starter",
+        "irodori-elementary1",
+        "irodori-elementary2",
+        "marugoto-a2-1-competences",
+        "marugoto-a2-2-competences",
+        "marugoto-a2-b1",
+        "try-n4",
+        "try-n3",
+        "ippo-beginner1",
+        "bunpro-souiu",
+        "kanjipedia-makaseru"
+      ],
+      "searchLimits": "Positive headword evidence is recorded below; unsuccessful searches are not proof that a word is advanced. The TRY! evidence comes from indexed publisher PDFs, as detailed in each source access note."
     }
   ]
 }

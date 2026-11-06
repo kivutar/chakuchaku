@@ -54687,6 +54687,288 @@
     ]
   },
   {
+    "vocabularyId": "vocab-8af407d4d086",
+    "text": "まあ、少し待ちましょう。",
+    "targetSurface": "まあ",
+    "targetReading": "まあ",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "Well, let’s wait a little.",
+    "tokens": [
+      {
+        "surface": "まあ",
+        "category": "adverb",
+        "reading": "まあ",
+        "vocabularyId": "vocab-8af407d4d086"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "少し",
+        "category": "adverb",
+        "reading": "すこし",
+        "vocabularyId": "vocab-8814378ebfc2"
+      },
+      {
+        "surface": "待ち",
+        "category": "verb",
+        "reading": "まち",
+        "vocabularyId": "vocab-6f30c5c5938f"
+      },
+      {
+        "surface": "ましょ",
+        "category": "auxiliary",
+        "reading": "ましょ"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-c6b3d77ac32b",
+    "text": "人間も動物です。",
+    "targetSurface": "人間",
+    "targetReading": "にんげん",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "Human beings are animals too.",
+    "tokens": [
+      {
+        "surface": "人間",
+        "category": "noun",
+        "reading": "にんげん",
+        "vocabularyId": "vocab-c6b3d77ac32b"
+      },
+      {
+        "surface": "も",
+        "category": "particle",
+        "reading": "も"
+      },
+      {
+        "surface": "動物",
+        "category": "noun",
+        "reading": "どうぶつ",
+        "vocabularyId": "vocab-a3374580d856"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-032157e79367",
+    "text": "私の人生は楽しいです。",
+    "targetSurface": "人生",
+    "targetReading": "じんせい",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I enjoy my life.",
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "人生",
+        "category": "noun",
+        "reading": "じんせい",
+        "vocabularyId": "vocab-032157e79367"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "楽しい",
+        "category": "adjective",
+        "reading": "たのしい",
+        "vocabularyId": "vocab-9cc2d4a9bbe1"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-ff22c9e77ef2",
+    "text": "そういう店は近くにあります。",
+    "targetSurface": "そういう",
+    "targetReading": "そういう",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "There is a shop like that nearby.",
+    "tokens": [
+      {
+        "surface": "そういう",
+        "category": "determiner",
+        "reading": "そういう",
+        "vocabularyId": "vocab-ff22c9e77ef2"
+      },
+      {
+        "surface": "店",
+        "category": "noun",
+        "reading": "みせ",
+        "vocabularyId": "vocab-e70f9243d4c7"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "近く",
+        "category": "noun",
+        "reading": "ちかく",
+        "vocabularyId": "vocab-cacc70775f3e"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-62b60f8db319",
+    "text": "仲間と毎週走ります。",
+    "targetSurface": "仲間",
+    "targetReading": "なかま",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "I run with my group every week.",
+    "tokens": [
+      {
+        "surface": "仲間",
+        "category": "noun",
+        "reading": "なかま",
+        "vocabularyId": "vocab-62b60f8db319"
+      },
+      {
+        "surface": "と",
+        "category": "particle",
+        "reading": "と"
+      },
+      {
+        "surface": "毎週",
+        "category": "noun",
+        "reading": "まいしゅう",
+        "vocabularyId": "vocab-d63e5b968046"
+      },
+      {
+        "surface": "走り",
+        "category": "verb",
+        "reading": "はしり",
+        "vocabularyId": "vocab-97526e11c703"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-ca25a0f0a942",
+    "text": "椅子の数を教えてください。",
+    "targetSurface": "数",
+    "targetReading": "かず",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "Please tell me how many chairs there are.",
+    "tokens": [
+      {
+        "surface": "椅子",
+        "category": "noun",
+        "reading": "いす",
+        "vocabularyId": "vocab-7863488ec2b8"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "数",
+        "category": "noun",
+        "reading": "かず",
+        "vocabularyId": "vocab-ca25a0f0a942"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "教え",
+        "category": "verb",
+        "reading": "おしえ",
+        "vocabularyId": "vocab-de83de37aff5"
+      },
+      {
+        "surface": "て",
+        "category": "particle",
+        "reading": "て"
+      },
+      {
+        "surface": "ください",
+        "category": "auxiliary",
+        "reading": "ください"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

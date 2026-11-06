@@ -9228,6 +9228,42 @@
     "translation": "Yes, understood."
   },
   {
+    "vocabularyId": "vocab-8af407d4d086",
+    "text": "まあ、少し待ちましょう。",
+    "targetSurface": "まあ",
+    "translation": "Well, let’s wait a little."
+  },
+  {
+    "vocabularyId": "vocab-c6b3d77ac32b",
+    "text": "人間も動物です。",
+    "targetSurface": "人間",
+    "translation": "Human beings are animals too."
+  },
+  {
+    "vocabularyId": "vocab-032157e79367",
+    "text": "私の人生は楽しいです。",
+    "targetSurface": "人生",
+    "translation": "I enjoy my life."
+  },
+  {
+    "vocabularyId": "vocab-ff22c9e77ef2",
+    "text": "そういう店は近くにあります。",
+    "targetSurface": "そういう",
+    "translation": "There is a shop like that nearby."
+  },
+  {
+    "vocabularyId": "vocab-62b60f8db319",
+    "text": "仲間と毎週走ります。",
+    "targetSurface": "仲間",
+    "translation": "I run with my group every week."
+  },
+  {
+    "vocabularyId": "vocab-ca25a0f0a942",
+    "text": "椅子の数を教えてください。",
+    "targetSurface": "数",
+    "translation": "Please tell me how many chairs there are."
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

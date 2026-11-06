@@ -230,7 +230,7 @@ publishing vocabulary, kanji, and grammar specifications after the 2010 revision
 because the test is intended to measure communicative use rather than memorized
 lists.
 
-The inventory currently contains 1,537 entries: 879 introduced at N5 and 658
+The inventory currently contains 1,543 entries: 879 introduced at N5 and 664
 introduced at N4.
 
 - 725 N5 `core` entries adapted from the MIT-licensed Open Anki decks at commit
@@ -268,13 +268,17 @@ introduced at N4.
   health, relationships, home, shopping, travel and quantities. They are
   practical additions to learn by N4, not claims about an official JLPT
   vocabulary specification or measured frequency thresholds.
-- 19 N4 `supplemental` entries reviewed from the supplied frequency report and
-  directly attested in Irodori beginner word lists: `ただ`, `最高`, `ほら`, `相手`,
+- 25 N4 `supplemental` entries reviewed from the supplied frequency report.
+  The first 19 are directly attested in Irodori beginner word lists: `ただ`, `最高`, `ほら`, `相手`,
   `絶対`, `すべて`, `どういう`, `感じる`, `全員`, `感じ`, `チーム`, `情報`,
   `確認`, `感謝`, `落ち着く`, `とにかく`, `離れる`, `気づく`, and `了解`.
   `ただ` initially targets the connector "however/but". `全て` is a spelling
   variant of `すべて`; `感じ` has its own SRS identity and recording, separate
   from both `感じる` and the homophone `漢字`.
+  The second batch adds six words with direct beginner teaching evidence:
+  `まあ`, `人間`, `人生`, `そういう`, `仲間`, and `数` (`かず`). The examples
+  distinguish a person's lifetime (`人生`) from daily living (`生活`), quantity
+  (`数`) from written digits (`数字`), and the noun modifier `そういう` from `そう`.
 
 The `core` label means "exam-oriented consensus candidate," not "officially
 required." The `supplemental` label keeps useful lesson vocabulary without
@@ -352,12 +356,25 @@ copied into this batch.
 frequency review, with source-file checksum, original rank and count, usage tags,
 register, teaching focus, and an individual decision. Its first batch imports
 19 words in frequency order, with exact Irodori PDF pages and lesson references.
-The other 43 remain pending individual review, with no unverified introduction
-level assigned. In particular, a compound or heading match is not recorded as
+Follow-up review 2 examined ten more candidates. Batch 2 imports the six agreed
+recommendations as N4 supplements: `まあ` (the conversational softener), `人間`,
+`人生`, `そういう`, `仲間`, and `数` (`かず`, quantity). It defers `まさか`,
+`許す`, `任せる`, and `方法`; the remaining 33 await review. Each imported entry
+has source evidence, teaching distinctions, original English/French examples,
+and its own word recording. The review records the decision separately from the
+canonical vocabulary and prepared examples.
+
+The follow-up uses Marugoto A2 indexes, explicit publisher N4 teaching materials,
+and a Beginner 1 word list. `そういう` has direct N4 teaching evidence as a noun
+modifier, rather than a word-list match. Marugoto A2/B1 entries alone do not meet
+this batch's beginner evidence threshold. The source access notes distinguish
+downloaded PDFs with checksums from search-indexed publisher PDF text; the TRY!
+PDF downloads returned HTTP 403 during this review. Deferred words retain no
+assigned introduction level. A compound or heading match is not recorded as
 standalone word-list evidence. Frequency sets review priority; it does not imply
 an official JLPT placement. The supplied report does not identify its corpus.
-These additions use the normal N4 introduction budget and have original short
-English/French examples with otherwise familiar N5 vocabulary.
+The 25 imported additions use the normal N4 introduction budget and have original
+short English/French examples with otherwise familiar N5 vocabulary.
 
 `katakana-vocabulary.md` documents the Katakana pool, its exact selection
 rules, additions, source comparisons, and kana coverage. It uses the former

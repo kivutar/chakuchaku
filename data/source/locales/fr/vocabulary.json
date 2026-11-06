@@ -11032,5 +11032,61 @@
       "compris",
       "d’accord"
     ]
+  },
+  "vocab-8af407d4d086": {
+    "meaning": "eh bien… ; disons",
+    "acceptedAnswers": [
+      "eh bien",
+      "bon",
+      "disons"
+    ]
+  },
+  "vocab-c6b3d77ac32b": {
+    "meaning": "être humain",
+    "acceptedAnswers": [
+      "être humain",
+      "humain",
+      "humains",
+      "les êtres humains"
+    ]
+  },
+  "vocab-032157e79367": {
+    "meaning": "vie ; parcours de vie",
+    "acceptedAnswers": [
+      "vie",
+      "la vie",
+      "parcours de vie",
+      "existence"
+    ]
+  },
+  "vocab-ff22c9e77ef2": {
+    "meaning": "ce genre de ; de cette sorte",
+    "acceptedAnswers": [
+      "ce genre de",
+      "ce type de",
+      "de cette sorte",
+      "cette sorte de"
+    ]
+  },
+  "vocab-62b60f8db319": {
+    "meaning": "camarade ; compagnon",
+    "acceptedAnswers": [
+      "camarade",
+      "compagnon",
+      "compagne",
+      "compagnon d’activité",
+      "coéquipier",
+      "coéquipière",
+      "membre du même groupe"
+    ]
+  },
+  "vocab-ca25a0f0a942": {
+    "meaning": "nombre ; quantité",
+    "acceptedAnswers": [
+      "nombre",
+      "quantité",
+      "le nombre",
+      "une quantité"
+    ]
   }
 }
