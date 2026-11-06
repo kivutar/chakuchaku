@@ -1,37 +1,15 @@
 # French store listing
 
-Use these fields for the French App Store and Play Store localization. The app
-name remains language-neutral.
+Use the current fields in [store-listings/fr.json](store-listings/fr.json) for
+the French App Store and Play Store localization. The shared description now
+covers N5/N4, stories, learning in context, adaptive furigana, and Japanese audio.
+The English equivalent is [store-listings/en.json](store-listings/en.json).
 
-- Name: `ChakuChaku - JLPT N5`
-- Subtitle: `Le japonais, pas à pas`
-- Promotional text: `Progressez régulièrement en hiragana, katakana, vocabulaire et grammaire grâce à des révisions adaptées.`
-- Keywords: `japonais,JLPT,N5,hiragana,katakana,kanji,vocabulaire,grammaire,SRS`
-- Short description: `Apprenez le japonais avec des exercices N5 et des révisions espacées.`
-
-## Description
-
-ChakuChaku vous aide à construire de solides bases en japonais, une petite
-révision après l’autre.
-
-Entraînez-vous avec des exercices d’hiragana, de katakana, de vocabulaire et de
-grammaire adaptés au niveau JLPT N5. Le système de répétition espacée suit
-chaque kana, mot et point de grammaire afin de vous proposer les révisions au
-bon moment.
-
-Fonctionnalités principales :
-
-- exercices japonais ↔ français ;
-- lecture et écriture des hiragana et katakana ;
-- vocabulaire et grammaire JLPT N5 ;
-- suivi détaillé de la progression et des éléments maîtrisés ;
-- audio japonais facultatif ;
-- correction facultative par IA avec votre propre clé API ;
-- fonctionnement hors ligne, sans compte, publicité ni analyse publicitaire ;
-- sauvegarde et restauration locales de votre progression.
-
-ChakuChaku est gratuit. Votre progression reste sur votre appareil et peut être
-exportée quand vous le souhaitez.
+Use `shortDescription` on Google Play and `subtitle`, `promotionalText`, and
+`keywords` on the App Store. Both stores use `name` and `description`. Validate
+their respective field limits before saving. Full App Store descriptions are
+updated with an editable app version; promotional text can also be updated on
+the currently released version.
 
 ## Review notes
 
