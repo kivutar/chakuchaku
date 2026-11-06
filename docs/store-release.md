@@ -101,6 +101,15 @@ Complete missing listing, app-content, pricing, or country setup in Play Console
 before production validation. The service account must have production release
 permission as well as its existing testing-track permissions.
 
+If testing uploads work but production validation returns `403: The caller does
+not have permission`, the account owner must open **Users and permissions** in
+Play Console, select the CI publisher account, and enable **Release to
+production, exclude devices, and use Play App Signing** for ChakuChaku. Testing
+release permission alone does not include production access. See
+[Google Play permission definitions](https://support.google.com/googleplay/android-developer/answer/9844686).
+Then rerun validation against the same uploaded version code; no rebuild is
+needed.
+
 Build and upload the current source with the Android-only workflow above, then
 use the resulting version code. Add reviewed English/French release notes as
 `docs/releases/android-<version>.json`, with a maximum of 500 characters per

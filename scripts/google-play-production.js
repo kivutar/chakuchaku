@@ -92,7 +92,7 @@ export async function inspectEdit(request, editId) {
   }));
   const releaseLifecycle = Object.fromEntries(await Promise.all(
     (tracks.tracks || []).map(async ({ track }) => {
-      try { return [track, (await request(`/tracks/${encodeURIComponent(track)}/releases`)).releases || []]; }
+      try { return [track, (await request(`/tracks/${encodeURIComponent(track)}/releases`))?.releases || []]; }
       catch (error) { return [track, { error: error.message }]; }
     })
   ));
