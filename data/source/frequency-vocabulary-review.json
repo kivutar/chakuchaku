@@ -98,6 +98,43 @@
       "title": "Kanjipedia: 任せる, sense 2",
       "url": "https://www.kanjipedia.jp/kotoba/0005459500",
       "purpose": "Meaning and usage only; no JLPT placement is inferred from a dictionary definition."
+    },
+    "bunpro-chichioya": {
+      "title": "Bunpro: 父親 vocabulary and N4 teaching examples",
+      "url": "https://bunpro.jp/vocabs/父親?deck_id=45",
+      "curriculum": "N4 (publisher placement)",
+      "retrievedAt": "2026-11-06"
+    },
+    "bunpro-hahaoya": {
+      "title": "Bunpro: 母親 vocabulary",
+      "url": "https://bunpro.jp/vocabs/母親",
+      "curriculum": "N3 (publisher placement)",
+      "retrievedAt": "2026-11-06"
+    },
+    "bunpro-tsumari": {
+      "title": "Bunpro: つまり, N3 lesson 6, item 3",
+      "url": "https://bunpro.jp/grammar_points/つまり",
+      "curriculum": "N3 (publisher placement)",
+      "retrievedAt": "2026-11-06"
+    },
+    "bunpro-jitsuwa": {
+      "title": "Bunpro: 実は vocabulary and N4 teaching examples",
+      "url": "https://bunpro.jp/vocabs/実は",
+      "curriculum": "N4 (publisher placement)",
+      "retrievedAt": "2026-11-06"
+    },
+    "bunpro-heiki": {
+      "title": "Bunpro: 平気 vocabulary",
+      "url": "https://bunpro.jp/vocabs/平気",
+      "curriculum": "N2 (publisher placement)",
+      "retrievedAt": "2026-11-06"
+    },
+    "try-n4-legacy-en": {
+      "title": "ASK Publishing: TRY! JLPT N4 English vocabulary list, publisher legacy download",
+      "url": "https://www.ask-books.com/pdata/try/N4_wordlist.pdf",
+      "curriculum": "N4 (publisher placement)",
+      "pageNumbering": "PDF pages counted from 1",
+      "accessNote": "The 実は headword and PDF page 21 were verified in search-indexed publisher PDF text on 2026-11-06. The legacy link redirects to publisher storage; no downloaded-file checksum is claimed."
     }
   },
   "batches": [
@@ -112,6 +149,12 @@
       "reviewedAt": "2026-11-06",
       "imported": 6,
       "description": "Import the six agreed follow-up recommendations, with direct beginner teaching evidence, original English/French examples and dedicated word audio."
+    },
+    {
+      "batch": 3,
+      "reviewedAt": "2026-11-06",
+      "imported": 3,
+      "description": "Three everyday vocabulary imports from the six-candidate family and conversation review, supported by explicit A2 or publisher N4 teaching evidence."
     }
   ],
   "entries": [
@@ -1033,9 +1076,47 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
-      "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "decision": "imported",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Import the general parental-role noun: Bunpro explicitly teaches 父親 at N4. The example identifies a friend’s father, rather than repeating a self-introduction with the existing 父 or an address with お父さん.",
+      "followupReview": 3,
+      "teachingNote": "Keep a separate lexical identity and reading from 父 and お父さん. The parental-role example makes the intended use explicit; publisher placement is not an official JLPT classification.",
+      "relatedVocabularyIds": [
+        "vocab-d15ca6ea1179",
+        "vocab-9013d708ded7",
+        "vocab-a7fbfba88bfd"
+      ],
+      "evidence": [
+        {
+          "source": "bunpro-chichioya",
+          "kind": "headword",
+          "location": "Vocab Info: N4 noun; All Forms and N4 examples",
+          "form": "父親 / ちちおや",
+          "sense": "Father as a male parent."
+        },
+        {
+          "source": "marugoto-a2-b1",
+          "kind": "headword",
+          "page": 14,
+          "location": "Lesson 7 script (7ス)",
+          "form": "ちちおや / 父親",
+          "sense": "Father; corroboration only, not the beginner-level justification."
+        }
+      ],
+      "vocabularyId": "vocab-93b978ba372f",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "batch": 3,
+      "teachingMeaning": {
+        "en": "father (as a parent)",
+        "fr": "père (rôle parental)"
+      },
+      "authoredExample": {
+        "japanese": "友だちの父親は医者です。",
+        "targetSurface": "父親",
+        "english": "My friend’s father is a doctor.",
+        "french": "Le père de mon ami est médecin."
+      }
     },
     {
       "word": "戦う",
@@ -1063,9 +1144,25 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
+      "decision": "deferred",
       "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "reason": "Defer this N4 import: Bunpro places this headword at N3, and no direct A2 or N4 teaching support was established in this pass. Existing 母, お母さん and 親 already support basic family communication. This is an evidence threshold decision, not a claim that mother is intrinsically harder than father or that 母親 is unimportant.",
+      "followupReview": 3,
+      "teachingNote": "A real lexical gap remains: 母親 is not a spelling variant of 母 or お母さん. Revisit a parental-role example if beginner evidence is later found; do not merge the readings or force a symmetrical level assignment from 父親 alone.",
+      "relatedVocabularyIds": [
+        "vocab-7fa86c660a00",
+        "vocab-b27125f41e7c",
+        "vocab-a7fbfba88bfd"
+      ],
+      "evidence": [
+        {
+          "source": "bunpro-hahaoya",
+          "kind": "headword",
+          "location": "Vocab Info: N3 noun; All Forms and examples",
+          "form": "母親 / ははおや",
+          "sense": "Mother as a female parent."
+        }
+      ]
     },
     {
       "word": "チーム",
@@ -1192,9 +1289,20 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
+      "decision": "deferred",
       "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "reason": "Defer this N4 import: the checked publisher teaches the summarizing connector at N3, lesson 6, and no direct A2 or N4 teaching support was established in this pass. Its frequency does not establish a beginner placement.",
+      "followupReview": 3,
+      "teachingNote": "Later teach a genuine restatement of a preceding proposition. Do not create a generic synonym for だから: summarizing what was said and expressing a consequence are different uses.",
+      "evidence": [
+        {
+          "source": "bunpro-tsumari",
+          "kind": "taught-expression",
+          "location": "N3 lesson 6, item 3; Structure and About sections",
+          "form": "Phrase A。つまり + restatement",
+          "sense": "In other words / to sum up."
+        }
+      ]
     },
     {
       "word": "方法",
@@ -1307,9 +1415,39 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
-      "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "decision": "imported",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Import the joke noun: the exact kana headword じょうだん is explicitly listed in Marugoto Elementary 1 A2, lesson 13. Existing 嘘 describes a lie and does not cover joking intent.",
+      "followupReview": 3,
+      "teachingNote": "Teach a joke or humorous remark, keeping the entry distinct from 嘘 and 面白い. Use the normal kanji spelling with the beginner-listed reading じょうだん.",
+      "relatedVocabularyIds": [
+        "vocab-03335ddeaaae",
+        "vocab-9825648af79e"
+      ],
+      "evidence": [
+        {
+          "source": "marugoto-a2-1-competences",
+          "kind": "headword",
+          "page": 9,
+          "location": "Lesson 13",
+          "form": "じょうだん",
+          "sense": "Joke."
+        }
+      ],
+      "vocabularyId": "vocab-b621cfcf6239",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "batch": 3,
+      "teachingMeaning": {
+        "en": "joke; jest",
+        "fr": "blague ; plaisanterie"
+      },
+      "authoredExample": {
+        "japanese": "先生の冗談は面白いです。",
+        "targetSurface": "冗談",
+        "english": "My teacher’s jokes are funny.",
+        "french": "Les blagues de mon professeur sont drôles."
+      }
     },
     {
       "word": "実は",
@@ -1322,9 +1460,53 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
-      "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "decision": "imported",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Import the expression introducing previously undisclosed information: both the publisher’s TRY! N4 word list and Bunpro’s N4 vocabulary teach it directly. It is not the truth noun 本当. IPADIC analyzes the whole expression as a conjunction, so an explicit surface override retains its lexical link while the app labels its discourse-adverb use.",
+      "followupReview": 3,
+      "teachingNote": "Keep the written reading じつは and the lexical expression as one SRS unit. A speechText override ジツワ ensures the topic particle は is narrated as wa; this phonetic spelling is not a new accepted written variant.",
+      "relatedVocabularyIds": [
+        "vocab-79f8de04d6f6"
+      ],
+      "evidence": [
+        {
+          "source": "bunpro-jitsuwa",
+          "kind": "headword",
+          "location": "Vocab Info: N4 expression/adverb; All Forms and N4 examples",
+          "form": "実は / じつは",
+          "sense": "Actually / to tell the truth; introduces new information."
+        },
+        {
+          "source": "try-n4-legacy-en",
+          "kind": "headword",
+          "page": 21,
+          "location": "Vocabulary index, PDF page 21",
+          "form": "実は",
+          "sense": "Actually / in fact."
+        },
+        {
+          "source": "marugoto-a2-b1",
+          "kind": "headword",
+          "page": 10,
+          "location": "Lesson 1",
+          "form": "じつは",
+          "sense": "Actually; corroboration only, not the beginner-level justification."
+        }
+      ],
+      "vocabularyId": "vocab-f01ec2f1be70",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "batch": 3,
+      "teachingMeaning": {
+        "en": "actually; to tell the truth",
+        "fr": "en fait ; à vrai dire"
+      },
+      "authoredExample": {
+        "japanese": "実は、明日は誕生日です。",
+        "targetSurface": "実は",
+        "english": "Actually, tomorrow is my birthday.",
+        "french": "En fait, demain, c’est mon anniversaire."
+      }
     },
     {
       "word": "落ち着く",
@@ -1477,9 +1659,24 @@
       ],
       "register": "unmarked",
       "learningFocus": "productive-and-receptive",
-      "decision": "pending-review",
+      "decision": "deferred",
       "levelConfidence": "unassigned",
-      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+      "reason": "Defer this N4 import: the checked publisher places the headword at N2, and no direct beginner teaching support was established here. Existing 大丈夫 already covers basic reassurance. The later publisher label is evidence from one curriculum, not an official level assignment.",
+      "followupReview": 3,
+      "teachingNote": "A later entry should distinguish being unbothered or composed from broad reassurance with 大丈夫, and should review 平気で separately rather than adding every sense at once.",
+      "relatedVocabularyIds": [
+        "vocab-2d473f5bae43",
+        "vocab-88a285690442"
+      ],
+      "evidence": [
+        {
+          "source": "bunpro-heiki",
+          "kind": "headword",
+          "location": "Vocab Info: N2 na-adjective/noun; meaning groups 1 and 2",
+          "form": "平気 / へいき",
+          "sense": "Unbothered / composed; colloquial all right."
+        }
+      ]
     },
     {
       "word": "了解",
@@ -1574,6 +1771,38 @@
         "kanjipedia-makaseru"
       ],
       "searchLimits": "Positive headword evidence is recorded below; unsuccessful searches are not proof that a word is advanced. The TRY! evidence comes from indexed publisher PDFs, as detailed in each source access note."
+    },
+    {
+      "review": 3,
+      "reviewedAt": "2026-11-06",
+      "candidateWords": [
+        "父親",
+        "母親",
+        "つまり",
+        "冗談",
+        "実は",
+        "平気"
+      ],
+      "recommended": 3,
+      "deferred": 3,
+      "imported": 3,
+      "description": "Review the six agreed everyday candidates in frequency order: import 父親, 冗談 and 実は; defer 母親, つまり and 平気 without assigning an introduction level.",
+      "sourcesChecked": [
+        "irodori-starter",
+        "irodori-elementary1",
+        "irodori-elementary2",
+        "marugoto-a2-1-competences",
+        "marugoto-a2-2-competences",
+        "marugoto-a2-b1",
+        "ippo-beginner1",
+        "bunpro-chichioya",
+        "bunpro-hahaoya",
+        "bunpro-tsumari",
+        "bunpro-jitsuwa",
+        "bunpro-heiki",
+        "try-n4-legacy-en"
+      ],
+      "searchLimits": "An unsuccessful search is not proof of advanced difficulty. Record each publisher placement as its own curriculum choice; do not infer an official JLPT level or a harder meaning from the asymmetric parent-word labels."
     }
   ]
 }

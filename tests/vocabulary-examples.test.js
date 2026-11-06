@@ -73,7 +73,7 @@ test("reviewed N4 vocabulary has evidence, correct readings and familiar context
         if (review.sources[evidence.source].url.endsWith(".pdf")) {
           assert.ok(Number.isInteger(evidence.page) && evidence.page > 0, entry.term);
         } else {
-          assert.equal(evidence.kind, "taught-expression", entry.term);
+          assert.ok(["headword", "taught-expression"].includes(evidence.kind), entry.term);
           assert.equal(review.sources[evidence.source].curriculum,
             "N4 (publisher placement)", entry.term);
         }
@@ -107,7 +107,7 @@ test("frequency review keeps unverified levels unassigned and preserves distinct
     readJson("data/jlpt-n5-vocabulary.json")
   ]);
   assert.equal(review.entries.length, 62);
-  assert.equal(review.entries.filter(entry => entry.decision === "imported").length, 25);
+  assert.equal(review.entries.filter(entry => entry.decision === "imported").length, 28);
   assert.deepEqual(review.entries.map(entry => entry.frequencyRank),
     review.entries.map(entry => entry.frequencyRank).toSorted((a, b) => a - b));
   for (const entry of review.entries) {
@@ -129,6 +129,10 @@ test("frequency review keeps unverified levels unassigned and preserves distinct
   assert.notEqual(byTerm.get("感じ").id, byTerm.get("感じる").id);
   assert.deepEqual(byTerm.get("すべて").variants, ["全て"]);
   assert.equal(byTerm.get("ただ").meaning, "however; but");
+  assert.notEqual(byTerm.get("父親").id, byTerm.get("父").id);
+  assert.notEqual(byTerm.get("冗談").id, byTerm.get("嘘").id);
+  assert.equal(byTerm.get("実は").reading, "じつは");
+  assert.equal(byTerm.get("実は").speechText, "ジツワ");
 });
 
 test("every vocabulary and kanji-context item has one short localized example", async () => {

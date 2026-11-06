@@ -11088,5 +11088,33 @@
       "le nombre",
       "une quantité"
     ]
+  },
+  "vocab-93b978ba372f": {
+    "meaning": "père (rôle parental)",
+    "acceptedAnswers": [
+      "père",
+      "un père",
+      "papa",
+      "parent masculin"
+    ]
+  },
+  "vocab-b621cfcf6239": {
+    "meaning": "blague ; plaisanterie",
+    "acceptedAnswers": [
+      "blague",
+      "une blague",
+      "plaisanterie",
+      "une plaisanterie"
+    ]
+  },
+  "vocab-f01ec2f1be70": {
+    "meaning": "en fait ; à vrai dire",
+    "acceptedAnswers": [
+      "en fait",
+      "à vrai dire",
+      "en réalité",
+      "pour tout dire",
+      "pour être honnête"
+    ]
   }
 }

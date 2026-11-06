@@ -54969,6 +54969,155 @@
     ]
   },
   {
+    "vocabularyId": "vocab-93b978ba372f",
+    "text": "友だちの父親は医者です。",
+    "targetSurface": "父親",
+    "targetReading": "ちちおや",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "My friend’s father is a doctor.",
+    "tokens": [
+      {
+        "surface": "友だち",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "父親",
+        "category": "noun",
+        "reading": "ちちおや",
+        "vocabularyId": "vocab-93b978ba372f"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "医者",
+        "category": "noun",
+        "reading": "いしゃ",
+        "vocabularyId": "vocab-60e888b69674"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-b621cfcf6239",
+    "text": "先生の冗談は面白いです。",
+    "targetSurface": "冗談",
+    "targetReading": "じょうだん",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "My teacher’s jokes are funny.",
+    "tokens": [
+      {
+        "surface": "先生",
+        "category": "noun",
+        "reading": "せんせい",
+        "vocabularyId": "vocab-497356cf0646"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "冗談",
+        "category": "noun",
+        "reading": "じょうだん",
+        "vocabularyId": "vocab-b621cfcf6239"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "面白い",
+        "category": "adjective",
+        "reading": "おもしろい",
+        "vocabularyId": "vocab-9825648af79e"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-f01ec2f1be70",
+    "text": "実は、明日は誕生日です。",
+    "targetSurface": "実は",
+    "targetReading": "じつは",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "Actually, tomorrow is my birthday.",
+    "tokens": [
+      {
+        "surface": "実は",
+        "category": "adverb",
+        "reading": "じつは",
+        "vocabularyId": "vocab-f01ec2f1be70"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "明日",
+        "category": "noun",
+        "reading": "あした",
+        "vocabularyId": "vocab-bec9ce9d08c8"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "誕生",
+        "category": "noun",
+        "reading": "たんじょう",
+        "vocabularyId": "vocab-5841d3db2c97"
+      },
+      {
+        "surface": "日",
+        "category": "noun",
+        "reading": "び",
+        "vocabularyId": "vocab-5841d3db2c97"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

@@ -9264,6 +9264,24 @@
     "translation": "Please tell me how many chairs there are."
   },
   {
+    "vocabularyId": "vocab-93b978ba372f",
+    "text": "友だちの父親は医者です。",
+    "targetSurface": "父親",
+    "translation": "My friend’s father is a doctor."
+  },
+  {
+    "vocabularyId": "vocab-b621cfcf6239",
+    "text": "先生の冗談は面白いです。",
+    "targetSurface": "冗談",
+    "translation": "My teacher’s jokes are funny."
+  },
+  {
+    "vocabularyId": "vocab-f01ec2f1be70",
+    "text": "実は、明日は誕生日です。",
+    "targetSurface": "実は",
+    "translation": "Actually, tomorrow is my birthday."
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

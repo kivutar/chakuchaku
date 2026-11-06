@@ -17708,5 +17708,65 @@
     "scope": "supplemental",
     "introducedAt": "n4",
     "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-93b978ba372f",
+    "term": "父親",
+    "reading": "ちちおや",
+    "meaning": "father (as a parent)",
+    "acceptedAnswers": [
+      "father",
+      "a father",
+      "dad",
+      "male parent"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "relationships",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-b621cfcf6239",
+    "term": "冗談",
+    "reading": "じょうだん",
+    "meaning": "joke; jest",
+    "acceptedAnswers": [
+      "joke",
+      "a joke",
+      "jest",
+      "joking"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "conversation",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-f01ec2f1be70",
+    "term": "実は",
+    "reading": "じつは",
+    "meaning": "actually; to tell the truth",
+    "acceptedAnswers": [
+      "actually",
+      "in fact",
+      "as a matter of fact",
+      "to tell the truth",
+      "to be honest"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "conversation",
+    "speechText": "ジツワ",
+    "inflections": [
+      {
+        "surface": "実は",
+        "reading": "じつは",
+        "allowPartOfSpeechMismatch": true
+      }
+    ],
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
   }
 ]

@@ -230,7 +230,7 @@ publishing vocabulary, kanji, and grammar specifications after the 2010 revision
 because the test is intended to measure communicative use rather than memorized
 lists.
 
-The inventory currently contains 1,543 entries: 879 introduced at N5 and 664
+The inventory currently contains 1,546 entries: 879 introduced at N5 and 667
 introduced at N4.
 
 - 725 N5 `core` entries adapted from the MIT-licensed Open Anki decks at commit
@@ -268,7 +268,7 @@ introduced at N4.
   health, relationships, home, shopping, travel and quantities. They are
   practical additions to learn by N4, not claims about an official JLPT
   vocabulary specification or measured frequency thresholds.
-- 25 N4 `supplemental` entries reviewed from the supplied frequency report.
+- 28 N4 `supplemental` entries reviewed from the supplied frequency report.
   The first 19 are directly attested in Irodori beginner word lists: `ただ`, `最高`, `ほら`, `相手`,
   `絶対`, `すべて`, `どういう`, `感じる`, `全員`, `感じ`, `チーム`, `情報`,
   `確認`, `感謝`, `落ち着く`, `とにかく`, `離れる`, `気づく`, and `了解`.
@@ -279,6 +279,9 @@ introduced at N4.
   `まあ`, `人間`, `人生`, `そういう`, `仲間`, and `数` (`かず`). The examples
   distinguish a person's lifetime (`人生`) from daily living (`生活`), quantity
   (`数`) from written digits (`数字`), and the noun modifier `そういう` from `そう`.
+  The third batch adds `父親`, `冗談`, and `実は`, with explicit A2 or publisher
+  N4 teaching evidence. `父親` targets the parental role, `冗談` is distinct from
+  a lie (`嘘`), and `実は` introduces previously undisclosed information.
 
 The `core` label means "exam-oriented consensus candidate," not "officially
 required." The `supplemental` label keeps useful lesson vocabulary without
@@ -292,6 +295,9 @@ Each entry contains:
   In Japanese-to-translation exercises, a differing kana reading is an optional
   hover, focus, or tap hint rather than an automatically visible kanji clue.
 - `reading`: the kana reading, normalized to hiragana where applicable.
+- `speechText`: an optional pronunciation override for narration. For example,
+  `実は` keeps its written reading `じつは`, while audio uses `ジツワ` to pronounce
+  the topic particle correctly. This does not add an accepted written variant.
 - `alternateReadings`: optional additional readings accepted by vocabulary recall.
 - `acceptedJapaneseAnswers`: optional equivalent Japanese expressions accepted
   during recall without treating them as alternate written forms.
@@ -359,10 +365,20 @@ register, teaching focus, and an individual decision. Its first batch imports
 Follow-up review 2 examined ten more candidates. Batch 2 imports the six agreed
 recommendations as N4 supplements: `まあ` (the conversational softener), `人間`,
 `人生`, `そういう`, `仲間`, and `数` (`かず`, quantity). It defers `まさか`,
-`許す`, `任せる`, and `方法`; the remaining 33 await review. Each imported entry
+`許す`, `任せる`, and `方法`. Each imported entry
 has source evidence, teaching distinctions, original English/French examples,
 and its own word recording. The review records the decision separately from the
 canonical vocabulary and prepared examples.
+
+Follow-up review 3 examined `父親`, `母親`, `つまり`, `冗談`, `実は`, and `平気`.
+Batch 3 imports `父親`, `冗談`, and `実は`, using explicit publisher N4 teaching
+pages or the Marugoto A2 headword index. It defers `母親`, `つまり`, and `平気`:
+the checked publisher places those at N3, N3, and N2 respectively, and this pass
+found no direct beginner teaching support. These are curriculum-specific labels,
+not official JLPT assignments or claims that one parental role is harder than
+another. Existing `母`, `お母さん`, and `大丈夫` retain their SRS identities and
+cover basic family communication and reassurance. There are now 28 imported
+frequency candidates, seven deferred candidates, and 27 still awaiting review.
 
 The follow-up uses Marugoto A2 indexes, explicit publisher N4 teaching materials,
 and a Beginner 1 word list. `そういう` has direct N4 teaching evidence as a noun
@@ -373,7 +389,7 @@ PDF downloads returned HTTP 403 during this review. Deferred words retain no
 assigned introduction level. A compound or heading match is not recorded as
 standalone word-list evidence. Frequency sets review priority; it does not imply
 an official JLPT placement. The supplied report does not identify its corpus.
-The 25 imported additions use the normal N4 introduction budget and have original
+The 28 imported additions use the normal N4 introduction budget and have original
 short English/French examples with otherwise familiar N5 vocabulary.
 
 `katakana-vocabulary.md` documents the Katakana pool, its exact selection
