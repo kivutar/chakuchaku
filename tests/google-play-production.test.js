@@ -16,6 +16,10 @@ function mockPublisher({ trackData = tracks, validationError } = {}) {
     if (path.endsWith("/details")) return { defaultLanguage: "en-US", contactEmail: "support@example.com" };
     if (path.endsWith("/listings")) return { listings: [{ language: "en-US", title: "ChakuChaku", shortDescription: "Learn Japanese", fullDescription: "Japanese in context." }] };
     if (path.endsWith("/tracks")) return { tracks: trackData };
+    if (path === "/tracks/internal/releases") return { releases: [{
+      releaseName: "ChakuChaku 1.0.17", activeArtifacts: [{ versionCode: 1022 }],
+      releaseLifecycleState: "RELEASE_LIFECYCLE_STATE_IN_REVIEW"
+    }] };
     if (path.endsWith("/bundles")) return { bundles: [{ versionCode: 1022 }] };
     if (path.endsWith("/countryAvailability/production")) return { countries: [{ countryCode: "FR" }] };
     if (["icon", "featureGraphic", "phoneScreenshots"].some(type => path.endsWith(`/${type}`))) return { images: [{ id: "image" }] };
@@ -57,6 +61,7 @@ test("inspection cannot update or commit an app and removes its temporary edit",
   assert.ok(report.before.listings[0].images.phoneScreenshots > 0);
   assert.equal(report.before.contactEmailConfigured, true);
   assert.equal(report.before.contactEmail, undefined);
+  assert.equal(report.before.releaseLifecycle.internal[0].releaseLifecycleState, "RELEASE_LIFECYCLE_STATE_IN_REVIEW");
   assert.ok(!calls.some(({ method, path }) => method === "PUT" || path.includes(":commit")));
   assert.deepEqual(calls.at(-1), { path: "/edits/edit-1", method: "DELETE", body: undefined });
 });

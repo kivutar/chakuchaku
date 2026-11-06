@@ -90,10 +90,16 @@ export async function inspectEdit(request, editId) {
     return { language: listing.language, title: listing.title, shortDescription: listing.shortDescription,
       fullDescriptionLength: listing.fullDescription?.length || 0, images };
   }));
+  const releaseLifecycle = Object.fromEntries(await Promise.all(
+    (tracks.tracks || []).map(async ({ track }) => {
+      try { return [track, (await request(`/tracks/${encodeURIComponent(track)}/releases`)).releases || []]; }
+      catch (error) { return [track, { error: error.message }]; }
+    })
+  ));
   return { defaultLanguage: details.defaultLanguage, contactEmailConfigured: !!details.contactEmail,
     contactWebsiteConfigured: !!details.contactWebsite, listings: listingReports,
     tracks: tracks.tracks || [], bundleVersionCodes: (bundles.bundles || []).map(({ versionCode }) => String(versionCode)),
-    productionCountries };
+    productionCountries, releaseLifecycle };
 }
 
 export async function executeAction(request, { action, versionCode, notes, report }) {

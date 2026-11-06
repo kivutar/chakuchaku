@@ -95,7 +95,8 @@ gh workflow run google-play-production.yml -f action=inspect
 ```
 
 This action uses `GOOGLE_PLAY_SERVICE_ACCOUNT_JSON` in CI. It does not export
-credentials or publish changes. Its report is attached as a workflow artifact.
+credentials or publish changes. Its report is attached as a workflow artifact
+and includes release lifecycle states, distinguishing review from availability.
 Complete missing listing, app-content, pricing, or country setup in Play Console
 before production validation. The service account must have production release
 permission as well as its existing testing-track permissions.
