@@ -230,7 +230,7 @@ publishing vocabulary, kanji, and grammar specifications after the 2010 revision
 because the test is intended to measure communicative use rather than memorized
 lists.
 
-The inventory currently contains 1,518 entries: 879 introduced at N5 and 639
+The inventory currently contains 1,537 entries: 879 introduced at N5 and 658
 introduced at N4.
 
 - 725 N5 `core` entries adapted from the MIT-licensed Open Anki decks at commit
@@ -268,6 +268,13 @@ introduced at N4.
   health, relationships, home, shopping, travel and quantities. They are
   practical additions to learn by N4, not claims about an official JLPT
   vocabulary specification or measured frequency thresholds.
+- 19 N4 `supplemental` entries reviewed from the supplied frequency report and
+  directly attested in Irodori beginner word lists: `ただ`, `最高`, `ほら`, `相手`,
+  `絶対`, `すべて`, `どういう`, `感じる`, `全員`, `感じ`, `チーム`, `情報`,
+  `確認`, `感謝`, `落ち着く`, `とにかく`, `離れる`, `気づく`, and `了解`.
+  `ただ` initially targets the connector "however/but". `全て` is a spelling
+  variant of `すべて`; `感じ` has its own SRS identity and recording, separate
+  from both `感じる` and the homophone `漢字`.
 
 The `core` label means "exam-oriented consensus candidate," not "officially
 required." The `supplemental` label keeps useful lesson vocabulary without
@@ -340,6 +347,17 @@ so existing recordings and progress remain stable.
 Irodori through Elementary 2 is an approximate N4 ability benchmark, not a
 word-by-word JLPT assignment. No source examples, images, or recordings are
 copied into this batch.
+
+`source/frequency-vocabulary-review.json` records all 62 candidates in the first
+frequency review, with source-file checksum, original rank and count, usage tags,
+register, teaching focus, and an individual decision. Its first batch imports
+19 words in frequency order, with exact Irodori PDF pages and lesson references.
+The other 43 remain pending individual review, with no unverified introduction
+level assigned. In particular, a compound or heading match is not recorded as
+standalone word-list evidence. Frequency sets review priority; it does not imply
+an official JLPT placement. The supplied report does not identify its corpus.
+These additions use the normal N4 introduction budget and have original short
+English/French examples with otherwise familiar N5 vocabulary.
 
 `katakana-vocabulary.md` documents the Katakana pool, its exact selection
 rules, additions, source comparisons, and kana coverage. It uses the former

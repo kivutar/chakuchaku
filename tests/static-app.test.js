@@ -1619,7 +1619,8 @@ test("vocabulary inventory has a substantial core and labeled learner favorites"
         "curated-migii-vocabulary",
         "curated-beginner-coverage",
         "curated-n4-vocabulary",
-        "curated-n4-kaishi-review"
+        "curated-n4-kaishi-review",
+        "curated-n4-frequency-review"
       ].includes(entry.source)
     );
 

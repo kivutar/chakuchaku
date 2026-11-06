@@ -10874,5 +10874,163 @@
       "respecter",
       "obéir"
     ]
+  },
+  "vocab-2d9304a2db87": {
+    "meaning": "cependant ; mais",
+    "acceptedAnswers": [
+      "cependant",
+      "mais",
+      "toutefois"
+    ]
+  },
+  "vocab-843d547c146c": {
+    "meaning": "le meilleur ; excellent",
+    "acceptedAnswers": [
+      "meilleur",
+      "le meilleur",
+      "excellent",
+      "fantastique"
+    ]
+  },
+  "vocab-78222dce8cd3": {
+    "meaning": "regarde ! ; tu vois !",
+    "acceptedAnswers": [
+      "regarde",
+      "regardez",
+      "tu vois",
+      "vous voyez"
+    ]
+  },
+  "vocab-16019d9a9007": {
+    "meaning": "partenaire ; interlocuteur ; adversaire",
+    "acceptedAnswers": [
+      "partenaire",
+      "interlocuteur",
+      "interlocutrice",
+      "adversaire"
+    ]
+  },
+  "vocab-85ffcd6a590c": {
+    "meaning": "absolument ; certainement",
+    "acceptedAnswers": [
+      "absolument",
+      "certainement",
+      "sans aucun doute",
+      "à coup sûr"
+    ]
+  },
+  "vocab-960e937379be": {
+    "meaning": "tout ; la totalité",
+    "acceptedAnswers": [
+      "tout",
+      "tous",
+      "toutes",
+      "la totalité"
+    ]
+  },
+  "vocab-dbf08e9fe044": {
+    "meaning": "quel genre de ; quelle sorte de",
+    "acceptedAnswers": [
+      "quel genre de",
+      "quelle sorte de",
+      "quel type de"
+    ]
+  },
+  "vocab-0067fea1d955": {
+    "meaning": "ressentir ; sentir",
+    "acceptedAnswers": [
+      "ressentir",
+      "sentir",
+      "éprouver"
+    ]
+  },
+  "vocab-37bda20be9f8": {
+    "meaning": "tout le monde ; tous les membres",
+    "acceptedAnswers": [
+      "tout le monde",
+      "tous les membres",
+      "toutes les personnes"
+    ]
+  },
+  "vocab-d564bcd9c753": {
+    "meaning": "impression ; sensation",
+    "acceptedAnswers": [
+      "impression",
+      "sensation",
+      "ressenti"
+    ]
+  },
+  "vocab-b93b1b471a24": {
+    "meaning": "équipe",
+    "acceptedAnswers": [
+      "équipe",
+      "une équipe"
+    ]
+  },
+  "vocab-b758bed6d0e6": {
+    "meaning": "information ; renseignements",
+    "acceptedAnswers": [
+      "information",
+      "informations",
+      "renseignement",
+      "renseignements"
+    ]
+  },
+  "vocab-00267c54cf8b": {
+    "meaning": "vérification ; confirmation",
+    "acceptedAnswers": [
+      "vérification",
+      "confirmation",
+      "contrôle"
+    ]
+  },
+  "vocab-27052c77f777": {
+    "meaning": "gratitude ; reconnaissance",
+    "acceptedAnswers": [
+      "gratitude",
+      "reconnaissance",
+      "remerciements"
+    ]
+  },
+  "vocab-9184ea9fd90e": {
+    "meaning": "se calmer ; retrouver son calme",
+    "acceptedAnswers": [
+      "se calmer",
+      "retrouver son calme",
+      "s’apaiser"
+    ]
+  },
+  "vocab-9cfbaa71347a": {
+    "meaning": "en tout cas ; de toute façon",
+    "acceptedAnswers": [
+      "en tout cas",
+      "de toute façon",
+      "quoi qu’il en soit"
+    ]
+  },
+  "vocab-1be74c02fba1": {
+    "meaning": "s’éloigner ; être séparé",
+    "acceptedAnswers": [
+      "s’éloigner",
+      "être séparé",
+      "quitter"
+    ]
+  },
+  "vocab-0fc59c481d31": {
+    "meaning": "remarquer ; se rendre compte",
+    "acceptedAnswers": [
+      "remarquer",
+      "se rendre compte",
+      "s’apercevoir"
+    ]
+  },
+  "vocab-47068c0ba01c": {
+    "meaning": "compréhension ; bien reçu",
+    "acceptedAnswers": [
+      "compréhension",
+      "bien reçu",
+      "compris",
+      "d’accord"
+    ]
   }
 }

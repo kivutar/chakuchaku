@@ -244,7 +244,9 @@
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "adjective",
-    "variants": ["温かい"]
+    "variants": [
+      "温かい"
+    ]
   },
   {
     "id": "vocab-2110de97e73d",
@@ -10480,7 +10482,9 @@
     "meaning": "anything; whatever",
     "partOfSpeech": "pronoun",
     "tokenizeAsWord": true,
-    "acceptedAnswers": ["everything"],
+    "acceptedAnswers": [
+      "everything"
+    ],
     "scope": "supplemental",
     "introducedAt": "n5",
     "source": "curated-beginner-coverage"
@@ -10502,7 +10506,9 @@
     "meaning": "during the morning; in the morning",
     "partOfSpeech": "noun",
     "tokenizeAsWord": true,
-    "acceptedAnswers": ["morning"],
+    "acceptedAnswers": [
+      "morning"
+    ],
     "scope": "supplemental",
     "introducedAt": "n5",
     "source": "curated-beginner-coverage"
@@ -17267,5 +17273,337 @@
     "scope": "supplemental",
     "introducedAt": "n4",
     "source": "curated-n4-kaishi-review"
+  },
+  {
+    "id": "vocab-2d9304a2db87",
+    "term": "ただ",
+    "reading": "ただ",
+    "meaning": "however; but",
+    "acceptedAnswers": [
+      "however",
+      "but"
+    ],
+    "partOfSpeech": "conjunction",
+    "topic": "conversation",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-843d547c146c",
+    "term": "最高",
+    "reading": "さいこう",
+    "meaning": "the best; fantastic",
+    "acceptedAnswers": [
+      "best",
+      "the best",
+      "fantastic",
+      "excellent"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "descriptions",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-78222dce8cd3",
+    "term": "ほら",
+    "reading": "ほら",
+    "meaning": "look!; see!",
+    "acceptedAnswers": [
+      "look",
+      "see",
+      "look here",
+      "look there"
+    ],
+    "partOfSpeech": "interjection",
+    "topic": "conversation",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-16019d9a9007",
+    "term": "相手",
+    "reading": "あいて",
+    "meaning": "partner; the other person; opponent",
+    "acceptedAnswers": [
+      "partner",
+      "the other person",
+      "other person",
+      "opponent"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "relationships",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-85ffcd6a590c",
+    "term": "絶対",
+    "reading": "ぜったい",
+    "meaning": "definitely; absolutely",
+    "acceptedAnswers": [
+      "definitely",
+      "absolutely",
+      "certainly",
+      "for sure"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "conversation",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review",
+    "inflections": [
+      {
+        "surface": "絶対",
+        "reading": "ぜったい",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
+  },
+  {
+    "id": "vocab-960e937379be",
+    "term": "すべて",
+    "reading": "すべて",
+    "meaning": "all; everything",
+    "acceptedAnswers": [
+      "all",
+      "everything",
+      "all of it"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "quantities",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review",
+    "variants": [
+      "全て"
+    ]
+  },
+  {
+    "id": "vocab-dbf08e9fe044",
+    "term": "どういう",
+    "reading": "どういう",
+    "meaning": "what kind of; what sort of",
+    "acceptedAnswers": [
+      "what kind of",
+      "what sort of",
+      "what kind",
+      "what sort"
+    ],
+    "partOfSpeech": "determiner",
+    "topic": "questions",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-0067fea1d955",
+    "term": "感じる",
+    "reading": "かんじる",
+    "meaning": "to feel; to sense",
+    "acceptedAnswers": [
+      "feel",
+      "sense",
+      "to feel",
+      "to sense"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "feelings",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-37bda20be9f8",
+    "term": "全員",
+    "reading": "ぜんいん",
+    "meaning": "everyone; all members",
+    "acceptedAnswers": [
+      "everyone",
+      "everybody",
+      "all members",
+      "all of them"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "people",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-d564bcd9c753",
+    "term": "感じ",
+    "reading": "かんじ",
+    "meaning": "feeling; impression",
+    "acceptedAnswers": [
+      "feeling",
+      "impression",
+      "feel"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "feelings",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review",
+    "voiceSlug": "kanji-feeling"
+  },
+  {
+    "id": "vocab-b93b1b471a24",
+    "term": "チーム",
+    "reading": "ちーむ",
+    "meaning": "team",
+    "acceptedAnswers": [
+      "team"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "groups",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-b758bed6d0e6",
+    "term": "情報",
+    "reading": "じょうほう",
+    "meaning": "information",
+    "acceptedAnswers": [
+      "information"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "communication",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-00267c54cf8b",
+    "term": "確認",
+    "reading": "かくにん",
+    "meaning": "checking; confirmation",
+    "acceptedAnswers": [
+      "checking",
+      "confirmation",
+      "verification",
+      "check"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily-tasks",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-27052c77f777",
+    "term": "感謝",
+    "reading": "かんしゃ",
+    "meaning": "gratitude; appreciation",
+    "acceptedAnswers": [
+      "gratitude",
+      "appreciation",
+      "thanks",
+      "thankfulness"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "relationships",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-9184ea9fd90e",
+    "term": "落ち着く",
+    "reading": "おちつく",
+    "meaning": "to calm down; to settle down",
+    "acceptedAnswers": [
+      "to calm down",
+      "calm down",
+      "to settle down",
+      "settle down"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "feelings",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-9cfbaa71347a",
+    "term": "とにかく",
+    "reading": "とにかく",
+    "meaning": "anyway; in any case",
+    "acceptedAnswers": [
+      "anyway",
+      "in any case",
+      "anyhow",
+      "at any rate"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "conversation",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-1be74c02fba1",
+    "term": "離れる",
+    "reading": "はなれる",
+    "meaning": "to move away; to be separated",
+    "acceptedAnswers": [
+      "to move away",
+      "move away",
+      "to be separated",
+      "to leave",
+      "leave"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "locations",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
+  },
+  {
+    "id": "vocab-0fc59c481d31",
+    "term": "気づく",
+    "reading": "きづく",
+    "meaning": "to notice; to realize",
+    "acceptedAnswers": [
+      "to notice",
+      "notice",
+      "to realize",
+      "realize",
+      "to realise",
+      "realise"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "awareness",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review",
+    "variants": [
+      "気付く"
+    ]
+  },
+  {
+    "id": "vocab-47068c0ba01c",
+    "term": "了解",
+    "reading": "りょうかい",
+    "meaning": "acknowledgement; understanding",
+    "acceptedAnswers": [
+      "acknowledgement",
+      "acknowledgment",
+      "understanding",
+      "understood",
+      "got it",
+      "okay"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "conversation",
+    "scope": "supplemental",
+    "introducedAt": "n4",
+    "source": "curated-n4-frequency-review"
   }
 ]

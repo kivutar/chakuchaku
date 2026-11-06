@@ -85,8 +85,8 @@ test("the complete pinned N4 source is either imported, merged, or deliberately 
   assert.ok(freshImport.candidates.some(({ term, reading }) => {
     return term === "～月" && reading === "～つき";
   }));
-  assert.equal(vocabulary.length, 1518);
-  assert.equal(vocabulary.filter(({ introducedAt }) => introducedAt === "n4").length, 639);
+  assert.equal(vocabulary.length, 1537);
+  assert.equal(vocabulary.filter(({ introducedAt }) => introducedAt === "n4").length, 658);
 
   const byId = new Map(vocabulary.map((entry) => [entry.id, entry]));
   const importedFields = [

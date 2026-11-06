@@ -1,0 +1,1240 @@
+{
+  "reviewedAt": "2026-11-06",
+  "targetLevel": "n4",
+  "selectionPolicy": [
+    "Frequency orders candidate review; it does not assign a JLPT level.",
+    "Resolve existing spellings, readings, compositional forms and meanings before adding SRS units.",
+    "Classify usage, register and learning focus separately from introduction level.",
+    "Require direct beginner word-list evidence and everyday usefulness for this import batch.",
+    "Irodori through Elementary 2 is an approximate N4 ability benchmark, not an official word-by-word JLPT classification.",
+    "New entries are supplemental and share the existing N4 daily introduction budget.",
+    "Author original English/French meanings and examples; do not copy source sentences, illustrations or audio.",
+    "Keep unverified levels unassigned; pending-review is not a judgment that a word is unimportant."
+  ],
+  "sources": {
+    "frequency-report": {
+      "title": "User-provided word_freq_report(original).ods",
+      "fileName": "word_freq_report(original).ods",
+      "sha256": "6f97da0c652c97752cca2e7f4ab05ec5df9ea8d6424de44b921b37d448946742",
+      "rows": 124360,
+      "tokenCount": 109425342,
+      "corpus": "Not identified in the supplied file; no general-language or JLPT representativeness is claimed.",
+      "rankColumn": 3,
+      "rowColumn": 4
+    },
+    "irodori-starter": {
+      "title": "Irodori Starter word list",
+      "url": "https://www.irodori.jpf.go.jp/assets/data/wordlist_X.pdf",
+      "sha256": "9acf3fe9478e01dc9bca8970b5dc4496b51b36febec2c08560bf1b74a3891267",
+      "pageNumbering": "PDF pages counted from 1"
+    },
+    "irodori-elementary1": {
+      "title": "Irodori Elementary 1 word list",
+      "url": "https://www.irodori.jpf.go.jp/assets/data/wordlist_Y.pdf",
+      "sha256": "bffd99aa2ba1c5976f18b564264d08bd0443833d3d642748662dd98b8309b70e",
+      "pageNumbering": "PDF pages counted from 1"
+    },
+    "irodori-elementary2": {
+      "title": "Irodori Elementary 2 word list",
+      "url": "https://www.irodori.jpf.go.jp/assets/data/wordlist_Z.pdf",
+      "sha256": "1da1ce9a25c7acc565100accdf713fadd23f469569ceacf4ff523d0ad509ba7b",
+      "pageNumbering": "PDF pages counted from 1"
+    },
+    "irodori-n4-scope": {
+      "title": "Japan Foundation: Irodori and JLPT N4, FAQ 11–12",
+      "url": "https://www.irodori.jpf.go.jp/faq.html"
+    }
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "reviewedAt": "2026-11-06",
+      "imported": 19,
+      "description": "First frequency-ordered batch of everyday and conversation vocabulary with direct beginner word-list evidence."
+    }
+  ],
+  "entries": [
+    {
+      "word": "俺",
+      "reading": "おれ",
+      "frequencyRank": 36,
+      "reportRow": 36,
+      "count": 325366,
+      "usageTags": [
+        "casual-dialogue"
+      ],
+      "register": "casual-masculine",
+      "learningFocus": "receptive-first",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "High recognition value in dialogue; defer this import batch pending an explicit register-aware teaching example and a separate level decision."
+    },
+    {
+      "word": "お前",
+      "reading": "おまえ",
+      "frequencyRank": 55,
+      "reportRow": 55,
+      "count": 212057,
+      "usageTags": [
+        "casual-dialogue"
+      ],
+      "register": "rough-or-intimate",
+      "learningFocus": "receptive-first",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "High recognition value in dialogue; defer this import batch pending an explicit register-aware teaching example and a separate level decision."
+    },
+    {
+      "word": "殺す",
+      "reading": "ころす",
+      "frequencyRank": 137,
+      "reportRow": 137,
+      "count": 73779,
+      "usageTags": [
+        "stories-and-news"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "おい",
+      "reading": "おい",
+      "frequencyRank": 167,
+      "reportRow": 167,
+      "count": 58815,
+      "usageTags": [
+        "casual-dialogue"
+      ],
+      "register": "rough-or-intimate",
+      "learningFocus": "receptive-first",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "High recognition value in dialogue; defer this import batch pending an explicit register-aware teaching example and a separate level decision."
+    },
+    {
+      "word": "あんた",
+      "reading": "あんた",
+      "frequencyRank": 169,
+      "reportRow": 169,
+      "count": 57924,
+      "usageTags": [
+        "casual-dialogue"
+      ],
+      "register": "rough-or-intimate",
+      "learningFocus": "receptive-first",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "High recognition value in dialogue; defer this import batch pending an explicit register-aware teaching example and a separate level decision."
+    },
+    {
+      "word": "バカ",
+      "reading": "ばか",
+      "frequencyRank": 187,
+      "reportRow": 187,
+      "count": 49237,
+      "usageTags": [
+        "casual-dialogue"
+      ],
+      "register": "rough-or-intimate",
+      "learningFocus": "receptive-first",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "High recognition value in dialogue; defer this import batch pending an explicit register-aware teaching example and a separate level decision."
+    },
+    {
+      "word": "まあ",
+      "reading": "まあ",
+      "frequencyRank": 195,
+      "reportRow": 195,
+      "count": 47922,
+      "usageTags": [
+        "conversation"
+      ],
+      "register": "conversational",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "The word lists contain まあまあ, which does not establish the separate discourse-marker senses of まあ; seek direct beginner evidence."
+    },
+    {
+      "word": "ただ",
+      "reading": "ただ",
+      "frequencyRank": 202,
+      "reportRow": 202,
+      "count": 46159,
+      "usageTags": [
+        "everyday-communication",
+        "conversation"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-2d9304a2db87",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Adds the everyday contrastive connector taught in the beginner weather lesson. This entry and example target however/but; free of charge and just/only are not included in its gloss.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 12,
+          "location": "L4-2",
+          "form": "ただ"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "人間",
+      "reading": "にんげん",
+      "frequencyRank": 214,
+      "reportRow": 214,
+      "count": 42856,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "最高",
+      "reading": "さいこう",
+      "frequencyRank": 224,
+      "reportRow": 224,
+      "count": 41517,
+      "usageTags": [
+        "everyday-communication",
+        "feelings"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-843d547c146c",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "An everyday positive evaluation explicitly taught in Irodori Starter. Its high corpus frequency supports prioritization but does not establish an official JLPT level.",
+      "evidence": [
+        {
+          "source": "irodori-starter",
+          "page": 12,
+          "location": "L4-3",
+          "form": "最高"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "あいつ",
+      "reading": "あいつ",
+      "frequencyRank": 256,
+      "reportRow": 256,
+      "count": 37471,
+      "usageTags": [
+        "casual-dialogue"
+      ],
+      "register": "rough-or-intimate",
+      "learningFocus": "receptive-first",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "High recognition value in dialogue; defer this import batch pending an explicit register-aware teaching example and a separate level decision."
+    },
+    {
+      "word": "奴",
+      "reading": "やつ",
+      "frequencyRank": 260,
+      "reportRow": 260,
+      "count": 36502,
+      "usageTags": [
+        "casual-dialogue"
+      ],
+      "register": "rough-or-intimate",
+      "learningFocus": "receptive-first",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "High recognition value in dialogue; defer this import batch pending an explicit register-aware teaching example and a separate level decision."
+    },
+    {
+      "word": "ほら",
+      "reading": "ほら",
+      "frequencyRank": 266,
+      "reportRow": 266,
+      "count": 35933,
+      "usageTags": [
+        "everyday-communication",
+        "conversation"
+      ],
+      "register": "conversational",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-78222dce8cd3",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "A conversational attention marker explicitly taught at beginner level. The example uses it to point out something visible, rather than as a scolding expression.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 7,
+          "location": "L2-2",
+          "form": "ほら"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "相手",
+      "reading": "あいて",
+      "frequencyRank": 280,
+      "reportRow": 280,
+      "count": 34404,
+      "usageTags": [
+        "everyday-communication",
+        "relationships"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-16019d9a9007",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Beginner material teaches the relationship-partner sense. Kanjipedia additionally confirms the general partner, other party and opponent senses; the authored example uses a familiar tennis partner.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 56,
+          "location": "L18-1",
+          "form": "相手",
+          "sense": "spouse / partner"
+        }
+      ],
+      "batch": 1,
+      "dictionaryReferences": [
+        "https://www.kanjipedia.jp/kotoba/0004219200"
+      ]
+    },
+    {
+      "word": "我々",
+      "reading": "われわれ",
+      "frequencyRank": 281,
+      "reportRow": 281,
+      "count": 34383,
+      "usageTags": [
+        "relationships"
+      ],
+      "register": "formal-collective",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Formal/collective pronoun; review after the more broadly useful beginner communication entries."
+    },
+    {
+      "word": "絶対",
+      "reading": "ぜったい",
+      "frequencyRank": 289,
+      "reportRow": 289,
+      "count": 32747,
+      "usageTags": [
+        "everyday-communication",
+        "conversation"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-85ffcd6a590c",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Beginner material teaches the emphatic adverbial expression 絶対に. The existing に grammar completes the expression; the explicit POS exception accommodates IPADIC's adverb-capable noun analysis.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 74,
+          "location": "L16-2",
+          "form": "絶対に"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "よし",
+      "reading": "よし",
+      "frequencyRank": 298,
+      "reportRow": 298,
+      "count": 31712,
+      "usageTags": [
+        "conversation"
+      ],
+      "register": "conversational",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "神",
+      "reading": "かみ",
+      "frequencyRank": 301,
+      "reportRow": 302,
+      "count": 31515,
+      "usageTags": [
+        "stories-and-news"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Found only in compounds, headings or unrelated substring matches in this pass; do not treat these as standalone headword evidence."
+    },
+    {
+      "word": "すべて",
+      "reading": "すべて",
+      "frequencyRank": 307,
+      "reportRow": 308,
+      "count": 30767,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-960e937379be",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "A beginner-listed expression for totality. The two frequency-report spellings すべて and 全て belong to one vocabulary/SRS unit, alongside the existing synonym 全部.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 32,
+          "location": "L11-3",
+          "form": "すべて"
+        }
+      ],
+      "batch": 1,
+      "reportVariants": [
+        {
+          "word": "全て",
+          "frequencyRank": 484,
+          "count": 19913
+        }
+      ]
+    },
+    {
+      "word": "まさか",
+      "reading": "まさか",
+      "frequencyRank": 315,
+      "reportRow": 316,
+      "count": 30083,
+      "usageTags": [
+        "conversation"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "愛す",
+      "reading": "あいす",
+      "frequencyRank": 329,
+      "reportRow": 330,
+      "count": 28986,
+      "usageTags": [
+        "relationships"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Review 愛する as the preferred teaching form, retaining 愛す only after verifying its variant/conjugation relationship and beginner usefulness."
+    },
+    {
+      "word": "人生",
+      "reading": "じんせい",
+      "frequencyRank": 334,
+      "reportRow": 335,
+      "count": 28646,
+      "usageTags": [
+        "feelings"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Occurs in an Elementary 2 topic heading, but this pass did not establish a standalone word-list headword; retain for a contextual follow-up review."
+    },
+    {
+      "word": "黙る",
+      "reading": "だまる",
+      "frequencyRank": 339,
+      "reportRow": 340,
+      "count": 27961,
+      "usageTags": [
+        "feelings"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "こいつ",
+      "reading": "こいつ",
+      "frequencyRank": 340,
+      "reportRow": 341,
+      "count": 27960,
+      "usageTags": [
+        "casual-dialogue"
+      ],
+      "register": "rough-or-intimate",
+      "learningFocus": "receptive-first",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "High recognition value in dialogue; defer this import batch pending an explicit register-aware teaching example and a separate level decision."
+    },
+    {
+      "word": "そういう",
+      "reading": "そういう",
+      "frequencyRank": 345,
+      "reportRow": 346,
+      "count": 27480,
+      "usageTags": [
+        "conversation"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "どういう",
+      "reading": "どういう",
+      "frequencyRank": 364,
+      "reportRow": 365,
+      "count": 26111,
+      "usageTags": [
+        "everyday-communication",
+        "conversation"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-dbf08e9fe044",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "A conversational question modifier explicitly listed in beginner materials. It supports asking about kinds and meanings without adding a new grammar construction.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 29,
+          "location": "L10-4",
+          "form": "どういう"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "仲間",
+      "reading": "なかま",
+      "frequencyRank": 380,
+      "reportRow": 381,
+      "count": 25279,
+      "usageTags": [
+        "relationships"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "敵",
+      "reading": "てき",
+      "frequencyRank": 382,
+      "reportRow": 383,
+      "count": 25187,
+      "usageTags": [
+        "stories-and-news"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Found only in compounds, headings or unrelated substring matches in this pass; do not treat these as standalone headword evidence."
+    },
+    {
+      "word": "感じる",
+      "reading": "かんじる",
+      "frequencyRank": 385,
+      "reportRow": 386,
+      "count": 25001,
+      "usageTags": [
+        "everyday-communication",
+        "feelings"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-0067fea1d955",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "A beginner-listed perception verb. The example uses only familiar N5 context and an adverbial adjective, while keeping the verb distinct from the noun 感じ.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 75,
+          "location": "L16-3",
+          "form": "感じる［2］"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "数",
+      "reading": "かず",
+      "frequencyRank": 390,
+      "reportRow": 392,
+      "count": 24641,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "愛",
+      "reading": "あい",
+      "frequencyRank": 393,
+      "reportRow": 395,
+      "count": 24489,
+      "usageTags": [
+        "relationships"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Found only in compounds, headings or unrelated substring matches in this pass; do not treat these as standalone headword evidence."
+    },
+    {
+      "word": "命",
+      "reading": "いのち",
+      "frequencyRank": 394,
+      "reportRow": 396,
+      "count": 24469,
+      "usageTags": [
+        "feelings"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Found only in compounds, headings or unrelated substring matches in this pass; do not treat these as standalone headword evidence."
+    },
+    {
+      "word": "許す",
+      "reading": "ゆるす",
+      "frequencyRank": 411,
+      "reportRow": 413,
+      "count": 23354,
+      "usageTags": [
+        "relationships"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "全員",
+      "reading": "ぜんいん",
+      "frequencyRank": 439,
+      "reportRow": 442,
+      "count": 22170,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-37bda20be9f8",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "A beginner-listed group word that complements 皆 by explicitly referring to every member of a particular group.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 43,
+          "location": "L10-2",
+          "form": "全員"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "感じ",
+      "reading": "かんじ",
+      "frequencyRank": 440,
+      "reportRow": 443,
+      "count": 22158,
+      "usageTags": [
+        "everyday-communication",
+        "feelings"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-d564bcd9c753",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "The impression/appearance noun is explicitly taught at beginner level and is distinct from 感じる. Its semantic audio slug preserves the existing 漢字 recording despite their shared reading かんじ.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 42,
+          "location": "L10-1",
+          "form": "感じ"
+        }
+      ],
+      "batch": 1,
+      "existingHomophoneId": "vocab-535c688e8bf9"
+    },
+    {
+      "word": "任せる",
+      "reading": "まかせる",
+      "frequencyRank": 445,
+      "reportRow": 448,
+      "count": 22010,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "父親",
+      "reading": "ちちおや",
+      "frequencyRank": 464,
+      "reportRow": 468,
+      "count": 21229,
+      "usageTags": [
+        "relationships"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "戦う",
+      "reading": "たたかう",
+      "frequencyRank": 465,
+      "reportRow": 469,
+      "count": 21206,
+      "usageTags": [
+        "stories-and-news"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "母親",
+      "reading": "ははおや",
+      "frequencyRank": 473,
+      "reportRow": 477,
+      "count": 20712,
+      "usageTags": [
+        "relationships"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "チーム",
+      "reading": "ちーむ",
+      "frequencyRank": 474,
+      "reportRow": 478,
+      "count": 20710,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-b93b1b471a24",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "An everyday loanword explicitly taught in beginner sports communication. It is useful beyond the entertainment corpus and also enriches whole-word Katakana practice.",
+      "evidence": [
+        {
+          "source": "irodori-elementary1",
+          "page": 42,
+          "location": "L14-2",
+          "form": "チーム"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "事件",
+      "reading": "じけん",
+      "frequencyRank": 476,
+      "reportRow": 480,
+      "count": 20589,
+      "usageTags": [
+        "stories-and-news"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "情報",
+      "reading": "じょうほう",
+      "frequencyRank": 480,
+      "reportRow": 484,
+      "count": 20295,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-b758bed6d0e6",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "An explicitly listed beginner communication word needed for finding practical information, rather than an inferred N4 assignment based solely on frequency.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 67,
+          "location": "L14-6",
+          "form": "情報"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "失う",
+      "reading": "うしなう",
+      "frequencyRank": 481,
+      "reportRow": 485,
+      "count": 20233,
+      "usageTags": [
+        "stories-and-news"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "姿",
+      "reading": "すがた",
+      "frequencyRank": 489,
+      "reportRow": 493,
+      "count": 19778,
+      "usageTags": [
+        "stories-and-news"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Found only in compounds, headings or unrelated substring matches in this pass; do not treat these as standalone headword evidence."
+    },
+    {
+      "word": "マジ",
+      "reading": "まじ",
+      "frequencyRank": 495,
+      "reportRow": 499,
+      "count": 19565,
+      "usageTags": [
+        "casual-dialogue"
+      ],
+      "register": "colloquial",
+      "learningFocus": "receptive-first",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "High recognition value in dialogue; defer this import batch pending an explicit register-aware teaching example and a separate level decision."
+    },
+    {
+      "word": "つまり",
+      "reading": "つまり",
+      "frequencyRank": 505,
+      "reportRow": 509,
+      "count": 19163,
+      "usageTags": [
+        "conversation"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "方法",
+      "reading": "ほうほう",
+      "frequencyRank": 512,
+      "reportRow": 516,
+      "count": 18922,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Found only in compounds, headings or unrelated substring matches in this pass; do not treat these as standalone headword evidence."
+    },
+    {
+      "word": "確認",
+      "reading": "かくにん",
+      "frequencyRank": 518,
+      "reportRow": 523,
+      "count": 18792,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-00267c54cf8b",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Beginner materials explicitly teach 確認する for everyday checking. One noun entry plus the existing する handles the compound without a duplicate SRS card.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 59,
+          "location": "L13-3",
+          "form": "確認する［3］"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "状況",
+      "reading": "じょうきょう",
+      "frequencyRank": 523,
+      "reportRow": 528,
+      "count": 18537,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Found only in compounds, headings or unrelated substring matches in this pass; do not treat these as standalone headword evidence."
+    },
+    {
+      "word": "感謝",
+      "reading": "かんしゃ",
+      "frequencyRank": 525,
+      "reportRow": 530,
+      "count": 18400,
+      "usageTags": [
+        "everyday-communication",
+        "relationships"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-27052c77f777",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Beginner material explicitly teaches the gratitude noun with する. It extends the existing greeting ありがとう into a reusable expression of appreciation.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 82,
+          "location": "L17-2",
+          "form": "感謝する［3］"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "冗談",
+      "reading": "じょうだん",
+      "frequencyRank": 537,
+      "reportRow": 542,
+      "count": 17937,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "実は",
+      "reading": "じつは",
+      "frequencyRank": 550,
+      "reportRow": 555,
+      "count": 17600,
+      "usageTags": [
+        "conversation"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "落ち着く",
+      "reading": "おちつく",
+      "frequencyRank": 555,
+      "reportRow": 560,
+      "count": 17369,
+      "usageTags": [
+        "everyday-communication",
+        "feelings"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-9184ea9fd90e",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "Explicitly taught in beginner safety communication, with everyday emotional usefulness as well. The authored example uses familiar water/drinking context.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 73,
+          "location": "L16-1",
+          "form": "落ち着く［1］"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "とにかく",
+      "reading": "とにかく",
+      "frequencyRank": 556,
+      "reportRow": 561,
+      "count": 17353,
+      "usageTags": [
+        "everyday-communication",
+        "conversation"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-9cfbaa71347a",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "A conversation-management word explicitly listed at beginner level; the example shows a simple return to a practical suggestion.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 84,
+          "location": "L18-2",
+          "form": "とにかく"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "離れる",
+      "reading": "はなれる",
+      "frequencyRank": 557,
+      "reportRow": 562,
+      "count": 17314,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-1be74c02fba1",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "A beginner-listed movement verb, useful for both safe movement and everyday descriptions of distance. Its example uses familiar station/shop vocabulary.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 73,
+          "location": "L16-1",
+          "form": "離れる［2］"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "隠す",
+      "reading": "かくす",
+      "frequencyRank": 562,
+      "reportRow": 567,
+      "count": 17106,
+      "usageTags": [
+        "stories-and-news"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "気づく",
+      "reading": "きづく",
+      "frequencyRank": 573,
+      "reportRow": 578,
+      "count": 16779,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-0fc59c481d31",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "An explicitly listed beginner awareness verb. Retain the modern kana spelling づ and accept 気付く as the same word, without introducing a second SRS unit.",
+      "evidence": [
+        {
+          "source": "irodori-elementary2",
+          "page": 48,
+          "location": "L11-3",
+          "form": "気づく［1］"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "結果",
+      "reading": "けっか",
+      "frequencyRank": 582,
+      "reportRow": 587,
+      "count": 16359,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Found only in compounds, headings or unrelated substring matches in this pass; do not treat these as standalone headword evidence."
+    },
+    {
+      "word": "平気",
+      "reading": "へいき",
+      "frequencyRank": 587,
+      "reportRow": 592,
+      "count": 16257,
+      "usageTags": [
+        "feelings"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "了解",
+      "reading": "りょうかい",
+      "frequencyRank": 604,
+      "reportRow": 610,
+      "count": 15640,
+      "usageTags": [
+        "everyday-communication",
+        "conversation"
+      ],
+      "register": "conversational",
+      "learningFocus": "productive-and-receptive",
+      "decision": "imported",
+      "vocabularyId": "vocab-47068c0ba01c",
+      "introducedAt": "n4",
+      "scope": "supplemental",
+      "levelConfidence": "beginner-material-supported",
+      "reason": "An acknowledgement explicitly taught in Irodori Starter. The example targets receiving a message or instruction, rather than claiming that it is an honorific business formula.",
+      "evidence": [
+        {
+          "source": "irodori-starter",
+          "page": 43,
+          "location": "L12-5",
+          "form": "了解"
+        }
+      ],
+      "batch": 1
+    },
+    {
+      "word": "成功",
+      "reading": "せいこう",
+      "frequencyRank": 605,
+      "reportRow": 611,
+      "count": 15603,
+      "usageTags": [
+        "everyday-communication"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    },
+    {
+      "word": "本気",
+      "reading": "ほんき",
+      "frequencyRank": 614,
+      "reportRow": 620,
+      "count": 15403,
+      "usageTags": [
+        "conversation"
+      ],
+      "register": "unmarked",
+      "learningFocus": "productive-and-receptive",
+      "decision": "pending-review",
+      "levelConfidence": "unassigned",
+      "reason": "Keep for a later individual review: no exact, standalone beginner headword evidence was established in this pass."
+    }
+  ]
+}

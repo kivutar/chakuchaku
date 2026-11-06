@@ -258,7 +258,7 @@ npm run voices -- --id left-home-without-key --force
 ```
 
 Vocabulary generation is a separate, explicitly bounded command. It processes
-the 1,335 core entries before the 145 supplemental entries and uses the stable
+the 1,338 core entries before the 199 supplemental entries and uses the stable
 path `assets/voices/vocab/<romaji>.m4a`. Homophones use curated semantic names
 such as `ame-rain.m4a` and `ame-candy.m4a`; one older unambiguous base filename
 may be retained when a newly added homophone receives the semantic suffix.

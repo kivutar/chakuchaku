@@ -53750,6 +53750,943 @@
     ]
   },
   {
+    "vocabularyId": "vocab-2d9304a2db87",
+    "text": "安いです。ただ、少し遠いです。",
+    "targetSurface": "ただ",
+    "targetReading": "ただ",
+    "targetTokenStart": 3,
+    "targetTokenEnd": 4,
+    "translation": "It is cheap. However, it is a little far away.",
+    "tokens": [
+      {
+        "surface": "安い",
+        "category": "adjective",
+        "reading": "やすい",
+        "vocabularyId": "vocab-0513945a1ef5"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      },
+      {
+        "surface": "ただ",
+        "category": "conjunction",
+        "reading": "ただ",
+        "vocabularyId": "vocab-2d9304a2db87"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "少し",
+        "category": "adverb",
+        "reading": "すこし",
+        "vocabularyId": "vocab-8814378ebfc2"
+      },
+      {
+        "surface": "遠い",
+        "category": "adjective",
+        "reading": "とおい",
+        "vocabularyId": "vocab-8b4370afb039"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-843d547c146c",
+    "text": "今日は最高の日です。",
+    "targetSurface": "最高",
+    "targetReading": "さいこう",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "Today is a fantastic day.",
+    "tokens": [
+      {
+        "surface": "今日",
+        "category": "noun",
+        "reading": "きょう",
+        "vocabularyId": "vocab-6b9362de88a7"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "最高",
+        "category": "noun",
+        "reading": "さいこう",
+        "vocabularyId": "vocab-843d547c146c"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "日",
+        "category": "noun",
+        "reading": "ひ",
+        "vocabularyId": "vocab-f3881ce313e7"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-78222dce8cd3",
+    "text": "ほら、あそこに猫がいます。",
+    "targetSurface": "ほら",
+    "targetReading": "ほら",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "Look, there is a cat over there.",
+    "tokens": [
+      {
+        "surface": "ほら",
+        "category": "interjection",
+        "reading": "ほら",
+        "vocabularyId": "vocab-78222dce8cd3"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "あそこ",
+        "category": "noun",
+        "reading": "あそこ",
+        "vocabularyId": "vocab-5b274f581a57"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "猫",
+        "category": "noun",
+        "reading": "ねこ",
+        "vocabularyId": "vocab-123a10eb50b0"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "い",
+        "category": "verb",
+        "reading": "い",
+        "vocabularyId": "vocab-e2f1dae6743a"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-16019d9a9007",
+    "text": "テニスの相手は友だちです。",
+    "targetSurface": "相手",
+    "targetReading": "あいて",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "My tennis partner is my friend.",
+    "tokens": [
+      {
+        "surface": "テニス",
+        "category": "noun",
+        "reading": "てにす",
+        "vocabularyId": "vocab-3826acd0bb7b"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "相手",
+        "category": "noun",
+        "reading": "あいて",
+        "vocabularyId": "vocab-16019d9a9007"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "友だち",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-85ffcd6a590c",
+    "text": "明日は絶対に行きます。",
+    "targetSurface": "絶対",
+    "targetReading": "ぜったい",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I will definitely go tomorrow.",
+    "tokens": [
+      {
+        "surface": "明日",
+        "category": "noun",
+        "reading": "あした",
+        "vocabularyId": "vocab-bec9ce9d08c8"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "絶対",
+        "category": "adverb",
+        "reading": "ぜったい",
+        "vocabularyId": "vocab-85ffcd6a590c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "行き",
+        "category": "verb",
+        "reading": "いき",
+        "vocabularyId": "vocab-ec22142c23d3"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-960e937379be",
+    "text": "宿題はすべて終わりました。",
+    "targetSurface": "すべて",
+    "targetReading": "すべて",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "All my homework is finished.",
+    "tokens": [
+      {
+        "surface": "宿題",
+        "category": "noun",
+        "reading": "しゅくだい",
+        "vocabularyId": "vocab-f26f501fa1c2"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "すべて",
+        "category": "noun",
+        "reading": "すべて",
+        "vocabularyId": "vocab-960e937379be"
+      },
+      {
+        "surface": "終わり",
+        "category": "verb",
+        "reading": "おわり",
+        "vocabularyId": "vocab-6393ca7aefde"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-dbf08e9fe044",
+    "text": "どういう人が好きですか。",
+    "targetSurface": "どういう",
+    "targetReading": "どういう",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "What kind of person do you like?",
+    "tokens": [
+      {
+        "surface": "どういう",
+        "category": "determiner",
+        "reading": "どういう",
+        "vocabularyId": "vocab-dbf08e9fe044"
+      },
+      {
+        "surface": "人",
+        "category": "noun",
+        "reading": "ひと",
+        "vocabularyId": "vocab-ad7167347a2a"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "好き",
+        "category": "adjective",
+        "reading": "すき",
+        "vocabularyId": "vocab-32a5e8698306"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "か",
+        "category": "particle",
+        "reading": "か"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-0067fea1d955",
+    "text": "今日は少し寒く感じます。",
+    "targetSurface": "感じ",
+    "targetReading": "かんじ",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "It feels a little cold today.",
+    "tokens": [
+      {
+        "surface": "今日",
+        "category": "noun",
+        "reading": "きょう",
+        "vocabularyId": "vocab-6b9362de88a7"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "少し",
+        "category": "adverb",
+        "reading": "すこし",
+        "vocabularyId": "vocab-8814378ebfc2"
+      },
+      {
+        "surface": "寒く",
+        "category": "adjective",
+        "reading": "さむく",
+        "vocabularyId": "vocab-ea75e321b7ef"
+      },
+      {
+        "surface": "感じ",
+        "category": "verb",
+        "reading": "かんじ",
+        "vocabularyId": "vocab-0067fea1d955"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-37bda20be9f8",
+    "text": "友だちは全員来ました。",
+    "targetSurface": "全員",
+    "targetReading": "ぜんいん",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "All my friends came.",
+    "tokens": [
+      {
+        "surface": "友だち",
+        "category": "noun",
+        "reading": "ともだち",
+        "vocabularyId": "vocab-d9898f8a95b6"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "全員",
+        "category": "noun",
+        "reading": "ぜんいん",
+        "vocabularyId": "vocab-37bda20be9f8"
+      },
+      {
+        "surface": "来",
+        "category": "verb",
+        "reading": "き",
+        "vocabularyId": "vocab-bc01756b4d89"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-d564bcd9c753",
+    "text": "この部屋はいい感じです。",
+    "targetSurface": "感じ",
+    "targetReading": "かんじ",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "This room has a nice feel to it.",
+    "tokens": [
+      {
+        "surface": "この",
+        "category": "determiner",
+        "reading": "この",
+        "vocabularyId": "vocab-25acc002a82f"
+      },
+      {
+        "surface": "部屋",
+        "category": "noun",
+        "reading": "へや",
+        "vocabularyId": "vocab-23523bbf8d9c"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "いい",
+        "category": "adjective",
+        "reading": "いい",
+        "vocabularyId": "vocab-ef4cce00951f"
+      },
+      {
+        "surface": "感じ",
+        "category": "noun",
+        "reading": "かんじ",
+        "vocabularyId": "vocab-d564bcd9c753"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-b93b1b471a24",
+    "text": "私のチームは強いです。",
+    "targetSurface": "チーム",
+    "targetReading": "ちーむ",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "My team is strong.",
+    "tokens": [
+      {
+        "surface": "私",
+        "category": "noun",
+        "reading": "わたし",
+        "vocabularyId": "vocab-b6944a5fe271"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "チーム",
+        "category": "noun",
+        "reading": "ちーむ",
+        "vocabularyId": "vocab-b93b1b471a24"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "強い",
+        "category": "adjective",
+        "reading": "つよい",
+        "vocabularyId": "vocab-e71d7d160f29"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-b758bed6d0e6",
+    "text": "新しい情報があります。",
+    "targetSurface": "情報",
+    "targetReading": "じょうほう",
+    "targetTokenStart": 1,
+    "targetTokenEnd": 2,
+    "translation": "There is new information.",
+    "tokens": [
+      {
+        "surface": "新しい",
+        "category": "adjective",
+        "reading": "あたらしい",
+        "vocabularyId": "vocab-288a95a40d95"
+      },
+      {
+        "surface": "情報",
+        "category": "noun",
+        "reading": "じょうほう",
+        "vocabularyId": "vocab-b758bed6d0e6"
+      },
+      {
+        "surface": "が",
+        "category": "particle",
+        "reading": "が"
+      },
+      {
+        "surface": "あり",
+        "category": "verb",
+        "reading": "あり",
+        "vocabularyId": "vocab-b66f43bc23a1"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-00267c54cf8b",
+    "text": "時間を確認します。",
+    "targetSurface": "確認",
+    "targetReading": "かくにん",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I check the time.",
+    "tokens": [
+      {
+        "surface": "時間",
+        "category": "noun",
+        "reading": "じかん",
+        "vocabularyId": "vocab-f6a8c4a23b51"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "確認",
+        "category": "noun",
+        "reading": "かくにん",
+        "vocabularyId": "vocab-00267c54cf8b"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-27052c77f777",
+    "text": "家族に感謝します。",
+    "targetSurface": "感謝",
+    "targetReading": "かんしゃ",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "I am grateful to my family.",
+    "tokens": [
+      {
+        "surface": "家族",
+        "category": "noun",
+        "reading": "かぞく",
+        "vocabularyId": "vocab-a16373e2426c"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "感謝",
+        "category": "noun",
+        "reading": "かんしゃ",
+        "vocabularyId": "vocab-27052c77f777"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "ます",
+        "category": "auxiliary",
+        "reading": "ます"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-9184ea9fd90e",
+    "text": "水を飲んで落ち着きました。",
+    "targetSurface": "落ち着き",
+    "targetReading": "おちつき",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I drank some water and calmed down.",
+    "tokens": [
+      {
+        "surface": "水",
+        "category": "noun",
+        "reading": "みず",
+        "vocabularyId": "vocab-28ddfdc9290c"
+      },
+      {
+        "surface": "を",
+        "category": "particle",
+        "reading": "を"
+      },
+      {
+        "surface": "飲ん",
+        "category": "verb",
+        "reading": "のん",
+        "vocabularyId": "vocab-dcd3acd6b659"
+      },
+      {
+        "surface": "で",
+        "category": "particle",
+        "reading": "で"
+      },
+      {
+        "surface": "落ち着き",
+        "category": "verb",
+        "reading": "おちつき",
+        "vocabularyId": "vocab-9184ea9fd90e"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-9cfbaa71347a",
+    "text": "とにかく、今日は休みましょう。",
+    "targetSurface": "とにかく",
+    "targetReading": "とにかく",
+    "targetTokenStart": 0,
+    "targetTokenEnd": 1,
+    "translation": "Anyway, let’s rest today.",
+    "tokens": [
+      {
+        "surface": "とにかく",
+        "category": "adverb",
+        "reading": "とにかく",
+        "vocabularyId": "vocab-9cfbaa71347a"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "今日",
+        "category": "noun",
+        "reading": "きょう",
+        "vocabularyId": "vocab-6b9362de88a7"
+      },
+      {
+        "surface": "は",
+        "category": "particle",
+        "reading": "は"
+      },
+      {
+        "surface": "休み",
+        "category": "verb",
+        "reading": "やすみ",
+        "vocabularyId": "vocab-acc3dd26ba1e"
+      },
+      {
+        "surface": "ましょ",
+        "category": "auxiliary",
+        "reading": "ましょ"
+      },
+      {
+        "surface": "う",
+        "category": "auxiliary",
+        "reading": "う"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-1be74c02fba1",
+    "text": "駅から少し離れた店です。",
+    "targetSurface": "離れ",
+    "targetReading": "はなれ",
+    "targetTokenStart": 3,
+    "targetTokenEnd": 4,
+    "translation": "It is a shop a short distance from the station.",
+    "tokens": [
+      {
+        "surface": "駅",
+        "category": "noun",
+        "reading": "えき",
+        "vocabularyId": "vocab-d29031265cf4"
+      },
+      {
+        "surface": "から",
+        "category": "particle",
+        "reading": "から"
+      },
+      {
+        "surface": "少し",
+        "category": "adverb",
+        "reading": "すこし",
+        "vocabularyId": "vocab-8814378ebfc2"
+      },
+      {
+        "surface": "離れ",
+        "category": "verb",
+        "reading": "はなれ",
+        "vocabularyId": "vocab-1be74c02fba1"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "店",
+        "category": "noun",
+        "reading": "みせ",
+        "vocabularyId": "vocab-e70f9243d4c7"
+      },
+      {
+        "surface": "です",
+        "category": "auxiliary",
+        "reading": "です"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-0fc59c481d31",
+    "text": "先生の車に気づきました。",
+    "targetSurface": "気づき",
+    "targetReading": "きづき",
+    "targetTokenStart": 4,
+    "targetTokenEnd": 5,
+    "translation": "I noticed my teacher’s car.",
+    "tokens": [
+      {
+        "surface": "先生",
+        "category": "noun",
+        "reading": "せんせい",
+        "vocabularyId": "vocab-497356cf0646"
+      },
+      {
+        "surface": "の",
+        "category": "particle",
+        "reading": "の"
+      },
+      {
+        "surface": "車",
+        "category": "noun",
+        "reading": "くるま",
+        "vocabularyId": "vocab-f71f9de56223"
+      },
+      {
+        "surface": "に",
+        "category": "particle",
+        "reading": "に"
+      },
+      {
+        "surface": "気づき",
+        "category": "verb",
+        "reading": "きづき",
+        "vocabularyId": "vocab-0fc59c481d31"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
+    "vocabularyId": "vocab-47068c0ba01c",
+    "text": "はい、了解しました。",
+    "targetSurface": "了解",
+    "targetReading": "りょうかい",
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
+    "translation": "Yes, understood.",
+    "tokens": [
+      {
+        "surface": "はい",
+        "category": "interjection",
+        "reading": "はい",
+        "vocabularyId": "vocab-6bbf1546d4d7"
+      },
+      {
+        "surface": "、",
+        "reading": "、"
+      },
+      {
+        "surface": "了解",
+        "category": "noun",
+        "reading": "りょうかい",
+        "vocabularyId": "vocab-47068c0ba01c"
+      },
+      {
+        "surface": "し",
+        "category": "verb",
+        "reading": "し",
+        "vocabularyId": "vocab-dfb6d8ba613b"
+      },
+      {
+        "surface": "まし",
+        "category": "auxiliary",
+        "reading": "まし"
+      },
+      {
+        "surface": "た",
+        "category": "auxiliary",
+        "reading": "た"
+      },
+      {
+        "surface": "。",
+        "reading": "。"
+      }
+    ]
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

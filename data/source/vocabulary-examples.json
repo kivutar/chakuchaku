@@ -9114,6 +9114,120 @@
     "translation": "I will protect my family."
   },
   {
+    "vocabularyId": "vocab-2d9304a2db87",
+    "text": "安いです。ただ、少し遠いです。",
+    "targetSurface": "ただ",
+    "translation": "It is cheap. However, it is a little far away."
+  },
+  {
+    "vocabularyId": "vocab-843d547c146c",
+    "text": "今日は最高の日です。",
+    "targetSurface": "最高",
+    "translation": "Today is a fantastic day."
+  },
+  {
+    "vocabularyId": "vocab-78222dce8cd3",
+    "text": "ほら、あそこに猫がいます。",
+    "targetSurface": "ほら",
+    "translation": "Look, there is a cat over there."
+  },
+  {
+    "vocabularyId": "vocab-16019d9a9007",
+    "text": "テニスの相手は友だちです。",
+    "targetSurface": "相手",
+    "translation": "My tennis partner is my friend."
+  },
+  {
+    "vocabularyId": "vocab-85ffcd6a590c",
+    "text": "明日は絶対に行きます。",
+    "targetSurface": "絶対",
+    "translation": "I will definitely go tomorrow."
+  },
+  {
+    "vocabularyId": "vocab-960e937379be",
+    "text": "宿題はすべて終わりました。",
+    "targetSurface": "すべて",
+    "translation": "All my homework is finished."
+  },
+  {
+    "vocabularyId": "vocab-dbf08e9fe044",
+    "text": "どういう人が好きですか。",
+    "targetSurface": "どういう",
+    "translation": "What kind of person do you like?"
+  },
+  {
+    "vocabularyId": "vocab-0067fea1d955",
+    "text": "今日は少し寒く感じます。",
+    "targetSurface": "感じ",
+    "translation": "It feels a little cold today."
+  },
+  {
+    "vocabularyId": "vocab-37bda20be9f8",
+    "text": "友だちは全員来ました。",
+    "targetSurface": "全員",
+    "translation": "All my friends came."
+  },
+  {
+    "vocabularyId": "vocab-d564bcd9c753",
+    "text": "この部屋はいい感じです。",
+    "targetSurface": "感じ",
+    "translation": "This room has a nice feel to it."
+  },
+  {
+    "vocabularyId": "vocab-b93b1b471a24",
+    "text": "私のチームは強いです。",
+    "targetSurface": "チーム",
+    "translation": "My team is strong."
+  },
+  {
+    "vocabularyId": "vocab-b758bed6d0e6",
+    "text": "新しい情報があります。",
+    "targetSurface": "情報",
+    "translation": "There is new information."
+  },
+  {
+    "vocabularyId": "vocab-00267c54cf8b",
+    "text": "時間を確認します。",
+    "targetSurface": "確認",
+    "translation": "I check the time."
+  },
+  {
+    "vocabularyId": "vocab-27052c77f777",
+    "text": "家族に感謝します。",
+    "targetSurface": "感謝",
+    "translation": "I am grateful to my family."
+  },
+  {
+    "vocabularyId": "vocab-9184ea9fd90e",
+    "text": "水を飲んで落ち着きました。",
+    "targetSurface": "落ち着き",
+    "translation": "I drank some water and calmed down."
+  },
+  {
+    "vocabularyId": "vocab-9cfbaa71347a",
+    "text": "とにかく、今日は休みましょう。",
+    "targetSurface": "とにかく",
+    "translation": "Anyway, let’s rest today."
+  },
+  {
+    "vocabularyId": "vocab-1be74c02fba1",
+    "text": "駅から少し離れた店です。",
+    "targetSurface": "離れ",
+    "translation": "It is a shop a short distance from the station."
+  },
+  {
+    "vocabularyId": "vocab-0fc59c481d31",
+    "text": "先生の車に気づきました。",
+    "targetSurface": "気づき",
+    "translation": "I noticed my teacher’s car."
+  },
+  {
+    "vocabularyId": "vocab-47068c0ba01c",
+    "text": "はい、了解しました。",
+    "targetSurface": "了解",
+    "translation": "Yes, understood."
+  },
+  {
     "vocabularyId": "kanji-context-washitsu",
     "text": "和室で休みます。",
     "targetSurface": "和室",

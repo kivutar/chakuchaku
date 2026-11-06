@@ -169,8 +169,8 @@ test("the curated pool contains every unique all-Katakana vocabulary word", asyn
   ));
   const words = createWordPool(vocabulary);
 
-  assert.equal(words.length, 158);
-  assert.equal(new Set(words.map(({ katakana }) => katakana)).size, 158);
+  assert.equal(words.length, 159);
+  assert.equal(new Set(words.map(({ katakana }) => katakana)).size, 159);
   assert.equal(createKanaInventory(words).length, 87);
   assert.equal(createSingleKanaPool(words).length, 85);
   assert.equal(words.every(({ kanaPairs }) => kanaPairs.length > 0), true);
