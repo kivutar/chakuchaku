@@ -64,6 +64,61 @@ test("romaji grading handles digraphs and small tsu without splitting them", () 
   ]);
 });
 
+test("particle は accepts its contextual pronunciation and its IME spelling", () => {
+  for (const [reading, spoken, typed] of [
+    ["または", "matawa", "mataha"],
+    ["では", "dewa", "deha"],
+    ["それでは", "soredewa", "soredeha"],
+    ["こんにちは", "konnichiwa", "konnichiha"],
+    ["こんばんは", "konbanwa", "konbanha"],
+    ["じつは", "jitsuwa", "jitsuha"]
+  ]) {
+    for (const answer of [spoken, typed, ` ${spoken.toUpperCase()} `]) {
+      const result = gradeAnswer({ reading, direction: directions.kanaToRomaji, answer });
+
+      assert.equal(result.correct, true, `${reading}: ${answer}`);
+      assert.equal(result.expectedAnswer, spoken);
+      assert.ok(result.parts.every(({ outcome }) => outcome === "good"));
+      assert.deepEqual(result.parts.at(-1), { kana: "は", romaji: "wa", outcome: "good" });
+    }
+
+    const prompt = romanizeParts(segmentHiragana(reading)).join("");
+
+    assert.equal(prompt, typed);
+    assert.equal(gradeAnswer({
+      reading, direction: directions.romajiToKana, answer: prompt
+    }).correct, true);
+  }
+});
+
+test("contextual は grading still isolates real errors and preserves ordinary ha", () => {
+  for (const answer of ["matewa", "mateha"]) {
+    const result = gradeAnswer({
+      reading: "または", direction: directions.kanaToRomaji, answer
+    });
+
+    assert.equal(result.correct, false);
+    assert.deepEqual(result.parts.map(({ outcome }) => outcome), ["good", "again", "good"]);
+  }
+
+  const wrongParticle = gradeAnswer({
+    reading: "または", direction: directions.kanaToRomaji, answer: "matava"
+  });
+
+  assert.deepEqual(wrongParticle.parts.map(({ outcome }) => outcome), ["good", "good", "again"]);
+
+  for (const [reading, answer] of [["はしる", "washiru"], ["はな", "wana"], ["はは", "hawa"]]) {
+    const result = gradeAnswer({ reading, direction: directions.kanaToRomaji, answer });
+
+    assert.equal(result.correct, false, reading);
+    assert.ok(result.parts.some(({ kana, outcome }) => kana === "は" && outcome === "again"));
+    assert.equal(gradeAnswer({
+      reading, direction: directions.kanaToRomaji,
+      answer: romanizeParts(segmentHiragana(reading)).join("")
+    }).correct, true);
+  }
+});
+
 test("displayed romaji remains reversible for n and doubled ch sounds", () => {
   const fridayParts = segmentHiragana("きんようび");
   const overThereParts = segmentHiragana("あっち");

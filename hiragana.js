@@ -6,6 +6,9 @@
     romajiToKana: "romaji-to-kana"
   });
   const smallKana = new Set(["ゃ", "ゅ", "ょ", "ぁ", "ぃ", "ぅ", "ぇ", "ぉ", "ゎ"]);
+  const readingsWithParticleHa = new Set([
+    "または", "では", "それでは", "こんにちは", "こんばんは", "じつは"
+  ]);
 
   function getConverter(converter) {
     const resolvedConverter = converter || global.wanakana;
@@ -184,6 +187,12 @@
   function gradeRomajiAnswer(reading, answer, converter) {
     const parts = segmentHiragana(reading);
     const romajiParts = romanizeParts(parts, converter);
+    const hasParticleHa = readingsWithParticleHa.has(parts.join(""));
+
+    if (hasParticleHa) {
+      romajiParts[romajiParts.length - 1] = "wa";
+    }
+
     const normalizedRomajiParts = romajiParts.map(normalizeRomaji);
     const expectedCharacters = [];
     const partIndexByCharacter = [];
@@ -196,9 +205,14 @@
     });
 
     const normalizedAnswer = normalizeRomaji(answer);
+    // Accept both the spoken particle and the spelling needed to type は in an IME.
+    // Keep romanizeParts reversible for the prompts in the opposite direction.
+    const answerToCompare = hasParticleHa
+      ? normalizedAnswer.replace(/ha$/u, "wa")
+      : normalizedAnswer;
     const failedCharacterIndexes = alignSequences(
       expectedCharacters,
-      [...normalizedAnswer]
+      [...answerToCompare]
     );
     const failedPartIndexes = new Set(
       [...failedCharacterIndexes].map((index) => partIndexByCharacter[index])
@@ -209,7 +223,7 @@
     return {
       expectedAnswer,
       normalizedAnswer,
-      correct: failedPartIndexes.size === 0 && normalizedAnswer === normalizedExpectedAnswer,
+      correct: failedPartIndexes.size === 0 && answerToCompare === normalizedExpectedAnswer,
       parts: createPartResults(parts, romajiParts, failedPartIndexes)
     };
   }
