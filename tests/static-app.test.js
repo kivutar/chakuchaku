@@ -488,6 +488,7 @@ test("the main menu links every implemented study route", async () => {
   ]);
 
   assert.match(html, /data-study-section="hiragana"/);
+  assert.match(html, /data-study-section="course"/);
   assert.match(html, /data-study-section="review"/);
   assert.match(html, /data-study-section="katakana"/);
   assert.match(html, /data-study-section="kanji"/);
@@ -501,6 +502,7 @@ test("the main menu links every implemented study route", async () => {
   assert.ok(html.indexOf('src="vocabulary.js"') < html.indexOf('src="app.js"'));
   assert.ok(html.indexOf('src="conjugation.js"') < html.indexOf('src="app.js"'));
   assert.ok(html.indexOf('src="review.js"') < html.indexOf('src="app.js"'));
+  assert.ok(html.indexOf('src="course.js"') < html.indexOf('src="app.js"'));
   assert.match(html, /id="review-progress"/);
   assert.match(html, /id="review-section-badge"/);
   assert.match(html, /id="review-complete"/);
@@ -1682,6 +1684,8 @@ test("preview serves the committed static application", async () => {
     ["/assets/landing/iphone-grammar-fr.png", "image/png"],
     ["/privacy.html", "text/html"],
     ["/review", "text/html"],
+    ["/course", "text/html"],
+    ["/course.js", "text/javascript"],
     ["/grammar", "text/html"],
     ["/conjugation", "text/html"],
     ["/hiragana", "text/html"],

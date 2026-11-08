@@ -1,5 +1,6 @@
 const introductionId = "introduction";
 const studySections = new Set([
+  "course",
   "review",
   "grammar",
   "conjugation",
@@ -65,6 +66,7 @@ const historyEmpty = document.querySelector("#history-empty");
 const lessonElement = document.querySelector(".lesson");
 const readingElement = document.querySelector("#reading-view");
 const reviewProgress = document.querySelector("#review-progress");
+const reviewProgressLabel = document.querySelector("#review-progress-label");
 const reviewProgressTrack = document.querySelector("#review-progress-track");
 const reviewProgressCount = document.querySelector("#review-progress-count");
 const reviewProgressFill = document.querySelector("#review-progress-fill");
@@ -74,6 +76,8 @@ const reviewSectionBadgeLabel = document.querySelector("#review-section-badge-la
 const reviewComplete = document.querySelector("#review-complete");
 const reviewContinueButton = document.querySelector("#review-continue-button");
 const reviewChooseSectionButton = document.querySelector("#review-choose-section-button");
+const courseOverview = document.querySelector("#course-overview");
+const courseStartButton = document.querySelector("#course-start-button");
 const studyEmpty = document.querySelector("#study-empty");
 const studyEmptySettingsButton = document.querySelector("#study-empty-settings-button");
 const sentenceElement = document.querySelector("#lesson-sentence");
@@ -154,6 +158,8 @@ let reviewSession;
 let reviewFreePractice = false;
 let currentReviewOutcomes = [];
 let previousReviewPracticeSection;
+let coursePlan;
+let previousCourseSection;
 let settings = { ...globalThis.JlptN5Settings.defaults };
 let openAiApiKey = globalThis.JlptN5Settings.readOpenAiApiKey();
 let autoCorrectController;
@@ -231,6 +237,14 @@ function selectProgressiveEntries(entries, kind, curriculum = curriculumModel) {
     encounteredIds: Object.keys(encounterBucket),
     maxNew: curriculum.getNewItemLimit(settings.newContentPace, kind)
   }).entries;
+}
+
+function filterCourseExercises(exercises) {
+  return currentStudySection === "course"
+    ? globalThis.JlptN5Course.filterExercises(exercises, {
+      curriculum: curriculumModel, through: getStudyLevel()
+    })
+    : exercises;
 }
 
 function createEmptyStudyResult(section) {
@@ -346,9 +360,9 @@ function revealSolutionPanel(outcome) {
 function getStudyUrl(section) {
   const pathname = window.location.pathname;
 
-  if (/\/(?:review|grammar|conjugation|hiragana|katakana|kanji|vocabulary|reading)\/?$/u.test(pathname)) {
+  if (/\/(?:course|review|grammar|conjugation|hiragana|katakana|kanji|vocabulary|reading)\/?$/u.test(pathname)) {
     return pathname.replace(
-      /\/(?:review|grammar|conjugation|hiragana|katakana|kanji|vocabulary|reading)\/?$/u,
+      /\/(?:course|review|grammar|conjugation|hiragana|katakana|kanji|vocabulary|reading)\/?$/u,
       `/${section}`
     );
   }
@@ -362,6 +376,7 @@ function getStudyUrl(section) {
 
 function configureStudyNavigation() {
   const label = {
+    course: t("section.course"),
     review: t("section.review"),
     grammar: t("section.grammar"),
     conjugation: t("section.conjugation"),
@@ -2335,6 +2350,10 @@ async function navigateToStudyMenuItem(menuItem) {
   }
 }
 
+function navigateToStudySection(section) {
+  return navigateToStudyMenuItem({ href: getStudyUrl(section) });
+}
+
 function handleProfileMenuClick(event) {
   const menuItem = event.target.closest('[role="menuitem"]');
 
@@ -3071,11 +3090,19 @@ function prepareKanjiExercises(entriesById, kanjiEntriesById, kanjiContexts) {
     vocabulary,
     kanjiContexts
   );
+  const wordsById = new Map([...vocabulary, ...linkedContexts].map((word) => [word.id, word]));
 
   kanjiExercisePool = globalThis.JlptN5Kanji.createExercisePool(
     [...kanjiEntriesById.values()],
     [...vocabulary, ...linkedContexts]
-  );
+  ).map((exercise) => ({
+    ...exercise,
+    minimumLevel: curriculumModel.highestLevel([
+      exercise.introducedAt,
+      wordsById.get(exercise.kanjiContextId || exercise.vocabularyId).introducedAt,
+      ...(exercise.vocabularyId ? [entriesById.get(exercise.vocabularyId).introducedAt] : [])
+    ])
+  }));
   const inventory = globalThis.JlptN5Kanji.getKanjiInventory(kanjiExercisePool);
   const expectedInventoryCount = kanjiEntriesById.size;
 
@@ -3283,7 +3310,7 @@ async function pickNextExercise(requestedGrammarPointId) {
       return getExerciseType(exercise) === forcedExerciseType;
     })
     : exercises;
-  const studyExercises = typeExercises.filter((exercise) => {
+  const studyExercises = filterCourseExercises(typeExercises).filter((exercise) => {
     const eligiblePointIds = exercise.grammarPointIds.filter((id) => {
       return eligibleGrammarPointIds.has(id);
     });
@@ -3540,7 +3567,7 @@ async function pickNextKanjiExercise(requestedKanjiId) {
     vocabularyExampleDataPromise,
     curriculumDataPromise
   ]);
-  const pool = prepareKanjiExercises(entriesById, kanjiEntriesById, kanjiContexts);
+  const pool = filterCourseExercises(prepareKanjiExercises(entriesById, kanjiEntriesById, kanjiContexts));
   const exerciseHistory = globalThis.JlptN5Stats.readLearningStats().exerciseHistory;
   const direction = globalThis.JlptN5Kanji.getNextDirection(exerciseHistory);
   const inventory = globalThis.JlptN5Kanji.getKanjiInventory(pool);
@@ -3678,7 +3705,7 @@ async function pickNextConjugationExercise(requestedPointId) {
   }
 
   const targetLevel = getStudyLevel(curriculum);
-  const studyPool = pool.filter((exercise) => {
+  const studyPool = filterCourseExercises(pool).filter((exercise) => {
     if (!exercise.conjugationPointIds.some((id) => eligiblePointIds.has(id))) {
       return false;
     }
@@ -3826,6 +3853,138 @@ async function createDailyReviewSession() {
   );
 }
 
+async function loadDailyCoursePlan() {
+  const [exercises, entriesById, kanjiEntriesById, contexts, conjugationPool, curriculum] =
+    await Promise.all([
+      exerciseDataPromise, vocabularyDataPromise, kanjiDataPromise,
+      kanjiContextDataPromise, conjugationDataPromise, curriculumDataPromise
+    ]);
+
+  vocabularyById ||= entriesById;
+  kanjiById ||= kanjiEntriesById;
+  prepareHiraganaWords(entriesById);
+  prepareKatakanaWords(entriesById);
+
+  const grammarIds = new Set(filterCourseExercises(exercises)
+    .filter((exercise) => !forcedExerciseType || getExerciseType(exercise) === forcedExerciseType)
+    .flatMap(({ grammarPointIds }) => grammarPointIds));
+  const vocabularyIds = new Set(prepareVocabularyItems(entriesById)
+    .map(({ vocabularyId }) => vocabularyId));
+  const kanjiIds = new Set(globalThis.JlptN5Kanji.getKanjiInventory(
+    filterCourseExercises(prepareKanjiExercises(entriesById, kanjiEntriesById, contexts))
+  ).map(({ id }) => id));
+  const conjugationIds = new Set(filterCourseExercises(conjugationPool)
+    .flatMap(({ conjugationPointIds }) => conjugationPointIds));
+  const kana = [
+    ...hiraganaMetadata.map((entry) => ({ ...entry, section: "hiragana" })),
+    ...pairedHiraganaMetadata.filter(({ id }) => !hiraganaMetadata.some((entry) => entry.id === id))
+      .map((entry) => ({ ...entry, section: "katakana" })),
+    ...katakanaMetadata.map((entry) => ({ ...entry, section: "katakana" }))
+  ];
+
+  return globalThis.JlptN5Course.createPlan({
+    curriculum,
+    through: getStudyLevel(curriculum),
+    pace: settings.newContentPace,
+    srsData: globalThis.JlptN5Srs.readSrsData(),
+    entriesByKind: {
+      grammar: [...grammarPointById.values()].filter(({ id }) => grammarIds.has(id)),
+      vocabulary: [...entriesById.values()].filter(({ id }) => vocabularyIds.has(id)),
+      kanji: [...kanjiEntriesById.values()].filter(({ id }) => kanjiIds.has(id)),
+      conjugation: [...conjugationPointById.values()].filter(({ id }) => conjugationIds.has(id)),
+      kana
+    }
+  });
+}
+
+async function displayCourseOverview() {
+  coursePlan = await loadDailyCoursePlan();
+  document.body.classList.add("course-page");
+  cancelAutoCorrect();
+  hideControls();
+  resetSpeechAudio();
+  setKanaInputMode(undefined);
+  currentLesson = { id: "course-overview", section: "course" };
+  currentReviewOutcomes = [];
+  exerciseSubmitted = true;
+  speechAvailable = false;
+  for (const element of [
+    sentenceElement, reviewComplete, studyEmpty, exerciseKindLabel, kanaGuidance,
+    kanjiGuidance, vocabularyGuidance, conjugationGuidance, productionGuidance,
+    translationInput, kanjiChoiceGrid, speakButton, actionButton,
+    appStoreWelcomeLink, webMarketingSummary
+  ]) {
+    element.hidden = true;
+  }
+  renderReviewSectionBadge();
+  solutionElement.classList.remove("is-visible");
+  solutionElement.replaceChildren();
+  setSpeakButtonState("unavailable");
+  courseOverview.hidden = false;
+  const finished = coursePlan.remaining === 0 && !coursePlan.paused;
+  courseOverview.classList.toggle("is-complete", finished);
+  document.querySelector("#course-date").textContent = new Intl.DateTimeFormat(getUserLocale(), {
+    weekday: "long", month: "long", day: "numeric"
+  }).format(new Date());
+  document.querySelector("#course-title").textContent = t(
+    finished ? "course.completeTitle" : "section.course"
+  );
+  document.querySelector("#course-description").textContent = t(
+    coursePlan.paused ? "course.paused" : finished ? "course.completeMessage" : "course.description"
+  );
+  document.querySelector("#course-meta").textContent = t("course.meta", {
+    level: formatCurriculumLevel(getStudyLevel()),
+    pace: t(`settings.pace.${settings.newContentPace}`)
+  });
+  const labels = { grammar: "文", vocabulary: "語", kanji: "漢", conjugation: "活", kana: "あ" };
+  const groups = coursePlan.groups.filter(({ total }) => total > 0).map((group) => {
+    const row = document.createElement("li");
+    const icon = document.createElement("span");
+    const label = document.createElement("span");
+    const count = document.createElement("strong");
+    icon.className = "course-group-icon";
+    icon.lang = "ja";
+    icon.setAttribute("aria-hidden", "true");
+    icon.textContent = labels[group.kind];
+    label.textContent = t(group.kind === "kana" ? "course.kana" : `section.${group.kind}`);
+    count.textContent = t("course.introduced", { count: group.completed });
+    row.dataset.kind = group.kind;
+    row.classList.toggle("is-complete", group.remaining === 0);
+    row.setAttribute("aria-label", `${label.textContent}: ${t("course.introducedToday", {
+      count: group.completed
+    })}`);
+    row.append(icon, label, count);
+    return row;
+  });
+  document.querySelector("#course-groups").replaceChildren(...groups);
+  document.querySelector("#course-summary").textContent = t(
+    coursePlan.paused ? "course.pausedSummary" : coursePlan.remaining ? "course.remaining" : coursePlan.completed ? "course.learned" : "course.noNew",
+    { count: coursePlan.remaining || coursePlan.completed }
+  );
+  courseStartButton.hidden = coursePlan.remaining === 0;
+  courseStartButton.textContent = t(coursePlan.completed ? "course.resume" : "course.start");
+  renderReviewProgress();
+  lessonStage.classList.remove("is-leaving");
+  lessonElement.classList.add("controls-visible");
+  (coursePlan.remaining ? courseStartButton : document.querySelector("#course-review-button"))
+    .focus({ preventScroll: true });
+}
+
+async function pickNextCourseExercise() {
+  coursePlan = await loadDailyCoursePlan();
+  renderReviewProgress();
+  const target = globalThis.JlptN5Course.pickNextItem(coursePlan, {
+    previousSection: previousCourseSection
+  });
+
+  if (!target) {
+    return undefined;
+  }
+
+  previousCourseSection = target.section;
+  return pickExerciseForSection(target.section, target.itemId);
+}
+
 async function refreshDailyReviewSession() {
   if (!reviewSession) {
     return;
@@ -3837,14 +3996,24 @@ async function refreshDailyReviewSession() {
 
 function renderReviewProgress() {
   const isReview = currentStudySection === "review" && reviewSession;
+  const isCourse = currentStudySection === "course" && coursePlan;
 
-  reviewProgress.hidden = !isReview;
+  reviewProgress.hidden = !isReview && (!isCourse || coursePlan.paused);
 
-  if (!isReview) {
+  if (!isReview && (!isCourse || coursePlan.paused)) {
+    return;
+  }
+
+  reviewProgressLabel.hidden = Boolean(isCourse);
+  reviewProgressTrack.hidden = Boolean(isCourse);
+  if (isCourse) {
+    reviewProgressLabel.textContent = t("section.course");
+    reviewProgressCount.textContent = t("course.introducedToday", { count: coursePlan.completed });
     return;
   }
 
   const { completed, total } = reviewSession.getProgress();
+  reviewProgressLabel.textContent = t("review.today");
   const accessibleTotal = Math.max(1, total);
   const accessibleCompleted = total === 0 ? 1 : completed;
   const percentage = total === 0 ? 100 : completed / total * 100;
@@ -3865,7 +4034,7 @@ function renderReviewSectionBadge(section) {
     kanji: { icon: "漢", label: t("section.kanji") },
     vocabulary: { icon: "語", label: t("section.vocabulary") }
   }[section];
-  const shouldShow = currentStudySection === "review" && Boolean(details);
+  const shouldShow = ["review", "course"].includes(currentStudySection) && Boolean(details);
 
   reviewSectionBadge.hidden = !shouldShow;
 
@@ -3892,7 +4061,7 @@ function completeCurrentReviewExercise() {
 
 async function pickNextReviewPracticeExercise() {
   const sections = [...studySections].filter((section) => {
-    return section !== "review" && section !== "reading" && section !== previousReviewPracticeSection;
+    return section !== "course" && section !== "review" && section !== "reading" && section !== previousReviewPracticeSection;
   });
 
   while (sections.length > 0) {
@@ -3925,6 +4094,9 @@ async function pickNextReviewExercise({ refreshWhenEmpty = true } = {}) {
 }
 
 function pickNextStudyExercise() {
+  if (currentStudySection === "course") {
+    return pickNextCourseExercise();
+  }
   if (currentStudySection === "review") {
     return pickNextReviewExercise();
   }
@@ -4130,6 +4302,8 @@ function handleKanjiMeaningHintClick() {
 }
 
 function displayLesson(lesson) {
+  document.body.classList.remove("course-page");
+  courseOverview.hidden = true;
   lesson.locale = getUserLocale();
   const isKana = ["hiragana", "katakana"].includes(lesson.section);
   const isKatakana = lesson.section === "katakana";
@@ -4655,6 +4829,11 @@ async function showNextExercise() {
     await waitForFadeOut();
 
     if (requestId !== lessonRequestId) {
+      return;
+    }
+
+    if (!exercise && currentStudySection === "course") {
+      await displayCourseOverview();
       return;
     }
 
@@ -5937,6 +6116,14 @@ historyList.addEventListener("click", handleHistoryListClick);
 actionButton.addEventListener("click", handleAction);
 reviewContinueButton.addEventListener("click", handleReviewContinueClick);
 reviewChooseSectionButton.addEventListener("click", handleReviewChooseSectionClick);
+courseStartButton.addEventListener("click", () => { void showNextExercise(); });
+document.querySelector("#course-settings-button").addEventListener("click", handleStudyEmptySettingsClick);
+document.querySelector("#course-review-button").addEventListener("click", () => {
+  void navigateToStudySection("review");
+});
+document.querySelector("#review-course-button").addEventListener("click", () => {
+  void navigateToStudySection("course");
+});
 studyEmptySettingsButton.addEventListener("click", handleStudyEmptySettingsClick);
 translationInput.addEventListener("keydown", handleTranslationInputKeydown);
 translationInput.addEventListener("input", handleTranslationInputResize);
@@ -6134,6 +6321,8 @@ async function startApp() {
         reload.addEventListener("click", () => window.location.reload());
         readingElement.replaceChildren(title, message, reload);
       }
+    } else if (currentStudySection === "course") {
+      await displayCourseOverview();
     } else if (currentStudySection === "review") {
       await displayInitialReviewExercise();
     } else if (currentStudySection === "hiragana") {

@@ -4,15 +4,16 @@
   const schemaVersion = 1;
   const levelIdPattern = /^(?:foundation|n[1-5])$/u;
   const newContentPaces = Object.freeze({
-    reviews: Object.freeze({ grammar: 0, conjugation: 0, vocabulary: 0, kanji: 0 }),
-    gentle: Object.freeze({ grammar: 1, conjugation: 1, vocabulary: 3, kanji: 1 }),
-    balanced: Object.freeze({ grammar: 2, conjugation: 1, vocabulary: 7, kanji: 3 }),
-    intensive: Object.freeze({ grammar: 4, conjugation: 3, vocabulary: 15, kanji: 6 }),
+    reviews: Object.freeze({ grammar: 0, conjugation: 0, vocabulary: 0, kanji: 0, kana: 0 }),
+    gentle: Object.freeze({ grammar: 1, conjugation: 1, vocabulary: 3, kanji: 1, kana: 3 }),
+    balanced: Object.freeze({ grammar: 2, conjugation: 1, vocabulary: 7, kanji: 3, kana: 5 }),
+    intensive: Object.freeze({ grammar: 4, conjugation: 3, vocabulary: 15, kanji: 6, kana: 10 }),
     unlimited: Object.freeze({
       grammar: Number.POSITIVE_INFINITY,
       conjugation: Number.POSITIVE_INFINITY,
       vocabulary: Number.POSITIVE_INFINITY,
-      kanji: Number.POSITIVE_INFINITY
+      kanji: Number.POSITIVE_INFINITY,
+      kana: Number.POSITIVE_INFINITY
     })
   });
 

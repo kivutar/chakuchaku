@@ -85,6 +85,8 @@ test("service worker pre-caches the app shell but loads voices on demand", async
   const shellPaths = JSON.parse(shellMatch[1]);
 
   for (const requiredPath of [
+    "course",
+    "course.js",
     "review",
     "grammar",
     "conjugation",

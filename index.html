@@ -129,6 +129,7 @@
     <script src="conjugation.js" defer></script>
     <script src="exercise-selection.js" defer></script>
     <script src="review.js" defer></script>
+    <script src="course.js" defer></script>
     <script src="reading.js" defer></script>
     <script src="reading-view.js" defer></script>
     <script src="statistics.js" defer></script>
@@ -186,6 +187,15 @@
       </button>
       <div id="profile-menu" class="profile-menu" role="menu" data-user-language hidden>
         <span class="profile-menu-heading" data-i18n="menu.study">Study</span>
+        <a
+          id="course-menu-item"
+          class="profile-menu-item profile-menu-study-item"
+          href="course"
+          role="menuitem"
+          tabindex="-1"
+          data-study-section="course"
+          data-i18n="section.course"
+        >Course of the day</a>
         <a
           id="review-menu-item"
           class="profile-menu-item profile-menu-study-item"
@@ -697,6 +707,22 @@
           </svg>
         </button>
         <div id="lesson-stage" class="lesson-stage">
+          <section id="course-overview" class="course-overview" aria-labelledby="course-title" data-user-language hidden>
+            <span class="course-eyebrow" id="course-date"></span>
+            <div class="course-heading">
+              <span class="course-mark" aria-hidden="true">日</span>
+              <h1 id="course-title" data-i18n="section.course">Course of the day</h1>
+            </div>
+            <p id="course-description" class="course-description"></p>
+            <p id="course-meta" class="course-meta"></p>
+            <ul id="course-groups" class="course-groups"></ul>
+            <p id="course-summary" class="course-summary" role="status" aria-live="polite"></p>
+            <div class="review-complete-actions course-actions">
+              <button id="course-start-button" class="review-complete-primary" type="button" data-i18n="course.start">Start today's course</button>
+              <button id="course-review-button" class="review-complete-secondary" type="button" data-i18n="course.review">Go to reviews</button>
+              <button id="course-settings-button" class="course-settings-button" type="button" data-i18n="course.settings">Adjust learning pace</button>
+            </div>
+          </section>
           <div
             id="review-section-badge"
             class="review-section-badge"
@@ -727,6 +753,7 @@
             <h1 id="review-complete-title" data-i18n="review.completeTitle">Today's reviews are complete</h1>
             <p id="review-complete-message" data-i18n="review.completeMessage">You have cleared every card that was due.</p>
             <div class="review-complete-actions">
+              <button id="review-course-button" class="review-complete-primary" type="button" data-i18n="review.course">Learn something new</button>
               <button
                 id="review-continue-button"
                 class="review-complete-primary"

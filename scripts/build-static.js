@@ -39,6 +39,7 @@ const staticFiles = [
   "conjugation.js",
   "exercise-selection.js",
   "review.js",
+  "course.js",
   "reading.js",
   "reading-view.js",
   "statistics.js",
@@ -141,6 +142,7 @@ if (!isNativeBuild) {
 }
 
 for (const route of [
+  "course",
   "review",
   "grammar",
   "conjugation",

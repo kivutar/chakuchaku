@@ -13,6 +13,8 @@ const publicFiles = new Map([
   ["/landing.js", ["landing.js", "text/javascript; charset=utf-8"]],
   ["/privacy.html", ["privacy.html", "text/html; charset=utf-8"]],
   ["/review", ["index.html", "text/html; charset=utf-8"]],
+  ["/course", ["index.html", "text/html; charset=utf-8"]],
+  ["/course.js", ["course.js", "text/javascript; charset=utf-8"]],
   ["/grammar", ["index.html", "text/html; charset=utf-8"]],
   ["/conjugation", ["index.html", "text/html; charset=utf-8"]],
   ["/hiragana", ["index.html", "text/html; charset=utf-8"]],
@@ -213,6 +215,7 @@ export async function handleStaticRequest(request, response) {
   }
 
   if ([
+    "/course/",
     "/review/",
     "/grammar/",
     "/conjugation/",

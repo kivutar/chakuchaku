@@ -34,6 +34,21 @@ across all six study sections. Its progress bar counts individual SRS knowledge
 units, so one word or sentence can clear several units; failed units are mixed
 back into the same session until answered successfully.
 
+The `/course` route introduces new knowledge units deliberately, using the
+selected study level and daily learning pace. Its overview shows today's
+actual introductions per category and an approximate remaining goal; contextual
+extras receive the same normal grades. Starting the course targets unseen
+units directly in the existing contextual exercises. Each first graded attempt
+introduces its unit into the normal FSRS schedule, including failed answers.
+Introductions in other sections consume the same allowance, so reopening the
+course resumes today's progress without another quota or separate saved state.
+The daily kana allowance is shared between Hiragana and Katakana (3 for Gentle,
+5 for Balanced, 10 for Intensive); grading and mastery thresholds are unchanged.
+Reviews-only pauses the course; Unlimited makes all remaining eligible units
+available. Course exercises stay at or below the selected level, while existing
+higher-level cards remain available in Reviews. The review completion screen links directly to the daily course,
+while Keep practicing retains its mixed study behavior.
+
 <p align="center">
   <img src="assets/store/google-play/phone/store-phone-1.jpg" width="31%" alt="ChakuChaku grammar lesson">
   <img src="assets/store/google-play/phone/store-phone-2.jpg" width="31%" alt="ChakuChaku Hiragana exercise">
