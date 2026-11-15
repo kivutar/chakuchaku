@@ -51,6 +51,19 @@
     return `assets/voices/vocab/${getVocabularyVoiceSlug(entry, converter)}.m4a`;
   }
 
+  function getVocabularyVoiceEntries(vocabulary, contexts = []) {
+    const vocabularyWords = new Set(vocabulary.map((entry) => (
+      `${entry.term}\u0000${entry.reading}`
+    )));
+
+    return [
+      ...vocabulary,
+      ...contexts.filter((entry) => !vocabularyWords.has(
+        `${entry.term}\u0000${entry.reading}`
+      ))
+    ];
+  }
+
   function getConjugationVoicePath(exercise, converter) {
     const answerSlug = createVocabularyReadingSlug(exercise?.answerReading, converter);
     const baseSlug = getVocabularyVoiceSlug(exercise, converter);
@@ -153,6 +166,7 @@
     createVocabularyReadingSlug,
     getVocabularyVoiceSlug,
     getVocabularyVoicePath,
+    getVocabularyVoiceEntries,
     getConjugationVoicePath,
     validateConjugationVoicePaths,
     validateVocabularyVoiceSlugs

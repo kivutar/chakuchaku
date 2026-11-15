@@ -1388,6 +1388,137 @@ test("AI autocorrect uses one bounded structured classification request", async 
   assert.match(browserCode, /t\("autocorrect\.failed"\)/);
 });
 
+function createSpeechTestContext(browserCode, overrides = {}) {
+  const audios = [];
+  const createElement = () => ({
+    children: [],
+    dataset: {},
+    attributes: new Map([["id", "speak-button"]]),
+    listeners: new Map(),
+    classList: { toggle() {} },
+    append(...children) { this.children.push(...children); },
+    cloneNode: () => createElement(),
+    removeAttribute(name) { this.attributes.delete(name); },
+    setAttribute(name, value) { this.attributes.set(name, value); },
+    addEventListener(name, listener) { this.listeners.set(name, listener); }
+  });
+  class Audio {
+    playCount = 0;
+    constructor(src) { this.src = src; audios.push(this); }
+    async play() { this.playCount += 1; this.paused = false; }
+    pause() { this.paused = true; this.onpause?.(); }
+  }
+  const context = {
+    document: { baseURI: "https://example.test/chakuchaku/", createElement },
+    speakButton: createElement(),
+    currentLesson: { audio: "assets/voices/vocab/hana.m4a" },
+    lessonRequestId: 1,
+    speechPlaybackRequestId: 0,
+    speechAudioPromise: undefined,
+    speechAvailable: true,
+    activeAudio: undefined,
+    settings: { autoPlayAudio: false },
+    getUserLocale: () => "fr",
+    t: (key) => key,
+    getSpeechAvailability: async () => true,
+    createKanjiComponentsElement: createElement,
+    JlptN5Feedback: { setSpeechActive() {} },
+    Audio, URL, console,
+    ...overrides
+  };
+  context.loadSpeechAudio = () => Promise.resolve(new Audio(context.currentLesson.audio));
+  const helpers = [
+    ["function createVocabularySpeechButton(", "function revealKanjiSolution("],
+    ["function setSpeakButtonState(", "async function loadSpeechAudio("],
+    ["async function playSpeechAudio(", "profileMenuButton.addEventListener("],
+    ["async function updateSolutionSpeech(", "function shouldDelayKanaPromptAudio("]
+  ].map(([start, end]) => browserCode.slice(browserCode.indexOf(start), browserCode.indexOf(end))).join("\n");
+
+  runInNewContext(helpers, context);
+  return { context, audios };
+}
+
+test("the 花瓶 mnemonic sample plays its own recording and preserves the main answer audio", async () => {
+  const [browserCode, mnemonics, vocabulary] = await Promise.all([
+    readFile(join(rootDirectory, "app.js"), "utf8"),
+    readJson("data/kanji-mnemonics.json"),
+    readJson("data/jlpt-n5-vocabulary.json")
+  ]);
+  const flower = mnemonics.find(({ kanjiId }) => kanjiId === "kanji-82b1");
+  const reading = flower.readings.find(({ reading }) => reading === "か");
+  const entry = vocabulary.find(({ id }) => id === reading.anchorId);
+  const { context, audios } = createSpeechTestContext(browserCode);
+  const lesson = context.currentLesson;
+  const card = context.createKanjiMnemonicElement({
+    ...flower,
+    readings: [{ ...reading, anchor: { ...entry, audio: "assets/voices/vocab/kabin.m4a" } }]
+  }, "花", "fleur");
+  const row = card.children.find(({ className }) => className === "kanji-mnemonic-anchor");
+  const button = row.children.find(({ className }) => className?.includes("kanji-anchor-speak-button"));
+
+  assert.ok(button, "the displayed anchor word needs its own audio control");
+  assert.equal(button.attributes.has("id"), false);
+  await Promise.resolve();
+  assert.equal(button.hidden, false);
+  assert.equal(button.attributes.get("aria-label"), "speech.play — 花瓶");
+  assert.equal(audios.length, 0, "rendering a mnemonic must not autoplay its samples");
+  await context.speakSentence();
+  const answerAudio = audios[0];
+  await button.listeners.get("click")();
+  const sampleAudio = audios[1];
+
+  assert.equal(sampleAudio.src, "https://example.test/chakuchaku/assets/voices/vocab/kabin.m4a");
+  assert.equal(sampleAudio.playCount, 1);
+  assert.equal(answerAudio.paused, true);
+  assert.equal(context.currentLesson, lesson);
+  assert.equal(context.speechAvailable, true);
+  await context.speakSentence();
+  assert.equal(sampleAudio.paused, true);
+  assert.equal(answerAudio.playCount, 2, "the answer must still replay 花, not 花瓶");
+});
+
+test("a sample click takes precedence over a pending answer download or autoplay check", async () => {
+  const browserCode = await readFile(join(rootDirectory, "app.js"), "utf8");
+  const { context, audios } = createSpeechTestContext(browserCode);
+  let finishDownload;
+  context.loadSpeechAudio = () => new Promise((resolve) => { finishDownload = resolve; });
+  const button = context.createVocabularySpeechButton({ term: "花瓶", audio: "assets/voices/vocab/kabin.m4a" });
+  await Promise.resolve();
+  const pendingAnswer = context.speakSentence();
+  await button.listeners.get("click")();
+  const answerAudio = new context.Audio("assets/voices/vocab/hana.m4a");
+  finishDownload(answerAudio);
+  await pendingAnswer;
+
+  assert.equal(answerAudio.playCount, 0);
+  assert.equal(audios[0].paused, false);
+  assert.equal(context.speakButton.disabled, false);
+
+  let finishCheck;
+  context.settings.autoPlayAudio = true;
+  context.updateSpeechAvailability = () => new Promise((resolve) => { finishCheck = resolve; });
+  const pendingAutoplay = context.updateSolutionSpeech(context.currentLesson, context.speakButton);
+  await button.listeners.get("click")();
+  finishCheck();
+  await pendingAutoplay;
+  assert.equal(answerAudio.playCount, 0, "a pending automatic answer must not interrupt the chosen sample");
+});
+
+test("missing sample audio stays hidden without disabling the current lesson's recording", async () => {
+  const browserCode = await readFile(join(rootDirectory, "app.js"), "utf8");
+  const { context, audios } = createSpeechTestContext(browserCode, {
+    getSpeechAvailability: async () => false
+  });
+  const button = context.createVocabularySpeechButton({ term: "花瓶", audio: "assets/voices/vocab/kabin.m4a" });
+
+  await Promise.resolve();
+  assert.equal(button.hidden, true);
+  assert.equal(button.disabled, true);
+  assert.equal(context.speechAvailable, true);
+  assert.equal(audios.length, 0);
+  assert.equal(context.createVocabularySpeechButton({ term: "花瓶" }), undefined);
+});
+
 test("speaker checks local narration availability before playback", async () => {
   const [browserCode, styles] = await Promise.all([
     readFile(join(rootDirectory, "app.js"), "utf8"),

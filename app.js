@@ -139,6 +139,7 @@ let previousKatakanaVocabularyId;
 let previousKanjiVocabularyId;
 let previousConjugationExerciseId;
 let lessonRequestId = 0;
+let speechPlaybackRequestId = 0;
 let speechAudioPromise;
 let speechAudioUrl;
 let activeAudio;
@@ -2988,15 +2989,20 @@ async function loadKanjiData() {
 }
 
 async function loadKanjiContextData() {
-  const [curriculum, allContexts, localizations] = await Promise.all([
+  const [curriculum, entriesById, allContexts, localizations] = await Promise.all([
     curriculumDataPromise,
+    vocabularyDataPromise,
     fetchJson("data/kanji-contexts.json"),
     fetchContentLocalizations("kanji-contexts")
   ]);
-  const contexts = allContexts;
+  const contexts = globalThis.JlptN5Kanji.linkVocabularyEntries(
+    [...entriesById.values()],
+    allContexts
+  );
 
   return contexts.map((entry) => ({
     ...entry,
+    audio: entry.audio || globalThis.JlptN5VoicePaths.getVocabularyVoicePath(entry),
     ...(localizations[entry.id] ? { meaning: localizations[entry.id].meaning } : {})
   }));
 }
@@ -4105,6 +4111,7 @@ function pickNextStudyExercise() {
 }
 
 function resetSpeechAudio() {
+  speechPlaybackRequestId += 1;
   activeAudio?.pause();
   activeAudio = undefined;
   speechAudioPromise = undefined;
@@ -4177,6 +4184,7 @@ function maybeAutoPlaySpeech() {
 
 async function updateSolutionSpeech(lesson, button, hideWhenUnavailable = false) {
   const shouldAutoPlay = settings.autoPlayAudio;
+  const playbackRequestId = speechPlaybackRequestId;
 
   if (shouldAutoPlay) {
     // Reserve this lesson's automatic playback so a pending prompt availability
@@ -4197,6 +4205,7 @@ async function updateSolutionSpeech(lesson, button, hideWhenUnavailable = false)
   if (
     shouldAutoPlay &&
     settings.autoPlayAudio &&
+    playbackRequestId === speechPlaybackRequestId &&
     currentLesson === lesson &&
     speechAvailable
   ) {
@@ -5337,6 +5346,50 @@ function recordCurrentVocabularyReview() {
   );
 }
 
+function createVocabularySpeechButton(entry) {
+  if (!entry.audio) {
+    return undefined;
+  }
+
+  const lesson = currentLesson;
+  const requestId = lessonRequestId;
+  const button = speakButton.cloneNode(true);
+  const isCurrent = () => currentLesson === lesson && requestId === lessonRequestId;
+
+  button.removeAttribute("id");
+  button.className = "speak-button solution-speak-button kanji-anchor-speak-button";
+  button.dataset.speechTerm = entry.term;
+  button.hidden = true;
+  setSpeakButtonState("checking", button);
+  void getSpeechAvailability(entry.audio).then((available) => {
+    if (!isCurrent()) return;
+    button.hidden = !available;
+    setSpeakButtonState(available ? "ready" : "unavailable", button);
+  });
+  button.addEventListener("click", async () => {
+    if (!isCurrent()) return;
+    const playbackRequestId = ++speechPlaybackRequestId;
+    autoPlayedLesson = lesson;
+    setSpeakButtonState("loading", button);
+
+    try {
+      await playSpeechAudio(new Audio(new URL(entry.audio, document.baseURI).href));
+      if (isCurrent()) setSpeakButtonState("ready", button);
+    } catch (error) {
+      if (!isCurrent()) return;
+      if (playbackRequestId !== speechPlaybackRequestId) {
+        setSpeakButtonState("ready", button);
+        return;
+      }
+      globalThis.JlptN5Feedback.setSpeechActive(false);
+      console.error(error);
+      setSpeakButtonState("error", button);
+    }
+  });
+
+  return button;
+}
+
 function createKanjiMnemonicElement(mnemonic, character, kanjiMeaning) {
   if (
     !mnemonic ||
@@ -5392,6 +5445,10 @@ function createKanjiMnemonicElement(mnemonic, character, kanjiMeaning) {
       word.lang = "ja";
       word.textContent = `${readingMnemonic.anchor.term}（${readingMnemonic.anchor.reading}）`;
       anchor.append(anchorLabel, word);
+
+      const sampleButton = createVocabularySpeechButton(readingMnemonic.anchor);
+
+      if (sampleButton) anchor.append(sampleButton);
 
       if (readingMnemonic.anchor.meaning) {
         anchor.append(` — ${readingMnemonic.anchor.meaning}`);
@@ -6020,6 +6077,8 @@ function setSpeakButtonState(state, button = speakButton) {
     label = t("speech.checking");
   }
 
+  if (button.dataset.speechTerm) label = `${label} — ${button.dataset.speechTerm}`;
+
   button.disabled = isLoading || isChecking || isUnavailable;
   button.classList.toggle("is-loading", isLoading);
   button.classList.toggle("no-audio", isUnavailable);
@@ -6050,6 +6109,20 @@ async function loadSpeechAudio() {
   return new Audio(speechAudioUrl);
 }
 
+async function playSpeechAudio(audio) {
+  activeAudio?.pause();
+  activeAudio = audio;
+  globalThis.JlptN5Feedback.setSpeechActive(true);
+  const releaseFeedbackAudio = () => {
+    if (activeAudio === audio) globalThis.JlptN5Feedback.setSpeechActive(false);
+  };
+  audio.onended = releaseFeedbackAudio;
+  audio.onpause = releaseFeedbackAudio;
+  audio.onerror = releaseFeedbackAudio;
+  audio.currentTime = 0;
+  await audio.play();
+}
+
 async function speakSentence(button = speakButton) {
   if (!speechAvailable) {
     return;
@@ -6057,6 +6130,7 @@ async function speakSentence(button = speakButton) {
 
   const lesson = currentLesson;
   const requestId = lessonRequestId;
+  const playbackRequestId = ++speechPlaybackRequestId;
   setSpeakButtonState("loading", button);
   globalThis.JlptN5Feedback.setSpeechActive(true);
 
@@ -6070,18 +6144,19 @@ async function speakSentence(button = speakButton) {
 
     const audio = await speechAudioPromise;
     if (currentLesson !== lesson || requestId !== lessonRequestId) return;
-    activeAudio = audio;
-    const releaseFeedbackAudio = () => {
-      if (activeAudio === audio) globalThis.JlptN5Feedback.setSpeechActive(false);
-    };
-    audio.onended = releaseFeedbackAudio;
-    audio.onpause = releaseFeedbackAudio;
-    audio.onerror = releaseFeedbackAudio;
-    activeAudio.currentTime = 0;
-    await activeAudio.play();
+    if (playbackRequestId !== speechPlaybackRequestId) {
+      setSpeakButtonState("ready", button);
+      return;
+    }
+    await playSpeechAudio(audio);
+    if (currentLesson !== lesson || requestId !== lessonRequestId) return;
     setSpeakButtonState("ready", button);
   } catch (error) {
     if (currentLesson !== lesson || requestId !== lessonRequestId) return;
+    if (playbackRequestId !== speechPlaybackRequestId) {
+      setSpeakButtonState("ready", button);
+      return;
+    }
     globalThis.JlptN5Feedback.setSpeechActive(false);
     console.error(error);
     setSpeakButtonState("error", button);

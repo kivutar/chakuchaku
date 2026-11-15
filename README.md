@@ -273,8 +273,8 @@ npm run voices -- --id left-home-without-key --force
 ```
 
 Vocabulary generation is a separate, explicitly bounded command. It processes
-the 1,338 core entries before the 208 supplemental entries and uses the stable
-path `assets/voices/vocab/<romaji>.m4a`. Homophones use curated semantic names
+core entries before supplemental entries and kanji-only context words. It uses
+the stable path `assets/voices/vocab/<romaji>.m4a`. Homophones use curated semantic names
 such as `ame-rain.m4a` and `ame-candy.m4a`; one older unambiguous base filename
 may be retained when a newly added homophone receives the semantic suffix.
 Unsafe names, unresolved collisions, duplicate paths, and unnecessary overrides
@@ -287,8 +287,9 @@ npm run voices:vocabulary -- --all
 ```
 
 Use the zero-cost coverage mode to inspect validated, missing, invalid, skipped,
-and core/supplemental totals without contacting OpenAI. Every existing word M4A
-is decoded and checked with the same strict profile used during generation, so
+and core/supplemental/kanji-context totals without contacting OpenAI. Kanji contexts
+reuse the existing vocabulary recording when the spelling and reading match.
+Every existing word M4A is decoded and checked with the same strict profile used during generation, so
 the command can take longer as coverage grows:
 
 ```sh

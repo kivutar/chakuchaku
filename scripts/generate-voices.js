@@ -20,6 +20,7 @@ import {
 
 const {
   getConjugationVoicePath,
+  getVocabularyVoiceEntries,
   getVocabularyVoicePath,
   getVocabularyVoiceSlug,
   validateConjugationVoicePaths,
@@ -563,13 +564,13 @@ export function getConjugationVoiceLevel(item) {
   });
 }
 
-export function createVocabularyVoiceItems(vocabulary) {
+export function createVocabularyVoiceItems(vocabulary, contexts = []) {
   if (!Array.isArray(vocabulary)) {
     throw new Error("Vocabulary voice generation needs an array.");
   }
 
-  const entries = vocabulary.filter((entry) => {
-    return ["core", "supplemental"].includes(entry?.scope);
+  const entries = getVocabularyVoiceEntries(vocabulary, contexts).filter((entry) => {
+    return ["core", "supplemental", "kanji-context"].includes(entry?.scope);
   });
 
   validateVocabularyVoiceSlugs(entries, wanakana);
@@ -628,12 +629,12 @@ export function createConjugationVoiceItems(vocabulary, curriculum) {
 }
 
 async function readVocabularySources() {
-  const source = await readFile(
-    join(rootDirectory, "data", "jlpt-n5-vocabulary.json"),
-    "utf8"
-  );
+  const [vocabulary, contexts] = await Promise.all([
+    readFile(join(rootDirectory, "data", "jlpt-n5-vocabulary.json"), "utf8").then(JSON.parse),
+    readFile(join(rootDirectory, "data", "kanji-contexts.json"), "utf8").then(JSON.parse)
+  ]);
 
-  return createVocabularyVoiceItems(JSON.parse(source));
+  return createVocabularyVoiceItems(vocabulary, contexts);
 }
 
 async function readConjugationSources() {
@@ -723,6 +724,7 @@ function summarizeVocabularyVoiceItems(entries, voiceFiles = new Map()) {
   const summary = {
     core: { available: 0, total: 0 },
     supplemental: { available: 0, total: 0 },
+    "kanji-context": { available: 0, total: 0 },
     available: 0,
     total: entries.length,
     missing: 0,
@@ -771,6 +773,9 @@ export function formatVocabularyVoiceCoverage(summary) {
     "Vocabulary voice coverage:",
     `  Core: ${summary.core.available}/${summary.core.total}`,
     `  Supplemental: ${summary.supplemental.available}/${summary.supplemental.total}`,
+    ...(summary["kanji-context"].total > 0
+      ? [`  Kanji contexts: ${summary["kanji-context"].available}/${summary["kanji-context"].total}`]
+      : []),
     `  Total: ${summary.available}/${summary.total}`,
     `  Missing: ${summary.missing}`,
     `  Invalid: ${summary.invalid}`,

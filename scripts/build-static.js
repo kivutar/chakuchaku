@@ -8,6 +8,7 @@ import "../conjugation.js";
 
 const {
   getConjugationVoicePath,
+  getVocabularyVoiceEntries,
   getVocabularyVoicePath,
   validateConjugationVoicePaths,
   validateVocabularyVoiceSlugs
@@ -158,15 +159,18 @@ for (const route of [
   await writeFile(join(routeDirectory, "index.html"), routeHtml);
 }
 
-const [introduction, exercises, vocabulary, conjugationCurriculum, readings] = await Promise.all([
+const [introduction, exercises, vocabulary, kanjiContexts, conjugationCurriculum, readings] = await Promise.all([
   readFile(join(rootDirectory, "data", "introduction.json"), "utf8").then(JSON.parse),
   readFile(join(rootDirectory, "data", "exercises.json"), "utf8").then(JSON.parse),
   readFile(join(rootDirectory, "data", "jlpt-n5-vocabulary.json"), "utf8").then(JSON.parse),
+  readFile(join(rootDirectory, "data", "kanji-contexts.json"), "utf8").then(JSON.parse),
   readFile(join(rootDirectory, "data", "jlpt-n5-conjugation.json"), "utf8").then(JSON.parse),
   readFile(join(rootDirectory, "data", "readings.json"), "utf8").then(JSON.parse)
 ]);
 
-validateVocabularyVoiceSlugs(vocabulary, wanakana);
+const vocabularyVoiceEntries = getVocabularyVoiceEntries(vocabulary, kanjiContexts);
+
+validateVocabularyVoiceSlugs(vocabularyVoiceEntries, wanakana);
 const conjugationExercises = globalThis.JlptN5Conjugation.createExercisePool(
   vocabulary,
   conjugationCurriculum
@@ -180,7 +184,7 @@ const voicePaths = [...new Set([
     ...exercises
   ].map(({ audio }) => audio),
   ...readings.flatMap(({ sentences }) => sentences.map(({ audio }) => audio)),
-  ...vocabulary.map((entry) => getVocabularyVoicePath(entry, wanakana)),
+  ...vocabularyVoiceEntries.map((entry) => getVocabularyVoicePath(entry, wanakana)),
   ...conjugationExercises.map((exercise) => getConjugationVoicePath(exercise, wanakana))
 ])];
 const copiedVoicePaths = [];

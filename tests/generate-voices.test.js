@@ -317,6 +317,24 @@ test("vocabulary voice items are core-first and use stable filenames", () => {
   ]);
 });
 
+test("kanji-only words get voices without duplicating existing vocabulary recordings", async () => {
+  const [vocabulary, contexts] = await Promise.all([
+    readFile(new URL("../data/jlpt-n5-vocabulary.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../data/kanji-contexts.json", import.meta.url), "utf8").then(JSON.parse)
+  ]);
+  const items = createVocabularyVoiceItems(vocabulary, contexts);
+
+  assert.deepEqual(items.filter(({ scope }) => scope === "kanji-context")
+    .map(({ term, audio }) => ({ term, audio })), [
+    { term: "主人", audio: "assets/voices/vocab/shujin.m4a" },
+    { term: "目的", audio: "assets/voices/vocab/mokuteki.m4a" },
+    { term: "可能", audio: "assets/voices/vocab/kanou.m4a" }
+  ]);
+  assert.equal(items.length, vocabulary.length + 3);
+  assert.equal(new Set(items.map(({ audio }) => audio)).size, items.length);
+  assert.equal(items.find(({ term }) => term === "合う").audio, "assets/voices/vocab/au-fit.m4a");
+});
+
 test("vocabulary speech requests use the configured reading and lexical context", () => {
   const firstDay = createVocabularySpeechRequest({
     id: "first-day",
@@ -392,6 +410,13 @@ test("vocabulary voice coverage reports partial files without generating audio",
       reading: "こえ",
       meaning: "voice",
       scope: "supplemental"
+    },
+    {
+      id: "kanji-context-kanou",
+      term: "可能",
+      reading: "かのう",
+      meaning: "possible",
+      scope: "kanji-context"
     }
   ];
   const summary = summarizeVocabularyVoiceCoverage(
@@ -405,9 +430,10 @@ test("vocabulary voice coverage reports partial files without generating audio",
   assert.deepEqual(summary, {
     core: { available: 1, total: 2 },
     supplemental: { available: 0, total: 2 },
+    "kanji-context": { available: 0, total: 1 },
     available: 1,
-    total: 4,
-    missing: 1,
+    total: 5,
+    missing: 2,
     invalid: 1,
     skipped: 1,
     bytes: 1536
@@ -416,8 +442,9 @@ test("vocabulary voice coverage reports partial files without generating audio",
     "Vocabulary voice coverage:",
     "  Core: 1/2",
     "  Supplemental: 0/2",
-    "  Total: 1/4",
-    "  Missing: 1",
+    "  Kanji contexts: 0/1",
+    "  Total: 1/5",
+    "  Missing: 2",
     "  Invalid: 1",
     "  Skipped: 1",
     "  Size: 1.5 KiB"

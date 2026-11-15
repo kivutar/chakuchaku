@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { runInNewContext } from "node:vm";
 import * as wanakana from "wanakana";
 
 globalThis.wanakana = wanakana;
@@ -207,6 +208,40 @@ test("kanji stages are discovered from authored data", () => {
   assert.deepEqual(getStageOrder(kanji), ["N4-1"]);
   assert.equal(createExercisePool(kanji, vocabulary).length, 1);
   assert.equal(createExercisePool(kanji, vocabulary, { stages: [] }).length, 0);
+});
+
+test("kanji contexts load standalone voices and preserve shared homophone recordings", async () => {
+  const [source, vocabulary, contexts, localizations] = await Promise.all([
+    readFile(new URL("../app.js", import.meta.url), "utf8"),
+    readFile(new URL("../data/jlpt-n5-vocabulary.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../data/kanji-contexts.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../data/locales/fr/kanji-contexts.json", import.meta.url), "utf8").then(JSON.parse)
+  ]);
+  const entriesById = new Map(vocabulary.map((entry) => [entry.id, {
+    ...entry,
+    audio: globalThis.JlptN5VoicePaths.getVocabularyVoicePath(entry, wanakana)
+  }]));
+  const start = source.indexOf("async function loadKanjiContextData()");
+  const end = source.indexOf("function prepareHiraganaWords(", start);
+  const loaded = await runInNewContext(`${source.slice(start, end)}; loadKanjiContextData()`, {
+    curriculumDataPromise: Promise.resolve(),
+    vocabularyDataPromise: Promise.resolve(entriesById),
+    fetchJson: async () => contexts,
+    fetchContentLocalizations: async () => localizations,
+    JlptN5Kanji: globalThis.JlptN5Kanji,
+    JlptN5VoicePaths: globalThis.JlptN5VoicePaths,
+    wanakana
+  });
+
+  for (const slug of ["kanou", "mokuteki", "shujin"]) {
+    const entry = loaded.find(({ id }) => id === `kanji-context-${slug}`);
+
+    assert.equal(entry.audio, `assets/voices/vocab/${slug}.m4a`);
+    assert.equal(entry.vocabularyId, undefined);
+    assert.equal(entry.meaning, localizations[entry.id].meaning);
+  }
+
+  assert.equal(loaded.find(({ term }) => term === "合う").audio, "assets/voices/vocab/au-fit.m4a");
 });
 
 test("kanji-only contexts do not create vocabulary SRS ratings", async () => {

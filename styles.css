@@ -3347,6 +3347,12 @@ html[data-visual-effects="true"] .solution.is-visible[data-feedback-outcome="aga
   font-weight: 750;
 }
 
+.kanji-anchor-speak-button {
+  display: inline-grid;
+  margin-inline-start: 0.4rem;
+  vertical-align: middle;
+}
+
 .whole-word-reading-heading {
   display: flex;
   align-items: center;

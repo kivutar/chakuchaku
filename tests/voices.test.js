@@ -11,7 +11,7 @@ import {
 } from "../scripts/generate-voices.js";
 import { validateLessonM4a } from "../scripts/m4a.js";
 
-const { getVocabularyVoicePath } = globalThis.JlptN5VoicePaths;
+const { getVocabularyVoiceEntries, getVocabularyVoicePath } = globalThis.JlptN5VoicePaths;
 
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -38,10 +38,11 @@ async function listM4aFiles(directory, relativeDirectory) {
 }
 
 test("every available AAC/M4A voice is referenced and valid", async () => {
-  const [introduction, exercises, vocabulary, conjugationCurriculum, readings] = await Promise.all([
+  const [introduction, exercises, vocabulary, kanjiContexts, conjugationCurriculum, readings] = await Promise.all([
     readJson("data/introduction.json"),
     readJson("data/exercises.json"),
     readJson("data/jlpt-n5-vocabulary.json"),
+    readJson("data/kanji-contexts.json"),
     readJson("data/jlpt-n5-conjugation.json"),
     readJson("data/readings.json")
   ]);
@@ -73,7 +74,7 @@ test("every available AAC/M4A voice is referenced and valid", async () => {
     availableVoicePaths.add(lesson.audio);
   }
 
-  for (const entry of vocabulary) {
+  for (const entry of getVocabularyVoiceEntries(vocabulary, kanjiContexts)) {
     const relativePath = getVocabularyVoicePath(entry, wanakana);
     const path = join(rootDirectory, relativePath);
     const speechRequest = createVocabularySpeechRequest(entry);
