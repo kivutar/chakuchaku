@@ -8064,6 +8064,7 @@
   "production-n4-key-not-found-easily": {
     "translation": "Je n'arrive pas facilement à trouver ma clé.",
     "promptVocabularyHints": [
+      { "word": "trouver", "vocabularyIds": ["vocab-c2bcee799a05"] },
       { "word": "clé", "vocabularyIds": ["vocab-dd7cf58e61fa"] }
     ]
   },
@@ -12043,10 +12044,10 @@
     ]
   },
   "story-evening-curry-not-too-spicy": {
-    "translation": "Comme l’un de mes amis ne peut pas manger beaucoup de choses épicées, j’ai essayé de préparer un curry aussi doux que possible."
+    "translation": "Comme l’un de mes amis ne peut pas manger beaucoup de choses épicées, j’ai essayé de faire en sorte que ce soit le moins épicé possible."
   },
   "production-story-evening-curry-not-too-spicy": {
-    "translation": "Comme l’un de mes amis ne peut pas manger beaucoup de choses épicées, j’ai essayé de préparer un curry aussi doux que possible.",
+    "translation": "Comme l’un de mes amis ne peut pas manger beaucoup de choses épicées, j’ai essayé de faire en sorte que ce soit le moins épicé possible.",
     "promptVocabularyHints": [
       {
         "word": "épicées",
@@ -12183,10 +12184,10 @@
     ]
   },
   "story-evening-curry-unexpected-spice": {
-    "translation": "Même si j’avais essayé de ne pas trop le relever, le curry avait un goût plus épicé que prévu."
+    "translation": "Même si j’avais essayé de ne pas trop le relever, cela avait un goût plus épicé que prévu."
   },
   "production-story-evening-curry-unexpected-spice": {
-    "translation": "Même si j’avais essayé de ne pas trop le relever, le curry avait un goût plus épicé que prévu.",
+    "translation": "Même si j’avais essayé de ne pas trop le relever, cela avait un goût plus épicé que prévu.",
     "promptVocabularyHints": [
       {
         "word": "goût",
@@ -12211,10 +12212,10 @@
     ]
   },
   "story-evening-curry-easier-to-eat": {
-    "translation": "Après avoir ajouté un peu de lait, le curry était plus facile à manger."
+    "translation": "Après avoir ajouté un peu de lait, c’est devenu plus facile à manger."
   },
   "production-story-evening-curry-easier-to-eat": {
-    "translation": "Après avoir ajouté un peu de lait, le curry était plus facile à manger.",
+    "translation": "Après avoir ajouté un peu de lait, c’est devenu plus facile à manger.",
     "promptVocabularyHints": [
       {
         "word": "ajouté",

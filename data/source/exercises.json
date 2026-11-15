@@ -15173,6 +15173,7 @@
     "solution": "鍵がなかなか見つかりません。",
     "type": "production",
     "promptVocabularyHints": [
+      { "word": "find", "vocabularyIds": ["vocab-c2bcee799a05"] },
       { "word": "key", "vocabularyIds": ["vocab-dd7cf58e61fa"] }
     ],
     "grammarPointIds": ["nakanaka-nai"]
