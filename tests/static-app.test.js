@@ -1275,7 +1275,7 @@ test("user menu exposes accessible navigation placeholders", async () => {
   assert.equal((html.match(/href="https:\/\/play\.google\.com\/store\/apps\/details\?id=com\.kivutar\.chakuchaku"/gu) || []).length, 1);
   assert.match(html, /id="app-download-links"[^>]*web-store-only[^>]*hidden/);
   assert.equal((html.match(/class="app-download-link"/gu) || []).length, 2);
-  assert.match(html, /href="https:\/\/github\.com\/kivutar\/chakuchaku"/);
+  assert.match(html, /id="about-menu-item"\s+class="profile-menu-item"\s+href="https:\/\/kivutar\.github\.io\/chakuchaku\/"/);
   assert.match(html, /data-i18n="menu\.about">About<\/span> <span aria-hidden="true">↗<\/span>/);
   assert.match(browserCode, /event\.key === "Escape"/);
   assert.match(browserCode, /event\.key === "ArrowDown"/);

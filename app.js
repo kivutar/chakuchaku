@@ -41,6 +41,7 @@ const settingsMenuItem = document.querySelector("#settings-menu-item");
 const statisticsMenuItem = document.querySelector("#statistics-menu-item");
 const historyMenuItem = document.querySelector("#history-menu-item");
 const privacyMenuItem = document.querySelector("#privacy-menu-item");
+const aboutMenuItem = document.querySelector("#about-menu-item");
 const settingsDialog = document.querySelector("#settings-dialog");
 const settingInputs = [...settingsDialog.querySelectorAll("[data-setting]")];
 const settingStateElements = [...settingsDialog.querySelectorAll("[data-setting-state]")];
@@ -391,6 +392,7 @@ function configureStudyNavigation() {
   currentStudyLabel.textContent = label;
   document.title = `${label} · ${t("app.title")}`;
   privacyMenuItem.href = `https://kivutar.github.io/chakuchaku/privacy.html?lang=${getUserLocale()}`;
+  aboutMenuItem.href = `https://kivutar.github.io/chakuchaku/?lang=${getUserLocale()}`;
 
   for (const menuItem of studyMenuItems) {
     const isCurrent = menuItem.dataset.studySection === currentStudySection;
