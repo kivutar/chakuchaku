@@ -84,9 +84,9 @@
       document.querySelector('meta[property="og:description"]').content = description;
       const appLocale = i18n.supportedLocales.includes(locale) ? locale : i18n.defaultLocale;
       document.querySelector("#privacy-link").href = `privacy.html?lang=${appLocale}`;
-      for (const screen of document.querySelectorAll("[data-ios-screen]")) {
-        screen.src = `assets/landing/iphone-${screen.dataset.iosScreen}-${appLocale}.png`;
-        screen.alt = i18n.t(`landing.ios.${screen.dataset.iosScreen}Alt`);
+      for (const screen of document.querySelectorAll("[data-app-screen]")) {
+        screen.src = `assets/landing/iphone-${screen.dataset.appScreen}-${appLocale}.png`;
+        screen.alt = i18n.t(`landing.mobile.${screen.dataset.appScreen}Alt`);
       }
       for (const button of languageButtons) {
         button.setAttribute("aria-pressed", String(button.dataset.language === locale));

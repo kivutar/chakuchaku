@@ -9,7 +9,9 @@
 <p align="center">
   <a href="https://kivutar.github.io/chakuchaku/"><strong>Try the web app →</strong></a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://apps.apple.com/app/id6803144387"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" height="40" alt="Download on the App Store"></a>
+  <a href="https://apps.apple.com/app/id6803144387"><strong>Download for iOS ↗</strong></a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://play.google.com/store/apps/details?id=com.kivutar.chakuchaku"><strong>Download for Android ↗</strong></a>
 </p>
 
 ChakuChaku brings Hiragana, Katakana, Kanji, vocabulary, grammar, and

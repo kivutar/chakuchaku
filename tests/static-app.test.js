@@ -1272,8 +1272,9 @@ test("user menu exposes accessible navigation placeholders", async () => {
   assert.match(html, />Statistics<[^>]*>/);
   assert.match(html, /id="history-menu-item"/);
   assert.equal((html.match(/href="https:\/\/apps\.apple\.com\/app\/id6803144387"/gu) || []).length, 1);
-  assert.match(html, /id="app-store-welcome-link"[^>]*web-app-store-only[^>]*hidden/);
-  assert.match(html, /developer\.apple\.com\/assets\/elements\/badges\/download-on-the-app-store\.svg/);
+  assert.equal((html.match(/href="https:\/\/play\.google\.com\/store\/apps\/details\?id=com\.kivutar\.chakuchaku"/gu) || []).length, 1);
+  assert.match(html, /id="app-download-links"[^>]*web-store-only[^>]*hidden/);
+  assert.equal((html.match(/class="app-download-link"/gu) || []).length, 2);
   assert.match(html, /href="https:\/\/github\.com\/kivutar\/chakuchaku"/);
   assert.match(html, /data-i18n="menu\.about">About<\/span> <span aria-hidden="true">↗<\/span>/);
   assert.match(browserCode, /event\.key === "Escape"/);
@@ -1281,11 +1282,11 @@ test("user menu exposes accessible navigation placeholders", async () => {
   assert.match(browserCode, /handleOutsideProfileMenuClick/);
   assert.match(browserCode, /openActivity\("history"\)/);
   assert.match(browserCode, /document\.title = `\$\{label\} · \$\{t\("app\.title"\)\}`/);
-  assert.match(browserCode, /appStoreWelcomeLink\.hidden = lesson\.id !== introductionId/);
-  assert.match(html, /id="web-marketing-summary"[^>]*web-app-store-only[^>]*hidden/);
+  assert.match(browserCode, /appDownloadLinks\.hidden = lesson\.id !== introductionId/);
+  assert.match(html, /id="web-marketing-summary"[^>]*web-store-only[^>]*hidden/);
   assert.match(html, /data-i18n="marketing\.title"/);
   assert.match(browserCode, /webMarketingSummary\.hidden = lesson\.id !== introductionId/);
-  assert.match(styles, /html\[data-native-platform\] \.web-app-store-only \{\s+display: none !important;/);
+  assert.match(styles, /html\[data-native-platform\] \.web-store-only \{\s+display: none !important;/);
 });
 
 test("settings layer loads before the app and exposes every initial control", async () => {

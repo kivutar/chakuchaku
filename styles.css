@@ -512,7 +512,7 @@ html[data-native-platform] .native-setting-row {
   display: flex;
 }
 
-html[data-native-platform] .web-app-store-only {
+html[data-native-platform] .web-store-only {
   display: none !important;
 }
 
@@ -651,12 +651,6 @@ html[data-native-platform] .loading-screen {
 .profile-menu-item:focus-visible {
   background: #f1f1f1;
   outline: 0;
-}
-
-.app-store-badge {
-  display: block;
-  width: auto;
-  height: 40px;
 }
 
 .profile-menu-heading {
@@ -2477,17 +2471,40 @@ main {
   cursor: default;
 }
 
-.app-store-welcome-link {
-  display: inline-flex;
+.app-download-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
   margin-top: 1rem;
-  border-radius: 7px;
 }
 
-.app-store-welcome-link[hidden] {
+.app-download-links[hidden] {
   display: none;
 }
 
-.app-store-welcome-link:focus-visible {
+.app-download-link {
+  display: inline-flex;
+  min-width: 8.5rem;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid #343b36;
+  border-radius: 7px;
+  background: #1f3025;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.app-download-link:hover {
+  background: #314e3a;
+}
+
+.app-download-link:focus-visible {
   outline: 2px solid #181818;
   outline-offset: 3px;
 }
@@ -4391,6 +4408,19 @@ html[data-adaptive-furigana="true"] ruby.has-known-kanji > rt {
 
   .speak-button {
     border-color: #465149;
+  }
+
+  .app-download-link {
+    border-color: #69806f;
+    background: #263e2d;
+  }
+
+  .app-download-link:hover {
+    background: #36553f;
+  }
+
+  .app-download-link:focus-visible {
+    outline-color: #a1c2a9;
   }
 
   .speak-button.no-audio {

@@ -106,7 +106,7 @@ const productionGuidance = document.querySelector("#production-guidance");
 const productionGrammarTargets = document.querySelector("#production-grammar-targets");
 const speakButton = document.querySelector("#speak-button");
 const actionButton = document.querySelector("#action-button");
-const appStoreWelcomeLink = document.querySelector("#app-store-welcome-link");
+const appDownloadLinks = document.querySelector("#app-download-links");
 const webMarketingSummary = document.querySelector("#web-marketing-summary");
 const translationInput = document.querySelector("#translation-input");
 const kanjiChoiceGrid = document.querySelector("#kanji-choice-grid");
@@ -3918,7 +3918,7 @@ async function displayCourseOverview() {
     sentenceElement, reviewComplete, studyEmpty, exerciseKindLabel, kanaGuidance,
     kanjiGuidance, vocabularyGuidance, conjugationGuidance, productionGuidance,
     translationInput, kanjiChoiceGrid, speakButton, actionButton,
-    appStoreWelcomeLink, webMarketingSummary
+    appDownloadLinks, webMarketingSummary
   ]) {
     element.hidden = true;
   }
@@ -4363,7 +4363,7 @@ function displayLesson(lesson) {
   actionButton.textContent = lesson.id === introductionId
     ? t("common.next")
     : t("common.submit");
-  appStoreWelcomeLink.hidden = lesson.id !== introductionId;
+  appDownloadLinks.hidden = lesson.id !== introductionId;
   webMarketingSummary.hidden = lesson.id !== introductionId;
   setKanaInputMode(
     isKanjiToReading
@@ -4728,7 +4728,7 @@ function displayStudyEmpty(section) {
   kanjiChoiceGrid.hidden = true;
   speakButton.hidden = true;
   actionButton.hidden = true;
-  appStoreWelcomeLink.hidden = true;
+  appDownloadLinks.hidden = true;
   webMarketingSummary.hidden = true;
   solutionElement.classList.remove("is-visible");
   solutionElement.replaceChildren();

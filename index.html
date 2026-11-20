@@ -7,7 +7,7 @@
     <meta name="robots" content="index, follow">
     <meta
       name="description"
-      content="Learn Japanese for JLPT N5 with adaptive Hiragana, Katakana, Kanji, vocabulary, grammar, and conjugation exercises. Free on the web and App Store."
+      content="Learn Japanese for JLPT N5 with adaptive Hiragana, Katakana, Kanji, vocabulary, grammar, and conjugation exercises. Free on the web, iOS, and Android."
     >
     <link rel="canonical" href="https://kivutar.github.io/chakuchaku/">
     <meta property="og:type" content="website">
@@ -55,9 +55,12 @@
         "@type": "SoftwareApplication",
         "name": "ChakuChaku - JLPT N5",
         "applicationCategory": "EducationalApplication",
-        "operatingSystem": "Web, iOS, iPadOS",
+        "operatingSystem": "Web, iOS, iPadOS, Android",
         "url": "https://kivutar.github.io/chakuchaku/",
-        "downloadUrl": "https://apps.apple.com/app/id6803144387",
+        "downloadUrl": [
+          "https://apps.apple.com/app/id6803144387",
+          "https://play.google.com/store/apps/details?id=com.kivutar.chakuchaku"
+        ],
         "description": "Adaptive JLPT N5 practice for Hiragana, Katakana, Kanji, vocabulary, grammar, and conjugation.",
         "offers": {
           "@type": "Offer",
@@ -919,27 +922,33 @@
           class="action-button lesson-control"
           type="button"
         >次へ</button>
-        <a
-          id="app-store-welcome-link"
-          class="app-store-welcome-link web-app-store-only lesson-control"
-          href="https://apps.apple.com/app/id6803144387"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Download ChakuChaku on the App Store (opens in a new tab)"
-          data-i18n-aria-label="marketing.appStoreNewTab"
+        <div
+          id="app-download-links"
+          class="app-download-links web-store-only lesson-control"
           hidden
         >
-          <img
-            class="app-store-badge"
-            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-            width="120"
-            height="40"
-            alt=""
+          <a
+            class="app-download-link"
+            href="https://apps.apple.com/app/id6803144387"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download ChakuChaku on the App Store (opens in a new tab)"
+            data-i18n-aria-label="marketing.appStoreNewTab"
+          >App Store <span aria-hidden="true">↗</span></a>
+          <a
+            class="app-download-link"
+            href="https://play.google.com/store/apps/details?id=com.kivutar.chakuchaku"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download ChakuChaku on Google Play (opens in a new tab)"
+            data-i18n-aria-label="marketing.googlePlayNewTab"
           >
-        </a>
+            Google Play <span aria-hidden="true">↗</span>
+          </a>
+        </div>
         <section
           id="web-marketing-summary"
-          class="web-marketing-summary web-app-store-only lesson-control"
+          class="web-marketing-summary web-store-only lesson-control"
           aria-labelledby="web-marketing-title"
           data-user-language
           hidden
