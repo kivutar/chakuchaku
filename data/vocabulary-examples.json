@@ -3637,7 +3637,7 @@
     "vocabularyId": "vocab-dfc6c56f52a3",
     "text": "お皿を洗う。",
     "targetSurface": "お皿",
-    "targetReading": "おさら",
+    "targetReading": "さら",
     "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "I wash the plate.",
@@ -3649,7 +3649,7 @@
       {
         "surface": "皿",
         "category": "noun",
-        "reading": "おさら",
+        "reading": "さら",
         "vocabularyId": "vocab-dfc6c56f52a3"
       },
       {
@@ -31654,19 +31654,14 @@
     "targetSurface": "天気予報",
     "targetReading": "てんきよほう",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I check the weather forecast.",
     "tokens": [
       {
-        "surface": "天気",
+        "surface": "天気予報",
         "category": "noun",
-        "reading": "てんき",
-        "vocabularyId": "vocab-2850b5703e8b"
-      },
-      {
-        "surface": "予報",
-        "category": "noun",
-        "reading": "よほう"
+        "reading": "てんきよほう",
+        "vocabularyId": "vocab-bf761b22ddcb"
       },
       {
         "surface": "を",
@@ -32474,17 +32469,14 @@
     "targetSurface": "お宅",
     "targetReading": "おたく",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "Your home is nice.",
     "tokens": [
       {
-        "surface": "お",
-        "reading": "お"
-      },
-      {
-        "surface": "宅",
+        "surface": "お宅",
         "category": "noun",
-        "reading": "たく"
+        "reading": "おたく",
+        "vocabularyId": "vocab-b6b3f5d2ec09"
       },
       {
         "surface": "は",
@@ -33009,8 +33001,9 @@
     "tokens": [
       {
         "surface": "最近",
-        "category": "noun",
-        "reading": "さいきん"
+        "category": "adverb",
+        "reading": "さいきん",
+        "vocabularyId": "vocab-127859f34798"
       },
       {
         "surface": "忙しい",
@@ -36006,7 +35999,7 @@
       {
         "surface": "皿",
         "category": "noun",
-        "reading": "おさら",
+        "reading": "さら",
         "vocabularyId": "vocab-dfc6c56f52a3"
       },
       {
@@ -40246,18 +40239,14 @@
     "targetSurface": "お祭り",
     "targetReading": "おまつり",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I’m going to the festival.",
     "tokens": [
       {
-        "surface": "お",
-        "reading": "お"
-      },
-      {
-        "surface": "祭り",
+        "surface": "お祭り",
         "category": "noun",
-        "reading": "まつり",
-        "vocabularyId": "vocab-a722b3dcc5a4"
+        "reading": "おまつり",
+        "vocabularyId": "vocab-6ab6355f7f71"
       },
       {
         "surface": "に",
@@ -45002,7 +44991,7 @@
       {
         "surface": "お湯",
         "category": "noun",
-        "reading": "ゆ",
+        "reading": "おゆ",
         "vocabularyId": "vocab-a89eb4b93468"
       },
       {
@@ -48183,18 +48172,14 @@
     "targetSurface": "展覧会",
     "targetReading": "てんらんかい",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I go to the exhibition.",
     "tokens": [
       {
-        "surface": "展覧",
+        "surface": "展覧会",
         "category": "noun",
-        "reading": "てんらん"
-      },
-      {
-        "surface": "会",
-        "category": "noun",
-        "reading": "かい"
+        "reading": "てんらんかい",
+        "vocabularyId": "vocab-d2206e134237"
       },
       {
         "surface": "へ",
@@ -49092,7 +49077,7 @@
       {
         "surface": "皿",
         "category": "noun",
-        "reading": "おさら",
+        "reading": "さら",
         "vocabularyId": "vocab-dfc6c56f52a3"
       },
       {

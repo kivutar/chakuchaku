@@ -368,6 +368,20 @@ test("the welcome lesson follows the selected curriculum level", async () => {
   );
 });
 
+test("vocabulary variants retain the reading of their actual spelling", async () => {
+  const exercises = await readJson("data/exercises.json");
+
+  for (const [surface, reading] of [["お湯", "おゆ"], ["皿", "さら"]]) {
+    const tokens = exercises.flatMap((exercise) => exercise.tokens)
+      .filter((token) => token.surface === surface);
+
+    assert.ok(tokens.length > 0, `Missing contextual example for ${surface}`);
+    assert.ok(tokens.every((token) => token.reading === reading),
+      `${surface} must retain ${reading} instead of borrowing its headword's prefix`);
+    assert.ok(tokens.every((token) => token.vocabularyId));
+  }
+});
+
 test("grammar coverage checklist matches authored exercises", async () => {
   const [grammarPoints, exercises, coverage] = await Promise.all([
     readJson("data/jlpt-n5-grammar.json"),

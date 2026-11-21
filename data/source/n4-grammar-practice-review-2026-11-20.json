@@ -1,0 +1,1769 @@
+{
+  "reviewedAt": "2026-11-20",
+  "baselineRevision": "959e2db8c69a736de6ecb6ea7d3067043735a576",
+  "targetLevel": "n4",
+  "method": [
+    "A separate editorial pass after initial authoring and voice generation reviewed all 50 Japanese sentences, English and French translations, grammar targets, dictionary links, readings and production hints.",
+    "Corrections were applied to source content and affected recordings were regenerated before the final checks.",
+    "Every final recording was decoded to PCM and checked for duration and silence, then independently transcribed with gpt-4o-transcribe and compared with its Japanese sentence. Homophone and orthographic ASR differences are documented per exercise.",
+    "An isolated Chromium browser rendered every exercise and its answer in English and French, verified every production hint and audio button, decoded all 50 recordings, and checked representative recognition and production playback.",
+    "Vocabulary coverage counts use distinct vocabulary IDs per prepared grammar exercise at the baseline revision, including story exercises and both directions. The N4 label follows the existing ChakuChaku curriculum."
+  ],
+  "summary": {
+    "newExercises": 50,
+    "recognition": 25,
+    "production": 25,
+    "distinctJapaneseSentences": 50,
+    "distinctGrammarTargets": 73,
+    "n4VocabularyPracticed": 111,
+    "n4VocabularyWithAtMostOnePriorGrammarExercise": 104,
+    "newRecordings": 50,
+    "individuallyReviewed": 50,
+    "previousExercisesChanged": 0,
+    "testFilesPassed": 35,
+    "webBuild": "passed",
+    "nativeBuild": "passed"
+  },
+  "entries": [
+    {
+      "id": "n4-hurry-for-express",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "急げば、七時の急行に間に合うはずです。",
+      "reviewNote": "The conditional 急げば leads to an expectation with はず. Both translations preserve the seven-o'clock express train. Corrected 七時 to しちじ in the furigana and narration.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-c2674f41fc44",
+          "term": "急ぐ",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-144611cc2889",
+          "term": "急行",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-8aed2e26cdbf",
+          "term": "間に合う",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "67cf0477805d4513457c1e2b0c220ec654bac269b66b9ad48f84b5cc689a2333",
+      "audio": {
+        "path": "assets/voices/grammar/n4-hurry-for-express.m4a",
+        "sha256": "d1065b48852d7f4107717efc8c710b2302cf39d667464ecaabeef151fcb4d892",
+        "durationSeconds": 3.5,
+        "transcript": "急げば、7時の急行に間に合うはずです。",
+        "assessment": "7時 and 七時 are equivalent notation for seven o’clock; corrected recording retains しちじ.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-leave-early-for-transfer",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "駅で乗り換える必要があるので、少し早く出ます。",
+      "reviewNote": "乗り換える必要がある expresses a practical need, followed by the reason for leaving early. Station, transfer, departure and early-departure hints are linked in both languages.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-f19d0a42f775",
+          "term": "乗り換える",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "328758a2cb1e160109c1556d9e7b39e85fbb718d927cc44c203e7dfde144947b",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-leave-early-for-transfer.m4a",
+        "sha256": "c7cc4ba03c7350cebd6bc03620a109b83c3129bf25a74f20773e5232ef945667",
+        "durationSeconds": 4.65,
+        "transcript": "駅で乗り換える必要があるので、少し早く出ます。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-apologize-for-wrong-time",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "約束の時間を間違えてしまったので、友達に謝ることにしました。",
+      "reviewNote": "Getting an appointment time wrong motivates a decision to apologize. Added ことにしました as a substantive N4 target, aligned both translations and regenerated the recording.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-c8b78a5bde6a",
+          "term": "約束",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-2536adb89a00",
+          "term": "間違える",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-d631eb282f64",
+          "term": "謝る",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "b3f96bd3b074e5d659f9ff4b420972d00b6170ae6b3117118ec432053152c783",
+      "audio": {
+        "path": "assets/voices/grammar/n4-apologize-for-wrong-time.m4a",
+        "sha256": "3e5dab025e83eb7f25af3cea2ce35b5c4fed554319f071a1afe348637ff8a482",
+        "durationSeconds": 5.3,
+        "transcript": "約束の時間を間違えてしまったので、友達に謝ることにしました。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-hand-in-wallet",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "財布を拾ったら、警察に届けることになっています。",
+      "reviewNote": "拾ったら sets the condition and 届けることになっています expresses an established expectation. Wallet, picking up, police and handing in each have a contextual hint.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-14246fa81e12",
+          "term": "拾う",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-558625e0258a",
+          "term": "警察",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-e94096ca5160",
+          "term": "届ける",
+          "priorGrammarExercises": 1
+        }
+      ],
+      "reviewedContentSha256": "eeb4ad7f3ac8f3731281335dd3758cbad49f9b1621b2e05abfba24ab236a48f6",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-hand-in-wallet.m4a",
+        "sha256": "7f41d11281bfeb06e2c9c0296b01988616680b85f57fdf93f02c626836212e6a",
+        "durationSeconds": 4.1,
+        "transcript": "財布を拾ったら、警察に届けることになっています。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-earthquake-elevator-rule",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "地震の場合は、エレベーターを使わないようにしてください。",
+      "reviewNote": "の場合は introduces the emergency circumstance; 使わないようにしてください is a request to make sure not to use the elevator. Both translations retain that instruction.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-4bb5dd8a62e0",
+          "term": "地震",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "965e0113e3abd7c6973b7973017b96028ed9ea42a1e773bf5bf6d1b015c8c04b",
+      "audio": {
+        "path": "assets/voices/grammar/n4-earthquake-elevator-rule.m4a",
+        "sha256": "30b3f01a6487ea7e4f51be466a073f7514aa8ed74a83af926661ff3a38932e27",
+        "durationSeconds": 4.15,
+        "transcript": "地震の場合は、エレベーターを使わないようにしてください。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-tool-for-fine-cutting",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "この道具は野菜を細かく切るのに便利です。",
+      "reviewNote": "切るのに便利 assesses purpose, while 細かく specifies cutting into small pieces. All five content-word hints agree with the Japanese and both prompts.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-878b1c1a6272",
+          "term": "道具",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-78dfe6560a21",
+          "term": "細かい",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "c38fbac942dbe10d75ae62c1f0420e6fd258f921ad545244f33405c3c9465229",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-tool-for-fine-cutting.m4a",
+        "sha256": "e2e0326f797bcad106551d9c37c39052004025c0b673997200c3d6e5c8bef375",
+        "durationSeconds": 3.85,
+        "transcript": "この道具は、野菜を細かく切るのに便利です。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-small-print-dictionary",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "この辞典は字が細かくて、読みにくいです。",
+      "reviewNote": "Small print causes difficulty reading: 細かくて and 読みにくい carry the two targets. にくい is treated as grammar rather than an unrelated lexical word.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-f45c71f6f3d7",
+          "term": "辞典",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-78dfe6560a21",
+          "term": "細かい",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "23002055580967e05ac963cba3b6218563116f7729c21ff56c60bce773f72f5c",
+      "audio": {
+        "path": "assets/voices/grammar/n4-small-print-dictionary.m4a",
+        "sha256": "28dbe038b2acf3e5bf1f91ae7a39dd8253caa56bdc681bb97dca7b40dd552636",
+        "durationSeconds": 3.9,
+        "transcript": "この辞典は字が細かくて読み憎いです。",
+        "assessment": "ASR wrote the homophone 読み憎い for 読みにくい; the spoken reading よみにくい agrees.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-book-inn-in-advance",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "旅館に泊まるなら、先に予約しておいたほうがいいです。",
+      "reviewNote": "なら makes staying at an inn the premise; 予約しておいたほうがいい combines advance preparation and advice. The inn, overnight stay, reservation and advance timing are all hinted.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-f6e600542563",
+          "term": "旅館",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-6609da9af02c",
+          "term": "泊まる",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-b7d9c4f1e563",
+          "term": "予約",
+          "priorGrammarExercises": 1
+        }
+      ],
+      "reviewedContentSha256": "c8286ac5485a5ba897dc8790f531798172f11d6d97f63c7bf74190bb4b3ea0d7",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-book-inn-in-advance.m4a",
+        "sha256": "d6b2da9ff1f4fa770e008acd2ca9e648f72cdcd4a61bab1d366d0feae568ca2d",
+        "durationSeconds": 4.2,
+        "transcript": "旅館に泊まるなら、先に予約しておいたほうがいいです。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-getting-used-to-town-life",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "この町の生活に慣れてきたので、毎日が楽しいです。",
+      "reviewNote": "慣れてきた describes adaptation developing up to the present. EN and FR preserve getting used to town life as the reason each day is pleasant.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-0e853c977cf1",
+          "term": "生活",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-fa496ae3e1d7",
+          "term": "慣れる",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "0b00e32d7981a27fc110a1c16b5123c33b4ae24cfaf57ce6c7ad9f3c2e7a3239",
+      "audio": {
+        "path": "assets/voices/grammar/n4-getting-used-to-town-life.m4a",
+        "sha256": "8515404691f5ad75fe7a5a5c3d95f8cd6a76c602e1bc895c616e954cb2f2725f",
+        "durationSeconds": 4.5,
+        "transcript": "この街の生活に慣れてきたので、毎日が楽しいです。",
+        "assessment": "ASR wrote 街 for 町; both are read まち here.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-medicine-just-taken",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "薬を飲んだばかりなので、まだ熱があります。",
+      "reviewNote": "飲んだばかり describes having only just taken medicine, explaining why the fever remains. The prompt and hints use 飲む in the medication context.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-5737cdeed6f7",
+          "term": "熱",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "73906841fd7f94a733192f4ee5d74c693ba8bec75a3b466ba7df0af9a99ec192",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-medicine-just-taken.m4a",
+        "sha256": "3aff6b9046cafe51ae1b68c523017eecec35c61b8e6f455e2116327f054351fa",
+        "durationSeconds": 3.85,
+        "transcript": "薬を飲んだばかりなので、まだ熱があります。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-broken-air-conditioning",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "冷房が故障しているのに、窓を開けられません。",
+      "reviewNote": "のに contrasts the broken air conditioning with inability to open the window. 開けられません is potential here; its ending is classified as auxiliary grammar.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-af53c2c7b101",
+          "term": "冷房",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-4fff1c1f0559",
+          "term": "故障",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "907147290247145a55f0f7aae7e9a539acf2309008433913fe36f876880640f8",
+      "audio": {
+        "path": "assets/voices/grammar/n4-broken-air-conditioning.m4a",
+        "sha256": "089def92f65a9dc5bb2351c91c706d27027f6b406f32b6ad3f8dcb40a2df59c3",
+        "durationSeconds": 3.9,
+        "transcript": "冷房が故障しているのに、窓を開けられません。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-accident-delays-meeting",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "事故で電車が止まったために、会議に遅れました。",
+      "reviewNote": "The accident stops the train, which causes lateness for a meeting. Both translations preserve this causal sequence and all five vocabulary hints.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-ce352e4f7862",
+          "term": "事故",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "dcc679772203054f880ec1659a6e61d406279d3322e189edc66d25c33bbf7773",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-accident-delays-meeting.m4a",
+        "sha256": "f29398012289b8586a2a3ae63150a3bcb3445e13c88c4bafefdecbad2c1157c9",
+        "durationSeconds": 3.65,
+        "transcript": "事故で電車が止まったために、会議に遅れました。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-luggage-before-art-museum",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "荷物を預けてから、美術館に寄る予定です。",
+      "reviewNote": "預けてから orders the luggage drop-off before the planned museum stop. 預ける, 美術館 and 寄る retain their distinct meanings and vocabulary links.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-66874224e11d",
+          "term": "預ける",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-66d5a1c32b63",
+          "term": "美術館",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-df6dd25bbc07",
+          "term": "寄る",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "4e0ee56bc1046619bdd54ce891e9ac44182b48389662d6a6ad208fe6dc73164e",
+      "audio": {
+        "path": "assets/voices/grammar/n4-luggage-before-art-museum.m4a",
+        "sha256": "8929a0f6912892fd086dd73d43db2ed3e7da0260b6683f7d20bf8754bbb05719",
+        "durationSeconds": 3.8,
+        "transcript": "荷物を預けてから、美術館に寄る予定です。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-check-before-departure",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "出発する前に、忘れ物がないかどうか確認しておきます。",
+      "reviewNote": "前に and ておく frame a preparatory check, with かどうか introducing whether anything has been forgotten. 出発, 忘れ物 and 確認 have usable hints in both prompts.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-208c75c5154e",
+          "term": "出発",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-1a16ba820f65",
+          "term": "忘れ物",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-00267c54cf8b",
+          "term": "確認",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "5d5d5a50a8f521259848cc28e108fc7598e5270543244fa98c0439ac4cc39f68",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-check-before-departure.m4a",
+        "sha256": "4e8c362da2674b914098484c1b52fa33f4da4741005914f0002f327b02af5324",
+        "durationSeconds": 4.85,
+        "transcript": "出発する前に、忘れ物がないかどうか確認しておきます。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-typhoon-weather-report",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "天気予報では、明日は台風のために風が強くなるそうです。",
+      "reviewNote": "The forecast is the source for hearsay そうです, and the typhoon is the cause expressed by ために. 天気予報 stays a single linked word; stronger wind and tomorrow appear in both translations.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-bf761b22ddcb",
+          "term": "天気予報",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-f5e799449931",
+          "term": "台風",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "ed6e30b2b329830a5a0c6f19503e3047dfff1fd533debef685f7bbd776292046",
+      "audio": {
+        "path": "assets/voices/grammar/n4-typhoon-weather-report.m4a",
+        "sha256": "ffc5fbcef2c9a169ff8aff34fb217f0e43dd24df7f2ce559a20d6fcceaeec872",
+        "durationSeconds": 5.3,
+        "transcript": "天気予報では、明日は台風のために風が強くなるそうです。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-grandmothers-wall-picture",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "壁に飾ってある絵は、祖母が描いたものらしいです。",
+      "reviewNote": "The picture is in a deliberately displayed state with てある, and らしい reports apparent provenance. Added that N4 inference, aligned EN/FR, retained the relative clause and regenerated audio.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-12b3aa7f9d18",
+          "term": "壁",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-e555214f57b5",
+          "term": "飾る",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-df957e0341aa",
+          "term": "祖母",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "218f9081aee3ffd4f4495b05722c011a00fc61c2456ff752ea3832735005d908",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-grandmothers-wall-picture.m4a",
+        "sha256": "c8a0d4c86126da29375331128386e225b1b7812fe91fdab3518b634dda3008d9",
+        "durationSeconds": 4.2,
+        "transcript": "壁に飾ってある絵は、祖母が描いたものらしいです。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-ring-in-desk-drawer",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "机の引き出しに指輪が入っているはずです。",
+      "reviewNote": "入っている describes the ring's location, and はず marks the speaker's expectation rather than certainty. The desk drawer and ring are linked to their dictionary entries.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-960a1c151bf7",
+          "term": "引き出し",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-497569560cde",
+          "term": "指輪",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "e8d18bae985e8241218f0e507c612b3869abb7c7d83a18701024829e5c6bf3ec",
+      "audio": {
+        "path": "assets/voices/grammar/n4-ring-in-desk-drawer.m4a",
+        "sha256": "9fa9e39662fc621f3f3d504d86d8bce640e9b925f1d1778ebac85fb28ab5603f",
+        "durationSeconds": 3.9,
+        "transcript": "机の引き出しに指輪が入っているはずです。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-button-with-gloves",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "手袋をしたままでは、この小さいボタンは押しづらいです。",
+      "reviewNote": "したまま keeps the gloves on while 押しづらい expresses difficulty pressing the button. Corrected the French to appuyer sur; all four hints refer to the actual sentence words.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-20fc26e20fc1",
+          "term": "手袋",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "fe5422e8748bfa23adfb6046b6a7151a3ab5aca19763b3986f5b62cf17afc569",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-button-with-gloves.m4a",
+        "sha256": "51db7bb56809a88d7c985f06280b6d51d6c332fde81bb283504b2cb9d4e2602a",
+        "durationSeconds": 4.6,
+        "transcript": "手袋をしたままでは、この小さいボタンは押しづらいです。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-finish-vegetables-before-boiling",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "お湯が沸くまでに、野菜を洗い終わるでしょう。",
+      "reviewNote": "までに gives a deadline and 洗い終わる completes the washing; でしょう keeps the outcome probable. Corrected the French deadline phrasing and お湯 reading to おゆ.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-0a2c733eaeaf",
+          "term": "沸く",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "eb5d18929292e18e967662df8ed4d256eca6ee11db8e172102875aa20b2f62e2",
+      "audio": {
+        "path": "assets/voices/grammar/n4-finish-vegetables-before-boiling.m4a",
+        "sha256": "2bc1f428be51bfff4ba00eb6894498fddcd06dcaf50b62193d60b0acb63ceac2",
+        "durationSeconds": 3.6,
+        "transcript": "お湯が沸くまでに、野菜を洗い終わるでしょう。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-wooden-doll-from-grandfather",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "この人形は木でできていて、祖父が作ってくれました。",
+      "reviewNote": "木でできている identifies the material; 作ってくれました adds the grandfather's favor to the speaker. Both prompts preserve that benefit, with a full grand-père hint.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-4b6b3e6fd427",
+          "term": "人形",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-3b05ac1772db",
+          "term": "祖父",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "553195fb61ad3ccd192210bbc1c8837f0bf5464d13c0a4ea99f476951cd9d18f",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-wooden-doll-from-grandfather.m4a",
+        "sha256": "6f49c7279976a5c7f2e002c02cb9e936605cfb793277561831f309ffed884daf",
+        "durationSeconds": 4.8,
+        "transcript": "この人形は木でできていて、祖父が作ってくれました。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-paper-from-old-newspapers",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "この紙は古い新聞から作られているそうです。",
+      "reviewNote": "新聞から marks a transformed source material, 作られている is passive, and そうです reports information heard. EN and FR retain all three meanings.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-d060cd928492",
+          "term": "紙",
+          "priorGrammarExercises": 17
+        },
+        {
+          "id": "vocab-f906b238c9c2",
+          "term": "新聞",
+          "priorGrammarExercises": 6
+        }
+      ],
+      "reviewedContentSha256": "b66e6c175d15465317e146822fd4da191bd6e659d73f4724bf648725c2f6d970",
+      "audio": {
+        "path": "assets/voices/grammar/n4-paper-from-old-newspapers.m4a",
+        "sha256": "a43ca864e8d721e74745bad1812a6635652434b5fc3b2374ec7e97e58f050275",
+        "durationSeconds": 3.85,
+        "transcript": "この紙は古い新聞から作られているそうです。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-study-trade-for-future",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "将来、外国で働くために、今は貿易の勉強をしています。",
+      "reviewNote": "働くために gives the purpose of studying trade; 将来 contrasts with 今. The hints cover future, trade, work, abroad and studying without adding an unsupported profession.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-5118dfe23709",
+          "term": "将来",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-5f0e2bf0ea23",
+          "term": "貿易",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "e03e38f280f3b150c82699b197ccc02b6980de750d815ffc0a88f41017b04d5e",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-study-trade-for-future.m4a",
+        "sha256": "015a63dce596c6e58081ccca579f63a334955c828ab3984b5f325539a2eb341c",
+        "durationSeconds": 5.55,
+        "transcript": "将来、外国で働くために、今は貿易の勉強をしています。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-dictionary-for-pronunciation",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "この辞典なら、正しい発音を調べやすいはずです。",
+      "reviewNote": "なら presents the dictionary as the available resource, 調べやすい expresses ease, and はず keeps the expectation. Both translations preserve correct pronunciation as the lookup target.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-7003bbe10d0b",
+          "term": "正しい",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-743925dd101f",
+          "term": "発音",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-f45c71f6f3d7",
+          "term": "辞典",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "eb788ca4acc64b11ffadf29248ba42bdbe5010f37c90f2f0a0684b808c5a029c",
+      "audio": {
+        "path": "assets/voices/grammar/n4-dictionary-for-pronunciation.m4a",
+        "sha256": "0ede7cc36d7e7485f69a13b5853e749cbd3baaaedc3bdeb3615ddd34e08dfa36",
+        "durationSeconds": 4,
+        "transcript": "この時点なら、正しい発音を調べやすいはずです。",
+        "assessment": "ASR wrote 時点 for 辞典; both are read じてん.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-suitcase-light-push",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "このスーツケースは、指で軽く押すだけで動きます。",
+      "reviewNote": "押すだけで states a sufficient action: a light push of a finger moves the suitcase. 軽く, 指, 押す and 動く are reflected in the five hints and both translations.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-c406fe8bfa49",
+          "term": "スーツケース",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-293244e6fc0c",
+          "term": "指",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-247b87990016",
+          "term": "動く",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "3f5986417dc423ae0d79eb2aad94912602b70060e0d238df235c965db3339d96",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-suitcase-light-push.m4a",
+        "sha256": "a8886f536d958caa8654c6ec3e6ae5bada096d8357b0a4db5275f6e741ad858b",
+        "durationSeconds": 4.05,
+        "transcript": "このスーツケースは指で軽く押すだけで動きます。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-no-paper-for-gift",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "贈り物を包もうとしたとき、紙がないことに気づきました。",
+      "reviewNote": "包もうとした expresses an attempted action, not just an intention. The time clause leads to realizing there is no paper; both translations retain the failed wrapping setup.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-84e62df90449",
+          "term": "贈り物",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-ac61ad41df92",
+          "term": "包む",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-0fc59c481d31",
+          "term": "気づく",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "a421fb8379dca20f023fdce1493d39c7b7022b29d23f3f72164355cc90c05556",
+      "audio": {
+        "path": "assets/voices/grammar/n4-no-paper-for-gift.m4a",
+        "sha256": "89d08da7559454a0eac11a83cbaf04e09fe3877422fa5ac9182891b7f12e1529",
+        "durationSeconds": 5.25,
+        "transcript": "贈り物を包もうとしたとき、紙がないことに気づきました。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-inn-shoes-rule",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "旅館では、部屋に入る前に靴を脱ぐことになっています。",
+      "reviewNote": "The inn rule uses ことになっています and places removing shoes before entering the room. Renamed the exercise ID to match its subject; all five hints and the audio path agree.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-f6e600542563",
+          "term": "旅館",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "6acdf6833d6499fa9a16000074822378357ce23bd73e74a0bb2faa92e5c5fb66",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-inn-shoes-rule.m4a",
+        "sha256": "b1a182eebb5703f0958297be7545274631cf0b57f14a77e169ce47bd47d3ddc0",
+        "durationSeconds": 5.1,
+        "transcript": "旅館では、部屋に入る前に靴を脱ぐことになっています。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-childhood-festival-dancing",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "子供の頃は、お祭りで踊るのが楽しみでした。",
+      "reviewNote": "子供の頃 establishes the childhood period and 踊るの nominalizes dancing. Both translations convey looking forward to festival dancing; お祭り is a whole linked word.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-6ab6355f7f71",
+          "term": "お祭り",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-98d08dfe0a16",
+          "term": "踊る",
+          "priorGrammarExercises": 1
+        },
+        {
+          "id": "vocab-405fd8a22af6",
+          "term": "楽しみ",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "abea7e5bc55aa390d0e824f07b7960d6c2bcf81e665e394ce54adfd5e2fec1ea",
+      "audio": {
+        "path": "assets/voices/grammar/n4-childhood-festival-dancing.m4a",
+        "sha256": "9c8cd3a67492a19edb72f8a63737a7879f77706746729863eb02122aaa19f2e3",
+        "durationSeconds": 4.6,
+        "transcript": "子どものころは、お祭りで踊るのが楽しみでした。",
+        "assessment": "ASR used 子どものころ for 子供の頃; the readings agree.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-diary-builds-confidence",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "日本語で日記を書き続けたので、前より自信があります。",
+      "reviewNote": "書き続けた expresses sustained diary writing and 前より compares present confidence with before. EN and FR preserve the causal link, with four contextual hints.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-b6df2b21dd5c",
+          "term": "日記",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-310771e3065b",
+          "term": "自信",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "d30e1a63816d3cb6f76e7de95340e056a910290db09ae55426d0e8c302cea998",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-diary-builds-confidence.m4a",
+        "sha256": "c9925ebdc329fbfcf3aa6d82b902d02ee420d4b78aa32b73fec937b796a31959",
+        "durationSeconds": 5.4,
+        "transcript": "日本語で日記を書き続けたので、前より自信があります。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-plan-without-advice",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "相談する相手がいなくて、一人で計画を決めることになりました。",
+      "reviewNote": "いなくて explains the lack of someone to consult, and ことになりました describes the resulting circumstance. Reworded EN/FR to avoid implying that somebody explicitly decided for the speaker.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-46a9b4c6d784",
+          "term": "相談",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-16019d9a9007",
+          "term": "相手",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-f3534981adc8",
+          "term": "計画",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-07131acd8b99",
+          "term": "決める",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "3ee9b858e721214c4c23121c91bdc64505fdde69c1c819214b3ca90ea57c9670",
+      "audio": {
+        "path": "assets/voices/grammar/n4-plan-without-advice.m4a",
+        "sha256": "ca4e8503c6b68be2ada8e9eda2fdf67dd44457fda26259142113c5300a08f6ff",
+        "durationSeconds": 4.7,
+        "transcript": "相談する相手がいなくて、一人で計画を決めることになりました。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-regret-after-match",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "試合に負けたので、もっと練習すればよかったと思いました。",
+      "reviewNote": "すればよかった expresses retrospective regret after losing a match. Corrected French to j'aurais dû and ensured thought/pensé links to 思う alongside the match and practice hints.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-410b73381c41",
+          "term": "試合",
+          "priorGrammarExercises": 1
+        },
+        {
+          "id": "vocab-8c52920802b4",
+          "term": "負ける",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "68fb5f08d5f356e798bd6094d60f3cc8dc5915841ffbafe40a70b8ff83c904a3",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-regret-after-match.m4a",
+        "sha256": "9235810e85cac6c667e2c56f9d68b804e2a54b9e5a5dd2896212407bee0f25a7",
+        "durationSeconds": 4.4,
+        "transcript": "試合に負けたのでもっと練習すればよかったと思いました。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-children-afraid-of-dark-room",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "子供たちは怖がって、暗い部屋に入ろうとしませんでした。",
+      "reviewNote": "怖がって describes observable fear in others and 入ろうとしませんでした conveys not trying or being unwilling to enter. Corrected the volitional reading to はいろう and linked the inflected fear word.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-c79c9d356804",
+          "term": "怖い",
+          "priorGrammarExercises": 4
+        }
+      ],
+      "reviewedContentSha256": "deb2c6e6de53113614beb5a499f382ef9f34c4cec3d5cbd5e471e1a9f92ced49",
+      "audio": {
+        "path": "assets/voices/grammar/n4-children-afraid-of-dark-room.m4a",
+        "sha256": "f9db9d5cb31fc5dd8f5800cc878856009d95691b9ea14d31dca5ab63b21f9b89",
+        "durationSeconds": 4.5,
+        "transcript": "子供たちは怖がって、暗い部屋に入ろうとしませんでした。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-quiet-for-sleeping-baby",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "赤ちゃんが寝ているので、大きな音を出さないでほしいです。",
+      "reviewNote": "ないでほしい requests that the listener refrain from making noise because the baby is sleeping. The loud-noise hint now links to 大きな, matching the actual Japanese form.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-10791214b2c9",
+          "term": "赤ちゃん",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "8d07cc9d8d56c2cbe6e1259fb4dc4139e7d930c08926b9b30b6226e529f2167a",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-quiet-for-sleeping-baby.m4a",
+        "sha256": "d09be48b484f5a265d0c1620869d90d8ee64a066b38d2c0c969347a38fb3b5f2",
+        "durationSeconds": 4.45,
+        "transcript": "赤ちゃんが寝ているので、大きな音を出さないでほしいです。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-lake-looks-shallow",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "この湖は浅そうに見えますが、あそこは深いかもしれません。",
+      "reviewNote": "浅そうに見える presents an appearance while かもしれない leaves possible depth elsewhere uncertain. Both translations retain this contrast, with linked lake, shallow and deep vocabulary.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-213adba436b6",
+          "term": "湖",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-d24688aa2c15",
+          "term": "浅い",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-ca9763d00bd7",
+          "term": "深い",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "acdc3e1a9bd9905a005ec2fc1c7033241393c13a60e13ac5fdfe8866b6d43d6e",
+      "audio": {
+        "path": "assets/voices/grammar/n4-lake-looks-shallow.m4a",
+        "sha256": "ebef6b57b956ad352a19e0961015e3d9e9f487d6d1fbe5f2fa1f8f773abfe59e",
+        "durationSeconds": 5.7,
+        "transcript": "この湖は浅そうに見えますが、あそこは深いかもしれません。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-play-after-meal",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "食事が済むまで、子供を外で遊ばせないことにしました。",
+      "reviewNote": "遊ばせない expresses not allowing the child to play; ことにしました is the speaker's decision and まで sets the meal's endpoint. The causative form and all five vocabulary hints are linked correctly.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-399ca48876cc",
+          "term": "食事",
+          "priorGrammarExercises": 1
+        },
+        {
+          "id": "vocab-e657b2e7330e",
+          "term": "済む",
+          "priorGrammarExercises": 1
+        }
+      ],
+      "reviewedContentSha256": "f444812fbd11a3026f3bc08386f98da06a9c056805629a781ac75cdd2989e8e4",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-play-after-meal.m4a",
+        "sha256": "ee54ff491c38b3fc0d56176255473c68ba776e82e074b2c0624a87c41ec3bb0a",
+        "durationSeconds": 4.25,
+        "transcript": "食事が済むまで、子供を外で遊ばせないことにしました。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-name-at-venue-reception",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "会場に着いたら、受付で名前を伝える必要があります。",
+      "reviewNote": "着いたら sets arrival as the trigger and 必要があります states the requirement to give a name. Venue, reception and conveying the name have appropriate meanings in both translations.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-3f2f923c2a59",
+          "term": "会場",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-fb32fba0846c",
+          "term": "受付",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-0cc46aeaf124",
+          "term": "伝える",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "367ff4d102242769d8e4d2e0ad2100e9ce6697580de4228e2b8ccd3f8ab5fd61",
+      "audio": {
+        "path": "assets/voices/grammar/n4-name-at-venue-reception.m4a",
+        "sha256": "512ff53681c1b7eb76ba74ce87506464d3dd393021d9ea9ad51a023d4356e84a",
+        "durationSeconds": 4.85,
+        "transcript": "会場に着いたら、受付で名前を伝える必要があります。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-kind-clerk-praised",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "あの店の店員はいつも親切なので、客に褒められています。",
+      "reviewNote": "褒められています is passive, with customers as the agents and the clerk as the recipient. Reworded EN/FR to preserve passive production and regenerated narration without an added お before 店.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-2a1053878f8a",
+          "term": "店員",
+          "priorGrammarExercises": 1
+        },
+        {
+          "id": "vocab-c2cec306f5c4",
+          "term": "親切",
+          "priorGrammarExercises": 1
+        },
+        {
+          "id": "vocab-9c6064a751f5",
+          "term": "客",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-46d460451e75",
+          "term": "褒める",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "9b4681a90330bb1a314814f5d1959ec76c53e9f14a8b2ff68c1d3a1d9b9b1454",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-kind-clerk-praised.m4a",
+        "sha256": "691ee6fe1453e7f559c33bd3ac76f9faec86f47e7f6261ba88a09c7a09a2fd38",
+        "durationSeconds": 5.6,
+        "transcript": "あの店の店員はいつも親切なので、客に褒められています。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-plate-fell-during-earthquake",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "地震のとき、棚から落ちてきた皿が床で割れました。",
+      "reviewNote": "落ちてきた modifies the plate and indicates downward movement into the scene; the plate then breaks on the floor. Corrected 皿 to さら while keeping the existing vocabulary unit.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-4bb5dd8a62e0",
+          "term": "地震",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-ef6041e086e8",
+          "term": "落ちる",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-5583cc1e42ca",
+          "term": "床",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-629875c01d86",
+          "term": "割れる",
+          "priorGrammarExercises": 1
+        }
+      ],
+      "reviewedContentSha256": "e8d0d060dafb71eccc66d6bab4cd725d2a996ccce60c2dbd7691c45302dc2017",
+      "audio": {
+        "path": "assets/voices/grammar/n4-plate-fell-during-earthquake.m4a",
+        "sha256": "1dcd34abc541106390daaa0316f6aa46ef39bf69809e97dcdce630dba54c0a83",
+        "durationSeconds": 4.5,
+        "transcript": "地震のとき、棚から落ちてきた皿が床で割れました。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-cold-from-open-window",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "窓を開けたまま寝たので、体が冷えてしまいました。",
+      "reviewNote": "開けたまま retains the open-window state during sleep; 冷えてしまいました gives an unwanted result. The translations describe the body getting cold, not catching a cold, and all five hints match.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-74bdf22124ea",
+          "term": "冷える",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "1870f4f538f13939fbdd36b83489e0736816123d35320a00746ff74d846a28fe",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-cold-from-open-window.m4a",
+        "sha256": "66b8ddd7e940763b5de20c7d39f7aa156b9660e849a29b4e26597cb3eb78d79e",
+        "durationSeconds": 4.35,
+        "transcript": "窓を開けたまま寝たので、体が冷えてしまいました。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-do-not-touch-broken-glass",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "窓のガラスが割れた場合は、危険なので触らないでください。",
+      "reviewNote": "割れた場合は gives the broken-glass circumstance, 危険なので its reason, and 触らないでください the prohibition. Both translations refer to touching the glass rather than the window frame.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-ac3b92bbb172",
+          "term": "ガラス",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-a11560da1a91",
+          "term": "危険",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-eed7a9c3415c",
+          "term": "触る",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "ed47ca8c40f88c9378666cd17635bed12b0f98a70f28feac9140b52351aadf1b",
+      "audio": {
+        "path": "assets/voices/grammar/n4-do-not-touch-broken-glass.m4a",
+        "sha256": "bb92ce41408ad4ef6c5a6c3a182659b25306e19a582bf90b930a7c481fb82ca3",
+        "durationSeconds": 5.55,
+        "transcript": "窓のガラスが割れた場合は、危険なので触らないでください。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-forced-to-work-lunch-break",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "部長に昼休みも働かされました。",
+      "reviewNote": "働かされました is the contracted causative passive, with the department manager as the agent. Both prompts explicitly retain being made to work even during lunch break; the inflected verb is linked.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-435c68c810fe",
+          "term": "部長",
+          "priorGrammarExercises": 1
+        },
+        {
+          "id": "vocab-385a4dbb8d14",
+          "term": "昼休み",
+          "priorGrammarExercises": 1
+        }
+      ],
+      "reviewedContentSha256": "154e57574bfbb05594ad402932c813507b03b8682e77d70462492216898672e7",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-forced-to-work-lunch-break.m4a",
+        "sha256": "84317674abd6bf1a976ebefca9a0742da1bddcf37bbbff6ca208d371c48ad5c9",
+        "durationSeconds": 3.15,
+        "transcript": "部長に昼休みも働かされました。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-exhibition-map-at-entrance",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "展覧会に行くなら、入口に置いてある地図をご覧ください。",
+      "reviewNote": "The exhibition is the premise with なら; 置いてある describes the placed map; ご覧ください is a respectful request to look. 展覧会 remains one linked vocabulary word.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-d2206e134237",
+          "term": "展覧会",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "1787187577eeb9d952e9aa74f46b9b0ba247a644c5d25caabafac291ab522ad4",
+      "audio": {
+        "path": "assets/voices/grammar/n4-exhibition-map-at-entrance.m4a",
+        "sha256": "308b10d9e46d4d1f0c39ec304e00e59b9e50fe5670f1373f186bf35832ff7967",
+        "durationSeconds": 4.5,
+        "transcript": "展覧会に行くなら、入口に置いてある地図をご覧ください。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-polite-venue-registration",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "会場にお入りになる前に、受付でお名前をお書きください。",
+      "reviewNote": "お入りになる and お書きください consistently address the visitor respectfully. 入り is read はいり, and venue, entering, reception, name and writing all have hints in EN and FR.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-3f2f923c2a59",
+          "term": "会場",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-fb32fba0846c",
+          "term": "受付",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "ebddd5eaba9a7bef7ff5677409b2137a222df2e567c1f55450d809014e045f0f",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-polite-venue-registration.m4a",
+        "sha256": "d2b24970317b6d9f0906b628ab707d85f8c838db5948fa50299dcc750253d2c4",
+        "durationSeconds": 5.9,
+        "transcript": "会場にお入りになる前に、受付でお名前をお書きください。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-teacher-corrected-composition",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "先生に作文を直していただいたので、正しい書き方がよく分かりました。",
+      "reviewNote": "直していただいた frames receiving the teacher's correction politely. Reworded EN/FR to preserve the ensuing understanding expressed by よく分かりました, rather than claiming a new ability.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-4b9574b8d3b9",
+          "term": "作文",
+          "priorGrammarExercises": 3
+        },
+        {
+          "id": "vocab-a584cd8f1390",
+          "term": "直す",
+          "priorGrammarExercises": 3
+        },
+        {
+          "id": "vocab-7003bbe10d0b",
+          "term": "正しい",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "448050f45f625928011bf980c6f37a0ac9e8e1405add0a495047a0e6c652efb5",
+      "audio": {
+        "path": "assets/voices/grammar/n4-teacher-corrected-composition.m4a",
+        "sha256": "cde05d1b05566824c9179aeae3aced681bbacfd05c7e4271a3ba465c4c34b58c",
+        "durationSeconds": 6.05,
+        "transcript": "先生に作文を直していただいたので、正しい書き方がよくわかりました。",
+        "assessment": "ASR used kana わかり for 分かり; the readings agree.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-polite-home-visit",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "ご都合がよろしければ、午後、お宅に伺います。",
+      "reviewNote": "よろしければ states the convenience condition and 伺います humbly describes the speaker's visit. お宅 is a linked whole word, après-midi is a full hint, and narration explicitly preserves ご都合.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-7b97771af3dc",
+          "term": "都合",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-ab645ed42d67",
+          "term": "よろしい",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-b6b3f5d2ec09",
+          "term": "お宅",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-5f3a8d4d0dd6",
+          "term": "伺う",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "e84ef0e88a2ecdac5081759d93c584d168be37c5ddf19e47be7de71fd9279463",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-polite-home-visit.m4a",
+        "sha256": "3fed5bd7859f2b0ac64f7a4a527e47c1ccf3094f09f243e7f1c4c61bdc8d3530",
+        "durationSeconds": 4.8,
+        "transcript": "ご都合がよろしければ、午後お宅に伺います。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-missed-kind-invitation",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "招待してくださったのに、熱が出て行けませんでした。",
+      "reviewNote": "してくださった recognizes the listener's kind invitation; のに contrasts it with inability to attend due to fever. Simplified the invitation wording, linked potential 行け and regenerated narration.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-5288a1e69b5f",
+          "term": "招待",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-5737cdeed6f7",
+          "term": "熱",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "d9c49b3a2d426495797b8fd3e142c0214a981d53e0b97ee1beeb4c32f27384d8",
+      "audio": {
+        "path": "assets/voices/grammar/n4-missed-kind-invitation.m4a",
+        "sha256": "5b9d672969c52372268effed73c4d718e2d7f4176a546dff3369c820b20b5127",
+        "durationSeconds": 4.5,
+        "transcript": "招待してくださったのに、熱が出て行けませんでした。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-thanks-for-appointment-time",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "約束の時間を知らせてくれてありがとう。",
+      "reviewNote": "知らせてくれてありがとう thanks the listener for conveying the appointment time. EN uses telling rather than reminding, and the full French rendez-vous hint links to 約束.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-c8b78a5bde6a",
+          "term": "約束",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-d7cd17a83e55",
+          "term": "知らせる",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "d7bf8989654751902827cc04379c53f07696c6c9ef8f1e6f5517105034a617a7",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-thanks-for-appointment-time.m4a",
+        "sha256": "102f0bcc1690b21a3a2b27d0471637f1a9887e83d5ee1a72e268e5187f7e88cc",
+        "durationSeconds": 3.2,
+        "transcript": "約束の時間を知らせてくれてありがとう。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-everyone-follows-strict-rules",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "規則が厳しくても、全員で守るようにしています。",
+      "reviewNote": "厳しくても concedes the rules' strictness while 守るようにしています expresses sustained effort to follow them. Both translations retain participation by everyone.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-6a1d12d0b6f7",
+          "term": "規則",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-dd1a5d8063ce",
+          "term": "厳しい",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-37bda20be9f8",
+          "term": "全員",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-7df42cbdaf8e",
+          "term": "守る",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "bd02fdbe43c43d35ee70855620edaf52623d62aeab75d37543f38d9d31d60381",
+      "audio": {
+        "path": "assets/voices/grammar/n4-everyone-follows-strict-rules.m4a",
+        "sha256": "74d0dcc1333d3ebf3ce5d4e4b4109b058ac738c13108c6d687c4a64cf1a3c03c",
+        "durationSeconds": 4.95,
+        "transcript": "規則が厳しくても、全員で守るようにしています。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-notify-travel-plans",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "旅行の予定が決まったら、すぐにお知らせします。",
+      "reviewNote": "決まったら makes finalization of the plans the trigger; お知らせします is the humble notification. The hints use notify/informerai and link お知らせ to 知らせる.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-6c1bd8b09d2e",
+          "term": "決まる",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-d7cd17a83e55",
+          "term": "知らせる",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "34754f65ce2d3a236a396e8ab7b9ebdd0c39f0e1b43c83a66aab5bc4733387ea",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-notify-travel-plans.m4a",
+        "sha256": "f58276eea12d88029bed64fa930900a53a16f1f9024a359b05eeac34fe55d191",
+        "durationSeconds": 3.7,
+        "transcript": "旅行の予定が決まったら、すぐにお知らせします。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-island-population-rumor",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "近所の人の話では、この島の人口は最近増えているらしいです。",
+      "reviewNote": "The neighbor supplies the source, らしい marks reported information, and 増えている conveys ongoing population growth. 島, 人口 and 最近 are linked and preserved in both translations.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-8269c26a210a",
+          "term": "近所",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-0b8270c9bdf4",
+          "term": "島",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-2ef4da30cf39",
+          "term": "人口",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-127859f34798",
+          "term": "最近",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-2c955930b5a4",
+          "term": "増える",
+          "priorGrammarExercises": 1
+        }
+      ],
+      "reviewedContentSha256": "1355ddecc181c6755b8098514970e4767dfc7c2a316d38e6903614f7df795ee5",
+      "audio": {
+        "path": "assets/voices/grammar/n4-island-population-rumor.m4a",
+        "sha256": "fddab5f63872a263f469a9d3a1499575f3f69cdb380de1675b024eb2cf9fb80e",
+        "durationSeconds": 5.8,
+        "transcript": "近所の人の話では、この島の人口は最近増えているらしいです。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-joke-made-someone-angry",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "冗談だったのに、相手を怒らせてしまいました。",
+      "reviewNote": "だったのに contrasts the joke with its unintended effect, 怒らせる is causative, and てしまう signals regret. Removed the ambiguous past つもり construction, aligned both prompts and regenerated audio.",
+      "focusVocabulary": [
+        {
+          "id": "vocab-b621cfcf6239",
+          "term": "冗談",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-16019d9a9007",
+          "term": "相手",
+          "priorGrammarExercises": 0
+        },
+        {
+          "id": "vocab-cdf37b09dc6a",
+          "term": "怒る",
+          "priorGrammarExercises": 0
+        }
+      ],
+      "reviewedContentSha256": "5f6dd364809f1b070afb668bdeb1e672cc54c53f9170ff99e7c792f6b2d627a3",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-joke-made-someone-angry.m4a",
+        "sha256": "fcaeec8c481f160a7049a2ff46c3ac3e32afb987612b662487bf92a102738a77",
+        "durationSeconds": 3.7,
+        "transcript": "冗談だったのに、相手を怒らせてしまいました。",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "pcmValidation": "passed",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    }
+  ]
+}

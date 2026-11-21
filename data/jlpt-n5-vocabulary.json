@@ -232,6 +232,10 @@
         "surface": "遊び",
         "reading": "あそび",
         "allowPartOfSpeechMismatch": true
+      },
+      {
+        "surface": "遊ばせ",
+        "reading": "あそばせ"
       }
     ]
   },
@@ -609,6 +613,10 @@
       {
         "surface": "行っ",
         "reading": "いっ"
+      },
+      {
+        "surface": "行け",
+        "reading": "いけ"
       }
     ],
     "partOfSpeech": "verb"
@@ -1327,7 +1335,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "inflections": [
+      {
+        "surface": "皿",
+        "reading": "さら"
+      }
+    ]
   },
   {
     "id": "vocab-ef16ea2db82e",
@@ -6073,7 +6087,19 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "inflections": [
+      {
+        "surface": "入ろう",
+        "reading": "はいろう",
+        "allowPartOfSpeechMismatch": true
+      },
+      {
+        "surface": "入り",
+        "reading": "はいり",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-39d2d353efa5",
@@ -6214,7 +6240,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "inflections": [
+      {
+        "surface": "働かさ",
+        "reading": "はたらかさ"
+      }
+    ]
   },
   {
     "id": "vocab-f6ed7c17c0d5",
@@ -9920,7 +9952,14 @@
     "topic": "feelings",
     "scope": "supplemental",
     "introducedAt": "n5",
-    "source": "curated-beginner-vocabulary"
+    "source": "curated-beginner-vocabulary",
+    "inflections": [
+      {
+        "surface": "怖がっ",
+        "reading": "こわがっ",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-efc517ea492c",
@@ -10760,7 +10799,8 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-5178598c5709",
@@ -11001,7 +11041,8 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-dd1a5d8063ce",
@@ -11142,7 +11183,14 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "adverb"
+    "partOfSpeech": "adverb",
+    "inflections": [
+      {
+        "surface": "最近",
+        "reading": "さいきん",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-238d8325791a",
@@ -13298,7 +13346,14 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "verb",
+    "inflections": [
+      {
+        "surface": "お知らせ",
+        "reading": "おしらせ",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-accb87bd0f3e",
@@ -13349,7 +13404,8 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-393cdfe8498b",
@@ -15602,7 +15658,8 @@
     "scope": "core",
     "introducedAt": "n4",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-52b6fa9e374a",

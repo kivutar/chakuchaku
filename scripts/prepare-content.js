@@ -205,7 +205,9 @@ function createVocabularyIndex(vocabulary) {
 
       if (existingMatchIndex === -1) {
         matches.push(indexedMatch);
-      } else if (form.preferReading && !matches[existingMatchIndex].preferReading) {
+      } else if (form.preferReading) {
+        // Explicit inflections follow variants and can refine their reading:
+        // お湯 is おゆ, while the dictionary headword 湯 is ゆ.
         matches[existingMatchIndex] = indexedMatch;
       }
 

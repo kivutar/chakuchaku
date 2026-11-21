@@ -12294,5 +12294,847 @@
         ]
       }
     ]
+  },
+  "n4-hurry-for-express": {
+    "translation": "Si nous nous dépêchons, nous devrions arriver à temps pour le train express de sept heures."
+  },
+  "production-n4-leave-early-for-transfer": {
+    "translation": "Comme je dois changer de train à la gare, je partirai un peu en avance.",
+    "promptVocabularyHints": [
+      {
+        "word": "changer",
+        "vocabularyIds": [
+          "vocab-f19d0a42f775"
+        ]
+      },
+      {
+        "word": "gare",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      },
+      {
+        "word": "partirai",
+        "vocabularyIds": [
+          "vocab-b2a9df4d0301"
+        ]
+      },
+      {
+        "word": "avance",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
+        ]
+      }
+    ]
+  },
+  "n4-apologize-for-wrong-time": {
+    "translation": "Je me suis trompé sur l’heure de notre rendez-vous, alors j’ai décidé de m’excuser auprès de mon ami."
+  },
+  "production-n4-hand-in-wallet": {
+    "translation": "Si vous ramassez un portefeuille, vous êtes censé l'apporter à la police.",
+    "promptVocabularyHints": [
+      {
+        "word": "portefeuille",
+        "vocabularyIds": [
+          "vocab-c5df4f2e7eab"
+        ]
+      },
+      {
+        "word": "ramassez",
+        "vocabularyIds": [
+          "vocab-14246fa81e12"
+        ]
+      },
+      {
+        "word": "police",
+        "vocabularyIds": [
+          "vocab-558625e0258a"
+        ]
+      },
+      {
+        "word": "apporter",
+        "vocabularyIds": [
+          "vocab-e94096ca5160"
+        ]
+      }
+    ]
+  },
+  "n4-earthquake-elevator-rule": {
+    "translation": "En cas de tremblement de terre, veillez à ne pas utiliser l'ascenseur."
+  },
+  "production-n4-tool-for-fine-cutting": {
+    "translation": "Cet outil est pratique pour couper les légumes en petits morceaux.",
+    "promptVocabularyHints": [
+      {
+        "word": "outil",
+        "vocabularyIds": [
+          "vocab-878b1c1a6272"
+        ]
+      },
+      {
+        "word": "légumes",
+        "vocabularyIds": [
+          "vocab-88763af54360"
+        ]
+      },
+      {
+        "word": "couper",
+        "vocabularyIds": [
+          "vocab-1ee90bf5d13a"
+        ]
+      },
+      {
+        "word": "petits",
+        "vocabularyIds": [
+          "vocab-78dfe6560a21"
+        ]
+      },
+      {
+        "word": "pratique",
+        "vocabularyIds": [
+          "vocab-7eeea113076f"
+        ]
+      }
+    ]
+  },
+  "n4-small-print-dictionary": {
+    "translation": "Les caractères de ce dictionnaire sont petits, alors il est difficile à lire."
+  },
+  "production-n4-book-inn-in-advance": {
+    "translation": "Si vous comptez séjourner dans une auberge japonaise, vous devriez réserver à l'avance.",
+    "promptVocabularyHints": [
+      {
+        "word": "auberge",
+        "vocabularyIds": [
+          "vocab-f6e600542563"
+        ]
+      },
+      {
+        "word": "séjourner",
+        "vocabularyIds": [
+          "vocab-6609da9af02c"
+        ]
+      },
+      {
+        "word": "réserver",
+        "vocabularyIds": [
+          "vocab-b7d9c4f1e563"
+        ]
+      },
+      {
+        "word": "avance",
+        "vocabularyIds": [
+          "vocab-317542d02c5e"
+        ]
+      }
+    ]
+  },
+  "n4-getting-used-to-town-life": {
+    "translation": "Je commence à m'habituer à la vie dans cette ville, alors chaque journée est agréable."
+  },
+  "production-n4-medicine-just-taken": {
+    "translation": "Je viens juste de prendre le médicament, alors j'ai encore de la fièvre.",
+    "promptVocabularyHints": [
+      {
+        "word": "médicament",
+        "vocabularyIds": [
+          "vocab-87bbe3de9902"
+        ]
+      },
+      {
+        "word": "prendre",
+        "vocabularyIds": [
+          "vocab-dcd3acd6b659"
+        ]
+      },
+      {
+        "word": "fièvre",
+        "vocabularyIds": [
+          "vocab-5737cdeed6f7"
+        ]
+      }
+    ]
+  },
+  "n4-broken-air-conditioning": {
+    "translation": "Même si la climatisation est en panne, je ne peux pas ouvrir la fenêtre."
+  },
+  "production-n4-accident-delays-meeting": {
+    "translation": "Je suis arrivé en retard à la réunion parce que le train s'est arrêté à cause d'un accident.",
+    "promptVocabularyHints": [
+      {
+        "word": "accident",
+        "vocabularyIds": [
+          "vocab-ce352e4f7862"
+        ]
+      },
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      },
+      {
+        "word": "arrêté",
+        "vocabularyIds": [
+          "vocab-bd365f430f35"
+        ]
+      },
+      {
+        "word": "réunion",
+        "vocabularyIds": [
+          "vocab-e47785e0c656"
+        ]
+      },
+      {
+        "word": "retard",
+        "vocabularyIds": [
+          "vocab-6762b46e5f55"
+        ]
+      }
+    ]
+  },
+  "n4-luggage-before-art-museum": {
+    "translation": "Après avoir laissé mes bagages en garde, je prévois de passer au musée d'art."
+  },
+  "production-n4-check-before-departure": {
+    "translation": "Avant notre départ, je vérifierai si nous n'avons rien oublié.",
+    "promptVocabularyHints": [
+      {
+        "word": "départ",
+        "vocabularyIds": [
+          "vocab-208c75c5154e"
+        ]
+      },
+      {
+        "word": "oublié",
+        "vocabularyIds": [
+          "vocab-1a16ba820f65"
+        ]
+      },
+      {
+        "word": "vérifierai",
+        "vocabularyIds": [
+          "vocab-00267c54cf8b"
+        ]
+      }
+    ]
+  },
+  "n4-typhoon-weather-report": {
+    "translation": "D'après les prévisions météo, le vent va se renforcer demain à cause du typhon."
+  },
+  "production-n4-grandmothers-wall-picture": {
+    "translation": "Il paraît que le dessin exposé au mur est celui que ma grand-mère a dessiné.",
+    "promptVocabularyHints": [
+      {
+        "word": "dessin",
+        "vocabularyIds": [
+          "vocab-1ec067551dd4"
+        ]
+      },
+      {
+        "word": "mur",
+        "vocabularyIds": [
+          "vocab-12b3aa7f9d18"
+        ]
+      },
+      {
+        "word": "exposé",
+        "vocabularyIds": [
+          "vocab-e555214f57b5"
+        ]
+      },
+      {
+        "word": "grand-mère",
+        "vocabularyIds": [
+          "vocab-df957e0341aa"
+        ]
+      },
+      {
+        "word": "dessiné",
+        "vocabularyIds": [
+          "vocab-40e15207ddda"
+        ]
+      }
+    ]
+  },
+  "n4-ring-in-desk-drawer": {
+    "translation": "La bague devrait être dans le tiroir du bureau."
+  },
+  "production-n4-button-with-gloves": {
+    "translation": "En gardant ses gants, il est difficile d’appuyer sur ce petit bouton.",
+    "promptVocabularyHints": [
+      {
+        "word": "gants",
+        "vocabularyIds": [
+          "vocab-20fc26e20fc1"
+        ]
+      },
+      {
+        "word": "bouton",
+        "vocabularyIds": [
+          "vocab-6e6aad33bc6f"
+        ]
+      },
+      {
+        "word": "petit",
+        "vocabularyIds": [
+          "vocab-769a80524957"
+        ]
+      },
+      {
+        "word": "appuyer",
+        "vocabularyIds": [
+          "vocab-f49763b8a94b"
+        ]
+      }
+    ]
+  },
+  "n4-finish-vegetables-before-boiling": {
+    "translation": "D’ici à ce que l’eau se mette à bouillir, j’aurai probablement fini de laver les légumes."
+  },
+  "production-n4-wooden-doll-from-grandfather": {
+    "translation": "Cette poupée est en bois, et mon grand-père l'a fabriquée pour moi.",
+    "promptVocabularyHints": [
+      {
+        "word": "poupée",
+        "vocabularyIds": [
+          "vocab-4b6b3e6fd427"
+        ]
+      },
+      {
+        "word": "bois",
+        "vocabularyIds": [
+          "vocab-a5d390dc4805"
+        ]
+      },
+      {
+        "word": "grand-père",
+        "vocabularyIds": [
+          "vocab-3b05ac1772db"
+        ]
+      },
+      {
+        "word": "fabriquée",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      }
+    ]
+  },
+  "n4-paper-from-old-newspapers": {
+    "translation": "On m'a dit que ce papier est fabriqué à partir de vieux journaux."
+  },
+  "production-n4-study-trade-for-future": {
+    "translation": "J'étudie actuellement le commerce pour travailler à l'étranger à l'avenir.",
+    "promptVocabularyHints": [
+      {
+        "word": "avenir",
+        "vocabularyIds": [
+          "vocab-5118dfe23709"
+        ]
+      },
+      {
+        "word": "commerce",
+        "vocabularyIds": [
+          "vocab-5f0e2bf0ea23"
+        ]
+      },
+      {
+        "word": "travailler",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
+        ]
+      },
+      {
+        "word": "étranger",
+        "vocabularyIds": [
+          "vocab-8aa646a4debc"
+        ]
+      },
+      {
+        "word": "étudie",
+        "vocabularyIds": [
+          "vocab-15863d9e899d"
+        ]
+      }
+    ]
+  },
+  "n4-dictionary-for-pronunciation": {
+    "translation": "Avec ce dictionnaire, il devrait être facile de trouver la bonne prononciation."
+  },
+  "production-n4-suitcase-light-push": {
+    "translation": "Il suffit de pousser légèrement cette valise avec un doigt pour qu'elle avance.",
+    "promptVocabularyHints": [
+      {
+        "word": "valise",
+        "vocabularyIds": [
+          "vocab-c406fe8bfa49"
+        ]
+      },
+      {
+        "word": "doigt",
+        "vocabularyIds": [
+          "vocab-293244e6fc0c"
+        ]
+      },
+      {
+        "word": "pousser",
+        "vocabularyIds": [
+          "vocab-f49763b8a94b"
+        ]
+      },
+      {
+        "word": "légèrement",
+        "vocabularyIds": [
+          "vocab-463ea6ce108e"
+        ]
+      },
+      {
+        "word": "avance",
+        "vocabularyIds": [
+          "vocab-247b87990016"
+        ]
+      }
+    ]
+  },
+  "n4-no-paper-for-gift": {
+    "translation": "Quand j'ai voulu emballer le cadeau, je me suis rendu compte qu'il n'y avait pas de papier."
+  },
+  "production-n4-inn-shoes-rule": {
+    "translation": "Dans cette auberge japonaise, il faut enlever ses chaussures avant d’entrer dans la chambre.",
+    "promptVocabularyHints": [
+      {
+        "word": "auberge",
+        "vocabularyIds": [
+          "vocab-f6e600542563"
+        ]
+      },
+      {
+        "word": "chambre",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "chaussures",
+        "vocabularyIds": [
+          "vocab-d2110e85159b"
+        ]
+      },
+      {
+        "word": "enlever",
+        "vocabularyIds": [
+          "vocab-0954522e1764"
+        ]
+      },
+      {
+        "word": "entrer",
+        "vocabularyIds": [
+          "vocab-82a114897d9c"
+        ]
+      }
+    ]
+  },
+  "n4-childhood-festival-dancing": {
+    "translation": "Quand j'étais enfant, j'attendais avec impatience de danser aux fêtes traditionnelles."
+  },
+  "production-n4-diary-builds-confidence": {
+    "translation": "J’ai continué à tenir un journal en japonais, alors j’ai davantage confiance en moi qu’avant.",
+    "promptVocabularyHints": [
+      {
+        "word": "journal",
+        "vocabularyIds": [
+          "vocab-b6df2b21dd5c"
+        ]
+      },
+      {
+        "word": "tenir",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "confiance",
+        "vocabularyIds": [
+          "vocab-310771e3065b"
+        ]
+      },
+      {
+        "word": "japonais",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      }
+    ]
+  },
+  "n4-plan-without-advice": {
+    "translation": "Je n’avais personne à qui demander conseil, alors je me suis retrouvé à devoir décider du programme seul."
+  },
+  "production-n4-regret-after-match": {
+    "translation": "J’ai perdu le match, alors j’ai pensé que j’aurais dû m’entraîner davantage.",
+    "promptVocabularyHints": [
+      {
+        "word": "match",
+        "vocabularyIds": [
+          "vocab-410b73381c41"
+        ]
+      },
+      {
+        "word": "perdu",
+        "vocabularyIds": [
+          "vocab-8c52920802b4"
+        ]
+      },
+      {
+        "word": "entraîner",
+        "vocabularyIds": [
+          "vocab-0a5beae1698c"
+        ]
+      },
+      {
+        "word": "pensé",
+        "vocabularyIds": [
+          "vocab-c64ca071011e"
+        ]
+      }
+    ]
+  },
+  "n4-children-afraid-of-dark-room": {
+    "translation": "Les enfants avaient peur et ne voulaient pas essayer d'entrer dans la pièce sombre."
+  },
+  "production-n4-quiet-for-sleeping-baby": {
+    "translation": "Le bébé dort, alors j'aimerais que vous ne fassiez pas de bruit fort.",
+    "promptVocabularyHints": [
+      {
+        "word": "bébé",
+        "vocabularyIds": [
+          "vocab-10791214b2c9"
+        ]
+      },
+      {
+        "word": "dort",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "bruit",
+        "vocabularyIds": [
+          "vocab-b37750755344"
+        ]
+      },
+      {
+        "word": "fort",
+        "vocabularyIds": [
+          "vocab-ef06b1815ddd"
+        ]
+      },
+      {
+        "word": "fassiez",
+        "vocabularyIds": [
+          "vocab-a001b24baf12"
+        ]
+      }
+    ]
+  },
+  "n4-lake-looks-shallow": {
+    "translation": "Ce lac a l'air peu profond, mais il est peut-être profond là-bas."
+  },
+  "production-n4-play-after-meal": {
+    "translation": "J'ai décidé de ne pas laisser mon enfant jouer dehors avant la fin du repas.",
+    "promptVocabularyHints": [
+      {
+        "word": "repas",
+        "vocabularyIds": [
+          "vocab-399ca48876cc"
+        ]
+      },
+      {
+        "word": "enfant",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
+      {
+        "word": "jouer",
+        "vocabularyIds": [
+          "vocab-58a04652246f"
+        ]
+      },
+      {
+        "word": "dehors",
+        "vocabularyIds": [
+          "vocab-6109638dac53"
+        ]
+      },
+      {
+        "word": "fin",
+        "vocabularyIds": [
+          "vocab-e657b2e7330e"
+        ]
+      }
+    ]
+  },
+  "n4-name-at-venue-reception": {
+    "translation": "Quand vous arrivez sur le lieu de l'événement, vous devez donner votre nom à l'accueil."
+  },
+  "production-n4-kind-clerk-praised": {
+    "translation": "L’employé de ce magasin est toujours aimable, alors il est complimenté par les clients.",
+    "promptVocabularyHints": [
+      {
+        "word": "magasin",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      },
+      {
+        "word": "employé",
+        "vocabularyIds": [
+          "vocab-2a1053878f8a"
+        ]
+      },
+      {
+        "word": "aimable",
+        "vocabularyIds": [
+          "vocab-c2cec306f5c4"
+        ]
+      },
+      {
+        "word": "clients",
+        "vocabularyIds": [
+          "vocab-9c6064a751f5"
+        ]
+      },
+      {
+        "word": "complimenté",
+        "vocabularyIds": [
+          "vocab-46d460451e75"
+        ]
+      }
+    ]
+  },
+  "n4-plate-fell-during-earthquake": {
+    "translation": "Pendant le tremblement de terre, une assiette est tombée de l'étagère et s'est cassée sur le sol."
+  },
+  "production-n4-cold-from-open-window": {
+    "translation": "J'ai dormi en laissant la fenêtre ouverte, alors mon corps s'est refroidi.",
+    "promptVocabularyHints": [
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      },
+      {
+        "word": "ouverte",
+        "vocabularyIds": [
+          "vocab-658ff53bc114"
+        ]
+      },
+      {
+        "word": "dormi",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "corps",
+        "vocabularyIds": [
+          "vocab-6e098e54aa63"
+        ]
+      },
+      {
+        "word": "refroidi",
+        "vocabularyIds": [
+          "vocab-74bdf22124ea"
+        ]
+      }
+    ]
+  },
+  "n4-do-not-touch-broken-glass": {
+    "translation": "Si la vitre se casse, ne la touchez pas, car c'est dangereux."
+  },
+  "production-n4-forced-to-work-lunch-break": {
+    "translation": "J’ai été obligé par mon chef de service de travailler même pendant ma pause déjeuner.",
+    "promptVocabularyHints": [
+      {
+        "word": "chef",
+        "vocabularyIds": [
+          "vocab-435c68c810fe"
+        ]
+      },
+      {
+        "word": "déjeuner",
+        "vocabularyIds": [
+          "vocab-385a4dbb8d14"
+        ]
+      },
+      {
+        "word": "travailler",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
+        ]
+      }
+    ]
+  },
+  "n4-exhibition-map-at-entrance": {
+    "translation": "Si vous allez à l'exposition, veuillez consulter le plan qui est placé à l'entrée."
+  },
+  "production-n4-polite-venue-registration": {
+    "translation": "Avant d'entrer dans la salle, veuillez écrire votre nom à l'accueil.",
+    "promptVocabularyHints": [
+      {
+        "word": "salle",
+        "vocabularyIds": [
+          "vocab-3f2f923c2a59"
+        ]
+      },
+      {
+        "word": "entrer",
+        "vocabularyIds": [
+          "vocab-82a114897d9c"
+        ]
+      },
+      {
+        "word": "accueil",
+        "vocabularyIds": [
+          "vocab-fb32fba0846c"
+        ]
+      },
+      {
+        "word": "nom",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      },
+      {
+        "word": "écrire",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      }
+    ]
+  },
+  "n4-teacher-corrected-composition": {
+    "translation": "Mon professeur a eu la gentillesse de corriger ma rédaction, alors j’ai bien compris comment écrire correctement."
+  },
+  "production-n4-polite-home-visit": {
+    "translation": "Si cela vous convient, je passerai chez vous dans l'après-midi.",
+    "promptVocabularyHints": [
+      {
+        "word": "convient",
+        "vocabularyIds": [
+          "vocab-7b97771af3dc"
+        ]
+      },
+      {
+        "word": "chez",
+        "vocabularyIds": [
+          "vocab-b6b3f5d2ec09"
+        ]
+      },
+      {
+        "word": "passerai",
+        "vocabularyIds": [
+          "vocab-5f3a8d4d0dd6"
+        ]
+      },
+      {
+        "word": "après-midi",
+        "vocabularyIds": [
+          "vocab-3e1bdafed48a"
+        ]
+      }
+    ]
+  },
+  "n4-missed-kind-invitation": {
+    "translation": "Malgré votre aimable invitation, je n'ai pas pu venir parce que j'ai eu de la fièvre."
+  },
+  "production-n4-thanks-for-appointment-time": {
+    "translation": "Merci de m'avoir indiqué l'heure de notre rendez-vous.",
+    "promptVocabularyHints": [
+      {
+        "word": "rendez-vous",
+        "vocabularyIds": [
+          "vocab-c8b78a5bde6a"
+        ]
+      },
+      {
+        "word": "heure",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
+        ]
+      },
+      {
+        "word": "indiqué",
+        "vocabularyIds": [
+          "vocab-d7cd17a83e55"
+        ]
+      }
+    ]
+  },
+  "n4-everyone-follows-strict-rules": {
+    "translation": "Même si les règles sont strictes, nous faisons tous l'effort de les respecter."
+  },
+  "production-n4-notify-travel-plans": {
+    "translation": "Dès que nos projets de voyage seront fixés, je vous en informerai aussitôt.",
+    "promptVocabularyHints": [
+      {
+        "word": "voyage",
+        "vocabularyIds": [
+          "vocab-2e3ba98d2367"
+        ]
+      },
+      {
+        "word": "projets",
+        "vocabularyIds": [
+          "vocab-1b1b5806b28b"
+        ]
+      },
+      {
+        "word": "fixés",
+        "vocabularyIds": [
+          "vocab-6c1bd8b09d2e"
+        ]
+      },
+      {
+        "word": "informerai",
+        "vocabularyIds": [
+          "vocab-d7cd17a83e55"
+        ]
+      },
+      {
+        "word": "aussitôt",
+        "vocabularyIds": [
+          "vocab-86f4d5b7a565"
+        ]
+      }
+    ]
+  },
+  "n4-island-population-rumor": {
+    "translation": "D'après un voisin, il paraît que la population de cette île augmente ces derniers temps."
+  },
+  "production-n4-joke-made-someone-angry": {
+    "translation": "C’était une plaisanterie, mais j’ai fini par mettre l’autre personne en colère.",
+    "promptVocabularyHints": [
+      {
+        "word": "plaisanterie",
+        "vocabularyIds": [
+          "vocab-b621cfcf6239"
+        ]
+      },
+      {
+        "word": "personne",
+        "vocabularyIds": [
+          "vocab-16019d9a9007"
+        ]
+      },
+      {
+        "word": "colère",
+        "vocabularyIds": [
+          "vocab-cdf37b09dc6a"
+        ]
+      }
+    ]
   }
 }

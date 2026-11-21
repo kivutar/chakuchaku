@@ -127,8 +127,12 @@ the N5 curricula published by Bunpro, JLPT Sensei, and Yatta. `boundary` keeps
 useful points that sources variously place at N5 or N4 without presenting them
 as undisputed N5 requirements.
 
-The live N4 slice contains 97 high-value points and 467 independently authored
+The live N4 slice contains 97 high-value points and 517 independently authored
 recognition and production exercises, plus exercises borrowed from N4 stories.
+The latest 50 exercises practice 111 N4 vocabulary entries, including 104 that
+previously appeared in at most one grammar exercise. Their separate sentence,
+translation, hint, and audio review is recorded in
+[`n4-grammar-practice-review-2026-11-20.json`](source/n4-grammar-practice-review-2026-11-20.json).
 An N4 story can reuse N5 vocabulary and grammar: its borrowed exercises retain
 the story's N4 minimum level even when an individual sentence uses only N5 points.
 Alongside the original volitional,

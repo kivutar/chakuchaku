@@ -24050,5 +24050,1330 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n4-hurry-for-express",
+    "minimumLevel": "n4",
+    "text": "急げば、七時の急行に間に合うはずです。",
+    "solution": "If we hurry, we should be in time for the seven o'clock express train.",
+    "grammarPointIds": [
+      "ba-conditional",
+      "hazu-da"
+    ],
+    "tokenOverrides": {
+      "七": {
+        "reading": "しち"
+      }
+    },
+    "speechText": "急げば、しちじの急行に間に合うはずです。"
+  },
+  {
+    "id": "production-n4-leave-early-for-transfer",
+    "minimumLevel": "n4",
+    "text": "Because I need to change trains at the station, I will leave a little early.",
+    "solution": "駅で乗り換える必要があるので、少し早く出ます。",
+    "grammarPointIds": [
+      "hitsuyou-ga-aru",
+      "node-reason"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "change",
+        "vocabularyIds": [
+          "vocab-f19d0a42f775"
+        ]
+      },
+      {
+        "word": "station",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      },
+      {
+        "word": "leave",
+        "vocabularyIds": [
+          "vocab-b2a9df4d0301"
+        ]
+      },
+      {
+        "word": "early",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-apologize-for-wrong-time",
+    "minimumLevel": "n4",
+    "text": "約束の時間を間違えてしまったので、友達に謝ることにしました。",
+    "solution": "I got the time of our appointment wrong, so I decided to apologize to my friend.",
+    "grammarPointIds": [
+      "te-shimau",
+      "node-reason",
+      "koto-ni-suru"
+    ]
+  },
+  {
+    "id": "production-n4-hand-in-wallet",
+    "minimumLevel": "n4",
+    "text": "If you pick up a wallet, you are supposed to take it to the police.",
+    "solution": "財布を拾ったら、警察に届けることになっています。",
+    "grammarPointIds": [
+      "tara-conditional",
+      "koto-ni-natteiru"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "wallet",
+        "vocabularyIds": [
+          "vocab-c5df4f2e7eab"
+        ]
+      },
+      {
+        "word": "pick",
+        "vocabularyIds": [
+          "vocab-14246fa81e12"
+        ]
+      },
+      {
+        "word": "police",
+        "vocabularyIds": [
+          "vocab-558625e0258a"
+        ]
+      },
+      {
+        "word": "take",
+        "vocabularyIds": [
+          "vocab-e94096ca5160"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-earthquake-elevator-rule",
+    "minimumLevel": "n4",
+    "text": "地震の場合は、エレベーターを使わないようにしてください。",
+    "solution": "In the event of an earthquake, please make sure not to use the elevator.",
+    "grammarPointIds": [
+      "baai-wa",
+      "you-ni-suru"
+    ]
+  },
+  {
+    "id": "production-n4-tool-for-fine-cutting",
+    "minimumLevel": "n4",
+    "text": "This tool is useful for cutting vegetables into small pieces.",
+    "solution": "この道具は野菜を細かく切るのに便利です。",
+    "grammarPointIds": [
+      "noni-purpose",
+      "i-adjective-adverb"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "tool",
+        "vocabularyIds": [
+          "vocab-878b1c1a6272"
+        ]
+      },
+      {
+        "word": "vegetables",
+        "vocabularyIds": [
+          "vocab-88763af54360"
+        ]
+      },
+      {
+        "word": "cutting",
+        "vocabularyIds": [
+          "vocab-1ee90bf5d13a"
+        ]
+      },
+      {
+        "word": "small",
+        "vocabularyIds": [
+          "vocab-78dfe6560a21"
+        ]
+      },
+      {
+        "word": "useful",
+        "vocabularyIds": [
+          "vocab-7eeea113076f"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-small-print-dictionary",
+    "minimumLevel": "n4",
+    "text": "この辞典は字が細かくて、読みにくいです。",
+    "solution": "The print in this dictionary is small, so it is difficult to read.",
+    "grammarPointIds": [
+      "nikui",
+      "te-de-cause"
+    ],
+    "tokenOverrides": {
+      "にくい": {
+        "category": "auxiliary"
+      }
+    }
+  },
+  {
+    "id": "production-n4-book-inn-in-advance",
+    "minimumLevel": "n4",
+    "text": "If you are going to stay at a Japanese inn, you should make a reservation in advance.",
+    "solution": "旅館に泊まるなら、先に予約しておいたほうがいいです。",
+    "grammarPointIds": [
+      "nara-conditional",
+      "te-oku",
+      "hou-ga-ii-advice"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "inn",
+        "vocabularyIds": [
+          "vocab-f6e600542563"
+        ]
+      },
+      {
+        "word": "stay",
+        "vocabularyIds": [
+          "vocab-6609da9af02c"
+        ]
+      },
+      {
+        "word": "reservation",
+        "vocabularyIds": [
+          "vocab-b7d9c4f1e563"
+        ]
+      },
+      {
+        "word": "advance",
+        "vocabularyIds": [
+          "vocab-317542d02c5e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-getting-used-to-town-life",
+    "minimumLevel": "n4",
+    "text": "この町の生活に慣れてきたので、毎日が楽しいです。",
+    "solution": "I have been getting used to life in this town, so I enjoy every day.",
+    "grammarPointIds": [
+      "te-kuru",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-n4-medicine-just-taken",
+    "minimumLevel": "n4",
+    "text": "I have only just taken the medicine, so I still have a fever.",
+    "solution": "薬を飲んだばかりなので、まだ熱があります。",
+    "grammarPointIds": [
+      "ta-bakari",
+      "node-reason"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "medicine",
+        "vocabularyIds": [
+          "vocab-87bbe3de9902"
+        ]
+      },
+      {
+        "word": "taken",
+        "vocabularyIds": [
+          "vocab-dcd3acd6b659"
+        ]
+      },
+      {
+        "word": "fever",
+        "vocabularyIds": [
+          "vocab-5737cdeed6f7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-broken-air-conditioning",
+    "minimumLevel": "n4",
+    "text": "冷房が故障しているのに、窓を開けられません。",
+    "solution": "Even though the air conditioning is broken, I cannot open the window.",
+    "grammarPointIds": [
+      "noni-concession",
+      "potential-form"
+    ],
+    "tokenOverrides": {
+      "られ": {
+        "category": "auxiliary"
+      }
+    }
+  },
+  {
+    "id": "production-n4-accident-delays-meeting",
+    "minimumLevel": "n4",
+    "text": "I was late for the meeting because the train stopped due to an accident.",
+    "solution": "事故で電車が止まったために、会議に遅れました。",
+    "grammarPointIds": [
+      "tame-ni-cause"
+    ],
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "accident",
+        "vocabularyIds": [
+          "vocab-ce352e4f7862"
+        ]
+      },
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      },
+      {
+        "word": "stopped",
+        "vocabularyIds": [
+          "vocab-bd365f430f35"
+        ]
+      },
+      {
+        "word": "meeting",
+        "vocabularyIds": [
+          "vocab-e47785e0c656"
+        ]
+      },
+      {
+        "word": "late",
+        "vocabularyIds": [
+          "vocab-6762b46e5f55"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-luggage-before-art-museum",
+    "minimumLevel": "n4",
+    "text": "荷物を預けてから、美術館に寄る予定です。",
+    "solution": "After leaving my luggage for safekeeping, I plan to stop by the art museum.",
+    "grammarPointIds": [
+      "te-kara",
+      "yotei-da"
+    ]
+  },
+  {
+    "id": "production-n4-check-before-departure",
+    "minimumLevel": "n4",
+    "text": "Before we leave, I will check whether we have forgotten anything.",
+    "solution": "出発する前に、忘れ物がないかどうか確認しておきます。",
+    "grammarPointIds": [
+      "mae-ni",
+      "ka-dou-ka",
+      "te-oku"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "leave",
+        "vocabularyIds": [
+          "vocab-208c75c5154e"
+        ]
+      },
+      {
+        "word": "forgotten",
+        "vocabularyIds": [
+          "vocab-1a16ba820f65"
+        ]
+      },
+      {
+        "word": "check",
+        "vocabularyIds": [
+          "vocab-00267c54cf8b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-typhoon-weather-report",
+    "minimumLevel": "n4",
+    "text": "天気予報では、明日は台風のために風が強くなるそうです。",
+    "solution": "According to the weather forecast, the wind will get stronger tomorrow because of the typhoon.",
+    "grammarPointIds": [
+      "tame-ni-cause",
+      "sou-hearsay"
+    ],
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    }
+  },
+  {
+    "id": "production-n4-grandmothers-wall-picture",
+    "minimumLevel": "n4",
+    "text": "Apparently, the picture displayed on the wall is one my grandmother drew.",
+    "solution": "壁に飾ってある絵は、祖母が描いたものらしいです。",
+    "grammarPointIds": [
+      "te-aru-result-state",
+      "relative-clause",
+      "rashii"
+    ],
+    "tokenOverrides": {
+      "もの": {
+        "category": "auxiliary"
+      }
+    },
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "picture",
+        "vocabularyIds": [
+          "vocab-1ec067551dd4"
+        ]
+      },
+      {
+        "word": "wall",
+        "vocabularyIds": [
+          "vocab-12b3aa7f9d18"
+        ]
+      },
+      {
+        "word": "displayed",
+        "vocabularyIds": [
+          "vocab-e555214f57b5"
+        ]
+      },
+      {
+        "word": "grandmother",
+        "vocabularyIds": [
+          "vocab-df957e0341aa"
+        ]
+      },
+      {
+        "word": "drew",
+        "vocabularyIds": [
+          "vocab-40e15207ddda"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-ring-in-desk-drawer",
+    "minimumLevel": "n4",
+    "text": "机の引き出しに指輪が入っているはずです。",
+    "solution": "The ring should be in the desk drawer.",
+    "grammarPointIds": [
+      "hazu-da",
+      "te-iru-result-state"
+    ]
+  },
+  {
+    "id": "production-n4-button-with-gloves",
+    "minimumLevel": "n4",
+    "text": "With gloves still on, this small button is hard to press.",
+    "solution": "手袋をしたままでは、この小さいボタンは押しづらいです。",
+    "grammarPointIds": [
+      "mama",
+      "zurai"
+    ],
+    "tokenOverrides": {
+      "まま": {
+        "category": "auxiliary"
+      },
+      "づらい": {
+        "category": "auxiliary"
+      }
+    },
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "gloves",
+        "vocabularyIds": [
+          "vocab-20fc26e20fc1"
+        ]
+      },
+      {
+        "word": "button",
+        "vocabularyIds": [
+          "vocab-6e6aad33bc6f"
+        ]
+      },
+      {
+        "word": "small",
+        "vocabularyIds": [
+          "vocab-769a80524957"
+        ]
+      },
+      {
+        "word": "press",
+        "vocabularyIds": [
+          "vocab-f49763b8a94b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-finish-vegetables-before-boiling",
+    "minimumLevel": "n4",
+    "text": "お湯が沸くまでに、野菜を洗い終わるでしょう。",
+    "solution": "I will probably finish washing the vegetables by the time the water boils.",
+    "grammarPointIds": [
+      "made-ni",
+      "stem-owaru",
+      "deshou-darou"
+    ]
+  },
+  {
+    "id": "production-n4-wooden-doll-from-grandfather",
+    "minimumLevel": "n4",
+    "text": "This doll is made of wood, and my grandfather made it for me.",
+    "solution": "この人形は木でできていて、祖父が作ってくれました。",
+    "grammarPointIds": [
+      "material-de",
+      "te-kureru"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "doll",
+        "vocabularyIds": [
+          "vocab-4b6b3e6fd427"
+        ]
+      },
+      {
+        "word": "wood",
+        "vocabularyIds": [
+          "vocab-a5d390dc4805"
+        ]
+      },
+      {
+        "word": "grandfather",
+        "vocabularyIds": [
+          "vocab-3b05ac1772db"
+        ]
+      },
+      {
+        "word": "made",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-paper-from-old-newspapers",
+    "minimumLevel": "n4",
+    "text": "この紙は古い新聞から作られているそうです。",
+    "solution": "I hear that this paper is made from old newspapers.",
+    "grammarPointIds": [
+      "material-kara",
+      "passive-form",
+      "sou-hearsay"
+    ],
+    "tokenOverrides": {
+      "れ": {
+        "category": "auxiliary"
+      }
+    }
+  },
+  {
+    "id": "production-n4-study-trade-for-future",
+    "minimumLevel": "n4",
+    "text": "I am studying trade now so that I can work abroad in the future.",
+    "solution": "将来、外国で働くために、今は貿易の勉強をしています。",
+    "grammarPointIds": [
+      "tame-ni-purpose",
+      "te-iru-progressive"
+    ],
+    "tokenOverrides": {
+      "ため": {
+        "category": "auxiliary"
+      }
+    },
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "future",
+        "vocabularyIds": [
+          "vocab-5118dfe23709"
+        ]
+      },
+      {
+        "word": "trade",
+        "vocabularyIds": [
+          "vocab-5f0e2bf0ea23"
+        ]
+      },
+      {
+        "word": "work",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
+        ]
+      },
+      {
+        "word": "abroad",
+        "vocabularyIds": [
+          "vocab-8aa646a4debc"
+        ]
+      },
+      {
+        "word": "studying",
+        "vocabularyIds": [
+          "vocab-15863d9e899d"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-dictionary-for-pronunciation",
+    "minimumLevel": "n4",
+    "text": "この辞典なら、正しい発音を調べやすいはずです。",
+    "solution": "With this dictionary, it should be easy to look up the correct pronunciation.",
+    "grammarPointIds": [
+      "nara-conditional",
+      "yasui",
+      "hazu-da"
+    ],
+    "tokenOverrides": {
+      "やすい": {
+        "category": "auxiliary"
+      }
+    }
+  },
+  {
+    "id": "production-n4-suitcase-light-push",
+    "minimumLevel": "n4",
+    "text": "This suitcase moves with just a light push of a finger.",
+    "solution": "このスーツケースは、指で軽く押すだけで動きます。",
+    "grammarPointIds": [
+      "dake-de",
+      "i-adjective-adverb"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "suitcase",
+        "vocabularyIds": [
+          "vocab-c406fe8bfa49"
+        ]
+      },
+      {
+        "word": "finger",
+        "vocabularyIds": [
+          "vocab-293244e6fc0c"
+        ]
+      },
+      {
+        "word": "push",
+        "vocabularyIds": [
+          "vocab-f49763b8a94b"
+        ]
+      },
+      {
+        "word": "light",
+        "vocabularyIds": [
+          "vocab-463ea6ce108e"
+        ]
+      },
+      {
+        "word": "moves",
+        "vocabularyIds": [
+          "vocab-247b87990016"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-no-paper-for-gift",
+    "minimumLevel": "n4",
+    "text": "贈り物を包もうとしたとき、紙がないことに気づきました。",
+    "solution": "When I tried to wrap the gift, I realized that there was no paper.",
+    "grammarPointIds": [
+      "you-to-suru",
+      "toki",
+      "koto-nominalizer"
+    ]
+  },
+  {
+    "id": "production-n4-inn-shoes-rule",
+    "minimumLevel": "n4",
+    "text": "At the Japanese inn, you are supposed to take off your shoes before entering the room.",
+    "solution": "旅館では、部屋に入る前に靴を脱ぐことになっています。",
+    "grammarPointIds": [
+      "koto-ni-natteiru",
+      "mae-ni"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "inn",
+        "vocabularyIds": [
+          "vocab-f6e600542563"
+        ]
+      },
+      {
+        "word": "room",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "shoes",
+        "vocabularyIds": [
+          "vocab-d2110e85159b"
+        ]
+      },
+      {
+        "word": "take",
+        "vocabularyIds": [
+          "vocab-0954522e1764"
+        ]
+      },
+      {
+        "word": "entering",
+        "vocabularyIds": [
+          "vocab-82a114897d9c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-childhood-festival-dancing",
+    "minimumLevel": "n4",
+    "text": "子供の頃は、お祭りで踊るのが楽しみでした。",
+    "solution": "When I was a child, I looked forward to dancing at festivals.",
+    "grammarPointIds": [
+      "koro",
+      "no-nominalizer"
+    ],
+    "tokenOverrides": {
+      "頃": {
+        "category": "auxiliary"
+      }
+    },
+    "speechText": "こどものころは、おまつりでおどるのがたのしみでした。"
+  },
+  {
+    "id": "production-n4-diary-builds-confidence",
+    "minimumLevel": "n4",
+    "text": "I have kept writing a diary in Japanese, so I have more confidence than before.",
+    "solution": "日本語で日記を書き続けたので、前より自信があります。",
+    "grammarPointIds": [
+      "stem-tsuzukeru",
+      "node-reason",
+      "yori-comparison"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "diary",
+        "vocabularyIds": [
+          "vocab-b6df2b21dd5c"
+        ]
+      },
+      {
+        "word": "writing",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "confidence",
+        "vocabularyIds": [
+          "vocab-310771e3065b"
+        ]
+      },
+      {
+        "word": "Japanese",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-plan-without-advice",
+    "minimumLevel": "n4",
+    "text": "相談する相手がいなくて、一人で計画を決めることになりました。",
+    "solution": "There was no one to consult, so I ended up having to decide on the plan on my own.",
+    "grammarPointIds": [
+      "nakute-connective",
+      "koto-ni-naru"
+    ]
+  },
+  {
+    "id": "production-n4-regret-after-match",
+    "minimumLevel": "n4",
+    "text": "I lost the match, so I thought I should have practiced more.",
+    "solution": "試合に負けたので、もっと練習すればよかったと思いました。",
+    "grammarPointIds": [
+      "ba-yokatta",
+      "to-omou",
+      "node-reason"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "match",
+        "vocabularyIds": [
+          "vocab-410b73381c41"
+        ]
+      },
+      {
+        "word": "lost",
+        "vocabularyIds": [
+          "vocab-8c52920802b4"
+        ]
+      },
+      {
+        "word": "practiced",
+        "vocabularyIds": [
+          "vocab-0a5beae1698c"
+        ]
+      },
+      {
+        "word": "thought",
+        "vocabularyIds": [
+          "vocab-c64ca071011e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-children-afraid-of-dark-room",
+    "minimumLevel": "n4",
+    "text": "子供たちは怖がって、暗い部屋に入ろうとしませんでした。",
+    "solution": "The children were scared and would not try to enter the dark room.",
+    "grammarPointIds": [
+      "garu",
+      "you-to-suru"
+    ]
+  },
+  {
+    "id": "production-n4-quiet-for-sleeping-baby",
+    "minimumLevel": "n4",
+    "text": "The baby is sleeping, so I would like you not to make loud noises.",
+    "solution": "赤ちゃんが寝ているので、大きな音を出さないでほしいです。",
+    "grammarPointIds": [
+      "te-hoshii",
+      "node-reason"
+    ],
+    "tokenOverrides": {
+      "ほしい": {
+        "category": "auxiliary"
+      }
+    },
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "baby",
+        "vocabularyIds": [
+          "vocab-10791214b2c9"
+        ]
+      },
+      {
+        "word": "sleeping",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "noises",
+        "vocabularyIds": [
+          "vocab-b37750755344"
+        ]
+      },
+      {
+        "word": "loud",
+        "vocabularyIds": [
+          "vocab-ef06b1815ddd"
+        ]
+      },
+      {
+        "word": "make",
+        "vocabularyIds": [
+          "vocab-a001b24baf12"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-lake-looks-shallow",
+    "minimumLevel": "n4",
+    "text": "この湖は浅そうに見えますが、あそこは深いかもしれません。",
+    "solution": "This lake looks shallow, but it may be deep over there.",
+    "grammarPointIds": [
+      "sou-modifier",
+      "kamoshirenai"
+    ]
+  },
+  {
+    "id": "production-n4-play-after-meal",
+    "minimumLevel": "n4",
+    "text": "I decided not to let my child play outside until the meal was over.",
+    "solution": "食事が済むまで、子供を外で遊ばせないことにしました。",
+    "grammarPointIds": [
+      "causative-form",
+      "koto-ni-suru",
+      "made-end"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "meal",
+        "vocabularyIds": [
+          "vocab-399ca48876cc"
+        ]
+      },
+      {
+        "word": "child",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
+      {
+        "word": "play",
+        "vocabularyIds": [
+          "vocab-58a04652246f"
+        ]
+      },
+      {
+        "word": "outside",
+        "vocabularyIds": [
+          "vocab-6109638dac53"
+        ]
+      },
+      {
+        "word": "over",
+        "vocabularyIds": [
+          "vocab-e657b2e7330e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-name-at-venue-reception",
+    "minimumLevel": "n4",
+    "text": "会場に着いたら、受付で名前を伝える必要があります。",
+    "solution": "When you arrive at the venue, you need to give your name at reception.",
+    "grammarPointIds": [
+      "tara-conditional",
+      "hitsuyou-ga-aru"
+    ]
+  },
+  {
+    "id": "production-n4-kind-clerk-praised",
+    "minimumLevel": "n4",
+    "text": "That shop’s clerk is always kind, so they are praised by customers.",
+    "solution": "あの店の店員はいつも親切なので、客に褒められています。",
+    "grammarPointIds": [
+      "passive-form",
+      "node-reason"
+    ],
+    "tokenOverrides": {
+      "られ": {
+        "category": "auxiliary"
+      }
+    },
+    "speechText": "あのみせのてんいんはいつもしんせつなので、きゃくにほめられています。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "shop",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      },
+      {
+        "word": "clerk",
+        "vocabularyIds": [
+          "vocab-2a1053878f8a"
+        ]
+      },
+      {
+        "word": "kind",
+        "vocabularyIds": [
+          "vocab-c2cec306f5c4"
+        ]
+      },
+      {
+        "word": "customers",
+        "vocabularyIds": [
+          "vocab-9c6064a751f5"
+        ]
+      },
+      {
+        "word": "praised",
+        "vocabularyIds": [
+          "vocab-46d460451e75"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-plate-fell-during-earthquake",
+    "minimumLevel": "n4",
+    "text": "地震のとき、棚から落ちてきた皿が床で割れました。",
+    "solution": "During the earthquake, a plate fell from the shelf and broke on the floor.",
+    "grammarPointIds": [
+      "te-kuru",
+      "relative-clause",
+      "toki"
+    ]
+  },
+  {
+    "id": "production-n4-cold-from-open-window",
+    "minimumLevel": "n4",
+    "text": "I slept with the window left open, so my body got cold.",
+    "solution": "窓を開けたまま寝たので、体が冷えてしまいました。",
+    "grammarPointIds": [
+      "mama",
+      "te-shimau",
+      "node-reason"
+    ],
+    "tokenOverrides": {
+      "まま": {
+        "category": "auxiliary"
+      }
+    },
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "window",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      },
+      {
+        "word": "open",
+        "vocabularyIds": [
+          "vocab-658ff53bc114"
+        ]
+      },
+      {
+        "word": "slept",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "body",
+        "vocabularyIds": [
+          "vocab-6e098e54aa63"
+        ]
+      },
+      {
+        "word": "cold",
+        "vocabularyIds": [
+          "vocab-74bdf22124ea"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-do-not-touch-broken-glass",
+    "minimumLevel": "n4",
+    "text": "窓のガラスが割れた場合は、危険なので触らないでください。",
+    "solution": "If the window glass breaks, please do not touch it because it is dangerous.",
+    "grammarPointIds": [
+      "baai-wa",
+      "node-reason",
+      "naide-kudasai"
+    ]
+  },
+  {
+    "id": "production-n4-forced-to-work-lunch-break",
+    "minimumLevel": "n4",
+    "text": "I was made to work even during my lunch break by my department manager.",
+    "solution": "部長に昼休みも働かされました。",
+    "grammarPointIds": [
+      "causative-passive-form",
+      "mo-addition"
+    ],
+    "tokenOverrides": {
+      "れ": {
+        "category": "auxiliary"
+      }
+    },
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "manager",
+        "vocabularyIds": [
+          "vocab-435c68c810fe"
+        ]
+      },
+      {
+        "word": "lunch",
+        "vocabularyIds": [
+          "vocab-385a4dbb8d14"
+        ]
+      },
+      {
+        "word": "work",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-exhibition-map-at-entrance",
+    "minimumLevel": "n4",
+    "text": "展覧会に行くなら、入口に置いてある地図をご覧ください。",
+    "solution": "If you are going to the exhibition, please look at the map placed at the entrance.",
+    "grammarPointIds": [
+      "nara-conditional",
+      "te-aru-result-state",
+      "sonkeigo-special-verbs"
+    ],
+    "tokenOverrides": {
+      "ご覧": {
+        "category": "auxiliary"
+      }
+    }
+  },
+  {
+    "id": "production-n4-polite-venue-registration",
+    "minimumLevel": "n4",
+    "text": "Before entering the venue, please write your name at reception.",
+    "solution": "会場にお入りになる前に、受付でお名前をお書きください。",
+    "grammarPointIds": [
+      "o-ni-naru",
+      "o-go-kudasai-honorific",
+      "mae-ni"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "venue",
+        "vocabularyIds": [
+          "vocab-3f2f923c2a59"
+        ]
+      },
+      {
+        "word": "entering",
+        "vocabularyIds": [
+          "vocab-82a114897d9c"
+        ]
+      },
+      {
+        "word": "reception",
+        "vocabularyIds": [
+          "vocab-fb32fba0846c"
+        ]
+      },
+      {
+        "word": "name",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      },
+      {
+        "word": "write",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-teacher-corrected-composition",
+    "minimumLevel": "n4",
+    "text": "先生に作文を直していただいたので、正しい書き方がよく分かりました。",
+    "solution": "My teacher kindly corrected my composition, so I gained a good understanding of how to write correctly.",
+    "grammarPointIds": [
+      "te-itadaku",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-n4-polite-home-visit",
+    "minimumLevel": "n4",
+    "text": "If it is convenient for you, I will visit your home in the afternoon.",
+    "solution": "ご都合がよろしければ、午後、お宅に伺います。",
+    "grammarPointIds": [
+      "ba-conditional",
+      "kenjougo-special-verbs"
+    ],
+    "speechText": "ごつごうがよろしければ、ごご、おたくにうかがいます。",
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "convenient",
+        "vocabularyIds": [
+          "vocab-7b97771af3dc"
+        ]
+      },
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-b6b3f5d2ec09"
+        ]
+      },
+      {
+        "word": "visit",
+        "vocabularyIds": [
+          "vocab-5f3a8d4d0dd6"
+        ]
+      },
+      {
+        "word": "afternoon",
+        "vocabularyIds": [
+          "vocab-3e1bdafed48a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-missed-kind-invitation",
+    "minimumLevel": "n4",
+    "text": "招待してくださったのに、熱が出て行けませんでした。",
+    "solution": "Although you kindly invited me, I could not go because I got a fever.",
+    "grammarPointIds": [
+      "te-kudasaru",
+      "noni-concession",
+      "potential-form"
+    ]
+  },
+  {
+    "id": "production-n4-thanks-for-appointment-time",
+    "minimumLevel": "n4",
+    "text": "Thank you for telling me the time of our appointment.",
+    "solution": "約束の時間を知らせてくれてありがとう。",
+    "grammarPointIds": [
+      "te-kurete-arigatou"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "appointment",
+        "vocabularyIds": [
+          "vocab-c8b78a5bde6a"
+        ]
+      },
+      {
+        "word": "time",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
+        ]
+      },
+      {
+        "word": "telling",
+        "vocabularyIds": [
+          "vocab-d7cd17a83e55"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-everyone-follows-strict-rules",
+    "minimumLevel": "n4",
+    "text": "規則が厳しくても、全員で守るようにしています。",
+    "solution": "Even though the rules are strict, all of us make an effort to follow them.",
+    "grammarPointIds": [
+      "temo-concession",
+      "you-ni-suru"
+    ]
+  },
+  {
+    "id": "production-n4-notify-travel-plans",
+    "minimumLevel": "n4",
+    "text": "Once our travel plans are decided, I will notify you right away.",
+    "solution": "旅行の予定が決まったら、すぐにお知らせします。",
+    "grammarPointIds": [
+      "tara-conditional",
+      "o-suru-humble"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "travel",
+        "vocabularyIds": [
+          "vocab-2e3ba98d2367"
+        ]
+      },
+      {
+        "word": "plans",
+        "vocabularyIds": [
+          "vocab-1b1b5806b28b"
+        ]
+      },
+      {
+        "word": "decided",
+        "vocabularyIds": [
+          "vocab-6c1bd8b09d2e"
+        ]
+      },
+      {
+        "word": "notify",
+        "vocabularyIds": [
+          "vocab-d7cd17a83e55"
+        ]
+      },
+      {
+        "word": "away",
+        "vocabularyIds": [
+          "vocab-86f4d5b7a565"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n4-island-population-rumor",
+    "minimumLevel": "n4",
+    "text": "近所の人の話では、この島の人口は最近増えているらしいです。",
+    "solution": "According to a neighbor, it seems that this island's population has been growing recently.",
+    "grammarPointIds": [
+      "rashii",
+      "te-iru-progressive"
+    ]
+  },
+  {
+    "id": "production-n4-joke-made-someone-angry",
+    "minimumLevel": "n4",
+    "text": "It was a joke, but I ended up making the other person angry.",
+    "solution": "冗談だったのに、相手を怒らせてしまいました。",
+    "grammarPointIds": [
+      "noni-concession",
+      "causative-form",
+      "te-shimau"
+    ],
+    "tokenOverrides": {
+      "せ": {
+        "category": "auxiliary"
+      }
+    },
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "joke",
+        "vocabularyIds": [
+          "vocab-b621cfcf6239"
+        ]
+      },
+      {
+        "word": "person",
+        "vocabularyIds": [
+          "vocab-16019d9a9007"
+        ]
+      },
+      {
+        "word": "angry",
+        "vocabularyIds": [
+          "vocab-cdf37b09dc6a"
+        ]
+      }
+    ]
   }
 ]

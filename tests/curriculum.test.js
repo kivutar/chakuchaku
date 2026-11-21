@@ -245,7 +245,7 @@ test("all prepared grammar exercises declare their minimum level", async () => {
   const readingLevels = new Map(readings.flatMap(({ level, sentences }) =>
     sentences.map(({ id }) => [id, level])));
   assert.equal(exercises.filter(({ minimumLevel, readingSentenceId }) =>
-    minimumLevel === "n4" && !readingSentenceId).length, 467);
+    minimumLevel === "n4" && !readingSentenceId).length, 517);
   assert.ok(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").every((exercise) => {
     return exercise.grammarPointIds.some((id) => n4GrammarIds.has(id)) ||
       readingLevels.get(exercise.readingSentenceId) === "n4";
