@@ -82,6 +82,9 @@ const courseStartButton = document.querySelector("#course-start-button");
 const studyEmpty = document.querySelector("#study-empty");
 const studyEmptySettingsButton = document.querySelector("#study-empty-settings-button");
 const sentenceElement = document.querySelector("#lesson-sentence");
+const newGrammarGuidance = document.querySelector("#new-grammar-guidance");
+const newGrammarTitle = document.querySelector("#new-grammar-title");
+const newGrammarPoints = document.querySelector("#new-grammar-points");
 const lessonStage = document.querySelector("#lesson-stage");
 const exerciseKindLabel = document.querySelector("#exercise-kind-label");
 const kanaGuidance = document.querySelector("#kana-guidance");
@@ -2573,15 +2576,9 @@ function createTokenElement(token, newGrammarPointIds = [], {
   }
 
   if (newGrammarPointIds.length > 0) {
-    const grammarGlosses = newGrammarPointIds.map((grammarPointId) => {
-      const grammarPoint = grammarPointById.get(grammarPointId);
-
-      return `${grammarPoint.pattern}: ${grammarPoint.meaning}`;
-    });
-
-    tokenElement.dataset.newGrammar = "";
-    tokenElement.dataset.gloss = grammarGlosses.join("\n");
-    exposesVocabularyMeaning = false;
+    tokenElement.dataset.newGrammar = newGrammarPointIds.join(" ");
+    tokenElement.setAttribute("aria-describedby", newGrammarPointIds
+      .map((id) => `new-grammar-${id}`).join(" "));
   }
 
   if (exposesVocabularyMeaning && animate) {
@@ -2671,20 +2668,48 @@ function renderSentence(text, tokens, grammarHighlights = []) {
   return getSentenceDrawDuration();
 }
 
-function getVisibleGrammarHighlights(lesson) {
-  if (lesson.id === introductionId) {
-    return lesson.grammarHighlights;
-  }
-
+function getNewGrammarPointIds(lesson) {
   if (getExerciseType(lesson) === "production") {
     return [];
   }
 
+  if (lesson.id === introductionId) {
+    return lesson.grammarPointIds;
+  }
+
   const encounteredGrammarPoints = globalThis.JlptN5Stats.readLearningStats().grammarPoints;
 
-  return lesson.grammarHighlights.filter(({ grammarPointId }) => {
-    return !Object.hasOwn(encounteredGrammarPoints, grammarPointId);
+  return lesson.grammarPointIds.filter((id) => {
+    return !Object.hasOwn(encounteredGrammarPoints, id);
   });
+}
+
+function renderNewGrammarGuidance(grammarPointIds) {
+  const points = [...new Set(grammarPointIds)]
+    .map((id) => grammarPointById.get(id)).filter(Boolean);
+
+  newGrammarGuidance.hidden = points.length === 0;
+  newGrammarTitle.textContent = t("exercise.newGrammar", { count: points.length });
+  newGrammarPoints.replaceChildren(...points.map((point) => {
+    const item = document.createElement("li");
+    const heading = document.createElement("div");
+    const pattern = document.createElement("h3");
+    const name = document.createElement("span");
+    const explanation = document.createElement("p");
+
+    item.id = `new-grammar-${point.id}`;
+    heading.className = "new-grammar-heading";
+    pattern.className = "new-grammar-pattern";
+    pattern.lang = "ja";
+    pattern.textContent = point.pattern;
+    name.className = "new-grammar-name";
+    name.textContent = point.name;
+    explanation.className = "new-grammar-explanation";
+    explanation.textContent = point.meaning;
+    heading.append(pattern, name);
+    item.append(heading, explanation);
+    return item;
+  }));
 }
 
 function createFuriganaContent(surface, reading, { adaptiveFurigana = false } = {}) {
@@ -3917,7 +3942,7 @@ async function displayCourseOverview() {
   exerciseSubmitted = true;
   speechAvailable = false;
   for (const element of [
-    sentenceElement, reviewComplete, studyEmpty, exerciseKindLabel, kanaGuidance,
+    sentenceElement, newGrammarGuidance, reviewComplete, studyEmpty, exerciseKindLabel, kanaGuidance,
     kanjiGuidance, vocabularyGuidance, conjugationGuidance, productionGuidance,
     translationInput, kanjiChoiceGrid, speakButton, actionButton,
     appDownloadLinks, webMarketingSummary
@@ -4356,6 +4381,7 @@ function displayLesson(lesson) {
   revealedVocabularyIds = new Set();
   translationInput.disabled = false;
   sentenceElement.hidden = false;
+  renderNewGrammarGuidance([]);
   reviewComplete.hidden = true;
   studyEmpty.hidden = true;
   actionButton.hidden = false;
@@ -4567,12 +4593,16 @@ function displayLesson(lesson) {
   }
 
   refreshAdaptiveFurigana();
+  const newGrammarPointIds = getNewGrammarPointIds(lesson);
+  renderNewGrammarGuidance(newGrammarPointIds);
   const sentenceDrawDuration = isProduction
     ? renderPlainSentence(lesson.text, lesson.promptVocabularyHints)
     : renderSentence(
       lesson.text,
       lesson.tokens,
-      getVisibleGrammarHighlights(lesson)
+      lesson.grammarHighlights.filter(({ grammarPointId }) => {
+        return newGrammarPointIds.includes(grammarPointId);
+      })
     );
 
   if (lesson.id !== introductionId) {
@@ -4718,6 +4748,7 @@ function displayStudyEmpty(section) {
   exerciseSubmitted = true;
   speechAvailable = false;
   sentenceElement.hidden = true;
+  newGrammarGuidance.hidden = true;
   reviewComplete.hidden = true;
   studyEmpty.hidden = false;
   exerciseKindLabel.hidden = true;
@@ -4751,6 +4782,7 @@ function displayReviewComplete() {
   exerciseSubmitted = true;
   speechAvailable = false;
   sentenceElement.hidden = true;
+  newGrammarGuidance.hidden = true;
   reviewComplete.hidden = false;
   studyEmpty.hidden = true;
   exerciseKindLabel.hidden = true;

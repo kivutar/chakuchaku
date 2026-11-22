@@ -2157,6 +2157,76 @@ main {
   outline-offset: 3px;
 }
 
+main:has(.new-grammar-guidance:not([hidden])) {
+  padding-top: calc(5rem + env(safe-area-inset-top));
+}
+
+.new-grammar-guidance {
+  width: min(100%, 42rem);
+  padding: 1rem 1.2rem;
+  border: 1px solid #ead8b0;
+  border-left: 3px solid #d0a149;
+  border-radius: 10px;
+  background: #fffaf0;
+  color: #483b25;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.new-grammar-guidance[hidden] {
+  display: none;
+}
+
+.new-grammar-title {
+  margin: 0 0 0.8rem;
+  color: #806329;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.new-grammar-points {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.new-grammar-points > li + li {
+  padding-top: 0.9rem;
+  border-top: 1px solid #ead8b0;
+}
+
+.new-grammar-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.7rem;
+}
+
+.new-grammar-pattern {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.new-grammar-name {
+  color: #76654a;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.new-grammar-explanation {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  white-space: pre-line;
+}
+
 .lesson-sentence {
   max-width: 48rem;
   margin: 0;
@@ -3495,22 +3565,13 @@ html[data-visual-effects="true"] .solution.is-visible[data-feedback-outcome="aga
   animation-fill-mode: forwards, forwards;
 }
 
-:is(
-  html[data-translation-tooltips="true"] .token[data-gloss],
-  .token[data-new-grammar][data-gloss]
-) {
+html[data-translation-tooltips="true"] .token[data-gloss] {
   display: inline-block;
   position: relative;
 }
 
-:is(
-  html[data-translation-tooltips="true"] .token[data-gloss],
-  .token[data-new-grammar][data-gloss]
-)::before,
-:is(
-  html[data-translation-tooltips="true"] .token[data-gloss],
-  .token[data-new-grammar][data-gloss]
-)::after {
+html[data-translation-tooltips="true"] .token[data-gloss]::before,
+html[data-translation-tooltips="true"] .token[data-gloss]::after {
   display: none;
   position: absolute;
   left: 50%;
@@ -3522,10 +3583,7 @@ html[data-visual-effects="true"] .solution.is-visible[data-feedback-outcome="aga
     transform 140ms ease-out;
 }
 
-:is(
-  html[data-translation-tooltips="true"] .token[data-gloss],
-  .token[data-new-grammar][data-gloss]
-)::before {
+html[data-translation-tooltips="true"] .token[data-gloss]::before {
   content: "";
   bottom: calc(100% + 0.55rem - 9px);
   z-index: 9;
@@ -3534,10 +3592,7 @@ html[data-visual-effects="true"] .solution.is-visible[data-feedback-outcome="aga
   transform: translate(-50%, 0.2rem);
 }
 
-:is(
-  html[data-translation-tooltips="true"] .token[data-gloss],
-  .token[data-new-grammar][data-gloss]
-)::after {
+html[data-translation-tooltips="true"] .token[data-gloss]::after {
   content: attr(data-gloss);
   bottom: calc(100% + 0.55rem);
   z-index: 10;
@@ -3554,21 +3609,8 @@ html[data-visual-effects="true"] .solution.is-visible[data-feedback-outcome="aga
   transform: translate(-50%, 0.2rem);
 }
 
-.token[data-new-grammar][data-gloss]::after {
-  width: max-content;
-  max-width: min(28rem, 80vw);
-  text-align: left;
-  white-space: pre-line;
-}
-
-:is(
-  html[data-translation-tooltips="true"] .token[data-gloss],
-  .token[data-new-grammar][data-gloss]
-).is-touch-active::before,
-:is(
-  html[data-translation-tooltips="true"] .token[data-gloss],
-  .token[data-new-grammar][data-gloss]
-).is-touch-active::after {
+html[data-translation-tooltips="true"] .token[data-gloss].is-touch-active::before,
+html[data-translation-tooltips="true"] .token[data-gloss].is-touch-active::after {
   display: block;
   opacity: 1;
   transform: translate(-50%, 0);
@@ -3599,21 +3641,12 @@ html[data-token-coloring="true"] .token[data-category="auxiliary"].is-touch-acti
 }
 
 @media (hover: hover) {
-  :is(
-    html[data-translation-tooltips="true"] .token[data-gloss],
-    .token[data-new-grammar][data-gloss]
-  ) {
+  html[data-translation-tooltips="true"] .token[data-gloss] {
     cursor: help;
   }
 
-  :is(
-    html[data-translation-tooltips="true"] .token[data-gloss],
-    .token[data-new-grammar][data-gloss]
-  ):hover::before,
-  :is(
-    html[data-translation-tooltips="true"] .token[data-gloss],
-    .token[data-new-grammar][data-gloss]
-  ):hover::after {
+  html[data-translation-tooltips="true"] .token[data-gloss]:hover::before,
+  html[data-translation-tooltips="true"] .token[data-gloss]:hover::after {
     display: block;
     opacity: 1;
     transform: translate(-50%, 0);
@@ -3645,10 +3678,7 @@ html[data-token-coloring="true"] .token[data-category="auxiliary"].is-touch-acti
 }
 
 @media (hover: none), (pointer: coarse) {
-  :is(
-    html[data-translation-tooltips="true"] .token[data-gloss],
-    .token[data-new-grammar][data-gloss]
-  )::after {
+  html[data-translation-tooltips="true"] .token[data-gloss]::after {
     width: max-content;
     max-width: min(24rem, 80vw);
     text-align: left;
@@ -3779,6 +3809,10 @@ html[data-adaptive-furigana="true"] ruby.has-known-kanji > rt {
 
   .lesson-sentence {
     font-size: 1.625rem;
+  }
+
+  .new-grammar-guidance {
+    padding: 0.9rem 1rem;
   }
 
   .review-progress {
@@ -3990,6 +4024,25 @@ html[data-adaptive-furigana="true"] ruby.has-known-kanji > rt {
 
   .loading-screen {
     background: #101412;
+  }
+
+  .new-grammar-guidance {
+    border-color: #5b4f2c;
+    border-left-color: #b99a4f;
+    background: #29271e;
+    color: #e9debd;
+  }
+
+  .new-grammar-title {
+    color: #dbc07e;
+  }
+
+  .new-grammar-name {
+    color: #bcaf92;
+  }
+
+  .new-grammar-points > li + li {
+    border-color: #5b4f2c;
   }
 
   .loading-logo {
@@ -4634,17 +4687,11 @@ html[data-adaptive-furigana="true"] ruby.has-known-kanji > rt {
     color: #eef4e5;
   }
 
-  :is(
-    html[data-translation-tooltips="true"] .token[data-gloss],
-    .token[data-new-grammar][data-gloss]
-  )::before {
+  html[data-translation-tooltips="true"] .token[data-gloss]::before {
     border-top-color: #e5ece7;
   }
 
-  :is(
-    html[data-translation-tooltips="true"] .token[data-gloss],
-    .token[data-new-grammar][data-gloss]
-  )::after {
+  html[data-translation-tooltips="true"] .token[data-gloss]::after {
     background: #e5ece7;
     box-shadow: 0 3px 14px rgb(0 0 0 / 42%);
     color: #151a17;

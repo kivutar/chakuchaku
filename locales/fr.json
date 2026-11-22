@@ -308,6 +308,10 @@
   "exercise.katakanaAnswer": "Réponse en katakana",
   "exercise.missingKanjiAnswer": "Réponse en kanji",
   "exercise.grammarToUse": "Grammaire à utiliser",
+  "exercise.newGrammar": {
+    "one": "Nouveau point de grammaire",
+    "other": "Nouveaux points de grammaire"
+  },
   "exercise.selfAssessment": "Auto-évaluation pour {name}",
   "exercise.inContext": "En contexte",
   "exercise.memoryAid": "Moyen mnémotechnique",

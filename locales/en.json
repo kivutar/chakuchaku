@@ -308,6 +308,10 @@
   "exercise.katakanaAnswer": "Katakana answer",
   "exercise.missingKanjiAnswer": "Missing kanji answer",
   "exercise.grammarToUse": "Grammar to use",
+  "exercise.newGrammar": {
+    "one": "New grammar point",
+    "other": "New grammar points"
+  },
   "exercise.selfAssessment": "Self-assessment for {name}",
   "exercise.inContext": "In context",
   "exercise.memoryAid": "Memory aid",

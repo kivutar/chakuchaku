@@ -1268,7 +1268,7 @@ test("touch devices activate one sentence token at a time", async () => {
   assert.match(styles, /\.token\[data-category\] \{\s+cursor: pointer/);
   assert.match(styles, /\.token\[data-category="noun"\]\.is-touch-active/);
   assert.match(styles, /\.is-touch-active::after/);
-  assert.match(styles, /\)::after \{\s+display: none;/);
+  assert.match(styles, /\.token\[data-gloss\]::after \{\s+display: none;/);
   assert.match(styles, /\.is-touch-active::after \{\s+display: block;/);
 });
 
