@@ -314,8 +314,8 @@ test("generated lessons match their authored sources", async () => {
   assert.equal(token("pack-homework-to-remember", "よう").vocabularyId, undefined);
   assert.equal(token("snow-forecast-hearsay", "そう").category, "auxiliary");
   assert.equal(token("snow-forecast-hearsay", "そう").vocabularyId, undefined);
-  assert.equal(token("breakfast-then-school", "ご飯").reading, "ごはん");
-  assert.ok(token("breakfast-then-school", "ご飯").vocabularyId);
+  assert.equal(token("breakfast-then-school", "朝ご飯").reading, "あさごはん");
+  assert.equal(token("breakfast-then-school", "朝ご飯").vocabularyId, "vocab-818846d31820");
   assert.equal(token("brother-owns-three-cars", "台").reading, "だい");
   assert.ok(token("brother-owns-three-cars", "台").vocabularyId);
   assert.ok(token("ask-japanese-test-date", "いつ").vocabularyId);
@@ -813,7 +813,7 @@ test("fifth-sentence additions keep contextual readings and inflected grammar hi
   assert.equal(highlightedText("production-n4-at-sea-invitation-to-swim-together", "no-desu"), "んだ");
 });
 
-test("content tokenization preserves spaces and whole-word person counts", async () => {
+test("content tokenization preserves spaces, meal compounds, and whole-word person counts", async () => {
   const [vocabulary, preparationCode] = await Promise.all([
     readJson("data/jlpt-n5-vocabulary.json"),
     readFile(join(rootDirectory, "scripts/prepare-content.js"), "utf8")
@@ -830,6 +830,17 @@ test("content tokenization preserves spaces and whole-word person counts", async
     { tokenizer, Buffer }
   );
   const index = createVocabularyIndex(vocabulary);
+
+  for (const [prefix, reading] of [["朝", "あさごはん"], ["昼", "ひるごはん"], ["晩", "ばんごはん"]]) {
+    for (const surface of [`${prefix}御飯`, `${prefix}ご飯`, `${prefix}ごはん`, reading]) {
+      const text = `${prefix}は${surface}を食べます。`;
+      const tokens = tokenizeContent(text, index);
+      assert.equal(tokens.map((token) => token.surface).join(""), text);
+      assert.equal(tokens.find((token) => token.surface === surface)?.details[7], reading);
+      assert.equal(tokens[0].surface, prefix, "the separate time word must stay independent");
+      assert.ok(!tokens.some((token) => ["御飯", "ご飯", "ごはん"].includes(token.surface)));
+    }
+  }
 
   for (const [text, surface, reading] of [
     ["一人で帰る。", "一人", "ひとり"],
@@ -980,6 +991,76 @@ test("hint hover and explicit activation share one visible and accessible state"
     const buttonName = name[0].toLowerCase() + name.slice(1) + "Hint";
     assert.ok(browserCode.includes(`bindHintHover(${buttonName}, set${name}HintExpanded)`));
   }
+});
+
+test("open vocabulary glosses stay inside both viewport edges and reposition after resizing", async () => {
+  const browserCode = await readFile(join(rootDirectory, "app.js"), "utf8");
+  const properties = new Map();
+  const classes = new Set();
+  const settings = { translationTooltips: true };
+  const viewport = { width: 390, offsetLeft: 0 };
+  let rect = { left: 260, width: 90 };
+  let naturalWidth = 253;
+  const token = {
+    dataset: { gloss: "昼御飯（ひるごはん） · 食べる（たべる）" },
+    style: { setProperty: (key, value) => properties.set(key, value) },
+    classList: {
+      add: (name) => classes.add(name),
+      remove: (name) => classes.delete(name)
+    },
+    getBoundingClientRect: () => rect
+  };
+  const width = () => Math.min(naturalWidth, parseFloat(properties.get("--gloss-max-width")));
+  const window = {
+    visualViewport: viewport,
+    getComputedStyle: () => {
+      assert.ok(classes.has("is-measuring-gloss"), "a closed popup must be measurable");
+      return { width: `${width()}px` };
+    }
+  };
+  const { positionTokenGloss } = runInNewContext(
+    `${browserCode.slice(
+      browserCode.indexOf("function positionTokenGloss("),
+      browserCode.indexOf("function handleTokenGlossPointerEnter(")
+    )}\n({ positionTokenGloss });`,
+    { settings, window, document: { documentElement: { clientWidth: 390 } } }
+  );
+  const popupLeft = () => rect.left + rect.width / 2 - width() / 2 +
+    parseFloat(properties.get("--gloss-offset"));
+
+  positionTokenGloss(token);
+  assert.equal(popupLeft() + width(), 382, "the right edge keeps an 8px margin");
+  assert.ok(!classes.has("is-measuring-gloss"));
+
+  rect = { left: 10, width: 40 };
+  positionTokenGloss(token);
+  assert.equal(popupLeft(), 8, "a hint at the left edge remains readable");
+
+  rect = { left: 150, width: 40 };
+  positionTokenGloss(token);
+  assert.equal(properties.get("--gloss-offset"), "0px", "a centered hint clears the previous shift");
+
+  viewport.width = 320;
+  rect = { left: 250, width: 40 };
+  positionTokenGloss(token);
+  assert.equal(popupLeft() + width(), 312, "the open hint follows a narrower viewport");
+
+  viewport.width = 200;
+  viewport.offsetLeft = 100;
+  naturalWidth = 500;
+  positionTokenGloss(token);
+  assert.equal(width(), 184, "long hints wrap inside the visible viewport");
+  assert.equal(popupLeft(), 108, "zoomed/panned viewports retain their left margin");
+  assert.equal(popupLeft() + width(), 292);
+
+  window.visualViewport = undefined;
+  positionTokenGloss(token);
+  assert.equal(properties.get("--gloss-max-width"), "374px", "browsers without VisualViewport use the page width");
+
+  settings.translationTooltips = false;
+  properties.clear();
+  positionTokenGloss(token);
+  assert.equal(properties.size, 0);
 });
 
 test("Grammar answers silently reinforce unrevealed due vocabulary", async () => {
@@ -1264,7 +1345,6 @@ test("touch devices activate one sentence token at a time", async () => {
   assert.match(browserCode, /\.token\.is-touch-active/);
   assert.doesNotMatch(browserCode, /touchTokenQuery/);
   assert.match(browserCode, /document\.addEventListener\("click", dismissActiveToken\)/);
-  assert.match(styles, /@media \(hover: none\), \(pointer: coarse\)/);
   assert.match(styles, /\.token\[data-category\] \{\s+cursor: pointer/);
   assert.match(styles, /\.token\[data-category="noun"\]\.is-touch-active/);
   assert.match(styles, /\.is-touch-active::after/);

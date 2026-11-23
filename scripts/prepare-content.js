@@ -3,6 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { TokenizerBuilder } from "lindera-wasm-ipadic-nodejs";
 import {
+  hasPromptHint,
   supportedContentLocales,
   validateLocalizedContent,
   validateUiCatalogs
@@ -838,9 +839,6 @@ function prepareExercise(
     kanjiIndex,
     curriculum
   );
-  const promptWords = new Set(
-    exercise.text.toLocaleLowerCase("en").split(/[^a-z]+/).filter(Boolean)
-  );
   const hintWords = Array.isArray(exercise.promptVocabularyHints)
     ? exercise.promptVocabularyHints.map((hint) => (
       typeof hint?.word === "string" ? hint.word.toLocaleLowerCase("en") : ""
@@ -859,7 +857,8 @@ function prepareExercise(
 
         return (
           typeof hint?.word !== "string" ||
-          !promptWords.has(hint.word.toLocaleLowerCase("en")) ||
+          !hint.word.trim() ||
+          !hasPromptHint(exercise.text, hint.word, "en") ||
           !Array.isArray(vocabularyIds) ||
           vocabularyIds.length === 0 ||
           new Set(vocabularyIds).size !== vocabularyIds.length ||

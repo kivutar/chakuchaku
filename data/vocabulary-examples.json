@@ -419,20 +419,14 @@
     "targetSurface": "朝御飯",
     "targetReading": "あさごはん",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I eat breakfast.",
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -13569,21 +13563,15 @@
     "text": "朝ごはんを食べる。",
     "targetSurface": "食べる",
     "targetReading": "たべる",
-    "targetTokenStart": 3,
-    "targetTokenEnd": 4,
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
     "translation": "I eat breakfast.",
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝ごはん",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "ごはん",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -19319,20 +19307,14 @@
     "targetSurface": "晩御飯",
     "targetReading": "ばんごはん",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I eat dinner.",
     "tokens": [
       {
-        "surface": "晩",
+        "surface": "晩御飯",
         "category": "noun",
-        "reading": "ばん",
-        "vocabularyId": "vocab-42964aea18cf"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ばんごはん",
+        "vocabularyId": "vocab-696613003517"
       },
       {
         "surface": "を",
@@ -19945,20 +19927,14 @@
     "targetSurface": "昼御飯",
     "targetReading": "ひるごはん",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I eat lunch.",
     "tokens": [
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "を",
@@ -48642,21 +48618,15 @@
     "text": "朝ごはんは習慣です。",
     "targetSurface": "習慣",
     "targetReading": "しゅうかん",
-    "targetTokenStart": 3,
-    "targetTokenEnd": 4,
+    "targetTokenStart": 2,
+    "targetTokenEnd": 3,
     "translation": "Breakfast is a custom.",
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝ごはん",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "ごはん",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "は",

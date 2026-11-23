@@ -6657,8 +6657,7 @@
     "vocabularyIds": [
       "vocab-f906b238c9c2",
       "vocab-24f188a06d2c",
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -6697,16 +6696,10 @@
         "reading": "、"
       },
       {
-        "surface": "朝",
+        "surface": "朝ご飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -6744,8 +6737,8 @@
       },
       {
         "grammarPointId": "verb-masu",
-        "tokenStart": 9,
-        "tokenEnd": 10
+        "tokenStart": 8,
+        "tokenEnd": 9
       }
     ]
   },
@@ -6756,8 +6749,7 @@
     "vocabularyIds": [
       "vocab-4216cb81030d",
       "vocab-981b91b281ca",
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -6798,16 +6790,10 @@
         "reading": "、"
       },
       {
-        "surface": "朝",
+        "surface": "朝ご飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -6845,8 +6831,8 @@
       },
       {
         "grammarPointId": "verb-masu",
-        "tokenStart": 10,
-        "tokenEnd": 11
+        "tokenStart": 9,
+        "tokenEnd": 10
       }
     ]
   },
@@ -17911,8 +17897,7 @@
     "text": "朝ご飯を食べました。それから、学校へ行きました。",
     "audio": "assets/voices/grammar/breakfast-then-school.m4a",
     "vocabularyIds": [
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542",
       "vocab-3f6c04a2d9e0",
       "vocab-42edc1b83779",
@@ -17928,16 +17913,10 @@
     ],
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝ご飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -18016,13 +17995,13 @@
     "grammarHighlights": [
       {
         "grammarPointId": "e-direction",
-        "tokenStart": 10,
-        "tokenEnd": 11
+        "tokenStart": 9,
+        "tokenEnd": 10
       },
       {
         "grammarPointId": "sorekara-connector",
-        "tokenStart": 7,
-        "tokenEnd": 8
+        "tokenStart": 6,
+        "tokenEnd": 7
       }
     ]
   },
@@ -25375,8 +25354,7 @@
       "vocab-07f353ef981c",
       "vocab-2d479962e6d5",
       "vocab-463ea6ce108e",
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -25440,16 +25418,10 @@
         "vocabularyId": "vocab-463ea6ce108e"
       },
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -26910,8 +26882,7 @@
     "vocabularyIds": [
       "vocab-47b8d594eff3",
       "vocab-caa3749b479b",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-ec4fa4315542",
       "vocab-2ab01f1ec07e",
       "vocab-b66f43bc23a1"
@@ -26947,16 +26918,10 @@
         "reading": "で"
       },
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "を",
@@ -27006,8 +26971,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ru-koto-ga-aru",
-        "tokenStart": 8,
-        "tokenEnd": 12
+        "tokenStart": 7,
+        "tokenEnd": 11
       },
       {
         "grammarPointId": "de-action-location",
@@ -29975,8 +29940,7 @@
     "text": "晩御飯を食べた後で、犬と公園を歩きます。",
     "audio": "assets/voices/grammar/walk-dog-after-dinner.m4a",
     "vocabularyIds": [
-      "vocab-42964aea18cf",
-      "vocab-2bf5dccca2b0",
+      "vocab-696613003517",
       "vocab-ec4fa4315542",
       "vocab-415439a1dbb6",
       "vocab-4cd1238bcb91",
@@ -29994,16 +29958,10 @@
     ],
     "tokens": [
       {
-        "surface": "晩",
+        "surface": "晩御飯",
         "category": "noun",
-        "reading": "ばん",
-        "vocabularyId": "vocab-42964aea18cf"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ばんごはん",
+        "vocabularyId": "vocab-696613003517"
       },
       {
         "surface": "を",
@@ -30085,18 +30043,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ato-de",
-        "tokenStart": 5,
-        "tokenEnd": 7
+        "tokenStart": 4,
+        "tokenEnd": 6
       },
       {
         "grammarPointId": "verb-ta-past",
-        "tokenStart": 4,
-        "tokenEnd": 5
+        "tokenStart": 3,
+        "tokenEnd": 4
       },
       {
         "grammarPointId": "to-companion",
-        "tokenStart": 9,
-        "tokenEnd": 10
+        "tokenStart": 8,
+        "tokenEnd": 9
       }
     ]
   },
@@ -32517,8 +32475,7 @@
     "audio": "assets/voices/grammar/breakfast-not-eaten-yet.m4a",
     "vocabularyIds": [
       "vocab-f385448e1132",
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -32534,16 +32491,10 @@
         "vocabularyId": "vocab-f385448e1132"
       },
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -32596,8 +32547,8 @@
       },
       {
         "grammarPointId": "te-inai",
-        "tokenStart": 5,
-        "tokenEnd": 9
+        "tokenStart": 4,
+        "tokenEnd": 8
       },
       {
         "grammarPointId": "mada",
@@ -34799,8 +34750,7 @@
     "vocabularyIds": [
       "vocab-651603322794",
       "vocab-e267b19a680f",
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542",
       "vocab-17f2de804e34",
       "vocab-42edc1b83779",
@@ -34835,16 +34785,10 @@
         "reading": "ごろ"
       },
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -34919,13 +34863,13 @@
       },
       {
         "grammarPointId": "soshite-connector",
-        "tokenStart": 9,
-        "tokenEnd": 10
+        "tokenStart": 8,
+        "tokenEnd": 9
       },
       {
         "grammarPointId": "e-direction",
-        "tokenStart": 12,
-        "tokenEnd": 13
+        "tokenStart": 11,
+        "tokenEnd": 12
       },
       {
         "grammarPointId": "clock-calendar-time",
@@ -35459,8 +35403,7 @@
     "vocabularyIds": [
       "vocab-b1ff052549ed",
       "vocab-84e555b3292a",
-      "vocab-42964aea18cf",
-      "vocab-2bf5dccca2b0",
+      "vocab-696613003517",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -35502,16 +35445,10 @@
         "reading": "、"
       },
       {
-        "surface": "晩",
+        "surface": "晩御飯",
         "category": "noun",
-        "reading": "ばん",
-        "vocabularyId": "vocab-42964aea18cf"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ばんごはん",
+        "vocabularyId": "vocab-696613003517"
       },
       {
         "surface": "を",
@@ -35549,8 +35486,8 @@
       },
       {
         "grammarPointId": "verb-masu",
-        "tokenStart": 10,
-        "tokenEnd": 11
+        "tokenStart": 9,
+        "tokenEnd": 10
       }
     ]
   },
@@ -35617,8 +35554,7 @@
     "text": "朝御飯を食べないで学校へ行きました。",
     "audio": "assets/voices/grammar/school-without-breakfast.m4a",
     "vocabularyIds": [
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542",
       "vocab-42edc1b83779",
       "vocab-ec22142c23d3"
@@ -35633,16 +35569,10 @@
     ],
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -35707,18 +35637,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "naide-without",
-        "tokenStart": 4,
-        "tokenEnd": 6
+        "tokenStart": 3,
+        "tokenEnd": 5
       },
       {
         "grammarPointId": "e-direction",
-        "tokenStart": 7,
-        "tokenEnd": 8
+        "tokenStart": 6,
+        "tokenEnd": 7
       },
       {
         "grammarPointId": "verb-mashita",
-        "tokenStart": 9,
-        "tokenEnd": 11
+        "tokenStart": 8,
+        "tokenEnd": 10
       }
     ]
   },
@@ -36443,8 +36373,7 @@
     "text": "昼御飯はそのレストランで食べましょうか。",
     "audio": "assets/voices/grammar/lunch-at-that-restaurant.m4a",
     "vocabularyIds": [
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-ac42ce789185",
       "vocab-61c233ab6a5e",
       "vocab-ec4fa4315542"
@@ -36456,16 +36385,10 @@
     ],
     "tokens": [
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "は",
@@ -36525,18 +36448,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "mashou-ka",
-        "tokenStart": 7,
-        "tokenEnd": 10
+        "tokenStart": 6,
+        "tokenEnd": 9
       },
       {
         "grammarPointId": "de-action-location",
-        "tokenStart": 5,
-        "tokenEnd": 6
+        "tokenStart": 4,
+        "tokenEnd": 5
       },
       {
         "grammarPointId": "kosoado-determiners",
-        "tokenStart": 3,
-        "tokenEnd": 4
+        "tokenStart": 2,
+        "tokenEnd": 3
       }
     ]
   },
@@ -36646,8 +36569,7 @@
       "vocab-cdf28ddaf837",
       "vocab-415439a1dbb6",
       "vocab-61c233ab6a5e",
-      "vocab-42964aea18cf",
-      "vocab-2bf5dccca2b0",
+      "vocab-696613003517",
       "vocab-ec4fa4315542",
       "vocab-2ab01f1ec07e",
       "vocab-b66f43bc23a1"
@@ -36699,16 +36621,10 @@
         "reading": "で"
       },
       {
-        "surface": "晩",
+        "surface": "晩御飯",
         "category": "noun",
-        "reading": "ばん",
-        "vocabularyId": "vocab-42964aea18cf"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ばんごはん",
+        "vocabularyId": "vocab-696613003517"
       },
       {
         "surface": "を",
@@ -36758,8 +36674,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ru-koto-ga-aru",
-        "tokenStart": 11,
-        "tokenEnd": 15
+        "tokenStart": 10,
+        "tokenEnd": 14
       },
       {
         "grammarPointId": "ato-de",
@@ -37055,8 +36971,7 @@
     "text": "晩御飯の前に手を洗って、食べた後で歯を磨きます。",
     "audio": "assets/voices/grammar/wash-before-dinner-brush-after.m4a",
     "vocabularyIds": [
-      "vocab-42964aea18cf",
-      "vocab-2bf5dccca2b0",
+      "vocab-696613003517",
       "vocab-07f353ef981c",
       "vocab-b1ff052549ed",
       "vocab-84e555b3292a",
@@ -37075,16 +36990,10 @@
     ],
     "tokens": [
       {
-        "surface": "晩",
+        "surface": "晩御飯",
         "category": "noun",
-        "reading": "ばん",
-        "vocabularyId": "vocab-42964aea18cf"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ばんごはん",
+        "vocabularyId": "vocab-696613003517"
       },
       {
         "surface": "の",
@@ -37187,18 +37096,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "mae-ni",
-        "tokenStart": 3,
-        "tokenEnd": 5
+        "tokenStart": 2,
+        "tokenEnd": 4
       },
       {
         "grammarPointId": "ato-de",
-        "tokenStart": 12,
-        "tokenEnd": 14
+        "tokenStart": 11,
+        "tokenEnd": 13
       },
       {
         "grammarPointId": "te-action-link",
-        "tokenStart": 8,
-        "tokenEnd": 9
+        "tokenStart": 7,
+        "tokenEnd": 8
       }
     ]
   },
@@ -40297,8 +40206,7 @@
     "text": "朝御飯は牛乳とパンだけです。",
     "audio": "assets/voices/grammar/only-milk-and-bread-breakfast.m4a",
     "vocabularyIds": [
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-e90f788a51b5",
       "vocab-3ad79496437d"
     ],
@@ -40309,16 +40217,10 @@
     ],
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "は",
@@ -40367,18 +40269,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "dake-limitation",
-        "tokenStart": 6,
-        "tokenEnd": 7
+        "tokenStart": 5,
+        "tokenEnd": 6
       },
       {
         "grammarPointId": "to-complete-list",
-        "tokenStart": 4,
-        "tokenEnd": 5
+        "tokenStart": 3,
+        "tokenEnd": 4
       },
       {
         "grammarPointId": "copula-da-desu",
-        "tokenStart": 7,
-        "tokenEnd": 8
+        "tokenStart": 6,
+        "tokenEnd": 7
       }
     ]
   },
@@ -44380,8 +44282,7 @@
     "text": "昼ご飯はうどんかそばにします。",
     "audio": "assets/voices/grammar/choose-udon-or-soba-for-lunch.m4a",
     "vocabularyIds": [
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-5f2b85473461",
       "vocab-08a53edb01c1",
       "vocab-dfb6d8ba613b"
@@ -44392,16 +44293,10 @@
     ],
     "tokens": [
       {
-        "surface": "昼",
+        "surface": "昼ご飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "は",
@@ -44456,18 +44351,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ka-alternatives",
-        "tokenStart": 4,
-        "tokenEnd": 5
+        "tokenStart": 3,
+        "tokenEnd": 4
       },
       {
         "grammarPointId": "wa-topic",
-        "tokenStart": 2,
-        "tokenEnd": 3
+        "tokenStart": 1,
+        "tokenEnd": 2
       },
       {
         "grammarPointId": "verb-masu",
-        "tokenStart": 8,
-        "tokenEnd": 9
+        "tokenStart": 7,
+        "tokenEnd": 8
       }
     ]
   },
@@ -53587,8 +53482,7 @@
     "text": "晩御飯に何を作るんですか。",
     "audio": "assets/voices/grammar/ask-what-making-for-dinner.m4a",
     "vocabularyIds": [
-      "vocab-42964aea18cf",
-      "vocab-2bf5dccca2b0",
+      "vocab-696613003517",
       "vocab-3b010d61ddd5",
       "vocab-a4ccf0b7bace"
     ],
@@ -53600,16 +53494,10 @@
     ],
     "tokens": [
       {
-        "surface": "晩",
+        "surface": "晩御飯",
         "category": "noun",
-        "reading": "ばん",
-        "vocabularyId": "vocab-42964aea18cf"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ばんごはん",
+        "vocabularyId": "vocab-696613003517"
       },
       {
         "surface": "に",
@@ -53663,18 +53551,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "nani",
-        "tokenStart": 3,
-        "tokenEnd": 4
+        "tokenStart": 2,
+        "tokenEnd": 3
       },
       {
         "grammarPointId": "no-desu",
-        "tokenStart": 6,
-        "tokenEnd": 8
+        "tokenStart": 5,
+        "tokenEnd": 7
       },
       {
         "grammarPointId": "ka-question",
-        "tokenStart": 8,
-        "tokenEnd": 9
+        "tokenStart": 7,
+        "tokenEnd": 8
       }
     ]
   },
@@ -60872,8 +60760,7 @@
       "vocab-cdf28ddaf837",
       "vocab-415439a1dbb6",
       "vocab-61c233ab6a5e",
-      "vocab-42964aea18cf",
-      "vocab-2bf5dccca2b0",
+      "vocab-696613003517",
       "vocab-ec4fa4315542",
       "vocab-2ab01f1ec07e",
       "vocab-b66f43bc23a1"
@@ -60925,16 +60812,10 @@
         "reading": "で"
       },
       {
-        "surface": "晩",
+        "surface": "晩御飯",
         "category": "noun",
-        "reading": "ばん",
-        "vocabularyId": "vocab-42964aea18cf"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ばんごはん",
+        "vocabularyId": "vocab-696613003517"
       },
       {
         "surface": "を",
@@ -61012,8 +60893,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ru-koto-ga-aru",
-        "tokenStart": 11,
-        "tokenEnd": 15
+        "tokenStart": 10,
+        "tokenEnd": 14
       },
       {
         "grammarPointId": "ato-de",
@@ -64408,8 +64289,7 @@
     "text": "I ate breakfast. After that, I went to school.",
     "audio": "assets/voices/grammar/breakfast-then-school.m4a",
     "vocabularyIds": [
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542",
       "vocab-3f6c04a2d9e0",
       "vocab-42edc1b83779",
@@ -64425,16 +64305,10 @@
     ],
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝ご飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -64531,13 +64405,13 @@
     "grammarHighlights": [
       {
         "grammarPointId": "e-direction",
-        "tokenStart": 10,
-        "tokenEnd": 11
+        "tokenStart": 9,
+        "tokenEnd": 10
       },
       {
         "grammarPointId": "sorekara-connector",
-        "tokenStart": 7,
-        "tokenEnd": 8
+        "tokenStart": 6,
+        "tokenEnd": 7
       }
     ]
   },
@@ -70535,8 +70409,7 @@
       "vocab-ecd92861d4d7",
       "vocab-f906b238c9c2",
       "vocab-24f188a06d2c",
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542",
       "vocab-cdf28ddaf837",
       "vocab-dfb6d8ba613b"
@@ -70590,16 +70463,10 @@
         "reading": "、"
       },
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -70691,13 +70558,13 @@
     "grammarHighlights": [
       {
         "grammarPointId": "irregular-verbs",
-        "tokenStart": 15,
-        "tokenEnd": 17
+        "tokenStart": 14,
+        "tokenEnd": 16
       },
       {
         "grammarPointId": "te-action-link",
-        "tokenStart": 11,
-        "tokenEnd": 12
+        "tokenStart": 10,
+        "tokenEnd": 11
       }
     ]
   },
@@ -76843,8 +76710,7 @@
     "text": "Did you eat breakfast?",
     "audio": "assets/voices/grammar/production-ate-breakfast-question-short.m4a",
     "vocabularyIds": [
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -76854,16 +76720,10 @@
     ],
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝ご飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -76915,13 +76775,13 @@
     "grammarHighlights": [
       {
         "grammarPointId": "no-question",
-        "tokenStart": 5,
-        "tokenEnd": 6
+        "tokenStart": 4,
+        "tokenEnd": 5
       },
       {
         "grammarPointId": "verb-ta-past",
-        "tokenStart": 4,
-        "tokenEnd": 5
+        "tokenStart": 3,
+        "tokenEnd": 4
       }
     ]
   },
@@ -78112,6 +77972,12 @@
         "vocabularyIds": [
           "vocab-24f188a06d2c"
         ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -78205,6 +78071,18 @@
         "word": "see",
         "vocabularyIds": [
           "vocab-385cc0d9ee98"
+        ]
+      },
+      {
+        "word": "movie",
+        "vocabularyIds": [
+          "vocab-7b9d866e6dc2"
+        ]
+      },
+      {
+        "word": "tonight",
+        "vocabularyIds": [
+          "vocab-298bb964817e"
         ]
       }
     ],
@@ -78367,6 +78245,12 @@
         "word": "use",
         "vocabularyIds": [
           "vocab-9af9c5ffb30e"
+        ]
+      },
+      {
+        "word": "card",
+        "vocabularyIds": [
+          "vocab-a586e52ce913"
         ]
       }
     ],
@@ -78567,9 +78451,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
         "word": "read",
         "vocabularyIds": [
           "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "students",
+        "vocabularyIds": [
+          "vocab-9567eaf8fe9b"
         ]
       }
     ],
@@ -78754,9 +78650,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "get up",
+        "vocabularyIds": [
+          "vocab-72c5b362c4f2"
+        ]
+      },
+      {
         "word": "early",
         "vocabularyIds": [
           "vocab-72460e05df01"
+        ]
+      },
+      {
+        "word": "every day",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
         ]
       }
     ],
@@ -78966,6 +78874,18 @@
         "vocabularyIds": [
           "vocab-ec22142c23d3"
         ]
+      },
+      {
+        "word": "Japan",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
+      },
+      {
+        "word": "next month",
+        "vocabularyIds": [
+          "vocab-55fef51b0694"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -79120,6 +79040,12 @@
     "solution": "ここは学校のはずです。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "This place",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
+        ]
+      },
       {
         "word": "school",
         "vocabularyIds": [
@@ -79325,6 +79251,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "room",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
         "word": "quiet",
         "vocabularyIds": [
           "vocab-61b57e2d4702"
@@ -79499,6 +79431,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "shoes",
+        "vocabularyIds": [
+          "vocab-d2110e85159b"
+        ]
+      },
+      {
         "word": "walk",
         "vocabularyIds": [
           "vocab-a76603aae6e4"
@@ -79660,6 +79598,12 @@
     "solution": "この漢字は覚えにくいです。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "kanji",
+        "vocabularyIds": [
+          "vocab-535c688e8bf9"
+        ]
+      },
       {
         "word": "remember",
         "vocabularyIds": [
@@ -79836,6 +79780,18 @@
         "word": "studying",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "Japanese",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "every day",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
         ]
       }
     ],
@@ -80014,6 +79970,7 @@
       {
         "word": "raining",
         "vocabularyIds": [
+          "vocab-7e87850c448d",
           "vocab-777161023023"
         ]
       }
@@ -80206,6 +80163,12 @@
         "word": "studied",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "summer vacation",
+        "vocabularyIds": [
+          "vocab-bd3e79e89fe2"
         ]
       }
     ],
@@ -80425,6 +80388,24 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "cleaned",
+        "vocabularyIds": [
+          "vocab-21537eeda1e7"
+        ]
+      },
+      {
+        "word": "room",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "child",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
+      {
         "word": "sleeping",
         "vocabularyIds": [
           "vocab-50eb0e80c367"
@@ -80623,6 +80604,24 @@
         "word": "studying",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "Japanese",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "good",
+        "vocabularyIds": [
+          "vocab-ef4cce00951f"
         ]
       }
     ],
@@ -80926,9 +80925,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "father",
+        "vocabularyIds": [
+          "vocab-d15ca6ea1179"
+        ]
+      },
+      {
+        "word": "younger brother",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
+      {
         "word": "clean",
         "vocabularyIds": [
           "vocab-21537eeda1e7"
+        ]
+      },
+      {
+        "word": "room",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
         ]
       }
     ],
@@ -81033,9 +81050,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
         "word": "play",
         "vocabularyIds": [
           "vocab-58a04652246f"
+        ]
+      },
+      {
+        "word": "outside",
+        "vocabularyIds": [
+          "vocab-6109638dac53"
         ]
       }
     ],
@@ -81370,6 +81399,18 @@
         "vocabularyIds": [
           "vocab-ec4fa4315542"
         ]
+      },
+      {
+        "word": "vegetables",
+        "vocabularyIds": [
+          "vocab-88763af54360"
+        ]
+      },
+      {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -81477,9 +81518,33 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "students",
+        "vocabularyIds": [
+          "vocab-9567eaf8fe9b"
+        ]
+      },
+      {
         "word": "read",
         "vocabularyIds": [
           "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "difficult",
+        "vocabularyIds": [
+          "vocab-6ed0b6d4c374"
+        ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
         ]
       }
     ],
@@ -81719,6 +81784,12 @@
         "vocabularyIds": [
           "vocab-385cc0d9ee98"
         ]
+      },
+      {
+        "word": "photo",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -81841,8 +81912,7 @@
     "vocabularyIds": [
       "vocab-f6a8c4a23b51",
       "vocab-463497b76d92",
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -81880,16 +81950,10 @@
         "reading": "、"
       },
       {
-        "surface": "朝",
+        "surface": "朝ご飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -81932,13 +81996,13 @@
       },
       {
         "grammarPointId": "o-object",
-        "tokenStart": 7,
-        "tokenEnd": 8
+        "tokenStart": 6,
+        "tokenEnd": 7
       },
       {
         "grammarPointId": "verb-masen",
-        "tokenStart": 9,
-        "tokenEnd": 11
+        "tokenStart": 8,
+        "tokenEnd": 10
       }
     ]
   },
@@ -82020,6 +82084,12 @@
         "word": "buy",
         "vocabularyIds": [
           "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "store",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
         ]
       }
     ],
@@ -82124,7 +82194,26 @@
       {
         "word": "rains",
         "vocabularyIds": [
+          "vocab-7e87850c448d",
           "vocab-777161023023"
+        ]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
+      },
+      {
+        "word": "go",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "park",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
         ]
       }
     ],
@@ -82460,6 +82549,12 @@
         "vocabularyIds": [
           "vocab-ec4fa4315542"
         ]
+      },
+      {
+        "word": "so much",
+        "vocabularyIds": [
+          "vocab-7ae1ee3a0309"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -82737,6 +82832,12 @@
         "vocabularyIds": [
           "vocab-d8a0261581dc"
         ]
+      },
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -82816,6 +82917,13 @@
         "word": "bed",
         "vocabularyIds": [
           "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "earlier",
+        "vocabularyIds": [
+          "vocab-b87d435fd7f9",
+          "vocab-72460e05df01"
         ]
       }
     ],
@@ -83036,6 +83144,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "window",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      },
+      {
         "word": "opened",
         "vocabularyIds": [
           "vocab-56dc4d647d8b"
@@ -83118,6 +83232,12 @@
         "word": "opened",
         "vocabularyIds": [
           "vocab-658ff53bc114"
+        ]
+      },
+      {
+        "word": "window",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
         ]
       }
     ],
@@ -83402,6 +83522,12 @@
         "vocabularyIds": [
           "vocab-f26f501fa1c2"
         ]
+      },
+      {
+        "word": "today",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -83485,6 +83611,12 @@
         "word": "come",
         "vocabularyIds": [
           "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ],
@@ -83614,6 +83746,12 @@
         "vocabularyIds": [
           "vocab-50eb0e80c367"
         ]
+      },
+      {
+        "word": "early",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -83682,6 +83820,12 @@
         "word": "Take",
         "vocabularyIds": [
           "vocab-dcd3acd6b659"
+        ]
+      },
+      {
+        "word": "medicine",
+        "vocabularyIds": [
+          "vocab-87bbe3de9902"
         ]
       }
     ],
@@ -83932,6 +84076,12 @@
         "vocabularyIds": [
           "vocab-a76603aae6e4"
         ]
+      },
+      {
+        "word": "every day",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -84032,6 +84182,18 @@
         "word": "drink",
         "vocabularyIds": [
           "vocab-dcd3acd6b659"
+        ]
+      },
+      {
+        "word": "coffee",
+        "vocabularyIds": [
+          "vocab-f5f2c2dca175"
+        ]
+      },
+      {
+        "word": "night",
+        "vocabularyIds": [
+          "vocab-ba0c8a160c33"
         ]
       }
     ],
@@ -84330,6 +84492,12 @@
         "vocabularyIds": [
           "vocab-a76603aae6e4"
         ]
+      },
+      {
+        "word": "every day",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -84424,6 +84592,12 @@
         "word": "forget",
         "vocabularyIds": [
           "vocab-53c63c8d3e25"
+        ]
+      },
+      {
+        "word": "homework",
+        "vocabularyIds": [
+          "vocab-f26f501fa1c2"
         ]
       }
     ],
@@ -84778,15 +84952,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
-        "word": "bed",
-        "vocabularyIds": [
-          "vocab-50eb0e80c367"
-        ]
-      },
-      {
         "word": "phone",
         "vocabularyIds": [
           "vocab-24df87472770"
+        ]
+      },
+      {
+        "word": "rang",
+        "vocabularyIds": [
+          "vocab-89aea2f63b8b"
+        ]
+      },
+      {
+        "word": "bed",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
         ]
       }
     ],
@@ -84880,9 +85060,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "child",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
+      {
         "word": "open",
         "vocabularyIds": [
           "vocab-658ff53bc114"
+        ]
+      },
+      {
+        "word": "door",
+        "vocabularyIds": [
+          "vocab-01adf406cacd"
         ]
       }
     ],
@@ -85115,8 +85307,7 @@
     "text": "I will make dinner in advance.",
     "audio": "assets/voices/grammar/production-n4-make-dinner-in-advance.m4a",
     "vocabularyIds": [
-      "vocab-42964aea18cf",
-      "vocab-2bf5dccca2b0",
+      "vocab-696613003517",
       "vocab-a4ccf0b7bace"
     ],
     "kanjiIds": [
@@ -85126,16 +85317,10 @@
     ],
     "tokens": [
       {
-        "surface": "晩",
+        "surface": "晩御飯",
         "category": "noun",
-        "reading": "ばん",
-        "vocabularyId": "vocab-42964aea18cf"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ばんごはん",
+        "vocabularyId": "vocab-696613003517"
       },
       {
         "surface": "を",
@@ -85173,6 +85358,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "make",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
         "word": "dinner",
         "vocabularyIds": [
           "vocab-696613003517"
@@ -85185,8 +85376,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "te-oku",
-        "tokenStart": 4,
-        "tokenEnd": 7
+        "tokenStart": 3,
+        "tokenEnd": 6
       }
     ]
   },
@@ -85248,6 +85439,12 @@
     "solution": "窓を開けておいてください。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "window",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      },
       {
         "word": "open",
         "vocabularyIds": [
@@ -85493,7 +85690,8 @@
       {
         "word": "snowing",
         "vocabularyIds": [
-          "vocab-79db1765ce26"
+          "vocab-79db1765ce26",
+          "vocab-777161023023"
         ]
       }
     ],
@@ -85584,9 +85782,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "younger brother",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
+      {
         "word": "reading",
         "vocabularyIds": [
           "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
         ]
       }
     ],
@@ -85782,8 +85992,7 @@
     "text": "I finished eating breakfast.",
     "audio": "assets/voices/grammar/production-n4-finished-eating-breakfast.m4a",
     "vocabularyIds": [
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -85794,16 +86003,10 @@
     ],
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -85841,6 +86044,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "eating",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
         "word": "breakfast",
         "vocabularyIds": [
           "vocab-818846d31820"
@@ -85853,8 +86062,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "stem-owaru",
-        "tokenStart": 4,
-        "tokenEnd": 7
+        "tokenStart": 3,
+        "tokenEnd": 6
       }
     ]
   },
@@ -85931,6 +86140,12 @@
         "word": "writing",
         "vocabularyIds": [
           "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "letter",
+        "vocabularyIds": [
+          "vocab-8e7233a38df0"
         ]
       }
     ],
@@ -86179,6 +86394,12 @@
         "vocabularyIds": [
           "vocab-24f188a06d2c"
         ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -86255,6 +86476,12 @@
         "word": "studying",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "Japanese",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
         ]
       }
     ],
@@ -86458,6 +86685,7 @@
       {
         "word": "raining",
         "vocabularyIds": [
+          "vocab-7e87850c448d",
           "vocab-777161023023"
         ]
       }
@@ -86527,6 +86755,12 @@
     "solution": "弟が笑い出しました。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "brother",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
       {
         "word": "laughing",
         "vocabularyIds": [
@@ -86827,9 +87061,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "younger sister",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
         "word": "go",
         "vocabularyIds": [
           "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "Japan",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
         ]
       }
     ],
@@ -86927,9 +87173,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "child",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
+      {
         "word": "eat",
         "vocabularyIds": [
           "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "vegetables",
+        "vocabularyIds": [
+          "vocab-88763af54360"
         ]
       }
     ],
@@ -87161,6 +87419,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "younger sister",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
         "word": "lonely",
         "vocabularyIds": [
           "vocab-095b33ccc743"
@@ -87237,6 +87501,12 @@
     "solution": "子供は痛がっています。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "child",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
       {
         "word": "pain",
         "vocabularyIds": [
@@ -87423,6 +87693,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "younger sister",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
         "word": "shy",
         "vocabularyIds": [
           "vocab-8b65db9c3fbf"
@@ -87481,6 +87757,12 @@
     "solution": "父は暑がりです。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "father",
+        "vocabularyIds": [
+          "vocab-d15ca6ea1179"
+        ]
+      },
       {
         "word": "heat",
         "vocabularyIds": [
@@ -87741,9 +88023,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "younger brother",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
+      {
         "word": "wait",
         "vocabularyIds": [
           "vocab-6f30c5c5938f"
+        ]
+      },
+      {
+        "word": "here",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
         ]
       }
     ],
@@ -87830,9 +88124,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "child",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
+      {
         "word": "open",
         "vocabularyIds": [
           "vocab-658ff53bc114"
+        ]
+      },
+      {
+        "word": "window",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
         ]
       }
     ],
@@ -88130,6 +88436,12 @@
         "vocabularyIds": [
           "vocab-bc01756b4d89"
         ]
+      },
+      {
+        "word": "today",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -88311,6 +88623,12 @@
         "word": "forgetting",
         "vocabularyIds": [
           "vocab-53c63c8d3e25"
+        ]
+      },
+      {
+        "word": "name",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
         ]
       }
     ],
@@ -88679,6 +88997,12 @@
         "vocabularyIds": [
           "vocab-98e990bf1d44"
         ]
+      },
+      {
+        "word": "window",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -88783,6 +89107,18 @@
         "word": "write",
         "vocabularyIds": [
           "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "name",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      },
+      {
+        "word": "here",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
         ]
       }
     ],
@@ -89030,6 +89366,12 @@
         "vocabularyIds": [
           "vocab-1b65a0cb82d2"
         ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -89118,6 +89460,12 @@
         "word": "studied",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "Japanese",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
         ]
       }
     ],
@@ -89394,6 +89742,18 @@
         "vocabularyIds": [
           "vocab-658ff53bc114"
         ]
+      },
+      {
+        "word": "door",
+        "vocabularyIds": [
+          "vocab-01adf406cacd"
+        ]
+      },
+      {
+        "word": "dog",
+        "vocabularyIds": [
+          "vocab-4cd1238bcb91"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -89480,9 +89840,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "took",
+        "vocabularyIds": [
+          "vocab-897d3a642135"
+        ]
+      },
+      {
         "word": "photo",
         "vocabularyIds": [
           "vocab-d5901ecbf5fb"
+        ]
+      },
+      {
+        "word": "younger brother",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
         ]
       }
     ],
@@ -89562,9 +89934,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "hand in",
+        "vocabularyIds": [
+          "vocab-a001b24baf12"
+        ]
+      },
+      {
         "word": "homework",
         "vocabularyIds": [
           "vocab-f26f501fa1c2"
+        ]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ],
@@ -89646,6 +90030,12 @@
         "vocabularyIds": [
           "vocab-bc01756b4d89"
         ]
+      },
+      {
+        "word": "nine",
+        "vocabularyIds": [
+          "vocab-d33ed6be2a48"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -89671,8 +90061,7 @@
     "audio": "assets/voices/grammar/n4-about-to-eat-lunch.m4a",
     "vocabularyIds": [
       "vocab-89beba69de5a",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -89693,16 +90082,10 @@
         "reading": "、"
       },
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "を",
@@ -89740,13 +90123,13 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ru-tokoro",
-        "tokenStart": 5,
-        "tokenEnd": 7
+        "tokenStart": 4,
+        "tokenEnd": 6
       },
       {
         "grammarPointId": "o-object",
-        "tokenStart": 4,
-        "tokenEnd": 5
+        "tokenStart": 3,
+        "tokenEnd": 4
       }
     ]
   },
@@ -89889,6 +90272,12 @@
         "vocabularyIds": [
           "vocab-24df87472770"
         ]
+      },
+      {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -89957,6 +90346,12 @@
         "vocabularyIds": [
           "vocab-79261a065ba5"
         ]
+      },
+      {
+        "word": "studying",
+        "vocabularyIds": [
+          "vocab-15863d9e899d"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -89976,8 +90371,7 @@
     "audio": "assets/voices/grammar/n4-currently-eating-lunch.m4a",
     "vocabularyIds": [
       "vocab-89beba69de5a",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -89998,16 +90392,10 @@
         "reading": "、"
       },
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "を",
@@ -90055,18 +90443,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "teiru-tokoro",
-        "tokenStart": 6,
-        "tokenEnd": 9
-      },
-      {
-        "grammarPointId": "te-iru-progressive",
-        "tokenStart": 6,
+        "tokenStart": 5,
         "tokenEnd": 8
       },
       {
+        "grammarPointId": "te-iru-progressive",
+        "tokenStart": 5,
+        "tokenEnd": 7
+      },
+      {
         "grammarPointId": "o-object",
-        "tokenStart": 4,
-        "tokenEnd": 5
+        "tokenStart": 3,
+        "tokenEnd": 4
       }
     ]
   },
@@ -90233,6 +90621,12 @@
         "vocabularyIds": [
           "vocab-24f188a06d2c"
         ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -90329,9 +90723,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "younger brother",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
+      {
         "word": "studying",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "Japanese",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
         ]
       }
     ],
@@ -90352,8 +90758,7 @@
     "audio": "assets/voices/grammar/n4-just-ate-lunch.m4a",
     "vocabularyIds": [
       "vocab-89beba69de5a",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -90374,16 +90779,10 @@
         "reading": "、"
       },
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "を",
@@ -90426,18 +90825,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ta-tokoro",
-        "tokenStart": 6,
-        "tokenEnd": 8
-      },
-      {
-        "grammarPointId": "verb-ta-past",
-        "tokenStart": 6,
+        "tokenStart": 5,
         "tokenEnd": 7
       },
       {
+        "grammarPointId": "verb-ta-past",
+        "tokenStart": 5,
+        "tokenEnd": 6
+      },
+      {
         "grammarPointId": "o-object",
-        "tokenStart": 4,
-        "tokenEnd": 5
+        "tokenStart": 3,
+        "tokenEnd": 4
       }
     ]
   },
@@ -90600,6 +90999,12 @@
         "vocabularyIds": [
           "vocab-6393ca7aefde"
         ]
+      },
+      {
+        "word": "homework",
+        "vocabularyIds": [
+          "vocab-f26f501fa1c2"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -90690,6 +91095,12 @@
         "word": "bought",
         "vocabularyIds": [
           "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
         ]
       }
     ],
@@ -90912,6 +91323,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "bought",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
         "word": "computer",
         "vocabularyIds": [
           "vocab-5ca53fa1b955"
@@ -90983,6 +91400,12 @@
     "solution": "弟は起きたばかりです。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "younger brother",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
       {
         "word": "up",
         "vocabularyIds": [
@@ -91092,8 +91515,7 @@
     "text": "朝御飯を食べないまま学校へ行きました。",
     "audio": "assets/voices/grammar/n4-went-school-without-breakfast.m4a",
     "vocabularyIds": [
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542",
       "vocab-42edc1b83779",
       "vocab-ec22142c23d3"
@@ -91108,16 +91530,10 @@
     ],
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -91182,18 +91598,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "mama",
-        "tokenStart": 4,
-        "tokenEnd": 6
+        "tokenStart": 3,
+        "tokenEnd": 5
       },
       {
         "grammarPointId": "o-object",
-        "tokenStart": 2,
-        "tokenEnd": 3
+        "tokenStart": 1,
+        "tokenEnd": 2
       },
       {
         "grammarPointId": "e-direction",
-        "tokenStart": 7,
-        "tokenEnd": 8
+        "tokenStart": 6,
+        "tokenEnd": 7
       }
     ]
   },
@@ -91256,6 +91672,12 @@
     "solution": "部屋は静かなままでした。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "room",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
       {
         "word": "quiet",
         "vocabularyIds": [
@@ -91320,6 +91742,12 @@
     "solution": "スープは熱いままです。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "soup",
+        "vocabularyIds": [
+          "vocab-935437cca5af"
+        ]
+      },
       {
         "word": "hot",
         "vocabularyIds": [
@@ -91593,6 +92021,12 @@
         "vocabularyIds": [
           "vocab-acc3dd26ba1e"
         ]
+      },
+      {
+        "word": "hour",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -91694,6 +92128,12 @@
         "word": "call",
         "vocabularyIds": [
           "vocab-24df87472770"
+        ]
+      },
+      {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
         ]
       }
     ],
@@ -91928,6 +92368,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
         "word": "interesting",
         "vocabularyIds": [
           "vocab-9825648af79e"
@@ -92018,9 +92464,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "younger sister",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
         "word": "singing",
         "vocabularyIds": [
           "vocab-d8974b42548f"
+        ]
+      },
+      {
+        "word": "happily",
+        "vocabularyIds": [
+          "vocab-9cc2d4a9bbe1"
         ]
       }
     ],
@@ -92224,6 +92682,7 @@
       {
         "word": "rain",
         "vocabularyIds": [
+          "vocab-7e87850c448d",
           "vocab-777161023023"
         ]
       }
@@ -92565,9 +93024,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "younger sister",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
         "word": "sings",
         "vocabularyIds": [
           "vocab-d8974b42548f"
+        ]
+      },
+      {
+        "word": "bird",
+        "vocabularyIds": [
+          "vocab-683f3e7fb085"
         ]
       }
     ],
@@ -92652,6 +93123,12 @@
         "word": "town",
         "vocabularyIds": [
           "vocab-09d74d630a45"
+        ]
+      },
+      {
+        "word": "Kyoto",
+        "vocabularyIds": [
+          "vocab-62153df2c4e3"
         ]
       }
     ],
@@ -92928,6 +93405,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "cake",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      },
+      {
         "word": "flower",
         "vocabularyIds": [
           "vocab-fa6a4c8f27b4"
@@ -93175,6 +93658,18 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "new",
+        "vocabularyIds": [
+          "vocab-288a95a40d95"
+        ]
+      },
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
         "word": "kind",
         "vocabularyIds": [
           "vocab-c2cec306f5c4"
@@ -93256,7 +93751,14 @@
       {
         "word": "snow",
         "vocabularyIds": [
-          "vocab-79db1765ce26"
+          "vocab-79db1765ce26",
+          "vocab-777161023023"
+        ]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ],
@@ -93550,6 +94052,18 @@
         "vocabularyIds": [
           "vocab-b7519a0f57a7"
         ]
+      },
+      {
+        "word": "father",
+        "vocabularyIds": [
+          "vocab-d15ca6ea1179"
+        ]
+      },
+      {
+        "word": "working",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -93632,6 +94146,12 @@
         "word": "tired",
         "vocabularyIds": [
           "vocab-65f5cb2d1bd4"
+        ]
+      },
+      {
+        "word": "study",
+        "vocabularyIds": [
+          "vocab-15863d9e899d"
         ]
       }
     ],
@@ -93897,6 +94417,12 @@
         "vocabularyIds": [
           "vocab-5ee54e973899"
         ]
+      },
+      {
+        "word": "come",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -93976,6 +94502,18 @@
         "word": "Sunday",
         "vocabularyIds": [
           "vocab-b7519a0f57a7"
+        ]
+      },
+      {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
+        "word": "works",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
         ]
       }
     ],
@@ -94214,8 +94752,7 @@
     "text": "I get up early to make breakfast.",
     "audio": "assets/voices/grammar/production-n4-rise-early-to-make-breakfast.m4a",
     "vocabularyIds": [
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-a4ccf0b7bace",
       "vocab-72460e05df01",
       "vocab-72c5b362c4f2"
@@ -94229,16 +94766,10 @@
     ],
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -94292,6 +94823,24 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "get up",
+        "vocabularyIds": [
+          "vocab-72c5b362c4f2"
+        ]
+      },
+      {
+        "word": "early",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
+        ]
+      },
+      {
+        "word": "make",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
         "word": "breakfast",
         "vocabularyIds": [
           "vocab-818846d31820"
@@ -94304,8 +94853,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "tame-ni-purpose",
-        "tokenStart": 4,
-        "tokenEnd": 6
+        "tokenStart": 3,
+        "tokenEnd": 5
       }
     ]
   },
@@ -94391,9 +94940,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "went",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
         "word": "library",
         "vocabularyIds": [
           "vocab-ca8d0efe19a3"
+        ]
+      },
+      {
+        "word": "study",
+        "vocabularyIds": [
+          "vocab-15863d9e899d"
         ]
       }
     ],
@@ -94694,6 +95255,18 @@
         "vocabularyIds": [
           "vocab-7e87850c448d"
         ]
+      },
+      {
+        "word": "go",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "park",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -94793,6 +95366,18 @@
         "word": "overslept",
         "vocabularyIds": [
           "vocab-dedac553ff95"
+        ]
+      },
+      {
+        "word": "late",
+        "vocabularyIds": [
+          "vocab-6762b46e5f55"
+        ]
+      },
+      {
+        "word": "school",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
         ]
       }
     ],
@@ -95009,6 +95594,12 @@
         "vocabularyIds": [
           "vocab-b1d6f8ff0597"
         ]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -95088,6 +95679,18 @@
         "word": "spring",
         "vocabularyIds": [
           "vocab-18597113ac94"
+        ]
+      },
+      {
+        "word": "comes",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "early",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
         ]
       }
     ],
@@ -95356,6 +95959,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "made",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
         "word": "cake",
         "vocabularyIds": [
           "vocab-da08a01c25e4"
@@ -95456,6 +96065,18 @@
     "solution": "私が買いたいのは新しい自転車です。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "buy",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "new",
+        "vocabularyIds": [
+          "vocab-288a95a40d95"
+        ]
+      },
       {
         "word": "bicycle",
         "vocabularyIds": [
@@ -95762,9 +96383,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "forgot",
+        "vocabularyIds": [
+          "vocab-53c63c8d3e25"
+        ]
+      },
+      {
         "word": "exam",
         "vocabularyIds": [
           "vocab-0c4d68e2ec4d"
+        ]
+      },
+      {
+        "word": "next week",
+        "vocabularyIds": [
+          "vocab-eddc7f95d55c"
         ]
       }
     ],
@@ -95875,9 +96508,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "remember",
+        "vocabularyIds": [
+          "vocab-0ec838cc07ea"
+        ]
+      },
+      {
         "word": "library",
         "vocabularyIds": [
           "vocab-ca8d0efe19a3"
+        ]
+      },
+      {
+        "word": "closes",
+        "vocabularyIds": [
+          "vocab-47246131f042"
+        ]
+      },
+      {
+        "word": "six",
+        "vocabularyIds": [
+          "vocab-06ef406f5569"
         ]
       }
     ],
@@ -96195,6 +96846,18 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "father",
+        "vocabularyIds": [
+          "vocab-d15ca6ea1179"
+        ]
+      },
+      {
+        "word": "forget",
+        "vocabularyIds": [
+          "vocab-53c63c8d3e25"
+        ]
+      },
+      {
         "word": "key",
         "vocabularyIds": [
           "vocab-dd7cf58e61fa"
@@ -96317,6 +96980,12 @@
         "word": "doctor",
         "vocabularyIds": [
           "vocab-60e888b69674"
+        ]
+      },
+      {
+        "word": "take",
+        "vocabularyIds": [
+          "vocab-dcd3acd6b659"
         ]
       },
       {
@@ -96612,6 +97281,18 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "like",
+        "vocabularyIds": [
+          "vocab-32a5e8698306"
+        ]
+      },
+      {
+        "word": "quiet",
+        "vocabularyIds": [
+          "vocab-61b57e2d4702"
+        ]
+      },
+      {
         "word": "room",
         "vocabularyIds": [
           "vocab-23523bbf8d9c"
@@ -96707,9 +97388,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "height",
+        "vocabularyIds": [
+          "vocab-775979a197ea"
+        ]
+      },
+      {
         "word": "building",
         "vocabularyIds": [
           "vocab-b11f169893fb"
+        ]
+      },
+      {
+        "word": "hundred",
+        "vocabularyIds": [
+          "vocab-96a032e15dda"
+        ]
+      },
+      {
+        "word": "meters",
+        "vocabularyIds": [
+          "vocab-3fbaed3922ea"
         ]
       }
     ],
@@ -96959,6 +97658,24 @@
         "vocabularyIds": [
           "vocab-82dcbecaf875"
         ]
+      },
+      {
+        "word": "clean",
+        "vocabularyIds": [
+          "vocab-58a738a344fe"
+        ]
+      },
+      {
+        "word": "fish",
+        "vocabularyIds": [
+          "vocab-5c1c2120b516"
+        ]
+      },
+      {
+        "word": "visible",
+        "vocabularyIds": [
+          "vocab-e99feae5bc25"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -97042,6 +97759,18 @@
         "word": "studied",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "three",
+        "vocabularyIds": [
+          "vocab-1bedf722c04a"
+        ]
+      },
+      {
+        "word": "hours",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
         ]
       }
     ],
@@ -97299,6 +98028,12 @@
         "vocabularyIds": [
           "vocab-123a10eb50b0"
         ]
+      },
+      {
+        "word": "sleep",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -97377,9 +98112,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "buys",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
         "word": "expensive",
         "vocabularyIds": [
           "vocab-775979a197ea"
+        ]
+      },
+      {
+        "word": "things",
+        "vocabularyIds": [
+          "vocab-012e69e925d7"
         ]
       }
     ],
@@ -97674,9 +98421,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "looking",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      },
+      {
         "word": "photo",
         "vocabularyIds": [
           "vocab-d5901ecbf5fb"
+        ]
+      },
+      {
+        "word": "happy",
+        "vocabularyIds": [
+          "vocab-58974357459a"
         ]
       }
     ],
@@ -97770,6 +98529,12 @@
     "solution": "この薬を飲むだけで、よくなります。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "taking",
+        "vocabularyIds": [
+          "vocab-dcd3acd6b659"
+        ]
+      },
       {
         "word": "medicine",
         "vocabularyIds": [
@@ -97891,8 +98656,7 @@
     "text": "朝御飯はパンとか果物とかを食べます。",
     "audio": "assets/voices/grammar/n4-breakfast-bread-fruit-examples.m4a",
     "vocabularyIds": [
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-3ad79496437d",
       "vocab-4f33338415ef",
       "vocab-ec4fa4315542"
@@ -97905,16 +98669,10 @@
     ],
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "は",
@@ -97973,13 +98731,13 @@
     "grammarHighlights": [
       {
         "grammarPointId": "toka-toka",
-        "tokenStart": 6,
-        "tokenEnd": 8
+        "tokenStart": 5,
+        "tokenEnd": 7
       },
       {
         "grammarPointId": "o-object",
-        "tokenStart": 7,
-        "tokenEnd": 8
+        "tokenStart": 6,
+        "tokenEnd": 7
       }
     ]
   },
@@ -98048,6 +98806,12 @@
     "solution": "りんごとかバナナとかを買いました。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "bought",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
       {
         "word": "apples",
         "vocabularyIds": [
@@ -98202,6 +98966,36 @@
     "solution": "日曜日は本を読むとか、映画を見るとか、好きなことをします。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "Sundays",
+        "vocabularyIds": [
+          "vocab-b7519a0f57a7"
+        ]
+      },
+      {
+        "word": "like",
+        "vocabularyIds": [
+          "vocab-32a5e8698306"
+        ]
+      },
+      {
+        "word": "reading",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "books",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "watching",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      },
       {
         "word": "movies",
         "vocabularyIds": [
@@ -98443,6 +99237,12 @@
         "vocabularyIds": [
           "vocab-87bbe3de9902"
         ]
+      },
+      {
+        "word": "bitter",
+        "vocabularyIds": [
+          "vocab-b264619d7291"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -98519,9 +99319,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "loud",
+        "vocabularyIds": [
+          "vocab-ef06b1815ddd"
+        ]
+      },
+      {
         "word": "sound",
         "vocabularyIds": [
           "vocab-b37750755344"
+        ]
+      },
+      {
+        "word": "outside",
+        "vocabularyIds": [
+          "vocab-6109638dac53"
         ]
       }
     ],
@@ -98781,6 +99593,12 @@
         "vocabularyIds": [
           "vocab-28102c121d50"
         ]
+      },
+      {
+        "word": "wood",
+        "vocabularyIds": [
+          "vocab-a5d390dc4805"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -98867,6 +99685,18 @@
         "word": "flower",
         "vocabularyIds": [
           "vocab-fa6a4c8f27b4"
+        ]
+      },
+      {
+        "word": "made",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
+        "word": "paper",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
         ]
       }
     ],
@@ -99114,6 +99944,12 @@
         ]
       },
       {
+        "word": "made",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
         "word": "milk",
         "vocabularyIds": [
           "vocab-e90f788a51b5"
@@ -99209,6 +100045,18 @@
     "solution": "このスープは野菜から作られています。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "soup",
+        "vocabularyIds": [
+          "vocab-935437cca5af"
+        ]
+      },
+      {
+        "word": "made",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
       {
         "word": "vegetables",
         "vocabularyIds": [
@@ -99513,6 +100361,12 @@
         ]
       },
       {
+        "word": "use",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      },
+      {
         "word": "stairs",
         "vocabularyIds": [
           "vocab-fd12aa0d5724"
@@ -99623,6 +100477,24 @@
         "word": "road",
         "vocabularyIds": [
           "vocab-b4a022a9e7a6"
+        ]
+      },
+      {
+        "word": "dangerous",
+        "vocabularyIds": [
+          "vocab-b56f4f9656e1"
+        ]
+      },
+      {
+        "word": "walk",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      },
+      {
+        "word": "here",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
         ]
       }
     ],
@@ -99866,9 +100738,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "meet",
+        "vocabularyIds": [
+          "vocab-40179481fcf6"
+        ]
+      },
+      {
         "word": "friend",
         "vocabularyIds": [
           "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ],
@@ -99951,9 +100835,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "new",
+        "vocabularyIds": [
+          "vocab-288a95a40d95"
+        ]
+      },
+      {
         "word": "shop",
         "vocabularyIds": [
           "vocab-e70f9243d4c7"
+        ]
+      },
+      {
+        "word": "open",
+        "vocabularyIds": [
+          "vocab-56dc4d647d8b"
+        ]
+      },
+      {
+        "word": "next week",
+        "vocabularyIds": [
+          "vocab-eddc7f95d55c"
         ]
       }
     ],
@@ -100241,6 +101143,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "come",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
         "word": "tomorrow",
         "vocabularyIds": [
           "vocab-bec9ce9d08c8"
@@ -100319,6 +101227,12 @@
     "solution": "誰に聞いたらいいですか。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "Who",
+        "vocabularyIds": [
+          "vocab-f3f74ef8bc9a"
+        ]
+      },
       {
         "word": "ask",
         "vocabularyIds": [
@@ -100620,6 +101534,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "more",
+        "vocabularyIds": [
+          "vocab-b87d435fd7f9"
+        ]
+      },
+      {
         "word": "chairs",
         "vocabularyIds": [
           "vocab-7863488ec2b8"
@@ -100896,9 +101816,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "late",
+        "vocabularyIds": [
+          "vocab-6762b46e5f55"
+        ]
+      },
+      {
+        "word": "school",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
+        ]
+      },
+      {
         "word": "train",
         "vocabularyIds": [
           "vocab-dc7f5fc156cf"
+        ]
+      },
+      {
+        "word": "delayed",
+        "vocabularyIds": [
+          "vocab-6762b46e5f55"
         ]
       }
     ],
@@ -100978,6 +101916,18 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      },
+      {
+        "word": "stopped",
+        "vocabularyIds": [
+          "vocab-bd365f430f35"
+        ]
+      },
+      {
         "word": "snow",
         "vocabularyIds": [
           "vocab-79db1765ce26"
@@ -101000,8 +101950,7 @@
     "text": "朝御飯を食べなくて、お腹が空きました。",
     "audio": "assets/voices/grammar/n4-hungry-because-no-breakfast-negative-connective.m4a",
     "vocabularyIds": [
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542",
       "vocab-c84cb6c3f6a8",
       "vocab-d78eda1984d2"
@@ -101014,16 +101963,10 @@
     ],
     "tokens": [
       {
-        "surface": "朝",
+        "surface": "朝御飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -101091,13 +102034,13 @@
     "grammarHighlights": [
       {
         "grammarPointId": "nakute-connective",
-        "tokenStart": 4,
-        "tokenEnd": 6
+        "tokenStart": 3,
+        "tokenEnd": 5
       },
       {
         "grammarPointId": "o-object",
-        "tokenStart": 2,
-        "tokenEnd": 3
+        "tokenStart": 1,
+        "tokenEnd": 2
       }
     ]
   },
@@ -101294,6 +102237,18 @@
         "vocabularyIds": [
           "vocab-a7095a66e0d8"
         ]
+      },
+      {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
+        "word": "come",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -101391,9 +102346,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "know",
+        "vocabularyIds": [
+          "vocab-eeb8ecca964f"
+        ]
+      },
+      {
         "word": "way",
         "vocabularyIds": [
           "vocab-b4a022a9e7a6"
+        ]
+      },
+      {
+        "word": "asked",
+        "vocabularyIds": [
+          "vocab-d8a0261581dc"
+        ]
+      },
+      {
+        "word": "police box",
+        "vocabularyIds": [
+          "vocab-ce4488f51ebc"
         ]
       }
     ],
@@ -101696,9 +102669,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "reading",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
         "word": "Japanese",
         "vocabularyIds": [
           "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "every day",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
         ]
       }
     ],
@@ -101813,6 +102798,18 @@
     "solution": "食事の時はテレビを見ないことにしています。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "watch",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      },
+      {
+        "word": "television",
+        "vocabularyIds": [
+          "vocab-b4d66aa2f6f4"
+        ]
+      },
       {
         "word": "meals",
         "vocabularyIds": [
@@ -102144,9 +103141,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "speak",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      },
+      {
         "word": "Japanese",
         "vocabularyIds": [
           "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "class",
+        "vocabularyIds": [
+          "vocab-4c99b14fe21c"
         ]
       }
     ],
@@ -102254,6 +103263,18 @@
         "word": "bus",
         "vocabularyIds": [
           "vocab-826a124ad930"
+        ]
+      },
+      {
+        "word": "leave",
+        "vocabularyIds": [
+          "vocab-b2a9df4d0301"
+        ]
+      },
+      {
+        "word": "seven",
+        "vocabularyIds": [
+          "vocab-651603322794"
         ]
       }
     ],
@@ -102874,6 +103895,18 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "explained",
+        "vocabularyIds": [
+          "vocab-9683551a843c"
+        ]
+      },
+      {
         "word": "word",
         "vocabularyIds": [
           "vocab-cef4a2049ff3"
@@ -102968,6 +104001,12 @@
         "word": "doctor",
         "vocabularyIds": [
           "vocab-60e888b69674"
+        ]
+      },
+      {
+        "word": "examined",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
         ]
       },
       {
@@ -103258,6 +104297,18 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "doctor",
+        "vocabularyIds": [
+          "vocab-60e888b69674"
+        ]
+      },
+      {
+        "word": "explained",
+        "vocabularyIds": [
+          "vocab-9683551a843c"
+        ]
+      },
+      {
         "word": "medicine",
         "vocabularyIds": [
           "vocab-87bbe3de9902"
@@ -103349,6 +104400,18 @@
     "solution": "先生が手紙を書いてくださいました。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "wrote",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
       {
         "word": "letter",
         "vocabularyIds": [
@@ -103460,8 +104523,7 @@
     "audio": "assets/voices/grammar/n4-honorific-teacher-ate-lunch.m4a",
     "vocabularyIds": [
       "vocab-497356cf0646",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-f6ffa4327b98"
     ],
     "kanjiIds": [
@@ -103484,16 +104546,10 @@
         "reading": "は"
       },
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "を",
@@ -103530,13 +104586,13 @@
     "grammarHighlights": [
       {
         "grammarPointId": "sonkeigo-system",
-        "tokenStart": 5,
-        "tokenEnd": 8
+        "tokenStart": 4,
+        "tokenEnd": 7
       },
       {
         "grammarPointId": "o-object",
-        "tokenStart": 4,
-        "tokenEnd": 5
+        "tokenStart": 3,
+        "tokenEnd": 4
       }
     ]
   },
@@ -103624,6 +104680,18 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "company president",
+        "vocabularyIds": [
+          "vocab-5621763f634f"
+        ]
+      },
+      {
+        "word": "reading",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
         "word": "newspaper",
         "vocabularyIds": [
           "vocab-f906b238c9c2"
@@ -103698,6 +104766,12 @@
         "word": "teacher",
         "vocabularyIds": [
           "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ],
@@ -103951,6 +105025,18 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "guide",
+        "vocabularyIds": [
+          "vocab-f9fe99b91dd5"
+        ]
+      },
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
         "word": "classroom",
         "vocabularyIds": [
           "vocab-fbb71c77ac0e"
@@ -104041,6 +105127,12 @@
         "word": "book",
         "vocabularyIds": [
           "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
         ]
       }
     ],
@@ -104256,6 +105348,12 @@
         "vocabularyIds": [
           "vocab-34751fd2b8b6"
         ]
+      },
+      {
+        "word": "over there",
+        "vocabularyIds": [
+          "vocab-a4c61e187228"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -104337,6 +105435,12 @@
     "solution": "こちらが今日の料理でございます。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "today",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      },
       {
         "word": "dish",
         "vocabularyIds": [
@@ -104616,6 +105720,18 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "write",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
         "word": "letter",
         "vocabularyIds": [
           "vocab-8e7233a38df0"
@@ -104715,6 +105831,18 @@
         "word": "teacher",
         "vocabularyIds": [
           "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "waiting",
+        "vocabularyIds": [
+          "vocab-6f30c5c5938f"
+        ]
+      },
+      {
+        "word": "outside",
+        "vocabularyIds": [
+          "vocab-6109638dac53"
         ]
       }
     ],
@@ -104938,6 +106066,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "explain",
+        "vocabularyIds": [
+          "vocab-9683551a843c"
+        ]
+      },
+      {
         "word": "schedule",
         "vocabularyIds": [
           "vocab-1b1b5806b28b"
@@ -105026,9 +106160,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "call",
+        "vocabularyIds": [
+          "vocab-24df87472770"
+        ]
+      },
+      {
         "word": "teacher",
         "vocabularyIds": [
           "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ],
@@ -105225,6 +106371,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "use",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      },
+      {
         "word": "elevator",
         "vocabularyIds": [
           "vocab-34751fd2b8b6"
@@ -105297,6 +106449,12 @@
     "solution": "この本をお読みください。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "read",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
       {
         "word": "book",
         "vocabularyIds": [
@@ -105481,8 +106639,7 @@
     "vocabularyIds": [
       "vocab-5621763f634f",
       "vocab-57367d42ac5c",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-f6ffa4327b98"
     ],
     "kanjiIds": [
@@ -105516,16 +106673,10 @@
         "reading": "で"
       },
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "を",
@@ -105553,9 +106704,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "company president",
+        "vocabularyIds": [
+          "vocab-5621763f634f"
+        ]
+      },
+      {
         "word": "lunch",
         "vocabularyIds": [
           "vocab-91b2f0a8bfc1"
+        ]
+      },
+      {
+        "word": "here",
+        "vocabularyIds": [
+          "vocab-57367d42ac5c"
         ]
       }
     ],
@@ -105565,8 +106728,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "sonkeigo-special-verbs",
-        "tokenStart": 7,
-        "tokenEnd": 9
+        "tokenStart": 6,
+        "tokenEnd": 8
       }
     ]
   },
@@ -105650,6 +106813,12 @@
     "solution": "先生はこの写真をご覧になりました。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
       {
         "word": "photo",
         "vocabularyIds": [
@@ -106227,6 +107396,18 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "student",
+        "vocabularyIds": [
+          "vocab-9567eaf8fe9b"
+        ]
+      },
+      {
+        "word": "lived",
+        "vocabularyIds": [
+          "vocab-405805427b97"
+        ]
+      },
+      {
         "word": "Kyoto",
         "vocabularyIds": [
           "vocab-62153df2c4e3"
@@ -106331,9 +107512,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "started",
+        "vocabularyIds": [
+          "vocab-79261a065ba5"
+        ]
+      },
+      {
         "word": "job",
         "vocabularyIds": [
           "vocab-cdf28ddaf837"
+        ]
+      },
+      {
+        "word": "very",
+        "vocabularyIds": [
+          "vocab-ffc41bd9a841"
+        ]
+      },
+      {
+        "word": "busy",
+        "vocabularyIds": [
+          "vocab-5ee54e973899"
         ]
       }
     ],
@@ -106634,6 +107833,24 @@
         "vocabularyIds": [
           "vocab-704870bca266"
         ]
+      },
+      {
+        "word": "useful",
+        "vocabularyIds": [
+          "vocab-7eeea113076f"
+        ]
+      },
+      {
+        "word": "carrying",
+        "vocabularyIds": [
+          "vocab-ac6ebe4452ce"
+        ]
+      },
+      {
+        "word": "books",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -106738,6 +107955,24 @@
     "solution": "この部屋を掃除するのに一時間かかります。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "takes",
+        "vocabularyIds": [
+          "vocab-0a3ea16df0dc"
+        ]
+      },
+      {
+        "word": "hour",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
+        ]
+      },
+      {
+        "word": "clean",
+        "vocabularyIds": [
+          "vocab-21537eeda1e7"
+        ]
+      },
       {
         "word": "room",
         "vocabularyIds": [
@@ -106962,6 +108197,12 @@
     "solution": "この説明はなかなか分かりません。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "understand",
+        "vocabularyIds": [
+          "vocab-eeb8ecca964f"
+        ]
+      },
       {
         "word": "explanation",
         "vocabularyIds": [
@@ -107280,6 +108521,12 @@
         "vocabularyIds": [
           "vocab-b11f169893fb"
         ]
+      },
+      {
+        "word": "school",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -107360,6 +108607,12 @@
         "word": "room",
         "vocabularyIds": [
           "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "clean",
+        "vocabularyIds": [
+          "vocab-58a738a344fe"
         ]
       }
     ],
@@ -107591,6 +108844,12 @@
         "vocabularyIds": [
           "vocab-09558b341dc0"
         ]
+      },
+      {
+        "word": "remember",
+        "vocabularyIds": [
+          "vocab-0ec838cc07ea"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -107658,6 +108917,12 @@
         "word": "question",
         "vocabularyIds": [
           "vocab-f5d831590911"
+        ]
+      },
+      {
+        "word": "ask",
+        "vocabularyIds": [
+          "vocab-d8a0261581dc"
         ]
       }
     ],
@@ -107930,9 +109195,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "Repairing",
+        "vocabularyIds": [
+          "vocab-a584cd8f1390"
+        ]
+      },
+      {
         "word": "watch",
         "vocabularyIds": [
           "vocab-4754cbccd601"
+        ]
+      },
+      {
+        "word": "thousand",
+        "vocabularyIds": [
+          "vocab-86ef0852f80f"
+        ]
+      },
+      {
+        "word": "yen",
+        "vocabularyIds": [
+          "vocab-ed7e1b01883d"
         ]
       }
     ],
@@ -108231,6 +109514,18 @@
         "vocabularyIds": [
           "vocab-dc7f5fc156cf"
         ]
+      },
+      {
+        "word": "come",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "soon",
+        "vocabularyIds": [
+          "vocab-7d35ef299db0"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -108310,6 +109605,18 @@
     "solution": "母に何をあげようかな。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "what",
+        "vocabularyIds": [
+          "vocab-3b010d61ddd5"
+        ]
+      },
+      {
+        "word": "give",
+        "vocabularyIds": [
+          "vocab-eee8b9c95721"
+        ]
+      },
       {
         "word": "mother",
         "vocabularyIds": [
@@ -108545,6 +109852,12 @@
         "vocabularyIds": [
           "vocab-61c233ab6a5e"
         ]
+      },
+      {
+        "word": "open",
+        "vocabularyIds": [
+          "vocab-56dc4d647d8b"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -108609,6 +109922,12 @@
     "solution": "あの人は誰かしら。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "who",
+        "vocabularyIds": [
+          "vocab-f3f74ef8bc9a"
+        ]
+      },
       {
         "word": "person",
         "vocabularyIds": [
@@ -108832,6 +110151,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "know",
+        "vocabularyIds": [
+          "vocab-531b240786ce"
+        ]
+      },
+      {
         "word": "person",
         "vocabularyIds": [
           "vocab-ad7167347a2a"
@@ -108898,6 +110223,12 @@
         "word": "busy",
         "vocabularyIds": [
           "vocab-5ee54e973899"
+        ]
+      },
+      {
+        "word": "today",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
         ]
       }
     ],
@@ -109122,6 +110453,12 @@
         "vocabularyIds": [
           "vocab-944f21154c78"
         ]
+      },
+      {
+        "word": "together",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -109201,6 +110538,12 @@
     "solution": "明日は日曜日ではないか。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
+      },
       {
         "word": "Sunday",
         "vocabularyIds": [
@@ -112710,6 +114053,18 @@
         "vocabularyIds": [
           "vocab-2183db666af4"
         ]
+      },
+      {
+        "word": "work",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
+        ]
+      },
+      {
+        "word": "Japan",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -112831,9 +114186,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "buy",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
         "word": "shoes",
         "vocabularyIds": [
           "vocab-d2110e85159b"
+        ]
+      },
+      {
+        "word": "expensive",
+        "vocabularyIds": [
+          "vocab-775979a197ea"
         ]
       }
     ],
@@ -113219,9 +114586,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "younger brother",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
+      {
         "word": "doctor",
         "vocabularyIds": [
           "vocab-60e888b69674"
+        ]
+      },
+      {
+        "word": "still",
+        "vocabularyIds": [
+          "vocab-f385448e1132"
+        ]
+      },
+      {
+        "word": "child",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
         ]
       }
     ],
@@ -113423,6 +114808,24 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "write",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "read",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "kanji",
+        "vocabularyIds": [
+          "vocab-535c688e8bf9"
+        ]
+      },
+      {
         "word": "hiragana",
         "vocabularyIds": [
           "vocab-1406fd4d2836"
@@ -113456,8 +114859,7 @@
       "vocab-f6a8c4a23b51",
       "vocab-b66f43bc23a1",
       "vocab-f4ee05460d54",
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -113512,16 +114914,10 @@
         "reading": "で"
       },
       {
-        "surface": "朝",
+        "surface": "朝ご飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "を",
@@ -113563,8 +114959,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "te-iku",
-        "tokenStart": 12,
-        "tokenEnd": 15
+        "tokenStart": 11,
+        "tokenEnd": 14
       },
       {
         "grammarPointId": "node-reason",
@@ -113666,6 +115062,18 @@
     "solution": "先生が説明している間、話さないでください。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "talk",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      },
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
       {
         "word": "explaining",
         "vocabularyIds": [
@@ -114280,9 +115688,33 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "use",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      },
+      {
         "word": "eggs",
         "vocabularyIds": [
           "vocab-190923f1528e"
+        ]
+      },
+      {
+        "word": "younger sister",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
+        "word": "eat",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "cake",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
         ]
       }
     ],
@@ -114534,6 +115966,24 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "singing",
+        "vocabularyIds": [
+          "vocab-d8974b42548f"
+        ]
+      },
+      {
+        "word": "dancing",
+        "vocabularyIds": [
+          "vocab-98d08dfe0a16"
+        ]
+      },
+      {
+        "word": "this year",
+        "vocabularyIds": [
+          "vocab-365704d56220"
+        ]
+      },
+      {
         "word": "festival",
         "vocabularyIds": [
           "vocab-a722b3dcc5a4"
@@ -114669,6 +116119,24 @@
     "solution": "先生はもう帰ったそうだから、教室にはいないはずです。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "already",
+        "vocabularyIds": [
+          "vocab-0960d185c7f1"
+        ]
+      },
+      {
+        "word": "gone home",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      },
       {
         "word": "classroom",
         "vocabularyIds": [
@@ -114937,6 +116405,24 @@
     "solution": "忘れやすい名前は、ノートに書いておいたほうがいいです。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "write",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "names",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      },
+      {
+        "word": "forget",
+        "vocabularyIds": [
+          "vocab-53c63c8d3e25"
+        ]
+      },
       {
         "word": "notebook",
         "vocabularyIds": [
@@ -115209,6 +116695,30 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "new",
+        "vocabularyIds": [
+          "vocab-288a95a40d95"
+        ]
+      },
+      {
+        "word": "station",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      },
+      {
+        "word": "shops",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      },
+      {
+        "word": "town",
+        "vocabularyIds": [
+          "vocab-09d74d630a45"
+        ]
+      },
+      {
         "word": "increasing",
         "vocabularyIds": [
           "vocab-2c955930b5a4"
@@ -115337,6 +116847,18 @@
         "word": "enough",
         "vocabularyIds": [
           "vocab-cdc7fbcaab99"
+        ]
+      },
+      {
+        "word": "bread",
+        "vocabularyIds": [
+          "vocab-3ad79496437d"
+        ]
+      },
+      {
+        "word": "buy",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
         ]
       }
     ],
@@ -115624,6 +117146,24 @@
     "solution": "私がシャワーを浴びている間に、タクシーを呼んでおいてください。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "taking",
+        "vocabularyIds": [
+          "vocab-981b91b281ca"
+        ]
+      },
+      {
+        "word": "shower",
+        "vocabularyIds": [
+          "vocab-4216cb81030d"
+        ]
+      },
+      {
+        "word": "call",
+        "vocabularyIds": [
+          "vocab-0adf764f9311"
+        ]
+      },
       {
         "word": "taxi",
         "vocabularyIds": [
@@ -116378,8 +117918,7 @@
       "vocab-58a738a344fe",
       "vocab-82dcbecaf875",
       "vocab-08a53edb01c1",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-ec4fa4315542"
     ],
     "kanjiIds": [
@@ -116427,16 +117966,10 @@
         "reading": "、"
       },
       {
-        "surface": "昼",
+        "surface": "昼ご飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "を",
@@ -116484,8 +118017,8 @@
       },
       {
         "grammarPointId": "masen-ka-invitation",
-        "tokenStart": 11,
-        "tokenEnd": 14
+        "tokenStart": 10,
+        "tokenEnd": 13
       },
       {
         "grammarPointId": "de-action-location",
@@ -117304,7 +118837,7 @@
   },
   {
     "id": "production-n4-plan-repair-old-bicycle",
-    "text": "A new bicycle costs too much, so I am thinking of fixing my old one.",
+    "text": "A new bicycle is too expensive, so I am thinking of fixing my old one.",
     "audio": "assets/voices/grammar/production-n4-plan-repair-old-bicycle.m4a",
     "vocabularyIds": [
       "vocab-288a95a40d95",
@@ -117424,9 +118957,33 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "new",
+        "vocabularyIds": [
+          "vocab-288a95a40d95"
+        ]
+      },
+      {
+        "word": "bicycle",
+        "vocabularyIds": [
+          "vocab-457ac376d17f"
+        ]
+      },
+      {
+        "word": "expensive",
+        "vocabularyIds": [
+          "vocab-775979a197ea"
+        ]
+      },
+      {
         "word": "fixing",
         "vocabularyIds": [
           "vocab-a584cd8f1390"
+        ]
+      },
+      {
+        "word": "old",
+        "vocabularyIds": [
+          "vocab-e5fd15d61360"
         ]
       }
     ],
@@ -117698,8 +119255,7 @@
       "vocab-e47785e0c656",
       "vocab-11b5462fa3a4",
       "vocab-3653e718a1a5",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-ec4fa4315542",
       "vocab-f6a8c4a23b51",
       "vocab-dcfa870c8a53",
@@ -117758,16 +119314,10 @@
         "reading": "、"
       },
       {
-        "surface": "昼",
+        "surface": "昼ご飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "を",
@@ -117838,6 +119388,31 @@
         "vocabularyIds": [
           "vocab-e47785e0c656"
         ]
+      },
+      {
+        "word": "long",
+        "vocabularyIds": [
+          "vocab-11b5462fa3a4"
+        ]
+      },
+      {
+        "word": "change",
+        "vocabularyIds": [
+          "vocab-dcfa870c8a53"
+        ]
+      },
+      {
+        "word": "time",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
+        ]
+      },
+      {
+        "word": "lunch",
+        "vocabularyIds": [
+          "vocab-91b2f0a8bfc1",
+          "vocab-ec4fa4315542"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -117848,8 +119423,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "koto-ni-naru",
-        "tokenStart": 15,
-        "tokenEnd": 20
+        "tokenStart": 14,
+        "tokenEnd": 19
       },
       {
         "grammarPointId": "tame-ni-cause",
@@ -118090,6 +119665,18 @@
         "word": "dog",
         "vocabularyIds": [
           "vocab-4cd1238bcb91"
+        ]
+      },
+      {
+        "word": "grow",
+        "vocabularyIds": [
+          "vocab-3653e718a1a5"
+        ]
+      },
+      {
+        "word": "big",
+        "vocabularyIds": [
+          "vocab-f6377dcbb564"
         ]
       }
     ],
@@ -118439,9 +120026,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "see",
+        "vocabularyIds": [
+          "vocab-e99feae5bc25"
+        ]
+      },
+      {
         "word": "birds",
         "vocabularyIds": [
           "vocab-683f3e7fb085"
+        ]
+      },
+      {
+        "word": "flying",
+        "vocabularyIds": [
+          "vocab-bfe63a77332b"
         ]
       }
     ],
@@ -118842,6 +120441,30 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "lunch break",
+        "vocabularyIds": [
+          "vocab-385a4dbb8d14"
+        ]
+      },
+      {
+        "word": "went",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "post office",
+        "vocabularyIds": [
+          "vocab-e40b7fecf36c"
+        ]
+      },
+      {
+        "word": "send",
+        "vocabularyIds": [
+          "vocab-d4cd95d9b9a5"
+        ]
+      },
+      {
         "word": "parcel",
         "vocabularyIds": [
           "vocab-567f42b89301"
@@ -118968,6 +120591,24 @@
     "solution": "電車で行くなら、先に切符を買っておいてください。",
     "type": "production",
     "promptVocabularyHints": [
+      {
+        "word": "going",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      },
+      {
+        "word": "buy",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
       {
         "word": "ticket",
         "vocabularyIds": [
@@ -119258,6 +120899,30 @@
         "vocabularyIds": [
           "vocab-e47785e0c656"
         ]
+      },
+      {
+        "word": "listen",
+        "vocabularyIds": [
+          "vocab-d8a0261581dc"
+        ]
+      },
+      {
+        "word": "same",
+        "vocabularyIds": [
+          "vocab-9ff4f40a3428"
+        ]
+      },
+      {
+        "word": "story",
+        "vocabularyIds": [
+          "vocab-be9551d57abc"
+        ]
+      },
+      {
+        "word": "tired",
+        "vocabularyIds": [
+          "vocab-65f5cb2d1bd4"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -119497,6 +121162,25 @@
         "word": "sweater",
         "vocabularyIds": [
           "vocab-797ac724daf3"
+        ]
+      },
+      {
+        "word": "shrank",
+        "vocabularyIds": [
+          "vocab-769a80524957",
+          "vocab-3653e718a1a5"
+        ]
+      },
+      {
+        "word": "washed",
+        "vocabularyIds": [
+          "vocab-84e555b3292a"
+        ]
+      },
+      {
+        "word": "hot water",
+        "vocabularyIds": [
+          "vocab-a89eb4b93468"
         ]
       }
     ],
@@ -120010,6 +121694,25 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "eating",
+        "vocabularyIds": [
+          "vocab-2bf5dccca2b0",
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "wash",
+        "vocabularyIds": [
+          "vocab-84e555b3292a"
+        ]
+      },
+      {
+        "word": "own",
+        "vocabularyIds": [
+          "vocab-7cc10603c197"
+        ]
+      },
+      {
         "word": "bowl",
         "vocabularyIds": [
           "vocab-aa6a896345b4"
@@ -120310,9 +122013,39 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "turning off",
+        "vocabularyIds": [
+          "vocab-fda6e04cdc9d"
+        ]
+      },
+      {
         "word": "light",
         "vocabularyIds": [
           "vocab-a24e73630479"
+        ]
+      },
+      {
+        "word": "leave",
+        "vocabularyIds": [
+          "vocab-b2a9df4d0301"
+        ]
+      },
+      {
+        "word": "room",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "forgot",
+        "vocabularyIds": [
+          "vocab-53c63c8d3e25"
+        ]
+      },
+      {
+        "word": "yesterday",
+        "vocabularyIds": [
+          "vocab-eb208b6436bb"
         ]
       }
     ],
@@ -120692,9 +122425,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "writing",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
         "word": "address",
         "vocabularyIds": [
           "vocab-fcdd7a903190"
+        ]
+      },
+      {
+        "word": "paper",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
+        ]
+      },
+      {
+        "word": "hand",
+        "vocabularyIds": [
+          "vocab-e713380aad5b"
         ]
       }
     ],
@@ -121043,6 +122794,30 @@
         "word": "child",
         "vocabularyIds": [
           "vocab-5fd1d3759699"
+        ]
+      },
+      {
+        "word": "sleep",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "alone",
+        "vocabularyIds": [
+          "vocab-7de8b40e4f57"
+        ]
+      },
+      {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
+        "word": "nearby",
+        "vocabularyIds": [
+          "vocab-08a53edb01c1"
         ]
       }
     ],
@@ -121415,9 +123190,33 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "away",
+        "vocabularyIds": [
+          "vocab-9493412fc88d"
+        ]
+      },
+      {
+        "word": "give",
+        "vocabularyIds": [
+          "vocab-eee8b9c95721"
+        ]
+      },
+      {
         "word": "cat",
         "vocabularyIds": [
           "vocab-123a10eb50b0"
+        ]
+      },
+      {
+        "word": "water",
+        "vocabularyIds": [
+          "vocab-28ddfdc9290c"
+        ]
+      },
+      {
+        "word": "every day",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
         ]
       }
     ],
@@ -121648,6 +123447,12 @@
         "word": "home",
         "vocabularyIds": [
           "vocab-944f21154c78"
+        ]
+      },
+      {
+        "word": "letting you know",
+        "vocabularyIds": [
+          "vocab-e04a18cc6700"
         ]
       }
     ],
@@ -122063,6 +123868,30 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "child",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
+      {
+        "word": "sleep",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "read",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "short",
+        "vocabularyIds": [
+          "vocab-456eae34da34"
+        ]
+      },
+      {
         "word": "story",
         "vocabularyIds": [
           "vocab-be9551d57abc"
@@ -122180,9 +124009,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "bedtime",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "pick out",
+        "vocabularyIds": [
+          "vocab-cbc44d67ceca"
+        ]
+      },
+      {
         "word": "clothes",
         "vocabularyIds": [
           "vocab-ff1cb3f79233"
+        ]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ],
@@ -122449,6 +124296,24 @@
         "word": "grilling",
         "vocabularyIds": [
           "vocab-13b0a5df30f4"
+        ]
+      },
+      {
+        "word": "fish",
+        "vocabularyIds": [
+          "vocab-5c1c2120b516"
+        ]
+      },
+      {
+        "word": "come",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "kitchen",
+        "vocabularyIds": [
+          "vocab-2d479962e6d5"
         ]
       }
     ],
@@ -122856,9 +124721,39 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "long",
+        "vocabularyIds": [
+          "vocab-37de19811d79"
+        ]
+      },
+      {
         "word": "car",
         "vocabularyIds": [
           "vocab-f71f9de56223"
+        ]
+      },
+      {
+        "word": "trips",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "break",
+        "vocabularyIds": [
+          "vocab-acc3dd26ba1e"
+        ]
+      },
+      {
+        "word": "two",
+        "vocabularyIds": [
+          "vocab-7fc81b0ddd17"
+        ]
+      },
+      {
+        "word": "hours",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
         ]
       }
     ],
@@ -123232,9 +125127,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "making",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
         "word": "dish",
         "vocabularyIds": [
           "vocab-6ab8f730431c"
+        ]
+      },
+      {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
+        "word": "does",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
         ]
       }
     ],
@@ -123609,9 +125522,33 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "borrowed",
+        "vocabularyIds": [
+          "vocab-fcc4b149bcdb"
+        ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
         "word": "friend",
         "vocabularyIds": [
           "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "wet",
+        "vocabularyIds": [
+          "vocab-134840eb63c7"
+        ]
+      },
+      {
+        "word": "rain",
+        "vocabularyIds": [
+          "vocab-7e87850c448d"
         ]
       }
     ],
@@ -123877,9 +125814,21 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "forgot",
+        "vocabularyIds": [
+          "vocab-53c63c8d3e25"
+        ]
+      },
+      {
         "word": "wallet",
         "vocabularyIds": [
           "vocab-c5df4f2e7eab"
+        ]
+      },
+      {
+        "word": "buy",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
         ]
       }
     ],
@@ -124435,9 +126384,33 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "station",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      },
+      {
+        "word": "staff member",
+        "vocabularyIds": [
+          "vocab-ad7167347a2a"
+        ]
+      },
+      {
         "word": "stand",
         "vocabularyIds": [
           "vocab-17e3177c62d5"
+        ]
+      },
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      },
+      {
+        "word": "stopped",
+        "vocabularyIds": [
+          "vocab-bd365f430f35"
         ]
       }
     ],
@@ -124930,9 +126903,33 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "looking for",
+        "vocabularyIds": [
+          "vocab-291f4439ec65"
+        ]
+      },
+      {
         "word": "quiet",
         "vocabularyIds": [
           "vocab-61b57e2d4702"
+        ]
+      },
+      {
+        "word": "place",
+        "vocabularyIds": [
+          "vocab-79b9f20fa351"
+        ]
+      },
+      {
+        "word": "park",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      },
+      {
+        "word": "library",
+        "vocabularyIds": [
+          "vocab-ca8d0efe19a3"
         ]
       }
     ],
@@ -125338,6 +127335,24 @@
         "vocabularyIds": [
           "vocab-dc7f5fc156cf"
         ]
+      },
+      {
+        "word": "delayed",
+        "vocabularyIds": [
+          "vocab-6762b46e5f55"
+        ]
+      },
+      {
+        "word": "notify",
+        "vocabularyIds": [
+          "vocab-e04a18cc6700"
+        ]
+      },
+      {
+        "word": "phone",
+        "vocabularyIds": [
+          "vocab-24df87472770"
+        ]
       }
     ],
     "grammarPointIds": [
@@ -125475,6 +127490,24 @@
         "word": "party",
         "vocabularyIds": [
           "vocab-37388d6a51a3"
+        ]
+      },
+      {
+        "word": "Sunday",
+        "vocabularyIds": [
+          "vocab-b7519a0f57a7"
+        ]
+      },
+      {
+        "word": "clean",
+        "vocabularyIds": [
+          "vocab-21537eeda1e7"
+        ]
+      },
+      {
+        "word": "room",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
         ]
       }
     ],
@@ -126315,6 +128348,24 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "reading",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
         "word": "chose",
         "vocabularyIds": [
           "vocab-cbc44d67ceca"
@@ -126564,6 +128615,30 @@
         "word": "meeting",
         "vocabularyIds": [
           "vocab-e47785e0c656"
+        ]
+      },
+      {
+        "word": "over",
+        "vocabularyIds": [
+          "vocab-6393ca7aefde"
+        ]
+      },
+      {
+        "word": "take",
+        "vocabularyIds": [
+          "vocab-d4cd95d9b9a5"
+        ]
+      },
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "station",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
         ]
       }
     ],
@@ -126972,9 +129047,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "hand",
+        "vocabularyIds": [
+          "vocab-e713380aad5b"
+        ]
+      },
+      {
         "word": "documents",
         "vocabularyIds": [
           "vocab-58e891bce783"
+        ]
+      },
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "leave",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
         ]
       }
     ],
@@ -127301,8 +129394,7 @@
     "vocabularyIds": [
       "vocab-5fd1d3759699",
       "vocab-72c5b362c4f2",
-      "vocab-40ae6dddb10a",
-      "vocab-2bf5dccca2b0",
+      "vocab-818846d31820",
       "vocab-581d18f92555"
     ],
     "kanjiIds": [
@@ -127349,16 +129441,10 @@
         "reading": "、"
       },
       {
-        "surface": "朝",
+        "surface": "朝ご飯",
         "category": "noun",
-        "reading": "あさ",
-        "vocabularyId": "vocab-40ae6dddb10a"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "あさごはん",
+        "vocabularyId": "vocab-818846d31820"
       },
       {
         "surface": "が",
@@ -127401,9 +129487,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "Breakfast",
+        "vocabularyIds": [
+          "vocab-818846d31820"
+        ]
+      },
+      {
+        "word": "ready",
+        "vocabularyIds": [
+          "vocab-581d18f92555"
+        ]
+      },
+      {
         "word": "child",
         "vocabularyIds": [
           "vocab-5fd1d3759699"
+        ]
+      },
+      {
+        "word": "wakes up",
+        "vocabularyIds": [
+          "vocab-72c5b362c4f2"
         ]
       }
     ],
@@ -127420,13 +129524,13 @@
       },
       {
         "grammarPointId": "hazu-da",
-        "tokenStart": 13,
-        "tokenEnd": 14
+        "tokenStart": 12,
+        "tokenEnd": 13
       },
       {
         "grammarPointId": "te-iru-result-state",
-        "tokenStart": 11,
-        "tokenEnd": 13
+        "tokenStart": 10,
+        "tokenEnd": 12
       }
     ]
   },
@@ -127875,6 +129979,24 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "Singing",
+        "vocabularyIds": [
+          "vocab-d8974b42548f"
+        ]
+      },
+      {
+        "word": "in front of",
+        "vocabularyIds": [
+          "vocab-07f353ef981c"
+        ]
+      },
+      {
+        "word": "people",
+        "vocabularyIds": [
+          "vocab-ad7167347a2a"
+        ]
+      },
+      {
         "word": "embarrassing",
         "vocabularyIds": [
           "vocab-8b65db9c3fbf"
@@ -128113,9 +130235,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      },
+      {
+        "word": "coming",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
         "word": "walk",
         "vocabularyIds": [
           "vocab-a76603aae6e4"
+        ]
+      },
+      {
+        "word": "station",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
         ]
       }
     ],
@@ -128445,9 +130585,27 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "come",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
         "word": "sea",
         "vocabularyIds": [
           "vocab-47c1227c459b"
+        ]
+      },
+      {
+        "word": "swim",
+        "vocabularyIds": [
+          "vocab-76a7f713c3db"
+        ]
+      },
+      {
+        "word": "together",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
         ]
       }
     ],
@@ -148219,8 +150377,7 @@
     "audio": "assets/voices/reading/reading-grandpa-email-05.m4a",
     "vocabularyIds": [
       "vocab-b6944a5fe271",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-415439a1dbb6",
       "vocab-842637e88e8c",
       "vocab-922ff9e0323a",
@@ -148251,16 +150408,10 @@
         "reading": "「"
       },
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "の",
@@ -148364,18 +150515,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ato-de",
-        "tokenStart": 6,
-        "tokenEnd": 8
+        "tokenStart": 5,
+        "tokenEnd": 7
       },
       {
         "grammarPointId": "te-miru",
-        "tokenStart": 12,
-        "tokenEnd": 16
+        "tokenStart": 11,
+        "tokenEnd": 15
       },
       {
         "grammarPointId": "masen-ka-invitation",
-        "tokenStart": 14,
-        "tokenEnd": 17
+        "tokenStart": 13,
+        "tokenEnd": 16
       }
     ]
   },
@@ -148386,8 +150537,7 @@
     "audio": "assets/voices/reading/reading-grandpa-email-05.m4a",
     "vocabularyIds": [
       "vocab-b6944a5fe271",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-415439a1dbb6",
       "vocab-842637e88e8c",
       "vocab-922ff9e0323a",
@@ -148418,16 +150568,10 @@
         "reading": "「"
       },
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "の",
@@ -148540,18 +150684,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ato-de",
-        "tokenStart": 6,
-        "tokenEnd": 8
+        "tokenStart": 5,
+        "tokenEnd": 7
       },
       {
         "grammarPointId": "te-miru",
-        "tokenStart": 12,
-        "tokenEnd": 16
+        "tokenStart": 11,
+        "tokenEnd": 15
       },
       {
         "grammarPointId": "masen-ka-invitation",
-        "tokenStart": 14,
-        "tokenEnd": 17
+        "tokenStart": 13,
+        "tokenEnd": 16
       }
     ]
   },
@@ -156149,8 +158293,7 @@
     "vocabularyIds": [
       "vocab-d9898f8a95b6",
       "vocab-2d473f5bae43",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-f385448e1132",
       "vocab-a4ccf0b7bace",
       "vocab-4fa253e10946"
@@ -156195,16 +158338,10 @@
         "reading": "。"
       },
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "は",
@@ -156283,8 +158420,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "mada-te-inai",
-        "tokenStart": 9,
-        "tokenEnd": 10
+        "tokenStart": 8,
+        "tokenEnd": 9
       },
       {
         "grammarPointId": "na-adjective-predicate",
@@ -156293,8 +158430,8 @@
       },
       {
         "grammarPointId": "to-iu",
-        "tokenStart": 16,
-        "tokenEnd": 20
+        "tokenStart": 15,
+        "tokenEnd": 19
       }
     ]
   },
@@ -156306,8 +158443,7 @@
     "vocabularyIds": [
       "vocab-d9898f8a95b6",
       "vocab-2d473f5bae43",
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-f385448e1132",
       "vocab-a4ccf0b7bace",
       "vocab-4fa253e10946"
@@ -156352,16 +158488,10 @@
         "reading": "。"
       },
       {
-        "surface": "昼",
+        "surface": "昼御飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "御飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "は",
@@ -156449,8 +158579,8 @@
     "grammarHighlights": [
       {
         "grammarPointId": "mada-te-inai",
-        "tokenStart": 9,
-        "tokenEnd": 10
+        "tokenStart": 8,
+        "tokenEnd": 9
       },
       {
         "grammarPointId": "na-adjective-predicate",
@@ -156459,8 +158589,8 @@
       },
       {
         "grammarPointId": "to-iu",
-        "tokenStart": 16,
-        "tokenEnd": 20
+        "tokenStart": 15,
+        "tokenEnd": 19
       }
     ]
   },
@@ -179620,8 +181750,7 @@
     "text": "昼ご飯の後で、近くのスーパーへ買い物に行きました。",
     "audio": "assets/voices/reading/reading-evening-curry-05.m4a",
     "vocabularyIds": [
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-415439a1dbb6",
       "vocab-cacc70775f3e",
       "vocab-280c303db8c8",
@@ -179639,16 +181768,10 @@
     ],
     "tokens": [
       {
-        "surface": "昼",
+        "surface": "昼ご飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "の",
@@ -179734,18 +181857,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ato-de",
-        "tokenStart": 3,
-        "tokenEnd": 5
+        "tokenStart": 2,
+        "tokenEnd": 4
       },
       {
         "grammarPointId": "ni-purpose",
-        "tokenStart": 11,
-        "tokenEnd": 12
+        "tokenStart": 10,
+        "tokenEnd": 11
       },
       {
         "grammarPointId": "e-direction",
-        "tokenStart": 9,
-        "tokenEnd": 10
+        "tokenStart": 8,
+        "tokenEnd": 9
       }
     ]
   },
@@ -179755,8 +181878,7 @@
     "text": "After lunch, I went shopping at a nearby supermarket.",
     "audio": "assets/voices/reading/reading-evening-curry-05.m4a",
     "vocabularyIds": [
-      "vocab-4a9566e87de1",
-      "vocab-2bf5dccca2b0",
+      "vocab-91b2f0a8bfc1",
       "vocab-415439a1dbb6",
       "vocab-cacc70775f3e",
       "vocab-280c303db8c8",
@@ -179774,16 +181896,10 @@
     ],
     "tokens": [
       {
-        "surface": "昼",
+        "surface": "昼ご飯",
         "category": "noun",
-        "reading": "ひる",
-        "vocabularyId": "vocab-4a9566e87de1"
-      },
-      {
-        "surface": "ご飯",
-        "category": "noun",
-        "reading": "ごはん",
-        "vocabularyId": "vocab-2bf5dccca2b0"
+        "reading": "ひるごはん",
+        "vocabularyId": "vocab-91b2f0a8bfc1"
       },
       {
         "surface": "の",
@@ -179878,18 +181994,18 @@
     "grammarHighlights": [
       {
         "grammarPointId": "ato-de",
-        "tokenStart": 3,
-        "tokenEnd": 5
+        "tokenStart": 2,
+        "tokenEnd": 4
       },
       {
         "grammarPointId": "ni-purpose",
-        "tokenStart": 11,
-        "tokenEnd": 12
+        "tokenStart": 10,
+        "tokenEnd": 11
       },
       {
         "grammarPointId": "e-direction",
-        "tokenStart": 9,
-        "tokenEnd": 10
+        "tokenStart": 8,
+        "tokenEnd": 9
       }
     ]
   },

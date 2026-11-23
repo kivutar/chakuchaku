@@ -2449,6 +2449,46 @@ function handleOutsideProfileMenuClick(event) {
   }
 }
 
+function positionTokenGloss(token) {
+  if (!settings.translationTooltips || !token?.dataset.gloss) {
+    return;
+  }
+
+  const viewport = window.visualViewport;
+  const viewportLeft = viewport?.offsetLeft || 0;
+  const viewportWidth = viewport?.width || document.documentElement.clientWidth;
+  const margin = 8;
+
+  token.style.setProperty("--gloss-max-width", `${Math.max(0, viewportWidth - margin * 2)}px`);
+  token.classList.add("is-measuring-gloss");
+  const width = Number.parseFloat(window.getComputedStyle(token, "::after").width);
+  token.classList.remove("is-measuring-gloss");
+
+  if (!Number.isFinite(width)) {
+    return;
+  }
+
+  const rect = token.getBoundingClientRect();
+  const centeredLeft = rect.left + rect.width / 2 - width / 2;
+  const left = Math.max(viewportLeft + margin, Math.min(
+    centeredLeft,
+    viewportLeft + viewportWidth - margin - width
+  ));
+  token.style.setProperty("--gloss-offset", `${left - centeredLeft}px`);
+}
+
+function handleTokenGlossPointerEnter(event) {
+  positionTokenGloss(event.currentTarget);
+}
+
+function repositionVisibleTokenGlosses() {
+  for (const token of document.querySelectorAll(
+    ".token[data-gloss].is-touch-active, .token[data-gloss]:hover"
+  )) {
+    positionTokenGloss(token);
+  }
+}
+
 function handleTokenTap(event) {
   const activeToken = getTokenContainer().querySelector(".token.is-touch-active");
   const tappedToken = event.currentTarget;
@@ -2458,6 +2498,7 @@ function handleTokenTap(event) {
   activeToken?.classList.remove("is-touch-active");
 
   if (tappedToken !== activeToken) {
+    positionTokenGloss(tappedToken);
     tappedToken.classList.add("is-touch-active");
   }
 }
@@ -2572,6 +2613,7 @@ function createTokenElement(token, newGrammarPointIds = [], {
     vocabularyEntry
   ) {
     tokenElement.dataset.gloss = vocabularyEntry.meaning;
+    tokenElement.addEventListener("pointerenter", handleTokenGlossPointerEnter);
     exposesVocabularyMeaning = true;
   }
 
@@ -2847,6 +2889,7 @@ function renderPlainSentence(text, vocabularyHints = []) {
       contentElement.className = "token prompt-vocabulary-hint";
       contentElement.dataset.gloss = formatVocabularyHint(hint.vocabularyIds);
       contentElement.dataset.vocabularyIds = hint.vocabularyIds.join(" ");
+      contentElement.addEventListener("pointerenter", handleTokenGlossPointerEnter);
       contentElement.addEventListener("pointerenter", markVocabularyHintRevealed);
       contentElement.addEventListener("click", handlePromptVocabularyHintTap);
     }
@@ -6243,6 +6286,9 @@ vocabularyReadingHint.addEventListener("click", handleVocabularyReadingHintClick
 bindHintHover(katakanaMeaningHint, setKatakanaMeaningHintExpanded);
 bindHintHover(kanjiMeaningHint, setKanjiMeaningHintExpanded);
 bindHintHover(vocabularyReadingHint, setVocabularyReadingHintExpanded);
+window.addEventListener("resize", repositionVisibleTokenGlosses);
+window.visualViewport?.addEventListener("resize", repositionVisibleTokenGlosses);
+window.visualViewport?.addEventListener("scroll", repositionVisibleTokenGlosses);
 solutionElement.addEventListener("click", handleGrammarRating);
 solutionElement.addEventListener("click", handleVocabularyRating);
 solutionElement.addEventListener("click", handleKanjiRating);

@@ -9132,8 +9132,7 @@
         "audio": "assets/voices/reading/reading-grandpa-email-05.m4a",
         "vocabularyIds": [
           "vocab-b6944a5fe271",
-          "vocab-4a9566e87de1",
-          "vocab-2bf5dccca2b0",
+          "vocab-91b2f0a8bfc1",
           "vocab-415439a1dbb6",
           "vocab-842637e88e8c",
           "vocab-922ff9e0323a",
@@ -9164,16 +9163,10 @@
             "reading": "「"
           },
           {
-            "surface": "昼",
+            "surface": "昼御飯",
             "category": "noun",
-            "reading": "ひる",
-            "vocabularyId": "vocab-4a9566e87de1"
-          },
-          {
-            "surface": "御飯",
-            "category": "noun",
-            "reading": "ごはん",
-            "vocabularyId": "vocab-2bf5dccca2b0"
+            "reading": "ひるごはん",
+            "vocabularyId": "vocab-91b2f0a8bfc1"
           },
           {
             "surface": "の",
@@ -12759,8 +12752,7 @@
         "vocabularyIds": [
           "vocab-d9898f8a95b6",
           "vocab-2d473f5bae43",
-          "vocab-4a9566e87de1",
-          "vocab-2bf5dccca2b0",
+          "vocab-91b2f0a8bfc1",
           "vocab-f385448e1132",
           "vocab-a4ccf0b7bace",
           "vocab-4fa253e10946"
@@ -12805,16 +12797,10 @@
             "reading": "。"
           },
           {
-            "surface": "昼",
+            "surface": "昼御飯",
             "category": "noun",
-            "reading": "ひる",
-            "vocabularyId": "vocab-4a9566e87de1"
-          },
-          {
-            "surface": "御飯",
-            "category": "noun",
-            "reading": "ごはん",
-            "vocabularyId": "vocab-2bf5dccca2b0"
+            "reading": "ひるごはん",
+            "vocabularyId": "vocab-91b2f0a8bfc1"
           },
           {
             "surface": "は",
@@ -23986,8 +23972,7 @@
         "text": "昼ご飯の後で、近くのスーパーへ買い物に行きました。",
         "audio": "assets/voices/reading/reading-evening-curry-05.m4a",
         "vocabularyIds": [
-          "vocab-4a9566e87de1",
-          "vocab-2bf5dccca2b0",
+          "vocab-91b2f0a8bfc1",
           "vocab-415439a1dbb6",
           "vocab-cacc70775f3e",
           "vocab-280c303db8c8",
@@ -24005,16 +23990,10 @@
         ],
         "tokens": [
           {
-            "surface": "昼",
+            "surface": "昼ご飯",
             "category": "noun",
-            "reading": "ひる",
-            "vocabularyId": "vocab-4a9566e87de1"
-          },
-          {
-            "surface": "ご飯",
-            "category": "noun",
-            "reading": "ごはん",
-            "vocabularyId": "vocab-2bf5dccca2b0"
+            "reading": "ひるごはん",
+            "vocabularyId": "vocab-91b2f0a8bfc1"
           },
           {
             "surface": "の",

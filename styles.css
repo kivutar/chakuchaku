@@ -3595,7 +3595,11 @@ html[data-translation-tooltips="true"] .token[data-gloss]::before {
 html[data-translation-tooltips="true"] .token[data-gloss]::after {
   content: attr(data-gloss);
   bottom: calc(100% + 0.55rem);
+  left: calc(50% + var(--gloss-offset, 0px));
   z-index: 10;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: min(24rem, var(--gloss-max-width, calc(100vw - 1rem)));
   padding: 0.38rem 0.55rem;
   border-radius: 4px;
   background: #252525;
@@ -3605,8 +3609,16 @@ html[data-translation-tooltips="true"] .token[data-gloss]::after {
   font-size: 0.78rem;
   font-weight: 400;
   line-height: 1.2;
-  white-space: nowrap;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
   transform: translate(-50%, 0.2rem);
+}
+
+html[data-translation-tooltips="true"] .token[data-gloss].is-measuring-gloss::after {
+  display: block;
+  visibility: hidden;
+  transition: none;
 }
 
 html[data-translation-tooltips="true"] .token[data-gloss].is-touch-active::before,
@@ -3677,21 +3689,16 @@ html[data-token-coloring="true"] .token[data-category="auxiliary"].is-touch-acti
   }
 }
 
-@media (hover: none), (pointer: coarse) {
-  html[data-translation-tooltips="true"] .token[data-gloss]::after {
-    width: max-content;
-    max-width: min(24rem, 80vw);
-    text-align: left;
-    white-space: normal;
-  }
-}
-
 .character {
   display: inline-block;
   opacity: 0;
   transform: translateY(0.18em);
   animation: reveal 280ms ease-out forwards;
   animation-delay: var(--delay);
+}
+
+.prompt-vocabulary-hint .character {
+  white-space: pre;
 }
 
 rt {

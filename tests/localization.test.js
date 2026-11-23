@@ -14,11 +14,14 @@ import {
 const rootDirectory = join(dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (path) => readFile(join(rootDirectory, path), "utf8").then(JSON.parse);
 
-test("French prompt hints support contractions without matching inside words", () => {
+test("Prompt hints support contractions and phrases without matching inside words", () => {
   assert.equal(hasPromptHint("Je vais à l’école aujourd’hui.", "école"), true);
   assert.equal(hasPromptHint("Je vais à l’école aujourd’hui.", "aujourd’hui"), true);
   assert.equal(hasPromptHint("Qu’est-ce que tu as acheté ?", "Qu’"), true);
   assert.equal(hasPromptHint("encore", "or"), false);
+  assert.equal(hasPromptHint("My younger brother got up early.", "younger brother", "en"), true);
+  assert.equal(hasPromptHint("My younger brother got up early.", "GOT UP", "en"), true);
+  assert.equal(hasPromptHint("My younger brothers got up early.", "younger brother", "en"), false);
 });
 
 test("French prompt tokens handle apostrophes and punctuation", () => {

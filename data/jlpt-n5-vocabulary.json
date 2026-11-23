@@ -145,6 +145,12 @@
     "id": "vocab-818846d31820",
     "term": "朝御飯",
     "reading": "あさごはん",
+    "tokenizeAsWord": true,
+    "variants": [
+      "朝ご飯",
+      "朝ごはん",
+      "あさごはん"
+    ],
     "meaning": "breakfast",
     "scope": "core",
     "introducedAt": "n5",
@@ -6467,6 +6473,12 @@
     "id": "vocab-696613003517",
     "term": "晩御飯",
     "reading": "ばんごはん",
+    "tokenizeAsWord": true,
+    "variants": [
+      "晩ご飯",
+      "晩ごはん",
+      "ばんごはん"
+    ],
     "meaning": "dinner; evening meal",
     "acceptedAnswers": [
       "supper"
@@ -6693,6 +6705,12 @@
     "id": "vocab-91b2f0a8bfc1",
     "term": "昼御飯",
     "reading": "ひるごはん",
+    "tokenizeAsWord": true,
+    "variants": [
+      "昼ご飯",
+      "昼ごはん",
+      "ひるごはん"
+    ],
     "meaning": "lunch, midday meal",
     "scope": "core",
     "introducedAt": "n5",

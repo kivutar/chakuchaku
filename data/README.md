@@ -98,11 +98,19 @@ generation still tokenizes the Japanese side for vocabulary and kanji tracking.
 During local testing, `?type=production` restricts selection to production
 exercises without creating a persistent setting.
 
-Production exercises may add `promptVocabularyHints`, mapping individual
-English prompt words to one or more IDs from the vocabulary dictionary. These
+Production exercises may add `promptVocabularyHints`, mapping English prompt
+words or phrases to one or more IDs from the vocabulary dictionary. These
 authored links handle ambiguous words such as `take` without duplicating
 Japanese terms or readings in exercise data. The UI shows dictionary forms on
 hover and leaves conjugation to the learner.
+
+Cover the sentence's concrete vocabulary, including family members, objects,
+actions, descriptions, and time expressions, rather than hinting only one word.
+Use complete phrases when they represent one vocabulary item, such as
+`younger brother` / `petit frère` for 弟 or `post office` / `poste` for 郵便局.
+English and French hints must have the same vocabulary IDs in the same order.
+Keep meanings conveyed by the grammar being tested out of vocabulary hints:
+for example, `suddenly` in 笑い出す comes from ～出す, not a separate adverb.
 
 Exercises adapted from an external corpus carry an `attribution` object with
 the provider, sentence URL, creator, and licence. Sourced Japanese sentences
@@ -505,7 +513,9 @@ inflection.
 
 Nominal compounds that IPADIC splits into separate words or particles may opt
 into `tokenizeAsWord: true` on their dictionary entry (for example `何でも`,
-`午前中`, `一人`, and `二人`). Nouns, pronouns, and numbers support this option.
+`午前中`, `朝御飯`, `昼御飯`, `晩御飯`, `一人`, and `二人`). Nouns, pronouns,
+and numbers support this option. Meal compounds include their mixed-kanji and
+kana spellings, so revealing a meal hint cannot award credit to its components.
 Content preparation combines exact term/variant matches at token
 boundaries, using the dictionary reading. Grammar highlights and example target
 indexes use those same tokens. This keeps tooltips and contextual SRS credit on

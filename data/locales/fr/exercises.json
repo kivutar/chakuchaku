@@ -6149,6 +6149,12 @@
         "vocabularyIds": [
           "vocab-24f188a06d2c"
         ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
       }
     ]
   },
@@ -6159,6 +6165,18 @@
         "word": "regarder",
         "vocabularyIds": [
           "vocab-385cc0d9ee98"
+        ]
+      },
+      {
+        "word": "film",
+        "vocabularyIds": [
+          "vocab-7b9d866e6dc2"
+        ]
+      },
+      {
+        "word": "ce soir",
+        "vocabularyIds": [
+          "vocab-298bb964817e"
         ]
       }
     ]
@@ -6174,6 +6192,12 @@
         "vocabularyIds": [
           "vocab-9af9c5ffb30e"
         ]
+      },
+      {
+        "word": "carte",
+        "vocabularyIds": [
+          "vocab-a586e52ce913"
+        ]
       }
     ]
   },
@@ -6184,9 +6208,21 @@
     "translation": "Ce livre est lu par des étudiants.",
     "promptVocabularyHints": [
       {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
         "word": "lu",
         "vocabularyIds": [
           "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "étudiants",
+        "vocabularyIds": [
+          "vocab-9567eaf8fe9b"
         ]
       }
     ]
@@ -6198,9 +6234,21 @@
     "translation": "J'ai décidé de me lever tôt tous les jours.",
     "promptVocabularyHints": [
       {
+        "word": "lever",
+        "vocabularyIds": [
+          "vocab-72c5b362c4f2"
+        ]
+      },
+      {
         "word": "tôt",
         "vocabularyIds": [
           "vocab-72460e05df01"
+        ]
+      },
+      {
+        "word": "tous les jours",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
         ]
       }
     ]
@@ -6216,6 +6264,18 @@
         "vocabularyIds": [
           "vocab-ec22142c23d3"
         ]
+      },
+      {
+        "word": "Japon",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
+      },
+      {
+        "word": "le mois prochain",
+        "vocabularyIds": [
+          "vocab-55fef51b0694"
+        ]
       }
     ]
   },
@@ -6225,6 +6285,12 @@
   "production-n4-place-should-be-school": {
     "translation": "Cet endroit devrait être une école.",
     "promptVocabularyHints": [
+      {
+        "word": "Cet endroit",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
+        ]
+      },
       {
         "word": "école",
         "vocabularyIds": [
@@ -6240,6 +6306,12 @@
     "translation": "Il est impossible que cette pièce soit calme.",
     "promptVocabularyHints": [
       {
+        "word": "pièce",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
         "word": "calme",
         "vocabularyIds": [
           "vocab-61b57e2d4702"
@@ -6253,6 +6325,12 @@
   "production-n4-shoes-easy-to-walk-in": {
     "translation": "Il est facile de marcher avec ces chaussures.",
     "promptVocabularyHints": [
+      {
+        "word": "chaussures",
+        "vocabularyIds": [
+          "vocab-d2110e85159b"
+        ]
+      },
       {
         "word": "marcher",
         "vocabularyIds": [
@@ -6268,6 +6346,12 @@
     "translation": "Ce kanji est difficile à retenir.",
     "promptVocabularyHints": [
       {
+        "word": "kanji",
+        "vocabularyIds": [
+          "vocab-535c688e8bf9"
+        ]
+      },
+      {
         "word": "retenir",
         "vocabularyIds": [
           "vocab-0ec838cc07ea"
@@ -6279,12 +6363,18 @@
     "translation": "Il va continuer à faire de plus en plus chaud à partir de maintenant."
   },
   "production-n4-continue-studying-japanese": {
-    "translation": "Je continuerai à étudier le japonais tous les jours.",
+    "translation": "Je continuerai à étudier le japonais.",
     "promptVocabularyHints": [
       {
         "word": "étudier",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "japonais",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
         ]
       }
     ]
@@ -6298,6 +6388,7 @@
       {
         "word": "pleuvoir",
         "vocabularyIds": [
+          "vocab-7e87850c448d",
           "vocab-777161023023"
         ]
       }
@@ -6314,6 +6405,12 @@
         "vocabularyIds": [
           "vocab-15863d9e899d"
         ]
+      },
+      {
+        "word": "vacances d'été",
+        "vocabularyIds": [
+          "vocab-bd3e79e89fe2"
+        ]
       }
     ]
   },
@@ -6323,6 +6420,24 @@
   "production-n4-clean-while-child-sleeps": {
     "translation": "J'ai nettoyé la chambre pendant que l'enfant dormait.",
     "promptVocabularyHints": [
+      {
+        "word": "nettoyé",
+        "vocabularyIds": [
+          "vocab-21537eeda1e7"
+        ]
+      },
+      {
+        "word": "chambre",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "enfant",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
       {
         "word": "dormait",
         "vocabularyIds": [
@@ -6342,6 +6457,24 @@
         "vocabularyIds": [
           "vocab-15863d9e899d"
         ]
+      },
+      {
+        "word": "japonais",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "bien",
+        "vocabularyIds": [
+          "vocab-ef4cce00951f"
+        ]
       }
     ]
   },
@@ -6355,9 +6488,27 @@
     "translation": "Mon père a obligé mon petit frère à nettoyer la chambre.",
     "promptVocabularyHints": [
       {
+        "word": "père",
+        "vocabularyIds": [
+          "vocab-d15ca6ea1179"
+        ]
+      },
+      {
+        "word": "petit frère",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
+      {
         "word": "nettoyer",
         "vocabularyIds": [
           "vocab-21537eeda1e7"
+        ]
+      },
+      {
+        "word": "chambre",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
         ]
       }
     ]
@@ -6366,9 +6517,21 @@
     "translation": "Ma mère a gentiment accepté de me laisser jouer dehors.",
     "promptVocabularyHints": [
       {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
         "word": "jouer",
         "vocabularyIds": [
           "vocab-58a04652246f"
+        ]
+      },
+      {
+        "word": "dehors",
+        "vocabularyIds": [
+          "vocab-6109638dac53"
         ]
       }
     ]
@@ -6387,6 +6550,18 @@
         "vocabularyIds": [
           "vocab-ec4fa4315542"
         ]
+      },
+      {
+        "word": "légumes",
+        "vocabularyIds": [
+          "vocab-88763af54360"
+        ]
+      },
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
       }
     ]
   },
@@ -6394,9 +6569,33 @@
     "translation": "Le professeur a obligé les étudiants à lire un livre difficile.",
     "promptVocabularyHints": [
       {
+        "word": "étudiants",
+        "vocabularyIds": [
+          "vocab-9567eaf8fe9b"
+        ]
+      },
+      {
         "word": "lire",
         "vocabularyIds": [
           "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "difficile",
+        "vocabularyIds": [
+          "vocab-6ed0b6d4c374"
+        ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
         ]
       }
     ]
@@ -6426,6 +6625,12 @@
         "vocabularyIds": [
           "vocab-385cc0d9ee98"
         ]
+      },
+      {
+        "word": "photo",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
       }
     ]
   },
@@ -6449,6 +6654,12 @@
         "vocabularyIds": [
           "vocab-1b65a0cb82d2"
         ]
+      },
+      {
+        "word": "magasin",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
       }
     ]
   },
@@ -6458,7 +6669,26 @@
       {
         "word": "pleut",
         "vocabularyIds": [
+          "vocab-7e87850c448d",
           "vocab-777161023023"
+        ]
+      },
+      {
+        "word": "demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
+      },
+      {
+        "word": "irai",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "parc",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
         ]
       }
     ]
@@ -6494,6 +6724,12 @@
         "vocabularyIds": [
           "vocab-ec4fa4315542"
         ]
+      },
+      {
+        "word": "autant",
+        "vocabularyIds": [
+          "vocab-7ae1ee3a0309"
+        ]
       }
     ]
   },
@@ -6511,6 +6747,12 @@
         "vocabularyIds": [
           "vocab-d8a0261581dc"
         ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
       }
     ]
   },
@@ -6521,6 +6763,13 @@
         "word": "couches",
         "vocabularyIds": [
           "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "plus tôt",
+        "vocabularyIds": [
+          "vocab-b87d435fd7f9",
+          "vocab-72460e05df01"
         ]
       }
     ]
@@ -6534,6 +6783,12 @@
   "production-n4-window-opened-by-itself": {
     "translation": "La fenêtre s'est ouverte.",
     "promptVocabularyHints": [
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      },
       {
         "word": "ouverte",
         "vocabularyIds": [
@@ -6549,6 +6804,12 @@
         "word": "ouvert",
         "vocabularyIds": [
           "vocab-658ff53bc114"
+        ]
+      },
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
         ]
       }
     ]
@@ -6567,6 +6828,12 @@
         "vocabularyIds": [
           "vocab-f26f501fa1c2"
         ]
+      },
+      {
+        "word": "aujourd'hui",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
       }
     ]
   },
@@ -6577,6 +6844,12 @@
         "word": "venir",
         "vocabularyIds": [
           "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ]
@@ -6592,6 +6865,12 @@
         "vocabularyIds": [
           "vocab-50eb0e80c367"
         ]
+      },
+      {
+        "word": "tôt",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
+        ]
       }
     ]
   },
@@ -6602,6 +6881,12 @@
         "word": "Prends",
         "vocabularyIds": [
           "vocab-dcd3acd6b659"
+        ]
+      },
+      {
+        "word": "médicament",
+        "vocabularyIds": [
+          "vocab-87bbe3de9902"
         ]
       }
     ]
@@ -6620,6 +6905,12 @@
         "vocabularyIds": [
           "vocab-a76603aae6e4"
         ]
+      },
+      {
+        "word": "tous les jours",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
+        ]
       }
     ]
   },
@@ -6630,6 +6921,18 @@
         "word": "bois",
         "vocabularyIds": [
           "vocab-dcd3acd6b659"
+        ]
+      },
+      {
+        "word": "café",
+        "vocabularyIds": [
+          "vocab-f5f2c2dca175"
+        ]
+      },
+      {
+        "word": "soir",
+        "vocabularyIds": [
+          "vocab-ba0c8a160c33"
         ]
       }
     ]
@@ -6648,6 +6951,12 @@
         "vocabularyIds": [
           "vocab-a76603aae6e4"
         ]
+      },
+      {
+        "word": "tous les jours",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
+        ]
       }
     ]
   },
@@ -6658,6 +6967,12 @@
         "word": "oublier",
         "vocabularyIds": [
           "vocab-53c63c8d3e25"
+        ]
+      },
+      {
+        "word": "devoirs",
+        "vocabularyIds": [
+          "vocab-f26f501fa1c2"
         ]
       }
     ]
@@ -6672,15 +6987,21 @@
     "translation": "Le téléphone a sonné alors que j'étais sur le point de me coucher.",
     "promptVocabularyHints": [
       {
-        "word": "coucher",
-        "vocabularyIds": [
-          "vocab-50eb0e80c367"
-        ]
-      },
-      {
         "word": "téléphone",
         "vocabularyIds": [
           "vocab-24df87472770"
+        ]
+      },
+      {
+        "word": "sonné",
+        "vocabularyIds": [
+          "vocab-89aea2f63b8b"
+        ]
+      },
+      {
+        "word": "coucher",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
         ]
       }
     ]
@@ -6689,9 +7010,21 @@
     "translation": "L'enfant a essayé d'ouvrir la porte.",
     "promptVocabularyHints": [
       {
+        "word": "enfant",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
+      {
         "word": "ouvrir",
         "vocabularyIds": [
           "vocab-658ff53bc114"
+        ]
+      },
+      {
+        "word": "porte",
+        "vocabularyIds": [
+          "vocab-01adf406cacd"
         ]
       }
     ]
@@ -6706,6 +7039,12 @@
     "translation": "Je préparerai le dîner à l'avance.",
     "promptVocabularyHints": [
       {
+        "word": "préparerai",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
         "word": "dîner",
         "vocabularyIds": [
           "vocab-696613003517"
@@ -6716,6 +7055,12 @@
   "production-n4-leave-window-open": {
     "translation": "Laisse la fenêtre ouverte, s'il te plaît.",
     "promptVocabularyHints": [
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      },
       {
         "word": "ouverte",
         "vocabularyIds": [
@@ -6736,7 +7081,8 @@
       {
         "word": "neiger",
         "vocabularyIds": [
-          "vocab-79db1765ce26"
+          "vocab-79db1765ce26",
+          "vocab-777161023023"
         ]
       }
     ]
@@ -6745,9 +7091,21 @@
     "translation": "Mon petit frère a commencé à lire le livre.",
     "promptVocabularyHints": [
       {
+        "word": "petit frère",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
+      {
         "word": "lire",
         "vocabularyIds": [
           "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
         ]
       }
     ]
@@ -6761,6 +7119,12 @@
   "production-n4-finished-eating-breakfast": {
     "translation": "J'ai fini de prendre mon petit-déjeuner.",
     "promptVocabularyHints": [
+      {
+        "word": "prendre",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
       {
         "word": "petit-déjeuner",
         "vocabularyIds": [
@@ -6776,6 +7140,12 @@
         "word": "écrire",
         "vocabularyIds": [
           "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "lettre",
+        "vocabularyIds": [
+          "vocab-8e7233a38df0"
         ]
       }
     ]
@@ -6794,16 +7164,34 @@
         "vocabularyIds": [
           "vocab-24f188a06d2c"
         ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
       }
     ]
   },
   "production-n4-keep-studying-japanese": {
-    "translation": "Je continuerai à étudier le japonais.",
+    "translation": "Je continuerai à étudier le japonais tous les jours.",
     "promptVocabularyHints": [
       {
         "word": "étudier",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "japonais",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "tous les jours",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
         ]
       }
     ]
@@ -6820,6 +7208,7 @@
       {
         "word": "pleuvoir",
         "vocabularyIds": [
+          "vocab-7e87850c448d",
           "vocab-777161023023"
         ]
       }
@@ -6828,6 +7217,12 @@
   "production-n4-brother-suddenly-laughed": {
     "translation": "Mon petit frère s'est soudain mis à rire.",
     "promptVocabularyHints": [
+      {
+        "word": "petit frère",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
       {
         "word": "rire",
         "vocabularyIds": [
@@ -6846,9 +7241,21 @@
     "translation": "Ma petite sœur veut aller au Japon.",
     "promptVocabularyHints": [
       {
+        "word": "petite sœur",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
         "word": "aller",
         "vocabularyIds": [
           "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "Japon",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
         ]
       }
     ]
@@ -6857,9 +7264,21 @@
     "translation": "L'enfant ne veut pas manger de légumes.",
     "promptVocabularyHints": [
       {
+        "word": "enfant",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
+      {
         "word": "manger",
         "vocabularyIds": [
           "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "légumes",
+        "vocabularyIds": [
+          "vocab-88763af54360"
         ]
       }
     ]
@@ -6874,6 +7293,12 @@
     "translation": "Ma petite sœur semble se sentir seule.",
     "promptVocabularyHints": [
       {
+        "word": "petite sœur",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
         "word": "seule",
         "vocabularyIds": [
           "vocab-095b33ccc743"
@@ -6884,6 +7309,12 @@
   "production-n4-child-seems-in-pain": {
     "translation": "L'enfant semble avoir mal.",
     "promptVocabularyHints": [
+      {
+        "word": "enfant",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
       {
         "word": "mal",
         "vocabularyIds": [
@@ -6902,6 +7333,12 @@
     "translation": "Ma petite sœur est timide.",
     "promptVocabularyHints": [
       {
+        "word": "petite sœur",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
         "word": "timide",
         "vocabularyIds": [
           "vocab-8b65db9c3fbf"
@@ -6912,6 +7349,12 @@
   "production-n4-father-sensitive-to-heat": {
     "translation": "Mon père est sensible à la chaleur.",
     "promptVocabularyHints": [
+      {
+        "word": "père",
+        "vocabularyIds": [
+          "vocab-d15ca6ea1179"
+        ]
+      },
       {
         "word": "chaleur",
         "vocabularyIds": [
@@ -6930,9 +7373,21 @@
     "translation": "Je veux que mon petit frère attende ici.",
     "promptVocabularyHints": [
       {
+        "word": "petit frère",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
+      {
         "word": "attende",
         "vocabularyIds": [
           "vocab-6f30c5c5938f"
+        ]
+      },
+      {
+        "word": "ici",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
         ]
       }
     ]
@@ -6941,9 +7396,21 @@
     "translation": "Je ne veux pas que l'enfant ouvre la fenêtre.",
     "promptVocabularyHints": [
       {
+        "word": "enfant",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
+      {
         "word": "ouvre",
         "vocabularyIds": [
           "vocab-658ff53bc114"
+        ]
+      },
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
         ]
       }
     ]
@@ -6973,6 +7440,12 @@
         "vocabularyIds": [
           "vocab-bc01756b4d89"
         ]
+      },
+      {
+        "word": "aujourd'hui",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
       }
     ]
   },
@@ -6989,6 +7462,12 @@
         "word": "oublié",
         "vocabularyIds": [
           "vocab-53c63c8d3e25"
+        ]
+      },
+      {
+        "word": "nom",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
         ]
       }
     ]
@@ -7018,6 +7497,12 @@
         "vocabularyIds": [
           "vocab-98e990bf1d44"
         ]
+      },
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
       }
     ]
   },
@@ -7028,6 +7513,18 @@
         "word": "écrire",
         "vocabularyIds": [
           "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "nom",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      },
+      {
+        "word": "ici",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
         ]
       }
     ]
@@ -7046,6 +7543,12 @@
         "vocabularyIds": [
           "vocab-1b65a0cb82d2"
         ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
       }
     ]
   },
@@ -7056,6 +7559,12 @@
         "word": "étudié",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "japonais",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
         ]
       }
     ]
@@ -7074,6 +7583,18 @@
         "vocabularyIds": [
           "vocab-658ff53bc114"
         ]
+      },
+      {
+        "word": "porte",
+        "vocabularyIds": [
+          "vocab-01adf406cacd"
+        ]
+      },
+      {
+        "word": "chien",
+        "vocabularyIds": [
+          "vocab-4cd1238bcb91"
+        ]
       }
     ]
   },
@@ -7081,9 +7602,21 @@
     "translation": "J'ai pris une photo pour mon petit frère.",
     "promptVocabularyHints": [
       {
+        "word": "pris",
+        "vocabularyIds": [
+          "vocab-897d3a642135"
+        ]
+      },
+      {
         "word": "photo",
         "vocabularyIds": [
           "vocab-d5901ecbf5fb"
+        ]
+      },
+      {
+        "word": "petit frère",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
         ]
       }
     ]
@@ -7092,9 +7625,21 @@
     "translation": "Je rendrai mes devoirs d'ici demain.",
     "promptVocabularyHints": [
       {
+        "word": "rendrai",
+        "vocabularyIds": [
+          "vocab-a001b24baf12"
+        ]
+      },
+      {
         "word": "devoirs",
         "vocabularyIds": [
           "vocab-f26f501fa1c2"
+        ]
+      },
+      {
+        "word": "demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ]
@@ -7106,6 +7651,12 @@
         "word": "Viens",
         "vocabularyIds": [
           "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "neuf",
+        "vocabularyIds": [
+          "vocab-d33ed6be2a48"
         ]
       }
     ]
@@ -7124,6 +7675,12 @@
         "vocabularyIds": [
           "vocab-24df87472770"
         ]
+      },
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
       }
     ]
   },
@@ -7134,6 +7691,12 @@
         "word": "commencer",
         "vocabularyIds": [
           "vocab-79261a065ba5"
+        ]
+      },
+      {
+        "word": "étudier",
+        "vocabularyIds": [
+          "vocab-15863d9e899d"
         ]
       }
     ]
@@ -7152,6 +7715,12 @@
         "vocabularyIds": [
           "vocab-24f188a06d2c"
         ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
       }
     ]
   },
@@ -7159,9 +7728,21 @@
     "translation": "Mon petit frère est en train d'étudier le japonais.",
     "promptVocabularyHints": [
       {
+        "word": "petit frère",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
+      {
         "word": "étudier",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "japonais",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
         ]
       }
     ]
@@ -7180,6 +7761,12 @@
         "vocabularyIds": [
           "vocab-6393ca7aefde"
         ]
+      },
+      {
+        "word": "devoirs",
+        "vocabularyIds": [
+          "vocab-f26f501fa1c2"
+        ]
       }
     ]
   },
@@ -7190,6 +7777,12 @@
         "word": "acheter",
         "vocabularyIds": [
           "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
         ]
       }
     ]
@@ -7204,6 +7797,12 @@
     "translation": "Je viens tout juste d'acheter cet ordinateur.",
     "promptVocabularyHints": [
       {
+        "word": "acheter",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
         "word": "ordinateur",
         "vocabularyIds": [
           "vocab-5ca53fa1b955"
@@ -7214,6 +7813,12 @@
   "production-n4-brother-only-just-got-up": {
     "translation": "Mon petit frère vient tout juste de se lever.",
     "promptVocabularyHints": [
+      {
+        "word": "petit frère",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
       {
         "word": "lever",
         "vocabularyIds": [
@@ -7232,6 +7837,12 @@
     "translation": "La chambre est restée calme.",
     "promptVocabularyHints": [
       {
+        "word": "chambre",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
         "word": "calme",
         "vocabularyIds": [
           "vocab-61b57e2d4702"
@@ -7242,6 +7853,12 @@
   "production-n4-soup-remains-hot": {
     "translation": "La soupe est encore chaude.",
     "promptVocabularyHints": [
+      {
+        "word": "soupe",
+        "vocabularyIds": [
+          "vocab-935437cca5af"
+        ]
+      },
       {
         "word": "chaude",
         "vocabularyIds": [
@@ -7264,6 +7881,12 @@
         "vocabularyIds": [
           "vocab-acc3dd26ba1e"
         ]
+      },
+      {
+        "word": "heures",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
+        ]
       }
     ]
   },
@@ -7274,6 +7897,12 @@
         "word": "appelle",
         "vocabularyIds": [
           "vocab-24df87472770"
+        ]
+      },
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
         ]
       }
     ]
@@ -7288,6 +7917,12 @@
     "translation": "C'est un livre qui a l'air intéressant.",
     "promptVocabularyHints": [
       {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
         "word": "intéressant",
         "vocabularyIds": [
           "vocab-9825648af79e"
@@ -7299,9 +7934,21 @@
     "translation": "Ma petite sœur chante d'un air joyeux.",
     "promptVocabularyHints": [
       {
+        "word": "petite sœur",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
         "word": "chante",
         "vocabularyIds": [
           "vocab-d8974b42548f"
+        ]
+      },
+      {
+        "word": "joyeux",
+        "vocabularyIds": [
+          "vocab-9cc2d4a9bbe1"
         ]
       }
     ]
@@ -7318,6 +7965,7 @@
       {
         "word": "pleuvoir",
         "vocabularyIds": [
+          "vocab-7e87850c448d",
           "vocab-777161023023"
         ]
       }
@@ -7344,9 +7992,21 @@
     "translation": "Ma petite sœur chante comme un oiseau.",
     "promptVocabularyHints": [
       {
+        "word": "petite sœur",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
         "word": "chante",
         "vocabularyIds": [
           "vocab-d8974b42548f"
+        ]
+      },
+      {
+        "word": "oiseau",
+        "vocabularyIds": [
+          "vocab-683f3e7fb085"
         ]
       }
     ]
@@ -7358,6 +8018,12 @@
         "word": "ville",
         "vocabularyIds": [
           "vocab-09d74d630a45"
+        ]
+      },
+      {
+        "word": "Kyoto",
+        "vocabularyIds": [
+          "vocab-62153df2c4e3"
         ]
       }
     ]
@@ -7383,6 +8049,12 @@
     "translation": "Ce gâteau ressemble à une fleur.",
     "promptVocabularyHints": [
       {
+        "word": "gâteau",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      },
+      {
         "word": "fleur",
         "vocabularyIds": [
           "vocab-fa6a4c8f27b4"
@@ -7400,6 +8072,18 @@
     "translation": "Il paraît que le nouveau professeur est gentil.",
     "promptVocabularyHints": [
       {
+        "word": "nouveau",
+        "vocabularyIds": [
+          "vocab-288a95a40d95"
+        ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
         "word": "gentil",
         "vocabularyIds": [
           "vocab-c2cec306f5c4"
@@ -7413,7 +8097,14 @@
       {
         "word": "neigera",
         "vocabularyIds": [
-          "vocab-79db1765ce26"
+          "vocab-79db1765ce26",
+          "vocab-777161023023"
+        ]
+      },
+      {
+        "word": "demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ]
@@ -7432,6 +8123,18 @@
         "vocabularyIds": [
           "vocab-b7519a0f57a7"
         ]
+      },
+      {
+        "word": "père",
+        "vocabularyIds": [
+          "vocab-d15ca6ea1179"
+        ]
+      },
+      {
+        "word": "travaille",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
+        ]
       }
     ]
   },
@@ -7442,6 +8145,12 @@
         "word": "fatigué",
         "vocabularyIds": [
           "vocab-65f5cb2d1bd4"
+        ]
+      },
+      {
+        "word": "étudier",
+        "vocabularyIds": [
+          "vocab-15863d9e899d"
         ]
       }
     ]
@@ -7460,6 +8169,12 @@
         "vocabularyIds": [
           "vocab-5ee54e973899"
         ]
+      },
+      {
+        "word": "viendrai",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
       }
     ]
   },
@@ -7470,6 +8185,18 @@
         "word": "dimanche",
         "vocabularyIds": [
           "vocab-b7519a0f57a7"
+        ]
+      },
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
+        "word": "travaille",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
         ]
       }
     ]
@@ -7484,6 +8211,24 @@
     "translation": "Je me lève tôt pour préparer le petit-déjeuner.",
     "promptVocabularyHints": [
       {
+        "word": "lève",
+        "vocabularyIds": [
+          "vocab-72c5b362c4f2"
+        ]
+      },
+      {
+        "word": "tôt",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
+        ]
+      },
+      {
+        "word": "préparer",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
         "word": "petit-déjeuner",
         "vocabularyIds": [
           "vocab-818846d31820"
@@ -7495,9 +8240,21 @@
     "translation": "Je suis allé à la bibliothèque pour étudier.",
     "promptVocabularyHints": [
       {
+        "word": "allé",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
         "word": "bibliothèque",
         "vocabularyIds": [
           "vocab-ca8d0efe19a3"
+        ]
+      },
+      {
+        "word": "étudier",
+        "vocabularyIds": [
+          "vocab-15863d9e899d"
         ]
       }
     ]
@@ -7516,6 +8273,18 @@
         "vocabularyIds": [
           "vocab-7e87850c448d"
         ]
+      },
+      {
+        "word": "allé",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "parc",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
       }
     ]
   },
@@ -7526,6 +8295,18 @@
         "word": "trop dormi",
         "vocabularyIds": [
           "vocab-dedac553ff95"
+        ]
+      },
+      {
+        "word": "en retard",
+        "vocabularyIds": [
+          "vocab-6762b46e5f55"
+        ]
+      },
+      {
+        "word": "école",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
         ]
       }
     ]
@@ -7544,6 +8325,12 @@
         "vocabularyIds": [
           "vocab-b1d6f8ff0597"
         ]
+      },
+      {
+        "word": "demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
       }
     ]
   },
@@ -7554,6 +8341,18 @@
         "word": "printemps",
         "vocabularyIds": [
           "vocab-18597113ac94"
+        ]
+      },
+      {
+        "word": "arrivera",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "tôt",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
         ]
       }
     ]
@@ -7568,13 +8367,19 @@
     "translation": "La personne qui a fait ce gâteau est ma petite sœur.",
     "promptVocabularyHints": [
       {
+        "word": "fait",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
         "word": "gâteau",
         "vocabularyIds": [
           "vocab-da08a01c25e4"
         ]
       },
       {
-        "word": "sœur",
+        "word": "petite sœur",
         "vocabularyIds": [
           "vocab-735d35e5b1be"
         ]
@@ -7584,6 +8389,18 @@
   "production-n4-want-new-bicycle": {
     "translation": "Ce que je veux acheter, c'est un nouveau vélo.",
     "promptVocabularyHints": [
+      {
+        "word": "acheter",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "nouveau",
+        "vocabularyIds": [
+          "vocab-288a95a40d95"
+        ]
+      },
       {
         "word": "vélo",
         "vocabularyIds": [
@@ -7602,9 +8419,21 @@
     "translation": "J'ai oublié qu'il y a un examen la semaine prochaine.",
     "promptVocabularyHints": [
       {
+        "word": "oublié",
+        "vocabularyIds": [
+          "vocab-53c63c8d3e25"
+        ]
+      },
+      {
         "word": "examen",
         "vocabularyIds": [
           "vocab-0c4d68e2ec4d"
+        ]
+      },
+      {
+        "word": "la semaine prochaine",
+        "vocabularyIds": [
+          "vocab-eddc7f95d55c"
         ]
       }
     ]
@@ -7613,9 +8442,27 @@
     "translation": "Souviens-toi que la bibliothèque ferme à six heures.",
     "promptVocabularyHints": [
       {
+        "word": "Souviens",
+        "vocabularyIds": [
+          "vocab-0ec838cc07ea"
+        ]
+      },
+      {
         "word": "bibliothèque",
         "vocabularyIds": [
           "vocab-ca8d0efe19a3"
+        ]
+      },
+      {
+        "word": "ferme",
+        "vocabularyIds": [
+          "vocab-47246131f042"
+        ]
+      },
+      {
+        "word": "six",
+        "vocabularyIds": [
+          "vocab-06ef406f5569"
         ]
       }
     ]
@@ -7629,6 +8476,18 @@
   "production-n4-father-told-not-forget-key": {
     "translation": "Mon père m'a dit de ne pas oublier ma clé.",
     "promptVocabularyHints": [
+      {
+        "word": "père",
+        "vocabularyIds": [
+          "vocab-d15ca6ea1179"
+        ]
+      },
+      {
+        "word": "oublier",
+        "vocabularyIds": [
+          "vocab-53c63c8d3e25"
+        ]
+      },
       {
         "word": "clé",
         "vocabularyIds": [
@@ -7644,6 +8503,12 @@
         "word": "médecin",
         "vocabularyIds": [
           "vocab-60e888b69674"
+        ]
+      },
+      {
+        "word": "prendre",
+        "vocabularyIds": [
+          "vocab-dcd3acd6b659"
         ]
       },
       {
@@ -7664,6 +8529,18 @@
     "translation": "J'aime le calme de cette chambre.",
     "promptVocabularyHints": [
       {
+        "word": "aime",
+        "vocabularyIds": [
+          "vocab-32a5e8698306"
+        ]
+      },
+      {
+        "word": "calme",
+        "vocabularyIds": [
+          "vocab-61b57e2d4702"
+        ]
+      },
+      {
         "word": "chambre",
         "vocabularyIds": [
           "vocab-23523bbf8d9c"
@@ -7675,9 +8552,27 @@
     "translation": "La hauteur de ce bâtiment est de cent mètres.",
     "promptVocabularyHints": [
       {
+        "word": "hauteur",
+        "vocabularyIds": [
+          "vocab-775979a197ea"
+        ]
+      },
+      {
         "word": "bâtiment",
         "vocabularyIds": [
           "vocab-b11f169893fb"
+        ]
+      },
+      {
+        "word": "cent",
+        "vocabularyIds": [
+          "vocab-96a032e15dda"
+        ]
+      },
+      {
+        "word": "mètres",
+        "vocabularyIds": [
+          "vocab-3fbaed3922ea"
         ]
       }
     ]
@@ -7696,6 +8591,24 @@
         "vocabularyIds": [
           "vocab-82dcbecaf875"
         ]
+      },
+      {
+        "word": "propre",
+        "vocabularyIds": [
+          "vocab-58a738a344fe"
+        ]
+      },
+      {
+        "word": "poissons",
+        "vocabularyIds": [
+          "vocab-5c1c2120b516"
+        ]
+      },
+      {
+        "word": "visibles",
+        "vocabularyIds": [
+          "vocab-e99feae5bc25"
+        ]
       }
     ]
   },
@@ -7706,6 +8619,18 @@
         "word": "étudié",
         "vocabularyIds": [
           "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "trois",
+        "vocabularyIds": [
+          "vocab-1bedf722c04a"
+        ]
+      },
+      {
+        "word": "heures",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
         ]
       }
     ]
@@ -7724,6 +8649,12 @@
         "vocabularyIds": [
           "vocab-123a10eb50b0"
         ]
+      },
+      {
+        "word": "dormir",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
       }
     ]
   },
@@ -7731,9 +8662,21 @@
     "translation": "Il n'achète que des choses chères.",
     "promptVocabularyHints": [
       {
+        "word": "achète",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
         "word": "chères",
         "vocabularyIds": [
           "vocab-775979a197ea"
+        ]
+      },
+      {
+        "word": "choses",
+        "vocabularyIds": [
+          "vocab-012e69e925d7"
         ]
       }
     ]
@@ -7748,9 +8691,21 @@
     "translation": "Rien que regarder cette photo me rend heureux.",
     "promptVocabularyHints": [
       {
+        "word": "regarder",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      },
+      {
         "word": "photo",
         "vocabularyIds": [
           "vocab-d5901ecbf5fb"
+        ]
+      },
+      {
+        "word": "heureux",
+        "vocabularyIds": [
+          "vocab-58974357459a"
         ]
       }
     ]
@@ -7758,6 +8713,12 @@
   "production-n4-medicine-enough-better": {
     "translation": "Il suffit de prendre ce médicament pour aller mieux.",
     "promptVocabularyHints": [
+      {
+        "word": "prendre",
+        "vocabularyIds": [
+          "vocab-dcd3acd6b659"
+        ]
+      },
       {
         "word": "médicament",
         "vocabularyIds": [
@@ -7776,6 +8737,12 @@
     "translation": "J'ai acheté entre autres des pommes et des bananes.",
     "promptVocabularyHints": [
       {
+        "word": "acheté",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
         "word": "pommes",
         "vocabularyIds": [
           "vocab-d66c7f00afcd"
@@ -7792,6 +8759,36 @@
   "production-n4-sunday-reading-movies-examples": {
     "translation": "Le dimanche, je fais des choses que j'aime, comme lire des livres et regarder des films.",
     "promptVocabularyHints": [
+      {
+        "word": "dimanche",
+        "vocabularyIds": [
+          "vocab-b7519a0f57a7"
+        ]
+      },
+      {
+        "word": "aime",
+        "vocabularyIds": [
+          "vocab-32a5e8698306"
+        ]
+      },
+      {
+        "word": "lire",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "livres",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "regarder",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      },
       {
         "word": "films",
         "vocabularyIds": [
@@ -7814,6 +8811,12 @@
         "vocabularyIds": [
           "vocab-87bbe3de9902"
         ]
+      },
+      {
+        "word": "amer",
+        "vocabularyIds": [
+          "vocab-b264619d7291"
+        ]
       }
     ]
   },
@@ -7821,9 +8824,21 @@
     "translation": "J'entends un bruit fort dehors.",
     "promptVocabularyHints": [
       {
+        "word": "fort",
+        "vocabularyIds": [
+          "vocab-ef06b1815ddd"
+        ]
+      },
+      {
         "word": "bruit",
         "vocabularyIds": [
           "vocab-b37750755344"
+        ]
+      },
+      {
+        "word": "dehors",
+        "vocabularyIds": [
+          "vocab-6109638dac53"
         ]
       }
     ]
@@ -7842,6 +8857,12 @@
         "vocabularyIds": [
           "vocab-28102c121d50"
         ]
+      },
+      {
+        "word": "bois",
+        "vocabularyIds": [
+          "vocab-a5d390dc4805"
+        ]
       }
     ]
   },
@@ -7852,6 +8873,18 @@
         "word": "fleur",
         "vocabularyIds": [
           "vocab-fa6a4c8f27b4"
+        ]
+      },
+      {
+        "word": "fabriquée",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
+        "word": "papier",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
         ]
       }
     ]
@@ -7872,6 +8905,12 @@
         ]
       },
       {
+        "word": "fabriqué",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
         "word": "lait",
         "vocabularyIds": [
           "vocab-e90f788a51b5"
@@ -7882,6 +8921,18 @@
   "production-n4-soup-made-from-vegetables": {
     "translation": "Cette soupe est préparée à partir de légumes.",
     "promptVocabularyHints": [
+      {
+        "word": "soupe",
+        "vocabularyIds": [
+          "vocab-935437cca5af"
+        ]
+      },
+      {
+        "word": "préparée",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
       {
         "word": "légumes",
         "vocabularyIds": [
@@ -7906,6 +8957,12 @@
         ]
       },
       {
+        "word": "utilisez",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      },
+      {
         "word": "escaliers",
         "vocabularyIds": [
           "vocab-fd12aa0d5724"
@@ -7921,6 +8978,24 @@
         "vocabularyIds": [
           "vocab-b4a022a9e7a6"
         ]
+      },
+      {
+        "word": "dangereuse",
+        "vocabularyIds": [
+          "vocab-b56f4f9656e1"
+        ]
+      },
+      {
+        "word": "marchez",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      },
+      {
+        "word": "ici",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
+        ]
       }
     ]
   },
@@ -7934,9 +9009,21 @@
     "translation": "Je prévois de voir mon ami demain.",
     "promptVocabularyHints": [
       {
+        "word": "voir",
+        "vocabularyIds": [
+          "vocab-40179481fcf6"
+        ]
+      },
+      {
         "word": "ami",
         "vocabularyIds": [
           "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ]
@@ -7945,9 +9032,27 @@
     "translation": "Le nouveau magasin doit ouvrir la semaine prochaine.",
     "promptVocabularyHints": [
       {
+        "word": "nouveau",
+        "vocabularyIds": [
+          "vocab-288a95a40d95"
+        ]
+      },
+      {
         "word": "magasin",
         "vocabularyIds": [
           "vocab-e70f9243d4c7"
+        ]
+      },
+      {
+        "word": "ouvrir",
+        "vocabularyIds": [
+          "vocab-56dc4d647d8b"
+        ]
+      },
+      {
+        "word": "la semaine prochaine",
+        "vocabularyIds": [
+          "vocab-eddc7f95d55c"
         ]
       }
     ]
@@ -7962,6 +9067,12 @@
     "translation": "À quelle heure dois-je venir demain ?",
     "promptVocabularyHints": [
       {
+        "word": "venir",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
         "word": "demain",
         "vocabularyIds": [
           "vocab-bec9ce9d08c8"
@@ -7972,6 +9083,12 @@
   "production-n4-who-should-ask": {
     "translation": "À qui dois-je demander ?",
     "promptVocabularyHints": [
+      {
+        "word": "qui",
+        "vocabularyIds": [
+          "vocab-f3f74ef8bc9a"
+        ]
+      },
       {
         "word": "demander",
         "vocabularyIds": [
@@ -8001,6 +9118,12 @@
     "translation": "Nous avons besoin de plus de chaises.",
     "promptVocabularyHints": [
       {
+        "word": "plus",
+        "vocabularyIds": [
+          "vocab-b87d435fd7f9"
+        ]
+      },
+      {
         "word": "chaises",
         "vocabularyIds": [
           "vocab-7863488ec2b8"
@@ -8018,9 +9141,27 @@
     "translation": "Je suis arrivé en retard à l'école parce que le train avait du retard.",
     "promptVocabularyHints": [
       {
+        "word": "en retard",
+        "vocabularyIds": [
+          "vocab-6762b46e5f55"
+        ]
+      },
+      {
+        "word": "école",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
+        ]
+      },
+      {
         "word": "train",
         "vocabularyIds": [
           "vocab-dc7f5fc156cf"
+        ]
+      },
+      {
+        "word": "retard",
+        "vocabularyIds": [
+          "vocab-6762b46e5f55"
         ]
       }
     ]
@@ -8028,6 +9169,18 @@
   "production-n4-bus-stopped-because-snow-connective": {
     "translation": "Le bus s'est arrêté à cause de la neige.",
     "promptVocabularyHints": [
+      {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      },
+      {
+        "word": "arrêté",
+        "vocabularyIds": [
+          "vocab-bd365f430f35"
+        ]
+      },
       {
         "word": "neige",
         "vocabularyIds": [
@@ -8050,6 +9203,18 @@
         "vocabularyIds": [
           "vocab-a7095a66e0d8"
         ]
+      },
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
+        "word": "venue",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
       }
     ]
   },
@@ -8057,9 +9222,27 @@
     "translation": "Je ne connaissais pas le chemin, alors j'ai demandé dans un poste de police.",
     "promptVocabularyHints": [
       {
+        "word": "connaissais",
+        "vocabularyIds": [
+          "vocab-eeb8ecca964f"
+        ]
+      },
+      {
         "word": "chemin",
         "vocabularyIds": [
           "vocab-b4a022a9e7a6"
+        ]
+      },
+      {
+        "word": "demandé",
+        "vocabularyIds": [
+          "vocab-d8a0261581dc"
+        ]
+      },
+      {
+        "word": "poste de police",
+        "vocabularyIds": [
+          "vocab-ce4488f51ebc"
         ]
       }
     ]
@@ -8074,9 +9257,21 @@
     "translation": "Je veille à lire du japonais tous les jours.",
     "promptVocabularyHints": [
       {
+        "word": "lire",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
         "word": "japonais",
         "vocabularyIds": [
           "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "tous les jours",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
         ]
       }
     ]
@@ -8084,6 +9279,18 @@
   "production-n4-personal-rule-no-tv-meals": {
     "translation": "Je me suis fixé comme règle de ne pas regarder la télévision pendant les repas.",
     "promptVocabularyHints": [
+      {
+        "word": "regarder",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      },
+      {
+        "word": "télévision",
+        "vocabularyIds": [
+          "vocab-b4d66aa2f6f4"
+        ]
+      },
       {
         "word": "repas",
         "vocabularyIds": [
@@ -8102,9 +9309,21 @@
     "translation": "Les élèves doivent parler japonais pendant le cours.",
     "promptVocabularyHints": [
       {
+        "word": "parler",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      },
+      {
         "word": "japonais",
         "vocabularyIds": [
           "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "cours",
+        "vocabularyIds": [
+          "vocab-4c99b14fe21c"
         ]
       }
     ]
@@ -8116,6 +9335,18 @@
         "word": "bus",
         "vocabularyIds": [
           "vocab-826a124ad930"
+        ]
+      },
+      {
+        "word": "partir",
+        "vocabularyIds": [
+          "vocab-b2a9df4d0301"
+        ]
+      },
+      {
+        "word": "sept",
+        "vocabularyIds": [
+          "vocab-651603322794"
         ]
       }
     ]
@@ -8158,6 +9389,18 @@
     "translation": "Le professeur a eu la gentillesse de m'expliquer ce mot.",
     "promptVocabularyHints": [
       {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "expliquer",
+        "vocabularyIds": [
+          "vocab-9683551a843c"
+        ]
+      },
+      {
         "word": "mot",
         "vocabularyIds": [
           "vocab-cef4a2049ff3"
@@ -8172,6 +9415,12 @@
         "word": "médecin",
         "vocabularyIds": [
           "vocab-60e888b69674"
+        ]
+      },
+      {
+        "word": "examiner",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
         ]
       },
       {
@@ -8192,6 +9441,18 @@
     "translation": "Le médecin a eu la gentillesse de m'expliquer le médicament.",
     "promptVocabularyHints": [
       {
+        "word": "médecin",
+        "vocabularyIds": [
+          "vocab-60e888b69674"
+        ]
+      },
+      {
+        "word": "expliquer",
+        "vocabularyIds": [
+          "vocab-9683551a843c"
+        ]
+      },
+      {
         "word": "médicament",
         "vocabularyIds": [
           "vocab-87bbe3de9902"
@@ -8202,6 +9463,18 @@
   "production-n4-teacher-kindly-wrote-letter": {
     "translation": "Mon professeur a eu la gentillesse d'écrire une lettre pour moi.",
     "promptVocabularyHints": [
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "écrire",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
       {
         "word": "lettre",
         "vocabularyIds": [
@@ -8220,6 +9493,18 @@
     "translation": "Le président de l'entreprise lit le journal.",
     "promptVocabularyHints": [
       {
+        "word": "président de l'entreprise",
+        "vocabularyIds": [
+          "vocab-5621763f634f"
+        ]
+      },
+      {
+        "word": "lit",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
         "word": "journal",
         "vocabularyIds": [
           "vocab-f906b238c9c2"
@@ -8235,6 +9520,12 @@
         "vocabularyIds": [
           "vocab-497356cf0646"
         ]
+      },
+      {
+        "word": "demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
       }
     ]
   },
@@ -8247,6 +9538,18 @@
   "production-n4-humble-guide-teacher-classroom": {
     "translation": "Je vais guider le professeur jusqu'à la salle de classe.",
     "promptVocabularyHints": [
+      {
+        "word": "guider",
+        "vocabularyIds": [
+          "vocab-f9fe99b91dd5"
+        ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
       {
         "word": "salle de classe",
         "vocabularyIds": [
@@ -8262,6 +9565,12 @@
         "word": "livre",
         "vocabularyIds": [
           "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
         ]
       }
     ]
@@ -8280,12 +9589,24 @@
         "vocabularyIds": [
           "vocab-34751fd2b8b6"
         ]
+      },
+      {
+        "word": "là-bas",
+        "vocabularyIds": [
+          "vocab-a4c61e187228"
+        ]
       }
     ]
   },
   "production-n4-formally-todays-dish": {
     "translation": "Voici le plat du jour.",
     "promptVocabularyHints": [
+      {
+        "word": "jour",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      },
       {
         "word": "plat",
         "vocabularyIds": [
@@ -8304,6 +9625,18 @@
     "translation": "Le professeur écrira une lettre.",
     "promptVocabularyHints": [
       {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "écrira",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
         "word": "lettre",
         "vocabularyIds": [
           "vocab-8e7233a38df0"
@@ -8319,6 +9652,18 @@
         "vocabularyIds": [
           "vocab-497356cf0646"
         ]
+      },
+      {
+        "word": "attend",
+        "vocabularyIds": [
+          "vocab-6f30c5c5938f"
+        ]
+      },
+      {
+        "word": "dehors",
+        "vocabularyIds": [
+          "vocab-6109638dac53"
+        ]
       }
     ]
   },
@@ -8332,6 +9677,12 @@
     "translation": "Je vais vous expliquer le programme.",
     "promptVocabularyHints": [
       {
+        "word": "expliquer",
+        "vocabularyIds": [
+          "vocab-9683551a843c"
+        ]
+      },
+      {
         "word": "programme",
         "vocabularyIds": [
           "vocab-1b1b5806b28b"
@@ -8343,9 +9694,21 @@
     "translation": "Je téléphonerai au professeur demain.",
     "promptVocabularyHints": [
       {
+        "word": "téléphonerai",
+        "vocabularyIds": [
+          "vocab-24df87472770"
+        ]
+      },
+      {
         "word": "professeur",
         "vocabularyIds": [
           "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ]
@@ -8360,6 +9723,12 @@
     "translation": "Veuillez utiliser cet ascenseur.",
     "promptVocabularyHints": [
       {
+        "word": "utiliser",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      },
+      {
         "word": "ascenseur",
         "vocabularyIds": [
           "vocab-34751fd2b8b6"
@@ -8370,6 +9739,12 @@
   "production-n4-respectful-request-read-book": {
     "translation": "Veuillez lire ce livre.",
     "promptVocabularyHints": [
+      {
+        "word": "lire",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
       {
         "word": "livre",
         "vocabularyIds": [
@@ -8388,9 +9763,21 @@
     "translation": "Le président de l'entreprise déjeunera ici.",
     "promptVocabularyHints": [
       {
+        "word": "président de l'entreprise",
+        "vocabularyIds": [
+          "vocab-5621763f634f"
+        ]
+      },
+      {
         "word": "déjeunera",
         "vocabularyIds": [
           "vocab-91b2f0a8bfc1"
+        ]
+      },
+      {
+        "word": "ici",
+        "vocabularyIds": [
+          "vocab-57367d42ac5c"
         ]
       }
     ]
@@ -8398,6 +9785,12 @@
   "production-n4-special-honorific-teacher-looked-photo": {
     "translation": "Le professeur a regardé cette photo.",
     "promptVocabularyHints": [
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
       {
         "word": "photo",
         "vocabularyIds": [
@@ -8444,6 +9837,18 @@
     "translation": "Quand j'étais étudiant, j'habitais à Kyoto.",
     "promptVocabularyHints": [
       {
+        "word": "étudiant",
+        "vocabularyIds": [
+          "vocab-9567eaf8fe9b"
+        ]
+      },
+      {
+        "word": "habitais",
+        "vocabularyIds": [
+          "vocab-405805427b97"
+        ]
+      },
+      {
         "word": "Kyoto",
         "vocabularyIds": [
           "vocab-62153df2c4e3"
@@ -8455,9 +9860,27 @@
     "translation": "À l'époque où j'ai commencé ce travail, j'étais très occupé.",
     "promptVocabularyHints": [
       {
+        "word": "commencé",
+        "vocabularyIds": [
+          "vocab-79261a065ba5"
+        ]
+      },
+      {
         "word": "travail",
         "vocabularyIds": [
           "vocab-cdf28ddaf837"
+        ]
+      },
+      {
+        "word": "très",
+        "vocabularyIds": [
+          "vocab-ffc41bd9a841"
+        ]
+      },
+      {
+        "word": "occupé",
+        "vocabularyIds": [
+          "vocab-5ee54e973899"
         ]
       }
     ]
@@ -8476,12 +9899,48 @@
         "vocabularyIds": [
           "vocab-704870bca266"
         ]
+      },
+      {
+        "word": "pratique",
+        "vocabularyIds": [
+          "vocab-7eeea113076f"
+        ]
+      },
+      {
+        "word": "transporter",
+        "vocabularyIds": [
+          "vocab-ac6ebe4452ce"
+        ]
+      },
+      {
+        "word": "livres",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
       }
     ]
   },
   "production-n4-hour-clean-room-purpose": {
     "translation": "Il faut une heure pour nettoyer cette chambre.",
     "promptVocabularyHints": [
+      {
+        "word": "faut",
+        "vocabularyIds": [
+          "vocab-0a3ea16df0dc"
+        ]
+      },
+      {
+        "word": "heure",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
+        ]
+      },
+      {
+        "word": "nettoyer",
+        "vocabularyIds": [
+          "vocab-21537eeda1e7"
+        ]
+      },
       {
         "word": "chambre",
         "vocabularyIds": [
@@ -8499,6 +9958,12 @@
   "production-n4-explanation-not-understand-easily": {
     "translation": "Je n'arrive pas facilement à comprendre cette explication.",
     "promptVocabularyHints": [
+      {
+        "word": "comprendre",
+        "vocabularyIds": [
+          "vocab-eeb8ecca964f"
+        ]
+      },
       {
         "word": "explication",
         "vocabularyIds": [
@@ -8538,6 +10003,12 @@
         "vocabularyIds": [
           "vocab-b11f169893fb"
         ]
+      },
+      {
+        "word": "école",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
+        ]
       }
     ]
   },
@@ -8548,6 +10019,12 @@
         "word": "chambre",
         "vocabularyIds": [
           "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "propre",
+        "vocabularyIds": [
+          "vocab-58a738a344fe"
         ]
       }
     ]
@@ -8566,6 +10043,12 @@
         "vocabularyIds": [
           "vocab-09558b341dc0"
         ]
+      },
+      {
+        "word": "retenir",
+        "vocabularyIds": [
+          "vocab-0ec838cc07ea"
+        ]
       }
     ]
   },
@@ -8576,6 +10059,12 @@
         "word": "question",
         "vocabularyIds": [
           "vocab-f5d831590911"
+        ]
+      },
+      {
+        "word": "poser",
+        "vocabularyIds": [
+          "vocab-d8a0261581dc"
         ]
       }
     ]
@@ -8590,9 +10079,27 @@
     "translation": "Réparer la montre n'a coûté que mille yens.",
     "promptVocabularyHints": [
       {
+        "word": "Réparer",
+        "vocabularyIds": [
+          "vocab-a584cd8f1390"
+        ]
+      },
+      {
         "word": "montre",
         "vocabularyIds": [
           "vocab-4754cbccd601"
+        ]
+      },
+      {
+        "word": "mille",
+        "vocabularyIds": [
+          "vocab-86ef0852f80f"
+        ]
+      },
+      {
+        "word": "yens",
+        "vocabularyIds": [
+          "vocab-ed7e1b01883d"
         ]
       }
     ]
@@ -8622,12 +10129,36 @@
         "vocabularyIds": [
           "vocab-dc7f5fc156cf"
         ]
+      },
+      {
+        "word": "arrivera",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "bientôt",
+        "vocabularyIds": [
+          "vocab-7d35ef299db0"
+        ]
       }
     ]
   },
   "production-n4-wonder-what-give-mother": {
     "translation": "Je me demande quoi offrir à ma mère.",
     "promptVocabularyHints": [
+      {
+        "word": "quoi",
+        "vocabularyIds": [
+          "vocab-3b010d61ddd5"
+        ]
+      },
+      {
+        "word": "offrir",
+        "vocabularyIds": [
+          "vocab-eee8b9c95721"
+        ]
+      },
       {
         "word": "mère",
         "vocabularyIds": [
@@ -8650,12 +10181,24 @@
         "vocabularyIds": [
           "vocab-61c233ab6a5e"
         ]
+      },
+      {
+        "word": "ouvert",
+        "vocabularyIds": [
+          "vocab-56dc4d647d8b"
+        ]
       }
     ]
   },
   "production-n4-kashira-who-person-is": {
     "translation": "Je me demande qui est cette personne-là.",
     "promptVocabularyHints": [
+      {
+        "word": "qui",
+        "vocabularyIds": [
+          "vocab-f3f74ef8bc9a"
+        ]
+      },
       {
         "word": "personne",
         "vocabularyIds": [
@@ -8674,6 +10217,12 @@
     "translation": "Tu connais cette personne ?",
     "promptVocabularyHints": [
       {
+        "word": "connais",
+        "vocabularyIds": [
+          "vocab-531b240786ce"
+        ]
+      },
+      {
         "word": "personne",
         "vocabularyIds": [
           "vocab-ad7167347a2a"
@@ -8688,6 +10237,12 @@
         "word": "occupé",
         "vocabularyIds": [
           "vocab-5ee54e973899"
+        ]
+      },
+      {
+        "word": "aujourd'hui",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
         ]
       }
     ]
@@ -8706,12 +10261,24 @@
         "vocabularyIds": [
           "vocab-944f21154c78"
         ]
+      },
+      {
+        "word": "ensemble",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
       }
     ]
   },
   "production-n4-isnt-tomorrow-sunday": {
     "translation": "Demain, ce n'est pas dimanche ?",
     "promptVocabularyHints": [
+      {
+        "word": "Demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
+      },
       {
         "word": "dimanche",
         "vocabularyIds": [
@@ -8950,6 +10517,18 @@
         "vocabularyIds": [
           "vocab-2183db666af4"
         ]
+      },
+      {
+        "word": "travailler",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
+        ]
+      },
+      {
+        "word": "Japon",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
       }
     ]
   },
@@ -8957,9 +10536,21 @@
     "translation": "J’ai décidé de ne pas acheter ces chaussures parce qu’elles sont trop chères.",
     "promptVocabularyHints": [
       {
+        "word": "acheter",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
         "word": "chaussures",
         "vocabularyIds": [
           "vocab-d2110e85159b"
+        ]
+      },
+      {
+        "word": "chères",
+        "vocabularyIds": [
+          "vocab-775979a197ea"
         ]
       }
     ]
@@ -8974,9 +10565,27 @@
     "translation": "Mon petit frère ne peut pas être médecin, puisqu’il est encore un enfant.",
     "promptVocabularyHints": [
       {
+        "word": "petit frère",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
+      {
         "word": "médecin",
         "vocabularyIds": [
           "vocab-60e888b69674"
+        ]
+      },
+      {
+        "word": "encore",
+        "vocabularyIds": [
+          "vocab-f385448e1132"
+        ]
+      },
+      {
+        "word": "enfant",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
         ]
       }
     ]
@@ -8987,6 +10596,24 @@
   "production-n4-hard-to-read-kanji-in-hiragana": {
     "translation": "Écrivez en hiragana les kanjis difficiles à lire, s’il vous plaît.",
     "promptVocabularyHints": [
+      {
+        "word": "Écrivez",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "lire",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "kanjis",
+        "vocabularyIds": [
+          "vocab-535c688e8bf9"
+        ]
+      },
       {
         "word": "hiragana",
         "vocabularyIds": [
@@ -9001,6 +10628,18 @@
   "production-n4-no-talking-while-teacher-explains": {
     "translation": "Ne parlez pas pendant que le professeur explique, s’il vous plaît.",
     "promptVocabularyHints": [
+      {
+        "word": "parlez",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
       {
         "word": "explique",
         "vocabularyIds": [
@@ -9041,9 +10680,33 @@
     "translation": "Si vous n’utilisez pas d’œufs, ma petite sœur pourra manger ce gâteau, elle aussi.",
     "promptVocabularyHints": [
       {
+        "word": "utilisez",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      },
+      {
         "word": "œufs",
         "vocabularyIds": [
           "vocab-190923f1528e"
+        ]
+      },
+      {
+        "word": "petite sœur",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      },
+      {
+        "word": "manger",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "gâteau",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
         ]
       }
     ]
@@ -9054,6 +10717,24 @@
   "production-n4-festival-singing-and-dancing-arrangement": {
     "translation": "Il a été décidé que nous ferons des activités comme chanter et danser au festival de cette année.",
     "promptVocabularyHints": [
+      {
+        "word": "chanter",
+        "vocabularyIds": [
+          "vocab-d8974b42548f"
+        ]
+      },
+      {
+        "word": "danser",
+        "vocabularyIds": [
+          "vocab-98d08dfe0a16"
+        ]
+      },
+      {
+        "word": "cette année",
+        "vocabularyIds": [
+          "vocab-365704d56220"
+        ]
+      },
       {
         "word": "festival",
         "vocabularyIds": [
@@ -9066,7 +10747,25 @@
     "translation": "On m’a dit que le professeur était déjà rentré chez lui, donc il ne devrait pas être dans la salle de classe.",
     "promptVocabularyHints": [
       {
-        "word": "classe",
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "déjà",
+        "vocabularyIds": [
+          "vocab-0960d185c7f1"
+        ]
+      },
+      {
+        "word": "rentré",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      },
+      {
+        "word": "salle de classe",
         "vocabularyIds": [
           "vocab-fbb71c77ac0e"
         ]
@@ -9079,6 +10778,24 @@
   "production-n4-note-names-easy-to-forget": {
     "translation": "Pour les noms faciles à oublier, il vaut mieux les noter à l’avance dans un carnet.",
     "promptVocabularyHints": [
+      {
+        "word": "noter",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "noms",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      },
+      {
+        "word": "oublier",
+        "vocabularyIds": [
+          "vocab-53c63c8d3e25"
+        ]
+      },
       {
         "word": "carnet",
         "vocabularyIds": [
@@ -9093,6 +10810,30 @@
   "production-n4-new-station-shops-will-increase": {
     "translation": "Si une nouvelle gare est construite, le nombre de magasins dans cette ville continuera probablement à augmenter.",
     "promptVocabularyHints": [
+      {
+        "word": "nouvelle",
+        "vocabularyIds": [
+          "vocab-288a95a40d95"
+        ]
+      },
+      {
+        "word": "gare",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      },
+      {
+        "word": "magasins",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      },
+      {
+        "word": "ville",
+        "vocabularyIds": [
+          "vocab-09d74d630a45"
+        ]
+      },
       {
         "word": "augmenter",
         "vocabularyIds": [
@@ -9109,6 +10850,18 @@
         "vocabularyIds": [
           "vocab-cdc7fbcaab99"
         ]
+      },
+      {
+        "word": "pain",
+        "vocabularyIds": [
+          "vocab-3ad79496437d"
+        ]
+      },
+      {
+        "word": "acheter",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
       }
     ]
   },
@@ -9118,6 +10871,24 @@
   "production-n4-call-taxi-while-showering": {
     "translation": "Pendant que je prends une douche, appelle un taxi à l’avance, s’il te plaît.",
     "promptVocabularyHints": [
+      {
+        "word": "prends",
+        "vocabularyIds": [
+          "vocab-981b91b281ca"
+        ]
+      },
+      {
+        "word": "douche",
+        "vocabularyIds": [
+          "vocab-4216cb81030d"
+        ]
+      },
+      {
+        "word": "appelle",
+        "vocabularyIds": [
+          "vocab-0adf764f9311"
+        ]
+      },
       {
         "word": "taxi",
         "vocabularyIds": [
@@ -9217,9 +10988,33 @@
     "translation": "Un vélo neuf coûte trop cher, je compte donc réparer l’ancien.",
     "promptVocabularyHints": [
       {
+        "word": "neuf",
+        "vocabularyIds": [
+          "vocab-288a95a40d95"
+        ]
+      },
+      {
+        "word": "vélo",
+        "vocabularyIds": [
+          "vocab-457ac376d17f"
+        ]
+      },
+      {
+        "word": "cher",
+        "vocabularyIds": [
+          "vocab-775979a197ea"
+        ]
+      },
+      {
         "word": "réparer",
         "vocabularyIds": [
           "vocab-a584cd8f1390"
+        ]
+      },
+      {
+        "word": "ancien",
+        "vocabularyIds": [
+          "vocab-e5fd15d61360"
         ]
       }
     ]
@@ -9238,6 +11033,31 @@
         "vocabularyIds": [
           "vocab-e47785e0c656"
         ]
+      },
+      {
+        "word": "longtemps",
+        "vocabularyIds": [
+          "vocab-11b5462fa3a4"
+        ]
+      },
+      {
+        "word": "changer",
+        "vocabularyIds": [
+          "vocab-dcfa870c8a53"
+        ]
+      },
+      {
+        "word": "heure",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
+        ]
+      },
+      {
+        "word": "déjeuner",
+        "vocabularyIds": [
+          "vocab-91b2f0a8bfc1",
+          "vocab-ec4fa4315542"
+        ]
       }
     ]
   },
@@ -9252,6 +11072,18 @@
         "vocabularyIds": [
           "vocab-4cd1238bcb91"
         ]
+      },
+      {
+        "word": "devenir",
+        "vocabularyIds": [
+          "vocab-3653e718a1a5"
+        ]
+      },
+      {
+        "word": "gros",
+        "vocabularyIds": [
+          "vocab-f6377dcbb564"
+        ]
       }
     ]
   },
@@ -9265,9 +11097,21 @@
     "translation": "Je vois des oiseaux s’éloigner en volant.",
     "promptVocabularyHints": [
       {
+        "word": "vois",
+        "vocabularyIds": [
+          "vocab-e99feae5bc25"
+        ]
+      },
+      {
         "word": "oiseaux",
         "vocabularyIds": [
           "vocab-683f3e7fb085"
+        ]
+      },
+      {
+        "word": "volant",
+        "vocabularyIds": [
+          "vocab-bfe63a77332b"
         ]
       }
     ]
@@ -9282,6 +11126,30 @@
     "translation": "Pendant ma pause déjeuner, je suis allé à la poste pour envoyer un colis.",
     "promptVocabularyHints": [
       {
+        "word": "pause déjeuner",
+        "vocabularyIds": [
+          "vocab-385a4dbb8d14"
+        ]
+      },
+      {
+        "word": "allé",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "poste",
+        "vocabularyIds": [
+          "vocab-e40b7fecf36c"
+        ]
+      },
+      {
+        "word": "envoyer",
+        "vocabularyIds": [
+          "vocab-d4cd95d9b9a5"
+        ]
+      },
+      {
         "word": "colis",
         "vocabularyIds": [
           "vocab-567f42b89301"
@@ -9292,6 +11160,24 @@
   "production-n4-train-trip-buy-ticket-in-advance": {
     "translation": "Si vous allez en train, achetez votre billet à l’avance, s’il vous plaît.",
     "promptVocabularyHints": [
+      {
+        "word": "allez",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      },
+      {
+        "word": "achetez",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
       {
         "word": "billet",
         "vocabularyIds": [
@@ -9311,6 +11197,30 @@
         "vocabularyIds": [
           "vocab-e47785e0c656"
         ]
+      },
+      {
+        "word": "écouter",
+        "vocabularyIds": [
+          "vocab-d8a0261581dc"
+        ]
+      },
+      {
+        "word": "même",
+        "vocabularyIds": [
+          "vocab-9ff4f40a3428"
+        ]
+      },
+      {
+        "word": "histoire",
+        "vocabularyIds": [
+          "vocab-be9551d57abc"
+        ]
+      },
+      {
+        "word": "fatigué",
+        "vocabularyIds": [
+          "vocab-65f5cb2d1bd4"
+        ]
       }
     ]
   },
@@ -9325,6 +11235,25 @@
         "vocabularyIds": [
           "vocab-797ac724daf3"
         ]
+      },
+      {
+        "word": "rétréci",
+        "vocabularyIds": [
+          "vocab-769a80524957",
+          "vocab-3653e718a1a5"
+        ]
+      },
+      {
+        "word": "laver",
+        "vocabularyIds": [
+          "vocab-84e555b3292a"
+        ]
+      },
+      {
+        "word": "eau chaude",
+        "vocabularyIds": [
+          "vocab-a89eb4b93468"
+        ]
       }
     ]
   },
@@ -9338,10 +11267,29 @@
     "translation": "Les plats pour la fête ont déjà été achetés, il n’est donc pas nécessaire de cuisiner."
   },
   "production-n4-wash-own-bowl-after-meal": {
-    "translation": "Quand tu as fini de manger, lave ton bol à riz.",
+    "translation": "Quand tu as fini de manger, lave ton propre bol à riz.",
     "promptVocabularyHints": [
       {
-        "word": "bol",
+        "word": "manger",
+        "vocabularyIds": [
+          "vocab-2bf5dccca2b0",
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "lave",
+        "vocabularyIds": [
+          "vocab-84e555b3292a"
+        ]
+      },
+      {
+        "word": "propre",
+        "vocabularyIds": [
+          "vocab-7cc10603c197"
+        ]
+      },
+      {
+        "word": "bol à riz",
         "vocabularyIds": [
           "vocab-aa6a896345b4"
         ]
@@ -9355,9 +11303,39 @@
     "translation": "Je veille à éteindre la lumière en quittant la pièce, mais hier j’ai oublié.",
     "promptVocabularyHints": [
       {
+        "word": "éteindre",
+        "vocabularyIds": [
+          "vocab-fda6e04cdc9d"
+        ]
+      },
+      {
         "word": "lumière",
         "vocabularyIds": [
           "vocab-a24e73630479"
+        ]
+      },
+      {
+        "word": "quittant",
+        "vocabularyIds": [
+          "vocab-b2a9df4d0301"
+        ]
+      },
+      {
+        "word": "pièce",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "oublié",
+        "vocabularyIds": [
+          "vocab-53c63c8d3e25"
+        ]
+      },
+      {
+        "word": "hier",
+        "vocabularyIds": [
+          "vocab-eb208b6436bb"
         ]
       }
     ]
@@ -9372,9 +11350,27 @@
     "translation": "Quand vous aurez fini d’écrire votre adresse sur cette feuille, donnez-la-moi, s’il vous plaît.",
     "promptVocabularyHints": [
       {
+        "word": "écrire",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
         "word": "adresse",
         "vocabularyIds": [
           "vocab-fcdd7a903190"
+        ]
+      },
+      {
+        "word": "feuille",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
+        ]
+      },
+      {
+        "word": "donnez",
+        "vocabularyIds": [
+          "vocab-e713380aad5b"
         ]
       }
     ]
@@ -9393,6 +11389,30 @@
         "vocabularyIds": [
           "vocab-5fd1d3759699"
         ]
+      },
+      {
+        "word": "dormir",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "seul",
+        "vocabularyIds": [
+          "vocab-7de8b40e4f57"
+        ]
+      },
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
+        "word": "près de lui",
+        "vocabularyIds": [
+          "vocab-08a53edb01c1"
+        ]
       }
     ]
   },
@@ -9406,9 +11426,33 @@
     "translation": "Pendant mon absence, j’aimerais que tu donnes de l’eau au chat tous les jours.",
     "promptVocabularyHints": [
       {
+        "word": "absence",
+        "vocabularyIds": [
+          "vocab-9493412fc88d"
+        ]
+      },
+      {
+        "word": "donnes",
+        "vocabularyIds": [
+          "vocab-eee8b9c95721"
+        ]
+      },
+      {
         "word": "chat",
         "vocabularyIds": [
           "vocab-123a10eb50b0"
+        ]
+      },
+      {
+        "word": "eau",
+        "vocabularyIds": [
+          "vocab-28ddfdc9290c"
+        ]
+      },
+      {
+        "word": "tous les jours",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
         ]
       }
     ]
@@ -9424,6 +11468,12 @@
         "vocabularyIds": [
           "vocab-944f21154c78"
         ]
+      },
+      {
+        "word": "prévenu",
+        "vocabularyIds": [
+          "vocab-e04a18cc6700"
+        ]
       }
     ]
   },
@@ -9437,6 +11487,30 @@
     "translation": "Avant que l’enfant ne s’endorme, je lui ai lu une histoire courte.",
     "promptVocabularyHints": [
       {
+        "word": "enfant",
+        "vocabularyIds": [
+          "vocab-5fd1d3759699"
+        ]
+      },
+      {
+        "word": "endorme",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "lu",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "courte",
+        "vocabularyIds": [
+          "vocab-456eae34da34"
+        ]
+      },
+      {
         "word": "histoire",
         "vocabularyIds": [
           "vocab-be9551d57abc"
@@ -9448,9 +11522,27 @@
     "translation": "Choisis tes vêtements pour demain avant d’aller te coucher, s’il te plaît.",
     "promptVocabularyHints": [
       {
+        "word": "coucher",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      },
+      {
+        "word": "Choisis",
+        "vocabularyIds": [
+          "vocab-cbc44d67ceca"
+        ]
+      },
+      {
         "word": "vêtements",
         "vocabularyIds": [
           "vocab-ff1cb3f79233"
+        ]
+      },
+      {
+        "word": "demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
         ]
       }
     ]
@@ -9466,6 +11558,24 @@
         "vocabularyIds": [
           "vocab-13b0a5df30f4"
         ]
+      },
+      {
+        "word": "poisson",
+        "vocabularyIds": [
+          "vocab-5c1c2120b516"
+        ]
+      },
+      {
+        "word": "entrez",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "cuisine",
+        "vocabularyIds": [
+          "vocab-2d479962e6d5"
+        ]
       }
     ]
   },
@@ -9479,9 +11589,39 @@
     "translation": "Lors des longs trajets en voiture, je veille à faire une pause toutes les deux heures.",
     "promptVocabularyHints": [
       {
+        "word": "longs",
+        "vocabularyIds": [
+          "vocab-37de19811d79"
+        ]
+      },
+      {
         "word": "voiture",
         "vocabularyIds": [
           "vocab-f71f9de56223"
+        ]
+      },
+      {
+        "word": "trajets",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "pause",
+        "vocabularyIds": [
+          "vocab-acc3dd26ba1e"
+        ]
+      },
+      {
+        "word": "deux",
+        "vocabularyIds": [
+          "vocab-7fc81b0ddd17"
+        ]
+      },
+      {
+        "word": "heures",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
         ]
       }
     ]
@@ -9496,9 +11636,27 @@
     "translation": "J’aimerais essayer de préparer ce plat comme le fait ma mère.",
     "promptVocabularyHints": [
       {
+        "word": "préparer",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
         "word": "plat",
         "vocabularyIds": [
           "vocab-6ab8f730431c"
+        ]
+      },
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
+        "word": "fait",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
         ]
       }
     ]
@@ -9513,9 +11671,33 @@
     "translation": "J’avais emprunté ce livre à un ami, mais il a malheureusement pris l’eau sous la pluie.",
     "promptVocabularyHints": [
       {
+        "word": "emprunté",
+        "vocabularyIds": [
+          "vocab-fcc4b149bcdb"
+        ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
         "word": "ami",
         "vocabularyIds": [
           "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "pris l’eau",
+        "vocabularyIds": [
+          "vocab-134840eb63c7"
+        ]
+      },
+      {
+        "word": "pluie",
+        "vocabularyIds": [
+          "vocab-7e87850c448d"
         ]
       }
     ]
@@ -9527,9 +11709,21 @@
     "translation": "Comme j’avais oublié mon portefeuille, je n’ai pas pu acheter ce que je voulais.",
     "promptVocabularyHints": [
       {
+        "word": "oublié",
+        "vocabularyIds": [
+          "vocab-53c63c8d3e25"
+        ]
+      },
+      {
         "word": "portefeuille",
         "vocabularyIds": [
           "vocab-c5df4f2e7eab"
+        ]
+      },
+      {
+        "word": "acheter",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
         ]
       }
     ]
@@ -9547,9 +11741,33 @@
     "translation": "Un agent de gare m’a dit de ne pas me lever avant l’arrêt du train.",
     "promptVocabularyHints": [
       {
+        "word": "gare",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      },
+      {
+        "word": "agent",
+        "vocabularyIds": [
+          "vocab-ad7167347a2a"
+        ]
+      },
+      {
         "word": "lever",
         "vocabularyIds": [
           "vocab-17e3177c62d5"
+        ]
+      },
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      },
+      {
+        "word": "arrêt",
+        "vocabularyIds": [
+          "vocab-bd365f430f35"
         ]
       }
     ]
@@ -9567,9 +11785,33 @@
     "translation": "Si vous cherchez un endroit calme, que diriez-vous d’un parc, d’une bibliothèque ou d’un autre lieu similaire ?",
     "promptVocabularyHints": [
       {
+        "word": "cherchez",
+        "vocabularyIds": [
+          "vocab-291f4439ec65"
+        ]
+      },
+      {
         "word": "calme",
         "vocabularyIds": [
           "vocab-61b57e2d4702"
+        ]
+      },
+      {
+        "word": "endroit",
+        "vocabularyIds": [
+          "vocab-79b9f20fa351"
+        ]
+      },
+      {
+        "word": "parc",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      },
+      {
+        "word": "bibliothèque",
+        "vocabularyIds": [
+          "vocab-ca8d0efe19a3"
         ]
       }
     ]
@@ -9588,6 +11830,24 @@
         "vocabularyIds": [
           "vocab-dc7f5fc156cf"
         ]
+      },
+      {
+        "word": "en retard",
+        "vocabularyIds": [
+          "vocab-6762b46e5f55"
+        ]
+      },
+      {
+        "word": "prévenir",
+        "vocabularyIds": [
+          "vocab-e04a18cc6700"
+        ]
+      },
+      {
+        "word": "téléphone",
+        "vocabularyIds": [
+          "vocab-24df87472770"
+        ]
       }
     ]
   },
@@ -9598,6 +11858,24 @@
         "word": "fête",
         "vocabularyIds": [
           "vocab-37388d6a51a3"
+        ]
+      },
+      {
+        "word": "dimanche",
+        "vocabularyIds": [
+          "vocab-b7519a0f57a7"
+        ]
+      },
+      {
+        "word": "nettoyer",
+        "vocabularyIds": [
+          "vocab-21537eeda1e7"
+        ]
+      },
+      {
+        "word": "pièce",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
         ]
       }
     ]
@@ -9632,6 +11910,24 @@
     "translation": "J’ai commencé à lire le livre que mon professeur a bien voulu choisir pour moi.",
     "promptVocabularyHints": [
       {
+        "word": "lire",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
         "word": "choisir",
         "vocabularyIds": [
           "vocab-cbc44d67ceca"
@@ -9650,6 +11946,30 @@
         "vocabularyIds": [
           "vocab-e47785e0c656"
         ]
+      },
+      {
+        "word": "terminée",
+        "vocabularyIds": [
+          "vocab-6393ca7aefde"
+        ]
+      },
+      {
+        "word": "accompagnerai",
+        "vocabularyIds": [
+          "vocab-d4cd95d9b9a5"
+        ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "gare",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
       }
     ]
   },
@@ -9663,9 +11983,27 @@
     "translation": "Je remettrai ces documents au professeur avant son départ.",
     "promptVocabularyHints": [
       {
+        "word": "remettrai",
+        "vocabularyIds": [
+          "vocab-e713380aad5b"
+        ]
+      },
+      {
         "word": "documents",
         "vocabularyIds": [
           "vocab-58e891bce783"
+        ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "départ",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
         ]
       }
     ]
@@ -9683,9 +12021,27 @@
     "translation": "Le petit déjeuner devrait être prêt vers l’heure du réveil de l’enfant.",
     "promptVocabularyHints": [
       {
+        "word": "petit déjeuner",
+        "vocabularyIds": [
+          "vocab-818846d31820"
+        ]
+      },
+      {
+        "word": "prêt",
+        "vocabularyIds": [
+          "vocab-581d18f92555"
+        ]
+      },
+      {
         "word": "enfant",
         "vocabularyIds": [
           "vocab-5fd1d3759699"
+        ]
+      },
+      {
+        "word": "réveil",
+        "vocabularyIds": [
+          "vocab-72c5b362c4f2"
         ]
       }
     ]
@@ -9703,6 +12059,24 @@
     "translation": "Je suis gêné de chanter devant des gens, j’ai donc du mal à le faire.",
     "promptVocabularyHints": [
       {
+        "word": "chanter",
+        "vocabularyIds": [
+          "vocab-d8974b42548f"
+        ]
+      },
+      {
+        "word": "devant",
+        "vocabularyIds": [
+          "vocab-07f353ef981c"
+        ]
+      },
+      {
+        "word": "gens",
+        "vocabularyIds": [
+          "vocab-ad7167347a2a"
+        ]
+      },
+      {
         "word": "gêné",
         "vocabularyIds": [
           "vocab-8b65db9c3fbf"
@@ -9717,9 +12091,27 @@
     "translation": "Le bus n’arrive pas, je me demande donc si je vais marcher jusqu’à la gare.",
     "promptVocabularyHints": [
       {
+        "word": "bus",
+        "vocabularyIds": [
+          "vocab-826a124ad930"
+        ]
+      },
+      {
+        "word": "arrive",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
         "word": "marcher",
         "vocabularyIds": [
           "vocab-a76603aae6e4"
+        ]
+      },
+      {
+        "word": "gare",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
         ]
       }
     ]
@@ -9734,9 +12126,27 @@
     "translation": "Puisque nous sommes venus à la mer, allons nager ensemble !",
     "promptVocabularyHints": [
       {
+        "word": "venus",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
         "word": "mer",
         "vocabularyIds": [
           "vocab-47c1227c459b"
+        ]
+      },
+      {
+        "word": "nager",
+        "vocabularyIds": [
+          "vocab-76a7f713c3db"
+        ]
+      },
+      {
+        "word": "ensemble",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
         ]
       }
     ]

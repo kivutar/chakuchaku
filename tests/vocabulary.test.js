@@ -102,6 +102,43 @@ test("contextual vocabulary detection excludes revealed hints and absent words",
   }), ["eat"]);
 });
 
+test("meal hints exclude the complete revealed word from contextual SRS credit", async () => {
+  const [exercises, vocabulary] = await Promise.all([
+    readFile(new URL("../data/exercises.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../data/jlpt-n5-vocabulary.json", import.meta.url), "utf8").then(JSON.parse)
+  ]);
+  const meals = new Set(["朝御飯", "昼御飯", "晩御飯"]);
+  const mealIds = new Set(vocabulary.filter(({ term }) => meals.has(term)).map(({ id }) => id));
+  const checkedMeals = new Set();
+
+  for (const exercise of exercises.filter(({ type }) => type === "production")) {
+    for (const hint of exercise.promptVocabularyHints || []) {
+      const mealId = hint.vocabularyIds.find((id) => mealIds.has(id));
+      if (!mealId) continue;
+      checkedMeals.add(mealId);
+      assert.ok(exercise.tokens.some(({ vocabularyId }) => vocabularyId === mealId),
+        `${exercise.id}: the hint and the prepared word must share an ID`);
+
+      for (const answer of [
+        exercise.solution,
+        exercise.tokens.map(({ reading, surface }) => reading || surface).join("")
+      ]) {
+        const unrevealed = findContextualVocabularyIds({
+          tokens: exercise.tokens, answer, vocabulary
+        });
+        assert.ok(unrevealed.includes(mealId), `${exercise.id}: unaided recall earns credit`);
+        const revealed = findContextualVocabularyIds({
+          tokens: exercise.tokens, answer, vocabulary, excludedVocabularyIds: hint.vocabularyIds
+        });
+        assert.deepEqual(new Set(revealed),
+          new Set(unrevealed.filter((id) => !hint.vocabularyIds.includes(id))),
+          `${exercise.id}: only unrevealed words earn credit`);
+      }
+    }
+  }
+  assert.deepEqual(checkedMeals, mealIds);
+});
+
 test("contextual vocabulary detection keeps short verb stems before punctuation and quotes", () => {
   const vocabulary = [
     { id: "look", term: "見る", reading: "みる" },
