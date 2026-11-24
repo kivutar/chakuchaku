@@ -1358,13 +1358,14 @@
   },
   {
     "id": "vocab-ef16ea2db82e",
-    "term": "伯父",
+    "term": "おじさん",
     "reading": "おじさん",
     "meaning": "uncle, middle-aged man",
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
     "variants": [
+      "伯父さん",
       "叔父さん"
     ],
     "partOfSpeech": "noun"
@@ -1627,7 +1628,8 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "noun",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-6df3b821e026",
@@ -1637,7 +1639,8 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "noun",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-0ec838cc07ea",
@@ -2334,7 +2337,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "inflections": [
+      {
+        "surface": "黄色",
+        "reading": "きいろ",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-cca6201c9683",
@@ -4848,7 +4858,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "inflections": [
+      {
+        "surface": "茶色",
+        "reading": "ちゃいろ",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-aa6a896345b4",
@@ -8754,7 +8771,8 @@
     "topic": "culture",
     "scope": "supplemental",
     "introducedAt": "n5",
-    "source": "curated-learner-favorites"
+    "source": "curated-learner-favorites",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-b9fe190304ee",
@@ -9340,7 +9358,8 @@
     "topic": "food",
     "scope": "supplemental",
     "introducedAt": "n5",
-    "source": "curated-katakana-curriculum"
+    "source": "curated-katakana-curriculum",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-22e4ac32a881",

@@ -16930,5 +16930,920 @@
   },
   "n5-vocab-older-sister-good-at-singing": {
     "translation": "J’ai entendu dire que ta grande sœur chantait bien."
+  },
+  "n5-vocab-blue-bag-planned-purchase": {
+    "translation": "J’aime le bleu, alors je compte acheter un sac bleu."
+  },
+  "production-n5-vocab-red-shirt-older-brother": {
+    "translation": "La personne qui porte la chemise rouge est mon grand frère.",
+    "promptVocabularyHints": [
+      {
+        "word": "personne",
+        "vocabularyIds": [
+          "vocab-ad7167347a2a"
+        ]
+      },
+      {
+        "word": "porte",
+        "vocabularyIds": [
+          "vocab-8298c6a732a7"
+        ]
+      },
+      {
+        "word": "chemise",
+        "vocabularyIds": [
+          "vocab-1d1eb2c3032c"
+        ]
+      },
+      {
+        "word": "rouge",
+        "vocabularyIds": [
+          "vocab-3144539c83d3"
+        ]
+      },
+      {
+        "word": "grand frère",
+        "vocabularyIds": [
+          "vocab-cda9169e9fa2"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-yellow-small-cute-flower": {
+    "translation": "Cette fleur est jaune, petite et mignonne."
+  },
+  "production-n5-vocab-black-shoes-buy-brown-ones": {
+    "translation": "J’ai déjà des chaussures noires, alors aujourd’hui, je vais en acheter des marron.",
+    "promptVocabularyHints": [
+      {
+        "word": "ai",
+        "vocabularyIds": [
+          "vocab-516ad1128c71"
+        ]
+      },
+      {
+        "word": "noires",
+        "vocabularyIds": [
+          "vocab-d0ff33617d6b"
+        ]
+      },
+      {
+        "word": "chaussures",
+        "vocabularyIds": [
+          "vocab-d2110e85159b"
+        ]
+      },
+      {
+        "word": "aujourd’hui",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      },
+      {
+        "word": "acheter",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "marron",
+        "vocabularyIds": [
+          "vocab-3bdadaaa9b40"
+        ]
+      }
+    ]
+  },
+  "production-n5-vocab-unpleasant-going-out-in-rain": {
+    "translation": "Je n’aime pas sortir les jours de pluie, alors je reste à la maison aujourd’hui.",
+    "promptVocabularyHints": [
+      {
+        "word": "n’aime pas",
+        "vocabularyIds": [
+          "vocab-8b1fafbd4eb9"
+        ]
+      },
+      {
+        "word": "sortir",
+        "vocabularyIds": [
+          "vocab-6109638dac53",
+          "vocab-b2a9df4d0301"
+        ]
+      },
+      {
+        "word": "pluie",
+        "vocabularyIds": [
+          "vocab-7e87850c448d"
+        ]
+      },
+      {
+        "word": "jours",
+        "vocabularyIds": [
+          "vocab-f3881ce313e7"
+        ]
+      },
+      {
+        "word": "reste",
+        "vocabularyIds": [
+          "vocab-e2f1dae6743a"
+        ]
+      },
+      {
+        "word": "maison",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      },
+      {
+        "word": "aujourd’hui",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-uncle-lent-unread-book": {
+    "translation": "Je n’ai pas encore lu le livre que mon oncle m’a prêté."
+  },
+  "production-n5-vocab-aunt-teaches-cake-making": {
+    "translation": "Ma tante cuisine bien, alors elle m’a appris à faire un gâteau.",
+    "promptVocabularyHints": [
+      {
+        "word": "tante",
+        "vocabularyIds": [
+          "vocab-54f0c3f57bf9"
+        ]
+      },
+      {
+        "word": "bien",
+        "vocabularyIds": [
+          "vocab-f78f531c55a5"
+        ]
+      },
+      {
+        "word": "cuisine",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      },
+      {
+        "word": "appris",
+        "vocabularyIds": [
+          "vocab-de83de37aff5"
+        ]
+      },
+      {
+        "word": "faire",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
+        "word": "gâteau",
+        "vocabularyIds": [
+          "vocab-da08a01c25e4"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-bath-after-turning-off-tv": {
+    "translation": "Éteins la télévision avant de prendre un bain, s’il te plaît."
+  },
+  "production-n5-vocab-mothers-boxed-lunch-in-park": {
+    "translation": "J’ai mangé dans le parc le bento que ma mère avait préparé pour moi.",
+    "promptVocabularyHints": [
+      {
+        "word": "mangé",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "bento",
+        "vocabularyIds": [
+          "vocab-6df3b821e026"
+        ]
+      },
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
+        "word": "préparé",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
+        "word": "parc",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-few-shops-in-this-area": {
+    "translation": "Il y a peu de magasins dans ce quartier, alors je fais mes achats près de la gare."
+  },
+  "production-n5-vocab-name-in-katakana-show-teacher": {
+    "translation": "Écris ton nom en katakana, puis montre-le au professeur, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "Écris",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "nom",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      },
+      {
+        "word": "katakana",
+        "vocabularyIds": [
+          "vocab-bcd4c2c45fe0"
+        ]
+      },
+      {
+        "word": "montre",
+        "vocabularyIds": [
+          "vocab-859aec8573b3"
+        ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-fathers-suit-large-nice-color": {
+    "translation": "Le costume que mon père m’a donné est un peu grand, mais j’aime sa couleur."
+  },
+  "production-n5-vocab-rice-field-from-train-window": {
+    "translation": "Depuis la fenêtre du train, on voyait une grande rizière.",
+    "promptVocabularyHints": [
+      {
+        "word": "voyait",
+        "vocabularyIds": [
+          "vocab-e99feae5bc25"
+        ]
+      },
+      {
+        "word": "grande",
+        "vocabularyIds": [
+          "vocab-bb8fc62cf23d"
+        ]
+      },
+      {
+        "word": "rizière",
+        "vocabularyIds": [
+          "vocab-0da81020c173"
+        ]
+      },
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      },
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-lukewarm-tea-make-hotter": {
+    "translation": "Ce thé est tiède, alors rends-le plus chaud, s’il te plaît."
+  },
+  "production-n5-vocab-wash-ashtray-put-on-desk": {
+    "translation": "Lave ce cendrier, puis pose-le sur le bureau, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "Lave",
+        "vocabularyIds": [
+          "vocab-84e555b3292a"
+        ]
+      },
+      {
+        "word": "cendrier",
+        "vocabularyIds": [
+          "vocab-5cba13dffe93"
+        ]
+      },
+      {
+        "word": "pose",
+        "vocabularyIds": [
+          "vocab-db6357cc3ab6"
+        ]
+      },
+      {
+        "word": "bureau",
+        "vocabularyIds": [
+          "vocab-0cbee2d10284"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-camera-needs-film": {
+    "translation": "On ne peut pas utiliser cet appareil photo sans pellicule."
+  },
+  "production-n5-vocab-put-matches-away-unused": {
+    "translation": "Range ces allumettes dans la boîte sans les utiliser, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "Range",
+        "vocabularyIds": [
+          "vocab-b5e9e035a8be"
+        ]
+      },
+      {
+        "word": "allumettes",
+        "vocabularyIds": [
+          "vocab-c1f712fe9638"
+        ]
+      },
+      {
+        "word": "boîte",
+        "vocabularyIds": [
+          "vocab-28102c121d50"
+        ]
+      },
+      {
+        "word": "utiliser",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      }
+    ]
+  },
+  "production-n5-vocab-splendid-house-far-from-station": {
+    "translation": "La maison que j’ai vue hier était loin de la gare, mais elle était magnifique.",
+    "promptVocabularyHints": [
+      {
+        "word": "maison",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      },
+      {
+        "word": "vue",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      },
+      {
+        "word": "hier",
+        "vocabularyIds": [
+          "vocab-eb208b6436bb"
+        ]
+      },
+      {
+        "word": "magnifique",
+        "vocabularyIds": [
+          "vocab-4e631a9d4b7c"
+        ]
+      },
+      {
+        "word": "loin",
+        "vocabularyIds": [
+          "vocab-8b4370afb039"
+        ]
+      },
+      {
+        "word": "gare",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-yakitori-want-to-eat-again": {
+    "translation": "Les brochettes de poulet de ce magasin étaient délicieuses, alors j’aimerais en remanger."
+  },
+  "production-n5-vocab-too-many-gyoza-give-to-friend": {
+    "translation": "J’ai préparé trop de gyozas, alors j’en ai donné quelques-uns à un ami.",
+    "promptVocabularyHints": [
+      {
+        "word": "préparé",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
+        "word": "gyozas",
+        "vocabularyIds": [
+          "vocab-2bc567b674d1"
+        ]
+      },
+      {
+        "word": "donné",
+        "vocabularyIds": [
+          "vocab-eee8b9c95721"
+        ]
+      },
+      {
+        "word": "quelques-uns",
+        "vocabularyIds": [
+          "vocab-8814378ebfc2"
+        ]
+      },
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-takoyaki-hot-inside": {
+    "translation": "Les takoyakis sont chauds à l’intérieur, alors tu ferais mieux de les manger lentement."
+  },
+  "production-n5-vocab-good-looking-person-unknown-name": {
+    "translation": "Cette personne est séduisante, mais je ne connais pas son nom.",
+    "promptVocabularyHints": [
+      {
+        "word": "personne",
+        "vocabularyIds": [
+          "vocab-ad7167347a2a"
+        ]
+      },
+      {
+        "word": "séduisante",
+        "vocabularyIds": [
+          "vocab-a5eb54903a68"
+        ]
+      },
+      {
+        "word": "connais",
+        "vocabularyIds": [
+          "vocab-531b240786ce"
+        ]
+      },
+      {
+        "word": "nom",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-samurai-movies-tonight-too": {
+    "translation": "J’aime regarder des films de samouraïs, alors je veux encore en regarder un ce soir."
+  },
+  "production-n5-vocab-brother-wants-to-be-ninja": {
+    "translation": "Mon petit frère dit qu’il veut devenir un ninja.",
+    "promptVocabularyHints": [
+      {
+        "word": "petit frère",
+        "vocabularyIds": [
+          "vocab-7e8dc4d63e82"
+        ]
+      },
+      {
+        "word": "dit",
+        "vocabularyIds": [
+          "vocab-4fa253e10946"
+        ]
+      },
+      {
+        "word": "devenir",
+        "vocabularyIds": [
+          "vocab-3653e718a1a5"
+        ]
+      },
+      {
+        "word": "ninja",
+        "vocabularyIds": [
+          "vocab-ffbf11382af9"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-cosplay-photos-with-friends": {
+    "translation": "J’ai pris beaucoup de photos quand j’ai fait du cosplay avec mes amis."
+  },
+  "production-n5-vocab-brothers-ability-for-job": {
+    "translation": "Mon grand frère a les capacités nécessaires, alors je pense qu’il peut faire ce travail.",
+    "promptVocabularyHints": [
+      {
+        "word": "grand frère",
+        "vocabularyIds": [
+          "vocab-cda9169e9fa2"
+        ]
+      },
+      {
+        "word": "capacités",
+        "vocabularyIds": [
+          "vocab-8670a6307d15"
+        ]
+      },
+      {
+        "word": "pense",
+        "vocabularyIds": [
+          "vocab-c64ca071011e"
+        ]
+      },
+      {
+        "word": "peut faire",
+        "vocabularyIds": [
+          "vocab-581d18f92555"
+        ]
+      },
+      {
+        "word": "travail",
+        "vocabularyIds": [
+          "vocab-cdf28ddaf837"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-open-window-before-lesson": {
+    "translation": "Puis-je ouvrir la fenêtre avant que le cours commence ?"
+  },
+  "production-n5-vocab-orange-juice-in-fridge-permission": {
+    "translation": "Puis-je boire le jus d’orange qui est dans le réfrigérateur ?",
+    "promptVocabularyHints": [
+      {
+        "word": "boire",
+        "vocabularyIds": [
+          "vocab-dcd3acd6b659"
+        ]
+      },
+      {
+        "word": "jus d’orange",
+        "vocabularyIds": [
+          "vocab-1451f7260b08"
+        ]
+      },
+      {
+        "word": "réfrigérateur",
+        "vocabularyIds": [
+          "vocab-fd0d7ce5a34d"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-jogging-then-morning-shower": {
+    "translation": "Tous les matins, je fais du jogging dans le parc, puis je prends une douche."
+  },
+  "production-n5-vocab-shopping-together-on-saturday": {
+    "translation": "Veux-tu qu’on aille faire du shopping ensemble samedi ?",
+    "promptVocabularyHints": [
+      {
+        "word": "aille",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "shopping",
+        "vocabularyIds": [
+          "vocab-57b0841f25e7"
+        ]
+      },
+      {
+        "word": "ensemble",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      },
+      {
+        "word": "samedi",
+        "vocabularyIds": [
+          "vocab-440290628fd6"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-barbecue-cancelled-for-possible-rain": {
+    "translation": "Il pleuvra peut-être demain, alors nous ne ferons pas de barbecue."
+  },
+  "n5-vocab-town-festival-music-and-food": {
+    "translation": "Au festival de la ville, j’ai notamment écouté de la musique et mangé de bonnes choses."
+  },
+  "production-n5-vocab-coffee-too-much-milk": {
+    "translation": "J’ai mis trop de lait dans le café, et il n’est plus bon.",
+    "promptVocabularyHints": [
+      {
+        "word": "mis",
+        "vocabularyIds": [
+          "vocab-b5e9e035a8be"
+        ]
+      },
+      {
+        "word": "lait",
+        "vocabularyIds": [
+          "vocab-8794cb06b080"
+        ]
+      },
+      {
+        "word": "café",
+        "vocabularyIds": [
+          "vocab-f5f2c2dca175"
+        ]
+      },
+      {
+        "word": "bon",
+        "vocabularyIds": [
+          "vocab-2f5084eba81c"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-sausages-and-eggs-for-breakfast": {
+    "translation": "Au petit déjeuner, j’ai mangé seulement des saucisses et des œufs."
+  },
+  "production-n5-vocab-canoe-on-river-experience": {
+    "translation": "Es-tu déjà monté dans un canoë sur une rivière ?",
+    "promptVocabularyHints": [
+      {
+        "word": "monté",
+        "vocabularyIds": [
+          "vocab-9e0eeba39759"
+        ]
+      },
+      {
+        "word": "canoë",
+        "vocabularyIds": [
+          "vocab-978768101cb7"
+        ]
+      },
+      {
+        "word": "rivière",
+        "vocabularyIds": [
+          "vocab-82dcbecaf875"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-father-likes-golf-never-played": {
+    "translation": "Mon père aime le golf, mais je n’y ai encore jamais joué."
+  },
+  "production-n5-vocab-wear-helmet-when-cycling": {
+    "translation": "Mets ce casque quand tu fais du vélo, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "Mets",
+        "vocabularyIds": [
+          "vocab-43f242137f42"
+        ]
+      },
+      {
+        "word": "casque",
+        "vocabularyIds": [
+          "vocab-55e93b1f8b74"
+        ]
+      },
+      {
+        "word": "fais",
+        "vocabularyIds": [
+          "vocab-9e0eeba39759"
+        ]
+      },
+      {
+        "word": "vélo",
+        "vocabularyIds": [
+          "vocab-457ac376d17f"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-uniform-clean-after-washing": {
+    "translation": "J’ai lavé cet uniforme hier, alors il est déjà propre."
+  },
+  "production-n5-vocab-store-bought-shumai-with-family": {
+    "translation": "Ma famille et moi avons mangé ensemble les raviolis shumai que j’avais achetés dans ce magasin.",
+    "promptVocabularyHints": [
+      {
+        "word": "mangé",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "raviolis shumai",
+        "vocabularyIds": [
+          "vocab-d75585f50ea4"
+        ]
+      },
+      {
+        "word": "achetés",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "magasin",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      },
+      {
+        "word": "famille",
+        "vocabularyIds": [
+          "vocab-a16373e2426c"
+        ]
+      },
+      {
+        "word": "ensemble",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-thinly-cut-cabbage-on-plate": {
+    "translation": "Coupe le chou en fines lamelles, puis mets-le dans une assiette, s’il te plaît."
+  },
+  "production-n5-vocab-only-fried-rice-for-dinner": {
+    "translation": "Je n’ai pas le temps, alors je vais me contenter de riz sauté pour le dîner.",
+    "promptVocabularyHints": [
+      {
+        "word": "temps",
+        "vocabularyIds": [
+          "vocab-f6a8c4a23b51"
+        ]
+      },
+      {
+        "word": "riz sauté",
+        "vocabularyIds": [
+          "vocab-89e77e1a2116"
+        ]
+      },
+      {
+        "word": "dîner",
+        "vocabularyIds": [
+          "vocab-696613003517"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-town-view-from-monorail": {
+    "translation": "La ville que l’on voyait depuis la fenêtre du monorail était très belle."
+  },
+  "production-n5-vocab-remove-shoes-before-japanese-room": {
+    "translation": "Il faut enlever ses chaussures avant d’entrer dans cette pièce de style japonais.",
+    "promptVocabularyHints": [
+      {
+        "word": "enlever",
+        "vocabularyIds": [
+          "vocab-0954522e1764"
+        ]
+      },
+      {
+        "word": "chaussures",
+        "vocabularyIds": [
+          "vocab-d2110e85159b"
+        ]
+      },
+      {
+        "word": "entrer",
+        "vocabularyIds": [
+          "vocab-82a114897d9c"
+        ]
+      },
+      {
+        "word": "pièce de style japonais",
+        "vocabularyIds": [
+          "vocab-87b235b16101"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-travel-costs-too-high-this-year": {
+    "translation": "Les frais de voyage sont trop élevés, alors je compte ne pas partir en voyage cette année."
+  },
+  "production-n5-vocab-absent-from-school-friend-explains-homework": {
+    "translation": "J’étais absent de l’école parce que j’étais malade, alors un ami m’a dit quels étaient les devoirs.",
+    "promptVocabularyHints": [
+      {
+        "word": "absent",
+        "vocabularyIds": [
+          "vocab-80497d75f04b"
+        ]
+      },
+      {
+        "word": "école",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
+        ]
+      },
+      {
+        "word": "malade",
+        "vocabularyIds": [
+          "vocab-f1d4ccc1ebeb"
+        ]
+      },
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "dit",
+        "vocabularyIds": [
+          "vocab-de83de37aff5"
+        ]
+      },
+      {
+        "word": "devoirs",
+        "vocabularyIds": [
+          "vocab-f26f501fa1c2"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-presentation-notes-to-remember": {
+    "translation": "J’ai écrit sur une feuille ce que j’allais dire pour ne pas l’oublier pendant la présentation."
+  },
+  "production-n5-vocab-train-arrives-just-on-time": {
+    "translation": "Quand je suis arrivé à la gare, le train arrivait juste à ce moment-là.",
+    "promptVocabularyHints": [
+      {
+        "word": "arrivé",
+        "vocabularyIds": [
+          "vocab-f024ec5e9eea"
+        ]
+      },
+      {
+        "word": "gare",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      },
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      },
+      {
+        "word": "arrivait",
+        "vocabularyIds": [
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "juste à ce moment-là",
+        "vocabularyIds": [
+          "vocab-16d2158af127"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-white-clothes-blue-buttons": {
+    "translation": "Ce vêtement est blanc, mais ses boutons sont bleus."
+  },
+  "n5-vocab-fountain-pen-letter-to-mother": {
+    "translation": "Je veux écrire une lettre à ma mère avec ce stylo-plume."
+  },
+  "production-n5-vocab-fashion-magazine-talking-about-clothes": {
+    "translation": "Ma grande sœur parle de vêtements en lisant un magazine de mode.",
+    "promptVocabularyHints": [
+      {
+        "word": "grande sœur",
+        "vocabularyIds": [
+          "vocab-e3507900ad06"
+        ]
+      },
+      {
+        "word": "parle",
+        "vocabularyIds": [
+          "vocab-be9551d57abc"
+        ]
+      },
+      {
+        "word": "vêtements",
+        "vocabularyIds": [
+          "vocab-ff1cb3f79233"
+        ]
+      },
+      {
+        "word": "lisant",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "mode",
+        "vocabularyIds": [
+          "vocab-3b881bc66ddd"
+        ]
+      },
+      {
+        "word": "magazine",
+        "vocabularyIds": [
+          "vocab-f614b379675d"
+        ]
+      }
+    ]
   }
 }

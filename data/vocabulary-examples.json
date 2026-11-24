@@ -4331,17 +4331,14 @@
     "targetSurface": "お風呂",
     "targetReading": "おふろ",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I take a bath.",
     "tokens": [
       {
-        "surface": "お",
-        "reading": "お"
-      },
-      {
-        "surface": "風呂",
+        "surface": "お風呂",
         "category": "noun",
-        "reading": "ふろ"
+        "reading": "おふろ",
+        "vocabularyId": "vocab-6b63fe2c92c8"
       },
       {
         "surface": "に",
@@ -4366,17 +4363,14 @@
     "targetSurface": "お弁当",
     "targetReading": "おべんとう",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I eat a boxed lunch.",
     "tokens": [
       {
-        "surface": "お",
-        "reading": "お"
-      },
-      {
-        "surface": "弁当",
+        "surface": "お弁当",
         "category": "noun",
-        "reading": "べんとう"
+        "reading": "おべんとう",
+        "vocabularyId": "vocab-6df3b821e026"
       },
       {
         "surface": "を",
@@ -26033,18 +26027,14 @@
     "targetSurface": "コスプレ",
     "targetReading": "こすぷれ",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I do cosplay.",
     "tokens": [
       {
-        "surface": "コス",
+        "surface": "コスプレ",
         "category": "noun",
-        "reading": "こす"
-      },
-      {
-        "surface": "プレ",
-        "category": "noun",
-        "reading": "ぷれ"
+        "reading": "こすぷれ",
+        "vocabularyId": "vocab-7aedfd24797b"
       },
       {
         "surface": "を",
@@ -27558,19 +27548,14 @@
     "targetSurface": "オレンジジュース",
     "targetReading": "おれんじじゅーす",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I drink orange juice.",
     "tokens": [
       {
-        "surface": "オレンジ",
+        "surface": "オレンジジュース",
         "category": "noun",
-        "reading": "おれんじ"
-      },
-      {
-        "surface": "ジュース",
-        "category": "noun",
-        "reading": "じゅーす",
-        "vocabularyId": "vocab-05be31120148"
+        "reading": "おれんじじゅーす",
+        "vocabularyId": "vocab-1451f7260b08"
       },
       {
         "surface": "を",

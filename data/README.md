@@ -135,19 +135,28 @@ the N5 curricula published by Bunpro, JLPT Sensei, and Yatta. `boundary` keeps
 useful points that sources variously place at N5 or N4 without presenting them
 as undisputed N5 requirements.
 
-The two N5 vocabulary practice batches add 100 distinct sentences: 50 recognition
-and 50 production exercises. Each uses exactly one previously uncovered N5 vocabulary
+The three N5 vocabulary practice batches add 150 distinct sentences: 75 recognition
+and 75 production exercises. Each uses exactly one previously uncovered N5 vocabulary
 entry, covered N5 supporting vocabulary, and two or three grammar points from
 the existing N5 curriculum. This reduces N5 entries without a linked grammar
-exercise from 242 to 142. English and French translations, production hints,
+exercise from 242 to 92. English and French translations, production hints,
 Japanese recordings, and the separate review of every exercise are recorded in
-the [first batch review](source/n5-vocabulary-practice-review-2026-11-24.json) and
-the [second batch review](source/n5-vocabulary-practice-batch-2-review-2026-11-24.json).
+the [first batch review](source/n5-vocabulary-practice-review-2026-11-24.json),
+[second batch review](source/n5-vocabulary-practice-batch-2-review-2026-11-24.json),
+and [third batch review](source/n5-vocabulary-practice-batch-3-review-2026-11-24.json).
 The second batch also corrects dictionary tags and word boundaries needed to
 link `嫌い`, `結婚`, `散歩`, `お兄さん`, `お姉さん`, `二十歳`, `曇り`, and adjectival
 `色々` correctly, retaining their vocabulary IDs and existing progress. The follow-up
 review also adds the missing `とても` production hint and distinguishes the
 `曇り` noun from `曇る` in the existing vocabulary examples.
+The third batch covers color nouns, family, everyday objects, food, hobbies,
+and school situations. Its dictionary corrections preserve whole-word links for
+`お風呂`, `お弁当`, `コスプレ`, and `オレンジジュース`, and allow the nominal
+colors `黄色` and `茶色` to match the tokenizer output. Existing grammar
+exercises, vocabulary IDs, and levels remain unchanged.
+The follow-up review adds the `いる` hint for staying home and corrects the
+uncle entry's headword to `おじさん`, matching its reading and meaning while
+retaining `伯父さん` and `叔父さん` as kanji variants.
 
 The live N4 slice contains 97 high-value points and 517 independently authored
 recognition and production exercises, plus exercises borrowed from N4 stories.
