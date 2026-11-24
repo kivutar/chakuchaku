@@ -1,0 +1,1624 @@
+{
+  "reviewedAt": "2026-11-24",
+  "baselineRevision": "9da864bfe9b0e905b5cd9e52733db78239dff416",
+  "targetLevel": "n5",
+  "method": [
+    "Selected 50 distinct N5 vocabulary IDs with zero links in any prepared grammar exercise at the baseline, including exercises borrowed from stories and both directions. Existing supporting vocabulary and every grammar target belong to the app's N5 curriculum, including its established boundary grammar points.",
+    "Each new exercise introduces exactly one of those previously uncovered vocabulary IDs and practices two or three meaningful grammar points. Existing compounds were checked separately: 外国人 was rejected because it already appeared under split links; 温泉 was used instead.",
+    "After drafting, a separate editorial pass reviewed every Japanese sentence, English and French translation, grammar target, token reading, dictionary link and production hint. Each entry records its individual review.",
+    "Every final M4A recording was decoded to PCM and checked for audible speech, duration and excessive silence, then independently transcribed using gpt-4o-transcribe without providing the expected sentence. Orthographic differences and regenerated recordings are documented below.",
+    "An isolated Chromium browser rendered every prompt and answer in English and French at a 390-pixel mobile viewport, opened every production hint, checked dictionary IDs and hint credit exclusions, checked grammar explanations and audio buttons, decoded all 50 recordings, and played representative recognition and production recordings in both locales.",
+    "reviewedContentSha256 hashes UTF-8 compact JSON with sorted keys, using {source: sourceExercise, french: sourceFrenchEntry, prepared: preparedExercise}. Audio hashes cover the final M4A bytes."
+  ],
+  "summary": {
+    "newExercises": 50,
+    "recognition": 25,
+    "production": 25,
+    "distinctJapaneseSentences": 50,
+    "newlyCoveredN5Vocabulary": 50,
+    "exactlyOnePreviouslyUncoveredVocabularyPerExercise": true,
+    "grammarPointsPerExercise": [
+      2,
+      3
+    ],
+    "distinctGrammarTargets": 56,
+    "n5VocabularyWithoutGrammarExercisesBefore": 242,
+    "n5VocabularyWithoutGrammarExercisesAfter": 192,
+    "newRecordings": 50,
+    "individuallyReviewed": 50,
+    "previousExercisesChanged": 0,
+    "testFilesPassed": 36,
+    "webBuild": "passed",
+    "nativeBuild": "passed",
+    "audioLibraryValidation": "passed"
+  },
+  "entries": [
+    {
+      "id": "n5-vocab-sell-read-books",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "読んだ本を売って、新しい本を買いたいです。",
+      "grammarPointIds": [
+        "relative-clause",
+        "te-action-link",
+        "tai-desire"
+      ],
+      "reviewNote": "読んだ modifies the books already read; 売って connects selling to the desire to buy new ones. Both translations preserve the relative clause and linked intention.",
+      "focusVocabulary": {
+        "id": "vocab-5e42ab61b84c",
+        "term": "売る",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "ac18e9193209155b46629795a4c2cc0999fc9156aa2489bf97390acfac5dbd56",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-sell-read-books.m4a",
+        "sha256": "a460233ea8c339280f1aae78c049f4fc6acd8c325418f141edd0593cab84392a",
+        "durationSeconds": 4.05,
+        "transcript": "読んだ本を売って、新しい本を買いたいです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-learn-before-japan",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "日本へ行く前に、この教室で日本語を習いたいです。",
+      "grammarPointIds": [
+        "mae-ni",
+        "de-action-location",
+        "tai-desire"
+      ],
+      "reviewNote": "行く前に sets the time before travel, 教室で marks the learning location, and 習いたい expresses desire. Learning, language, classroom, travel and Japan have hints in both languages.",
+      "focusVocabulary": {
+        "id": "vocab-0d114c78c7a1",
+        "term": "習う",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "e11127def350dfd542fcca72240aa737c4542c75b84da923f16229bb435eb70e",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-learn-before-japan.m4a",
+        "sha256": "f7e0004ac5f67bfa12a85b9453db15d970fa1ec912a2561d69ac38627eec170b",
+        "durationSeconds": 4.7,
+        "transcript": "日本へ行く前に、この教室で日本語を習いたいです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-work-near-station",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "駅の近くにある会社に勤めたいです。",
+      "grammarPointIds": [
+        "relative-clause",
+        "positional-nouns",
+        "tai-desire"
+      ],
+      "reviewNote": "駅の近くにある modifies 会社; 勤める takes に for the company of employment. Both translations preserve the station location and desire to work there.",
+      "focusVocabulary": {
+        "id": "vocab-64eca7beef5d",
+        "term": "勤める",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "4f57fd6cc3662b0692beb5e9686d4a57aa1ea4baf0c323e0a980e1908db5db97",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-work-near-station.m4a",
+        "sha256": "dfa1248fa6a19de4289365bdcb19a4108646d7112413e692e39e18be8065bdad",
+        "durationSeconds": 3.25,
+        "transcript": "駅の近くにある会社に勤めたいです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-stick-label-on-box",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "名前を書いてから、紙を箱に貼ってください。",
+      "grammarPointIds": [
+        "te-kara",
+        "te-kudasai"
+      ],
+      "reviewNote": "書いてから establishes the order before 貼ってください. Both translations retain writing a name before sticking the paper onto the box; all five content words have hints.",
+      "focusVocabulary": {
+        "id": "vocab-e3044e44f7d9",
+        "term": "貼る",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "33c429cce9f7f35fe6685feced04cd4023b20190a45f84dfa4a75e88e6abe2b6",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-stick-label-on-box.m4a",
+        "sha256": "05986f0df5f91788fcb5d40f30548da1030e19e7e2290f3c2ecd1887ff9a702c",
+        "durationSeconds": 3.65,
+        "transcript": "名前を書いてから、紙を箱に貼ってください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-light-goes-out",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "部屋の電気が消えたので、何も見えません。",
+      "grammarPointIds": [
+        "node-reason",
+        "question-word-mo",
+        "mieru-kikoeru"
+      ],
+      "reviewNote": "消える is intransitive: the light goes out. ので explains the resulting inability to see, and 何も with negation means nothing; neither translation changes this into switching the light off.",
+      "focusVocabulary": {
+        "id": "vocab-10cb81b7861f",
+        "term": "消える",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "6a9d9af68330553cc7bea69e94d4666cd32c364b7b8abbd595e2c374748ddfbf",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-light-goes-out.m4a",
+        "sha256": "6be6a0e076f49c2a65305c224066f298d411d3c0f3bb8219cc0b6b28b8f1dd5d",
+        "durationSeconds": 3.55,
+        "transcript": "部屋の電気が消えたので、何も見えません。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-plan-build-house",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "この町に家を建てるつもりですが、お金があまりありません。",
+      "grammarPointIds": [
+        "tsumori",
+        "ga-contrast",
+        "degree-adverbs"
+      ],
+      "reviewNote": "建てるつもり states an intention, が introduces the financial contrast, and あまり accompanies the negative. Regenerated the recording with explicit まち after the first transcription returned a different word.",
+      "focusVocabulary": {
+        "id": "vocab-861717738347",
+        "term": "建てる",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "239e5bd94048ba3f3aa7aae2295fbdb895a4a68ee6cd47105698ad23bcab7607",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-plan-build-house.m4a",
+        "sha256": "24c1b1d44a3b592cfcb67e1b5dd8f6c3e260885cd545feb2345b77c2ec5ece2d",
+        "durationSeconds": 5.15,
+        "transcript": "この町に家を建てるつもりですが、お金があまりありません。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed",
+        "regenerationReason": "The first transcription returned a different word; regenerated with explicit kana pronunciation and independently transcribed again."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-shoes-do-not-fit",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "この靴は足に合わないので、買わないほうがいいです。",
+      "grammarPointIds": [
+        "node-reason",
+        "hou-ga-ii-advice"
+      ],
+      "reviewNote": "足に合わない describes shoes not fitting; ので gives the reason for negative advice with ないほうがいい. Both translations keep the recommendation not to buy them.",
+      "focusVocabulary": {
+        "id": "vocab-4aec6a18e905",
+        "term": "合う",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "1ea9119c8303f0d2a00da2b4675cbaf681584a815099ee3d1c765c2215a30d6d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-shoes-do-not-fit.m4a",
+        "sha256": "c2fc9038c96526e5ce25c0a6524e687bc66c5b068e6ab7af02911301aba56e18",
+        "durationSeconds": 4.4,
+        "transcript": "この靴は足に合わないので、買わないほうがいいです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-wind-outside-window",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "外では強い風が吹いているから、窓を開けないでください。",
+      "grammarPointIds": [
+        "te-iru-progressive",
+        "kara-reason",
+        "naide-kudasai"
+      ],
+      "reviewNote": "吹いている describes ongoing wind, から gives the reason, and 開けないでください requests leaving the window closed. Hints distinguish blowing, wind, strength, outside, opening and window.",
+      "focusVocabulary": {
+        "id": "vocab-707c691402bc",
+        "term": "吹く",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "7ce5671856cc02d929a0602f19df87f658c3eac24585cefb0b54747320544c13",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-wind-outside-window.m4a",
+        "sha256": "7a8cb1ee486aabf77f661dc44f311dd9c8cf4d7fba9beb636ea1c9d983e8e83d",
+        "durationSeconds": 4.3,
+        "transcript": "外では強い風が吹いているから、窓を開けないでください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-walk-under-umbrella",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "雨が降っているので、傘を差して歩いています。",
+      "grammarPointIds": [
+        "te-iru-progressive",
+        "node-reason",
+        "te-action-link"
+      ],
+      "reviewNote": "傘を差す is the standard expression for holding an umbrella up. The two progressive forms and the linked walking action describe a current rainy scene in both translations.",
+      "focusVocabulary": {
+        "id": "vocab-e01a26a1036c",
+        "term": "差す",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "206ca80f79078e0b6b8d808820f8dc0cdedc145bc93d378f78b3a3cbf27787a0",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-walk-under-umbrella.m4a",
+        "sha256": "33d20cbff31f0ca2c0a2b68b757203ddb2784acceb1ffcb155bc9d2bbe346654",
+        "durationSeconds": 3.8,
+        "transcript": "雨が降っているので、傘をさして歩いています。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 差して / さして.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-tie-before-work",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "仕事の前に、このネクタイを締めなければなりません。",
+      "grammarPointIds": [
+        "mae-ni",
+        "nakereba-naranai"
+      ],
+      "reviewNote": "仕事の前に uses the noun form of before; 締めなければなりません expresses obligation to put on the tie. Both translations and hints distinguish the tie verb 締める from closing 閉める.",
+      "focusVocabulary": {
+        "id": "vocab-7e22c8ba7ac9",
+        "term": "締める",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "77eec6de77c784a39f15a2b9b57bfb36359ce7df6cde91f4520b7c021173e4d3",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-tie-before-work.m4a",
+        "sha256": "41d481855751e0be8e27097020ee5b50b04b745e5d674ef82f2dcb58fccdb9b2",
+        "durationSeconds": 4.05,
+        "transcript": "仕事の前に、このネクタイを締めなければなりません。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-fewer-people-shop",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "この店はあの店より人が少ないから、ここで食べましょう。",
+      "grammarPointIds": [
+        "yori-comparison",
+        "kara-reason",
+        "mashou"
+      ],
+      "reviewNote": "少ない compares the number of people with より, then から motivates an invitation with ましょう. The eating context supports translating 店 as restaurant.",
+      "focusVocabulary": {
+        "id": "vocab-89cc0156875d",
+        "term": "少ない",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "a700f9e2c850f74a95f5f59ea716759c7c2779a68d60e135d84de9574d606b58",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-fewer-people-shop.m4a",
+        "sha256": "55205d9e94ee0dea6af468fd2a98e788a1f34be65ad4400517aaca5b75bf94e9",
+        "durationSeconds": 4.7,
+        "transcript": "この店はあの店より人が少ないから、ここで食べましょう。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-chair-too-low",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "この椅子は低すぎるので、もっと高いのを使いたいです。",
+      "grammarPointIds": [
+        "sugiru",
+        "node-reason",
+        "no-noun-omission"
+      ],
+      "reviewNote": "低すぎる describes excessive low height; ので links the reason and 高いの replaces the chair noun. Both translations preserve a higher chair and the desire to use it.",
+      "focusVocabulary": {
+        "id": "vocab-d1ad03f14ba3",
+        "term": "低い",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "4a10ba1bfbe9137f71dd6487b6f6202082d31ce1f295008647cc0b2ae5c4fff9",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-chair-too-low.m4a",
+        "sha256": "f574f18d4e3a61ae1236fc4b5e2525a7137adabb33ddd4903382c24c226cde98",
+        "durationSeconds": 4.35,
+        "transcript": "この椅子は低すぎるのでもっと高いのを使いたいです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-thicker-taller-tree",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "この木はあの木より太くて、高いです。",
+      "grammarPointIds": [
+        "yori-comparison",
+        "adjective-connective"
+      ],
+      "reviewNote": "より applies to the tree comparison; 太くて connects thickness and height. Both translations describe the trunk as thicker and the tree as taller, not a wide road or broad area.",
+      "focusVocabulary": {
+        "id": "vocab-b7ea6f7eb013",
+        "term": "太い",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "f30dfa99d7fb85f11e1f1ce40ff74699c60e2e6ac6ea01526729dcce1bcb5e0a",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-thicker-taller-tree.m4a",
+        "sha256": "4a7c97b8d2978bb783730bc86cd132de18e38743dd8350decb650021d08000ff",
+        "durationSeconds": 3.4,
+        "transcript": "この木はあの木より太くて高いです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-narrow-road-bridge",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "あの細い道をまっすぐ行って、橋を渡ってください。",
+      "grammarPointIds": [
+        "i-adjective-attributive",
+        "o-route",
+        "te-kudasai"
+      ],
+      "reviewNote": "細い modifies 道, を marks the route, and 渡ってください requests crossing the bridge. Both translations and hints retain going straight, the narrow road and the bridge.",
+      "focusVocabulary": {
+        "id": "vocab-8b8fa31d72d2",
+        "term": "細い",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "80c4f720fe2aea6e59ca5fcf0f719c673b8ac651a3566cc7080e12177f9c4376",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-narrow-road-bridge.m4a",
+        "sha256": "e2a35d47323d07b1826026328ec85f3180b0965a983b1d32918c9778bc5d24e5",
+        "durationSeconds": 4.75,
+        "transcript": "あの細い道をまっすぐ行って、橋を渡ってください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-round-table-room",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "大きくて丸いテーブルが欲しいですが、この部屋には入りません。",
+      "grammarPointIds": [
+        "adjective-connective",
+        "hoshii",
+        "ga-contrast"
+      ],
+      "reviewNote": "大きくて connects the table adjectives, 欲しい expresses wanting the object, and が introduces the room-size constraint. 入りません is naturally translated as not fitting in this context.",
+      "focusVocabulary": {
+        "id": "vocab-84aeed6c31e1",
+        "term": "丸い",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "a3eb90d74195420d857a32054010efcd855856ebf3ea05f2993f453ade0b9181",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-round-table-room.m4a",
+        "sha256": "2c44d2a49602be50a84abd970b27df9b5aecc98f8276ba45b887ef0d5be90660",
+        "durationSeconds": 5.3,
+        "transcript": "大きくて丸いテーブルが欲しいですが、この部屋には入りません。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-light-wind-swimming",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "今日は風が弱いので、海で泳ぐことができます。",
+      "grammarPointIds": [
+        "node-reason",
+        "de-action-location",
+        "koto-ga-dekiru"
+      ],
+      "reviewNote": "弱い describes a light wind; ので explains the ability to swim with ことができます, and 海で marks the location. All content words are hinted in both languages.",
+      "focusVocabulary": {
+        "id": "vocab-7819c17897e7",
+        "term": "弱い",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "8505f38c9f15c642a2a67cb455aa3d78e22179fc43e3825e799cce4c800e21c3",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-light-wind-swimming.m4a",
+        "sha256": "65003729e4dedf01becd4008c878e342da002d548ff3a2fa55e15057e0ef65a5",
+        "durationSeconds": 4.3,
+        "transcript": "今日は風が弱いので、海で泳ぐことができます。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-sad-film-again",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "あの映画はとても悲しかったので、もう見たくないです。",
+      "grammarPointIds": [
+        "i-adjective-past",
+        "node-reason",
+        "tai-desire"
+      ],
+      "reviewNote": "悲しかった is the past adjective, ので gives the reason, and 見たくない expresses negative desire. English again and French ne veux plus preserve the refusal to rewatch the sad film.",
+      "focusVocabulary": {
+        "id": "vocab-a48ae393fb13",
+        "term": "悲しい",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "728da80f076cbc630eb95943a0f9c46c8d2212c4811612ac352da9040adb8ee7",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-sad-film-again.m4a",
+        "sha256": "df1cbedc3cc971efe566402218dedad093409d87d71f26373b7f720b272a3ab3",
+        "durationSeconds": 4.9,
+        "transcript": "あの映画はとても悲しかったので、もう見たくないです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-cute-dog-park",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "あの小さくて可愛い犬と一緒に公園へ行きたいです。",
+      "grammarPointIds": [
+        "adjective-connective",
+        "issho-ni",
+        "tai-desire"
+      ],
+      "reviewNote": "小さくて connects the dog's two adjectives, 一緒に indicates companionship, and 行きたい expresses desire. Both translations preserve the dog and the park; the five content words have hints.",
+      "focusVocabulary": {
+        "id": "vocab-0a04072bf0cc",
+        "term": "可愛い",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "8834adc4e70fb993e441b0f556a331e3312e9ca74010409493d4d1a94ecd92e7",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-cute-dog-park.m4a",
+        "sha256": "5932136c51af5168c171e9f76475b9d5f75c66ad7c8dfbba235d4d7b8dc2c92d",
+        "durationSeconds": 4.75,
+        "transcript": "あの小さくてかわいい犬と一緒に公園へ行きたいです。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 可愛い / かわいい.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-sister-loves-singing",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "妹は歌うのが大好きで、毎日家で歌っています。",
+      "grammarPointIds": [
+        "no-ga-suki",
+        "adjective-connective"
+      ],
+      "reviewNote": "歌うのが大好き nominalizes singing as a loved activity; 大好きで connects the clauses. Corrected the generated 家 reading from か to いえ; both translations retain the younger sister singing at home daily.",
+      "focusVocabulary": {
+        "id": "vocab-061c7ec44fec",
+        "term": "大好き",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "b7ef66ca69c7dbb2322598b646754ed81b528eb2814ae41fff22a4930745a052",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-sister-loves-singing.m4a",
+        "sha256": "70a77bea376184607993135c345140c05fdb203ca2fac5d741da95d4c9f74f0d",
+        "durationSeconds": 5.5,
+        "transcript": "妹は歌うのが大好きで、毎日家で歌っています。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-film-adults-only",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "この映画は大人だけが見ることができます。",
+      "grammarPointIds": [
+        "dake-limitation",
+        "ga-identification",
+        "koto-ga-dekiru"
+      ],
+      "reviewNote": "大人だけ limits the eligible people, が identifies them, and 見ることができます expresses ability or eligibility. Both translations say only adults can watch this film; adult, watch and film hints are present.",
+      "focusVocabulary": {
+        "id": "vocab-2cc50c2d66a6",
+        "term": "大人",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "5b3b872b793b2fccdaf00df8ee115639b77075c913c1b9bc3da04716020de69b",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-film-adults-only.m4a",
+        "sha256": "ba8ae18976d73f2b2c3267676cfcf60a2bc4f07952ae80c691f7d0a6c33a1be7",
+        "durationSeconds": 3.5,
+        "transcript": "この映画は大人だけが見ることができます。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-girl-in-red",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "赤い服を着ている女の子は、友達の妹です。",
+      "grammarPointIds": [
+        "relative-clause",
+        "te-iru-result-state",
+        "no-possession"
+      ],
+      "reviewNote": "着ている expresses the ongoing result of wearing clothes inside a relative clause, and 友達の妹 expresses the relationship. Both translations preserve a girl in red who is a friend's younger sister.",
+      "focusVocabulary": {
+        "id": "vocab-185a632e3742",
+        "term": "女の子",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "e476313d7e2e155d427a6187d656b4cb86528a3873dcf198660fffae3c47dda9",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-girl-in-red.m4a",
+        "sha256": "20208938bf4d3db06806b1ea63045442a2411fd3f2116be56be0fe72fb627aea",
+        "durationSeconds": 4.25,
+        "transcript": "赤い服を着ている女の子は、友達の妹です。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-hot-spring-too-hot",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "この温泉は熱すぎるので、まだ入りたくないです。",
+      "grammarPointIds": [
+        "sugiru",
+        "node-reason",
+        "tai-desire"
+      ],
+      "reviewNote": "熱すぎる gives excessive temperature, ので supplies the reason, and 入りたくない expresses negative desire. Replaced 外国人, which already occurred under split links, with genuinely uncovered 温泉; the overlapping hot spring/hot hints both render correctly.",
+      "focusVocabulary": {
+        "id": "vocab-8fc87e32adf1",
+        "term": "温泉",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "e04d3f4c1460527a9364b602e3a2849343bcd9a48b1fa07fee65ffdf54c7d6a7",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-hot-spring-too-hot.m4a",
+        "sha256": "1c89bda20ebc050da32cc05bb7ee8b05f1f35ae6e0b917531cd962ea5c438238",
+        "durationSeconds": 4.8,
+        "transcript": "この温泉は熱すぎるので、まだ入りたくないです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-siblings-far-away",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "兄弟はいますが、みんな遠い町に住んでいます。",
+      "grammarPointIds": [
+        "iru-existence",
+        "ga-contrast",
+        "te-iru-result-state"
+      ],
+      "reviewNote": "兄弟はいます expresses having siblings; が introduces the distance contrast and 住んでいます describes residence. Both translations keep all siblings living in a distant town, without inventing a number.",
+      "focusVocabulary": {
+        "id": "vocab-2e7b28af830b",
+        "term": "兄弟",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "19c01f7ebeb9128a1e16b3eadf022c42f8a2ac7c14fc6dfce9bbfff67a5be5d6",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-siblings-far-away.m4a",
+        "sha256": "f50c5bb43c3e535f20b8531a44531f8c5b61ea98ec77123379edacbd5ff032c6",
+        "durationSeconds": 3.95,
+        "transcript": "兄弟はいますが、みんな遠い町に住んでいます。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-country-highest-mountain",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "あなたの国で一番高い山は、何という名前ですか。",
+      "grammarPointIds": [
+        "ichiban-superlative",
+        "to-iu"
+      ],
+      "reviewNote": "国で一番高い identifies the mountain superlative and 何という名前 asks what it is called. Set 何 to なん; name, high, mountain and country hints preserve the intended lexical components.",
+      "focusVocabulary": {
+        "id": "vocab-ee158182835b",
+        "term": "国",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "6b1f0bfd61127052bbdca1d6c550fe5b79806c9409d7c491a4ef65065c50bc1a",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-country-highest-mountain.m4a",
+        "sha256": "33e1d473f6999801e21a20f12141ad41053f59628b1689138989b6a9120e6370",
+        "durationSeconds": 4.75,
+        "transcript": "あなたの国で一番高い山は何という名前ですか?",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-food-in-mouth",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "食べ物が口にあるときは、話さないでください。",
+      "grammarPointIds": [
+        "toki",
+        "naide-kudasai",
+        "aru-existence"
+      ],
+      "reviewNote": "食べ物が口にある describes food in the mouth; とき introduces that situation and 話さないでください requests not talking. Both translations preserve food, mouth and the negative request.",
+      "focusVocabulary": {
+        "id": "vocab-9e64feeea5ea",
+        "term": "口",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "6af685dc8928b477a3b8d8dc453b9dee0bcbeb1f04547e91ae588538c214228e",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-food-in-mouth.m4a",
+        "sha256": "14b4a3b874a115d90c5e748628740c7f1fda0a5d30a32295534e622aeafcb727",
+        "durationSeconds": 4.45,
+        "transcript": "食べ物が口にあるときは話さないでください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-nose-hurts-hospital",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "鼻が痛いので、今日は病院へ行かなければなりません。",
+      "grammarPointIds": [
+        "node-reason",
+        "nakereba-naranai"
+      ],
+      "reviewNote": "鼻が痛い gives the reason for the obligation 行かなければなりません. Both translations retain nose, hospital and today; regenerated narration with explicit はな after the first transcription returned 腹.",
+      "focusVocabulary": {
+        "id": "vocab-0d194c50239e",
+        "term": "鼻",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "2bdb6f2a1c054e7935bcc12b44cfbe6941c1ef3122785386bf58d72958bc6974",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-nose-hurts-hospital.m4a",
+        "sha256": "4a34906e16e01c8fcdf8d0a63757047fe4a988fc6fde7239840ce1e82ab40e09",
+        "durationSeconds": 4.65,
+        "transcript": "鼻が痛いので、今日は病院へ行かなければなりません。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed",
+        "regenerationReason": "The first transcription returned a different word; regenerated with explicit kana pronunciation and independently transcribed again."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-eyes-tired-reading",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "暗い部屋で本を読むと、目が疲れます。",
+      "grammarPointIds": [
+        "de-action-location",
+        "to-conditional"
+      ],
+      "reviewNote": "部屋で marks the reading location and と introduces a recurring consequence. Both translations keep the dark room, reading and tired eyes without turning the sentence into a request.",
+      "focusVocabulary": {
+        "id": "vocab-6c0b9f3278dc",
+        "term": "目",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "8bc0b5df76b19888f97ef6416d0e9d732fd86b4b5b169ace9b4ebbb27a923eb7",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-eyes-tired-reading.m4a",
+        "sha256": "3fda020588ea1568c0d24a1ba5df4b34759c21e710c9f7bb03d0e7ab2a87135d",
+        "durationSeconds": 3.45,
+        "transcript": "暗い部屋で本を読むと、目が疲れます。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-busy-this-week",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "今週は忙しいので、来週友達に会うつもりです。",
+      "grammarPointIds": [
+        "wa-contrast",
+        "node-reason",
+        "tsumori"
+      ],
+      "reviewNote": "今週は contrasts this week's busyness with meeting next week; ので gives the reason and つもり states intention. Both translations and all five hints preserve the week contrast and meeting a friend.",
+      "focusVocabulary": {
+        "id": "vocab-b86d4b5ce53c",
+        "term": "今週",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "2724a8c06611830f200923f9bad70db60151b14b5607cf7a3357f6439d47a67c",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-busy-this-week.m4a",
+        "sha256": "99b6b8d0f08744dc4796ca9f8fa462a53c993da22c3060a958fa22e065850606",
+        "durationSeconds": 4.4,
+        "transcript": "今週は忙しいので、来週友達に会うつもりです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-last-month-watch-gift",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "先月買った時計を、弟にあげました。",
+      "grammarPointIds": [
+        "relative-clause",
+        "ageru"
+      ],
+      "reviewNote": "先月買った is a relative clause identifying the watch; 弟にあげました gives its recipient. Both translations preserve the younger brother and the purchase being last month.",
+      "focusVocabulary": {
+        "id": "vocab-65da1512acab",
+        "term": "先月",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "aad344a07ac728f0a1a590b63b21091c26370b06f23b91d197e1d48e546d251d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-last-month-watch-gift.m4a",
+        "sha256": "f1dc3e42f25bc14f4b8ffc65ad5c27eaad82cf92dc801f391e9c94f76320c95c",
+        "durationSeconds": 3.35,
+        "transcript": "先月買った時計を弟にあげました。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-contact-mother-monthly",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "毎月、母に手紙を書いたり、電話をかけたりします。",
+      "grammarPointIds": [
+        "tari-tari-suru",
+        "ni-target-recipient"
+      ],
+      "reviewNote": "たり lists representative monthly activities and 母に marks the recipient. Expanded call/téléphone hints to include both 電話 and かける, so the whole Japanese telephone expression is available.",
+      "focusVocabulary": {
+        "id": "vocab-27bc53152a46",
+        "term": "毎月",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "5a9446a7585e35ca2d22d75b0905978fb8f52e2d5ad32d4a7423884a316aa47a",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-contact-mother-monthly.m4a",
+        "sha256": "d5d321fe35bd5eea63452b0863cee71217b9d54072e1fd06ec72ece9f9c09220",
+        "durationSeconds": 5.15,
+        "transcript": "毎月、母に手紙を書いたり、電話をかけたりします。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-thursday-library-books",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "木曜日に図書館で本を借りてから、家で読みます。",
+      "grammarPointIds": [
+        "ni-time",
+        "te-kara",
+        "de-action-location"
+      ],
+      "reviewNote": "木曜日に gives the day, で gives the library and home locations, and 借りてから sets borrowing before reading. Both translations retain books, Thursday and the two locations.",
+      "focusVocabulary": {
+        "id": "vocab-8b1ba4846f97",
+        "term": "木曜日",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "e0c7214c828ad3ffcad54876c31fb8087bb175ee68c774e33d73212df247a74e",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-thursday-library-books.m4a",
+        "sha256": "28ca12e21c3483b2568e43f3ae0fd4a294c34b0bf8fef70017af5ff323ce039f",
+        "durationSeconds": 4.9,
+        "transcript": "木曜日に図書館で本を借りてから、家で読みます。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-cold-last-night",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "昨夜は寒かったので、窓を閉めて寝ました。",
+      "grammarPointIds": [
+        "i-adjective-past",
+        "node-reason",
+        "te-action-link"
+      ],
+      "reviewNote": "寒かった is past, ので gives the reason, and 閉めて寝ました links closing the window and going to bed. 昨夜 is aligned to the dictionary reading ゆうべ in furigana and speech; the transcript's 夕べ is equivalent.",
+      "focusVocabulary": {
+        "id": "vocab-de50d5073f2d",
+        "term": "昨夜",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "f9193c977ded95f82b9fcffc45531044c1b9d00ecf40d90ef5d179bae6bf2ccb",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-cold-last-night.m4a",
+        "sha256": "c2d26569fff4bd4e2a1934fd6c2c78cfc10a7bcbcdafd120f3cc5190a60a2fa2",
+        "durationSeconds": 4.15,
+        "transcript": "夕べは寒かったので、窓を閉めて寝ました。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 昨夜 / 夕べ.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-something-to-do-today",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "今日は用事があるから、一緒に遊ぶことができません。",
+      "grammarPointIds": [
+        "aru-existence",
+        "kara-reason",
+        "koto-ga-dekiru"
+      ],
+      "reviewNote": "用事がある describes having something to do, から explains the refusal, and 遊ぶことができません expresses inability to join in. Both translations preserve the situation today without inventing a specific errand.",
+      "focusVocabulary": {
+        "id": "vocab-71072742a1c5",
+        "term": "用事",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "9566cff1de9ea38ded90ae744554c380f5025580f8058f42070d230af198ed38",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-something-to-do-today.m4a",
+        "sha256": "c07f39f35209351be516638a9b5269a120210103fcdff392c50127f6847ad667",
+        "durationSeconds": 4.7,
+        "transcript": "今日は用事があるから、一緒に遊ぶことができません。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-ask-bag-price",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "買う前に、このかばんの値段を教えてください。",
+      "grammarPointIds": [
+        "mae-ni",
+        "te-kudasai"
+      ],
+      "reviewNote": "買う前に sets the timing and 教えてください requests information about the price. Both translations retain this bag and buying it; the price, bag, telling and buying hints are present.",
+      "focusVocabulary": {
+        "id": "vocab-2ca110c8da0e",
+        "term": "値段",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "65756f3b5fd3f008377f97c6031c8076f5712ebf5078984c234e39759340017d",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-ask-bag-price.m4a",
+        "sha256": "0a80304b5ed56bc37c273b5171e5d98d240a2fdb32a21a3159951d9c56395730",
+        "durationSeconds": 4,
+        "transcript": "買う前に、このかばんの値段を教えてください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-bread-interesting-shape",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "このパンは形が面白くて、おいしそうです。",
+      "grammarPointIds": [
+        "adjective-connective",
+        "sou-appearance"
+      ],
+      "reviewNote": "形が面白くて links the interesting shape to おいしそう, a visual impression of tastiness. Both translations preserve appearance rather than reporting that the bread has already been tasted.",
+      "focusVocabulary": {
+        "id": "vocab-cbc35d59bc3b",
+        "term": "形",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "38b8e2c88df6a69a235edc95d4a096a6265438d64d60704c3048d84d4c48c7c0",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-bread-interesting-shape.m4a",
+        "sha256": "5b78362748870beb5e244c5b00ab440469a286d3f7a6bee285ff6a49ca6218c5",
+        "durationSeconds": 3.9,
+        "transcript": "このパンは形が面白くて、おいしそうです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-unpack-trip-items",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "旅行で買った品物を、かばんから出してください。",
+      "grammarPointIds": [
+        "relative-clause",
+        "kara-start",
+        "te-kudasai"
+      ],
+      "reviewNote": "旅行で買った identifies the purchased items, かばんから marks removal from the bag, and 出してください requests it. Both translations retain the trip and the source container, with all five content words hinted.",
+      "focusVocabulary": {
+        "id": "vocab-df2e03178318",
+        "term": "品物",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "8eef6c3897d1b5a1533aee08904d41bc1b73fd15fb6a9fd019e7951c49a28511",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-unpack-trip-items.m4a",
+        "sha256": "3e2a20c723b5f4e7fc8063f50ec3f0476d5f6cf3d30f9aac31b801991c067899",
+        "durationSeconds": 4,
+        "transcript": "旅行で買った品物をかばんから出してください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-from-kyoto-live-here",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "出身は京都ですが、今はこの町に住んでいます。",
+      "grammarPointIds": [
+        "ga-contrast",
+        "wa-contrast",
+        "te-iru-result-state"
+      ],
+      "reviewNote": "出身は京都です identifies the place of origin; が and 今は contrast it with current residence in this town. Both translations retain Kyoto and the present home without introducing an unsupported place name.",
+      "focusVocabulary": {
+        "id": "vocab-eefac8830079",
+        "term": "出身",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "165dec63cf9c495615c990fd1d24ef6d918c4559c0f239461ee893ec145a0e2f",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-from-kyoto-live-here.m4a",
+        "sha256": "b180f6388b5caf8e7b506b73e391a5b42e93ef647c753b56d45ef3304de672bd",
+        "durationSeconds": 4.8,
+        "transcript": "出身は京都ですが、今はこの町に住んでいます。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-homework-almost-finished",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "宿題はほとんど終わったので、もう遊んでもいいですか。",
+      "grammarPointIds": [
+        "node-reason",
+        "mou",
+        "te-mo-ii"
+      ],
+      "reviewNote": "ほとんど終わった means almost finished, ので connects the reason, and もう遊んでもいいですか asks permission now. Both translations retain almost; neither says the homework is fully finished.",
+      "focusVocabulary": {
+        "id": "vocab-efc517ea492c",
+        "term": "ほとんど",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "4d7466a6cd1ca7c88412747cb2d1793be435330347203f3128f9cd33989c8e72",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-homework-almost-finished.m4a",
+        "sha256": "d321562aa126901532ed36d12f9291cb6af7f5758d8185f8f14aba4f75176219",
+        "durationSeconds": 5.45,
+        "transcript": "宿題はほとんど終わったので、もう遊んでもいいですか?",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-film-not-interesting-at-all",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "この映画はぜんぜん面白くないから、見なくてもいいです。",
+      "grammarPointIds": [
+        "degree-adverbs",
+        "kara-reason",
+        "nakute-mo-ii"
+      ],
+      "reviewNote": "ぜんぜん with 面白くない means not interesting at all; から explains 見なくてもいい, absence of an obligation. Both translations preserve not having to watch, rather than prohibiting it.",
+      "focusVocabulary": {
+        "id": "vocab-77ac88ee840e",
+        "term": "ぜんぜん",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "5fa65db14442e3e3154af3ecd5ac0627d525a49576a14e26d2e24b6e3060f637",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-film-not-interesting-at-all.m4a",
+        "sha256": "2c7e49723c820bfc79bc4db4273e30a56af478040f5600e2e973f3c9f41bfd0b",
+        "durationSeconds": 4.85,
+        "transcript": "この映画は全然面白くないから、見なくてもいいです。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: ぜんぜん / 全然.",
+        "browserDecoding": "passed",
+        "regenerationReason": "The first generation failed the audible-speech validator; regenerated before transcription and browser checks."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-close-window-properly",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "出かける前に、窓をちゃんと閉めてください。",
+      "grammarPointIds": [
+        "mae-ni",
+        "te-kudasai"
+      ],
+      "reviewNote": "出かける前に sets closing the window before going out; ちゃんと modifies 閉めてください as properly. Both translations and hints retain the adverb, window, closing and departure.",
+      "focusVocabulary": {
+        "id": "vocab-da5d571e18b3",
+        "term": "ちゃんと",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "572305ba8bd585d1626b617573045a4157708f98902973efa5475366ca9cc26e",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-close-window-properly.m4a",
+        "sha256": "75071b8d777b8ea4a2e062e7d0c6633a545f19c745546c818c16d73d2a1282b1",
+        "durationSeconds": 3.4,
+        "transcript": "出かける前に、窓をちゃんと閉めてください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-toilet-by-stairs",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "トイレは階段の右にあるので、まっすぐ行ってください。",
+      "grammarPointIds": [
+        "location-of-topic",
+        "node-reason",
+        "te-kudasai"
+      ],
+      "reviewNote": "トイレは階段の右にある locates the toilet; ので connects the information to 行ってください. Both translations retain the right side of the stairs and the request to go straight ahead.",
+      "focusVocabulary": {
+        "id": "vocab-3ef72de4de64",
+        "term": "トイレ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "0de7c91a4add45a3b3b26c9142902de82d794517addfb5165f997d717eaca476",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-toilet-by-stairs.m4a",
+        "sha256": "785f82712d96498017058cece8511973beddd8518cad2dcc13290c2abf01e188",
+        "durationSeconds": 4.55,
+        "transcript": "トイレは階段の右にあるので、まっすぐ行ってください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-air-conditioner-permission",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "部屋が暑いので、エアコンをつけてもいいですか。",
+      "grammarPointIds": [
+        "node-reason",
+        "te-mo-ii"
+      ],
+      "reviewNote": "暑い describes the room temperature, ので gives the reason, and つけてもいいですか asks permission. Both translations use turning on the air conditioner, with the correct つける dictionary entry.",
+      "focusVocabulary": {
+        "id": "vocab-5b8db88624b9",
+        "term": "エアコン",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "c4547a1ae5f4ca550bf7a48c8ac4ebca1bd5c9f32b717575c8ab8fe372802989",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-air-conditioner-permission.m4a",
+        "sha256": "0658380f96a93566ac3413e869405d6ab52dade5d5737e856daa515d112ad924",
+        "durationSeconds": 3.75,
+        "transcript": "部屋が暑いので、エアコンをつけてもいいですか?",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-smartphone-at-school",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "学校でスマホを使ってはいけませんから、かばんに入れてください。",
+      "grammarPointIds": [
+        "te-wa-ikenai",
+        "kara-reason",
+        "te-kudasai"
+      ],
+      "reviewNote": "使ってはいけません prohibits smartphone use at school, から gives the reason, and 入れてください requests putting it in a bag. Both translations preserve that rule and the requested action.",
+      "focusVocabulary": {
+        "id": "vocab-b9fe190304ee",
+        "term": "スマホ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "774fe7447b7da80d784c0319c98baa84697d687398df68af185e5a14f93f805f",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-smartphone-at-school.m4a",
+        "sha256": "4a7b624876b4a3ed459a1413243db0f2cd7a5c4187e53a36b07e927dc761ad22",
+        "durationSeconds": 5.25,
+        "transcript": "学校でスマホを使ってはいけませんから、カバンに入れてください。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: かばん / カバン.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-internet-before-book-purchase",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "インターネットで調べてから、この本を買うつもりです。",
+      "grammarPointIds": [
+        "de-means",
+        "te-kara",
+        "tsumori"
+      ],
+      "reviewNote": "インターネットで marks the means of checking, てから sets it before purchase, and つもり states the buying plan. Both translations retain checking online before buying this book; all content words have hints.",
+      "focusVocabulary": {
+        "id": "vocab-f3793d641201",
+        "term": "インターネット",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "613231250ecadc6696eabb0670fea25c72c307d18e3f4510348aa77568cef5ff",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-internet-before-book-purchase.m4a",
+        "sha256": "7480b2f76ba9a2bb3ad8f3ef4c8bcafee3420945d1f12c2781ed6f4cef90d486",
+        "durationSeconds": 3.9,
+        "transcript": "インターネットで調べてから、この本を買うつもりです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-key-in-pocket",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "鍵をポケットに入れてから、家を出ます。",
+      "grammarPointIds": [
+        "te-kara",
+        "o-route"
+      ],
+      "reviewNote": "入れてから puts the key in the pocket before leaving; 家を出ます uses を for the place of departure. Both translations retain the key, pocket and sequence, with the dictionary spelling 鍵.",
+      "focusVocabulary": {
+        "id": "vocab-a2486e569541",
+        "term": "ポケット",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "d8566b9092dcfc0506ff73e2853014a5f33813f6cabcd7d706ca754164c39246",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-key-in-pocket.m4a",
+        "sha256": "7e62e4ace87e2e976f9c9e9affb9e066c77681403202b9eb6115a970dc96bd2b",
+        "durationSeconds": 3.2,
+        "transcript": "鍵をポケットに入れてから、家を出ます。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-wash-handkerchief-first",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "このハンカチは汚いので、洗ってから使ってください。",
+      "grammarPointIds": [
+        "node-reason",
+        "te-kara",
+        "te-kudasai"
+      ],
+      "reviewNote": "汚いので explains the washing request, てから places washing before use, and 使ってください carries the request. Both translations and hints keep the dirty handkerchief and that order.",
+      "focusVocabulary": {
+        "id": "vocab-9e2dd73a328b",
+        "term": "ハンカチ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "477739edc19b58a5ee30156b54d10216eb5e3270f1166c46b21ee5d32428b2d5",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-wash-handkerchief-first.m4a",
+        "sha256": "847180a7659ddf5d679ec9d6afc971a10f2021b07aec4abe7468d81d7554c929",
+        "durationSeconds": 4.1,
+        "transcript": "このハンカチは汚いので、洗ってから使ってください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-cup-too-large",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "このカップは大きすぎるので、小さいのをください。",
+      "grammarPointIds": [
+        "sugiru",
+        "node-reason",
+        "no-noun-omission"
+      ],
+      "reviewNote": "大きすぎる gives excessive size, ので the reason, and 小さいの replaces the cup noun. Both translations retain a request for a small cup, with no omitted object meaning.",
+      "focusVocabulary": {
+        "id": "vocab-68074320dccb",
+        "term": "カップ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "ccca30f1895cbac3389f26c9444e68eaac4339c7e2db2e9e97e139c5ec5b5fd0",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-cup-too-large.m4a",
+        "sha256": "e7a187a625b309b3cebd7b3e6735d1d73da82d9954286880cbf7041f09f332ed",
+        "durationSeconds": 4.05,
+        "transcript": "このカップは大きすぎるので、小さいのをください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-soy-sauce-before-tasting",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "この料理に醤油を少し入れてから、食べてみてください。",
+      "grammarPointIds": [
+        "te-kara",
+        "te-miru",
+        "te-kudasai"
+      ],
+      "reviewNote": "少し gives the small amount of soy sauce, 入れてから sets adding before tasting, and 食べてみてください combines trying with a request. Both translations retain the dish and amount; all five content hints are present.",
+      "focusVocabulary": {
+        "id": "vocab-cdaf57101dbd",
+        "term": "醤油",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "8d526beb4295455abbc94316ff65809f7fca9b1cbec2514fa60276df6e840a14",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-soy-sauce-before-tasting.m4a",
+        "sha256": "a1a9aed465c012b5734eb55b403f0c9d6fe0131749477fa1fb69efbbceb55068",
+        "durationSeconds": 4.3,
+        "transcript": "この料理に醤油を少し入れてから、食べてみてください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-pork-for-dinner",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "豚肉と野菜を買って、家で晩御飯を作りましょう。",
+      "grammarPointIds": [
+        "to-complete-list",
+        "te-action-link",
+        "mashou"
+      ],
+      "reviewNote": "と lists pork and vegetables, 買って connects shopping to preparation, and 作りましょう invites making dinner together. Both translations keep dinner at home and the two ingredients.",
+      "focusVocabulary": {
+        "id": "vocab-adcdf1bd986d",
+        "term": "豚肉",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "e5c8432f63d09f815c71ec3cffd7bcdaf4f1f0d09691f4e716f70ffacd7fce7d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-pork-for-dinner.m4a",
+        "sha256": "6738c2b869e102e05c69065deb653e7265fb9d5773476fc3e87e3e375443afd6",
+        "durationSeconds": 4.8,
+        "transcript": "豚肉と野菜を買って、家で晩ご飯を作りましょう。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 晩御飯 / 晩ご飯.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-butter-before-baking",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "バターを買ってから、妹と一緒にパンを作ります。",
+      "grammarPointIds": [
+        "te-kara",
+        "issho-ni"
+      ],
+      "reviewNote": "買ってから places buying butter before making bread; 妹と一緒に identifies the younger sister as companion. Both translations preserve butter, bread and the sequence, and all five content words have hints.",
+      "focusVocabulary": {
+        "id": "vocab-33240496da08",
+        "term": "バター",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "487e54880cccf632114d84bebbdac4426c02dadbd6617c0ac7f176af76b12fd7",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-butter-before-baking.m4a",
+        "sha256": "352d8dd93d636fb63e13c67dafdc11f190cba6d37e2c66b35028a428346c91d3",
+        "durationSeconds": 4.6,
+        "transcript": "バターを買ってから、妹と一緒にパンを作ります。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    }
+  ]
+}

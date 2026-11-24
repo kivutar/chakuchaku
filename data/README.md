@@ -135,6 +135,14 @@ the N5 curricula published by Bunpro, JLPT Sensei, and Yatta. `boundary` keeps
 useful points that sources variously place at N5 or N4 without presenting them
 as undisputed N5 requirements.
 
+The N5 vocabulary practice batch adds 50 distinct sentences: 25 recognition and
+25 production exercises. Each uses exactly one previously uncovered N5 vocabulary
+entry, covered N5 supporting vocabulary, and two or three grammar points from
+the existing N5 curriculum. This reduces N5 entries without a linked grammar
+exercise from 242 to 192. English and French translations, production hints,
+Japanese recordings, and the separate review of every exercise are recorded in
+[`n5-vocabulary-practice-review-2026-11-24.json`](source/n5-vocabulary-practice-review-2026-11-24.json).
+
 The live N4 slice contains 97 high-value points and 517 independently authored
 recognition and production exercises, plus exercises borrowed from N4 stories.
 The latest 50 exercises practice 111 N4 vocabulary entries, including 104 that

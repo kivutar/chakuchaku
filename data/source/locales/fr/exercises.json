@@ -15142,5 +15142,878 @@
         ]
       }
     ]
+  },
+  "n5-vocab-sell-read-books": {
+    "translation": "Je veux vendre les livres que j’ai lus et en acheter de nouveaux."
+  },
+  "production-n5-vocab-learn-before-japan": {
+    "translation": "Je veux apprendre le japonais dans cette salle de classe avant d’aller au Japon.",
+    "promptVocabularyHints": [
+      {
+        "word": "apprendre",
+        "vocabularyIds": [
+          "vocab-0d114c78c7a1"
+        ]
+      },
+      {
+        "word": "japonais",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "salle de classe",
+        "vocabularyIds": [
+          "vocab-fbb71c77ac0e"
+        ]
+      },
+      {
+        "word": "aller",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "Japon",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-work-near-station": {
+    "translation": "Je veux travailler dans une entreprise près de la gare."
+  },
+  "production-n5-vocab-stick-label-on-box": {
+    "translation": "Écris ton nom, puis colle le papier sur la boîte, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "Écris",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "nom",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      },
+      {
+        "word": "colle",
+        "vocabularyIds": [
+          "vocab-e3044e44f7d9"
+        ]
+      },
+      {
+        "word": "papier",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
+        ]
+      },
+      {
+        "word": "boîte",
+        "vocabularyIds": [
+          "vocab-28102c121d50"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-light-goes-out": {
+    "translation": "La lumière de la pièce s’est éteinte, alors je ne vois rien."
+  },
+  "production-n5-vocab-plan-build-house": {
+    "translation": "J’ai l’intention de construire une maison dans cette ville, mais je n’ai pas beaucoup d’argent.",
+    "promptVocabularyHints": [
+      {
+        "word": "construire",
+        "vocabularyIds": [
+          "vocab-861717738347"
+        ]
+      },
+      {
+        "word": "maison",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      },
+      {
+        "word": "ville",
+        "vocabularyIds": [
+          "vocab-09d74d630a45"
+        ]
+      },
+      {
+        "word": "argent",
+        "vocabularyIds": [
+          "vocab-d242b38667c8"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-shoes-do-not-fit": {
+    "translation": "Ces chaussures ne sont pas à la taille de mes pieds, alors je ferais mieux de ne pas les acheter."
+  },
+  "production-n5-vocab-wind-outside-window": {
+    "translation": "Un vent fort souffle dehors, alors n’ouvre pas la fenêtre, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "fort",
+        "vocabularyIds": [
+          "vocab-e71d7d160f29"
+        ]
+      },
+      {
+        "word": "vent",
+        "vocabularyIds": [
+          "vocab-94bf02007301"
+        ]
+      },
+      {
+        "word": "souffle",
+        "vocabularyIds": [
+          "vocab-707c691402bc"
+        ]
+      },
+      {
+        "word": "dehors",
+        "vocabularyIds": [
+          "vocab-6109638dac53"
+        ]
+      },
+      {
+        "word": "ouvre",
+        "vocabularyIds": [
+          "vocab-658ff53bc114"
+        ]
+      },
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-walk-under-umbrella": {
+    "translation": "Il pleut, alors je marche avec un parapluie ouvert."
+  },
+  "production-n5-vocab-tie-before-work": {
+    "translation": "Je dois mettre cette cravate avant le travail.",
+    "promptVocabularyHints": [
+      {
+        "word": "mettre",
+        "vocabularyIds": [
+          "vocab-7e22c8ba7ac9"
+        ]
+      },
+      {
+        "word": "cravate",
+        "vocabularyIds": [
+          "vocab-d68eb0e5b339"
+        ]
+      },
+      {
+        "word": "travail",
+        "vocabularyIds": [
+          "vocab-cdf28ddaf837"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-fewer-people-shop": {
+    "translation": "Il y a moins de monde dans ce restaurant que dans l’autre, alors mangeons ici."
+  },
+  "production-n5-vocab-chair-too-low": {
+    "translation": "Cette chaise est trop basse, alors je veux en utiliser une plus haute.",
+    "promptVocabularyHints": [
+      {
+        "word": "chaise",
+        "vocabularyIds": [
+          "vocab-7863488ec2b8"
+        ]
+      },
+      {
+        "word": "basse",
+        "vocabularyIds": [
+          "vocab-d1ad03f14ba3"
+        ]
+      },
+      {
+        "word": "utiliser",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      },
+      {
+        "word": "haute",
+        "vocabularyIds": [
+          "vocab-775979a197ea"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-thicker-taller-tree": {
+    "translation": "Cet arbre est plus gros et plus haut que cet autre arbre."
+  },
+  "production-n5-vocab-narrow-road-bridge": {
+    "translation": "Avance tout droit sur ce chemin étroit et traverse le pont, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "Avance",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "tout droit",
+        "vocabularyIds": [
+          "vocab-b707aecf50a0"
+        ]
+      },
+      {
+        "word": "étroit",
+        "vocabularyIds": [
+          "vocab-8b8fa31d72d2"
+        ]
+      },
+      {
+        "word": "chemin",
+        "vocabularyIds": [
+          "vocab-b4a022a9e7a6"
+        ]
+      },
+      {
+        "word": "traverse",
+        "vocabularyIds": [
+          "vocab-9aa7d5bc2d8f"
+        ]
+      },
+      {
+        "word": "pont",
+        "vocabularyIds": [
+          "vocab-873a33bd6c13"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-round-table-room": {
+    "translation": "Je veux une grande table ronde, mais elle ne rentrera pas dans cette pièce."
+  },
+  "production-n5-vocab-light-wind-swimming": {
+    "translation": "Le vent est faible aujourd’hui, alors nous pouvons nager dans la mer.",
+    "promptVocabularyHints": [
+      {
+        "word": "vent",
+        "vocabularyIds": [
+          "vocab-94bf02007301"
+        ]
+      },
+      {
+        "word": "faible",
+        "vocabularyIds": [
+          "vocab-7819c17897e7"
+        ]
+      },
+      {
+        "word": "aujourd’hui",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      },
+      {
+        "word": "nager",
+        "vocabularyIds": [
+          "vocab-76a7f713c3db"
+        ]
+      },
+      {
+        "word": "mer",
+        "vocabularyIds": [
+          "vocab-47c1227c459b"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-sad-film-again": {
+    "translation": "Ce film était très triste, alors je ne veux plus le regarder."
+  },
+  "production-n5-vocab-cute-dog-park": {
+    "translation": "Je veux aller au parc avec ce petit chien mignon.",
+    "promptVocabularyHints": [
+      {
+        "word": "aller",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "parc",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      },
+      {
+        "word": "petit",
+        "vocabularyIds": [
+          "vocab-769a80524957"
+        ]
+      },
+      {
+        "word": "mignon",
+        "vocabularyIds": [
+          "vocab-0a04072bf0cc"
+        ]
+      },
+      {
+        "word": "chien",
+        "vocabularyIds": [
+          "vocab-4cd1238bcb91"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-sister-loves-singing": {
+    "translation": "Ma petite sœur adore chanter et chante à la maison tous les jours."
+  },
+  "production-n5-vocab-film-adults-only": {
+    "translation": "Seuls les adultes peuvent regarder ce film.",
+    "promptVocabularyHints": [
+      {
+        "word": "adultes",
+        "vocabularyIds": [
+          "vocab-2cc50c2d66a6"
+        ]
+      },
+      {
+        "word": "regarder",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      },
+      {
+        "word": "film",
+        "vocabularyIds": [
+          "vocab-7b9d866e6dc2"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-girl-in-red": {
+    "translation": "La fille qui porte des vêtements rouges est la petite sœur de mon ami."
+  },
+  "n5-vocab-siblings-far-away": {
+    "translation": "J’ai des frères et sœurs, mais ils habitent tous dans une ville éloignée."
+  },
+  "production-n5-vocab-country-highest-mountain": {
+    "translation": "Quel est le nom de la plus haute montagne de ton pays ?",
+    "promptVocabularyHints": [
+      {
+        "word": "nom",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      },
+      {
+        "word": "haute",
+        "vocabularyIds": [
+          "vocab-775979a197ea"
+        ]
+      },
+      {
+        "word": "montagne",
+        "vocabularyIds": [
+          "vocab-ddd9dca106e2"
+        ]
+      },
+      {
+        "word": "pays",
+        "vocabularyIds": [
+          "vocab-ee158182835b"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-food-in-mouth": {
+    "translation": "Ne parle pas quand tu as de la nourriture dans la bouche, s’il te plaît."
+  },
+  "production-n5-vocab-nose-hurts-hospital": {
+    "translation": "J’ai mal au nez, alors je dois aller à l’hôpital aujourd’hui.",
+    "promptVocabularyHints": [
+      {
+        "word": "nez",
+        "vocabularyIds": [
+          "vocab-0d194c50239e"
+        ]
+      },
+      {
+        "word": "mal",
+        "vocabularyIds": [
+          "vocab-64170b1798cb"
+        ]
+      },
+      {
+        "word": "aller",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "hôpital",
+        "vocabularyIds": [
+          "vocab-152ea0d72dc5"
+        ]
+      },
+      {
+        "word": "aujourd’hui",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-eyes-tired-reading": {
+    "translation": "Quand on lit dans une pièce sombre, les yeux se fatiguent."
+  },
+  "production-n5-vocab-busy-this-week": {
+    "translation": "Je suis occupé cette semaine, alors j’ai l’intention de voir mon ami la semaine prochaine.",
+    "promptVocabularyHints": [
+      {
+        "word": "occupé",
+        "vocabularyIds": [
+          "vocab-5ee54e973899"
+        ]
+      },
+      {
+        "word": "cette semaine",
+        "vocabularyIds": [
+          "vocab-b86d4b5ce53c"
+        ]
+      },
+      {
+        "word": "voir",
+        "vocabularyIds": [
+          "vocab-40179481fcf6"
+        ]
+      },
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "semaine prochaine",
+        "vocabularyIds": [
+          "vocab-eddc7f95d55c"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-last-month-watch-gift": {
+    "translation": "J’ai donné à mon petit frère la montre que j’ai achetée le mois dernier."
+  },
+  "production-n5-vocab-contact-mother-monthly": {
+    "translation": "Chaque mois, j’écris des lettres à ma mère ou je lui téléphone, par exemple.",
+    "promptVocabularyHints": [
+      {
+        "word": "Chaque mois",
+        "vocabularyIds": [
+          "vocab-27bc53152a46"
+        ]
+      },
+      {
+        "word": "écris",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "lettres",
+        "vocabularyIds": [
+          "vocab-8e7233a38df0"
+        ]
+      },
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
+        "word": "téléphone",
+        "vocabularyIds": [
+          "vocab-24df87472770",
+          "vocab-115e9c23e2b9"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-thursday-library-books": {
+    "translation": "Jeudi, j’emprunterai des livres à la bibliothèque, puis je les lirai à la maison."
+  },
+  "production-n5-vocab-cold-last-night": {
+    "translation": "La nuit dernière, il faisait froid, alors j’ai fermé la fenêtre avant de me coucher.",
+    "promptVocabularyHints": [
+      {
+        "word": "La nuit dernière",
+        "vocabularyIds": [
+          "vocab-de50d5073f2d"
+        ]
+      },
+      {
+        "word": "froid",
+        "vocabularyIds": [
+          "vocab-ea75e321b7ef"
+        ]
+      },
+      {
+        "word": "fermé",
+        "vocabularyIds": [
+          "vocab-98e990bf1d44"
+        ]
+      },
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      },
+      {
+        "word": "coucher",
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-something-to-do-today": {
+    "translation": "J’ai quelque chose à faire aujourd’hui, alors je ne peux pas passer du temps avec toi."
+  },
+  "production-n5-vocab-ask-bag-price": {
+    "translation": "Dis-moi le prix de ce sac avant que je l’achète, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "Dis",
+        "vocabularyIds": [
+          "vocab-de83de37aff5"
+        ]
+      },
+      {
+        "word": "prix",
+        "vocabularyIds": [
+          "vocab-2ca110c8da0e"
+        ]
+      },
+      {
+        "word": "sac",
+        "vocabularyIds": [
+          "vocab-704870bca266"
+        ]
+      },
+      {
+        "word": "achète",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-bread-interesting-shape": {
+    "translation": "Ce pain a une forme intéressante et a l’air délicieux."
+  },
+  "production-n5-vocab-unpack-trip-items": {
+    "translation": "Sors du sac les articles que tu as achetés pendant le voyage, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "Sors",
+        "vocabularyIds": [
+          "vocab-a001b24baf12"
+        ]
+      },
+      {
+        "word": "articles",
+        "vocabularyIds": [
+          "vocab-df2e03178318"
+        ]
+      },
+      {
+        "word": "achetés",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "voyage",
+        "vocabularyIds": [
+          "vocab-2e3ba98d2367"
+        ]
+      },
+      {
+        "word": "sac",
+        "vocabularyIds": [
+          "vocab-704870bca266"
+        ]
+      }
+    ]
+  },
+  "production-n5-vocab-homework-almost-finished": {
+    "translation": "Mes devoirs sont presque terminés, alors est-ce que je peux jouer maintenant ?",
+    "promptVocabularyHints": [
+      {
+        "word": "devoirs",
+        "vocabularyIds": [
+          "vocab-f26f501fa1c2"
+        ]
+      },
+      {
+        "word": "presque",
+        "vocabularyIds": [
+          "vocab-efc517ea492c"
+        ]
+      },
+      {
+        "word": "terminés",
+        "vocabularyIds": [
+          "vocab-6393ca7aefde"
+        ]
+      },
+      {
+        "word": "jouer",
+        "vocabularyIds": [
+          "vocab-58a04652246f"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-film-not-interesting-at-all": {
+    "translation": "Ce film n’est pas du tout intéressant, alors tu n’es pas obligé de le regarder."
+  },
+  "production-n5-vocab-close-window-properly": {
+    "translation": "Ferme bien la fenêtre avant de sortir, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "Ferme",
+        "vocabularyIds": [
+          "vocab-98e990bf1d44"
+        ]
+      },
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      },
+      {
+        "word": "bien",
+        "vocabularyIds": [
+          "vocab-da5d571e18b3"
+        ]
+      },
+      {
+        "word": "sortir",
+        "vocabularyIds": [
+          "vocab-001a4faf05bd"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-toilet-by-stairs": {
+    "translation": "Les toilettes sont à droite de l’escalier, alors va tout droit, s’il te plaît."
+  },
+  "production-n5-vocab-air-conditioner-permission": {
+    "translation": "Il fait chaud dans la pièce, alors est-ce que je peux allumer la climatisation ?",
+    "promptVocabularyHints": [
+      {
+        "word": "pièce",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "chaud",
+        "vocabularyIds": [
+          "vocab-19be7f7be766"
+        ]
+      },
+      {
+        "word": "allumer",
+        "vocabularyIds": [
+          "vocab-fb80dfec7361"
+        ]
+      },
+      {
+        "word": "climatisation",
+        "vocabularyIds": [
+          "vocab-5b8db88624b9"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-smartphone-at-school": {
+    "translation": "Tu ne dois pas utiliser ton smartphone à l’école, alors range-le dans ton sac, s’il te plaît."
+  },
+  "production-n5-vocab-internet-before-book-purchase": {
+    "translation": "Je compte acheter ce livre après avoir fait des recherches sur Internet.",
+    "promptVocabularyHints": [
+      {
+        "word": "acheter",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "fait des recherches",
+        "vocabularyIds": [
+          "vocab-162459c6ef3e"
+        ]
+      },
+      {
+        "word": "Internet",
+        "vocabularyIds": [
+          "vocab-f3793d641201"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-key-in-pocket": {
+    "translation": "Après avoir mis ma clé dans ma poche, je sors de la maison."
+  },
+  "production-n5-vocab-wash-handkerchief-first": {
+    "translation": "Ce mouchoir est sale, alors lave-le avant de l’utiliser, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "mouchoir",
+        "vocabularyIds": [
+          "vocab-9e2dd73a328b"
+        ]
+      },
+      {
+        "word": "sale",
+        "vocabularyIds": [
+          "vocab-41710789f4a2"
+        ]
+      },
+      {
+        "word": "lave",
+        "vocabularyIds": [
+          "vocab-84e555b3292a"
+        ]
+      },
+      {
+        "word": "utiliser",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-cup-too-large": {
+    "translation": "Cette tasse est trop grande, alors donne-m’en une petite, s’il te plaît."
+  },
+  "production-n5-vocab-soy-sauce-before-tasting": {
+    "translation": "Ajoute un peu de sauce soja à ce plat, puis goûte-le, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "Ajoute",
+        "vocabularyIds": [
+          "vocab-b5e9e035a8be"
+        ]
+      },
+      {
+        "word": "un peu",
+        "vocabularyIds": [
+          "vocab-8814378ebfc2"
+        ]
+      },
+      {
+        "word": "sauce soja",
+        "vocabularyIds": [
+          "vocab-cdaf57101dbd"
+        ]
+      },
+      {
+        "word": "plat",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      },
+      {
+        "word": "goûte",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-pork-for-dinner": {
+    "translation": "Achetons du porc et des légumes et préparons le dîner à la maison."
+  },
+  "production-n5-vocab-butter-before-baking": {
+    "translation": "Après avoir acheté du beurre, je ferai du pain avec ma petite sœur.",
+    "promptVocabularyHints": [
+      {
+        "word": "acheté",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "beurre",
+        "vocabularyIds": [
+          "vocab-33240496da08"
+        ]
+      },
+      {
+        "word": "ferai",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
+        "word": "pain",
+        "vocabularyIds": [
+          "vocab-3ad79496437d"
+        ]
+      },
+      {
+        "word": "petite sœur",
+        "vocabularyIds": [
+          "vocab-735d35e5b1be"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-from-kyoto-live-here": {
+    "translation": "Je suis originaire de Kyoto, mais j’habite maintenant dans cette ville."
+  },
+  "production-n5-vocab-hot-spring-too-hot": {
+    "translation": "Cette source chaude est trop chaude, alors je ne veux pas encore y entrer.",
+    "promptVocabularyHints": [
+      {
+        "word": "source chaude",
+        "vocabularyIds": [
+          "vocab-8fc87e32adf1"
+        ]
+      },
+      {
+        "word": "chaude",
+        "vocabularyIds": [
+          "vocab-dec4a6497500"
+        ]
+      },
+      {
+        "word": "entrer",
+        "vocabularyIds": [
+          "vocab-82a114897d9c"
+        ]
+      }
+    ]
   }
 }
