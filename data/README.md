@@ -135,13 +135,19 @@ the N5 curricula published by Bunpro, JLPT Sensei, and Yatta. `boundary` keeps
 useful points that sources variously place at N5 or N4 without presenting them
 as undisputed N5 requirements.
 
-The N5 vocabulary practice batch adds 50 distinct sentences: 25 recognition and
-25 production exercises. Each uses exactly one previously uncovered N5 vocabulary
+The two N5 vocabulary practice batches add 100 distinct sentences: 50 recognition
+and 50 production exercises. Each uses exactly one previously uncovered N5 vocabulary
 entry, covered N5 supporting vocabulary, and two or three grammar points from
 the existing N5 curriculum. This reduces N5 entries without a linked grammar
-exercise from 242 to 192. English and French translations, production hints,
+exercise from 242 to 142. English and French translations, production hints,
 Japanese recordings, and the separate review of every exercise are recorded in
-[`n5-vocabulary-practice-review-2026-11-24.json`](source/n5-vocabulary-practice-review-2026-11-24.json).
+the [first batch review](source/n5-vocabulary-practice-review-2026-11-24.json) and
+the [second batch review](source/n5-vocabulary-practice-batch-2-review-2026-11-24.json).
+The second batch also corrects dictionary tags and word boundaries needed to
+link `嫌い`, `結婚`, `散歩`, `お兄さん`, `お姉さん`, `二十歳`, `曇り`, and adjectival
+`色々` correctly, retaining their vocabulary IDs and existing progress. The follow-up
+review also adds the missing `とても` production hint and distinguishes the
+`曇り` noun from `曇る` in the existing vocabulary examples.
 
 The live N4 slice contains 97 high-value points and 517 independently authored
 recognition and production exercises, plus exercises borrowed from N4 stories.

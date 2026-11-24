@@ -1347,7 +1347,10 @@
     "vocabularyId": "vocab-e39511565f37",
     "text": "空が曇ります。",
     "targetSurface": "曇り",
-    "translation": "The sky becomes cloudy."
+    "translation": "The sky becomes cloudy.",
+    "vocabularyOverrides": {
+      "曇り": "vocab-e39511565f37"
+    }
   },
   {
     "vocabularyId": "vocab-a4945bc781fd",

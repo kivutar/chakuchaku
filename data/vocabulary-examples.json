@@ -4193,17 +4193,14 @@
     "targetSurface": "お兄さん",
     "targetReading": "おにいさん",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "Your older brother is coming.",
     "tokens": [
       {
-        "surface": "お",
-        "reading": "お"
-      },
-      {
-        "surface": "兄さん",
+        "surface": "お兄さん",
         "category": "noun",
-        "reading": "にいさん"
+        "reading": "おにいさん",
+        "vocabularyId": "vocab-7b9061f52b70"
       },
       {
         "surface": "が",
@@ -4228,17 +4225,14 @@
     "targetSurface": "お姉さん",
     "targetReading": "おねえさん",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "Your older sister is a student.",
     "tokens": [
       {
-        "surface": "お",
-        "reading": "お"
-      },
-      {
-        "surface": "姉さん",
+        "surface": "お姉さん",
         "category": "noun",
-        "reading": "ねえさん"
+        "reading": "おねえさん",
+        "vocabularyId": "vocab-1b000d77877a"
       },
       {
         "surface": "は",
@@ -7073,7 +7067,8 @@
       {
         "surface": "嫌い",
         "category": "adjective",
-        "reading": "きらい"
+        "reading": "きらい",
+        "vocabularyId": "vocab-2903a777a6c7"
       },
       {
         "surface": "。",
@@ -7654,7 +7649,7 @@
       },
       {
         "surface": "曇り",
-        "category": "verb",
+        "category": "noun",
         "reading": "くもり",
         "vocabularyId": "vocab-fe4250fc1d4e"
       },
@@ -7693,7 +7688,7 @@
         "surface": "曇り",
         "category": "verb",
         "reading": "くもり",
-        "vocabularyId": "vocab-fe4250fc1d4e"
+        "vocabularyId": "vocab-e39511565f37"
       },
       {
         "surface": "ます",
@@ -8146,7 +8141,8 @@
       {
         "surface": "結婚",
         "category": "noun",
-        "reading": "けっこん"
+        "reading": "けっこん",
+        "vocabularyId": "vocab-98d11b98626d"
       },
       {
         "surface": "し",
@@ -9967,7 +9963,8 @@
       {
         "surface": "散歩",
         "category": "noun",
-        "reading": "さんぽ"
+        "reading": "さんぽ",
+        "vocabularyId": "vocab-739ad06f157c"
       },
       {
         "surface": "し",
@@ -18542,7 +18539,7 @@
     "targetSurface": "二十歳",
     "targetReading": "はたち",
     "targetTokenStart": 2,
-    "targetTokenEnd": 5,
+    "targetTokenEnd": 3,
     "translation": "My brother is twenty years old.",
     "tokens": [
       {
@@ -18557,22 +18554,10 @@
         "reading": "は"
       },
       {
-        "surface": "二",
+        "surface": "二十歳",
         "category": "noun",
-        "reading": "に",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "十",
-        "category": "noun",
-        "reading": "じゅう",
-        "vocabularyId": "vocab-877b9ba07a47"
-      },
-      {
-        "surface": "歳",
-        "category": "noun",
-        "reading": "さい",
-        "vocabularyId": "vocab-db0b9a41ac4f"
+        "reading": "はたち",
+        "vocabularyId": "vocab-88bf93be43ee"
       },
       {
         "surface": "です",

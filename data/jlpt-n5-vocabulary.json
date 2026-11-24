@@ -932,7 +932,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "adverb"
+    "partOfSpeech": "adverb",
+    "inflections": [
+      {
+        "surface": "色々",
+        "reading": "いろいろ",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-c0f58bfab324",
@@ -1564,7 +1571,8 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "noun",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-1b000d77877a",
@@ -1574,7 +1582,8 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "noun",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-54f0c3f57bf9",
@@ -2525,7 +2534,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "adjective"
   },
   {
     "id": "vocab-1ee90bf5d13a",
@@ -2730,7 +2739,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "noun",
+    "inflections": [
+      {
+        "surface": "曇り",
+        "reading": "くもり",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-e39511565f37",
@@ -2896,7 +2912,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "noun"
   },
   {
     "id": "vocab-61c02e7f4acc",
@@ -3486,7 +3502,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "verb"
+    "partOfSpeech": "noun"
   },
   {
     "id": "vocab-dc8d0860b963",
@@ -6236,7 +6252,8 @@
     "partOfSpeech": "number",
     "variants": [
       "20歳"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-49f91d135f05",

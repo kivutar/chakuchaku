@@ -28681,5 +28681,1348 @@
         ]
       }
     ]
+  },
+  {
+    "id": "n5-vocab-need-car-for-work",
+    "minimumLevel": "n5",
+    "text": "この仕事には車が要るので、父に借りるつもりです。",
+    "solution": "I need a car for this job, so I plan to borrow one from my father.",
+    "grammarPointIds": [
+      "node-reason",
+      "tsumori"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-various-shops-before-trip",
+    "minimumLevel": "n5",
+    "text": "Before the trip, I want to buy clothes in various shops.",
+    "solution": "旅行の前に、色々な店で服を買いたいです。",
+    "grammarPointIds": [
+      "mae-ni",
+      "de-action-location",
+      "tai-desire"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "trip",
+        "vocabularyIds": [
+          "vocab-2e3ba98d2367"
+        ]
+      },
+      {
+        "word": "buy",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "clothes",
+        "vocabularyIds": [
+          "vocab-ff1cb3f79233"
+        ]
+      },
+      {
+        "word": "various",
+        "vocabularyIds": [
+          "vocab-7b2479107ae1"
+        ]
+      },
+      {
+        "word": "shops",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-dislike-running-walk-school",
+    "minimumLevel": "n5",
+    "text": "私は走るのが嫌いなので、学校まで歩いて行きます。",
+    "solution": "I dislike running, so I walk to school.",
+    "grammarPointIds": [
+      "no-ga-suki",
+      "node-reason",
+      "made-end"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-brother-marriage-new-house",
+    "minimumLevel": "n5",
+    "text": "My older brother is getting married next year, so he plans to live in a new house.",
+    "solution": "兄は来年結婚するので、新しい家に住むつもりです。",
+    "grammarPointIds": [
+      "node-reason",
+      "tsumori"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "older brother",
+        "vocabularyIds": [
+          "vocab-cda9169e9fa2"
+        ]
+      },
+      {
+        "word": "getting married",
+        "vocabularyIds": [
+          "vocab-98d11b98626d"
+        ]
+      },
+      {
+        "word": "next year",
+        "vocabularyIds": [
+          "vocab-fb3e6c8865d4"
+        ]
+      },
+      {
+        "word": "live",
+        "vocabularyIds": [
+          "vocab-405805427b97"
+        ]
+      },
+      {
+        "word": "new",
+        "vocabularyIds": [
+          "vocab-288a95a40d95"
+        ]
+      },
+      {
+        "word": "house",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-stroll-after-dinner",
+    "minimumLevel": "n5",
+    "text": "晩御飯を食べてから、一緒に散歩しませんか。",
+    "solution": "Would you like to go for a walk together after dinner?",
+    "grammarPointIds": [
+      "te-kara",
+      "masen-ka-invitation"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-sick-pet-return-early",
+    "minimumLevel": "n5",
+    "text": "My pet is ill, so I must go home early today.",
+    "solution": "ペットが病気なので、今日は早く家に帰らなければなりません。",
+    "grammarPointIds": [
+      "node-reason",
+      "nakereba-naranai",
+      "i-adjective-adverb"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "pet",
+        "vocabularyIds": [
+          "vocab-3d33fd4054f1"
+        ]
+      },
+      {
+        "word": "ill",
+        "vocabularyIds": [
+          "vocab-f1d4ccc1ebeb"
+        ]
+      },
+      {
+        "word": "go",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      },
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      },
+      {
+        "word": "early",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
+        ]
+      },
+      {
+        "word": "today",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-ask-if-story-true",
+    "minimumLevel": "n5",
+    "text": "その話が本当かどうか、先生に聞いてみます。",
+    "solution": "I will try asking the teacher whether that story is true.",
+    "grammarPointIds": [
+      "ka-dou-ka",
+      "te-miru",
+      "ni-target-recipient"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-food-not-bad-add-salt",
+    "minimumLevel": "n5",
+    "text": "This dish does not taste bad, but you should add a little salt.",
+    "solution": "この料理はまずくないですが、少し塩を入れたほうがいいです。",
+    "grammarPointIds": [
+      "i-adjective-negative",
+      "ga-contrast",
+      "hou-ga-ii-advice"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "dish",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      },
+      {
+        "word": "bad",
+        "vocabularyIds": [
+          "vocab-d86d12c0f538"
+        ]
+      },
+      {
+        "word": "add",
+        "vocabularyIds": [
+          "vocab-b5e9e035a8be"
+        ]
+      },
+      {
+        "word": "a little",
+        "vocabularyIds": [
+          "vocab-8814378ebfc2"
+        ]
+      },
+      {
+        "word": "salt",
+        "vocabularyIds": [
+          "vocab-310d0d9b3dad"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-dad-reading-be-quiet",
+    "minimumLevel": "n5",
+    "text": "お父さんは今、本を読んでいるので、静かにしてください。",
+    "solution": "Dad is reading a book now, so please be quiet.",
+    "grammarPointIds": [
+      "te-iru-progressive",
+      "node-reason",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-try-older-brothers-cooking",
+    "minimumLevel": "n5",
+    "text": "I would like to try eating the food your older brother made.",
+    "solution": "お兄さんが作った料理を食べてみたいです。",
+    "grammarPointIds": [
+      "relative-clause",
+      "te-miru",
+      "tai-desire"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "eating",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "food",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      },
+      {
+        "word": "older brother",
+        "vocabularyIds": [
+          "vocab-7b9061f52b70"
+        ]
+      },
+      {
+        "word": "made",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      }
+    ],
+    "tokenOverrides": {
+      "みたい": {
+        "category": "auxiliary"
+      }
+    }
+  },
+  {
+    "id": "n5-vocab-older-sister-good-at-singing",
+    "minimumLevel": "n5",
+    "text": "お姉さんは歌うのが上手だと聞きました。",
+    "solution": "I heard that your older sister is good at singing.",
+    "grammarPointIds": [
+      "no-ga-jouzu-heta",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-sweets-from-teachers-wife",
+    "minimumLevel": "n5",
+    "text": "I received some delicious sweets from the teacher’s wife.",
+    "solution": "先生の奥さんから、おいしいお菓子をもらいました。",
+    "grammarPointIds": [
+      "morau",
+      "no-possession",
+      "i-adjective-attributive"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "received",
+        "vocabularyIds": [
+          "vocab-9d61f6197627"
+        ]
+      },
+      {
+        "word": "delicious",
+        "vocabularyIds": [
+          "vocab-2f5084eba81c"
+        ]
+      },
+      {
+        "word": "sweets",
+        "vocabularyIds": [
+          "vocab-3841b646739f"
+        ]
+      },
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      },
+      {
+        "word": "wife",
+        "vocabularyIds": [
+          "vocab-83ac0c84a18d"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-families-with-many-children",
+    "minimumLevel": "n5",
+    "text": "この町には、子供が多い家庭もあります。",
+    "solution": "There are also families with many children in this town.",
+    "grammarPointIds": [
+      "relative-clause",
+      "existence-location",
+      "mo-addition"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-photo-year-before-last",
+    "minimumLevel": "n5",
+    "text": "I took this photo when I went to Japan the year before last.",
+    "solution": "おととし日本へ行ったときに、この写真を撮りました。",
+    "grammarPointIds": [
+      "toki",
+      "e-direction"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "took",
+        "vocabularyIds": [
+          "vocab-897d3a642135"
+        ]
+      },
+      {
+        "word": "photo",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      },
+      {
+        "word": "went",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "Japan",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
+      },
+      {
+        "word": "the year before last",
+        "vocabularyIds": [
+          "vocab-471625fba136"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-cloudy-but-no-rain",
+    "minimumLevel": "n5",
+    "text": "明日は曇りだそうですが、雨は降らないと思います。",
+    "solution": "I hear it will be cloudy tomorrow, but I think it will not rain.",
+    "grammarPointIds": [
+      "sou-hearsay",
+      "ga-contrast",
+      "to-omou"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-park-west-of-station",
+    "minimumLevel": "n5",
+    "text": "Would you like to play together in the park to the west of the station?",
+    "solution": "駅の西にある公園で、一緒に遊びませんか。",
+    "grammarPointIds": [
+      "relative-clause",
+      "de-action-location",
+      "masen-ka-invitation"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "play",
+        "vocabularyIds": [
+          "vocab-58a04652246f"
+        ]
+      },
+      {
+        "word": "park",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      },
+      {
+        "word": "west",
+        "vocabularyIds": [
+          "vocab-6f2e359ff6c8"
+        ]
+      },
+      {
+        "word": "station",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      },
+      {
+        "word": "together",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-southern-town-winter-flowers",
+    "minimumLevel": "n5",
+    "text": "南の町はここより暖かいので、冬でも花が咲きます。",
+    "solution": "The town to the south is warmer than here, so flowers bloom even in winter.",
+    "grammarPointIds": [
+      "yori-comparison",
+      "node-reason",
+      "demo-particle"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-lunch-out-cook-at-night",
+    "minimumLevel": "n5",
+    "text": "I eat out at lunchtime, but I cook at home at night.",
+    "solution": "昼は外で食べますが、夜は家で料理をします。",
+    "grammarPointIds": [
+      "wa-contrast",
+      "ga-contrast",
+      "de-action-location"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "eat",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "out",
+        "vocabularyIds": [
+          "vocab-6109638dac53"
+        ]
+      },
+      {
+        "word": "lunchtime",
+        "vocabularyIds": [
+          "vocab-4a9566e87de1"
+        ]
+      },
+      {
+        "word": "cook",
+        "vocabularyIds": [
+          "vocab-6ab8f730431c"
+        ]
+      },
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      },
+      {
+        "word": "night",
+        "vocabularyIds": [
+          "vocab-ba0c8a160c33"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-sister-turning-twenty",
+    "minimumLevel": "n5",
+    "text": "姉は来月二十歳になるので、家族で写真を撮るつもりです。",
+    "solution": "My older sister will turn twenty next month, so we plan to take a family photo.",
+    "grammarPointIds": [
+      "naru-change",
+      "node-reason",
+      "tsumori"
+    ],
+    "speechText": "姉はらいげつはたちになるので、家族で写真を撮るつもりです。"
+  },
+  {
+    "id": "production-n5-vocab-everyone-name-on-paper",
+    "minimumLevel": "n5",
+    "text": "Everyone, please write your name and then hand in this paper.",
+    "solution": "皆さん、名前を書いてから、この紙を出してください。",
+    "grammarPointIds": [
+      "te-kara",
+      "te-kudasai"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Everyone",
+        "vocabularyIds": [
+          "vocab-f062df24bcb3"
+        ]
+      },
+      {
+        "word": "write",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      },
+      {
+        "word": "name",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      },
+      {
+        "word": "hand in",
+        "vocabularyIds": [
+          "vocab-a001b24baf12"
+        ]
+      },
+      {
+        "word": "paper",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-clothes-too-expensive",
+    "minimumLevel": "n5",
+    "text": "この店の洋服は高すぎるので、あまり買いません。",
+    "solution": "The clothes in this shop are too expensive, so I do not buy them very often.",
+    "grammarPointIds": [
+      "sugiru",
+      "node-reason",
+      "frequency-adverbs"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-dress-shirt-already-washed",
+    "minimumLevel": "n5",
+    "text": "The dress shirt I will wear tomorrow has already been washed.",
+    "solution": "明日着るワイシャツは、もう洗ってあります。",
+    "grammarPointIds": [
+      "relative-clause",
+      "te-aru-result-state",
+      "mou"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "dress shirt",
+        "vocabularyIds": [
+          "vocab-7294370af1b1"
+        ]
+      },
+      {
+        "word": "wear",
+        "vocabularyIds": [
+          "vocab-8298c6a732a7"
+        ]
+      },
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
+      },
+      {
+        "word": "washed",
+        "vocabularyIds": [
+          "vocab-84e555b3292a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-old-car-still-usable",
+    "minimumLevel": "n5",
+    "text": "この自動車は古いですが、まだ使うことができます。",
+    "solution": "This car is old, but it can still be used.",
+    "grammarPointIds": [
+      "ga-contrast",
+      "mada",
+      "koto-ga-dekiru"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-heater-warms-room",
+    "minimumLevel": "n5",
+    "text": "When you turn on the heater, the room gets warm.",
+    "solution": "ストーブをつけると、部屋が暖かくなります。",
+    "grammarPointIds": [
+      "to-conditional",
+      "naru-ku-change"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "turn on",
+        "vocabularyIds": [
+          "vocab-fb80dfec7361"
+        ]
+      },
+      {
+        "word": "heater",
+        "vocabularyIds": [
+          "vocab-043c8767225d"
+        ]
+      },
+      {
+        "word": "room",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "warm",
+        "vocabularyIds": [
+          "vocab-b1d6f8ff0597"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-whose-bag-over-there",
+    "minimumLevel": "n5",
+    "text": "そこに置いてあるかばんは、誰のですか。",
+    "solution": "Whose is the bag that has been left there?",
+    "grammarPointIds": [
+      "kosoado-places",
+      "te-aru-result-state",
+      "no-noun-omission"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-try-sushi-in-japan",
+    "minimumLevel": "n5",
+    "text": "When I go to Japan, I want to try eating delicious sushi.",
+    "solution": "日本へ行ったら、おいしい寿司を食べてみたいです。",
+    "grammarPointIds": [
+      "tara-conditional",
+      "te-miru",
+      "tai-desire"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Japan",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
+      },
+      {
+        "word": "go",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "eating",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "delicious",
+        "vocabularyIds": [
+          "vocab-2f5084eba81c"
+        ]
+      },
+      {
+        "word": "sushi",
+        "vocabularyIds": [
+          "vocab-4f3be76b6adb"
+        ]
+      }
+    ],
+    "tokenOverrides": {
+      "みたい": {
+        "category": "auxiliary"
+      }
+    }
+  },
+  {
+    "id": "n5-vocab-snacks-while-watching-anime",
+    "minimumLevel": "n5",
+    "text": "弟はアニメを見ながらお菓子を食べています。",
+    "solution": "My younger brother is eating sweets while watching anime.",
+    "grammarPointIds": [
+      "nagara",
+      "te-iru-progressive"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-want-pizza-only-bread",
+    "minimumLevel": "n5",
+    "text": "I want to eat pizza, but today there is only bread.",
+    "solution": "ピザが食べたいですが、今日はパンしかありません。",
+    "grammarPointIds": [
+      "tai-desire",
+      "ga-contrast",
+      "shika-nai-limitation"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "eat",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "pizza",
+        "vocabularyIds": [
+          "vocab-79f59214e13d"
+        ]
+      },
+      {
+        "word": "today",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      },
+      {
+        "word": "bread",
+        "vocabularyIds": [
+          "vocab-3ad79496437d"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-hamburger-too-big-to-finish",
+    "minimumLevel": "n5",
+    "text": "このハンバーガーは大きすぎて、全部食べることができません。",
+    "solution": "This hamburger is too big, so I cannot eat it all.",
+    "grammarPointIds": [
+      "sugiru",
+      "koto-ga-dekiru"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-mother-teaches-tempura",
+    "minimumLevel": "n5",
+    "text": "My mother showed me how to make tempura.",
+    "solution": "母に天ぷらの作り方を教えてもらいました。",
+    "grammarPointIds": [
+      "kata-how-to",
+      "te-morau"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "mother",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      },
+      {
+        "word": "showed",
+        "vocabularyIds": [
+          "vocab-de83de37aff5"
+        ]
+      },
+      {
+        "word": "make",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
+        "word": "tempura",
+        "vocabularyIds": [
+          "vocab-ca716662934d"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-karaoke-despite-poor-singing",
+    "minimumLevel": "n5",
+    "text": "歌うのは上手ではありませんが、友達とカラオケに行くのが好きです。",
+    "solution": "I am not good at singing, but I like going to karaoke with my friends.",
+    "grammarPointIds": [
+      "no-nominalizer",
+      "na-adjective-negative",
+      "no-ga-suki"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-quiet-shrine-visited-yesterday",
+    "minimumLevel": "n5",
+    "text": "The shrine I visited yesterday was quiet and very beautiful.",
+    "solution": "昨日行った神社は静かで、とてもきれいでした。",
+    "grammarPointIds": [
+      "relative-clause",
+      "adjective-connective",
+      "na-adjective-past"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "shrine",
+        "vocabularyIds": [
+          "vocab-52f3fbf326dd"
+        ]
+      },
+      {
+        "word": "visited",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "yesterday",
+        "vocabularyIds": [
+          "vocab-eb208b6436bb"
+        ]
+      },
+      {
+        "word": "quiet",
+        "vocabularyIds": [
+          "vocab-61b57e2d4702"
+        ]
+      },
+      {
+        "word": "very",
+        "vocabularyIds": [
+          "vocab-ffc41bd9a841"
+        ]
+      },
+      {
+        "word": "beautiful",
+        "vocabularyIds": [
+          "vocab-58a738a344fe"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-only-sweet-strawberries",
+    "minimumLevel": "n5",
+    "text": "いちごは好きですが、甘いのだけ食べたいです。",
+    "solution": "I like strawberries, but I only want to eat sweet ones.",
+    "grammarPointIds": [
+      "suki-kirai",
+      "no-noun-omission",
+      "dake-limitation"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-glass-of-water-on-desk",
+    "minimumLevel": "n5",
+    "text": "Please put water in this glass and place it on the desk.",
+    "solution": "このグラスに水を入れて、机の上に置いてください。",
+    "grammarPointIds": [
+      "te-action-link",
+      "positional-nouns",
+      "te-kudasai"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "put",
+        "vocabularyIds": [
+          "vocab-b5e9e035a8be"
+        ]
+      },
+      {
+        "word": "water",
+        "vocabularyIds": [
+          "vocab-28ddfdc9290c"
+        ]
+      },
+      {
+        "word": "glass",
+        "vocabularyIds": [
+          "vocab-9005016cff6f"
+        ]
+      },
+      {
+        "word": "place",
+        "vocabularyIds": [
+          "vocab-db6357cc3ab6"
+        ]
+      },
+      {
+        "word": "desk",
+        "vocabularyIds": [
+          "vocab-0cbee2d10284"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-tea-preferred-to-cola",
+    "minimumLevel": "n5",
+    "text": "コーラよりお茶のほうが好きなので、お茶をください。",
+    "solution": "I prefer tea to cola, so please give me tea.",
+    "grammarPointIds": [
+      "hou-ga-comparison",
+      "node-reason",
+      "o-kudasai"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-slippers-before-entering-room",
+    "minimumLevel": "n5",
+    "text": "Put on these slippers before entering the room, please.",
+    "solution": "このスリッパをはいてから、部屋に入ってください。",
+    "grammarPointIds": [
+      "te-kara",
+      "te-kudasai",
+      "ni-destination"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Put on",
+        "vocabularyIds": [
+          "vocab-fa3b853fc275"
+        ]
+      },
+      {
+        "word": "slippers",
+        "vocabularyIds": [
+          "vocab-f01866f4a7e8"
+        ]
+      },
+      {
+        "word": "entering",
+        "vocabularyIds": [
+          "vocab-82a114897d9c"
+        ]
+      },
+      {
+        "word": "room",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-kitchen-small-window-dark",
+    "minimumLevel": "n5",
+    "text": "キッチンには小さい窓しかないので、いつも暗いです。",
+    "solution": "The kitchen only has a small window, so it is always dark.",
+    "grammarPointIds": [
+      "shika-nai-limitation",
+      "node-reason"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-soccer-and-running-yesterday",
+    "minimumLevel": "n5",
+    "text": "Yesterday, I did things like play soccer with my friends and run in the park.",
+    "solution": "昨日は友達とサッカーをしたり、公園で走ったりしました。",
+    "grammarPointIds": [
+      "tari-tari-suru",
+      "to-companion",
+      "de-action-location"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Yesterday",
+        "vocabularyIds": [
+          "vocab-eb208b6436bb"
+        ]
+      },
+      {
+        "word": "soccer",
+        "vocabularyIds": [
+          "vocab-8c8a56e8dd8d"
+        ]
+      },
+      {
+        "word": "friends",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "run",
+        "vocabularyIds": [
+          "vocab-97526e11c703"
+        ]
+      },
+      {
+        "word": "park",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-salad-before-meat",
+    "minimumLevel": "n5",
+    "text": "肉を食べる前に、このサラダを食べてみてください。",
+    "solution": "Please try this salad before eating the meat.",
+    "grammarPointIds": [
+      "mae-ni",
+      "te-miru",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-jacket-cheaper-than-last-one",
+    "minimumLevel": "n5",
+    "text": "This jacket is cheaper than the one I bought at that shop.",
+    "solution": "このジャケットはあの店で買ったのより安いです。",
+    "grammarPointIds": [
+      "relative-clause",
+      "yori-comparison",
+      "no-noun-omission"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "jacket",
+        "vocabularyIds": [
+          "vocab-ed670abe90b2"
+        ]
+      },
+      {
+        "word": "cheaper",
+        "vocabularyIds": [
+          "vocab-0513945a1ef5"
+        ]
+      },
+      {
+        "word": "bought",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "shop",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-buy-shampoo-before-returning",
+    "minimumLevel": "n5",
+    "text": "シャンプーが少ししかないので、帰る前に買います。",
+    "solution": "There is only a little shampoo left, so I will buy some before going home.",
+    "grammarPointIds": [
+      "shika-nai-limitation",
+      "node-reason",
+      "mae-ni"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-ticket-before-boarding-train",
+    "minimumLevel": "n5",
+    "text": "You must buy a ticket before boarding the train.",
+    "solution": "電車に乗る前に、チケットを買わなければなりません。",
+    "grammarPointIds": [
+      "mae-ni",
+      "nakereba-naranai"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "buy",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "ticket",
+        "vocabularyIds": [
+          "vocab-c3f90d77e389"
+        ]
+      },
+      {
+        "word": "boarding",
+        "vocabularyIds": [
+          "vocab-9e0eeba39759"
+        ]
+      },
+      {
+        "word": "train",
+        "vocabularyIds": [
+          "vocab-dc7f5fc156cf"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-thin-tomato-slices-on-bread",
+    "minimumLevel": "n5",
+    "text": "トマトを薄く切って、パンの上に置きます。",
+    "solution": "I slice the tomato thinly and put it on the bread.",
+    "grammarPointIds": [
+      "i-adjective-adverb",
+      "te-action-link",
+      "positional-nouns"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-hair-dryer-after-washing",
+    "minimumLevel": "n5",
+    "text": "May I use this hair dryer after washing my hair?",
+    "solution": "髪を洗ってから、このドライヤーを使ってもいいですか。",
+    "grammarPointIds": [
+      "te-kara",
+      "te-mo-ii"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "use",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      },
+      {
+        "word": "hair dryer",
+        "vocabularyIds": [
+          "vocab-685cffa262d1"
+        ]
+      },
+      {
+        "word": "washing",
+        "vocabularyIds": [
+          "vocab-84e555b3292a"
+        ]
+      },
+      {
+        "word": "hair",
+        "vocabularyIds": [
+          "vocab-c316760df288"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-want-motorcycle-not-car",
+    "minimumLevel": "n5",
+    "text": "兄は車を持っていますが、私はバイクが欲しいです。",
+    "solution": "My older brother has a car, but I want a motorcycle.",
+    "grammarPointIds": [
+      "te-iru-result-state",
+      "ga-contrast",
+      "hoshii"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-present-from-friend-on-desk",
+    "minimumLevel": "n5",
+    "text": "The present I received from my friend is on the desk.",
+    "solution": "友達にもらったプレゼントは、机の上にあります。",
+    "grammarPointIds": [
+      "relative-clause",
+      "morau",
+      "positional-nouns"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "present",
+        "vocabularyIds": [
+          "vocab-b4c6573e6f19"
+        ]
+      },
+      {
+        "word": "received",
+        "vocabularyIds": [
+          "vocab-9d61f6197627"
+        ]
+      },
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "desk",
+        "vocabularyIds": [
+          "vocab-0cbee2d10284"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-balcony-breakfast-sea-view",
+    "minimumLevel": "n5",
+    "text": "ベランダから海が見えるので、ここで朝御飯を食べましょう。",
+    "solution": "We can see the sea from the balcony, so let us have breakfast here.",
+    "grammarPointIds": [
+      "kara-start",
+      "mieru-kikoeru",
+      "mashou"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-apartment-building-near-station",
+    "minimumLevel": "n5",
+    "text": "I would like to try living in an apartment building near the station.",
+    "solution": "駅の近くにあるマンションに住んでみたいです。",
+    "grammarPointIds": [
+      "relative-clause",
+      "positional-nouns",
+      "te-miru"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "living",
+        "vocabularyIds": [
+          "vocab-405805427b97"
+        ]
+      },
+      {
+        "word": "apartment building",
+        "vocabularyIds": [
+          "vocab-27c6bc8b49e4"
+        ]
+      },
+      {
+        "word": "station",
+        "vocabularyIds": [
+          "vocab-d29031265cf4"
+        ]
+      },
+      {
+        "word": "near",
+        "vocabularyIds": [
+          "vocab-cacc70775f3e"
+        ]
+      }
+    ],
+    "tokenOverrides": {
+      "みたい": {
+        "category": "auxiliary"
+      }
+    }
+  },
+  {
+    "id": "n5-vocab-only-yogurt-when-busy",
+    "minimumLevel": "n5",
+    "text": "朝御飯を食べる時間がないときは、ヨーグルトだけ食べます。",
+    "solution": "When I do not have time to eat breakfast, I only eat yogurt.",
+    "grammarPointIds": [
+      "relative-clause",
+      "toki",
+      "dake-limitation"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-light-backpack-for-trip",
+    "minimumLevel": "n5",
+    "text": "This backpack is light and holds a lot, so I want to take it on my trip.",
+    "solution": "このリュックは軽くて、たくさん入るので、旅行に持って行きたいです。",
+    "grammarPointIds": [
+      "adjective-connective",
+      "node-reason",
+      "tai-desire"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "backpack",
+        "vocabularyIds": [
+          "vocab-08a066a68077"
+        ]
+      },
+      {
+        "word": "light",
+        "vocabularyIds": [
+          "vocab-463ea6ce108e"
+        ]
+      },
+      {
+        "word": "holds",
+        "vocabularyIds": [
+          "vocab-82a114897d9c"
+        ]
+      },
+      {
+        "word": "a lot",
+        "vocabularyIds": [
+          "vocab-106fdb214a72"
+        ]
+      },
+      {
+        "word": "take",
+        "vocabularyIds": [
+          "vocab-516ad1128c71",
+          "vocab-ec22142c23d3"
+        ]
+      },
+      {
+        "word": "trip",
+        "vocabularyIds": [
+          "vocab-2e3ba98d2367"
+        ]
+      }
+    ]
   }
 ]
