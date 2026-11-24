@@ -57,8 +57,9 @@ export function validateNotes(notes, locales) {
     throw new Error("Release notes must contain nonempty language/text entries of at most 4000 characters.");
   }
   const byLocale = new Map(notes.map(note => [note.language, note.text]));
-  if (byLocale.size !== notes.length || locales.some(locale => !byLocale.has(locale))) {
-    throw new Error("Release notes must cover every existing localization without duplicate languages.");
+  const missing = locales.filter(locale => !byLocale.has(locale));
+  if (byLocale.size !== notes.length || missing.length) {
+    throw new Error(`Release notes must cover every existing localization without duplicate languages. Missing: ${missing.join(", ") || "none"}.`);
   }
   return byLocale;
 }
@@ -121,6 +122,7 @@ export async function executeAction(request, { action, versionName, buildNumber,
   if (action === "prepare") {
     if (!editableStates.has(version.attributes.appStoreState)) throw new Error("The version is not editable.");
     const localizations = await list(request, `${versionPath}/appStoreVersionLocalizations?limit=200`);
+    report.localizations = localizations.map(item => ({ locale: item.attributes.locale, whatsNew: item.attributes.whatsNew }));
     if (!localizations.length) throw new Error("The new version has no inherited store localizations.");
     const byLocale = validateNotes(notes, localizations.map(item => item.attributes.locale));
     for (const localization of localizations) {
