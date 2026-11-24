@@ -1,0 +1,59 @@
+name: App Store production
+run-name: App Store ${{ inputs.action }} ${{ inputs.version_name }} (${{ inputs.build_number }})
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Inspect, prepare an uploaded build, or submit it for review
+        type: choice
+        options: [inspect, prepare, submit]
+        default: inspect
+        required: true
+      version_name:
+        description: Marketing version, required for prepare and submit
+        type: string
+      build_number:
+        description: Exact uploaded build number, required for prepare and submit
+        type: string
+      release_notes_file:
+        description: Reviewed language/text JSON file, required for prepare
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: app-store-production
+  cancel-in-progress: false
+
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - name: Check App Store release safeguards
+        run: node --test tests/app-store-release.test.js
+      - name: Inspect or submit App Store release
+        env:
+          APP_STORE_CONNECT_KEY_BASE64: ${{ secrets.APP_STORE_CONNECT_KEY_BASE64 }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          ASC_ACTION: ${{ inputs.action }}
+          ASC_VERSION: ${{ inputs.version_name }}
+          ASC_BUILD_NUMBER: ${{ inputs.build_number }}
+          ASC_RELEASE_NOTES_PATH: ${{ inputs.release_notes_file }}
+          ASC_REPORT_PATH: ${{ runner.temp }}/app-store-production-report.json
+        run: node scripts/app-store-release.js
+      - name: Preserve submission report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: app-store-${{ inputs.action }}-${{ github.run_number }}
+          path: ${{ runner.temp }}/app-store-production-report.json
+          if-no-files-found: ignore
+          retention-days: 14

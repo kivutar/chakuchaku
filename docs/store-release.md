@@ -216,6 +216,29 @@ password, and the `.mobileprovision` file. They are ignored by Git. The current
 distribution certificate and profile expire on August 19, 2027; replace the
 certificate/profile and their three signing secrets before then.
 
+### App Store production submission
+
+The build workflow uploads to TestFlight. Use the separate App Store production
+workflow to prepare and submit that exact processed build for App Review:
+
+```sh
+gh workflow run app-store-release.yml -f action=inspect
+gh workflow run app-store-release.yml -f action=prepare \
+  -f version_name=1.0.18 -f build_number=2201 \
+  -f release_notes_file=docs/releases/android-1.0.18.json
+gh workflow run app-store-release.yml -f action=submit \
+  -f version_name=1.0.18 -f build_number=2201
+```
+
+Use the actual build number from the successful iOS build workflow. The release
+notes format is shared with Google Play. Preparation retains the existing store
+listing and screenshots, updates What's New in every existing language, selects
+the exact build, and enables automatic release after approval. Submission checks
+the app identity, marketing version, build processing and export compliance; it
+refuses to include unrelated review items. Both actions retain a JSON report.
+Inspect the final version and submission states to distinguish an uploaded build
+from a release waiting for review or available on the store.
+
 ### Device and store checks
 
 1. For optional local development on a Mac, run `npm run ios:open`, select team
