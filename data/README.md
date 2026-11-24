@@ -135,15 +135,16 @@ the N5 curricula published by Bunpro, JLPT Sensei, and Yatta. `boundary` keeps
 useful points that sources variously place at N5 or N4 without presenting them
 as undisputed N5 requirements.
 
-The three N5 vocabulary practice batches add 150 distinct sentences: 75 recognition
-and 75 production exercises. Each uses exactly one previously uncovered N5 vocabulary
+The four N5 vocabulary practice batches add 200 distinct Japanese exercise texts:
+100 recognition and 100 production exercises. Each uses exactly one previously uncovered N5 vocabulary
 entry, covered N5 supporting vocabulary, and two or three grammar points from
 the existing N5 curriculum. This reduces N5 entries without a linked grammar
-exercise from 242 to 92. English and French translations, production hints,
+exercise from 242 to 42. English and French translations, production hints,
 Japanese recordings, and the separate review of every exercise are recorded in
 the [first batch review](source/n5-vocabulary-practice-review-2026-11-24.json),
 [second batch review](source/n5-vocabulary-practice-batch-2-review-2026-11-24.json),
-and [third batch review](source/n5-vocabulary-practice-batch-3-review-2026-11-24.json).
+[third batch review](source/n5-vocabulary-practice-batch-3-review-2026-11-24.json),
+and [fourth batch review](source/n5-vocabulary-practice-batch-4-review-2026-11-24.json).
 The second batch also corrects dictionary tags and word boundaries needed to
 link `嫌い`, `結婚`, `散歩`, `お兄さん`, `お姉さん`, `二十歳`, `曇り`, and adjectival
 `色々` correctly, retaining their vocabulary IDs and existing progress. The follow-up
@@ -157,6 +158,13 @@ exercises, vocabulary IDs, and levels remain unchanged.
 The follow-up review adds the `いる` hint for staying home and corrects the
 uncle entry's headword to `おじさん`, matching its reading and meaning while
 retaining `伯父さん` and `叔父さん` as kanji variants.
+The fourth batch practices dates, quantities, directions, greetings, and everyday
+expressions. It preserves irregular date readings as whole words, distinguishes
+the two meanings of `キロ`, and explicitly practices `十（とお）`,
+`一月（ひとつき）`, and `私（わたくし）`. Its dictionary corrections retain
+existing IDs and levels, and no previous grammar exercise changes. Entries such
+as `外国人`, `コピー`, `誰か`, and duration `一日` already occur in older
+sentences despite missing links; they are excluded from this batch's new targets.
 
 The live N4 slice contains 97 high-value points and 517 independently authored
 recognition and production exercises, plus exercises borrowed from N4 stories.

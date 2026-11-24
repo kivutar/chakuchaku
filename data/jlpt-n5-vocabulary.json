@@ -355,6 +355,9 @@
         "surface": "後",
         "reading": "あと"
       }
+    ],
+    "variants": [
+      "あと"
     ]
   },
   {
@@ -538,7 +541,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "interjection"
+    "partOfSpeech": "pronoun"
   },
   {
     "id": "vocab-ef4cce00951f",
@@ -768,7 +771,8 @@
     "partOfSpeech": "number",
     "variants": [
       "5日"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-842637e88e8c",
@@ -3107,7 +3111,8 @@
     "partOfSpeech": "number",
     "variants": [
       "9日"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-0d0163a40587",
@@ -3473,7 +3478,11 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "adverb"
+    "partOfSpeech": "noun",
+    "variants": [
+      "再来年"
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-bd1d44806672",
@@ -4917,7 +4926,8 @@
     "source": "open-anki-jlpt-decks",
     "partOfSpeech": "number",
     "variants": [
-      "1日"
+      "1日",
+      "ついたち"
     ]
   },
   {
@@ -5378,7 +5388,8 @@
     "partOfSpeech": "number",
     "variants": [
       "10日"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-f6481b840edb",
@@ -5770,7 +5781,8 @@
     "partOfSpeech": "number",
     "variants": [
       "7日"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-09558b341dc0",
@@ -6312,7 +6324,8 @@
     "partOfSpeech": "number",
     "variants": [
       "20日"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-fa6a4c8f27b4",
@@ -6880,7 +6893,8 @@
     "partOfSpeech": "number",
     "variants": [
       "2日"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-b7ea6f7eb013",
@@ -7086,7 +7100,10 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "variants": [
+      "ほか"
+    ]
   },
   {
     "id": "vocab-a2486e569541",
@@ -7437,7 +7454,7 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "adverb",
+    "partOfSpeech": "number",
     "variants": [
       "10000"
     ]
@@ -7623,7 +7640,8 @@
     "partOfSpeech": "number",
     "variants": [
       "6日"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-9b462ae20b9c",
@@ -8028,7 +8046,8 @@
     "partOfSpeech": "number",
     "variants": [
       "8日"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-60452785e7a1",
@@ -8075,7 +8094,8 @@
     "partOfSpeech": "number",
     "variants": [
       "4日"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-947395f42397",

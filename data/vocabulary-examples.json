@@ -1446,7 +1446,8 @@
       {
         "surface": "あれ",
         "category": "noun",
-        "reading": "あれ"
+        "reading": "あれ",
+        "vocabularyId": "vocab-56e4ae127cea"
       },
       {
         "surface": "は",
@@ -2029,20 +2030,14 @@
     "targetSurface": "五日",
     "targetReading": "いつか",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I rest for five days.",
     "tokens": [
       {
-        "surface": "五",
+        "surface": "五日",
         "category": "noun",
-        "reading": "ご",
-        "vocabularyId": "vocab-d4473f87e438"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "いつか",
+        "vocabularyId": "vocab-a02edbda9f4c"
       },
       {
         "surface": "休む",
@@ -8694,20 +8689,14 @@
     "targetSurface": "九日",
     "targetReading": "ここのか",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "The ninth is a day off.",
     "tokens": [
       {
-        "surface": "九",
+        "surface": "九日",
         "category": "noun",
-        "reading": "きゅう",
-        "vocabularyId": "vocab-d33ed6be2a48"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "ここのか",
+        "vocabularyId": "vocab-9acbf1542642"
       },
       {
         "surface": "は",
@@ -9834,19 +9823,14 @@
     "targetSurface": "さ来年",
     "targetReading": "さらいねん",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "The year after next, I will be in Japan.",
     "tokens": [
       {
-        "surface": "さ",
-        "category": "adverb",
-        "reading": "さ"
-      },
-      {
-        "surface": "来年",
+        "surface": "さ来年",
         "category": "noun",
-        "reading": "らいねん",
-        "vocabularyId": "vocab-fb3e6c8865d4"
+        "reading": "さらいねん",
+        "vocabularyId": "vocab-257e2b3e9983"
       },
       {
         "surface": "は",
@@ -15649,20 +15633,14 @@
     "targetSurface": "十日",
     "targetReading": "とおか",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "It is the tenth day.",
     "tokens": [
       {
-        "surface": "十",
+        "surface": "十日",
         "category": "noun",
-        "reading": "じゅう",
-        "vocabularyId": "vocab-877b9ba07a47"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "とおか",
+        "vocabularyId": "vocab-da2913ad7e4c"
       },
       {
         "surface": "です",
@@ -16880,20 +16858,14 @@
     "targetSurface": "七日",
     "targetReading": "なのか",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I go on the seventh.",
     "tokens": [
       {
-        "surface": "七",
+        "surface": "七日",
         "category": "noun",
-        "reading": "なな",
-        "vocabularyId": "vocab-651603322794"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "なのか",
+        "vocabularyId": "vocab-0655c242d1db"
       },
       {
         "surface": "に",
@@ -18646,7 +18618,7 @@
     "targetSurface": "二十日",
     "targetReading": "はつか",
     "targetTokenStart": 2,
-    "targetTokenEnd": 5,
+    "targetTokenEnd": 3,
     "translation": "Today is the twentieth.",
     "tokens": [
       {
@@ -18661,22 +18633,10 @@
         "reading": "は"
       },
       {
-        "surface": "二",
+        "surface": "二十日",
         "category": "noun",
-        "reading": "に",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "十",
-        "category": "noun",
-        "reading": "じゅう",
-        "vocabularyId": "vocab-877b9ba07a47"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "はつか",
+        "vocabularyId": "vocab-08e3c50181be"
       },
       {
         "surface": "です",
@@ -20270,20 +20230,14 @@
     "targetSurface": "二日",
     "targetReading": "ふつか",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I rest for two days.",
     "tokens": [
       {
-        "surface": "二",
+        "surface": "二日",
         "category": "noun",
-        "reading": "に",
-        "vocabularyId": "vocab-7fc81b0ddd17"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "ふつか",
+        "vocabularyId": "vocab-56d52b7869ab"
       },
       {
         "surface": "休み",
@@ -22041,8 +21995,7 @@
       {
         "surface": "万",
         "category": "adverb",
-        "reading": "まん",
-        "vocabularyId": "vocab-1807218bf360"
+        "reading": "まん"
       },
       {
         "surface": "あり",
@@ -22661,20 +22614,14 @@
     "targetSurface": "六日",
     "targetReading": "むいか",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I will rest for six days.",
     "tokens": [
       {
-        "surface": "六",
+        "surface": "六日",
         "category": "noun",
-        "reading": "ろく",
-        "vocabularyId": "vocab-06ef406f5569"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "むいか",
+        "vocabularyId": "vocab-7b2351210462"
       },
       {
         "surface": "休み",
@@ -23913,20 +23860,14 @@
     "targetSurface": "八日",
     "targetReading": "ようか",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "The eighth is a day off.",
     "tokens": [
       {
-        "surface": "八",
+        "surface": "八日",
         "category": "noun",
-        "reading": "はち",
-        "vocabularyId": "vocab-f6ed7c17c0d5"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "ようか",
+        "vocabularyId": "vocab-f50fcf40e898"
       },
       {
         "surface": "は",
@@ -24068,20 +24009,14 @@
     "targetSurface": "四日",
     "targetReading": "よっか",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "The fourth is Monday.",
     "tokens": [
       {
-        "surface": "四",
+        "surface": "四日",
         "category": "noun",
-        "reading": "よん",
-        "vocabularyId": "vocab-dc8d0860b963"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "よっか",
+        "vocabularyId": "vocab-13ea3220cde0"
       },
       {
         "surface": "は",

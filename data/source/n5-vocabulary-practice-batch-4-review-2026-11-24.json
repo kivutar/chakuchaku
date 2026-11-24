@@ -1,0 +1,1937 @@
+{
+  "reviewedAt": "2026-11-24",
+  "batch": 4,
+  "baselineRevision": "b666242e9dffdac9c30c4e16aa2b8f47d7199345",
+  "targetLevel": "n5",
+  "method": [
+    "Selected 50 distinct N5 vocabulary IDs without any prepared grammar-exercise links at the baseline, including both exercise directions and story-derived exercises. Each new exercise adds exactly one previously uncovered word, using already covered N5 supporting vocabulary and two or three points from the app N5 curriculum, including established boundary points.",
+    "Checked candidate spellings, variants, meanings and readings against baseline sentences. Excluded 外国人, コピー, 誰か, duration 一日 and 三日 because they already occurred despite missing links. Existing copula じゃ/では, grammatical そう, 外 read そと, 私 read わたし and 十 read じゅう do not practice the distinct entries selected here.",
+    "After drafting, separately reviewed all 50 Japanese sentences, English and French translations, grammar targets, readings, dictionary links and production hints. Individual review notes record the final findings and corrections.",
+    "Corrected fifteen dictionary metadata entries needed for irregular dates, valid kana/kanji variants and word classes. Vocabulary IDs and levels are unchanged; no previous grammar exercise changed. Twelve vocabulary examples now have corrected whole-word links or word classes.",
+    "Decoded every final M4A recording to PCM and checked audible speech, duration and silence. Independently transcribed all 50 with gpt-4o-transcribe without supplying the expected sentence; documented orthographic differences and regenerated recordings flagged by audio validation, independent transcription or editorial revision; per-entry reasons are recorded below.",
+    "Independently transcribed 17 ambiguity-prone recordings again with only a hiragana-formatting prompt and no expected sentence. Checked irregular dates, counts, 字引, 私 read わたくし, and other unclear targets; retained both transcripts when normal kanji transcription substituted an unrelated word.",
+    "In an isolated Chromium browser at a 390-pixel mobile viewport, rendered all prompts and answers in English and French, opened every production hint, checked its dictionary IDs and hint credit exclusions, checked grammar lists and audio buttons, decoded all 50 recordings, and played representative recognition and production recordings in both languages.",
+    "reviewedContentSha256 hashes UTF-8 compact JSON with sorted keys using {source: sourceExercise, french: sourceFrenchEntry, prepared: preparedExercise}. Audio hashes cover the final M4A bytes."
+  ],
+  "summary": {
+    "newExercises": 50,
+    "recognition": 25,
+    "production": 25,
+    "distinctJapaneseSentences": 50,
+    "newlyCoveredN5Vocabulary": 50,
+    "exactlyOnePreviouslyUncoveredVocabularyPerExercise": true,
+    "grammarPointsPerExercise": [
+      2,
+      3
+    ],
+    "distinctGrammarTargets": 59,
+    "n5VocabularyWithoutGrammarExercisesBefore": 92,
+    "n5VocabularyWithoutGrammarExercisesAfter": 42,
+    "newRecordings": 50,
+    "additionalPhoneticTranscriptions": 17,
+    "individuallyReviewed": 50,
+    "dictionaryMetadataCorrections": 15,
+    "previousVocabularyExamplesRelinked": 12,
+    "previousGrammarExercisesChanged": 0,
+    "vocabularyIdsAndLevelsUnchanged": true,
+    "testFilesPassed": 36,
+    "webBuild": "passed",
+    "nativeBuild": "passed",
+    "audioLibraryValidation": "passed"
+  },
+  "dictionaryCorrections": [
+    {
+      "id": "vocab-415439a1dbb6",
+      "term": "後",
+      "reason": "Add the ordinary kana spelling あと for remaining time.",
+      "before": {
+        "variants": null
+      },
+      "after": {
+        "variants": [
+          "あと"
+        ]
+      }
+    },
+    {
+      "id": "vocab-56e4ae127cea",
+      "term": "あれ",
+      "reason": "Correct the demonstrative from interjection to pronoun so its use as that one links correctly.",
+      "before": {
+        "partOfSpeech": "interjection"
+      },
+      "after": {
+        "partOfSpeech": "pronoun"
+      }
+    },
+    {
+      "id": "vocab-a02edbda9f4c",
+      "term": "五日",
+      "reason": "Keep the irregular date/duration reading as a complete word rather than a cardinal numeral and 日.",
+      "before": {
+        "tokenizeAsWord": null
+      },
+      "after": {
+        "tokenizeAsWord": true
+      }
+    },
+    {
+      "id": "vocab-9acbf1542642",
+      "term": "九日",
+      "reason": "Keep the irregular date/duration reading as a complete word rather than a cardinal numeral and 日.",
+      "before": {
+        "tokenizeAsWord": null
+      },
+      "after": {
+        "tokenizeAsWord": true
+      }
+    },
+    {
+      "id": "vocab-257e2b3e9983",
+      "term": "さ来年",
+      "reason": "Classify the time word as a noun, allow standard spelling 再来年, and keep the original mixed spelling whole in its vocabulary example.",
+      "before": {
+        "partOfSpeech": "adverb",
+        "tokenizeAsWord": null,
+        "variants": null
+      },
+      "after": {
+        "partOfSpeech": "noun",
+        "tokenizeAsWord": true,
+        "variants": [
+          "再来年"
+        ]
+      }
+    },
+    {
+      "id": "vocab-367ca325e078",
+      "term": "一日",
+      "reason": "Add the kana date spelling ついたち to distinguish the first of the month without altering existing duration sentences.",
+      "before": {
+        "variants": [
+          "1日"
+        ]
+      },
+      "after": {
+        "variants": [
+          "1日",
+          "ついたち"
+        ]
+      }
+    },
+    {
+      "id": "vocab-da2913ad7e4c",
+      "term": "十日",
+      "reason": "Keep the irregular date/duration reading as a complete word rather than a cardinal numeral and 日.",
+      "before": {
+        "tokenizeAsWord": null
+      },
+      "after": {
+        "tokenizeAsWord": true
+      }
+    },
+    {
+      "id": "vocab-0655c242d1db",
+      "term": "七日",
+      "reason": "Keep the irregular date/duration reading as a complete word rather than a cardinal numeral and 日.",
+      "before": {
+        "tokenizeAsWord": null
+      },
+      "after": {
+        "tokenizeAsWord": true
+      }
+    },
+    {
+      "id": "vocab-08e3c50181be",
+      "term": "二十日",
+      "reason": "Keep the irregular date/duration reading as a complete word rather than a cardinal numeral and 日.",
+      "before": {
+        "tokenizeAsWord": null
+      },
+      "after": {
+        "tokenizeAsWord": true
+      }
+    },
+    {
+      "id": "vocab-56d52b7869ab",
+      "term": "二日",
+      "reason": "Keep the irregular date/duration reading as a complete word rather than a cardinal numeral and 日.",
+      "before": {
+        "tokenizeAsWord": null
+      },
+      "after": {
+        "tokenizeAsWord": true
+      }
+    },
+    {
+      "id": "vocab-e9503021d78e",
+      "term": "外",
+      "reason": "Add the ordinary kana spelling ほか for other/remaining alternatives, distinct from 外 read そと.",
+      "before": {
+        "variants": null
+      },
+      "after": {
+        "variants": [
+          "ほか"
+        ]
+      }
+    },
+    {
+      "id": "vocab-1807218bf360",
+      "term": "万",
+      "reason": "Correct ten thousand from adverb to number.",
+      "before": {
+        "partOfSpeech": "adverb"
+      },
+      "after": {
+        "partOfSpeech": "number"
+      }
+    },
+    {
+      "id": "vocab-7b2351210462",
+      "term": "六日",
+      "reason": "Keep the irregular date/duration reading as a complete word rather than a cardinal numeral and 日.",
+      "before": {
+        "tokenizeAsWord": null
+      },
+      "after": {
+        "tokenizeAsWord": true
+      }
+    },
+    {
+      "id": "vocab-f50fcf40e898",
+      "term": "八日",
+      "reason": "Keep the irregular date/duration reading as a complete word rather than a cardinal numeral and 日.",
+      "before": {
+        "tokenizeAsWord": null
+      },
+      "after": {
+        "tokenizeAsWord": true
+      }
+    },
+    {
+      "id": "vocab-13ea3220cde0",
+      "term": "四日",
+      "reason": "Keep the irregular date/duration reading as a complete word rather than a cardinal numeral and 日.",
+      "before": {
+        "tokenizeAsWord": null
+      },
+      "after": {
+        "tokenizeAsWord": true
+      }
+    }
+  ],
+  "entries": [
+    {
+      "id": "n5-vocab-oh-homework-left-at-home",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "ああ、宿題を家に忘れたので、取りに帰らなければなりません。",
+      "grammarPointIds": [
+        "node-reason",
+        "movement-purpose",
+        "nakereba-naranai"
+      ],
+      "reviewNote": "Natural reaction to forgotten homework. Both translations preserve the obligation and returning specifically to retrieve it; ああ is an interjection, not the manner adverb.",
+      "focusVocabulary": {
+        "id": "vocab-acc6dcfb8567",
+        "term": "ああ",
+        "reading": "ああ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "83f19d557c44e4b43b849a9d876c226eab6bf51240b0e9bb4ab374d57618dea4",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-oh-homework-left-at-home.m4a",
+        "sha256": "4369617d58fea40889d86e4c5ee97cb8cca352776f8651e88cf899dee8805875",
+        "durationSeconds": 5.2,
+        "transcript": "ああ、宿題を家に忘れたので、取りに帰らなければなりません。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-person-sitting-over-there-is-teacher",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "あっちに座っている人は、私の先生です。",
+      "grammarPointIds": [
+        "relative-clause",
+        "te-iru-result-state",
+        "no-possession"
+      ],
+      "reviewNote": "The seated person is the speaker's teacher. Relative clause and resulting seated state are correctly distinguished; hints cover distance, person, sitting and teacher in both languages.",
+      "focusVocabulary": {
+        "id": "vocab-f14c108fc553",
+        "term": "あっち",
+        "reading": "あっち",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "1697379219c6335655b34a825b54f88bb16e7d146487b2fd5bcbe6bd3f24abf2",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-person-sitting-over-there-is-teacher.m4a",
+        "sha256": "7c11f4dab6ecc9f8852a095ea4c2d98ca7f6c6ccb83eaa637a07e123f6e876b7",
+        "durationSeconds": 3.75,
+        "transcript": "あっちに座っている人は私の先生です。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed",
+        "regenerationReason": "Initial recording failed duration validation; regenerated successfully."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-that-cake-sister-made-not-eaten",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "あれは姉が作ったケーキですが、まだ食べていません。",
+      "grammarPointIds": [
+        "kosoado-pronouns",
+        "relative-clause",
+        "mada-te-inai"
+      ],
+      "reviewNote": "Corrected the dictionary classification of あれ to pronoun. The relative clause identifies the sister's cake; まだ～ていません means not eaten yet, with faithful translations.",
+      "focusVocabulary": {
+        "id": "vocab-56e4ae127cea",
+        "term": "あれ",
+        "reading": "あれ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "90f75dc8072c7e749fafc8a5aa9effaae6b6bb5ce5493a53120d7a2a9833fa99",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-that-cake-sister-made-not-eaten.m4a",
+        "sha256": "c0648f9e2d05b4963f12022500efbb16135ecda5dbc6864f5f09ca0b972ece1b",
+        "durationSeconds": 4,
+        "transcript": "あれは姉が作ったケーキですが、まだ食べていません。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-fifth-of-next-month-return-to-japan",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "来月の五日に、日本へ帰るつもりです。",
+      "grammarPointIds": [
+        "ni-time",
+        "e-direction",
+        "tsumori"
+      ],
+      "reviewNote": "The fifth is a calendar date, not five days. Preserved 五日 as a single いつか token and linked the date, Japan, returning and next month hints.",
+      "focusVocabulary": {
+        "id": "vocab-a02edbda9f4c",
+        "term": "五日",
+        "reading": "いつか",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "e17b95ca667a80424a59dd7046781f69403ce0da443e569cd918dbabdcb1c345",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-fifth-of-next-month-return-to-japan.m4a",
+        "sha256": "87a04dc71b91be86306b18003c242bdb22fcbb9f6ee8aaec5a98753b96d44e5c",
+        "durationSeconds": 3.65,
+        "transcript": "来月の五日に日本へ帰るつもりです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "phoneticTranscript": "らいげつのいつかに、にほんへかえるつもりです。",
+        "phoneticTargetReading": "いつか",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-mother-says-yes-then-hangs-up",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "母は「ええ」と言ってから、電話を切りました。",
+      "grammarPointIds": [
+        "to-quotation",
+        "te-kara"
+      ],
+      "reviewNote": "ええ is quoted as the mother’s affirmative response before hanging up the telephone. Rewrote the context after repeated silent recordings of the original sentence; quotation and ～てから remain natural N5 targets. 電話を切る is the idiom for ending a phone call, faithfully reflected in both translations.",
+      "focusVocabulary": {
+        "id": "vocab-0afc81d87148",
+        "term": "ええ",
+        "reading": "ええ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "44202a963890a71e2bfea7476a62c43c9a791f85ca3a2f6dda40d4deb0a73d88",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-mother-says-yes-then-hangs-up.m4a",
+        "sha256": "6749431f4dd30a06f7b7d8daff4eac00d1d379ce754364265db21ce509717405",
+        "durationSeconds": 4.15,
+        "transcript": "母は「ええ」と言ってから電話を切りました。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed",
+        "regenerationReason": "Four generation attempts of the original sentence failed the audible-speech check, including a speech-punctuation change. Rewrote the sentence to quote the mother saying ええ, then generated and independently transcribed the replacement."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-woman-in-photo-sings-well",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "写真の女の人は、歌を歌うのが上手です。",
+      "grammarPointIds": [
+        "no-possession",
+        "no-ga-jouzu-heta"
+      ],
+      "reviewNote": "女の人 gives the natural polite reference to a woman. Revised French to est douée pour chanter to prevent bien des chansons from being interpreted as many songs; all concrete words have hints.",
+      "focusVocabulary": {
+        "id": "vocab-4d9423288cb2",
+        "term": "女",
+        "reading": "おんな",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "68044267e274d3da7de70aee0fb339db4ba42d8771d1fa25371649a71bfe7032",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-woman-in-photo-sings-well.m4a",
+        "sha256": "7a341fdd99fd8de0fe53bd64c31756dce91c9c0d031575d4bbc25f84b0eeb824",
+        "durationSeconds": 4.45,
+        "transcript": "写真の女の人は、歌を歌うのが上手です。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-one-kilo-of-meat-too-much",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "肉を一キロ買いましたが、少し多すぎました。",
+      "grammarPointIds": [
+        "quantity-position",
+        "ga-contrast",
+        "sugiru"
+      ],
+      "reviewNote": "Explicit vocabulary override selects kilogram rather than kilometer for meat. The amount precedes the purchase verb; a little too much accurately conveys 少し多すぎました.",
+      "focusVocabulary": {
+        "id": "vocab-b376cd0cb0d3",
+        "term": "キロ",
+        "reading": "きろ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "f606f5364cb8b343061890267f1fe8c8136ebb3398071024508bbf2638aa9e68",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-one-kilo-of-meat-too-much.m4a",
+        "sha256": "33c3a8d21a8c3de96af5008e08d537b9e4537bb2bfb9e25a0275e02a74a96e5f",
+        "durationSeconds": 4.45,
+        "transcript": "肉を一キロ買いましたが、少し多すぎました。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-walk-three-kilometers-every-morning",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "朝御飯を食べる前に、毎朝三キロ歩きます。",
+      "grammarPointIds": [
+        "numbers-and-counters",
+        "mae-ni"
+      ],
+      "reviewNote": "Explicit override selects kilometers rather than kilograms. Revised the sequence to walking before breakfast after two unclear recordings of the opening 毎朝. All lexical items have English/French hints and the final voice explicitly spells out the intended pronunciation.",
+      "focusVocabulary": {
+        "id": "vocab-96edab4ea91f",
+        "term": "キロ",
+        "reading": "きろ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "c5c33597cc3f529d1c4ccb20b0441b189052289dc96b5f1ccd98e15f07c74c4f",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-walk-three-kilometers-every-morning.m4a",
+        "sha256": "7d71ff6e6316ffd72ce7f15b9552f64b91ff5ef3a2402a36b9283077f4b03442",
+        "durationSeconds": 4.9,
+        "transcript": "朝ご飯を食べる前に、毎朝3キロ歩きます。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 三キロ / 3キロ, 朝御飯 / 朝ご飯.",
+        "phoneticTranscript": "あさごはんをたべるまえに、まいあささんきろあるきます。",
+        "phoneticTargetReading": "きろ",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed",
+        "regenerationReason": "Independent transcriptions repeatedly misheard 毎朝 at the opening. Changed the sentence to 朝御飯を食べる前に、毎朝三キロ歩きます, updated both translations and the sequencing grammar tag, regenerated with explicit kana and checked the final pronunciation."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-two-hundred-grams-of-sugar-for-cake",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "ケーキを作りたいので、砂糖を二百グラム買います。",
+      "grammarPointIds": [
+        "tai-desire",
+        "node-reason",
+        "quantity-position"
+      ],
+      "reviewNote": "The cake plan motivates buying two hundred grams of sugar. The target is the mass unit, with 二百 read にひゃく and desire, reason and quantity positioning all present.",
+      "focusVocabulary": {
+        "id": "vocab-d05f0e822ae9",
+        "term": "グラム",
+        "reading": "ぐらむ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "43e0d1b4538deee7825621d06c0809750922ad5da0c4ef8b35cd205f6fe9b666",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-two-hundred-grams-of-sugar-for-cake.m4a",
+        "sha256": "01a3dc22ca2531dc3b636a432895852c61da0d2f7d18b1a1182721fc67831eae",
+        "durationSeconds": 3.85,
+        "transcript": "ケーキを作りたいので、砂糖を200グラム買います。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 二百 / 200.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-this-book-quite-difficult-but-interesting",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "この本は結構難しいですが、面白いと思います。",
+      "grammarPointIds": [
+        "ga-contrast",
+        "to-omou"
+      ],
+      "reviewNote": "結構 means quite/rather here, not refusal or splendid. The sentence contrasts difficulty with an opinion of interest; both prompts and hints preserve that meaning.",
+      "focusVocabulary": {
+        "id": "vocab-17be2492a375",
+        "term": "結構",
+        "reading": "けっこう",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "3f79ed93a56b8f1c0d8f8078da0e9d3fa2bf824be917af9f10de3f676ece7276",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-this-book-quite-difficult-but-interesting.m4a",
+        "sha256": "d8871a8d2f3b0a7a04c4c7444751f2eac3d1452747ddb08aca102a01118f6cb8",
+        "durationSeconds": 4.45,
+        "transcript": "この本は結構難しいですが、面白いと思います。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-ninth-birthday-make-cake",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "妹の誕生日は九日なので、ケーキを作ってあげたいです。",
+      "grammarPointIds": [
+        "node-reason",
+        "te-ageru",
+        "tai-desire"
+      ],
+      "reviewNote": "九日 is the ninth day of the month, with ここのか retained as a whole word. The benefactive action and desire concern making a cake for the younger sister.",
+      "focusVocabulary": {
+        "id": "vocab-9acbf1542642",
+        "term": "九日",
+        "reading": "ここのか",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "2d9f987945b58623a9e51b7daf1d7580f586d184bc0c90d60e6cf1af567b5c99",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-ninth-birthday-make-cake.m4a",
+        "sha256": "58eb9abcd534c6125718cfa4b895760a166e145f6b9ce79f46f96edb74fe9abb",
+        "durationSeconds": 5,
+        "transcript": "妹の誕生日は九日なので、ケーキを作ってあげたいです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "phoneticTranscript": "いもうとのたんじょうびは、ここのかなので、けーきをつくってあげたいです。",
+        "phoneticTargetReading": "ここのか",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-nine-apples-on-table-eat-with-family",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "テーブルの上にりんごが九つあるので、家族と食べます。",
+      "grammarPointIds": [
+        "tsu-counter",
+        "existence-location",
+        "to-companion"
+      ],
+      "reviewNote": "Nine apples, their position and eating with family are preserved. 九つ has the native counter reading ここのつ; concrete noun and action hints are present.",
+      "focusVocabulary": {
+        "id": "vocab-0d0163a40587",
+        "term": "九つ",
+        "reading": "ここのつ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "276941743cf36a9ea1029dae1d496a52765efada63ea734e73d5957931403d37",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-nine-apples-on-table-eat-with-family.m4a",
+        "sha256": "0db8f92304ac51de0d73d8111f0af7f43218594cc412fc66700fadbd2e23a3bf",
+        "durationSeconds": 5.05,
+        "transcript": "テーブルの上にリンゴが九つあるので、家族と食べます。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: りんご / リンゴ.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-this-way-quieter-so-read-here",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "隣の部屋より、こっちの部屋のほうが静かなので、ここで本を読みましょう。",
+      "grammarPointIds": [
+        "hou-ga-comparison",
+        "node-reason",
+        "mashou"
+      ],
+      "reviewNote": "こっち identifies the speaker’s side. Added an explicit comparison with the room next door to move the target away from a repeatedly unclear audio opening; the comparison, reason and reading suggestion remain faithful in both translations.",
+      "focusVocabulary": {
+        "id": "vocab-105cbb94135c",
+        "term": "こっち",
+        "reading": "こっち",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "7449cc9ae86c7a9b6340d7c490c7ed33e84085bc6f06b41cbc359a5699efad01",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-this-way-quieter-so-read-here.m4a",
+        "sha256": "64251b06cc0f4af0632e19bb9c94afb9e299c28bca685e89d0b9a4015d5e0a2a",
+        "durationSeconds": 5.85,
+        "transcript": "隣の部屋よりこっちの部屋の方が静かなので、ここで本を読みましょう。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: ほう / 方.",
+        "phoneticTranscript": "となりのへやよりこっちのへやのほうがしずかなので、ここでほんをよみましょう。",
+        "phoneticTargetReading": "こっち",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed",
+        "regenerationReason": "Independent transcription repeatedly omitted the initial consonant in こっち. Added an explicit comparison with the next room to move the target away from the opening, updated both translations, regenerated and checked the final pronunciation."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-come-on-clean-up-before-going-home",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "さあ、帰る前に、部屋をきれいにしましょう。",
+      "grammarPointIds": [
+        "mae-ni",
+        "suru-change",
+        "mashou"
+      ],
+      "reviewNote": "さあ introduces a suggestion to clean before leaving. Both languages preserve the room becoming clean; lexical hints leave the adjective-plus-する construction to the learner.",
+      "focusVocabulary": {
+        "id": "vocab-a98b98005ebd",
+        "term": "さあ",
+        "reading": "さあ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "d30d13d0cce598e61d067ac7550b95935934ef3062c7e7e2f4da0e87bf314ac6",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-come-on-clean-up-before-going-home.m4a",
+        "sha256": "dc01f515d9e5b6e8c0c6112877492a80e63069b866ce46ff9a9acb1c912da62a",
+        "durationSeconds": 3.75,
+        "transcript": "さあ、帰る前に部屋をきれいにしましょう。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-year-after-next-study-abroad-plan",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "再来年は日本へ行って、日本語を勉強するつもりです。",
+      "grammarPointIds": [
+        "e-direction",
+        "te-action-link",
+        "tsumori"
+      ],
+      "reviewNote": "The year after next is written naturally 再来年 and linked to the existing さ来年 entry. Corrected its noun classification and preserved both spellings; French uses the natural calendar equivalent Dans deux ans.",
+      "focusVocabulary": {
+        "id": "vocab-257e2b3e9983",
+        "term": "さ来年",
+        "reading": "さらいねん",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "73cd783be26bbc22fdafd33c8e253f7863e6f9e754fb98db9a7037afa8ddfbbb",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-year-after-next-study-abroad-plan.m4a",
+        "sha256": "63bdcc6cbfcbec223bd3c0686e1ed23d78bbb169465fac715645c72ce5c88ce7",
+        "durationSeconds": 4.7,
+        "transcript": "再来年は日本へ行って、日本語を勉強するつもりです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-fathers-old-dictionary-still-used",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "父にもらった字引は古いですが、まだ使っています。",
+      "grammarPointIds": [
+        "relative-clause",
+        "morau",
+        "ga-contrast"
+      ],
+      "reviewNote": "字引 is older dictionary terminology, natural for an old book received from a parent. Still using it is faithful to まだ使っています; the receiving verb and family member have hints.",
+      "focusVocabulary": {
+        "id": "vocab-edfc4956f178",
+        "term": "字引",
+        "reading": "じびき",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "f21655bed20d74c2c9a11a8a74e76967fe381b32cdddf9248e96d7d0d480fc75",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-fathers-old-dictionary-still-used.m4a",
+        "sha256": "0d158eb5c2488b8d024cf932fc80966057f70d7f132e4271c7faa74b79735046",
+        "durationSeconds": 4.45,
+        "transcript": "父にもらった磁力は古いですが、まだ使っています。",
+        "pcmValidation": "passed",
+        "assessment": "The normal transcription substituted 磁力. A separate hiragana transcription, given no expected sentence, matches the full intended pronunciation.",
+        "phoneticTranscript": "ちちにもらったじびきは、ふるいですが、まだつかっています。",
+        "phoneticTargetReading": "じびき",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed",
+        "regenerationReason": "Independent transcription substituted 辞書 for target 字引. Regenerated with explicit じびき."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-well-then-station-after-finishing-work",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "じゃ、仕事が終わったら、駅で会いましょう。",
+      "grammarPointIds": [
+        "tara-conditional",
+        "de-action-location",
+        "mashou"
+      ],
+      "reviewNote": "じゃ is the discourse connector Well then, distinct from the negative-copula contraction. The conditional marks finishing work before a suggested station meeting.",
+      "focusVocabulary": {
+        "id": "vocab-29fdb48e6aad",
+        "term": "じゃ",
+        "reading": "じゃ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "9afbae2cb2744015afbd41b8d825f7c83c63eedab8b9c4072c43f8a80fd748e1",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-well-then-station-after-finishing-work.m4a",
+        "sha256": "6d294d20688ed120759da607b78d65c34262a2e82d13fa1285fde230821edb6f",
+        "durationSeconds": 3.45,
+        "transcript": "じゃあ、仕事が終わったら駅で会いましょう。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: じゃ / じゃあ.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-zero-homework-play-with-friends",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "今日の宿題はゼロなので、友達と遊ぶつもりです。",
+      "grammarPointIds": [
+        "node-reason",
+        "to-companion",
+        "tsumori"
+      ],
+      "reviewNote": "ゼロ is a natural informal way to say there is no homework. The plan to play with friends follows the reason; zero, homework, today, friends and play have hints.",
+      "focusVocabulary": {
+        "id": "vocab-8b4d4e4df6e7",
+        "term": "ゼロ",
+        "reading": "ぜろ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "c2511c934e8209353f05a366e051c2e2ba2cea90c0a5cdef4c67e4edf5ebbec6",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-zero-homework-play-with-friends.m4a",
+        "sha256": "d55840a4dd58d53ee3ccad16b33bff5033a2e3ce9108314580d68dc879ea63ba",
+        "durationSeconds": 4.45,
+        "transcript": "今日の宿題はゼロなので、友達と遊ぶつもりです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-think-so-too-but-ask-teacher",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "私もそう思いますが、先生に聞いてみましょう。",
+      "grammarPointIds": [
+        "mo-addition",
+        "ga-contrast",
+        "te-miru"
+      ],
+      "reviewNote": "そう is a standalone manner/propositional adverb in そう思う, not an appearance or hearsay ending. Both translations retain agreement and the suggestion to try asking the teacher.",
+      "focusVocabulary": {
+        "id": "vocab-de2baf055bb3",
+        "term": "そう",
+        "reading": "そう",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "528e7d39e6297f0eead36ec6081610c0d2829d81137c8ed873a2c7f3c0c94636",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-think-so-too-but-ask-teacher.m4a",
+        "sha256": "4022eb79f1af361a289e01331a54b4fb03630ffb7a9290573ef481ac1825b9e0",
+        "durationSeconds": 3.85,
+        "transcript": "私もそう思いますが、先生に聞いてみましょう。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-can-you-see-mountain-from-there",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "そっちの窓から、山がよく見えますか。",
+      "grammarPointIds": [
+        "kara-start",
+        "mieru-kikoeru"
+      ],
+      "reviewNote": "そっち locates the window on the listener's side. Visibility, clarity and the mountain are accurately translated; all lexical words have corresponding hints.",
+      "focusVocabulary": {
+        "id": "vocab-5e5184c8d19e",
+        "term": "そっち",
+        "reading": "そっち",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "7f5a5098558651c69cd2f75166b35d84b0aa455ab3e4b2b3ea93566dc893826f",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-can-you-see-mountain-from-there.m4a",
+        "sha256": "1dc4ce15b635bb18337580d5dc3b21d7a771af70a3c796e393ba5cbf33af79df",
+        "durationSeconds": 3.25,
+        "transcript": "そっちの窓から山がよく見えますか?",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-well-then-write-name-before-starting",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "それでは、始める前に、名前を書いてください。",
+      "grammarPointIds": [
+        "mae-ni",
+        "te-kudasai"
+      ],
+      "reviewNote": "それでは introduces the next instruction. Names are written before beginning; the sequence and polite request are correctly represented.",
+      "focusVocabulary": {
+        "id": "vocab-8828801cd783",
+        "term": "それでは",
+        "reading": "それでは",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "6d83a90a44e0a54c990da8e5e87d4756f51484b21ac55e5392fd556fa8b685c8",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-well-then-write-name-before-starting.m4a",
+        "sha256": "85515ac29d623b77323889a5ab3125b4719ed0b397b49592b7933afe218b2a6d",
+        "durationSeconds": 4,
+        "transcript": "それでは、始める前に名前を書いてください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-use-paper-vertically-write-name-large",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "この紙をたてに使って、名前を大きく書いてください。",
+      "grammarPointIds": [
+        "te-action-link",
+        "i-adjective-adverb",
+        "te-kudasai"
+      ],
+      "reviewNote": "たて describes using the sheet vertically. The writing should be large, not the name itself; both prompts and hints preserve the adverbial adjective and the request.",
+      "focusVocabulary": {
+        "id": "vocab-ee3ffa792efb",
+        "term": "たて",
+        "reading": "たて",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "5192829ce7d7e66f54b7199e0789b444f9d4a3a9a9fed4f4aef9cc503784fe5e",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-use-paper-vertically-write-name-large.m4a",
+        "sha256": "d68fb3e967c3e874437b47176f1e58c5bcd73fecf65180b25ea8f51c9f58bc3c",
+        "durationSeconds": 5.4,
+        "transcript": "この紙を縦に使って、名前を大きく書いてください。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: たて / 縦.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-first-of-next-month-start-new-job",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "来月のついたちから、新しい店で働くつもりです。",
+      "grammarPointIds": [
+        "kara-start",
+        "de-action-location",
+        "tsumori"
+      ],
+      "reviewNote": "ついたち explicitly targets the first day of a month rather than 一日 meaning a duration. Added the kana spelling as a variant without changing old duration sentences; starting work remains an intention.",
+      "focusVocabulary": {
+        "id": "vocab-367ca325e078",
+        "term": "一日",
+        "reading": "ついたち",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "72dd40668decab5e93f2f7bd52396b3762dfaca56be8935daf5895d7ad447c47",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-first-of-next-month-start-new-job.m4a",
+        "sha256": "1e0dd5312609e5542f9494e3d087389973966dc0c71099e8543a6442d914a58a",
+        "durationSeconds": 4.3,
+        "transcript": "来月の1日から新しい店で働くつもりです。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: ついたち / 1日.",
+        "phoneticTranscript": "らいげつのついたちからあたらしいみせではたらくつもりです",
+        "phoneticTargetReading": "ついたち",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-listen-to-mothers-old-tape",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "母にもらったテープを、まだ聞いていません。",
+      "grammarPointIds": [
+        "relative-clause",
+        "morau",
+        "mada-te-inai"
+      ],
+      "reviewNote": "The tape was received from the mother and has not been listened to yet. Both prompts retain that relationship; hints use dictionary forms and leave まだ～ていない to the learner.",
+      "focusVocabulary": {
+        "id": "vocab-e64411bc1058",
+        "term": "テープ",
+        "reading": "てーぷ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "2535172e46408c1928d488f1fa3f246a119b92d3c9c1c3c7b45b9fa76d4fb2a5",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-listen-to-mothers-old-tape.m4a",
+        "sha256": "756a36d0279c6fed458806947719a6b1e53467e9b2ed3d1bd5d914113be29a42",
+        "durationSeconds": 3.65,
+        "transcript": "母にもらったテープをまだ聞いていません。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-old-tape-recorder-record-own-voice",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "このテープレコーダーで、自分の声を聞いてみたいです。",
+      "grammarPointIds": [
+        "de-means",
+        "te-miru",
+        "tai-desire"
+      ],
+      "reviewNote": "The tape recorder is a means of hearing one's own voice. The tokenizer's みたい is correctly treated as grammatical ～てみる plus ～たい, not lexical resemblance.",
+      "focusVocabulary": {
+        "id": "vocab-f4e7b21c2f09",
+        "term": "テープレコーダー",
+        "reading": "てーぷれこーだー",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "b7a5408635cedc2ba68279605bc83395ff0c8699c5f29f55f37b9d9f3f3f470d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-old-tape-recorder-record-own-voice.m4a",
+        "sha256": "2a4dd7dac1c4fc4c3d32586904db2f0ec68ed06f47054819d6d5bad563ce3e2f",
+        "durationSeconds": 4.05,
+        "transcript": "このテープレコーダーで自分の声を聞いてみたいです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-then-shall-we-help-carry-bags",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "では、その重い荷物を一緒に持ちましょうか。",
+      "grammarPointIds": [
+        "i-adjective-attributive",
+        "issho-ni",
+        "mashou-ka"
+      ],
+      "reviewNote": "では is a sentence-opening connector, not a particle combination. Carrying the heavy luggage together is an offer; all content words have hints and both translations preserve the shared action.",
+      "focusVocabulary": {
+        "id": "vocab-8f8a8601914e",
+        "term": "では",
+        "reading": "では",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "26f72997df4b7431a30f2816320468bcff38b360c0b355d46766df315c0b7e64",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-then-shall-we-help-carry-bags.m4a",
+        "sha256": "c6f64b8d92eddd3863b5bb31453de6e56123e4047d99fececc1b9622d4bfe7f2",
+        "durationSeconds": 4.6,
+        "transcript": "では、その重い荷物を一緒に持ちましょうか。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed",
+        "regenerationReason": "Initial recording failed the audible-speech check; regenerated successfully."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-somehow-head-hurts-go-to-bed-early",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "今日はどうも頭が痛いので、早く寝るつもりです。",
+      "grammarPointIds": [
+        "node-reason",
+        "tsumori"
+      ],
+      "reviewNote": "どうも expresses an unexplained feeling here, not thanks. The headache motivates an intention to go to bed early, faithfully reflected in English and French.",
+      "focusVocabulary": {
+        "id": "vocab-fe433c0cf385",
+        "term": "どうも",
+        "reading": "どうも",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "a9b79b4277c15974af6388f61cb8c3e6dfa76a307d7caeb6c9f1b83694175842",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-somehow-head-hurts-go-to-bed-early.m4a",
+        "sha256": "38be87b9c8d7cd13e9061873291e22d2423539741406a8854b968ecf9c5d317b",
+        "durationSeconds": 4.8,
+        "transcript": "今日はどうも頭が痛いので、早く寝るつもりです。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-ten-cookies-made-for-friends",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "友達にあげるお菓子を、十作りました。",
+      "grammarPointIds": [
+        "relative-clause",
+        "tsu-counter",
+        "ageru"
+      ],
+      "reviewNote": "十 is the native とお count of ten items, distinct from じゅう. An explicit reading, vocabulary override and speech text preserve that target; the relative clause describes sweets intended for friends.",
+      "focusVocabulary": {
+        "id": "vocab-e527c2381833",
+        "term": "十",
+        "reading": "とお",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "beabe4ba63a181a402325789e8664e941aba568dd9d68c419aa97d97aa3791e1",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-ten-cookies-made-for-friends.m4a",
+        "sha256": "7e3948d583b24fc89091bfb686b5e6bc7cd05cb60166107942fae852c115a957",
+        "durationSeconds": 3.75,
+        "transcript": "友達にあげるお菓子を、とお作りました。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 十 / とお.",
+        "phoneticTranscript": "ともだちにあげるおかしをとおつくりました。",
+        "phoneticTargetReading": "とお",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-tenth-shop-closed-shop-today",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "十日はこの店が休みなので、今日買い物をしたほうがいいです。",
+      "grammarPointIds": [
+        "clock-calendar-time",
+        "node-reason",
+        "hou-ga-ii-advice"
+      ],
+      "reviewNote": "Revised the Japanese to the natural 十日はこの店が休み. Replaced the now-absent に-time tag with calendar time; advice to shop today and the closure on the tenth are faithful.",
+      "focusVocabulary": {
+        "id": "vocab-da2913ad7e4c",
+        "term": "十日",
+        "reading": "とおか",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "6da7997fd7dce2ba63af611f14d88fa87bb0424a4cc06d630ed25a2d0822c483",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-tenth-shop-closed-shop-today.m4a",
+        "sha256": "e4e9e2e400e2472e1d4a927c0149b30a05bdf05819cf7680d11b42b2b88f0b97",
+        "durationSeconds": 5.4,
+        "transcript": "10日はこの店が休みなので、今日買い物をしたほうがいいです。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 十日 / 10日.",
+        "phoneticTranscript": "とうかはこのみせがやすみなので、きょうかいものをしたほうがいいです。",
+        "phoneticTargetReading": "とおか",
+        "phoneticAssessment": "Confirmed the intended target reading independently; とうか is accepted as a phonetic spelling of とおか.",
+        "browserDecoding": "passed",
+        "regenerationReason": "Regenerated after editorial review revised the shop-closure phrasing; explicit とおか preserves the date reading."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-seven-apples-give-some-to-friend",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "りんごが七つあるので、友達に少しあげます。",
+      "grammarPointIds": [
+        "tsu-counter",
+        "node-reason",
+        "ageru"
+      ],
+      "reviewNote": "Seven apples motivate giving some to a friend. 七つ is ななつ, and 少し is some, not all seven; hints retain that distinction.",
+      "focusVocabulary": {
+        "id": "vocab-f6bc974a7405",
+        "term": "七つ",
+        "reading": "ななつ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "58ec4cdcbc981d99065999f362e23762aee9e868b88fbae63fbf3d5d999c4264",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-seven-apples-give-some-to-friend.m4a",
+        "sha256": "545501d00d8e45016cf774f0e5a9edd2cfcdf3f912869be6b41b0d6b4fac1bd7",
+        "durationSeconds": 4.3,
+        "transcript": "りんごが七つあるので、友達に少しあげます。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-seventh-free-invite-to-movie",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "七日は暇なので、一緒に映画を見ませんか。",
+      "grammarPointIds": [
+        "node-reason",
+        "masen-ka-invitation"
+      ],
+      "reviewNote": "The speaker is free on the seventh and invites the listener to see a film together. 七日 has the correct なのか reading; invitation and reason are both meaningful targets.",
+      "focusVocabulary": {
+        "id": "vocab-0655c242d1db",
+        "term": "七日",
+        "reading": "なのか",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "39e691311d625154b9eed3d51c1e425544b51298a69480fc666484b35436af4d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-seventh-free-invite-to-movie.m4a",
+        "sha256": "c6d4fceafb2788ee1d2c33807bc2c40690c06c87a7a1f9ed4055c9583167db95",
+        "durationSeconds": 3.8,
+        "transcript": "七日は暇なので、一緒に映画を見ませんか?",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "phoneticTranscript": "なのかはひまなので、いっしょにえいがおみませんか?",
+        "phoneticTargetReading": "なのか",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-twentieth-return-borrowed-book",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "借りた本は、二十日に返さなければなりません。",
+      "grammarPointIds": [
+        "relative-clause",
+        "ni-time",
+        "nakereba-naranai"
+      ],
+      "reviewNote": "The book must be returned on the twentieth, not merely by that deadline. Kept はつか as a whole word, placed the date first in both prompts to avoid attaching it to borrowing, and supplied all lexical hints. A hiragana transcription revealed にじゅうにち in the initial audio; regenerated with explicit はつか.",
+      "focusVocabulary": {
+        "id": "vocab-08e3c50181be",
+        "term": "二十日",
+        "reading": "はつか",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "8ec935d4e49c838816905fa9b24e3cf302a93afc45b2c3e692ff25c6a54c93e6",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-twentieth-return-borrowed-book.m4a",
+        "sha256": "ad7abd5c54f5ef351b72b2acee4113c34a45881443c9ca26a439aaf417a17146",
+        "durationSeconds": 3.7,
+        "transcript": "借りた本は、速やかに返さなければなりません。",
+        "pcmValidation": "passed",
+        "assessment": "The normal transcription substituted 速やか. A separate hiragana transcription, given no expected sentence, matches the full intended pronunciation.",
+        "phoneticTranscript": "かりたほんは、はつかにかえさなければなりません。",
+        "phoneticTargetReading": "はつか",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed",
+        "regenerationReason": "A hiragana transcription exposed the incorrect にじゅうにち reading. Regenerated with explicit はつか and confirmed the correction in a fresh hiragana transcription."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-sorry-left-borrowed-book-at-home",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "借りた本を家に忘れてしまったので、友達に「ごめん」と言いました。",
+      "grammarPointIds": [
+        "relative-clause",
+        "te-shimau",
+        "to-quotation"
+      ],
+      "reviewNote": "ごめん is quoted as an informal apology to a friend after forgetting a borrowed book. The regretful ～てしまう and quotation are accurately represented; no unfamiliar breaking verb remains.",
+      "focusVocabulary": {
+        "id": "vocab-4058f15cc5b8",
+        "term": "ごめん",
+        "reading": "ごめん",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "2465dd7e14eef4cde942cfb64a6b5496290aa13ba871689a5eecf4c4dfdfee7c",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-sorry-left-borrowed-book-at-home.m4a",
+        "sha256": "e7876b4c84e222af8279f0cb1a1d2b5e90f2cc8d3b571e65c75fa59433dbd89f",
+        "durationSeconds": 6.15,
+        "transcript": "借りた本を家に忘れてしまったので、友達にごめんと言いました。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-one-month-stayed-with-friend-in-japan",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "日本に一月いて、友達と毎日日本語で話しました。",
+      "grammarPointIds": [
+        "duration-no-particle",
+        "te-action-link",
+        "de-means"
+      ],
+      "reviewNote": "一月 is a one-month duration, not January. Explicit ひとつき reading and speech text keep that distinction; staying, speaking Japanese, daily frequency and the friend all have hints.",
+      "focusVocabulary": {
+        "id": "vocab-14435050c0df",
+        "term": "一月",
+        "reading": "ひとつき",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "f8c0951d10ba134533034af39464b662ade903fc9aa5c7ae21ee17dcd95dcf11",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-one-month-stayed-with-friend-in-japan.m4a",
+        "sha256": "63dfd97e70451d5dce8e2e544c09e4a2236de4f8bf38df04c6427079024c3da0",
+        "durationSeconds": 5.1,
+        "transcript": "日本に一月いて、友達と毎日日本語で話しました。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "phoneticTranscript": "にほんにひとつきいて、ともだちとまいにちにほんごではなしました。",
+        "phoneticTargetReading": "ひとつき",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-second-of-month-appointment-change",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "今月の二日は忙しいので、来週会ってもいいですか。",
+      "grammarPointIds": [
+        "node-reason",
+        "te-mo-ii"
+      ],
+      "reviewNote": "The second of this month is a date on which the speaker is busy. Added 今月の to avoid an unclear audio opening and regenerated with explicit ふつか; both translations preserve the permission request for next week.",
+      "focusVocabulary": {
+        "id": "vocab-56d52b7869ab",
+        "term": "二日",
+        "reading": "ふつか",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "77f33ba9fff57a76b89abfe93378290de1128a726d4d0a752893799442b2686d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-second-of-month-appointment-change.m4a",
+        "sha256": "30d92fe5c3eaef1f8568a8b7cf97b575898614f16e8bd9f62d814e059971f397",
+        "durationSeconds": 5.35,
+        "transcript": "今月の二日は忙しいので、来週会ってもいいですか?",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "phoneticTranscript": "こんげつのふつかはいそがしいので、らいしゅうあってもいいですか?",
+        "phoneticTargetReading": "ふつか",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed",
+        "regenerationReason": "Independent transcription returned 使い忙しい rather than 二日は忙しい. After a kana-only correction remained unclear, added 今月の in the Japanese sentence and both translations, regenerated with explicit ふつか, and checked the final pronunciation."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-other-bags-want-to-see",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "このかばんは高すぎるので、ほかのも見たいです。",
+      "grammarPointIds": [
+        "sugiru",
+        "no-noun-omission",
+        "tai-desire"
+      ],
+      "reviewNote": "ほか identifies alternative bags, not outside. Added its kana variant to the existing ほか vocabulary entry; noun omission and excess price are preserved in both prompts and hints.",
+      "focusVocabulary": {
+        "id": "vocab-e9503021d78e",
+        "term": "外",
+        "reading": "ほか",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "86ae7ee6d1f3a8530340b5a59f18e5fba3baf2cc9d6a1d67a3a78e35a3ce084a",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-other-bags-want-to-see.m4a",
+        "sha256": "467795ea8c8506a1a5842cdbbaa8007f883e466df4d5fcfb0705fa2bfb5a90bd",
+        "durationSeconds": 4,
+        "transcript": "この鞄は高すぎるので、他のも見たいです。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: かばん / 鞄, ほか / 他.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-ten-thousand-yen-bag-worth-buying",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "このかばんは一万円ですが、丈夫なので買います。",
+      "grammarPointIds": [
+        "numbers-and-counters",
+        "ga-contrast",
+        "node-reason"
+      ],
+      "reviewNote": "Corrected 万 from adverb to number. One 万 plus 円 means ten thousand yen; the contrast and reason concern buying a sturdy bag, with only N5 supporting vocabulary.",
+      "focusVocabulary": {
+        "id": "vocab-1807218bf360",
+        "term": "万",
+        "reading": "まん",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "17d466ce03493ef88929d2711564015c4ee992a25cebe6248986826eafc5d25e",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-ten-thousand-yen-bag-worth-buying.m4a",
+        "sha256": "c54cc094c152f53a252b89b922d8f6c0e7f0a18e24cf7460fa1f0dc7462b6873",
+        "durationSeconds": 4.25,
+        "transcript": "このカバンは一万円ですが、丈夫なので買います。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: かばん / カバン.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-sixth-flight-must-get-up-early",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "六日は朝の飛行機に乗るので、早く起きます。",
+      "grammarPointIds": [
+        "no-possession",
+        "node-reason"
+      ],
+      "reviewNote": "The morning flight is on the sixth, with むいか preserved. The French and English maintain that getting up early follows from the flight; all concrete vocabulary has hints.",
+      "focusVocabulary": {
+        "id": "vocab-7b2351210462",
+        "term": "六日",
+        "reading": "むいか",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "2e1ec7f757532bf41d17ebdc42dd997482b640bc2906d239e0ae82406dd6dd9a",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-sixth-flight-must-get-up-early.m4a",
+        "sha256": "a51b74c67d12b124625974656c7dd1d4c98c505351277f449e4bf02201c517c2",
+        "durationSeconds": 4.45,
+        "transcript": "6日は朝の飛行機に乗るので、早く起きます。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 六日 / 6日.",
+        "phoneticTranscript": "むいかは、あさのひこうきにのるので、はやくおきます。",
+        "phoneticTargetReading": "むいか",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-hello-phone-cannot-hear-well",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "もしもし、声が小さくて聞こえないので、大きな声で話してください。",
+      "grammarPointIds": [
+        "mieru-kikoeru",
+        "node-reason",
+        "te-kudasai"
+      ],
+      "reviewNote": "もしもし is a telephone greeting. The quiet voice prevents hearing, so the request is to speak loudly; both languages distinguish hearing ability from deliberate listening.",
+      "focusVocabulary": {
+        "id": "vocab-9bff4be4a921",
+        "term": "もしもし",
+        "reading": "もしもし",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "aab82d7d69553ce453648aff8f8d8978ffaff3b8c3483d7002e6157ef855f44d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-hello-phone-cannot-hear-well.m4a",
+        "sha256": "93c4a63d044dac98d16ff1c5da1114f6ae6e6f67519a183bc2d26c34bcecaac5",
+        "durationSeconds": 5.75,
+        "transcript": "もしもし、声が小さくて聞こえないので、大きな声で話してください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-eight-boxes-put-in-car-together",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "箱が八つあるので、一緒に車に入れましょう。",
+      "grammarPointIds": [
+        "tsu-counter",
+        "node-reason",
+        "mashou"
+      ],
+      "reviewNote": "Eight boxes motivate putting them into the car together. 八つ has the native やっつ reading; the suggestion, reason and count are all present and fully hinted.",
+      "focusVocabulary": {
+        "id": "vocab-6c9351ae67e6",
+        "term": "八つ",
+        "reading": "やっつ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "a156c9cf4f4e51f8c123624d80d9199f8607c531c628db5ea8b0023870ae2f1e",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-eight-boxes-put-in-car-together.m4a",
+        "sha256": "5d75106ac191320d69d687528e16ca305bd4110ae62b03c22cb83c3adc4310e5",
+        "durationSeconds": 3.9,
+        "transcript": "箱が八つあるので、一緒に車に入れましょう。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-eighth-rain-may-cancel-picnic",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "八日は雨が降るかもしれないので、家で遊びましょう。",
+      "grammarPointIds": [
+        "kamoshirenai",
+        "node-reason",
+        "mashou"
+      ],
+      "reviewNote": "The eighth is the date of possible rain. かもしれない expresses uncertainty; staying home to play is a suggestion, not a certainty about the forecast.",
+      "focusVocabulary": {
+        "id": "vocab-f50fcf40e898",
+        "term": "八日",
+        "reading": "ようか",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "0a410306c43690a70f1f7a8a4d81a8d9888f3996057cc1b96d9bfa0314a60e93",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-eighth-rain-may-cancel-picnic.m4a",
+        "sha256": "43aaea3e4ccd3ec462a47fae9b5e73726445d231633396d4869de2e4d6382388",
+        "durationSeconds": 5,
+        "transcript": "8日は雨が降るかもしれないので、家で遊びましょう。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 八日 / 8日.",
+        "phoneticTranscript": "ようかはあめがふるかもしれないので、いえであそびましょう。",
+        "phoneticTargetReading": "ようか",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-four-days-until-trip-looking-forward",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "旅行まであと四日なので、今日から準備を始めます。",
+      "grammarPointIds": [
+        "made-end",
+        "node-reason",
+        "kara-start"
+      ],
+      "reviewNote": "四日 is a four-day duration until the trip, read よっか, not the fourth calendar date here. Added あと as a written variant of 後; preparations begin today and all lexical phrases have hints.",
+      "focusVocabulary": {
+        "id": "vocab-13ea3220cde0",
+        "term": "四日",
+        "reading": "よっか",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "59d1ca0cfc344090a8b60659a6775c4a49dfebb1b01bbbaab4bb0e1d7a2878b0",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-four-days-until-trip-looking-forward.m4a",
+        "sha256": "76571bdbc1c67748e3bc5b50162e9dcedffa26cd04ac87310202ae3f9a92df8d",
+        "durationSeconds": 4.75,
+        "transcript": "旅行まであと4日なので、今日から準備を始めます。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 四日 / 4日.",
+        "phoneticTranscript": "りょこうまであとよっかなので、きょうからじゅんびをはじめます。",
+        "phoneticTargetReading": "よっか",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-radio-cassette-player-on-desk",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "机の上にあるラジカセを、使ってもいいですか。",
+      "grammarPointIds": [
+        "relative-clause",
+        "positional-nouns",
+        "te-mo-ii"
+      ],
+      "reviewNote": "The radio cassette player is on the desk and the speaker asks permission to use it. The relative clause, position and permission are meaningful grammar targets.",
+      "focusVocabulary": {
+        "id": "vocab-1d787aaa549e",
+        "term": "ラジカセ",
+        "reading": "らじかせ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "e2c33447915678a68f6036ca27821c8357f4db149fa2349ffc9fc5347dbb2732",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-radio-cassette-player-on-desk.m4a",
+        "sha256": "be07b0d81cf7725b7cc9988060fa823d6da3657247a6c2bd3053b34976697f2a",
+        "durationSeconds": 3.9,
+        "transcript": "机の上にあるラジカセを使ってもいいですか?",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-number-starts-with-zero-write-carefully",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "番号は零から始まるので、よく見て書いてください。",
+      "grammarPointIds": [
+        "kara-start",
+        "node-reason",
+        "te-kudasai"
+      ],
+      "reviewNote": "零 is read れい in the initial digit of a number. Both translations preserve the instruction to inspect it carefully while copying; every lexical word has a hint.",
+      "focusVocabulary": {
+        "id": "vocab-b72f9967b000",
+        "term": "零",
+        "reading": "れい",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "2728d3645a40ac57aa0a27328dc0994c7ac88061fdb8cfb4a61de9929b6f1e17",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-number-starts-with-zero-write-carefully.m4a",
+        "sha256": "2a26f56c90485e04023846ce9487cc46852c637adda7140012ab691e85cd7a6a",
+        "durationSeconds": 4.4,
+        "transcript": "番号は0から始まるので、よく見て書いてください。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 零 / 0.",
+        "phoneticTranscript": "ばんごうは、れいからはじまるので、よくみてかいてください。",
+        "phoneticTargetReading": "れい",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed",
+        "regenerationReason": "Independent transcription used ゼロ instead of the selected れい reading. Regenerated with explicit れい."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-listen-records-while-reading",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "父は今、レコードを聞きながら、本を読んでいます。",
+      "grammarPointIds": [
+        "nagara",
+        "te-iru-progressive"
+      ],
+      "reviewNote": "The father is currently reading a book while listening to records. Added the previously omitted book to both prompts and hints; 今 makes the progressive reading explicit.",
+      "focusVocabulary": {
+        "id": "vocab-97be9f1d3fbe",
+        "term": "レコード",
+        "reading": "れこーど",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "8a6904da8972657402614ba0313c13c9abaa0518ac975e5a273ac73e371ee372",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-listen-records-while-reading.m4a",
+        "sha256": "7f66081eccc25fc99b78f3dd637400605bae7acdccf091e6e49a1a3d2d5588f4",
+        "durationSeconds": 4.1,
+        "transcript": "父は今、レコードを聴きながら本を読んでいます。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 聞き / 聴き.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-formal-study-before-going-to-work",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "私は日本語を勉強してから、会社へ行きます。",
+      "grammarPointIds": [
+        "te-kara",
+        "e-direction"
+      ],
+      "reviewNote": "The formal self-reference 私 is explicitly read わたくし and linked to its distinct existing entry. The final sentence describes studying Japanese before going to work; sequence and direction are the two grammar targets. Simplified the context after earlier recordings produced unclear supporting words and a mistaken ですが ending; both translations and the final audio were reviewed again.",
+      "focusVocabulary": {
+        "id": "vocab-e4a0829403e3",
+        "term": "私",
+        "reading": "わたくし",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "870022a7485952331330081602bb9c01aea83603131ad57f60d754c693ff1523",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-formal-study-before-going-to-work.m4a",
+        "sha256": "6fc29766cdb25ab43ae45d9bd1590aae32f788a89fc574fb1f45d60e1353309c",
+        "durationSeconds": 5.1,
+        "transcript": "わたくしは日本語を勉強してから、会社へ行きます。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: 私 / わたくし.",
+        "phoneticTranscript": "わたくしはにほんごをべんきょうしてから、かいしゃへいきます。",
+        "phoneticTargetReading": "わたくし",
+        "phoneticAssessment": "Confirmed the intended target reading independently.",
+        "browserDecoding": "passed",
+        "regenerationReason": "Earlier contexts produced unclear supporting words and ですな instead of ですが. Rewrote the context to studying before going to work, preserved the explicit わたくし reading and vocabulary link, regenerated and independently transcribed the final version."
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-welcome-to-home-please-sit",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "私の家へようこそ。荷物を置いてから、座ってください。",
+      "grammarPointIds": [
+        "e-direction",
+        "te-kara",
+        "te-kudasai"
+      ],
+      "reviewNote": "The welcome naturally precedes putting luggage down and sitting. Both translations preserve the order of the two requested actions and the destination of the welcome.",
+      "focusVocabulary": {
+        "id": "vocab-ce2f0119c88a",
+        "term": "ようこそ",
+        "reading": "ようこそ",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "51d026166bdf95068c021fd2e4d94a8affb231280836d2942dbc2c22b0b7a716",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-welcome-to-home-please-sit.m4a",
+        "sha256": "68f7bef9fca23196d569a42999b21e0e040eb8c5d70a82669c7c6f2c0d4a5361",
+        "durationSeconds": 5.05,
+        "transcript": "私の家へようこそ。荷物を置いてから座ってください。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-say-hello-when-meeting-friend-at-school",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "学校で友達に会ったとき、「こんにちは」と言います。",
+      "grammarPointIds": [
+        "toki",
+        "to-quotation",
+        "de-action-location"
+      ],
+      "reviewNote": "こんにちは is quoted as the greeting used when meeting friends at school. The temporal clause, quotation and action location are faithful; all lexical items have hints.",
+      "focusVocabulary": {
+        "id": "vocab-ad9975e17a50",
+        "term": "こんにちは",
+        "reading": "こんにちは",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "1719a9ba13dbef0ba21e5e5bcab92c0339f5702515739cc9eae6c4816153270c",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-say-hello-when-meeting-friend-at-school.m4a",
+        "sha256": "fe907dad77da77048916b670658e7a12c1b0c8e9ca2822ff094cac82ab1eded5",
+        "durationSeconds": 4.45,
+        "transcript": "学校で友達に会ったとき、こんにちはと言います。",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-good-evening-teacher-finished-work",
+      "status": "passed-after-review",
+      "type": "recognition",
+      "japanese": "先生、こんばんは。もう仕事は終わりましたか。",
+      "grammarPointIds": [
+        "mou",
+        "verb-mashita",
+        "ka-question"
+      ],
+      "reviewNote": "こんばんは fits an evening greeting to a teacher. The question asks whether work is already finished; past polite form, question marking and もう are all present.",
+      "focusVocabulary": {
+        "id": "vocab-2798a7949600",
+        "term": "こんばんは",
+        "reading": "こんばんは",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "1e446523bff8d3f7eb4b2c863414e58e4ff7ee35739f85f9072f139a3b13be5c",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-good-evening-teacher-finished-work.m4a",
+        "sha256": "529ba337776c8e9dbdeb5778fc43174f359a56d2abb9f0c23dabd54472950afe",
+        "durationSeconds": 4.55,
+        "transcript": "先生、こんばんは。もう仕事は終わりましたか?",
+        "pcmValidation": "passed",
+        "assessment": "Matches the Japanese sentence, allowing punctuation and spacing differences.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-tea-or-coffee-which-to-drink",
+      "status": "passed-after-review",
+      "type": "production",
+      "japanese": "お茶を飲みたいですか。それとも、コーヒーのほうがいいですか。",
+      "grammarPointIds": [
+        "tai-desire",
+        "hou-ga-comparison"
+      ],
+      "reviewNote": "それとも offers tea and coffee as alternatives in a question. Both prompts preserve desire versus preference, and the comparison grammar remains separate from the vocabulary hints.",
+      "focusVocabulary": {
+        "id": "vocab-90157b5f7665",
+        "term": "それとも",
+        "reading": "それとも",
+        "priorGrammarExercises": 0,
+        "resultingGrammarExercises": 1
+      },
+      "reviewedContentSha256": "b960ea8efe36176fb0150a92af8089b4cd96a92444776d4fa57449ea5131ccb2",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-tea-or-coffee-which-to-drink.m4a",
+        "sha256": "f22494d647212bde9f88e340c43b39f03be88593a380af871ab8e7b1257805e0",
+        "durationSeconds": 4.85,
+        "transcript": "お茶を飲みたいですか。それともコーヒーの方がいいですか。",
+        "pcmValidation": "passed",
+        "assessment": "Equivalent orthography: ほう / 方.",
+        "browserDecoding": "passed"
+      },
+      "browserReviewLocales": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "followUpReview": {
+    "reviewedAt": "2026-11-24",
+    "individuallyReviewed": 50,
+    "findingsFixed": [
+      "Changed the two French もらう prompts from given by to received from, aligning their highlighted verb with the dictionary hint and the English/Japanese perspective."
+    ],
+    "validation": [
+      "Content preparation and all 36 test files passed.",
+      "All 50 exercises rendered in English and French with working hints and decodable audio.",
+      "Web and native builds passed; existing PCM and independent transcription checks remain valid because Japanese sentences and recordings are unchanged."
+    ]
+  }
+}

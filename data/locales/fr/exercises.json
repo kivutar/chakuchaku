@@ -18775,5 +18775,968 @@
         ]
       }
     ]
+  },
+  "n5-vocab-oh-homework-left-at-home": {
+    "translation": "Ah, j’ai oublié mes devoirs à la maison, alors je dois rentrer les chercher."
+  },
+  "production-n5-vocab-person-sitting-over-there-is-teacher": {
+    "translation": "La personne assise là-bas est mon professeur.",
+    "promptVocabularyHints": [
+      {
+        "word": "là-bas",
+        "vocabularyIds": [
+          "vocab-f14c108fc553"
+        ]
+      },
+      {
+        "word": "assise",
+        "vocabularyIds": [
+          "vocab-1920bee7857b"
+        ]
+      },
+      {
+        "word": "personne",
+        "vocabularyIds": [
+          "vocab-ad7167347a2a"
+        ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-that-cake-sister-made-not-eaten": {
+    "translation": "C’est le gâteau que ma grande sœur a fait, mais je ne l’ai pas encore mangé."
+  },
+  "production-n5-vocab-fifth-of-next-month-return-to-japan": {
+    "translation": "Je compte retourner au Japon le cinq du mois prochain.",
+    "promptVocabularyHints": [
+      {
+        "word": "retourner",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      },
+      {
+        "word": "Japon",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
+      },
+      {
+        "word": "cinq",
+        "vocabularyIds": [
+          "vocab-a02edbda9f4c"
+        ]
+      },
+      {
+        "word": "mois prochain",
+        "vocabularyIds": [
+          "vocab-55fef51b0694"
+        ]
+      }
+    ]
+  },
+  "production-n5-vocab-woman-in-photo-sings-well": {
+    "translation": "La femme sur la photo est douée pour chanter des chansons.",
+    "promptVocabularyHints": [
+      {
+        "word": "femme",
+        "vocabularyIds": [
+          "vocab-4d9423288cb2",
+          "vocab-ad7167347a2a"
+        ]
+      },
+      {
+        "word": "photo",
+        "vocabularyIds": [
+          "vocab-d5901ecbf5fb"
+        ]
+      },
+      {
+        "word": "douée",
+        "vocabularyIds": [
+          "vocab-f78f531c55a5"
+        ]
+      },
+      {
+        "word": "chanter",
+        "vocabularyIds": [
+          "vocab-d8974b42548f"
+        ]
+      },
+      {
+        "word": "chansons",
+        "vocabularyIds": [
+          "vocab-c563c884f48f"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-one-kilo-of-meat-too-much": {
+    "translation": "J’ai acheté un kilo de viande, mais c’était un peu trop."
+  },
+  "production-n5-vocab-walk-three-kilometers-every-morning": {
+    "translation": "Tous les matins, je marche trois kilomètres avant de prendre mon petit déjeuner.",
+    "promptVocabularyHints": [
+      {
+        "word": "Tous les matins",
+        "vocabularyIds": [
+          "vocab-ecd92861d4d7"
+        ]
+      },
+      {
+        "word": "marche",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      },
+      {
+        "word": "trois",
+        "vocabularyIds": [
+          "vocab-1bedf722c04a"
+        ]
+      },
+      {
+        "word": "kilomètres",
+        "vocabularyIds": [
+          "vocab-96edab4ea91f"
+        ]
+      },
+      {
+        "word": "prendre",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "petit déjeuner",
+        "vocabularyIds": [
+          "vocab-818846d31820"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-two-hundred-grams-of-sugar-for-cake": {
+    "translation": "Je veux faire un gâteau, alors je vais acheter deux cents grammes de sucre."
+  },
+  "production-n5-vocab-this-book-quite-difficult-but-interesting": {
+    "translation": "Ce livre est assez difficile, mais je pense qu’il est intéressant.",
+    "promptVocabularyHints": [
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "assez",
+        "vocabularyIds": [
+          "vocab-17be2492a375"
+        ]
+      },
+      {
+        "word": "difficile",
+        "vocabularyIds": [
+          "vocab-6ed0b6d4c374"
+        ]
+      },
+      {
+        "word": "pense",
+        "vocabularyIds": [
+          "vocab-c64ca071011e"
+        ]
+      },
+      {
+        "word": "intéressant",
+        "vocabularyIds": [
+          "vocab-9825648af79e"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-ninth-birthday-make-cake": {
+    "translation": "L’anniversaire de ma petite sœur est le neuf, alors je veux lui faire un gâteau."
+  },
+  "production-n5-vocab-nine-apples-on-table-eat-with-family": {
+    "translation": "Il y a neuf pommes sur la table, alors je vais les manger avec ma famille.",
+    "promptVocabularyHints": [
+      {
+        "word": "table",
+        "vocabularyIds": [
+          "vocab-f1af08d4c51c"
+        ]
+      },
+      {
+        "word": "pommes",
+        "vocabularyIds": [
+          "vocab-d66c7f00afcd"
+        ]
+      },
+      {
+        "word": "neuf",
+        "vocabularyIds": [
+          "vocab-0d0163a40587"
+        ]
+      },
+      {
+        "word": "manger",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "famille",
+        "vocabularyIds": [
+          "vocab-a16373e2426c"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-this-way-quieter-so-read-here": {
+    "translation": "La pièce de ce côté-ci est plus calme que la pièce voisine, alors lisons ici."
+  },
+  "production-n5-vocab-come-on-clean-up-before-going-home": {
+    "translation": "Allez, rendons la pièce propre avant de rentrer.",
+    "promptVocabularyHints": [
+      {
+        "word": "Allez",
+        "vocabularyIds": [
+          "vocab-a98b98005ebd"
+        ]
+      },
+      {
+        "word": "pièce",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "propre",
+        "vocabularyIds": [
+          "vocab-58a738a344fe"
+        ]
+      },
+      {
+        "word": "rentrer",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-year-after-next-study-abroad-plan": {
+    "translation": "Dans deux ans, je compte aller au Japon et étudier le japonais."
+  },
+  "production-n5-vocab-fathers-old-dictionary-still-used": {
+    "translation": "Le dictionnaire que j’ai reçu de mon père est ancien, mais je l’utilise encore.",
+    "promptVocabularyHints": [
+      {
+        "word": "dictionnaire",
+        "vocabularyIds": [
+          "vocab-edfc4956f178"
+        ]
+      },
+      {
+        "word": "reçu",
+        "vocabularyIds": [
+          "vocab-9d61f6197627"
+        ]
+      },
+      {
+        "word": "père",
+        "vocabularyIds": [
+          "vocab-d15ca6ea1179"
+        ]
+      },
+      {
+        "word": "ancien",
+        "vocabularyIds": [
+          "vocab-e5fd15d61360"
+        ]
+      },
+      {
+        "word": "encore",
+        "vocabularyIds": [
+          "vocab-f385448e1132"
+        ]
+      },
+      {
+        "word": "utilise",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-well-then-station-after-finishing-work": {
+    "translation": "Bon, alors retrouvons-nous à la gare quand le travail sera terminé."
+  },
+  "production-n5-vocab-zero-homework-play-with-friends": {
+    "translation": "Il y a zéro devoir aujourd’hui, alors je compte jouer avec mes amis.",
+    "promptVocabularyHints": [
+      {
+        "word": "aujourd’hui",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      },
+      {
+        "word": "devoir",
+        "vocabularyIds": [
+          "vocab-f26f501fa1c2"
+        ]
+      },
+      {
+        "word": "zéro",
+        "vocabularyIds": [
+          "vocab-8b4d4e4df6e7"
+        ]
+      },
+      {
+        "word": "amis",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "jouer",
+        "vocabularyIds": [
+          "vocab-58a04652246f"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-think-so-too-but-ask-teacher": {
+    "translation": "Je le pense aussi, mais essayons de demander au professeur."
+  },
+  "production-n5-vocab-can-you-see-mountain-from-there": {
+    "translation": "Vois-tu bien la montagne depuis la fenêtre de ton côté ?",
+    "promptVocabularyHints": [
+      {
+        "word": "ton côté",
+        "vocabularyIds": [
+          "vocab-5e5184c8d19e"
+        ]
+      },
+      {
+        "word": "fenêtre",
+        "vocabularyIds": [
+          "vocab-2c2d6564a0bc"
+        ]
+      },
+      {
+        "word": "montagne",
+        "vocabularyIds": [
+          "vocab-ddd9dca106e2"
+        ]
+      },
+      {
+        "word": "bien",
+        "vocabularyIds": [
+          "vocab-ac0d84b30392"
+        ]
+      },
+      {
+        "word": "Vois",
+        "vocabularyIds": [
+          "vocab-e99feae5bc25"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-well-then-write-name-before-starting": {
+    "translation": "Bien, alors écris ton nom avant que nous commencions, s’il te plaît."
+  },
+  "production-n5-vocab-use-paper-vertically-write-name-large": {
+    "translation": "Utilise cette feuille à la verticale et écris ton nom en grand, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "feuille",
+        "vocabularyIds": [
+          "vocab-d060cd928492"
+        ]
+      },
+      {
+        "word": "à la verticale",
+        "vocabularyIds": [
+          "vocab-ee3ffa792efb"
+        ]
+      },
+      {
+        "word": "Utilise",
+        "vocabularyIds": [
+          "vocab-9af9c5ffb30e"
+        ]
+      },
+      {
+        "word": "nom",
+        "vocabularyIds": [
+          "vocab-09558b341dc0"
+        ]
+      },
+      {
+        "word": "grand",
+        "vocabularyIds": [
+          "vocab-f6377dcbb564"
+        ]
+      },
+      {
+        "word": "écris",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-first-of-next-month-start-new-job": {
+    "translation": "Je compte travailler dans un nouveau magasin à partir du premier du mois prochain."
+  },
+  "production-n5-vocab-listen-to-mothers-old-tape": {
+    "translation": "Je n’ai pas encore écouté la cassette que j’ai reçue de ma mère.",
+    "promptVocabularyHints": [
+      {
+        "word": "écouté",
+        "vocabularyIds": [
+          "vocab-d8a0261581dc"
+        ]
+      },
+      {
+        "word": "cassette",
+        "vocabularyIds": [
+          "vocab-e64411bc1058"
+        ]
+      },
+      {
+        "word": "reçue",
+        "vocabularyIds": [
+          "vocab-9d61f6197627"
+        ]
+      },
+      {
+        "word": "mère",
+        "vocabularyIds": [
+          "vocab-7fa86c660a00"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-old-tape-recorder-record-own-voice": {
+    "translation": "Je veux essayer d’écouter ma propre voix sur ce magnétophone."
+  },
+  "production-n5-vocab-then-shall-we-help-carry-bags": {
+    "translation": "Alors, si nous portions ensemble ces bagages lourds ?",
+    "promptVocabularyHints": [
+      {
+        "word": "Alors",
+        "vocabularyIds": [
+          "vocab-8f8a8601914e"
+        ]
+      },
+      {
+        "word": "lourds",
+        "vocabularyIds": [
+          "vocab-beff4a4d6b56"
+        ]
+      },
+      {
+        "word": "bagages",
+        "vocabularyIds": [
+          "vocab-567f42b89301"
+        ]
+      },
+      {
+        "word": "ensemble",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      },
+      {
+        "word": "portions",
+        "vocabularyIds": [
+          "vocab-516ad1128c71"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-somehow-head-hurts-go-to-bed-early": {
+    "translation": "Je ne sais pas pourquoi, mais j’ai mal à la tête aujourd’hui, alors je compte me coucher tôt."
+  },
+  "production-n5-vocab-ten-cookies-made-for-friends": {
+    "translation": "J’ai préparé dix friandises à donner à mes amis.",
+    "promptVocabularyHints": [
+      {
+        "word": "amis",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "donner",
+        "vocabularyIds": [
+          "vocab-eee8b9c95721"
+        ]
+      },
+      {
+        "word": "friandises",
+        "vocabularyIds": [
+          "vocab-3841b646739f"
+        ]
+      },
+      {
+        "word": "dix",
+        "vocabularyIds": [
+          "vocab-e527c2381833"
+        ]
+      },
+      {
+        "word": "préparé",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-tenth-shop-closed-shop-today": {
+    "translation": "Ce magasin sera fermé le dix, alors tu ferais mieux de faire tes achats aujourd’hui."
+  },
+  "production-n5-vocab-seven-apples-give-some-to-friend": {
+    "translation": "Il y a sept pommes, alors j’en donnerai quelques-unes à un ami.",
+    "promptVocabularyHints": [
+      {
+        "word": "pommes",
+        "vocabularyIds": [
+          "vocab-d66c7f00afcd"
+        ]
+      },
+      {
+        "word": "sept",
+        "vocabularyIds": [
+          "vocab-f6bc974a7405"
+        ]
+      },
+      {
+        "word": "quelques-unes",
+        "vocabularyIds": [
+          "vocab-8814378ebfc2"
+        ]
+      },
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "donnerai",
+        "vocabularyIds": [
+          "vocab-eee8b9c95721"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-seventh-free-invite-to-movie": {
+    "translation": "Je suis libre le sept, alors veux-tu qu’on regarde un film ensemble ?"
+  },
+  "production-n5-vocab-twentieth-return-borrowed-book": {
+    "translation": "Le vingt, je dois rendre le livre que j’ai emprunté.",
+    "promptVocabularyHints": [
+      {
+        "word": "rendre",
+        "vocabularyIds": [
+          "vocab-648683b83781"
+        ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "emprunté",
+        "vocabularyIds": [
+          "vocab-fcc4b149bcdb"
+        ]
+      },
+      {
+        "word": "vingt",
+        "vocabularyIds": [
+          "vocab-08e3c50181be"
+        ]
+      }
+    ]
+  },
+  "production-n5-vocab-one-month-stayed-with-friend-in-japan": {
+    "translation": "Je suis resté un mois au Japon et j’ai parlé japonais avec mon ami tous les jours.",
+    "promptVocabularyHints": [
+      {
+        "word": "Japon",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
+      },
+      {
+        "word": "un mois",
+        "vocabularyIds": [
+          "vocab-14435050c0df"
+        ]
+      },
+      {
+        "word": "resté",
+        "vocabularyIds": [
+          "vocab-e2f1dae6743a"
+        ]
+      },
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "tous les jours",
+        "vocabularyIds": [
+          "vocab-1b6483e173f3"
+        ]
+      },
+      {
+        "word": "japonais",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "parlé",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-second-of-month-appointment-change": {
+    "translation": "Je suis occupé le deux de ce mois-ci, alors peut-on se voir la semaine prochaine ?"
+  },
+  "production-n5-vocab-other-bags-want-to-see": {
+    "translation": "Ce sac est trop cher, alors je veux aussi voir les autres.",
+    "promptVocabularyHints": [
+      {
+        "word": "sac",
+        "vocabularyIds": [
+          "vocab-704870bca266"
+        ]
+      },
+      {
+        "word": "cher",
+        "vocabularyIds": [
+          "vocab-775979a197ea"
+        ]
+      },
+      {
+        "word": "autres",
+        "vocabularyIds": [
+          "vocab-e9503021d78e"
+        ]
+      },
+      {
+        "word": "voir",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      }
+    ]
+  },
+  "production-n5-vocab-sixth-flight-must-get-up-early": {
+    "translation": "Je prendrai un avion le matin du six, alors je me lèverai tôt.",
+    "promptVocabularyHints": [
+      {
+        "word": "six",
+        "vocabularyIds": [
+          "vocab-7b2351210462"
+        ]
+      },
+      {
+        "word": "matin",
+        "vocabularyIds": [
+          "vocab-40ae6dddb10a"
+        ]
+      },
+      {
+        "word": "avion",
+        "vocabularyIds": [
+          "vocab-505a4fc8629a"
+        ]
+      },
+      {
+        "word": "prendrai",
+        "vocabularyIds": [
+          "vocab-9e0eeba39759"
+        ]
+      },
+      {
+        "word": "tôt",
+        "vocabularyIds": [
+          "vocab-72460e05df01"
+        ]
+      },
+      {
+        "word": "lèverai",
+        "vocabularyIds": [
+          "vocab-72c5b362c4f2"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-hello-phone-cannot-hear-well": {
+    "translation": "Allô ? Ta voix est faible et je ne t’entends pas, alors parle fort, s’il te plaît."
+  },
+  "production-n5-vocab-eight-boxes-put-in-car-together": {
+    "translation": "Il y a huit boîtes, alors mettons-les ensemble dans la voiture.",
+    "promptVocabularyHints": [
+      {
+        "word": "boîtes",
+        "vocabularyIds": [
+          "vocab-28102c121d50"
+        ]
+      },
+      {
+        "word": "huit",
+        "vocabularyIds": [
+          "vocab-6c9351ae67e6"
+        ]
+      },
+      {
+        "word": "voiture",
+        "vocabularyIds": [
+          "vocab-f71f9de56223"
+        ]
+      },
+      {
+        "word": "mettons",
+        "vocabularyIds": [
+          "vocab-b5e9e035a8be"
+        ]
+      },
+      {
+        "word": "ensemble",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-eighth-rain-may-cancel-picnic": {
+    "translation": "Il pleuvra peut-être le huit, alors jouons à la maison."
+  },
+  "production-n5-vocab-four-days-until-trip-looking-forward": {
+    "translation": "Il reste quatre jours avant le voyage, alors je vais commencer les préparatifs aujourd’hui.",
+    "promptVocabularyHints": [
+      {
+        "word": "voyage",
+        "vocabularyIds": [
+          "vocab-2e3ba98d2367"
+        ]
+      },
+      {
+        "word": "reste",
+        "vocabularyIds": [
+          "vocab-415439a1dbb6"
+        ]
+      },
+      {
+        "word": "quatre jours",
+        "vocabularyIds": [
+          "vocab-13ea3220cde0"
+        ]
+      },
+      {
+        "word": "aujourd’hui",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      },
+      {
+        "word": "préparatifs",
+        "vocabularyIds": [
+          "vocab-ae4dcbc971a5"
+        ]
+      },
+      {
+        "word": "commencer",
+        "vocabularyIds": [
+          "vocab-79261a065ba5"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-radio-cassette-player-on-desk": {
+    "translation": "Puis-je utiliser le radiocassette qui est sur le bureau ?"
+  },
+  "production-n5-vocab-number-starts-with-zero-write-carefully": {
+    "translation": "Le numéro commence par zéro, alors regarde-le bien en l’écrivant.",
+    "promptVocabularyHints": [
+      {
+        "word": "numéro",
+        "vocabularyIds": [
+          "vocab-0977b731878c"
+        ]
+      },
+      {
+        "word": "zéro",
+        "vocabularyIds": [
+          "vocab-b72f9967b000"
+        ]
+      },
+      {
+        "word": "commence",
+        "vocabularyIds": [
+          "vocab-032ac6757485"
+        ]
+      },
+      {
+        "word": "bien",
+        "vocabularyIds": [
+          "vocab-ac0d84b30392"
+        ]
+      },
+      {
+        "word": "regarde",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      },
+      {
+        "word": "écrivant",
+        "vocabularyIds": [
+          "vocab-d34997e828cb"
+        ]
+      }
+    ]
+  },
+  "production-n5-vocab-listen-records-while-reading": {
+    "translation": "Mon père lit un livre en ce moment en écoutant des disques.",
+    "promptVocabularyHints": [
+      {
+        "word": "père",
+        "vocabularyIds": [
+          "vocab-d15ca6ea1179"
+        ]
+      },
+      {
+        "word": "disques",
+        "vocabularyIds": [
+          "vocab-97be9f1d3fbe"
+        ]
+      },
+      {
+        "word": "écoutant",
+        "vocabularyIds": [
+          "vocab-d8a0261581dc"
+        ]
+      },
+      {
+        "word": "en ce moment",
+        "vocabularyIds": [
+          "vocab-89beba69de5a"
+        ]
+      },
+      {
+        "word": "lit",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-welcome-to-home-please-sit": {
+    "translation": "Bienvenue chez moi. Pose tes bagages, puis assieds-toi, s’il te plaît."
+  },
+  "production-n5-vocab-say-hello-when-meeting-friend-at-school": {
+    "translation": "Quand je rencontre mes amis à l’école, je dis bonjour.",
+    "promptVocabularyHints": [
+      {
+        "word": "école",
+        "vocabularyIds": [
+          "vocab-42edc1b83779"
+        ]
+      },
+      {
+        "word": "amis",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "rencontre",
+        "vocabularyIds": [
+          "vocab-40179481fcf6"
+        ]
+      },
+      {
+        "word": "bonjour",
+        "vocabularyIds": [
+          "vocab-ad9975e17a50"
+        ]
+      },
+      {
+        "word": "dis",
+        "vocabularyIds": [
+          "vocab-4fa253e10946"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-good-evening-teacher-finished-work": {
+    "translation": "Bonsoir, professeur. Avez-vous déjà terminé votre travail ?"
+  },
+  "production-n5-vocab-tea-or-coffee-which-to-drink": {
+    "translation": "Veux-tu boire du thé, ou préfères-tu du café ?",
+    "promptVocabularyHints": [
+      {
+        "word": "thé",
+        "vocabularyIds": [
+          "vocab-d18ca13aa386"
+        ]
+      },
+      {
+        "word": "boire",
+        "vocabularyIds": [
+          "vocab-dcd3acd6b659"
+        ]
+      },
+      {
+        "word": "ou",
+        "vocabularyIds": [
+          "vocab-90157b5f7665"
+        ]
+      },
+      {
+        "word": "café",
+        "vocabularyIds": [
+          "vocab-f5f2c2dca175"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-sorry-left-borrowed-book-at-home": {
+    "translation": "J’ai oublié à la maison le livre que j’avais emprunté, alors j’ai dit pardon à mon ami."
+  },
+  "n5-vocab-ten-thousand-yen-bag-worth-buying": {
+    "translation": "Ce sac coûte dix mille yens, mais je vais l’acheter parce qu’il est solide."
+  },
+  "n5-vocab-mother-says-yes-then-hangs-up": {
+    "translation": "Ma mère a dit oui, puis elle a raccroché le téléphone."
+  },
+  "n5-vocab-formal-study-before-going-to-work": {
+    "translation": "J’étudie le japonais, puis je vais au travail."
   }
 }
