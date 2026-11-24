@@ -36,9 +36,31 @@ test("rejects missing, expired and unprocessed builds", () => {
 });
 
 test("requires release notes in every inherited language", () => {
+  assert.throws(() => validateNotes([], []), /nonempty/);
   assert.throws(() => validateNotes([{ language: "en-US", text: "New exercises" }], ["en-US", "fr-FR"]), /every existing localization/);
   assert.throws(() => validateNotes([{ language: "fr-FR", text: "" }], ["fr-FR"]), /nonempty/);
   assert.throws(() => validateNotes([{ language: "en-US", text: "a" }, { language: "en-US", text: "b" }], ["en-US"]), /duplicate/);
+});
+
+test("prepares a new version with the store's inherited en-GB locale", async () => {
+  const base = fixture({ [`${appPath}/appStoreVersions?filter[platform]=IOS&limit=200`]: { data: [] } });
+  const mutations = [];
+  const request = async (path, method = "GET", body) => {
+    if (method !== "GET") {
+      mutations.push({ path, method, body });
+      return { data: version };
+    }
+    if (path === "/v1/appStoreVersions/version-id/appStoreVersionLocalizations?limit=200") {
+      return { data: [{ id: "english", attributes: { locale: "en-GB" } }] };
+    }
+    if (path === "/v1/appStoreVersions/version-id") return { data: version };
+    return base.request(path);
+  };
+  await executeAction(request, { ...options, action: "prepare", notes: [{ language: "en-GB", text: "New exercises" }], report: {} });
+  const localization = mutations.find(call => call.path === "/v1/appStoreVersionLocalizations/english");
+  assert.equal(localization.body.data.attributes.whatsNew, "New exercises");
+  assert.deepEqual(mutations.find(call => call.path.endsWith("/relationships/build")).body.data, { type: "builds", id: "build-id" });
+  assert.equal(mutations.at(-1).body.data.attributes.releaseType, "AFTER_APPROVAL");
 });
 
 test("inspect is read-only", async () => {

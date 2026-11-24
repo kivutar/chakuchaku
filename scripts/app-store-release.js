@@ -53,7 +53,7 @@ export function selectBuild(builds, version, buildNumber) {
 }
 
 export function validateNotes(notes, locales) {
-  if (!Array.isArray(notes) || notes.some(note => !note.language || typeof note.text !== "string" || !note.text.trim() || [...note.text].length > 4000)) {
+  if (!Array.isArray(notes) || !notes.length || notes.some(note => !note.language || typeof note.text !== "string" || !note.text.trim() || [...note.text].length > 4000)) {
     throw new Error("Release notes must contain nonempty language/text entries of at most 4000 characters.");
   }
   const byLocale = new Map(notes.map(note => [note.language, note.text]));
@@ -111,7 +111,7 @@ export async function executeAction(request, { action, versionName, buildNumber,
   if (build.attributes.usesNonExemptEncryption !== false) throw new Error("Resolve the build's export-compliance declaration before submission.");
   if (!version) {
     if (action !== "prepare") throw new Error("Prepare the App Store version before submitting it.");
-    validateNotes(notes, ["en-US", "fr-FR"]);
+    validateNotes(notes, []);
     version = (await request("/v1/appStoreVersions", "POST", { data: {
       type: "appStoreVersions", attributes: { platform: "IOS", versionString: versionName, releaseType: "AFTER_APPROVAL" },
       relationships: { app: relation("apps", appId) }

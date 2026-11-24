@@ -225,13 +225,14 @@ workflow to prepare and submit that exact processed build for App Review:
 gh workflow run app-store-release.yml -f action=inspect
 gh workflow run app-store-release.yml -f action=prepare \
   -f version_name=1.0.18 -f build_number=2201 \
-  -f release_notes_file=docs/releases/android-1.0.18.json
+  -f release_notes_file=docs/releases/ios-1.0.18.json
 gh workflow run app-store-release.yml -f action=submit \
   -f version_name=1.0.18 -f build_number=2201
 ```
 
 Use the actual build number from the successful iOS build workflow. The release
-notes format is shared with Google Play. Preparation retains the existing store
+notes format is shared with Google Play, but locale codes must match each store
+(the current App Store listing uses `en-GB`). Preparation retains the existing store
 listing and screenshots, updates What's New in every existing language, selects
 the exact build, and enables automatic release after approval. Submission checks
 the app identity, marketing version, build processing and export compliance; it
