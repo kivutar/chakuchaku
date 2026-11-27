@@ -230,14 +230,18 @@ test("knowledge units are explicitly assigned to an enabled curriculum level", a
 });
 
 test("all prepared grammar exercises declare their minimum level", async () => {
-  const [introduction, exercises, grammar, readings] = await Promise.all([
+  const [introduction, exercises, grammar, readings, vocabulary] = await Promise.all([
     readJson("data/introduction.json"),
     readJson("data/exercises.json"),
     readJson("data/jlpt-n5-grammar.json"),
-    readJson("data/readings.json")
+    readJson("data/readings.json"),
+    readJson("data/jlpt-n5-vocabulary.json")
   ]);
   const n4GrammarIds = new Set(
     grammar.filter(({ introducedAt }) => introducedAt === "n4").map(({ id }) => id)
+  );
+  const n4VocabularyIds = new Set(
+    vocabulary.filter(({ introducedAt }) => introducedAt === "n4").map(({ id }) => id)
   );
 
   assert.equal(introduction.minimumLevel, "n5");
@@ -245,9 +249,10 @@ test("all prepared grammar exercises declare their minimum level", async () => {
   const readingLevels = new Map(readings.flatMap(({ level, sentences }) =>
     sentences.map(({ id }) => [id, level])));
   assert.equal(exercises.filter(({ minimumLevel, readingSentenceId }) =>
-    minimumLevel === "n4" && !readingSentenceId).length, 517);
+    minimumLevel === "n4" && !readingSentenceId).length, 519);
   assert.ok(exercises.filter(({ minimumLevel }) => minimumLevel === "n4").every((exercise) => {
     return exercise.grammarPointIds.some((id) => n4GrammarIds.has(id)) ||
+      exercise.vocabularyIds.some((id) => n4VocabularyIds.has(id)) ||
       readingLevels.get(exercise.readingSentenceId) === "n4";
   }));
 });

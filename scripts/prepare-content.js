@@ -89,6 +89,14 @@ function getTokenCategory(details, previousToken) {
 function getCompatiblePartsOfSpeech(details) {
   const [primary, secondary, tertiary] = details;
 
+  if (primary === "接頭詞" || (primary === "助詞" && secondary.startsWith("副助詞"))) {
+    return new Set(["affix"]);
+  }
+
+  if (primary === "動詞" && secondary === "接尾") {
+    return new Set(["verb", "affix"]);
+  }
+
   if (primary === "名詞") {
     if (secondary === "代名詞") {
       return new Set(["pronoun", "noun"]);
@@ -108,6 +116,10 @@ function getCompatiblePartsOfSpeech(details) {
 
     if (secondary === "形容動詞語幹") {
       return new Set(["adjective"]);
+    }
+
+    if (secondary === "非自立") {
+      return new Set(["noun", "affix"]);
     }
 
     return new Set(["noun", "pronoun", "number", "counter"]);
@@ -154,9 +166,9 @@ function createVocabularyIndex(vocabulary) {
 
     if (entry.tokenizeAsWord !== undefined && (
       typeof entry.tokenizeAsWord !== "boolean" ||
-      (entry.tokenizeAsWord && !["noun", "pronoun", "number"].includes(entry.partOfSpeech))
+      (entry.tokenizeAsWord && !["noun", "pronoun", "number", "interjection"].includes(entry.partOfSpeech))
     )) {
-      throw new Error(`${entry.id}: tokenizeAsWord requires a noun, pronoun, or number.`);
+      throw new Error(`${entry.id}: tokenizeAsWord requires a noun, pronoun, number, or interjection.`);
     }
 
     if (entry.tokenizeAsWord) {
@@ -270,6 +282,22 @@ function tokenizeContent(text, vocabularyIndex) {
   const tokens = [];
 
   for (let start = 0; start < sourceTokens.length;) {
+    // IPADIC splits the polite request ていただけません into て + い + た +
+    // だけ + ませ + ん. Keep its auxiliary stem together so that this だけ
+    // cannot review the unrelated limiting particle. Require ません as well:
+    // 食べていただけです ("was only eating") really does contain だけ.
+    if (["て", "で"].includes(sourceTokens[start - 1]?.surface) &&
+        ["い", "た", "だけ", "ませ", "ん"].every((surface, offset) =>
+          sourceTokens[start + offset]?.surface === surface)) {
+      tokens.push({
+        surface: "いただけ",
+        details: ["動詞", "非自立", "*", "*", "一段", "連用形",
+          "いただける", "イタダケ", "イタダケ"]
+      });
+      start += 3;
+      continue;
+    }
+
     let merged;
 
     for (const { surface, entry } of vocabularyIndex.wordForms) {
@@ -288,14 +316,15 @@ function tokenizeContent(text, vocabularyIndex) {
       }
 
       if (end > start + 1 && combined === surface) {
-        // Opt-in nominal compounds keep their lexical identity instead of
+        // Opt-in compounds and greetings keep their lexical identity instead of
         // silently reviewing their tokenizer components (何 + でも, 午前 + 中).
         merged = {
           end,
           token: {
             surface,
             details: [
-              "名詞", { pronoun: "代名詞", number: "数" }[entry.partOfSpeech] || "一般",
+              entry.partOfSpeech === "interjection" ? "感動詞" : "名詞",
+              { pronoun: "代名詞", number: "数", interjection: "*" }[entry.partOfSpeech] || "一般",
               "*", "*", "*", "*", surface, entry.reading, entry.reading
             ]
           }
@@ -466,11 +495,24 @@ function findVocabularyCandidates(token, vocabularyIndex, includeReadingForms = 
     const matches = [
       ...(vocabularyIndex.matchesByForm.get(form.surface) || []),
       ...(includeReadingForms
-        ? vocabularyIndex.matchesByReading.get(form.surface) || []
+        ? (vocabularyIndex.matchesByReading.get(form.surface) || []).filter(({ entry }) =>
+          !["affix", "counter"].includes(entry.partOfSpeech))
         : [])
     ];
 
     for (const match of matches) {
+      // Prefixes cannot stand in for suffixes with the same pronunciation.
+      if (token.details[0] === "接頭詞" && match.entry.term.startsWith("～")) {
+        continue;
+      }
+      // A bare counter form must occur as a counter. Otherwise adding 本
+      // would relink every ordinary book noun to the cylindrical-item counter.
+      if (match.entry.partOfSpeech === "counter" &&
+          match.entry.term.startsWith("～") &&
+          token.details[2] !== "助数詞" &&
+          !match.allowPartOfSpeechMismatch) {
+        continue;
+      }
       const partOfSpeechMismatch = !compatiblePartsOfSpeech.has(
         match.entry.partOfSpeech
       );
@@ -488,7 +530,15 @@ function findVocabularyCandidates(token, vocabularyIndex, includeReadingForms = 
     }
   }
 
-  return [...candidatesById.values()];
+  const candidates = [...candidatesById.values()];
+  // 本 after a quantity is a counter, while 本 in 本を読む is a book.
+  // Prefer a matching suffix entry only when the tokenizer identifies a suffix.
+  if (token.details[0] === "名詞" && token.details[1] === "接尾") {
+    const suffixes = candidates.filter(({ entry }) =>
+      ["counter", "affix"].includes(entry.partOfSpeech));
+    if (suffixes.length) return suffixes;
+  }
+  return candidates;
 }
 
 function formatCandidates(candidates) {
@@ -614,15 +664,17 @@ function tokenizeLesson(lesson, vocabularyIndex, options = {}) {
       result.reading = reading;
     }
 
-    if (!linkedTokenCategories.has(category)) {
-      return result;
-    }
-
     const candidates = findVocabularyCandidates(
       token,
       vocabularyIndex,
       options.includeReadingForms === true
     );
+    // Explicit dictionary forms can link grammatical suffixes such as だけ
+    // without turning particles into nouns or linking arbitrary grammar tokens.
+    if (!linkedTokenCategories.has(category) && !candidates.some(({ entry }) =>
+      entry.partOfSpeech === "affix")) {
+      return result;
+    }
     const vocabularyOccurrence = (vocabularySurfaceOccurrences.get(token.surface) || 0) + 1;
     const overrideKey = findOverrideKey(
       vocabularyOverrides,
@@ -689,7 +741,7 @@ function tokenizeLesson(lesson, vocabularyIndex, options = {}) {
     }
 
     if (selectedMatch) {
-      if (selectedMatch.partOfSpeechMismatch) {
+      if (!category || (selectedMatch.partOfSpeechMismatch && !["particle", "auxiliary"].includes(category))) {
         result.category = getDisplayCategory(selectedMatch.entry.partOfSpeech);
       }
 

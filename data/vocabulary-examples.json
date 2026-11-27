@@ -1933,20 +1933,14 @@
     "targetSurface": "一日",
     "targetReading": "いちにち",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I play all day.",
     "tokens": [
       {
-        "surface": "一",
+        "surface": "一日",
         "category": "noun",
-        "reading": "いち",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "いちにち",
+        "vocabularyId": "vocab-3d24eb7fb7b5"
       },
       {
         "surface": "あそぶ",
@@ -3597,7 +3591,9 @@
     "tokens": [
       {
         "surface": "お",
-        "reading": "お"
+        "reading": "お",
+        "category": "noun",
+        "vocabularyId": "vocab-32a08c9e50c0"
       },
       {
         "surface": "酒",
@@ -3633,7 +3629,9 @@
     "tokens": [
       {
         "surface": "お",
-        "reading": "お"
+        "reading": "お",
+        "category": "noun",
+        "vocabularyId": "vocab-32a08c9e50c0"
       },
       {
         "surface": "皿",
@@ -3861,7 +3859,9 @@
     "tokens": [
       {
         "surface": "お",
-        "reading": "お"
+        "reading": "お",
+        "category": "noun",
+        "vocabularyId": "vocab-32a08c9e50c0"
       },
       {
         "surface": "手洗い",
@@ -4269,7 +4269,7 @@
         "surface": "さん",
         "category": "noun",
         "reading": "さん",
-        "vocabularyId": "vocab-1bedf722c04a"
+        "vocabularyId": "vocab-bd1d44806672"
       },
       {
         "surface": "に",
@@ -4839,20 +4839,14 @@
     "targetSurface": "外国人",
     "targetReading": "がいこくじん",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "There is a foreigner.",
     "tokens": [
       {
-        "surface": "外国",
+        "surface": "外国人",
         "category": "noun",
-        "reading": "がいこく",
-        "vocabularyId": "vocab-8aa646a4debc"
-      },
-      {
-        "surface": "人",
-        "category": "noun",
-        "reading": "じん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "reading": "がいこくじん",
+        "vocabularyId": "vocab-a089826e2906"
       },
       {
         "surface": "が",
@@ -5113,7 +5107,7 @@
         "surface": "時間",
         "category": "noun",
         "reading": "じかん",
-        "vocabularyId": "vocab-f6a8c4a23b51"
+        "vocabularyId": "vocab-4616bda99d66"
       },
       {
         "surface": "かかる",
@@ -5232,8 +5226,8 @@
     "vocabularyId": "vocab-a76427eaec16",
     "text": "三か月待つ。",
     "targetSurface": "三か月",
-    "targetReading": "さんかげつ",
-    "targetTokenStart": 0,
+    "targetReading": "かげつ",
+    "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "I wait three months.",
     "tokens": [
@@ -5246,7 +5240,8 @@
       {
         "surface": "か月",
         "category": "noun",
-        "reading": "かげつ"
+        "reading": "かげつ",
+        "vocabularyId": "vocab-a76427eaec16"
       },
       {
         "surface": "待つ",
@@ -6049,8 +6044,8 @@
     "vocabularyId": "vocab-270c4499729c",
     "text": "子供が寒がる。",
     "targetSurface": "寒がる",
-    "targetReading": "さむがる",
-    "targetTokenStart": 2,
+    "targetReading": "がる",
+    "targetTokenStart": 3,
     "targetTokenEnd": 4,
     "translation": "The child seems cold.",
     "tokens": [
@@ -6074,7 +6069,8 @@
       {
         "surface": "がる",
         "category": "verb",
-        "reading": "がる"
+        "reading": "がる",
+        "vocabularyId": "vocab-270c4499729c"
       },
       {
         "surface": "。",
@@ -6785,7 +6781,7 @@
         "surface": "人",
         "category": "noun",
         "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "vocabularyId": "vocab-f3b7e57e86cd"
       },
       {
         "surface": "です",
@@ -7731,8 +7727,8 @@
     "vocabularyId": "vocab-95c68043ed38",
     "text": "五くらいです。",
     "targetSurface": "五くらい",
-    "targetReading": "ごくらい",
-    "targetTokenStart": 0,
+    "targetReading": "くらい",
+    "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "It is about five.",
     "tokens": [
@@ -7745,7 +7741,8 @@
       {
         "surface": "くらい",
         "category": "particle",
-        "reading": "くらい"
+        "reading": "くらい",
+        "vocabularyId": "vocab-95c68043ed38"
       },
       {
         "surface": "です",
@@ -8265,8 +8262,8 @@
     "vocabularyId": "vocab-e1c664c5aa42",
     "text": "りんご一個です。",
     "targetSurface": "一個",
-    "targetReading": "いちこ",
-    "targetTokenStart": 1,
+    "targetReading": "こ",
+    "targetTokenStart": 2,
     "targetTokenEnd": 3,
     "translation": "It is one apple.",
     "tokens": [
@@ -8285,7 +8282,8 @@
       {
         "surface": "個",
         "category": "noun",
-        "reading": "こ"
+        "reading": "こ",
+        "vocabularyId": "vocab-e1c664c5aa42"
       },
       {
         "surface": "です",
@@ -9231,7 +9229,8 @@
       {
         "surface": "ころ",
         "category": "noun",
-        "reading": "ころ"
+        "reading": "ころ",
+        "vocabularyId": "vocab-6d49d0cfb7ad"
       },
       {
         "surface": "行き",
@@ -9899,7 +9898,7 @@
         "surface": "人",
         "category": "noun",
         "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "vocabularyId": "vocab-f3b7e57e86cd"
       },
       {
         "surface": "い",
@@ -10138,8 +10137,8 @@
     "vocabularyId": "vocab-4616bda99d66",
     "text": "三時間います。",
     "targetSurface": "三時間",
-    "targetReading": "さんじかん",
-    "targetTokenStart": 0,
+    "targetReading": "じかん",
+    "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "I will stay for three hours.",
     "tokens": [
@@ -10153,7 +10152,7 @@
         "surface": "時間",
         "category": "noun",
         "reading": "じかん",
-        "vocabularyId": "vocab-f6a8c4a23b51"
+        "vocabularyId": "vocab-4616bda99d66"
       },
       {
         "surface": "い",
@@ -10805,27 +10804,22 @@
     "vocabularyId": "vocab-7b157c91e4d9",
     "text": "一日中勉強します。",
     "targetSurface": "一日中",
-    "targetReading": "いちびちゅう",
-    "targetTokenStart": 0,
-    "targetTokenEnd": 3,
+    "targetReading": "じゅう",
+    "targetTokenStart": 1,
+    "targetTokenEnd": 2,
     "translation": "I study all day.",
     "tokens": [
       {
-        "surface": "一",
+        "surface": "一日",
         "category": "noun",
-        "reading": "いち",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "いちにち",
+        "vocabularyId": "vocab-3d24eb7fb7b5"
       },
       {
         "surface": "中",
         "category": "particle",
-        "reading": "ちゅう"
+        "reading": "じゅう",
+        "vocabularyId": "vocab-7b157c91e4d9"
       },
       {
         "surface": "勉強",
@@ -11584,8 +11578,8 @@
     "vocabularyId": "vocab-c6ac515de512",
     "text": "りんごをひとつずつ食べる。",
     "targetSurface": "ひとつずつ",
-    "targetReading": "ひとつずつ",
-    "targetTokenStart": 2,
+    "targetReading": "ずつ",
+    "targetTokenStart": 3,
     "targetTokenEnd": 4,
     "translation": "I eat the apples one by one.",
     "tokens": [
@@ -11609,7 +11603,8 @@
       {
         "surface": "ずつ",
         "category": "particle",
-        "reading": "ずつ"
+        "reading": "ずつ",
+        "vocabularyId": "vocab-c6ac515de512"
       },
       {
         "surface": "食べる",
@@ -13070,7 +13065,8 @@
       {
         "surface": "だけ",
         "category": "particle",
-        "reading": "だけ"
+        "reading": "だけ",
+        "vocabularyId": "vocab-12b90c71c1ce"
       },
       {
         "surface": "飲む",
@@ -13650,19 +13646,14 @@
     "targetSurface": "誰か",
     "targetReading": "だれか",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "Someone is coming.",
     "tokens": [
       {
-        "surface": "誰",
+        "surface": "誰か",
         "category": "noun",
-        "reading": "だれ",
-        "vocabularyId": "vocab-f3f74ef8bc9a"
-      },
-      {
-        "surface": "か",
-        "category": "particle",
-        "reading": "か"
+        "reading": "だれか",
+        "vocabularyId": "vocab-78047982c503"
       },
       {
         "surface": "来",
@@ -13685,21 +13676,15 @@
     "vocabularyId": "vocab-5841d3db2c97",
     "text": "誕生日は今日です。",
     "targetSurface": "誕生日",
-    "targetReading": "たんじょう",
+    "targetReading": "たんじょうび",
     "targetTokenStart": 0,
     "targetTokenEnd": 1,
     "translation": "My birthday is today.",
     "tokens": [
       {
-        "surface": "誕生",
+        "surface": "誕生日",
         "category": "noun",
-        "reading": "たんじょう",
-        "vocabularyId": "vocab-5841d3db2c97"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
+        "reading": "たんじょうび",
         "vocabularyId": "vocab-5841d3db2c97"
       },
       {
@@ -14144,8 +14129,8 @@
     "vocabularyId": "vocab-672a58e30389",
     "text": "勉強中です。",
     "targetSurface": "勉強中",
-    "targetReading": "べんきょうちゅう",
-    "targetTokenStart": 0,
+    "targetReading": "ちゅう",
+    "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "I am studying.",
     "tokens": [
@@ -14158,7 +14143,8 @@
       {
         "surface": "中",
         "category": "particle",
-        "reading": "ちゅう"
+        "reading": "ちゅう",
+        "vocabularyId": "vocab-672a58e30389"
       },
       {
         "surface": "です",
@@ -14236,7 +14222,7 @@
     "targetSurface": "一日",
     "targetReading": "ついたち",
     "targetTokenStart": 2,
-    "targetTokenEnd": 4,
+    "targetTokenEnd": 3,
     "translation": "Today is the first of the month.",
     "tokens": [
       {
@@ -14251,16 +14237,10 @@
         "reading": "は"
       },
       {
-        "surface": "一",
+        "surface": "一日",
         "category": "noun",
-        "reading": "いち",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "ついたち",
+        "vocabularyId": "vocab-3d24eb7fb7b5"
       },
       {
         "surface": "です",
@@ -15300,8 +15280,8 @@
     "vocabularyId": "vocab-0e302b0c8583",
     "text": "三度行く。",
     "targetSurface": "三度",
-    "targetReading": "さんど",
-    "targetTokenStart": 0,
+    "targetReading": "ど",
+    "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "I go three times.",
     "tokens": [
@@ -15314,7 +15294,8 @@
       {
         "surface": "度",
         "category": "noun",
-        "reading": "ど"
+        "reading": "ど",
+        "vocabularyId": "vocab-0e302b0c8583"
       },
       {
         "surface": "行く",
@@ -16776,7 +16757,8 @@
       {
         "surface": "など",
         "category": "particle",
-        "reading": "など"
+        "reading": "など",
+        "vocabularyId": "vocab-b4e9e7da5e9f"
       },
       {
         "surface": "です",
@@ -17089,22 +17071,22 @@
     "vocabularyId": "vocab-074acfd9fb0c",
     "text": "何人ですか。",
     "targetSurface": "何人",
-    "targetReading": "なんにん",
+    "targetReading": "なん",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "How many people are there?",
     "tokens": [
       {
         "surface": "何",
         "category": "noun",
         "reading": "なん",
-        "vocabularyId": "vocab-3b010d61ddd5"
+        "vocabularyId": "vocab-074acfd9fb0c"
       },
       {
         "surface": "人",
         "category": "noun",
         "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "vocabularyId": "vocab-f3b7e57e86cd"
       },
       {
         "surface": "です",
@@ -17268,22 +17250,16 @@
     "vocabularyId": "vocab-a759a7d58008",
     "text": "三日です。",
     "targetSurface": "三日",
-    "targetReading": "さんび",
+    "targetReading": "みっか",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "It is three days.",
     "tokens": [
       {
-        "surface": "三",
+        "surface": "三日",
         "category": "noun",
-        "reading": "さん",
-        "vocabularyId": "vocab-1bedf722c04a"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "みっか",
+        "vocabularyId": "vocab-b0489d428339"
       },
       {
         "surface": "です",
@@ -17448,8 +17424,8 @@
     "vocabularyId": "vocab-f3b7e57e86cd",
     "text": "三人います。",
     "targetSurface": "三人",
-    "targetReading": "さんにん",
-    "targetTokenStart": 0,
+    "targetReading": "にん",
+    "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "There are three people.",
     "tokens": [
@@ -17463,7 +17439,7 @@
         "surface": "人",
         "category": "noun",
         "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "vocabularyId": "vocab-f3b7e57e86cd"
       },
       {
         "surface": "い",
@@ -17672,8 +17648,8 @@
     "vocabularyId": "vocab-18f63d2ef9fd",
     "text": "二年です。",
     "targetSurface": "二年",
-    "targetReading": "にねん",
-    "targetTokenStart": 0,
+    "targetReading": "ねん",
+    "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "It has been two years.",
     "tokens": [
@@ -17687,7 +17663,7 @@
         "surface": "年",
         "category": "noun",
         "reading": "ねん",
-        "vocabularyId": "vocab-8438eda3cfc0"
+        "vocabularyId": "vocab-18f63d2ef9fd"
       },
       {
         "surface": "です",
@@ -17994,8 +17970,8 @@
     "vocabularyId": "vocab-190daad883e6",
     "text": "二杯のみます。",
     "targetSurface": "二杯",
-    "targetReading": "にはい",
-    "targetTokenStart": 0,
+    "targetReading": "はい",
+    "targetTokenStart": 1,
     "targetTokenEnd": 2,
     "translation": "I drink two cupfuls.",
     "tokens": [
@@ -18008,7 +17984,8 @@
       {
         "surface": "杯",
         "category": "noun",
-        "reading": "はい"
+        "reading": "はい",
+        "vocabularyId": "vocab-190daad883e6"
       },
       {
         "surface": "のみ",
@@ -18593,7 +18570,7 @@
         "surface": "人",
         "category": "noun",
         "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "vocabularyId": "vocab-f3b7e57e86cd"
       },
       {
         "surface": "い",
@@ -21104,8 +21081,8 @@
     "vocabularyId": "vocab-d277559c27c1",
     "text": "えんぴつを2本ください。",
     "targetSurface": "2本",
-    "targetReading": "にほん",
-    "targetTokenStart": 2,
+    "targetReading": "ほん",
+    "targetTokenStart": 3,
     "targetTokenEnd": 4,
     "translation": "Two pencils, please.",
     "tokens": [
@@ -21130,7 +21107,7 @@
         "surface": "本",
         "category": "noun",
         "reading": "ほん",
-        "vocabularyId": "vocab-0ac038632611"
+        "vocabularyId": "vocab-d277559c27c1"
       },
       {
         "surface": "ください",
@@ -22312,20 +22289,14 @@
     "targetSurface": "三日",
     "targetReading": "みっか",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "I will rest for three days.",
     "tokens": [
       {
-        "surface": "三",
+        "surface": "三日",
         "category": "noun",
-        "reading": "さん",
-        "vocabularyId": "vocab-1bedf722c04a"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
-        "vocabularyId": "vocab-5841d3db2c97"
+        "reading": "みっか",
+        "vocabularyId": "vocab-b0489d428339"
       },
       {
         "surface": "休み",
@@ -23229,7 +23200,8 @@
       {
         "surface": "屋",
         "category": "noun",
-        "reading": "や"
+        "reading": "や",
+        "vocabularyId": "vocab-1c0ba08d7f15"
       },
       {
         "surface": "に",
@@ -28439,9 +28411,9 @@
       },
       {
         "surface": "かい",
-        "category": "noun",
+        "category": "verb",
         "reading": "かい",
-        "vocabularyId": "vocab-9848df70e3ed"
+        "vocabularyId": "vocab-1b65a0cb82d2"
       },
       {
         "surface": "ます",
@@ -28703,23 +28675,14 @@
     "targetSurface": "おはようございます",
     "targetReading": "おはようございます",
     "targetTokenStart": 0,
-    "targetTokenEnd": 3,
+    "targetTokenEnd": 1,
     "translation": "Good morning.",
     "tokens": [
       {
-        "surface": "おはよう",
+        "surface": "おはようございます",
         "category": "interjection",
-        "reading": "おはよう"
-      },
-      {
-        "surface": "ござい",
-        "category": "auxiliary",
-        "reading": "ござい"
-      },
-      {
-        "surface": "ます",
-        "category": "auxiliary",
-        "reading": "ます"
+        "reading": "おはようございます",
+        "vocabularyId": "vocab-e92fbf0ed627"
       },
       {
         "surface": "。",
@@ -28775,7 +28738,7 @@
     "targetSurface": "お願いします",
     "targetReading": "おねがいします",
     "targetTokenStart": 2,
-    "targetTokenEnd": 5,
+    "targetTokenEnd": 3,
     "translation": "This one, please.",
     "tokens": [
       {
@@ -28790,20 +28753,10 @@
         "reading": "を"
       },
       {
-        "surface": "お願い",
-        "category": "noun",
-        "reading": "おねがい"
-      },
-      {
-        "surface": "し",
-        "category": "verb",
-        "reading": "し",
-        "vocabularyId": "vocab-dfb6d8ba613b"
-      },
-      {
-        "surface": "ます",
-        "category": "auxiliary",
-        "reading": "ます"
+        "surface": "お願いします",
+        "category": "interjection",
+        "reading": "おねがいします",
+        "vocabularyId": "vocab-a92a3a630fed"
       },
       {
         "surface": "。",
@@ -28838,29 +28791,14 @@
     "targetSurface": "よろしくお願いします",
     "targetReading": "よろしくおねがいします",
     "targetTokenStart": 0,
-    "targetTokenEnd": 4,
+    "targetTokenEnd": 1,
     "translation": "I look forward to working with you.",
     "tokens": [
       {
-        "surface": "よろしく",
-        "category": "adverb",
-        "reading": "よろしく"
-      },
-      {
-        "surface": "お願い",
-        "category": "noun",
-        "reading": "おねがい"
-      },
-      {
-        "surface": "し",
-        "category": "verb",
-        "reading": "し",
-        "vocabularyId": "vocab-dfb6d8ba613b"
-      },
-      {
-        "surface": "ます",
-        "category": "auxiliary",
-        "reading": "ます"
+        "surface": "よろしくお願いします",
+        "category": "interjection",
+        "reading": "よろしくおねがいします",
+        "vocabularyId": "vocab-04ebcec4eac8"
       },
       {
         "surface": "。",
@@ -28916,19 +28854,14 @@
     "targetSurface": "いただきます",
     "targetReading": "いただきます",
     "targetTokenStart": 0,
-    "targetTokenEnd": 2,
+    "targetTokenEnd": 1,
     "translation": "Thank you for the food.",
     "tokens": [
       {
-        "surface": "いただき",
-        "category": "verb",
-        "reading": "いただき",
-        "vocabularyId": "vocab-bdd8330bae6d"
-      },
-      {
-        "surface": "ます",
-        "category": "auxiliary",
-        "reading": "ます"
+        "surface": "いただきます",
+        "category": "interjection",
+        "reading": "いただきます",
+        "vocabularyId": "vocab-7fd7463f51b7"
       },
       {
         "surface": "。",
@@ -31245,7 +31178,9 @@
     "tokens": [
       {
         "surface": "お",
-        "reading": "お"
+        "reading": "お",
+        "category": "noun",
+        "vocabularyId": "vocab-32a08c9e50c0"
       },
       {
         "surface": "土産",
@@ -40841,7 +40776,7 @@
         "surface": "人",
         "category": "noun",
         "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "vocabularyId": "vocab-f3b7e57e86cd"
       },
       {
         "surface": "以下",
@@ -42594,7 +42529,9 @@
     "tokens": [
       {
         "surface": "お",
-        "reading": "お"
+        "reading": "お",
+        "category": "noun",
+        "vocabularyId": "vocab-32a08c9e50c0"
       },
       {
         "surface": "つり",
@@ -43663,11 +43600,11 @@
   },
   {
     "vocabularyId": "vocab-2fe12f739abb",
-    "text": "部屋は一杯です。",
-    "targetSurface": "一杯",
+    "text": "部屋はいっぱいです。",
+    "targetSurface": "いっぱい",
     "targetReading": "いっぱい",
     "targetTokenStart": 2,
-    "targetTokenEnd": 4,
+    "targetTokenEnd": 3,
     "translation": "The room is full.",
     "tokens": [
       {
@@ -43682,15 +43619,10 @@
         "reading": "は"
       },
       {
-        "surface": "一",
-        "category": "noun",
-        "reading": "いち",
-        "vocabularyId": "vocab-5d8047464c5d"
-      },
-      {
-        "surface": "杯",
-        "category": "noun",
-        "reading": "はい"
+        "surface": "いっぱい",
+        "category": "adverb",
+        "reading": "いっぱい",
+        "vocabularyId": "vocab-2fe12f739abb"
       },
       {
         "surface": "です",
@@ -43733,7 +43665,7 @@
         "surface": "人",
         "category": "noun",
         "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "vocabularyId": "vocab-f3b7e57e86cd"
       },
       {
         "surface": "です",
@@ -45974,7 +45906,9 @@
       },
       {
         "surface": "お",
-        "reading": "お"
+        "reading": "お",
+        "category": "noun",
+        "vocabularyId": "vocab-32a08c9e50c0"
       },
       {
         "surface": "金持ち",
@@ -46157,7 +46091,7 @@
         "surface": "人",
         "category": "noun",
         "reading": "にん",
-        "vocabularyId": "vocab-ad7167347a2a"
+        "vocabularyId": "vocab-f3b7e57e86cd"
       },
       {
         "surface": "以上",
@@ -47666,7 +47600,9 @@
       },
       {
         "surface": "お",
-        "reading": "お"
+        "reading": "お",
+        "category": "noun",
+        "vocabularyId": "vocab-32a08c9e50c0"
       },
       {
         "surface": "見舞い",
@@ -54955,15 +54891,9 @@
         "reading": "は"
       },
       {
-        "surface": "誕生",
+        "surface": "誕生日",
         "category": "noun",
-        "reading": "たんじょう",
-        "vocabularyId": "vocab-5841d3db2c97"
-      },
-      {
-        "surface": "日",
-        "category": "noun",
-        "reading": "び",
+        "reading": "たんじょうび",
         "vocabularyId": "vocab-5841d3db2c97"
       },
       {

@@ -1500,7 +1500,7 @@
         "audio": "assets/voices/reading/reading-sunday-park-19.m4a",
         "vocabularyIds": [
           "vocab-1bedf722c04a",
-          "vocab-ad7167347a2a",
+          "vocab-f3b7e57e86cd",
           "vocab-826a124ad930",
           "vocab-9e0eeba39759",
           "vocab-944f21154c78"
@@ -1521,7 +1521,7 @@
             "surface": "人",
             "category": "noun",
             "reading": "にん",
-            "vocabularyId": "vocab-ad7167347a2a"
+            "vocabularyId": "vocab-f3b7e57e86cd"
           },
           {
             "surface": "で",
@@ -4174,15 +4174,9 @@
             "reading": "の"
           },
           {
-            "surface": "誕生",
+            "surface": "誕生日",
             "category": "noun",
-            "reading": "たんじょう",
-            "vocabularyId": "vocab-5841d3db2c97"
-          },
-          {
-            "surface": "日",
-            "category": "noun",
-            "reading": "び",
+            "reading": "たんじょうび",
             "vocabularyId": "vocab-5841d3db2c97"
           },
           {
@@ -4948,6 +4942,7 @@
           "vocab-7aeac2a5dd4c",
           "vocab-bbd430030244",
           "vocab-8814378ebfc2",
+          "vocab-12b90c71c1ce",
           "vocab-b5e9e035a8be",
           "vocab-4fa253e10946"
         ],
@@ -5023,7 +5018,8 @@
           {
             "surface": "だけ",
             "category": "particle",
-            "reading": "だけ"
+            "reading": "だけ",
+            "vocabularyId": "vocab-12b90c71c1ce"
           },
           {
             "surface": "入れ",
@@ -5647,7 +5643,7 @@
           "vocab-944f21154c78",
           "vocab-07f353ef981c",
           "vocab-1bedf722c04a",
-          "vocab-ad7167347a2a",
+          "vocab-f3b7e57e86cd",
           "vocab-da08a01c25e4",
           "vocab-f1af08d4c51c",
           "vocab-db6357cc3ab6"
@@ -5702,7 +5698,7 @@
             "surface": "人",
             "category": "noun",
             "reading": "にん",
-            "vocabularyId": "vocab-ad7167347a2a"
+            "vocabularyId": "vocab-f3b7e57e86cd"
           },
           {
             "surface": "で",
@@ -6937,7 +6933,7 @@
         "text": "「誰かいるんですか」と友達が聞きました。",
         "audio": "assets/voices/reading/reading-classroom-visitor-06.m4a",
         "vocabularyIds": [
-          "vocab-f3f74ef8bc9a",
+          "vocab-78047982c503",
           "vocab-e2f1dae6743a",
           "vocab-d9898f8a95b6",
           "vocab-d8a0261581dc"
@@ -6953,15 +6949,10 @@
             "reading": "「"
           },
           {
-            "surface": "誰",
+            "surface": "誰か",
             "category": "noun",
-            "reading": "だれ",
-            "vocabularyId": "vocab-f3f74ef8bc9a"
-          },
-          {
-            "surface": "か",
-            "category": "particle",
-            "reading": "か"
+            "reading": "だれか",
+            "vocabularyId": "vocab-78047982c503"
           },
           {
             "surface": "いる",
@@ -11351,6 +11342,7 @@
           "vocab-877b9ba07a47",
           "vocab-7fc81b0ddd17",
           "vocab-e267b19a680f",
+          "vocab-6d49d0cfb7ad",
           "vocab-d9898f8a95b6",
           "vocab-8af58778f14e",
           "vocab-f024ec5e9eea",
@@ -11386,7 +11378,8 @@
           {
             "surface": "ごろ",
             "category": "particle",
-            "reading": "ごろ"
+            "reading": "ごろ",
+            "vocabularyId": "vocab-6d49d0cfb7ad"
           },
           {
             "surface": "に",
@@ -11458,7 +11451,7 @@
           "vocab-d29031265cf4",
           "vocab-dc7f5fc156cf",
           "vocab-7fc81b0ddd17",
-          "vocab-0ac038632611",
+          "vocab-d277559c27c1",
           "vocab-bd365f430f35"
         ],
         "kanjiIds": [
@@ -11507,7 +11500,7 @@
             "surface": "本",
             "category": "noun",
             "reading": "ほん",
-            "vocabularyId": "vocab-0ac038632611"
+            "vocabularyId": "vocab-d277559c27c1"
           },
           {
             "surface": "止まっ",
@@ -13297,6 +13290,7 @@
           "vocab-3e1bdafed48a",
           "vocab-5d8047464c5d",
           "vocab-e267b19a680f",
+          "vocab-6d49d0cfb7ad",
           "vocab-d9898f8a95b6",
           "vocab-8af58778f14e",
           "vocab-f024ec5e9eea"
@@ -13332,7 +13326,8 @@
           {
             "surface": "ごろ",
             "category": "particle",
-            "reading": "ごろ"
+            "reading": "ごろ",
+            "vocabularyId": "vocab-6d49d0cfb7ad"
           },
           {
             "surface": "、",
@@ -14926,7 +14921,8 @@
           "vocab-6f30c5c5938f",
           "vocab-4fa253e10946",
           "vocab-4cd1238bcb91",
-          "vocab-8814378ebfc2"
+          "vocab-8814378ebfc2",
+          "vocab-12b90c71c1ce"
         ],
         "kanjiIds": [
           "kanji-79c1",
@@ -15006,7 +15002,8 @@
           {
             "surface": "だけ",
             "category": "particle",
-            "reading": "だけ"
+            "reading": "だけ",
+            "vocabularyId": "vocab-12b90c71c1ce"
           },
           {
             "surface": "待ち",
@@ -20203,6 +20200,7 @@
         "audio": "assets/voices/reading/reading-kyoto-trip-20.m4a",
         "vocabularyIds": [
           "vocab-c97677d187f5",
+          "vocab-32a08c9e50c0",
           "vocab-e70f9243d4c7",
           "vocab-3841b646739f",
           "vocab-7fa86c660a00",
@@ -20238,7 +20236,9 @@
           },
           {
             "surface": "お",
-            "reading": "お"
+            "reading": "お",
+            "category": "noun",
+            "vocabularyId": "vocab-32a08c9e50c0"
           },
           {
             "surface": "店",
@@ -21119,6 +21119,7 @@
           "vocab-28102c121d50",
           "vocab-beff4a4d6b56",
           "vocab-a595b5ca5679",
+          "vocab-12b90c71c1ce",
           "vocab-ffc41bd9a841",
           "vocab-463ea6ce108e"
         ],
@@ -21180,7 +21181,8 @@
           {
             "surface": "だけ",
             "category": "particle",
-            "reading": "だけ"
+            "reading": "だけ",
+            "vocabularyId": "vocab-12b90c71c1ce"
           },
           {
             "surface": "は",
@@ -22210,15 +22212,9 @@
             "reading": "の"
           },
           {
-            "surface": "誕生",
+            "surface": "誕生日",
             "category": "noun",
-            "reading": "たんじょう",
-            "vocabularyId": "vocab-5841d3db2c97"
-          },
-          {
-            "surface": "日",
-            "category": "noun",
-            "reading": "び",
+            "reading": "たんじょうび",
             "vocabularyId": "vocab-5841d3db2c97"
           },
           {
@@ -22430,6 +22426,7 @@
           "vocab-d2b59fda6f1a",
           "vocab-25acc002a82f",
           "vocab-1ec067551dd4",
+          "vocab-12b90c71c1ce",
           "vocab-516ad1128c71",
           "vocab-2ab01f1ec07e",
           "vocab-dfb6d8ba613b"
@@ -22500,7 +22497,8 @@
           {
             "surface": "だけ",
             "category": "particle",
-            "reading": "だけ"
+            "reading": "だけ",
+            "vocabularyId": "vocab-12b90c71c1ce"
           },
           {
             "surface": "は",

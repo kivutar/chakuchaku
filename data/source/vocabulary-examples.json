@@ -1890,7 +1890,15 @@
     "vocabularyId": "vocab-7b157c91e4d9",
     "text": "一日中勉強します。",
     "targetSurface": "一日中",
-    "translation": "I study all day."
+    "translation": "I study all day.",
+    "tokenOverrides": {
+      "中": {
+        "reading": "じゅう"
+      }
+    },
+    "vocabularyOverrides": {
+      "中": "vocab-7b157c91e4d9"
+    }
   },
   {
     "vocabularyId": "vocab-fd63d3fc7c86",
@@ -7528,8 +7536,8 @@
   },
   {
     "vocabularyId": "vocab-2fe12f739abb",
-    "text": "部屋は一杯です。",
-    "targetSurface": "一杯",
+    "text": "部屋はいっぱいです。",
+    "targetSurface": "いっぱい",
     "translation": "The room is full."
   },
   {

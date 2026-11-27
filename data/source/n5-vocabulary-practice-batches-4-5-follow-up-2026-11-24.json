@@ -1,0 +1,2158 @@
+{
+  "reviewedAt": "2026-11-24",
+  "batches": [
+    4,
+    5
+  ],
+  "baselineRevision": "3939351c8e0e0d3d11c4fd36216475eee76a1f1c",
+  "scope": "Fresh combined review of the 50 exercises in batch 4 and the 42 exercises in batch 5, including the shared dictionary/preparation changes and their effects on older content. This report supersedes earlier review evidence for changed entries; original batch reports remain historical snapshots.",
+  "method": [
+    "Read every Japanese sentence and its English and French translation; checked meaning, naturalness, grammar targets, difficulty, vocabulary focus, contextual readings, and production hint coverage.",
+    "Inspected dictionary metadata, preparation changes, all 159 older exercises affected by batch 5, and changed reading/vocabulary-example tokens. Checked false matches and retained existing vocabulary IDs and study levels.",
+    "Expanded the phonetic review of batch 4 from 17 to all 50 recordings, using no expected sentence in transcription prompts. Matched existing batch 5 normal and phonetic transcriptions to all 42 final audio hashes. Independently transcribed the three replacement recordings again and ran a fresh PCM validation over all 92 recordings.",
+    "Compared every full phonetic transcript with the prepared reading. Normalized punctuation and katakana, and explicitly documented retained kanji and equivalent sound spellings. The remaining kana-only ASR disagreement was resolved by a further replacement recording on 2026-11-25; all three transcription passes now agree. This is automated audio review, not a claim of human listening.",
+    "Rendered every exercise in English and French at a 390-pixel mobile viewport. Opened every production hint and checked glossary content, vocabulary-credit exclusions, overflow, prompts, answers, grammar explanations, audio buttons, decoding, and representative playback. Visually checked the French apples exercise.",
+    "reviewedContentSha256 hashes UTF-8 compact sorted JSON {source: sourceExercise, french: sourceFrenchEntry, prepared: preparedExercise}; audio hashes cover final M4A bytes."
+  ],
+  "summary": {
+    "individuallyReviewed": 92,
+    "recognition": 46,
+    "production": 46,
+    "n5Exercises": 90,
+    "n4Exercises": 2,
+    "grammarPointsPerExercise": [
+      2,
+      3
+    ],
+    "productionHintPairsAdded": 1,
+    "replacedRecordings": 3,
+    "recordingsValidated": 92,
+    "normalTranscriptions": 92,
+    "phoneticTranscriptions": 92,
+    "additionalIndependentModelChecks": 1,
+    "olderRequestsWithFalseVocabularyCreditFixed": 5,
+    "vocabularyExamplesCorrectedInFollowUp": 1,
+    "n5DictionaryEntries": 879,
+    "n5VocabularyWithoutLinkedGrammarExercises": 0,
+    "browserChecks": 184,
+    "testFilesPassed": 36,
+    "openFindings": 0
+  },
+  "fixes": [
+    {
+      "issue": "Missing positional vocabulary hint",
+      "exerciseId": "production-n5-vocab-nine-apples-on-table-eat-with-family",
+      "fix": "Link on/sur to 上 in both production prompts."
+    },
+    {
+      "issue": "False limiting-particle SRS credit in polite requests",
+      "exerciseIds": [
+        "n4-polite-ask-directions-to-station",
+        "n4-polite-ask-carry-luggage",
+        "production-n4-polite-ask-close-window",
+        "production-n4-polite-ask-write-name",
+        "n4-please-write-larger-to-read"
+      ],
+      "fix": "Preserve いただけ as one auxiliary stem when IPADIC splits て/でいただけません. Keep genuine だけ, including 食べていただけです, separate and linkable. Added regressions for prepared requests, grammar highlights, and the genuine limiting particle."
+    },
+    {
+      "issue": "Full room confused with the cup counter",
+      "vocabularyId": "vocab-2fe12f739abb",
+      "fix": "Write 部屋はいっぱいです。 and select いっぱい as the target surface. Its full reading and vocabulary identity are verified by a regression test; the standalone vocabulary recording remains applicable."
+    },
+    {
+      "issue": "Unclear batch 4 recordings",
+      "exerciseIds": [
+        "production-n5-vocab-zero-homework-play-with-friends",
+        "production-n5-vocab-can-you-see-mountain-from-there",
+        "n5-vocab-ten-thousand-yen-bag-worth-buying"
+      ],
+      "fix": "Add explicit pronunciation text and replace all three recordings. Recheck PCM, independent text transcriptions, and phonetic transcriptions. The mountain recording was replaced again on 2026-11-25, resolving the remaining ASR disagreement; final evidence is stored per entry."
+    }
+  ],
+  "validation": {
+    "contentPreparation": "passed; 1952 static lessons",
+    "tests": "36 of 36 files passed again after final fixes on 2026-11-25",
+    "browser": "92 English and 92 French exercises passed in the combined review; the final replacement recording passed new English/French playback and decoding checks on 2026-11-25",
+    "audio": "92 of 92 final recordings passed fresh PCM validation; all transcription evidence matched final file hashes",
+    "webBuild": "fbe0bd4a556aa52a; 4987 voices; 0 missing narration",
+    "nativeBuild": "249678156094abbf; 4987 voices; 0 missing narration"
+  },
+  "entries": [
+    {
+      "id": "n5-vocab-oh-homework-left-at-home",
+      "batch": 4,
+      "focusVocabularyId": "vocab-acc6dcfb8567",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "83f19d557c44e4b43b849a9d876c226eab6bf51240b0e9bb4ab374d57618dea4",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-oh-homework-left-at-home.m4a",
+        "sha256": "4369617d58fea40889d86e4c5ee97cb8cca352776f8651e88cf899dee8805875",
+        "durationSeconds": 5.2,
+        "pcmValidation": "passed",
+        "transcript": "ああ、宿題を家に忘れたので、取りに帰らなければなりません。",
+        "phoneticTranscript": "ああ、しゅくだいをいえにわすれたので、とりにかえらなければなりません。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-person-sitting-over-there-is-teacher",
+      "batch": 4,
+      "focusVocabularyId": "vocab-f14c108fc553",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "1697379219c6335655b34a825b54f88bb16e7d146487b2fd5bcbe6bd3f24abf2",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-person-sitting-over-there-is-teacher.m4a",
+        "sha256": "7c11f4dab6ecc9f8852a095ea4c2d98ca7f6c6ccb83eaa637a07e123f6e876b7",
+        "durationSeconds": 3.75,
+        "pcmValidation": "passed",
+        "transcript": "あっちに座っている人は私の先生です。",
+        "phoneticTranscript": "あっちにすわっているひとは、わたしのせんせいです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-that-cake-sister-made-not-eaten",
+      "batch": 4,
+      "focusVocabularyId": "vocab-56e4ae127cea",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "90f75dc8072c7e749fafc8a5aa9effaae6b6bb5ce5493a53120d7a2a9833fa99",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-that-cake-sister-made-not-eaten.m4a",
+        "sha256": "c0648f9e2d05b4963f12022500efbb16135ecda5dbc6864f5f09ca0b972ece1b",
+        "durationSeconds": 4,
+        "pcmValidation": "passed",
+        "transcript": "あれは姉が作ったケーキですが、まだ食べていません。",
+        "phoneticTranscript": "あれはあねがつくったけーきですが、まだたべていません。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-fifth-of-next-month-return-to-japan",
+      "batch": 4,
+      "focusVocabularyId": "vocab-a02edbda9f4c",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "e17b95ca667a80424a59dd7046781f69403ce0da443e569cd918dbabdcb1c345",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-fifth-of-next-month-return-to-japan.m4a",
+        "sha256": "87a04dc71b91be86306b18003c242bdb22fcbb9f6ee8aaec5a98753b96d44e5c",
+        "durationSeconds": 3.65,
+        "pcmValidation": "passed",
+        "transcript": "来月の五日に日本へ帰るつもりです。",
+        "phoneticTranscript": "らいげつのいつかに、にほんへかえるつもりです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-mother-says-yes-then-hangs-up",
+      "batch": 4,
+      "focusVocabularyId": "vocab-0afc81d87148",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "44202a963890a71e2bfea7476a62c43c9a791f85ca3a2f6dda40d4deb0a73d88",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-mother-says-yes-then-hangs-up.m4a",
+        "sha256": "6749431f4dd30a06f7b7d8daff4eac00d1d379ce754364265db21ce509717405",
+        "durationSeconds": 4.15,
+        "pcmValidation": "passed",
+        "transcript": "母は「ええ」と言ってから電話を切りました。",
+        "phoneticTranscript": "ははは、ええといってから、でんわをきりました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-woman-in-photo-sings-well",
+      "batch": 4,
+      "focusVocabularyId": "vocab-4d9423288cb2",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "68044267e274d3da7de70aee0fb339db4ba42d8771d1fa25371649a71bfe7032",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-woman-in-photo-sings-well.m4a",
+        "sha256": "7a341fdd99fd8de0fe53bd64c31756dce91c9c0d031575d4bbc25f84b0eeb824",
+        "durationSeconds": 4.45,
+        "pcmValidation": "passed",
+        "transcript": "写真の女の人は、歌を歌うのが上手です。",
+        "phoneticTranscript": "しゃしんのおんなのひとは、うたをうたうのがじょうずです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-one-kilo-of-meat-too-much",
+      "batch": 4,
+      "focusVocabularyId": "vocab-b376cd0cb0d3",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "f606f5364cb8b343061890267f1fe8c8136ebb3398071024508bbf2638aa9e68",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-one-kilo-of-meat-too-much.m4a",
+        "sha256": "33c3a8d21a8c3de96af5008e08d537b9e4537bb2bfb9e25a0275e02a74a96e5f",
+        "durationSeconds": 4.45,
+        "pcmValidation": "passed",
+        "transcript": "肉を一キロ買いましたが、少し多すぎました。",
+        "phoneticTranscript": "にくをいちきろかいましたが、すこしおおすぎました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-walk-three-kilometers-every-morning",
+      "batch": 4,
+      "focusVocabularyId": "vocab-96edab4ea91f",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "c5c33597cc3f529d1c4ccb20b0441b189052289dc96b5f1ccd98e15f07c74c4f",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-walk-three-kilometers-every-morning.m4a",
+        "sha256": "7d71ff6e6316ffd72ce7f15b9552f64b91ff5ef3a2402a36b9283077f4b03442",
+        "durationSeconds": 4.9,
+        "pcmValidation": "passed",
+        "transcript": "朝ご飯を食べる前に、毎朝3キロ歩きます。",
+        "phoneticTranscript": "あさごはんをたべるまえに、まいあささんきろあるきます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-two-hundred-grams-of-sugar-for-cake",
+      "batch": 4,
+      "focusVocabularyId": "vocab-d05f0e822ae9",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "43e0d1b4538deee7825621d06c0809750922ad5da0c4ef8b35cd205f6fe9b666",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-two-hundred-grams-of-sugar-for-cake.m4a",
+        "sha256": "01a3dc22ca2531dc3b636a432895852c61da0d2f7d18b1a1182721fc67831eae",
+        "durationSeconds": 3.85,
+        "pcmValidation": "passed",
+        "transcript": "ケーキを作りたいので、砂糖を200グラム買います。",
+        "phoneticTranscript": "ケーキをつくりたいので、さとうをにひゃくぐらむかいます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-this-book-quite-difficult-but-interesting",
+      "batch": 4,
+      "focusVocabularyId": "vocab-17be2492a375",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "3f79ed93a56b8f1c0d8f8078da0e9d3fa2bf824be917af9f10de3f676ece7276",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-this-book-quite-difficult-but-interesting.m4a",
+        "sha256": "d8871a8d2f3b0a7a04c4c7444751f2eac3d1452747ddb08aca102a01118f6cb8",
+        "durationSeconds": 4.45,
+        "pcmValidation": "passed",
+        "transcript": "この本は結構難しいですが、面白いと思います。",
+        "phoneticTranscript": "このほんはけっこうむずかしいですが、おもしろいとおもいます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-ninth-birthday-make-cake",
+      "batch": 4,
+      "focusVocabularyId": "vocab-9acbf1542642",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "856b87dccafb17e4ca6e9206a3eaac01d61e283f9f0b79c8ee780b4fd3b49a65",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-ninth-birthday-make-cake.m4a",
+        "sha256": "58eb9abcd534c6125718cfa4b895760a166e145f6b9ce79f46f96edb74fe9abb",
+        "durationSeconds": 5,
+        "pcmValidation": "passed",
+        "transcript": "妹の誕生日は九日なので、ケーキを作ってあげたいです。",
+        "phoneticTranscript": "いもうとのたんじょうびは、ここのかなので、けーきをつくってあげたいです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-nine-apples-on-table-eat-with-family",
+      "batch": 4,
+      "focusVocabularyId": "vocab-0d0163a40587",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "1ee1213c2634ea2e82bcf2284206fadba5062dcca80c6b6d6d84db33ff434bee",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-nine-apples-on-table-eat-with-family.m4a",
+        "sha256": "0db8f92304ac51de0d73d8111f0af7f43218594cc412fc66700fadbd2e23a3bf",
+        "durationSeconds": 5.05,
+        "pcmValidation": "passed",
+        "transcript": "テーブルの上にリンゴが九つあるので、家族と食べます。",
+        "phoneticTranscript": "テーブルのうえにりんごがここのつあるので、かぞくとたべます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ],
+      "followUpNotes": [
+        "Added matching English on and French sur hints for 上. The original prompt, Japanese sentence, and recording stay unchanged."
+      ]
+    },
+    {
+      "id": "n5-vocab-this-way-quieter-so-read-here",
+      "batch": 4,
+      "focusVocabularyId": "vocab-105cbb94135c",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "7449cc9ae86c7a9b6340d7c490c7ed33e84085bc6f06b41cbc359a5699efad01",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-this-way-quieter-so-read-here.m4a",
+        "sha256": "64251b06cc0f4af0632e19bb9c94afb9e299c28bca685e89d0b9a4015d5e0a2a",
+        "durationSeconds": 5.85,
+        "pcmValidation": "passed",
+        "transcript": "隣の部屋よりこっちの部屋の方が静かなので、ここで本を読みましょう。",
+        "phoneticTranscript": "となりのへやよりこっちのへやのほうがしずかなので、ここでほんをよみましょう。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-come-on-clean-up-before-going-home",
+      "batch": 4,
+      "focusVocabularyId": "vocab-a98b98005ebd",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "d30d13d0cce598e61d067ac7550b95935934ef3062c7e7e2f4da0e87bf314ac6",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-come-on-clean-up-before-going-home.m4a",
+        "sha256": "dc01f515d9e5b6e8c0c6112877492a80e63069b866ce46ff9a9acb1c912da62a",
+        "durationSeconds": 3.75,
+        "pcmValidation": "passed",
+        "transcript": "さあ、帰る前に部屋をきれいにしましょう。",
+        "phoneticTranscript": "さあ、かえるまえに、へやをきれいにしましょう。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-year-after-next-study-abroad-plan",
+      "batch": 4,
+      "focusVocabularyId": "vocab-257e2b3e9983",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "73cd783be26bbc22fdafd33c8e253f7863e6f9e754fb98db9a7037afa8ddfbbb",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-year-after-next-study-abroad-plan.m4a",
+        "sha256": "63bdcc6cbfcbec223bd3c0686e1ed23d78bbb169465fac715645c72ce5c88ce7",
+        "durationSeconds": 4.7,
+        "pcmValidation": "passed",
+        "transcript": "再来年は日本へ行って、日本語を勉強するつもりです。",
+        "phoneticTranscript": "さらいねんはにほんへいって、にほんごをべんきょうするつもりです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-fathers-old-dictionary-still-used",
+      "batch": 4,
+      "focusVocabularyId": "vocab-edfc4956f178",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "f21655bed20d74c2c9a11a8a74e76967fe381b32cdddf9248e96d7d0d480fc75",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-fathers-old-dictionary-still-used.m4a",
+        "sha256": "0d158eb5c2488b8d024cf932fc80966057f70d7f132e4271c7faa74b79735046",
+        "durationSeconds": 4.45,
+        "pcmValidation": "passed",
+        "transcript": "父にもらった磁力は古いですが、まだ使っています。",
+        "phoneticTranscript": "ちちにもらったじびきは、ふるいですが、まだつかっています。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-well-then-station-after-finishing-work",
+      "batch": 4,
+      "focusVocabularyId": "vocab-29fdb48e6aad",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "9afbae2cb2744015afbd41b8d825f7c83c63eedab8b9c4072c43f8a80fd748e1",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-well-then-station-after-finishing-work.m4a",
+        "sha256": "6d294d20688ed120759da607b78d65c34262a2e82d13fa1285fde230821edb6f",
+        "durationSeconds": 3.45,
+        "pcmValidation": "passed",
+        "transcript": "じゃあ、仕事が終わったら駅で会いましょう。",
+        "phoneticTranscript": "じゃ、しごとがおわったら、えきであいましょう。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-zero-homework-play-with-friends",
+      "batch": 4,
+      "focusVocabularyId": "vocab-8b4d4e4df6e7",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "a1a3d70474183ad8d3024118e74bac98d0d46bf3a27f7a8524e591b2ba032fd3",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-zero-homework-play-with-friends.m4a",
+        "sha256": "1ca3d29c00c30bb992ca5a722dde4a1682503d647ab44103592baa005b49624f",
+        "durationSeconds": 4.85,
+        "pcmValidation": "passed",
+        "transcript": "今日の宿題はゼロなので、友達と遊ぶつもりです。",
+        "phoneticTranscript": "きょうのしゅくだいはぜろなので、ともだちとあそぶつもりです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ],
+      "followUpNotes": [
+        "Replaced the recording after two phonetic checks heard ともれち instead of ともだち. Both final transcription passes now agree with the intended sentence."
+      ]
+    },
+    {
+      "id": "n5-vocab-think-so-too-but-ask-teacher",
+      "batch": 4,
+      "focusVocabularyId": "vocab-de2baf055bb3",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "528e7d39e6297f0eead36ec6081610c0d2829d81137c8ed873a2c7f3c0c94636",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-think-so-too-but-ask-teacher.m4a",
+        "sha256": "4022eb79f1af361a289e01331a54b4fb03630ffb7a9290573ef481ac1825b9e0",
+        "durationSeconds": 3.85,
+        "pcmValidation": "passed",
+        "transcript": "私もそう思いますが、先生に聞いてみましょう。",
+        "phoneticTranscript": "わたしもそうおもいますが、せんせいにきいてみましょう。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-can-you-see-mountain-from-there",
+      "batch": 4,
+      "focusVocabularyId": "vocab-5e5184c8d19e",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "a882d6cdded976e7bcd3d77148a1ee8a83f9acbd2daa5cd87241df0199b183d9",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-can-you-see-mountain-from-there.m4a",
+        "sha256": "6f0270fc996ac8b6983b0692811337eb34b4d035bed3cb73e025680e0ed43b2f",
+        "durationSeconds": 3.3,
+        "pcmValidation": "passed",
+        "transcript": "そっちの窓から山がよく見えますか?",
+        "phoneticTranscript": "そっちのまどから、やまがよくみえますか?",
+        "readingComparison": "matched",
+        "independentWhisperTranscript": "そっちの窓から山がよく見えますか"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ],
+      "followUpNotes": [
+        "Replaced the recording again on 2026-11-25 using natural Japanese speech text without the comma pause. Normal GPT-4o, kana-only GPT-4o, and independent Whisper transcription now all agree with 山が / やまが. PCM validation and English/French browser playback also pass."
+      ]
+    },
+    {
+      "id": "n5-vocab-well-then-write-name-before-starting",
+      "batch": 4,
+      "focusVocabularyId": "vocab-8828801cd783",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "6d83a90a44e0a54c990da8e5e87d4756f51484b21ac55e5392fd556fa8b685c8",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-well-then-write-name-before-starting.m4a",
+        "sha256": "85515ac29d623b77323889a5ab3125b4719ed0b397b49592b7933afe218b2a6d",
+        "durationSeconds": 4,
+        "pcmValidation": "passed",
+        "transcript": "それでは、始める前に名前を書いてください。",
+        "phoneticTranscript": "それでは、はじめるまえに、なまえをかいてください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-use-paper-vertically-write-name-large",
+      "batch": 4,
+      "focusVocabularyId": "vocab-ee3ffa792efb",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "5192829ce7d7e66f54b7199e0789b444f9d4a3a9a9fed4f4aef9cc503784fe5e",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-use-paper-vertically-write-name-large.m4a",
+        "sha256": "d68fb3e967c3e874437b47176f1e58c5bcd73fecf65180b25ea8f51c9f58bc3c",
+        "durationSeconds": 5.4,
+        "pcmValidation": "passed",
+        "transcript": "この紙を縦に使って、名前を大きく書いてください。",
+        "phoneticTranscript": "このかみをたてにつかって、なまえをおおきくかいてください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-first-of-next-month-start-new-job",
+      "batch": 4,
+      "focusVocabularyId": "vocab-367ca325e078",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "72dd40668decab5e93f2f7bd52396b3762dfaca56be8935daf5895d7ad447c47",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-first-of-next-month-start-new-job.m4a",
+        "sha256": "1e0dd5312609e5542f9494e3d087389973966dc0c71099e8543a6442d914a58a",
+        "durationSeconds": 4.3,
+        "pcmValidation": "passed",
+        "transcript": "来月の1日から新しい店で働くつもりです。",
+        "phoneticTranscript": "らいげつのついたちからあたらしいみせではたらくつもりです",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-listen-to-mothers-old-tape",
+      "batch": 4,
+      "focusVocabularyId": "vocab-e64411bc1058",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "2535172e46408c1928d488f1fa3f246a119b92d3c9c1c3c7b45b9fa76d4fb2a5",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-listen-to-mothers-old-tape.m4a",
+        "sha256": "756a36d0279c6fed458806947719a6b1e53467e9b2ed3d1bd5d914113be29a42",
+        "durationSeconds": 3.65,
+        "pcmValidation": "passed",
+        "transcript": "母にもらったテープをまだ聞いていません。",
+        "phoneticTranscript": "ははにもらったてーぷをまだきいていません。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-old-tape-recorder-record-own-voice",
+      "batch": 4,
+      "focusVocabularyId": "vocab-f4e7b21c2f09",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "b7a5408635cedc2ba68279605bc83395ff0c8699c5f29f55f37b9d9f3f3f470d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-old-tape-recorder-record-own-voice.m4a",
+        "sha256": "2a4dd7dac1c4fc4c3d32586904db2f0ec68ed06f47054819d6d5bad563ce3e2f",
+        "durationSeconds": 4.05,
+        "pcmValidation": "passed",
+        "transcript": "このテープレコーダーで自分の声を聞いてみたいです。",
+        "phoneticTranscript": "このてーぷれこーだーでじぶんのこえをきいてみたいです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-then-shall-we-help-carry-bags",
+      "batch": 4,
+      "focusVocabularyId": "vocab-8f8a8601914e",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "26f72997df4b7431a30f2816320468bcff38b360c0b355d46766df315c0b7e64",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-then-shall-we-help-carry-bags.m4a",
+        "sha256": "c6f64b8d92eddd3863b5bb31453de6e56123e4047d99fececc1b9622d4bfe7f2",
+        "durationSeconds": 4.6,
+        "pcmValidation": "passed",
+        "transcript": "では、その重い荷物を一緒に持ちましょうか。",
+        "phoneticTranscript": "では、そのおもいにもつをいっしょにもちましょうか。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-somehow-head-hurts-go-to-bed-early",
+      "batch": 4,
+      "focusVocabularyId": "vocab-fe433c0cf385",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "a9b79b4277c15974af6388f61cb8c3e6dfa76a307d7caeb6c9f1b83694175842",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-somehow-head-hurts-go-to-bed-early.m4a",
+        "sha256": "38be87b9c8d7cd13e9061873291e22d2423539741406a8854b968ecf9c5d317b",
+        "durationSeconds": 4.8,
+        "pcmValidation": "passed",
+        "transcript": "今日はどうも頭が痛いので、早く寝るつもりです。",
+        "phoneticTranscript": "きょうは、どうもあたまがいたいので、はやくねるつもりです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-ten-cookies-made-for-friends",
+      "batch": 4,
+      "focusVocabularyId": "vocab-e527c2381833",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "beabe4ba63a181a402325789e8664e941aba568dd9d68c419aa97d97aa3791e1",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-ten-cookies-made-for-friends.m4a",
+        "sha256": "7e3948d583b24fc89091bfb686b5e6bc7cd05cb60166107942fae852c115a957",
+        "durationSeconds": 3.75,
+        "pcmValidation": "passed",
+        "transcript": "友達にあげるお菓子を、とお作りました。",
+        "phoneticTranscript": "ともだちにあげるおかしをとおつくりました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-tenth-shop-closed-shop-today",
+      "batch": 4,
+      "focusVocabularyId": "vocab-da2913ad7e4c",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "6da7997fd7dce2ba63af611f14d88fa87bb0424a4cc06d630ed25a2d0822c483",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-tenth-shop-closed-shop-today.m4a",
+        "sha256": "e4e9e2e400e2472e1d4a927c0149b30a05bdf05819cf7680d11b42b2b88f0b97",
+        "durationSeconds": 5.4,
+        "pcmValidation": "passed",
+        "transcript": "10日はこの店が休みなので、今日買い物をしたほうがいいです。",
+        "phoneticTranscript": "とうかはこのみせがやすみなので、きょうかいものをしたほうがいいです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ],
+      "followUpNotes": [
+        "Phonetic とうか and standard spelling とおか represent the same long vowel in 十日."
+      ]
+    },
+    {
+      "id": "production-n5-vocab-seven-apples-give-some-to-friend",
+      "batch": 4,
+      "focusVocabularyId": "vocab-f6bc974a7405",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "58ec4cdcbc981d99065999f362e23762aee9e868b88fbae63fbf3d5d999c4264",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-seven-apples-give-some-to-friend.m4a",
+        "sha256": "545501d00d8e45016cf774f0e5a9edd2cfcdf3f912869be6b41b0d6b4fac1bd7",
+        "durationSeconds": 4.3,
+        "pcmValidation": "passed",
+        "transcript": "りんごが七つあるので、友達に少しあげます。",
+        "phoneticTranscript": "りんごがななつあるので、ともだちにすこしあげます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-seventh-free-invite-to-movie",
+      "batch": 4,
+      "focusVocabularyId": "vocab-0655c242d1db",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "39e691311d625154b9eed3d51c1e425544b51298a69480fc666484b35436af4d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-seventh-free-invite-to-movie.m4a",
+        "sha256": "c6d4fceafb2788ee1d2c33807bc2c40690c06c87a7a1f9ed4055c9583167db95",
+        "durationSeconds": 3.8,
+        "pcmValidation": "passed",
+        "transcript": "七日は暇なので、一緒に映画を見ませんか?",
+        "phoneticTranscript": "なのかはひまなので、いっしょにえいがおみませんか?",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ],
+      "followUpNotes": [
+        "The phonetic transcript writes the particle を as its pronunciation お."
+      ]
+    },
+    {
+      "id": "production-n5-vocab-twentieth-return-borrowed-book",
+      "batch": 4,
+      "focusVocabularyId": "vocab-08e3c50181be",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "8ec935d4e49c838816905fa9b24e3cf302a93afc45b2c3e692ff25c6a54c93e6",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-twentieth-return-borrowed-book.m4a",
+        "sha256": "ad7abd5c54f5ef351b72b2acee4113c34a45881443c9ca26a439aaf417a17146",
+        "durationSeconds": 3.7,
+        "pcmValidation": "passed",
+        "transcript": "借りた本は、速やかに返さなければなりません。",
+        "phoneticTranscript": "かりたほんは、はつかにかえさなければなりません。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-sorry-left-borrowed-book-at-home",
+      "batch": 4,
+      "focusVocabularyId": "vocab-4058f15cc5b8",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "2465dd7e14eef4cde942cfb64a6b5496290aa13ba871689a5eecf4c4dfdfee7c",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-sorry-left-borrowed-book-at-home.m4a",
+        "sha256": "e7876b4c84e222af8279f0cb1a1d2b5e90f2cc8d3b571e65c75fa59433dbd89f",
+        "durationSeconds": 6.15,
+        "pcmValidation": "passed",
+        "transcript": "借りた本を家に忘れてしまったので、友達にごめんと言いました。",
+        "phoneticTranscript": "かりたほんをいえにわすれてしまったので、ともだちにごめんといいました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-one-month-stayed-with-friend-in-japan",
+      "batch": 4,
+      "focusVocabularyId": "vocab-14435050c0df",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "f8c0951d10ba134533034af39464b662ade903fc9aa5c7ae21ee17dcd95dcf11",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-one-month-stayed-with-friend-in-japan.m4a",
+        "sha256": "63dfd97e70451d5dce8e2e544c09e4a2236de4f8bf38df04c6427079024c3da0",
+        "durationSeconds": 5.1,
+        "pcmValidation": "passed",
+        "transcript": "日本に一月いて、友達と毎日日本語で話しました。",
+        "phoneticTranscript": "にほんにひとつきいて、ともだちとまいにちにほんごではなしました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-second-of-month-appointment-change",
+      "batch": 4,
+      "focusVocabularyId": "vocab-56d52b7869ab",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "77f33ba9fff57a76b89abfe93378290de1128a726d4d0a752893799442b2686d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-second-of-month-appointment-change.m4a",
+        "sha256": "30d92fe5c3eaef1f8568a8b7cf97b575898614f16e8bd9f62d814e059971f397",
+        "durationSeconds": 5.35,
+        "pcmValidation": "passed",
+        "transcript": "今月の二日は忙しいので、来週会ってもいいですか?",
+        "phoneticTranscript": "こんげつのふつかはいそがしいので、らいしゅうあってもいいですか?",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-other-bags-want-to-see",
+      "batch": 4,
+      "focusVocabularyId": "vocab-e9503021d78e",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "86ae7ee6d1f3a8530340b5a59f18e5fba3baf2cc9d6a1d67a3a78e35a3ce084a",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-other-bags-want-to-see.m4a",
+        "sha256": "467795ea8c8506a1a5842cdbbaa8007f883e466df4d5fcfb0705fa2bfb5a90bd",
+        "durationSeconds": 4,
+        "pcmValidation": "passed",
+        "transcript": "この鞄は高すぎるので、他のも見たいです。",
+        "phoneticTranscript": "このかばんはたかすぎるので、ほかのもみたいです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-ten-thousand-yen-bag-worth-buying",
+      "batch": 4,
+      "focusVocabularyId": "vocab-1807218bf360",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "aa6dd4e0deb13916453278f5dff31f272d645cc8bfef0b1434a07db82462e595",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-ten-thousand-yen-bag-worth-buying.m4a",
+        "sha256": "c597af6d8e284020283b05122000f7c5ab7029fda87170998cc69be534a62b6a",
+        "durationSeconds": 5.1,
+        "pcmValidation": "passed",
+        "transcript": "この鞄は一万円ですが、丈夫なので買います。",
+        "phoneticTranscript": "このかばんはいちまんえんですが、じょうぶなのでかいます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ],
+      "followUpNotes": [
+        "Replaced the recording after two phonetic checks heard ですな instead of ですが. Both final transcription passes now agree with the intended sentence."
+      ]
+    },
+    {
+      "id": "production-n5-vocab-sixth-flight-must-get-up-early",
+      "batch": 4,
+      "focusVocabularyId": "vocab-7b2351210462",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "2e1ec7f757532bf41d17ebdc42dd997482b640bc2906d239e0ae82406dd6dd9a",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-sixth-flight-must-get-up-early.m4a",
+        "sha256": "a51b74c67d12b124625974656c7dd1d4c98c505351277f449e4bf02201c517c2",
+        "durationSeconds": 4.45,
+        "pcmValidation": "passed",
+        "transcript": "6日は朝の飛行機に乗るので、早く起きます。",
+        "phoneticTranscript": "むいかは、あさのひこうきにのるので、はやくおきます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-hello-phone-cannot-hear-well",
+      "batch": 4,
+      "focusVocabularyId": "vocab-9bff4be4a921",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "aab82d7d69553ce453648aff8f8d8978ffaff3b8c3483d7002e6157ef855f44d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-hello-phone-cannot-hear-well.m4a",
+        "sha256": "93c4a63d044dac98d16ff1c5da1114f6ae6e6f67519a183bc2d26c34bcecaac5",
+        "durationSeconds": 5.75,
+        "pcmValidation": "passed",
+        "transcript": "もしもし、声が小さくて聞こえないので、大きな声で話してください。",
+        "phoneticTranscript": "もしもし。こえがちいさくてきこえないので、おおきなこえではなしてください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-eight-boxes-put-in-car-together",
+      "batch": 4,
+      "focusVocabularyId": "vocab-6c9351ae67e6",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "a156c9cf4f4e51f8c123624d80d9199f8607c531c628db5ea8b0023870ae2f1e",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-eight-boxes-put-in-car-together.m4a",
+        "sha256": "5d75106ac191320d69d687528e16ca305bd4110ae62b03c22cb83c3adc4310e5",
+        "durationSeconds": 3.9,
+        "pcmValidation": "passed",
+        "transcript": "箱が八つあるので、一緒に車に入れましょう。",
+        "phoneticTranscript": "はこがやっつあるので、いっしょにくるまにいれましょう。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-eighth-rain-may-cancel-picnic",
+      "batch": 4,
+      "focusVocabularyId": "vocab-f50fcf40e898",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "0a410306c43690a70f1f7a8a4d81a8d9888f3996057cc1b96d9bfa0314a60e93",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-eighth-rain-may-cancel-picnic.m4a",
+        "sha256": "43aaea3e4ccd3ec462a47fae9b5e73726445d231633396d4869de2e4d6382388",
+        "durationSeconds": 5,
+        "pcmValidation": "passed",
+        "transcript": "8日は雨が降るかもしれないので、家で遊びましょう。",
+        "phoneticTranscript": "ようかはあめがふるかもしれないので、いえであそびましょう。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-four-days-until-trip-looking-forward",
+      "batch": 4,
+      "focusVocabularyId": "vocab-13ea3220cde0",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "59d1ca0cfc344090a8b60659a6775c4a49dfebb1b01bbbaab4bb0e1d7a2878b0",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-four-days-until-trip-looking-forward.m4a",
+        "sha256": "76571bdbc1c67748e3bc5b50162e9dcedffa26cd04ac87310202ae3f9a92df8d",
+        "durationSeconds": 4.75,
+        "pcmValidation": "passed",
+        "transcript": "旅行まであと4日なので、今日から準備を始めます。",
+        "phoneticTranscript": "りょこうまであとよっかなので、きょうからじゅんびをはじめます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-radio-cassette-player-on-desk",
+      "batch": 4,
+      "focusVocabularyId": "vocab-1d787aaa549e",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "e2c33447915678a68f6036ca27821c8357f4db149fa2349ffc9fc5347dbb2732",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-radio-cassette-player-on-desk.m4a",
+        "sha256": "be07b0d81cf7725b7cc9988060fa823d6da3657247a6c2bd3053b34976697f2a",
+        "durationSeconds": 3.9,
+        "pcmValidation": "passed",
+        "transcript": "机の上にあるラジカセを使ってもいいですか?",
+        "phoneticTranscript": "つくえのうえにあるラジカセをつかってもいいですか?",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-number-starts-with-zero-write-carefully",
+      "batch": 4,
+      "focusVocabularyId": "vocab-b72f9967b000",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "2728d3645a40ac57aa0a27328dc0994c7ac88061fdb8cfb4a61de9929b6f1e17",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-number-starts-with-zero-write-carefully.m4a",
+        "sha256": "2a26f56c90485e04023846ce9487cc46852c637adda7140012ab691e85cd7a6a",
+        "durationSeconds": 4.4,
+        "pcmValidation": "passed",
+        "transcript": "番号は0から始まるので、よく見て書いてください。",
+        "phoneticTranscript": "ばんごうは、れいからはじまるので、よくみてかいてください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-listen-records-while-reading",
+      "batch": 4,
+      "focusVocabularyId": "vocab-97be9f1d3fbe",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "8a6904da8972657402614ba0313c13c9abaa0518ac975e5a273ac73e371ee372",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-listen-records-while-reading.m4a",
+        "sha256": "7f66081eccc25fc99b78f3dd637400605bae7acdccf091e6e49a1a3d2d5588f4",
+        "durationSeconds": 4.1,
+        "pcmValidation": "passed",
+        "transcript": "父は今、レコードを聴きながら本を読んでいます。",
+        "phoneticTranscript": "父は今、レコードを聞きながら本を読んでいます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ],
+      "followUpNotes": [
+        "The transcription retained kanji; their readings agree with the complete prepared sentence."
+      ]
+    },
+    {
+      "id": "n5-vocab-formal-study-before-going-to-work",
+      "batch": 4,
+      "focusVocabularyId": "vocab-e4a0829403e3",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "870022a7485952331330081602bb9c01aea83603131ad57f60d754c693ff1523",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-formal-study-before-going-to-work.m4a",
+        "sha256": "6fc29766cdb25ab43ae45d9bd1590aae32f788a89fc574fb1f45d60e1353309c",
+        "durationSeconds": 5.1,
+        "pcmValidation": "passed",
+        "transcript": "わたくしは日本語を勉強してから、会社へ行きます。",
+        "phoneticTranscript": "わたくしはにほんごをべんきょうしてから、かいしゃへいきます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-welcome-to-home-please-sit",
+      "batch": 4,
+      "focusVocabularyId": "vocab-ce2f0119c88a",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "51d026166bdf95068c021fd2e4d94a8affb231280836d2942dbc2c22b0b7a716",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-welcome-to-home-please-sit.m4a",
+        "sha256": "68f7bef9fca23196d569a42999b21e0e040eb8c5d70a82669c7c6f2c0d4a5361",
+        "durationSeconds": 5.05,
+        "pcmValidation": "passed",
+        "transcript": "私の家へようこそ。荷物を置いてから座ってください。",
+        "phoneticTranscript": "わたしのいえへようこそ。にもつをおいてから、すわってください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-say-hello-when-meeting-friend-at-school",
+      "batch": 4,
+      "focusVocabularyId": "vocab-ad9975e17a50",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "1719a9ba13dbef0ba21e5e5bcab92c0339f5702515739cc9eae6c4816153270c",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-say-hello-when-meeting-friend-at-school.m4a",
+        "sha256": "fe907dad77da77048916b670658e7a12c1b0c8e9ca2822ff094cac82ab1eded5",
+        "durationSeconds": 4.45,
+        "pcmValidation": "passed",
+        "transcript": "学校で友達に会ったとき、こんにちはと言います。",
+        "phoneticTranscript": "がっこうでともだちにあったとき、こんにちはといいます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-good-evening-teacher-finished-work",
+      "batch": 4,
+      "focusVocabularyId": "vocab-2798a7949600",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "1e446523bff8d3f7eb4b2c863414e58e4ff7ee35739f85f9072f139a3b13be5c",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-good-evening-teacher-finished-work.m4a",
+        "sha256": "529ba337776c8e9dbdeb5778fc43174f359a56d2abb9f0c23dabd54472950afe",
+        "durationSeconds": 4.55,
+        "pcmValidation": "passed",
+        "transcript": "先生、こんばんは。もう仕事は終わりましたか?",
+        "phoneticTranscript": "せんせい、こんばんは。もうしごとはおわりましたか?",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-tea-or-coffee-which-to-drink",
+      "batch": 4,
+      "focusVocabularyId": "vocab-90157b5f7665",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "b960ea8efe36176fb0150a92af8089b4cd96a92444776d4fa57449ea5131ccb2",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-tea-or-coffee-which-to-drink.m4a",
+        "sha256": "f22494d647212bde9f88e340c43b39f03be88593a380af871ab8e7b1257805e0",
+        "durationSeconds": 4.85,
+        "pcmValidation": "passed",
+        "transcript": "お茶を飲みたいですか。それともコーヒーの方がいいですか。",
+        "phoneticTranscript": "おちゃをのみたいですか、それともコーヒーのほうがいいですか?",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-park-near-station-rest-there",
+      "batch": 5,
+      "focusVocabularyId": "vocab-432407f717cd",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "1b733bc69ff74a504d850d161ba7a6118dc2cec55f27a739316d5d2799769aeb",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-park-near-station-rest-there.m4a",
+        "sha256": "3cd8f908dde52dd68081b86b9850e61937676e44db6e47bae28bf5ca0beb95b3",
+        "durationSeconds": 5.95,
+        "pcmValidation": "passed",
+        "transcript": "駅の近くに小さな公園があるので、その公園で休みましょう。",
+        "phoneticTranscript": "えきのちかくにちいさなこうえんがあるので、そのこうえんでやすみましょう。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-whole-day-at-home-reading",
+      "batch": 5,
+      "focusVocabularyId": "vocab-3d24eb7fb7b5",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "a8b8e91ef204bf8daf54957c27126f96e771dc443db105b0914df6bee96c7cde",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-whole-day-at-home-reading.m4a",
+        "sha256": "1f5f7e67dc4d86bcdc1d1d97350bc869d388c3255080ca34c9b968deac1261da",
+        "durationSeconds": 4.45,
+        "pcmValidation": "passed",
+        "transcript": "昨日は家に一日いて、本を読んでいました。",
+        "phoneticTranscript": "きのうは、いえにいちにちいて、ほんをよんでいました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-polite-name-before-entering",
+      "batch": 5,
+      "focusVocabularyId": "vocab-32a08c9e50c0",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "facbedd5a0073e3a725a9681bbc477f5ffae7d07d8405b2568f73ea6471c487a",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-polite-name-before-entering.m4a",
+        "sha256": "98f628702989a5f6e288052533197178e0fcbd46e05f9e8c3d50e1a5b2f4e6e9",
+        "durationSeconds": 4.3,
+        "pcmValidation": "passed",
+        "transcript": "ここにお名前を書いてから、中へ入ってください。",
+        "phoneticTranscript": "ここにおなまえを書いてから、なかへはいってください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ],
+      "followUpNotes": [
+        "The transcription retained 書いて; its reading is かいて."
+      ]
+    },
+    {
+      "id": "production-n5-vocab-walk-with-foreign-friend",
+      "batch": 5,
+      "focusVocabularyId": "vocab-a089826e2906",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "84e476e5116299eb9e54ee4f725159a771d56bcb0dc6b376e8a8d418883d9161",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-walk-with-foreign-friend.m4a",
+        "sha256": "95afe900a6c3536dccc79db3e10324db4350cc6f15255643d1caba9847961a90",
+        "durationSeconds": 5.05,
+        "pcmValidation": "passed",
+        "transcript": "外国人の友達と話しながら、公園を歩きました。",
+        "phoneticTranscript": "がいこくじんのともだちと、はなしながらこうえんをあるきました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-three-months-studying-in-japan",
+      "batch": 5,
+      "focusVocabularyId": "vocab-a76427eaec16",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "85a22ea60d9c2dd38ffe6ad4bb9a60d58507973fb698305f2a51f77a9c5fc42e",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-three-months-studying-in-japan.m4a",
+        "sha256": "5758a8ba267f74b325a0f164e8f57f900be96542de681d5783829a6465434436",
+        "durationSeconds": 4.65,
+        "pcmValidation": "passed",
+        "transcript": "三ヶ月日本にいて、毎日日本語を勉強しました。",
+        "phoneticTranscript": "さんかげつ、にほんにいて、まいにちにほんごをべんきょうしました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-which-month-plan-japan-trip",
+      "batch": 5,
+      "focusVocabularyId": "vocab-0086f8da1a0e",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "9693ba839d25e4ec1d2c145c5ecf173086e23a5037fd56fc658085ef12f6cfdf",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-which-month-plan-japan-trip.m4a",
+        "sha256": "3390904b6cbb50ddec1ecd05c6e0061720fb8bd877b9e3e8035959faa4b8dda3",
+        "durationSeconds": 2.95,
+        "pcmValidation": "passed",
+        "transcript": "何月に日本へ行くつもりですか?",
+        "phoneticTranscript": "なんがつににほんへいくつもりですか?",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n4-vocab-sister-feels-cold-warm-room",
+      "batch": 5,
+      "focusVocabularyId": "vocab-270c4499729c",
+      "type": "recognition",
+      "minimumLevel": "n4",
+      "contentReview": "passed",
+      "reviewedContentSha256": "a30d50a09500339b73859aeef181040e0b1c1d9fd2a69b061162af80722f27de",
+      "audio": {
+        "path": "assets/voices/grammar/n4-vocab-sister-feels-cold-warm-room.m4a",
+        "sha256": "d5e6b48a88bc813e291714c1b6b4423a9ec99a21719db8a2bbf02b12360b06e1",
+        "durationSeconds": 5.3,
+        "pcmValidation": "passed",
+        "transcript": "妹が寒がっていたので、暖かい部屋に入れてあげました。",
+        "phoneticTranscript": "いもうとがさむがっていたので、あたたかいへやにいれてあげました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-quiet-this-side-read-here",
+      "batch": 5,
+      "focusVocabularyId": "vocab-a0b25ceb873b",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "3743590231a7c2ce7e07b64250fe713142c72ad9eaeafd90cd1a68e392ac2fa9",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-quiet-this-side-read-here.m4a",
+        "sha256": "cc818401304ee1a47a17eadd59f189ed2693b138f96079ab29d1f4bd079eb4ac",
+        "durationSeconds": 3.6,
+        "pcmValidation": "passed",
+        "transcript": "こちら側は静かなので、ここで本を読みましょう。",
+        "phoneticTranscript": "こちらがわはしずかなので、ここでほんをよみましょう。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-twenty-minutes-to-station",
+      "batch": 5,
+      "focusVocabularyId": "vocab-95c68043ed38",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "3a24f31712cd13371f3c3e8131eb45ffaca4ed11ae48a37ec7fa1ca6c8785e62",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-twenty-minutes-to-station.m4a",
+        "sha256": "c7fd787d61c691dc602bae022cb9203fece43b15eb0991afbfc00fc4893a4baf",
+        "durationSeconds": 4,
+        "pcmValidation": "passed",
+        "transcript": "駅まで20分くらいかかるので、早く出ましょう。",
+        "phoneticTranscript": "えきまでにじゅっぷんくらいかかるので、はやくでましょう。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-six-eggs-in-fridge",
+      "batch": 5,
+      "focusVocabularyId": "vocab-e1c664c5aa42",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "2db845b2b63a3eecaf6d8333b89b8003ca9ee2fbcd52cd5198122ce4c7bb74e1",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-six-eggs-in-fridge.m4a",
+        "sha256": "8d742d1ea9e7d1ea1a052a9367a573944b81feef6291534b895d019f40402858",
+        "durationSeconds": 4.45,
+        "pcmValidation": "passed",
+        "transcript": "卵を六個買って、冷蔵庫に入れてください。",
+        "phoneticTranscript": "たまごをろっこかって、れいぞうこにいれてください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-what-language-book-written",
+      "batch": 5,
+      "focusVocabularyId": "vocab-f4682caa1837",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "10e0eb3527d6d2bfac563086da44932ef2f55b6a59db3a707ebc721ad04485f1",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-what-language-book-written.m4a",
+        "sha256": "0d83c40c9a310da0e5db59d7f10a830d0ac3988540e63697c40031999304095a",
+        "durationSeconds": 4.9,
+        "pcmValidation": "passed",
+        "transcript": "この本は何語で書いてありますか？英語だと思います。",
+        "phoneticTranscript": "このほんはなんごでかいてありますか。えいごだとおもいます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-home-around-eight-dinner",
+      "batch": 5,
+      "focusVocabularyId": "vocab-6d49d0cfb7ad",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "ba753de9c5c45fac7598799de7682a483137c6b6651d28e3428acd69de01c0f8",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-home-around-eight-dinner.m4a",
+        "sha256": "18924929c5a523718a1fd23e472c4c5e7efb55c3efff3083de01d68b5895f712",
+        "durationSeconds": 4.1,
+        "pcmValidation": "passed",
+        "transcript": "八時頃帰るので、一緒に晩御飯を食べませんか?",
+        "phoneticTranscript": "はちじごろかえるので、いっしょにばんごはんをたべませんか?",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-medicine-from-doctor",
+      "batch": 5,
+      "focusVocabularyId": "vocab-bd1d44806672",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "1b20ba4f9d4ad2beb99cf0be8f66e0a63e14adee7895864bc6be178659194b90",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-medicine-from-doctor.m4a",
+        "sha256": "6af9771b1e57a92ffbda5b6e3d4a5627830a3571993752a8b569170065ff26bc",
+        "durationSeconds": 4.3,
+        "pcmValidation": "passed",
+        "transcript": "お医者さんに薬をもらったので、家で飲みます。",
+        "phoneticTranscript": "おいしゃさんにくすりをもらったので、いえでのみます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-three-hours-study-rest-today",
+      "batch": 5,
+      "focusVocabularyId": "vocab-4616bda99d66",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "e1cf839011c8608b423222b8a2aab032f2d52724c2087688aedfbbb63c2aab7a",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-three-hours-study-rest-today.m4a",
+        "sha256": "0e35439e0aa314710b577f3eb35db6a558815ea1e285b7abf32fe08519919fbc",
+        "durationSeconds": 5.65,
+        "pcmValidation": "passed",
+        "transcript": "昨日は三時間勉強したので、今日は少し休みたいです。",
+        "phoneticTranscript": "きのうはさんじかんべんきょうしたので、きょうはすこしやすみたいです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-swam-all-summer-got-stronger",
+      "batch": 5,
+      "focusVocabularyId": "vocab-7b157c91e4d9",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "e0166aae6dfccc68fb81cb0126ffebe9fc847c2caa93440d67e748f7bc703883",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-swam-all-summer-got-stronger.m4a",
+        "sha256": "bdfd631c0bc0ae289a1c2f93d214f20f1aacb453a49758876dd57e786669345c",
+        "durationSeconds": 5.15,
+        "pcmValidation": "passed",
+        "transcript": "その年の夏じゅう毎朝泳いだので、体が強くなりました。",
+        "phoneticTranscript": "そのとしのなつじゅう、まいあさおよいだので、からだがつよくなりました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n4-vocab-american-friend-speaks-japanese",
+      "batch": 5,
+      "focusVocabularyId": "vocab-7bd8d7286ac2",
+      "type": "production",
+      "minimumLevel": "n4",
+      "contentReview": "passed",
+      "reviewedContentSha256": "b5e7efcc36a928c0a8a429e229850b35e61477661e594bc581f8f93f1927d028",
+      "audio": {
+        "path": "assets/voices/grammar/production-n4-vocab-american-friend-speaks-japanese.m4a",
+        "sha256": "a78d61240519a4f68908deb7519c60d5e3ef3c56979801ceadb4d53e16710a9a",
+        "durationSeconds": 4.65,
+        "pcmValidation": "passed",
+        "transcript": "友達はアメリカ人ですが、日本語で話してくれます。",
+        "phoneticTranscript": "ともだちはあめりかじんですが、にほんごではなしてくれます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-meet-after-three-then-shop",
+      "batch": 5,
+      "focusVocabularyId": "vocab-d132ddd751b7",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "3944edb39267445ec30cafe0b0452eba77eee075a80e11775b90ae71eff6ed92",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-meet-after-three-then-shop.m4a",
+        "sha256": "6b2f20e5c6a9e241972cbd6cf8a1f570aa7ff3640234edb3d9fda615f983c4a6",
+        "durationSeconds": 4.65,
+        "pcmValidation": "passed",
+        "transcript": "3時過ぎに駅で会ってから、一緒に買い物に行きましょう。",
+        "phoneticTranscript": "さんじすぎにえきであってから、いっしょにかいものにいきましょう。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-take-two-sweets-each",
+      "batch": 5,
+      "focusVocabularyId": "vocab-c6ac515de512",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "89e575bbe7a834fe6c65783555347bafc1faa19d06de49c12be983543fba91a3",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-take-two-sweets-each.m4a",
+        "sha256": "a8d65c317378a9e3ef6be6680a22055a855e028301b7a5336467a70fc95a807e",
+        "durationSeconds": 4.4,
+        "pcmValidation": "passed",
+        "transcript": "このお菓子を二つずつ取ってから、椅子に座ってください。",
+        "phoneticTranscript": "このおかしをふたつずつとってから、いすにすわってください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-only-water-early-night",
+      "batch": 5,
+      "focusVocabularyId": "vocab-12b90c71c1ce",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "a204829b1045985a3db8a30b24962ca0d420f1f8044648b292d0ace2f5e91e6d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-only-water-early-night.m4a",
+        "sha256": "6cc51b1e62762e636be914a7982152550b22401225d3a1c9196f485812f44504",
+        "durationSeconds": 3.8,
+        "pcmValidation": "passed",
+        "transcript": "今日は水だけ飲んで、早く寝るつもりです。",
+        "phoneticTranscript": "きょうはみずだけのんではやくねるつもりです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-someone-opened-door-room-cold",
+      "batch": 5,
+      "focusVocabularyId": "vocab-78047982c503",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "538191223b6e12532d02e5bff4172fc599c7448791ed44bbb96e5647c5cce66a",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-someone-opened-door-room-cold.m4a",
+        "sha256": "d2521edccbcd96f0ed95864cdca110cd5e1010a48c9f77dcd12a59050a8124f3",
+        "durationSeconds": 3.75,
+        "pcmValidation": "passed",
+        "transcript": "誰かがドアを開けたので、部屋が寒くなりました。",
+        "phoneticTranscript": "だれかがドアをあけたので、へやがさむくなりました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-during-class-listen-teacher",
+      "batch": 5,
+      "focusVocabularyId": "vocab-672a58e30389",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "ab759c68ba08b2b133a5253ada2f6328c8177c36832aa86daa445478c55eadc2",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-during-class-listen-teacher.m4a",
+        "sha256": "2df9060d9db6776c9ba866a8094d2b7e1599ca249d0b610ebee47e32e1b1d376",
+        "durationSeconds": 5.15,
+        "pcmValidation": "passed",
+        "transcript": "授業中は話さないで、先生の話を聞いてください。",
+        "phoneticTranscript": "じゅぎょうちゅうは、はなさないで、せんせいのはなしをきいてください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-movie-twice-want-again",
+      "batch": 5,
+      "focusVocabularyId": "vocab-0e302b0c8583",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "591f7d7799b0424391abedca172ee7450dc4e4c6988867bcdde110becc2e05e2",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-movie-twice-want-again.m4a",
+        "sha256": "daa771f36f143e2631df2b89a0b600f2c28180ff748d5532d625f7e0077a4d93",
+        "durationSeconds": 4.15,
+        "pcmValidation": "passed",
+        "transcript": "この映画を二度見ましたが、もう一回見たいです。",
+        "phoneticTranscript": "このえいがをにどみましたが、もういっかいみたいです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-childhood-park-with-mother",
+      "batch": 5,
+      "focusVocabularyId": "vocab-f6481b840edb",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "14d192f0751e7df91cfba5e2a9d5851bd81b4f4be03ef7afd35169afdf9e38e3",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-childhood-park-with-mother.m4a",
+        "sha256": "02538bbbcba165320a7d1b5f8018911d820127b00d1e0f51b2e9c3776aa225f2",
+        "durationSeconds": 4.45,
+        "pcmValidation": "passed",
+        "transcript": "子供の時、母とよくこの公園で遊びました。",
+        "phoneticTranscript": "こどものとき、ははとよくこのこうえんであそびました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-buy-fruit-then-return",
+      "batch": 5,
+      "focusVocabularyId": "vocab-b4e9e7da5e9f",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "9dd8c83bc66bbe5debea1fd4d932dd53dcc7a3e690acfb5ec0acbe8ae94833d1",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-buy-fruit-then-return.m4a",
+        "sha256": "61f815a8754ef3b76f1e4326cc4a5847a849bb4dcec931d137c9a72daa864fde",
+        "durationSeconds": 4.05,
+        "pcmValidation": "passed",
+        "transcript": "りんごやバナナなどを買ってから、家に帰りました。",
+        "phoneticTranscript": "りんごやばなななどをかってから、いえにかえりました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-how-many-books-plan-borrow",
+      "batch": 5,
+      "focusVocabularyId": "vocab-074acfd9fb0c",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "8bbff9b6a52a4bc6b9538b6d6ca97b2e565b5cfbadeae0d7576e0ae5d235317f",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-how-many-books-plan-borrow.m4a",
+        "sha256": "f96c2c721c802c1fe2135c7cacc142ccf4416ce61a19a9dca2f65746bd2efd29",
+        "durationSeconds": 3.5,
+        "pcmValidation": "passed",
+        "transcript": "図書館で本を何冊借りるつもりですか?",
+        "phoneticTranscript": "としょかんで、ほんをなんさつかりるつもりですか?",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-eleventh-free-go-walking",
+      "batch": 5,
+      "focusVocabularyId": "vocab-a759a7d58008",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "862e6b0a41b8334c877ba1c23f86dbbbc305ed43d06530d7cedb700450323947",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-eleventh-free-go-walking.m4a",
+        "sha256": "3be3ef4f6535ad59c239b0e8079b1b333883566c6854e0413240ae7c1641bc2e",
+        "durationSeconds": 3.75,
+        "pcmValidation": "passed",
+        "transcript": "11日は暇なので、一緒に散歩しませんか?",
+        "phoneticTranscript": "じゅういちにちはひまなので、いっしょにさんぽしませんか?",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-five-friends-five-chairs",
+      "batch": 5,
+      "focusVocabularyId": "vocab-f3b7e57e86cd",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "2c69312a32d835af1c9bb4eede76d1a711efa2bfa45a36c0933a14b57638486c",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-five-friends-five-chairs.m4a",
+        "sha256": "1e4a40480cdce4751f983ccb80b0d7d2b4554bbae287f7de307230157e54badb",
+        "durationSeconds": 4.4,
+        "pcmValidation": "passed",
+        "transcript": "友達が5人来るので、椅子を5つ出してください。",
+        "phoneticTranscript": "ともだちがごにんくるので、いすをいつつだしてください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-two-years-japan-return-country",
+      "batch": 5,
+      "focusVocabularyId": "vocab-18f63d2ef9fd",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "afad01d0d961ba84ce4e818c383706680f0d50d4a98606474ad7a4701bf3c734",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-two-years-japan-return-country.m4a",
+        "sha256": "e74b92d6b801abed5372506d7e066f09c980a4a853c6b374b85d7c667f831865",
+        "durationSeconds": 4.05,
+        "pcmValidation": "passed",
+        "transcript": "日本に二年住んでから、国に帰りました。",
+        "phoneticTranscript": "にほんににねんすんでから、くににかえりました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-two-cups-hot-tea",
+      "batch": 5,
+      "focusVocabularyId": "vocab-190daad883e6",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "46ddcfcefe0a26de76766e047bffd8fe6cc447dc815def90b131eda9a3a31fbb",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-two-cups-hot-tea.m4a",
+        "sha256": "940d863144b1542f561634610f8efe47cc27e9594a7a0547545ae1db6c81962c",
+        "durationSeconds": 3.85,
+        "pcmValidation": "passed",
+        "transcript": "寒いので、熱いお茶を二杯飲みました。",
+        "phoneticTranscript": "さむいので、あついおちゃをにはいのみました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-two-and-half-hours-walking",
+      "batch": 5,
+      "focusVocabularyId": "vocab-d605986c3af4",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "63fcf412443cd527eef62651e2b425f602b490b383f28bfcb4fcaa8070a49643",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-two-and-half-hours-walking.m4a",
+        "sha256": "05dbcfd5d714f207f641f6db27ce33be82a5878cbb544f0a1ca165538b6da615",
+        "durationSeconds": 4.2,
+        "pcmValidation": "passed",
+        "transcript": "二時間半歩いたので、ここで少し休みましょう。",
+        "phoneticTranscript": "にじかんはんあるいたので、ここですこしやすみましょう。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-number-three-bus-to-station",
+      "batch": 5,
+      "focusVocabularyId": "vocab-f12e2621b044",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "a9bd8e5216635f96fb12b417bf665be4f16019e99ab23e2b84a8da017dceec7d",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-number-three-bus-to-station.m4a",
+        "sha256": "f619cfd17f9822306195a3a195756b4a4dc37a68b60a5824c6ab6c333f393e32",
+        "durationSeconds": 3.7,
+        "pcmValidation": "passed",
+        "transcript": "3番のバスに乗って駅まで行ってください。",
+        "phoneticTranscript": "さんばんのばすにのって、えきまでいってください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-six-pencils-lend-three",
+      "batch": 5,
+      "focusVocabularyId": "vocab-d277559c27c1",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "9541384e2655b24d1bd1705aa4339087f1631609f3a8974df7ef7350676404a1",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-six-pencils-lend-three.m4a",
+        "sha256": "4c9489b0f6b6a2adce38b610544744ea7816cf7ee95051b45d2774480bef655a",
+        "durationSeconds": 5.5,
+        "pcmValidation": "passed",
+        "transcript": "鉛筆を六本持ってきたので、友達に三本貸しました。",
+        "phoneticTranscript": "えんぴつをろっぽんもってきたので、ともだちにさんぼんかしました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-wait-in-front-of-school",
+      "batch": 5,
+      "focusVocabularyId": "vocab-a2e80ec72ebe",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "7d249aa14afc91ecab66bc3edd6fb8052dcefe1ea38fce174f0aa24932610caf",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-wait-in-front-of-school.m4a",
+        "sha256": "8047cfd22d66d5cc27b4074315e5ebb8ef8f045a495e71fc6b7b87462b475d94",
+        "durationSeconds": 4.7,
+        "pcmValidation": "passed",
+        "transcript": "学校の前で待っているので、着いたら電話してください。",
+        "phoneticTranscript": "がっこうのまえでまっているので、ついたらでんわしてください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-third-sister-birthday-flowers",
+      "batch": 5,
+      "focusVocabularyId": "vocab-b0489d428339",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "f4be9e9d199a3df9b61ce0c491a2f2b791508a804d038c79bcee7529439cf969",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-third-sister-birthday-flowers.m4a",
+        "sha256": "d3c08cc917089c881d5fd6dd0f8048b7c4f7eb4048df2e104988b1338b30e8ad",
+        "durationSeconds": 4.45,
+        "pcmValidation": "passed",
+        "transcript": "三日は姉の誕生日なので、花を買うつもりです。",
+        "phoneticTranscript": "みっかは、あねのたんじょうびなので、はなをかうつもりです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-bread-from-bakery-tasty-cheap",
+      "batch": 5,
+      "focusVocabularyId": "vocab-1c0ba08d7f15",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "769e50bcca5bfd9507f53cbf212afdf1acc85501fc7a3e87f2bb1d935c93bd0a",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-bread-from-bakery-tasty-cheap.m4a",
+        "sha256": "364ac65732828f4e0dce27dadf2b9f854c5c46b23df462511af00df8e82763f3",
+        "durationSeconds": 4.25,
+        "pcmValidation": "passed",
+        "transcript": "あのパン屋で買ったパンは、おいしくて安いです。",
+        "phoneticTranscript": "あのパンやでかったパンは、おいしくてやすいです。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-three-copies-for-teacher",
+      "batch": 5,
+      "focusVocabularyId": "vocab-481dd0f51d1d",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "1bab0eada66926033bbef94a05d1b06be6c7177922549cd05864aea7163672d5",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-three-copies-for-teacher.m4a",
+        "sha256": "7cedc11ce9ca753c261603f889865ba45ee93f18a044cd884e45978d4db9eda2",
+        "durationSeconds": 3.7,
+        "pcmValidation": "passed",
+        "transcript": "先生に渡すコピーを3枚作ってください。",
+        "phoneticTranscript": "せんせいにわたすコピーを、さんまいつくってください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-greet-teacher-in-morning",
+      "batch": 5,
+      "focusVocabularyId": "vocab-e92fbf0ed627",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "8daf7646a0b25b7fb94064980658c8fd4830248456acf3aa45c71d24859896bf",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-greet-teacher-in-morning.m4a",
+        "sha256": "612aaee2dc0a569c656bae4ea4c49463b0e1d83beb2caa300760ce0eb1e4897b",
+        "durationSeconds": 5.4,
+        "pcmValidation": "passed",
+        "transcript": "朝、先生に会ったら「おはようございます」と言います。",
+        "phoneticTranscript": "あさ、せんせいにあったら、おはようございます、といいます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-please-when-ordering-coffee",
+      "batch": 5,
+      "focusVocabularyId": "vocab-a92a3a630fed",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "d7fb88325b3745d894444532b01d975c6713e47773d19f3abe14a24f80694a3e",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-please-when-ordering-coffee.m4a",
+        "sha256": "aa51216d73b4e55030545064627841543b0b4744d9106f6b3129a69a7fc0d71d",
+        "durationSeconds": 4.85,
+        "pcmValidation": "passed",
+        "transcript": "店でコーヒーを頼むとき、「お願いします」と言います。",
+        "phoneticTranscript": "みせでコーヒーをたのむとき、おねがいしますといいます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-nice-to-meet-you-then-name",
+      "batch": 5,
+      "focusVocabularyId": "vocab-cb7c6271c2a9",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "8fd2379fe1dd4fc416c78d7f0b8c310116015ce45558d9c205cb2569fe4eb74e",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-nice-to-meet-you-then-name.m4a",
+        "sha256": "898a207225c70c353099f831441c40bf1e47eed92ebe9f7cec71d16133c6130b",
+        "durationSeconds": 4.1,
+        "pcmValidation": "passed",
+        "transcript": "「はじめまして」と言ってから自分の名前を言いました。",
+        "phoneticTranscript": "はじめましてと言ってから、自分の名前を言いました。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ],
+      "followUpNotes": [
+        "The transcription retained 言って, 自分, 名前, and 言いました; their readings agree with the complete prepared sentence."
+      ]
+    },
+    {
+      "id": "production-n5-vocab-work-together-from-tomorrow",
+      "batch": 5,
+      "focusVocabularyId": "vocab-04ebcec4eac8",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "c008ee037ff54a8fad20a16fea6ea506cf5e3747390e65e67e6610c1e5779e01",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-work-together-from-tomorrow.m4a",
+        "sha256": "488ce304d162597f3f0f683c5f5b3e6df59ace2b7cfa07f6c72ae3a354c7bcba",
+        "durationSeconds": 3.9,
+        "pcmValidation": "passed",
+        "transcript": "明日から一緒に働くので、よろしくお願いします。",
+        "phoneticTranscript": "あしたからいっしょにはたらくので、よろしくおねがいします。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "n5-vocab-say-good-night-to-family",
+      "batch": 5,
+      "focusVocabularyId": "vocab-f1bf682f18cd",
+      "type": "recognition",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "916d3f8d3ad7b10660ca5105683ad515fdd2536e1f1124533d4257ed8873132c",
+      "audio": {
+        "path": "assets/voices/grammar/n5-vocab-say-good-night-to-family.m4a",
+        "sha256": "673b4cc059edfe5fd8149c34c395dfefe86874505d766102e326a126e9231a79",
+        "durationSeconds": 4.1,
+        "pcmValidation": "passed",
+        "transcript": "寝る前に、家族におやすみなさいと言います。",
+        "phoneticTranscript": "ねるまえに、かぞくに、おやすみなさいといいます。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "production-n5-vocab-thank-you-before-eating",
+      "batch": 5,
+      "focusVocabularyId": "vocab-7fd7463f51b7",
+      "type": "production",
+      "minimumLevel": "n5",
+      "contentReview": "passed",
+      "reviewedContentSha256": "814ef17c79e5a5e578cd867a082fbe84928fb6041f09209ea32581a05137277f",
+      "audio": {
+        "path": "assets/voices/grammar/production-n5-vocab-thank-you-before-eating.m4a",
+        "sha256": "a4a74bbc4862af0000be4d59da126355be151f5cfe92c3b5577cd5848c9a686c",
+        "durationSeconds": 3.6,
+        "pcmValidation": "passed",
+        "transcript": "食べる前に、いただきますと言ってください。",
+        "phoneticTranscript": "たべるまえに、いただきますといってください。",
+        "readingComparison": "matched"
+      },
+      "browserLocales": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "lastUpdatedAt": "2026-11-25",
+  "completionReview": {
+    "reviewedAt": "2026-11-25",
+    "exerciseId": "production-n5-vocab-can-you-see-mountain-from-there",
+    "resolved": "Final 山が pronunciation discrepancy",
+    "previousAudioSha256": "cef6a2a6d2c646411cab6dbaf782499dba6e4eed55c770e297b0de12ef16b8ca",
+    "previousPhoneticTranscript": "そっちのまどから、やまだよくみえますか?",
+    "finalAudioSha256": "6f0270fc996ac8b6983b0692811337eb34b4d035bed3cb73e025680e0ed43b2f",
+    "normalTranscription": "matched",
+    "phoneticTranscription": "matched",
+    "independentWhisperTranscription": "matched",
+    "pcmValidation": "passed",
+    "browserLocales": [
+      "en",
+      "fr"
+    ],
+    "validation": [
+      "All 36 test files passed.",
+      "Final recording passed PCM validation, three transcription checks, and English/French browser playback.",
+      "Web and native builds passed with 4987 voices and zero missing narration.",
+      "All 92 review entries match the final source, prepared content, translations, and recording hashes."
+    ]
+  }
+}

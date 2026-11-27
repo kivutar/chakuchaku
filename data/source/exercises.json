@@ -980,7 +980,10 @@
       "frequency-adverbs",
       "de-action-location",
       "verb-mashita"
-    ]
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-3ec9b1831a40"
+    }
   },
   {
     "id": "ran-during-summer-break",
@@ -5430,7 +5433,10 @@
       "toki",
       "te-kureru",
       "verb-mashita"
-    ]
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-3ec9b1831a40"
+    }
   },
   {
     "id": "laundry-tomorrow-because-busy",
@@ -11346,7 +11352,10 @@
       "causative-passive-form",
       "toki",
       "frequency-adverbs"
-    ]
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-3ec9b1831a40"
+    }
   },
   {
     "id": "n4-brother-forced-clean-room",
@@ -11971,7 +11980,10 @@
       "plain-volitional",
       "toki",
       "o-route"
-    ]
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-3ec9b1831a40"
+    }
   },
   {
     "id": "n4-about-to-board-met-friend",
@@ -11982,7 +11994,10 @@
       "plain-volitional",
       "toki",
       "ni-target-recipient"
-    ]
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-3ec9b1831a40"
+    }
   },
   {
     "id": "production-n4-about-to-sleep-phone-rang",
@@ -11992,20 +12007,29 @@
     "promptVocabularyHints": [
       {
         "word": "phone",
-        "vocabularyIds": ["vocab-24df87472770"]
+        "vocabularyIds": [
+          "vocab-24df87472770"
+        ]
       },
       {
         "word": "rang",
-        "vocabularyIds": ["vocab-89aea2f63b8b"]
+        "vocabularyIds": [
+          "vocab-89aea2f63b8b"
+        ]
       },
       {
         "word": "bed",
-        "vocabularyIds": ["vocab-50eb0e80c367"]
+        "vocabularyIds": [
+          "vocab-50eb0e80c367"
+        ]
       }
     ],
     "grammarPointIds": [
       "you-to-suru"
-    ]
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-3ec9b1831a40"
+    }
   },
   {
     "id": "production-n4-child-tried-open-door",
@@ -15134,7 +15158,10 @@
       "tara-ii-desu-ka",
       "toki",
       "nani"
-    ]
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-3ec9b1831a40"
+    }
   },
   {
     "id": "production-n4-what-time-should-come",
@@ -15422,24 +15449,39 @@
     "solution": "食事の時はテレビを見ないことにしています。",
     "type": "production",
     "tokenOverrides": {
-      "こと": { "category": "auxiliary" },
-      "し": { "category": "auxiliary" }
+      "こと": {
+        "category": "auxiliary"
+      },
+      "し": {
+        "category": "auxiliary"
+      }
     },
     "promptVocabularyHints": [
       {
         "word": "watch",
-        "vocabularyIds": ["vocab-385cc0d9ee98"]
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
       },
       {
         "word": "television",
-        "vocabularyIds": ["vocab-b4d66aa2f6f4"]
+        "vocabularyIds": [
+          "vocab-b4d66aa2f6f4"
+        ]
       },
       {
         "word": "meals",
-        "vocabularyIds": ["vocab-399ca48876cc"]
+        "vocabularyIds": [
+          "vocab-399ca48876cc"
+        ]
       }
     ],
-    "grammarPointIds": ["koto-ni-shiteiru"]
+    "grammarPointIds": [
+      "koto-ni-shiteiru"
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-3ec9b1831a40"
+    }
   },
   {
     "id": "n4-school-rule-remove-shoes",
@@ -18423,7 +18465,10 @@
           "vocab-eb208b6436bb"
         ]
       }
-    ]
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-3ec9b1831a40"
+    }
   },
   {
     "id": "n4-attempt-carry-heavy-box-fails",
@@ -18828,7 +18873,11 @@
     "text": "On long car trips, I make a point of taking a break every two hours.",
     "solution": "車で遠くへ行く時は、二時間おきに休むようにしています。",
     "type": "production",
-    "tokenOverrides": { "おき": { "category": "auxiliary" } },
+    "tokenOverrides": {
+      "おき": {
+        "category": "auxiliary"
+      }
+    },
     "grammarPointIds": [
       "oki-ni",
       "you-ni-suru",
@@ -18871,7 +18920,10 @@
           "vocab-f6a8c4a23b51"
         ]
       }
-    ]
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-3ec9b1831a40"
+    }
   },
   {
     "id": "n4-sleepy-looking-brother-still-doing-homework",
@@ -19332,7 +19384,10 @@
           "vocab-8d39ee892820"
         ]
       }
-    ]
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-3ec9b1831a40"
+    }
   },
   {
     "id": "n4-library-rule-return-books-by-monday",
@@ -31652,6 +31707,12 @@
     "type": "production",
     "promptVocabularyHints": [
       {
+        "word": "on",
+        "vocabularyIds": [
+          "vocab-c0f58bfab324"
+        ]
+      },
+      {
         "word": "table",
         "vocabularyIds": [
           "vocab-f1af08d4c51c"
@@ -31848,7 +31909,8 @@
           "vocab-58a04652246f"
         ]
       }
-    ]
+    ],
+    "speechText": "きょうのしゅくだいはゼロなので、ともだちとあそぶつもりです。"
   },
   {
     "id": "n5-vocab-think-so-too-but-ask-teacher",
@@ -31902,7 +31964,8 @@
           "vocab-e99feae5bc25"
         ]
       }
-    ]
+    ],
+    "speechText": "そっちの窓から山がよく見えますか。"
   },
   {
     "id": "n5-vocab-well-then-write-name-before-starting",
@@ -32372,7 +32435,8 @@
       "numbers-and-counters",
       "ga-contrast",
       "node-reason"
-    ]
+    ],
+    "speechText": "このかばんはいちまんえんですがじょうぶなのでかいます。"
   },
   {
     "id": "production-n5-vocab-sixth-flight-must-get-up-early",
@@ -32768,6 +32832,1173 @@
         "word": "coffee",
         "vocabularyIds": [
           "vocab-f5f2c2dca175"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-park-near-station-rest-there",
+    "minimumLevel": "n5",
+    "text": "駅の近くに小さな公園が在るので、その公園で休みましょう。",
+    "solution": "There is a small park near the station, so let’s rest there.",
+    "grammarPointIds": [
+      "existence-location",
+      "node-reason",
+      "mashou"
+    ],
+    "speechText": "駅の近くに小さな公園があるので、その公園で休みましょう。"
+  },
+  {
+    "id": "production-n5-vocab-whole-day-at-home-reading",
+    "minimumLevel": "n5",
+    "text": "Yesterday, I stayed home all day, reading a book.",
+    "solution": "昨日は家に一日いて、本を読んでいました。",
+    "grammarPointIds": [
+      "duration-no-particle",
+      "te-action-link",
+      "te-iru-progressive"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Yesterday",
+        "vocabularyIds": [
+          "vocab-eb208b6436bb"
+        ]
+      },
+      {
+        "word": "all day",
+        "vocabularyIds": [
+          "vocab-3d24eb7fb7b5"
+        ]
+      },
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      },
+      {
+        "word": "stayed",
+        "vocabularyIds": [
+          "vocab-e2f1dae6743a"
+        ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "reading",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-polite-name-before-entering",
+    "minimumLevel": "n5",
+    "text": "ここにお名前を書いてから、中へ入ってください。",
+    "solution": "Please write your name here and then go inside.",
+    "grammarPointIds": [
+      "o-go-honorific-prefix",
+      "te-kara",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-walk-with-foreign-friend",
+    "minimumLevel": "n5",
+    "text": "I walked through the park while talking with a foreign friend.",
+    "solution": "外国人の友達と話しながら、公園を歩きました。",
+    "grammarPointIds": [
+      "nagara",
+      "o-route",
+      "to-companion"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "foreign",
+        "vocabularyIds": [
+          "vocab-a089826e2906"
+        ]
+      },
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "talking",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      },
+      {
+        "word": "park",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      },
+      {
+        "word": "walked",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-three-months-studying-in-japan",
+    "minimumLevel": "n5",
+    "text": "三か月日本にいて、毎日日本語を勉強しました。",
+    "solution": "I stayed in Japan for three months and studied Japanese every day.",
+    "grammarPointIds": [
+      "duration-no-particle",
+      "te-action-link"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-which-month-plan-japan-trip",
+    "minimumLevel": "n5",
+    "text": "In which month do you plan to go to Japan?",
+    "solution": "何月に日本へ行くつもりですか。",
+    "grammarPointIds": [
+      "nan-counter",
+      "e-direction",
+      "tsumori"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Japan",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
+      },
+      {
+        "word": "go",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      }
+    ],
+    "tokenOverrides": {
+      "何": {
+        "reading": "なん"
+      },
+      "月": {
+        "reading": "がつ"
+      }
+    },
+    "vocabularyOverrides": {
+      "何": "vocab-074acfd9fb0c",
+      "月": "vocab-0086f8da1a0e"
+    },
+    "speechText": "なんがつに日本へ行くつもりですか。"
+  },
+  {
+    "id": "n4-vocab-sister-feels-cold-warm-room",
+    "minimumLevel": "n4",
+    "text": "妹が寒がっていたので、暖かい部屋に入れてあげました。",
+    "solution": "My younger sister was feeling cold, so I let her into a warm room.",
+    "grammarPointIds": [
+      "garu",
+      "node-reason",
+      "te-ageru"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-quiet-this-side-read-here",
+    "minimumLevel": "n5",
+    "text": "This side is quiet, so let’s read a book here.",
+    "solution": "こちら側は静かなので、ここで本を読みましょう。",
+    "grammarPointIds": [
+      "node-reason",
+      "de-action-location",
+      "mashou"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "This side",
+        "vocabularyIds": [
+          "vocab-57367d42ac5c",
+          "vocab-a0b25ceb873b"
+        ]
+      },
+      {
+        "word": "quiet",
+        "vocabularyIds": [
+          "vocab-61b57e2d4702"
+        ]
+      },
+      {
+        "word": "here",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
+        ]
+      },
+      {
+        "word": "book",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "read",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-twenty-minutes-to-station",
+    "minimumLevel": "n5",
+    "text": "駅まで二十分くらいかかるので、早く出ましょう。",
+    "solution": "It takes about twenty minutes to get to the station, so let’s leave early.",
+    "grammarPointIds": [
+      "kurai-approximation",
+      "node-reason",
+      "mashou"
+    ],
+    "tokenOverrides": {
+      "十": {
+        "reading": "じゅっ"
+      },
+      "分": {
+        "reading": "ぷん"
+      }
+    }
+  },
+  {
+    "id": "production-n5-vocab-six-eggs-in-fridge",
+    "minimumLevel": "n5",
+    "text": "Please buy six eggs and put them in the refrigerator.",
+    "solution": "卵を六個買って、冷蔵庫に入れてください。",
+    "grammarPointIds": [
+      "quantity-position",
+      "te-action-link",
+      "te-kudasai"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "eggs",
+        "vocabularyIds": [
+          "vocab-190923f1528e"
+        ]
+      },
+      {
+        "word": "six",
+        "vocabularyIds": [
+          "vocab-06ef406f5569"
+        ]
+      },
+      {
+        "word": "buy",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "refrigerator",
+        "vocabularyIds": [
+          "vocab-fd0d7ce5a34d"
+        ]
+      },
+      {
+        "word": "put",
+        "vocabularyIds": [
+          "vocab-b5e9e035a8be"
+        ]
+      }
+    ],
+    "tokenOverrides": {
+      "六": {
+        "reading": "ろっ"
+      }
+    }
+  },
+  {
+    "id": "n5-vocab-what-language-book-written",
+    "minimumLevel": "n5",
+    "text": "この本は何語で書いてありますか。英語だと思います。",
+    "solution": "What language is this book written in? I think it is English.",
+    "grammarPointIds": [
+      "de-means",
+      "te-aru-result-state",
+      "to-omou"
+    ],
+    "tokenOverrides": {
+      "何": {
+        "reading": "なん"
+      }
+    },
+    "vocabularyOverrides": {
+      "何": "vocab-074acfd9fb0c"
+    },
+    "speechText": "この本はなんごで書いてありますか。英語だと思います。"
+  },
+  {
+    "id": "production-n5-vocab-home-around-eight-dinner",
+    "minimumLevel": "n5",
+    "text": "I will return home around eight, so would you like to eat dinner together?",
+    "solution": "八時ごろ帰るので、一緒に晩御飯を食べませんか。",
+    "grammarPointIds": [
+      "goro-approximate-time",
+      "node-reason",
+      "masen-ka-invitation"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "eight",
+        "vocabularyIds": [
+          "vocab-f6ed7c17c0d5"
+        ]
+      },
+      {
+        "word": "return home",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      },
+      {
+        "word": "together",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      },
+      {
+        "word": "eat dinner",
+        "vocabularyIds": [
+          "vocab-696613003517",
+          "vocab-ec4fa4315542"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-medicine-from-doctor",
+    "minimumLevel": "n5",
+    "text": "お医者さんに薬をもらったので、家で飲みます。",
+    "solution": "I received medicine from the doctor, so I will take it at home.",
+    "grammarPointIds": [
+      "morau",
+      "node-reason",
+      "de-action-location"
+    ],
+    "speechText": "お医者さんに薬をもらったので、家でのみます。"
+  },
+  {
+    "id": "production-n5-vocab-three-hours-study-rest-today",
+    "minimumLevel": "n5",
+    "text": "I studied for three hours yesterday, so I want to rest a little today.",
+    "solution": "昨日は三時間勉強したので、今日は少し休みたいです。",
+    "grammarPointIds": [
+      "duration-no-particle",
+      "node-reason",
+      "tai-desire"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "yesterday",
+        "vocabularyIds": [
+          "vocab-eb208b6436bb"
+        ]
+      },
+      {
+        "word": "three",
+        "vocabularyIds": [
+          "vocab-1bedf722c04a"
+        ]
+      },
+      {
+        "word": "studied",
+        "vocabularyIds": [
+          "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "today",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      },
+      {
+        "word": "a little",
+        "vocabularyIds": [
+          "vocab-8814378ebfc2"
+        ]
+      },
+      {
+        "word": "rest",
+        "vocabularyIds": [
+          "vocab-acc3dd26ba1e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-swam-all-summer-got-stronger",
+    "minimumLevel": "n5",
+    "text": "その年の夏じゅう毎朝泳いだので、体が強くなりました。",
+    "solution": "I swam every morning all summer that year, so my body became stronger.",
+    "grammarPointIds": [
+      "node-reason",
+      "naru-ku-change"
+    ]
+  },
+  {
+    "id": "production-n4-vocab-american-friend-speaks-japanese",
+    "minimumLevel": "n4",
+    "text": "My friend is American, but speaks Japanese for me.",
+    "solution": "友達はアメリカ人ですが、日本語で話してくれます。",
+    "grammarPointIds": [
+      "ga-contrast",
+      "de-means",
+      "te-kureru"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "American",
+        "vocabularyIds": [
+          "vocab-19ccc2f9d429",
+          "vocab-7bd8d7286ac2"
+        ]
+      },
+      {
+        "word": "Japanese",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "speaks",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-meet-after-three-then-shop",
+    "minimumLevel": "n5",
+    "text": "三時すぎに駅で会ってから、一緒に買い物に行きましょう。",
+    "solution": "Let’s meet at the station after three and then go shopping together.",
+    "grammarPointIds": [
+      "ni-time",
+      "te-kara",
+      "mashou"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-take-two-sweets-each",
+    "minimumLevel": "n5",
+    "text": "Please take two of these sweets each, then sit on the chairs.",
+    "solution": "このお菓子を二つずつ取ってから、椅子に座ってください。",
+    "grammarPointIds": [
+      "quantity-position",
+      "te-kara",
+      "te-kudasai"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "sweets",
+        "vocabularyIds": [
+          "vocab-3841b646739f"
+        ]
+      },
+      {
+        "word": "two",
+        "vocabularyIds": [
+          "vocab-bb85f028d944"
+        ]
+      },
+      {
+        "word": "take",
+        "vocabularyIds": [
+          "vocab-9ed3b3695645"
+        ]
+      },
+      {
+        "word": "chairs",
+        "vocabularyIds": [
+          "vocab-7863488ec2b8"
+        ]
+      },
+      {
+        "word": "sit",
+        "vocabularyIds": [
+          "vocab-1920bee7857b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-only-water-early-night",
+    "minimumLevel": "n5",
+    "text": "今日は水だけ飲んで、早く寝るつもりです。",
+    "solution": "Today, I plan to drink only water and go to bed early.",
+    "grammarPointIds": [
+      "dake-limitation",
+      "te-action-link",
+      "tsumori"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-someone-opened-door-room-cold",
+    "minimumLevel": "n5",
+    "text": "Someone opened the door, so the room became cold.",
+    "solution": "誰かがドアを開けたので、部屋が寒くなりました。",
+    "grammarPointIds": [
+      "question-word-ka",
+      "node-reason",
+      "naru-ku-change"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Someone",
+        "vocabularyIds": [
+          "vocab-78047982c503"
+        ]
+      },
+      {
+        "word": "door",
+        "vocabularyIds": [
+          "vocab-01adf406cacd"
+        ]
+      },
+      {
+        "word": "opened",
+        "vocabularyIds": [
+          "vocab-658ff53bc114"
+        ]
+      },
+      {
+        "word": "room",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "cold",
+        "vocabularyIds": [
+          "vocab-ea75e321b7ef"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-during-class-listen-teacher",
+    "minimumLevel": "n5",
+    "text": "授業中は話さないで、先生の話を聞いてください。",
+    "solution": "During class, please listen to what the teacher says without talking.",
+    "grammarPointIds": [
+      "chuu",
+      "naide-without",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-movie-twice-want-again",
+    "minimumLevel": "n5",
+    "text": "I have watched this movie twice, but I want to watch it once more.",
+    "solution": "この映画を二度見ましたが、もう一回見たいです。",
+    "grammarPointIds": [
+      "numbers-and-counters",
+      "ga-contrast",
+      "tai-desire"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "movie",
+        "vocabularyIds": [
+          "vocab-7b9d866e6dc2"
+        ]
+      },
+      {
+        "word": "watched",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      },
+      {
+        "word": "watch",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      }
+    ],
+    "tokenOverrides": {
+      "一": {
+        "reading": "いっ"
+      }
+    }
+  },
+  {
+    "id": "n5-vocab-childhood-park-with-mother",
+    "minimumLevel": "n5",
+    "text": "子供の時、母とよくこの公園で遊びました。",
+    "solution": "When I was a child, I often played in this park with my mother.",
+    "grammarPointIds": [
+      "toki",
+      "to-companion",
+      "de-action-location"
+    ],
+    "vocabularyOverrides": {
+      "時": "vocab-f6481b840edb"
+    }
+  },
+  {
+    "id": "production-n5-vocab-buy-fruit-then-return",
+    "minimumLevel": "n5",
+    "text": "I bought things such as apples and bananas, then returned home.",
+    "solution": "りんごやバナナなどを買ってから、家に帰りました。",
+    "grammarPointIds": [
+      "ya-incomplete-list",
+      "nado-examples",
+      "te-kara"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "apples",
+        "vocabularyIds": [
+          "vocab-d66c7f00afcd"
+        ]
+      },
+      {
+        "word": "bananas",
+        "vocabularyIds": [
+          "vocab-3cae2dee76b4"
+        ]
+      },
+      {
+        "word": "bought",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "home",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      },
+      {
+        "word": "returned",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-how-many-books-plan-borrow",
+    "minimumLevel": "n5",
+    "text": "図書館で本を何冊借りるつもりですか。",
+    "solution": "How many books do you plan to borrow at the library?",
+    "grammarPointIds": [
+      "nan-counter",
+      "de-action-location",
+      "tsumori"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-eleventh-free-go-walking",
+    "minimumLevel": "n5",
+    "text": "I am free on the eleventh, so would you like to go for a walk together?",
+    "solution": "十一日は暇なので、一緒に散歩しませんか。",
+    "grammarPointIds": [
+      "clock-calendar-time",
+      "node-reason",
+      "masen-ka-invitation"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "free",
+        "vocabularyIds": [
+          "vocab-91161e6e754c"
+        ]
+      },
+      {
+        "word": "together",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      },
+      {
+        "word": "go for a walk",
+        "vocabularyIds": [
+          "vocab-739ad06f157c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-five-friends-five-chairs",
+    "minimumLevel": "n5",
+    "text": "友達が五人来るので、椅子を五つ出してください。",
+    "solution": "Five friends are coming, so please put out five chairs.",
+    "grammarPointIds": [
+      "common-counters",
+      "node-reason",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-two-years-japan-return-country",
+    "minimumLevel": "n5",
+    "text": "After living in Japan for two years, I returned to my country.",
+    "solution": "日本に二年住んでから、国に帰りました。",
+    "grammarPointIds": [
+      "duration-no-particle",
+      "te-kara"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "Japan",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
+      },
+      {
+        "word": "two",
+        "vocabularyIds": [
+          "vocab-7fc81b0ddd17"
+        ]
+      },
+      {
+        "word": "living",
+        "vocabularyIds": [
+          "vocab-405805427b97"
+        ]
+      },
+      {
+        "word": "country",
+        "vocabularyIds": [
+          "vocab-ee158182835b"
+        ]
+      },
+      {
+        "word": "returned",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-two-cups-hot-tea",
+    "minimumLevel": "n5",
+    "text": "寒いので、熱いお茶を二杯飲みました。",
+    "solution": "It was cold, so I drank two cups of hot tea.",
+    "grammarPointIds": [
+      "node-reason",
+      "quantity-position",
+      "i-adjective-attributive"
+    ],
+    "speechText": "寒いので、あついお茶を二杯飲みました。"
+  },
+  {
+    "id": "production-n5-vocab-two-and-half-hours-walking",
+    "minimumLevel": "n5",
+    "text": "We walked for two and a half hours, so let’s rest here a little.",
+    "solution": "二時間半歩いたので、ここで少し休みましょう。",
+    "grammarPointIds": [
+      "duration-no-particle",
+      "node-reason",
+      "mashou"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "two",
+        "vocabularyIds": [
+          "vocab-7fc81b0ddd17"
+        ]
+      },
+      {
+        "word": "a half",
+        "vocabularyIds": [
+          "vocab-d605986c3af4"
+        ]
+      },
+      {
+        "word": "walked",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      },
+      {
+        "word": "here",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
+        ]
+      },
+      {
+        "word": "a little",
+        "vocabularyIds": [
+          "vocab-8814378ebfc2"
+        ]
+      },
+      {
+        "word": "rest",
+        "vocabularyIds": [
+          "vocab-acc3dd26ba1e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-number-three-bus-to-station",
+    "minimumLevel": "n5",
+    "text": "三番のバスに乗って、駅まで行ってください。",
+    "solution": "Please take the number three bus and go to the station.",
+    "grammarPointIds": [
+      "te-action-link",
+      "made-end",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-six-pencils-lend-three",
+    "minimumLevel": "n5",
+    "text": "I brought six pencils, so I lent three to a friend.",
+    "solution": "鉛筆を六本持ってきたので、友達に三本貸しました。",
+    "grammarPointIds": [
+      "numbers-and-counters",
+      "node-reason",
+      "ni-target-recipient"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "pencils",
+        "vocabularyIds": [
+          "vocab-ffe18de42b4b"
+        ]
+      },
+      {
+        "word": "six",
+        "vocabularyIds": [
+          "vocab-06ef406f5569"
+        ]
+      },
+      {
+        "word": "brought",
+        "vocabularyIds": [
+          "vocab-516ad1128c71",
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "friend",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "three",
+        "vocabularyIds": [
+          "vocab-1bedf722c04a"
+        ]
+      },
+      {
+        "word": "lent",
+        "vocabularyIds": [
+          "vocab-642d3200e09f"
+        ]
+      }
+    ],
+    "tokenOverrides": {
+      "六": {
+        "reading": "ろっ"
+      },
+      "本#1": {
+        "reading": "ぽん"
+      },
+      "本#2": {
+        "reading": "ぼん"
+      }
+    },
+    "speechText": "鉛筆をろっぽん持ってきたので、友達にさんぼん貸しました。"
+  },
+  {
+    "id": "n5-vocab-wait-in-front-of-school",
+    "minimumLevel": "n5",
+    "text": "学校のまえで待っているので、着いたら電話してください。",
+    "solution": "I am waiting in front of the school, so please call when you arrive.",
+    "grammarPointIds": [
+      "te-iru-progressive",
+      "tara-conditional",
+      "te-kudasai"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-third-sister-birthday-flowers",
+    "minimumLevel": "n5",
+    "text": "My older sister’s birthday is on the third, so I plan to buy flowers.",
+    "solution": "三日は姉の誕生日なので、花を買うつもりです。",
+    "grammarPointIds": [
+      "no-possession",
+      "node-reason",
+      "tsumori"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "third",
+        "vocabularyIds": [
+          "vocab-b0489d428339"
+        ]
+      },
+      {
+        "word": "older sister",
+        "vocabularyIds": [
+          "vocab-e3507900ad06"
+        ]
+      },
+      {
+        "word": "birthday",
+        "vocabularyIds": [
+          "vocab-5841d3db2c97"
+        ]
+      },
+      {
+        "word": "flowers",
+        "vocabularyIds": [
+          "vocab-fa6a4c8f27b4"
+        ]
+      },
+      {
+        "word": "buy",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      }
+    ],
+    "speechText": "みっかは姉の誕生日なので、花を買うつもりです。"
+  },
+  {
+    "id": "n5-vocab-bread-from-bakery-tasty-cheap",
+    "minimumLevel": "n5",
+    "text": "あのパン屋で買ったパンは、おいしくて安いです。",
+    "solution": "The bread I bought at that bakery is tasty and cheap.",
+    "grammarPointIds": [
+      "relative-clause",
+      "adjective-connective"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-three-copies-for-teacher",
+    "minimumLevel": "n5",
+    "text": "Please make three copies to hand to the teacher.",
+    "solution": "先生に渡すコピーを、三枚作ってください。",
+    "grammarPointIds": [
+      "relative-clause",
+      "quantity-position",
+      "te-kudasai"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "make",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
+        "word": "three",
+        "vocabularyIds": [
+          "vocab-1bedf722c04a"
+        ]
+      },
+      {
+        "word": "copies",
+        "vocabularyIds": [
+          "vocab-481dd0f51d1d"
+        ]
+      },
+      {
+        "word": "hand",
+        "vocabularyIds": [
+          "vocab-e713380aad5b"
+        ]
+      },
+      {
+        "word": "teacher",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      }
+    ],
+    "vocabularyOverrides": {
+      "コピー": "vocab-481dd0f51d1d"
+    }
+  },
+  {
+    "id": "n5-vocab-greet-teacher-in-morning",
+    "minimumLevel": "n5",
+    "text": "朝、先生に会ったら、「おはようございます」と言います。",
+    "solution": "When I meet my teacher in the morning, I say good morning.",
+    "grammarPointIds": [
+      "tara-conditional",
+      "to-quotation"
+    ],
+    "speechText": "朝、先生に会ったら、おはようございます、と言います。"
+  },
+  {
+    "id": "production-n5-vocab-please-when-ordering-coffee",
+    "minimumLevel": "n5",
+    "text": "When I order coffee at a shop, I say please.",
+    "solution": "店でコーヒーを頼むとき、「お願いします」と言います。",
+    "grammarPointIds": [
+      "toki",
+      "to-quotation",
+      "de-action-location"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "shop",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      },
+      {
+        "word": "coffee",
+        "vocabularyIds": [
+          "vocab-f5f2c2dca175"
+        ]
+      },
+      {
+        "word": "order",
+        "vocabularyIds": [
+          "vocab-a905e5f18cff"
+        ]
+      },
+      {
+        "word": "please",
+        "vocabularyIds": [
+          "vocab-a92a3a630fed"
+        ]
+      },
+      {
+        "word": "say",
+        "vocabularyIds": [
+          "vocab-4fa253e10946"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-nice-to-meet-you-then-name",
+    "minimumLevel": "n5",
+    "text": "「はじめまして」と言ってから、自分の名前を言いました。",
+    "solution": "I said nice to meet you, then gave my name.",
+    "grammarPointIds": [
+      "to-quotation",
+      "te-kara"
+    ],
+    "speechText": "はじめまして、といってから、自分の名前をいいました。"
+  },
+  {
+    "id": "production-n5-vocab-work-together-from-tomorrow",
+    "minimumLevel": "n5",
+    "text": "We will work together starting tomorrow, so I look forward to working with you.",
+    "solution": "明日から一緒に働くので、よろしくお願いします。",
+    "grammarPointIds": [
+      "kara-start",
+      "node-reason"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "tomorrow",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
+      },
+      {
+        "word": "together",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      },
+      {
+        "word": "work",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
+        ]
+      },
+      {
+        "word": "I look forward to working with you",
+        "vocabularyIds": [
+          "vocab-04ebcec4eac8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n5-vocab-say-good-night-to-family",
+    "minimumLevel": "n5",
+    "text": "寝る前に、家族に「おやすみなさい」と言います。",
+    "solution": "Before going to bed, I say good night to my family.",
+    "grammarPointIds": [
+      "mae-ni",
+      "to-quotation"
+    ]
+  },
+  {
+    "id": "production-n5-vocab-thank-you-before-eating",
+    "minimumLevel": "n5",
+    "text": "Before eating, please say thank you for the food.",
+    "solution": "食べる前に、「いただきます」と言ってください。",
+    "grammarPointIds": [
+      "mae-ni",
+      "to-quotation",
+      "te-kudasai"
+    ],
+    "type": "production",
+    "promptVocabularyHints": [
+      {
+        "word": "eating",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "thank you for the food",
+        "vocabularyIds": [
+          "vocab-7fd7463f51b7"
+        ]
+      },
+      {
+        "word": "say",
+        "vocabularyIds": [
+          "vocab-4fa253e10946"
         ]
       }
     ]

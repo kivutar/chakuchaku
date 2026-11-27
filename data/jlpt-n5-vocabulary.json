@@ -497,7 +497,7 @@
     "voiceSlug": "aru-exist",
     "term": "在る",
     "reading": "ある",
-    "meaning": "to be, to have",
+    "meaning": "to exist; to be located (inanimate things)",
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
@@ -735,7 +735,8 @@
     "partOfSpeech": "number",
     "variants": [
       "1日"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-8a98a8e471f7",
@@ -1179,7 +1180,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "お",
+        "reading": "お"
+      }
+    ]
   },
   {
     "id": "vocab-2f5084eba81c",
@@ -1819,7 +1826,8 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "noun"
+    "partOfSpeech": "noun",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-c506bd7fb201",
@@ -1968,7 +1976,21 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "counter",
+    "inflections": [
+      {
+        "surface": "か月",
+        "reading": "かげつ"
+      },
+      {
+        "surface": "ヶ月",
+        "reading": "かげつ"
+      },
+      {
+        "surface": "カ月",
+        "reading": "かげつ"
+      }
+    ]
   },
   {
     "id": "vocab-173b02087d96",
@@ -2085,7 +2107,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "counter",
+    "inflections": [
+      {
+        "surface": "月",
+        "reading": "がつ",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-42edc1b83779",
@@ -2239,7 +2268,21 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "がる",
+        "reading": "がる"
+      },
+      {
+        "surface": "がっ",
+        "reading": "がっ"
+      },
+      {
+        "surface": "がり",
+        "reading": "がり"
+      }
+    ]
   },
   {
     "id": "vocab-463ea6ce108e",
@@ -2292,7 +2335,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "側",
+        "reading": "がわ"
+      }
+    ]
   },
   {
     "id": "vocab-0a04072bf0cc",
@@ -2800,7 +2849,17 @@
     "variants": [
       "ぐらい"
     ],
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "くらい",
+        "reading": "くらい"
+      },
+      {
+        "surface": "ぐらい",
+        "reading": "ぐらい"
+      }
+    ]
   },
   {
     "id": "vocab-387efc2c5389",
@@ -2976,7 +3035,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "counter",
+    "inflections": [
+      {
+        "surface": "個",
+        "reading": "こ"
+      }
+    ]
   },
   {
     "id": "vocab-d4473f87e438",
@@ -3001,7 +3066,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "語",
+        "reading": "ご"
+      }
+    ]
   },
   {
     "id": "vocab-c3f997ee44ba",
@@ -3295,7 +3366,17 @@
     "variants": [
       "～ごろ"
     ],
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "ころ",
+        "reading": "ころ"
+      },
+      {
+        "surface": "ごろ",
+        "reading": "ごろ"
+      }
+    ]
   },
   {
     "id": "vocab-309cfedd227d",
@@ -3493,7 +3574,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "さん",
+        "reading": "さん"
+      }
+    ]
   },
   {
     "id": "vocab-1bedf722c04a",
@@ -3595,7 +3682,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "counter",
+    "inflections": [
+      {
+        "surface": "時間",
+        "reading": "じかん"
+      }
+    ]
   },
   {
     "id": "vocab-cdf28ddaf837",
@@ -3816,11 +3909,21 @@
     "voiceSlug": "juu-during",
     "term": "～中",
     "reading": "～じゅう",
-    "meaning": "during, while",
+    "meaning": "throughout; all through (a period of time)",
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "じゅう",
+        "reading": "じゅう"
+      },
+      {
+        "surface": "中",
+        "reading": "じゅう"
+      }
+    ]
   },
   {
     "id": "vocab-fd63d3fc7c86",
@@ -3948,11 +4051,17 @@
     "id": "vocab-7bd8d7286ac2",
     "term": "～人",
     "reading": "～じん",
-    "meaning": "counter for people",
+    "meaning": "person of a nationality or place of origin",
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "人",
+        "reading": "じん"
+      }
+    ]
   },
   {
     "id": "vocab-f906b238c9c2",
@@ -4016,7 +4125,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "すぎ",
+        "reading": "すぎ"
+      }
+    ]
   },
   {
     "id": "vocab-89cc0156875d",
@@ -4079,7 +4194,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "ずつ",
+        "reading": "ずつ"
+      }
+    ]
   },
   {
     "id": "vocab-043c8767225d",
@@ -4555,7 +4676,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "だけ",
+        "reading": "だけ"
+      }
+    ]
   },
   {
     "id": "vocab-106fdb214a72",
@@ -4733,7 +4860,8 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "pronoun"
+    "partOfSpeech": "pronoun",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-5841d3db2c97",
@@ -4753,7 +4881,8 @@
         "surface": "日",
         "reading": "び"
       }
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-0da81020c173",
@@ -4894,7 +5023,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "中",
+        "reading": "ちゅう"
+      }
+    ]
   },
   {
     "id": "vocab-16d2158af127",
@@ -5269,7 +5404,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "counter",
+    "inflections": [
+      {
+        "surface": "度",
+        "reading": "ど"
+      }
+    ]
   },
   {
     "id": "vocab-01adf406cacd",
@@ -5400,7 +5541,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "時",
+        "reading": "とき"
+      }
+    ]
   },
   {
     "id": "vocab-47b8d594eff3",
@@ -5745,7 +5892,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "など",
+        "reading": "など"
+      }
+    ]
   },
   {
     "id": "vocab-f6bc974a7405",
@@ -5847,7 +6000,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "何",
+        "reading": "なん",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-7fc81b0ddd17",
@@ -5903,7 +6063,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "counter",
+    "inflections": [
+      {
+        "surface": "日",
+        "reading": "にち"
+      }
+    ]
   },
   {
     "id": "vocab-b7519a0f57a7",
@@ -5960,7 +6126,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "counter",
+    "inflections": [
+      {
+        "surface": "人",
+        "reading": "にん"
+      }
+    ]
   },
   {
     "id": "vocab-0954522e1764",
@@ -6020,7 +6192,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "counter",
+    "inflections": [
+      {
+        "surface": "年",
+        "reading": "ねん"
+      }
+    ]
   },
   {
     "id": "vocab-73b6cd855160",
@@ -6118,7 +6296,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "counter",
+    "inflections": [
+      {
+        "surface": "杯",
+        "reading": "はい"
+      }
+    ]
   },
   {
     "id": "vocab-5cba13dffe93",
@@ -6481,7 +6665,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "counter",
+    "inflections": [
+      {
+        "surface": "番",
+        "reading": "ばん"
+      }
+    ]
   },
   {
     "id": "vocab-3ad79496437d",
@@ -7194,7 +7384,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "counter"
+    "partOfSpeech": "counter",
+    "inflections": [
+      {
+        "surface": "本",
+        "reading": "ほん"
+      }
+    ]
   },
   {
     "id": "vocab-1ff0ae81b873",
@@ -7320,7 +7516,14 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "まえ",
+        "reading": "まえ",
+        "allowPartOfSpeechMismatch": true
+      }
+    ]
   },
   {
     "id": "vocab-9b9a58f11bf9",
@@ -7550,7 +7753,8 @@
     "partOfSpeech": "number",
     "variants": [
       "3日"
-    ]
+    ],
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-8b887bc8af0c",
@@ -7825,7 +8029,13 @@
     "scope": "core",
     "introducedAt": "n5",
     "source": "open-anki-jlpt-decks",
-    "partOfSpeech": "affix"
+    "partOfSpeech": "affix",
+    "inflections": [
+      {
+        "surface": "屋",
+        "reading": "や"
+      }
+    ]
   },
   {
     "id": "vocab-3757a44055ac",
@@ -9838,7 +10048,8 @@
     "topic": "expressions",
     "scope": "supplemental",
     "introducedAt": "n5",
-    "source": "curated-beginner-vocabulary"
+    "source": "curated-beginner-vocabulary",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-2798a7949600",
@@ -9882,7 +10093,8 @@
     "topic": "expressions",
     "scope": "supplemental",
     "introducedAt": "n5",
-    "source": "curated-beginner-vocabulary"
+    "source": "curated-beginner-vocabulary",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-cb7c6271c2a9",
@@ -9914,7 +10126,8 @@
     "topic": "expressions",
     "scope": "supplemental",
     "introducedAt": "n5",
-    "source": "curated-beginner-vocabulary"
+    "source": "curated-beginner-vocabulary",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-f1bf682f18cd",
@@ -9962,7 +10175,8 @@
     "topic": "expressions",
     "scope": "supplemental",
     "introducedAt": "n5",
-    "source": "curated-beginner-vocabulary"
+    "source": "curated-beginner-vocabulary",
+    "tokenizeAsWord": true
   },
   {
     "id": "vocab-fcdd7a903190",

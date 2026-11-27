@@ -285,10 +285,12 @@
     ]
   },
   "vocab-432407f717cd": {
-    "meaning": "être, avoir",
+    "meaning": "exister, se trouver (choses inanimées)",
     "acceptedAnswers": [
-      "être",
-      "avoir"
+      "exister",
+      "se trouver",
+      "être situé",
+      "être"
     ]
   },
   "vocab-b66f43bc23a1": {
@@ -2264,10 +2266,10 @@
     ]
   },
   "vocab-7b157c91e4d9": {
-    "meaning": "pendant",
+    "meaning": "pendant toute la durée de, tout au long de",
     "acceptedAnswers": [
-      "pendant",
-      "durant"
+      "pendant toute la durée de",
+      "tout au long de"
     ]
   },
   "vocab-fd63d3fc7c86": {
@@ -2348,9 +2350,10 @@
     ]
   },
   "vocab-7bd8d7286ac2": {
-    "meaning": "compteur pour personnes",
+    "meaning": "personne d’une nationalité ou d’un lieu d’origine",
     "acceptedAnswers": [
-      "compteur pour personnes"
+      "personne d’une nationalité",
+      "personne originaire de"
     ]
   },
   "vocab-f906b238c9c2": {
@@ -3399,7 +3402,7 @@
     ]
   },
   "vocab-bfe63a77332b": {
-    "meaning": "voler, sauter",
+    "meaning": "voler dans les airs ; sauter",
     "acceptedAnswers": [
       "voler",
       "sauter"
@@ -7042,7 +7045,7 @@
     ]
   },
   "vocab-969a24017d82": {
-    "meaning": "voler",
+    "meaning": "voler / dérober",
     "acceptedAnswers": [
       "voler",
       "dérober"

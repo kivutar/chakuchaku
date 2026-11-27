@@ -270,9 +270,10 @@ test("generated lessons match their authored sources", async () => {
   assert.ok(token("no-school-tomorrow", "あり").vocabularyId);
   assert.equal(token("been-to-japan", "日本").reading, "にほん");
   assert.equal(
-    token("birthday-book-gift", "誕生").vocabularyId,
-    token("birthday-book-gift", "日").vocabularyId
+    token("birthday-book-gift", "誕生日").vocabularyId,
+    "vocab-5841d3db2c97"
   );
+  assert.equal(token("birthday-book-gift", "誕生日").reading, "たんじょうび");
   assert.ok(token("birthday-book-gift", "くれ").vocabularyId);
   assert.ok(token("order-hot-tea", "ください").vocabularyId);
   assert.equal(token("photography-and-camera", "の").category, "particle");
@@ -282,7 +283,7 @@ test("generated lessons match their authored sources", async () => {
   assert.equal(token("meet-around-three", "時").reading, "じ");
   assert.ok(token("meet-around-three", "時").vocabularyId);
   assert.equal(token("meet-around-three", "ごろ").category, "particle");
-  assert.equal(token("meet-around-three", "ごろ").vocabularyId, undefined);
+  assert.equal(token("meet-around-three", "ごろ").vocabularyId, "vocab-6d49d0cfb7ad");
 
   assert.deepEqual(
     preparedById.get("open-window-empty-room").grammarHighlights,
@@ -813,6 +814,98 @@ test("fifth-sentence additions keep contextual readings and inflected grammar hi
   assert.equal(highlightedText("production-n4-at-sea-invitation-to-swim-together", "no-desu"), "んだ");
 });
 
+test("contextual suffix links preserve noun meanings, grammar categories, and greetings", async () => {
+  const exercises = await readJson("data/exercises.json");
+  const byId = new Map(exercises.map((exercise) => [exercise.id, exercise]));
+  const token = (id, surface) => byId.get(id).tokens.find((item) => item.surface === surface);
+
+  assert.equal(token("production-n5-vocab-whole-day-at-home-reading", "本").vocabularyId,
+    "vocab-0ac038632611", "reading a book must not review the cylindrical-item counter");
+  assert.equal(token("two-red-pens-desk", "本").vocabularyId, "vocab-d277559c27c1");
+  assert.equal(token("production-n5-vocab-three-hours-study-rest-today", "時間").vocabularyId,
+    "vocab-4616bda99d66");
+  assert.equal(token("n5-vocab-five-friends-five-chairs", "人").vocabularyId,
+    "vocab-f3b7e57e86cd", "a headcount uses にん");
+  assert.equal(token("production-n4-vocab-american-friend-speaks-japanese", "人").vocabularyId,
+    "vocab-7bd8d7286ac2", "nationality uses じん");
+  assert.equal(token("n5-vocab-only-water-early-night", "だけ").category, "particle");
+  assert.equal(token("n5-vocab-only-water-early-night", "だけ").vocabularyId, "vocab-12b90c71c1ce");
+  assert.equal(token("production-n5-vocab-eleventh-free-go-walking", "日").reading, "にち");
+  assert.ok(!byId.get("production-n5-vocab-eleventh-free-go-walking").tokens
+    .some(({ surface }) => surface === "一日"), "eleventh must not contain a whole-word first-of-month reading");
+  assert.equal(token("production-n5-vocab-third-sister-birthday-flowers", "三日").reading, "みっか");
+  assert.equal(token("production-n5-vocab-third-sister-birthday-flowers", "誕生日").reading, "たんじょうび");
+  for (const [id, surface] of [
+    ["n5-vocab-greet-teacher-in-morning", "おはようございます"],
+    ["production-n5-vocab-work-together-from-tomorrow", "よろしくお願いします"],
+    ["production-n5-vocab-thank-you-before-eating", "いただきます"]
+  ]) {
+    assert.equal(token(id, surface).category, "interjection");
+    assert.ok(token(id, surface).vocabularyId);
+  }
+});
+
+test("suffix dictionary forms do not match unrelated homophones", async () => {
+  const [vocabulary, code] = await Promise.all([
+    readJson("data/jlpt-n5-vocabulary.json"),
+    readFile(join(rootDirectory, "scripts/prepare-content.js"), "utf8")
+  ]);
+  const builder = new TokenizerBuilder();
+  builder.setDictionary("embedded://ipadic");
+  const tokenizer = builder.build();
+  const helpers = runInNewContext(
+    `${code.slice(code.indexOf("function getCompatiblePartsOfSpeech("),
+      code.indexOf("function findOverrideKey("))}\n({createVocabularyIndex, findVocabularyCandidates});`,
+    { tokenizer, Buffer }
+  );
+  const index = helpers.createVocabularyIndex(vocabulary);
+  const candidates = (text, surface) => Array.from(helpers.findVocabularyCandidates(
+    tokenizer.tokenize(text).find((token) => token.surface === surface), index
+  ), ({ entry }) => entry.id);
+  assert.ok(!candidates("くらい部屋", "くらい").includes("vocab-95c68043ed38"),
+    "the adjective dark must not review approximately");
+  assert.ok(candidates("五分くらい", "くらい").includes("vocab-95c68043ed38"));
+  assert.ok(!candidates("本を読む", "本").includes("vocab-d277559c27c1"));
+  assert.deepEqual(candidates("二本買う", "本"), ["vocab-d277559c27c1"]);
+  assert.ok(!candidates("時間がある", "時間").includes("vocab-4616bda99d66"),
+    "unmeasured time must not review the hours counter");
+  assert.deepEqual(candidates("三時間待つ", "時間"), ["vocab-4616bda99d66"]);
+  const honorific = tokenizer.tokenize("ご主人")[0];
+  assert.ok(!helpers.findVocabularyCandidates(honorific, index, true)
+    .some(({ entry }) => entry.id === "vocab-f4682caa1837"),
+  "honorific ご must not review the language suffix ～語 even in reading-based examples");
+  const examples = await readJson("data/vocabulary-examples.json");
+  const allDay = examples.find(({ vocabularyId }) => vocabularyId === "vocab-7b157c91e4d9");
+  assert.equal(allDay.tokens.map(({ reading, surface }) => reading || surface).join(""),
+    "いちにちじゅうべんきょうします。");
+  assert.equal(allDay.tokens.find(({ surface }) => surface === "中").vocabularyId,
+    "vocab-7b157c91e4d9");
+  const fullRoom = examples.find(({ vocabularyId }) => vocabularyId === "vocab-2fe12f739abb");
+  assert.equal(fullRoom.tokens.find(({ surface }) => surface === "いっぱい").vocabularyId,
+    "vocab-2fe12f739abb", "a full room must not review the cups counter");
+  assert.equal(fullRoom.tokens.map(({ reading, surface }) => reading || surface).join(""),
+    "へやはいっぱいです。");
+});
+
+test("polite requests do not review the limiting particle inside いただけません", async () => {
+  const exercises = await readJson("data/exercises.json");
+  const requests = exercises.filter((exercise) =>
+    (exercise.type === "production" ? exercise.solution : exercise.text).includes("いただけません"));
+  assert.ok(requests.length >= 5);
+  for (const exercise of requests) {
+    const stem = exercise.tokens.find(({ surface }) => surface === "いただけ");
+    assert.equal(stem?.category, "auxiliary", exercise.id);
+    assert.equal(stem?.reading, "いただけ", exercise.id);
+    assert.ok(!exercise.vocabularyIds.includes("vocab-12b90c71c1ce"), exercise.id);
+    assert.ok(exercise.grammarHighlights.some((highlight) =>
+      highlight.grammarPointId === "te-itadakemasen-ka" &&
+      exercise.tokens.slice(highlight.tokenStart, highlight.tokenEnd)
+        .map(({ surface }) => surface).join("").includes("いただけません")), exercise.id);
+  }
+  assert.ok(exercises.find(({ id }) => id === "n4-writing-name-was-enough")
+    .vocabularyIds.includes("vocab-12b90c71c1ce"), "genuine limiting だけ stays linked");
+});
+
 test("content tokenization preserves spaces, meal compounds, and whole-word person counts", async () => {
   const [vocabulary, preparationCode] = await Promise.all([
     readJson("data/jlpt-n5-vocabulary.json"),
@@ -830,6 +923,10 @@ test("content tokenization preserves spaces, meal compounds, and whole-word pers
     { tokenizer, Buffer }
   );
   const index = createVocabularyIndex(vocabulary);
+
+  const onlyEating = tokenizeContent("食べていただけです。", index);
+  assert.ok(onlyEating.some(({ surface }) => surface === "だけ"));
+  assert.ok(!onlyEating.some(({ surface }) => surface === "いただけ"));
 
   for (const [prefix, reading] of [["朝", "あさごはん"], ["昼", "ひるごはん"], ["晩", "ばんごはん"]]) {
     for (const surface of [`${prefix}御飯`, `${prefix}ご飯`, `${prefix}ごはん`, reading]) {

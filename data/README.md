@@ -163,10 +163,37 @@ expressions. It preserves irregular date readings as whole words, distinguishes
 the two meanings of `キロ`, and explicitly practices `十（とお）`,
 `一月（ひとつき）`, and `私（わたくし）`. Its dictionary corrections retain
 existing IDs and levels, and no previous grammar exercise changes. Entries such
-as `外国人`, `コピー`, `誰か`, and duration `一日` already occur in older
+as `外国人`, `誰か`, and duration `一日` already occur in older
 sentences despite missing links; they are excluded from this batch's new targets.
 
-The live N4 slice contains 97 high-value points and 517 independently authored
+The [final batch review](source/n5-vocabulary-practice-batch-5-review-2026-11-24.json)
+records 42 more exercises, 21 in each direction, with English/French hints and
+42 reviewed recordings. Each has a distinct focus among the remaining entries
+and two or three grammar targets. Forty exercises are N5; two retain N4 minimum
+levels because they use `～がる` grammar or the existing N4 word `アメリカ`.
+Vocabulary IDs and introduction levels remain unchanged. All 879 N5 dictionary
+entries now have at least one linked grammar exercise across the two levels.
+
+Sixteen of these targets also gain correct links in older sentences. Counters
+and affixes have explicit usable forms, with part-of-speech checks distinguishing
+`本` (book) from `～本` (long-item counter) and `時間` (time) from measured hours.
+The nationality suffix `～人（じん）` is distinguished from the headcount
+`～人（にん）`. Grammatical particles retain their display category when linked.
+Pronunciation-only matching cannot confuse honorific `ご` with language `～語`;
+the older `一日中` vocabulary example now explicitly uses `じゅう`.
+Whole-word tokenization now supports interjections, keeping greetings such as
+`よろしくお願いします` intact, as well as `外国人`, `誰か`, and `誕生日`.
+The final batch also retains separate duration/date readings for `一日` and
+regular `十一日`, and supplies the readings `ろっぽん` and `さんぼん` in context.
+These changes correct generated links and readings in existing material.
+The [combined follow-up review of batches four and five](source/n5-vocabulary-practice-batches-4-5-follow-up-2026-11-24.json)
+checks all 92 exercises again. It adds the missing `上` hint for "on/sur" in
+the apples-on-the-table exercise and replaces three unclear recordings from
+batch four. It also prevents the tokenizer from crediting limiting `だけ`
+inside polite `ていただけませんか` requests, and writes the "full room"
+vocabulary example as `いっぱい` so it cannot be mistaken for the cup counter.
+
+The live N4 slice contains 97 high-value points and 519 independently authored
 recognition and production exercises, plus exercises borrowed from N4 stories.
 The latest 50 exercises practice 111 N4 vocabulary entries, including 104 that
 previously appeared in at most one grammar exercise. Their separate sentence,

@@ -18965,6 +18965,12 @@
     "translation": "Il y a neuf pommes sur la table, alors je vais les manger avec ma famille.",
     "promptVocabularyHints": [
       {
+        "word": "sur",
+        "vocabularyIds": [
+          "vocab-c0f58bfab324"
+        ]
+      },
+      {
         "word": "table",
         "vocabularyIds": [
           "vocab-f1af08d4c51c"
@@ -19738,5 +19744,759 @@
   },
   "n5-vocab-formal-study-before-going-to-work": {
     "translation": "J’étudie le japonais, puis je vais au travail."
+  },
+  "n5-vocab-park-near-station-rest-there": {
+    "translation": "Il y a un petit parc près de la gare, alors reposons-nous là-bas."
+  },
+  "production-n5-vocab-whole-day-at-home-reading": {
+    "translation": "Hier, je suis resté à la maison toute la journée à lire un livre.",
+    "promptVocabularyHints": [
+      {
+        "word": "Hier",
+        "vocabularyIds": [
+          "vocab-eb208b6436bb"
+        ]
+      },
+      {
+        "word": "toute la journée",
+        "vocabularyIds": [
+          "vocab-3d24eb7fb7b5"
+        ]
+      },
+      {
+        "word": "maison",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      },
+      {
+        "word": "resté",
+        "vocabularyIds": [
+          "vocab-e2f1dae6743a"
+        ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "lire",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-polite-name-before-entering": {
+    "translation": "Écris ton nom ici, puis entre à l’intérieur, s’il te plaît."
+  },
+  "production-n5-vocab-walk-with-foreign-friend": {
+    "translation": "J’ai marché dans le parc en parlant avec un ami étranger.",
+    "promptVocabularyHints": [
+      {
+        "word": "étranger",
+        "vocabularyIds": [
+          "vocab-a089826e2906"
+        ]
+      },
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "parlant",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      },
+      {
+        "word": "parc",
+        "vocabularyIds": [
+          "vocab-c3f997ee44ba"
+        ]
+      },
+      {
+        "word": "marché",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-three-months-studying-in-japan": {
+    "translation": "Je suis resté trois mois au Japon et j’ai étudié le japonais tous les jours."
+  },
+  "production-n5-vocab-which-month-plan-japan-trip": {
+    "translation": "Quel mois comptes-tu aller au Japon ?",
+    "promptVocabularyHints": [
+      {
+        "word": "Japon",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
+      },
+      {
+        "word": "aller",
+        "vocabularyIds": [
+          "vocab-ec22142c23d3"
+        ]
+      }
+    ]
+  },
+  "production-n5-vocab-quiet-this-side-read-here": {
+    "translation": "Ce côté-ci est calme, alors lisons un livre ici.",
+    "promptVocabularyHints": [
+      {
+        "word": "Ce côté-ci",
+        "vocabularyIds": [
+          "vocab-57367d42ac5c",
+          "vocab-a0b25ceb873b"
+        ]
+      },
+      {
+        "word": "calme",
+        "vocabularyIds": [
+          "vocab-61b57e2d4702"
+        ]
+      },
+      {
+        "word": "ici",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
+        ]
+      },
+      {
+        "word": "livre",
+        "vocabularyIds": [
+          "vocab-0ac038632611"
+        ]
+      },
+      {
+        "word": "lisons",
+        "vocabularyIds": [
+          "vocab-24f188a06d2c"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-twenty-minutes-to-station": {
+    "translation": "Il faut environ vingt minutes pour aller à la gare, alors partons tôt."
+  },
+  "production-n5-vocab-six-eggs-in-fridge": {
+    "translation": "Achète six œufs et mets-les au réfrigérateur, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "œufs",
+        "vocabularyIds": [
+          "vocab-190923f1528e"
+        ]
+      },
+      {
+        "word": "six",
+        "vocabularyIds": [
+          "vocab-06ef406f5569"
+        ]
+      },
+      {
+        "word": "Achète",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "réfrigérateur",
+        "vocabularyIds": [
+          "vocab-fd0d7ce5a34d"
+        ]
+      },
+      {
+        "word": "mets",
+        "vocabularyIds": [
+          "vocab-b5e9e035a8be"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-what-language-book-written": {
+    "translation": "Dans quelle langue ce livre est-il écrit ? Je pense que c’est de l’anglais."
+  },
+  "production-n5-vocab-home-around-eight-dinner": {
+    "translation": "Je rentrerai vers huit heures, alors veux-tu dîner avec moi ?",
+    "promptVocabularyHints": [
+      {
+        "word": "huit",
+        "vocabularyIds": [
+          "vocab-f6ed7c17c0d5"
+        ]
+      },
+      {
+        "word": "rentrerai",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      },
+      {
+        "word": "avec moi",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      },
+      {
+        "word": "dîner",
+        "vocabularyIds": [
+          "vocab-696613003517",
+          "vocab-ec4fa4315542"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-medicine-from-doctor": {
+    "translation": "J’ai reçu un médicament du médecin, alors je le prendrai à la maison."
+  },
+  "production-n5-vocab-three-hours-study-rest-today": {
+    "translation": "J’ai étudié pendant trois heures hier, alors je veux me reposer un peu aujourd’hui.",
+    "promptVocabularyHints": [
+      {
+        "word": "hier",
+        "vocabularyIds": [
+          "vocab-eb208b6436bb"
+        ]
+      },
+      {
+        "word": "trois",
+        "vocabularyIds": [
+          "vocab-1bedf722c04a"
+        ]
+      },
+      {
+        "word": "étudié",
+        "vocabularyIds": [
+          "vocab-15863d9e899d"
+        ]
+      },
+      {
+        "word": "aujourd’hui",
+        "vocabularyIds": [
+          "vocab-6b9362de88a7"
+        ]
+      },
+      {
+        "word": "un peu",
+        "vocabularyIds": [
+          "vocab-8814378ebfc2"
+        ]
+      },
+      {
+        "word": "reposer",
+        "vocabularyIds": [
+          "vocab-acc3dd26ba1e"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-swam-all-summer-got-stronger": {
+    "translation": "J’ai nagé tous les matins pendant tout l’été cette année-là, alors mon corps est devenu plus fort."
+  },
+  "production-n4-vocab-american-friend-speaks-japanese": {
+    "translation": "Mon ami est américain, mais il parle japonais pour moi.",
+    "promptVocabularyHints": [
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "américain",
+        "vocabularyIds": [
+          "vocab-19ccc2f9d429",
+          "vocab-7bd8d7286ac2"
+        ]
+      },
+      {
+        "word": "japonais",
+        "vocabularyIds": [
+          "vocab-e6870aa0d14e"
+        ]
+      },
+      {
+        "word": "parle",
+        "vocabularyIds": [
+          "vocab-0b969a8c0944"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-meet-after-three-then-shop": {
+    "translation": "Retrouvons-nous à la gare après trois heures, puis allons faire des courses ensemble."
+  },
+  "production-n5-vocab-take-two-sweets-each": {
+    "translation": "Prenez chacun deux de ces friandises, puis asseyez-vous sur les chaises, s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "friandises",
+        "vocabularyIds": [
+          "vocab-3841b646739f"
+        ]
+      },
+      {
+        "word": "deux",
+        "vocabularyIds": [
+          "vocab-bb85f028d944"
+        ]
+      },
+      {
+        "word": "Prenez",
+        "vocabularyIds": [
+          "vocab-9ed3b3695645"
+        ]
+      },
+      {
+        "word": "chaises",
+        "vocabularyIds": [
+          "vocab-7863488ec2b8"
+        ]
+      },
+      {
+        "word": "asseyez",
+        "vocabularyIds": [
+          "vocab-1920bee7857b"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-only-water-early-night": {
+    "translation": "Aujourd’hui, je compte boire seulement de l’eau et me coucher tôt."
+  },
+  "production-n5-vocab-someone-opened-door-room-cold": {
+    "translation": "Quelqu’un a ouvert la porte, alors la pièce est devenue froide.",
+    "promptVocabularyHints": [
+      {
+        "word": "Quelqu’un",
+        "vocabularyIds": [
+          "vocab-78047982c503"
+        ]
+      },
+      {
+        "word": "porte",
+        "vocabularyIds": [
+          "vocab-01adf406cacd"
+        ]
+      },
+      {
+        "word": "ouvert",
+        "vocabularyIds": [
+          "vocab-658ff53bc114"
+        ]
+      },
+      {
+        "word": "pièce",
+        "vocabularyIds": [
+          "vocab-23523bbf8d9c"
+        ]
+      },
+      {
+        "word": "froide",
+        "vocabularyIds": [
+          "vocab-ea75e321b7ef"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-during-class-listen-teacher": {
+    "translation": "Pendant le cours, écoute ce que dit le professeur sans parler, s’il te plaît."
+  },
+  "production-n5-vocab-movie-twice-want-again": {
+    "translation": "J’ai regardé ce film deux fois, mais je veux le regarder encore une fois.",
+    "promptVocabularyHints": [
+      {
+        "word": "film",
+        "vocabularyIds": [
+          "vocab-7b9d866e6dc2"
+        ]
+      },
+      {
+        "word": "regardé",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      },
+      {
+        "word": "regarder",
+        "vocabularyIds": [
+          "vocab-385cc0d9ee98"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-childhood-park-with-mother": {
+    "translation": "Quand j’étais enfant, je jouais souvent dans ce parc avec ma mère."
+  },
+  "production-n5-vocab-buy-fruit-then-return": {
+    "translation": "J’ai acheté des choses comme des pommes et des bananes, puis je suis rentré à la maison.",
+    "promptVocabularyHints": [
+      {
+        "word": "pommes",
+        "vocabularyIds": [
+          "vocab-d66c7f00afcd"
+        ]
+      },
+      {
+        "word": "bananes",
+        "vocabularyIds": [
+          "vocab-3cae2dee76b4"
+        ]
+      },
+      {
+        "word": "acheté",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      },
+      {
+        "word": "maison",
+        "vocabularyIds": [
+          "vocab-8af58778f14e"
+        ]
+      },
+      {
+        "word": "rentré",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-how-many-books-plan-borrow": {
+    "translation": "Combien de livres comptes-tu emprunter à la bibliothèque ?"
+  },
+  "production-n5-vocab-eleventh-free-go-walking": {
+    "translation": "Je suis libre le onze, alors veux-tu qu’on se promène ensemble ?",
+    "promptVocabularyHints": [
+      {
+        "word": "libre",
+        "vocabularyIds": [
+          "vocab-91161e6e754c"
+        ]
+      },
+      {
+        "word": "ensemble",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      },
+      {
+        "word": "promène",
+        "vocabularyIds": [
+          "vocab-739ad06f157c"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-five-friends-five-chairs": {
+    "translation": "Cinq amis vont venir, alors sors cinq chaises, s’il te plaît."
+  },
+  "production-n5-vocab-two-years-japan-return-country": {
+    "translation": "Après avoir vécu deux ans au Japon, je suis rentré dans mon pays.",
+    "promptVocabularyHints": [
+      {
+        "word": "Japon",
+        "vocabularyIds": [
+          "vocab-cf2abf0c5be3"
+        ]
+      },
+      {
+        "word": "deux",
+        "vocabularyIds": [
+          "vocab-7fc81b0ddd17"
+        ]
+      },
+      {
+        "word": "vécu",
+        "vocabularyIds": [
+          "vocab-405805427b97"
+        ]
+      },
+      {
+        "word": "pays",
+        "vocabularyIds": [
+          "vocab-ee158182835b"
+        ]
+      },
+      {
+        "word": "rentré",
+        "vocabularyIds": [
+          "vocab-944f21154c78"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-two-cups-hot-tea": {
+    "translation": "Il faisait froid, alors j’ai bu deux tasses de thé chaud."
+  },
+  "production-n5-vocab-two-and-half-hours-walking": {
+    "translation": "Nous avons marché pendant deux heures et demie, alors reposons-nous un peu ici.",
+    "promptVocabularyHints": [
+      {
+        "word": "deux",
+        "vocabularyIds": [
+          "vocab-7fc81b0ddd17"
+        ]
+      },
+      {
+        "word": "demie",
+        "vocabularyIds": [
+          "vocab-d605986c3af4"
+        ]
+      },
+      {
+        "word": "marché",
+        "vocabularyIds": [
+          "vocab-a76603aae6e4"
+        ]
+      },
+      {
+        "word": "ici",
+        "vocabularyIds": [
+          "vocab-f4ee05460d54"
+        ]
+      },
+      {
+        "word": "un peu",
+        "vocabularyIds": [
+          "vocab-8814378ebfc2"
+        ]
+      },
+      {
+        "word": "reposons",
+        "vocabularyIds": [
+          "vocab-acc3dd26ba1e"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-number-three-bus-to-station": {
+    "translation": "Prends le bus numéro trois pour aller jusqu’à la gare, s’il te plaît."
+  },
+  "production-n5-vocab-six-pencils-lend-three": {
+    "translation": "J’ai apporté six crayons, alors j’en ai prêté trois à un ami.",
+    "promptVocabularyHints": [
+      {
+        "word": "crayons",
+        "vocabularyIds": [
+          "vocab-ffe18de42b4b"
+        ]
+      },
+      {
+        "word": "six",
+        "vocabularyIds": [
+          "vocab-06ef406f5569"
+        ]
+      },
+      {
+        "word": "apporté",
+        "vocabularyIds": [
+          "vocab-516ad1128c71",
+          "vocab-bc01756b4d89"
+        ]
+      },
+      {
+        "word": "ami",
+        "vocabularyIds": [
+          "vocab-d9898f8a95b6"
+        ]
+      },
+      {
+        "word": "trois",
+        "vocabularyIds": [
+          "vocab-1bedf722c04a"
+        ]
+      },
+      {
+        "word": "prêté",
+        "vocabularyIds": [
+          "vocab-642d3200e09f"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-wait-in-front-of-school": {
+    "translation": "J’attends devant l’école, alors appelle-moi quand tu arrives, s’il te plaît."
+  },
+  "production-n5-vocab-third-sister-birthday-flowers": {
+    "translation": "L’anniversaire de ma grande sœur est le trois, alors je compte acheter des fleurs.",
+    "promptVocabularyHints": [
+      {
+        "word": "trois",
+        "vocabularyIds": [
+          "vocab-b0489d428339"
+        ]
+      },
+      {
+        "word": "grande sœur",
+        "vocabularyIds": [
+          "vocab-e3507900ad06"
+        ]
+      },
+      {
+        "word": "anniversaire",
+        "vocabularyIds": [
+          "vocab-5841d3db2c97"
+        ]
+      },
+      {
+        "word": "fleurs",
+        "vocabularyIds": [
+          "vocab-fa6a4c8f27b4"
+        ]
+      },
+      {
+        "word": "acheter",
+        "vocabularyIds": [
+          "vocab-1b65a0cb82d2"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-bread-from-bakery-tasty-cheap": {
+    "translation": "Le pain que j’ai acheté dans cette boulangerie est bon et pas cher."
+  },
+  "n5-vocab-greet-teacher-in-morning": {
+    "translation": "Quand je rencontre mon professeur le matin, je lui dis bonjour."
+  },
+  "production-n5-vocab-please-when-ordering-coffee": {
+    "translation": "Quand je commande du café dans un magasin, je dis s’il vous plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "magasin",
+        "vocabularyIds": [
+          "vocab-e70f9243d4c7"
+        ]
+      },
+      {
+        "word": "café",
+        "vocabularyIds": [
+          "vocab-f5f2c2dca175"
+        ]
+      },
+      {
+        "word": "commande",
+        "vocabularyIds": [
+          "vocab-a905e5f18cff"
+        ]
+      },
+      {
+        "word": "s’il vous plaît",
+        "vocabularyIds": [
+          "vocab-a92a3a630fed"
+        ]
+      },
+      {
+        "word": "dis",
+        "vocabularyIds": [
+          "vocab-4fa253e10946"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-nice-to-meet-you-then-name": {
+    "translation": "J’ai dit enchanté, puis j’ai donné mon nom."
+  },
+  "production-n5-vocab-work-together-from-tomorrow": {
+    "translation": "Nous travaillerons ensemble à partir de demain, alors je compte sur votre bienveillance.",
+    "promptVocabularyHints": [
+      {
+        "word": "demain",
+        "vocabularyIds": [
+          "vocab-bec9ce9d08c8"
+        ]
+      },
+      {
+        "word": "ensemble",
+        "vocabularyIds": [
+          "vocab-842637e88e8c"
+        ]
+      },
+      {
+        "word": "travaillerons",
+        "vocabularyIds": [
+          "vocab-49f91d135f05"
+        ]
+      },
+      {
+        "word": "je compte sur votre bienveillance",
+        "vocabularyIds": [
+          "vocab-04ebcec4eac8"
+        ]
+      }
+    ]
+  },
+  "n5-vocab-say-good-night-to-family": {
+    "translation": "Avant de me coucher, je dis bonne nuit à ma famille."
+  },
+  "production-n5-vocab-thank-you-before-eating": {
+    "translation": "Avant de manger, dis merci pour le repas, s’il te plaît.",
+    "promptVocabularyHints": [
+      {
+        "word": "manger",
+        "vocabularyIds": [
+          "vocab-ec4fa4315542"
+        ]
+      },
+      {
+        "word": "merci pour le repas",
+        "vocabularyIds": [
+          "vocab-7fd7463f51b7"
+        ]
+      },
+      {
+        "word": "dis",
+        "vocabularyIds": [
+          "vocab-4fa253e10946"
+        ]
+      }
+    ]
+  },
+  "n4-vocab-sister-feels-cold-warm-room": {
+    "translation": "Ma petite sœur avait froid, alors je l’ai fait entrer dans une pièce chaude."
+  },
+  "production-n5-vocab-three-copies-for-teacher": {
+    "translation": "S’il te plaît, fais trois copies à donner au professeur.",
+    "promptVocabularyHints": [
+      {
+        "word": "fais",
+        "vocabularyIds": [
+          "vocab-a4ccf0b7bace"
+        ]
+      },
+      {
+        "word": "trois",
+        "vocabularyIds": [
+          "vocab-1bedf722c04a"
+        ]
+      },
+      {
+        "word": "copies",
+        "vocabularyIds": [
+          "vocab-481dd0f51d1d"
+        ]
+      },
+      {
+        "word": "donner",
+        "vocabularyIds": [
+          "vocab-e713380aad5b"
+        ]
+      },
+      {
+        "word": "professeur",
+        "vocabularyIds": [
+          "vocab-497356cf0646"
+        ]
+      }
+    ]
   }
 }
